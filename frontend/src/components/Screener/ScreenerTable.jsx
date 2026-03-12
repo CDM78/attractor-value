@@ -74,6 +74,11 @@ export default function ScreenerTable() {
               (AAA: {meta.aaa_bond_yield.toFixed(2)}% + 1.5% premium)
             </span>
           )}
+          {meta.preliminary && (
+            <span className="text-warn text-xs ml-auto">
+              Preliminary — full fundamentals loading (6/day)
+            </span>
+          )}
         </div>
       )}
 
@@ -86,7 +91,7 @@ export default function ScreenerTable() {
           {/* Mobile: Card View */}
           <div className="md:hidden space-y-3">
             {filtered.map(row => (
-              <MobileCard key={row.ticker} row={row} onWatch={handleAddToWatchlist} />
+              <MobileCard key={row.ticker} row={row} onWatch={handleAddToWatchlist} preliminary={meta?.preliminary} />
             ))}
           </div>
 
@@ -126,15 +131,19 @@ export default function ScreenerTable() {
                     <td className="px-3 py-2"><FilterCell pass={row.passes_pe} value={row.pe_ratio?.toFixed(1)} /></td>
                     <td className="px-3 py-2"><FilterCell pass={row.passes_pb} value={row.pb_ratio?.toFixed(1)} /></td>
                     <td className="px-3 py-2"><FilterCell pass={row.passes_pe_x_pb} /></td>
-                    <td className="px-3 py-2"><FilterCell pass={row.passes_debt_equity} /></td>
-                    <td className="px-3 py-2"><FilterCell pass={row.passes_current_ratio} /></td>
-                    <td className="px-3 py-2"><FilterCell pass={row.passes_earnings_stability} /></td>
-                    <td className="px-3 py-2"><FilterCell pass={row.passes_dividend_record} /></td>
-                    <td className="px-3 py-2"><FilterCell pass={row.passes_earnings_growth} /></td>
+                    <td className="px-3 py-2"><FilterCell pass={row.passes_debt_equity} pending={!row.has_fundamentals && meta?.preliminary} /></td>
+                    <td className="px-3 py-2"><FilterCell pass={row.passes_current_ratio} pending={!row.has_fundamentals && meta?.preliminary} /></td>
+                    <td className="px-3 py-2"><FilterCell pass={row.passes_earnings_stability} pending={!row.has_fundamentals && meta?.preliminary} /></td>
+                    <td className="px-3 py-2"><FilterCell pass={row.passes_dividend_record} pending={!row.has_fundamentals && meta?.preliminary} /></td>
+                    <td className="px-3 py-2"><FilterCell pass={row.passes_earnings_growth} pending={!row.has_fundamentals && meta?.preliminary} /></td>
                     <td className="px-3 py-2">
-                      <span className={row.passes_all_hard ? 'text-pass font-bold' : 'text-fail'}>
-                        {row.passes_all_hard ? 'PASS' : 'FAIL'}
-                      </span>
+                      {!row.has_fundamentals && meta?.preliminary ? (
+                        <span className="text-text-secondary text-xs">PENDING</span>
+                      ) : (
+                        <span className={row.passes_all_hard ? 'text-pass font-bold' : 'text-fail'}>
+                          {row.passes_all_hard ? 'PASS' : 'FAIL'}
+                        </span>
+                      )}
                     </td>
                     <td className="px-3 py-2">
                       {row.adjusted_intrinsic_value != null
@@ -176,15 +185,16 @@ export default function ScreenerTable() {
   )
 }
 
-function MobileCard({ row, onWatch }) {
+function MobileCard({ row, onWatch, preliminary }) {
+  const pending = !row.has_fundamentals && preliminary
   const filters = [
     { label: 'P/E', pass: row.passes_pe, val: row.pe_ratio?.toFixed(1) },
     { label: 'P/B', pass: row.passes_pb, val: row.pb_ratio?.toFixed(1) },
-    { label: 'D/E', pass: row.passes_debt_equity },
-    { label: 'CR', pass: row.passes_current_ratio },
-    { label: 'Earn', pass: row.passes_earnings_stability },
-    { label: 'Div', pass: row.passes_dividend_record },
-    { label: 'EPS', pass: row.passes_earnings_growth },
+    { label: 'D/E', pass: row.passes_debt_equity, pending },
+    { label: 'CR', pass: row.passes_current_ratio, pending },
+    { label: 'Earn', pass: row.passes_earnings_stability, pending },
+    { label: 'Div', pass: row.passes_dividend_record, pending },
+    { label: 'EPS', pass: row.passes_earnings_growth, pending },
   ]
 
   return (
@@ -193,9 +203,13 @@ function MobileCard({ row, onWatch }) {
         <Link to={`/analyze/${row.ticker}`} className="text-accent font-bold text-lg hover:underline">
           {row.ticker}
         </Link>
-        <span className={row.passes_all_hard ? 'text-pass font-bold text-sm' : 'text-fail text-sm'}>
-          {row.passes_all_hard ? 'PASS' : 'FAIL'}
-        </span>
+        {pending ? (
+          <span className="text-text-secondary text-xs">PENDING</span>
+        ) : (
+          <span className={row.passes_all_hard ? 'text-pass font-bold text-sm' : 'text-fail text-sm'}>
+            {row.passes_all_hard ? 'PASS' : 'FAIL'}
+          </span>
+        )}
       </div>
       <div className="text-sm text-text-secondary mb-2">{row.company_name}</div>
       <div className="text-xs text-text-secondary mb-3">{row.sector}</div>
@@ -232,9 +246,9 @@ function MobileCard({ row, onWatch }) {
       <div className="flex flex-wrap gap-1.5 mb-3">
         {filters.map(f => (
           <span key={f.label} className={`text-xs px-2 py-0.5 rounded ${
-            f.pass ? 'bg-pass/15 text-pass' : 'bg-fail/15 text-fail'
+            f.pending ? 'bg-surface-tertiary text-text-secondary' : f.pass ? 'bg-pass/15 text-pass' : 'bg-fail/15 text-fail'
           }`}>
-            {f.label}{f.val ? ` ${f.val}` : ''}
+            {f.label}{f.pending ? '' : f.val ? ` ${f.val}` : ''}
           </span>
         ))}
       </div>
@@ -251,7 +265,10 @@ function MobileCard({ row, onWatch }) {
   )
 }
 
-function FilterCell({ pass, value }) {
+function FilterCell({ pass, value, pending }) {
+  if (pending) {
+    return <span className="text-text-secondary">—</span>
+  }
   return (
     <span className={pass ? 'text-pass' : 'text-fail'}>
       {value || (pass ? 'OK' : 'X')}
