@@ -150,6 +150,33 @@ CREATE TABLE portfolio_snapshots (
     sector_concentrations TEXT  -- JSON object
 );
 
+-- Adjacent possible assessment (asymmetric candidates only)
+CREATE TABLE adjacent_possible_analysis (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ticker TEXT NOT NULL,
+    analysis_date TEXT NOT NULL,
+    -- Individual factor scores (1-5)
+    component_maturity_score INTEGER,
+    behavioral_adjacency_score INTEGER,
+    analogous_precedent_score INTEGER,
+    combinatorial_clarity_score INTEGER,
+    infrastructure_readiness_score INTEGER,
+    -- Composite
+    adjacent_possible_score REAL,  -- average of above
+    -- Key components identified
+    existing_components TEXT,  -- JSON array of strings describing what already exists
+    missing_components TEXT,  -- JSON array of strings describing what must be created/proven
+    -- Analogous transitions cited
+    precedents TEXT,  -- JSON array of strings
+    -- Recommended time horizon
+    recommended_horizon_months INTEGER,
+    -- Max position size constraint
+    max_position_pct REAL,  -- 0.05 or 0.03 based on score
+    -- Claude's reasoning
+    analysis_text TEXT,
+    FOREIGN KEY (ticker) REFERENCES stocks(ticker)
+);
+
 -- Rebalancing alerts
 CREATE TABLE alerts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

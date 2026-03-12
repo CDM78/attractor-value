@@ -65,10 +65,26 @@ export const PORTFOLIO = {
   max_sector_pct: 25,
   max_hard_network_pct: 15,
   min_sector_diversity: 3,
+  // AP-adjusted constraints for asymmetric positions
+  ap_caution_max_position_pct: 3,
+  ap_horizon_warning_days: 30,
 };
 
 // Network Regimes
 export const NETWORK_REGIMES = ['classical', 'soft_network', 'hard_network', 'platform'];
+
+// Adjacent Possible (Layer 4 — Asymmetric Opportunity candidates only)
+export const ADJACENT_POSSIBLE = {
+  proceed_threshold: 3.5,
+  caution_min: 2.0,
+  reject_max: 2.0,
+  // Position sizing by AP score
+  standard_max_position_pct: 0.05,
+  caution_max_position_pct: 0.03,
+  // Time horizons
+  standard_horizon_months: { min: 18, max: 24 },
+  caution_horizon_months: { min: 12, max: 18 },
+};
 
 // Sell Discipline Rules
 export const SELL_RULES = [
@@ -77,4 +93,5 @@ export const SELL_RULES = [
   'thesis_violation',
   'better_opportunity',
   'concentration_creep',
+  'adjacent_possible_invalidation',
 ];
