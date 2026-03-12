@@ -2,13 +2,17 @@ export async function watchlistRoutes(request, env, ctx, { path, jsonResponse, e
   if (request.method === 'GET') {
     const items = await env.DB.prepare(
       `SELECT w.*, s.company_name, s.sector, md.price, v.buy_below_price, v.discount_to_iv_pct,
-              aa.attractor_stability_score, aa.network_regime
+              v.adjusted_intrinsic_value, v.margin_of_safety_required,
+              aa.attractor_stability_score, aa.network_regime,
+              ins.signal as insider_signal, ins.signal_details as insider_details,
+              ins.trailing_90d_buys, ins.trailing_90d_buy_value, ins.unique_buyers_90d
        FROM watchlist w
        JOIN stocks s ON w.ticker = s.ticker
        LEFT JOIN market_data md ON w.ticker = md.ticker
        LEFT JOIN valuations v ON w.ticker = v.ticker
        LEFT JOIN attractor_analysis aa ON w.ticker = aa.ticker
          AND aa.analysis_date = (SELECT MAX(analysis_date) FROM attractor_analysis WHERE ticker = w.ticker)
+       LEFT JOIN insider_signals ins ON w.ticker = ins.ticker
        ORDER BY v.discount_to_iv_pct DESC`
     ).all();
     return jsonResponse(items.results || []);

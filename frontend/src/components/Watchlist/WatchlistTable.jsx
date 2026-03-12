@@ -111,6 +111,7 @@ export default function WatchlistTable() {
                 <th className="px-3 py-2">Target</th>
                 <th className="px-3 py-2">Discount</th>
                 <th className="px-3 py-2">Signal</th>
+                <th className="px-3 py-2">Insider</th>
                 <th className="px-3 py-2">Added</th>
                 <th className="px-3 py-2">Notes</th>
                 <th className="px-3 py-2"></th>
@@ -158,6 +159,9 @@ export default function WatchlistTable() {
                           : <span className="text-text-secondary text-xs">WAIT</span>
                       }
                     </td>
+                    <td className="px-3 py-2">
+                      <InsiderBadge signal={item.insider_signal} details={item.insider_details} />
+                    </td>
                     <td className="px-3 py-2 text-text-secondary">{item.added_date}</td>
                     <td className="px-3 py-2 text-text-secondary max-w-48 truncate" title={item.notes}>
                       {item.notes || '—'}
@@ -179,5 +183,23 @@ export default function WatchlistTable() {
         </div>
       )}
     </div>
+  )
+}
+
+function InsiderBadge({ signal, details }) {
+  if (!signal) return <span className="text-text-secondary text-xs">—</span>
+  const styles = {
+    strong_buy: 'text-pass bg-pass/15',
+    caution: 'text-fail bg-fail/15',
+    neutral: 'text-text-secondary bg-surface-tertiary',
+  }
+  const labels = { strong_buy: 'BUY', caution: 'WARN', neutral: 'NEU' }
+  return (
+    <span
+      className={`text-xs font-bold px-2 py-0.5 rounded cursor-help ${styles[signal] || styles.neutral}`}
+      title={details || ''}
+    >
+      {labels[signal] || signal}
+    </span>
   )
 }

@@ -5,6 +5,7 @@ import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker
 import { runLayer1Screen } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
 import { upsertValuation } from '../db/queries.js';
+import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment } from '../services/finnhub.js';
 
 const AV_TICKERS_PER_DAY = 6;
 
@@ -167,6 +168,71 @@ export async function dailyRefresh(env, tickerLimit) {
       }
     } catch (err) {
       console.error(`Valuation error for ${row.ticker}:`, err.message);
+    }
+  }
+
+  // Step 6: Fetch insider transactions for watchlist stocks (via Finnhub)
+  stats.insiderUpdated = 0;
+  if (env.FINNHUB_API_KEY) {
+    const watchlistTickers = await env.DB.prepare(
+      'SELECT ticker FROM watchlist'
+    ).all();
+
+    const today = new Date().toISOString().split('T')[0];
+    const ninetyDaysAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+    for (const row of (watchlistTickers.results || [])) {
+      try {
+        // Fetch transactions
+        const txns = await getInsiderTransactions(row.ticker, ninetyDaysAgo, today, env.FINNHUB_API_KEY);
+        for (const tx of txns) {
+          await env.DB.prepare(
+            `INSERT OR IGNORE INTO insider_transactions
+             (ticker, filing_date, insider_name, insider_title, transaction_type, shares, price_per_share, total_value, is_10b5_1, source_url)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+          ).bind(
+            tx.ticker, tx.filing_date, tx.insider_name, tx.insider_title,
+            tx.transaction_type, tx.shares, tx.price_per_share, tx.total_value,
+            tx.is_10b5_1, tx.source_url
+          ).run();
+        }
+
+        // Fetch sentiment and compute signal
+        const sentiment = await getInsiderSentiment(row.ticker, ninetyDaysAgo, today, env.FINNHUB_API_KEY);
+        const signal = computeInsiderSignalFromSentiment(sentiment);
+
+        // Count buys/sells from stored transactions
+        const buys = await env.DB.prepare(
+          `SELECT COUNT(*) as cnt, SUM(total_value) as val, COUNT(DISTINCT insider_name) as unique_buyers
+           FROM insider_transactions
+           WHERE ticker = ? AND transaction_type = 'buy' AND filing_date >= ?`
+        ).bind(row.ticker, ninetyDaysAgo).first();
+
+        const sells = await env.DB.prepare(
+          `SELECT COUNT(*) as cnt, SUM(total_value) as val
+           FROM insider_transactions
+           WHERE ticker = ? AND transaction_type = 'sell' AND filing_date >= ?`
+        ).bind(row.ticker, ninetyDaysAgo).first();
+
+        await env.DB.prepare(
+          `INSERT OR REPLACE INTO insider_signals
+           (ticker, signal_date, trailing_90d_buys, trailing_90d_buy_value, trailing_90d_sells, trailing_90d_sell_value, unique_buyers_90d, signal, signal_details)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        ).bind(
+          row.ticker, today,
+          buys?.cnt || 0, buys?.val || 0,
+          sells?.cnt || 0, sells?.val || 0,
+          buys?.unique_buyers || 0,
+          signal.signal, signal.details
+        ).run();
+
+        stats.insiderUpdated++;
+        console.log(`Insider data updated for ${row.ticker}: ${signal.signal}`);
+      } catch (err) {
+        console.error(`Insider fetch error for ${row.ticker}:`, err.message);
+        stats.errors++;
+        if (err.message.includes('rate limit')) break;
+      }
     }
   }
 
