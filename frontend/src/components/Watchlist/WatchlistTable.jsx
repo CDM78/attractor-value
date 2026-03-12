@@ -42,14 +42,37 @@ export default function WatchlistTable() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
         <h2 className="text-xl font-bold">Watchlist</h2>
-        <button
-          onClick={() => setShowAdd(!showAdd)}
-          className="text-sm px-3 py-1.5 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors"
-        >
-          {showAdd ? 'Cancel' : '+ Add Ticker'}
-        </button>
+        <div className="flex items-center gap-2">
+          {items.length > 0 && (
+            <button
+              onClick={() => {
+                const headers = ['Ticker','Company','Sector','Price','Buy Below','Target','Discount %','Signal','Added','Notes']
+                const rows = items.map(i => [
+                  i.ticker, i.company_name, i.sector, i.price?.toFixed(2),
+                  i.buy_below_price?.toFixed(2) || '', i.target_buy_price?.toFixed(2) || '',
+                  i.discount_to_iv_pct?.toFixed(1) || '',
+                  i.insider_signal || '', i.added_date, `"${(i.notes || '').replace(/"/g, '""')}"`
+                ])
+                const csv = [headers, ...rows].map(r => r.join(',')).join('\n')
+                const blob = new Blob([csv], { type: 'text/csv' })
+                const url = URL.createObjectURL(blob)
+                const a = document.createElement('a'); a.href = url; a.download = 'watchlist.csv'; a.click()
+                URL.revokeObjectURL(url)
+              }}
+              className="text-xs px-3 py-1.5 rounded bg-surface-tertiary text-text-secondary hover:text-accent transition-colors"
+            >
+              Export CSV
+            </button>
+          )}
+          <button
+            onClick={() => setShowAdd(!showAdd)}
+            className="text-sm px-3 py-1.5 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors"
+          >
+            {showAdd ? 'Cancel' : '+ Add Ticker'}
+          </button>
+        </div>
       </div>
 
       {showAdd && (
