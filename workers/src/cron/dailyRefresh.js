@@ -5,7 +5,9 @@ import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker
 import { runLayer1Screen } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
 import { upsertValuation } from '../db/queries.js';
-import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment } from '../services/finnhub.js';
+import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics } from '../services/finnhub.js';
+import { getDynamicPECeiling } from '../services/screeningEngine.js';
+import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
 const AV_TICKERS_PER_DAY = 6;
 
@@ -76,20 +78,73 @@ export async function dailyRefresh(env, tickerLimit) {
   // Save progress offset
   await saveRefreshOffset(env.DB, offset + chunk.length >= tickers.length ? 0 : offset + chunk.length);
 
-  // Step 3: Fetch fundamentals (only when we've cycled back to offset 0, i.e., once per full cycle)
-  if (offset === 0) {
-    const tickersNeedingFundamentals = [];
-    const allTickers = tickerLimit ? chunk : tickers;
-    for (const ticker of allTickers) {
-      const existing = await getFinancialsForTicker(env.DB, ticker, 1);
-      if (existing.length === 0) {
-        tickersNeedingFundamentals.push(ticker);
+  // Step 3a: Fill P/E and P/B ratios from Finnhub for stocks missing them
+  stats.metricsFilled = 0;
+  if (env.FINNHUB_API_KEY) {
+    const missingRatios = await env.DB.prepare(
+      `SELECT s.ticker FROM stocks s
+       LEFT JOIN market_data md ON s.ticker = md.ticker
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL)
+       LIMIT 40`
+    ).all();
+
+    for (const row of (missingRatios.results || [])) {
+      try {
+        const metrics = await getBasicMetrics(row.ticker, env.FINNHUB_API_KEY);
+        if (metrics.pe_ratio || metrics.pb_ratio) {
+          const existing = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
+          await upsertMarketData(env.DB, {
+            ticker: row.ticker,
+            price: existing?.price || null,
+            pe_ratio: metrics.pe_ratio || existing?.pe_ratio || null,
+            pb_ratio: metrics.pb_ratio || existing?.pb_ratio || null,
+            earnings_yield: metrics.earnings_yield || existing?.earnings_yield || null,
+            dividend_yield: metrics.dividend_yield || existing?.dividend_yield || null,
+            insider_ownership_pct: metrics.insider_ownership_pct || existing?.insider_ownership_pct || null,
+          });
+          stats.metricsFilled++;
+        }
+      } catch (err) {
+        if (err.message.includes('rate limit')) break;
+        console.error(`Finnhub metrics error for ${row.ticker}:`, err.message);
       }
     }
+    console.log(`Finnhub metrics filled: ${stats.metricsFilled}`);
+  }
 
-    const avBatch = tickersNeedingFundamentals.slice(0, AV_TICKERS_PER_DAY);
+  // Step 3b: Fetch fundamentals — prioritize promising stocks (low P/E + P/B) first
+  if (offset === 0) {
+    const peCeiling = getDynamicPECeiling(bondYield?.yield);
+
+    // Priority queue: stocks that pass P/E and P/B but lack fundamentals
+    const priorityQueue = await env.DB.prepare(
+      `SELECT md.ticker FROM market_data md
+       WHERE md.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND md.pe_ratio IS NOT NULL AND md.pe_ratio > 0 AND md.pe_ratio <= ?
+         AND md.pb_ratio IS NOT NULL AND md.pb_ratio <= ?
+         AND md.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
+       ORDER BY (md.pe_ratio * md.pb_ratio) ASC
+       LIMIT ?`
+    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max, AV_TICKERS_PER_DAY).all();
+
+    let avBatch = (priorityQueue.results || []).map(r => r.ticker);
+
+    // If priority queue is empty, fall back to any stock missing fundamentals
+    if (avBatch.length < AV_TICKERS_PER_DAY) {
+      const remaining = AV_TICKERS_PER_DAY - avBatch.length;
+      const fallback = await env.DB.prepare(
+        `SELECT s.ticker FROM stocks s
+         WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+           AND s.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
+           AND s.ticker NOT IN (${avBatch.map(() => '?').join(',') || "''"})
+         LIMIT ?`
+      ).bind(...avBatch, remaining).all();
+      avBatch = avBatch.concat((fallback.results || []).map(r => r.ticker));
+    }
+
     if (avBatch.length > 0) {
-      console.log(`Fetching fundamentals for ${avBatch.length} tickers: ${avBatch.join(', ')}`);
+      console.log(`Fetching fundamentals (priority): ${avBatch.join(', ')}`);
     }
 
     for (const ticker of avBatch) {
@@ -118,7 +173,6 @@ export async function dailyRefresh(env, tickerLimit) {
       } catch (err) {
         console.error(`Error fetching fundamentals for ${ticker}:`, err.message);
         stats.errors++;
-        // Stop on rate limit to save remaining quota
         if (err.message.includes('rate limit')) break;
       }
     }

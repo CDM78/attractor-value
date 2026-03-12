@@ -5,6 +5,7 @@ import { watchlistRoutes } from './routes/watchlist.js';
 import { portfolioRoutes } from './routes/portfolio.js';
 import { alertsRoutes } from './routes/alerts.js';
 import { refreshRoutes } from './routes/refresh.js';
+import { fillMetricsRoutes, fillFundamentalsRoutes } from './routes/fillMetrics.js';
 import { dailyRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
 
@@ -33,6 +34,8 @@ const routeMap = {
   '/api/portfolio': portfolioRoutes,
   '/api/alerts': alertsRoutes,
   '/api/refresh': refreshRoutes,
+  '/api/fill-metrics': fillMetricsRoutes,
+  '/api/fill-fundamentals': fillFundamentalsRoutes,
 };
 
 export default {

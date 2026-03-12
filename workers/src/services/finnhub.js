@@ -41,6 +41,32 @@ async function rateLimitedFetch(url) {
   return res.json();
 }
 
+// 0. Basic Financials / Metrics
+// GET /stock/metric?symbol={ticker}&metric=all
+// Returns current P/E, P/B, debt/equity, dividend yield, etc.
+export async function getBasicMetrics(ticker, apiKey) {
+  const data = await rateLimitedFetch(
+    `${FINNHUB_BASE}/stock/metric?symbol=${encodeURIComponent(ticker)}&metric=all&token=${apiKey}`
+  );
+
+  const m = data.metric || {};
+  return {
+    ticker,
+    pe_ratio: m.peNormalizedAnnual || m.peTTM || null,
+    pb_ratio: m.pbAnnual || m.pbQuarterly || null,
+    earnings_yield: m.peNormalizedAnnual ? (1 / m.peNormalizedAnnual) : null,
+    dividend_yield: m.dividendYieldIndicatedAnnual || null,
+    insider_ownership_pct: m.netPercentInsiderSharesOwned || null,
+    // Extra metrics useful for quick screening
+    debt_equity: m['totalDebt/totalEquityAnnual'] || null,
+    current_ratio: m.currentRatioAnnual || null,
+    roe: m.roeRfy || null,
+    roic: m.roicTTM || null,
+    revenue_growth_3y: m.revenueGrowth3Y || null,
+    eps_growth_5y: m.epsGrowth5Y || null,
+  };
+}
+
 // 1. Insider Transactions
 // GET /stock/insider-transactions?symbol={ticker}&from={date}&to={date}
 // Returns raw transaction list
