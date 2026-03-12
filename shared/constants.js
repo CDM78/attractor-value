@@ -1,6 +1,10 @@
 // Graham-Dodd Quantitative Filter Thresholds
 export const SCREEN_DEFAULTS = {
-  pe_max: 15,
+  // P/E: dynamic ceiling based on AAA bond yield (Update 2)
+  // Formula: P/E ≤ 1 / (AAA_yield + equity_risk_premium)
+  // At ~5% AAA yield this converges to Graham's original P/E ≤ 15
+  equity_risk_premium: 0.015,  // 1.5 percentage points above AAA yield
+  pe_max_fallback: 15,         // fallback if bond yield unavailable
   pb_max: 1.5,
   pe_x_pb_max: 22.5,
   debt_equity_max_industrial: 1.0,
@@ -84,6 +88,25 @@ export const ADJACENT_POSSIBLE = {
   // Time horizons
   standard_horizon_months: { min: 18, max: 24 },
   caution_horizon_months: { min: 12, max: 18 },
+};
+
+// Concentration Risk Modifiers (Update 2)
+export const CONCENTRATION_RISK = {
+  customer_25pct: 0.5,          // any single customer ≥ 25% revenue
+  customer_40pct: 1.0,          // any single customer ≥ 40% revenue (severe)
+  supplier_single_source: 0.5,  // critical single-source supplier
+  geographic_70pct: 0.3,        // ≥ 70% revenue from single foreign country
+  regulatory_50pct: 0.5,        // ≥ 50% revenue tied to single reg/license/contract
+  adjusted_score_floor: 1.0,    // minimum adjusted attractor score
+};
+
+// Insider Transaction Signal Thresholds (Update 2)
+export const INSIDER_SIGNALS = {
+  strong_buy_min_buyers: 3,           // 3+ distinct insiders buying
+  strong_buy_min_value: 100000,       // ≥ $100K aggregate purchases
+  strong_buy_window_days: 90,
+  caution_sell_buy_ratio: 5,          // net selling exceeds net buying by 5x
+  caution_requires_csuite: true,      // selling must be by CEO/CFO/COO
 };
 
 // Sell Discipline Rules

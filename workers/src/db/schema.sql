@@ -77,6 +77,8 @@ CREATE TABLE attractor_analysis (
     analysis_text TEXT,
     -- Red flags identified
     red_flags TEXT,  -- JSON array of strings
+    -- Capital allocation discipline (Update 2 — 6th factor)
+    capital_allocation_score INTEGER,
     -- Data sources used
     sources_used TEXT,  -- JSON array
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
@@ -174,6 +176,62 @@ CREATE TABLE adjacent_possible_analysis (
     max_position_pct REAL,  -- 0.05 or 0.03 based on score
     -- Claude's reasoning
     analysis_text TEXT,
+    FOREIGN KEY (ticker) REFERENCES stocks(ticker)
+);
+
+-- Concentration risk assessment (extracted by Claude API from 10-K filings)
+CREATE TABLE concentration_risk (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ticker TEXT NOT NULL,
+    analysis_date TEXT NOT NULL,
+    -- Customer concentration
+    largest_customer_pct REAL,       -- % of revenue, null if not disclosed
+    largest_customer_name TEXT,      -- if disclosed
+    customers_above_10pct INTEGER,   -- count of customers disclosed as >10%
+    -- Supplier concentration
+    single_source_supplier INTEGER NOT NULL DEFAULT 0,  -- boolean
+    supplier_details TEXT,           -- description
+    -- Geographic concentration
+    largest_geo_market_pct REAL,     -- % of revenue
+    largest_geo_market_name TEXT,
+    -- Regulatory concentration
+    regulatory_dependency_pct REAL,  -- % of revenue tied to single reg/contract
+    regulatory_details TEXT,
+    -- Computed modifier
+    concentration_penalty REAL NOT NULL DEFAULT 0.0,  -- total score reduction
+    -- Source
+    analysis_text TEXT,
+    FOREIGN KEY (ticker) REFERENCES stocks(ticker)
+);
+
+-- Insider transactions from SEC EDGAR Form 4 filings
+CREATE TABLE insider_transactions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ticker TEXT NOT NULL,
+    filing_date TEXT NOT NULL,
+    insider_name TEXT NOT NULL,
+    insider_title TEXT,              -- CEO, CFO, Director, VP, etc.
+    transaction_type TEXT NOT NULL CHECK(transaction_type IN
+        ('buy', 'sell', 'option_exercise', 'gift', 'other')),
+    shares REAL NOT NULL,
+    price_per_share REAL,
+    total_value REAL,
+    is_10b5_1 INTEGER NOT NULL DEFAULT 0,  -- boolean: pre-planned sale
+    source_url TEXT,                 -- link to Form 4 on EDGAR
+    FOREIGN KEY (ticker) REFERENCES stocks(ticker)
+);
+
+-- Computed insider signals (aggregated from insider_transactions)
+CREATE TABLE insider_signals (
+    ticker TEXT PRIMARY KEY,
+    signal_date TEXT NOT NULL,       -- date signal was computed
+    trailing_90d_buys INTEGER,       -- count of open-market purchases
+    trailing_90d_buy_value REAL,     -- aggregate dollar value
+    trailing_90d_sells INTEGER,      -- count of discretionary C-suite sells
+    trailing_90d_sell_value REAL,
+    unique_buyers_90d INTEGER,       -- count of distinct insiders buying
+    signal TEXT CHECK(signal IN ('strong_buy', 'neutral', 'caution')),
+    signal_details TEXT,             -- human-readable summary
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
 );
 

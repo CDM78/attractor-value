@@ -137,7 +137,9 @@ export async function dailyRefresh(env, tickerLimit) {
       const marketData = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(stock.ticker).first();
       if (!marketData || financials.length === 0) continue;
 
-      const screenResults = runLayer1Screen(stock, financials, marketData);
+      const screenResults = runLayer1Screen(stock, financials, marketData, {
+        aaa_bond_yield: bondYield?.yield,
+      });
       await saveScreenResult(env.DB, stock.ticker, screenDate, screenResults);
       stats.screened++;
     } catch (err) {

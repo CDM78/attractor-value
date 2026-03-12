@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useScreenStore } from '../../stores/screenStore'
 
 export default function ScreenerTable() {
-  const { results, loading, error, fetchResults } = useScreenStore()
+  const { results, meta, loading, error, fetchResults } = useScreenStore()
 
   useEffect(() => {
     fetchResults()
@@ -13,12 +13,27 @@ export default function ScreenerTable() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl font-bold">Stock Screener</h2>
         <span className="text-text-secondary text-sm">
           {results.length} stocks in universe
         </span>
       </div>
+
+      {/* Dynamic P/E ceiling info bar (Update 2) */}
+      {meta && (
+        <div className="bg-surface-secondary rounded px-4 py-2 mb-4 text-sm flex items-center gap-4">
+          <span className="text-text-secondary">
+            Current max P/E:{' '}
+            <span className="text-accent font-bold">{meta.dynamic_pe_ceiling}</span>
+          </span>
+          {meta.aaa_bond_yield && (
+            <span className="text-text-secondary">
+              (AAA yield: {meta.aaa_bond_yield.toFixed(2)}% + 1.5% equity premium)
+            </span>
+          )}
+        </div>
+      )}
 
       {results.length === 0 ? (
         <div className="text-text-secondary bg-surface-secondary rounded p-8 text-center">

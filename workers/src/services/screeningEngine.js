@@ -2,17 +2,47 @@
 
 import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
+// Compute dynamic P/E ceiling from AAA bond yield (Update 2)
+// Formula: P/E ≤ 1 / (AAA_yield_decimal + equity_risk_premium)
+// At ~5% AAA yield this converges to Graham's original P/E ≤ 15
+export function getDynamicPECeiling(aaaBondYieldPct) {
+  if (aaaBondYieldPct == null || aaaBondYieldPct <= 0) {
+    return SCREEN_DEFAULTS.pe_max_fallback;
+  }
+  const aaaDecimal = aaaBondYieldPct / 100;
+  const minEarningsYield = aaaDecimal + SCREEN_DEFAULTS.equity_risk_premium;
+  return 1 / minEarningsYield;
+}
+
 export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const thresholds = { ...SCREEN_DEFAULTS, ...options };
   const results = {};
 
-  // P/E filter (3-year average earnings)
-  results.passes_pe = marketData.pe_ratio != null && marketData.pe_ratio <= thresholds.pe_max ? 1 : 0;
+  // Dynamic P/E ceiling from AAA bond yield (Update 2)
+  const dynamicPEMax = options.aaa_bond_yield != null
+    ? getDynamicPECeiling(options.aaa_bond_yield)
+    : thresholds.pe_max_fallback;
 
-  // P/B filter
+  // P/E filter — dynamic threshold based on current interest rates
+  // Earnings yield (E/P) on trailing 3yr avg must exceed AAA yield + 1.5% equity premium
+  const pe_trailing_3yr = marketData.pe_ratio;
+  if (pe_trailing_3yr != null && pe_trailing_3yr > 0) {
+    const earningsYield3yr = 1 / pe_trailing_3yr;
+    const minEarningsYield = options.aaa_bond_yield != null
+      ? (options.aaa_bond_yield / 100) + thresholds.equity_risk_premium
+      : 1 / thresholds.pe_max_fallback;
+    results.passes_pe = earningsYield3yr >= minEarningsYield ? 1 : 0;
+  } else {
+    results.passes_pe = 0;
+  }
+
+  // Store the dynamic ceiling for UI display
+  results.dynamic_pe_ceiling = parseFloat(dynamicPEMax.toFixed(1));
+
+  // P/B filter (unchanged — not rate-sensitive)
   results.passes_pb = marketData.pb_ratio != null && marketData.pb_ratio <= thresholds.pb_max ? 1 : 0;
 
-  // Combined P/E × P/B
+  // Combined P/E × P/B (retained as backstop per Update 2)
   const pe_x_pb = (marketData.pe_ratio || 0) * (marketData.pb_ratio || 0);
   results.passes_pe_x_pb = pe_x_pb > 0 && pe_x_pb <= thresholds.pe_x_pb_max ? 1 : 0;
 
