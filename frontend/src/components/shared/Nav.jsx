@@ -4,6 +4,7 @@ const links = [
   { to: '/screener', label: 'Screener' },
   { to: '/watchlist', label: 'Watchlist' },
   { to: '/portfolio', label: 'Portfolio' },
+  { to: '/transactions', label: 'History' },
 ]
 
 export default function Nav() {
