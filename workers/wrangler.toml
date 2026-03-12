@@ -1,6 +1,12 @@
 name = "attractor-value-api"
 main = "src/index.js"
 compatibility_date = "2024-12-01"
+workers_dev = true
+
+# Route API requests from custom domain to this Worker
+routes = [
+  { pattern = "odieseyeball.com/api/*", zone_name = "odieseyeball.com" }
+]
 
 [[d1_databases]]
 binding = "DB"

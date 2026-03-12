@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { API_BASE } from '../config.js'
 
 export const usePortfolioStore = create((set) => ({
   holdings: [],
@@ -9,7 +10,7 @@ export const usePortfolioStore = create((set) => ({
   fetchHoldings: async () => {
     set({ loading: true, error: null })
     try {
-      const res = await fetch('/api/portfolio')
+      const res = await fetch(`${API_BASE}/api/portfolio`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const data = await res.json()
       set({ holdings: data, loading: false })
@@ -20,7 +21,7 @@ export const usePortfolioStore = create((set) => ({
 
   fetchAlerts: async () => {
     try {
-      const res = await fetch('/api/alerts')
+      const res = await fetch(`${API_BASE}/api/alerts`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const data = await res.json()
       set({ alerts: data })
@@ -30,7 +31,7 @@ export const usePortfolioStore = create((set) => ({
   },
 
   dismissAlert: async (id) => {
-    await fetch('/api/alerts', {
+    await fetch(`${API_BASE}/api/alerts`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id }),

@@ -1,6 +1,5 @@
 import { create } from 'zustand'
-
-const API_BASE = import.meta.env.DEV ? '' : ''
+import { API_BASE } from '../config.js'
 
 export const useScreenStore = create((set) => ({
   results: [],

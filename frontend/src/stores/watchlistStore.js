@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { API_BASE } from '../config.js'
 
 export const useWatchlistStore = create((set) => ({
   items: [],
@@ -8,7 +9,7 @@ export const useWatchlistStore = create((set) => ({
   fetchWatchlist: async () => {
     set({ loading: true, error: null })
     try {
-      const res = await fetch('/api/watchlist')
+      const res = await fetch(`${API_BASE}/api/watchlist`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const data = await res.json()
       set({ items: data, loading: false })
@@ -18,7 +19,7 @@ export const useWatchlistStore = create((set) => ({
   },
 
   addToWatchlist: async (ticker, notes, targetBuyPrice) => {
-    const res = await fetch('/api/watchlist', {
+    const res = await fetch(`${API_BASE}/api/watchlist`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ticker, notes, target_buy_price: targetBuyPrice }),
@@ -27,7 +28,7 @@ export const useWatchlistStore = create((set) => ({
   },
 
   removeFromWatchlist: async (ticker) => {
-    const res = await fetch(`/api/watchlist?ticker=${ticker}`, { method: 'DELETE' })
+    const res = await fetch(`${API_BASE}/api/watchlist?ticker=${ticker}`, { method: 'DELETE' })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
   },
 }))
