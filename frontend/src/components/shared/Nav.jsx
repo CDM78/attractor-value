@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import { API_BASE } from '../../config.js'
 
 const links = [
   { to: '/screener', label: 'Screener' },
@@ -8,15 +10,34 @@ const links = [
 ]
 
 export default function Nav() {
+  const [refreshing, setRefreshing] = useState(false)
+  const [refreshResult, setRefreshResult] = useState(null)
+
+  const handleRefresh = async () => {
+    setRefreshing(true)
+    setRefreshResult(null)
+    try {
+      const res = await fetch(`${API_BASE}/api/refresh?limit=10&wait=true`, { method: 'POST' })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const data = await res.json()
+      setRefreshResult(`${data.pricesUpdated} prices, ${data.screened} screened`)
+      setTimeout(() => setRefreshResult(null), 5000)
+    } catch (err) {
+      setRefreshResult(`Error: ${err.message}`)
+      setTimeout(() => setRefreshResult(null), 5000)
+    }
+    setRefreshing(false)
+  }
+
   return (
-    <nav className="flex items-center gap-1 bg-surface-secondary border-b border-border px-6 py-3">
-      <h1 className="text-accent font-bold text-lg mr-8 tracking-tight">AV Framework</h1>
+    <nav className="flex items-center gap-1 bg-surface-secondary border-b border-border px-4 md:px-6 py-3 overflow-x-auto">
+      <h1 className="text-accent font-bold text-lg mr-4 md:mr-8 tracking-tight shrink-0">AV Framework</h1>
       {links.map(({ to, label }) => (
         <NavLink
           key={to}
           to={to}
           className={({ isActive }) =>
-            `px-4 py-2 rounded text-sm transition-colors ${
+            `px-3 md:px-4 py-2 rounded text-sm transition-colors shrink-0 ${
               isActive
                 ? 'bg-accent/15 text-accent'
                 : 'text-text-secondary hover:text-text-primary hover:bg-surface-tertiary'
@@ -26,6 +47,19 @@ export default function Nav() {
           {label}
         </NavLink>
       ))}
+      <div className="ml-auto flex items-center gap-2 shrink-0">
+        {refreshResult && (
+          <span className="text-xs text-text-secondary hidden md:inline">{refreshResult}</span>
+        )}
+        <button
+          onClick={handleRefresh}
+          disabled={refreshing}
+          className="text-xs px-3 py-1.5 rounded bg-surface-tertiary text-text-secondary hover:text-accent hover:bg-accent/10 transition-colors disabled:opacity-50"
+          title="Refresh data now"
+        >
+          {refreshing ? 'Refreshing...' : 'Refresh'}
+        </button>
+      </div>
     </nav>
   )
 }
