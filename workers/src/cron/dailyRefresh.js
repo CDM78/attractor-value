@@ -3,6 +3,8 @@ import { fetchAllFundamentals } from '../services/alphaVantage.js';
 import { getOrFetchBondYield } from '../services/fred.js';
 import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker, saveScreenResult } from '../db/queries.js';
 import { runLayer1Screen } from '../services/screeningEngine.js';
+import { calculateGrahamValuation } from '../services/valuationEngine.js';
+import { upsertValuation } from '../db/queries.js';
 
 const AV_TICKERS_PER_DAY = 6;
 
@@ -144,6 +146,27 @@ export async function dailyRefresh(env, tickerLimit) {
       stats.screened++;
     } catch (err) {
       console.error(`Screening error for ${stock.ticker}:`, err.message);
+    }
+  }
+
+  // Step 5: Compute valuations for stocks that passed screening
+  const passedStocks = await env.DB.prepare(
+    `SELECT DISTINCT ticker FROM screen_results
+     WHERE passes_all_hard = 1 AND screen_date = ?`
+  ).bind(screenDate).all();
+
+  stats.valuations = 0;
+  for (const row of (passedStocks.results || [])) {
+    try {
+      const fins = await getFinancialsForTicker(env.DB, row.ticker);
+      const md = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
+      const val = calculateGrahamValuation(fins, md, bondYield?.yield);
+      if (val) {
+        await upsertValuation(env.DB, val);
+        stats.valuations++;
+      }
+    } catch (err) {
+      console.error(`Valuation error for ${row.ticker}:`, err.message);
     }
   }
 

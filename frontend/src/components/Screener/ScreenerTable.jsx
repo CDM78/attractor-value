@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
 import { useScreenStore } from '../../stores/screenStore'
+import { useWatchlistStore } from '../../stores/watchlistStore'
 
 export default function ScreenerTable() {
   const { results, meta, loading, error, fetchResults } = useScreenStore()
+  const { addToWatchlist } = useWatchlistStore()
 
   useEffect(() => {
     fetchResults()
@@ -10,6 +12,15 @@ export default function ScreenerTable() {
 
   if (loading) return <div className="text-text-secondary">Loading screener results...</div>
   if (error) return <div className="text-fail">Error: {error}</div>
+
+  const handleAddToWatchlist = async (ticker, buyBelow) => {
+    try {
+      await addToWatchlist(ticker, '', buyBelow)
+      alert(`${ticker} added to watchlist`)
+    } catch (err) {
+      alert(`Failed: ${err.message}`)
+    }
+  }
 
   return (
     <div>
@@ -53,10 +64,14 @@ export default function ScreenerTable() {
                 <th className="px-3 py-2">P/ExP/B</th>
                 <th className="px-3 py-2">D/E</th>
                 <th className="px-3 py-2">CR</th>
-                <th className="px-3 py-2">Earn Stab</th>
+                <th className="px-3 py-2">Earn</th>
                 <th className="px-3 py-2">Div</th>
-                <th className="px-3 py-2">EPS Gr</th>
+                <th className="px-3 py-2">EPS</th>
                 <th className="px-3 py-2">Pass</th>
+                <th className="px-3 py-2">Intr. Value</th>
+                <th className="px-3 py-2">Buy Below</th>
+                <th className="px-3 py-2">Discount</th>
+                <th className="px-3 py-2"></th>
               </tr>
             </thead>
             <tbody>
@@ -94,6 +109,39 @@ export default function ScreenerTable() {
                     <span className={row.passes_all_hard ? 'text-pass font-bold' : 'text-fail'}>
                       {row.passes_all_hard ? 'PASS' : 'FAIL'}
                     </span>
+                  </td>
+                  <td className="px-3 py-2">
+                    {row.adjusted_intrinsic_value != null
+                      ? <span className="text-text-primary">${row.adjusted_intrinsic_value.toFixed(2)}</span>
+                      : <span className="text-text-secondary">—</span>
+                    }
+                  </td>
+                  <td className="px-3 py-2">
+                    {row.buy_below_price != null
+                      ? <span className={row.price <= row.buy_below_price ? 'text-pass font-bold' : 'text-text-secondary'}>
+                          ${row.buy_below_price.toFixed(2)}
+                        </span>
+                      : <span className="text-text-secondary">—</span>
+                    }
+                  </td>
+                  <td className="px-3 py-2">
+                    {row.discount_to_iv_pct != null
+                      ? <span className={row.discount_to_iv_pct > 0 ? 'text-pass' : 'text-fail'}>
+                          {row.discount_to_iv_pct > 0 ? '+' : ''}{row.discount_to_iv_pct.toFixed(1)}%
+                        </span>
+                      : <span className="text-text-secondary">—</span>
+                    }
+                  </td>
+                  <td className="px-3 py-2">
+                    {row.passes_all_hard && row.buy_below_price != null ? (
+                      <button
+                        onClick={() => handleAddToWatchlist(row.ticker, row.buy_below_price)}
+                        className="text-xs px-2 py-1 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors"
+                        title="Add to watchlist"
+                      >
+                        +Watch
+                      </button>
+                    ) : null}
                   </td>
                 </tr>
               ))}

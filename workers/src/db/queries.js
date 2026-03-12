@@ -105,6 +105,18 @@ export async function batchUpsertStocks(db, stocks) {
   return Promise.all(batches);
 }
 
+export async function upsertValuation(db, val) {
+  return db.prepare(
+    `INSERT OR REPLACE INTO valuations (ticker, normalized_eps, estimated_growth_rate, aaa_bond_yield, graham_intrinsic_value, fat_tail_discount, adjusted_intrinsic_value, margin_of_safety_required, buy_below_price, discount_to_iv_pct, calculated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+  ).bind(
+    val.ticker, val.normalized_eps, val.estimated_growth_rate, val.aaa_bond_yield,
+    val.graham_intrinsic_value, val.fat_tail_discount, val.adjusted_intrinsic_value,
+    val.margin_of_safety_required, val.buy_below_price, val.discount_to_iv_pct,
+    val.calculated_at
+  ).run();
+}
+
 export async function batchUpsertMarketData(db, items) {
   const stmts = items.map(d =>
     db.prepare(
