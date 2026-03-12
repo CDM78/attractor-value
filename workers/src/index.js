@@ -49,6 +49,7 @@ export default {
       return jsonResponse({ status: 'ok', timestamp: new Date().toISOString() });
     }
 
+
     // Route matching
     for (const [prefix, handler] of Object.entries(routeMap)) {
       if (path.startsWith(prefix)) {

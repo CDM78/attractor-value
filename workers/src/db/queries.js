@@ -51,3 +51,71 @@ export async function saveScreenResult(db, ticker, screenDate, results) {
     results.passes_fcf, results.passes_insider_ownership, results.passes_dilution
   ).run();
 }
+
+// Cache-aware helpers
+
+// Check if market data is fresh (within TTL hours)
+export async function isMarketDataFresh(db, ticker, ttlHours = 24) {
+  const row = await db.prepare(
+    `SELECT fetched_at FROM market_data WHERE ticker = ? AND fetched_at > datetime('now', '-${ttlHours} hours')`
+  ).bind(ticker).first();
+  return !!row;
+}
+
+// Check if financials exist for a ticker (30-day TTL)
+export async function hasRecentFinancials(db, ticker) {
+  const row = await db.prepare(
+    `SELECT last_updated FROM stocks WHERE ticker = ? AND last_updated > datetime('now', '-30 days')`
+  ).bind(ticker).first();
+  return !!row;
+}
+
+// Get all tickers in the universe
+export async function getAllTickers(db) {
+  const result = await db.prepare('SELECT ticker FROM stocks ORDER BY ticker').all();
+  return (result.results || []).map(r => r.ticker).filter(t => !t.startsWith('__'));
+}
+
+// Get tickers needing market data refresh
+export async function getStaleMarketDataTickers(db, ttlHours = 24) {
+  const result = await db.prepare(
+    `SELECT s.ticker FROM stocks s
+     LEFT JOIN market_data md ON s.ticker = md.ticker
+     WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND (md.fetched_at IS NULL OR md.fetched_at < datetime('now', '-${ttlHours} hours'))
+     ORDER BY s.ticker`
+  ).all();
+  return (result.results || []).map(r => r.ticker);
+}
+
+// Batch insert using D1 batch API for performance
+export async function batchUpsertStocks(db, stocks) {
+  const stmts = stocks.map(s =>
+    db.prepare(
+      `INSERT OR REPLACE INTO stocks (ticker, company_name, sector, industry, market_cap, last_updated)
+       VALUES (?, ?, ?, ?, ?, ?)`
+    ).bind(s.ticker, s.company_name, s.sector, s.industry, s.market_cap, new Date().toISOString())
+  );
+
+  // D1 supports batching up to 100 statements
+  const batches = [];
+  for (let i = 0; i < stmts.length; i += 100) {
+    batches.push(db.batch(stmts.slice(i, i + 100)));
+  }
+  return Promise.all(batches);
+}
+
+export async function batchUpsertMarketData(db, items) {
+  const stmts = items.map(d =>
+    db.prepare(
+      `INSERT OR REPLACE INTO market_data (ticker, price, pe_ratio, pb_ratio, earnings_yield, dividend_yield, insider_ownership_pct, fetched_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+    ).bind(d.ticker, d.price, d.pe_ratio, d.pb_ratio, d.earnings_yield, d.dividend_yield, d.insider_ownership_pct, new Date().toISOString())
+  );
+
+  const batches = [];
+  for (let i = 0; i < stmts.length; i += 100) {
+    batches.push(db.batch(stmts.slice(i, i + 100)));
+  }
+  return Promise.all(batches);
+}
