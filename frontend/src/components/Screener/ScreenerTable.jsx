@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { useScreenStore } from '../../stores/screenStore'
 import { useWatchlistStore } from '../../stores/watchlistStore'
 
@@ -77,7 +78,9 @@ export default function ScreenerTable() {
             <tbody>
               {results.map((row) => (
                 <tr key={row.ticker} className="border-b border-border/50 hover:bg-surface-secondary">
-                  <td className="px-3 py-2 font-bold text-accent">{row.ticker}</td>
+                  <td className="px-3 py-2 font-bold">
+                    <Link to={`/analyze/${row.ticker}`} className="text-accent hover:underline">{row.ticker}</Link>
+                  </td>
                   <td className="px-3 py-2">{row.company_name}</td>
                   <td className="px-3 py-2 text-text-secondary">{row.sector}</td>
                   <td className="px-3 py-2">${row.price?.toFixed(2)}</td>
