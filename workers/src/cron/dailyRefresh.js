@@ -61,11 +61,11 @@ export async function dailyRefresh(env, tickerLimit) {
       await upsertMarketData(env.DB, {
         ticker: quote.ticker,
         price: quote.price,
-        pe_ratio: existingMd?.pe_ratio || null,
-        pb_ratio: existingMd?.pb_ratio || null,
-        earnings_yield: existingMd?.earnings_yield || null,
-        dividend_yield: existingMd?.dividend_yield || null,
-        insider_ownership_pct: existingMd?.insider_ownership_pct || null,
+        pe_ratio: existingMd?.pe_ratio ?? null,
+        pb_ratio: existingMd?.pb_ratio ?? null,
+        earnings_yield: existingMd?.earnings_yield ?? null,
+        dividend_yield: existingMd?.dividend_yield ?? null,
+        insider_ownership_pct: existingMd?.insider_ownership_pct ?? null,
       });
 
       stats.pricesUpdated++;
@@ -96,12 +96,12 @@ export async function dailyRefresh(env, tickerLimit) {
           const existing = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
           await upsertMarketData(env.DB, {
             ticker: row.ticker,
-            price: existing?.price || null,
-            pe_ratio: metrics.pe_ratio || existing?.pe_ratio || null,
-            pb_ratio: metrics.pb_ratio || existing?.pb_ratio || null,
-            earnings_yield: metrics.earnings_yield || existing?.earnings_yield || null,
-            dividend_yield: metrics.dividend_yield || existing?.dividend_yield || null,
-            insider_ownership_pct: metrics.insider_ownership_pct || existing?.insider_ownership_pct || null,
+            price: existing?.price ?? null,
+            pe_ratio: metrics.pe_ratio ?? existing?.pe_ratio ?? null,
+            pb_ratio: metrics.pb_ratio ?? existing?.pb_ratio ?? null,
+            earnings_yield: metrics.earnings_yield ?? existing?.earnings_yield ?? null,
+            dividend_yield: metrics.dividend_yield ?? existing?.dividend_yield ?? null,
+            insider_ownership_pct: metrics.insider_ownership_pct ?? existing?.insider_ownership_pct ?? null,
           });
           stats.metricsFilled++;
         }
@@ -210,7 +210,10 @@ export async function dailyRefresh(env, tickerLimit) {
     try {
       const fins = await getFinancialsForTicker(env.DB, row.ticker);
       const md = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
-      const val = calculateGrahamValuation(fins, md, bondYield?.yield);
+      const attractorData = await env.DB.prepare(
+        'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+      ).bind(row.ticker).first();
+      const val = calculateGrahamValuation(fins, md, bondYield?.yield, attractorData);
       if (val) {
         await upsertValuation(env.DB, val);
         stats.valuations++;
@@ -223,8 +226,9 @@ export async function dailyRefresh(env, tickerLimit) {
   // Step 6: Fetch insider transactions for watchlist stocks (via Finnhub)
   stats.insiderUpdated = 0;
   if (env.FINNHUB_API_KEY) {
+    // Limit to 20 watchlist tickers per run to stay within subrequest budget
     const watchlistTickers = await env.DB.prepare(
-      'SELECT ticker FROM watchlist'
+      'SELECT ticker FROM watchlist LIMIT 20'
     ).all();
 
     const today = new Date().toISOString().split('T')[0];

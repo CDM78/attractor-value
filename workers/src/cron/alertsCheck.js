@@ -29,8 +29,9 @@ export async function alertsCheck(env) {
 
   // Helper to create alert (avoids duplicates for same type+ticker in last 24h)
   async function createAlert(type, ticker, message) {
+    // Use IS instead of = for NULL-safe comparison (NULL = NULL is false in SQL)
     const existing = await env.DB.prepare(
-      `SELECT id FROM alerts WHERE alert_type = ? AND ticker = ? AND dismissed = 0
+      `SELECT id FROM alerts WHERE alert_type = ? AND ticker IS ? AND dismissed = 0
        AND created_at > datetime('now', '-24 hours')`
     ).bind(type, ticker).first();
     if (existing) return; // Don't duplicate

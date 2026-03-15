@@ -117,7 +117,7 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
     }
 
     // Update valuation with attractor-adjusted margin of safety
-    if (result.attractor_stability_score != null && valuation) {
+    if (result.attractor_stability_score != null && valuation && marketData) {
       const { MARGIN_OF_SAFETY } = await import('../../../shared/constants.js');
       let margin;
       if (result.attractor_stability_score >= 3.5) {

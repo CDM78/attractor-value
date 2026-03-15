@@ -85,12 +85,12 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
          VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
       ).bind(
         ticker,
-        existing?.price || null,
-        metrics.pe_ratio || existing?.pe_ratio || null,
-        metrics.pb_ratio || existing?.pb_ratio || null,
-        metrics.earnings_yield || existing?.earnings_yield || null,
-        metrics.dividend_yield || existing?.dividend_yield || null,
-        metrics.insider_ownership_pct || existing?.insider_ownership_pct || null,
+        existing?.price ?? null,
+        metrics.pe_ratio ?? existing?.pe_ratio ?? null,
+        metrics.pb_ratio ?? existing?.pb_ratio ?? null,
+        metrics.earnings_yield ?? existing?.earnings_yield ?? null,
+        metrics.dividend_yield ?? existing?.dividend_yield ?? null,
+        metrics.insider_ownership_pct ?? existing?.insider_ownership_pct ?? null,
         new Date().toISOString()
       ).run();
 
@@ -145,18 +145,7 @@ export async function fillFundamentalsRoutes(request, env, ctx, { path, jsonResp
          AND md.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
        ORDER BY (md.pe_ratio * md.pb_ratio) ASC
        LIMIT 20`
-    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max).first() ? await env.DB.prepare(
-      `SELECT md.ticker, s.company_name, md.pe_ratio, md.pb_ratio,
-              (md.pe_ratio * md.pb_ratio) as pe_x_pb
-       FROM market_data md
-       JOIN stocks s ON md.ticker = s.ticker
-       WHERE md.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-         AND md.pe_ratio IS NOT NULL AND md.pe_ratio > 0 AND md.pe_ratio <= ?
-         AND md.pb_ratio IS NOT NULL AND md.pb_ratio <= ?
-         AND md.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
-       ORDER BY (md.pe_ratio * md.pb_ratio) ASC
-       LIMIT 20`
-    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max).all() : { results: [] };
+    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max).all();
 
     return jsonResponse({
       priority_queue: queue.results || [],

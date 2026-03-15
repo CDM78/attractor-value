@@ -80,9 +80,11 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     results.passes_current_ratio = 0;
   }
 
-  // Earnings Stability (positive in 8 of 10 years)
+  // Earnings Stability (positive in 8 of 10 years, scaled for shorter histories)
   const positiveEarnings = financials.filter(f => f.eps > 0).length;
-  results.passes_earnings_stability = positiveEarnings >= thresholds.earnings_stability_min_years ? 1 : 0;
+  const stabilityWindow = Math.min(financials.length, thresholds.earnings_stability_window);
+  const stabilityRequired = Math.min(thresholds.earnings_stability_min_years, stabilityWindow);
+  results.passes_earnings_stability = stabilityWindow >= 5 && positiveEarnings >= stabilityRequired ? 1 : 0;
 
   // Dividend Record (5 consecutive years)
   const recentYears = financials.slice(0, 5);

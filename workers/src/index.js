@@ -71,7 +71,7 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(dailyRefresh(env));
-    ctx.waitUntil(alertsCheck(env));
+    // Run sequentially: alerts should read consistent data after refresh completes
+    ctx.waitUntil(dailyRefresh(env).then(() => alertsCheck(env)));
   },
 };

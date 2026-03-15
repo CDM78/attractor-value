@@ -5,7 +5,7 @@
 
 import { VALUATION, FAT_TAIL, MARGIN_OF_SAFETY } from '../../../shared/constants.js';
 
-export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct) {
+export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct, attractorData) {
   if (!financials || financials.length < 3 || !marketData?.price) {
     return null;
   }
@@ -17,12 +17,13 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
   if (normalizedEps <= 0) return null;
 
   // Estimated growth rate: compounded annual from first 3 avg to last 3 avg
+  // Time span = gap between midpoints of the two 3-year windows
   let growthRate = 0;
   if (financials.length >= 6) {
     const first3 = financials.slice(-3);
     const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
-    if (avgFirst > 0) {
-      const years = financials.length - 1;
+    if (avgFirst > 0 && normalizedEps > 0) {
+      const years = financials.length - 3; // midpoint-to-midpoint span
       growthRate = (Math.pow(normalizedEps / avgFirst, 1 / years) - 1) * 100;
     }
   }
@@ -53,8 +54,19 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
 
   const adjustedIV = grahamIV * (1 - fatTailDiscount);
 
-  // Default margin of safety (will be refined in Phase 3 with attractor analysis)
-  const marginOfSafety = MARGIN_OF_SAFETY.stable_classical;
+  // Margin of safety: varies by attractor stability and network regime
+  let marginOfSafety;
+  if (attractorData?.attractor_stability_score != null) {
+    if (attractorData.attractor_stability_score >= 3.5) {
+      marginOfSafety = attractorData.network_regime === 'hard_network'
+        ? MARGIN_OF_SAFETY.stable_hard_network_non_leader
+        : MARGIN_OF_SAFETY.stable_classical;
+    } else {
+      marginOfSafety = MARGIN_OF_SAFETY.transitional_any;
+    }
+  } else {
+    marginOfSafety = MARGIN_OF_SAFETY.stable_classical; // default when no analysis
+  }
   const buyBelowPrice = adjustedIV * (1 - marginOfSafety);
 
   // Discount to IV: positive = undervalued, negative = overvalued
