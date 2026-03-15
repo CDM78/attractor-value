@@ -26,15 +26,24 @@ export default function ScreenerTable() {
   }
 
   const handleExportCSV = () => {
-    const headers = ['Ticker','Company','Sector','Price','P/E','P/B','Pass','Intrinsic Value','Buy Below','Discount %']
-    const rows = filtered.map(r => [
-      r.ticker, r.company_name, r.sector, r.price?.toFixed(2),
-      r.pe_ratio?.toFixed(1), r.pb_ratio?.toFixed(1),
-      r.passes_all_hard ? 'PASS' : 'FAIL',
-      r.adjusted_intrinsic_value?.toFixed(2) || '',
-      r.buy_below_price?.toFixed(2) || '',
-      r.discount_to_iv_pct?.toFixed(1) || '',
-    ])
+    const headers = ['Ticker','Company','Sector','Price','P/E','P/B','Pass','Signal','Intrinsic Value','Buy Below','Discount %']
+    const rows = filtered.map(r => {
+      let signal = ''
+      if (r.passes_all_hard && r.buy_below_price != null) {
+        if (r.price <= r.buy_below_price) signal = 'BUY'
+        else if (r.discount_to_iv_pct != null && r.discount_to_iv_pct > 0) signal = 'WAIT'
+        else signal = 'OVER'
+      }
+      return [
+        r.ticker, r.company_name, r.sector, r.price?.toFixed(2),
+        r.pe_ratio?.toFixed(1), r.pb_ratio?.toFixed(1),
+        r.passes_all_hard ? 'PASS' : 'FAIL',
+        signal,
+        r.adjusted_intrinsic_value?.toFixed(2) || '',
+        r.buy_below_price?.toFixed(2) || '',
+        r.discount_to_iv_pct?.toFixed(1) || '',
+      ]
+    })
     const csv = [headers, ...rows].map(r => r.join(',')).join('\n')
     downloadCSV(csv, 'screener.csv')
   }
@@ -113,6 +122,7 @@ export default function ScreenerTable() {
                   <th className="px-3 py-2">Div</th>
                   <th className="px-3 py-2">EPS</th>
                   <th className="px-3 py-2">Pass</th>
+                  <th className="px-3 py-2">Signal</th>
                   <th className="px-3 py-2">IV</th>
                   <th className="px-3 py-2">Buy Below</th>
                   <th className="px-3 py-2">Disc.</th>
@@ -144,6 +154,9 @@ export default function ScreenerTable() {
                           {row.passes_all_hard ? 'PASS' : 'FAIL'}
                         </span>
                       )}
+                    </td>
+                    <td className="px-3 py-2">
+                      <SignalBadge row={row} />
                     </td>
                     <td className="px-3 py-2">
                       {row.adjusted_intrinsic_value != null
@@ -233,14 +246,10 @@ function MobileCard({ row, onWatch, preliminary }) {
             </span>
           </div>
         )}
-        {row.discount_to_iv_pct != null && (
-          <div>
-            <span className="text-xs text-text-secondary block">Discount</span>
-            <span className={`text-sm ${row.discount_to_iv_pct > 0 ? 'text-pass' : 'text-fail'}`}>
-              {row.discount_to_iv_pct > 0 ? '+' : ''}{row.discount_to_iv_pct.toFixed(1)}%
-            </span>
-          </div>
-        )}
+        <div>
+          <span className="text-xs text-text-secondary block">Signal</span>
+          <SignalBadge row={row} />
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-1.5 mb-3">
@@ -263,6 +272,19 @@ function MobileCard({ row, onWatch, preliminary }) {
       )}
     </div>
   )
+}
+
+function SignalBadge({ row }) {
+  if (!row.passes_all_hard || row.buy_below_price == null) {
+    return <span className="text-text-secondary">—</span>
+  }
+  if (row.price <= row.buy_below_price) {
+    return <span className="text-pass font-bold text-xs px-2 py-0.5 rounded bg-pass/15">BUY</span>
+  }
+  if (row.discount_to_iv_pct != null && row.discount_to_iv_pct > 0) {
+    return <span className="text-warn font-bold text-xs px-2 py-0.5 rounded bg-warn/15">WAIT</span>
+  }
+  return <span className="text-fail text-xs px-2 py-0.5 rounded bg-fail/15">OVER</span>
 }
 
 function FilterCell({ pass, value, pending }) {
