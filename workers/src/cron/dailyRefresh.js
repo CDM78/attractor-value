@@ -29,18 +29,32 @@ export async function dailyRefresh(env, tickerLimit) {
     bondYield = { yield: 5.0, date: 'fallback' };
   }
 
-  // Step 2: Fetch prices — limited batch per invocation
+  // Step 2: Fetch prices
+  // Priority: always refresh watchlist + passing stocks first, then rotate through the rest
   let tickers = getSP500Tickers();
   if (tickerLimit) tickers = tickers.slice(0, tickerLimit);
 
-  // Process in smaller batches (max ~50 per invocation to stay within Worker CPU limits)
-  const CHUNK = tickerLimit || 50;
-  const offset = await getRefreshOffset(env.DB, tickers.length);
-  const chunk = tickers.slice(offset, offset + CHUNK);
+  // Get priority tickers (watchlist + passing stocks) — these update every run
+  const priorityRows = await env.DB.prepare(
+    `SELECT ticker FROM watchlist
+     UNION
+     SELECT DISTINCT ticker FROM screen_results WHERE passes_all_hard = 1`
+  ).all();
+  const priorityTickers = new Set((priorityRows.results || []).map(r => r.ticker));
 
-  console.log(`Fetching prices for chunk ${offset}-${offset + chunk.length} of ${tickers.length}`);
+  // Separate priority from the rest
+  const priorityList = tickers.filter(t => priorityTickers.has(t));
+  const remainingTickers = tickers.filter(t => !priorityTickers.has(t));
 
-  const quotes = await fetchBulkQuotes(chunk, 5, 1000);
+  // Rotate through remaining tickers in chunks of 150
+  const CHUNK = tickerLimit || 150;
+  const offset = await getRefreshOffset(env.DB, remainingTickers.length);
+  const chunk = remainingTickers.slice(offset, offset + CHUNK);
+
+  const allToFetch = [...priorityList, ...chunk];
+  console.log(`Fetching prices: ${priorityList.length} priority + ${chunk.length} rotating (offset ${offset}) = ${allToFetch.length} total`);
+
+  const quotes = await fetchBulkQuotes(allToFetch, 5, 1000);
 
   for (const quote of quotes) {
     try {
@@ -75,8 +89,8 @@ export async function dailyRefresh(env, tickerLimit) {
     }
   }
 
-  // Save progress offset
-  await saveRefreshOffset(env.DB, offset + chunk.length >= tickers.length ? 0 : offset + chunk.length);
+  // Save progress offset (only tracks the rotating non-priority tickers)
+  await saveRefreshOffset(env.DB, offset + chunk.length >= remainingTickers.length ? 0 : offset + chunk.length);
 
   // Step 3a: Fill P/E and P/B ratios from Finnhub for stocks missing them
   stats.metricsFilled = 0;
