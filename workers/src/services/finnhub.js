@@ -205,6 +205,109 @@ export async function getCompanyProfile(ticker, apiKey) {
   };
 }
 
+// 6. Financials As Reported (SEC filings)
+// GET /stock/financials-reported?symbol={ticker}&freq=annual
+// Returns 10-K annual data with XBRL tags — no daily cap
+export async function getFinancialsReported(ticker, apiKey) {
+  const data = await rateLimitedFetch(
+    `${FINNHUB_BASE}/stock/financials-reported?symbol=${encodeURIComponent(ticker)}&freq=annual&token=${apiKey}`
+  );
+
+  if (!data.data || !Array.isArray(data.data)) return [];
+  return data.data;
+}
+
+// Parse Finnhub financials-reported into our financials table format
+// XBRL tag names vary by company, so we try multiple common variants
+export function parseFinancialsReported(ticker, reports) {
+  const findValue = (report, ...tags) => {
+    if (!report.report) return null;
+    // Search all sections: ic (income), bs (balance sheet), cf (cash flow)
+    for (const section of ['ic', 'bs', 'cf']) {
+      const items = report.report[section] || [];
+      for (const tag of tags) {
+        const tagLower = tag.toLowerCase();
+        const match = items.find(i => {
+          // Match with or without namespace prefix (us-gaap_, ifrs_, company-specific)
+          const concept = (i.concept || '').toLowerCase();
+          const bare = concept.includes('_') ? concept.split('_').slice(1).join('_') : concept;
+          return bare === tagLower || concept === tagLower;
+        });
+        if (match?.value != null) return match.value;
+      }
+    }
+    return null;
+  };
+
+  return reports.map(report => {
+    const year = parseInt(report.year);
+    if (!year) return null;
+
+    const revenue = findValue(report,
+      'Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax',
+      'SalesRevenueNet', 'SalesRevenueGoodsNet', 'RevenuesNetOfInterestExpense',
+      'TotalRevenuesAndOtherIncome', 'InterestAndDividendIncomeOperating');
+    const netIncome = findValue(report,
+      'NetIncomeLoss', 'ProfitLoss', 'NetIncomeLossAvailableToCommonStockholdersBasic');
+    const eps = findValue(report,
+      'EarningsPerShareBasic', 'EarningsPerShareDiluted',
+      'BasicEarningsLossPerShare');
+    const totalDebt = findValue(report,
+      'LongTermDebt', 'LongTermDebtNoncurrent', 'LongTermDebtAndCapitalLeaseObligations');
+    const shortTermDebt = findValue(report,
+      'ShortTermBorrowings', 'CommercialPaper', 'LongTermDebtCurrent');
+    const equity = findValue(report,
+      'StockholdersEquity', 'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest',
+      'TotalStockholdersEquity');
+    const currentAssets = findValue(report,
+      'AssetsCurrent', 'TotalCurrentAssets');
+    const currentLiabilities = findValue(report,
+      'LiabilitiesCurrent', 'TotalCurrentLiabilities');
+    const shares = findValue(report,
+      'CommonStockSharesOutstanding',
+      'WeightedAverageNumberOfSharesOutstandingBasic',
+      'WeightedAverageNumberOfShareOutstandingBasicAndDiluted',
+      'WeightedAverageNumberOfDilutedSharesOutstanding');
+    const opCashflow = findValue(report,
+      'NetCashProvidedByUsedInOperatingActivities',
+      'NetCashProvidedByOperatingActivities',
+      'CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect');
+    const capex = findValue(report,
+      'PaymentsToAcquirePropertyPlantAndEquipment',
+      'CapitalExpendituresIncurredButNotYetPaid',
+      'PurchaseOfPropertyPlantAndEquipment',
+      'PaymentsToAcquireProductiveAssets');
+    const dividends = findValue(report,
+      'PaymentsOfDividends', 'PaymentsOfDividendsCommonStock',
+      'Dividends', 'DividendsPaid',
+      'PaymentsOfOrdinaryDividends');
+
+    const totalDebtVal = (totalDebt || 0) + (shortTermDebt || 0);
+    const fcf = opCashflow != null ? opCashflow - Math.abs(capex || 0) : null;
+    const bvps = equity && shares ? equity / shares : null;
+    const epsCalc = eps || (netIncome && shares ? netIncome / shares : null);
+    const investedCapital = (equity || 0) + totalDebtVal;
+    const roic = netIncome && investedCapital > 0 ? (netIncome / investedCapital) * 100 : null;
+
+    return {
+      ticker,
+      fiscal_year: year,
+      eps: epsCalc,
+      book_value_per_share: bvps,
+      total_debt: totalDebtVal || null,
+      shareholder_equity: equity,
+      current_assets: currentAssets,
+      current_liabilities: currentLiabilities,
+      free_cash_flow: fcf,
+      dividend_paid: dividends && dividends > 0 ? 1 : 0,
+      shares_outstanding: shares,
+      revenue,
+      net_income: netIncome,
+      roic,
+    };
+  }).filter(Boolean).sort((a, b) => b.fiscal_year - a.fiscal_year);
+}
+
 // Helper: compute insider signal from sentiment data
 // Positive MSPR corroborates strong_buy, negative corroborates caution
 export function computeInsiderSignalFromSentiment(sentimentData) {

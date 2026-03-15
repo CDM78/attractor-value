@@ -6,8 +6,8 @@ const BASE_URL = 'https://www.alphavantage.co/query';
 
 function checkForErrors(data) {
   if (data['Error Message']) throw new Error(`AV Error: ${data['Error Message']}`);
-  if (data['Note']) throw new Error('AV rate limit: daily quota exceeded');
-  if (data['Information']) throw new Error('AV rate limit: daily quota exceeded');
+  if (data['Note']) throw new Error(`AV rate limit: ${data['Note']}`);
+  if (data['Information']) throw new Error(`AV info: ${data['Information']}`);
 }
 
 // Fetch income statement (annual)

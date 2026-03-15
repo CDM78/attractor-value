@@ -5,11 +5,11 @@ import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker
 import { runLayer1Screen } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
 import { upsertValuation } from '../db/queries.js';
-import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics } from '../services/finnhub.js';
+import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics, getFinancialsReported, parseFinancialsReported } from '../services/finnhub.js';
 import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
-const AV_TICKERS_PER_DAY = 6;
+const FINNHUB_TICKERS_PER_RUN = 10;
 
 // Chunked refresh: processes a slice of tickers per invocation
 // offset/limit allow processing the full universe across multiple calls
@@ -113,8 +113,9 @@ export async function dailyRefresh(env, tickerLimit) {
     console.log(`Finnhub metrics filled: ${stats.metricsFilled}`);
   }
 
-  // Step 3b: Fetch fundamentals — prioritize promising stocks (low P/E + P/B) first
-  if (offset === 0) {
+  // Step 3b: Fetch fundamentals via Finnhub (no daily cap, 60 calls/min)
+  // Prioritize promising stocks (low P/E + P/B) first
+  if (env.FINNHUB_API_KEY) {
     const peCeiling = getDynamicPECeiling(bondYield?.yield);
 
     // Priority queue: stocks that pass P/E and P/B but lack fundamentals
@@ -126,53 +127,47 @@ export async function dailyRefresh(env, tickerLimit) {
          AND md.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
        ORDER BY (md.pe_ratio * md.pb_ratio) ASC
        LIMIT ?`
-    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max, AV_TICKERS_PER_DAY).all();
+    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max, FINNHUB_TICKERS_PER_RUN).all();
 
-    let avBatch = (priorityQueue.results || []).map(r => r.ticker);
+    let batch = (priorityQueue.results || []).map(r => r.ticker);
 
     // If priority queue is empty, fall back to any stock missing fundamentals
-    if (avBatch.length < AV_TICKERS_PER_DAY) {
-      const remaining = AV_TICKERS_PER_DAY - avBatch.length;
+    if (batch.length < FINNHUB_TICKERS_PER_RUN) {
+      const remaining = FINNHUB_TICKERS_PER_RUN - batch.length;
       const fallback = await env.DB.prepare(
         `SELECT s.ticker FROM stocks s
          WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
            AND s.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
-           AND s.ticker NOT IN (${avBatch.map(() => '?').join(',') || "''"})
+           AND s.ticker NOT IN (${batch.map(() => '?').join(',') || "''"})
          LIMIT ?`
-      ).bind(...avBatch, remaining).all();
-      avBatch = avBatch.concat((fallback.results || []).map(r => r.ticker));
+      ).bind(...batch, remaining).all();
+      batch = batch.concat((fallback.results || []).map(r => r.ticker));
     }
 
-    if (avBatch.length > 0) {
-      console.log(`Fetching fundamentals (priority): ${avBatch.join(', ')}`);
+    if (batch.length > 0) {
+      console.log(`Fetching fundamentals via Finnhub (priority): ${batch.join(', ')}`);
     }
 
-    for (const ticker of avBatch) {
+    for (const ticker of batch) {
       try {
-        const data = await fetchAllFundamentals(ticker, env.ALPHA_VANTAGE_API_KEY);
-        await upsertStock(env.DB, data.stock);
+        const reports = await getFinancialsReported(ticker, env.FINNHUB_API_KEY);
+        const financials = parseFinancialsReported(ticker, reports);
 
-        const existingMd = await env.DB.prepare('SELECT price FROM market_data WHERE ticker = ?').bind(ticker).first();
-        await upsertMarketData(env.DB, {
-          ticker,
-          price: existingMd?.price || null,
-          pe_ratio: data.marketData.pe_ratio,
-          pb_ratio: data.marketData.pb_ratio,
-          earnings_yield: data.marketData.earnings_yield,
-          dividend_yield: data.marketData.dividend_yield,
-          insider_ownership_pct: data.marketData.insider_ownership_pct,
-        });
+        if (financials.length === 0) {
+          console.log(`No financials-reported data for ${ticker}, skipping`);
+          continue;
+        }
 
-        for (const fin of data.financials) {
+        for (const fin of financials) {
           await upsertFinancials(env.DB, fin);
         }
 
         stats.fundamentalsFetched++;
-        console.log(`Fundamentals stored for ${ticker}: ${data.financials.length} years`);
-        await new Promise(r => setTimeout(r, 1500));
+        console.log(`Finnhub fundamentals stored for ${ticker}: ${financials.length} years`);
       } catch (err) {
-        console.error(`Error fetching fundamentals for ${ticker}:`, err.message);
+        console.error(`Error fetching Finnhub fundamentals for ${ticker}:`, err.message);
         stats.errors++;
+        stats.lastFundamentalsError = `${ticker}: ${err.message}`;
         if (err.message.includes('rate limit')) break;
       }
     }

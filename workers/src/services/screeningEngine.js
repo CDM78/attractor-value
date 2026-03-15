@@ -46,11 +46,22 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const pe_x_pb = (marketData.pe_ratio || 0) * (marketData.pb_ratio || 0);
   results.passes_pe_x_pb = pe_x_pb > 0 && pe_x_pb <= thresholds.pe_x_pb_max ? 1 : 0;
 
+  // Sector-aware filter adjustments
+  // Financial Services and Insurance: leverage is their business model,
+  // current ratio is not meaningful. Use P/B as primary balance sheet check instead.
+  const sectorLower = (stock.sector || '').toLowerCase();
+  const isFinancial = sectorLower.includes('financial') || sectorLower.includes('insurance');
+  const isUtilityOrRE = sectorLower.includes('utilit') || sectorLower.includes('real estate');
+
   // Debt/Equity
   const latestFinancials = financials[0];
-  if (latestFinancials && latestFinancials.shareholder_equity > 0) {
+  if (isFinancial) {
+    // For financials, skip D/E (regulated capital requirements replace this filter)
+    // Rely on P/B ≤ 1.5 as the balance sheet quality check
+    results.passes_debt_equity = 1;
+  } else if (latestFinancials && latestFinancials.shareholder_equity > 0) {
     const de = latestFinancials.total_debt / latestFinancials.shareholder_equity;
-    const maxDE = stock.sector === 'Utilities' || stock.sector === 'Real Estate'
+    const maxDE = isUtilityOrRE || sectorLower.includes('energy')
       ? thresholds.debt_equity_max_utility
       : thresholds.debt_equity_max_industrial;
     results.passes_debt_equity = de <= maxDE ? 1 : 0;
@@ -59,7 +70,10 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   }
 
   // Current Ratio
-  if (latestFinancials && latestFinancials.current_liabilities > 0) {
+  if (isFinancial) {
+    // For financials, current ratio is not meaningful — skip this filter
+    results.passes_current_ratio = 1;
+  } else if (latestFinancials && latestFinancials.current_liabilities > 0) {
     const cr = latestFinancials.current_assets / latestFinancials.current_liabilities;
     results.passes_current_ratio = cr >= thresholds.current_ratio_min ? 1 : 0;
   } else {
