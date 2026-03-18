@@ -1,6 +1,6 @@
 // Layer 1 screening logic - Graham-Dodd quantitative filters
 
-import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
+import { SCREEN_DEFAULTS, NEAR_MISS } from '../../../shared/constants.js';
 
 // Compute dynamic P/E ceiling from AAA bond yield (Update 2)
 // Formula: P/E ≤ 1 / (AAA_yield_decimal + equity_risk_premium)
@@ -14,6 +14,36 @@ export function getDynamicPECeiling(aaaBondYieldPct) {
   return 1 / minEarningsYield;
 }
 
+// Compute sector P/B percentile thresholds from all stocks in universe
+// Returns: { 'Technology': 4.1, 'Financial Services': 1.2, ... }
+export function computeSectorPBThresholds(allStocksWithPB) {
+  const sectors = {};
+
+  // Group by sector
+  for (const s of allStocksWithPB) {
+    const sector = s.sector || 'Unknown';
+    if (!sectors[sector]) sectors[sector] = [];
+    if (s.pb_ratio != null && s.pb_ratio > 0) {
+      sectors[sector].push(s.pb_ratio);
+    }
+  }
+
+  // Compute 33rd percentile for each sector
+  const thresholds = {};
+  for (const [sector, pbValues] of Object.entries(sectors)) {
+    if (pbValues.length < 3) {
+      // Too few stocks in sector — use absolute backstop
+      thresholds[sector] = SCREEN_DEFAULTS.pb_absolute_backstop;
+      continue;
+    }
+    pbValues.sort((a, b) => a - b);
+    const idx = Math.floor(pbValues.length * (SCREEN_DEFAULTS.pb_sector_percentile / 100));
+    thresholds[sector] = pbValues[idx];
+  }
+
+  return thresholds;
+}
+
 export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const thresholds = { ...SCREEN_DEFAULTS, ...options };
   const results = {};
@@ -24,7 +54,6 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     : thresholds.pe_max_fallback;
 
   // P/E filter — dynamic threshold based on current interest rates
-  // Earnings yield (E/P) on trailing 3yr avg must exceed AAA yield + 1.5% equity premium
   const pe_trailing_3yr = marketData.pe_ratio;
   if (pe_trailing_3yr != null && pe_trailing_3yr > 0) {
     const earningsYield3yr = 1 / pe_trailing_3yr;
@@ -39,25 +68,32 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   // Store the dynamic ceiling for UI display
   results.dynamic_pe_ceiling = parseFloat(dynamicPEMax.toFixed(1));
 
-  // P/B filter (unchanged — not rate-sensitive)
-  results.passes_pb = marketData.pb_ratio != null && marketData.pb_ratio <= thresholds.pb_max ? 1 : 0;
+  // P/B filter — sector-relative (Update 4)
+  // Use bottom 33rd percentile of sector, with absolute backstop of 5.0
+  const sectorName = stock.sector || 'Unknown';
+  const sectorPBThresholds = options.sector_pb_thresholds || {};
+  const sectorPBMax = sectorPBThresholds[sectorName] || thresholds.pb_max; // fallback to 1.5
+  const pbBackstop = thresholds.pb_absolute_backstop || 5.0;
+
+  if (marketData.pb_ratio != null && marketData.pb_ratio > 0) {
+    results.passes_pb = (marketData.pb_ratio <= sectorPBMax && marketData.pb_ratio <= pbBackstop) ? 1 : 0;
+  } else {
+    results.passes_pb = 0;
+  }
+  results.sector_pb_threshold = sectorPBMax;
 
   // Combined P/E × P/B (retained as backstop per Update 2)
   const pe_x_pb = (marketData.pe_ratio || 0) * (marketData.pb_ratio || 0);
   results.passes_pe_x_pb = pe_x_pb > 0 && pe_x_pb <= thresholds.pe_x_pb_max ? 1 : 0;
 
   // Sector-aware filter adjustments
-  // Financial Services and Insurance: leverage is their business model,
-  // current ratio is not meaningful. Use P/B as primary balance sheet check instead.
-  const sectorLower = (stock.sector || '').toLowerCase();
+  const sectorLower = sectorName.toLowerCase();
   const isFinancial = sectorLower.includes('financial') || sectorLower.includes('insurance');
   const isUtilityOrRE = sectorLower.includes('utilit') || sectorLower.includes('real estate');
 
   // Debt/Equity
   const latestFinancials = financials[0];
   if (isFinancial) {
-    // For financials, skip D/E (regulated capital requirements replace this filter)
-    // Rely on P/B ≤ 1.5 as the balance sheet quality check
     results.passes_debt_equity = 1;
   } else if (latestFinancials && latestFinancials.shareholder_equity > 0) {
     const de = latestFinancials.total_debt / latestFinancials.shareholder_equity;
@@ -71,7 +107,6 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
 
   // Current Ratio
   if (isFinancial) {
-    // For financials, current ratio is not meaningful — skip this filter
     results.passes_current_ratio = 1;
   } else if (latestFinancials && latestFinancials.current_liabilities > 0) {
     const cr = latestFinancials.current_assets / latestFinancials.current_liabilities;
@@ -107,13 +142,43 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     results.passes_earnings_growth = 0;
   }
 
-  // All hard filters pass?
-  results.passes_all_hard = [
-    results.passes_pe, results.passes_pb, results.passes_pe_x_pb,
-    results.passes_debt_equity, results.passes_current_ratio,
-    results.passes_earnings_stability, results.passes_dividend_record,
-    results.passes_earnings_growth
-  ].every(v => v === 1) ? 1 : 0;
+  // Count passes and classify tier (Update 4)
+  const hardFilters = [
+    'passes_pe', 'passes_pb', 'passes_pe_x_pb',
+    'passes_debt_equity', 'passes_current_ratio',
+    'passes_earnings_stability', 'passes_dividend_record',
+    'passes_earnings_growth'
+  ];
+  const passCount = hardFilters.filter(f => results[f] === 1).length;
+  results.pass_count = passCount;
+  results.passes_all_hard = passCount === 8 ? 1 : 0;
+
+  // Tier classification
+  if (passCount === 8) {
+    results.tier = 'full_pass';
+  } else if (passCount === 7) {
+    results.tier = 'near_miss';
+    // Identify failed filter and compute miss severity
+    const failedFilter = hardFilters.find(f => results[f] !== 1);
+    results.failed_filter = failedFilter ? failedFilter.replace('passes_', '') : null;
+
+    // Compute actual vs threshold for the failed filter
+    const missInfo = getMissInfo(results.failed_filter, stock, financials, marketData, {
+      dynamicPEMax, sectorPBMax, pbBackstop, thresholds,
+    });
+    results.actual_value = missInfo.actual;
+    results.threshold_value = missInfo.threshold;
+
+    // Marginal = within 10% of threshold
+    if (missInfo.actual != null && missInfo.threshold != null && missInfo.threshold !== 0) {
+      const pctOff = Math.abs(missInfo.actual - missInfo.threshold) / Math.abs(missInfo.threshold) * 100;
+      results.miss_severity = pctOff <= NEAR_MISS.marginal_miss_pct ? 'marginal' : 'clear';
+    } else {
+      results.miss_severity = 'clear';
+    }
+  } else {
+    results.tier = 'fail';
+  }
 
   // Soft filters
   const fcfPositive = financials.filter(f => f.free_cash_flow > 0).length;
@@ -136,4 +201,69 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   }
 
   return results;
+}
+
+// Compute actual value and threshold for a failed filter
+function getMissInfo(filterName, stock, financials, marketData, ctx) {
+  const latestFinancials = financials[0];
+  const sectorLower = (stock.sector || '').toLowerCase();
+  const isUtilityOrRE = sectorLower.includes('utilit') || sectorLower.includes('real estate');
+
+  switch (filterName) {
+    case 'pe': {
+      return { actual: marketData.pe_ratio, threshold: ctx.dynamicPEMax };
+    }
+    case 'pb': {
+      const threshold = Math.min(ctx.sectorPBMax, ctx.pbBackstop);
+      return { actual: marketData.pb_ratio, threshold };
+    }
+    case 'pe_x_pb': {
+      const actual = (marketData.pe_ratio || 0) * (marketData.pb_ratio || 0);
+      return { actual, threshold: ctx.thresholds.pe_x_pb_max };
+    }
+    case 'debt_equity': {
+      if (latestFinancials && latestFinancials.shareholder_equity > 0) {
+        const de = latestFinancials.total_debt / latestFinancials.shareholder_equity;
+        const maxDE = isUtilityOrRE || sectorLower.includes('energy')
+          ? ctx.thresholds.debt_equity_max_utility
+          : ctx.thresholds.debt_equity_max_industrial;
+        return { actual: de, threshold: maxDE };
+      }
+      return { actual: null, threshold: null };
+    }
+    case 'current_ratio': {
+      if (latestFinancials && latestFinancials.current_liabilities > 0) {
+        const cr = latestFinancials.current_assets / latestFinancials.current_liabilities;
+        return { actual: cr, threshold: ctx.thresholds.current_ratio_min };
+      }
+      return { actual: null, threshold: null };
+    }
+    case 'earnings_stability': {
+      const positiveEarnings = financials.filter(f => f.eps > 0).length;
+      const window = Math.min(financials.length, ctx.thresholds.earnings_stability_window);
+      const required = Math.min(ctx.thresholds.earnings_stability_min_years, window);
+      return { actual: positiveEarnings, threshold: required };
+    }
+    case 'dividend_record': {
+      const recentYears = financials.slice(0, 5);
+      const consecutive = recentYears.filter(f => f.dividend_paid).length;
+      return { actual: consecutive, threshold: 5 };
+    }
+    case 'earnings_growth': {
+      if (financials.length >= 6) {
+        const last3 = financials.slice(0, 3);
+        const first3 = financials.slice(-3);
+        const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
+        const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
+        if (avgFirst > 0) {
+          const years = financials.length - 1;
+          const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
+          return { actual: growthRate, threshold: ctx.thresholds.eps_growth_min_pct };
+        }
+      }
+      return { actual: null, threshold: ctx.thresholds.eps_growth_min_pct };
+    }
+    default:
+      return { actual: null, threshold: null };
+  }
 }

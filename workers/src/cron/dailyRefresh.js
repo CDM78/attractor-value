@@ -2,7 +2,7 @@ import { fetchQuote, fetchBulkQuotes, getFullUniverse } from '../services/yahooF
 import { fetchAllFundamentals } from '../services/alphaVantage.js';
 import { getOrFetchBondYield } from '../services/fred.js';
 import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker, saveScreenResult } from '../db/queries.js';
-import { runLayer1Screen } from '../services/screeningEngine.js';
+import { runLayer1Screen, computeSectorPBThresholds } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
 import { upsertValuation } from '../db/queries.js';
 import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics, getFinancialsReported, parseFinancialsReported } from '../services/finnhub.js';
@@ -97,7 +97,18 @@ export async function dailyRefresh(env, tickerLimit) {
   // to stay within Cloudflare's 1000 subrequest limit per invocation.
   // The backfill endpoint (/api/backfill) can also be used for manual bulk fills.
 
-  // Step 4: Run Layer 1 screening on stocks that have fundamentals
+  // Step 4: Compute sector P/B thresholds for sector-relative screening (Update 4)
+  const allStocksForPB = await env.DB.prepare(
+    `SELECT s.ticker, s.sector, md.pb_ratio
+     FROM stocks s
+     JOIN market_data md ON s.ticker = md.ticker
+     WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND md.pb_ratio IS NOT NULL AND md.pb_ratio > 0`
+  ).all();
+  const sectorPBThresholds = computeSectorPBThresholds(allStocksForPB.results || []);
+  console.log('Sector P/B thresholds:', JSON.stringify(sectorPBThresholds));
+
+  // Step 5: Run Layer 1 screening on stocks that have fundamentals
   // Priority: watchlist + previously passing stocks first, then rotate through the rest
   const screenDate = new Date().toISOString().split('T')[0];
   const stocksWithData = await env.DB.prepare(
@@ -122,6 +133,7 @@ export async function dailyRefresh(env, tickerLimit) {
 
       const screenResults = runLayer1Screen(stock, financials, marketData, {
         aaa_bond_yield: bondYield?.yield,
+        sector_pb_thresholds: sectorPBThresholds,
       });
       await saveScreenResult(env.DB, stock.ticker, screenDate, screenResults);
       stats.screened++;

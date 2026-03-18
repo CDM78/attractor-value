@@ -101,6 +101,14 @@ CREATE TABLE screen_results (
     passes_fcf INTEGER,
     passes_insider_ownership INTEGER,
     passes_dilution INTEGER,
+    -- Tier classification (Update 4)
+    tier TEXT CHECK(tier IN ('full_pass', 'near_miss', 'fail')) DEFAULT 'fail',
+    pass_count INTEGER DEFAULT 0,
+    sector_pb_threshold REAL,
+    failed_filter TEXT,
+    miss_severity TEXT CHECK(miss_severity IN ('marginal', 'clear')),
+    actual_value REAL,
+    threshold_value REAL,
     PRIMARY KEY (ticker, screen_date),
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
 );

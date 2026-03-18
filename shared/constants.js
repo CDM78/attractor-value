@@ -5,7 +5,9 @@ export const SCREEN_DEFAULTS = {
   // At ~5% AAA yield this converges to Graham's original P/E ≤ 15
   equity_risk_premium: 0.015,  // 1.5 percentage points above AAA yield
   pe_max_fallback: 15,         // fallback if bond yield unavailable
-  pb_max: 1.5,
+  pb_max: 1.5,                    // legacy fallback; sector-relative P/B is primary (Update 4)
+  pb_sector_percentile: 33,       // bottom 33rd percentile of sector (Update 4)
+  pb_absolute_backstop: 5.0,      // absolute P/B ceiling regardless of sector (Update 4)
   pe_x_pb_max: 22.5,
   debt_equity_max_industrial: 1.0,
   debt_equity_max_utility: 2.0,
@@ -72,6 +74,13 @@ export const PORTFOLIO = {
   // AP-adjusted constraints for asymmetric positions
   ap_caution_max_position_pct: 3,
   ap_horizon_warning_days: 30,
+};
+
+// Near-Miss Tier Thresholds (Update 4)
+export const NEAR_MISS = {
+  marginal_miss_pct: 10,   // within 10% of threshold = marginal
+  full_pass_count: 8,
+  near_miss_count: 7,
 };
 
 // Network Regimes

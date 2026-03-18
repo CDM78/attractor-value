@@ -42,13 +42,16 @@ export async function getFinancialsForTicker(db, ticker, limit = 10) {
 
 export async function saveScreenResult(db, ticker, screenDate, results) {
   return db.prepare(
-    `INSERT OR REPLACE INTO screen_results (ticker, screen_date, passes_pe, passes_pb, passes_pe_x_pb, passes_debt_equity, passes_current_ratio, passes_earnings_stability, passes_dividend_record, passes_earnings_growth, passes_all_hard, passes_fcf, passes_insider_ownership, passes_dilution)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    `INSERT OR REPLACE INTO screen_results (ticker, screen_date, passes_pe, passes_pb, passes_pe_x_pb, passes_debt_equity, passes_current_ratio, passes_earnings_stability, passes_dividend_record, passes_earnings_growth, passes_all_hard, passes_fcf, passes_insider_ownership, passes_dilution, tier, pass_count, sector_pb_threshold, failed_filter, miss_severity, actual_value, threshold_value)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   ).bind(
     ticker, screenDate, results.passes_pe, results.passes_pb, results.passes_pe_x_pb,
     results.passes_debt_equity, results.passes_current_ratio, results.passes_earnings_stability,
     results.passes_dividend_record, results.passes_earnings_growth, results.passes_all_hard,
-    results.passes_fcf, results.passes_insider_ownership, results.passes_dilution
+    results.passes_fcf, results.passes_insider_ownership, results.passes_dilution,
+    results.tier || 'fail', results.pass_count || 0, results.sector_pb_threshold || null,
+    results.failed_filter || null, results.miss_severity || null,
+    results.actual_value || null, results.threshold_value || null
   ).run();
 }
 

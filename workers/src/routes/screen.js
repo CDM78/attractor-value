@@ -24,19 +24,48 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
        WHERE sr.screen_date = (
          SELECT MAX(sr2.screen_date) FROM screen_results sr2 WHERE sr2.ticker = sr.ticker
        )
-       ORDER BY sr.passes_all_hard DESC, v.discount_to_iv_pct DESC, sr.ticker`
+       ORDER BY
+         CASE sr.tier
+           WHEN 'full_pass' THEN 0
+           WHEN 'near_miss' THEN 1
+           ELSE 2
+         END,
+         v.discount_to_iv_pct DESC,
+         sr.ticker`
     ).all();
 
     const screenedStocks = results.results || [];
 
     // If we have screened stocks, return them
     if (screenedStocks.length > 0) {
+      // Compute tier counts
+      const fullPassCount = screenedStocks.filter(s => s.tier === 'full_pass').length;
+      const nearMissCount = screenedStocks.filter(s => s.tier === 'near_miss').length;
+      const failCount = screenedStocks.length - fullPassCount - nearMissCount;
+
+      // Get sector P/B thresholds from the most recent screen results
+      const sectorPBRows = await env.DB.prepare(
+        `SELECT DISTINCT s.sector, sr.sector_pb_threshold
+         FROM screen_results sr
+         JOIN stocks s ON sr.ticker = s.ticker
+         WHERE sr.sector_pb_threshold IS NOT NULL AND s.sector IS NOT NULL
+         ORDER BY s.sector`
+      ).all();
+      const sectorPBThresholds = {};
+      for (const row of (sectorPBRows.results || [])) {
+        sectorPBThresholds[row.sector] = row.sector_pb_threshold;
+      }
+
       return jsonResponse({
         stocks: screenedStocks,
         meta: {
           aaa_bond_yield: aaaBondYield,
           dynamic_pe_ceiling: dynamicPECeiling,
           bond_yield_date: bondRow?.fetched_at || null,
+          full_pass_count: fullPassCount,
+          near_miss_count: nearMissCount,
+          fail_count: failCount,
+          sector_pb_thresholds: sectorPBThresholds,
         },
       });
     }
