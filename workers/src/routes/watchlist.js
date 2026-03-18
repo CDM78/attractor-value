@@ -11,7 +11,7 @@ export async function watchlistRoutes(request, env, ctx, { path, jsonResponse, e
        LEFT JOIN market_data md ON w.ticker = md.ticker
        LEFT JOIN valuations v ON w.ticker = v.ticker
        LEFT JOIN attractor_analysis aa ON w.ticker = aa.ticker
-         AND aa.analysis_date = (SELECT MAX(analysis_date) FROM attractor_analysis WHERE ticker = w.ticker)
+         AND aa.id = (SELECT id FROM attractor_analysis WHERE ticker = w.ticker ORDER BY analysis_date DESC, id DESC LIMIT 1)
        LEFT JOIN insider_signals ins ON w.ticker = ins.ticker
        ORDER BY v.discount_to_iv_pct DESC`
     ).all();

@@ -10,7 +10,7 @@ export async function portfolioRoutes(request, env, ctx, { path, jsonResponse, e
        JOIN stocks s ON h.ticker = s.ticker
        LEFT JOIN market_data md ON h.ticker = md.ticker
        LEFT JOIN attractor_analysis aa ON h.ticker = aa.ticker
-         AND aa.analysis_date = (SELECT MAX(analysis_date) FROM attractor_analysis WHERE ticker = h.ticker)
+         AND aa.id = (SELECT id FROM attractor_analysis WHERE ticker = h.ticker ORDER BY analysis_date DESC, id DESC LIMIT 1)
        LEFT JOIN valuations v ON h.ticker = v.ticker
        ORDER BY current_value DESC`
     ).all();
