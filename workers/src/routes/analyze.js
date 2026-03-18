@@ -1,7 +1,8 @@
 import { analyzeAttractorStability, buildFinancialContext } from '../services/claude.js';
 import { fetch10K, extractMDA } from '../services/edgar.js';
-import { getCompanyNews, formatNewsForPrompt } from '../services/finnhub.js';
+import { getCompanyNews, formatNewsForPrompt, getInsiderTransactions, getCompanyOfficers } from '../services/finnhub.js';
 import { getFinancialsForTicker } from '../db/queries.js';
+import { computeInsiderSignal } from '../services/insiderSignals.js';
 
 export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
   const url = new URL(request.url);
@@ -22,7 +23,29 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       'SELECT * FROM concentration_risk WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
     ).bind(ticker).first();
 
-    return jsonResponse({ analysis, concentration_risk: cr || null });
+    // Fetch insider signal
+    const insiderSig = await env.DB.prepare(
+      'SELECT * FROM insider_signals WHERE ticker = ?'
+    ).bind(ticker).first();
+
+    // Fetch recent insider transactions
+    const insiderTxns = await env.DB.prepare(
+      `SELECT * FROM insider_transactions WHERE ticker = ? AND filing_date >= date('now', '-180 days')
+       ORDER BY filing_date DESC LIMIT 50`
+    ).bind(ticker).all();
+
+    // Fetch stock info for sector context
+    const stockInfo = await env.DB.prepare(
+      'SELECT sector, industry FROM stocks WHERE ticker = ?'
+    ).bind(ticker).first();
+
+    return jsonResponse({
+      analysis,
+      concentration_risk: cr || null,
+      insider_signal: insiderSig || null,
+      insider_transactions: insiderTxns?.results || [],
+      stock_info: stockInfo || null,
+    });
   }
 
   // POST: trigger new analysis via Claude API
@@ -45,7 +68,60 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       'SELECT * FROM valuations WHERE ticker = ?'
     ).bind(ticker).first();
 
-    const financialContext = buildFinancialContext(stock, financials, marketData, valuation);
+    // Fetch insider data (best effort — enrich analysis context)
+    let insiderSignal = null;
+    try {
+      if (env.FINNHUB_API_KEY) {
+        const today = new Date().toISOString().split('T')[0];
+        const sixMonthsAgo = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+        // Fetch transactions from Finnhub
+        const txns = await getInsiderTransactions(ticker, sixMonthsAgo, today, env.FINNHUB_API_KEY);
+        for (const tx of txns) {
+          await env.DB.prepare(
+            `INSERT OR IGNORE INTO insider_transactions
+             (ticker, filing_date, insider_name, insider_title, transaction_type, shares, price_per_share, total_value, is_10b5_1, source_url)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+          ).bind(
+            tx.ticker, tx.filing_date, tx.insider_name, tx.insider_title,
+            tx.transaction_type, tx.shares, tx.price_per_share, tx.total_value,
+            tx.is_10b5_1, tx.source_url
+          ).run();
+        }
+
+        // Get officers for C-suite cross-referencing
+        const officers = await getCompanyOfficers(ticker, env.FINNHUB_API_KEY);
+
+        // Compute signal from all stored transactions (may include previously fetched data)
+        const allRecent = await env.DB.prepare(
+          `SELECT * FROM insider_transactions
+           WHERE ticker = ? AND filing_date >= date('now', '-180 days')`
+        ).bind(ticker).all();
+
+        const signal = computeInsiderSignal(allRecent.results || [], officers);
+        insiderSignal = signal;
+
+        // Store computed signal
+        await env.DB.prepare(
+          `INSERT OR REPLACE INTO insider_signals
+           (ticker, signal_date, trailing_90d_buys, trailing_90d_buy_value,
+            trailing_90d_sells, trailing_90d_sell_value, unique_buyers_90d,
+            signal, signal_details)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        ).bind(
+          ticker, today,
+          signal.trailing_90d_buys, signal.trailing_90d_buy_value,
+          signal.trailing_90d_sells, signal.trailing_90d_sell_value,
+          signal.unique_buyers_90d, signal.signal, signal.signal_details
+        ).run();
+
+        console.log(`Insider data fetched for ${ticker}: ${txns.length} transactions, signal=${signal.signal}`);
+      }
+    } catch (err) {
+      console.error(`Insider fetch failed for ${ticker}:`, err.message);
+    }
+
+    const financialContext = buildFinancialContext(stock, financials, marketData, valuation, insiderSignal);
 
     // Fetch 10-K MD&A (best effort — don't fail if unavailable)
     let mdaText = null;

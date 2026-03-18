@@ -5,7 +5,8 @@ import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker
 import { runLayer1Screen, computeSectorPBThresholds } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
 import { upsertValuation } from '../db/queries.js';
-import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics, getFinancialsReported, parseFinancialsReported, getCompanyProfile } from '../services/finnhub.js';
+import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics, getFinancialsReported, parseFinancialsReported, getCompanyProfile, getCompanyOfficers } from '../services/finnhub.js';
+import { computeInsiderSignal } from '../services/insiderSignals.js';
 import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
@@ -167,21 +168,24 @@ export async function dailyRefresh(env, tickerLimit) {
     }
   }
 
-  // Step 6: Fetch insider transactions for watchlist stocks (via Finnhub)
+  // Step 6: Fetch insider transactions for watchlist + portfolio stocks (via Finnhub)
   stats.insiderUpdated = 0;
   if (env.FINNHUB_API_KEY) {
-    // Limit to 5 watchlist tickers per run to stay within subrequest budget
-    const watchlistTickers = await env.DB.prepare(
-      'SELECT ticker FROM watchlist LIMIT 5'
+    // Watchlist + portfolio tickers, limit 5 per run for subrequest budget
+    const insiderTickers = await env.DB.prepare(
+      `SELECT ticker FROM watchlist
+       UNION
+       SELECT DISTINCT ticker FROM holdings
+       LIMIT 5`
     ).all();
 
     const today = new Date().toISOString().split('T')[0];
-    const ninetyDaysAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+    const sixMonthsAgo = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
-    for (const row of (watchlistTickers.results || [])) {
+    for (const row of (insiderTickers.results || [])) {
       try {
         // Fetch transactions
-        const txns = await getInsiderTransactions(row.ticker, ninetyDaysAgo, today, env.FINNHUB_API_KEY);
+        const txns = await getInsiderTransactions(row.ticker, sixMonthsAgo, today, env.FINNHUB_API_KEY);
         for (const tx of txns) {
           await env.DB.prepare(
             `INSERT OR IGNORE INTO insider_transactions
@@ -194,22 +198,16 @@ export async function dailyRefresh(env, tickerLimit) {
           ).run();
         }
 
-        // Fetch sentiment and compute signal
-        const sentiment = await getInsiderSentiment(row.ticker, ninetyDaysAgo, today, env.FINNHUB_API_KEY);
-        const signal = computeInsiderSignalFromSentiment(sentiment);
+        // Get officers for C-suite cross-referencing
+        const officers = await getCompanyOfficers(row.ticker, env.FINNHUB_API_KEY);
 
-        // Count buys/sells from stored transactions
-        const buys = await env.DB.prepare(
-          `SELECT COUNT(*) as cnt, SUM(total_value) as val, COUNT(DISTINCT insider_name) as unique_buyers
-           FROM insider_transactions
-           WHERE ticker = ? AND transaction_type = 'buy' AND filing_date >= ?`
-        ).bind(row.ticker, ninetyDaysAgo).first();
+        // Compute signal from all stored transactions using enhanced logic
+        const allRecent = await env.DB.prepare(
+          `SELECT * FROM insider_transactions
+           WHERE ticker = ? AND filing_date >= date('now', '-180 days')`
+        ).bind(row.ticker).all();
 
-        const sells = await env.DB.prepare(
-          `SELECT COUNT(*) as cnt, SUM(total_value) as val
-           FROM insider_transactions
-           WHERE ticker = ? AND transaction_type = 'sell' AND filing_date >= ?`
-        ).bind(row.ticker, ninetyDaysAgo).first();
+        const signal = computeInsiderSignal(allRecent.results || [], officers);
 
         await env.DB.prepare(
           `INSERT OR REPLACE INTO insider_signals
@@ -217,10 +215,10 @@ export async function dailyRefresh(env, tickerLimit) {
            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
         ).bind(
           row.ticker, today,
-          buys?.cnt || 0, buys?.val || 0,
-          sells?.cnt || 0, sells?.val || 0,
-          buys?.unique_buyers || 0,
-          signal.signal, signal.details
+          signal.trailing_90d_buys, signal.trailing_90d_buy_value,
+          signal.trailing_90d_sells, signal.trailing_90d_sell_value,
+          signal.unique_buyers_90d,
+          signal.signal, signal.signal_details
         ).run();
 
         stats.insiderUpdated++;
@@ -286,6 +284,17 @@ export async function finnhubRefresh(env) {
   for (const row of (missingRatios.results || [])) {
     try {
       const metrics = await getBasicMetrics(row.ticker, env.FINNHUB_API_KEY);
+      // Validate suspicious values
+      if (metrics.dividend_yield > 5.0) {
+        const stockInfo = await env.DB.prepare('SELECT sector, industry FROM stocks WHERE ticker = ?').bind(row.ticker).first();
+        const sectorLower = (stockInfo?.sector || '').toLowerCase();
+        if (!sectorLower.includes('reit') && !sectorLower.includes('utilit') && !sectorLower.includes('real estate')) {
+          console.warn(`SUSPICIOUS: ${row.ticker} dividend yield ${metrics.dividend_yield?.toFixed(2)}% in sector ${stockInfo?.sector}. Possible preferred/common confusion.`);
+        }
+      }
+      if (metrics.roic > 100) {
+        console.warn(`SUSPICIOUS: ${row.ticker} ROIC ${metrics.roic?.toFixed(0)}% — likely meaningless`);
+      }
       if (metrics.pe_ratio || metrics.pb_ratio) {
         const existing = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
         await upsertMarketData(env.DB, {

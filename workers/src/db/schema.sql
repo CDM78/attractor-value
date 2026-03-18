@@ -109,6 +109,9 @@ CREATE TABLE screen_results (
     miss_severity TEXT CHECK(miss_severity IN ('marginal', 'clear')),
     actual_value REAL,
     threshold_value REAL,
+    -- Auto-pass tracking for financial sector display (Update 6)
+    de_auto_pass INTEGER DEFAULT 0,
+    cr_auto_pass INTEGER DEFAULT 0,
     PRIMARY KEY (ticker, screen_date),
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
 );

@@ -212,8 +212,8 @@ export default function ScreenerTable() {
                       <td className="px-3 py-2"><FilterCell pass={row.passes_pe} value={row.pe_ratio?.toFixed(1)} failed={row.failed_filter === 'pe'} missInfo={row} /></td>
                       <td className="px-3 py-2"><FilterCell pass={row.passes_pb} value={row.pb_ratio?.toFixed(1)} failed={row.failed_filter === 'pb'} missInfo={row} /></td>
                       <td className="px-3 py-2"><FilterCell pass={row.passes_pe_x_pb} failed={row.failed_filter === 'pe_x_pb'} missInfo={row} /></td>
-                      <td className="px-3 py-2"><FilterCell pass={row.passes_debt_equity} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'debt_equity'} missInfo={row} /></td>
-                      <td className="px-3 py-2"><FilterCell pass={row.passes_current_ratio} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'current_ratio'} missInfo={row} /></td>
+                      <td className="px-3 py-2"><FilterCell pass={row.passes_debt_equity} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'debt_equity'} missInfo={row} autoPass={row.de_auto_pass} /></td>
+                      <td className="px-3 py-2"><FilterCell pass={row.passes_current_ratio} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'current_ratio'} missInfo={row} autoPass={row.cr_auto_pass} /></td>
                       <td className="px-3 py-2"><FilterCell pass={row.passes_earnings_stability} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'earnings_stability'} missInfo={row} /></td>
                       <td className="px-3 py-2"><FilterCell pass={row.passes_dividend_record} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'dividend_record'} missInfo={row} /></td>
                       <td className="px-3 py-2"><FilterCell pass={row.passes_earnings_growth} pending={!row.has_fundamentals && meta?.preliminary} failed={row.failed_filter === 'earnings_growth'} missInfo={row} /></td>
@@ -269,8 +269,8 @@ function MobileCard({ row, onWatch, preliminary }) {
   const filters = [
     { label: 'P/E', pass: row.passes_pe, val: row.pe_ratio?.toFixed(1), failed: row.failed_filter === 'pe' },
     { label: 'P/B', pass: row.passes_pb, val: row.pb_ratio?.toFixed(1), failed: row.failed_filter === 'pb' },
-    { label: 'D/E', pass: row.passes_debt_equity, pending, failed: row.failed_filter === 'debt_equity' },
-    { label: 'CR', pass: row.passes_current_ratio, pending, failed: row.failed_filter === 'current_ratio' },
+    { label: 'D/E', pass: row.passes_debt_equity, pending, failed: row.failed_filter === 'debt_equity', autoPass: row.de_auto_pass },
+    { label: 'CR', pass: row.passes_current_ratio, pending, failed: row.failed_filter === 'current_ratio', autoPass: row.cr_auto_pass },
     { label: 'Earn', pass: row.passes_earnings_stability, pending, failed: row.failed_filter === 'earnings_stability' },
     { label: 'Div', pass: row.passes_dividend_record, pending, failed: row.failed_filter === 'dividend_record' },
     { label: 'EPS', pass: row.passes_earnings_growth, pending, failed: row.failed_filter === 'earnings_growth' },
@@ -333,10 +333,11 @@ function MobileCard({ row, onWatch, preliminary }) {
         {filters.map(f => (
           <span key={f.label} className={`text-xs px-2 py-0.5 rounded ${
             f.pending ? 'bg-surface-tertiary text-text-secondary' :
+            f.autoPass ? 'bg-accent/15 text-accent font-medium' :
             f.failed ? 'bg-warn/15 text-warn font-medium' :
             f.pass ? 'bg-pass/15 text-pass' : 'bg-fail/15 text-fail'
-          }`}>
-            {f.label}{f.pending ? '' : f.val ? ` ${f.val}` : ''}
+          }`} title={f.autoPass ? 'Exempt — financial sector' : undefined}>
+            {f.label}{f.autoPass ? ' E' : f.pending ? '' : f.val ? ` ${f.val}` : ''}
           </span>
         ))}
       </div>
@@ -383,9 +384,16 @@ function SignalBadge({ row }) {
   return <span className="text-fail text-xs px-2 py-0.5 rounded bg-fail/15">OVER</span>
 }
 
-function FilterCell({ pass, value, pending, failed, missInfo }) {
+function FilterCell({ pass, value, pending, failed, missInfo, autoPass }) {
   if (pending) {
     return <span className="text-text-secondary">—</span>
+  }
+  if (autoPass) {
+    return (
+      <span className="text-accent font-medium" title="Exempt — financial sector">
+        E
+      </span>
+    )
   }
   if (failed && missInfo) {
     return (

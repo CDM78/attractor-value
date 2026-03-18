@@ -2,6 +2,7 @@
 // Uses Claude Sonnet for cost efficiency (~$0.02-0.03 per analysis)
 
 import { CONCENTRATION_RISK } from '../../../shared/constants.js';
+import { isFinancialSector } from '../../../shared/sectorUtils.js';
 
 const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
 const MODEL = 'claude-sonnet-4-20250514';
@@ -165,9 +166,11 @@ function parseAnalysisResponse(responseText, ticker) {
   };
 }
 
-// Build financial context string from DB data
-export function buildFinancialContext(stock, financials, marketData, valuation) {
+// Build financial context string from DB data (sector-aware for financials)
+export function buildFinancialContext(stock, financials, marketData, valuation, insiderSignal) {
   const lines = [];
+  const isFinancial = isFinancialSector(stock);
+
   lines.push(`Company: ${stock.company_name} (${stock.ticker})`);
   lines.push(`Sector: ${stock.sector || 'Unknown'} | Industry: ${stock.industry || 'Unknown'}`);
 
@@ -182,9 +185,38 @@ export function buildFinancialContext(stock, financials, marketData, valuation) 
 
   if (financials.length > 0) {
     lines.push(`\nFinancial History (${financials.length} years):`);
-    for (const f of financials.slice(0, 5)) {
-      lines.push(`  ${f.fiscal_year}: EPS=$${f.eps?.toFixed(2)}, Rev=$${f.revenue ? (f.revenue / 1e9).toFixed(1) + 'B' : 'N/A'}, FCF=$${f.free_cash_flow ? (f.free_cash_flow / 1e6).toFixed(0) + 'M' : 'N/A'}, D/E=${f.shareholder_equity > 0 ? (f.total_debt / f.shareholder_equity).toFixed(2) : 'N/A'}, ROIC=${f.roic ? (f.roic * 100).toFixed(1) + '%' : 'N/A'}`);
+    if (isFinancial) {
+      // Financial sector: show ROE instead of ROIC, Debt/Capital instead of D/E
+      for (const f of financials.slice(0, 5)) {
+        const roe = f.net_income && f.shareholder_equity > 0
+          ? ((f.net_income / f.shareholder_equity) * 100).toFixed(1) + '%'
+          : 'N/A';
+        const totalCapital = (f.total_debt || 0) + (f.shareholder_equity || 0);
+        const debtToCapital = totalCapital > 0
+          ? ((f.total_debt || 0) / totalCapital * 100).toFixed(1) + '%'
+          : 'N/A';
+        lines.push(`  ${f.fiscal_year}: EPS=$${f.eps?.toFixed(2)}, Rev=$${f.revenue ? (f.revenue / 1e9).toFixed(1) + 'B' : 'N/A'}, BVPS=$${f.book_value_per_share?.toFixed(2) || 'N/A'}, ROE=${roe}, Debt/Capital=${debtToCapital}`);
+      }
+      lines.push(`\nNOTE: This company is classified as ${stock.industry || stock.sector || 'Financial'}.`);
+      lines.push(`Financial metrics have been adjusted for sector norms:`);
+      lines.push(`- ROE is provided instead of ROIC (ROIC is not meaningful for financial companies)`);
+      lines.push(`- Leverage shown as Debt/Total Capital, not Debt/Equity`);
+      lines.push(`- Standard D/E and current ratio filters were auto-passed (financial sector exemption)`);
+      lines.push(`\nEvaluate capital allocation discipline using ROE trends and book value per share growth rather than ROIC vs. cost of capital.`);
+    } else {
+      for (const f of financials.slice(0, 5)) {
+        lines.push(`  ${f.fiscal_year}: EPS=$${f.eps?.toFixed(2)}, Rev=$${f.revenue ? (f.revenue / 1e9).toFixed(1) + 'B' : 'N/A'}, FCF=$${f.free_cash_flow ? (f.free_cash_flow / 1e6).toFixed(0) + 'M' : 'N/A'}, D/E=${f.shareholder_equity > 0 ? (f.total_debt / f.shareholder_equity).toFixed(2) : 'N/A'}, ROIC=${f.roic ? f.roic.toFixed(1) + '%' : 'N/A'}`);
+      }
     }
+  }
+
+  // Include insider signal if available
+  if (insiderSignal) {
+    lines.push(`\nINSIDER ACTIVITY (90-day window):`);
+    lines.push(`Signal: ${insiderSignal.signal} — ${insiderSignal.signal_details}`);
+    lines.push(`Buys: ${insiderSignal.trailing_90d_buys} transactions ($${((insiderSignal.trailing_90d_buy_value || 0) / 1000).toFixed(0)}K)`);
+    lines.push(`Sells: ${insiderSignal.trailing_90d_sells} transactions ($${((insiderSignal.trailing_90d_sell_value || 0) / 1000).toFixed(0)}K)`);
+    lines.push(`Unique buyers: ${insiderSignal.unique_buyers_90d}`);
   }
 
   return lines.join('\n');

@@ -1,6 +1,7 @@
 import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { getFinancialsForTicker } from '../db/queries.js';
 import { SCREEN_DEFAULTS, VALUATION, MARGIN_OF_SAFETY, FAT_TAIL, ATTRACTOR } from '../../../shared/constants.js';
+import { isFinancialSector } from '../../../shared/sectorUtils.js';
 
 export async function reportRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
   if (request.method !== 'GET') return errorResponse('Method not allowed', 405);
@@ -104,6 +105,7 @@ function buildReport(d) {
   } = d;
 
   const now = new Date().toISOString().split('T')[0];
+  const isFinSector = isFinancialSector(stock);
   const lines = [];
 
   // Header
@@ -140,7 +142,10 @@ function buildReport(d) {
   lines.push(`| P/B Ratio | ${marketData?.pb_ratio?.toFixed(1) || 'N/A'} |`);
   lines.push(`| P/E x P/B | ${marketData?.pe_ratio && marketData?.pb_ratio ? (marketData.pe_ratio * marketData.pb_ratio).toFixed(1) : 'N/A'} |`);
   lines.push(`| Earnings Yield | ${marketData?.earnings_yield ? (marketData.earnings_yield * 100).toFixed(1) + '%' : (marketData?.pe_ratio ? (100 / marketData.pe_ratio).toFixed(1) + '%' : 'N/A')} |`);
-  lines.push(`| Dividend Yield | ${marketData?.dividend_yield ? marketData.dividend_yield.toFixed(2) + '%' : 'N/A'} |`);
+  const divYield = marketData?.dividend_yield;
+  const divYieldStr = divYield ? divYield.toFixed(2) + '%' : 'N/A';
+  const divYieldFlag = divYield > 5.0 && isFinSector ? ' ⚠️ *May include preferred dividends*' : '';
+  lines.push(`| Dividend Yield | ${divYieldStr}${divYieldFlag} |`);
   lines.push(`| Market Cap | ${stock.market_cap ? '$' + (stock.market_cap / 1e9).toFixed(1) + 'B' : 'N/A'} |`);
   lines.push(`| Sector | ${stock.sector || 'N/A'} |`);
   lines.push(`| Industry | ${stock.industry || 'N/A'} |`);
@@ -159,8 +164,8 @@ function buildReport(d) {
     lines.push(`| P/E (dynamic) | ${screenResult.passes_pe ? 'PASS' : 'FAIL'} | P/E ${marketData?.pe_ratio?.toFixed(1) || '?'} vs ceiling ${dynamicPECeiling.toFixed(1)} (AAA yield ${aaaBondYield?.toFixed(2) || '?'}% + 1.5% premium) |`);
     lines.push(`| P/B (sector-relative) | ${screenResult.passes_pb ? 'PASS' : 'FAIL'} | P/B ${marketData?.pb_ratio?.toFixed(1) || '?'} vs sector threshold ${screenResult.sector_pb_threshold?.toFixed(2) || '?'} (${stock.sector || 'Unknown'} 33rd pctile, backstop 5.0) |`);
     lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${marketData?.pe_ratio && marketData?.pb_ratio ? (marketData.pe_ratio * marketData.pb_ratio).toFixed(1) : '?'} vs max 22.5 |`);
-    lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${getDebtEquity(financials)} |`);
-    lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${getCurrentRatio(financials)} |`);
+    lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${screenResult.de_auto_pass ? 'Auto-pass (financial sector)' : getDebtEquity(financials)} |`);
+    lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${screenResult.cr_auto_pass ? 'Auto-pass (financial sector)' : getCurrentRatio(financials)} |`);
     lines.push(`| Earnings Stability | ${screenResult.passes_earnings_stability ? 'PASS' : 'FAIL'} | ${getEarningsStability(financials)} |`);
     lines.push(`| Dividend Record | ${screenResult.passes_dividend_record ? 'PASS' : 'FAIL'} | ${getDividendRecord(financials)} |`);
     lines.push(`| Earnings Growth | ${screenResult.passes_earnings_growth ? 'PASS' : 'FAIL'} | ${getEarningsGrowth(financials)} |`);
@@ -319,10 +324,27 @@ function buildReport(d) {
   lines.push('## Financial History');
   lines.push('');
   if (financials.length > 0) {
-    lines.push('| Year | EPS | Revenue | FCF | D/E | BVPS | ROIC | Div |');
-    lines.push('|------|-----|---------|-----|-----|------|------|-----|');
-    for (const f of financials) {
-      lines.push(`| ${f.fiscal_year} | $${f.eps?.toFixed(2) || '?'} | ${f.revenue ? '$' + (f.revenue / 1e9).toFixed(1) + 'B' : '?'} | ${f.free_cash_flow ? '$' + (f.free_cash_flow / 1e6).toFixed(0) + 'M' : '?'} | ${f.shareholder_equity > 0 ? (f.total_debt / f.shareholder_equity).toFixed(2) : '?'} | $${f.book_value_per_share?.toFixed(2) || '?'} | ${f.roic ? (f.roic * 100).toFixed(1) + '%' : '?'} | ${f.dividend_paid ? 'Yes' : 'No'} |`);
+    if (isFinSector) {
+      lines.push('> *Financial sector company — showing ROE instead of ROIC, Debt/Capital instead of D/E*');
+      lines.push('');
+      lines.push('| Year | EPS | Revenue | BVPS | ROE | Debt/Capital | Div |');
+      lines.push('|------|-----|---------|------|-----|-------------|-----|');
+      for (const f of financials) {
+        const roe = f.net_income && f.shareholder_equity > 0
+          ? ((f.net_income / f.shareholder_equity) * 100).toFixed(1) + '%'
+          : '?';
+        const totalCapital = (f.total_debt || 0) + (f.shareholder_equity || 0);
+        const debtToCapital = totalCapital > 0
+          ? ((f.total_debt || 0) / totalCapital * 100).toFixed(1) + '%'
+          : '?';
+        lines.push(`| ${f.fiscal_year} | $${f.eps?.toFixed(2) || '?'} | ${f.revenue ? '$' + (f.revenue / 1e9).toFixed(1) + 'B' : '?'} | $${f.book_value_per_share?.toFixed(2) || '?'} | ${roe} | ${debtToCapital} | ${f.dividend_paid ? 'Yes' : 'No'} |`);
+      }
+    } else {
+      lines.push('| Year | EPS | Revenue | FCF | D/E | BVPS | ROIC | Div |');
+      lines.push('|------|-----|---------|-----|-----|------|------|-----|');
+      for (const f of financials) {
+        lines.push(`| ${f.fiscal_year} | $${f.eps?.toFixed(2) || '?'} | ${f.revenue ? '$' + (f.revenue / 1e9).toFixed(1) + 'B' : '?'} | ${f.free_cash_flow ? '$' + (f.free_cash_flow / 1e6).toFixed(0) + 'M' : '?'} | ${f.shareholder_equity > 0 ? (f.total_debt / f.shareholder_equity).toFixed(2) : '?'} | $${f.book_value_per_share?.toFixed(2) || '?'} | ${f.roic ? f.roic.toFixed(1) + '%' : '?'} | ${f.dividend_paid ? 'Yes' : 'No'} |`);
+      }
     }
     lines.push('');
   } else {

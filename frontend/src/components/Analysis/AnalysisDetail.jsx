@@ -72,6 +72,9 @@ export default function AnalysisDetail() {
 
   const analysis = data?.analysis
   const cr = data?.concentration_risk
+  const insiderSig = data?.insider_signal
+  const insiderTxns = data?.insider_transactions || []
+  const stockInfo = data?.stock_info
 
   return (
     <div>
@@ -211,6 +214,19 @@ export default function AnalysisDetail() {
             </div>
           )}
 
+          {/* Insider Activity */}
+          <div className="bg-surface-secondary rounded p-4">
+            <h3 className="text-sm font-bold text-text-secondary mb-3">Insider Activity</h3>
+            {insiderSig ? (
+              <InsiderSection signal={insiderSig} transactions={insiderTxns} />
+            ) : (
+              <div className="text-sm text-text-secondary">
+                <p>No insider transaction data available.</p>
+                <p className="text-xs mt-1">Insider data refreshes daily for watchlist/portfolio stocks and is fetched during attractor analysis. Re-analyze to fetch insider data.</p>
+              </div>
+            )}
+          </div>
+
           {/* Sources */}
           {analysis.sources_used && (
             <div className="text-xs text-text-secondary">
@@ -287,6 +303,99 @@ function formatRegime(regime) {
     platform: 'Platform',
   }
   return map[regime] || regime || 'Unknown'
+}
+
+function InsiderSection({ signal, transactions }) {
+  const [showTxns, setShowTxns] = useState(false)
+
+  const signalIcon = signal.signal === 'strong_buy'
+    ? { text: 'Strong Buy Signal', color: 'text-pass', bg: 'bg-pass/15' }
+    : signal.signal === 'caution'
+      ? { text: 'Caution', color: 'text-fail', bg: 'bg-fail/15' }
+      : { text: 'Neutral', color: 'text-text-secondary', bg: 'bg-surface-tertiary' }
+
+  const buyVal = signal.trailing_90d_buy_value || 0
+  const sellVal = signal.trailing_90d_sell_value || 0
+  const totalVal = buyVal + sellVal
+
+  return (
+    <div className="space-y-3">
+      {/* Signal badge */}
+      <div className="flex items-center gap-3">
+        <span className={`text-sm font-bold px-3 py-1 rounded ${signalIcon.bg} ${signalIcon.color}`}>
+          {signalIcon.text}
+        </span>
+        <span className="text-sm text-text-secondary">{signal.signal_details}</span>
+      </div>
+
+      {/* Buy vs Sell comparison */}
+      <div className="grid grid-cols-2 gap-3 text-sm">
+        <div className="p-2 rounded bg-surface-tertiary">
+          <span className="text-text-secondary text-xs block">90-Day Buys</span>
+          <span className="text-pass font-bold">{signal.trailing_90d_buys} txns</span>
+          <span className="text-text-secondary ml-1">(${(buyVal / 1000).toFixed(0)}K)</span>
+          {signal.unique_buyers_90d > 0 && (
+            <span className="text-xs text-text-secondary block">{signal.unique_buyers_90d} unique buyers</span>
+          )}
+        </div>
+        <div className="p-2 rounded bg-surface-tertiary">
+          <span className="text-text-secondary text-xs block">90-Day Sells</span>
+          <span className="text-fail font-bold">{signal.trailing_90d_sells} txns</span>
+          <span className="text-text-secondary ml-1">(${sellVal >= 1e6 ? (sellVal / 1e6).toFixed(1) + 'M' : (sellVal / 1000).toFixed(0) + 'K'})</span>
+        </div>
+      </div>
+
+      {/* Buy/Sell bar */}
+      {totalVal > 0 && (
+        <div className="flex h-3 rounded overflow-hidden bg-surface-tertiary">
+          <div className="bg-pass" style={{ width: `${(buyVal / totalVal) * 100}%` }} />
+          <div className="bg-fail" style={{ width: `${(sellVal / totalVal) * 100}%` }} />
+        </div>
+      )}
+
+      {/* Transaction list (expandable) */}
+      {transactions.length > 0 && (
+        <div>
+          <button
+            onClick={() => setShowTxns(!showTxns)}
+            className="text-xs text-accent hover:underline"
+          >
+            {showTxns ? 'Hide' : 'Show'} {transactions.length} recent transactions
+          </button>
+          {showTxns && (
+            <div className="mt-2 max-h-64 overflow-y-auto">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="text-text-secondary border-b border-border/50">
+                    <th className="text-left py-1 px-2">Date</th>
+                    <th className="text-left py-1 px-2">Name</th>
+                    <th className="text-left py-1 px-2">Title</th>
+                    <th className="text-left py-1 px-2">Type</th>
+                    <th className="text-right py-1 px-2">Shares</th>
+                    <th className="text-right py-1 px-2">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {transactions.map((tx, i) => (
+                    <tr key={i} className="border-b border-border/30">
+                      <td className="py-1 px-2">{tx.filing_date}</td>
+                      <td className="py-1 px-2">{tx.insider_name}</td>
+                      <td className="py-1 px-2 text-text-secondary">{tx.insider_title || '—'}</td>
+                      <td className={`py-1 px-2 font-medium ${tx.transaction_type === 'buy' ? 'text-pass' : tx.transaction_type === 'sell' ? 'text-fail' : 'text-text-secondary'}`}>
+                        {tx.transaction_type}
+                      </td>
+                      <td className="py-1 px-2 text-right">{tx.shares?.toLocaleString()}</td>
+                      <td className="py-1 px-2 text-right">{tx.total_value ? '$' + (tx.total_value >= 1e6 ? (tx.total_value / 1e6).toFixed(1) + 'M' : (tx.total_value / 1000).toFixed(0) + 'K') : '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
 }
 
 function formatSources(sources) {

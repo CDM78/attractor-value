@@ -95,6 +95,7 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const latestFinancials = financials[0];
   if (isFinancial) {
     results.passes_debt_equity = 1;
+    results.de_auto_pass = 1;
   } else if (latestFinancials && latestFinancials.shareholder_equity > 0) {
     const de = latestFinancials.total_debt / latestFinancials.shareholder_equity;
     const maxDE = isUtilityOrRE || sectorLower.includes('energy')
@@ -108,6 +109,7 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   // Current Ratio
   if (isFinancial) {
     results.passes_current_ratio = 1;
+    results.cr_auto_pass = 1;
   } else if (latestFinancials && latestFinancials.current_liabilities > 0) {
     const cr = latestFinancials.current_assets / latestFinancials.current_liabilities;
     results.passes_current_ratio = cr >= thresholds.current_ratio_min ? 1 : 0;
