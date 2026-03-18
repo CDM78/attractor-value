@@ -42,10 +42,25 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
   // Determine signal
   let signal = 'NO SIGNAL';
   let signalRationale = '';
-  if (screenResult?.passes_all_hard && valuation?.buy_below_price != null && marketData?.price != null) {
+  const isFullPass = screenResult?.passes_all_hard || screenResult?.tier === 'full_pass';
+  const isNearMiss = screenResult?.tier === 'near_miss';
+  const hasValuation = valuation?.buy_below_price != null && marketData?.price != null;
+  const attractorScore = analysis?.attractor_stability_score;
+  const isDissolvingAttractor = attractorScore != null && attractorScore < 2.0;
+  const isTransitional = attractorScore != null && attractorScore >= 2.0 && attractorScore < 3.5;
+
+  if (isDissolvingAttractor) {
+    signal = 'DO NOT BUY';
+    signalRationale = `Attractor score ${attractorScore.toFixed(1)} is below 2.0 (dissolving). The framework prohibits buying stocks with dissolving competitive positions.`;
+  } else if (isFullPass && hasValuation) {
     if (marketData.price <= valuation.buy_below_price) {
-      signal = 'BUY';
-      signalRationale = `Current price ($${marketData.price.toFixed(2)}) is below the buy-below price ($${valuation.buy_below_price.toFixed(2)}), representing a ${valuation.discount_to_iv_pct?.toFixed(1)}% discount to adjusted intrinsic value with a ${(valuation.margin_of_safety_required * 100).toFixed(0)}% margin of safety.`;
+      if (isTransitional) {
+        signal = 'BUY (TRANSITIONAL)';
+        signalRationale = `Current price ($${marketData.price.toFixed(2)}) is below the buy-below price ($${valuation.buy_below_price.toFixed(2)}), representing a ${valuation.discount_to_iv_pct?.toFixed(1)}% discount to adjusted intrinsic value. A ${(valuation.margin_of_safety_required * 100).toFixed(0)}% margin of safety has been applied due to transitional attractor score (${attractorScore?.toFixed(1)}). Monitor attractor score quarterly — if it drops below 2.0, the sell discipline requires immediate exit.`;
+      } else {
+        signal = 'BUY';
+        signalRationale = `Current price ($${marketData.price.toFixed(2)}) is below the buy-below price ($${valuation.buy_below_price.toFixed(2)}), representing a ${valuation.discount_to_iv_pct?.toFixed(1)}% discount to adjusted intrinsic value with a ${(valuation.margin_of_safety_required * 100).toFixed(0)}% margin of safety.`;
+      }
     } else if (valuation.discount_to_iv_pct > 0) {
       signal = 'WAIT';
       signalRationale = `Stock is undervalued (${valuation.discount_to_iv_pct?.toFixed(1)}% discount to IV) but has not reached the buy-below price ($${valuation.buy_below_price.toFixed(2)}).`;
@@ -53,9 +68,21 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
       signal = 'OVERVALUED';
       signalRationale = `Stock is trading above intrinsic value.`;
     }
-  } else if (screenResult?.tier === 'near_miss') {
-    signal = 'REVIEW';
-    signalRationale = `Near miss — passes ${screenResult.pass_count}/8 hard filters. Failed: ${formatFilterName(screenResult.failed_filter)}.`;
+  } else if (isNearMiss && hasValuation) {
+    if (marketData.price <= valuation.buy_below_price) {
+      if (isTransitional) {
+        signal = 'BUY (NEAR MISS — TRANSITIONAL)';
+      } else {
+        signal = 'BUY (NEAR MISS)';
+      }
+      signalRationale = `Near miss (${screenResult.pass_count}/8 filters, failed ${formatFilterName(screenResult.failed_filter)}). Price ($${marketData.price.toFixed(2)}) is below buy-below ($${valuation.buy_below_price.toFixed(2)}) with ${(valuation.margin_of_safety_required * 100).toFixed(0)}% margin of safety.`;
+    } else if (valuation.discount_to_iv_pct > 0) {
+      signal = 'WAIT';
+      signalRationale = `Near miss — undervalued but above buy-below price.`;
+    } else {
+      signal = 'OVERVALUED';
+      signalRationale = `Near miss — trading above intrinsic value.`;
+    }
   }
 
   // Build report
@@ -185,7 +212,7 @@ function buildReport(d) {
     lines.push('### Adjustments');
     lines.push(`| Adjustment | Value | Rationale |`);
     lines.push(`|------------|-------|-----------|`);
-    lines.push(`| Fat-Tail Discount | ${(valuation.fat_tail_discount * 100).toFixed(0)}% | ${valuation.fat_tail_discount === 0 ? 'Survived downturn (10+ years, no negative EPS)' : valuation.fat_tail_discount >= 0.15 ? 'Had negative EPS in history' : 'Untested (< 10 years of data)'} |`);
+    lines.push(`| Fat-Tail Discount | ${(valuation.fat_tail_discount * 100).toFixed(0)}% | ${valuation.fat_tail_discount === 0 ? 'Resilient (10+ years, 0-1 negative EPS years)' : valuation.fat_tail_discount >= 0.15 ? 'High volatility (4+ negative EPS years)' : valuation.fat_tail_discount >= 0.10 ? 'Moderate volatility or untested' : 'Unknown'} |`);
     lines.push(`| Adjusted IV | $${valuation.adjusted_intrinsic_value?.toFixed(2)} | IV x (1 - ${(valuation.fat_tail_discount * 100).toFixed(0)}%) |`);
     lines.push(`| Margin of Safety | ${(valuation.margin_of_safety_required * 100).toFixed(0)}% | ${getMarginRationale(valuation, analysis)} |`);
     lines.push(`| **Buy-Below Price** | **$${valuation.buy_below_price?.toFixed(2)}** | Adjusted IV x (1 - ${(valuation.margin_of_safety_required * 100).toFixed(0)}%) |`);
@@ -362,7 +389,7 @@ function getEarningsGrowth(financials) {
   const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
   const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
   if (avgFirst <= 0) return 'N/A (negative base EPS)';
-  const years = financials.length - 1;
+  const years = financials.length - 3; // midpoint-to-midpoint span
   const growth = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
   return `${growth.toFixed(1)}% CAGR over ${years} years`;
 }

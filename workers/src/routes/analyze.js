@@ -116,16 +116,42 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       ).run();
     }
 
-    // Update valuation with attractor-adjusted margin of safety
+    // Update valuation with attractor-adjusted margin of safety (full near-miss matrix)
     if (result.attractor_stability_score != null && valuation && marketData) {
       const { MARGIN_OF_SAFETY } = await import('../../../shared/constants.js');
+
+      // Fetch screen tier info for this ticker
+      const screenRow = await env.DB.prepare(
+        `SELECT tier, miss_severity FROM screen_results
+         WHERE ticker = ? ORDER BY screen_date DESC LIMIT 1`
+      ).bind(ticker).first();
+      const isNearMiss = screenRow?.tier === 'near_miss';
+      const missSeverity = screenRow?.miss_severity;
+      const score = result.attractor_stability_score;
+      const isHardNetwork = result.network_regime === 'hard_network';
+
       let margin;
-      if (result.attractor_stability_score >= 3.5) {
-        margin = result.network_regime === 'hard_network'
-          ? MARGIN_OF_SAFETY.stable_hard_network_non_leader
-          : MARGIN_OF_SAFETY.stable_classical;
+      if (score < 2.0) {
+        margin = 1.0; // dissolving attractor — effectively block
+      } else if (isNearMiss) {
+        if (missSeverity === 'clear') {
+          margin = MARGIN_OF_SAFETY.near_miss_clear;
+        } else if (score >= 3.5) {
+          margin = isHardNetwork
+            ? MARGIN_OF_SAFETY.near_miss_stable_hard_network
+            : MARGIN_OF_SAFETY.near_miss_stable_classical;
+        } else {
+          margin = MARGIN_OF_SAFETY.near_miss_transitional;
+        }
       } else {
-        margin = MARGIN_OF_SAFETY.transitional_any;
+        // Full pass
+        if (score >= 3.5) {
+          margin = isHardNetwork
+            ? MARGIN_OF_SAFETY.stable_hard_network_non_leader
+            : MARGIN_OF_SAFETY.stable_classical;
+        } else {
+          margin = MARGIN_OF_SAFETY.transitional_any;
+        }
       }
 
       const adjustedBuyBelow = valuation.adjusted_intrinsic_value * (1 - margin);

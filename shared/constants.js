@@ -39,19 +39,27 @@ export const ATTRACTOR = {
   dissolving_max: 2.0,
 };
 
-// Margin of Safety Requirements
+// Margin of Safety Requirements (full matrix including near-miss tiers)
 export const MARGIN_OF_SAFETY = {
+  // Full pass
   stable_classical: 0.25,
   stable_soft_network: 0.25,
   stable_hard_network_non_leader: 0.40,
   transitional_any: 0.40,
+  // Near miss (marginal)
+  near_miss_stable_classical: 0.30,
+  near_miss_stable_hard_network: 0.45,
+  near_miss_transitional: 0.45,
+  // Near miss (clear) — requires Claude "proceed"
+  near_miss_clear: 0.45,
 };
 
-// Fat-Tail Discounts
+// Fat-Tail Discounts (graduated by count of negative EPS years)
 export const FAT_TAIL = {
-  survived_downturn: 0.0,
-  untested: 0.10,
-  transitional: 0.15,
+  resilient: 0.0,       // 10+ years, 0-1 negative EPS years
+  moderate_vol: 0.10,   // 10+ years, 2-3 negative EPS years
+  high_vol: 0.15,       // 10+ years, 4+ negative EPS years
+  untested: 0.10,       // fewer than 10 years of data
 };
 
 // Portfolio Construction Rules

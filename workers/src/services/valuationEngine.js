@@ -5,7 +5,7 @@
 
 import { VALUATION, FAT_TAIL, MARGIN_OF_SAFETY } from '../../../shared/constants.js';
 
-export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct, attractorData) {
+export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct, attractorData, screenInfo) {
   if (!financials || financials.length < 3 || !marketData?.price) {
     return null;
   }
@@ -40,32 +40,62 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
     * (VALUATION.graham_base_pe + VALUATION.graham_growth_multiplier * growthRate)
     * (VALUATION.graham_base_bond_yield / bondYield);
 
-  // Fat-tail discount: check earnings history for downturn survival
+  // Fat-tail discount: graduated by count of negative EPS years
   let fatTailDiscount;
   const hasDownturnData = financials.length >= 10;
-  const hadNegativeEps = financials.some(f => f.eps < 0);
-  if (hasDownturnData && !hadNegativeEps) {
-    fatTailDiscount = FAT_TAIL.survived_downturn;
-  } else if (hasDownturnData) {
-    fatTailDiscount = FAT_TAIL.transitional;
+  const negativeEpsYears = financials.filter(f => f.eps < 0).length;
+  if (hasDownturnData) {
+    if (negativeEpsYears <= 1) {
+      fatTailDiscount = FAT_TAIL.resilient;       // 0% — proven resilience
+    } else if (negativeEpsYears <= 3) {
+      fatTailDiscount = FAT_TAIL.moderate_vol;    // 10% — moderate volatility
+    } else {
+      fatTailDiscount = FAT_TAIL.high_vol;        // 15% — genuinely volatile
+    }
   } else {
-    fatTailDiscount = FAT_TAIL.untested;
+    fatTailDiscount = FAT_TAIL.untested;           // 10% — insufficient history
   }
 
   const adjustedIV = grahamIV * (1 - fatTailDiscount);
 
-  // Margin of safety: varies by attractor stability and network regime
+  // Margin of safety: varies by attractor stability, network regime, and screen tier
   let marginOfSafety;
+  const isNearMiss = screenInfo?.tier === 'near_miss';
+  const missSeverity = screenInfo?.miss_severity;
+
   if (attractorData?.attractor_stability_score != null) {
-    if (attractorData.attractor_stability_score >= 3.5) {
-      marginOfSafety = attractorData.network_regime === 'hard_network'
-        ? MARGIN_OF_SAFETY.stable_hard_network_non_leader
-        : MARGIN_OF_SAFETY.stable_classical;
+    const score = attractorData.attractor_stability_score;
+    const isHardNetwork = attractorData.network_regime === 'hard_network';
+
+    if (score < 2.0) {
+      // Dissolving attractor — do not buy (use very high margin to effectively block)
+      marginOfSafety = 1.0;
+    } else if (isNearMiss) {
+      // Near-miss margin table
+      if (missSeverity === 'clear') {
+        marginOfSafety = MARGIN_OF_SAFETY.near_miss_clear;
+      } else if (score >= 3.5) {
+        marginOfSafety = isHardNetwork
+          ? MARGIN_OF_SAFETY.near_miss_stable_hard_network
+          : MARGIN_OF_SAFETY.near_miss_stable_classical;
+      } else {
+        marginOfSafety = MARGIN_OF_SAFETY.near_miss_transitional;
+      }
     } else {
-      marginOfSafety = MARGIN_OF_SAFETY.transitional_any;
+      // Full pass margin table
+      if (score >= 3.5) {
+        marginOfSafety = isHardNetwork
+          ? MARGIN_OF_SAFETY.stable_hard_network_non_leader
+          : MARGIN_OF_SAFETY.stable_classical;
+      } else {
+        marginOfSafety = MARGIN_OF_SAFETY.transitional_any;
+      }
     }
   } else {
-    marginOfSafety = MARGIN_OF_SAFETY.stable_classical; // default when no analysis
+    // No attractor analysis — use default based on screen tier
+    marginOfSafety = isNearMiss
+      ? MARGIN_OF_SAFETY.near_miss_stable_classical
+      : MARGIN_OF_SAFETY.stable_classical;
   }
   const buyBelowPrice = adjustedIV * (1 - marginOfSafety);
 

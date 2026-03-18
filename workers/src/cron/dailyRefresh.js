@@ -142,21 +142,22 @@ export async function dailyRefresh(env, tickerLimit) {
     }
   }
 
-  // Step 5: Compute valuations for stocks that passed screening
-  const passedStocks = await env.DB.prepare(
-    `SELECT DISTINCT ticker FROM screen_results
-     WHERE passes_all_hard = 1 AND screen_date = ?`
+  // Step 5: Compute valuations for stocks that passed or near-missed screening
+  const qualifyingStocks = await env.DB.prepare(
+    `SELECT DISTINCT sr.ticker, sr.tier, sr.miss_severity FROM screen_results sr
+     WHERE (sr.tier = 'full_pass' OR sr.tier = 'near_miss') AND sr.screen_date = ?`
   ).bind(screenDate).all();
 
   stats.valuations = 0;
-  for (const row of (passedStocks.results || [])) {
+  for (const row of (qualifyingStocks.results || [])) {
     try {
       const fins = await getFinancialsForTicker(env.DB, row.ticker);
       const md = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
       const attractorData = await env.DB.prepare(
         'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
       ).bind(row.ticker).first();
-      const val = calculateGrahamValuation(fins, md, bondYield?.yield, attractorData);
+      const screenInfo = { tier: row.tier, miss_severity: row.miss_severity };
+      const val = calculateGrahamValuation(fins, md, bondYield?.yield, attractorData, screenInfo);
       if (val) {
         await upsertValuation(env.DB, val);
         stats.valuations++;

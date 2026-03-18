@@ -125,14 +125,14 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const recentYears = financials.slice(0, 5);
   results.passes_dividend_record = recentYears.length >= 5 && recentYears.every(f => f.dividend_paid) ? 1 : 0;
 
-  // Earnings Growth (3% over 10 years, first 3 vs last 3 avg)
+  // Earnings Growth (3% over 10 years, first 3 vs last 3 avg, midpoint-to-midpoint span)
   if (financials.length >= 6) {
     const last3 = financials.slice(0, 3);
     const first3 = financials.slice(-3);
     const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
     const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
     if (avgFirst > 0) {
-      const years = financials.length - 1;
+      const years = financials.length - 3; // midpoint-to-midpoint span
       const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
       results.passes_earnings_growth = growthRate >= thresholds.eps_growth_min_pct ? 1 : 0;
     } else {
@@ -256,7 +256,7 @@ function getMissInfo(filterName, stock, financials, marketData, ctx) {
         const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
         const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
         if (avgFirst > 0) {
-          const years = financials.length - 1;
+          const years = financials.length - 3;
           const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
           return { actual: growthRate, threshold: ctx.thresholds.eps_growth_min_pct };
         }

@@ -364,16 +364,17 @@ function TierBadge({ tier, passCount }) {
 }
 
 function SignalBadge({ row }) {
-  if (!row.passes_all_hard || row.buy_below_price == null) {
-    if (row.tier === 'near_miss' && row.buy_below_price != null) {
-      // Show signal for near-miss stocks too
-      if (row.price <= row.buy_below_price) {
-        return <span className="text-warn font-bold text-xs px-2 py-0.5 rounded bg-warn/15">REVIEW</span>
-      }
-    }
-    return <span className="text-text-secondary">—</span>
-  }
+  const isFullPass = row.tier === 'full_pass' || row.passes_all_hard
+  const isNearMiss = row.tier === 'near_miss'
+  const hasBuyBelow = row.buy_below_price != null && row.buy_below_price > 0
+
+  if (!isFullPass && !isNearMiss) return <span className="text-text-secondary">—</span>
+  if (!hasBuyBelow) return <span className="text-text-secondary">—</span>
+
   if (row.price <= row.buy_below_price) {
+    if (isNearMiss) {
+      return <span className="text-warn font-bold text-xs px-2 py-0.5 rounded bg-warn/15">BUY*</span>
+    }
     return <span className="text-pass font-bold text-xs px-2 py-0.5 rounded bg-pass/15">BUY</span>
   }
   if (row.discount_to_iv_pct != null && row.discount_to_iv_pct > 0) {
