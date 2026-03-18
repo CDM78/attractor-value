@@ -1,7 +1,7 @@
 // Anthropic Claude API — Attractor Stability Analysis (Layer 3)
 // Uses Claude Sonnet for cost efficiency (~$0.02-0.03 per analysis)
 
-import { CONCENTRATION_RISK } from '../../../shared/constants.js';
+import { CONCENTRATION_RISK, SECULAR_DISRUPTION } from '../../../shared/constants.js';
 import { isFinancialSector } from '../../../shared/sectorUtils.js';
 
 const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
@@ -19,7 +19,7 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 2000,
+      max_tokens: 3000,
       messages: [{ role: 'user', content: prompt }],
     }),
   });
@@ -71,7 +71,16 @@ CONCENTRATION RISK: Identify any of these from the filing data:
 - Geographic concentration: ≥70% revenue from single foreign market
 - Regulatory concentration: ≥50% revenue tied to single regulation/license/contract
 
-RED FLAGS: List any concerns that could indicate attractor dissolution (phase transition risk).
+RED FLAGS: List any concerns that could indicate attractor dissolution (phase transition risk). Include "Transformation Theater" if the company announces frequent AI/digital/transformation initiatives but organic revenue growth remains flat or negative, and the initiatives are primarily about reselling disruptive technology rather than building new competitive advantages.
+
+IMPORTANT GUIDANCE ON ADAPTATION CAPACITY SCORING:
+Adaptation Capacity does not measure whether a company is *announcing* responses to disruption. It measures whether the company has a *track record* of successfully navigating prior disruptions and whether its current adaptations are likely to *grow* revenue rather than merely *slow its decline*.
+
+Score 4-5 ONLY if the company has previously navigated a major industry disruption and emerged stronger, AND current adaptations have a clear path to revenue growth (not just defensive repositioning).
+
+Score 2-3 if adaptation efforts are credible but unproven, or primarily defensive (cost reduction, efficiency gains rather than new revenue streams).
+
+Score 1 if adaptation efforts consist primarily of press releases, partnerships, and rebranding without measurable business model changes.
 
 FINANCIAL DATA:
 ${financialContext}
@@ -79,6 +88,23 @@ ${financialContext}
 ${mdaText ? `10-K MD&A EXCERPT:\n${mdaText}\n` : 'No 10-K filing data available. Base analysis on financial data and public knowledge.'}
 
 ${newsContext || ''}
+
+SECULAR DISRUPTION ASSESSMENT:
+After completing the attractor stability analysis, evaluate whether this company's PRIMARY INDUSTRY is undergoing a secular phase transition. This is distinct from the company-level analysis above — you are evaluating the industry, not the company.
+
+Assess each of the following five indicators as Present (1) or Absent (0):
+
+1. DEMAND SUBSTITUTION: Is a new technology, product, or business model emerging that can fulfill the same customer need at dramatically lower cost or higher quality, with adoption accelerating (not merely theoretical)?
+
+2. LABOR MODEL DISRUPTION: Does the industry's cost structure depend on a labor input whose unit cost is being structurally deflated by automation or AI?
+
+3. PRICING POWER EROSION: Is the industry experiencing structural (not cyclical) pricing pressure — customers demanding outcome-based pricing, new entrants commoditizing the offering, or declining average deal values despite stable volume?
+
+4. CAPITAL MIGRATION: Is investment capital (corporate capex and financial market flows) moving away from the industry toward adjacent or replacement sectors as a structural reallocation, not a short-term rotation?
+
+5. INCUMBENT RESPONSE PARADOX: Are the industry's leading companies investing heavily in the disruptive technology but unable to clearly articulate how it grows (rather than cannibalizes) their existing revenue?
+
+For each indicator, provide a brief explanation of your assessment.
 
 Respond in EXACTLY this JSON format (no markdown, no code fences):
 {
@@ -100,6 +126,17 @@ Respond in EXACTLY this JSON format (no markdown, no code fences):
     "largest_geo_market_name": "<name or null>",
     "regulatory_dependency_pct": <number or null>,
     "regulatory_details": "<description or null>"
+  },
+  "secular_disruption": {
+    "demand_substitution": { "present": true/false, "explanation": "..." },
+    "labor_model_disruption": { "present": true/false, "explanation": "..." },
+    "pricing_power_erosion": { "present": true/false, "explanation": "..." },
+    "capital_migration": { "present": true/false, "explanation": "..." },
+    "incumbent_response_paradox": { "present": true/false, "explanation": "..." },
+    "total_indicators": <0-5>,
+    "classification": "<none|early|active|advanced>",
+    "beneficiary_sectors": ["sector1", "sector2"],
+    "beneficiary_rationale": "..."
   },
   "analysis_text": "<2-3 paragraph analysis explaining your reasoning, what makes this attractor stable or unstable, and key risks>",
   "sources_used": ["financial_data", "10k_mda", "news"]
@@ -141,8 +178,41 @@ function parseAnalysisResponse(responseText, ticker) {
   if (cr.largest_geo_market_pct >= 70) concentrationPenalty += CONCENTRATION_RISK.geographic_70pct;
   if (cr.regulatory_dependency_pct >= 50) concentrationPenalty += CONCENTRATION_RISK.regulatory_50pct;
 
-  const adjustedScore = rawScore != null
+  // Score after concentration risk only (stored as attractor_stability_score for backwards compat)
+  const scoreAfterConcentration = rawScore != null
     ? Math.max(CONCENTRATION_RISK.adjusted_score_floor, rawScore - concentrationPenalty)
+    : null;
+
+  // Secular disruption modifier (Update 7)
+  const sd = json.secular_disruption || {};
+  const totalIndicators = sd.total_indicators ?? [
+    sd.demand_substitution?.present,
+    sd.labor_model_disruption?.present,
+    sd.pricing_power_erosion?.present,
+    sd.capital_migration?.present,
+    sd.incumbent_response_paradox?.present,
+  ].filter(Boolean).length;
+
+  let sdClassification = 'none';
+  let sdScoreAdj = 0;
+  let sdMosAdj = 0;
+  if (totalIndicators >= 4) {
+    sdClassification = 'advanced';
+    sdScoreAdj = SECULAR_DISRUPTION.advanced_score_adjustment;
+    sdMosAdj = SECULAR_DISRUPTION.advanced_mos_adjustment;
+  } else if (totalIndicators === 3) {
+    sdClassification = 'active';
+    sdScoreAdj = SECULAR_DISRUPTION.active_score_adjustment;
+    sdMosAdj = SECULAR_DISRUPTION.active_mos_adjustment;
+  } else if (totalIndicators === 2) {
+    sdClassification = 'early';
+    sdScoreAdj = SECULAR_DISRUPTION.early_score_adjustment;
+    sdMosAdj = SECULAR_DISRUPTION.early_mos_adjustment;
+  }
+
+  // Final adjusted score = after concentration risk + secular disruption
+  const adjustedAttractorScore = scoreAfterConcentration != null
+    ? Math.max(SECULAR_DISRUPTION.adjusted_score_floor, Math.round((scoreAfterConcentration + sdScoreAdj) * 10) / 10)
     : null;
 
   return {
@@ -154,7 +224,8 @@ function parseAnalysisResponse(responseText, ticker) {
     demand_feedback_score: json.demand_feedback_score,
     adaptation_capacity_score: json.adaptation_capacity_score,
     capital_allocation_score: json.capital_allocation_score,
-    attractor_stability_score: adjustedScore != null ? Math.round(adjustedScore * 10) / 10 : null,
+    attractor_stability_score: scoreAfterConcentration != null ? Math.round(scoreAfterConcentration * 10) / 10 : null,
+    adjusted_attractor_score: adjustedAttractorScore,
     network_regime: json.network_regime,
     red_flags: JSON.stringify(json.red_flags || []),
     analysis_text: json.analysis_text || '',
@@ -162,6 +233,24 @@ function parseAnalysisResponse(responseText, ticker) {
     concentration_risk: {
       ...cr,
       concentration_penalty: concentrationPenalty,
+    },
+    secular_disruption: {
+      demand_substitution: sd.demand_substitution?.present ? 1 : 0,
+      demand_substitution_note: sd.demand_substitution?.explanation || null,
+      labor_model_disruption: sd.labor_model_disruption?.present ? 1 : 0,
+      labor_model_disruption_note: sd.labor_model_disruption?.explanation || null,
+      pricing_power_erosion: sd.pricing_power_erosion?.present ? 1 : 0,
+      pricing_power_erosion_note: sd.pricing_power_erosion?.explanation || null,
+      capital_migration: sd.capital_migration?.present ? 1 : 0,
+      capital_migration_note: sd.capital_migration?.explanation || null,
+      incumbent_response_paradox: sd.incumbent_response_paradox?.present ? 1 : 0,
+      incumbent_response_paradox_note: sd.incumbent_response_paradox?.explanation || null,
+      total_indicators: totalIndicators,
+      classification: sdClassification,
+      attractor_score_adjustment: sdScoreAdj,
+      mos_adjustment_pct: sdMosAdj,
+      beneficiary_sectors: JSON.stringify(sd.beneficiary_sectors || []),
+      beneficiary_rationale: sd.beneficiary_rationale || null,
     },
   };
 }

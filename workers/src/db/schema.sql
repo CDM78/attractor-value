@@ -81,6 +81,9 @@ CREATE TABLE attractor_analysis (
     capital_allocation_score INTEGER,
     -- Data sources used
     sources_used TEXT,  -- JSON array
+    -- Secular disruption link (Update 7)
+    secular_disruption_id INTEGER REFERENCES secular_disruption(id),
+    adjusted_attractor_score REAL,  -- final score after concentration risk + secular disruption
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
 );
 
@@ -255,6 +258,44 @@ CREATE TABLE alerts (
     created_at TEXT NOT NULL,
     dismissed INTEGER NOT NULL DEFAULT 0,
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
+);
+
+-- Secular disruption assessment (Update 7 — one per stock per analysis date)
+CREATE TABLE IF NOT EXISTS secular_disruption (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ticker TEXT NOT NULL,
+    analysis_date TEXT NOT NULL,
+    demand_substitution INTEGER NOT NULL DEFAULT 0,
+    demand_substitution_note TEXT,
+    labor_model_disruption INTEGER NOT NULL DEFAULT 0,
+    labor_model_disruption_note TEXT,
+    pricing_power_erosion INTEGER NOT NULL DEFAULT 0,
+    pricing_power_erosion_note TEXT,
+    capital_migration INTEGER NOT NULL DEFAULT 0,
+    capital_migration_note TEXT,
+    incumbent_response_paradox INTEGER NOT NULL DEFAULT 0,
+    incumbent_response_paradox_note TEXT,
+    total_indicators INTEGER NOT NULL,
+    classification TEXT NOT NULL CHECK(classification IN ('none', 'early', 'active', 'advanced')),
+    attractor_score_adjustment REAL NOT NULL DEFAULT 0,
+    mos_adjustment_pct INTEGER NOT NULL DEFAULT 0,
+    beneficiary_sectors TEXT,
+    beneficiary_rationale TEXT,
+    created_at TEXT NOT NULL DEFAULT (datetime('now')),
+    FOREIGN KEY (ticker) REFERENCES stocks(ticker)
+);
+
+CREATE INDEX IF NOT EXISTS idx_secular_disruption_ticker ON secular_disruption(ticker, analysis_date);
+
+-- Sector P/B distribution cache (Update 7 — for sector-relative P/B thresholds)
+CREATE TABLE IF NOT EXISTS sector_pb_distribution (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sector TEXT NOT NULL,
+    computed_date TEXT NOT NULL,
+    p33_pb REAL NOT NULL,
+    p50_pb REAL NOT NULL,
+    sample_size INTEGER NOT NULL,
+    UNIQUE(sector, computed_date)
 );
 
 -- System configuration (cron mode, tracking timestamps)

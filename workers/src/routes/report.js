@@ -30,6 +30,10 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
     'SELECT * FROM concentration_risk WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
   ).bind(ticker).first();
 
+  const secularDisruption = await env.DB.prepare(
+    'SELECT * FROM secular_disruption WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+  ).bind(ticker).first();
+
   const insiderSignal = await env.DB.prepare(
     'SELECT * FROM insider_signals WHERE ticker = ?'
   ).bind(ticker).first();
@@ -40,19 +44,29 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
   const aaaBondYield = bondRow?.price || null;
   const dynamicPECeiling = aaaBondYield != null ? getDynamicPECeiling(aaaBondYield) : 15;
 
-  // Determine signal
+  // Determine signal — use adjusted_attractor_score (includes secular disruption modifier) when available
   let signal = 'NO SIGNAL';
   let signalRationale = '';
   const isFullPass = screenResult?.passes_all_hard || screenResult?.tier === 'full_pass';
   const isNearMiss = screenResult?.tier === 'near_miss';
   const hasValuation = valuation?.buy_below_price != null && marketData?.price != null;
-  const attractorScore = analysis?.attractor_stability_score;
+  const attractorScore = analysis?.adjusted_attractor_score ?? analysis?.attractor_stability_score;
   const isDissolvingAttractor = attractorScore != null && attractorScore < 2.0;
   const isTransitional = attractorScore != null && attractorScore >= 2.0 && attractorScore < 3.5;
 
-  if (isDissolvingAttractor) {
+  // Tech sector mandatory disruption gate (Update 7, Section 3.1)
+  const isTechSector = ['Technology', 'Information Technology'].includes(stock.sector);
+  const hasMandatoryDisruptionCheck = isTechSector && !secularDisruption;
+
+  if (hasMandatoryDisruptionCheck && (isFullPass || isNearMiss)) {
+    signal = 'ANALYSIS REQUIRED';
+    signalRationale = `Technology sector stock requires mandatory secular disruption assessment before a signal can be generated. Run attractor analysis to complete the assessment.`;
+  } else if (isDissolvingAttractor) {
     signal = 'DO NOT BUY';
-    signalRationale = `Attractor score ${attractorScore.toFixed(1)} is below 2.0 (dissolving). The framework prohibits buying stocks with dissolving competitive positions.`;
+    const sdNote = secularDisruption?.classification === 'advanced' || secularDisruption?.classification === 'active'
+      ? ` Secular disruption modifier applied: ${secularDisruption.classification} disruption (-${Math.abs(secularDisruption.attractor_score_adjustment).toFixed(1)} score adjustment).`
+      : '';
+    signalRationale = `Adjusted attractor score ${attractorScore.toFixed(1)} is below 2.0 (dissolving). The framework prohibits buying stocks with dissolving competitive positions.${sdNote}`;
   } else if (isFullPass && hasValuation) {
     if (marketData.price <= valuation.buy_below_price) {
       if (isTransitional) {
@@ -89,7 +103,7 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
   // Build report
   const report = buildReport({
     stock, marketData, valuation, financials, screenResult,
-    analysis, cr, insiderSignal,
+    analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
   });
 
@@ -100,7 +114,7 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
 function buildReport(d) {
   const {
     stock, marketData, valuation, financials, screenResult,
-    analysis, cr, insiderSignal,
+    analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
   } = d;
 
@@ -138,9 +152,18 @@ function buildReport(d) {
   lines.push(`| Metric | Value |`);
   lines.push(`|--------|-------|`);
   lines.push(`| Price | $${marketData?.price?.toFixed(2) || 'N/A'} |`);
-  lines.push(`| P/E Ratio | ${marketData?.pe_ratio?.toFixed(1) || 'N/A'} |`);
-  lines.push(`| P/B Ratio | ${marketData?.pb_ratio?.toFixed(1) || 'N/A'} |`);
-  lines.push(`| P/E x P/B | ${marketData?.pe_ratio && marketData?.pb_ratio ? (marketData.pe_ratio * marketData.pb_ratio).toFixed(1) : 'N/A'} |`);
+  lines.push(`| P/E (TTM) | ${marketData?.pe_ratio?.toFixed(1) || 'N/A'} |`);
+  // Normalized P/E using 3-year avg EPS (Bug 1.3)
+  const normalizedPE = valuation?.normalized_eps > 0 && marketData?.price
+    ? (marketData.price / valuation.normalized_eps).toFixed(1)
+    : null;
+  if (normalizedPE && marketData?.pe_ratio) {
+    const peDivergence = Math.abs(parseFloat(normalizedPE) - marketData.pe_ratio) / marketData.pe_ratio * 100;
+    lines.push(`| P/E (3yr normalized) | ${normalizedPE}${peDivergence > 20 ? ' *' : ''} |`);
+  }
+  lines.push(`| P/B Ratio | ${marketData?.pb_ratio?.toFixed(2) || 'N/A'} |`);
+  // P/E x P/B at full precision (Bug 1.4)
+  lines.push(`| P/E x P/B | ${marketData?.pe_ratio && marketData?.pb_ratio ? (marketData.pe_ratio * marketData.pb_ratio).toFixed(2) : 'N/A'} |`);
   lines.push(`| Earnings Yield | ${marketData?.earnings_yield ? (marketData.earnings_yield * 100).toFixed(1) + '%' : (marketData?.pe_ratio ? (100 / marketData.pe_ratio).toFixed(1) + '%' : 'N/A')} |`);
   const divYield = marketData?.dividend_yield;
   const divYieldStr = divYield ? divYield.toFixed(2) + '%' : 'N/A';
@@ -163,7 +186,7 @@ function buildReport(d) {
     lines.push('|--------|--------|---------|');
     lines.push(`| P/E (dynamic) | ${screenResult.passes_pe ? 'PASS' : 'FAIL'} | P/E ${marketData?.pe_ratio?.toFixed(1) || '?'} vs ceiling ${dynamicPECeiling.toFixed(1)} (AAA yield ${aaaBondYield?.toFixed(2) || '?'}% + 1.5% premium) |`);
     lines.push(`| P/B (sector-relative) | ${screenResult.passes_pb ? 'PASS' : 'FAIL'} | P/B ${marketData?.pb_ratio?.toFixed(1) || '?'} vs sector threshold ${screenResult.sector_pb_threshold?.toFixed(2) || '?'} (${stock.sector || 'Unknown'} 33rd pctile, backstop 5.0) |`);
-    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${marketData?.pe_ratio && marketData?.pb_ratio ? (marketData.pe_ratio * marketData.pb_ratio).toFixed(1) : '?'} vs max 22.5 |`);
+    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${marketData?.pe_ratio && marketData?.pb_ratio ? (marketData.pe_ratio * marketData.pb_ratio).toFixed(2) : '?'} vs max 22.5 |`);
     lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${screenResult.de_auto_pass ? 'Auto-pass (financial sector)' : getDebtEquity(financials)} |`);
     lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${screenResult.cr_auto_pass ? 'Auto-pass (financial sector)' : getCurrentRatio(financials)} |`);
     lines.push(`| Earnings Stability | ${screenResult.passes_earnings_stability ? 'PASS' : 'FAIL'} | ${getEarningsStability(financials)} |`);
@@ -219,7 +242,7 @@ function buildReport(d) {
     lines.push(`|------------|-------|-----------|`);
     lines.push(`| Fat-Tail Discount | ${(valuation.fat_tail_discount * 100).toFixed(0)}% | ${valuation.fat_tail_discount === 0 ? 'Resilient (10+ years, 0-1 negative EPS years)' : valuation.fat_tail_discount >= 0.15 ? 'High volatility (4+ negative EPS years)' : valuation.fat_tail_discount >= 0.10 ? 'Moderate volatility or untested' : 'Unknown'} |`);
     lines.push(`| Adjusted IV | $${valuation.adjusted_intrinsic_value?.toFixed(2)} | IV x (1 - ${(valuation.fat_tail_discount * 100).toFixed(0)}%) |`);
-    lines.push(`| Margin of Safety | ${(valuation.margin_of_safety_required * 100).toFixed(0)}% | ${getMarginRationale(valuation, analysis)} |`);
+    lines.push(`| Margin of Safety | ${(valuation.margin_of_safety_required * 100).toFixed(0)}% | ${getMarginRationale(valuation, analysis, secularDisruption)} |`);
     lines.push(`| **Buy-Below Price** | **$${valuation.buy_below_price?.toFixed(2)}** | Adjusted IV x (1 - ${(valuation.margin_of_safety_required * 100).toFixed(0)}%) |`);
     lines.push('');
     lines.push('### Valuation Summary');
@@ -242,10 +265,14 @@ function buildReport(d) {
   lines.push('## Layer 3: Attractor Stability Analysis');
   lines.push('');
   if (analysis) {
-    const classification = analysis.attractor_stability_score >= 3.5 ? 'Stable Attractor'
-      : analysis.attractor_stability_score >= 2.0 ? 'Transitional' : 'Dissolving';
+    const effectiveScore = analysis.adjusted_attractor_score ?? analysis.attractor_stability_score;
+    const classification = effectiveScore >= 3.5 ? 'Stable Attractor'
+      : effectiveScore >= 2.0 ? 'Transitional' : 'Dissolving';
     lines.push(`**Classification:** ${classification}  `);
-    lines.push(`**Composite Score:** ${analysis.attractor_stability_score?.toFixed(1)}/5.0  `);
+    lines.push(`**Base Score:** ${analysis.attractor_stability_score?.toFixed(1)}/5.0  `);
+    if (analysis.adjusted_attractor_score != null && analysis.adjusted_attractor_score !== analysis.attractor_stability_score) {
+      lines.push(`**Adjusted Score:** ${analysis.adjusted_attractor_score?.toFixed(1)}/5.0 (after secular disruption modifier)  `);
+    }
     lines.push(`**Network Regime:** ${formatRegime(analysis.network_regime)}  `);
     lines.push(`**Analysis Date:** ${analysis.analysis_date}`);
     lines.push('');
@@ -294,6 +321,45 @@ function buildReport(d) {
       lines.push(`| Regulatory | ${cr.regulatory_dependency_pct ? cr.regulatory_dependency_pct + '% — ' + (cr.regulatory_details || '') : 'Low'} | ${cr.regulatory_dependency_pct >= 50 ? '-0.5' : '0'} |`);
       lines.push(`| **Total Penalty** | | **-${cr.concentration_penalty?.toFixed(1) || '0'}** |`);
       lines.push('');
+    }
+    // Secular Disruption (Update 7)
+    if (secularDisruption) {
+      lines.push('### Secular Disruption Assessment');
+      lines.push('');
+      const sdClass = secularDisruption.classification;
+      const sdBadge = sdClass === 'advanced' ? 'ADVANCED (red)' : sdClass === 'active' ? 'ACTIVE (orange)' : sdClass === 'early' ? 'EARLY (yellow)' : 'NONE (green)';
+      lines.push(`**Classification:** ${sdBadge} (${secularDisruption.total_indicators}/5 indicators)  `);
+      if (secularDisruption.attractor_score_adjustment !== 0) {
+        lines.push(`**Score Adjustment:** ${secularDisruption.attractor_score_adjustment > 0 ? '+' : ''}${secularDisruption.attractor_score_adjustment.toFixed(1)}  `);
+        lines.push(`**Attractor Score:** ${analysis.attractor_stability_score?.toFixed(1)} → ${analysis.adjusted_attractor_score?.toFixed(1)} (after secular disruption)  `);
+      }
+      if (secularDisruption.mos_adjustment_pct > 0) {
+        lines.push(`**MoS Adjustment:** +${secularDisruption.mos_adjustment_pct}% additional margin of safety required  `);
+      }
+      lines.push('');
+      lines.push('| Indicator | Present | Explanation |');
+      lines.push('|-----------|---------|-------------|');
+      lines.push(`| Demand Substitution | ${secularDisruption.demand_substitution ? 'Yes' : 'No'} | ${secularDisruption.demand_substitution_note || '—'} |`);
+      lines.push(`| Labor Model Disruption | ${secularDisruption.labor_model_disruption ? 'Yes' : 'No'} | ${secularDisruption.labor_model_disruption_note || '—'} |`);
+      lines.push(`| Pricing Power Erosion | ${secularDisruption.pricing_power_erosion ? 'Yes' : 'No'} | ${secularDisruption.pricing_power_erosion_note || '—'} |`);
+      lines.push(`| Capital Migration | ${secularDisruption.capital_migration ? 'Yes' : 'No'} | ${secularDisruption.capital_migration_note || '—'} |`);
+      lines.push(`| Incumbent Response Paradox | ${secularDisruption.incumbent_response_paradox ? 'Yes' : 'No'} | ${secularDisruption.incumbent_response_paradox_note || '—'} |`);
+      lines.push('');
+
+      // Beneficiary scan
+      let beneficiarySectors = secularDisruption.beneficiary_sectors;
+      if (typeof beneficiarySectors === 'string') {
+        try { beneficiarySectors = JSON.parse(beneficiarySectors); } catch { beneficiarySectors = []; }
+      }
+      if (Array.isArray(beneficiarySectors) && beneficiarySectors.length > 0 && (sdClass === 'active' || sdClass === 'advanced')) {
+        lines.push('### Disruption Beneficiaries');
+        lines.push('');
+        lines.push(`**Beneficiary Sectors:** ${beneficiarySectors.join(', ')}  `);
+        if (secularDisruption.beneficiary_rationale) {
+          lines.push(`**Rationale:** ${secularDisruption.beneficiary_rationale}`);
+        }
+        lines.push('');
+      }
     }
   } else {
     lines.push('No attractor analysis has been performed. Run analysis from the stock detail page.');
@@ -405,24 +471,43 @@ function getDividendRecord(financials) {
 }
 
 function getEarningsGrowth(financials) {
-  if (financials.length < 6) return `Insufficient data (${financials.length} years)`;
-  const last3 = financials.slice(0, 3);
-  const first3 = financials.slice(-3);
-  const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
-  const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
-  if (avgFirst <= 0) return 'N/A (negative base EPS)';
-  const years = financials.length - 3; // midpoint-to-midpoint span
-  const growth = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
-  return `${growth.toFixed(1)}% CAGR over ${years} years`;
+  if (financials.length >= 6) {
+    const last3 = financials.slice(0, 3);
+    const first3 = financials.slice(-3);
+    const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
+    const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
+    if (avgFirst <= 0) return 'N/A (negative base EPS)';
+    const years = financials.length - 3;
+    const growth = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
+    return `${growth.toFixed(1)}% CAGR over ${years} years`;
+  } else if (financials.length === 5) {
+    const last2 = financials.slice(0, 2);
+    const first2 = financials.slice(-2);
+    const avgLast = last2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+    const avgFirst = first2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+    if (avgFirst <= 0) return 'N/A (negative base EPS)';
+    const years = financials.length - 2;
+    const growth = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
+    return `${growth.toFixed(1)}% CAGR over ${years} years (5yr fallback)`;
+  }
+  return `Insufficient data (${financials.length} years)`;
 }
 
-function getMarginRationale(valuation, analysis) {
+function getMarginRationale(valuation, analysis, secularDisruption) {
   if (!analysis) return 'Default 25% (no attractor analysis)';
-  if (analysis.attractor_stability_score >= 3.5) {
-    if (analysis.network_regime === 'hard_network') return 'Stable + hard network = 40%';
-    return 'Stable attractor = 25%';
+  const effectiveScore = analysis.adjusted_attractor_score ?? analysis.attractor_stability_score;
+  let rationale;
+  if (effectiveScore >= 3.5) {
+    rationale = analysis.network_regime === 'hard_network' ? 'Stable + hard network = 40%' : 'Stable attractor = 25%';
+  } else if (effectiveScore >= 2.0) {
+    rationale = 'Transitional = 40%';
+  } else {
+    rationale = 'Dissolving = DO NOT BUY';
   }
-  return 'Transitional = 40%';
+  if (secularDisruption?.mos_adjustment_pct > 0) {
+    rationale += ` + ${secularDisruption.mos_adjustment_pct}% secular disruption`;
+  }
+  return rationale;
 }
 
 function formatFilterName(name) {

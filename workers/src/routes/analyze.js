@@ -39,12 +39,18 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       'SELECT sector, industry FROM stocks WHERE ticker = ?'
     ).bind(ticker).first();
 
+    // Fetch secular disruption data (Update 7)
+    const secularDisruption = await env.DB.prepare(
+      'SELECT * FROM secular_disruption WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+    ).bind(ticker).first();
+
     return jsonResponse({
       analysis,
       concentration_risk: cr || null,
       insider_signal: insiderSig || null,
       insider_transactions: insiderTxns?.results || [],
       stock_info: stockInfo || null,
+      secular_disruption: secularDisruption || null,
     });
   }
 
@@ -153,21 +159,49 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       ticker, stock.company_name, financialContext, mdaText, newsContext, env.ANTHROPIC_API_KEY
     );
 
-    // Store attractor analysis
+    // Store secular disruption assessment (Update 7)
+    let secularDisruptionId = null;
+    const sd = result.secular_disruption;
+    if (sd) {
+      const sdResult = await env.DB.prepare(
+        `INSERT INTO secular_disruption
+         (ticker, analysis_date, demand_substitution, demand_substitution_note,
+          labor_model_disruption, labor_model_disruption_note,
+          pricing_power_erosion, pricing_power_erosion_note,
+          capital_migration, capital_migration_note,
+          incumbent_response_paradox, incumbent_response_paradox_note,
+          total_indicators, classification, attractor_score_adjustment,
+          mos_adjustment_pct, beneficiary_sectors, beneficiary_rationale)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+      ).bind(
+        ticker, result.analysis_date,
+        sd.demand_substitution, sd.demand_substitution_note,
+        sd.labor_model_disruption, sd.labor_model_disruption_note,
+        sd.pricing_power_erosion, sd.pricing_power_erosion_note,
+        sd.capital_migration, sd.capital_migration_note,
+        sd.incumbent_response_paradox, sd.incumbent_response_paradox_note,
+        sd.total_indicators, sd.classification, sd.attractor_score_adjustment,
+        sd.mos_adjustment_pct, sd.beneficiary_sectors, sd.beneficiary_rationale
+      ).run();
+      secularDisruptionId = sdResult.meta?.last_row_id || null;
+    }
+
+    // Store attractor analysis (with secular disruption link and adjusted score)
     await env.DB.prepare(
       `INSERT INTO attractor_analysis
        (ticker, analysis_date, revenue_durability_score, competitive_reinforcement_score,
         industry_structure_score, demand_feedback_score, adaptation_capacity_score,
         capital_allocation_score, attractor_stability_score, network_regime,
-        red_flags, analysis_text, sources_used)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        red_flags, analysis_text, sources_used, secular_disruption_id, adjusted_attractor_score)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
     ).bind(
       result.ticker, result.analysis_date,
       result.revenue_durability_score, result.competitive_reinforcement_score,
       result.industry_structure_score, result.demand_feedback_score,
       result.adaptation_capacity_score, result.capital_allocation_score,
       result.attractor_stability_score, result.network_regime,
-      result.red_flags, result.analysis_text, result.sources_used
+      result.red_flags, result.analysis_text, result.sources_used,
+      secularDisruptionId, result.adjusted_attractor_score
     ).run();
 
     // Store concentration risk if extracted
@@ -192,8 +226,9 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       ).run();
     }
 
-    // Update valuation with attractor-adjusted margin of safety (full near-miss matrix)
-    if (result.attractor_stability_score != null && valuation && marketData) {
+    // Update valuation with attractor-adjusted margin of safety (full near-miss matrix + secular disruption)
+    const effectiveScore = result.adjusted_attractor_score ?? result.attractor_stability_score;
+    if (effectiveScore != null && valuation && marketData) {
       const { MARGIN_OF_SAFETY } = await import('../../../shared/constants.js');
 
       // Fetch screen tier info for this ticker
@@ -203,16 +238,15 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
       ).bind(ticker).first();
       const isNearMiss = screenRow?.tier === 'near_miss';
       const missSeverity = screenRow?.miss_severity;
-      const score = result.attractor_stability_score;
       const isHardNetwork = result.network_regime === 'hard_network';
 
       let margin;
-      if (score < 2.0) {
+      if (effectiveScore < 2.0) {
         margin = 1.0; // dissolving attractor — effectively block
       } else if (isNearMiss) {
         if (missSeverity === 'clear') {
           margin = MARGIN_OF_SAFETY.near_miss_clear;
-        } else if (score >= 3.5) {
+        } else if (effectiveScore >= 3.5) {
           margin = isHardNetwork
             ? MARGIN_OF_SAFETY.near_miss_stable_hard_network
             : MARGIN_OF_SAFETY.near_miss_stable_classical;
@@ -220,8 +254,7 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
           margin = MARGIN_OF_SAFETY.near_miss_transitional;
         }
       } else {
-        // Full pass
-        if (score >= 3.5) {
+        if (effectiveScore >= 3.5) {
           margin = isHardNetwork
             ? MARGIN_OF_SAFETY.stable_hard_network_non_leader
             : MARGIN_OF_SAFETY.stable_classical;
@@ -230,12 +263,16 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
         }
       }
 
-      const adjustedBuyBelow = valuation.adjusted_intrinsic_value * (1 - margin);
+      // Add secular disruption MoS adjustment (percentage points)
+      const sdMosAdj = sd?.mos_adjustment_pct || 0;
+      const totalMargin = Math.min(margin + sdMosAdj / 100, 0.95); // cap at 95%
+
+      const adjustedBuyBelow = valuation.adjusted_intrinsic_value * (1 - totalMargin);
       await env.DB.prepare(
         `UPDATE valuations SET margin_of_safety_required = ?, buy_below_price = ?,
          discount_to_iv_pct = ? WHERE ticker = ?`
       ).bind(
-        margin, Math.round(adjustedBuyBelow * 100) / 100,
+        totalMargin, Math.round(adjustedBuyBelow * 100) / 100,
         Math.round(((valuation.adjusted_intrinsic_value - marketData.price) / valuation.adjusted_intrinsic_value) * 1000) / 10,
         ticker
       ).run();

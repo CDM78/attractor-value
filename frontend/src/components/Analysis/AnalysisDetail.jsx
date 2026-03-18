@@ -72,6 +72,7 @@ export default function AnalysisDetail() {
 
   const analysis = data?.analysis
   const cr = data?.concentration_risk
+  const sd = data?.secular_disruption
   const insiderSig = data?.insider_signal
   const insiderTxns = data?.insider_transactions || []
   const stockInfo = data?.stock_info
@@ -120,10 +121,13 @@ export default function AnalysisDetail() {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <span className="text-text-secondary text-sm">Attractor Stability Score</span>
-                <div className={`text-3xl font-bold ${scoreColor(analysis.attractor_stability_score)}`}>
-                  {analysis.attractor_stability_score?.toFixed(1)}
+                <div className={`text-3xl font-bold ${scoreColor(analysis.adjusted_attractor_score ?? analysis.attractor_stability_score)}`}>
+                  {(analysis.adjusted_attractor_score ?? analysis.attractor_stability_score)?.toFixed(1)}
                   <span className="text-sm text-text-secondary ml-2">/ 5.0</span>
                 </div>
+                {analysis.adjusted_attractor_score != null && analysis.adjusted_attractor_score !== analysis.attractor_stability_score && (
+                  <span className="text-xs text-text-secondary">Base: {analysis.attractor_stability_score?.toFixed(1)} → {analysis.adjusted_attractor_score?.toFixed(1)} (secular disruption)</span>
+                )}
               </div>
               <div className="text-right">
                 <span className="text-text-secondary text-sm">Network Regime</span>
@@ -137,18 +141,17 @@ export default function AnalysisDetail() {
               </div>
             </div>
 
-            {/* Stability classification */}
-            <div className={`text-sm px-3 py-1.5 rounded inline-block ${
-              analysis.attractor_stability_score >= 3.5
-                ? 'bg-pass/15 text-pass'
-                : analysis.attractor_stability_score >= 2.0
-                  ? 'bg-warn/15 text-warn'
-                  : 'bg-fail/15 text-fail'
-            }`}>
-              {analysis.attractor_stability_score >= 3.5 ? 'Stable Attractor'
-                : analysis.attractor_stability_score >= 2.0 ? 'Transitional'
-                : 'Dissolving Attractor'}
-            </div>
+            {/* Stability classification (uses adjusted score) */}
+            {(() => {
+              const s = analysis.adjusted_attractor_score ?? analysis.attractor_stability_score
+              return (
+                <div className={`text-sm px-3 py-1.5 rounded inline-block ${
+                  s >= 3.5 ? 'bg-pass/15 text-pass' : s >= 2.0 ? 'bg-warn/15 text-warn' : 'bg-fail/15 text-fail'
+                }`}>
+                  {s >= 3.5 ? 'Stable Attractor' : s >= 2.0 ? 'Transitional' : 'Dissolving Attractor'}
+                </div>
+              )
+            })()}
           </div>
 
           {/* Factor Scores — Bar Chart */}
@@ -211,6 +214,46 @@ export default function AnalysisDetail() {
                   warn={cr.regulatory_dependency_pct >= 50}
                 />
               </div>
+            </div>
+          )}
+
+          {/* Secular Disruption (Update 7) */}
+          {sd && (
+            <div className="bg-surface-secondary rounded p-4">
+              <h3 className="text-sm font-bold text-text-secondary mb-3">
+                Secular Disruption
+                <span className={`ml-2 text-xs px-2 py-0.5 rounded ${
+                  sd.classification === 'advanced' ? 'bg-fail/15 text-fail'
+                  : sd.classification === 'active' ? 'bg-warn/15 text-warn'
+                  : sd.classification === 'early' ? 'bg-accent/15 text-accent'
+                  : 'bg-pass/15 text-pass'
+                }`}>
+                  {sd.classification?.toUpperCase()} ({sd.total_indicators}/5)
+                </span>
+              </h3>
+
+              {sd.attractor_score_adjustment !== 0 && (
+                <div className="text-sm mb-3">
+                  <span className="text-text-secondary">Score adjustment: </span>
+                  <span className="text-fail font-bold">{sd.attractor_score_adjustment > 0 ? '+' : ''}{sd.attractor_score_adjustment?.toFixed(1)}</span>
+                  {sd.mos_adjustment_pct > 0 && (
+                    <span className="text-text-secondary ml-3">MoS: <span className="text-warn font-bold">+{sd.mos_adjustment_pct}%</span></span>
+                  )}
+                </div>
+              )}
+
+              <div className="space-y-2 text-sm">
+                <DisruptionIndicator label="Demand Substitution" present={sd.demand_substitution} note={sd.demand_substitution_note} />
+                <DisruptionIndicator label="Labor Model Disruption" present={sd.labor_model_disruption} note={sd.labor_model_disruption_note} />
+                <DisruptionIndicator label="Pricing Power Erosion" present={sd.pricing_power_erosion} note={sd.pricing_power_erosion_note} />
+                <DisruptionIndicator label="Capital Migration" present={sd.capital_migration} note={sd.capital_migration_note} />
+                <DisruptionIndicator label="Incumbent Response Paradox" present={sd.incumbent_response_paradox} note={sd.incumbent_response_paradox_note} />
+              </div>
+
+              {/* Beneficiary scan for active/advanced disruption */}
+              {(sd.classification === 'active' || sd.classification === 'advanced') && sd.beneficiary_sectors && (
+                <BeneficiaryScan sectors={sd.beneficiary_sectors} rationale={sd.beneficiary_rationale} />
+              )}
             </div>
           )}
 
@@ -394,6 +437,40 @@ function InsiderSection({ signal, transactions }) {
           )}
         </div>
       )}
+    </div>
+  )
+}
+
+function DisruptionIndicator({ label, present, note }) {
+  return (
+    <div className="flex items-start gap-2">
+      <span className={`mt-0.5 text-xs font-bold ${present ? 'text-fail' : 'text-pass'}`}>
+        {present ? '!' : '\u2713'}
+      </span>
+      <div>
+        <span className={`font-medium ${present ? 'text-fail' : 'text-text-primary'}`}>{label}</span>
+        {note && <span className="text-text-secondary ml-2">— {note}</span>}
+      </div>
+    </div>
+  )
+}
+
+function BeneficiaryScan({ sectors, rationale }) {
+  let parsed = sectors
+  if (typeof sectors === 'string') {
+    try { parsed = JSON.parse(sectors) } catch { parsed = [] }
+  }
+  if (!Array.isArray(parsed) || parsed.length === 0) return null
+
+  return (
+    <div className="mt-3 pt-3 border-t border-border/30">
+      <h4 className="text-xs font-bold text-text-secondary mb-2">Disruption Beneficiaries</h4>
+      <div className="flex flex-wrap gap-1 mb-2">
+        {parsed.map((s, i) => (
+          <span key={i} className="text-xs px-2 py-0.5 rounded bg-pass/15 text-pass">{s}</span>
+        ))}
+      </div>
+      {rationale && <p className="text-xs text-text-secondary">{rationale}</p>}
     </div>
   )
 }

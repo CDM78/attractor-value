@@ -128,6 +128,7 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   results.passes_dividend_record = recentYears.length >= 5 && recentYears.every(f => f.dividend_paid) ? 1 : 0;
 
   // Earnings Growth (3% over 10 years, first 3 vs last 3 avg, midpoint-to-midpoint span)
+  // 5-year fallback: compare 2-year averages with shorter span (years - 2)
   if (financials.length >= 6) {
     const last3 = financials.slice(0, 3);
     const first3 = financials.slice(-3);
@@ -135,6 +136,19 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
     if (avgFirst > 0) {
       const years = financials.length - 3; // midpoint-to-midpoint span
+      const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
+      results.passes_earnings_growth = growthRate >= thresholds.eps_growth_min_pct ? 1 : 0;
+    } else {
+      results.passes_earnings_growth = 0;
+    }
+  } else if (financials.length === 5) {
+    // Fallback: 2-year averages with years - 2 span
+    const last2 = financials.slice(0, 2);
+    const first2 = financials.slice(-2);
+    const avgLast = last2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+    const avgFirst = first2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+    if (avgFirst > 0) {
+      const years = financials.length - 2; // 3-year span for 5 years of data
       const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
       results.passes_earnings_growth = growthRate >= thresholds.eps_growth_min_pct ? 1 : 0;
     } else {
@@ -180,6 +194,24 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     }
   } else {
     results.tier = 'fail';
+  }
+
+  // EPS data quality check (Bug 1.1 — Update 7): flag identical EPS for 3+ years
+  if (financials.length >= 3) {
+    const epsValues = financials.slice(0, Math.min(financials.length, 5)).map(f => f.eps?.toFixed(2));
+    let consecutiveIdentical = 1;
+    for (let i = 1; i < epsValues.length; i++) {
+      if (epsValues[i] === epsValues[i - 1] && epsValues[i] != null) {
+        consecutiveIdentical++;
+        if (consecutiveIdentical >= 3) {
+          results.eps_data_warning = `Identical EPS ($${epsValues[i]}) for ${consecutiveIdentical}+ consecutive years — possible data quality issue`;
+          console.warn(`EPS DATA WARNING: ${stock.ticker} has identical EPS for ${consecutiveIdentical}+ years — likely data artifact`);
+          break;
+        }
+      } else {
+        consecutiveIdentical = 1;
+      }
+    }
   }
 
   // Soft filters
@@ -259,6 +291,16 @@ function getMissInfo(filterName, stock, financials, marketData, ctx) {
         const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
         if (avgFirst > 0) {
           const years = financials.length - 3;
+          const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
+          return { actual: growthRate, threshold: ctx.thresholds.eps_growth_min_pct };
+        }
+      } else if (financials.length === 5) {
+        const last2 = financials.slice(0, 2);
+        const first2 = financials.slice(-2);
+        const avgLast = last2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+        const avgFirst = first2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+        if (avgFirst > 0) {
+          const years = financials.length - 2;
           const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
           return { actual: growthRate, threshold: ctx.thresholds.eps_growth_min_pct };
         }

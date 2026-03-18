@@ -10,6 +10,7 @@ import { transactionsRoutes } from './routes/transactions.js';
 import { reportRoutes } from './routes/report.js';
 import { dailyRefresh, finnhubRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
+import { dailyAttractorCheck } from './cron/attractorCheck.js';
 import { fetchBulkQuotes } from './services/yahooFinance.js';
 
 // Auto-detect population vs maintenance mode
@@ -203,6 +204,10 @@ export default {
       // 5:00 PM ET — full screening run (uses updated prices)
       ctx.waitUntil(dailyRefresh(env));
     }
+    if (isMarketDay && etHour === 17 && minute === 15) {
+      // 5:15 PM ET — attractor analysis for stale/missing scores (caching policy)
+      ctx.waitUntil(dailyAttractorCheck(env));
+    }
     if (isMarketDay && etHour === 17 && minute === 30) {
       // 5:30 PM ET — alerts check
       ctx.waitUntil(alertsCheck(env));
@@ -211,6 +216,14 @@ export default {
     // Intraday watchlist price check (every 15 min during market hours)
     if (isMarketDay && isMarketHours && minute % 15 === 0) {
       ctx.waitUntil(watchlistPriceCheck(env));
+    }
+
+    // Earnings season override: extra morning screen in Jan, Apr, Jul, Oct
+    const month = scheduledTime.getUTCMonth(); // 0-indexed
+    const isEarningsSeason = [0, 3, 6, 9].includes(month); // Jan, Apr, Jul, Oct
+    if (isEarningsSeason && isMarketDay && etHour === 9 && minute === 30) {
+      // 9:30 AM ET — catch pre-market earnings releases
+      ctx.waitUntil(dailyRefresh(env));
     }
 
     // Weekly Saturday refresh

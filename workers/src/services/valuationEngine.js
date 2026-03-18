@@ -18,6 +18,7 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
 
   // Estimated growth rate: compounded annual from first 3 avg to last 3 avg
   // Time span = gap between midpoints of the two 3-year windows
+  // 5-year fallback: compare 2-year averages with shorter span (years - 2)
   let growthRate = 0;
   if (financials.length >= 6) {
     const first3 = financials.slice(-3);
@@ -25,6 +26,15 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
     if (avgFirst > 0 && normalizedEps > 0) {
       const years = financials.length - 3; // midpoint-to-midpoint span
       growthRate = (Math.pow(normalizedEps / avgFirst, 1 / years) - 1) * 100;
+    }
+  } else if (financials.length === 5) {
+    const first2 = financials.slice(-2);
+    const last2 = financials.slice(0, 2);
+    const avgFirst = first2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+    const avgLast = last2.reduce((s, f) => s + (f.eps || 0), 0) / 2;
+    if (avgFirst > 0 && avgLast > 0) {
+      const years = financials.length - 2; // 3-year span for 5 years of data
+      growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
     }
   }
 

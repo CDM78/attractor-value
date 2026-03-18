@@ -126,6 +126,31 @@ export const INSIDER_SIGNALS = {
   caution_requires_csuite: true,      // selling must be by CEO/CFO/COO
 };
 
+// Secular Disruption Modifier (Update 7)
+export const SECULAR_DISRUPTION = {
+  // Classification thresholds (number of indicators present)
+  none_max: 1,        // 0-1 indicators = no disruption
+  early_max: 2,       // 2 indicators = early-stage
+  active_max: 3,      // 3 indicators = active disruption
+  // 4-5 = advanced disruption
+
+  // Attractor score adjustments
+  early_score_adjustment: -0.5,
+  active_score_adjustment: -1.0,
+  advanced_score_adjustment: -1.5,
+
+  // MoS adjustments (percentage points added to base MoS)
+  early_mos_adjustment: 0,
+  active_mos_adjustment: 10,
+  advanced_mos_adjustment: 15,
+
+  // Floor for adjusted score
+  adjusted_score_floor: 1.0,
+};
+
+// Sectors requiring mandatory secular disruption assessment (Update 7)
+export const MANDATORY_DISRUPTION_SECTORS = ['Technology', 'Information Technology'];
+
 // Sell Discipline Rules
 export const SELL_RULES = [
   'price_exceeds_iv',
