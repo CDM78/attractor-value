@@ -193,6 +193,11 @@ function parseAnalysisResponse(responseText, ticker) {
     sd.incumbent_response_paradox?.present,
   ].filter(Boolean).length;
 
+  // Secular disruption classification thresholds (based on indicator count out of 5):
+  //   0-1 indicators = NONE   (green)  — no score/MoS adjustment
+  //   2   indicators = EARLY  (yellow) — score -0.5, no MoS adjustment
+  //   3   indicators = ACTIVE (orange) — score -1.0, +10% MoS
+  //   4-5 indicators = ADVANCED (red)  — score -1.5, +15% MoS
   let sdClassification = 'none';
   let sdScoreAdj = 0;
   let sdMosAdj = 0;

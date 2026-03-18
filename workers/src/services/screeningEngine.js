@@ -75,6 +75,8 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const sectorPBMax = sectorPBThresholds[sectorName] || thresholds.pb_max; // fallback to 1.5
   const pbBackstop = thresholds.pb_absolute_backstop || 5.0;
 
+  // P/B boundary: uses <= (not <), so a stock exactly at the threshold passes.
+  // e.g., P/B 1.67 vs threshold 1.67 → PASS
   if (marketData.pb_ratio != null && marketData.pb_ratio > 0) {
     results.passes_pb = (marketData.pb_ratio <= sectorPBMax && marketData.pb_ratio <= pbBackstop) ? 1 : 0;
   } else {
@@ -218,7 +220,10 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const fcfPositive = financials.filter(f => f.free_cash_flow > 0).length;
   results.passes_fcf = fcfPositive >= thresholds.fcf_positive_min_years ? 1 : 0;
 
-  results.passes_insider_ownership = marketData.insider_ownership_pct >= thresholds.insider_ownership_min_pct ? 1 : 0;
+  // Fix 4: null insider_ownership_pct means data unavailable, not a failure
+  results.passes_insider_ownership = marketData.insider_ownership_pct != null
+    ? (marketData.insider_ownership_pct >= thresholds.insider_ownership_min_pct ? 1 : 0)
+    : null;
 
   // Dilution check
   if (financials.length >= 5) {
