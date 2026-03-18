@@ -98,16 +98,19 @@ export async function dailyRefresh(env, tickerLimit) {
   // The backfill endpoint (/api/backfill) can also be used for manual bulk fills.
 
   // Step 4: Run Layer 1 screening on stocks that have fundamentals
-  // Screen stocks not yet screened today first, then rotate through already-screened
+  // Priority: watchlist + previously passing stocks first, then rotate through the rest
   const screenDate = new Date().toISOString().split('T')[0];
   const stocksWithData = await env.DB.prepare(
     `SELECT s.* FROM stocks s
      INNER JOIN market_data md ON s.ticker = md.ticker
      WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
        AND EXISTS (SELECT 1 FROM financials f WHERE f.ticker = s.ticker)
-     ORDER BY CASE WHEN s.ticker IN (
-       SELECT ticker FROM screen_results WHERE screen_date = ?
-     ) THEN 1 ELSE 0 END, s.ticker
+     ORDER BY
+       CASE WHEN s.ticker IN (SELECT ticker FROM watchlist) THEN 0
+            WHEN s.ticker IN (SELECT DISTINCT ticker FROM screen_results WHERE passes_all_hard = 1) THEN 1
+            WHEN s.ticker NOT IN (SELECT ticker FROM screen_results WHERE screen_date = ?) THEN 2
+            ELSE 3 END,
+       s.ticker
      LIMIT 30`
   ).bind(screenDate).all();
 

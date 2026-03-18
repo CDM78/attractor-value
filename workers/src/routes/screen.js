@@ -21,7 +21,9 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
        JOIN stocks s ON sr.ticker = s.ticker
        LEFT JOIN market_data md ON sr.ticker = md.ticker
        LEFT JOIN valuations v ON sr.ticker = v.ticker
-       WHERE sr.screen_date = (SELECT MAX(screen_date) FROM screen_results)
+       WHERE sr.screen_date = (
+         SELECT MAX(sr2.screen_date) FROM screen_results sr2 WHERE sr2.ticker = sr.ticker
+       )
        ORDER BY sr.passes_all_hard DESC, v.discount_to_iv_pct DESC, sr.ticker`
     ).all();
 
