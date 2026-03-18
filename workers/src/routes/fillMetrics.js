@@ -108,6 +108,125 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
   return jsonResponse(stats);
 }
 
+// POST /api/backfill?limit=400&mode=both
+// Bulk backfill: fetches fundamentals and/or metrics for ALL stocks missing them
+// Processes up to `limit` stocks per call, respecting Finnhub 60 calls/min rate limit
+// mode=fundamentals (default), mode=metrics, mode=both
+export async function backfillRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
+  if (request.method === 'GET') {
+    const total = await env.DB.prepare(
+      "SELECT COUNT(*) as cnt FROM stocks WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\'"
+    ).first();
+    const withFundamentals = await env.DB.prepare(
+      "SELECT COUNT(DISTINCT ticker) as cnt FROM financials"
+    ).first();
+    const withRatios = await env.DB.prepare(
+      "SELECT COUNT(*) as cnt FROM market_data WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\' AND pe_ratio IS NOT NULL"
+    ).first();
+
+    return jsonResponse({
+      total_stocks: total?.cnt || 0,
+      with_fundamentals: withFundamentals?.cnt || 0,
+      with_ratios: withRatios?.cnt || 0,
+      needing_fundamentals: (total?.cnt || 0) - (withFundamentals?.cnt || 0),
+      needing_ratios: (total?.cnt || 0) - (withRatios?.cnt || 0),
+    });
+  }
+
+  if (request.method !== 'POST') {
+    return errorResponse('Method not allowed', 405);
+  }
+
+  if (!env.FINNHUB_API_KEY) {
+    return errorResponse('FINNHUB_API_KEY not configured', 500);
+  }
+
+  const { getFinancialsReported, parseFinancialsReported, getBasicMetrics } = await import('../services/finnhub.js');
+  const { upsertFinancials } = await import('../db/queries.js');
+
+  const url = new URL(request.url);
+  const limit = parseInt(url.searchParams.get('limit') || '400');
+  const mode = url.searchParams.get('mode') || 'fundamentals';
+
+  const stats = { fundamentals: { fetched: 0, skipped: 0, errors: 0 }, metrics: { updated: 0, skipped: 0, errors: 0 } };
+
+  // Phase 1: Fill metrics (P/E, P/B) for stocks missing them
+  if (mode === 'metrics' || mode === 'both') {
+    const missingMetrics = await env.DB.prepare(
+      `SELECT s.ticker FROM stocks s
+       LEFT JOIN market_data md ON s.ticker = md.ticker
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL)
+       ORDER BY s.ticker
+       LIMIT ?`
+    ).bind(limit).all();
+
+    for (const row of (missingMetrics.results || [])) {
+      try {
+        const metrics = await getBasicMetrics(row.ticker, env.FINNHUB_API_KEY);
+        if (!metrics.pe_ratio && !metrics.pb_ratio) {
+          stats.metrics.skipped++;
+          continue;
+        }
+
+        const existing = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
+        await env.DB.prepare(
+          `INSERT OR REPLACE INTO market_data
+           (ticker, price, pe_ratio, pb_ratio, earnings_yield, dividend_yield, insider_ownership_pct, fetched_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        ).bind(
+          row.ticker,
+          existing?.price ?? null,
+          metrics.pe_ratio ?? existing?.pe_ratio ?? null,
+          metrics.pb_ratio ?? existing?.pb_ratio ?? null,
+          metrics.earnings_yield ?? existing?.earnings_yield ?? null,
+          metrics.dividend_yield ?? existing?.dividend_yield ?? null,
+          metrics.insider_ownership_pct ?? existing?.insider_ownership_pct ?? null,
+          new Date().toISOString()
+        ).run();
+        stats.metrics.updated++;
+      } catch (err) {
+        stats.metrics.errors++;
+        if (err.message.includes('rate limit')) { stats.metrics.rateLimited = true; break; }
+      }
+    }
+  }
+
+  // Phase 2: Fill fundamentals for ALL stocks missing them
+  if (mode === 'fundamentals' || mode === 'both') {
+    const missingFundamentals = await env.DB.prepare(
+      `SELECT s.ticker FROM stocks s
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND s.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
+       ORDER BY s.ticker
+       LIMIT ?`
+    ).bind(limit).all();
+
+    for (const row of (missingFundamentals.results || [])) {
+      try {
+        const reports = await getFinancialsReported(row.ticker, env.FINNHUB_API_KEY);
+        const financials = parseFinancialsReported(row.ticker, reports);
+
+        if (financials.length === 0) {
+          stats.fundamentals.skipped++;
+          continue;
+        }
+
+        for (const fin of financials) {
+          await upsertFinancials(env.DB, fin);
+        }
+
+        stats.fundamentals.fetched++;
+      } catch (err) {
+        stats.fundamentals.errors++;
+        if (err.message.includes('rate limit')) { stats.fundamentals.rateLimited = true; break; }
+      }
+    }
+  }
+
+  return jsonResponse(stats);
+}
+
 // POST /api/fill-fundamentals?limit=6
 // Prioritized Alpha Vantage fetch: promising stocks first (low P/E + P/B)
 export async function fillFundamentalsRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {

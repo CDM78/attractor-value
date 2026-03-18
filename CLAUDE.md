@@ -18,7 +18,7 @@ Investment screening and portfolio management app combining Graham-Dodd value in
 - **2026-03-15**: Switched fundamentals from Alpha Vantage to Finnhub (AV blocked from Workers), fixed 8 bugs in valuation/screening/alerts
 
 ## Data Pipeline (daily cron at 6am UTC)
-Prices → Finnhub metrics → Finnhub fundamentals (10/run, no daily cap) → Screening → Valuations → Insider data → Alerts
+Prices → Finnhub metrics (50/run) → Finnhub fundamentals (40/run, no daily cap) → Screening (500/run) → Valuations → Insider data → Alerts
 
 ## Key Commands
 ```bash
@@ -36,6 +36,11 @@ curl -X POST "https://odieseyeball.com/api/fill-fundamentals?limit=10"
 
 # Fill metrics manually (P/E, P/B from Finnhub)
 curl -X POST "https://odieseyeball.com/api/fill-metrics?limit=50"
+
+# Bulk backfill (fundamentals, metrics, or both — processes all missing stocks)
+curl -X POST "https://odieseyeball.com/api/backfill?limit=50&mode=fundamentals"
+curl -X POST "https://odieseyeball.com/api/backfill?limit=50&mode=both"
+curl "https://odieseyeball.com/api/backfill"  # GET to check status
 
 # Trigger full refresh (prices + screening + valuations)
 curl -X POST "https://odieseyeball.com/api/refresh?limit=2&wait=true"
@@ -55,13 +60,12 @@ ALPHA_VANTAGE_API_KEY, FINNHUB_API_KEY, FRED_API_KEY, ANTHROPIC_API_KEY
 - All 4 keys re-set on 2026-03-15 after accidental wipe
 - Anthropic key regenerated on 2026-03-15
 
-## Current Data Status (as of 2026-03-15)
-- 436 stocks in S&P 500 universe
-- 383+ have P/E and P/B ratios (Finnhub)
-- 24+ have 10-year fundamentals (Finnhub SEC filings + Alpha Vantage)
-- 10 stocks pass Graham-Dodd screening with valuations
-- Top candidates: LKQ (30% discount), BAC (26%), MTB (25%), GPN (21%)
-- Daily cron auto-fills ~10 more tickers/day via Finnhub
+## Current Data Status (as of 2026-03-17)
+- ~700+ stocks in universe: S&P 500 + S&P 400 MidCap (deduplicated via getFullUniverse())
+- 435+ have fundamentals (backfilled 2026-03-17)
+- 430+ have P/E and P/B ratios (Finnhub)
+- Daily cron processes 40 fundamentals + 50 metrics + screens 500 stocks per run
+- Backfill endpoint: POST /api/backfill?limit=50&mode=both for bulk catch-up
 
 ## Remaining Work
 - Adjacent Possible analysis UI (Layer 4)

@@ -61,7 +61,7 @@ export async function fetchBulkQuotes(tickers, batchSize = 5, delayMs = 1500) {
   return results;
 }
 
-// S&P 500 ticker list — hardcoded starting universe
+// S&P 500 ticker list
 export function getSP500Tickers() {
   return [
     'AAPL','ABBV','ABT','ACN','ADBE','ADI','ADM','ADP','ADSK','AEE',
@@ -115,4 +115,72 @@ export function getSP500Tickers() {
     'WRB','WRK','WST','WTW','WY','WYNN','XEL','XOM','XRAY','XYL',
     'YUM','ZBH','ZBRA','ZION','ZTS',
   ];
+}
+
+// S&P 400 MidCap ticker list — expanded universe for deeper value screening
+export function getMidCapTickers() {
+  return [
+    'AAL','ACIW','ACM','AEIS','AGCO','AHR','AIT','ALLY','AMED','AMG','AMKR','AN',
+    'ANF','APG','APPF','AR','ARMK','AROC','ARWR','ASB','ASH','ATI','ATSG','AVNT',
+    'AX','AXON','AWI','AXS','AYI','AZEK','AZPN',
+    'BAH','BALL','BC','BCO','BERY','BHF','BHLB','BJ','BKH','BLD','BMI','BPMC',
+    'BRBR','BRKR','BROS','BSY','BYD',
+    'CACI','CALM','CAR','CARG','CASY','CBSH','CBT','CC','CCK','CEIX','CENTA',
+    'CHE','CHH','CHRD','CHX','CIB','CIEN','CLF','CLH','CLVT','CNMD','CNX',
+    'COLB','COKE','COLM','COMM','COR','CPE','CPK','CRI','CRS','CRUS','CROX',
+    'CSL','CSWI','CVCO','CW','CYTK',
+    'DAR','DCI','DINO','DKS','DLB','DOCS','DOX','DT','DTM','DUOL','DY',
+    'EAT','EEFT','EGP','EHC','ENS','ENSG','EQH','ERIE','ESAB','ESI','EVR',
+    'EWBC','EXEL','EXLS','EXPO',
+    'FAF','FBIN','FCFS','FHI','FHN','FIVE','FLO','FLS','FNB','FND','FNF',
+    'FROG','FRPT','FSLR',
+    'G','GAP','GATX','GBCI','GEF','GERN','GFL','GGG','GHC','GLNG','GMS',
+    'GNTX','GO','GPI','GTY','GWRE',
+    'H','HAE','HBI','HGV','HL','HLI','HLNE','HQY','HRI','HRB','HUBG',
+    'HUN','HWC','HXL','HIMS',
+    'IART','IBP','IBKR','ICFI','ICL','IDA','IDCC','INGR','INSM','INST',
+    'IPGP','IRT','ITCI','ITT',
+    'JAZZ','JBL','JBLU','JEF','JHG','JLL',
+    'KBR','KEX','KMPR','KNX','KRC','KSS','KTOS','KVUE',
+    'LANC','LAUR','LBRT','LBRDK','LEA','LEVI','LFUS','LITE','LIVN','LNTH',
+    'LPX','LSTR',
+    'MANH','MASI','MAT','MATX','MBUU','MC','MDGL','MEDP','MIDD','MKSI',
+    'MMS','MOD','MORN','MP','MPW','MSA','MSM','MTDR','MTG','MTH','MTSI',
+    'MTN','MTZ','MUR','MUSA',
+    'NATI','NBIX','NFG','NJR','NMIH','NNN','NOV','NSA','NSP','NSIT',
+    'NTNX','NUVB','NVST','NVT',
+    'OC','OGE','OGN','OGS','OHI','OLED','OLN','OMF','ORA','ORI','OSK',
+    'OTTR','OVV',
+    'PATH','PAYO','PBF','PCOR','PCTY','PEN','PFGC','PII','PINC','PINS',
+    'PLNT','PLUS','PNM','POST','PPC','POWL','PRIM','PRGO','PRI','PSN',
+    'PSTG',
+    'QLYS','R','RBC','RCM','REXR','RGA','RGLD','RHP','RIG','RLI','RNR',
+    'RPRX','RRC','RS','RVMD',
+    'SAIC','SAIL','SAM','SATS','SBCF','SCI','SEIC','SF','SFM','SFNC',
+    'SG','SIGI','SITM','SKX','SLGN','SLM','SM','SMCI','SMG','SMTC',
+    'SNDR','SNV','SOLV','SON','SPB','SPSC','SSD','SSNC','STAG','STLD',
+    'STN','STRA','SWAV','SWN','SWX','SXT',
+    'TALO','TASK','TENB','TGTX','THC','THO','TKR','TMHC','TNL','TNET',
+    'TOL','TPC','TPX','TREX','TRU','TTC','TTMI','TXRH',
+    'UDMY','UFPI','UMBF','UNM','URBN','USLM','USM','USFD','UTHR',
+    'VIRT','VLTO','VLY','VMI','VNOM','VNT','VRNS','VRRM','VSAT','VSH',
+    'WAL','WBS','WCC','WDFC','WEX','WFG','WH','WHD','WK','WLK','WMS',
+    'WOLF','WOW','WPC','WSC','WSM','WSO','WTS','WTFC','WWD',
+    'X','XPEL','XPO','YETI','ZI','ZWS',
+  ];
+}
+
+// Full screening universe: S&P 500 + S&P 400 MidCap (deduplicated)
+export function getFullUniverse() {
+  const sp500 = getSP500Tickers();
+  const midcap = getMidCapTickers();
+  const seen = new Set(sp500);
+  const combined = [...sp500];
+  for (const t of midcap) {
+    if (!seen.has(t)) {
+      combined.push(t);
+      seen.add(t);
+    }
+  }
+  return combined;
 }

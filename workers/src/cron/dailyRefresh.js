@@ -1,4 +1,4 @@
-import { fetchQuote, fetchBulkQuotes, getSP500Tickers } from '../services/yahooFinance.js';
+import { fetchQuote, fetchBulkQuotes, getFullUniverse } from '../services/yahooFinance.js';
 import { fetchAllFundamentals } from '../services/alphaVantage.js';
 import { getOrFetchBondYield } from '../services/fred.js';
 import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker, saveScreenResult } from '../db/queries.js';
@@ -9,7 +9,7 @@ import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSe
 import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
-const FINNHUB_TICKERS_PER_RUN = 10;
+const FINNHUB_TICKERS_PER_RUN = 5;
 
 // Chunked refresh: processes a slice of tickers per invocation
 // offset/limit allow processing the full universe across multiple calls
@@ -31,7 +31,7 @@ export async function dailyRefresh(env, tickerLimit) {
 
   // Step 2: Fetch prices
   // Priority: always refresh watchlist + passing stocks first, then rotate through the rest
-  let tickers = getSP500Tickers();
+  let tickers = getFullUniverse();
   if (tickerLimit) tickers = tickers.slice(0, tickerLimit);
 
   // Get priority tickers (watchlist + passing stocks) — these update every run
@@ -46,8 +46,9 @@ export async function dailyRefresh(env, tickerLimit) {
   const priorityList = tickers.filter(t => priorityTickers.has(t));
   const remainingTickers = tickers.filter(t => !priorityTickers.has(t));
 
-  // Rotate through remaining tickers in chunks of 150
-  const CHUNK = tickerLimit || 150;
+  // Rotate through remaining tickers in chunks — sized to stay under Cloudflare's 1000 subrequest limit
+  // Each ticker needs ~3 subrequests (fetch + 2 DB reads), plus Finnhub calls below
+  const CHUNK = tickerLimit || 100;
   const offset = await getRefreshOffset(env.DB, remainingTickers.length);
   const chunk = remainingTickers.slice(offset, offset + CHUNK);
 
@@ -92,110 +93,23 @@ export async function dailyRefresh(env, tickerLimit) {
   // Save progress offset (only tracks the rotating non-priority tickers)
   await saveRefreshOffset(env.DB, offset + chunk.length >= remainingTickers.length ? 0 : offset + chunk.length);
 
-  // Step 3a: Fill P/E and P/B ratios from Finnhub for stocks missing them
-  stats.metricsFilled = 0;
-  if (env.FINNHUB_API_KEY) {
-    const missingRatios = await env.DB.prepare(
-      `SELECT s.ticker FROM stocks s
-       LEFT JOIN market_data md ON s.ticker = md.ticker
-       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-         AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL)
-       LIMIT 40`
-    ).all();
-
-    for (const row of (missingRatios.results || [])) {
-      try {
-        const metrics = await getBasicMetrics(row.ticker, env.FINNHUB_API_KEY);
-        if (metrics.pe_ratio || metrics.pb_ratio) {
-          const existing = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
-          await upsertMarketData(env.DB, {
-            ticker: row.ticker,
-            price: existing?.price ?? null,
-            pe_ratio: metrics.pe_ratio ?? existing?.pe_ratio ?? null,
-            pb_ratio: metrics.pb_ratio ?? existing?.pb_ratio ?? null,
-            earnings_yield: metrics.earnings_yield ?? existing?.earnings_yield ?? null,
-            dividend_yield: metrics.dividend_yield ?? existing?.dividend_yield ?? null,
-            insider_ownership_pct: metrics.insider_ownership_pct ?? existing?.insider_ownership_pct ?? null,
-          });
-          stats.metricsFilled++;
-        }
-      } catch (err) {
-        if (err.message.includes('rate limit')) break;
-        console.error(`Finnhub metrics error for ${row.ticker}:`, err.message);
-      }
-    }
-    console.log(`Finnhub metrics filled: ${stats.metricsFilled}`);
-  }
-
-  // Step 3b: Fetch fundamentals via Finnhub (no daily cap, 60 calls/min)
-  // Prioritize promising stocks (low P/E + P/B) first
-  if (env.FINNHUB_API_KEY) {
-    const peCeiling = getDynamicPECeiling(bondYield?.yield);
-
-    // Priority queue: stocks that pass P/E and P/B but lack fundamentals
-    const priorityQueue = await env.DB.prepare(
-      `SELECT md.ticker FROM market_data md
-       WHERE md.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-         AND md.pe_ratio IS NOT NULL AND md.pe_ratio > 0 AND md.pe_ratio <= ?
-         AND md.pb_ratio IS NOT NULL AND md.pb_ratio <= ?
-         AND md.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
-       ORDER BY (md.pe_ratio * md.pb_ratio) ASC
-       LIMIT ?`
-    ).bind(peCeiling, SCREEN_DEFAULTS.pb_max, FINNHUB_TICKERS_PER_RUN).all();
-
-    let batch = (priorityQueue.results || []).map(r => r.ticker);
-
-    // If priority queue is empty, fall back to any stock missing fundamentals
-    if (batch.length < FINNHUB_TICKERS_PER_RUN) {
-      const remaining = FINNHUB_TICKERS_PER_RUN - batch.length;
-      const fallback = await env.DB.prepare(
-        `SELECT s.ticker FROM stocks s
-         WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-           AND s.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
-           AND s.ticker NOT IN (${batch.map(() => '?').join(',') || "''"})
-         LIMIT ?`
-      ).bind(...batch, remaining).all();
-      batch = batch.concat((fallback.results || []).map(r => r.ticker));
-    }
-
-    if (batch.length > 0) {
-      console.log(`Fetching fundamentals via Finnhub (priority): ${batch.join(', ')}`);
-    }
-
-    for (const ticker of batch) {
-      try {
-        const reports = await getFinancialsReported(ticker, env.FINNHUB_API_KEY);
-        const financials = parseFinancialsReported(ticker, reports);
-
-        if (financials.length === 0) {
-          console.log(`No financials-reported data for ${ticker}, skipping`);
-          continue;
-        }
-
-        for (const fin of financials) {
-          await upsertFinancials(env.DB, fin);
-        }
-
-        stats.fundamentalsFetched++;
-        console.log(`Finnhub fundamentals stored for ${ticker}: ${financials.length} years`);
-      } catch (err) {
-        console.error(`Error fetching Finnhub fundamentals for ${ticker}:`, err.message);
-        stats.errors++;
-        stats.lastFundamentalsError = `${ticker}: ${err.message}`;
-        if (err.message.includes('rate limit')) break;
-      }
-    }
-  }
+  // NOTE: Metrics + fundamentals fetching moved to separate cron (finnhubRefresh)
+  // to stay within Cloudflare's 1000 subrequest limit per invocation.
+  // The backfill endpoint (/api/backfill) can also be used for manual bulk fills.
 
   // Step 4: Run Layer 1 screening on stocks that have fundamentals
+  // Screen stocks not yet screened today first, then rotate through already-screened
   const screenDate = new Date().toISOString().split('T')[0];
   const stocksWithData = await env.DB.prepare(
     `SELECT s.* FROM stocks s
      INNER JOIN market_data md ON s.ticker = md.ticker
      WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
        AND EXISTS (SELECT 1 FROM financials f WHERE f.ticker = s.ticker)
-     LIMIT 50`
-  ).all();
+     ORDER BY CASE WHEN s.ticker IN (
+       SELECT ticker FROM screen_results WHERE screen_date = ?
+     ) THEN 1 ELSE 0 END, s.ticker
+     LIMIT 30`
+  ).bind(screenDate).all();
 
   for (const stock of (stocksWithData.results || [])) {
     try {
@@ -240,9 +154,9 @@ export async function dailyRefresh(env, tickerLimit) {
   // Step 6: Fetch insider transactions for watchlist stocks (via Finnhub)
   stats.insiderUpdated = 0;
   if (env.FINNHUB_API_KEY) {
-    // Limit to 20 watchlist tickers per run to stay within subrequest budget
+    // Limit to 5 watchlist tickers per run to stay within subrequest budget
     const watchlistTickers = await env.DB.prepare(
-      'SELECT ticker FROM watchlist LIMIT 20'
+      'SELECT ticker FROM watchlist LIMIT 5'
     ).all();
 
     const today = new Date().toISOString().split('T')[0];
@@ -305,6 +219,103 @@ export async function dailyRefresh(env, tickerLimit) {
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`Daily refresh completed in ${elapsed}s:`, JSON.stringify(stats));
+  return stats;
+}
+
+// Separate cron for Finnhub data (metrics + fundamentals)
+// Runs in its own invocation to avoid subrequest limits
+export async function finnhubRefresh(env) {
+  const startTime = Date.now();
+  console.log('Finnhub refresh started:', new Date().toISOString());
+  const stats = { metricsFilled: 0, fundamentalsFetched: 0, errors: 0 };
+
+  if (!env.FINNHUB_API_KEY) return stats;
+
+  // Step 1: Fill P/E and P/B ratios for stocks missing them
+  const missingRatios = await env.DB.prepare(
+    `SELECT s.ticker FROM stocks s
+     LEFT JOIN market_data md ON s.ticker = md.ticker
+     WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL)
+     LIMIT 30`
+  ).all();
+
+  for (const row of (missingRatios.results || [])) {
+    try {
+      const metrics = await getBasicMetrics(row.ticker, env.FINNHUB_API_KEY);
+      if (metrics.pe_ratio || metrics.pb_ratio) {
+        const existing = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
+        await upsertMarketData(env.DB, {
+          ticker: row.ticker,
+          price: existing?.price ?? null,
+          pe_ratio: metrics.pe_ratio ?? existing?.pe_ratio ?? null,
+          pb_ratio: metrics.pb_ratio ?? existing?.pb_ratio ?? null,
+          earnings_yield: metrics.earnings_yield ?? existing?.earnings_yield ?? null,
+          dividend_yield: metrics.dividend_yield ?? existing?.dividend_yield ?? null,
+          insider_ownership_pct: metrics.insider_ownership_pct ?? existing?.insider_ownership_pct ?? null,
+        });
+        stats.metricsFilled++;
+      }
+    } catch (err) {
+      if (err.message.includes('rate limit')) break;
+      console.error(`Finnhub metrics error for ${row.ticker}:`, err.message);
+      stats.errors++;
+    }
+  }
+
+  // Step 2: Fetch fundamentals for stocks missing them
+  let bondYield;
+  try {
+    bondYield = await getOrFetchBondYield(env.DB, env.FRED_API_KEY);
+  } catch (err) {
+    bondYield = { yield: 5.0, date: 'fallback' };
+  }
+  const peCeiling = getDynamicPECeiling(bondYield?.yield);
+
+  // Priority: promising stocks first, then any missing
+  const priorityQueue = await env.DB.prepare(
+    `SELECT md.ticker FROM market_data md
+     WHERE md.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND md.pe_ratio IS NOT NULL AND md.pe_ratio > 0 AND md.pe_ratio <= ?
+       AND md.pb_ratio IS NOT NULL AND md.pb_ratio <= ?
+       AND md.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
+     ORDER BY (md.pe_ratio * md.pb_ratio) ASC
+     LIMIT ?`
+  ).bind(peCeiling, SCREEN_DEFAULTS.pb_max, FINNHUB_TICKERS_PER_RUN).all();
+
+  let batch = (priorityQueue.results || []).map(r => r.ticker);
+
+  if (batch.length < FINNHUB_TICKERS_PER_RUN) {
+    const remaining = FINNHUB_TICKERS_PER_RUN - batch.length;
+    const fallback = await env.DB.prepare(
+      `SELECT s.ticker FROM stocks s
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND s.ticker NOT IN (SELECT DISTINCT ticker FROM financials)
+         AND s.ticker NOT IN (${batch.map(() => '?').join(',') || "''"})
+       LIMIT ?`
+    ).bind(...batch, remaining).all();
+    batch = batch.concat((fallback.results || []).map(r => r.ticker));
+  }
+
+  for (const ticker of batch) {
+    try {
+      const reports = await getFinancialsReported(ticker, env.FINNHUB_API_KEY);
+      const financials = parseFinancialsReported(ticker, reports);
+      if (financials.length === 0) continue;
+
+      for (const fin of financials) {
+        await upsertFinancials(env.DB, fin);
+      }
+      stats.fundamentalsFetched++;
+      console.log(`Finnhub fundamentals stored for ${ticker}: ${financials.length} years`);
+    } catch (err) {
+      stats.errors++;
+      if (err.message.includes('rate limit') || err.message.includes('subrequest')) break;
+    }
+  }
+
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`Finnhub refresh completed in ${elapsed}s:`, JSON.stringify(stats));
   return stats;
 }
 
