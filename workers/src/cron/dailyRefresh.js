@@ -5,7 +5,7 @@ import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker
 import { runLayer1Screen, computeSectorPBThresholds } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
 import { upsertValuation } from '../db/queries.js';
-import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics, getFinancialsReported, parseFinancialsReported } from '../services/finnhub.js';
+import { getInsiderTransactions, getInsiderSentiment, computeInsiderSignalFromSentiment, getBasicMetrics, getFinancialsReported, parseFinancialsReported, getCompanyProfile } from '../services/finnhub.js';
 import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
@@ -242,9 +242,36 @@ export async function dailyRefresh(env, tickerLimit) {
 export async function finnhubRefresh(env) {
   const startTime = Date.now();
   console.log('Finnhub refresh started:', new Date().toISOString());
-  const stats = { metricsFilled: 0, fundamentalsFetched: 0, errors: 0 };
+  const stats = { sectorsFilled: 0, metricsFilled: 0, fundamentalsFetched: 0, errors: 0 };
 
   if (!env.FINNHUB_API_KEY) return stats;
+
+  // Step 0: Fill sector data for stocks missing it (critical for sector-relative P/B)
+  const missingSectors = await env.DB.prepare(
+    `SELECT ticker, company_name, market_cap FROM stocks
+     WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND sector IS NULL
+     LIMIT 20`
+  ).all();
+
+  for (const row of (missingSectors.results || [])) {
+    try {
+      const profile = await getCompanyProfile(row.ticker, env.FINNHUB_API_KEY);
+      if (!profile || !profile.sector) continue;
+
+      await upsertStock(env.DB, {
+        ticker: row.ticker,
+        company_name: profile.company_name || row.company_name,
+        sector: profile.sector,
+        industry: profile.industry,
+        market_cap: profile.market_cap || row.market_cap,
+      });
+      stats.sectorsFilled++;
+    } catch (err) {
+      if (err.message.includes('rate limit')) break;
+      stats.errors++;
+    }
+  }
 
   // Step 1: Fill P/E and P/B ratios for stocks missing them
   const missingRatios = await env.DB.prepare(

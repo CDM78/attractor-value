@@ -18,4 +18,4 @@ ENVIRONMENT = "production"
 
 # Cron triggers for daily data refresh
 [triggers]
-crons = ["0 * * * *", "30 * * * *"]  # Every hour: prices+screening at :00, Finnhub data at :30
+crons = ["* * * * *"]  # Every minute: alternates between dailyRefresh and finnhubRefresh

@@ -7,6 +7,7 @@ import { alertsRoutes } from './routes/alerts.js';
 import { refreshRoutes } from './routes/refresh.js';
 import { fillMetricsRoutes, fillFundamentalsRoutes, backfillRoutes } from './routes/fillMetrics.js';
 import { transactionsRoutes } from './routes/transactions.js';
+import { reportRoutes } from './routes/report.js';
 import { dailyRefresh, finnhubRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
 
@@ -39,6 +40,7 @@ const routeMap = {
   '/api/fill-fundamentals': fillFundamentalsRoutes,
   '/api/backfill': backfillRoutes,
   '/api/transactions': transactionsRoutes,
+  '/api/report': reportRoutes,
 };
 
 export default {
@@ -72,13 +74,13 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
-    const hour = new Date(event.scheduledTime).getUTCMinutes();
-    if (hour === 30) {
-      // :30 past the hour — Finnhub metrics + fundamentals (separate invocation)
-      ctx.waitUntil(finnhubRefresh(env));
-    } else {
-      // :00 on the hour — prices + screening + valuations + alerts
+    const minute = new Date(event.scheduledTime).getUTCMinutes();
+    if (minute % 2 === 0) {
+      // Even minutes — prices + screening + valuations + alerts
       ctx.waitUntil(dailyRefresh(env).then(() => alertsCheck(env)));
+    } else {
+      // Odd minutes — Finnhub sectors + metrics + fundamentals
+      ctx.waitUntil(finnhubRefresh(env));
     }
   },
 };

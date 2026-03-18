@@ -7,6 +7,7 @@ export default function AnalysisDetail() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [analyzing, setAnalyzing] = useState(false)
+  const [exporting, setExporting] = useState(false)
   const [error, setError] = useState(null)
 
   const fetchAnalysis = async () => {
@@ -44,6 +45,25 @@ export default function AnalysisDetail() {
     setAnalyzing(false)
   }
 
+  const exportReport = async () => {
+    setExporting(true)
+    try {
+      const res = await fetch(`${API_BASE}/api/report?ticker=${ticker}`)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const json = await res.json()
+      const blob = new Blob([json.report], { type: 'text/markdown' })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `${ticker}-research-report.md`
+      a.click()
+      URL.revokeObjectURL(url)
+    } catch (err) {
+      setError(`Export failed: ${err.message}`)
+    }
+    setExporting(false)
+  }
+
   useEffect(() => {
     fetchAnalysis()
   }, [ticker])
@@ -58,13 +78,24 @@ export default function AnalysisDetail() {
       <div className="flex items-center gap-4 mb-6">
         <Link to="/screener" className="text-accent hover:underline text-sm">&larr; Screener</Link>
         <h2 className="text-xl font-bold">{ticker} — Attractor Analysis</h2>
-        <button
-          onClick={triggerAnalysis}
-          disabled={analyzing}
-          className="ml-auto text-sm px-4 py-1.5 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors disabled:opacity-50"
-        >
-          {analyzing ? 'Analyzing...' : analysis ? 'Re-analyze' : 'Run Analysis'}
-        </button>
+        <div className="ml-auto flex items-center gap-2">
+          {analysis && (
+            <button
+              onClick={exportReport}
+              disabled={exporting}
+              className="text-sm px-4 py-1.5 rounded bg-pass/20 text-pass hover:bg-pass/30 transition-colors disabled:opacity-50"
+            >
+              {exporting ? 'Exporting...' : 'Export Report'}
+            </button>
+          )}
+          <button
+            onClick={triggerAnalysis}
+            disabled={analyzing}
+            className="text-sm px-4 py-1.5 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors disabled:opacity-50"
+          >
+            {analyzing ? 'Analyzing...' : analysis ? 'Re-analyze' : 'Run Analysis'}
+          </button>
+        </div>
       </div>
 
       {error && (

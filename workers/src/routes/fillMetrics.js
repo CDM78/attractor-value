@@ -1,4 +1,4 @@
-import { getBasicMetrics } from '../services/finnhub.js';
+import { getBasicMetrics, getCompanyProfile } from '../services/finnhub.js';
 import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { SCREEN_DEFAULTS } from '../../../shared/constants.js';
 
@@ -123,13 +123,18 @@ export async function backfillRoutes(request, env, ctx, { path, jsonResponse, er
     const withRatios = await env.DB.prepare(
       "SELECT COUNT(*) as cnt FROM market_data WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\' AND pe_ratio IS NOT NULL"
     ).first();
+    const withSector = await env.DB.prepare(
+      "SELECT COUNT(*) as cnt FROM stocks WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\' AND sector IS NOT NULL"
+    ).first();
 
     return jsonResponse({
       total_stocks: total?.cnt || 0,
       with_fundamentals: withFundamentals?.cnt || 0,
       with_ratios: withRatios?.cnt || 0,
+      with_sector: withSector?.cnt || 0,
       needing_fundamentals: (total?.cnt || 0) - (withFundamentals?.cnt || 0),
       needing_ratios: (total?.cnt || 0) - (withRatios?.cnt || 0),
+      needing_sector: (total?.cnt || 0) - (withSector?.cnt || 0),
     });
   }
 
@@ -148,7 +153,43 @@ export async function backfillRoutes(request, env, ctx, { path, jsonResponse, er
   const limit = parseInt(url.searchParams.get('limit') || '400');
   const mode = url.searchParams.get('mode') || 'fundamentals';
 
-  const stats = { fundamentals: { fetched: 0, skipped: 0, errors: 0 }, metrics: { updated: 0, skipped: 0, errors: 0 } };
+  const stats = { sectors: { updated: 0, skipped: 0, errors: 0 }, fundamentals: { fetched: 0, skipped: 0, errors: 0 }, metrics: { updated: 0, skipped: 0, errors: 0 } };
+
+  // Phase 0: Fill sector data from Finnhub company profiles
+  if (mode === 'sectors' || mode === 'both' || mode === 'all') {
+    const { getCompanyProfile } = await import('../services/finnhub.js');
+    const { upsertStock } = await import('../db/queries.js');
+
+    const missingSectors = await env.DB.prepare(
+      `SELECT ticker, company_name, market_cap FROM stocks
+       WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND sector IS NULL
+       ORDER BY ticker
+       LIMIT ?`
+    ).bind(limit).all();
+
+    for (const row of (missingSectors.results || [])) {
+      try {
+        const profile = await getCompanyProfile(row.ticker, env.FINNHUB_API_KEY);
+        if (!profile || !profile.sector) {
+          stats.sectors.skipped++;
+          continue;
+        }
+
+        await upsertStock(env.DB, {
+          ticker: row.ticker,
+          company_name: profile.company_name || row.company_name,
+          sector: profile.sector,
+          industry: profile.industry,
+          market_cap: profile.market_cap || row.market_cap,
+        });
+        stats.sectors.updated++;
+      } catch (err) {
+        stats.sectors.errors++;
+        if (err.message.includes('rate limit')) { stats.sectors.rateLimited = true; break; }
+      }
+    }
+  }
 
   // Phase 1: Fill metrics (P/E, P/B) for stocks missing them
   if (mode === 'metrics' || mode === 'both') {
