@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useWatchlistStore } from '../../stores/watchlistStore'
 
 export default function WatchlistTable() {
@@ -146,7 +147,9 @@ export default function WatchlistTable() {
                 const atBuyBelow = item.price && item.buy_below_price && item.price <= item.buy_below_price;
                 return (
                   <tr key={item.ticker} className={`border-b border-border/50 hover:bg-surface-secondary ${atTarget || atBuyBelow ? 'bg-pass/5' : ''}`}>
-                    <td className="px-3 py-2 font-bold text-accent">{item.ticker}</td>
+                    <td className="px-3 py-2 font-bold">
+                      <Link to={`/analyze/${item.ticker}`} className="text-accent hover:underline">{item.ticker}</Link>
+                    </td>
                     <td className="px-3 py-2">{item.company_name}</td>
                     <td className="px-3 py-2 text-text-secondary">{item.sector}</td>
                     <td className="px-3 py-2">${item.price?.toFixed(2)}</td>

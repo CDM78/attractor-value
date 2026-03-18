@@ -87,13 +87,13 @@ export async function getInsiderTransactions(ticker, fromDate, toDate, apiKey) {
 
   return data.data.map(tx => ({
     ticker,
-    filing_date: tx.transactionDate || null,
+    filing_date: tx.transactionDate || tx.filingDate || null,
     insider_name: tx.name || 'Unknown',
     insider_title: null,  // Not reliably provided; supplement from getCompanyOfficers
-    transaction_type: mapTransactionType(tx.transactionType),
+    transaction_type: mapTransactionType(tx.transactionCode),
     shares: Math.abs(tx.share || 0),
-    price_per_share: tx.price || null,
-    total_value: tx.price && tx.share ? Math.abs(tx.price * tx.share) : null,
+    price_per_share: tx.transactionPrice || null,
+    total_value: tx.transactionPrice && tx.share ? Math.abs(tx.transactionPrice * tx.share) : null,
     is_10b5_1: 0,  // Not provided by Finnhub; default to unknown
     source_url: null,
   }));
