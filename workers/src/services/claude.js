@@ -8,9 +8,10 @@ const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
 const MODEL = 'claude-sonnet-4-20250514';
 
 export async function analyzeAttractorStability(ticker, companyName, financialContext, mdaText, newsContext, apiKey) {
-  const prompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext);
+  // Pass 1: Bull case (standard attractor analysis)
+  const bullPrompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext);
 
-  const res = await fetch(CLAUDE_API, {
+  const bullRes = await fetch(CLAUDE_API, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -20,24 +21,213 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
     body: JSON.stringify({
       model: MODEL,
       max_tokens: 3000,
-      messages: [{ role: 'user', content: prompt }],
+      messages: [{ role: 'user', content: bullPrompt }],
     }),
   });
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Claude API error ${res.status}: ${err}`);
+  if (!bullRes.ok) {
+    const err = await bullRes.text();
+    throw new Error(`Claude API error ${bullRes.status}: ${err}`);
   }
 
-  const data = await res.json();
-  const responseText = data.content?.[0]?.text;
-  if (!responseText) throw new Error('Empty Claude response');
+  const bullData = await bullRes.json();
+  const bullText = bullData.content?.[0]?.text;
+  if (!bullText) throw new Error('Empty Claude response (bull case)');
 
-  // Log token usage for cost tracking
-  const usage = data.usage || {};
-  console.log(`Claude analysis for ${ticker}: input=${usage.input_tokens}, output=${usage.output_tokens}, cost≈$${estimateCost(usage)}`);
+  const bullUsage = bullData.usage || {};
+  console.log(`Claude bull case for ${ticker}: input=${bullUsage.input_tokens}, output=${bullUsage.output_tokens}, cost≈$${estimateCost(bullUsage)}`);
 
-  return parseAnalysisResponse(responseText, ticker);
+  const bullResult = parseAnalysisResponse(bullText, ticker);
+
+  // Pass 2: Bear case (adversarial red team)
+  const bearPrompt = buildBearCasePrompt(ticker, companyName, financialContext, bullText);
+
+  const bearRes = await fetch(CLAUDE_API, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 2000,
+      messages: [{ role: 'user', content: bearPrompt }],
+    }),
+  });
+
+  if (!bearRes.ok) {
+    const err = await bearRes.text();
+    console.error(`Bear case API error for ${ticker}: ${err}`);
+    // If bear case fails, return bull case only with a note
+    bullResult.bear_case = null;
+    bullResult.bear_case_text = 'Bear case analysis unavailable';
+    return bullResult;
+  }
+
+  const bearData = await bearRes.json();
+  const bearText = bearData.content?.[0]?.text;
+  const bearUsage = bearData.usage || {};
+  console.log(`Claude bear case for ${ticker}: input=${bearUsage.input_tokens}, output=${bearUsage.output_tokens}, cost≈$${estimateCost(bearUsage)}`);
+
+  if (!bearText) {
+    bullResult.bear_case = null;
+    bullResult.bear_case_text = 'Bear case analysis unavailable';
+    return bullResult;
+  }
+
+  // Parse bear case scores
+  const bearScores = parseBearCaseResponse(bearText);
+
+  // Compute weighted composite: bull (60%) + bear (40%)
+  const BULL_WEIGHT = 0.6;
+  const BEAR_WEIGHT = 0.4;
+
+  const factorKeys = [
+    'revenue_durability_score', 'competitive_reinforcement_score',
+    'industry_structure_score', 'demand_feedback_score',
+    'adaptation_capacity_score', 'capital_allocation_score',
+  ];
+
+  // Store bear case data on the result
+  bullResult.bear_case = bearScores;
+  bullResult.bear_case_text = bearScores.analysis_text || bearText;
+  bullResult.bull_case_text = bullResult.analysis_text;
+
+  // Compute composite factor scores
+  for (const key of factorKeys) {
+    const bullScore = bullResult[key];
+    const bearScore = bearScores[key];
+    if (bullScore != null && bearScore != null) {
+      bullResult[`bull_${key}`] = bullScore;
+      bullResult[`bear_${key}`] = bearScore;
+      bullResult[key] = Math.round((bullScore * BULL_WEIGHT + bearScore * BEAR_WEIGHT) * 10) / 10;
+    }
+  }
+
+  // Recompute composite attractor score from weighted factors
+  const compositeFactors = factorKeys.map(k => bullResult[k]).filter(f => f != null && f >= 1 && f <= 5);
+  const rawComposite = compositeFactors.length > 0
+    ? compositeFactors.reduce((s, f) => s + f, 0) / compositeFactors.length
+    : null;
+
+  // Store bull/bear raw scores for report display
+  bullResult.bull_raw_score = bullResult.attractor_stability_score;
+  bullResult.bear_raw_score = bearScores.attractor_stability_score;
+
+  // Now re-run concentration + secular disruption pipeline on composite scores
+  // (parseAnalysisResponse already applied these to bull scores, so we need to redo with composite)
+  if (rawComposite != null) {
+    const cr = bullResult.concentration_risk || {};
+    let concentrationPenalty = 0;
+    if (cr.largest_customer_pct >= 40) concentrationPenalty += CONCENTRATION_RISK.customer_40pct;
+    else if (cr.largest_customer_pct >= 25) concentrationPenalty += CONCENTRATION_RISK.customer_25pct;
+    if (cr.single_source_supplier) concentrationPenalty += CONCENTRATION_RISK.supplier_single_source;
+    if (cr.largest_geo_market_pct >= 70) concentrationPenalty += CONCENTRATION_RISK.geographic_70pct;
+    if (cr.regulatory_dependency_pct >= 50) concentrationPenalty += CONCENTRATION_RISK.regulatory_50pct;
+
+    const scoreAfterConcentration = Math.max(CONCENTRATION_RISK.adjusted_score_floor, rawComposite - concentrationPenalty);
+    bullResult.attractor_stability_score = Math.round(scoreAfterConcentration * 10) / 10;
+
+    // Secular disruption adjustment
+    const sd = bullResult.secular_disruption || {};
+    const totalIndicators = sd.total_indicators || 0;
+    let sdScoreAdj = 0;
+    if (totalIndicators >= 4) sdScoreAdj = SECULAR_DISRUPTION.advanced_score_adjustment;
+    else if (totalIndicators === 3) sdScoreAdj = SECULAR_DISRUPTION.active_score_adjustment;
+    else if (totalIndicators === 2) sdScoreAdj = SECULAR_DISRUPTION.early_score_adjustment;
+
+    bullResult.adjusted_attractor_score = Math.max(
+      SECULAR_DISRUPTION.adjusted_score_floor,
+      Math.round((scoreAfterConcentration + sdScoreAdj) * 10) / 10
+    );
+  }
+
+  // Replace analysis_text with structured bull/bear/composite text
+  bullResult.analysis_text = formatDualAnalysis(bullResult);
+
+  return bullResult;
+}
+
+function buildBearCasePrompt(ticker, companyName, financialContext, bullCaseOutput) {
+  return `You are a skeptical analyst reviewing the following attractor stability assessment for ${companyName} (${ticker}). Your job is to argue against this assessment. For each factor, identify the strongest reason the score should be LOWER. Then provide your own revised factor scores (1-5 scale) and an overall attractor stability score.
+
+Be specific. Cite concrete risks: regulatory changes, competitive threats, technological disruption, customer concentration, management quality concerns, or financial structure weaknesses. Do not accept the bull case framing — find the weaknesses.
+
+FINANCIAL DATA:
+${financialContext}
+
+BULL CASE ASSESSMENT TO CHALLENGE:
+${bullCaseOutput}
+
+Respond in EXACTLY this JSON format (no markdown, no code fences):
+{
+  "revenue_durability_score": <1-5>,
+  "competitive_reinforcement_score": <1-5>,
+  "industry_structure_score": <1-5>,
+  "demand_feedback_score": <1-5>,
+  "adaptation_capacity_score": <1-5>,
+  "capital_allocation_score": <1-5>,
+  "attractor_stability_score": <1.0-5.0>,
+  "analysis_text": "<2-3 paragraph bear case analysis explaining specific weaknesses, risks, and why scores should be lower>"
+}`;
+}
+
+function parseBearCaseResponse(responseText) {
+  let json;
+  try {
+    json = JSON.parse(responseText);
+  } catch {
+    const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) {
+      console.error('Could not parse bear case response as JSON');
+      return { analysis_text: responseText };
+    }
+    json = JSON.parse(jsonMatch[0]);
+  }
+
+  const factors = [
+    json.revenue_durability_score,
+    json.competitive_reinforcement_score,
+    json.industry_structure_score,
+    json.demand_feedback_score,
+    json.adaptation_capacity_score,
+    json.capital_allocation_score,
+  ].filter(f => f != null && f >= 1 && f <= 5);
+
+  const rawScore = factors.length > 0
+    ? factors.reduce((s, f) => s + f, 0) / factors.length
+    : json.attractor_stability_score || null;
+
+  return {
+    revenue_durability_score: json.revenue_durability_score,
+    competitive_reinforcement_score: json.competitive_reinforcement_score,
+    industry_structure_score: json.industry_structure_score,
+    demand_feedback_score: json.demand_feedback_score,
+    adaptation_capacity_score: json.adaptation_capacity_score,
+    capital_allocation_score: json.capital_allocation_score,
+    attractor_stability_score: rawScore != null ? Math.round(rawScore * 10) / 10 : null,
+    analysis_text: json.analysis_text || '',
+  };
+}
+
+function formatDualAnalysis(result) {
+  const parts = [];
+  if (result.bull_case_text) {
+    parts.push('### Bull Case (weight: 60%)\n');
+    parts.push(result.bull_case_text);
+    parts.push(`\n\nBull Case Score: ${result.bull_raw_score?.toFixed(1) ?? 'N/A'}/5.0`);
+  }
+  if (result.bear_case_text) {
+    parts.push('\n\n### Bear Case (weight: 40%)\n');
+    parts.push(result.bear_case_text);
+    parts.push(`\n\nBear Case Score: ${result.bear_case?.attractor_stability_score?.toFixed(1) ?? 'N/A'}/5.0`);
+  }
+  parts.push(`\n\n### Composite Score\nWeighted Score: ${result.attractor_stability_score?.toFixed(1) ?? 'N/A'}/5.0`);
+  const classification = result.attractor_stability_score >= 3.5 ? 'Stable'
+    : result.attractor_stability_score >= 2.0 ? 'Transitional' : 'Dissolving';
+  parts.push(`\nClassification: **${classification} Attractor**`);
+  return parts.join('');
 }
 
 function estimateCost(usage) {
