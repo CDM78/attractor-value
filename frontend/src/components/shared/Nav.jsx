@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { API_BASE } from '../../config.js'
+import QuickQuote from './QuickQuote.jsx'
 
 const links = [
   { to: '/screener', label: 'Screener' },
@@ -12,6 +13,7 @@ const links = [
 export default function Nav() {
   const [refreshing, setRefreshing] = useState(false)
   const [refreshResult, setRefreshResult] = useState(null)
+  const [showQuote, setShowQuote] = useState(false)
 
   const handleRefresh = async () => {
     setRefreshing(true)
@@ -47,10 +49,19 @@ export default function Nav() {
           {label}
         </NavLink>
       ))}
-      <div className="ml-auto flex items-center gap-2 shrink-0">
+      <div className="ml-auto flex items-center gap-2 shrink-0 relative">
         {refreshResult && (
           <span className="text-xs text-text-secondary hidden md:inline">{refreshResult}</span>
         )}
+        <button
+          onClick={() => setShowQuote(prev => !prev)}
+          className="text-xs px-3 py-1.5 rounded bg-surface-tertiary text-text-secondary hover:text-accent hover:bg-accent/10 transition-colors"
+          title="Quick quote lookup"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
         <button
           onClick={handleRefresh}
           disabled={refreshing}
@@ -59,6 +70,7 @@ export default function Nav() {
         >
           {refreshing ? 'Refreshing...' : 'Refresh'}
         </button>
+        {showQuote && <QuickQuote onClose={() => setShowQuote(false)} />}
       </div>
     </nav>
   )

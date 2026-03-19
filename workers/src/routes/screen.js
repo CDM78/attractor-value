@@ -16,11 +16,15 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
     const results = await env.DB.prepare(
       `SELECT sr.*, s.company_name, s.sector, md.price, md.pe_ratio, md.pb_ratio,
               v.graham_intrinsic_value, v.adjusted_intrinsic_value, v.buy_below_price,
-              v.discount_to_iv_pct, v.fat_tail_discount, v.margin_of_safety_required
+              v.discount_to_iv_pct, v.fat_tail_discount, v.margin_of_safety_required,
+              aa.attractor_stability_score, aa.adjusted_attractor_score,
+              aa.network_regime as attractor_regime, aa.analysis_date as attractor_date
        FROM screen_results sr
        JOIN stocks s ON sr.ticker = s.ticker
        LEFT JOIN market_data md ON sr.ticker = md.ticker
        LEFT JOIN valuations v ON sr.ticker = v.ticker
+       LEFT JOIN attractor_analysis aa ON sr.ticker = aa.ticker
+         AND aa.id = (SELECT id FROM attractor_analysis WHERE ticker = sr.ticker ORDER BY analysis_date DESC, id DESC LIMIT 1)
        WHERE sr.screen_date = (
          SELECT MAX(sr2.screen_date) FROM screen_results sr2 WHERE sr2.ticker = sr.ticker
        )

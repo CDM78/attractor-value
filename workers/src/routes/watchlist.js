@@ -3,7 +3,11 @@ export async function watchlistRoutes(request, env, ctx, { path, jsonResponse, e
     const items = await env.DB.prepare(
       `SELECT w.*, s.company_name, s.sector, md.price, v.buy_below_price, v.discount_to_iv_pct,
               v.adjusted_intrinsic_value, v.margin_of_safety_required,
-              aa.attractor_stability_score, aa.network_regime,
+              aa.attractor_stability_score, aa.adjusted_attractor_score, aa.network_regime,
+              aa.analysis_date as attractor_date,
+              aa.revenue_durability_score, aa.competitive_reinforcement_score,
+              aa.industry_structure_score, aa.demand_feedback_score,
+              aa.adaptation_capacity_score, aa.capital_allocation_score,
               ins.signal as insider_signal, ins.signal_details as insider_details,
               ins.trailing_90d_buys, ins.trailing_90d_buy_value, ins.unique_buyers_90d
        FROM watchlist w
