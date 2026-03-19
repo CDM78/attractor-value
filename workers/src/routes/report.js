@@ -100,11 +100,18 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
     }
   }
 
+  // Build data confidence assessment
+  const dataConfidence = buildDataConfidence({
+    stock, marketData, valuation, financials, insiderSignal,
+    aaaBondYield, bondRow,
+  });
+
   // Build report
   const report = buildReport({
     stock, marketData, valuation, financials, screenResult,
     analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
+    dataConfidence,
   });
 
   // Return as JSON with markdown content
@@ -116,6 +123,7 @@ function buildReport(d) {
     stock, marketData, valuation, financials, screenResult,
     analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
+    dataConfidence,
   } = d;
 
   const now = new Date().toISOString().split('T')[0];
@@ -142,6 +150,27 @@ function buildReport(d) {
     const classification = analysis.attractor_stability_score >= 3.5 ? 'Stable Attractor'
       : analysis.attractor_stability_score >= 2.0 ? 'Transitional' : 'Dissolving';
     lines.push(`The company has been assessed as a **${classification}** with an attractor stability score of **${analysis.attractor_stability_score?.toFixed(1)}/5.0** under a **${formatRegime(analysis.network_regime)}** competitive regime.`);
+    lines.push('');
+  }
+
+  // Data confidence warning banner
+  if (dataConfidence?.hasIssues) {
+    lines.push('> ⚠️ **DATA CONFIDENCE WARNING:** One or more screening inputs have quality issues. See Data Confidence section before acting on this signal.');
+    lines.push('');
+  }
+
+  // Data Confidence
+  if (dataConfidence) {
+    lines.push('---');
+    lines.push('## Data Confidence');
+    lines.push('');
+    lines.push('| Input | Value | Source | Retrieved | Status |');
+    lines.push('|-------|-------|--------|-----------|--------|');
+    for (const item of dataConfidence.items) {
+      const val = item.value ?? 'N/A';
+      const statusIcon = item.status === 'OK' ? 'OK' : item.status === 'STALE' ? '⚠️ STALE' : item.status === 'MISSING' ? '❌ MISSING' : item.status;
+      lines.push(`| ${item.input} | ${val} | ${item.source} | ${item.retrieved || 'N/A'} | ${statusIcon} |`);
+    }
     lines.push('');
   }
 
@@ -184,21 +213,33 @@ function buildReport(d) {
     lines.push(`**Tier:** ${screenResult.tier === 'full_pass' ? 'Full Pass (8/8)' : screenResult.tier === 'near_miss' ? `Near Miss (${screenResult.pass_count}/8)` : `Fail (${screenResult.pass_count}/8)`}  `);
     lines.push(`**Screen Date:** ${screenResult.screen_date}`);
     lines.push('');
-    lines.push('| Filter | Result | Details |');
-    lines.push('|--------|--------|---------|');
-    lines.push(`| P/E (dynamic) | ${screenResult.passes_pe ? 'PASS' : 'FAIL'} | P/E ${marketData?.pe_ratio?.toFixed(1) || '?'} vs ceiling ${dynamicPECeiling.toFixed(1)} (AAA yield ${aaaBondYield?.toFixed(2) || '?'}% + 1.5% premium) |`);
-    lines.push(`| P/B (sector-relative) | ${screenResult.passes_pb ? 'PASS' : 'FAIL'} | P/B ${marketData?.pb_ratio?.toFixed(1) || '?'} vs sector threshold ${screenResult.sector_pb_threshold?.toFixed(2) || '?'} (${stock.sector || 'Unknown'} 33rd pctile, backstop 5.0) |`);
-    // Fix 1: Compute displayed P/E×P/B from the same rounded values shown in the table
+
+    // Compute threshold proximity for each hard filter
+    // proximity = |actual - threshold| / |threshold|; marginal if < 0.10
+    const proximities = computeProximities(marketData, financials, screenResult, dynamicPECeiling, isFinSector);
+
+    lines.push('| Filter | Result | Details | Proximity |');
+    lines.push('|--------|--------|---------|-----------|');
+    lines.push(`| P/E (dynamic) | ${screenResult.passes_pe ? 'PASS' : 'FAIL'} | P/E ${marketData?.pe_ratio?.toFixed(1) || '?'} vs ceiling ${dynamicPECeiling.toFixed(1)} (AAA yield ${aaaBondYield?.toFixed(2) || '?'}% + 1.5% premium) | ${proximities.pe} |`);
+    lines.push(`| P/B (sector-relative) | ${screenResult.passes_pb ? 'PASS' : 'FAIL'} | P/B ${marketData?.pb_ratio?.toFixed(1) || '?'} vs sector threshold ${screenResult.sector_pb_threshold?.toFixed(2) || '?'} (${stock.sector || 'Unknown'} 33rd pctile, backstop 5.0) | ${proximities.pb} |`);
+    // Compute displayed P/E×P/B from the same rounded values shown in the table
     const dispPE = marketData?.pe_ratio?.toFixed(1);
     const dispPB = marketData?.pb_ratio?.toFixed(2);
     const dispPExPB = dispPE && dispPB ? (parseFloat(dispPE) * parseFloat(dispPB)).toFixed(2) : '?';
-    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${dispPExPB} vs max 22.5 |`);
-    lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${screenResult.de_auto_pass ? 'Auto-pass (financial sector)' : getDebtEquity(financials)} |`);
-    lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${screenResult.cr_auto_pass ? 'Auto-pass (financial sector)' : getCurrentRatio(financials)} |`);
-    lines.push(`| Earnings Stability | ${screenResult.passes_earnings_stability ? 'PASS' : 'FAIL'} | ${getEarningsStability(financials)} |`);
-    lines.push(`| Dividend Record | ${screenResult.passes_dividend_record ? 'PASS' : 'FAIL'} | ${getDividendRecord(financials)} |`);
-    lines.push(`| Earnings Growth | ${screenResult.passes_earnings_growth ? 'PASS' : 'FAIL'} | ${getEarningsGrowth(financials)} |`);
+    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${dispPExPB} vs max 22.5 | ${proximities.pe_x_pb} |`);
+    lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${screenResult.de_auto_pass ? 'Auto-pass (financial sector)' : getDebtEquity(financials)} | ${proximities.debt_equity} |`);
+    lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${screenResult.cr_auto_pass ? 'Auto-pass (financial sector)' : getCurrentRatio(financials)} | ${proximities.current_ratio} |`);
+    lines.push(`| Earnings Stability | ${screenResult.passes_earnings_stability ? 'PASS' : 'FAIL'} | ${getEarningsStability(financials)} | |`);
+    lines.push(`| Dividend Record | ${screenResult.passes_dividend_record ? 'PASS' : 'FAIL'} | ${getDividendRecord(financials)} | |`);
+    lines.push(`| Earnings Growth | ${screenResult.passes_earnings_growth ? 'PASS' : 'FAIL'} | ${getEarningsGrowth(financials)} | ${proximities.earnings_growth} |`);
     lines.push('');
+
+    // Composite proximity warning
+    const marginalCount = Object.values(proximities).filter(v => v.includes('MARGINAL')).length;
+    if (marginalCount > 0) {
+      lines.push(`> **Note:** ${marginalCount} of 8 filters ${marginalCount === 1 ? 'is' : 'are'} within 10% of ${marginalCount === 1 ? 'its' : 'their'} threshold. Small data movements could change the screening tier. Consider re-screening with live data before acting.`);
+      lines.push('');
+    }
 
     if (screenResult.tier === 'near_miss' && screenResult.failed_filter) {
       lines.push(`**Near-Miss Detail:** Failed on ${formatFilterName(screenResult.failed_filter)} — actual: ${screenResult.actual_value?.toFixed(2) || '?'} vs threshold: ${screenResult.threshold_value?.toFixed(2) || '?'} (${screenResult.miss_severity || 'unknown'} miss)`);
@@ -553,4 +594,198 @@ function ratingWord(score) {
   if (score >= 3) return 'Adequate';
   if (score >= 2) return 'Weak';
   return 'Poor';
+}
+
+// Threshold proximity calculations for Layer 1 filters
+// Returns an object with a display string per filter: '' if comfortable, '⚠️ MARGINAL (X%)' if within 10%
+function computeProximities(marketData, financials, screenResult, dynamicPECeiling, isFinSector) {
+  function marginalLabel(actual, threshold) {
+    if (actual == null || threshold == null || threshold === 0) return '';
+    const pct = Math.abs(actual - threshold) / Math.abs(threshold) * 100;
+    if (pct < 10) return `⚠️ MARGINAL (${pct.toFixed(1)}%)`;
+    return '';
+  }
+
+  const result = {};
+
+  // P/E: actual vs dynamic ceiling
+  result.pe = marginalLabel(marketData?.pe_ratio, dynamicPECeiling);
+
+  // P/B: actual vs sector threshold
+  const sectorPBThreshold = screenResult?.sector_pb_threshold;
+  result.pb = marginalLabel(marketData?.pb_ratio, sectorPBThreshold);
+
+  // P/E x P/B: actual product vs 22.5
+  const pexb = (marketData?.pe_ratio || 0) * (marketData?.pb_ratio || 0);
+  result.pe_x_pb = pexb > 0 ? marginalLabel(pexb, SCREEN_DEFAULTS.pe_x_pb_max) : '';
+
+  // D/E: skip for financial sector auto-pass
+  if (isFinSector || screenResult?.de_auto_pass) {
+    result.debt_equity = '';
+  } else {
+    const latestFin = financials?.[0];
+    if (latestFin?.shareholder_equity > 0) {
+      const de = latestFin.total_debt / latestFin.shareholder_equity;
+      result.debt_equity = marginalLabel(de, SCREEN_DEFAULTS.debt_equity_max_industrial);
+    } else {
+      result.debt_equity = '';
+    }
+  }
+
+  // Current Ratio: skip for financial sector auto-pass
+  if (isFinSector || screenResult?.cr_auto_pass) {
+    result.current_ratio = '';
+  } else {
+    const latestFin = financials?.[0];
+    if (latestFin?.current_liabilities > 0) {
+      const cr = latestFin.current_assets / latestFin.current_liabilities;
+      result.current_ratio = marginalLabel(cr, SCREEN_DEFAULTS.current_ratio_min);
+    } else {
+      result.current_ratio = '';
+    }
+  }
+
+  // Earnings Growth: actual CAGR vs min threshold
+  if (financials?.length >= 6) {
+    const last3 = financials.slice(0, 3);
+    const first3 = financials.slice(-3);
+    const avgLast = last3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
+    const avgFirst = first3.reduce((s, f) => s + (f.eps || 0), 0) / 3;
+    if (avgFirst > 0) {
+      const years = financials.length - 3;
+      const growthRate = (Math.pow(avgLast / avgFirst, 1 / years) - 1) * 100;
+      result.earnings_growth = marginalLabel(growthRate, SCREEN_DEFAULTS.eps_growth_min_pct);
+    } else {
+      result.earnings_growth = '';
+    }
+  } else {
+    result.earnings_growth = '';
+  }
+
+  return result;
+}
+
+// Data Confidence assessment — evaluates quality of each critical input
+// 5 trading days ≈ 7 calendar days
+const STALE_THRESHOLD_DAYS = 7;
+
+function buildDataConfidence({ stock, marketData, valuation, financials, insiderSignal, aaaBondYield, bondRow }) {
+  const now = Date.now();
+  const items = [];
+
+  function daysSince(isoStr) {
+    if (!isoStr) return null;
+    return (now - new Date(isoStr).getTime()) / (1000 * 60 * 60 * 24);
+  }
+
+  function status(value, fetchedAt) {
+    if (value == null) return 'MISSING';
+    const days = daysSince(fetchedAt);
+    if (days == null) return 'OK';
+    if (days > STALE_THRESHOLD_DAYS) return 'STALE';
+    return 'OK';
+  }
+
+  const mdFetched = marketData?.fetched_at;
+  const mdFetchedShort = mdFetched ? mdFetched.split('T')[0] : null;
+
+  // Price
+  items.push({
+    input: 'Price',
+    value: marketData?.price != null ? `$${marketData.price.toFixed(2)}` : null,
+    source: 'Yahoo Finance',
+    retrieved: mdFetchedShort,
+    status: status(marketData?.price, mdFetched),
+  });
+
+  // P/E
+  items.push({
+    input: 'P/E Ratio',
+    value: marketData?.pe_ratio != null ? marketData.pe_ratio.toFixed(1) : null,
+    source: 'Finnhub',
+    retrieved: mdFetchedShort,
+    status: status(marketData?.pe_ratio, mdFetched),
+  });
+
+  // P/B
+  items.push({
+    input: 'P/B Ratio',
+    value: marketData?.pb_ratio != null ? marketData.pb_ratio.toFixed(2) : null,
+    source: 'Finnhub',
+    retrieved: mdFetchedShort,
+    status: status(marketData?.pb_ratio, mdFetched),
+  });
+
+  // EPS (from financials — most recent year)
+  const latestFin = financials?.[0];
+  const finRetrieved = stock?.last_updated?.split('T')[0] || null;
+  items.push({
+    input: 'EPS (latest)',
+    value: latestFin?.eps != null ? `$${latestFin.eps.toFixed(2)} (${latestFin.fiscal_year})` : null,
+    source: 'Finnhub (10-K XBRL)',
+    retrieved: finRetrieved,
+    status: status(latestFin?.eps, stock?.last_updated),
+  });
+
+  // Normalized EPS (from valuation)
+  items.push({
+    input: 'Normalized EPS (3yr)',
+    value: valuation?.normalized_eps != null ? `$${valuation.normalized_eps.toFixed(2)}` : null,
+    source: 'Calculated',
+    retrieved: valuation?.calculated_at?.split('T')[0] || null,
+    status: status(valuation?.normalized_eps, valuation?.calculated_at),
+  });
+
+  // BVPS
+  items.push({
+    input: 'BVPS',
+    value: latestFin?.book_value_per_share != null ? `$${latestFin.book_value_per_share.toFixed(2)} (${latestFin.fiscal_year})` : null,
+    source: 'Finnhub (10-K XBRL)',
+    retrieved: finRetrieved,
+    status: status(latestFin?.book_value_per_share, stock?.last_updated),
+  });
+
+  // Dividend History
+  const divYears = financials?.filter(f => f.dividend_paid).length || 0;
+  items.push({
+    input: 'Dividend History',
+    value: financials?.length > 0 ? `${divYears}/${financials.length} years paid` : null,
+    source: 'Finnhub (10-K XBRL)',
+    retrieved: finRetrieved,
+    status: status(financials?.length > 0 ? divYears : null, stock?.last_updated),
+  });
+
+  // Earnings History
+  const earningsYears = financials?.filter(f => f.eps != null).length || 0;
+  items.push({
+    input: 'Earnings History',
+    value: financials?.length > 0 ? `${earningsYears} years of data` : null,
+    source: 'Finnhub (10-K XBRL)',
+    retrieved: finRetrieved,
+    status: status(financials?.length > 0 ? earningsYears : null, stock?.last_updated),
+  });
+
+  // Insider Ownership
+  items.push({
+    input: 'Insider Ownership',
+    value: marketData?.insider_ownership_pct != null ? `${marketData.insider_ownership_pct.toFixed(1)}%` : null,
+    source: 'Finnhub',
+    retrieved: mdFetchedShort,
+    status: marketData?.insider_ownership_pct != null ? status(marketData.insider_ownership_pct, mdFetched) : 'MISSING',
+  });
+
+  // AAA Bond Yield
+  items.push({
+    input: 'AAA Bond Yield',
+    value: aaaBondYield != null ? `${aaaBondYield.toFixed(2)}%` : null,
+    source: 'FRED',
+    retrieved: bondRow?.fetched_at?.split('T')[0] || null,
+    status: status(aaaBondYield, bondRow?.fetched_at),
+  });
+
+  // Check for hard filter inputs with issues
+  const hardFilterInputs = ['P/E Ratio', 'P/B Ratio', 'EPS (latest)', 'BVPS'];
+  const hasIssues = items.some(i => hardFilterInputs.includes(i.input) && i.status !== 'OK');
+
+  return { items, hasIssues };
 }
