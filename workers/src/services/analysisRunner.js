@@ -28,11 +28,11 @@ export async function runSingleAnalysis(env, ticker) {
     'SELECT * FROM valuations WHERE ticker = ?'
   ).bind(ticker).first();
 
-  // Fetch insider data (best effort)
+  // Fetch insider data (best effort — try Finnhub first, fall back to existing DB data)
   let insiderSignal = null;
+  const today = new Date().toISOString().split('T')[0];
   try {
     if (env.FINNHUB_API_KEY) {
-      const today = new Date().toISOString().split('T')[0];
       const sixMonthsAgo = new Date(Date.now() - 180 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
       const txns = await getInsiderTransactions(ticker, sixMonthsAgo, today, env.FINNHUB_API_KEY);
@@ -49,15 +49,38 @@ export async function runSingleAnalysis(env, ticker) {
       }
 
       const officers = await getCompanyOfficers(ticker, env.FINNHUB_API_KEY);
-
       const allRecent = await env.DB.prepare(
         `SELECT * FROM insider_transactions
          WHERE ticker = ? AND filing_date >= date('now', '-180 days')`
       ).bind(ticker).all();
 
-      const signal = computeInsiderSignal(allRecent.results || [], officers);
-      insiderSignal = signal;
+      insiderSignal = computeInsiderSignal(allRecent.results || [], officers);
+      console.log(`Insider data fetched for ${ticker}: ${txns.length} new transactions, signal=${insiderSignal.signal}`);
+    }
+  } catch (err) {
+    console.error(`Insider fetch failed for ${ticker}:`, err.message);
+  }
 
+  // Fallback: compute signal from existing DB transactions if Finnhub fetch failed
+  if (!insiderSignal) {
+    try {
+      const existingTxns = await env.DB.prepare(
+        `SELECT * FROM insider_transactions
+         WHERE ticker = ? AND filing_date >= date('now', '-180 days')`
+      ).bind(ticker).all();
+      const txnList = existingTxns.results || [];
+      if (txnList.length > 0) {
+        insiderSignal = computeInsiderSignal(txnList, []);
+        console.log(`Insider signal from existing DB data for ${ticker}: ${txnList.length} transactions, signal=${insiderSignal.signal}`);
+      }
+    } catch (e) {
+      console.error(`Insider DB fallback failed for ${ticker}:`, e.message);
+    }
+  }
+
+  // Store computed signal
+  if (insiderSignal) {
+    try {
       await env.DB.prepare(
         `INSERT OR REPLACE INTO insider_signals
          (ticker, signal_date, trailing_90d_buys, trailing_90d_buy_value,
@@ -66,15 +89,13 @@ export async function runSingleAnalysis(env, ticker) {
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
       ).bind(
         ticker, today,
-        signal.trailing_90d_buys, signal.trailing_90d_buy_value,
-        signal.trailing_90d_sells, signal.trailing_90d_sell_value,
-        signal.unique_buyers_90d, signal.signal, signal.signal_details
+        insiderSignal.trailing_90d_buys, insiderSignal.trailing_90d_buy_value,
+        insiderSignal.trailing_90d_sells, insiderSignal.trailing_90d_sell_value,
+        insiderSignal.unique_buyers_90d, insiderSignal.signal, insiderSignal.signal_details
       ).run();
-
-      console.log(`Insider data fetched for ${ticker}: ${txns.length} transactions, signal=${signal.signal}`);
+    } catch (dbErr) {
+      console.error(`Failed to store insider signal for ${ticker}:`, dbErr.message);
     }
-  } catch (err) {
-    console.error(`Insider fetch failed for ${ticker}:`, err.message);
   }
 
   const financialContext = buildFinancialContext(stock, financials, marketData, valuation, insiderSignal);
