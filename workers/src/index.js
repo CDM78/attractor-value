@@ -9,6 +9,7 @@ import { fillMetricsRoutes, fillFundamentalsRoutes, backfillRoutes } from './rou
 import { transactionsRoutes } from './routes/transactions.js';
 import { reportRoutes } from './routes/report.js';
 import { quoteRoutes } from './routes/quote.js';
+import { priceCheckRoutes } from './routes/priceCheck.js';
 import { dailyRefresh, finnhubRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
 import { dailyAttractorCheck } from './cron/attractorCheck.js';
@@ -124,6 +125,7 @@ const routeMap = {
   '/api/transactions': transactionsRoutes,
   '/api/report': reportRoutes,
   '/api/quote': quoteRoutes,
+  '/api/price-check': priceCheckRoutes,
 };
 
 export default {

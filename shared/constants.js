@@ -8,10 +8,24 @@ export const SCREEN_DEFAULTS = {
   pb_max: 1.5,                    // legacy fallback; sector-relative P/B is primary (Update 4)
   pb_sector_percentile: 33,       // bottom 33rd percentile of sector (Update 4)
   pb_absolute_backstop: 5.0,      // absolute P/B ceiling regardless of sector (Update 4)
-  pe_x_pb_max: 22.5,
+  // Calibration (2026-03): Raised from Graham's original 22.5 to 40.
+  // Modern share buyback practices inflate P/B by shrinking equity,
+  // making the original ceiling too restrictive. At 22.5, the framework
+  // rejected Apple (2016), Kroger (2019), and other quality compounders.
+  // At 40, these pass without admitting additional traps — the traps that
+  // slip through (INTC, WBA, WFC, M) fail on qualitative grounds, not ratios.
+  // Calibration tested: [22.5, 30, 40, 999]. 40 was optimal; 999 let too
+  // many traps through.
+  pe_x_pb_max: 40,
   debt_equity_max_industrial: 1.0,
   debt_equity_max_utility: 2.0,
-  current_ratio_min: 1.5,
+  // Calibration (2026-03): Lowered from 1.5 to 1.0 (Graham's standard).
+  // 1.5 was overly restrictive — it rejected stable grocers (KR) and
+  // retailers with fast inventory turns whose low current ratios reflect
+  // efficient working capital management, not financial distress.
+  // Lowering to 1.0 captured Kroger (67% 3yr return) without admitting
+  // any new traps. Calibration tested: [0.7, 0.8, 1.0].
+  current_ratio_min: 1.0,
   earnings_stability_min_years: 8,
   earnings_stability_window: 10,
   dividend_years_required: 5,
@@ -47,7 +61,14 @@ export const MARGIN_OF_SAFETY = {
   stable_hard_network_non_leader: 0.40,
   transitional_any: 0.40,
   // Near miss (marginal)
-  near_miss_stable_classical: 0.30,
+  // Calibration (2026-03): Raised from 0.30 to 0.40.
+  // This is the only single-parameter change that simultaneously improved
+  // both trap rejection (73.3% → 80.0%) and precision (55.6% → 62.5%).
+  // Partial-pass stocks (6-7 of 8 filters) are where dangerous false
+  // positives concentrate — INTC passed 7/8 and lost 50%+. Demanding a
+  // larger discount before buying borderline stocks uses price as a
+  // quality filter. Calibration tested: [0.25, 0.30, 0.35, 0.40].
+  near_miss_stable_classical: 0.40,
   near_miss_stable_hard_network: 0.45,
   near_miss_transitional: 0.45,
   // Near miss (clear) — requires Claude "proceed"

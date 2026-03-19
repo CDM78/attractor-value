@@ -82,7 +82,7 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
               v.discount_to_iv_pct,
               CASE WHEN md.pe_ratio IS NOT NULL AND md.pe_ratio > 0 AND md.pe_ratio <= ? THEN 1 ELSE 0 END as passes_pe,
               CASE WHEN md.pb_ratio IS NOT NULL AND md.pb_ratio <= 1.5 THEN 1 ELSE 0 END as passes_pb,
-              CASE WHEN md.pe_ratio IS NOT NULL AND md.pb_ratio IS NOT NULL AND (md.pe_ratio * md.pb_ratio) <= 22.5 THEN 1 ELSE 0 END as passes_pe_x_pb,
+              CASE WHEN md.pe_ratio IS NOT NULL AND md.pb_ratio IS NOT NULL AND (md.pe_ratio * md.pb_ratio) <= 40 THEN 1 ELSE 0 END as passes_pe_x_pb,
               CASE WHEN EXISTS (SELECT 1 FROM financials f WHERE f.ticker = s.ticker) THEN 1 ELSE 0 END as has_fundamentals,
               0 as passes_debt_equity, 0 as passes_current_ratio,
               0 as passes_earnings_stability, 0 as passes_dividend_record,

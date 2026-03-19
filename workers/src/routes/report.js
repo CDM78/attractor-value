@@ -226,7 +226,7 @@ function buildReport(d) {
     const dispPE = marketData?.pe_ratio?.toFixed(1);
     const dispPB = marketData?.pb_ratio?.toFixed(2);
     const dispPExPB = dispPE && dispPB ? (parseFloat(dispPE) * parseFloat(dispPB)).toFixed(2) : '?';
-    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${dispPExPB} vs max 22.5 | ${proximities.pe_x_pb} |`);
+    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${dispPExPB} vs max ${SCREEN_DEFAULTS.pe_x_pb_max} | ${proximities.pe_x_pb} |`);
     lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${screenResult.de_auto_pass ? 'Auto-pass (financial sector)' : getDebtEquity(financials)} | ${proximities.debt_equity} |`);
     lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${screenResult.cr_auto_pass ? 'Auto-pass (financial sector)' : getCurrentRatio(financials)} | ${proximities.current_ratio} |`);
     lines.push(`| Earnings Stability | ${screenResult.passes_earnings_stability ? 'PASS' : 'FAIL'} | ${getEarningsStability(financials)} | |`);
