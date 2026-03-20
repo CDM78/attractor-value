@@ -374,13 +374,15 @@ export async function finnhubRefresh(env) {
 // EDGAR-based fundamentals refresh — primary data source
 // Fetches XBRL data directly from SEC EDGAR, parses into financials table,
 // then computes P/E and P/B from EDGAR fundamentals + live Yahoo price.
+// Uses aggregator for EDGAR → Finnhub fallback chain.
 export async function edgarRefresh(env) {
   const startTime = Date.now();
   console.log('EDGAR refresh started:', new Date().toISOString());
   const stats = { cikMapRefreshed: false, fundamentalsFetched: 0, ratiosComputed: 0, fallbacks: 0, errors: 0 };
 
-  const { ensureEdgarTables, upsertFinancials, upsertDataConfidence, updateMarketDataRatios } = await import('../db/queries.js');
-  const { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, refreshCikMap, getCik, delay } = await import('../services/edgarXbrl.js');
+  const { ensureEdgarTables } = await import('../db/queries.js');
+  const { refreshCikMap } = await import('../services/edgarXbrl.js');
+  const { fetchAndStoreFundamentals, computeAndStoreRatios } = await import('../services/aggregator.js');
 
   // Ensure tables exist
   await ensureEdgarTables(env.DB);
@@ -400,11 +402,11 @@ export async function edgarRefresh(env) {
     }
   }
 
-  // Step 1: Get tickers needing EDGAR fundamentals
+  // Step 1: Get tickers needing fundamentals
   // Priority: watchlist > passing screen > promising (low PE*PB) > any
   const tickersToFetch = await env.DB.prepare(
     `SELECT s.ticker FROM stocks s
-     LEFT JOIN data_confidence dc ON s.ticker = dc.ticker AND dc.data_source = 'edgar'
+     LEFT JOIN data_confidence dc ON s.ticker = dc.ticker AND dc.data_source IN ('edgar', 'finnhub_fallback')
      WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
        AND (dc.fetch_date IS NULL OR dc.fetch_date < datetime('now', '-90 days'))
      ORDER BY
@@ -419,69 +421,39 @@ export async function edgarRefresh(env) {
 
   const tickers = (tickersToFetch.results || []).map(r => r.ticker);
 
-  // Step 2: Fetch and parse EDGAR data for each ticker
+  // Step 2: Fetch fundamentals via aggregator (EDGAR → Finnhub fallback)
   for (const ticker of tickers) {
     try {
-      const cik = await getCik(env.DB, ticker);
-      if (!cik) {
-        console.log(`EDGAR: no CIK for ${ticker}, skipping`);
-        continue;
+      const result = await fetchAndStoreFundamentals(env.DB, ticker, env.FINNHUB_API_KEY);
+      if (result.source) {
+        stats.fundamentalsFetched++;
+        if (result.source === 'finnhub') stats.fallbacks++;
+        console.log(`${result.source.toUpperCase()}: ${ticker} — ${result.yearsStored} years stored`);
+      } else {
+        console.log(`No data available for ${ticker} from any source`);
       }
-
-      await delay(200); // SEC rate limit
-      const facts = await fetchCompanyFacts(cik);
-      if (!facts) {
-        console.log(`EDGAR: no data for ${ticker} (CIK ${cik})`);
-        stats.fallbacks++;
-        continue;
-      }
-
-      const { financials, confidence } = parseEdgarToFinancials(ticker, facts);
-      if (financials.length === 0) {
-        console.log(`EDGAR: no parseable financials for ${ticker}`);
-        stats.fallbacks++;
-        continue;
-      }
-
-      for (const fin of financials) {
-        await upsertFinancials(env.DB, fin);
-      }
-      for (const dc of confidence) {
-        await upsertDataConfidence(env.DB, dc);
-      }
-
-      stats.fundamentalsFetched++;
-      console.log(`EDGAR: ${ticker} — ${financials.length} years stored`);
     } catch (err) {
-      console.error(`EDGAR error for ${ticker}:`, err.message);
+      console.error(`Fundamentals error for ${ticker}:`, err.message);
       stats.errors++;
     }
   }
 
-  // Step 3: Compute derived ratios (P/E, P/B) from EDGAR data + live price
+  // Step 3: Compute derived ratios (P/E, P/B) from stored fundamentals + live price
   const needRatios = await env.DB.prepare(
-    `SELECT DISTINCT f.ticker, md.price
+    `SELECT DISTINCT f.ticker
      FROM financials f
      JOIN market_data md ON f.ticker = md.ticker
-     JOIN data_confidence dc ON f.ticker = dc.ticker AND dc.data_source = 'edgar'
      WHERE md.price IS NOT NULL AND md.price > 0
-       AND (md.ratio_source IS NULL OR md.ratio_source != 'edgar_computed'
+       AND (md.ratio_source IS NULL
+            OR md.ratio_source NOT IN ('edgar_computed', 'finnhub_computed')
             OR md.fetched_at < datetime('now', '-24 hours'))
      LIMIT 50`
   ).all();
 
   for (const row of (needRatios.results || [])) {
     try {
-      const latest = await env.DB.prepare(
-        'SELECT * FROM financials WHERE ticker = ? ORDER BY fiscal_year DESC LIMIT 1'
-      ).bind(row.ticker).first();
-      if (!latest) continue;
-
-      const ratios = computeDerivedRatios(row.price, latest);
-      if (ratios) {
-        await updateMarketDataRatios(env.DB, row.ticker, ratios, 'edgar_computed');
-        stats.ratiosComputed++;
-      }
+      const ratios = await computeAndStoreRatios(env.DB, row.ticker);
+      if (ratios) stats.ratiosComputed++;
     } catch (err) {
       console.error(`Ratio computation error for ${row.ticker}:`, err.message);
       stats.errors++;
