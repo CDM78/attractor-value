@@ -44,6 +44,29 @@ export function computeSectorPBThresholds(allStocksWithPB) {
   return thresholds;
 }
 
+/**
+ * Compute 5-year average ROE from financials.
+ * Skips years with non-positive equity.
+ */
+export function computeROE5yrAvg(financials) {
+  if (!financials || financials.length < 2) return null;
+  const recent = financials.slice(0, 5);
+  const valid = recent.filter(f => f.shareholder_equity > 0 && f.net_income != null);
+  if (valid.length < 2) return null;
+  const avgROE = valid.reduce((s, f) => s + (f.net_income / f.shareholder_equity) * 100, 0) / valid.length;
+  return avgROE;
+}
+
+/**
+ * Get effective P/E × P/B ceiling, adjusted upward for high-ROE franchises.
+ * ROE 20-30%: ceiling × 1.25, ROE 30%+: ceiling × 1.50
+ */
+export function getPeXPbCeiling(baseCeiling, roe5yr) {
+  if (roe5yr == null || roe5yr < 20) return baseCeiling;
+  if (roe5yr >= 30) return baseCeiling * 1.50;
+  return baseCeiling * 1.25; // 20-30%
+}
+
 export function runLayer1Screen(stock, financials, marketData, options = {}) {
   const thresholds = { ...SCREEN_DEFAULTS, ...options };
   const results = {};
@@ -85,8 +108,13 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
   results.sector_pb_threshold = sectorPBMax;
 
   // Combined P/E × P/B (retained as backstop per Update 2)
+  // ROE modifier: high-ROE franchises get a higher ceiling (Calibration Backlog P1)
   const pe_x_pb = (marketData.pe_ratio || 0) * (marketData.pb_ratio || 0);
-  results.passes_pe_x_pb = pe_x_pb > 0 && pe_x_pb <= thresholds.pe_x_pb_max ? 1 : 0;
+  const roe5yr = computeROE5yrAvg(financials);
+  const effectivePeXPbMax = getPeXPbCeiling(thresholds.pe_x_pb_max, roe5yr);
+  results.passes_pe_x_pb = pe_x_pb > 0 && pe_x_pb <= effectivePeXPbMax ? 1 : 0;
+  results.roe_5yr_avg = roe5yr != null ? Math.round(roe5yr * 10) / 10 : null;
+  results.pe_x_pb_ceiling_used = Math.round(effectivePeXPbMax * 10) / 10;
 
   // Sector-aware filter adjustments
   const sectorLower = sectorName.toLowerCase();
@@ -258,7 +286,9 @@ function getMissInfo(filterName, stock, financials, marketData, ctx) {
     }
     case 'pe_x_pb': {
       const actual = (marketData.pe_ratio || 0) * (marketData.pb_ratio || 0);
-      return { actual, threshold: ctx.thresholds.pe_x_pb_max };
+      const roe = computeROE5yrAvg(financials);
+      const ceiling = getPeXPbCeiling(ctx.thresholds.pe_x_pb_max, roe);
+      return { actual, threshold: ceiling };
     }
     case 'debt_equity': {
       if (latestFinancials && latestFinancials.shareholder_equity > 0) {

@@ -111,6 +111,19 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
     }
   }
 
+  // Confidence band: STRONG / STANDARD / MARGINAL based on price vs buy-below
+  let confidenceBand = null;
+  if (hasValuation && signal.startsWith('BUY')) {
+    const price = marketData.price;
+    const bb = valuation.buy_below_price;
+    if (price <= bb * 0.90) confidenceBand = 'STRONG';
+    else confidenceBand = 'STANDARD';
+  } else if (hasValuation && !signal.startsWith('BUY')) {
+    const price = marketData.price;
+    const bb = valuation.buy_below_price;
+    if (price <= bb * 1.05) confidenceBand = 'MARGINAL';
+  }
+
   // Build data confidence assessment
   const dataConfidence = buildDataConfidence({
     stock, marketData, valuation, financials, insiderSignal,
@@ -126,7 +139,7 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
   });
 
   // Return as JSON with markdown content
-  return jsonResponse({ ticker, signal, report });
+  return jsonResponse({ ticker, signal, confidence_band: confidenceBand, report });
 }
 
 function buildReport(d) {
@@ -145,7 +158,7 @@ function buildReport(d) {
   lines.push(`# Investment Research Report: ${stock.company_name} (${stock.ticker})`);
   lines.push(`**Generated:** ${now}  `);
   lines.push(`**Framework:** Attractor Value Framework  `);
-  lines.push(`**Signal:** ${signal}`);
+  lines.push(`**Signal:** ${signal}${confidenceBand ? ` (${confidenceBand})` : ''}`);
   lines.push('');
 
   // Executive Summary
@@ -242,7 +255,11 @@ function buildReport(d) {
     const dispPE = marketData?.pe_ratio?.toFixed(1);
     const dispPB = marketData?.pb_ratio?.toFixed(2);
     const dispPExPB = dispPE && dispPB ? (parseFloat(dispPE) * parseFloat(dispPB)).toFixed(2) : '?';
-    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${dispPExPB} vs max ${SCREEN_DEFAULTS.pe_x_pb_max} | ${proximities.pe_x_pb} |`);
+    const pexbCeiling = screenResult.pe_x_pb_ceiling_used || SCREEN_DEFAULTS.pe_x_pb_max;
+    const roeNote = screenResult.roe_5yr_avg != null && screenResult.roe_5yr_avg >= 20
+      ? ` (ROE ${screenResult.roe_5yr_avg.toFixed(0)}% modifier)`
+      : '';
+    lines.push(`| P/E x P/B | ${screenResult.passes_pe_x_pb ? 'PASS' : 'FAIL'} | ${dispPExPB} vs max ${pexbCeiling}${roeNote} | ${proximities.pe_x_pb} |`);
     lines.push(`| Debt/Equity | ${screenResult.passes_debt_equity ? 'PASS' : 'FAIL'} | ${screenResult.de_auto_pass ? 'Auto-pass (financial sector)' : getDebtEquity(financials)} | ${proximities.debt_equity} |`);
     lines.push(`| Current Ratio | ${screenResult.passes_current_ratio ? 'PASS' : 'FAIL'} | ${screenResult.cr_auto_pass ? 'Auto-pass (financial sector)' : getCurrentRatio(financials)} | ${proximities.current_ratio} |`);
     lines.push(`| Earnings Stability | ${screenResult.passes_earnings_stability ? 'PASS' : 'FAIL'} | ${getEarningsStability(financials)} | |`);

@@ -41,9 +41,17 @@ export async function getFinancialsForTicker(db, ticker, limit = 10) {
 }
 
 export async function saveScreenResult(db, ticker, screenDate, results) {
+  // Ensure ROE/pe_x_pb_ceiling columns exist (added by calibration backlog)
+  try {
+    await db.prepare("ALTER TABLE screen_results ADD COLUMN roe_5yr_avg REAL").run();
+  } catch { /* column already exists */ }
+  try {
+    await db.prepare("ALTER TABLE screen_results ADD COLUMN pe_x_pb_ceiling_used REAL").run();
+  } catch { /* column already exists */ }
+
   return db.prepare(
-    `INSERT OR REPLACE INTO screen_results (ticker, screen_date, passes_pe, passes_pb, passes_pe_x_pb, passes_debt_equity, passes_current_ratio, passes_earnings_stability, passes_dividend_record, passes_earnings_growth, passes_all_hard, passes_fcf, passes_insider_ownership, passes_dilution, tier, pass_count, sector_pb_threshold, failed_filter, miss_severity, actual_value, threshold_value, de_auto_pass, cr_auto_pass)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    `INSERT OR REPLACE INTO screen_results (ticker, screen_date, passes_pe, passes_pb, passes_pe_x_pb, passes_debt_equity, passes_current_ratio, passes_earnings_stability, passes_dividend_record, passes_earnings_growth, passes_all_hard, passes_fcf, passes_insider_ownership, passes_dilution, tier, pass_count, sector_pb_threshold, failed_filter, miss_severity, actual_value, threshold_value, de_auto_pass, cr_auto_pass, roe_5yr_avg, pe_x_pb_ceiling_used)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   ).bind(
     ticker, screenDate, results.passes_pe, results.passes_pb, results.passes_pe_x_pb,
     results.passes_debt_equity, results.passes_current_ratio, results.passes_earnings_stability,
@@ -52,7 +60,8 @@ export async function saveScreenResult(db, ticker, screenDate, results) {
     results.tier || 'fail', results.pass_count || 0, results.sector_pb_threshold || null,
     results.failed_filter || null, results.miss_severity || null,
     results.actual_value || null, results.threshold_value || null,
-    results.de_auto_pass || 0, results.cr_auto_pass || 0
+    results.de_auto_pass || 0, results.cr_auto_pass || 0,
+    results.roe_5yr_avg ?? null, results.pe_x_pb_ceiling_used ?? null
   ).run();
 }
 
