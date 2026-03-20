@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { API_BASE } from '../../config.js'
+import InfoTooltip from '../shared/InfoTooltip'
 
 export default function AnalysisDetail() {
   const { ticker } = useParams()
@@ -120,7 +121,7 @@ export default function AnalysisDetail() {
           <div className="bg-surface-secondary rounded p-4">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <span className="text-text-secondary text-sm">Attractor Stability Score</span>
+                <span className="text-text-secondary text-sm">Attractor Stability Score<InfoTooltip termKey="attractor_score" /></span>
                 <div className={`text-3xl font-bold ${scoreColor(analysis.adjusted_attractor_score ?? analysis.attractor_stability_score)}`}>
                   {(analysis.adjusted_attractor_score ?? analysis.attractor_stability_score)?.toFixed(1)}
                   <span className="text-sm text-text-secondary ml-2">/ 5.0</span>
@@ -130,7 +131,7 @@ export default function AnalysisDetail() {
                 )}
               </div>
               <div className="text-right">
-                <span className="text-text-secondary text-sm">Network Regime</span>
+                <span className="text-text-secondary text-sm">Network Regime<InfoTooltip termKey="network_regime" /></span>
                 <div className="text-lg font-bold text-accent">
                   {formatRegime(analysis.network_regime)}
                 </div>
@@ -158,12 +159,12 @@ export default function AnalysisDetail() {
           <div className="bg-surface-secondary rounded p-4">
             <h3 className="text-sm font-bold text-text-secondary mb-3">Factor Scores</h3>
             <div className="space-y-2">
-              <FactorBar label="Revenue Durability" score={analysis.revenue_durability_score} />
-              <FactorBar label="Competitive Reinforcement" score={analysis.competitive_reinforcement_score} />
-              <FactorBar label="Industry Structure" score={analysis.industry_structure_score} />
-              <FactorBar label="Demand Feedback" score={analysis.demand_feedback_score} />
-              <FactorBar label="Adaptation Capacity" score={analysis.adaptation_capacity_score} />
-              <FactorBar label="Capital Allocation" score={analysis.capital_allocation_score} />
+              <FactorBar label="Revenue Durability" score={analysis.revenue_durability_score} tooltipKey="revenue_durability" />
+              <FactorBar label="Competitive Reinforcement" score={analysis.competitive_reinforcement_score} tooltipKey="competitive_reinforcement" />
+              <FactorBar label="Industry Structure" score={analysis.industry_structure_score} tooltipKey="industry_structure" />
+              <FactorBar label="Demand Feedback" score={analysis.demand_feedback_score} tooltipKey="demand_feedback" />
+              <FactorBar label="Adaptation Capacity" score={analysis.adaptation_capacity_score} tooltipKey="adaptation_capacity" />
+              <FactorBar label="Capital Allocation" score={analysis.capital_allocation_score} tooltipKey="capital_allocation" />
             </div>
           </div>
 
@@ -187,7 +188,7 @@ export default function AnalysisDetail() {
           {cr && (
             <div className="bg-surface-secondary rounded p-4">
               <h3 className="text-sm font-bold text-text-secondary mb-3">
-                Concentration Risk
+                Concentration Risk<InfoTooltip termKey="concentration_risk" />
                 {cr.concentration_penalty > 0 && (
                   <span className="text-fail ml-2">(-{cr.concentration_penalty.toFixed(1)} penalty)</span>
                 )}
@@ -259,7 +260,7 @@ export default function AnalysisDetail() {
 
           {/* Insider Activity */}
           <div className="bg-surface-secondary rounded p-4">
-            <h3 className="text-sm font-bold text-text-secondary mb-3">Insider Activity</h3>
+            <h3 className="text-sm font-bold text-text-secondary mb-3">Insider Activity<InfoTooltip termKey="insider_signal" /></h3>
             {insiderSig ? (
               <InsiderSection signal={insiderSig} transactions={insiderTxns} />
             ) : (
@@ -282,11 +283,11 @@ export default function AnalysisDetail() {
   )
 }
 
-function FactorBar({ label, score }) {
+function FactorBar({ label, score, tooltipKey }) {
   const pct = score != null ? (score / 5) * 100 : 0
   return (
     <div className="flex items-center gap-3">
-      <span className="text-sm text-text-secondary w-48 shrink-0">{label}</span>
+      <span className="text-sm text-text-secondary w-48 shrink-0">{label}{tooltipKey && <InfoTooltip termKey={tooltipKey} />}</span>
       <div className="flex-1 bg-surface-tertiary rounded h-4 overflow-hidden">
         <div
           className={`h-full rounded transition-all ${

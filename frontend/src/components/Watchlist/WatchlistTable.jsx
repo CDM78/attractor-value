@@ -4,6 +4,7 @@ import { useWatchlistStore } from '../../stores/watchlistStore'
 import { API_BASE } from '../../config.js'
 import FactorBars from './FactorBars.jsx'
 import ComparePanel from './ComparePanel.jsx'
+import InfoTooltip from '../shared/InfoTooltip'
 
 export default function WatchlistTable() {
   const { items, loading, error, fetchWatchlist, addToWatchlist, removeFromWatchlist,
@@ -251,11 +252,11 @@ function StageTable({ items, highlight, onRemove, onRefresh, refreshing, getPric
               <th className="px-1.5 py-1.5">Ticker</th>
               <th className="px-1.5 py-1.5 hidden lg:table-cell">Company</th>
               <th className="px-1.5 py-1.5">Price</th>
-              <th className="px-1.5 py-1.5">Buy&lt;</th>
-              <th className="px-1.5 py-1.5">Disc</th>
-              <th className="px-1.5 py-1.5">Attr</th>
+              <th className="px-1.5 py-1.5">Buy&lt;<InfoTooltip termKey="buy_below_price" /></th>
+              <th className="px-1.5 py-1.5">Disc<InfoTooltip termKey="discount_to_iv" /></th>
+              <th className="px-1.5 py-1.5">Attr<InfoTooltip termKey="attractor_score" /></th>
               <th className="px-1.5 py-1.5 hidden lg:table-cell">Factors</th>
-              <th className="px-1.5 py-1.5">Insider</th>
+              <th className="px-1.5 py-1.5">Insider<InfoTooltip termKey="insider_signal" /></th>
               <th className="px-1.5 py-1.5 hidden xl:table-cell">Notes</th>
               <th className="px-1.5 py-1.5"></th>
             </tr>

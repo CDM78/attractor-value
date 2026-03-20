@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 import { API_BASE } from '../../config.js'
 import QuickQuote from './QuickQuote.jsx'
@@ -54,6 +54,13 @@ export default function Nav() {
         {refreshResult && (
           <span className="text-xs text-text-secondary hidden md:inline">{refreshResult}</span>
         )}
+        <Link
+          to="/how-it-works"
+          className="w-6 h-6 rounded-full bg-surface-tertiary text-text-secondary text-xs flex items-center justify-center hover:bg-accent/15 hover:text-accent transition-colors"
+          title="How It Works"
+        >
+          ?
+        </Link>
         <button
           onClick={() => setShowQuote(prev => !prev)}
           className="text-xs px-3 py-1.5 rounded bg-surface-tertiary text-text-secondary hover:text-accent hover:bg-accent/10 transition-colors"

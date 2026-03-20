@@ -1,21 +1,32 @@
 import { FACTORS } from './FactorBars.jsx'
+import InfoTooltip from '../shared/InfoTooltip'
 
 export default function ComparePanel({ items, onClose }) {
   if (!items || items.length < 2) return null
+
+  const TOOLTIP_MAP = {
+    revenue_durability_score: 'revenue_durability',
+    competitive_reinforcement_score: 'competitive_reinforcement',
+    industry_structure_score: 'industry_structure',
+    demand_feedback_score: 'demand_feedback',
+    adaptation_capacity_score: 'adaptation_capacity',
+    capital_allocation_score: 'capital_allocation',
+  }
 
   const rows = [
     ...FACTORS.map(f => ({
       label: f.label,
       key: f.key,
+      tooltipKey: TOOLTIP_MAP[f.key],
       format: (v) => v != null ? `${v}/5` : '\u2014',
       higher: true, // higher is better
     })),
-    { label: 'Attractor Score', key: null, getValue: (i) => i.adjusted_attractor_score ?? i.attractor_stability_score, format: (v) => v != null ? `${v.toFixed(1)}/5` : '\u2014', higher: true },
-    { label: 'Network Regime', key: 'network_regime', format: (v) => ({ classical: 'Classical', soft_network: 'Soft Network', hard_network: 'Hard Network', platform: 'Platform' }[v] || v || '\u2014') },
+    { label: 'Attractor Score', key: null, tooltipKey: 'attractor_score', getValue: (i) => i.adjusted_attractor_score ?? i.attractor_stability_score, format: (v) => v != null ? `${v.toFixed(1)}/5` : '\u2014', higher: true },
+    { label: 'Network Regime', key: 'network_regime', tooltipKey: 'network_regime', format: (v) => ({ classical: 'Classical', soft_network: 'Soft Network', hard_network: 'Hard Network', platform: 'Platform' }[v] || v || '\u2014') },
     { label: 'Price', key: 'price', format: (v) => v != null ? `$${v.toFixed(2)}` : '\u2014' },
-    { label: 'Buy Below', key: 'buy_below_price', format: (v) => v != null ? `$${v.toFixed(2)}` : '\u2014' },
-    { label: 'Discount to IV', key: 'discount_to_iv_pct', format: (v) => v != null ? `${v > 0 ? '+' : ''}${v.toFixed(1)}%` : '\u2014', higher: true },
-    { label: 'Insider Signal', key: 'insider_signal', format: (v) => ({ strong_buy: 'Strong Buy', caution: 'Caution', neutral: 'Neutral' }[v] || v || '\u2014') },
+    { label: 'Buy Below', key: 'buy_below_price', tooltipKey: 'buy_below_price', format: (v) => v != null ? `$${v.toFixed(2)}` : '\u2014' },
+    { label: 'Discount to IV', key: 'discount_to_iv_pct', tooltipKey: 'discount_to_iv', format: (v) => v != null ? `${v > 0 ? '+' : ''}${v.toFixed(1)}%` : '\u2014', higher: true },
+    { label: 'Insider Signal', key: 'insider_signal', tooltipKey: 'insider_signal', format: (v) => ({ strong_buy: 'Strong Buy', caution: 'Caution', neutral: 'Neutral' }[v] || v || '\u2014') },
   ]
 
   const getBest = (row) => {
@@ -50,7 +61,7 @@ export default function ComparePanel({ items, onClose }) {
                 const best = getBest(row)
                 return (
                   <tr key={row.label} className="border-b border-border/30">
-                    <td className="px-4 py-2 text-text-secondary text-xs">{row.label}</td>
+                    <td className="px-4 py-2 text-text-secondary text-xs">{row.label}{row.tooltipKey && <InfoTooltip termKey={row.tooltipKey} />}</td>
                     {items.map((item, idx) => {
                       const val = row.getValue ? row.getValue(item) : item[row.key]
                       const isBest = best && best[idx]

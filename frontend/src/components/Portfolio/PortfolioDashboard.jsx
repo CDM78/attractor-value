@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { usePortfolioStore } from '../../stores/portfolioStore'
+import InfoTooltip from '../shared/InfoTooltip'
 
 export default function PortfolioDashboard() {
   const { holdings, summary, alerts, loading, error, fetchHoldings, fetchAlerts, addPosition, sellPosition, dismissAlert } = usePortfolioStore()
@@ -101,14 +102,14 @@ export default function PortfolioDashboard() {
                 <tr className="border-b border-border text-text-secondary text-left">
                   <th className="px-3 py-2">Ticker</th>
                   <th className="px-3 py-2">Company</th>
-                  <th className="px-3 py-2">Tier</th>
+                  <th className="px-3 py-2">Tier<InfoTooltip termKey="core_holding" /></th>
                   <th className="px-3 py-2">Shares</th>
                   <th className="px-3 py-2">Avg Cost</th>
                   <th className="px-3 py-2">Price</th>
                   <th className="px-3 py-2">Value</th>
                   <th className="px-3 py-2">Gain/Loss</th>
-                  <th className="px-3 py-2">IV</th>
-                  <th className="px-3 py-2">Attractor</th>
+                  <th className="px-3 py-2">IV<InfoTooltip termKey="adjusted_iv" /></th>
+                  <th className="px-3 py-2">Attractor<InfoTooltip termKey="attractor_score" /></th>
                   <th className="px-3 py-2">Weight</th>
                   <th className="px-3 py-2"></th>
                 </tr>
