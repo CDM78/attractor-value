@@ -132,16 +132,20 @@ async function main() {
       continue;
     }
 
-    const score = analysis.attractor_stability_score ?? analysis.adjusted_attractor_score;
-    const adjustedScore = analysis.adjusted_attractor_score ?? score;
-    const regime = analysis.network_regime;
-    const sdClassification = analysis.secular_disruption_classification || 'N/A';
+    // Response may nest data under .analysis and .secular_disruption
+    const a = analysis.analysis || analysis;
+    const sd = analysis.secular_disruption || a.secular_disruption;
+
+    const score = a.attractor_stability_score ?? a.adjusted_attractor_score;
+    const adjustedScore = a.adjusted_attractor_score ?? score;
+    const regime = a.network_regime;
+    const sdClassification = sd?.classification || 'N/A';
 
     // Check red flags in analysis text
     const allText = [
-      analysis.analysis_text,
-      analysis.bull_case_text,
-      analysis.bear_case_text,
+      a.analysis_text,
+      a.bull_case_text,
+      a.bear_case_text,
     ].filter(Boolean).join(' ');
     const flagCheck = checkRedFlags(allText, tc.expected_red_flags);
 

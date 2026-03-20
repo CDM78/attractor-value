@@ -1,0 +1,128 @@
+{
+  "date": "2026-03-20T11:46:22.978Z",
+  "results": [
+    {
+      "ticker": "INTC",
+      "expected_failure": "Competitive collapse — lost process node leadership to TSMC, AMD took market share",
+      "score": 1,
+      "expected_max_score": 3,
+      "score_pass": true,
+      "regime": "classical",
+      "sd_classification": "advanced",
+      "disruption_pass": true,
+      "flag_coverage": "75%",
+      "flags_found": [
+        "foundry",
+        "AMD",
+        "TSMC"
+      ],
+      "flags_missed": [
+        "process technology"
+      ],
+      "classification": "Dissolving"
+    },
+    {
+      "ticker": "M",
+      "expected_failure": "Secular disruption — e-commerce destroying brick-and-mortar retail",
+      "score": 1,
+      "expected_max_score": 2.5,
+      "score_pass": true,
+      "regime": "classical",
+      "sd_classification": "advanced",
+      "disruption_pass": true,
+      "flag_coverage": "75%",
+      "flags_found": [
+        "e-commerce",
+        "Amazon",
+        "mall"
+      ],
+      "flags_missed": [
+        "foot traffic"
+      ],
+      "classification": "Dissolving"
+    },
+    {
+      "ticker": "WBA",
+      "expected_failure": "Competitive erosion — pharmacy reimbursement pressure, PBM consolidation, Amazon Pharmacy",
+      "score": 1,
+      "expected_max_score": 3,
+      "score_pass": true,
+      "regime": "classical",
+      "sd_classification": "advanced",
+      "disruption_pass": true,
+      "flag_coverage": "75%",
+      "flags_found": [
+        "reimbursement",
+        "PBM",
+        "Amazon"
+      ],
+      "flags_missed": [
+        "margin pressure"
+      ],
+      "classification": "Dissolving"
+    },
+    {
+      "ticker": "WFC",
+      "expected_failure": "Regulatory/governance — fake accounts scandal, asset cap, consent orders",
+      "score": 1,
+      "expected_max_score": 3,
+      "score_pass": true,
+      "regime": "soft_network",
+      "sd_classification": "advanced",
+      "disruption_pass": true,
+      "flag_coverage": "80%",
+      "flags_found": [
+        "scandal",
+        "regulatory",
+        "consent order",
+        "asset cap"
+      ],
+      "flags_missed": [
+        "governance"
+      ],
+      "classification": "Dissolving"
+    },
+    {
+      "ticker": "T",
+      "expected_failure": "Capital misallocation — DirecTV and TimeWarner acquisitions destroyed value, massive debt",
+      "score": 1,
+      "expected_max_score": 3,
+      "score_pass": true,
+      "regime": "soft_network",
+      "sd_classification": "advanced",
+      "disruption_pass": true,
+      "flag_coverage": "80%",
+      "flags_found": [
+        "DirecTV",
+        "debt",
+        "acquisition",
+        "cord-cutting"
+      ],
+      "flags_missed": [
+        "TimeWarner"
+      ],
+      "classification": "Dissolving"
+    },
+    {
+      "ticker": "KHC",
+      "expected_failure": "Acquisition integration failure — 3G Capital cost-cutting exhausted, brand erosion",
+      "score": 1,
+      "expected_max_score": 3,
+      "score_pass": true,
+      "regime": "classical",
+      "sd_classification": "advanced",
+      "disruption_pass": true,
+      "flag_coverage": "40%",
+      "flags_found": [
+        "brand",
+        "writedown"
+      ],
+      "flags_missed": [
+        "3G",
+        "cost-cutting",
+        "goodwill"
+      ],
+      "classification": "Dissolving"
+    }
+  ]
+}
