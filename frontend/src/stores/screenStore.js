@@ -9,7 +9,7 @@ export const useScreenStore = create((set, get) => ({
 
   // Selection state for batch analysis
   selectedTickers: new Set(),
-  batchJob: null, // { jobId, status, total, completed, currentTicker, errorMessage }
+  batchJob: null, // { status, total, completed, currentTicker, errorMessage }
 
   fetchResults: async () => {
     set({ loading: true, error: null })
@@ -38,44 +38,53 @@ export const useScreenStore = create((set, get) => ({
 
   clearSelection: () => set({ selectedTickers: new Set() }),
 
+  // Frontend-driven batch: POST one ticker at a time sequentially.
+  // This avoids Worker timeout issues with ctx.waitUntil background processing.
+  // Each analysis takes ~30-60s (EDGAR fetch + 2 Claude API calls).
   startBatchAnalysis: async () => {
     const { selectedTickers } = get()
     const tickers = [...selectedTickers]
     if (tickers.length === 0) return
 
-    try {
-      const res = await fetch(`${API_BASE}/api/analyze/batch`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tickers }),
-      })
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const data = await res.json()
-      set({
-        batchJob: { jobId: data.jobId, status: 'running', total: data.total, completed: 0, currentTicker: null, errorMessage: null },
-        selectedTickers: new Set(),
-      })
-    } catch (err) {
-      set({ batchJob: { status: 'error', errorMessage: err.message } })
+    set({
+      batchJob: { status: 'running', total: tickers.length, completed: 0, currentTicker: tickers[0], errorMessage: null },
+      selectedTickers: new Set(),
+    })
+
+    let errors = []
+    for (let i = 0; i < tickers.length; i++) {
+      const ticker = tickers[i]
+      set(state => ({
+        batchJob: { ...state.batchJob, currentTicker: ticker, completed: i }
+      }))
+
+      try {
+        const res = await fetch(`${API_BASE}/api/analyze?ticker=${ticker}`, { method: 'POST' })
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({}))
+          throw new Error(errData.error || `HTTP ${res.status}`)
+        }
+      } catch (err) {
+        console.error(`Analysis failed for ${ticker}:`, err.message)
+        errors.push(`${ticker}: ${err.message}`)
+      }
+
+      set(state => ({
+        batchJob: { ...state.batchJob, completed: i + 1 }
+      }))
     }
+
+    set({
+      batchJob: {
+        status: 'complete',
+        total: tickers.length,
+        completed: tickers.length,
+        currentTicker: null,
+        errorMessage: errors.length > 0 ? errors.join('; ') : null,
+      }
+    })
   },
 
-  pollBatchProgress: async () => {
-    const { batchJob } = get()
-    if (!batchJob?.jobId) return
-
-    try {
-      const res = await fetch(`${API_BASE}/api/analyze/batch?jobId=${batchJob.jobId}`)
-      if (!res.ok) return
-      const data = await res.json()
-      set({ batchJob: {
-        jobId: data.jobId,
-        status: data.status,
-        total: data.total,
-        completed: data.completed,
-        currentTicker: data.currentTicker,
-        errorMessage: data.errorMessage,
-      }})
-    } catch { /* ignore poll errors */ }
-  },
+  // No longer needed — batch is driven by frontend, not server polling
+  pollBatchProgress: async () => {},
 }))
