@@ -5,6 +5,7 @@ import WatchlistTable from './components/Watchlist/WatchlistTable'
 import PortfolioDashboard from './components/Portfolio/PortfolioDashboard'
 import AnalysisDetail from './components/Analysis/AnalysisDetail'
 import TransactionHistory from './components/Transactions/TransactionHistory'
+import HowItWorks from './components/HowItWorks/HowItWorks'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="portfolio" element={<PortfolioDashboard />} />
           <Route path="analyze/:ticker" element={<AnalysisDetail />} />
           <Route path="transactions" element={<TransactionHistory />} />
+          <Route path="how-it-works" element={<HowItWorks />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -8,6 +8,7 @@ const links = [
   { to: '/watchlist', label: 'Watchlist' },
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/transactions', label: 'History' },
+  { to: '/how-it-works', label: 'How It Works' },
 ]
 
 export default function Nav() {

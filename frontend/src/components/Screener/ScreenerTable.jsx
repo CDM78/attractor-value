@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useScreenStore } from '../../stores/screenStore'
 import { useWatchlistStore } from '../../stores/watchlistStore'
 import { API_BASE } from '../../config.js'
+import InfoTooltip from '../shared/InfoTooltip'
 
 export default function ScreenerTable() {
   const { results, meta, loading, error, fetchResults,
@@ -295,20 +296,20 @@ export default function ScreenerTable() {
                   <th className="px-1.5 py-1.5 hidden xl:table-cell">Company</th>
                   <th className="px-1.5 py-1.5 hidden 2xl:table-cell">Sector</th>
                   <th className="px-1.5 py-1.5">Price</th>
-                  <th className="px-1.5 py-1.5">P/E</th>
-                  <th className="px-1.5 py-1.5">P/B</th>
-                  <th className="px-1.5 py-1.5 hidden xl:table-cell">PxB</th>
-                  <th className="px-1.5 py-1.5 hidden xl:table-cell">D/E</th>
-                  <th className="px-1.5 py-1.5 hidden xl:table-cell">CR</th>
-                  <th className="px-1.5 py-1.5 hidden 2xl:table-cell">Earn</th>
-                  <th className="px-1.5 py-1.5 hidden 2xl:table-cell">Div</th>
-                  <th className="px-1.5 py-1.5 hidden 2xl:table-cell">EPS</th>
-                  <th className="px-1.5 py-1.5">Tier</th>
-                  <th className="px-1.5 py-1.5">Attr</th>
-                  <th className="px-1.5 py-1.5 min-w-[50px]">Signal</th>
-                  <th className="px-1.5 py-1.5">IV</th>
-                  <th className="px-1.5 py-1.5">Buy&lt;</th>
-                  <th className="px-1.5 py-1.5">Disc</th>
+                  <th className="px-1.5 py-1.5">P/E<InfoTooltip termKey="pe_ratio" /></th>
+                  <th className="px-1.5 py-1.5">P/B<InfoTooltip termKey="pb_ratio" /></th>
+                  <th className="px-1.5 py-1.5 hidden xl:table-cell">PxB<InfoTooltip termKey="pe_x_pb" /></th>
+                  <th className="px-1.5 py-1.5 hidden xl:table-cell">D/E<InfoTooltip termKey="debt_equity" /></th>
+                  <th className="px-1.5 py-1.5 hidden xl:table-cell">CR<InfoTooltip termKey="current_ratio" /></th>
+                  <th className="px-1.5 py-1.5 hidden 2xl:table-cell">Earn<InfoTooltip termKey="earnings_stability" /></th>
+                  <th className="px-1.5 py-1.5 hidden 2xl:table-cell">Div<InfoTooltip termKey="dividend_record" /></th>
+                  <th className="px-1.5 py-1.5 hidden 2xl:table-cell">EPS<InfoTooltip termKey="earnings_growth" /></th>
+                  <th className="px-1.5 py-1.5">Tier<InfoTooltip termKey="full_pass" /></th>
+                  <th className="px-1.5 py-1.5">Attr<InfoTooltip termKey="attractor_score" /></th>
+                  <th className="px-1.5 py-1.5 min-w-[50px]">Signal<InfoTooltip termKey="signal_buy" /></th>
+                  <th className="px-1.5 py-1.5">IV<InfoTooltip termKey="adjusted_iv" /></th>
+                  <th className="px-1.5 py-1.5">Buy&lt;<InfoTooltip termKey="buy_below_price" /></th>
+                  <th className="px-1.5 py-1.5">Disc<InfoTooltip termKey="discount_to_iv" /></th>
                   <th className="px-1.5 py-1.5"></th>
                 </tr>
               </thead>
