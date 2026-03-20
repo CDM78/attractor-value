@@ -10,7 +10,7 @@ import { transactionsRoutes } from './routes/transactions.js';
 import { reportRoutes } from './routes/report.js';
 import { quoteRoutes } from './routes/quote.js';
 import { priceCheckRoutes } from './routes/priceCheck.js';
-import { dailyRefresh, finnhubRefresh } from './cron/dailyRefresh.js';
+import { dailyRefresh, finnhubRefresh, edgarRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
 import { dailyAttractorCheck } from './cron/attractorCheck.js';
 import { fetchBulkQuotes } from './services/yahooFinance.js';
@@ -184,8 +184,10 @@ export default {
 
     if (mode === 'population') {
       // Aggressive schedule: every minute, alternating
-      if (minute % 2 === 0) {
+      if (minute % 3 === 0) {
         ctx.waitUntil(dailyRefresh(env).then(() => alertsCheck(env)));
+      } else if (minute % 3 === 1) {
+        ctx.waitUntil(edgarRefresh(env));
       } else {
         ctx.waitUntil(finnhubRefresh(env));
       }
@@ -205,8 +207,8 @@ export default {
       ctx.waitUntil(dailyRefresh(env));
     }
     if (isMarketDay && etHour === 17 && minute === 0) {
-      // 5:00 PM ET — full screening run (uses updated prices)
-      ctx.waitUntil(dailyRefresh(env));
+      // 5:00 PM ET — EDGAR fundamentals refresh + screening (uses updated prices)
+      ctx.waitUntil(edgarRefresh(env).then(() => dailyRefresh(env)));
     }
     if (isMarketDay && etHour === 17 && minute === 15) {
       // 5:15 PM ET — attractor analysis for stale/missing scores (caching policy)
@@ -232,8 +234,12 @@ export default {
 
     // Weekly Saturday refresh
     if (isSaturday && utcHour === 10 && minute === 0) {
-      // Saturday 6 AM ET — full fundamentals refresh
+      // Saturday 6 AM ET — Finnhub fallback (sectors, insider ownership, dividend yield)
       ctx.waitUntil(finnhubRefresh(env));
+    }
+    if (isSaturday && utcHour === 11 && minute === 0) {
+      // Saturday 7 AM ET — EDGAR fundamentals catch-up
+      ctx.waitUntil(edgarRefresh(env));
     }
     if (isSaturday && utcHour === 12 && minute === 0) {
       // Saturday 8 AM ET — insider data refresh

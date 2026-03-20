@@ -60,31 +60,45 @@ export async function priceCheckRoutes(request, env, ctx, { path, jsonResponse, 
     statusDetail = `by ${pctFromBuyBelow.toFixed(1)}%`;
   }
 
-  // Check P/B drift if we have stored P/B data
+  // Check P/B drift using EDGAR BVPS + live price for precise computation
   let pbWarning = null;
-  if (storedMarket?.pb_ratio && screenResult?.sector_pb_threshold) {
-    const storedPB = storedMarket.pb_ratio;
+  if (screenResult?.sector_pb_threshold) {
     const pbThreshold = Math.min(screenResult.sector_pb_threshold, SCREEN_DEFAULTS.pb_absolute_backstop);
-    const pbPassed = storedPB <= pbThreshold;
+    const storedPB = storedMarket?.pb_ratio;
+    const storedPBPassed = storedPB && storedPB <= pbThreshold;
 
-    // Estimate current P/B: scale stored P/B by price change
-    if (storedMarket.price && storedMarket.price > 0) {
-      const estimatedPB = storedPB * (currentPrice / storedMarket.price);
-      const estimatedPBPassed = estimatedPB <= pbThreshold;
+    // Prefer EDGAR BVPS for current P/B computation
+    const latestFin = await env.DB.prepare(
+      'SELECT book_value_per_share FROM financials WHERE ticker = ? AND book_value_per_share IS NOT NULL ORDER BY fiscal_year DESC LIMIT 1'
+    ).bind(ticker).first();
 
-      if (pbPassed && !estimatedPBPassed) {
+    let currentPB = null;
+    let pbSource = null;
+    if (latestFin?.book_value_per_share > 0) {
+      currentPB = currentPrice / latestFin.book_value_per_share;
+      pbSource = 'edgar_bvps';
+    } else if (storedPB && storedMarket?.price > 0) {
+      currentPB = storedPB * (currentPrice / storedMarket.price);
+      pbSource = 'estimated';
+    }
+
+    if (currentPB != null) {
+      const currentPBPassed = currentPB <= pbThreshold;
+      if (storedPBPassed && !currentPBPassed) {
         pbWarning = {
           message: 'P/B filter may now FAIL due to price increase',
           report_pb: round(storedPB, 2),
-          estimated_current_pb: round(estimatedPB, 2),
+          current_pb: round(currentPB, 2),
+          pb_source: pbSource,
           threshold: round(pbThreshold, 2),
           recommendation: 'Re-run full report to confirm signal',
         };
-      } else if (!pbPassed && estimatedPBPassed) {
+      } else if (!storedPBPassed && currentPBPassed) {
         pbWarning = {
           message: 'P/B filter may now PASS due to price decrease',
           report_pb: round(storedPB, 2),
-          estimated_current_pb: round(estimatedPB, 2),
+          current_pb: round(currentPB, 2),
+          pb_source: pbSource,
           threshold: round(pbThreshold, 2),
           recommendation: 'Re-run full report — screening result may have improved',
         };

@@ -142,16 +142,75 @@ export async function backfillRoutes(request, env, ctx, { path, jsonResponse, er
     return errorResponse('Method not allowed', 405);
   }
 
+  const url = new URL(request.url);
+  const limit = parseInt(url.searchParams.get('limit') || '400');
+  const mode = url.searchParams.get('mode') || 'fundamentals';
+
+  // EDGAR modes — no Finnhub API key required
+  if (mode === 'cik') {
+    const { ensureEdgarTables } = await import('../db/queries.js');
+    const { refreshCikMap } = await import('../services/edgarXbrl.js');
+    await ensureEdgarTables(env.DB);
+    const count = await refreshCikMap(env.DB);
+    return jsonResponse({ message: `CIK map refreshed: ${count} entries` });
+  }
+
+  if (mode === 'edgar') {
+    const { ensureEdgarTables, upsertFinancials, upsertDataConfidence, updateMarketDataRatios } = await import('../db/queries.js');
+    const { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, getCik, delay } = await import('../services/edgarXbrl.js');
+    await ensureEdgarTables(env.DB);
+
+    const tickers = await env.DB.prepare(
+      `SELECT s.ticker FROM stocks s
+       LEFT JOIN data_confidence dc ON s.ticker = dc.ticker AND dc.data_source = 'edgar'
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND (dc.fetch_date IS NULL OR dc.fetch_date < datetime('now', '-90 days'))
+       ORDER BY s.ticker
+       LIMIT ?`
+    ).bind(limit).all();
+
+    const stats = { fetched: 0, ratios: 0, skipped: 0, errors: 0 };
+
+    for (const row of (tickers.results || [])) {
+      try {
+        const cik = await getCik(env.DB, row.ticker);
+        if (!cik) { stats.skipped++; continue; }
+
+        await delay(200);
+        const facts = await fetchCompanyFacts(cik);
+        if (!facts) { stats.skipped++; continue; }
+
+        const { financials, confidence } = parseEdgarToFinancials(row.ticker, facts);
+        if (financials.length === 0) { stats.skipped++; continue; }
+
+        for (const fin of financials) await upsertFinancials(env.DB, fin);
+        for (const dc of confidence) await upsertDataConfidence(env.DB, dc);
+        stats.fetched++;
+
+        // Compute derived ratios
+        const md = await env.DB.prepare('SELECT price FROM market_data WHERE ticker = ?').bind(row.ticker).first();
+        if (md?.price && financials[0]) {
+          const ratios = computeDerivedRatios(md.price, financials[0]);
+          if (ratios) {
+            await updateMarketDataRatios(env.DB, row.ticker, ratios, 'edgar_computed');
+            stats.ratios++;
+          }
+        }
+      } catch (err) {
+        console.error(`EDGAR backfill error for ${row.ticker}:`, err.message);
+        stats.errors++;
+      }
+    }
+
+    return jsonResponse({ message: `EDGAR backfill complete`, stats });
+  }
+
   if (!env.FINNHUB_API_KEY) {
     return errorResponse('FINNHUB_API_KEY not configured', 500);
   }
 
   const { getFinancialsReported, parseFinancialsReported, getBasicMetrics } = await import('../services/finnhub.js');
   const { upsertFinancials } = await import('../db/queries.js');
-
-  const url = new URL(request.url);
-  const limit = parseInt(url.searchParams.get('limit') || '400');
-  const mode = url.searchParams.get('mode') || 'fundamentals';
 
   const stats = { sectors: { updated: 0, skipped: 0, errors: 0 }, fundamentals: { fetched: 0, skipped: 0, errors: 0 }, metrics: { updated: 0, skipped: 0, errors: 0 } };
 

@@ -135,3 +135,58 @@ export async function batchUpsertMarketData(db, items) {
   }
   return Promise.all(batches);
 }
+
+// --- EDGAR / Data Confidence helpers ---
+
+export async function ensureEdgarTables(db) {
+  await db.batch([
+    db.prepare(`CREATE TABLE IF NOT EXISTS cik_map (
+      ticker TEXT PRIMARY KEY,
+      cik TEXT NOT NULL,
+      company_name TEXT,
+      updated_at TEXT
+    )`),
+    db.prepare(`CREATE TABLE IF NOT EXISTS data_confidence (
+      ticker TEXT,
+      fiscal_year INTEGER,
+      data_source TEXT NOT NULL,
+      filing_date TEXT,
+      fetch_date TEXT NOT NULL,
+      is_stale INTEGER DEFAULT 0,
+      notes TEXT,
+      PRIMARY KEY (ticker, fiscal_year)
+    )`),
+  ]);
+
+  // Add ratio_source column to market_data if it doesn't exist
+  try {
+    await db.prepare("ALTER TABLE market_data ADD COLUMN ratio_source TEXT DEFAULT 'finnhub'").run();
+  } catch { /* column already exists */ }
+}
+
+export async function upsertDataConfidence(db, dc) {
+  return db.prepare(
+    `INSERT OR REPLACE INTO data_confidence (ticker, fiscal_year, data_source, filing_date, fetch_date, is_stale, notes)
+     VALUES (?, ?, ?, ?, ?, ?, ?)`
+  ).bind(
+    dc.ticker, dc.fiscal_year, dc.data_source, dc.filing_date,
+    dc.fetch_date, dc.is_stale || 0, dc.notes || null
+  ).run();
+}
+
+export async function getDataConfidence(db, ticker) {
+  const result = await db.prepare(
+    'SELECT * FROM data_confidence WHERE ticker = ? ORDER BY fiscal_year DESC'
+  ).bind(ticker).all();
+  return result.results || [];
+}
+
+export async function updateMarketDataRatios(db, ticker, ratios, source) {
+  return db.prepare(
+    `UPDATE market_data SET pe_ratio = ?, pb_ratio = ?, earnings_yield = ?, ratio_source = ?, fetched_at = ?
+     WHERE ticker = ?`
+  ).bind(
+    ratios.pe_ratio, ratios.pb_ratio, ratios.earnings_yield,
+    source || 'edgar_computed', new Date().toISOString(), ticker
+  ).run();
+}

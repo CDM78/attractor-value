@@ -371,6 +371,128 @@ export async function finnhubRefresh(env) {
   return stats;
 }
 
+// EDGAR-based fundamentals refresh — primary data source
+// Fetches XBRL data directly from SEC EDGAR, parses into financials table,
+// then computes P/E and P/B from EDGAR fundamentals + live Yahoo price.
+export async function edgarRefresh(env) {
+  const startTime = Date.now();
+  console.log('EDGAR refresh started:', new Date().toISOString());
+  const stats = { cikMapRefreshed: false, fundamentalsFetched: 0, ratiosComputed: 0, fallbacks: 0, errors: 0 };
+
+  const { ensureEdgarTables, upsertFinancials, upsertDataConfidence, updateMarketDataRatios } = await import('../db/queries.js');
+  const { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, refreshCikMap, getCik, delay } = await import('../services/edgarXbrl.js');
+
+  // Ensure tables exist
+  await ensureEdgarTables(env.DB);
+
+  // Step 0: Refresh CIK map if stale (>7 days)
+  const cikAge = await env.DB.prepare(
+    "SELECT updated_at FROM cik_map LIMIT 1"
+  ).first();
+  const cikStale = !cikAge || (Date.now() - new Date(cikAge.updated_at).getTime() > 7 * 86400000);
+  if (cikStale) {
+    try {
+      await refreshCikMap(env.DB);
+      stats.cikMapRefreshed = true;
+    } catch (err) {
+      console.error('CIK map refresh failed:', err.message);
+      stats.errors++;
+    }
+  }
+
+  // Step 1: Get tickers needing EDGAR fundamentals
+  // Priority: watchlist > passing screen > promising (low PE*PB) > any
+  const tickersToFetch = await env.DB.prepare(
+    `SELECT s.ticker FROM stocks s
+     LEFT JOIN data_confidence dc ON s.ticker = dc.ticker AND dc.data_source = 'edgar'
+     WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND (dc.fetch_date IS NULL OR dc.fetch_date < datetime('now', '-90 days'))
+     ORDER BY
+       CASE
+         WHEN s.ticker IN (SELECT ticker FROM watchlist) THEN 0
+         WHEN s.ticker IN (SELECT ticker FROM screen_results WHERE tier IN ('full_pass','near_miss')) THEN 1
+         ELSE 2
+       END,
+       s.ticker
+     LIMIT 20`
+  ).all();
+
+  const tickers = (tickersToFetch.results || []).map(r => r.ticker);
+
+  // Step 2: Fetch and parse EDGAR data for each ticker
+  for (const ticker of tickers) {
+    try {
+      const cik = await getCik(env.DB, ticker);
+      if (!cik) {
+        console.log(`EDGAR: no CIK for ${ticker}, skipping`);
+        continue;
+      }
+
+      await delay(200); // SEC rate limit
+      const facts = await fetchCompanyFacts(cik);
+      if (!facts) {
+        console.log(`EDGAR: no data for ${ticker} (CIK ${cik})`);
+        stats.fallbacks++;
+        continue;
+      }
+
+      const { financials, confidence } = parseEdgarToFinancials(ticker, facts);
+      if (financials.length === 0) {
+        console.log(`EDGAR: no parseable financials for ${ticker}`);
+        stats.fallbacks++;
+        continue;
+      }
+
+      for (const fin of financials) {
+        await upsertFinancials(env.DB, fin);
+      }
+      for (const dc of confidence) {
+        await upsertDataConfidence(env.DB, dc);
+      }
+
+      stats.fundamentalsFetched++;
+      console.log(`EDGAR: ${ticker} — ${financials.length} years stored`);
+    } catch (err) {
+      console.error(`EDGAR error for ${ticker}:`, err.message);
+      stats.errors++;
+    }
+  }
+
+  // Step 3: Compute derived ratios (P/E, P/B) from EDGAR data + live price
+  const needRatios = await env.DB.prepare(
+    `SELECT DISTINCT f.ticker, md.price
+     FROM financials f
+     JOIN market_data md ON f.ticker = md.ticker
+     JOIN data_confidence dc ON f.ticker = dc.ticker AND dc.data_source = 'edgar'
+     WHERE md.price IS NOT NULL AND md.price > 0
+       AND (md.ratio_source IS NULL OR md.ratio_source != 'edgar_computed'
+            OR md.fetched_at < datetime('now', '-24 hours'))
+     LIMIT 50`
+  ).all();
+
+  for (const row of (needRatios.results || [])) {
+    try {
+      const latest = await env.DB.prepare(
+        'SELECT * FROM financials WHERE ticker = ? ORDER BY fiscal_year DESC LIMIT 1'
+      ).bind(row.ticker).first();
+      if (!latest) continue;
+
+      const ratios = computeDerivedRatios(row.price, latest);
+      if (ratios) {
+        await updateMarketDataRatios(env.DB, row.ticker, ratios, 'edgar_computed');
+        stats.ratiosComputed++;
+      }
+    } catch (err) {
+      console.error(`Ratio computation error for ${row.ticker}:`, err.message);
+      stats.errors++;
+    }
+  }
+
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`EDGAR refresh completed in ${elapsed}s:`, JSON.stringify(stats));
+  return stats;
+}
+
 // Track refresh progress across invocations using a simple key-value in market_data
 async function getRefreshOffset(db, totalTickers) {
   const row = await db.prepare(
