@@ -1,15 +1,15 @@
 // Anthropic Claude API — Attractor Stability Analysis (Layer 3)
 // Uses Claude Sonnet for cost efficiency (~$0.02-0.03 per analysis)
 
-import { CONCENTRATION_RISK, SECULAR_DISRUPTION } from '../../../shared/constants.js';
+import { CONCENTRATION_RISK, SECULAR_DISRUPTION, SMALL_CAP } from '../../../shared/constants.js';
 import { isFinancialSector } from '../../../shared/sectorUtils.js';
 
 const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
 const MODEL = 'claude-sonnet-4-20250514';
 
-export async function analyzeAttractorStability(ticker, companyName, financialContext, mdaText, newsContext, apiKey, economicContext) {
+export async function analyzeAttractorStability(ticker, companyName, financialContext, mdaText, newsContext, apiKey, economicContext, options = {}) {
   // Pass 1: Bull case (standard attractor analysis)
-  const bullPrompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext);
+  const bullPrompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext, options);
 
   const bullRes = await fetch(CLAUDE_API, {
     method: 'POST',
@@ -62,6 +62,16 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
     // If bear case fails, return bull case only with a note
     bullResult.bear_case = null;
     bullResult.bear_case_text = 'Bear case analysis unavailable';
+    // Apply small cap insider modifier on single-pass path too
+    if (options?.isSmallCap && options?.insiderOwnershipPct != null) {
+      let insiderMod = 0;
+      if (options.insiderOwnershipPct > SMALL_CAP.insider_ownership_high_threshold) insiderMod = SMALL_CAP.insider_ownership_high_bonus;
+      else if (options.insiderOwnershipPct < SMALL_CAP.insider_ownership_low_threshold) insiderMod = SMALL_CAP.insider_ownership_low_penalty;
+      if (insiderMod !== 0 && bullResult.adjusted_attractor_score != null) {
+        bullResult.adjusted_attractor_score = Math.max(1.0, Math.round((bullResult.adjusted_attractor_score + insiderMod) * 10) / 10);
+        bullResult.insider_ownership_modifier = insiderMod;
+      }
+    }
     return bullResult;
   }
 
@@ -141,6 +151,23 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
       SECULAR_DISRUPTION.adjusted_score_floor,
       Math.round((scoreAfterConcentration + sdScoreAdj) * 10) / 10
     );
+  }
+
+  // Small cap insider ownership modifier (quantitative, applied post-analysis)
+  if (options?.isSmallCap && options?.insiderOwnershipPct != null) {
+    let insiderMod = 0;
+    if (options.insiderOwnershipPct > SMALL_CAP.insider_ownership_high_threshold) {
+      insiderMod = SMALL_CAP.insider_ownership_high_bonus;
+    } else if (options.insiderOwnershipPct < SMALL_CAP.insider_ownership_low_threshold) {
+      insiderMod = SMALL_CAP.insider_ownership_low_penalty;
+    }
+    if (insiderMod !== 0 && bullResult.adjusted_attractor_score != null) {
+      bullResult.adjusted_attractor_score = Math.max(
+        1.0,
+        Math.round((bullResult.adjusted_attractor_score + insiderMod) * 10) / 10
+      );
+      bullResult.insider_ownership_modifier = insiderMod;
+    }
   }
 
   // Replace analysis_text with structured bull/bear/composite text
@@ -237,7 +264,19 @@ function estimateCost(usage) {
   return (inputCost + outputCost).toFixed(4);
 }
 
-function buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext) {
+function buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext, options = {}) {
+  const smallCapSection = options.isSmallCap ? `
+SMALL CAP CONSIDERATIONS ($300M-$2B market cap):
+This is a small cap company. Small caps have thinner competitive moats and higher concentration risk. Pay SPECIAL attention to:
+- **Customer concentration**: Does any single customer represent >20% of revenue? Name them if disclosed.
+- **Product concentration**: Does a single product line dominate revenue? What happens if it fails?
+- **Geographic concentration**: Is the company dependent on a single facility, region, or market?
+- **Key person risk**: Is the company dependent on a founder or small management team with no clear succession?
+- **Competitive vulnerability**: Can a larger competitor easily replicate or acquire this company's offering?
+Score these risks more severely than you would for a diversified large cap. A small cap with customer concentration >30% should rarely score above 3.0 on Revenue Durability.
+
+` : '';
+
   return `You are a value investing analyst using the Attractor Value Framework. Analyze ${companyName} (${ticker}) for attractor stability.
 
 FRAMEWORK: A "stable attractor" is a business whose competitive position and earnings power are self-reinforcing — pulled back toward equilibrium after perturbation. Score each factor 1-5:
@@ -281,7 +320,7 @@ ${newsContext || ''}
 
 ${economicContext || ''}
 
-SECULAR DISRUPTION ASSESSMENT:
+${smallCapSection}SECULAR DISRUPTION ASSESSMENT:
 After completing the attractor stability analysis, evaluate whether this company's PRIMARY INDUSTRY is undergoing a secular phase transition. This is distinct from the company-level analysis above — you are evaluating the industry, not the company.
 
 Assess each of the following five indicators as Present (1) or Absent (0):
@@ -453,7 +492,7 @@ function parseAnalysisResponse(responseText, ticker) {
 }
 
 // Build financial context string from DB data (sector-aware for financials)
-export function buildFinancialContext(stock, financials, marketData, valuation, insiderSignal) {
+export function buildFinancialContext(stock, financials, marketData, valuation, insiderSignal, options = {}) {
   const lines = [];
   const isFinancial = isFinancialSector(stock);
 
@@ -492,6 +531,26 @@ export function buildFinancialContext(stock, financials, marketData, valuation, 
     } else {
       for (const f of financials.slice(0, 5)) {
         lines.push(`  ${f.fiscal_year}: EPS=$${f.eps?.toFixed(2)}, Rev=$${f.revenue ? (f.revenue / 1e9).toFixed(1) + 'B' : 'N/A'}, FCF=$${f.free_cash_flow ? (f.free_cash_flow / 1e6).toFixed(0) + 'M' : 'N/A'}, D/E=${f.shareholder_equity > 0 ? (f.total_debt / f.shareholder_equity).toFixed(2) : 'N/A'}, ROIC=${f.roic ? f.roic.toFixed(1) + '%' : 'N/A'}`);
+      }
+    }
+  }
+
+  // Earnings quality metrics (Session C — small caps and all stocks with data)
+  if (financials.length > 0) {
+    const latest = financials[0];
+    const hasQualityData = latest.operating_cash_flow != null || latest.goodwill != null || latest.total_assets != null;
+    if (hasQualityData) {
+      lines.push(`\nEARNINGS QUALITY METRICS:`);
+      if (latest.net_income != null && latest.operating_cash_flow != null && latest.total_assets > 0) {
+        const accruals = ((latest.net_income - latest.operating_cash_flow) / latest.total_assets * 100).toFixed(1);
+        lines.push(`  Accruals Ratio: ${accruals}%${Math.abs(accruals) > 10 ? ' ⚠ HIGH — earnings may be driven by accounting, not cash' : ''}`);
+      }
+      if (latest.goodwill != null && latest.total_assets > 0) {
+        const gwRatio = (latest.goodwill / latest.total_assets * 100).toFixed(1);
+        lines.push(`  Goodwill/Assets: ${gwRatio}%${parseFloat(gwRatio) > 40 ? ' ⚠ HIGH — significant writedown risk' : ''}`);
+      }
+      if (latest.operating_cash_flow != null) {
+        lines.push(`  Operating Cash Flow: $${(latest.operating_cash_flow / 1e6).toFixed(0)}M`);
       }
     }
   }

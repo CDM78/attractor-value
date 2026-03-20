@@ -1,6 +1,16 @@
-import { getDynamicPECeiling } from '../services/screeningEngine.js';
+import { getDynamicPECeiling, runLayer1Screen, computeSectorPBThresholds } from '../services/screeningEngine.js';
+import { calculateGrahamValuation } from '../services/valuationEngine.js';
+import { getFinancialsForTicker, saveScreenResult } from '../db/queries.js';
+import { getOrFetchBondYield } from '../services/fred.js';
 
 export async function screenRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
+  const url = new URL(request.url);
+
+  // POST /api/screen/batch — batch screen stocks (small caps or by tier)
+  if (request.method === 'POST' && path.startsWith('/api/screen/batch')) {
+    return await batchScreen(env, url, jsonResponse, errorResponse);
+  }
+
   if (request.method === 'GET') {
     // Include current AAA yield and dynamic P/E ceiling for UI display
     const bondRow = await env.DB.prepare(
@@ -115,4 +125,133 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
   }
 
   return errorResponse('Method not allowed', 405);
+}
+
+/**
+ * Batch screen stocks that have fundamentals but no recent screen results.
+ * POST /api/screen/batch?tier=small&limit=50
+ */
+async function batchScreen(env, url, jsonResponse, errorResponse) {
+  const tier = url.searchParams.get('tier') || 'small';
+  const limit = Math.min(parseInt(url.searchParams.get('limit') || '50'), 100);
+
+  try {
+    // Get bond yield for dynamic P/E ceiling
+    let bondYield;
+    try {
+      bondYield = await getOrFetchBondYield(env.DB, env.FRED_API_KEY);
+    } catch {
+      bondYield = { yield: 5.0 };
+    }
+
+    const screenDate = new Date().toISOString().split('T')[0];
+
+    // Build tier filter
+    const tierFilter = tier === 'small'
+      ? "AND s.cap_tier = 'small'"
+      : tier === 'all'
+        ? ''
+        : `AND s.cap_tier = '${tier === 'mid' ? 'mid' : 'large'}'`;
+
+    // Find stocks with fundamentals but no recent screen results
+    const candidates = await env.DB.prepare(
+      `SELECT s.* FROM stocks s
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         ${tierFilter}
+         AND EXISTS (SELECT 1 FROM financials f WHERE f.ticker = s.ticker)
+         AND EXISTS (SELECT 1 FROM market_data md WHERE md.ticker = s.ticker AND md.price > 0)
+         AND NOT EXISTS (
+           SELECT 1 FROM screen_results sr
+           WHERE sr.ticker = s.ticker AND sr.screen_date >= date('now', '-7 days')
+         )
+       ORDER BY s.ticker
+       LIMIT ?`
+    ).bind(limit).all();
+
+    const stocks = candidates.results || [];
+    if (stocks.length === 0) {
+      return jsonResponse({ screened: 0, message: 'No unscreened stocks with fundamentals found' });
+    }
+
+    // Compute sector P/B thresholds
+    const allPB = await env.DB.prepare(
+      `SELECT s.sector, md.pb_ratio FROM stocks s
+       JOIN market_data md ON s.ticker = md.ticker
+       WHERE md.pb_ratio IS NOT NULL AND md.pb_ratio > 0 AND s.sector IS NOT NULL`
+    ).all();
+    const sectorPBThresholds = computeSectorPBThresholds(allPB.results || []);
+
+    const results = [];
+    for (const stock of stocks) {
+      try {
+        const financials = await getFinancialsForTicker(env.DB, stock.ticker);
+        const marketData = await env.DB.prepare(
+          'SELECT * FROM market_data WHERE ticker = ?'
+        ).bind(stock.ticker).first();
+        if (!marketData || financials.length === 0) continue;
+
+        const isSmallCap = stock.cap_tier === 'small' ||
+          (stock.market_cap && stock.market_cap >= 300000000 && stock.market_cap <= 2000000000);
+
+        const screenResult = runLayer1Screen(stock, financials, marketData, {
+          aaa_bond_yield: bondYield?.yield,
+          sector_pb_thresholds: sectorPBThresholds,
+          is_small_cap: isSmallCap,
+        });
+
+        await saveScreenResult(env.DB, stock.ticker, screenDate, screenResult);
+
+        // Quick Graham IV estimate for candidates that pass
+        let buyBelowEstimate = null;
+        if (screenResult.tier === 'full_pass' || screenResult.tier === 'near_miss') {
+          const val = calculateGrahamValuation(
+            financials, marketData, bondYield?.yield, null,
+            { tier: screenResult.tier, miss_severity: screenResult.miss_severity, is_small_cap: isSmallCap },
+            null
+          );
+          buyBelowEstimate = val?.buy_below_price || null;
+        }
+
+        results.push({
+          ticker: stock.ticker,
+          name: stock.company_name,
+          sector: stock.sector,
+          market_cap: stock.market_cap,
+          cap_tier: stock.cap_tier,
+          price: marketData.price,
+          pe: marketData.pe_ratio,
+          pb: marketData.pb_ratio,
+          pass_count: screenResult.pass_count,
+          tier: screenResult.tier,
+          buy_below_estimate: buyBelowEstimate,
+          accruals_ratio: screenResult.accruals_ratio,
+          goodwill_ratio: screenResult.goodwill_ratio,
+          liquidity_flag: screenResult.liquidity_flag,
+          revenue_quality_flag: screenResult.revenue_quality_flag,
+        });
+      } catch (err) {
+        console.error(`Batch screen error for ${stock.ticker}:`, err.message);
+      }
+    }
+
+    // Sort: full_pass first, then near_miss, then by pass count desc
+    results.sort((a, b) => {
+      const tierOrder = { full_pass: 0, near_miss: 1, fail: 2 };
+      const tierDiff = (tierOrder[a.tier] || 2) - (tierOrder[b.tier] || 2);
+      return tierDiff !== 0 ? tierDiff : (b.pass_count - a.pass_count);
+    });
+
+    return jsonResponse({
+      screened: results.length,
+      candidates: results.filter(r => r.tier !== 'fail').length,
+      results,
+      meta: {
+        tier_filter: tier,
+        screen_date: screenDate,
+        bond_yield: bondYield?.yield,
+      },
+    });
+  } catch (err) {
+    return errorResponse(err.message);
+  }
 }

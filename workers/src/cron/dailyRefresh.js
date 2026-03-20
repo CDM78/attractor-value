@@ -33,6 +33,22 @@ export async function dailyRefresh(env, tickerLimit) {
   // Step 2: Fetch prices
   // Priority: always refresh watchlist + passing stocks first, then rotate through the rest
   let tickers = getFullUniverse();
+
+  // Merge small cap tickers from DB into the universe
+  try {
+    const smallCaps = await env.DB.prepare(
+      "SELECT ticker FROM stocks WHERE cap_tier = 'small' AND ticker NOT LIKE '\\_\\_%' ESCAPE '\\'"
+    ).all();
+    const smallCapTickers = (smallCaps.results || []).map(r => r.ticker);
+    if (smallCapTickers.length > 0) {
+      const existing = new Set(tickers);
+      for (const t of smallCapTickers) {
+        if (!existing.has(t)) tickers.push(t);
+      }
+      console.log(`Universe: ${tickers.length} total (${smallCapTickers.length} small caps merged)`);
+    }
+  } catch { /* smallcap tables may not exist yet */ }
+
   if (tickerLimit) tickers = tickers.slice(0, tickerLimit);
 
   // Get priority tickers (watchlist + passing stocks) — these update every run
@@ -84,6 +100,15 @@ export async function dailyRefresh(env, tickerLimit) {
         insider_ownership_pct: existingMd?.insider_ownership_pct ?? null,
       });
 
+      // Store volume data for liquidity filter (small cap screening)
+      if (quote.avgVolume != null) {
+        try {
+          await env.DB.prepare(
+            "UPDATE market_data SET avg_volume = ?, avg_dollar_volume = ? WHERE ticker = ?"
+          ).bind(quote.avgVolume, quote.avgDollarVolume, quote.ticker).run();
+        } catch { /* avg_volume column may not exist yet */ }
+      }
+
       stats.pricesUpdated++;
     } catch (err) {
       console.error(`Error storing ${quote.ticker}:`, err.message);
@@ -99,15 +124,33 @@ export async function dailyRefresh(env, tickerLimit) {
   // The backfill endpoint (/api/backfill) can also be used for manual bulk fills.
 
   // Step 4: Compute sector P/B thresholds for sector-relative screening (Update 4)
-  const allStocksForPB = await env.DB.prepare(
-    `SELECT s.ticker, s.sector, md.pb_ratio
-     FROM stocks s
-     JOIN market_data md ON s.ticker = md.ticker
-     WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-       AND md.pb_ratio IS NOT NULL AND md.pb_ratio > 0`
-  ).all();
-  const sectorPBThresholds = computeSectorPBThresholds(allStocksForPB.results || []);
-  console.log('Sector P/B thresholds:', JSON.stringify(sectorPBThresholds));
+  // Prefer Frames API-computed thresholds (Session C) if available and fresh (<30 days)
+  let sectorPBThresholds = {};
+  try {
+    const framesThresholds = await env.DB.prepare(
+      `SELECT sector, p33_pb FROM sector_pb_distribution
+       WHERE computed_date >= date('now', '-30 days')`
+    ).all();
+    if (framesThresholds.results?.length > 0) {
+      for (const row of framesThresholds.results) {
+        sectorPBThresholds[row.sector] = row.p33_pb;
+      }
+      console.log('Using Frames-based sector P/B thresholds:', Object.keys(sectorPBThresholds).length, 'sectors');
+    }
+  } catch { /* sector_pb_distribution may not exist yet */ }
+
+  // Fallback: compute from universe stocks if no Frames data
+  if (Object.keys(sectorPBThresholds).length === 0) {
+    const allStocksForPB = await env.DB.prepare(
+      `SELECT s.ticker, s.sector, md.pb_ratio
+       FROM stocks s
+       JOIN market_data md ON s.ticker = md.ticker
+       WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+         AND md.pb_ratio IS NOT NULL AND md.pb_ratio > 0`
+    ).all();
+    sectorPBThresholds = computeSectorPBThresholds(allStocksForPB.results || []);
+    console.log('Using universe-computed sector P/B thresholds:', JSON.stringify(sectorPBThresholds));
+  }
 
   // Step 5: Run Layer 1 screening on stocks that have fundamentals
   // Priority: watchlist + previously passing stocks first, then rotate through the rest
@@ -132,9 +175,12 @@ export async function dailyRefresh(env, tickerLimit) {
       const marketData = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(stock.ticker).first();
       if (!marketData || financials.length === 0) continue;
 
+      const isSmallCap = stock.cap_tier === 'small' ||
+        (stock.market_cap && stock.market_cap >= 300000000 && stock.market_cap <= 2000000000);
       const screenResults = runLayer1Screen(stock, financials, marketData, {
         aaa_bond_yield: bondYield?.yield,
         sector_pb_thresholds: sectorPBThresholds,
+        is_small_cap: isSmallCap,
       });
       await saveScreenResult(env.DB, stock.ticker, screenDate, screenResults);
       stats.screened++;
@@ -168,7 +214,11 @@ export async function dailyRefresh(env, tickerLimit) {
       const attractorData = await env.DB.prepare(
         'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
       ).bind(row.ticker).first();
-      const screenInfo = { tier: row.tier, miss_severity: row.miss_severity };
+      // Check if this is a small cap for MoS adjustment
+      const stockInfo = await env.DB.prepare('SELECT cap_tier, market_cap FROM stocks WHERE ticker = ?').bind(row.ticker).first();
+      const isSmall = stockInfo?.cap_tier === 'small' ||
+        (stockInfo?.market_cap && stockInfo.market_cap >= 300000000 && stockInfo.market_cap <= 2000000000);
+      const screenInfo = { tier: row.tier, miss_severity: row.miss_severity, is_small_cap: isSmall };
       const val = calculateGrahamValuation(fins, md, bondYield?.yield, attractorData, screenInfo, economicEnvironment);
       if (val) {
         await upsertValuation(env.DB, val);

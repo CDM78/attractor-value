@@ -10,6 +10,7 @@ import { transactionsRoutes } from './routes/transactions.js';
 import { reportRoutes } from './routes/report.js';
 import { quoteRoutes } from './routes/quote.js';
 import { priceCheckRoutes } from './routes/priceCheck.js';
+import { universeRoutes } from './routes/universe.js';
 import { dailyRefresh, finnhubRefresh, edgarRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
 import { dailyAttractorCheck } from './cron/attractorCheck.js';
@@ -126,6 +127,7 @@ const routeMap = {
   '/api/report': reportRoutes,
   '/api/quote': quoteRoutes,
   '/api/price-check': priceCheckRoutes,
+  '/api/universe': universeRoutes,
 };
 
 export default {
@@ -187,6 +189,14 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
+    // Ensure small cap tables exist (runs once, no-ops after)
+    try {
+      const { ensureSmallCapTables } = await import('./db/queries.js');
+      await ensureSmallCapTables(env.DB);
+    } catch (err) {
+      console.error('ensureSmallCapTables error:', err.message);
+    }
+
     const mode = await determineMode(env.DB);
     const scheduledTime = new Date(event.scheduledTime);
     const minute = scheduledTime.getUTCMinutes();
@@ -243,17 +253,39 @@ export default {
       ctx.waitUntil(dailyRefresh(env));
     }
 
-    // Weekly Saturday refresh
-    if (isSaturday && utcHour === 10 && minute === 0) {
-      // Saturday 6 AM ET — Finnhub fallback (sectors, insider ownership, dividend yield)
+    // Monthly universe rebuild (1st of month, 2 AM ET = 6 AM UTC)
+    const dayOfMonth = scheduledTime.getUTCDate();
+    if (dayOfMonth === 1 && utcHour === 6 && minute === 0) {
+      const { buildSmallCapUniverse } = await import('./services/edgarFrames.js');
+      ctx.waitUntil(
+        // Reset and restart the build process
+        env.DB.prepare("DELETE FROM system_config WHERE key = 'universe_build_step'").run()
+          .then(() => buildSmallCapUniverse(env.DB, env))
+      );
+    }
+
+    // Continue universe build if in progress (every 5 min on Saturdays)
+    if (isSaturday && minute % 5 === 0) {
+      const buildStep = await env.DB.prepare(
+        "SELECT value FROM system_config WHERE key = 'universe_build_step'"
+      ).first();
+      if (buildStep?.value && buildStep.value !== 'complete') {
+        const { buildSmallCapUniverse } = await import('./services/edgarFrames.js');
+        ctx.waitUntil(buildSmallCapUniverse(env.DB, env));
+      }
+    }
+
+    // Weekly Saturday refresh (overnight — data ready before morning)
+    if (isSaturday && utcHour === 4 && minute === 0) {
+      // Saturday 12:00 AM ET — Finnhub fallback (sectors, insider ownership, dividend yield)
       ctx.waitUntil(finnhubRefresh(env));
     }
-    if (isSaturday && utcHour === 11 && minute === 0) {
-      // Saturday 7 AM ET — EDGAR fundamentals catch-up
+    if (isSaturday && utcHour === 5 && minute === 0) {
+      // Saturday 1:00 AM ET — EDGAR fundamentals catch-up
       ctx.waitUntil(edgarRefresh(env));
     }
-    if (isSaturday && utcHour === 12 && minute === 0) {
-      // Saturday 8 AM ET — insider data refresh
+    if (isSaturday && utcHour === 6 && minute === 0) {
+      // Saturday 2:00 AM ET — insider data refresh
       ctx.waitUntil(dailyRefresh(env));
     }
   },

@@ -1,6 +1,6 @@
 // Layer 1 screening logic - Graham-Dodd quantitative filters
 
-import { SCREEN_DEFAULTS, NEAR_MISS } from '../../../shared/constants.js';
+import { SCREEN_DEFAULTS, NEAR_MISS, SMALL_CAP } from '../../../shared/constants.js';
 
 // Compute dynamic P/E ceiling from AAA bond yield (Update 2)
 // Formula: P/E ≤ 1 / (AAA_yield_decimal + equity_risk_premium)
@@ -265,6 +265,57 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     }
   } else {
     results.passes_dilution = null;
+  }
+
+  // Small cap flag
+  const isSmallCap = !!options.is_small_cap;
+  results.is_small_cap = isSmallCap ? 1 : 0;
+
+  // Earnings quality metrics (informational, not hard filters)
+  if (financials.length > 0) {
+    const latest = financials[0];
+
+    // Accruals ratio: (Net Income - Operating Cash Flow) / Total Assets
+    // High accruals (>10%) suggest earnings driven by accounting, not cash
+    if (latest.net_income != null && latest.operating_cash_flow != null && latest.total_assets > 0) {
+      results.accruals_ratio = Math.round(
+        ((latest.net_income - latest.operating_cash_flow) / latest.total_assets) * 10000
+      ) / 10000;
+    }
+
+    // Goodwill ratio: Goodwill / Total Assets
+    // >40% = significant writedown risk
+    if (latest.goodwill != null && latest.total_assets > 0) {
+      results.goodwill_ratio = Math.round(
+        (latest.goodwill / latest.total_assets) * 10000
+      ) / 10000;
+    }
+
+    // Revenue quality: compare 3yr revenue growth vs operating cash flow growth
+    // Divergence suggests unsustainable growth
+    if (financials.length >= 3) {
+      const recentRev = financials[0]?.revenue;
+      const olderRev = financials[2]?.revenue;
+      const recentOcf = financials[0]?.operating_cash_flow;
+      const olderOcf = financials[2]?.operating_cash_flow;
+
+      if (recentRev > 0 && olderRev > 0 && recentOcf != null && olderOcf != null && olderOcf > 0) {
+        const revGrowth = (recentRev / olderRev) - 1;
+        const ocfGrowth = (recentOcf / olderOcf) - 1;
+        // Flag if revenue growing >20% faster than cash flow
+        if (revGrowth > 0.05 && revGrowth > ocfGrowth + 0.20) {
+          results.revenue_quality_flag = 'DIVERGENT';
+        } else {
+          results.revenue_quality_flag = 'OK';
+        }
+      }
+    }
+  }
+
+  // Liquidity flag (from market data, soft filter)
+  if (isSmallCap && marketData.avg_dollar_volume != null) {
+    results.liquidity_flag = marketData.avg_dollar_volume < SMALL_CAP.liquidity_threshold_dollar_volume
+      ? 'ILLIQUID' : 'OK';
   }
 
   return results;

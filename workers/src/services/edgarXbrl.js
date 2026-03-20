@@ -31,6 +31,8 @@ const TAGS = {
   capex: ['PaymentsToAcquirePropertyPlantAndEquipment'],
   dividendsPerShare: ['CommonStockDividendsPerShareDeclared', 'CommonStockDividendsPerShareCashPaid'],
   dividendsPaid: ['PaymentsOfDividends', 'PaymentsOfDividendsCommonStock', 'DividendsPaid'],
+  goodwill: ['Goodwill'],
+  totalAssets: ['Assets'],
 };
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -162,6 +164,8 @@ export function parseEdgarToFinancials(ticker, facts) {
   const capexRaw = extractAnnualValues(facts, TAGS.capex, 'USD');
   const divPerShareRaw = extractAnnualValues(facts, TAGS.dividendsPerShare, 'USD/shares');
   const divPaidRaw = extractAnnualValues(facts, TAGS.dividendsPaid, 'USD');
+  const goodwillRaw = extractAnnualValues(facts, TAGS.goodwill, 'USD');
+  const totalAssetsRaw = extractAnnualValues(facts, TAGS.totalAssets, 'USD');
 
   // Collect all years that have at least EPS or equity data
   const allYears = new Set([
@@ -189,9 +193,11 @@ export function parseEdgarToFinancials(ticker, facts) {
     const currentLiab = currentLiabRaw[year]?.val || null;
     const revenue = revenueRaw[year]?.val || null;
     const netIncome = netIncomeRaw[year]?.val || null;
-    const opCashflow = opCashflowRaw[year]?.val || null;
+    const opCashflow = opCashflowRaw[year]?.val ?? null;
     const capex = capexRaw[year]?.val || 0;
     const fcf = opCashflow != null ? opCashflow - Math.abs(capex) : null;
+    const goodwill = goodwillRaw[year]?.val ?? null;
+    const totalAssets = totalAssetsRaw[year]?.val ?? null;
 
     const bvps = (equity && shares && shares > 0)
       ? adjustForSplits(ticker, equity / shares, equityRaw[year]?.end || `${year}-12-31`)
@@ -221,6 +227,9 @@ export function parseEdgarToFinancials(ticker, facts) {
       revenue: revenue != null ? round(revenue, 0) : null,
       net_income: netIncome != null ? round(netIncome, 0) : null,
       roic: roic != null ? round(roic, 2) : null,
+      goodwill: goodwill != null ? round(goodwill, 0) : null,
+      operating_cash_flow: opCashflow != null ? round(opCashflow, 0) : null,
+      total_assets: totalAssets != null ? round(totalAssets, 0) : null,
     });
 
     // Track best filing date for this year (from EPS or equity entry)
@@ -269,25 +278,46 @@ export function computeDerivedRatios(price, latestFinancials) {
  * Returns the number of entries processed.
  */
 export async function refreshCikMap(db) {
-  const res = await fetch('https://www.sec.gov/files/company_tickers.json', {
-    headers: EDGAR_HEADERS,
-  });
-  if (!res.ok) throw new Error(`CIK map fetch failed: HTTP ${res.status}`);
+  // Try exchange-enriched version first (includes exchange data for universe filtering)
+  let entries;
+  try {
+    const res = await fetch('https://www.sec.gov/files/company_tickers_exchange.json', {
+      headers: EDGAR_HEADERS,
+    });
+    if (res.ok) {
+      const data = await res.json();
+      // Format: { fields: [...], data: [[cik, name, ticker, exchange], ...] }
+      entries = (data.data || []).map(row => ({
+        cik_str: row[0],
+        title: row[1],
+        ticker: row[2],
+        exchange: row[3] || null,
+      }));
+    }
+  } catch { /* fall through to basic version */ }
 
-  const data = await res.json();
-  // data is { "0": { cik_str, ticker, title }, "1": { ... }, ... }
-  const entries = Object.values(data);
+  // Fallback to basic version
+  if (!entries) {
+    const res = await fetch('https://www.sec.gov/files/company_tickers.json', {
+      headers: EDGAR_HEADERS,
+    });
+    if (!res.ok) throw new Error(`CIK map fetch failed: HTTP ${res.status}`);
+    const data = await res.json();
+    entries = Object.values(data);
+  }
 
   // Batch upsert into cik_map table
   const now = new Date().toISOString();
   const stmts = entries.map(e =>
     db.prepare(
-      `INSERT OR REPLACE INTO cik_map (ticker, cik, company_name, updated_at)
-       VALUES (?, ?, ?, ?)`
+      `INSERT OR REPLACE INTO cik_map (ticker, cik, company_name, exchange, updated_at)
+       VALUES (?, ?, ?, COALESCE(?, (SELECT exchange FROM cik_map WHERE ticker = ?)), ?)`
     ).bind(
-      e.ticker.toUpperCase(),
+      (e.ticker || '').toUpperCase(),
       String(e.cik_str).padStart(10, '0'),
       e.title,
+      e.exchange || null,
+      (e.ticker || '').toUpperCase(),
       now
     )
   );
@@ -297,7 +327,7 @@ export async function refreshCikMap(db) {
     await db.batch(stmts.slice(i, i + 100));
   }
 
-  console.log(`CIK map refreshed: ${entries.length} entries`);
+  console.log(`CIK map refreshed: ${entries.length} entries (with exchange data)`);
   return entries.length;
 }
 

@@ -172,6 +172,30 @@ export const SECULAR_DISRUPTION = {
 // Sectors requiring mandatory secular disruption assessment (Update 7)
 export const MANDATORY_DISRUPTION_SECTORS = ['Technology', 'Information Technology'];
 
+// Small Cap Screening (Session C)
+export const SMALL_CAP = {
+  market_cap_min: 300_000_000,     // $300M
+  market_cap_max: 2_000_000_000,   // $2B
+  mos_adjustment: 0.05,            // +5% margin of safety (stacks with STRESSED +5%)
+  liquidity_threshold_dollar_volume: 500_000,  // $500K avg daily dollar volume = ILLIQUID
+  // Earnings quality warning thresholds (informational, not hard filters)
+  accruals_ratio_warning: 0.10,    // >10% = earnings driven by accounting, not cash
+  goodwill_ratio_warning: 0.40,    // >40% of assets = writedown risk
+  // Insider ownership attractor scoring (small caps only)
+  insider_ownership_high_threshold: 10,   // >10% = positive signal
+  insider_ownership_low_threshold: 5,     // <5% = mild negative
+  insider_ownership_high_bonus: 0.2,      // attractor score modifier
+  insider_ownership_low_penalty: -0.1,
+  // Universe builder
+  sic_exclusions: ['6726', '6770'],       // SPACs, blank check, shell companies
+  filing_recency_months: 15,              // 10-K must be within 15 months
+  min_history_years: 5,                   // minimum years of public filing history
+  frames_assets_min: 200_000_000,         // Frames API rough filter: $200M assets
+  frames_assets_max: 15_000_000_000,      // Frames API rough filter: $15B assets
+  // Financial sector exclusion for small caps
+  financial_min_assets: 1_000_000_000,    // community banks/micro-insurers below $1B excluded
+};
+
 // Sell Discipline Rules
 export const SELL_RULES = [
   'price_exceeds_iv',

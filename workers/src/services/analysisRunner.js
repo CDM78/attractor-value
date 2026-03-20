@@ -6,7 +6,7 @@ import { fetch10K, extractMDA } from './edgar.js';
 import { getCompanyNews, formatNewsForPrompt, getInsiderTransactions, getCompanyOfficers } from './finnhub.js';
 import { getFinancialsForTicker } from '../db/queries.js';
 import { computeInsiderSignal } from './insiderSignals.js';
-import { MARGIN_OF_SAFETY } from '../../../shared/constants.js';
+import { MARGIN_OF_SAFETY, SMALL_CAP } from '../../../shared/constants.js';
 import { getOrFetchEconomicSnapshot, formatEconomicContextForPrompt } from './fred.js';
 
 // Run a full attractor analysis for a single ticker.
@@ -99,7 +99,15 @@ export async function runSingleAnalysis(env, ticker) {
     }
   }
 
-  const financialContext = buildFinancialContext(stock, financials, marketData, valuation, insiderSignal);
+  // Determine if small cap
+  const isSmallCap = stock.cap_tier === 'small' ||
+    (stock.market_cap && stock.market_cap >= SMALL_CAP.market_cap_min && stock.market_cap <= SMALL_CAP.market_cap_max);
+  const analysisOptions = {
+    isSmallCap,
+    insiderOwnershipPct: marketData?.insider_ownership_pct ?? null,
+  };
+
+  const financialContext = buildFinancialContext(stock, financials, marketData, valuation, insiderSignal, analysisOptions);
 
   // Fetch 10-K MD&A (best effort)
   let mdaText = null;
@@ -139,7 +147,7 @@ export async function runSingleAnalysis(env, ticker) {
 
   // Run Claude analysis
   const result = await analyzeAttractorStability(
-    ticker, stock.company_name, financialContext, mdaText, newsContext, env.ANTHROPIC_API_KEY, economicContext
+    ticker, stock.company_name, financialContext, mdaText, newsContext, env.ANTHROPIC_API_KEY, economicContext, analysisOptions
   );
 
   // Store secular disruption assessment
@@ -244,7 +252,9 @@ export async function runSingleAnalysis(env, ticker) {
     }
 
     const sdMosAdj = sd?.mos_adjustment_pct || 0;
-    const totalMargin = Math.min(margin + sdMosAdj / 100, 0.95);
+    // Small cap MoS adjustment (+5%, stacks with secular disruption and economic environment)
+    const smallCapMosAdj = isSmallCap ? SMALL_CAP.mos_adjustment : 0;
+    const totalMargin = Math.min(margin + sdMosAdj / 100 + smallCapMosAdj, 0.95);
 
     const adjustedBuyBelow = valuation.adjusted_intrinsic_value * (1 - totalMargin);
     await env.DB.prepare(

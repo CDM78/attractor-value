@@ -3,7 +3,7 @@
 // Then: adjusted_IV = IV × (1 - fat_tail_discount)
 // Then: buy_below = adjusted_IV × (1 - margin_of_safety)
 
-import { VALUATION, FAT_TAIL, MARGIN_OF_SAFETY } from '../../../shared/constants.js';
+import { VALUATION, FAT_TAIL, MARGIN_OF_SAFETY, SMALL_CAP } from '../../../shared/constants.js';
 
 export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct, attractorData, screenInfo, economicEnvironment) {
   if (!financials || financials.length < 3 || !marketData?.price) {
@@ -106,6 +106,10 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
     marginOfSafety = isNearMiss
       ? MARGIN_OF_SAFETY.near_miss_stable_classical
       : MARGIN_OF_SAFETY.stable_classical;
+  }
+  // Small cap adjustment: +5% MoS (stacks with economic environment)
+  if (screenInfo?.is_small_cap) {
+    marginOfSafety = Math.min(marginOfSafety + SMALL_CAP.mos_adjustment, 0.95);
   }
   // Economic environment stress adjustment: +5% MoS when STRESSED
   if (economicEnvironment === 'STRESSED') {

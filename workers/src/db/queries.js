@@ -23,13 +23,14 @@ export async function upsertMarketData(db, data) {
 
 export async function upsertFinancials(db, fin) {
   return db.prepare(
-    `INSERT OR REPLACE INTO financials (ticker, fiscal_year, eps, book_value_per_share, total_debt, shareholder_equity, current_assets, current_liabilities, free_cash_flow, dividend_paid, shares_outstanding, revenue, net_income, roic)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    `INSERT OR REPLACE INTO financials (ticker, fiscal_year, eps, book_value_per_share, total_debt, shareholder_equity, current_assets, current_liabilities, free_cash_flow, dividend_paid, shares_outstanding, revenue, net_income, roic, goodwill, operating_cash_flow, total_assets)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   ).bind(
     fin.ticker, fin.fiscal_year, fin.eps, fin.book_value_per_share,
     fin.total_debt, fin.shareholder_equity, fin.current_assets,
     fin.current_liabilities, fin.free_cash_flow, fin.dividend_paid,
-    fin.shares_outstanding, fin.revenue, fin.net_income, fin.roic
+    fin.shares_outstanding, fin.revenue, fin.net_income, fin.roic,
+    fin.goodwill ?? null, fin.operating_cash_flow ?? null, fin.total_assets ?? null
   ).run();
 }
 
@@ -50,8 +51,8 @@ export async function saveScreenResult(db, ticker, screenDate, results) {
   } catch { /* column already exists */ }
 
   return db.prepare(
-    `INSERT OR REPLACE INTO screen_results (ticker, screen_date, passes_pe, passes_pb, passes_pe_x_pb, passes_debt_equity, passes_current_ratio, passes_earnings_stability, passes_dividend_record, passes_earnings_growth, passes_all_hard, passes_fcf, passes_insider_ownership, passes_dilution, tier, pass_count, sector_pb_threshold, failed_filter, miss_severity, actual_value, threshold_value, de_auto_pass, cr_auto_pass, roe_5yr_avg, pe_x_pb_ceiling_used)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    `INSERT OR REPLACE INTO screen_results (ticker, screen_date, passes_pe, passes_pb, passes_pe_x_pb, passes_debt_equity, passes_current_ratio, passes_earnings_stability, passes_dividend_record, passes_earnings_growth, passes_all_hard, passes_fcf, passes_insider_ownership, passes_dilution, tier, pass_count, sector_pb_threshold, failed_filter, miss_severity, actual_value, threshold_value, de_auto_pass, cr_auto_pass, roe_5yr_avg, pe_x_pb_ceiling_used, is_small_cap, liquidity_flag, accruals_ratio, goodwill_ratio, revenue_quality_flag)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   ).bind(
     ticker, screenDate, results.passes_pe, results.passes_pb, results.passes_pe_x_pb,
     results.passes_debt_equity, results.passes_current_ratio, results.passes_earnings_stability,
@@ -61,7 +62,10 @@ export async function saveScreenResult(db, ticker, screenDate, results) {
     results.failed_filter || null, results.miss_severity || null,
     results.actual_value || null, results.threshold_value || null,
     results.de_auto_pass || 0, results.cr_auto_pass || 0,
-    results.roe_5yr_avg ?? null, results.pe_x_pb_ceiling_used ?? null
+    results.roe_5yr_avg ?? null, results.pe_x_pb_ceiling_used ?? null,
+    results.is_small_cap ?? 0, results.liquidity_flag ?? null,
+    results.accruals_ratio ?? null, results.goodwill_ratio ?? null,
+    results.revenue_quality_flag ?? null
   ).run();
 }
 
@@ -143,6 +147,47 @@ export async function batchUpsertMarketData(db, items) {
     batches.push(db.batch(stmts.slice(i, i + 100)));
   }
   return Promise.all(batches);
+}
+
+// --- Small Cap / Session C helpers ---
+
+export async function ensureSmallCapTables(db) {
+  const alters = [
+    // stocks table: cap tier classification
+    "ALTER TABLE stocks ADD COLUMN cap_tier TEXT DEFAULT 'large'",
+    // market_data table: volume data for liquidity filter
+    "ALTER TABLE market_data ADD COLUMN avg_volume REAL",
+    "ALTER TABLE market_data ADD COLUMN avg_dollar_volume REAL",
+    // financials table: earnings quality inputs
+    "ALTER TABLE financials ADD COLUMN goodwill REAL",
+    "ALTER TABLE financials ADD COLUMN operating_cash_flow REAL",
+    "ALTER TABLE financials ADD COLUMN total_assets REAL",
+    // screen_results table: small cap flags and quality metrics
+    "ALTER TABLE screen_results ADD COLUMN is_small_cap INTEGER DEFAULT 0",
+    "ALTER TABLE screen_results ADD COLUMN liquidity_flag TEXT",
+    "ALTER TABLE screen_results ADD COLUMN accruals_ratio REAL",
+    "ALTER TABLE screen_results ADD COLUMN goodwill_ratio REAL",
+    "ALTER TABLE screen_results ADD COLUMN revenue_quality_flag TEXT",
+    // cik_map table: exchange and SIC for universe filtering
+    "ALTER TABLE cik_map ADD COLUMN exchange TEXT",
+    "ALTER TABLE cik_map ADD COLUMN sic TEXT",
+  ];
+  for (const sql of alters) {
+    try { await db.prepare(sql).run(); } catch { /* column already exists */ }
+  }
+
+  // Staging table for universe build progress
+  await db.prepare(`CREATE TABLE IF NOT EXISTS universe_candidates (
+    cik TEXT PRIMARY KEY,
+    ticker TEXT,
+    company_name TEXT,
+    exchange TEXT,
+    sic TEXT,
+    total_assets REAL,
+    market_cap REAL,
+    status TEXT DEFAULT 'pending',
+    created_at TEXT DEFAULT (datetime('now'))
+  )`).run();
 }
 
 // --- EDGAR / Data Confidence helpers ---

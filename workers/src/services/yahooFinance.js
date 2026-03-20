@@ -24,13 +24,25 @@ export async function fetchQuote(ticker) {
   if (!result) throw new Error(`No chart data returned for ${ticker}`);
 
   const meta = result.meta;
+
+  // Extract average volume from chart data (5-day range)
+  const volumes = result.indicators?.quote?.[0]?.volume || [];
+  const validVolumes = volumes.filter(v => v != null && v > 0);
+  const avgVolume = validVolumes.length > 0
+    ? validVolumes.reduce((s, v) => s + v, 0) / validVolumes.length
+    : null;
+
+  const price = meta.regularMarketPrice || null;
+
   return {
     ticker: meta.symbol || ticker,
-    price: meta.regularMarketPrice || null,
+    price,
     previousClose: meta.chartPreviousClose || null,
     longName: meta.longName || meta.shortName || ticker,
     currency: meta.currency || 'USD',
     exchangeName: meta.fullExchangeName || meta.exchangeName || null,
+    avgVolume: avgVolume ? Math.round(avgVolume) : null,
+    avgDollarVolume: (avgVolume && price) ? Math.round(avgVolume * price) : null,
   };
 }
 

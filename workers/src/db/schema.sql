@@ -5,7 +5,8 @@ CREATE TABLE stocks (
     sector TEXT,
     industry TEXT,
     market_cap REAL,
-    last_updated TEXT NOT NULL  -- ISO 8601
+    last_updated TEXT NOT NULL,  -- ISO 8601
+    cap_tier TEXT DEFAULT 'large'  -- 'large', 'mid', 'small' (Session C)
 );
 
 -- Annual financial data, one row per ticker per year
@@ -24,6 +25,9 @@ CREATE TABLE financials (
     revenue REAL,
     net_income REAL,
     roic REAL,
+    goodwill REAL,             -- Session C: earnings quality (Goodwill XBRL tag)
+    operating_cash_flow REAL,  -- Session C: accruals ratio input
+    total_assets REAL,         -- Session C: denominator for quality ratios
     PRIMARY KEY (ticker, fiscal_year),
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
 );
@@ -38,6 +42,8 @@ CREATE TABLE market_data (
     dividend_yield REAL,
     insider_ownership_pct REAL,
     fetched_at TEXT NOT NULL,
+    avg_volume REAL,           -- average daily volume (Session C)
+    avg_dollar_volume REAL,    -- avg volume * price (Session C liquidity filter)
     FOREIGN KEY (ticker) REFERENCES stocks(ticker)
 );
 
