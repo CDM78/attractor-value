@@ -121,10 +121,11 @@ async function handleBatch(request, env, ctx, { jsonResponse, errorResponse }) {
     const jobId = url.searchParams.get('jobId');
     if (!jobId) return errorResponse('jobId parameter required', 400);
 
-    // Clean up stale jobs (running > 10 min)
+    // Clean up stale jobs (running > 30 min — increased from 10 to accommodate
+    // sequential processing where each ticker takes ~30-60s)
     await env.DB.prepare(
       `UPDATE analysis_jobs SET status = 'error', error_message = 'Timed out'
-       WHERE status = 'running' AND created_at < datetime('now', '-10 minutes')`
+       WHERE status = 'running' AND created_at < datetime('now', '-30 minutes')`
     ).run();
 
     const job = await env.DB.prepare(
@@ -132,6 +133,14 @@ async function handleBatch(request, env, ctx, { jsonResponse, errorResponse }) {
     ).bind(jobId).first();
 
     if (!job) return errorResponse('Job not found', 404);
+
+    // If job is still running and has more tickers, kick off the next one.
+    // This makes the frontend poll (every 5s) drive the processing chain —
+    // each poll triggers one analysis, staying within Worker time limits.
+    if (job.status === 'running' && job.completed < job.total) {
+      const tickers = JSON.parse(job.tickers);
+      ctx.waitUntil(processBatchAnalysis(env, job.id, tickers));
+    }
 
     return jsonResponse({
       jobId: job.id,
@@ -148,38 +157,55 @@ async function handleBatch(request, env, ctx, { jsonResponse, errorResponse }) {
   return errorResponse('Method not allowed', 405);
 }
 
+// Process ONE ticker per Worker invocation to avoid execution time limits.
+// The frontend polls GET /api/analyze/batch?jobId=X which triggers the
+// next ticker via ctx.waitUntil, creating a chain of single-ticker runs.
 async function processBatchAnalysis(env, jobId, tickers) {
-  for (let i = 0; i < tickers.length; i++) {
-    const ticker = tickers[i];
-    try {
-      // Update current ticker
-      await env.DB.prepare(
-        `UPDATE analysis_jobs SET current_ticker = ? WHERE id = ?`
-      ).bind(ticker, jobId).run();
+  // Find the next unprocessed ticker
+  const job = await env.DB.prepare(
+    'SELECT completed, status FROM analysis_jobs WHERE id = ?'
+  ).bind(jobId).first();
 
-      await runSingleAnalysis(env, ticker);
+  if (!job || job.status !== 'running') return;
 
-      // Update progress
-      await env.DB.prepare(
-        `UPDATE analysis_jobs SET completed = ? WHERE id = ?`
-      ).bind(i + 1, jobId).run();
-
-      console.log(`Batch ${jobId}: completed ${ticker} (${i + 1}/${tickers.length})`);
-    } catch (err) {
-      console.error(`Batch ${jobId}: failed on ${ticker}:`, err.message);
-      // Continue with remaining tickers, mark this one as a partial error
-      await env.DB.prepare(
-        `UPDATE analysis_jobs SET completed = ?,
-         error_message = COALESCE(error_message || '; ', '') || ? WHERE id = ?`
-      ).bind(i + 1, `${ticker}: ${err.message}`, jobId).run();
-    }
+  const nextIndex = job.completed || 0;
+  if (nextIndex >= tickers.length) {
+    // All done
+    await env.DB.prepare(
+      `UPDATE analysis_jobs SET status = 'complete', current_ticker = NULL,
+       completed_at = datetime('now') WHERE id = ?`
+    ).bind(jobId).run();
+    console.log(`Batch ${jobId}: all ${tickers.length} tickers processed`);
+    return;
   }
 
-  // Mark job complete
-  await env.DB.prepare(
-    `UPDATE analysis_jobs SET status = 'complete', current_ticker = NULL,
-     completed_at = datetime('now') WHERE id = ?`
-  ).bind(jobId).run();
+  const ticker = tickers[nextIndex];
+  try {
+    await env.DB.prepare(
+      `UPDATE analysis_jobs SET current_ticker = ? WHERE id = ?`
+    ).bind(ticker, jobId).run();
 
-  console.log(`Batch ${jobId}: all ${tickers.length} tickers processed`);
+    await runSingleAnalysis(env, ticker);
+
+    await env.DB.prepare(
+      `UPDATE analysis_jobs SET completed = ? WHERE id = ?`
+    ).bind(nextIndex + 1, jobId).run();
+
+    console.log(`Batch ${jobId}: completed ${ticker} (${nextIndex + 1}/${tickers.length})`);
+  } catch (err) {
+    console.error(`Batch ${jobId}: failed on ${ticker}:`, err.message);
+    await env.DB.prepare(
+      `UPDATE analysis_jobs SET completed = ?,
+       error_message = COALESCE(error_message || '; ', '') || ? WHERE id = ?`
+    ).bind(nextIndex + 1, `${ticker}: ${err.message}`, jobId).run();
+  }
+
+  // Check if there are more tickers to process
+  if (nextIndex + 1 >= tickers.length) {
+    await env.DB.prepare(
+      `UPDATE analysis_jobs SET status = 'complete', current_ticker = NULL,
+       completed_at = datetime('now') WHERE id = ?`
+    ).bind(jobId).run();
+    console.log(`Batch ${jobId}: all ${tickers.length} tickers processed`);
+  }
 }
