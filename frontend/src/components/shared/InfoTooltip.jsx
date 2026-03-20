@@ -1,17 +1,30 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { TOOLTIP_CONTENT } from '../../utils/tooltipContent'
 
 export default function InfoTooltip({ termKey, className = '' }) {
   const [visible, setVisible] = useState(false)
+  const hideTimeout = useRef(null)
   const content = TOOLTIP_CONTENT[termKey]
 
   if (!content) return null
 
+  const show = () => {
+    clearTimeout(hideTimeout.current)
+    setVisible(true)
+  }
+
+  const hide = () => {
+    hideTimeout.current = setTimeout(() => setVisible(false), 150)
+  }
+
   return (
-    <span className={`relative inline-flex items-center ${className}`}>
+    <span
+      className={`relative inline-flex items-center ${className}`}
+      onMouseEnter={show}
+      onMouseLeave={hide}
+    >
       <button
-        onMouseEnter={() => setVisible(true)}
-        onMouseLeave={() => setVisible(false)}
         onClick={() => setVisible(!visible)}
         className="ml-1 w-4 h-4 rounded-full bg-surface-tertiary text-text-secondary
                    text-[10px] flex items-center justify-center hover:bg-border
@@ -30,10 +43,13 @@ export default function InfoTooltip({ termKey, className = '' }) {
             <div className="mt-2 text-xs text-text-secondary font-mono bg-surface
                           rounded px-2 py-1">{content.formula}</div>
           )}
-          <a href={`/how-it-works#${content.anchor}`}
-             className="mt-2 block text-xs text-accent hover:underline">
+          <Link
+            to={`/how-it-works#${content.anchor}`}
+            className="mt-2 block text-xs text-accent hover:underline"
+            onClick={() => setVisible(false)}
+          >
             Learn more &rarr;
-          </a>
+          </Link>
           <div className="absolute top-full left-1/2 -translate-x-1/2
                         border-4 border-transparent border-t-surface-secondary" />
         </div>
