@@ -58,7 +58,11 @@ export default function ScreenerTable() {
   const nearMiss = results.filter(r => r.tier === 'near_miss')
   const fails = results.filter(r => r.tier !== 'full_pass' && r.tier !== 'near_miss')
 
-  const filtered = filterMode === 'passing'
+  const filtered = filterMode === 'full_pass'
+    ? fullPass
+    : filterMode === 'near_miss'
+    ? nearMiss
+    : filterMode === 'passing'
     ? [...fullPass, ...nearMiss]
     : results
 
@@ -106,12 +110,15 @@ export default function ScreenerTable() {
         <h2 className="text-xl font-bold">Stock Screener</h2>
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setFilterMode(filterMode === 'passing' ? 'all' : 'passing')}
+            onClick={() => setFilterMode('passing')}
             className={`text-xs px-3 py-1.5 rounded transition-colors ${
-              filterMode === 'all' ? 'bg-surface-tertiary text-text-secondary' : 'bg-pass/20 text-pass'
+              filterMode === 'passing' ? 'bg-pass/20 text-pass ring-1 ring-pass/40' : 'bg-surface-tertiary text-text-secondary hover:text-text-primary'
             }`}
           >
-            {filterMode === 'passing' ? `Passing + Near Miss (${fullPass.length + nearMiss.length})` : `All (${results.length})`}
+            {filterMode === 'passing' ? `Passing + Near Miss (${fullPass.length + nearMiss.length})`
+             : filterMode === 'full_pass' ? `Full Pass (${fullPass.length})`
+             : filterMode === 'near_miss' ? `Near Miss (${nearMiss.length})`
+             : `All (${results.length})`}
           </button>
           <button
             onClick={handleExportCSV}
@@ -122,17 +129,34 @@ export default function ScreenerTable() {
         </div>
       </div>
 
-      {/* Tier summary bar */}
+      {/* Tier filter bar — click to filter */}
       <div className="flex flex-wrap gap-3 mb-4">
-        <span className="text-xs px-3 py-1.5 rounded bg-pass/15 text-pass font-medium">
+        <button
+          onClick={() => setFilterMode(filterMode === 'full_pass' ? 'passing' : 'full_pass')}
+          className={`text-xs px-3 py-1.5 rounded font-medium transition-colors cursor-pointer ${
+            filterMode === 'full_pass' ? 'bg-pass/25 text-pass ring-1 ring-pass/40' :
+            filterMode === 'passing' ? 'bg-pass/20 text-pass' : 'bg-pass/10 text-pass/70 hover:bg-pass/20'
+          }`}
+        >
           Full Pass: {meta?.full_pass_count ?? fullPass.length}
-        </span>
-        <span className="text-xs px-3 py-1.5 rounded bg-warn/15 text-warn font-medium">
+        </button>
+        <button
+          onClick={() => setFilterMode(filterMode === 'near_miss' ? 'passing' : 'near_miss')}
+          className={`text-xs px-3 py-1.5 rounded font-medium transition-colors cursor-pointer ${
+            filterMode === 'near_miss' ? 'bg-warn/25 text-warn ring-1 ring-warn/40' :
+            filterMode === 'passing' ? 'bg-warn/20 text-warn' : 'bg-warn/10 text-warn/70 hover:bg-warn/20'
+          }`}
+        >
           Near Miss: {meta?.near_miss_count ?? nearMiss.length}
-        </span>
-        <span className="text-xs px-3 py-1.5 rounded bg-surface-tertiary text-text-secondary font-medium">
+        </button>
+        <button
+          onClick={() => setFilterMode(filterMode === 'all' ? 'passing' : 'all')}
+          className={`text-xs px-3 py-1.5 rounded font-medium transition-colors cursor-pointer ${
+            filterMode === 'all' ? 'bg-surface-tertiary text-text-primary ring-1 ring-border' : 'bg-surface-tertiary/50 text-text-secondary hover:bg-surface-tertiary'
+          }`}
+        >
           Filtered Out: {meta?.fail_count ?? fails.length}
-        </span>
+        </button>
       </div>
 
       {/* Batch analysis bar */}
@@ -281,7 +305,7 @@ export default function ScreenerTable() {
                   <th className="px-1.5 py-1.5 hidden 2xl:table-cell">EPS</th>
                   <th className="px-1.5 py-1.5">Tier</th>
                   <th className="px-1.5 py-1.5">Attr</th>
-                  <th className="px-1.5 py-1.5">Signal</th>
+                  <th className="px-1.5 py-1.5 min-w-[50px]">Signal</th>
                   <th className="px-1.5 py-1.5">IV</th>
                   <th className="px-1.5 py-1.5">Buy&lt;</th>
                   <th className="px-1.5 py-1.5">Disc</th>
@@ -539,21 +563,21 @@ function SignalBadge({ row, price }) {
 
   // Dissolving attractor overrides all other signals
   if (isDissolvingAttractor(row)) {
-    return <span className="text-fail font-bold text-xs px-2 py-0.5 rounded bg-fail/15" title="Dissolving attractor — do not buy">DNB</span>
+    return <span className="text-fail font-bold text-xs px-1.5 py-0.5 rounded bg-fail/15 whitespace-nowrap" title="Dissolving attractor — do not buy">DNB</span>
   }
 
   if (!hasBuyBelow) return <span className="text-text-secondary">&mdash;</span>
 
   if (currentPrice <= row.buy_below_price) {
     if (isNearMiss) {
-      return <span className="text-warn font-bold text-xs px-2 py-0.5 rounded bg-warn/15">BUY*</span>
+      return <span className="text-warn font-bold text-xs px-1.5 py-0.5 rounded bg-warn/15 whitespace-nowrap">BUY*</span>
     }
-    return <span className="text-pass font-bold text-xs px-2 py-0.5 rounded bg-pass/15">BUY</span>
+    return <span className="text-pass font-bold text-xs px-1.5 py-0.5 rounded bg-pass/15 whitespace-nowrap">BUY</span>
   }
   if (row.discount_to_iv_pct != null && row.discount_to_iv_pct > 0) {
-    return <span className="text-warn font-bold text-xs px-2 py-0.5 rounded bg-warn/15">WAIT</span>
+    return <span className="text-warn font-bold text-xs px-1.5 py-0.5 rounded bg-warn/15 whitespace-nowrap">WAIT</span>
   }
-  return <span className="text-fail text-xs px-2 py-0.5 rounded bg-fail/15">OVER</span>
+  return <span className="text-fail text-xs px-1.5 py-0.5 rounded bg-fail/15 whitespace-nowrap">OVER</span>
 }
 
 function FilterCell({ pass, value, pending, failed, missInfo, autoPass }) {
