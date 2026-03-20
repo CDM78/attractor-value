@@ -2,6 +2,7 @@ import { getDynamicPECeiling } from '../services/screeningEngine.js';
 import { getFinancialsForTicker } from '../db/queries.js';
 import { SCREEN_DEFAULTS, VALUATION, MARGIN_OF_SAFETY, FAT_TAIL, ATTRACTOR } from '../../../shared/constants.js';
 import { isFinancialSector } from '../../../shared/sectorUtils.js';
+import { getOrFetchEconomicSnapshot, formatEconomicEnvironmentSection } from '../services/fred.js';
 
 export async function reportRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
   if (request.method !== 'GET') return errorResponse('Method not allowed', 405);
@@ -43,6 +44,16 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
   ).first();
   const aaaBondYield = bondRow?.price || null;
   const dynamicPECeiling = aaaBondYield != null ? getDynamicPECeiling(aaaBondYield) : 15;
+
+  // Fetch economic snapshot for environment section
+  let economicSnapshot = null;
+  try {
+    if (env.FRED_API_KEY) {
+      economicSnapshot = await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
+    }
+  } catch (err) {
+    console.error('Economic snapshot fetch failed:', err.message);
+  }
 
   // Determine signal — use adjusted_attractor_score (includes secular disruption modifier) when available
   let signal = 'NO SIGNAL';
@@ -111,7 +122,7 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
     stock, marketData, valuation, financials, screenResult,
     analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
-    dataConfidence,
+    dataConfidence, economicSnapshot,
   });
 
   // Return as JSON with markdown content
@@ -123,7 +134,7 @@ function buildReport(d) {
     stock, marketData, valuation, financials, screenResult,
     analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
-    dataConfidence,
+    dataConfidence, economicSnapshot,
   } = d;
 
   const now = new Date().toISOString().split('T')[0];
@@ -172,6 +183,11 @@ function buildReport(d) {
       lines.push(`| ${item.input} | ${val} | ${item.source} | ${item.retrieved || 'N/A'} | ${statusIcon} |`);
     }
     lines.push('');
+  }
+
+  // Economic Environment
+  if (economicSnapshot) {
+    lines.push(formatEconomicEnvironmentSection(economicSnapshot));
   }
 
   // Market Data

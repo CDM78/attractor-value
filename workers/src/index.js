@@ -142,6 +142,17 @@ export default {
       return jsonResponse({ status: 'ok', timestamp: new Date().toISOString() });
     }
 
+    // Economic snapshot
+    if (path === '/api/economic-snapshot') {
+      try {
+        const { getOrFetchEconomicSnapshot } = await import('./services/fred.js');
+        const snapshot = await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
+        return jsonResponse(snapshot);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Admin: mode switch
     if (path === '/api/admin/mode') {
       if (request.method === 'GET') {

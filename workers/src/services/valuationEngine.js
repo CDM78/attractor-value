@@ -5,7 +5,7 @@
 
 import { VALUATION, FAT_TAIL, MARGIN_OF_SAFETY } from '../../../shared/constants.js';
 
-export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct, attractorData, screenInfo) {
+export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct, attractorData, screenInfo, economicEnvironment) {
   if (!financials || financials.length < 3 || !marketData?.price) {
     return null;
   }
@@ -107,6 +107,11 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
       ? MARGIN_OF_SAFETY.near_miss_stable_classical
       : MARGIN_OF_SAFETY.stable_classical;
   }
+  // Economic environment stress adjustment: +5% MoS when STRESSED
+  if (economicEnvironment === 'STRESSED') {
+    marginOfSafety = Math.min(marginOfSafety + 0.05, 0.95);
+  }
+
   const buyBelowPrice = adjustedIV * (1 - marginOfSafety);
 
   // Discount to IV: positive = undervalued, negative = overvalued

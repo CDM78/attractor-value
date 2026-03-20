@@ -7,6 +7,7 @@ import { getCompanyNews, formatNewsForPrompt, getInsiderTransactions, getCompany
 import { getFinancialsForTicker } from '../db/queries.js';
 import { computeInsiderSignal } from './insiderSignals.js';
 import { MARGIN_OF_SAFETY } from '../../../shared/constants.js';
+import { getOrFetchEconomicSnapshot, formatEconomicContextForPrompt } from './fred.js';
 
 // Run a full attractor analysis for a single ticker.
 // Returns { analysis, message } on success, throws on fatal error.
@@ -125,9 +126,20 @@ export async function runSingleAnalysis(env, ticker) {
     console.error(`News fetch failed for ${ticker}:`, err.message);
   }
 
+  // Fetch economic context for prompt enrichment
+  let economicContext = '';
+  try {
+    if (env.FRED_API_KEY) {
+      const snapshot = await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
+      economicContext = formatEconomicContextForPrompt(snapshot);
+    }
+  } catch (err) {
+    console.error(`Economic context fetch failed for ${ticker}:`, err.message);
+  }
+
   // Run Claude analysis
   const result = await analyzeAttractorStability(
-    ticker, stock.company_name, financialContext, mdaText, newsContext, env.ANTHROPIC_API_KEY
+    ticker, stock.company_name, financialContext, mdaText, newsContext, env.ANTHROPIC_API_KEY, economicContext
   );
 
   // Store secular disruption assessment

@@ -7,9 +7,9 @@ import { isFinancialSector } from '../../../shared/sectorUtils.js';
 const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
 const MODEL = 'claude-sonnet-4-20250514';
 
-export async function analyzeAttractorStability(ticker, companyName, financialContext, mdaText, newsContext, apiKey) {
+export async function analyzeAttractorStability(ticker, companyName, financialContext, mdaText, newsContext, apiKey, economicContext) {
   // Pass 1: Bull case (standard attractor analysis)
-  const bullPrompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext);
+  const bullPrompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext);
 
   const bullRes = await fetch(CLAUDE_API, {
     method: 'POST',
@@ -237,7 +237,7 @@ function estimateCost(usage) {
   return (inputCost + outputCost).toFixed(4);
 }
 
-function buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext) {
+function buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext) {
   return `You are a value investing analyst using the Attractor Value Framework. Analyze ${companyName} (${ticker}) for attractor stability.
 
 FRAMEWORK: A "stable attractor" is a business whose competitive position and earnings power are self-reinforcing — pulled back toward equilibrium after perturbation. Score each factor 1-5:
@@ -278,6 +278,8 @@ ${financialContext}
 ${mdaText ? `10-K MD&A EXCERPT:\n${mdaText}\n` : 'No 10-K filing data available. Base analysis on financial data and public knowledge.'}
 
 ${newsContext || ''}
+
+${economicContext || ''}
 
 SECULAR DISRUPTION ASSESSMENT:
 After completing the attractor stability analysis, evaluate whether this company's PRIMARY INDUSTRY is undergoing a secular phase transition. This is distinct from the company-level analysis above — you are evaluating the industry, not the company.

@@ -1,6 +1,6 @@
 import { fetchQuote, fetchBulkQuotes, getFullUniverse } from '../services/yahooFinance.js';
 import { fetchAllFundamentals } from '../services/alphaVantage.js';
-import { getOrFetchBondYield } from '../services/fred.js';
+import { getOrFetchBondYield, getOrFetchEconomicSnapshot } from '../services/fred.js';
 import { upsertStock, upsertMarketData, upsertFinancials, getFinancialsForTicker, saveScreenResult } from '../db/queries.js';
 import { runLayer1Screen, computeSectorPBThresholds } from '../services/screeningEngine.js';
 import { calculateGrahamValuation } from '../services/valuationEngine.js';
@@ -143,6 +143,17 @@ export async function dailyRefresh(env, tickerLimit) {
     }
   }
 
+  // Step 4b: Fetch economic snapshot for stress-adjusted valuations
+  let economicEnvironment = null;
+  try {
+    if (env.FRED_API_KEY) {
+      const snapshot = await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
+      economicEnvironment = snapshot?.environment || null;
+    }
+  } catch (err) {
+    console.error('Economic snapshot failed:', err.message);
+  }
+
   // Step 5: Compute valuations for stocks that passed or near-missed screening
   const qualifyingStocks = await env.DB.prepare(
     `SELECT DISTINCT sr.ticker, sr.tier, sr.miss_severity FROM screen_results sr
@@ -158,7 +169,7 @@ export async function dailyRefresh(env, tickerLimit) {
         'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
       ).bind(row.ticker).first();
       const screenInfo = { tier: row.tier, miss_severity: row.miss_severity };
-      const val = calculateGrahamValuation(fins, md, bondYield?.yield, attractorData, screenInfo);
+      const val = calculateGrahamValuation(fins, md, bondYield?.yield, attractorData, screenInfo, economicEnvironment);
       if (val) {
         await upsertValuation(env.DB, val);
         stats.valuations++;
