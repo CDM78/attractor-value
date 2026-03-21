@@ -141,15 +141,23 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
  * For emerging growth companies where Graham formula is inappropriate.
  * Projects revenue forward at decelerating growth, applies target margins, discounts back.
  */
-export function calculateTier3Valuation(candidate, financials, marketData, attractorScore, economicEnvironment) {
+export function calculateTier3Valuation(candidate, financials, marketData, attractorScore, economicEnvironment, externalSharesM) {
   if (!financials || financials.length < 2 || !marketData?.price) return null;
 
   const recent = financials[0];
   const revenueTTM = recent?.revenue;
-  // shares_outstanding: direct value or computed from net_income / eps
-  let sharesOutstanding = recent?.shares_outstanding;
-  if ((!sharesOutstanding || sharesOutstanding <= 0) && recent?.eps > 0 && recent?.net_income > 0) {
+  // shares_outstanding priority: 1) Finnhub (most accurate), 2) EDGAR, 3) NI/EPS fallback
+  let sharesOutstanding = null;
+  let sharesSource = 'none';
+  if (externalSharesM && externalSharesM > 0) {
+    sharesOutstanding = Math.round(externalSharesM * 1e6); // Finnhub stores in millions
+    sharesSource = 'finnhub';
+  } else if (recent?.shares_outstanding > 0) {
+    sharesOutstanding = recent.shares_outstanding;
+    sharesSource = 'edgar';
+  } else if (recent?.eps > 0 && recent?.net_income > 0) {
     sharesOutstanding = Math.round(recent.net_income / recent.eps);
+    sharesSource = 'ni_eps_fallback';
   }
   if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;
 
@@ -222,13 +230,17 @@ export function calculateTier3Valuation(candidate, financials, marketData, attra
  * Tier 4 Valuation: Scenario-Weighted Model
  * For regime transition beneficiaries where the thesis depends on an external structural shift.
  */
-export function calculateTier4Valuation(candidate, financials, marketData, regime, attractorScore, economicEnvironment) {
+export function calculateTier4Valuation(candidate, financials, marketData, regime, attractorScore, economicEnvironment, externalSharesM) {
   if (!financials || financials.length < 2 || !marketData?.price) return null;
 
   const recent = financials[0];
   const revenueTTM = recent?.revenue;
-  let sharesOutstanding = recent?.shares_outstanding;
-  if ((!sharesOutstanding || sharesOutstanding <= 0) && recent?.eps > 0 && recent?.net_income > 0) {
+  let sharesOutstanding = null;
+  if (externalSharesM && externalSharesM > 0) {
+    sharesOutstanding = Math.round(externalSharesM * 1e6);
+  } else if (recent?.shares_outstanding > 0) {
+    sharesOutstanding = recent.shares_outstanding;
+  } else if (recent?.eps > 0 && recent?.net_income > 0) {
     sharesOutstanding = Math.round(recent.net_income / recent.eps);
   }
   if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;

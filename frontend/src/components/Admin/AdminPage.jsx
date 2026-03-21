@@ -161,8 +161,8 @@ export default function AdminPage() {
         )}
       </div>
 
-      {/* Pre-Screen */}
-      <PreScreen />
+      {/* Discovery Pipelines — Independent Tier Triggers */}
+      <TierScreenPanel />
 
       {/* Bulk Analysis */}
       <BulkAnalysis />
@@ -170,96 +170,152 @@ export default function AdminPage() {
   )
 }
 
-function PreScreen() {
-  const [running, setRunning] = useState(false)
+function TierScreenPanel() {
+  const [envData, setEnvData] = useState(null)
+  const [runningTier, setRunningTier] = useState(null) // 'tier2' | 'tier3' | 'tier4' | null
   const [result, setResult] = useState(null)
   const [error, setError] = useState(null)
   const [progress, setProgress] = useState({ scanned: 0, passes: 0 })
 
-  async function runPreScreen() {
-    setRunning(true)
+  useEffect(() => {
+    fetch(`${API_BASE}/api/environment`).then(r => r.json()).then(setEnvData).catch(() => {})
+  }, [])
+
+  const crisisActive = envData?.crisis?.crisis_active || false
+  const activeRegimes = envData?.regimes?.active?.length || envData?.regimes?.active_count || 0
+
+  async function runScreen(tier) {
+    setRunningTier(tier)
     setError(null)
     setResult(null)
     setProgress({ scanned: 0, passes: 0 })
 
     try {
-      // Run in batches of 100, accumulate results
       let offset = 0
       let totalScanned = 0
       let totalPasses = 0
       let hasMore = true
-      const allCandidates = []
 
       while (hasMore) {
-        const res = await fetch(`${API_BASE}/api/screen/tier3?limit=100&offset=${offset}`, {
+        const res = await fetch(`${API_BASE}/api/screen/${tier}?limit=200&offset=${offset}`, {
           method: 'POST',
         })
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        if (!res.ok) {
+          const body = await res.json().catch(() => ({}))
+          if (body.crisis_active === false || body.active_regimes === 0) {
+            setResult({ scanned: 0, passes: 0, message: body.message })
+            setRunningTier(null)
+            return
+          }
+          throw new Error(`HTTP ${res.status}`)
+        }
         const data = await res.json()
 
         totalScanned += data.scanned || 0
         totalPasses += data.passes || 0
-        if (data.candidates) allCandidates.push(...data.candidates)
         hasMore = data.has_more || false
-        offset += 100
+        offset += 200
 
         setProgress({ scanned: totalScanned, passes: totalPasses })
       }
 
-      setResult({
-        scanned: totalScanned,
-        passes: totalPasses,
-        candidates: allCandidates,
-      })
+      setResult({ scanned: totalScanned, passes: totalPasses, tier })
     } catch (err) {
       setError(err.message)
     }
-    setRunning(false)
+    setRunningTier(null)
   }
+
+  const tiers = [
+    {
+      id: 'tier3',
+      label: 'Tier 3: Emerging DKS',
+      desc: 'Monthly scan for growth companies with self-reinforcing flywheels. Criteria: revenue CAGR \u2265 8%, gross margin \u2265 35%, market cap \u2265 $500M.',
+      color: 'emerald',
+      enabled: true,
+      enabledText: 'Always active',
+    },
+    {
+      id: 'tier2',
+      label: 'Tier 2: Crisis Dislocation',
+      desc: 'Screens for quality companies temporarily cheap during market-wide fear. Activates when S&P 500 declines \u2265 20% or multiple severe stress signals.',
+      color: 'blue',
+      enabled: crisisActive,
+      enabledText: crisisActive ? 'Crisis detected' : 'No active crisis',
+    },
+    {
+      id: 'tier4',
+      label: 'Tier 4: Regime Transition',
+      desc: 'Identifies beneficiaries of structural economic shifts (policy, geopolitical, technology). Requires an active regime in the registry.',
+      color: 'purple',
+      enabled: activeRegimes > 0,
+      enabledText: activeRegimes > 0 ? `${activeRegimes} active regime${activeRegimes > 1 ? 's' : ''}` : 'No active regimes',
+    },
+  ]
 
   return (
     <div className="bg-surface-secondary rounded p-4 md:p-6 space-y-4">
-      <h3 className="text-text-primary font-bold text-lg">Tier 3 Pre-Screen</h3>
+      <h3 className="text-text-primary font-bold text-lg">Discovery Pipelines</h3>
       <p className="text-text-secondary text-sm">
-        Scans the stock universe for emerging growth candidates matching Tier 3 criteria:
-        market cap $500M-$30B, revenue CAGR &ge; 8%, gross margin &ge; 35%, 2-15 years public,
-        positive operating cash flow (or &ge; 25% revenue growth).
-        Results populate the candidates table for Bulk Analysis.
+        Three independent funnels for finding investment candidates. Each writes to the same candidates table.
+        Run Bulk Analysis after screening to evaluate candidates with attractor analysis.
       </p>
 
       {error && <div className="text-fail text-sm">Error: {error}</div>}
 
-      {running && (
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <div className="w-4 h-4 border-2 border-accent border-t-transparent rounded-full animate-spin" />
-            <span className="text-sm text-text-secondary">
-              Scanning... {progress.scanned} stocks checked, {progress.passes} candidates found
-            </span>
-          </div>
-          <div className="w-full bg-surface-tertiary rounded-full h-1.5">
-            <div className="bg-accent h-1.5 rounded-full transition-all animate-pulse" style={{ width: '60%' }} />
-          </div>
-        </div>
-      )}
-
-      {result && !running && (
+      {result && !runningTier && (
         <div className="bg-pass/10 border border-pass/20 rounded p-3 text-sm">
-          <span className="text-pass font-bold">Pre-screen complete.</span>{' '}
-          Scanned {result.scanned} stocks, found {result.passes} candidates.
-          {result.passes > 0 && (
-            <span className="text-text-secondary"> Now run Bulk Analysis below to evaluate them.</span>
+          {result.message ? (
+            <span className="text-warn">{result.message}</span>
+          ) : (
+            <>
+              <span className="text-pass font-bold">Screen complete.</span>{' '}
+              Scanned {result.scanned} stocks, found {result.passes} candidates.
+              {result.passes > 0 && (
+                <span className="text-text-secondary"> Run Bulk Analysis below to evaluate them.</span>
+              )}
+            </>
           )}
         </div>
       )}
 
-      <button
-        onClick={runPreScreen}
-        disabled={running}
-        className="px-4 py-2 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors font-medium text-sm disabled:opacity-50"
-      >
-        {running ? 'Scanning...' : 'Run Pre-Screen'}
-      </button>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        {tiers.map(t => (
+          <div key={t.id} className="bg-surface-tertiary rounded p-3 space-y-2">
+            <div className="flex items-center gap-2">
+              <span className={`text-sm font-bold text-${t.color}-400`}>{t.label}</span>
+            </div>
+            <p className="text-xs text-text-secondary">{t.desc}</p>
+            <div className="flex items-center gap-2">
+              <span className={`text-xs px-2 py-0.5 rounded ${
+                t.enabled ? `bg-${t.color}-500/15 text-${t.color}-400` : 'bg-surface-secondary text-text-secondary'
+              }`}>
+                {t.enabledText}
+              </span>
+            </div>
+            {runningTier === t.id ? (
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 border-2 border-accent border-t-transparent rounded-full animate-spin" />
+                <span className="text-xs text-text-secondary">
+                  {progress.scanned} scanned, {progress.passes} found
+                </span>
+              </div>
+            ) : (
+              <button
+                onClick={() => runScreen(t.id)}
+                disabled={!t.enabled || runningTier != null}
+                className={`text-xs px-3 py-1.5 rounded font-medium transition-colors ${
+                  t.enabled
+                    ? `bg-${t.color}-500/15 text-${t.color}-400 hover:bg-${t.color}-500/25`
+                    : 'bg-surface-secondary text-text-secondary/50 cursor-not-allowed'
+                } disabled:opacity-50`}
+              >
+                Run {t.id === 'tier3' ? 'Pre-Screen' : t.id === 'tier2' ? 'Crisis Screen' : 'Regime Screen'}
+              </button>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

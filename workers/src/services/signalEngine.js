@@ -43,6 +43,16 @@ export async function computeSignal(db, candidate, env) {
 
   const financials = await getFinancialsForTicker(db, ticker);
 
+  // Get shares from stocks table: Finnhub direct, or compute from market_cap / price
+  const stockRow = await db.prepare(
+    'SELECT shares_outstanding_m, market_cap FROM stocks WHERE ticker = ?'
+  ).bind(ticker).first();
+  let finnhubSharesM = stockRow?.shares_outstanding_m || null;
+  // Fallback: market_cap (millions) / price gives shares in millions
+  if (!finnhubSharesM && stockRow?.market_cap > 0 && marketData?.price > 0) {
+    finnhubSharesM = stockRow.market_cap / marketData.price;
+  }
+
   // Get economic environment
   let economicEnvironment = 'NORMAL';
   try {
@@ -76,7 +86,7 @@ export async function computeSignal(db, candidate, env) {
   if (candidate.discovery_tier === 'tier3') {
     // Tier 3: Growth-adjusted revenue model
     valuation = calculateTier3Valuation(
-      candidate, financials, marketData, attractorScore, economicEnvironment
+      candidate, financials, marketData, attractorScore, economicEnvironment, finnhubSharesM
     );
   }
 
@@ -89,7 +99,7 @@ export async function computeSignal(db, candidate, env) {
       ).bind(candidate.regime_id).first();
     }
     valuation = calculateTier4Valuation(
-      candidate, financials, marketData, regime, attractorScore, economicEnvironment
+      candidate, financials, marketData, regime, attractorScore, economicEnvironment, finnhubSharesM
     );
   }
 

@@ -68,7 +68,7 @@ export async function getBasicMetrics(ticker, apiKey) {
     market_cap_m: m.marketCapitalization || null,  // in millions
     gross_margin: m.grossMarginTTM || m.grossMarginAnnual || null,  // as percentage
     revenue_growth_quarterly: m.revenueGrowthQuarterlyYoy || null,
-    shares_outstanding: m.sharesOutstanding || null,  // in millions
+    shares_outstanding: m.sharesOutstanding || data.shareOutstanding || null,  // in millions
     fifty_two_week_high: m['52WeekHigh'] || null,
     fifty_two_week_low: m['52WeekLow'] || null,
   };

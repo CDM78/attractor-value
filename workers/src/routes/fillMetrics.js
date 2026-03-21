@@ -52,12 +52,12 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
   const limit = parseInt(url.searchParams.get('limit') || '50');
   const offset = parseInt(url.searchParams.get('offset') || '0');
 
-  // Find stocks missing P/E ratios OR market_cap (needed for Tier 3 pre-screen)
+  // Find stocks missing metrics (PE/PB, market_cap, or shares)
   const missing = await env.DB.prepare(
     `SELECT s.ticker FROM stocks s
      LEFT JOIN market_data md ON s.ticker = md.ticker
      WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-       AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL OR s.market_cap IS NULL)
+       AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL OR s.market_cap IS NULL OR s.shares_outstanding_m IS NULL)
      ORDER BY s.ticker
      LIMIT ? OFFSET ?`
   ).bind(limit, offset).all();
@@ -100,6 +100,7 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
         if (metrics.market_cap_m > 0) updates.push(`market_cap = ${Math.round(metrics.market_cap_m)}`);
         if (metrics.gross_margin != null) updates.push(`gross_margin_pct = ${metrics.gross_margin}`);
         if (metrics.revenue_growth_3y != null) updates.push(`revenue_growth_3y = ${metrics.revenue_growth_3y}`);
+        if (metrics.shares_outstanding > 0) updates.push(`shares_outstanding_m = ${metrics.shares_outstanding}`);
         if (updates.length > 0) {
           await env.DB.prepare(`UPDATE stocks SET ${updates.join(', ')} WHERE ticker = ?`)
             .bind(ticker).run();
