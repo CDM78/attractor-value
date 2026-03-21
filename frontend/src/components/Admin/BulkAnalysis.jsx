@@ -43,11 +43,19 @@ export default function BulkAnalysis() {
         }
         // data is null — no previous bulk analysis run, fall through
       }
-      // Fallback: count from signals
-      const sigRes = await fetch(`${API_BASE}/api/signals`)
-      if (!sigRes.ok) throw new Error(`HTTP ${sigRes.status}`)
-      const sigData = await sigRes.json()
-      const pending = (sigData.candidates || sigData.pending || []).length
+      // Fallback: count candidates from tier endpoints
+      let pending = 0
+      try {
+        const [t2, t3, t4] = await Promise.all([
+          fetch(`${API_BASE}/api/screen/tier2`).then(r => r.json()).catch(() => ({ count: 0 })),
+          fetch(`${API_BASE}/api/screen/tier3`).then(r => r.json()).catch(() => ({ count: 0 })),
+          fetch(`${API_BASE}/api/screen/tier4`).then(r => r.json()).catch(() => ({ count: 0 })),
+        ])
+        // Count candidates that haven't been analyzed yet
+        const allCandidates = [...(t2.candidates || []), ...(t3.candidates || []), ...(t4.candidates || [])]
+        pending = allCandidates.filter(c => !c.attractor_analysis_date).length
+        if (pending === 0) pending = allCandidates.length // Show total if all are pending
+      } catch { /* ignore */ }
       setCandidateCount(pending)
     } catch (err) {
       setError(err.message)

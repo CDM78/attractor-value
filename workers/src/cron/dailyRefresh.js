@@ -87,6 +87,14 @@ export async function dailyRefresh(env, tickerLimit) {
         market_cap: existing?.market_cap || null,
       });
 
+      // Update market_cap from Yahoo (in millions)
+      if (quote.marketCapMillions && quote.marketCapMillions > 0) {
+        try {
+          await env.DB.prepare('UPDATE stocks SET market_cap = ? WHERE ticker = ?')
+            .bind(quote.marketCapMillions, quote.ticker).run();
+        } catch { /* ignore */ }
+      }
+
       // Preserve existing fundamentals data in market_data
       const existingMd = await env.DB.prepare('SELECT pe_ratio, pb_ratio, earnings_yield, dividend_yield, insider_ownership_pct FROM market_data WHERE ticker = ?').bind(quote.ticker).first();
 

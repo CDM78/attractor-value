@@ -161,8 +161,105 @@ export default function AdminPage() {
         )}
       </div>
 
+      {/* Pre-Screen */}
+      <PreScreen />
+
       {/* Bulk Analysis */}
       <BulkAnalysis />
+    </div>
+  )
+}
+
+function PreScreen() {
+  const [running, setRunning] = useState(false)
+  const [result, setResult] = useState(null)
+  const [error, setError] = useState(null)
+  const [progress, setProgress] = useState({ scanned: 0, passes: 0 })
+
+  async function runPreScreen() {
+    setRunning(true)
+    setError(null)
+    setResult(null)
+    setProgress({ scanned: 0, passes: 0 })
+
+    try {
+      // Run in batches of 100, accumulate results
+      let offset = 0
+      let totalScanned = 0
+      let totalPasses = 0
+      let hasMore = true
+      const allCandidates = []
+
+      while (hasMore) {
+        const res = await fetch(`${API_BASE}/api/screen/tier3?limit=100&offset=${offset}`, {
+          method: 'POST',
+        })
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        const data = await res.json()
+
+        totalScanned += data.scanned || 0
+        totalPasses += data.passes || 0
+        if (data.candidates) allCandidates.push(...data.candidates)
+        hasMore = data.has_more || false
+        offset += 100
+
+        setProgress({ scanned: totalScanned, passes: totalPasses })
+      }
+
+      setResult({
+        scanned: totalScanned,
+        passes: totalPasses,
+        candidates: allCandidates,
+      })
+    } catch (err) {
+      setError(err.message)
+    }
+    setRunning(false)
+  }
+
+  return (
+    <div className="bg-surface-secondary rounded p-4 md:p-6 space-y-4">
+      <h3 className="text-text-primary font-bold text-lg">Tier 3 Pre-Screen</h3>
+      <p className="text-text-secondary text-sm">
+        Scans the stock universe for emerging growth candidates matching Tier 3 criteria:
+        market cap $500M-$30B, revenue CAGR &ge; 8%, gross margin &ge; 35%, 2-15 years public,
+        positive operating cash flow (or &ge; 25% revenue growth).
+        Results populate the candidates table for Bulk Analysis.
+      </p>
+
+      {error && <div className="text-fail text-sm">Error: {error}</div>}
+
+      {running && (
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 border-2 border-accent border-t-transparent rounded-full animate-spin" />
+            <span className="text-sm text-text-secondary">
+              Scanning... {progress.scanned} stocks checked, {progress.passes} candidates found
+            </span>
+          </div>
+          <div className="w-full bg-surface-tertiary rounded-full h-1.5">
+            <div className="bg-accent h-1.5 rounded-full transition-all animate-pulse" style={{ width: '60%' }} />
+          </div>
+        </div>
+      )}
+
+      {result && !running && (
+        <div className="bg-pass/10 border border-pass/20 rounded p-3 text-sm">
+          <span className="text-pass font-bold">Pre-screen complete.</span>{' '}
+          Scanned {result.scanned} stocks, found {result.passes} candidates.
+          {result.passes > 0 && (
+            <span className="text-text-secondary"> Now run Bulk Analysis below to evaluate them.</span>
+          )}
+        </div>
+      )}
+
+      <button
+        onClick={runPreScreen}
+        disabled={running}
+        className="px-4 py-2 rounded bg-accent/20 text-accent hover:bg-accent/30 transition-colors font-medium text-sm disabled:opacity-50"
+      >
+        {running ? 'Scanning...' : 'Run Pre-Screen'}
+      </button>
     </div>
   )
 }

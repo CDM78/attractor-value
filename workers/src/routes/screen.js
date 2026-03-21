@@ -12,6 +12,77 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
       const { ensureMultiTierTables } = await import('../db/queries.js');
       await ensureMultiTierTables(env.DB);
 
+      // Backfill market_cap for stocks missing it (uses Yahoo bulk quote)
+      const missingMcap = await env.DB.prepare(
+        "SELECT ticker FROM stocks WHERE market_cap IS NULL AND ticker NOT LIKE '\\_\\_%' ESCAPE '\\' LIMIT 100"
+      ).all();
+      if (missingMcap.results?.length > 0) {
+        try {
+          const { fetchBulkQuotes } = await import('../services/yahooFinance.js');
+          const tickers = missingMcap.results.map(r => r.ticker);
+          const quotes = await fetchBulkQuotes(tickers, 10, 500);
+          let filled = 0;
+          for (const q of quotes) {
+            if (q.marketCapMillions && q.marketCapMillions > 0) {
+              await env.DB.prepare('UPDATE stocks SET market_cap = ? WHERE ticker = ?')
+                .bind(q.marketCapMillions, q.ticker).run();
+              filled++;
+            }
+          }
+          console.log(`Market cap backfill: ${filled}/${tickers.length} stocks updated`);
+        } catch (e) {
+          console.error('Market cap backfill error:', e.message);
+        }
+      }
+
+      // Also seed candidates from existing Graham screener BUY signals
+      // (stocks that pass Layer 1 and are below buy-below price)
+      const seedFromScreener = url.searchParams.get('seed') !== 'false';
+      if (seedFromScreener) {
+        try {
+          const screenBuys = await env.DB.prepare(`
+            SELECT sr.ticker, s.company_name, s.sector, s.market_cap, md.price,
+              v.buy_below_price, v.adjusted_intrinsic_value, v.normalized_eps
+            FROM screen_results sr
+            JOIN stocks s ON sr.ticker = s.ticker
+            JOIN market_data md ON sr.ticker = md.ticker
+            JOIN valuations v ON sr.ticker = v.ticker
+            WHERE sr.tier IN ('full_pass', 'near_miss')
+              AND sr.screen_date = (SELECT MAX(sr2.screen_date) FROM screen_results sr2 WHERE sr2.ticker = sr.ticker)
+              AND md.price <= v.buy_below_price
+              AND md.price > 0
+              AND NOT EXISTS (SELECT 1 FROM candidates c WHERE c.ticker = sr.ticker AND c.status = 'active')
+          `).all();
+          const seeds = screenBuys.results || [];
+          if (seeds.length > 0) {
+            const { upsertCandidate } = await import('../db/queries.js');
+            for (const s of seeds) {
+              await upsertCandidate(env.DB, {
+                ticker: s.ticker,
+                discovery_tier: 'tier3',
+                discovered_date: new Date().toISOString(),
+                prescreen_pass: true,
+                prescreen_data: {
+                  source: 'graham_screener_seed',
+                  growth_track: 'steady_compounder',
+                  market_cap_m: s.market_cap,
+                },
+                intrinsic_value: s.adjusted_intrinsic_value,
+                buy_below_price: s.buy_below_price,
+                valuation_method: 'graham',
+                valuation_date: new Date().toISOString(),
+                signal: 'BUY',
+                signal_confidence: s.price <= s.buy_below_price * 0.90 ? 'STRONG' : 'STANDARD',
+                signal_reason: `Graham screener: ${Math.round((1 - s.price / s.adjusted_intrinsic_value) * 100)}% below IV`,
+              });
+            }
+            console.log(`Seeded ${seeds.length} candidates from Graham screener BUY signals`);
+          }
+        } catch (e) {
+          console.error('Screener seed error:', e.message);
+        }
+      }
+
       const { tier3PreScreen, storeTier3Candidates } = await import('../services/tier3Screen.js');
       const limit = parseInt(url.searchParams.get('limit') || '100');
       const offset = parseInt(url.searchParams.get('offset') || '0');

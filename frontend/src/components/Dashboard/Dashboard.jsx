@@ -13,12 +13,14 @@ export default function Dashboard() {
   const [toast, setToast] = useState(null)
   const [actedSignals, setActedSignals] = useState(new Set())
   const [sellSignals, setSellSignals] = useState([])
+  const [configuredCapital, setConfiguredCapital] = useState(0)
 
   useEffect(() => {
     fetchSignals()
     fetchEnvironment()
     fetchHoldings()
     fetchSellSignals()
+    fetchConfiguredCapital()
   }, [fetchSignals, fetchEnvironment, fetchHoldings])
 
   async function fetchSellSignals() {
@@ -27,6 +29,16 @@ export default function Dashboard() {
       if (res.ok) {
         const data = await res.json()
         setSellSignals(data.signals || [])
+      }
+    } catch { /* ignore */ }
+  }
+
+  async function fetchConfiguredCapital() {
+    try {
+      const res = await fetch(`${API_BASE}/api/portfolio/config`)
+      if (res.ok) {
+        const data = await res.json()
+        setConfiguredCapital(parseFloat(data.total_capital) || 10000)
       }
     } catch { /* ignore */ }
   }
@@ -68,8 +80,12 @@ export default function Dashboard() {
     : environment === 'CAUTIOUS' ? 'bg-warn/15 text-warn'
     : 'bg-pass/15 text-pass'
 
-  const totalValue = summary?.total_value || 0
-  const cashPct = summary?.total_value > 0 ? ((summary.cash_balance || 0) / summary.total_value * 100) : 100
+  // Portfolio value = position values + uninvested cash
+  // When no positions, value = total configured capital (all cash)
+  const holdingsValue = summary?.total_value || 0
+  const totalValue = holdingsValue > 0 ? holdingsValue : configuredCapital
+  const cashBalance = configuredCapital - holdingsValue
+  const cashPct = totalValue > 0 ? (cashBalance / totalValue * 100) : 100
 
   return (
     <div className="space-y-6">

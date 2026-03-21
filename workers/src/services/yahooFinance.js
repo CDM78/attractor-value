@@ -34,6 +34,10 @@ export async function fetchQuote(ticker) {
 
   const price = meta.regularMarketPrice || null;
 
+  // Market cap from Yahoo (in raw units — convert to millions)
+  const rawMarketCap = meta.marketCap || null;
+  const marketCapMillions = rawMarketCap ? Math.round(rawMarketCap / 1e6) : null;
+
   return {
     ticker: meta.symbol || ticker,
     price,
@@ -43,6 +47,7 @@ export async function fetchQuote(ticker) {
     exchangeName: meta.fullExchangeName || meta.exchangeName || null,
     avgVolume: avgVolume ? Math.round(avgVolume) : null,
     avgDollarVolume: (avgVolume && price) ? Math.round(avgVolume * price) : null,
+    marketCapMillions,
   };
 }
 

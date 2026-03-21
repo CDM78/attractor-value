@@ -28,7 +28,10 @@ export async function tier3PreScreen(db, options = {}) {
       f1.operating_cash_flow as ocf_y1,
       f1.total_assets as assets_y1,
       -- Count years with financials (proxy for years public)
-      (SELECT COUNT(*) FROM financials fi WHERE fi.ticker = s.ticker) as years_data
+      (SELECT COUNT(*) FROM financials fi WHERE fi.ticker = s.ticker) as years_data,
+      f1.shares_outstanding as shares_y1,
+      f1.shareholder_equity as equity_y1,
+      f1.book_value_per_share as bvps_y1
     FROM stocks s
     JOIN market_data md ON s.ticker = md.ticker
     LEFT JOIN financials f1 ON s.ticker = f1.ticker
@@ -38,9 +41,7 @@ export async function tier3PreScreen(db, options = {}) {
     LEFT JOIN financials f3 ON s.ticker = f3.ticker
       AND f3.fiscal_year = f1.fiscal_year - 2
     WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-      AND s.market_cap IS NOT NULL
-      AND s.market_cap >= 500
-      AND s.market_cap <= 30000
+      AND md.price IS NOT NULL AND md.price > 0
     ORDER BY s.ticker
     LIMIT ? OFFSET ?
   `;
@@ -59,7 +60,7 @@ export async function tier3PreScreen(db, options = {}) {
         company_name: stock.company_name,
         sector: stock.sector,
         industry: stock.industry,
-        market_cap: stock.market_cap,
+        market_cap: mcap,
         price: stock.price,
         ...screenResult,
       });
@@ -87,9 +88,23 @@ export async function tier3PreScreen(db, options = {}) {
 function evaluateStock(stock) {
   const reasons = [];
 
-  // Market cap: $500M - $30B (already filtered in query, but double-check)
-  if (!stock.market_cap || stock.market_cap < 500 || stock.market_cap > 30000) {
-    return { passes: false, fail_reason: 'market_cap_out_of_range' };
+  // Market cap: $500M - $30B
+  // Compute from price × shares if stocks.market_cap is null
+  // shares = shareholder_equity / book_value_per_share
+  let mcap = stock.market_cap;
+  if (!mcap && stock.price > 0) {
+    // Try shares from financials
+    if (stock.shares_y1 > 0) {
+      mcap = Math.round(stock.price * stock.shares_y1 / 1e6);
+    }
+    // Fallback: estimate shares from equity / BVPS
+    if (!mcap && stock.equity_y1 > 0 && stock.bvps_y1 > 0) {
+      const estimatedShares = stock.equity_y1 / stock.bvps_y1;
+      mcap = Math.round(stock.price * estimatedShares / 1e6);
+    }
+  }
+  if (!mcap || mcap < 500 || mcap > 30000) {
+    return { passes: false, fail_reason: `market_cap_out_of_range: ${mcap || 'null'}` };
   }
 
   // Revenue CAGR (3-year)
@@ -161,7 +176,7 @@ function evaluateStock(stock) {
     gross_margin_estimate: grossMarginEstimate != null ? Math.round(grossMarginEstimate * 1000) / 1000 : null,
     years_public: yearsPublic,
     ocf_positive: ocfPositive,
-    market_cap_m: stock.market_cap,
+    market_cap_m: mcap,
   };
 }
 
