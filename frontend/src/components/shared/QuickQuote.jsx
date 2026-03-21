@@ -23,8 +23,12 @@ export default function QuickQuote({ onClose }) {
       if (panelRef.current && !panelRef.current.contains(e.target)) onClose()
     }
     document.addEventListener('keydown', handleKey)
-    document.addEventListener('mousedown', handleClick)
+    // Delay click-outside to avoid the opening click immediately closing the panel
+    const timer = setTimeout(() => {
+      document.addEventListener('mousedown', handleClick)
+    }, 100)
     return () => {
+      clearTimeout(timer)
       document.removeEventListener('keydown', handleKey)
       document.removeEventListener('mousedown', handleClick)
     }

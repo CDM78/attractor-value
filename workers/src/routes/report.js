@@ -135,7 +135,7 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
     stock, marketData, valuation, financials, screenResult,
     analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
-    dataConfidence, economicSnapshot,
+    dataConfidence, economicSnapshot, confidenceBand,
   });
 
   // Return as JSON with markdown content
@@ -147,7 +147,7 @@ function buildReport(d) {
     stock, marketData, valuation, financials, screenResult,
     analysis, cr, secularDisruption, insiderSignal,
     aaaBondYield, dynamicPECeiling, signal, signalRationale,
-    dataConfidence, economicSnapshot,
+    dataConfidence, economicSnapshot, confidenceBand,
   } = d;
 
   const now = new Date().toISOString().split('T')[0];

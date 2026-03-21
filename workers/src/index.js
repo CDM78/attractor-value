@@ -257,10 +257,21 @@ export default {
           `Opus deep analysis${previousSignal !== signalResult.signal ? ` (signal changed: ${previousSignal} → ${signalResult.signal})` : ''}`
         );
 
-        // Update candidate with new signal
+        // Update candidate with new signal + valuation data
         await env.DB.prepare(`
-          UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ? WHERE id = ?
-        `).bind(signalResult.signal, signalResult.confidence, signalResult.reason, candidateId).run();
+          UPDATE candidates SET
+            signal = ?, signal_confidence = ?, signal_reason = ?,
+            intrinsic_value = ?, buy_below_price = ?, margin_of_safety = ?,
+            valuation_method = ?, valuation_date = datetime('now')
+          WHERE id = ?
+        `).bind(
+          signalResult.signal, signalResult.confidence, signalResult.reason,
+          signalResult.valuation?.intrinsic_value ?? null,
+          signalResult.valuation?.buy_below_price ?? null,
+          signalResult.valuation?.margin_of_safety ?? null,
+          signalResult.valuation?.valuation_method ?? null,
+          candidateId
+        ).run();
 
         return jsonResponse({
           candidate_id: candidateId,
@@ -319,8 +330,12 @@ export default {
                 await runCandidateAnalysis(env, c.id, { model: analysisModel });
                 const updated = await env.DB.prepare('SELECT * FROM candidates WHERE id = ?').bind(c.id).first();
                 const sig = await computeSignal(env.DB, updated, env);
-                await env.DB.prepare('UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ? WHERE id = ?')
-                  .bind(sig.signal, sig.confidence, sig.reason, c.id).run();
+                await env.DB.prepare(`UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ?,
+                  intrinsic_value = ?, buy_below_price = ?, margin_of_safety = ?, valuation_method = ?, valuation_date = datetime('now')
+                  WHERE id = ?`)
+                  .bind(sig.signal, sig.confidence, sig.reason,
+                    sig.valuation?.intrinsic_value ?? null, sig.valuation?.buy_below_price ?? null,
+                    sig.valuation?.margin_of_safety ?? null, sig.valuation?.valuation_method ?? null, c.id).run();
 
                 // Log signal change
                 if (prevSignal !== sig.signal) {

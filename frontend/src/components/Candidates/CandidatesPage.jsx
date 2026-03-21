@@ -149,9 +149,15 @@ export default function CandidatesPage() {
                     {c.discovery_tier === 'tier2' && c.crisis_assessment && c.crisis_assessment}
                   </td>
                   <td className="px-3 py-2">
-                    <span className="text-xs px-1.5 py-0.5 rounded bg-surface-tertiary text-text-secondary">
-                      {c.analysis_model?.includes('opus') ? 'Opus' : 'Sonnet'}
-                    </span>
+                    {c.attractor_analysis_date ? (
+                      <span className={`text-xs px-1.5 py-0.5 rounded ${
+                        c.analysis_model?.includes('opus') ? 'bg-purple-500/15 text-purple-400' : 'bg-surface-tertiary text-text-secondary'
+                      }`}>
+                        {c.analysis_model?.includes('opus') ? 'Opus' : 'Sonnet'}
+                      </span>
+                    ) : (
+                      <span className="text-xs text-text-secondary/50">—</span>
+                    )}
                   </td>
                   <td className="px-3 py-2 text-text-secondary text-xs">
                     {c.discovered_date?.split('T')[0] || '--'}
