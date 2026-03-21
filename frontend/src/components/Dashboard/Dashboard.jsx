@@ -7,7 +7,7 @@ import { API_BASE } from '../../config.js'
 import TierBadge from './TierBadge'
 
 export default function Dashboard() {
-  const { buySignals, notYetSignals, positions, loading: sigLoading, error: sigError, fetchSignals } = useSignalStore()
+  const { buySignals, notYetSignals, positions, loading: sigLoading, error: sigError, fetchSignals, analyzingId, triggerDeepAnalysis, deepAnalysisResult, clearDeepAnalysisResult } = useSignalStore()
   const { environment, regimes, loading: envLoading, error: envError, fetchEnvironment } = useEnvironmentStore()
   const { holdings, summary, loading: pfLoading, error: pfError, fetchHoldings } = usePortfolioStore()
   const [toast, setToast] = useState(null)
@@ -129,7 +129,29 @@ export default function Dashboard() {
                     {s.iv && <span>IV: <span className="text-text-primary">${s.iv?.toFixed(0)}</span></span>}
                   </div>
                   <div className="md:ml-auto flex items-center gap-3">
+                    <span className="text-xs px-2 py-0.5 rounded bg-surface-tertiary text-text-secondary">
+                      {s.analysis_model?.includes('opus') ? 'Opus' : 'Sonnet'}
+                    </span>
                     <span className="text-sm text-text-secondary">{s.action}</span>
+                    {analyzingId === s.id ? (
+                      <span className="text-xs px-3 py-1.5 rounded bg-accent/15 text-accent animate-pulse">Analyzing (Opus)...</span>
+                    ) : (
+                      <button
+                        onClick={async () => {
+                          const result = await triggerDeepAnalysis(s.id)
+                          if (result?.signal_changed) {
+                            setToast(`Signal changed after Opus: ${result.previous_signal} → ${result.new_signal}`)
+                            setTimeout(() => setToast(null), 8000)
+                          } else if (result) {
+                            setToast(`Opus confirmed: ${result.new_signal} (score: ${result.attractor_score?.toFixed(1)})`)
+                            setTimeout(() => setToast(null), 5000)
+                          }
+                        }}
+                        className="text-xs px-3 py-1.5 rounded bg-purple-500/15 text-purple-400 hover:bg-purple-500/25 transition-colors font-medium shrink-0"
+                      >
+                        DEEP ANALYSIS
+                      </button>
+                    )}
                     {!actedSignals.has(s.ticker) ? (
                       <button
                         onClick={() => executeBuy(s)}
@@ -243,7 +265,12 @@ export default function Dashboard() {
                         <Link to={`/analyze/${h.ticker}`} className="text-accent hover:underline">{h.ticker}</Link>
                       </td>
                       <td className="px-3 py-2">
-                        <TierBadge tier={h.tier} />
+                        <div className="flex items-center gap-1.5">
+                          <TierBadge tier={h.tier} />
+                          {h.analysis_model?.includes('opus') && (
+                            <span className="text-[10px] px-1.5 py-0.5 rounded bg-purple-500/15 text-purple-400">Opus</span>
+                          )}
+                        </div>
                       </td>
                       <td className="px-3 py-2">{h.shares}</td>
                       <td className="px-3 py-2">${h.cost_basis_per_share?.toFixed(2)}</td>

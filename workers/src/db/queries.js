@@ -270,6 +270,9 @@ export async function ensureMultiTierTables(db) {
     ['tax_rate_short_term', '0.398'],
     ['tax_rate_long_term', '0.228'],
     ['tax_rate_state', '0.04'],
+    ['default_analysis_model', 'claude-sonnet-4-20250514'],
+    ['deep_analysis_model', 'claude-opus-4-20250514'],
+    ['bulk_analysis_concurrency', '5'],
   ];
   for (const [key, value] of defaults) {
     await db.prepare(
@@ -294,6 +297,7 @@ export async function ensureMultiTierTables(db) {
     "ALTER TABLE attractor_analysis ADD COLUMN bear_adaptation_capacity_score INTEGER",
     "ALTER TABLE attractor_analysis ADD COLUMN bear_capital_allocation_score INTEGER",
     "ALTER TABLE attractor_analysis ADD COLUMN bear_raw_score REAL",
+    "ALTER TABLE candidates ADD COLUMN analysis_model TEXT DEFAULT 'claude-sonnet-4-20250514'",
     "ALTER TABLE attractor_analysis ADD COLUMN bull_case_text TEXT",
     "ALTER TABLE attractor_analysis ADD COLUMN bear_case_text TEXT",
   ];

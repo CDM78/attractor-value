@@ -10,6 +10,7 @@ const links = [
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/transactions', label: 'History' },
   { to: '/how-it-works', label: 'How It Works' },
+  { to: '/admin', label: 'Admin' },
 ]
 
 export default function Nav() {

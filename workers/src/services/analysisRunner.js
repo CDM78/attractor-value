@@ -275,7 +275,7 @@ export async function runSingleAnalysis(env, ticker) {
  * Injects tier-specific context (DKS flywheel, crisis assessment, regime thesis)
  * and stores results linked to the candidate record.
  */
-export async function runCandidateAnalysis(env, candidateId) {
+export async function runCandidateAnalysis(env, candidateId, options = {}) {
   const candidate = await env.DB.prepare(
     'SELECT * FROM candidates WHERE id = ?'
   ).bind(candidateId).first();
@@ -303,6 +303,7 @@ export async function runCandidateAnalysis(env, candidateId) {
     isSmallCap,
     insiderOwnershipPct: marketData?.insider_ownership_pct ?? null,
     tierContext,
+    model: options.model || undefined,
   };
 
   const financialContext = buildFinancialContext(stock, financials, marketData, null, null, analysisOptions);
@@ -340,18 +341,21 @@ export async function runCandidateAnalysis(env, candidateId) {
 
   // Update candidate with attractor results
   const effectiveScore = result.adjusted_attractor_score ?? result.attractor_stability_score;
+  const analysisModel = options.model || 'claude-sonnet-4-20250514';
   await env.DB.prepare(`
     UPDATE candidates SET
       attractor_score = ?,
       bull_score = ?,
       bear_score = ?,
-      attractor_analysis_date = ?
+      attractor_analysis_date = ?,
+      analysis_model = ?
     WHERE id = ?
   `).bind(
     effectiveScore,
     result.attractor_stability_score,
     result.bear_raw_score ?? null,
     result.analysis_date,
+    analysisModel,
     candidateId
   ).run();
 

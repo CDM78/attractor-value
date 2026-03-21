@@ -5,9 +5,10 @@ import { CONCENTRATION_RISK, SECULAR_DISRUPTION, SMALL_CAP } from '../../../shar
 import { isFinancialSector } from '../../../shared/sectorUtils.js';
 
 const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
-const MODEL = 'claude-sonnet-4-20250514';
+const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
 
 export async function analyzeAttractorStability(ticker, companyName, financialContext, mdaText, newsContext, apiKey, economicContext, options = {}) {
+  const model = options.model || DEFAULT_MODEL;
   // Pass 1: Bull case (standard attractor analysis)
   const bullPrompt = buildAnalysisPrompt(ticker, companyName, financialContext, mdaText, newsContext, economicContext, options);
 
@@ -19,7 +20,7 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: MODEL,
+      model: model,
       max_tokens: 3000,
       messages: [{ role: 'user', content: bullPrompt }],
     }),
@@ -50,7 +51,7 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: MODEL,
+      model: model,
       max_tokens: 2000,
       messages: [{ role: 'user', content: bearPrompt }],
     }),

@@ -229,6 +229,138 @@ export default {
       }
     }
 
+    // Deep analysis (Opus) for a specific candidate
+    if (path.match(/^\/api\/candidates\/\d+\/deep-analyze$/) && request.method === 'POST') {
+      try {
+        const candidateId = parseInt(path.split('/')[3]);
+        const candidate = await env.DB.prepare('SELECT * FROM candidates WHERE id = ?').bind(candidateId).first();
+        if (!candidate) return errorResponse(`Candidate ${candidateId} not found`, 404);
+
+        const previousSignal = candidate.signal;
+        const { getPortfolioConfig } = await import('./db/queries.js');
+        const config = await getPortfolioConfig(env.DB);
+        const deepModel = config.deep_analysis_model || 'claude-opus-4-20250514';
+
+        const { runCandidateAnalysis } = await import('./services/analysisRunner.js');
+        const analysisResult = await runCandidateAnalysis(env, candidateId, { model: deepModel });
+
+        // Recompute signal with updated attractor score
+        const { computeSignal } = await import('./services/signalEngine.js');
+        const updatedCandidate = await env.DB.prepare('SELECT * FROM candidates WHERE id = ?').bind(candidateId).first();
+        const signalResult = await computeSignal(env.DB, updatedCandidate, env);
+
+        // Update candidate with new signal
+        await env.DB.prepare(`
+          UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ? WHERE id = ?
+        `).bind(signalResult.signal, signalResult.confidence, signalResult.reason, candidateId).run();
+
+        return jsonResponse({
+          candidate_id: candidateId,
+          ticker: candidate.ticker,
+          previous_signal: previousSignal,
+          new_signal: signalResult.signal,
+          signal_changed: previousSignal !== signalResult.signal,
+          attractor_score: analysisResult.attractor_score,
+          model: deepModel,
+          signal_confidence: signalResult.confidence,
+          signal_reason: signalResult.reason,
+        });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Bulk analysis — run attractor analysis on pending candidates
+    if (path === '/api/admin/bulk-analyze' && request.method === 'POST') {
+      try {
+        const body = await request.json().catch(() => ({}));
+        const tier = body.tier || 'all';
+        const concurrency = Math.min(parseInt(body.concurrency || '5'), 10);
+        const { getPortfolioConfig } = await import('./db/queries.js');
+        const config = await getPortfolioConfig(env.DB);
+        const analysisModel = body.model || config.default_analysis_model || 'claude-sonnet-4-20250514';
+
+        // Get pending candidates
+        let query = `SELECT * FROM candidates WHERE prescreen_pass = 1
+          AND (attractor_analysis_date IS NULL OR attractor_analysis_date < datetime('now', '-90 days'))
+          AND status = 'active'`;
+        if (tier !== 'all') query += ` AND discovery_tier = '${tier}'`;
+        query += ' ORDER BY discovered_date DESC';
+
+        const pending = await env.DB.prepare(query).all();
+        const total = (pending.results || []).length;
+        const results = { analyzed: 0, passed: 0, buy: 0, not_yet: 0, pass: 0, errors: 0, total };
+
+        // Reset progress
+        await env.DB.prepare(
+          "INSERT OR REPLACE INTO portfolio_config (key, value, updated_at) VALUES ('bulk_analysis_progress', ?, datetime('now'))"
+        ).bind(JSON.stringify(results)).run();
+
+        // Process in batches (non-blocking via waitUntil)
+        ctx.waitUntil((async () => {
+          const { runCandidateAnalysis } = await import('./services/analysisRunner.js');
+          const { computeSignal } = await import('./services/signalEngine.js');
+          const candidates = pending.results || [];
+
+          for (let i = 0; i < candidates.length; i += concurrency) {
+            const batch = candidates.slice(i, i + concurrency);
+            const promises = batch.map(async (c) => {
+              try {
+                await runCandidateAnalysis(env, c.id, { model: analysisModel });
+                const updated = await env.DB.prepare('SELECT * FROM candidates WHERE id = ?').bind(c.id).first();
+                const sig = await computeSignal(env.DB, updated, env);
+                await env.DB.prepare('UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ? WHERE id = ?')
+                  .bind(sig.signal, sig.confidence, sig.reason, c.id).run();
+
+                results.analyzed++;
+                const score = updated.attractor_score;
+                if (score >= 2.5) results.passed++;
+                if (sig.signal === 'BUY') results.buy++;
+                else if (sig.signal === 'NOT_YET') results.not_yet++;
+                else results.pass++;
+              } catch (err) {
+                results.errors++;
+                console.error(`Bulk analysis error for ${c.ticker}:`, err.message);
+                if (err.message?.includes('429')) {
+                  await new Promise(r => setTimeout(r, 30000));
+                }
+              }
+            });
+            await Promise.all(promises);
+            await new Promise(r => setTimeout(r, 2000)); // pause between batches
+
+            // Update progress
+            await env.DB.prepare(
+              "INSERT OR REPLACE INTO portfolio_config (key, value, updated_at) VALUES ('bulk_analysis_progress', ?, datetime('now'))"
+            ).bind(JSON.stringify(results)).run();
+          }
+
+          // Mark complete
+          results.complete = true;
+          await env.DB.prepare(
+            "INSERT OR REPLACE INTO portfolio_config (key, value, updated_at) VALUES ('bulk_analysis_progress', ?, datetime('now'))"
+          ).bind(JSON.stringify(results)).run();
+          console.log(`Bulk analysis complete: ${results.analyzed}/${total}, ${results.buy} BUY, ${results.errors} errors`);
+        })());
+
+        return jsonResponse({ message: 'Bulk analysis started', total, model: analysisModel, concurrency });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Bulk analysis progress polling
+    if (path === '/api/admin/bulk-analyze/progress') {
+      try {
+        const row = await env.DB.prepare(
+          "SELECT value FROM portfolio_config WHERE key = 'bulk_analysis_progress'"
+        ).first();
+        return jsonResponse(row?.value ? JSON.parse(row.value) : null);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Sell trigger check
     if (path === '/api/sell-check') {
       try {
