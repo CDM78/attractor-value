@@ -347,22 +347,127 @@ export default {
     const isMarketHours = etHour >= 10 && etHour < 16; // 10 AM to 4 PM ET (conservative)
     const isSaturday = dayOfWeek === 6;
 
-    // Daily post-market jobs (market days only)
-    if (isMarketDay && etHour === 16 && minute === 45) {
-      // 4:45 PM ET — full price refresh
+    // ============================================
+    // Daily post-market pipeline (market days only)
+    // ============================================
+
+    if (isMarketDay && etHour === 16 && minute === 30) {
+      // 4:30 PM ET — full price refresh
       ctx.waitUntil(dailyRefresh(env));
     }
+
+    if (isMarketDay && etHour === 16 && minute === 45) {
+      // 4:45 PM ET — FRED economic environment update
+      ctx.waitUntil((async () => {
+        try {
+          const { getOrFetchEconomicSnapshot } = await import('./services/fred.js');
+          await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
+          console.log('Economic snapshot updated');
+        } catch (err) {
+          console.error('Economic snapshot error:', err.message);
+        }
+      })());
+    }
+
+    if (isMarketDay && etHour === 16 && minute === 50) {
+      // 4:50 PM ET — Crisis detection check (activates Tier 2 if needed)
+      ctx.waitUntil((async () => {
+        try {
+          const { getEnvironmentStatus } = await import('./services/regimeDetector.js');
+          const status = await getEnvironmentStatus(env.DB, env);
+          if (status.crisis.crisis_active) {
+            console.log(`CRISIS DETECTED: severity=${status.crisis.severity}, S&P decline=${status.crisis.sp500_decline}`);
+            // Auto-run Tier 2 pre-screen during active crisis
+            const { tier2PreScreen, storeTier2Candidates } = await import('./services/tier2Screen.js');
+            const results = await tier2PreScreen(env.DB, status.crisis, { limit: 200 });
+            if (results.candidates.length > 0) {
+              await storeTier2Candidates(env.DB, results.candidates);
+              console.log(`Tier 2: ${results.candidates.length} crisis candidates stored`);
+            }
+          }
+        } catch (err) {
+          console.error('Crisis detection error:', err.message);
+        }
+      })());
+    }
+
+    if (isMarketDay && etHour === 16 && minute === 55) {
+      // 4:55 PM ET — Regime detection (AI news scan)
+      ctx.waitUntil((async () => {
+        try {
+          const { scanForRegimes } = await import('./services/regimeDetector.js');
+          const result = await scanForRegimes(env, env.DB);
+          if (result.regimes_found > 0) {
+            console.log(`Regime scan: ${result.regimes_found} found, ${result.new_candidates} new`);
+          }
+        } catch (err) {
+          console.error('Regime detection error:', err.message);
+        }
+      })());
+    }
+
     if (isMarketDay && etHour === 17 && minute === 0) {
-      // 5:00 PM ET — EDGAR fundamentals refresh + screening (uses updated prices)
+      // 5:00 PM ET — EDGAR fundamentals refresh + Layer 1 screening
       ctx.waitUntil(edgarRefresh(env).then(() => dailyRefresh(env)));
     }
-    if (isMarketDay && etHour === 17 && minute === 15) {
-      // 5:15 PM ET — attractor analysis for stale/missing scores (caching policy)
-      ctx.waitUntil(dailyAttractorCheck(env));
+
+    if (isMarketDay && etHour === 17 && minute === 5) {
+      // 5:05 PM ET — Tier 4 beneficiary screen (if active regimes exist)
+      ctx.waitUntil((async () => {
+        try {
+          const { getActiveRegimes } = await import('./db/queries.js');
+          const regimes = await getActiveRegimes(env.DB);
+          if (regimes.length > 0) {
+            const { tier4BeneficiaryScreen, storeTier4Candidates } = await import('./services/tier4Screen.js');
+            for (const regime of regimes) {
+              const results = await tier4BeneficiaryScreen(env.DB, regime, { limit: 100 });
+              if (results.candidates.length > 0) {
+                for (const c of results.candidates) c.regime_id = regime.id;
+                await storeTier4Candidates(env.DB, results.candidates);
+                console.log(`Tier 4 (${regime.name}): ${results.candidates.length} beneficiaries stored`);
+              }
+            }
+          }
+        } catch (err) {
+          console.error('Tier 4 screening error:', err.message);
+        }
+      })());
     }
-    if (isMarketDay && etHour === 17 && minute === 30) {
-      // 5:30 PM ET — alerts check
-      ctx.waitUntil(alertsCheck(env));
+
+    if (isMarketDay && etHour === 17 && minute === 10) {
+      // 5:10 PM ET — Signal update for all candidates
+      ctx.waitUntil((async () => {
+        try {
+          const { refreshAllSignals } = await import('./services/signalEngine.js');
+          const result = await refreshAllSignals(env.DB, env);
+          console.log(`Signals refreshed: ${result.updated} candidates, BUY=${result.signals.BUY}, NOT_YET=${result.signals.NOT_YET}`);
+        } catch (err) {
+          console.error('Signal refresh error:', err.message);
+        }
+      })());
+    }
+
+    if (isMarketDay && etHour === 17 && minute === 15) {
+      // 5:15 PM ET — Sell trigger check + attractor analysis + portfolio alerts
+      ctx.waitUntil((async () => {
+        try {
+          const { checkAllSellTriggers } = await import('./services/sellEngine.js');
+          const sellResult = await checkAllSellTriggers(env.DB, env);
+          if (sellResult.total_triggers > 0) {
+            console.log(`Sell triggers: ${sellResult.sell_signals.length} SELL, ${sellResult.trim_signals.length} TRIM`);
+          }
+        } catch (err) {
+          console.error('Sell trigger check error:', err.message);
+        }
+        // Also run attractor check and alerts
+        await dailyAttractorCheck(env);
+        await alertsCheck(env);
+      })());
+    }
+
+    if (isMarketDay && etHour === 17 && minute === 20) {
+      // 5:20 PM ET — Insider transaction refresh
+      ctx.waitUntil(finnhubRefresh(env));
     }
 
     // Intraday watchlist price check (every 15 min during market hours)
@@ -400,9 +505,12 @@ export default {
       }
     }
 
-    // Weekly Saturday refresh (overnight — data ready before morning)
+    // ============================================
+    // Weekly Saturday refresh
+    // ============================================
+
     if (isSaturday && utcHour === 4 && minute === 0) {
-      // Saturday 12:00 AM ET — Finnhub fallback (sectors, insider ownership, dividend yield)
+      // Saturday 12:00 AM ET — Finnhub fallback
       ctx.waitUntil(finnhubRefresh(env));
     }
     if (isSaturday && utcHour === 5 && minute === 0) {
@@ -410,8 +518,111 @@ export default {
       ctx.waitUntil(edgarRefresh(env));
     }
     if (isSaturday && utcHour === 6 && minute === 0) {
-      // Saturday 2:00 AM ET — insider data refresh
+      // Saturday 2:00 AM ET — Full data refresh
       ctx.waitUntil(dailyRefresh(env));
+    }
+    if (isSaturday && utcHour === 8 && minute === 0) {
+      // Saturday 4:00 AM ET — Regime re-assessment (all active regimes)
+      ctx.waitUntil((async () => {
+        try {
+          const { getActiveRegimes } = await import('./db/queries.js');
+          const regimes = await getActiveRegimes(env.DB);
+          for (const regime of regimes) {
+            // Re-scan news to see if regime is maturing or invalidated
+            console.log(`Weekly regime re-assessment: ${regime.name} (status: ${regime.status})`);
+          }
+        } catch (err) {
+          console.error('Weekly regime re-assessment error:', err.message);
+        }
+      })());
+    }
+
+    // ============================================
+    // Monthly 1st Saturday — Tier 3 pre-screen
+    // ============================================
+
+    if (isSaturday && dayOfMonth <= 7 && dayOfMonth >= 1 && utcHour === 10 && minute === 0) {
+      // 1st Saturday 6:00 AM ET — Tier 3 quantitative pre-screen (full universe)
+      ctx.waitUntil((async () => {
+        try {
+          const { ensureMultiTierTables } = await import('./db/queries.js');
+          await ensureMultiTierTables(env.DB);
+          const { tier3PreScreen, storeTier3Candidates } = await import('./services/tier3Screen.js');
+          let offset = 0;
+          let totalPasses = 0;
+          let hasMore = true;
+          while (hasMore) {
+            const results = await tier3PreScreen(env.DB, { limit: 100, offset });
+            if (results.candidates.length > 0) {
+              await storeTier3Candidates(env.DB, results.candidates);
+              totalPasses += results.candidates.length;
+            }
+            hasMore = results.has_more;
+            offset += 100;
+          }
+          console.log(`Monthly Tier 3 pre-screen complete: ${totalPasses} candidates`);
+        } catch (err) {
+          console.error('Monthly Tier 3 pre-screen error:', err.message);
+        }
+      })());
+    }
+
+    if (isSaturday && dayOfMonth <= 7 && dayOfMonth >= 1 && utcHour === 11 && minute === 0) {
+      // 1st Saturday 7:00 AM ET — DKS evaluation for new Tier 3 passes
+      ctx.waitUntil((async () => {
+        try {
+          const { getCandidatesByTier } = await import('./db/queries.js');
+          const candidates = await getCandidatesByTier(env.DB, 'tier3');
+          const needsEval = candidates.filter(c => c.dks_score == null);
+          if (needsEval.length > 0) {
+            const { evaluateDKS, storeDKSResults } = await import('./services/dksEvaluator.js');
+            let evaluated = 0;
+            for (const c of needsEval.slice(0, 10)) { // Limit per run (API cost)
+              try {
+                const dks = await evaluateDKS(c.ticker, env, env.DB);
+                await storeDKSResults(env.DB, c.ticker, dks);
+                evaluated++;
+              } catch (err) {
+                console.error(`DKS eval failed for ${c.ticker}:`, err.message);
+              }
+            }
+            console.log(`Monthly DKS evaluation: ${evaluated}/${needsEval.length} evaluated`);
+          }
+        } catch (err) {
+          console.error('Monthly DKS evaluation error:', err.message);
+        }
+      })());
+    }
+
+    if (isSaturday && dayOfMonth <= 7 && dayOfMonth >= 1 && utcHour === 13 && minute === 0) {
+      // 1st Saturday 9:00 AM ET — Attractor analysis refresh for portfolio + candidates
+      ctx.waitUntil((async () => {
+        try {
+          // Refresh attractor for held positions (quarterly minimum)
+          await dailyAttractorCheck(env);
+          // Also refresh for candidates with stale attractor scores
+          const stale = await env.DB.prepare(`
+            SELECT * FROM candidates
+            WHERE status = 'active'
+              AND dks_score >= 3.0
+              AND (attractor_score IS NULL OR attractor_analysis_date < datetime('now', '-90 days'))
+            LIMIT 5
+          `).all();
+          if (stale.results?.length > 0) {
+            const { runCandidateAnalysis } = await import('./services/analysisRunner.js');
+            for (const c of stale.results) {
+              try {
+                await runCandidateAnalysis(env, c.id);
+                console.log(`Attractor refresh for candidate ${c.ticker}`);
+              } catch (err) {
+                console.error(`Attractor refresh failed for ${c.ticker}:`, err.message);
+              }
+            }
+          }
+        } catch (err) {
+          console.error('Monthly attractor refresh error:', err.message);
+        }
+      })());
     }
   },
 };
