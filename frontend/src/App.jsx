@@ -6,13 +6,15 @@ import PortfolioDashboard from './components/Portfolio/PortfolioDashboard'
 import AnalysisDetail from './components/Analysis/AnalysisDetail'
 import TransactionHistory from './components/Transactions/TransactionHistory'
 import HowItWorks from './components/HowItWorks/HowItWorks'
+import Dashboard from './components/Dashboard/Dashboard'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Navigate to="/screener" replace />} />
+          <Route index element={<Navigate to="/dashboard" replace />} />
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="screener" element={<ScreenerTable />} />
           <Route path="watchlist" element={<WatchlistTable />} />
           <Route path="portfolio" element={<PortfolioDashboard />} />

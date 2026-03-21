@@ -229,6 +229,17 @@ export default {
       }
     }
 
+    // Sell trigger check
+    if (path === '/api/sell-check') {
+      try {
+        const { checkAllSellTriggers } = await import('./services/sellEngine.js');
+        const result = await checkAllSellTriggers(env.DB, env);
+        return jsonResponse(result);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Portfolio config get/set
     if (path === '/api/portfolio/config') {
       const { ensureMultiTierTables, getPortfolioConfig, setPortfolioConfig } = await import('./db/queries.js');

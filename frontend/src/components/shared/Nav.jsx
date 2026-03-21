@@ -4,6 +4,7 @@ import { API_BASE } from '../../config.js'
 import QuickQuote from './QuickQuote.jsx'
 
 const links = [
+  { to: '/dashboard', label: 'Dashboard' },
   { to: '/screener', label: 'Screener' },
   { to: '/watchlist', label: 'Watchlist' },
   { to: '/portfolio', label: 'Portfolio' },
