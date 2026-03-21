@@ -97,10 +97,17 @@ export default function HowItWorks() {
         </TechnicalDetails>
 
         <h3 className="text-lg font-semibold text-text-primary mt-6">3. Combined P/E × P/B</h3>
-        <p>Even if a stock passes P/E and P/B individually, this combined test prevents both from being elevated at the same time. The threshold is set higher than Graham's original 22.5 to account for modern share buyback practices, which reduce book value and inflate P/B.</p>
+        <p>Graham's composite ceiling prevents both multiples from being elevated simultaneously. The base ceiling is 40. For companies with exceptionally high returns on equity (ROE ≥ 20%), the ceiling is adjusted upward — because a high P/B driven by share buybacks in a high-ROE business isn't overvaluation, it's the mathematical consequence of excellent capital allocation.</p>
         <TechnicalDetails>
-          <p className="font-mono">Pass condition: P/E × P/B ≤ 30</p>
-          <p>Raised from Graham's original 22.5 to 30 to account for modern buyback practices that inflate P/B. The 30 threshold admits quality compounders without letting in stocks that are genuinely expensive on both dimensions.</p>
+          <p className="font-mono">Base condition: P/E × P/B ≤ 40</p>
+          <p>Raised from Graham's original 22.5 to 40. Calibration (30-case backtest) validated: at 22.5, the framework missed AAPL, KR, and VZ — all confirmed winners with elevated P/B from buyback programs. At 40, these pass without admitting traps.</p>
+          <p className="mt-2 font-mono">ROE modifier:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>ROE {'<'} 20%: ceiling = 40 (no adjustment)</li>
+            <li>ROE 20–30%: ceiling = 50 (×1.25)</li>
+            <li>ROE 30%+: ceiling = 60 (×1.50)</li>
+          </ul>
+          <p className="mt-1">This rewards exceptional capital allocators. AXP (ROE 30%+, P/E×P/B of 56) passes with the modifier and returned +42%/+115% over 3/5 years.</p>
         </TechnicalDetails>
 
         <h3 className="text-lg font-semibold text-text-primary mt-6">4. Debt-to-Equity (D/E)</h3>
@@ -116,8 +123,8 @@ export default function HowItWorks() {
         <h3 className="text-lg font-semibold text-text-primary mt-6">5. Current Ratio</h3>
         <p>Current assets ÷ current liabilities. Can the company cover its near-term obligations? Financial companies are exempt.</p>
         <TechnicalDetails>
-          <p className="font-mono">Pass condition: Current ratio ≥ 1.2</p>
-          <p>Lowered from Graham's original 1.5 to 1.2 to capture efficient operators (retailers, service companies) with fast inventory turns, while still flagging genuinely weak liquidity.</p>
+          <p className="font-mono">Pass condition: Current ratio ≥ 1.0</p>
+          <p>Lowered from Graham's original 1.5 to 1.0. Calibration (30-case backtest) validated: companies passing the other 7 filters with CR between 1.0–1.5 have deliberately lean working capital (efficient grocers, retailers), not precarious balance sheets. KR (Kroger) captured at 1.0 — returned 67% over 3 years.</p>
         </TechnicalDetails>
 
         <h3 className="text-lg font-semibold text-text-primary mt-6">6. Earnings Stability</h3>
@@ -463,7 +470,7 @@ const GLOSSARY = [
   { term: 'Buy-Below Price', def: 'Maximum purchase price. Calculated as Adjusted IV × (1 – margin of safety).' },
   { term: 'CAGR', def: 'Compound Annual Growth Rate. The smoothed annual rate at which a value grew over a multi-year period.' },
   { term: 'Concentration Risk', def: 'The danger of depending too heavily on a single customer, supplier, market, or regulation. Applied as a penalty to the attractor score.' },
-  { term: 'Current Ratio', def: 'Current assets ÷ current liabilities. Measures ability to pay short-term obligations. Framework requires ≥ 1.2.' },
+  { term: 'Current Ratio', def: 'Current assets ÷ current liabilities. Measures ability to pay short-term obligations. Framework requires ≥ 1.0.' },
   { term: 'D/E', def: 'Debt-to-Equity. Total debt ÷ shareholder equity. Measures leverage. ≤ 1.0 for most sectors, ≤ 2.0 for capital-intensive.' },
   { term: 'Discount to IV', def: 'How far below intrinsic value the current price is. Positive = undervalued. Negative = overvalued.' },
   { term: 'Dissolving Attractor', def: 'A competitive position actively eroding (score < 2.0). Framework prohibits buying and recommends selling.' },

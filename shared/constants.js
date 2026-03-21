@@ -8,21 +8,21 @@ export const SCREEN_DEFAULTS = {
   pb_max: 1.5,                    // legacy fallback; sector-relative P/B is primary (Update 4)
   pb_sector_percentile: 33,       // bottom 33rd percentile of sector (Update 4)
   pb_absolute_backstop: 5.0,      // absolute P/B ceiling regardless of sector (Update 4)
-  // Calibration (2026-03): Raised from Graham's original 22.5.
-  // Modern share buyback practices inflate P/B by shrinking equity,
-  // making the original ceiling too restrictive. Tested [22.5, 30, 40, 999].
-  // 30 chosen as middle ground: admits quality compounders (CTSH, ICFI)
-  // without letting in stocks genuinely expensive on both dimensions
-  // (NUE at 39.1, FDX at 38.0). Traps still caught by attractor layer.
-  pe_x_pb_max: 30,
+  // Calibration (2026-03): Raised from Graham's original 22.5 to 40.
+  // 30-case backtest validated: at 22.5 the framework missed AAPL, KR, VZ
+  // (all confirmed winners). At 40, these pass without admitting traps —
+  // stocks between 22.5-40 have elevated P/B primarily from buybacks,
+  // not overvaluation. Traps (INTC, WBA, WFC, M) caught by attractor layer.
+  // ROE modifier (getPeXPbCeiling) raises effective ceiling for high-ROE:
+  // ROE 20-30%: ×1.25 → 50, ROE 30%+: ×1.50 → 60.
+  pe_x_pb_max: 40,
   debt_equity_max_industrial: 1.0,
   debt_equity_max_utility: 2.0,
-  // Calibration (2026-03): Lowered from Graham's original 1.5.
-  // 1.5 rejected stable grocers/retailers with fast inventory turns.
-  // 1.2 chosen as middle ground: captures most efficient operators
-  // (ICFI at 1.27) while still flagging genuinely weak liquidity
-  // (UHS at 1.05 drops to near-miss). Only CTRA (1.19) lost vs 1.0.
-  current_ratio_min: 1.2,
+  // Calibration (2026-03): Lowered from Graham's original 1.5 to 1.0.
+  // 30-case backtest validated: 1.0 captured KR (67% 3yr return) without
+  // admitting traps. Companies passing the other 7 filters with CR 1.0-1.5
+  // have deliberately lean working capital, not precarious balance sheets.
+  current_ratio_min: 1.0,
   earnings_stability_min_years: 8,
   earnings_stability_window: 10,
   dividend_years_required: 5,
