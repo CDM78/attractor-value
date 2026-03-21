@@ -3,7 +3,7 @@
 // The system makes the decision; the user executes.
 
 import { calculateGrahamValuation, calculateTier3Valuation, calculateTier4Valuation } from './valuationEngine.js';
-import { getFinancialsForTicker, getPortfolioConfig } from '../db/queries.js';
+import { getFinancialsForTicker, getPortfolioConfig, logSignalChange } from '../db/queries.js';
 
 /**
  * Compute signal for a single candidate.
@@ -164,6 +164,17 @@ export async function refreshAllSignals(db, env) {
   for (const candidate of candidates) {
     try {
       const signalResult = await computeSignal(db, candidate, env);
+
+      // Log signal change if it changed
+      if (candidate.signal !== signalResult.signal || candidate.attractor_score !== signalResult.attractor_score) {
+        try {
+          await logSignalChange(db, candidate.id, candidate.ticker,
+            { signal: candidate.signal, attractor_score: candidate.attractor_score, analysis_model: candidate.analysis_model },
+            { signal: signalResult.signal, attractor_score: candidate.attractor_score, analysis_model: candidate.analysis_model },
+            'daily price update'
+          );
+        } catch { /* ignore logging failures */ }
+      }
 
       await db.prepare(`
         UPDATE candidates SET

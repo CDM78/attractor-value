@@ -14,6 +14,9 @@ export default function Dashboard() {
   const [actedSignals, setActedSignals] = useState(new Set())
   const [sellSignals, setSellSignals] = useState([])
   const [configuredCapital, setConfiguredCapital] = useState(0)
+  const [signalHistory, setSignalHistory] = useState([])
+  const [recentBanner, setRecentBanner] = useState(null)
+  const [bannerDismissed, setBannerDismissed] = useState(false)
 
   useEffect(() => {
     fetchSignals()
@@ -21,6 +24,7 @@ export default function Dashboard() {
     fetchHoldings()
     fetchSellSignals()
     fetchConfiguredCapital()
+    fetchSignalHistory()
   }, [fetchSignals, fetchEnvironment, fetchHoldings])
 
   async function fetchSellSignals() {
@@ -41,6 +45,44 @@ export default function Dashboard() {
         setConfiguredCapital(parseFloat(data.total_capital) || 10000)
       }
     } catch { /* ignore */ }
+  }
+
+  async function fetchSignalHistory() {
+    try {
+      const res = await fetch(`${API_BASE}/api/signal-history`)
+      if (res.ok) {
+        const data = await res.json()
+        const recent = data.recent || []
+        setSignalHistory(recent.slice(0, 5))
+        // Check for changes in the last hour for banner
+        const oneHourAgo = Date.now() - 60 * 60 * 1000
+        const recentChange = recent.find(r => new Date(r.changed_at).getTime() > oneHourAgo)
+        if (recentChange) {
+          setRecentBanner(recentChange)
+        }
+      }
+    } catch { /* ignore */ }
+  }
+
+  const isUpgrade = (from, to) => {
+    const rank = { PASS: 0, NOT_YET: 1, BUY: 2 }
+    return (rank[to] ?? 0) > (rank[from] ?? 0)
+  }
+  const isDowngrade = (from, to) => {
+    const rank = { PASS: 0, NOT_YET: 1, BUY: 2 }
+    return (rank[to] ?? 0) < (rank[from] ?? 0)
+  }
+  const changeColor = (from, to) => {
+    if (isUpgrade(from, to)) return 'text-pass'
+    if (isDowngrade(from, to)) return 'text-fail'
+    return 'text-warn'
+  }
+
+  const formatHistoryTime = (dateStr) => {
+    if (!dateStr) return ''
+    const d = new Date(dateStr)
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ', ' +
+      d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
   }
 
   const loading = sigLoading || envLoading || pfLoading
@@ -95,6 +137,28 @@ export default function Dashboard() {
           toast.type === 'pass' ? 'bg-pass/90 text-white' : 'bg-fail/90 text-white'
         }`}>
           {toast.msg}
+        </div>
+      )}
+
+      {/* Signal Change Banner */}
+      {recentBanner && !bannerDismissed && (
+        <div className="flex items-center gap-3 bg-accent/10 border border-accent/20 rounded px-4 py-3 text-sm">
+          <span className="text-accent shrink-0">i</span>
+          <span className="text-text-primary">
+            <span className="font-bold">{recentBanner.ticker}</span> signal changed:{' '}
+            <span className={changeColor(recentBanner.old_signal, recentBanner.new_signal)}>
+              {recentBanner.old_signal} &rarr; {recentBanner.new_signal}
+            </span>
+            {recentBanner.reason && (
+              <span className="text-text-secondary ml-1">({recentBanner.reason})</span>
+            )}
+          </span>
+          <button
+            onClick={() => setBannerDismissed(true)}
+            className="ml-auto text-xs px-2 py-1 rounded bg-surface-tertiary text-text-secondary hover:text-text-primary transition-colors shrink-0"
+          >
+            Dismiss
+          </button>
         </div>
       )}
 
@@ -359,6 +423,42 @@ export default function Dashboard() {
           ))}
         </div>
       </div>
+
+      {/* E. Recent Signal Changes */}
+      {signalHistory.length > 0 && (
+        <div className="bg-surface-secondary rounded overflow-hidden">
+          <div className="px-4 py-2 border-b border-border/50">
+            <h3 className="text-sm font-bold text-text-secondary">Recent Signal Changes</h3>
+          </div>
+          <div className="divide-y divide-border/30">
+            {signalHistory.map((h, i) => (
+              <div key={i} className="px-4 py-2.5 space-y-0.5">
+                <div className="flex items-center gap-2 flex-wrap text-sm">
+                  <Link to={`/analyze/${h.ticker}`} className="font-bold text-accent hover:underline">
+                    {h.ticker}
+                  </Link>
+                  <span className={changeColor(h.old_signal, h.new_signal)}>
+                    {h.old_signal} &rarr; {h.new_signal}
+                  </span>
+                  {h.reason && (
+                    <span className="text-text-secondary text-xs">({h.reason})</span>
+                  )}
+                  <span className="text-text-secondary text-xs ml-auto shrink-0">
+                    {formatHistoryTime(h.changed_at)}
+                  </span>
+                </div>
+                {(h.old_attractor != null || h.new_attractor != null) && (
+                  <div className="text-xs text-text-secondary pl-1">
+                    Attractor: {h.old_attractor != null ? Number(h.old_attractor).toFixed(1) : '?'}
+                    {' '}&rarr;{' '}
+                    {h.new_attractor != null ? Number(h.new_attractor).toFixed(1) : '?'}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

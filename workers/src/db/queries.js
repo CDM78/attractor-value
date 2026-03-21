@@ -251,6 +251,27 @@ export async function ensureMultiTierTables(db) {
     FOREIGN KEY (regime_id) REFERENCES regime_registry(id)
   )`).run();
 
+  // Signal change audit log
+  await db.prepare(`CREATE TABLE IF NOT EXISTS signal_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    candidate_id INTEGER NOT NULL,
+    ticker TEXT NOT NULL,
+    previous_signal TEXT,
+    new_signal TEXT,
+    previous_attractor_score REAL,
+    new_attractor_score REAL,
+    previous_model TEXT,
+    new_model TEXT,
+    change_reason TEXT,
+    change_date TEXT NOT NULL DEFAULT (datetime('now')),
+    FOREIGN KEY (candidate_id) REFERENCES candidates(id)
+  )`).run();
+
+  try {
+    await db.prepare('CREATE INDEX IF NOT EXISTS idx_signal_history_ticker ON signal_history(ticker)').run();
+    await db.prepare('CREATE INDEX IF NOT EXISTS idx_signal_history_candidate ON signal_history(candidate_id)').run();
+  } catch { /* indexes already exist */ }
+
   // Portfolio configuration — user settings
   await db.prepare(`CREATE TABLE IF NOT EXISTS portfolio_config (
     key TEXT PRIMARY KEY,
@@ -414,6 +435,36 @@ export async function setPortfolioConfig(db, key, value) {
   return db.prepare(
     `INSERT OR REPLACE INTO portfolio_config (key, value, updated_at) VALUES (?, ?, datetime('now'))`
   ).bind(key, String(value)).run();
+}
+
+// --- Signal History helpers ---
+
+export async function logSignalChange(db, candidateId, ticker, previous, current, reason) {
+  return db.prepare(
+    `INSERT INTO signal_history (candidate_id, ticker, previous_signal, new_signal,
+     previous_attractor_score, new_attractor_score, previous_model, new_model, change_reason)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+  ).bind(
+    candidateId, ticker,
+    previous.signal || null, current.signal || null,
+    previous.attractor_score || null, current.attractor_score || null,
+    previous.analysis_model || null, current.analysis_model || null,
+    reason
+  ).run();
+}
+
+export async function getSignalHistory(db, ticker, limit = 20) {
+  const result = await db.prepare(
+    `SELECT * FROM signal_history WHERE ticker = ? ORDER BY change_date DESC LIMIT ?`
+  ).bind(ticker, limit).all();
+  return result.results || [];
+}
+
+export async function getRecentSignalChanges(db, limit = 10) {
+  const result = await db.prepare(
+    `SELECT * FROM signal_history ORDER BY change_date DESC LIMIT ?`
+  ).bind(limit).all();
+  return result.results || [];
 }
 
 // --- EDGAR / Data Confidence helpers ---

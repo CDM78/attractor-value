@@ -249,6 +249,14 @@ export default {
         const updatedCandidate = await env.DB.prepare('SELECT * FROM candidates WHERE id = ?').bind(candidateId).first();
         const signalResult = await computeSignal(env.DB, updatedCandidate, env);
 
+        // Log signal change
+        const { logSignalChange } = await import('./db/queries.js');
+        await logSignalChange(env.DB, candidateId, candidate.ticker,
+          { signal: previousSignal, attractor_score: candidate.attractor_score, analysis_model: candidate.analysis_model },
+          { signal: signalResult.signal, attractor_score: analysisResult.attractor_score, analysis_model: deepModel },
+          `Opus deep analysis${previousSignal !== signalResult.signal ? ` (signal changed: ${previousSignal} → ${signalResult.signal})` : ''}`
+        );
+
         // Update candidate with new signal
         await env.DB.prepare(`
           UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ? WHERE id = ?
@@ -306,11 +314,25 @@ export default {
             const batch = candidates.slice(i, i + concurrency);
             const promises = batch.map(async (c) => {
               try {
+                const prevSignal = c.signal;
+                const prevScore = c.attractor_score;
                 await runCandidateAnalysis(env, c.id, { model: analysisModel });
                 const updated = await env.DB.prepare('SELECT * FROM candidates WHERE id = ?').bind(c.id).first();
                 const sig = await computeSignal(env.DB, updated, env);
                 await env.DB.prepare('UPDATE candidates SET signal = ?, signal_confidence = ?, signal_reason = ? WHERE id = ?')
                   .bind(sig.signal, sig.confidence, sig.reason, c.id).run();
+
+                // Log signal change
+                if (prevSignal !== sig.signal) {
+                  try {
+                    const { logSignalChange } = await import('./db/queries.js');
+                    await logSignalChange(env.DB, c.id, c.ticker,
+                      { signal: prevSignal, attractor_score: prevScore, analysis_model: c.analysis_model },
+                      { signal: sig.signal, attractor_score: updated.attractor_score, analysis_model: analysisModel },
+                      `bulk analysis (${analysisModel.includes('opus') ? 'Opus' : 'Sonnet'})`
+                    );
+                  } catch { /* ignore */ }
+                }
 
                 results.analyzed++;
                 const score = updated.attractor_score;
@@ -407,6 +429,87 @@ export default {
         }
         const config = await getPortfolioConfig(env.DB);
         return jsonResponse({ updated: true, config });
+      }
+    }
+
+    // Signal history for a ticker
+    if (path === '/api/signal-history') {
+      try {
+        const ticker = url.searchParams.get('ticker');
+        const { ensureMultiTierTables, getSignalHistory, getRecentSignalChanges } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        if (ticker) {
+          const history = await getSignalHistory(env.DB, ticker.toUpperCase());
+          return jsonResponse({ ticker: ticker.toUpperCase(), history });
+        } else {
+          const recent = await getRecentSignalChanges(env.DB, 20);
+          return jsonResponse({ recent });
+        }
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Universal stock search
+    if (path === '/api/search') {
+      try {
+        const q = (url.searchParams.get('q') || '').toUpperCase().trim();
+        if (!q || q.length < 1) return jsonResponse({ results: [] });
+
+        // Search stocks by ticker or company name
+        const stocks = await env.DB.prepare(`
+          SELECT s.ticker, s.company_name, s.sector, s.industry, s.market_cap,
+            md.price, md.pe_ratio, md.pb_ratio
+          FROM stocks s
+          LEFT JOIN market_data md ON s.ticker = md.ticker
+          WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+            AND (s.ticker LIKE ? OR UPPER(s.company_name) LIKE ?)
+          ORDER BY CASE WHEN s.ticker = ? THEN 0 WHEN s.ticker LIKE ? THEN 1 ELSE 2 END
+          LIMIT 20
+        `).bind(`%${q}%`, `%${q}%`, q, `${q}%`).all();
+
+        const results = [];
+        for (const s of (stocks.results || [])) {
+          // Check if this stock is a candidate
+          const candidate = await env.DB.prepare(
+            "SELECT id, discovery_tier, signal, signal_confidence, signal_reason, attractor_score, analysis_model, intrinsic_value, buy_below_price, attractor_analysis_date FROM candidates WHERE ticker = ? AND status = 'active' ORDER BY discovered_date DESC LIMIT 1"
+          ).bind(s.ticker).first();
+
+          // Check attractor analysis
+          const attractor = await env.DB.prepare(
+            'SELECT attractor_stability_score, adjusted_attractor_score, analysis_date, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+          ).bind(s.ticker).first();
+
+          results.push({
+            ticker: s.ticker,
+            company_name: s.company_name,
+            sector: s.sector,
+            industry: s.industry,
+            market_cap: s.market_cap,
+            price: s.price,
+            pe_ratio: s.pe_ratio,
+            candidate: candidate || null,
+            attractor: attractor || null,
+            evaluated: !!(candidate || attractor),
+          });
+        }
+
+        return jsonResponse({ query: q, results, count: results.length });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Seed a regime manually
+    if (path === '/api/admin/seed-regime' && request.method === 'POST') {
+      try {
+        const { ensureMultiTierTables, upsertRegime } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const body = await request.json();
+        await upsertRegime(env.DB, body);
+        return jsonResponse({ success: true, regime: body.name });
+      } catch (err) {
+        return errorResponse(err.message);
       }
     }
 
