@@ -19,19 +19,21 @@ export async function quoteRoutes(request, env, ctx, { path, jsonResponse, error
     ? Math.round(((quote.price - quote.previousClose) / quote.previousClose) * 10000) / 100
     : null;
 
-  // If ?update=true and ticker exists in our universe, update market_data.price
-  const shouldUpdate = url.searchParams.get('update') === 'true';
+  // If ?update=true, update or create market_data + stocks entry
+  const shouldUpdate = url.searchParams.get('update') === 'true' || url.searchParams.get('populate') === 'true';
   if (shouldUpdate) {
-    const exists = await env.DB.prepare(
-      'SELECT 1 FROM stocks WHERE ticker = ?'
-    ).bind(ticker.toUpperCase()).first();
+    const t = ticker.toUpperCase();
+    // Ensure stocks entry exists
+    await env.DB.prepare(
+      `INSERT OR IGNORE INTO stocks (ticker, company_name, sector, industry, market_cap, last_updated)
+       VALUES (?, ?, NULL, NULL, NULL, datetime('now'))`
+    ).bind(t, quote.longName || t).run();
 
-    if (exists) {
-      await env.DB.prepare(
-        `UPDATE market_data SET price = ?, fetched_at = datetime('now')
-         WHERE ticker = ?`
-      ).bind(quote.price, ticker.toUpperCase()).run();
-    }
+    // Upsert market_data (INSERT OR REPLACE handles both insert and update)
+    await env.DB.prepare(
+      `INSERT OR REPLACE INTO market_data (ticker, price, pe_ratio, pb_ratio, earnings_yield, dividend_yield, insider_ownership_pct, fetched_at)
+       VALUES (?, ?, NULL, NULL, NULL, NULL, NULL, datetime('now'))`
+    ).bind(t, quote.price).run();
   }
 
   return jsonResponse({

@@ -146,7 +146,11 @@ export function calculateTier3Valuation(candidate, financials, marketData, attra
 
   const recent = financials[0];
   const revenueTTM = recent?.revenue;
-  const sharesOutstanding = recent?.shares_outstanding;
+  // shares_outstanding: direct value or computed from net_income / eps
+  let sharesOutstanding = recent?.shares_outstanding;
+  if ((!sharesOutstanding || sharesOutstanding <= 0) && recent?.eps > 0 && recent?.net_income > 0) {
+    sharesOutstanding = Math.round(recent.net_income / recent.eps);
+  }
   if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;
 
   // Revenue CAGR from prescreen data
@@ -213,7 +217,10 @@ export function calculateTier4Valuation(candidate, financials, marketData, regim
 
   const recent = financials[0];
   const revenueTTM = recent?.revenue;
-  const sharesOutstanding = recent?.shares_outstanding;
+  let sharesOutstanding = recent?.shares_outstanding;
+  if ((!sharesOutstanding || sharesOutstanding <= 0) && recent?.eps > 0 && recent?.net_income > 0) {
+    sharesOutstanding = Math.round(recent.net_income / recent.eps);
+  }
   if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;
 
   const operatingMargin = recent.net_income && revenueTTM > 0
