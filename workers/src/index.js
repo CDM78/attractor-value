@@ -361,6 +361,25 @@ export default {
       }
     }
 
+    // Admin: clear candidates
+    if (path === '/api/admin/clear-candidates' && request.method === 'POST') {
+      try {
+        const body = await request.json().catch(() => ({}));
+        const source = body.source; // e.g., 'graham_screener_seed'
+        let result;
+        if (source) {
+          result = await env.DB.prepare(
+            "DELETE FROM candidates WHERE prescreen_data LIKE ?"
+          ).bind(`%${source}%`).run();
+        } else {
+          result = await env.DB.prepare("DELETE FROM candidates").run();
+        }
+        return jsonResponse({ deleted: result.meta?.changes || 0, source: source || 'all' });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Sell trigger check
     if (path === '/api/sell-check') {
       try {

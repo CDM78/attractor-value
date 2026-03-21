@@ -302,6 +302,8 @@ export async function ensureMultiTierTables(db) {
     "ALTER TABLE stocks ADD COLUMN pre_crisis_date TEXT",
     "ALTER TABLE stocks ADD COLUMN avg_volume_30d REAL",
     "ALTER TABLE stocks ADD COLUMN avg_volume_180d REAL",
+    "ALTER TABLE stocks ADD COLUMN revenue_growth_3y REAL",
+    "ALTER TABLE stocks ADD COLUMN gross_margin_pct REAL",
     "ALTER TABLE attractor_analysis ADD COLUMN bull_case_text TEXT",
     "ALTER TABLE attractor_analysis ADD COLUMN bear_case_text TEXT",
   ];

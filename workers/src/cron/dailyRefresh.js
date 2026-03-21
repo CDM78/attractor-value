@@ -395,6 +395,17 @@ export async function finnhubRefresh(env) {
         });
         stats.metricsFilled++;
       }
+      // Store market_cap, gross_margin, revenue_growth from Finnhub metrics
+      try {
+        const updates = [];
+        if (metrics.market_cap_m > 0) updates.push(`market_cap = ${Math.round(metrics.market_cap_m)}`);
+        if (metrics.gross_margin != null) updates.push(`gross_margin_pct = ${metrics.gross_margin}`);
+        if (metrics.revenue_growth_3y != null) updates.push(`revenue_growth_3y = ${metrics.revenue_growth_3y}`);
+        if (updates.length > 0) {
+          await env.DB.prepare(`UPDATE stocks SET ${updates.join(', ')} WHERE ticker = ?`)
+            .bind(row.ticker).run();
+        }
+      } catch { /* ignore */ }
     } catch (err) {
       if (err.message.includes('rate limit')) break;
       console.error(`Finnhub metrics error for ${row.ticker}:`, err.message);

@@ -52,12 +52,12 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
   const limit = parseInt(url.searchParams.get('limit') || '50');
   const offset = parseInt(url.searchParams.get('offset') || '0');
 
-  // Find stocks missing P/E ratios in market_data
+  // Find stocks missing P/E ratios OR market_cap (needed for Tier 3 pre-screen)
   const missing = await env.DB.prepare(
     `SELECT s.ticker FROM stocks s
      LEFT JOIN market_data md ON s.ticker = md.ticker
      WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
-       AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL)
+       AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL OR s.market_cap IS NULL)
      ORDER BY s.ticker
      LIMIT ? OFFSET ?`
   ).bind(limit, offset).all();
@@ -69,7 +69,7 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
     try {
       const metrics = await getBasicMetrics(ticker, env.FINNHUB_API_KEY);
 
-      if (!metrics.pe_ratio && !metrics.pb_ratio) {
+      if (!metrics.pe_ratio && !metrics.pb_ratio && !metrics.market_cap_m) {
         stats.skipped++;
         continue;
       }
@@ -93,6 +93,18 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
         metrics.insider_ownership_pct ?? existing?.insider_ownership_pct ?? null,
         new Date().toISOString()
       ).run();
+
+      // Store Tier 3 screening metrics (market_cap, gross_margin, revenue_growth)
+      try {
+        const updates = [];
+        if (metrics.market_cap_m > 0) updates.push(`market_cap = ${Math.round(metrics.market_cap_m)}`);
+        if (metrics.gross_margin != null) updates.push(`gross_margin_pct = ${metrics.gross_margin}`);
+        if (metrics.revenue_growth_3y != null) updates.push(`revenue_growth_3y = ${metrics.revenue_growth_3y}`);
+        if (updates.length > 0) {
+          await env.DB.prepare(`UPDATE stocks SET ${updates.join(', ')} WHERE ticker = ?`)
+            .bind(ticker).run();
+        }
+      } catch { /* columns may not exist yet */ }
 
       stats.updated++;
     } catch (err) {

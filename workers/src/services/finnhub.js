@@ -64,6 +64,13 @@ export async function getBasicMetrics(ticker, apiKey) {
     roic: m.roicTTM || null,
     revenue_growth_3y: m.revenueGrowth3Y || null,
     eps_growth_5y: m.epsGrowth5Y || null,
+    // Tier 3 pre-screen fields
+    market_cap_m: m.marketCapitalization || null,  // in millions
+    gross_margin: m.grossMarginTTM || m.grossMarginAnnual || null,  // as percentage
+    revenue_growth_quarterly: m.revenueGrowthQuarterlyYoy || null,
+    shares_outstanding: m.sharesOutstanding || null,  // in millions
+    fifty_two_week_high: m['52WeekHigh'] || null,
+    fifty_two_week_low: m['52WeekLow'] || null,
   };
 }
 

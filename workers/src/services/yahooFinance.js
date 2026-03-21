@@ -187,16 +187,122 @@ export function getMidCapTickers() {
   ];
 }
 
-// Full screening universe: S&P 500 + S&P 400 MidCap (deduplicated)
+// Growth-focused tickers: software, cybersecurity, cloud, medtech, e-commerce, automation
+// These are the companies the Tier 3 DKS pre-screen needs to find
+export function getGrowthTickers() {
+  return [
+    // Software / Cloud / SaaS
+    'CRWD','DDOG','NET','SNOW','PLTR','ZS','S','BILL','HUBS','MDB',
+    'CFLT','GTLB','DOCN','BRZE','SMAR','ASAN','MNDY','ESTC','FIVN','PCOR',
+    'VEEV','PAYC','WDAY','TEAM','SHOP','TTD','TWLO','OKTA','ZI','APPF',
+    'PCTY','SPSC','WK','MANH','GWRE','NCNO','ALTR','SUMO','CLDR','NEWR',
+    'DOMO','TENB','QLYS','VRNS','RPD','CYBR','SAIL','FRSH','CWAN','DT',
+    // Cybersecurity
+    'PANW','FTNT','CRWD','ZS','S','CYBR','TENB','QLYS','RPD','VRNS',
+    'OKTA','SAIL',
+    // Cloud infrastructure / Data
+    'ANET','SMCI','VRT','DELL','PSTG','NTAP','PURE','NETR','CLSK','IREN',
+    // AI / Semiconductors (growth)
+    'NVDA','ARM','AVGO','AMD','MRVL','SNPS','CDNS','LRCX','KLAC','AMAT',
+    'ONTO','ACLS','FORM','CEVA','MTSI','SITM','WOLF','MPWR','MCHP','SWKS',
+    // Healthcare / Medtech / Diagnostics
+    'ISRG','DXCM','PODD','ALGN','AXON','RGEN','BIO','TECH','NVCR','GMED',
+    'INSP','TMDX','AZTA','RVMD','INSM','PCVX','SMMT','MASI','IART','PEN',
+    'NTRA','EXAS','GH','SDGR','TXG','OLINK','CRNX','BMRN','VRTX','REGN',
+    // E-commerce / Digital consumer
+    'ETSY','CHWY','DUOL','COUR','UDMY','BROS','HIMS','RBLX','U','PINS',
+    'SPOT','ROKU','SE','MELI','GLOB',
+    // Industrials / Automation / Test & measurement
+    'AXON','CGNX','TER','KEYS','ZBRA','ROK','AZEK','TREX','GNRC','ASPN',
+    'TT','IR','NDSN','ITT','RBC','MIDD','FTV','IEX','NOVT','OSK',
+    // Specialty retail with digital moats
+    'FIVE','OLLI','FND','DKS','CASY','SFM','TXRH','WING','SHAK','CAVA',
+    // Fintech
+    'SQ','PYPL','AFRM','FOUR','GPN','FIS','FISV','TOST','LMND','SOFI',
+    // Clean energy / Electrification
+    'ENPH','SEDG','FSLR','RUN','NOVA','STEM','CHPT','RIVN','LCID','PLUG',
+    // Additional Russell 2000/3000 growth — broad coverage
+    // Software/Tech continued
+    'RIOT','MARA','BTBT','CIFR','HUT','CORZ','IREN','SOUN','BBAI','IONQ',
+    'RGTI','QBTS','AI','BIGC','CXAI','PRCT','INTA','TASK','KNBE','EVBG',
+    'DCBO','CERT','PYCR','SEMR','ENFN','VNET','ZUO','BLZE','BTDR','CWAN',
+    'AGYS','CCCS','BNFT','NABL','PEGA','OTEX','PRFT','CALX','VIAV','LITE',
+    'COHR','CIEN','INFN','EXTR','CSGS','EGHT','BAND','LPSN','SQSP','GDYN',
+    'TWKS','EPAM','GLOB','EXLS','WNS','TTEC',
+    // Healthcare/Biotech growth
+    'HALO','RARE','IONS','SRPT','VKTX','ALNY','MRNA','BNTX','RVMD','CYTK',
+    'MDGL','PCVX','SMMT','KROS','KRYS','ACAD','PTCT','FOLD','MNKD','TGTX',
+    'IRTC','GKOS','NVRO','ATRC','SILK','KIDS','PRCT','PROF','ALHC','AMPH',
+    'ELAN','XRAY','XENE','ARWR','NTLA','CRSP','BEAM','EDIT','VERV','EXAI',
+    'RXRX','RCKT','RPRX','RVMD','NUVB','TARS',
+    // Consumer growth / Digital
+    'LULU','DECK','ON','RVLV','XPEL','FOXF','YETI','COOK','ELF','CAVA',
+    'SHAK','WING','JACK','PLAY','DENN','KRUS','FWRG','SG','ARHS','LOVE',
+    'SNBR','LL','LESL','WRBY','HNST','FIGS','BIRD',
+    // Industrial tech / Specialty
+    'NOVT','AZEK','TREX','BLDR','UFPI','SITE','GMS','ROAD','PRIM','ATKR',
+    'SPXC','RXO','GXO','XPO','SAIA','ODFL','WERN','JBHT','KNX','SNDR',
+    'MATX','HUBG','ARCB','TFI',
+    // Regional banks / Fintech (growth-oriented)
+    'WAL','IBKR','LPLA','HOOD','UPST','LC','OPEN','RDFN',
+    // REITs with growth characteristics
+    'REXR','STAG','IIPR','IRM','DLR','EQIX','AMT','CCI','SBAC',
+    // Additional mid-cap growth
+    'CELH','MNST','FIZZ','SAM','BJ','OLPX','GOOS','CROX','SKX','ONON',
+    'BIRK','HBI','VFC','PVH','TPR','CPRI','RL',
+    // Aerospace / Defense tech
+    'KTOS','AVAV','RKLB','LHX','BWXT','HWM','TDG','HEI','AXON','TXT',
+    // More software / data analytics
+    'DSGX','CXM','SSYS','DDD','XMTR','MTTR','VIEW','LAZR','LIDR','INVZ',
+    'OUST','IRDM','GSAT',
+    // Russell 2000 Growth broad additions — small/mid growth companies
+    // Healthcare services / Life sciences tools
+    'CRL','WST','BIO','A','WAT','TMO','DHR','IQV','MEDP','DOCS',
+    'ACCD','ONEM','AMWL','TALK','GDRX','OSCR','CLOV','ALHC','AGIO','BHVN',
+    'DAWN','DVAX','IOVA','MGNX','NKTR','SGEN','TECH','VCYT','FATE','LEGN',
+    // Consumer platforms / marketplace
+    'ABNB','DASH','UBER','LYFT','GRAB','CPNG','GDDY','YELP','ANGI','CARG',
+    'TRUE','ACVA','RSKD','YOU','RELY','DLO','PAYO','FLYW','BILL',
+    // Industrial automation / robotics
+    'ISRG','IRBT','BRKS','ENTG','MKSI','TER','CGNX','NOVT','LECO','GGG',
+    'RBC','NDSN','FTV','AME','ROPER','IEX','ITT','WTS','CW','ESE',
+    'MYRG','POWL','AAON','WELBF',
+    // Semiconductor equipment / materials extended
+    'AMKR','CRUS','DIOD','LFUS','POWI','SLAB','SMTC','SYNA','TXN','MPWR',
+    // Data center / Cloud infrastructure extended
+    'EQIX','DLR','AMT','CCI','SBAC','QTS','CONE','COR','IRM','UNIT',
+    // Payments / Financial infrastructure
+    'V','MA','AXP','SQ','PYPL','AFRM','MQ','FOUR','RPAY','EVOP',
+    'NUVEI','FLYW','PAYO','TOST','GLBE','ADYEN',
+    // Additional growth — various sectors
+    'ASTS','LUNR','RDW','MNTS','SPIR','BKSY','SATL','VORB',
+    'JOBY','ACHR','LILM','BLDE','EVTL',
+    'ARRY','STEM','BE','BLDP','FCEL','MAXN',
+    'DV','IAS','TTD','MGNI','PUBM','DSP','ZETA','BRZE','APGE',
+    'TRUP','PZZA','DPZ','CMG','CAVA','BROS','DUTCH','LKNCY',
+    'PTON','NCLH','RCL','CCL','ABNB','BKNG','EXPE','TRIP',
+    'DKNG','PENN','RSI','GENI','SKLZ',
+    'COIN','HOOD','SOFI','UPST','LC','OPEN','RDFN','COMP',
+    'CFLT','ESTC','MDB','NEWR','SUMO','DOMO','CLDR',
+    'PATH','AMBA','CEVA','LSCC','INDI','QUIK','NPTN',
+    'SWAV','SHAK','CAVA','BROS','WING','LOCO','JACK','DIN',
+    'XPOF','FWRG','EAT','TXRH','KURA','KRUS',
+  ];
+}
+
+// Full screening universe: S&P 500 + S&P 400 MidCap + Growth (deduplicated)
 export function getFullUniverse() {
   const sp500 = getSP500Tickers();
   const midcap = getMidCapTickers();
+  const growth = getGrowthTickers();
   const seen = new Set(sp500);
   const combined = [...sp500];
-  for (const t of midcap) {
-    if (!seen.has(t)) {
-      combined.push(t);
-      seen.add(t);
+  for (const list of [midcap, growth]) {
+    for (const t of list) {
+      if (!seen.has(t)) {
+        combined.push(t);
+        seen.add(t);
+      }
     }
   }
   return combined;
