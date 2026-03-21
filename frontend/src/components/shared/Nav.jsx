@@ -5,12 +5,10 @@ import QuickQuote from './QuickQuote.jsx'
 
 const links = [
   { to: '/dashboard', label: 'Dashboard' },
-  { to: '/screener', label: 'Screener' },
-  { to: '/watchlist', label: 'Watchlist' },
-  { to: '/portfolio', label: 'Portfolio' },
-  { to: '/transactions', label: 'History' },
+  { to: '/candidates', label: 'Candidates' },
+  { to: '/holdings', label: 'Holdings' },
+  { to: '/admin', label: 'Settings' },
   { to: '/how-it-works', label: 'How It Works' },
-  { to: '/admin', label: 'Admin' },
 ]
 
 export default function Nav() {
