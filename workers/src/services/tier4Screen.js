@@ -281,6 +281,12 @@ export async function storeTier4Candidates(db, candidates) {
   let stored = 0;
 
   for (const c of candidates) {
+    // Skip if already exists as active candidate
+    const existing = await db.prepare(
+      "SELECT id FROM candidates WHERE ticker = ? AND discovery_tier = 'tier4' AND status = 'active'"
+    ).bind(c.ticker).first();
+    if (existing) continue;
+
     await upsertCandidate(db, {
       ticker: c.ticker,
       discovery_tier: 'tier4',
@@ -288,11 +294,10 @@ export async function storeTier4Candidates(db, candidates) {
       discovered_date: new Date().toISOString(),
       prescreen_pass: true,
       prescreen_data: {
-        scaling_exponent: c.scaling_exponent,
+        gross_margin: c.gross_margin,
         debt_equity: c.debt_equity,
         current_ratio: c.current_ratio,
       },
-      scaling_exponent: c.scaling_exponent,
       csi_score: c.csi_score,
       csi_interpretation: c.csi_interpretation,
     });

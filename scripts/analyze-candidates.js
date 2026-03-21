@@ -1,77 +1,68 @@
 #!/usr/bin/env node
-// Analyze all pending Tier 3 candidates one by one via the deep-analyze endpoint.
-// Each call runs attractor analysis + signal computation.
+// Analyze all pending candidates using Sonnet (default model).
+// Uses the bulk-analyze endpoint which runs Sonnet by default.
+// NEVER uses the deep-analyze endpoint — that's Opus-only, user-triggered.
 
 const API_BASE = 'https://odieseyeball.com';
-const PAUSE_MS = 5000; // 5 seconds between calls (Claude API rate limit)
 
 async function main() {
-  console.log('=== Analyzing Tier 3 Candidates ===');
+  console.log('=== Analyzing Pending Candidates (Sonnet) ===');
 
-  // Get all candidates
-  const res = await fetch(`${API_BASE}/api/screen/tier3`);
-  const data = await res.json();
-  const candidates = data.candidates || [];
-  const pending = candidates.filter(c => !c.attractor_analysis_date);
-
-  console.log(`Total candidates: ${candidates.length}`);
-  console.log(`Pending analysis: ${pending.length}`);
-  console.log('');
-
-  let analyzed = 0;
-  let buyCount = 0;
-  let notYetCount = 0;
-  let passCount = 0;
-
-  for (const c of pending) {
-    process.stdout.write(`[${analyzed + 1}/${pending.length}] ${c.ticker} (id=${c.id})... `);
-
-    try {
-      const analyzeRes = await fetch(`${API_BASE}/api/candidates/${c.id}/deep-analyze`, {
-        method: 'POST',
-      });
-
-      if (!analyzeRes.ok) {
-        const err = await analyzeRes.text();
-        console.log(`HTTP ${analyzeRes.status}: ${err.slice(0, 100)}`);
-      } else {
-        const result = await analyzeRes.json();
-        const signal = result.new_signal || 'PASS';
-        const score = result.attractor_score;
-        console.log(`score=${score?.toFixed(1) || '?'} signal=${signal} ${result.signal_changed ? '(CHANGED)' : ''}`);
-
-        if (signal === 'BUY') buyCount++;
-        else if (signal === 'NOT_YET') notYetCount++;
-        else passCount++;
-      }
-
-      analyzed++;
-    } catch (err) {
-      console.log(`Error: ${err.message}`);
-    }
-
-    if (analyzed < pending.length) {
-      await new Promise(r => setTimeout(r, PAUSE_MS));
-    }
+  // Check how many candidates are pending
+  let totalPending = 0;
+  for (const tier of ['tier2', 'tier3', 'tier4']) {
+    const res = await fetch(`${API_BASE}/api/screen/${tier}`);
+    const data = await res.json();
+    const pending = (data.candidates || []).filter(c => !c.attractor_analysis_date);
+    totalPending += pending.length;
+    console.log(`${tier}: ${data.count || 0} total, ${pending.length} pending`);
   }
 
-  console.log('');
-  console.log('=== Analysis Complete ===');
-  console.log(`Analyzed: ${analyzed}`);
-  console.log(`BUY: ${buyCount}`);
-  console.log(`NOT_YET: ${notYetCount}`);
-  console.log(`PASS: ${passCount}`);
+  if (totalPending === 0) {
+    console.log('\nNo pending candidates. Nothing to analyze.');
+    return;
+  }
 
-  // Show final signals
-  console.log('');
+  console.log(`\nTotal pending: ${totalPending}`);
+  console.log('Starting bulk analysis with Sonnet...\n');
+
+  // Trigger bulk analysis (Sonnet is default)
+  const res = await fetch(`${API_BASE}/api/admin/bulk-analyze`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      tier: 'all',
+      concurrency: 3,
+      model: 'claude-sonnet-4-20250514',
+    }),
+  });
+  const data = await res.json();
+  console.log(`Bulk analysis started: ${data.total || 0} candidates, model: ${data.model}`);
+
+  // Poll for progress
+  let complete = false;
+  while (!complete) {
+    await new Promise(r => setTimeout(r, 10000));
+    try {
+      const progRes = await fetch(`${API_BASE}/api/admin/bulk-analyze/progress`);
+      const prog = await progRes.json();
+      if (!prog) continue;
+      process.stdout.write(`\r  Progress: ${prog.analyzed || 0}/${prog.total || '?'} analyzed, BUY=${prog.buy || 0}, NOT_YET=${prog.not_yet || 0}, PASS=${prog.pass || 0}, errors=${prog.errors || 0}`);
+      if (prog.complete) {
+        complete = true;
+        console.log('\n');
+      }
+    } catch { /* ignore polling errors */ }
+  }
+
+  // Final signal check
   console.log('=== Dashboard Signals ===');
   const sigRes = await fetch(`${API_BASE}/api/signals`);
   const sigData = await sigRes.json();
-  console.log(`BUY signals: ${sigData.buy_count || 0}`);
+  console.log(`BUY: ${sigData.buy_count || 0}`);
   console.log(`NOT_YET: ${sigData.not_yet_count || 0}`);
-
   for (const s of (sigData.buy_signals || [])) {
-    console.log(`  BUY: ${s.ticker} price=$${s.current_price} buy_below=$${s.buy_below_price} IV=$${s.intrinsic_value} shares=${s.recommended_shares} $=${s.recommended_dollars}`);
+    console.log(`  BUY: ${s.ticker} price=$${s.current_price} IV=$${s.intrinsic_value} buy_below=$${s.buy_below_price}`);
   }
   for (const s of (sigData.not_yet || [])) {
     console.log(`  NOT_YET: ${s.ticker} price=$${s.current_price} target=$${s.buy_below_price}`);
