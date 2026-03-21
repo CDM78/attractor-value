@@ -34,7 +34,6 @@ export async function tier3PreScreen(db, options = {}) {
       AND md.price IS NOT NULL AND md.price > 0
       AND s.market_cap IS NOT NULL
       AND s.market_cap >= 500
-      AND s.market_cap <= 30000
     ORDER BY s.ticker
     LIMIT ? OFFSET ?
   `;
@@ -81,7 +80,7 @@ export async function tier3PreScreen(db, options = {}) {
 function evaluateStock(stock) {
   const reasons = [];
 
-  // Market cap already filtered in SQL ($500M-$30B)
+  // Market cap floor filtered in SQL (>= $500M, no ceiling)
   const mcap = stock.market_cap;
 
   // Revenue CAGR: prefer EDGAR (more accurate), fallback to Finnhub
