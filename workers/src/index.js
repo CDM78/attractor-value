@@ -168,6 +168,86 @@ export default {
       }
     }
 
+    // Get all current signals (BUY, NOT_YET) with position sizing
+    if (path === '/api/signals') {
+      try {
+        const { ensureMultiTierTables } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const { getCurrentSignals } = await import('./services/signalEngine.js');
+        const { sizeAllBuySignals } = await import('./services/positionSizer.js');
+
+        // Size all BUY signals
+        const positions = await sizeAllBuySignals(env.DB);
+        const signals = await getCurrentSignals(env.DB);
+
+        return jsonResponse({ ...signals, positions });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Refresh all candidate signals
+    if (path === '/api/signals/refresh' && request.method === 'POST') {
+      try {
+        const { ensureMultiTierTables } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const { refreshAllSignals } = await import('./services/signalEngine.js');
+        const result = await refreshAllSignals(env.DB, env);
+        return jsonResponse(result);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Position sizing for a specific ticker
+    if (path === '/api/position-size') {
+      try {
+        const { computePositionSize } = await import('./services/positionSizer.js');
+        const ticker = url.searchParams.get('ticker');
+        if (!ticker) return errorResponse('ticker parameter required', 400);
+
+        const candidate = await env.DB.prepare(
+          "SELECT * FROM candidates WHERE ticker = ? AND signal = 'BUY' AND status = 'active' ORDER BY discovered_date DESC LIMIT 1"
+        ).bind(ticker.toUpperCase()).first();
+
+        if (!candidate) return errorResponse(`No active BUY signal for ${ticker}`, 404);
+
+        const price = await env.DB.prepare(
+          'SELECT price FROM market_data WHERE ticker = ?'
+        ).bind(ticker.toUpperCase()).first();
+
+        const position = await computePositionSize(env.DB, {
+          ticker: candidate.ticker,
+          discovery_tier: candidate.discovery_tier,
+          current_price: price?.price,
+          signal_confidence: candidate.signal_confidence,
+        });
+
+        return jsonResponse(position);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Portfolio config get/set
+    if (path === '/api/portfolio/config') {
+      const { ensureMultiTierTables, getPortfolioConfig, setPortfolioConfig } = await import('./db/queries.js');
+      await ensureMultiTierTables(env.DB);
+
+      if (request.method === 'GET') {
+        const config = await getPortfolioConfig(env.DB);
+        return jsonResponse(config);
+      }
+      if (request.method === 'POST') {
+        const body = await request.json();
+        for (const [key, value] of Object.entries(body)) {
+          await setPortfolioConfig(env.DB, key, value);
+        }
+        const config = await getPortfolioConfig(env.DB);
+        return jsonResponse({ updated: true, config });
+      }
+    }
+
     // Manual regime scan trigger
     if (path === '/api/regime-scan' && request.method === 'POST') {
       try {

@@ -1,7 +1,7 @@
 // Shared analysis logic extracted from analyze.js POST handler.
 // Used by: POST /api/analyze, POST /api/analyze/batch, cron/attractorCheck.js
 
-import { analyzeAttractorStability, buildFinancialContext } from './claude.js';
+import { analyzeAttractorStability, buildFinancialContext, buildTierContext } from './claude.js';
 import { fetch10K, extractMDA } from './edgar.js';
 import { getCompanyNews, formatNewsForPrompt, getInsiderTransactions, getCompanyOfficers } from './finnhub.js';
 import { getFinancialsForTicker } from '../db/queries.js';
@@ -268,4 +268,119 @@ export async function runSingleAnalysis(env, ticker) {
   }
 
   return { analysis: result, message: `Analysis complete for ${ticker}` };
+}
+
+/**
+ * Run attractor analysis for a multi-tier candidate.
+ * Injects tier-specific context (DKS flywheel, crisis assessment, regime thesis)
+ * and stores results linked to the candidate record.
+ */
+export async function runCandidateAnalysis(env, candidateId) {
+  const candidate = await env.DB.prepare(
+    'SELECT * FROM candidates WHERE id = ?'
+  ).bind(candidateId).first();
+
+  if (!candidate) throw new Error(`Candidate ${candidateId} not found`);
+
+  // Build tier-specific context for prompt injection
+  const tierContext = buildTierContext(candidate);
+
+  // Run standard analysis with tier context injected via options
+  const stock = await env.DB.prepare(
+    'SELECT * FROM stocks WHERE ticker = ?'
+  ).bind(candidate.ticker).first();
+  if (!stock) throw new Error(`Stock ${candidate.ticker} not found`);
+
+  const financials = await getFinancialsForTicker(env.DB, candidate.ticker);
+  const marketData = await env.DB.prepare(
+    'SELECT * FROM market_data WHERE ticker = ?'
+  ).bind(candidate.ticker).first();
+
+  const isSmallCap = stock.cap_tier === 'small' ||
+    (stock.market_cap && stock.market_cap >= 300 && stock.market_cap <= 2000);
+
+  const analysisOptions = {
+    isSmallCap,
+    insiderOwnershipPct: marketData?.insider_ownership_pct ?? null,
+    tierContext,
+  };
+
+  const financialContext = buildFinancialContext(stock, financials, marketData, null, null, analysisOptions);
+
+  // Fetch MD&A and news (best effort)
+  let mdaText = null;
+  try {
+    const filingUrl = await fetch10K(candidate.ticker);
+    if (filingUrl) mdaText = await extractMDA(filingUrl);
+  } catch { /* best effort */ }
+
+  let newsContext = '';
+  try {
+    if (env.FINNHUB_API_KEY) {
+      const today = new Date().toISOString().split('T')[0];
+      const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().split('T')[0];
+      const news = await getCompanyNews(candidate.ticker, thirtyDaysAgo, today, env.FINNHUB_API_KEY);
+      newsContext = formatNewsForPrompt(news);
+    }
+  } catch { /* best effort */ }
+
+  let economicContext = '';
+  try {
+    if (env.FRED_API_KEY) {
+      const snapshot = await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
+      economicContext = formatEconomicContextForPrompt(snapshot);
+    }
+  } catch { /* best effort */ }
+
+  // Run Claude analysis with tier context
+  const result = await analyzeAttractorStability(
+    candidate.ticker, stock.company_name, financialContext,
+    mdaText, newsContext, env.ANTHROPIC_API_KEY, economicContext, analysisOptions
+  );
+
+  // Update candidate with attractor results
+  const effectiveScore = result.adjusted_attractor_score ?? result.attractor_stability_score;
+  await env.DB.prepare(`
+    UPDATE candidates SET
+      attractor_score = ?,
+      bull_score = ?,
+      bear_score = ?,
+      attractor_analysis_date = ?
+    WHERE id = ?
+  `).bind(
+    effectiveScore,
+    result.attractor_stability_score,
+    result.bear_raw_score ?? null,
+    result.analysis_date,
+    candidateId
+  ).run();
+
+  // Store full analysis in attractor_analysis table (linked to candidate)
+  await env.DB.prepare(`
+    INSERT INTO attractor_analysis
+    (ticker, analysis_date, revenue_durability_score, competitive_reinforcement_score,
+     industry_structure_score, demand_feedback_score, adaptation_capacity_score,
+     capital_allocation_score, attractor_stability_score, network_regime,
+     red_flags, analysis_text, adjusted_attractor_score, candidate_id,
+     bull_case_text, bear_case_text, bear_raw_score)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `).bind(
+    candidate.ticker, result.analysis_date,
+    result.revenue_durability_score, result.competitive_reinforcement_score,
+    result.industry_structure_score, result.demand_feedback_score,
+    result.adaptation_capacity_score, result.capital_allocation_score,
+    result.attractor_stability_score, result.network_regime,
+    result.red_flags, result.analysis_text,
+    effectiveScore, candidateId,
+    result.bull_case_text ?? null, result.bear_case_text ?? null,
+    result.bear_raw_score ?? null
+  ).run();
+
+  return {
+    candidate_id: candidateId,
+    ticker: candidate.ticker,
+    attractor_score: effectiveScore,
+    passes_threshold: effectiveScore >= 2.5,
+    analysis: result,
+  };
 }

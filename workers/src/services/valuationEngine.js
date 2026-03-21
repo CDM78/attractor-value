@@ -136,6 +136,133 @@ export function calculateGrahamValuation(financials, marketData, aaaBondYieldPct
   };
 }
 
+/**
+ * Tier 3 Valuation: Growth-Adjusted Revenue Model
+ * For emerging growth companies where Graham formula is inappropriate.
+ * Projects revenue forward at decelerating growth, applies target margins, discounts back.
+ */
+export function calculateTier3Valuation(candidate, financials, marketData, attractorScore, economicEnvironment) {
+  if (!financials || financials.length < 2 || !marketData?.price) return null;
+
+  const recent = financials[0];
+  const revenueTTM = recent?.revenue;
+  const sharesOutstanding = recent?.shares_outstanding;
+  if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;
+
+  // Revenue CAGR from prescreen data
+  const prescreenData = typeof candidate.prescreen_data === 'string'
+    ? JSON.parse(candidate.prescreen_data) : (candidate.prescreen_data || {});
+  const revenueGrowth = prescreenData.revenue_cagr_3yr || 0.15;
+
+  // Project revenue 3 years forward at decelerating growth
+  const y1Growth = revenueGrowth * 0.85;
+  const y2Growth = revenueGrowth * 0.70;
+  const y3Growth = revenueGrowth * 0.55;
+  const revenue3yr = revenueTTM * (1 + y1Growth) * (1 + y2Growth) * (1 + y3Growth);
+
+  // Target operating margin: estimate from current trajectory
+  const netMargin = recent.net_income && revenueTTM > 0 ? recent.net_income / revenueTTM : 0.10;
+  const targetOperatingMargin = Math.max(netMargin + 0.05, 0.10); // Assume margin expansion
+
+  // Estimated EPS at year 3
+  const estimatedEarnings3yr = revenue3yr * targetOperatingMargin;
+  const estimatedEPS3yr = estimatedEarnings3yr / sharesOutstanding;
+
+  // Terminal P/E based on expected growth at year 3
+  const terminalPE = Math.min(25, 10 + y3Growth * 100);
+  const terminalValue = estimatedEPS3yr * terminalPE;
+
+  // Discount back at 12% required return
+  const discountRate = 0.12;
+  const intrinsicValue = terminalValue / Math.pow(1 + discountRate, 3);
+
+  if (intrinsicValue <= 0) return null;
+
+  // Margin of safety — attractor-informed + tier premium
+  const baseMargin = (attractorScore ?? 3.0) >= 3.5 ? 0.25 : 0.35;
+  const tierPremium = 0.05; // Growth carries more uncertainty
+  const envPremium = economicEnvironment === 'STRESSED' ? 0.05 : 0;
+  const smallCapPremium = (marketData.market_cap || 999999) < 2000 ? 0.05 : 0;
+  const totalMargin = Math.min(baseMargin + tierPremium + envPremium + smallCapPremium, 0.60);
+
+  const buyBelow = intrinsicValue * (1 - totalMargin);
+  const discountToIV = ((intrinsicValue - marketData.price) / intrinsicValue) * 100;
+
+  return {
+    ticker: marketData.ticker || candidate.ticker,
+    intrinsic_value: round(intrinsicValue, 2),
+    buy_below_price: round(buyBelow, 2),
+    margin_of_safety: round(totalMargin, 2),
+    discount_to_iv_pct: round(discountToIV, 1),
+    valuation_method: 'growth_adjusted_revenue',
+    revenue_ttm: round(revenueTTM, 0),
+    projected_revenue_3yr: round(revenue3yr, 0),
+    target_operating_margin: round(targetOperatingMargin, 3),
+    terminal_pe: round(terminalPE, 1),
+    deceleration: { y1: round(y1Growth, 3), y2: round(y2Growth, 3), y3: round(y3Growth, 3) },
+    calculated_at: new Date().toISOString(),
+  };
+}
+
+/**
+ * Tier 4 Valuation: Scenario-Weighted Model
+ * For regime transition beneficiaries where the thesis depends on an external structural shift.
+ */
+export function calculateTier4Valuation(candidate, financials, marketData, regime, attractorScore, economicEnvironment) {
+  if (!financials || financials.length < 2 || !marketData?.price) return null;
+
+  const recent = financials[0];
+  const revenueTTM = recent?.revenue;
+  const sharesOutstanding = recent?.shares_outstanding;
+  if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;
+
+  const operatingMargin = recent.net_income && revenueTTM > 0
+    ? recent.net_income / revenueTTM : 0.10;
+
+  // Bull case: regime fully materializes
+  const revenueImpactBull = 0.40; // 40% revenue uplift from regime
+  const bullRevenue = revenueTTM * (1 + revenueImpactBull);
+  const bullEarnings = bullRevenue * operatingMargin * 1.15; // margin expansion
+  const bullPE = 18;
+  const bullValue = (bullEarnings / sharesOutstanding) * bullPE;
+
+  // Bear case: regime fizzles
+  const bearRevenue = revenueTTM * 1.05; // modest organic growth
+  const bearEarnings = bearRevenue * operatingMargin;
+  const bearPE = 14;
+  const bearValue = (bearEarnings / sharesOutstanding) * bearPE;
+
+  // Weight by adjacent possible score
+  const adjPossible = regime?.adjacent_possible_score || 3;
+  const bullWeight = adjPossible >= 4 ? 0.65 : adjPossible >= 3 ? 0.55 : 0.45;
+  const bearWeight = 1 - bullWeight;
+  const weightedIV = bullValue * bullWeight + bearValue * bearWeight;
+
+  if (weightedIV <= 0) return null;
+
+  // Margin of safety — higher for regime uncertainty
+  const baseMargin = (attractorScore ?? 3.0) >= 3.5 ? 0.30 : 0.40;
+  const envPremium = economicEnvironment === 'STRESSED' ? 0.05 : 0;
+  const totalMargin = Math.min(baseMargin + envPremium, 0.60);
+
+  const buyBelow = weightedIV * (1 - totalMargin);
+  const discountToIV = ((weightedIV - marketData.price) / weightedIV) * 100;
+
+  return {
+    ticker: marketData.ticker || candidate.ticker,
+    intrinsic_value: round(weightedIV, 2),
+    bull_value: round(bullValue, 2),
+    bear_value: round(bearValue, 2),
+    scenario_weights: { bull: bullWeight, bear: bearWeight },
+    buy_below_price: round(buyBelow, 2),
+    margin_of_safety: round(totalMargin, 2),
+    discount_to_iv_pct: round(discountToIV, 1),
+    valuation_method: 'scenario_weighted',
+    adjacent_possible_score: adjPossible,
+    calculated_at: new Date().toISOString(),
+  };
+}
+
 function round(n, decimals) {
   return Math.round(n * Math.pow(10, decimals)) / Math.pow(10, decimals);
 }

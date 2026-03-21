@@ -320,6 +320,7 @@ ${newsContext || ''}
 
 ${economicContext || ''}
 
+${options.tierContext || ''}
 ${smallCapSection}SECULAR DISRUPTION ASSESSMENT:
 After completing the attractor stability analysis, evaluate whether this company's PRIMARY INDUSTRY is undergoing a secular phase transition. This is distinct from the company-level analysis above — you are evaluating the industry, not the company.
 
@@ -565,4 +566,65 @@ export function buildFinancialContext(stock, financials, marketData, valuation, 
   }
 
   return lines.join('\n');
+}
+
+/**
+ * Build tier-specific context for attractor analysis prompt injection.
+ * This gives the attractor analysis relevant discovery context from T2/T3/T4.
+ */
+export function buildTierContext(candidate) {
+  if (!candidate?.discovery_tier) return '';
+
+  const lines = [];
+
+  if (candidate.discovery_tier === 'tier2') {
+    lines.push('DISCOVERY CONTEXT — TIER 2 (Crisis Dislocation):');
+    lines.push('This company was identified during a market crisis as a quality company with a temporary price dislocation.');
+    if (candidate.price_decline_pct) {
+      lines.push(`Stock declined ${Math.abs(candidate.price_decline_pct * 100).toFixed(0)}% from pre-crisis levels.`);
+    }
+    if (candidate.crisis_assessment) {
+      lines.push(`Crisis impact assessment: ${candidate.crisis_assessment}`);
+    }
+    lines.push('Focus your analysis on whether the competitive position is INTACT despite the price decline.');
+    lines.push('Key question: Is this a temporary dislocation or is the crisis accelerating pre-existing structural decline?');
+  }
+
+  if (candidate.discovery_tier === 'tier3') {
+    lines.push('DISCOVERY CONTEXT — TIER 3 (Emerging DKS / Growth):');
+    lines.push('This company was identified as building a self-reinforcing competitive position (DKS flywheel).');
+    if (candidate.flywheel_description) {
+      lines.push(`Identified flywheel: ${candidate.flywheel_description}`);
+    }
+    if (candidate.moat_type) {
+      lines.push(`Moat type: ${candidate.moat_type}`);
+    }
+    if (candidate.dks_score) {
+      lines.push(`DKS evaluation score: ${candidate.dks_score}/5`);
+    }
+    if (candidate.scaling_exponent) {
+      lines.push(`Scaling exponent: ${candidate.scaling_exponent} (>1.0 = superlinear growth)`);
+    }
+    lines.push('Focus on whether the flywheel is genuinely self-reinforcing or could be disrupted.');
+    lines.push('Key question: Is the competitive moat deepening with scale, or is growth masking competitive vulnerability?');
+  }
+
+  if (candidate.discovery_tier === 'tier4') {
+    lines.push('DISCOVERY CONTEXT — TIER 4 (Regime Transition):');
+    lines.push('This company was identified as a beneficiary of a structural economic/policy/technology shift.');
+    if (candidate.prescreen_data) {
+      const data = typeof candidate.prescreen_data === 'string'
+        ? JSON.parse(candidate.prescreen_data) : candidate.prescreen_data;
+      if (data.regime_name) lines.push(`Regime: ${data.regime_name}`);
+      if (data.beneficiary_mechanism) lines.push(`Beneficiary mechanism: ${data.beneficiary_mechanism}`);
+      if (data.exposure_pct) lines.push(`Revenue exposure to regime: ${(data.exposure_pct * 100).toFixed(0)}%`);
+    }
+    if (candidate.csi_score != null) {
+      lines.push(`Consensus Saturation Index: ${candidate.csi_score} (${candidate.csi_interpretation || 'unknown'})`);
+    }
+    lines.push('Focus on whether the company has genuine structural advantages in the new regime, not just narrative momentum.');
+    lines.push('Key question: Would this company prosper even if the regime thesis partially fails?');
+  }
+
+  return lines.length > 0 ? lines.join('\n') + '\n' : '';
 }

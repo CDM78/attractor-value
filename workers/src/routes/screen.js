@@ -59,6 +59,129 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
     }
   }
 
+  // POST /api/screen/tier2 — Tier 2 crisis dislocation pre-screen
+  if (request.method === 'POST' && path.startsWith('/api/screen/tier2')) {
+    try {
+      const { ensureMultiTierTables } = await import('../db/queries.js');
+      await ensureMultiTierTables(env.DB);
+
+      const { getEnvironmentStatus } = await import('../services/regimeDetector.js');
+      const envStatus = await getEnvironmentStatus(env.DB, env);
+      const crisisContext = envStatus.crisis;
+
+      if (!crisisContext?.crisis_active) {
+        return jsonResponse({
+          crisis_active: false,
+          message: 'No crisis detected — Tier 2 screening is inactive. Crisis requires >=2 severe signals (S&P 500 ≤-15%, VIX >30, credit spreads elevated) or S&P 500 ≤-20%.',
+        });
+      }
+
+      const { tier2PreScreen, assessCrisisImpact, storeTier2Candidates } = await import('../services/tier2Screen.js');
+      const limit = parseInt(url.searchParams.get('limit') || '100');
+      const offset = parseInt(url.searchParams.get('offset') || '0');
+
+      const results = await tier2PreScreen(env.DB, crisisContext, { limit, offset });
+
+      // Store passes as candidates
+      if (results.candidates.length > 0) {
+        const stored = await storeTier2Candidates(env.DB, results.candidates);
+        results.stored = stored;
+      }
+
+      // Optionally run crisis impact assessment on first N candidates
+      const assessLimit = parseInt(url.searchParams.get('assess') || '0');
+      if (assessLimit > 0 && results.candidates.length > 0) {
+        const assessments = [];
+        for (const candidate of results.candidates.slice(0, assessLimit)) {
+          try {
+            const assessment = await assessCrisisImpact(candidate.ticker, crisisContext, env, env.DB);
+            assessments.push(assessment);
+            // Update candidate with crisis assessment classification
+            candidate.crisis_assessment = assessment.classification;
+          } catch (e) {
+            assessments.push({ ticker: candidate.ticker, error: e.message });
+          }
+        }
+        results.crisis_assessments = assessments;
+        results.dislocations = assessments.filter(a => a.classification === 'temporary_dislocation');
+      }
+
+      return jsonResponse(results);
+    } catch (err) {
+      return errorResponse(err.message);
+    }
+  }
+
+  // GET /api/screen/tier2 — Get existing Tier 2 candidates
+  if (request.method === 'GET' && path.startsWith('/api/screen/tier2')) {
+    try {
+      const { getCandidatesByTier } = await import('../db/queries.js');
+      const signal = url.searchParams.get('signal') || null;
+      const candidates = await getCandidatesByTier(env.DB, 'tier2', signal);
+      return jsonResponse({ candidates, count: candidates.length });
+    } catch (err) {
+      return errorResponse(err.message);
+    }
+  }
+
+  // POST /api/screen/tier4 — Tier 4 regime transition beneficiary screen
+  if (request.method === 'POST' && path.startsWith('/api/screen/tier4')) {
+    try {
+      const { ensureMultiTierTables, getActiveRegimes } = await import('../db/queries.js');
+      await ensureMultiTierTables(env.DB);
+
+      const regimes = await getActiveRegimes(env.DB);
+      if (regimes.length === 0) {
+        return jsonResponse({
+          active_regimes: 0,
+          message: 'No active regimes in regime_registry — Tier 4 screening is inactive. Register a regime first via /api/regime.',
+        });
+      }
+
+      const { tier4BeneficiaryScreen, storeTier4Candidates } = await import('../services/tier4Screen.js');
+      const limit = parseInt(url.searchParams.get('limit') || '100');
+      const offset = parseInt(url.searchParams.get('offset') || '0');
+      const regimeId = url.searchParams.get('regime_id');
+
+      // Screen against specified regime or first active regime
+      const targetRegime = regimeId
+        ? regimes.find(r => r.id === parseInt(regimeId))
+        : regimes[0];
+
+      if (!targetRegime) {
+        return errorResponse(`Regime ID ${regimeId} not found among active regimes`, 404);
+      }
+
+      const results = await tier4BeneficiaryScreen(env.DB, targetRegime, { limit, offset });
+
+      // Store passes as candidates
+      if (results.candidates.length > 0) {
+        // Attach regime_id to candidates before storing
+        for (const c of results.candidates) {
+          c.regime_id = targetRegime.id;
+        }
+        const stored = await storeTier4Candidates(env.DB, results.candidates);
+        results.stored = stored;
+      }
+
+      return jsonResponse(results);
+    } catch (err) {
+      return errorResponse(err.message);
+    }
+  }
+
+  // GET /api/screen/tier4 — Get existing Tier 4 candidates
+  if (request.method === 'GET' && path.startsWith('/api/screen/tier4')) {
+    try {
+      const { getCandidatesByTier } = await import('../db/queries.js');
+      const signal = url.searchParams.get('signal') || null;
+      const candidates = await getCandidatesByTier(env.DB, 'tier4', signal);
+      return jsonResponse({ candidates, count: candidates.length });
+    } catch (err) {
+      return errorResponse(err.message);
+    }
+  }
+
   // POST /api/screen/batch — batch screen stocks (small caps or by tier)
   if (request.method === 'POST' && path.startsWith('/api/screen/batch')) {
     return await batchScreen(env, url, jsonResponse, errorResponse);
