@@ -21,7 +21,7 @@ export default function BulkAnalysis() {
       const res = await fetch(`${API_BASE}/api/admin/bulk-analyze/progress`)
       if (res.ok) {
         const data = await res.json()
-        if (data.total > 0 && data.status === 'running') {
+        if (data && data.total > 0 && !data.complete) {
           setProgress(data)
           setPhase('running')
           startPolling()
@@ -29,18 +29,19 @@ export default function BulkAnalysis() {
           setLoadingCount(false)
           return
         }
-        if (data.total > 0 && data.status === 'complete') {
+        if (data && data.total > 0 && data.complete) {
           setProgress(data)
           setPhase('complete')
           setCandidateCount(data.total)
           setLoadingCount(false)
           return
         }
-        if (data.pending != null) {
+        if (data && data.pending != null) {
           setCandidateCount(data.pending)
           setLoadingCount(false)
           return
         }
+        // data is null — no previous bulk analysis run, fall through
       }
       // Fallback: count from signals
       const sigRes = await fetch(`${API_BASE}/api/signals`)
@@ -68,8 +69,9 @@ export default function BulkAnalysis() {
         const res = await fetch(`${API_BASE}/api/admin/bulk-analyze/progress`)
         if (!res.ok) return
         const data = await res.json()
+        if (!data) return
         setProgress(data)
-        if (data.status === 'complete' || data.status === 'cancelled') {
+        if (data.complete || data.status === 'cancelled') {
           clearInterval(pollRef.current)
           pollRef.current = null
           setPhase('complete')

@@ -29,11 +29,11 @@ export default function AdminPage() {
       const data = await res.json()
       setConfig({
         total_capital: data.total_capital ?? '',
-        t2_pct: data.t2_pct ?? '',
-        t3_pct: data.t3_pct ?? '',
-        t4_pct: data.t4_pct ?? '',
-        flexible_pct: data.flexible_pct ?? '',
-        cash_reserve_pct: data.cash_reserve_pct ?? '',
+        t2_pct: data.tier2_allocation ? String(Math.round(parseFloat(data.tier2_allocation) * 100)) : '',
+        t3_pct: data.tier3_allocation ? String(Math.round(parseFloat(data.tier3_allocation) * 100)) : '',
+        t4_pct: data.tier4_allocation ? String(Math.round(parseFloat(data.tier4_allocation) * 100)) : '',
+        flexible_pct: data.flexible_allocation ? String(Math.round(parseFloat(data.flexible_allocation) * 100)) : '',
+        cash_reserve_pct: data.cash_reserve ? String(Math.round(parseFloat(data.cash_reserve) * 100)) : '',
       })
     } catch (err) {
       setError(err.message)
@@ -46,12 +46,12 @@ export default function AdminPage() {
     setError(null)
     try {
       const payload = {
-        total_capital: Number(config.total_capital) || 0,
-        t2_pct: Number(config.t2_pct) || 0,
-        t3_pct: Number(config.t3_pct) || 0,
-        t4_pct: Number(config.t4_pct) || 0,
-        flexible_pct: Number(config.flexible_pct) || 0,
-        cash_reserve_pct: Number(config.cash_reserve_pct) || 0,
+        total_capital: String(Number(config.total_capital) || 10000),
+        tier2_allocation: String((Number(config.t2_pct) || 0) / 100),
+        tier3_allocation: String((Number(config.t3_pct) || 0) / 100),
+        tier4_allocation: String((Number(config.t4_pct) || 0) / 100),
+        flexible_allocation: String((Number(config.flexible_pct) || 0) / 100),
+        cash_reserve: String((Number(config.cash_reserve_pct) || 0) / 100),
       }
       const res = await fetch(`${API_BASE}/api/portfolio/config`, {
         method: 'POST',
