@@ -164,9 +164,19 @@ export function calculateTier3Valuation(candidate, financials, marketData, attra
   const y3Growth = revenueGrowth * 0.55;
   const revenue3yr = revenueTTM * (1 + y1Growth) * (1 + y2Growth) * (1 + y3Growth);
 
-  // Target operating margin: estimate from current trajectory
+  // Target operating margin: estimate from gross margin and current trajectory
+  // High gross margin companies (SaaS, software) converge to higher operating margins at scale
   const netMargin = recent.net_income && revenueTTM > 0 ? recent.net_income / revenueTTM : 0.10;
-  const targetOperatingMargin = Math.max(netMargin + 0.05, 0.10); // Assume margin expansion
+  const grossMarginPct = prescreenData.gross_margin_estimate || null;
+  let targetOperatingMargin;
+  if (grossMarginPct && grossMarginPct > 0.50) {
+    // High gross margin: target = midpoint between current net margin and 50% of gross margin
+    // e.g., 80% gross → 40% target ceiling, company at 18% net → target ~29%
+    const matureCeiling = Math.min(grossMarginPct * 0.50, 0.45);
+    targetOperatingMargin = Math.max((netMargin + matureCeiling) / 2, netMargin + 0.05);
+  } else {
+    targetOperatingMargin = Math.max(netMargin + 0.05, 0.10);
+  }
 
   // Estimated EPS at year 3
   const estimatedEarnings3yr = revenue3yr * targetOperatingMargin;
