@@ -310,3 +310,76 @@ CREATE TABLE IF NOT EXISTS system_config (
     value TEXT NOT NULL,
     updated_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+-- ============================================
+-- Multi-Tier Pipeline Tables (Restructuring)
+-- ============================================
+
+-- Regime registry — tracks structural regime transitions
+CREATE TABLE IF NOT EXISTS regime_registry (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    catalyst_type TEXT CHECK(catalyst_type IN
+        ('commodity_break', 'policy', 'technology', 'geopolitical')),
+    start_date TEXT NOT NULL,
+    affected_sectors TEXT NOT NULL,      -- JSON array
+    regime_keywords TEXT NOT NULL,        -- JSON array
+    estimated_market_size_b REAL,
+    adjacent_possible_score INTEGER,
+    scurve_position TEXT,
+    scurve_penetration_pct REAL,
+    status TEXT DEFAULT 'pending'
+      CHECK(status IN ('pending', 'active', 'matured', 'invalidated')),
+    confirmed_by TEXT,                   -- 'quantitative' | 'repeated_ai' | 'both'
+    ai_flag_count INTEGER DEFAULT 1,
+    last_assessed TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+-- Unified candidates table (all tiers feed into this)
+CREATE TABLE IF NOT EXISTS candidates (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    ticker TEXT NOT NULL,
+    discovery_tier TEXT NOT NULL CHECK(discovery_tier IN ('tier2', 'tier3', 'tier4')),
+    regime_id INTEGER,
+    discovered_date TEXT NOT NULL,
+    prescreen_pass INTEGER NOT NULL DEFAULT 0,
+    prescreen_data TEXT,                 -- JSON with tier-specific metrics
+    dks_score REAL,
+    flywheel_description TEXT,
+    moat_type TEXT,
+    scaling_exponent REAL,
+    crisis_assessment TEXT,
+    price_decline_pct REAL,
+    csi_score INTEGER,
+    csi_interpretation TEXT,
+    attractor_score REAL,
+    bull_score REAL,
+    bear_score REAL,
+    attractor_analysis_date TEXT,
+    intrinsic_value REAL,
+    buy_below_price REAL,
+    margin_of_safety REAL,
+    valuation_method TEXT,
+    valuation_date TEXT,
+    signal TEXT CHECK(signal IN ('BUY', 'NOT_YET', 'PASS')),
+    signal_confidence TEXT,
+    signal_reason TEXT,
+    recommended_shares INTEGER,
+    recommended_dollars REAL,
+    recommended_pct REAL,
+    status TEXT DEFAULT 'active' CHECK(status IN ('active', 'expired', 'purchased')),
+    FOREIGN KEY (ticker) REFERENCES stocks(ticker),
+    FOREIGN KEY (regime_id) REFERENCES regime_registry(id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_candidates_ticker ON candidates(ticker, discovery_tier);
+CREATE INDEX IF NOT EXISTS idx_candidates_signal ON candidates(signal);
+CREATE INDEX IF NOT EXISTS idx_regime_status ON regime_registry(status);
+
+-- Portfolio configuration
+CREATE TABLE IF NOT EXISTS portfolio_config (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL,
+    updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+);

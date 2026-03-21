@@ -6,6 +6,59 @@ import { getOrFetchBondYield } from '../services/fred.js';
 export async function screenRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
   const url = new URL(request.url);
 
+  // POST /api/screen/tier3 — Tier 3 emerging DKS pre-screen
+  if (request.method === 'POST' && path.startsWith('/api/screen/tier3')) {
+    try {
+      const { ensureMultiTierTables } = await import('../db/queries.js');
+      await ensureMultiTierTables(env.DB);
+
+      const { tier3PreScreen, storeTier3Candidates } = await import('../services/tier3Screen.js');
+      const limit = parseInt(url.searchParams.get('limit') || '100');
+      const offset = parseInt(url.searchParams.get('offset') || '0');
+
+      const results = await tier3PreScreen(env.DB, { limit, offset });
+
+      // Store passes as candidates
+      if (results.candidates.length > 0) {
+        const stored = await storeTier3Candidates(env.DB, results.candidates);
+        results.stored = stored;
+      }
+
+      // Optionally run DKS evaluation on first N candidates
+      const evalLimit = parseInt(url.searchParams.get('eval') || '0');
+      if (evalLimit > 0 && results.candidates.length > 0) {
+        const { evaluateDKS, storeDKSResults } = await import('../services/dksEvaluator.js');
+        const dksResults = [];
+        for (const candidate of results.candidates.slice(0, evalLimit)) {
+          try {
+            const dks = await evaluateDKS(candidate.ticker, env, env.DB);
+            await storeDKSResults(env.DB, candidate.ticker, dks);
+            dksResults.push(dks);
+          } catch (e) {
+            dksResults.push({ ticker: candidate.ticker, error: e.message });
+          }
+        }
+        results.dks_evaluations = dksResults;
+      }
+
+      return jsonResponse(results);
+    } catch (err) {
+      return errorResponse(err.message);
+    }
+  }
+
+  // GET /api/screen/tier3 — Get existing Tier 3 candidates
+  if (request.method === 'GET' && path.startsWith('/api/screen/tier3')) {
+    try {
+      const { getCandidatesByTier } = await import('../db/queries.js');
+      const signal = url.searchParams.get('signal') || null;
+      const candidates = await getCandidatesByTier(env.DB, 'tier3', signal);
+      return jsonResponse({ candidates, count: candidates.length });
+    } catch (err) {
+      return errorResponse(err.message);
+    }
+  }
+
   // POST /api/screen/batch — batch screen stocks (small caps or by tier)
   if (request.method === 'POST' && path.startsWith('/api/screen/batch')) {
     return await batchScreen(env, url, jsonResponse, errorResponse);

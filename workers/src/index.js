@@ -144,12 +144,38 @@ export default {
       return jsonResponse({ status: 'ok', timestamp: new Date().toISOString() });
     }
 
-    // Economic snapshot
+    // Economic snapshot (legacy)
     if (path === '/api/economic-snapshot') {
       try {
         const { getOrFetchEconomicSnapshot } = await import('./services/fred.js');
         const snapshot = await getOrFetchEconomicSnapshot(env.DB, env.FRED_API_KEY);
         return jsonResponse(snapshot);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Full environment status (crisis + regimes + economic snapshot)
+    if (path === '/api/environment') {
+      try {
+        const { ensureMultiTierTables } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const { getEnvironmentStatus } = await import('./services/regimeDetector.js');
+        const status = await getEnvironmentStatus(env.DB, env);
+        return jsonResponse(status);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Manual regime scan trigger
+    if (path === '/api/regime-scan' && request.method === 'POST') {
+      try {
+        const { ensureMultiTierTables } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const { scanForRegimes } = await import('./services/regimeDetector.js');
+        const result = await scanForRegimes(env, env.DB);
+        return jsonResponse(result);
       } catch (err) {
         return errorResponse(err.message);
       }
@@ -195,6 +221,14 @@ export default {
       await ensureSmallCapTables(env.DB);
     } catch (err) {
       console.error('ensureSmallCapTables error:', err.message);
+    }
+
+    // Ensure multi-tier pipeline tables exist
+    try {
+      const { ensureMultiTierTables } = await import('./db/queries.js');
+      await ensureMultiTierTables(env.DB);
+    } catch (err) {
+      console.error('ensureMultiTierTables error:', err.message);
     }
 
     const mode = await determineMode(env.DB);

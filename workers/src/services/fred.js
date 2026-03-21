@@ -380,5 +380,53 @@ export function formatEconomicContextForPrompt(snapshot) {
   return lines.join('\n');
 }
 
+/**
+ * Detect crisis conditions for Tier 2 activation.
+ * Uses S&P 500 decline, VIX, and credit spread widening.
+ * @param {object} snapshot - Economic snapshot from getEconomicSnapshot
+ * @param {object} marketData - { sp500_current, sp500_52w_high } from Yahoo
+ */
+export function detectCrisis(snapshot, marketData = {}) {
+  const sp500Decline = marketData.sp500_52w_high > 0
+    ? (marketData.sp500_current - marketData.sp500_52w_high) / marketData.sp500_52w_high
+    : 0;
+
+  const vixSustained = snapshot?.vix != null && snapshot.vix > 30;
+
+  // Credit spread widening (compare to historical median)
+  const spreadElevated = snapshot?.credit_spread != null &&
+    snapshot.credit_spread > HISTORICAL.credit_spread_median * 2.0;
+
+  const severeSignals = [
+    sp500Decline <= -0.15,
+    vixSustained,
+    spreadElevated,
+  ].filter(Boolean).length;
+
+  const crisisActive = severeSignals >= 2 || sp500Decline <= -0.20;
+
+  let severity = 'none';
+  if (sp500Decline <= -0.30) severity = 'severe';
+  else if (sp500Decline <= -0.20) severity = 'moderate';
+  else if (crisisActive) severity = 'mild';
+
+  // Dynamic stock decline threshold for Tier 2 pre-screen
+  const stockDeclineThreshold = severity === 'severe' ? -0.15
+    : severity === 'moderate' ? -0.18
+    : -0.20;
+
+  return {
+    crisis_active: crisisActive,
+    severity,
+    sp500_decline: Math.round(sp500Decline * 1000) / 1000,
+    sp500_current: marketData.sp500_current,
+    sp500_52w_high: marketData.sp500_52w_high,
+    vix: snapshot?.vix,
+    credit_spread: snapshot?.credit_spread,
+    severe_signal_count: severeSignals,
+    stock_decline_threshold: stockDeclineThreshold,
+  };
+}
+
 // Re-export constants for use by other modules
 export { HISTORICAL };
