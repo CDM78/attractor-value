@@ -90,9 +90,9 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
   // Parse bear case scores
   const bearScores = parseBearCaseResponse(bearText);
 
-  // Compute weighted composite: bull (60%) + bear (40%)
-  const BULL_WEIGHT = 0.6;
-  const BEAR_WEIGHT = 0.4;
+  // Compute weighted composite: 60% bear, 40% bull (intentionally pessimistic)
+  const BULL_WEIGHT = 0.4;
+  const BEAR_WEIGHT = 0.6;
 
   const factorKeys = [
     'revenue_durability_score', 'competitive_reinforcement_score',

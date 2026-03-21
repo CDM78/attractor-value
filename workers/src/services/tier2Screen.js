@@ -105,6 +105,11 @@ export async function tier2PreScreen(db, crisisContext, options = {}) {
 function evaluateCrisisCandidate(stock, declineThreshold) {
   const reasons = [];
 
+  // --- Price decline >= threshold (approximated using current price vs market cap trajectory) ---
+  // In a real crisis, we'd compare to pre-crisis price. Without that data stored,
+  // we skip this check and rely on the crisis context itself (the market IS in crisis).
+  // TODO: Store pre-crisis prices when crisis is first detected for proper decline filtering.
+
   // --- Earnings stability: >= 7 of 10 years positive EPS ---
   const positiveYears = stock.positive_eps_years || 0;
   const totalYears = stock.total_eps_years || 0;

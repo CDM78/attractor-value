@@ -98,6 +98,12 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
             assessments.push(assessment);
             // Update candidate with crisis assessment classification
             candidate.crisis_assessment = assessment.classification;
+            // Only temporary_dislocation proceeds — mark others as PASS
+            if (assessment.classification !== 'temporary_dislocation') {
+              await env.DB.prepare(
+                "UPDATE candidates SET signal = 'PASS', signal_reason = ? WHERE ticker = ? AND discovery_tier = 'tier2' AND status = 'active'"
+              ).bind(`Crisis impact: ${assessment.classification}`, candidate.ticker).run();
+            }
           } catch (e) {
             assessments.push({ ticker: candidate.ticker, error: e.message });
           }
