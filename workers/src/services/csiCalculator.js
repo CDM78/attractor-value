@@ -117,19 +117,30 @@ export async function computeCSI(ticker, regime, db, env) {
   }
   components.valuation_premium_score = valuationScore;
 
-  // --- Component 3: P/E elevated (simple threshold) ---
+  // --- Component 3: Volume anomaly ---
+  // 30-day avg volume / 180-day avg volume >= 2.5 = saturated
+  let volumeScore = 0;
   try {
-    const md = await db.prepare(
-      'SELECT pe_ratio FROM market_data WHERE ticker = ?'
+    const stockVolume = await db.prepare(
+      'SELECT avg_volume_30d, avg_volume_180d FROM stocks WHERE ticker = ?'
     ).bind(ticker).first();
-    if (md?.pe_ratio && md.pe_ratio > 30) {
-      components.pe_elevated = true;
+    if (stockVolume?.avg_volume_30d && stockVolume?.avg_volume_180d && stockVolume.avg_volume_180d > 0) {
+      const volumeRatio = stockVolume.avg_volume_30d / stockVolume.avg_volume_180d;
+      components.volume_30d = stockVolume.avg_volume_30d;
+      components.volume_180d = stockVolume.avg_volume_180d;
+      components.volume_ratio = Math.round(volumeRatio * 100) / 100;
+      if (volumeRatio >= 2.5) {
+        volumeScore = 1;
+        components.volume_saturated = true;
+      } else {
+        components.volume_saturated = false;
+      }
     }
-  } catch { /* ignore */ }
-  const peScore = components.pe_elevated ? 1 : 0;
+  } catch { /* columns may not exist yet */ }
+  components.volume_anomaly_score = volumeScore;
 
   // --- Aggregate CSI ---
-  const csiScore = Math.min(newsScore + valuationScore + peScore, 3);
+  const csiScore = Math.min(newsScore + valuationScore + volumeScore, 3);
   const pass = csiScore <= 1;
 
   let interpretation;

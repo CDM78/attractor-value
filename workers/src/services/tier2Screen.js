@@ -36,6 +36,7 @@ export async function tier2PreScreen(db, crisisContext, options = {}) {
     SELECT
       s.ticker, s.company_name, s.sector, s.industry,
       md.price, s.market_cap, md.pe_ratio,
+      s.pre_crisis_price, s.pre_crisis_date,
       -- Count of years with positive EPS (out of up to 10)
       (SELECT COUNT(*) FROM financials f
        WHERE f.ticker = s.ticker AND f.eps > 0
@@ -105,10 +106,16 @@ export async function tier2PreScreen(db, crisisContext, options = {}) {
 function evaluateCrisisCandidate(stock, declineThreshold) {
   const reasons = [];
 
-  // --- Price decline >= threshold (approximated using current price vs market cap trajectory) ---
-  // In a real crisis, we'd compare to pre-crisis price. Without that data stored,
-  // we skip this check and rely on the crisis context itself (the market IS in crisis).
-  // TODO: Store pre-crisis prices when crisis is first detected for proper decline filtering.
+  // --- Price decline >= threshold (compared to pre-crisis snapshot) ---
+  let priceDecline = null;
+  if (stock.pre_crisis_price && stock.pre_crisis_price > 0 && stock.price) {
+    priceDecline = (stock.price - stock.pre_crisis_price) / stock.pre_crisis_price;
+    if (priceDecline > declineThreshold) {
+      // Decline not large enough (declineThreshold is negative, e.g., -0.18)
+      reasons.push(`price_decline_insufficient: ${(priceDecline * 100).toFixed(1)}% vs threshold ${(declineThreshold * 100).toFixed(1)}%`);
+    }
+  }
+  // If no pre-crisis price snapshot exists, skip this check (crisis just started, snapshot pending)
 
   // --- Earnings stability: >= 7 of 10 years positive EPS ---
   const positiveYears = stock.positive_eps_years || 0;
@@ -148,6 +155,8 @@ function evaluateCrisisCandidate(stock, declineThreshold) {
   return {
     passes,
     fail_reason: reasons.length > 0 ? reasons.join('; ') : null,
+    price_decline_pct: priceDecline != null ? Math.round(priceDecline * 1000) / 1000 : null,
+    pre_crisis_price: stock.pre_crisis_price,
     earnings_stability: `${positiveYears}/${Math.min(totalYears, 10)}`,
     debt_equity: debtEquity != null ? Math.round(debtEquity * 100) / 100 : null,
     financial_sector_autopass: isFinancial,

@@ -509,6 +509,20 @@ export default {
           const status = await getEnvironmentStatus(env.DB, env);
           if (status.crisis.crisis_active) {
             console.log(`CRISIS DETECTED: severity=${status.crisis.severity}, S&P decline=${status.crisis.sp500_decline}`);
+
+            // Snapshot pre-crisis prices on transition (only once per crisis)
+            const wasCrisis = await env.DB.prepare(
+              "SELECT value FROM system_config WHERE key = 'crisis_active'"
+            ).first();
+            if (!wasCrisis || wasCrisis.value !== 'true') {
+              const { snapshotPreCrisisPrices } = await import('./services/fred.js');
+              const snapped = await snapshotPreCrisisPrices(env.DB);
+              console.log(`Pre-crisis snapshot: ${snapped} stocks`);
+              await env.DB.prepare(
+                "INSERT OR REPLACE INTO system_config (key, value, updated_at) VALUES ('crisis_active', 'true', datetime('now'))"
+              ).run();
+            }
+
             // Auto-run Tier 2 pre-screen during active crisis
             const { tier2PreScreen, storeTier2Candidates } = await import('./services/tier2Screen.js');
             const results = await tier2PreScreen(env.DB, status.crisis, { limit: 200 });
@@ -516,6 +530,11 @@ export default {
               await storeTier2Candidates(env.DB, results.candidates);
               console.log(`Tier 2: ${results.candidates.length} crisis candidates stored`);
             }
+          } else {
+            // Clear crisis flag when crisis ends
+            await env.DB.prepare(
+              "INSERT OR REPLACE INTO system_config (key, value, updated_at) VALUES ('crisis_active', 'false', datetime('now'))"
+            ).run();
           }
         } catch (err) {
           console.error('Crisis detection error:', err.message);

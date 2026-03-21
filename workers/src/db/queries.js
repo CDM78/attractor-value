@@ -298,6 +298,10 @@ export async function ensureMultiTierTables(db) {
     "ALTER TABLE attractor_analysis ADD COLUMN bear_capital_allocation_score INTEGER",
     "ALTER TABLE attractor_analysis ADD COLUMN bear_raw_score REAL",
     "ALTER TABLE candidates ADD COLUMN analysis_model TEXT DEFAULT 'claude-sonnet-4-20250514'",
+    "ALTER TABLE stocks ADD COLUMN pre_crisis_price REAL",
+    "ALTER TABLE stocks ADD COLUMN pre_crisis_date TEXT",
+    "ALTER TABLE stocks ADD COLUMN avg_volume_30d REAL",
+    "ALTER TABLE stocks ADD COLUMN avg_volume_180d REAL",
     "ALTER TABLE attractor_analysis ADD COLUMN bull_case_text TEXT",
     "ALTER TABLE attractor_analysis ADD COLUMN bear_case_text TEXT",
   ];

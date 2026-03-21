@@ -107,28 +107,37 @@ export function isCreditStressed(hyOAS) {
 export function classifyEnvironment(snapshot) {
   if (!snapshot) return 'UNKNOWN';
 
-  let stressSignals = 0;
+  let stressPoints = 0;
 
-  // Yield curve inverted
-  if (snapshot.yield_curve != null && snapshot.yield_curve < 0) stressSignals++;
+  // Credit spread: > 2.0 = severe (+2), > 1.5 = elevated (+1)
+  if (snapshot.credit_spread != null) {
+    if (snapshot.credit_spread > 2.0) stressPoints += 2;
+    else if (snapshot.credit_spread > 1.5) stressPoints += 1;
+  }
 
-  // Credit spreads elevated (BAA-AAA > 1.5× median)
-  if (snapshot.credit_spread != null && snapshot.credit_spread > HISTORICAL.credit_spread_median * 1.5) stressSignals++;
+  // Yield curve: inverted (<0) = severe (+2), flat (0-0.5) = warning (+1)
+  if (snapshot.yield_curve != null) {
+    if (snapshot.yield_curve < 0) stressPoints += 2;
+    else if (snapshot.yield_curve < 0.5) stressPoints += 1;
+  }
 
-  // HY OAS above 90th percentile
-  if (snapshot.hy_oas != null && snapshot.hy_oas > HISTORICAL.hy_oas_90th) stressSignals++;
+  // High yield OAS: > 6.0 = severe (+2), > 5.0 = elevated (+1)
+  if (snapshot.hy_oas != null) {
+    if (snapshot.hy_oas > 6.0) stressPoints += 2;
+    else if (snapshot.hy_oas > 5.0) stressPoints += 1;
+  }
 
-  // VIX above 30
-  if (snapshot.vix != null && snapshot.vix > 30) stressSignals++;
+  // VIX: > 30 = severe (+2), > 25 = elevated (+1)
+  if (snapshot.vix != null) {
+    if (snapshot.vix > 30) stressPoints += 2;
+    else if (snapshot.vix > 25) stressPoints += 1;
+  }
 
-  // Unemployment rising (>5% is elevated)
-  if (snapshot.unemployment != null && snapshot.unemployment > 5.0) stressSignals++;
+  // Unemployment: > 6.0 = stressed (+1)
+  if (snapshot.unemployment != null && snapshot.unemployment > 6.0) stressPoints += 1;
 
-  // Negative GDP growth
-  if (snapshot.gdp_growth != null && snapshot.gdp_growth < 0) stressSignals++;
-
-  if (stressSignals >= 3) return 'STRESSED';
-  if (stressSignals >= 1) return 'CAUTIOUS';
+  if (stressPoints >= 5) return 'STRESSED';
+  if (stressPoints >= 2) return 'CAUTIOUS';
   return 'NORMAL';
 }
 
@@ -426,6 +435,26 @@ export function detectCrisis(snapshot, marketData = {}) {
     severe_signal_count: severeSignals,
     stock_decline_threshold: stockDeclineThreshold,
   };
+}
+
+/**
+ * Snapshot pre-crisis prices for all stocks when crisis transitions from inactive to active.
+ * Only runs once per crisis activation — not on every daily check.
+ * @param {object} db - D1 database
+ */
+export async function snapshotPreCrisisPrices(db) {
+  const now = new Date().toISOString();
+  // Copy current price into pre_crisis_price for all stocks that have market data
+  const result = await db.prepare(`
+    UPDATE stocks SET
+      pre_crisis_price = (SELECT price FROM market_data WHERE market_data.ticker = stocks.ticker),
+      pre_crisis_date = ?
+    WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+      AND EXISTS (SELECT 1 FROM market_data WHERE market_data.ticker = stocks.ticker AND price IS NOT NULL)
+  `).bind(now).run();
+
+  console.log(`Pre-crisis price snapshot: ${result.meta?.changes || 0} stocks snapshotted at ${now}`);
+  return result.meta?.changes || 0;
 }
 
 // Re-export constants for use by other modules

@@ -107,6 +107,24 @@ export async function dailyRefresh(env, tickerLimit) {
             "UPDATE market_data SET avg_volume = ?, avg_dollar_volume = ? WHERE ticker = ?"
           ).bind(quote.avgVolume, quote.avgDollarVolume, quote.ticker).run();
         } catch { /* avg_volume column may not exist yet */ }
+
+        // Update rolling volume averages on stocks table for CSI computation
+        try {
+          const existing = await env.DB.prepare(
+            "SELECT avg_volume_30d, avg_volume_180d FROM stocks WHERE ticker = ?"
+          ).bind(quote.ticker).first();
+
+          const newVol30 = quote.avgVolume;
+          // Exponential moving average for 180-day: blend old (weight ~0.97) with new (~0.03)
+          // This approximates a 180-day average updated daily
+          const alpha180 = 1 / 30; // ~30 trading days per update cycle
+          const oldVol180 = existing?.avg_volume_180d || newVol30;
+          const newVol180 = Math.round(oldVol180 * (1 - alpha180) + newVol30 * alpha180);
+
+          await env.DB.prepare(
+            "UPDATE stocks SET avg_volume_30d = ?, avg_volume_180d = ? WHERE ticker = ?"
+          ).bind(newVol30, newVol180, quote.ticker).run();
+        } catch { /* columns may not exist yet */ }
       }
 
       stats.pricesUpdated++;
