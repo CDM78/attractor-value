@@ -8,24 +8,21 @@ export const SCREEN_DEFAULTS = {
   pb_max: 1.5,                    // legacy fallback; sector-relative P/B is primary (Update 4)
   pb_sector_percentile: 33,       // bottom 33rd percentile of sector (Update 4)
   pb_absolute_backstop: 5.0,      // absolute P/B ceiling regardless of sector (Update 4)
-  // Calibration (2026-03): Raised from Graham's original 22.5 to 40.
+  // Calibration (2026-03): Raised from Graham's original 22.5.
   // Modern share buyback practices inflate P/B by shrinking equity,
-  // making the original ceiling too restrictive. At 22.5, the framework
-  // rejected Apple (2016), Kroger (2019), and other quality compounders.
-  // At 40, these pass without admitting additional traps — the traps that
-  // slip through (INTC, WBA, WFC, M) fail on qualitative grounds, not ratios.
-  // Calibration tested: [22.5, 30, 40, 999]. 40 was optimal; 999 let too
-  // many traps through.
-  pe_x_pb_max: 40,
+  // making the original ceiling too restrictive. Tested [22.5, 30, 40, 999].
+  // 30 chosen as middle ground: admits quality compounders (CTSH, ICFI)
+  // without letting in stocks genuinely expensive on both dimensions
+  // (NUE at 39.1, FDX at 38.0). Traps still caught by attractor layer.
+  pe_x_pb_max: 30,
   debt_equity_max_industrial: 1.0,
   debt_equity_max_utility: 2.0,
-  // Calibration (2026-03): Lowered from 1.5 to 1.0 (Graham's standard).
-  // 1.5 was overly restrictive — it rejected stable grocers (KR) and
-  // retailers with fast inventory turns whose low current ratios reflect
-  // efficient working capital management, not financial distress.
-  // Lowering to 1.0 captured Kroger (67% 3yr return) without admitting
-  // any new traps. Calibration tested: [0.7, 0.8, 1.0].
-  current_ratio_min: 1.0,
+  // Calibration (2026-03): Lowered from Graham's original 1.5.
+  // 1.5 rejected stable grocers/retailers with fast inventory turns.
+  // 1.2 chosen as middle ground: captures most efficient operators
+  // (ICFI at 1.27) while still flagging genuinely weak liquidity
+  // (UHS at 1.05 drops to near-miss). Only CTRA (1.19) lost vs 1.0.
+  current_ratio_min: 1.2,
   earnings_stability_min_years: 8,
   earnings_stability_window: 10,
   dividend_years_required: 5,

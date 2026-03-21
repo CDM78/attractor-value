@@ -16,7 +16,7 @@ export const TOOLTIP_CONTENT = {
   pe_x_pb: {
     label: 'P/E \u00D7 P/B Composite',
     description: 'Graham\'s combined ceiling, adjusted for modern buyback practices. Prevents both multiples from being elevated at the same time.',
-    formula: 'Must be \u2264 40',
+    formula: 'Must be \u2264 30',
     anchor: 'layer-1',
   },
   debt_equity: {
@@ -28,7 +28,7 @@ export const TOOLTIP_CONTENT = {
   current_ratio: {
     label: 'Current Ratio',
     description: 'Current assets \u00F7 current liabilities. Can the company pay its short-term bills? Financial companies exempt.',
-    formula: 'Must be \u2265 1.0',
+    formula: 'Must be \u2265 1.2',
     anchor: 'layer-1',
   },
   earnings_stability: {

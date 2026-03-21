@@ -99,8 +99,8 @@ export default function HowItWorks() {
         <h3 className="text-lg font-semibold text-text-primary mt-6">3. Combined P/E × P/B</h3>
         <p>Even if a stock passes P/E and P/B individually, this combined test prevents both from being elevated at the same time. The threshold is set higher than Graham's original 22.5 to account for modern share buyback practices, which reduce book value and inflate P/B.</p>
         <TechnicalDetails>
-          <p className="font-mono">Pass condition: P/E × P/B ≤ 40</p>
-          <p>This threshold was raised from Graham's original 22.5 during calibration to account for modern buyback practices that inflate P/B ratios.</p>
+          <p className="font-mono">Pass condition: P/E × P/B ≤ 30</p>
+          <p>Raised from Graham's original 22.5 to 30 to account for modern buyback practices that inflate P/B. The 30 threshold admits quality compounders without letting in stocks that are genuinely expensive on both dimensions.</p>
         </TechnicalDetails>
 
         <h3 className="text-lg font-semibold text-text-primary mt-6">4. Debt-to-Equity (D/E)</h3>
@@ -116,8 +116,8 @@ export default function HowItWorks() {
         <h3 className="text-lg font-semibold text-text-primary mt-6">5. Current Ratio</h3>
         <p>Current assets ÷ current liabilities. Can the company cover its near-term obligations? Financial companies are exempt.</p>
         <TechnicalDetails>
-          <p className="font-mono">Pass condition: Current ratio ≥ 1.0</p>
-          <p>Lowered from Graham's original 1.5 during calibration to capture stable retailers and grocers with fast inventory turns without admitting new traps.</p>
+          <p className="font-mono">Pass condition: Current ratio ≥ 1.2</p>
+          <p>Lowered from Graham's original 1.5 to 1.2 to capture efficient operators (retailers, service companies) with fast inventory turns, while still flagging genuinely weak liquidity.</p>
         </TechnicalDetails>
 
         <h3 className="text-lg font-semibold text-text-primary mt-6">6. Earnings Stability</h3>
@@ -463,7 +463,7 @@ const GLOSSARY = [
   { term: 'Buy-Below Price', def: 'Maximum purchase price. Calculated as Adjusted IV × (1 – margin of safety).' },
   { term: 'CAGR', def: 'Compound Annual Growth Rate. The smoothed annual rate at which a value grew over a multi-year period.' },
   { term: 'Concentration Risk', def: 'The danger of depending too heavily on a single customer, supplier, market, or regulation. Applied as a penalty to the attractor score.' },
-  { term: 'Current Ratio', def: 'Current assets ÷ current liabilities. Measures ability to pay short-term obligations. Framework requires ≥ 1.0.' },
+  { term: 'Current Ratio', def: 'Current assets ÷ current liabilities. Measures ability to pay short-term obligations. Framework requires ≥ 1.2.' },
   { term: 'D/E', def: 'Debt-to-Equity. Total debt ÷ shareholder equity. Measures leverage. ≤ 1.0 for most sectors, ≤ 2.0 for capital-intensive.' },
   { term: 'Discount to IV', def: 'How far below intrinsic value the current price is. Positive = undervalued. Negative = overvalued.' },
   { term: 'Dissolving Attractor', def: 'A competitive position actively eroding (score < 2.0). Framework prohibits buying and recommends selling.' },
