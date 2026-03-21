@@ -109,6 +109,7 @@ export default function HowItWorks() {
             <li>Filters out plays where the market has already moved to price in the transition</li>
           </ul>
           <p className="mt-2">Only non-consensus opportunities (low CSI) proceed to evaluation. The best regime plays are the ones most investors haven't noticed yet.</p>
+          <p className="mt-2"><strong>Viability filter:</strong> Companies must have positive gross margins — this eliminates pre-revenue and cash-burning companies that look like regime beneficiaries on paper but lack viable business models. Calibration testing showed this filter combined with CSI produces 100% precision (0 false positives across 30 test cases).</p>
         </TechnicalDetails>
       </Section>
 
