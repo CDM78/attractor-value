@@ -398,6 +398,68 @@ export default {
       }
     }
 
+    // Admin: fetch and add US stock list from Finnhub
+    if (path === '/api/admin/fetch-stock-list' && request.method === 'POST') {
+      try {
+        if (!env.FINNHUB_API_KEY) return errorResponse('FINNHUB_API_KEY not configured', 500);
+
+        const listRes = await fetch(
+          `https://finnhub.io/api/v1/stock/symbol?exchange=US&token=${env.FINNHUB_API_KEY}`
+        );
+        if (!listRes.ok) return errorResponse(`Finnhub error: ${listRes.status}`, 500);
+        const allSymbols = await listRes.json();
+
+        const commonStock = allSymbols.filter(s =>
+          s.type === 'Common Stock' &&
+          s.symbol &&
+          !s.symbol.includes('.') &&
+          s.symbol.length <= 5 &&
+          /^[A-Z]+$/.test(s.symbol)
+        );
+
+        const existing = await env.DB.prepare(
+          "SELECT ticker FROM stocks WHERE ticker NOT LIKE '\\_\\_%' ESCAPE '\\'"
+        ).all();
+        const existingSet = new Set((existing.results || []).map(r => r.ticker));
+
+        const newTickers = [];
+        const now = new Date().toISOString();
+        const batchStmts = [];
+
+        for (const s of commonStock) {
+          if (existingSet.has(s.symbol)) continue;
+          newTickers.push(s.symbol);
+          batchStmts.push(
+            env.DB.prepare(
+              `INSERT OR IGNORE INTO stocks (ticker, company_name, sector, industry, market_cap, last_updated)
+               VALUES (?, ?, NULL, NULL, NULL, ?)`
+            ).bind(s.symbol, s.description || s.symbol, now)
+          );
+          batchStmts.push(
+            env.DB.prepare(
+              `INSERT OR IGNORE INTO market_data (ticker, price, pe_ratio, pb_ratio, earnings_yield, dividend_yield, insider_ownership_pct, fetched_at)
+               VALUES (?, 0, NULL, NULL, NULL, NULL, NULL, ?)`
+            ).bind(s.symbol, now)
+          );
+        }
+
+        // Batch insert in groups of 100
+        for (let i = 0; i < batchStmts.length; i += 100) {
+          await env.DB.batch(batchStmts.slice(i, i + 100));
+        }
+
+        return jsonResponse({
+          total_from_finnhub: allSymbols.length,
+          filtered: commonStock.length,
+          already_existed: existingSet.size,
+          new_tickers_added: newTickers.length,
+          new_tickers: newTickers.slice(0, 50),
+        });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Admin: fix candidate data
     if (path === '/api/admin/fix-data' && request.method === 'POST') {
       try {
