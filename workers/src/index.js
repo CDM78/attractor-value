@@ -398,6 +398,40 @@ export default {
       }
     }
 
+    // Admin: fix candidate data
+    if (path === '/api/admin/fix-data' && request.method === 'POST') {
+      try {
+        const body = await request.json().catch(() => ({}));
+
+        // Fix analysis_model: reset all to Sonnet (automated default)
+        if (body.fix === 'analysis_model') {
+          const result = await env.DB.prepare(
+            "UPDATE candidates SET analysis_model = 'claude-sonnet-4-20250514' WHERE analysis_model = 'claude-opus-4-20250514'"
+          ).run();
+          return jsonResponse({ fixed: result.meta?.changes || 0, field: 'analysis_model' });
+        }
+
+        // Fix scores: recalculate from attractor_analysis table
+        if (body.fix === 'scores') {
+          const result = await env.DB.prepare(`
+            UPDATE candidates SET attractor_score = (
+              SELECT COALESCE(aa.adjusted_attractor_score, aa.attractor_stability_score)
+              FROM attractor_analysis aa
+              WHERE aa.ticker = candidates.ticker
+              ORDER BY aa.analysis_date DESC, aa.id DESC LIMIT 1
+            ) WHERE EXISTS (
+              SELECT 1 FROM attractor_analysis aa WHERE aa.ticker = candidates.ticker
+            )
+          `).run();
+          return jsonResponse({ fixed: result.meta?.changes || 0, field: 'attractor_score' });
+        }
+
+        return errorResponse('Unknown fix type. Use: analysis_model, scores', 400);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Admin: clear candidates
     if (path === '/api/admin/clear-candidates' && request.method === 'POST') {
       try {

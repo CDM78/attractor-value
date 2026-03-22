@@ -127,7 +127,7 @@ export default function AnalysisDetail() {
                   <span className="text-sm text-text-secondary ml-2">/ 5.0</span>
                 </div>
                 {analysis.adjusted_attractor_score != null && analysis.adjusted_attractor_score !== analysis.attractor_stability_score && (
-                  <span className="text-xs text-text-secondary">Base: {analysis.attractor_stability_score?.toFixed(1)} → {analysis.adjusted_attractor_score?.toFixed(1)} (secular disruption)</span>
+                  <span className="text-xs text-text-secondary">Base: {analysis.attractor_stability_score?.toFixed(1)} → {analysis.adjusted_attractor_score?.toFixed(1)} (concentration risk adjustment)</span>
                 )}
               </div>
               <div className="text-right">
