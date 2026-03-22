@@ -761,6 +761,31 @@ export default {
       }
     }
 
+    // Claude proxy — for calibration tool tests requiring API access
+    if (path === '/api/claude-proxy' && request.method === 'POST') {
+      if (!env.ANTHROPIC_API_KEY) return errorResponse('No API key', 500);
+      try {
+        const body = await request.json();
+        const res = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': env.ANTHROPIC_API_KEY,
+            'anthropic-version': '2023-06-01',
+          },
+          body: JSON.stringify({
+            model: body.model || 'claude-sonnet-4-20250514',
+            max_tokens: body.max_tokens || 500,
+            messages: [{ role: 'user', content: body.prompt }],
+          }),
+        });
+        const data = await res.json();
+        return jsonResponse({ text: data.content?.[0]?.text || '', usage: data.usage });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Route matching
     for (const [prefix, handler] of Object.entries(routeMap)) {
       if (path.startsWith(prefix)) {
