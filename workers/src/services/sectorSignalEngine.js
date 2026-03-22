@@ -6,35 +6,228 @@
 //
 // Sector threshold sweep: ≥2 candidates optimal (83% beat rate, 2.6 sectors, +21.8pp alpha).
 
-const SECTOR_ETF_MAP = {
-  'Technology': { etf: 'VGT', name: 'Vanguard Information Technology', expense: 0.0010 },
-  'Healthcare': { etf: 'VHT', name: 'Vanguard Health Care', expense: 0.0010 },
-  'Industrials': { etf: 'VIS', name: 'Vanguard Industrials', expense: 0.0010 },
-  'Consumer Discretionary': { etf: 'VCR', name: 'Vanguard Consumer Discretionary', expense: 0.0010 },
-  'Financials': { etf: 'VFH', name: 'Vanguard Financials', expense: 0.0010 },
-  'Financial Services': { etf: 'VFH', name: 'Vanguard Financials', expense: 0.0010 },
-  'Communication Services': { etf: 'VOX', name: 'Vanguard Communication Services', expense: 0.0010 },
-  'Energy': { etf: 'VDE', name: 'Vanguard Energy', expense: 0.0010 },
-  'Materials': { etf: 'VAW', name: 'Vanguard Materials', expense: 0.0010 },
+// Vanguard sector ETF definitions
+const ETF_INFO = {
+  VGT: { etf: 'VGT', name: 'Vanguard Information Technology', expense: 0.0010 },
+  VHT: { etf: 'VHT', name: 'Vanguard Health Care', expense: 0.0010 },
+  VIS: { etf: 'VIS', name: 'Vanguard Industrials', expense: 0.0010 },
+  VCR: { etf: 'VCR', name: 'Vanguard Consumer Discretionary', expense: 0.0010 },
+  VDC: { etf: 'VDC', name: 'Vanguard Consumer Staples', expense: 0.0010 },
+  VFH: { etf: 'VFH', name: 'Vanguard Financials', expense: 0.0010 },
+  VOX: { etf: 'VOX', name: 'Vanguard Communication Services', expense: 0.0010 },
+  VDE: { etf: 'VDE', name: 'Vanguard Energy', expense: 0.0010 },
+  VAW: { etf: 'VAW', name: 'Vanguard Materials', expense: 0.0010 },
+  VNQ: { etf: 'VNQ', name: 'Vanguard Real Estate', expense: 0.0012 },
+  VPU: { etf: 'VPU', name: 'Vanguard Utilities', expense: 0.0010 },
+  VUG: { etf: 'VUG', name: 'Vanguard Growth', expense: 0.0004 },
 };
 
-const FALLBACK_ETF = { etf: 'VUG', name: 'Vanguard Growth', expense: 0.0004 };
+// Maps every known Finnhub sector/industry label to a Vanguard sector ETF.
+// Built from actual stocks table data — covers all labels the system encounters.
+const SECTOR_ETF_MAP = {
+  // Technology → VGT
+  'Technology':                       'VGT',
+  'Semiconductors':                   'VGT',
+  'Software':                         'VGT',
+  'Software—Application':             'VGT',
+  'Software—Infrastructure':          'VGT',
+  'Information Technology Services':  'VGT',
+  'IT Services':                      'VGT',
+  'Electronic Components':            'VGT',
+  'Computer Hardware':                'VGT',
+  'Scientific & Technical Instruments': 'VGT',
+  'Communication Equipment':          'VGT',
+  'Semiconductor Equipment & Materials': 'VGT',
+
+  // Healthcare → VHT
+  'Healthcare':                       'VHT',
+  'Health Care':                      'VHT',
+  'Biotechnology':                    'VHT',
+  'Medical Devices':                  'VHT',
+  'Medical Instruments & Supplies':   'VHT',
+  'Drug Manufacturers':               'VHT',
+  'Drug Manufacturers—General':       'VHT',
+  'Drug Manufacturers—Specialty & Generic': 'VHT',
+  'Diagnostics & Research':           'VHT',
+  'Health Information Services':      'VHT',
+  'Healthcare Plans':                 'VHT',
+  'Medical Care Facilities':          'VHT',
+  'Pharmaceutical Retailers':         'VHT',
+
+  // Industrials → VIS
+  'Industrials':                      'VIS',
+  'Electrical Equipment':             'VIS',
+  'Aerospace & Defense':              'VIS',
+  'Industrial Distribution':          'VIS',
+  'Specialty Industrial Machinery':   'VIS',
+  'Farm & Heavy Construction Machinery': 'VIS',
+  'Building Products & Equipment':    'VIS',
+  'Waste Management':                 'VIS',
+  'Railroads':                        'VIS',
+  'Trucking':                         'VIS',
+  'Airlines':                         'VIS',
+  'Construction':                     'VIS',
+  'Engineering & Construction':       'VIS',
+  'Trading Companies & Distributors': 'VIS',
+  'Commercial Services & Supplies':   'VIS',
+  'Professional Services':            'VIS',
+  'Staffing & Employment Services':   'VIS',
+  'Consulting Services':              'VIS',
+  'Security & Protection Services':   'VIS',
+
+  // Consumer Discretionary → VCR
+  'Consumer Discretionary':           'VCR',
+  'Consumer Cyclical':                'VCR',
+  'Hotels, Restaurants & Leisure':    'VCR',
+  'Restaurants':                      'VCR',
+  'Lodging':                          'VCR',
+  'Leisure':                          'VCR',
+  'Auto Manufacturers':               'VCR',
+  'Auto Parts':                       'VCR',
+  'Apparel Manufacturing':            'VCR',
+  'Apparel Retail':                   'VCR',
+  'Footwear & Accessories':           'VCR',
+  'Home Improvement Retail':          'VCR',
+  'Specialty Retail':                 'VCR',
+  'Internet Retail':                  'VCR',
+  'Department Stores':                'VCR',
+  'Gambling':                         'VCR',
+  'Resorts & Casinos':                'VCR',
+  'Residential Construction':         'VCR',
+  'Furnishings, Fixtures & Appliances': 'VCR',
+  'Packaging & Containers':           'VCR',
+
+  // Consumer Staples → VDC
+  'Consumer Staples':                 'VDC',
+  'Consumer Defensive':               'VDC',
+  'Consumer products':                'VDC',
+  'Food Products':                    'VDC',
+  'Packaged Foods':                   'VDC',
+  'Beverages—Non-Alcoholic':          'VDC',
+  'Beverages—Brewers':                'VDC',
+  'Household & Personal Products':    'VDC',
+  'Tobacco':                          'VDC',
+  'Discount Stores':                  'VDC',
+  'Grocery Stores':                   'VDC',
+
+  // Financials → VFH
+  'Financials':                       'VFH',
+  'Financial Services':               'VFH',
+  'Banking':                          'VFH',
+  'Banks—Regional':                   'VFH',
+  'Banks—Diversified':                'VFH',
+  'Insurance':                        'VFH',
+  'Insurance—Diversified':            'VFH',
+  'Insurance—Property & Casualty':    'VFH',
+  'Insurance—Life':                   'VFH',
+  'Capital Markets':                  'VFH',
+  'Asset Management':                 'VFH',
+  'Financial Data & Stock Exchanges': 'VFH',
+  'Credit Services':                  'VFH',
+  'Mortgage Finance':                 'VFH',
+
+  // Communication Services → VOX
+  'Communication Services':           'VOX',
+  'Communications':                   'VOX',
+  'Media':                            'VOX',
+  'Entertainment':                    'VOX',
+  'Internet Content & Information':   'VOX',
+  'Electronic Gaming & Multimedia':   'VOX',
+  'Advertising Agencies':             'VOX',
+  'Broadcasting':                     'VOX',
+  'Publishing':                       'VOX',
+  'Telecom Services':                 'VOX',
+
+  // Energy → VDE
+  'Energy':                           'VDE',
+  'Oil & Gas':                        'VDE',
+  'Oil & Gas E&P':                    'VDE',
+  'Oil & Gas Integrated':             'VDE',
+  'Oil & Gas Midstream':              'VDE',
+  'Oil & Gas Refining & Marketing':   'VDE',
+  'Oil & Gas Equipment & Services':   'VDE',
+  'Uranium':                          'VDE',
+  'Solar':                            'VDE',
+
+  // Materials → VAW
+  'Materials':                        'VAW',
+  'Basic Materials':                  'VAW',
+  'Specialty Chemicals':              'VAW',
+  'Steel':                            'VAW',
+  'Copper':                           'VAW',
+  'Gold':                             'VAW',
+  'Aluminum':                         'VAW',
+  'Lumber & Wood Production':         'VAW',
+  'Paper & Paper Products':           'VAW',
+
+  // Real Estate → VNQ
+  'Real Estate':                      'VNQ',
+  'REIT—Diversified':                 'VNQ',
+  'REIT—Residential':                 'VNQ',
+  'REIT—Retail':                      'VNQ',
+  'REIT—Office':                      'VNQ',
+  'REIT—Industrial':                  'VNQ',
+  'Real Estate Services':             'VNQ',
+  'Real Estate—Development':          'VNQ',
+
+  // Utilities → VPU
+  'Utilities':                        'VPU',
+  'Utilities—Regulated Electric':     'VPU',
+  'Utilities—Diversified':            'VPU',
+  'Utilities—Renewable':              'VPU',
+};
+
+const FALLBACK_ETF_KEY = 'VUG';
 const MIN_CANDIDATES_FOR_SIGNAL = 2; // Calibration-validated threshold
 
 /**
  * Map a sector/industry to its Vanguard ETF.
+ * Checks sector first, then industry, then keyword matching, then fallback.
  */
 export function getSectorETF(sector, industry) {
-  if (SECTOR_ETF_MAP[sector]) return SECTOR_ETF_MAP[sector];
-  // Try industry keywords
-  const ind = (industry || '').toLowerCase();
-  if (ind.includes('software') || ind.includes('semi') || ind.includes('cyber') || ind.includes('cloud'))
-    return SECTOR_ETF_MAP['Technology'];
-  if (ind.includes('medical') || ind.includes('pharma') || ind.includes('biotech'))
-    return SECTOR_ETF_MAP['Healthcare'];
-  if (ind.includes('defense') || ind.includes('aerospace'))
-    return SECTOR_ETF_MAP['Industrials'];
-  return FALLBACK_ETF;
+  // Direct sector match
+  if (sector && SECTOR_ETF_MAP[sector]) {
+    const key = SECTOR_ETF_MAP[sector];
+    return ETF_INFO[key];
+  }
+
+  // Direct industry match
+  if (industry && SECTOR_ETF_MAP[industry]) {
+    const key = SECTOR_ETF_MAP[industry];
+    return ETF_INFO[key];
+  }
+
+  // Keyword matching on sector
+  if (sector) {
+    const s = sector.toLowerCase();
+    if (s.includes('tech') || s.includes('software') || s.includes('semi') || s.includes('electronic')) return ETF_INFO.VGT;
+    if (s.includes('health') || s.includes('biotech') || s.includes('pharma') || s.includes('medical')) return ETF_INFO.VHT;
+    if (s.includes('industrial') || s.includes('defense') || s.includes('aerospace') || s.includes('professional') || s.includes('commercial')) return ETF_INFO.VIS;
+    if (s.includes('consumer') && (s.includes('discret') || s.includes('cycl'))) return ETF_INFO.VCR;
+    if (s.includes('consumer') && (s.includes('stapl') || s.includes('defen') || s.includes('product'))) return ETF_INFO.VDC;
+    if (s.includes('financ') || s.includes('bank') || s.includes('insurance') || s.includes('capital')) return ETF_INFO.VFH;
+    if (s.includes('commun') || s.includes('media') || s.includes('entertain')) return ETF_INFO.VOX;
+    if (s.includes('energy') || s.includes('oil') || s.includes('solar') || s.includes('uranium')) return ETF_INFO.VDE;
+    if (s.includes('material') || s.includes('chemical') || s.includes('steel') || s.includes('mining')) return ETF_INFO.VAW;
+    if (s.includes('real estate') || s.includes('reit')) return ETF_INFO.VNQ;
+    if (s.includes('utilit')) return ETF_INFO.VPU;
+    if (s.includes('hotel') || s.includes('restaurant') || s.includes('leisure') || s.includes('travel')) return ETF_INFO.VCR;
+    if (s.includes('food') || s.includes('beverage') || s.includes('grocery') || s.includes('household')) return ETF_INFO.VDC;
+    if (s.includes('construct') || s.includes('engineer') || s.includes('trading')) return ETF_INFO.VIS;
+  }
+
+  // Keyword matching on industry (same logic)
+  if (industry) {
+    const i = industry.toLowerCase();
+    if (i.includes('tech') || i.includes('software') || i.includes('semi') || i.includes('cloud') || i.includes('cyber')) return ETF_INFO.VGT;
+    if (i.includes('health') || i.includes('biotech') || i.includes('pharma') || i.includes('medical')) return ETF_INFO.VHT;
+    if (i.includes('industrial') || i.includes('defense') || i.includes('aerospace')) return ETF_INFO.VIS;
+    if (i.includes('bank') || i.includes('financ') || i.includes('insurance') || i.includes('credit')) return ETF_INFO.VFH;
+    if (i.includes('media') || i.includes('entertain') || i.includes('gaming')) return ETF_INFO.VOX;
+    if (i.includes('energy') || i.includes('oil') || i.includes('solar')) return ETF_INFO.VDE;
+  }
+
+  return ETF_INFO[FALLBACK_ETF_KEY];
 }
 
 /**
