@@ -48,7 +48,7 @@ export default function PortfolioDashboard() {
             value={`${summary.total_gain_pct >= 0 ? '+' : ''}${summary.total_gain_pct.toFixed(1)}%`}
             color={summary.total_gain_pct >= 0 ? 'text-pass' : 'text-fail'}
           />
-          <SummaryCard label="Core / Asym" value={`${summary.core_pct.toFixed(0)}% / ${summary.asymmetric_pct.toFixed(0)}%`} />
+          <SummaryCard label="Core / Asym" value={`${(summary.core_pct ?? 0).toFixed(0)}% / ${(summary.asymmetric_pct ?? 0).toFixed(0)}%`} />
           <SummaryCard label="Positions" value={summary.positions_count} />
         </div>
       )}

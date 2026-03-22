@@ -8,7 +8,7 @@ import TierBadge from './TierBadge'
 
 export default function Dashboard() {
   const { buySignals, notYetSignals, positions, loading: sigLoading, error: sigError, fetchSignals, analyzingId, triggerDeepAnalysis } = useSignalStore()
-  const { environment, crisis, regimes, loading: envLoading, error: envError, fetchEnvironment } = useEnvironmentStore()
+  const { environment, crisis, regimes, snapshot, loading: envLoading, error: envError, fetchEnvironment } = useEnvironmentStore()
   const { holdings, summary, loading: pfLoading, error: pfError, fetchHoldings } = usePortfolioStore()
   const [toast, setToast] = useState(null)
   const [actedSignals, setActedSignals] = useState(new Set())
@@ -244,6 +244,69 @@ export default function Dashboard() {
         )}
       </div>
 
+      {/* FRED Economic Snapshot */}
+      {snapshot && Object.keys(snapshot).length > 0 && (
+        <div className="bg-surface-secondary rounded p-4">
+          <h3 className="text-sm font-bold text-text-secondary mb-3">Market Environment</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+            <SnapshotMetric label="VIX" value={snapshot.vix?.toFixed(1)} warn={snapshot.vix > 25} fail={snapshot.vix > 35} />
+            <SnapshotMetric label="Credit Spread" value={snapshot.credit_spread?.toFixed(2)} suffix="%" warn={snapshot.credit_spread > 1.5} fail={snapshot.credit_spread > 3} />
+            <SnapshotMetric label="HY OAS" value={snapshot.hy_oas?.toFixed(2)} suffix="%" warn={snapshot.hy_oas > 4} fail={snapshot.hy_oas > 6} />
+            <SnapshotMetric label="Yield Curve" value={snapshot.yield_curve?.toFixed(2)} suffix="%" fail={snapshot.yield_curve_inverted} />
+            <SnapshotMetric label="10Y Treasury" value={snapshot.treasury_10y?.toFixed(2)} suffix="%" />
+            <SnapshotMetric label="Unemployment" value={snapshot.unemployment?.toFixed(1)} suffix="%" warn={snapshot.unemployment > 5} fail={snapshot.unemployment > 7} />
+            <SnapshotMetric label="GDP Growth" value={snapshot.gdp_growth?.toFixed(1)} suffix="%" warn={snapshot.gdp_growth < 1} fail={snapshot.gdp_growth < 0} />
+            <SnapshotMetric label="Oil" value={`$${snapshot.oil_price?.toFixed(0)}`} warn={snapshot.oil_price > 100} fail={snapshot.oil_price > 120} />
+            <SnapshotMetric label="AAA Yield" value={snapshot.aaa_yield?.toFixed(2)} suffix="%" />
+            <SnapshotMetric label="BAA Yield" value={snapshot.baa_yield?.toFixed(2)} suffix="%" />
+          </div>
+          {environment === 'STRESSED' && (
+            <div className="mt-3 text-xs text-warn bg-warn/10 rounded px-3 py-2">
+              +5% margin of safety applied to all buy-below prices due to STRESSED environment
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Active Regimes Detail */}
+      {regimes?.active?.length > 0 && (
+        <div className="bg-surface-secondary rounded overflow-hidden">
+          <div className="bg-purple-500/15 px-4 py-2 border-b border-purple-500/20">
+            <h3 className="text-purple-400 font-bold text-sm">Active Regimes ({regimes.active.length})</h3>
+          </div>
+          <div className="divide-y divide-border/50">
+            {regimes.active.map(r => (
+              <div key={r.id} className="px-4 py-3 space-y-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-bold text-text-primary text-sm">{r.name}</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-purple-500/15 text-purple-400">{r.catalyst_type}</span>
+                  {r.adjacent_possible_score != null && (
+                    <span className="text-xs px-2 py-0.5 rounded bg-accent/15 text-accent">AP: {r.adjacent_possible_score}/5</span>
+                  )}
+                  {r.confirmed_by && (
+                    <span className="text-xs text-text-secondary">({r.confirmed_by})</span>
+                  )}
+                </div>
+                {r.affected_sectors?.length > 0 && (
+                  <div className="flex flex-wrap gap-1">
+                    {r.affected_sectors.map(s => (
+                      <span key={s} className="text-xs px-2 py-0.5 rounded bg-surface-tertiary text-text-secondary">{s}</span>
+                    ))}
+                  </div>
+                )}
+                {r.estimated_market_size_b && (
+                  <div className="text-xs text-text-secondary">
+                    Market size: ${r.estimated_market_size_b}B
+                    {r.scurve_position && ` | S-curve: ${r.scurve_position}`}
+                    {r.scurve_penetration_pct != null && ` (${r.scurve_penetration_pct}% penetration)`}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* B. Active Signals Panel */}
       <div className="space-y-4">
         {/* BUY SIGNALS */}
@@ -274,13 +337,33 @@ export default function Dashboard() {
                     <span>Price: <span className="text-text-primary">${s.current_price?.toFixed(2) || '--'}</span></span>
                     <span>Buy-below: <span className="text-pass">${s.buy_below_price?.toFixed(2) || '--'}</span></span>
                     <span>IV: <span className="text-text-primary">${s.intrinsic_value?.toFixed(2) || '--'}</span></span>
-                  </div>
-                  <div className="flex items-center gap-3 flex-wrap">
-                    {(s.recommended_shares || s.recommended_dollars) && (
-                      <span className="text-sm font-medium text-text-primary">
-                        Buy {s.recommended_shares || '?'} shares (${s.recommended_dollars?.toFixed(0) || '?'})
+                    {s.bull_score != null && s.bear_score != null && (
+                      <span>
+                        Bull/Bear:{' '}
+                        <span className="text-pass">{s.bull_score.toFixed(1)}</span>
+                        {' / '}
+                        <span className="text-fail">{s.bear_score.toFixed(1)}</span>
+                        <span className="text-text-secondary/60 ml-1">(60/40)</span>
                       </span>
                     )}
+                  </div>
+                  <div className="flex items-center gap-3 flex-wrap">
+                    {(s.recommended_shares || s.recommended_dollars) && (() => {
+                      const pos = positions.find(p => p.ticker === s.ticker)
+                      return (
+                        <div className="text-sm">
+                          <span className="font-medium text-text-primary">
+                            Buy {s.recommended_shares || '?'} shares (${s.recommended_dollars?.toFixed(0) || '?'})
+                          </span>
+                          {pos?.portfolio_context && (
+                            <span className="text-xs text-text-secondary ml-2">
+                              | {pos.tier} budget: ${pos.portfolio_context.tier_remaining_after?.toLocaleString()} remaining
+                              {pos.using_flexible_pool && ' (flexible pool)'}
+                            </span>
+                          )}
+                        </div>
+                      )
+                    })()}
                     {analyzingId === s.id ? (
                       <span className="text-xs px-3 py-1.5 rounded bg-accent/15 text-accent animate-pulse">Analyzing (Opus)...</span>
                     ) : (
@@ -521,6 +604,17 @@ export default function Dashboard() {
           </div>
         </div>
       )}
+    </div>
+  )
+}
+
+function SnapshotMetric({ label, value, suffix = '', warn, fail }) {
+  if (value == null) return null
+  const color = fail ? 'text-fail' : warn ? 'text-warn' : 'text-text-primary'
+  return (
+    <div className="text-center">
+      <div className="text-xs text-text-secondary mb-1">{label}</div>
+      <div className={`text-sm font-medium ${color}`}>{value}{suffix}</div>
     </div>
   )
 }

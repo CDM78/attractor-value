@@ -18,6 +18,7 @@ export default function WatchlistTable() {
   const [refreshingTickers, setRefreshingTickers] = useState(new Set())
   const [analyzingTickers, setAnalyzingTickers] = useState(new Set())
   const [collapsedStages, setCollapsedStages] = useState(new Set())
+  const [toastMsg, setToastMsg] = useState(null)
 
   useEffect(() => {
     fetchWatchlist()
@@ -42,7 +43,7 @@ export default function WatchlistTable() {
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       fetchWatchlist() // refresh to get new scores
     } catch (err) {
-      alert(`Analysis failed for ${ticker}: ${err.message}`)
+      setToastMsg(`Analysis failed for ${ticker}: ${err.message}`)
     }
     setAnalyzingTickers(prev => { const s = new Set(prev); s.delete(ticker); return s })
   }, [fetchWatchlist])
@@ -58,7 +59,7 @@ export default function WatchlistTable() {
       setShowAdd(false)
       fetchWatchlist()
     } catch (err) {
-      alert(`Failed: ${err.message}`)
+      setToastMsg(`Failed: ${err.message}`)
     }
   }
 
@@ -68,7 +69,7 @@ export default function WatchlistTable() {
       await removeFromWatchlist(ticker)
       fetchWatchlist()
     } catch (err) {
-      alert(`Failed: ${err.message}`)
+      setToastMsg(`Failed: ${err.message}`)
     }
   }
 
@@ -108,8 +109,21 @@ export default function WatchlistTable() {
     URL.revokeObjectURL(url)
   }
 
+  // Auto-dismiss toast
+  useEffect(() => {
+    if (toastMsg) {
+      const t = setTimeout(() => setToastMsg(null), 5000)
+      return () => clearTimeout(t)
+    }
+  }, [toastMsg])
+
   return (
     <div>
+      {toastMsg && (
+        <div className="fixed top-4 right-4 z-50 px-4 py-3 rounded text-sm font-medium shadow-lg bg-fail/90 text-white">
+          {toastMsg}
+        </div>
+      )}
       <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
         <h2 className="text-xl font-bold">Watchlist</h2>
         <div className="flex items-center gap-2">

@@ -174,7 +174,7 @@ function AddPositionForm({ onAdd }) {
   const [ticker, setTicker] = useState('')
   const [shares, setShares] = useState('')
   const [price, setPrice] = useState('')
-  const [tier, setTier] = useState('tier3')
+  const [tier, setTier] = useState('T3')
   const [submitting, setSubmitting] = useState(false)
 
   async function handleSubmit(e) {
@@ -220,9 +220,9 @@ function AddPositionForm({ onAdd }) {
         <label className="text-xs text-text-secondary block mb-1">Tier</label>
         <select value={tier} onChange={e => setTier(e.target.value)}
           className="bg-surface-tertiary border border-border rounded px-3 py-1.5 text-sm text-text-primary">
-          <option value="tier2">T2 Crisis</option>
-          <option value="tier3">T3 DKS</option>
-          <option value="tier4">T4 Regime</option>
+          <option value="T2">T2 Crisis</option>
+          <option value="T3">T3 DKS</option>
+          <option value="T4">T4 Regime</option>
         </select>
       </div>
       <button type="submit" disabled={submitting}
