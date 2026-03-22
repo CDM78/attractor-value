@@ -16,7 +16,7 @@ export async function evaluateSellTriggers(db, holding, env) {
   const [marketData, valuation, attractor, candidate] = await Promise.all([
     db.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(ticker).first(),
     db.prepare('SELECT * FROM valuations WHERE ticker = ?').bind(ticker).first(),
-    db.prepare('SELECT * FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1').bind(ticker).first(),
+    db.prepare('SELECT * FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC, id DESC LIMIT 1').bind(ticker).first(),
     db.prepare("SELECT * FROM candidates WHERE ticker = ? AND status IN ('active','purchased') ORDER BY discovered_date DESC LIMIT 1").bind(ticker).first(),
   ]);
 

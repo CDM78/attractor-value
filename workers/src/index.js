@@ -411,19 +411,44 @@ export default {
           return jsonResponse({ fixed: result.meta?.changes || 0, field: 'analysis_model' });
         }
 
-        // Fix scores: recalculate from attractor_analysis table
+        // Debug: check a specific candidate's attractor_analysis rows
+        if (body.fix === 'debug_scores') {
+          const ticker = body.ticker || 'POWL';
+          const rows = await env.DB.prepare(
+            `SELECT id, ticker, attractor_stability_score, adjusted_attractor_score, analysis_date, candidate_id
+             FROM attractor_analysis WHERE ticker = ? ORDER BY id DESC LIMIT 5`
+          ).bind(ticker).all();
+          const candidate = await env.DB.prepare(
+            "SELECT id, attractor_score FROM candidates WHERE ticker = ? AND status = 'active'"
+          ).bind(ticker).first();
+          return jsonResponse({ ticker, candidate, analysis_rows: rows.results });
+        }
+
+        // Fix scores: sync from attractor_analysis table (latest entry with adjusted score)
         if (body.fix === 'scores') {
-          const result = await env.DB.prepare(`
-            UPDATE candidates SET attractor_score = (
-              SELECT COALESCE(aa.adjusted_attractor_score, aa.attractor_stability_score)
-              FROM attractor_analysis aa
-              WHERE aa.ticker = candidates.ticker
-              ORDER BY aa.analysis_date DESC, aa.id DESC LIMIT 1
-            ) WHERE EXISTS (
-              SELECT 1 FROM attractor_analysis aa WHERE aa.ticker = candidates.ticker
-            )
-          `).run();
-          return jsonResponse({ fixed: result.meta?.changes || 0, field: 'attractor_score' });
+          // Get all candidates with analysis
+          const candidates = await env.DB.prepare(
+            "SELECT c.id, c.ticker, c.attractor_score FROM candidates c WHERE c.status = 'active'"
+          ).all();
+          let fixed = 0;
+          for (const c of (candidates.results || [])) {
+            const latest = await env.DB.prepare(
+              `SELECT adjusted_attractor_score, attractor_stability_score
+               FROM attractor_analysis WHERE ticker = ?
+               AND adjusted_attractor_score IS NOT NULL
+               ORDER BY id DESC LIMIT 1`
+            ).bind(c.ticker).first();
+            if (latest) {
+              const correctScore = latest.adjusted_attractor_score;
+              if (correctScore != null && correctScore !== c.attractor_score) {
+                await env.DB.prepare(
+                  'UPDATE candidates SET attractor_score = ? WHERE id = ?'
+                ).bind(correctScore, c.id).run();
+                fixed++;
+              }
+            }
+          }
+          return jsonResponse({ fixed, field: 'attractor_score' });
         }
 
         return errorResponse('Unknown fix type. Use: analysis_model, scores', 400);
@@ -565,7 +590,7 @@ export default {
 
           // Check attractor analysis
           const attractor = await env.DB.prepare(
-            'SELECT attractor_stability_score, adjusted_attractor_score, analysis_date, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+            'SELECT attractor_stability_score, adjusted_attractor_score, analysis_date, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC, id DESC LIMIT 1'
           ).bind(s.ticker).first();
 
           results.push({

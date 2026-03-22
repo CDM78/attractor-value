@@ -238,7 +238,7 @@ async function handleRescreen(ticker, mode, env, jsonResponse, errorResponse) {
 
   // Run Layer 2 valuation
   const attractorData = await env.DB.prepare(
-    'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+    'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC, id DESC LIMIT 1'
   ).bind(ticker).first();
   const screenInfo = { tier: liveScreen.tier, miss_severity: liveScreen.miss_severity };
 

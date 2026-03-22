@@ -238,7 +238,7 @@ export async function dailyRefresh(env, tickerLimit) {
       const fins = await getFinancialsForTicker(env.DB, row.ticker);
       const md = await env.DB.prepare('SELECT * FROM market_data WHERE ticker = ?').bind(row.ticker).first();
       const attractorData = await env.DB.prepare(
-        'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+        'SELECT attractor_stability_score, network_regime FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC, id DESC LIMIT 1'
       ).bind(row.ticker).first();
       // Check if this is a small cap for MoS adjustment
       const stockInfo = await env.DB.prepare('SELECT cap_tier, market_cap FROM stocks WHERE ticker = ?').bind(row.ticker).first();

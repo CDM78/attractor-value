@@ -24,7 +24,7 @@ export async function reportRoutes(request, env, ctx, { path, jsonResponse, erro
   ).bind(ticker).first();
 
   const analysis = await env.DB.prepare(
-    'SELECT * FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+    'SELECT * FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC, id DESC LIMIT 1'
   ).bind(ticker).first();
 
   const cr = await env.DB.prepare(

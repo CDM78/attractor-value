@@ -15,7 +15,7 @@ export async function analyzeRoutes(request, env, ctx, { path, jsonResponse, err
   // GET: retrieve most recent analysis
   if (request.method === 'GET') {
     const analysis = await env.DB.prepare(
-      'SELECT * FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC LIMIT 1'
+      'SELECT * FROM attractor_analysis WHERE ticker = ? ORDER BY analysis_date DESC, id DESC LIMIT 1'
     ).bind(ticker).first();
 
     if (!analysis) return errorResponse('No analysis found', 404);
