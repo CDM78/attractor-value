@@ -245,8 +245,10 @@ export function calculateTier4Valuation(candidate, financials, marketData, regim
   }
   if (!revenueTTM || revenueTTM <= 0 || !sharesOutstanding || sharesOutstanding <= 0) return null;
 
-  const operatingMargin = recent.net_income && revenueTTM > 0
-    ? recent.net_income / revenueTTM : 0.10;
+  // Operating margin: use actual if positive, floor at 5% for regime beneficiaries
+  // (the regime thesis implies improving business conditions → margin expansion)
+  const rawMargin = recent.net_income && revenueTTM > 0 ? recent.net_income / revenueTTM : 0;
+  const operatingMargin = Math.max(rawMargin, 0.05);
 
   // Bull case: regime fully materializes
   const revenueImpactBull = 0.40; // 40% revenue uplift from regime

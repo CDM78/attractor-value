@@ -15,6 +15,9 @@ export default function Dashboard() {
   const [sellSignals, setSellSignals] = useState([])
   const [configuredCapital, setConfiguredCapital] = useState(0)
   const [signalHistory, setSignalHistory] = useState([])
+  const [capitalModal, setCapitalModal] = useState(null) // 'deposit' | 'withdraw' | null
+  const [capitalAmount, setCapitalAmount] = useState('')
+  const [capitalSubmitting, setCapitalSubmitting] = useState(false)
   const [recentBanner, setRecentBanner] = useState(null)
   const [bannerDismissed, setBannerDismissed] = useState(false)
 
@@ -164,6 +167,56 @@ export default function Dashboard() {
 
       {error && <div className="text-fail text-sm bg-fail/10 rounded px-4 py-2">Error: {error}</div>}
 
+      {/* Capital Modal */}
+      {capitalModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" onClick={() => setCapitalModal(null)}>
+          <div className="bg-surface-secondary rounded-lg p-6 w-96 space-y-4" onClick={e => e.stopPropagation()}>
+            <h3 className="text-lg font-bold text-text-primary">{capitalModal === 'deposit' ? 'Add Capital' : 'Withdraw Capital'}</h3>
+            <p className="text-sm text-text-secondary">
+              {capitalModal === 'deposit'
+                ? 'This will increase your total portfolio value and recalculate tier allocations.'
+                : 'This will reduce your total portfolio value. Positions may need trimming.'}
+            </p>
+            <div>
+              <label className="text-xs text-text-secondary block mb-1">Amount ($)</label>
+              <input type="number" value={capitalAmount} onChange={e => setCapitalAmount(e.target.value)}
+                placeholder="e.g. 5000" autoFocus
+                className="w-full bg-surface-tertiary text-text-primary border border-border rounded px-3 py-2 text-sm" />
+            </div>
+            <div className="flex gap-2 justify-end">
+              <button onClick={() => setCapitalModal(null)} className="text-xs px-4 py-2 rounded bg-surface-tertiary text-text-secondary">Cancel</button>
+              <button disabled={capitalSubmitting || !capitalAmount}
+                onClick={async () => {
+                  setCapitalSubmitting(true)
+                  try {
+                    const res = await fetch(`${API_BASE}/api/portfolio/capital`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ action: capitalModal, amount: parseFloat(capitalAmount) }),
+                    })
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+                    const data = await res.json()
+                    setConfiguredCapital(data.new_capital)
+                    showToast(`${capitalModal === 'deposit' ? 'Added' : 'Withdrew'} $${parseFloat(capitalAmount).toLocaleString()}`)
+                    setCapitalModal(null)
+                    setCapitalAmount('')
+                    fetchSignals()
+                  } catch (err) {
+                    showToast(`Failed: ${err.message}`, 'fail')
+                  }
+                  setCapitalSubmitting(false)
+                }}
+                className={`text-xs px-4 py-2 rounded font-medium disabled:opacity-50 ${
+                  capitalModal === 'deposit' ? 'bg-pass/20 text-pass' : 'bg-warn/20 text-warn'
+                }`}
+              >
+                {capitalSubmitting ? 'Processing...' : capitalModal === 'deposit' ? 'Add Capital' : 'Withdraw'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* A. Portfolio Summary Bar */}
       <div className="flex flex-wrap items-center gap-3 bg-surface-secondary rounded px-4 py-3">
         <div className="text-sm">
@@ -172,11 +225,13 @@ export default function Dashboard() {
         </div>
         <div className="text-sm">
           <span className="text-text-secondary">Cash: </span>
-          <span className="text-text-primary">{cashPct.toFixed(0)}%</span>
+          <span className="text-text-primary">${cashBalance > 0 ? cashBalance.toLocaleString(undefined, { maximumFractionDigits: 0 }) : '0'} ({cashPct.toFixed(0)}%)</span>
         </div>
         <span className={`text-xs px-2 py-1 rounded font-medium ${envColor}`}>
           {environment}
         </span>
+        <button onClick={() => setCapitalModal('deposit')} className="text-xs px-2 py-1 rounded bg-pass/15 text-pass hover:bg-pass/25 transition-colors">+ Add Capital</button>
+        <button onClick={() => setCapitalModal('withdraw')} className="text-xs px-2 py-1 rounded bg-warn/15 text-warn hover:bg-warn/25 transition-colors">- Withdraw</button>
         {crisis?.crisis_active && (
           <span className="text-xs px-2 py-1 rounded bg-fail/15 text-fail font-medium">
             CRISIS ({crisis.severity})
@@ -406,21 +461,28 @@ export default function Dashboard() {
         )}
       </div>
 
-      {/* D. Allocation Overview */}
+      {/* D. Tier Budget Breakdown */}
       <div className="bg-surface-secondary rounded p-4">
-        <h3 className="text-sm font-bold text-text-secondary mb-3">Tier Allocation</h3>
-        <div className="flex flex-wrap gap-2">
+        <h3 className="text-sm font-bold text-text-secondary mb-3">Tier Allocation — ${configuredCapital.toLocaleString(undefined, { maximumFractionDigits: 0 })} Total</h3>
+        <div className="space-y-1.5">
           {[
-            { label: 'T2 Crisis', target: 15, color: 'bg-blue-500/15 text-blue-400' },
-            { label: 'T3 DKS', target: 30, color: 'bg-emerald-500/15 text-emerald-400' },
-            { label: 'T4 Regime', target: 20, color: 'bg-purple-500/15 text-purple-400' },
-            { label: 'Flexible', target: 30, color: 'bg-accent/15 text-accent' },
-            { label: 'Cash', target: 5, color: 'bg-surface-tertiary text-text-secondary' },
-          ].map(a => (
-            <span key={a.label} className={`text-xs px-2 py-1 rounded ${a.color}`}>
-              {a.label}: {a.target}% target
-            </span>
-          ))}
+            { label: 'T2 Crisis', pct: 15, color: 'bg-blue-500' },
+            { label: 'T3 DKS', pct: 30, color: 'bg-emerald-500' },
+            { label: 'T4 Regime', pct: 20, color: 'bg-purple-500' },
+            { label: 'Flexible', pct: 30, color: 'bg-accent' },
+            { label: 'Cash Reserve', pct: 5, color: 'bg-surface-tertiary' },
+          ].map(a => {
+            const budget = Math.round(configuredCapital * a.pct / 100)
+            return (
+              <div key={a.label} className="flex items-center gap-2 text-xs">
+                <span className="text-text-secondary w-20">{a.label}</span>
+                <div className="flex-1 bg-surface-tertiary rounded-full h-2">
+                  <div className={`${a.color} h-2 rounded-full`} style={{ width: `${a.pct}%` }} />
+                </div>
+                <span className="text-text-primary w-24 text-right">${budget.toLocaleString()} ({a.pct}%)</span>
+              </div>
+            )
+          })}
         </div>
       </div>
 

@@ -140,18 +140,11 @@ export async function analyzeAttractorStability(ticker, companyName, financialCo
     const scoreAfterConcentration = Math.max(CONCENTRATION_RISK.adjusted_score_floor, rawComposite - concentrationPenalty);
     bullResult.attractor_stability_score = Math.round(scoreAfterConcentration * 10) / 10;
 
-    // Secular disruption adjustment
-    const sd = bullResult.secular_disruption || {};
-    const totalIndicators = sd.total_indicators || 0;
-    let sdScoreAdj = 0;
-    if (totalIndicators >= 4) sdScoreAdj = SECULAR_DISRUPTION.advanced_score_adjustment;
-    else if (totalIndicators === 3) sdScoreAdj = SECULAR_DISRUPTION.active_score_adjustment;
-    else if (totalIndicators === 2) sdScoreAdj = SECULAR_DISRUPTION.early_score_adjustment;
-
-    bullResult.adjusted_attractor_score = Math.max(
-      SECULAR_DISRUPTION.adjusted_score_floor,
-      Math.round((scoreAfterConcentration + sdScoreAdj) * 10) / 10
-    );
+    // Secular disruption: captured by the bear case adversarial analysis.
+    // No separate modifier applied — the 60% bear weighting already penalizes
+    // companies in disrupted industries. Removed in restructuring to avoid
+    // double-counting (was Update 7, not in restructuring spec).
+    bullResult.adjusted_attractor_score = bullResult.attractor_stability_score;
   }
 
   // Small cap insider ownership modifier (quantitative, applied post-analysis)
@@ -242,12 +235,12 @@ function parseBearCaseResponse(responseText) {
 function formatDualAnalysis(result) {
   const parts = [];
   if (result.bull_case_text) {
-    parts.push('### Bull Case (weight: 60%)\n');
+    parts.push('### Bull Case (weight: 40%)\n');
     parts.push(result.bull_case_text);
     parts.push(`\n\nBull Case Score: ${result.bull_raw_score?.toFixed(1) ?? 'N/A'}/5.0`);
   }
   if (result.bear_case_text) {
-    parts.push('\n\n### Bear Case (weight: 40%)\n');
+    parts.push('\n\n### Bear Case (weight: 60%)\n');
     parts.push(result.bear_case_text);
     parts.push(`\n\nBear Case Score: ${result.bear_case?.attractor_stability_score?.toFixed(1) ?? 'N/A'}/5.0`);
   }
@@ -416,42 +409,15 @@ function parseAnalysisResponse(responseText, ticker) {
     ? Math.max(CONCENTRATION_RISK.adjusted_score_floor, rawScore - concentrationPenalty)
     : null;
 
-  // Secular disruption modifier (Update 7)
+  // Secular disruption: captured by the bear case adversarial analysis.
+  // No separate modifier — removed in restructuring (was Update 7).
   const sd = json.secular_disruption || {};
-  const totalIndicators = sd.total_indicators ?? [
-    sd.demand_substitution?.present,
-    sd.labor_model_disruption?.present,
-    sd.pricing_power_erosion?.present,
-    sd.capital_migration?.present,
-    sd.incumbent_response_paradox?.present,
-  ].filter(Boolean).length;
+  const totalIndicators = sd.total_indicators ?? 0;
+  let sdClassification = totalIndicators >= 4 ? 'advanced' : totalIndicators >= 3 ? 'active' : totalIndicators >= 2 ? 'early' : 'none';
+  let sdMosAdj = 0; // No MoS adjustment from secular disruption — bear case handles it
 
-  // Secular disruption classification thresholds (based on indicator count out of 5):
-  //   0-1 indicators = NONE   (green)  — no score/MoS adjustment
-  //   2   indicators = EARLY  (yellow) — score -0.5, no MoS adjustment
-  //   3   indicators = ACTIVE (orange) — score -1.0, +10% MoS
-  //   4-5 indicators = ADVANCED (red)  — score -1.5, +15% MoS
-  let sdClassification = 'none';
-  let sdScoreAdj = 0;
-  let sdMosAdj = 0;
-  if (totalIndicators >= 4) {
-    sdClassification = 'advanced';
-    sdScoreAdj = SECULAR_DISRUPTION.advanced_score_adjustment;
-    sdMosAdj = SECULAR_DISRUPTION.advanced_mos_adjustment;
-  } else if (totalIndicators === 3) {
-    sdClassification = 'active';
-    sdScoreAdj = SECULAR_DISRUPTION.active_score_adjustment;
-    sdMosAdj = SECULAR_DISRUPTION.active_mos_adjustment;
-  } else if (totalIndicators === 2) {
-    sdClassification = 'early';
-    sdScoreAdj = SECULAR_DISRUPTION.early_score_adjustment;
-    sdMosAdj = SECULAR_DISRUPTION.early_mos_adjustment;
-  }
-
-  // Final adjusted score = after concentration risk + secular disruption
-  const adjustedAttractorScore = scoreAfterConcentration != null
-    ? Math.max(SECULAR_DISRUPTION.adjusted_score_floor, Math.round((scoreAfterConcentration + sdScoreAdj) * 10) / 10)
-    : null;
+  // Final adjusted score = concentration risk only (no secular disruption penalty)
+  const adjustedAttractorScore = scoreAfterConcentration;
 
   return {
     ticker,
@@ -485,7 +451,7 @@ function parseAnalysisResponse(responseText, ticker) {
       incumbent_response_paradox_note: sd.incumbent_response_paradox?.explanation || null,
       total_indicators: totalIndicators,
       classification: sdClassification,
-      attractor_score_adjustment: sdScoreAdj,
+      attractor_score_adjustment: 0, // Secular disruption penalty removed — bear case handles it
       mos_adjustment_pct: sdMosAdj,
       beneficiary_sectors: JSON.stringify(sd.beneficiary_sectors || []),
       beneficiary_rationale: sd.beneficiary_rationale || null,

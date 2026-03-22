@@ -428,6 +428,45 @@ export default {
       }
     }
 
+    // Capital deposit/withdrawal
+    if (path === '/api/portfolio/capital' && request.method === 'POST') {
+      try {
+        const { ensureMultiTierTables, getPortfolioConfig, setPortfolioConfig } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const body = await request.json();
+        const action = body.action; // 'deposit' or 'withdraw'
+        const amount = parseFloat(body.amount);
+        if (!action || !amount || amount <= 0) return errorResponse('action and positive amount required', 400);
+
+        const config = await getPortfolioConfig(env.DB);
+        const currentCapital = parseFloat(config.total_capital) || 0;
+        const newCapital = action === 'deposit' ? currentCapital + amount : Math.max(0, currentCapital - amount);
+
+        await setPortfolioConfig(env.DB, 'total_capital', String(newCapital));
+
+        // Log transaction
+        await env.DB.prepare(
+          `INSERT INTO transactions (ticker, action, shares, price_per_share, total_amount, transaction_date, reason)
+           VALUES ('__CAPITAL', ?, 0, 0, ?, datetime('now'), ?)`
+        ).bind(action, amount, `Capital ${action}: $${amount.toFixed(0)}`).run();
+
+        // Re-run signals (budget changes may affect position sizing)
+        const { refreshAllSignals } = await import('./services/signalEngine.js');
+        const refresh = await refreshAllSignals(env.DB, env);
+
+        return jsonResponse({
+          action,
+          amount,
+          previous_capital: currentCapital,
+          new_capital: newCapital,
+          signals_updated: refresh.updated,
+          signals: refresh.signals,
+        });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Portfolio config get/set
     if (path === '/api/portfolio/config') {
       const { ensureMultiTierTables, getPortfolioConfig, setPortfolioConfig } = await import('./db/queries.js');

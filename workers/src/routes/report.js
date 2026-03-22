@@ -229,14 +229,26 @@ function buildReport(d) {
   const divYieldStr = divYield ? divYield.toFixed(2) + '%' : 'N/A';
   const divYieldFlag = divYield > 5.0 && isFinSector ? ' ⚠️ *May include preferred dividends*' : '';
   lines.push(`| Dividend Yield | ${divYieldStr}${divYieldFlag} |`);
-  lines.push(`| Market Cap | ${stock.market_cap ? '$' + (stock.market_cap / 1e9).toFixed(1) + 'B' : 'N/A'} |`);
+  // market_cap in stocks table is stored in millions; convert to billions for display
+  // Fallback: compute from price * shares_outstanding if market_cap is null
+  let marketCapDisplay = 'Not available';
+  const mcMillions = stock.market_cap
+    || (marketData?.price && financials?.[0]?.shares_outstanding
+        ? (marketData.price * financials[0].shares_outstanding) / 1e6
+        : null);
+  if (mcMillions && mcMillions > 0) {
+    marketCapDisplay = mcMillions >= 1000
+      ? '$' + (mcMillions / 1000).toFixed(1) + 'B'
+      : '$' + mcMillions.toFixed(0) + 'M';
+  }
+  lines.push(`| Market Cap | ${marketCapDisplay} |`);
   lines.push(`| Sector | ${stock.sector || 'N/A'} |`);
   lines.push(`| Industry | ${stock.industry || 'N/A'} |`);
   lines.push('');
 
-  // Layer 1: Screening
+  // Quantitative Screening
   lines.push('---');
-  lines.push('## Layer 1: Quantitative Screening');
+  lines.push('## Quantitative Screening');
   lines.push('');
   if (screenResult) {
     lines.push(`**Tier:** ${screenResult.tier === 'full_pass' ? 'Full Pass (8/8)' : screenResult.tier === 'near_miss' ? `Near Miss (${screenResult.pass_count}/8)` : `Fail (${screenResult.pass_count}/8)`}  `);
@@ -295,9 +307,12 @@ function buildReport(d) {
     lines.push('');
   }
 
-  // Layer 2: Valuation
+  // Valuation
   lines.push('---');
-  lines.push('## Layer 2: Graham Valuation');
+  const valMethodLabel = valuation?.valuation_method === 'growth_adjusted' ? 'Growth-Adjusted'
+    : valuation?.valuation_method === 'scenario_weighted' ? 'Scenario-Weighted'
+    : 'Graham';
+  lines.push(`## Valuation (${valMethodLabel} Model)`);
   lines.push('');
   if (valuation) {
     lines.push('### Formula');
@@ -357,9 +372,9 @@ function buildReport(d) {
     lines.push('');
   }
 
-  // Layer 3: Attractor Analysis
+  // Attractor Analysis
   lines.push('---');
-  lines.push('## Layer 3: Attractor Stability Analysis');
+  lines.push('## Attractor Stability Analysis');
   lines.push('');
   if (analysis) {
     const effectiveScore = analysis.adjusted_attractor_score ?? analysis.attractor_stability_score;
@@ -387,7 +402,11 @@ function buildReport(d) {
 
     lines.push('### AI Analysis');
     lines.push('');
-    lines.push(analysis.analysis_text || 'No analysis text available.');
+    // Fix inverted bull/bear weight labels in previously stored analysis text
+    let analysisText = analysis.analysis_text || 'No analysis text available.';
+    analysisText = analysisText.replace('Bull Case (weight: 60%)', 'Bull Case (weight: 40%)');
+    analysisText = analysisText.replace('Bear Case (weight: 40%)', 'Bear Case (weight: 60%)');
+    lines.push(analysisText);
     lines.push('');
 
     // Red flags
@@ -486,7 +505,9 @@ function buildReport(d) {
   lines.push('---');
   lines.push('## Financial History');
   lines.push('');
-  if (financials.length > 0) {
+  // Check if financials have any meaningful data (not just empty rows)
+  const hasFinancialData = financials.length > 0 && financials.some(f => f.eps != null || f.revenue != null);
+  if (hasFinancialData) {
     if (isFinSector) {
       lines.push('> *Financial sector company — showing ROE instead of ROIC, Debt/Capital instead of D/E*');
       lines.push('');
@@ -511,7 +532,7 @@ function buildReport(d) {
     }
     lines.push('');
   } else {
-    lines.push('No financial history available.');
+    lines.push('EDGAR financial history not yet available for this company. Financial data will be populated when SEC filings are processed.');
     lines.push('');
   }
 
@@ -629,7 +650,7 @@ function ratingWord(score) {
   return 'Poor';
 }
 
-// Threshold proximity calculations for Layer 1 filters
+// Threshold proximity calculations for screening filters
 // Returns an object with a display string per filter: '' if comfortable, '⚠️ MARGINAL (X%)' if within 10%
 function computeProximities(marketData, financials, screenResult, dynamicPECeiling, isFinSector) {
   function marginalLabel(actual, threshold) {
