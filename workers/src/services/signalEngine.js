@@ -43,12 +43,23 @@ export async function computeSignal(db, candidate, env) {
 
   const financials = await getFinancialsForTicker(db, ticker);
 
-  // Get shares from stocks table: Finnhub direct, or compute from market_cap / price
+  // Get shares outstanding — priority order matters for split safety:
+  // 1) EDGAR financials (split-adjusted by our normalization code)
+  // 2) Finnhub shares_outstanding_m from stocks table
+  // 3) market_cap / price fallback (DANGEROUS if market_cap is stale/pre-split)
   const stockRow = await db.prepare(
     'SELECT shares_outstanding_m, market_cap FROM stocks WHERE ticker = ?'
   ).bind(ticker).first();
-  let finnhubSharesM = stockRow?.shares_outstanding_m || null;
-  // Fallback: market_cap (millions) / price gives shares in millions
+  let finnhubSharesM = null;
+  // Prefer EDGAR shares (most recent fiscal year) — these are split-normalized
+  if (financials.length > 0 && financials[0].shares_outstanding > 0) {
+    finnhubSharesM = financials[0].shares_outstanding / 1e6; // EDGAR stores raw count, convert to millions
+  }
+  // Fallback: Finnhub direct (may be stale post-split)
+  if (!finnhubSharesM && stockRow?.shares_outstanding_m > 0) {
+    finnhubSharesM = stockRow.shares_outstanding_m;
+  }
+  // Last resort: market_cap / price (ONLY if market_cap looks reasonable vs Yahoo price)
   if (!finnhubSharesM && stockRow?.market_cap > 0 && marketData?.price > 0) {
     finnhubSharesM = stockRow.market_cap / marketData.price;
   }
