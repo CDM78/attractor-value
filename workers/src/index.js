@@ -398,6 +398,45 @@ export default {
       }
     }
 
+    // Admin: bulk update stocks with financial data (from EDGAR Frames)
+    if (path === '/api/admin/bulk-update-stocks' && request.method === 'POST') {
+      try {
+        const body = await request.json();
+        const updates = body.updates || [];
+        let updated = 0;
+
+        for (const u of updates) {
+          if (!u.ticker) continue;
+          const sets = [];
+          const vals = [];
+
+          if (u.revenue_growth_3y != null) { sets.push('revenue_growth_3y = ?'); vals.push(u.revenue_growth_3y); }
+          if (u.gross_margin_pct != null) { sets.push('gross_margin_pct = ?'); vals.push(u.gross_margin_pct); }
+          if (u.shares_outstanding_m != null) { sets.push('shares_outstanding_m = ?'); vals.push(u.shares_outstanding_m); }
+
+          // Compute market_cap from shares × price if not already set
+          if (u.shares_outstanding_m != null) {
+            const md = await env.DB.prepare('SELECT price FROM market_data WHERE ticker = ?').bind(u.ticker).first();
+            if (md?.price > 0) {
+              const mcap = Math.round(u.shares_outstanding_m * md.price);
+              sets.push('market_cap = ?');
+              vals.push(mcap);
+            }
+          }
+
+          if (sets.length > 0) {
+            vals.push(u.ticker);
+            await env.DB.prepare(`UPDATE stocks SET ${sets.join(', ')} WHERE ticker = ?`).bind(...vals).run();
+            updated++;
+          }
+        }
+
+        return jsonResponse({ updated, total: updates.length });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Admin: fetch and add US stock list from Finnhub
     if (path === '/api/admin/fetch-stock-list' && request.method === 'POST') {
       try {
