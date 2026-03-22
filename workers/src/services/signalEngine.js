@@ -23,11 +23,12 @@ export async function computeSignal(db, candidate, env) {
     };
   }
 
-  if (attractorScore != null && attractorScore < 2.5) {
+  // Attractor gate raised from 2.5 to 3.0 (threshold sweep: same beat rate, +5pp alpha)
+  if (attractorScore != null && attractorScore < 3.0) {
     return {
       signal: 'PASS',
       confidence: null,
-      reason: `Attractor too weak (${attractorScore})`,
+      reason: `Attractor below 3.0 quality threshold (${attractorScore})`,
       color: 'red',
     };
   }
@@ -78,7 +79,7 @@ export async function computeSignal(db, candidate, env) {
   // Run tier-appropriate valuation
   let valuation = null;
 
-  if (candidate.discovery_tier === 'tier2') {
+  if (candidate.discovery_tier === 'crisis' || candidate.discovery_tier === 'tier2') {
     // Tier 2: Graham formula (established companies in crisis)
     const bondRow = await db.prepare(
       "SELECT price FROM market_data WHERE ticker = '__AAA_BOND_YIELD'"
@@ -94,14 +95,14 @@ export async function computeSignal(db, candidate, env) {
     if (valuation) valuation.valuation_method = 'graham';
   }
 
-  if (candidate.discovery_tier === 'tier3') {
+  if (candidate.discovery_tier === 'growth' || candidate.discovery_tier === 'tier3') {
     // Tier 3: Growth-adjusted revenue model
     valuation = calculateTier3Valuation(
       candidate, financials, marketData, attractorScore, economicEnvironment, finnhubSharesM
     );
   }
 
-  if (candidate.discovery_tier === 'tier4') {
+  if (candidate.discovery_tier === 'regime' || candidate.discovery_tier === 'tier4') {
     // Tier 4: Scenario-weighted model
     let regime = null;
     if (candidate.regime_id) {

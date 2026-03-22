@@ -340,7 +340,7 @@ CREATE TABLE IF NOT EXISTS regime_registry (
 CREATE TABLE IF NOT EXISTS candidates (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     ticker TEXT NOT NULL,
-    discovery_tier TEXT NOT NULL CHECK(discovery_tier IN ('tier2', 'tier3', 'tier4')),
+    discovery_tier TEXT NOT NULL CHECK(discovery_tier IN ('tier2', 'tier3', 'tier4', 'crisis', 'growth', 'regime')),
     regime_id INTEGER,
     discovered_date TEXT NOT NULL,
     prescreen_pass INTEGER NOT NULL DEFAULT 0,

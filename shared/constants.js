@@ -193,12 +193,9 @@ export const SMALL_CAP = {
   financial_min_assets: 1_000_000_000,    // community banks/micro-insurers below $1B excluded
 };
 
-// Sell Discipline Rules
+// Sell Discipline Rules — simplified to 2 calibration-validated triggers
+// Test 5: growth failure hurts (-$1,512), others negligible. Take-profit sweep: +125% optimal.
 export const SELL_RULES = [
-  'price_exceeds_iv',
-  'attractor_dissolution',
-  'thesis_violation',
-  'better_opportunity',
-  'concentration_creep',
-  'adjacent_possible_invalidation',
+  'take_profit_125',       // Sell at +125% return (sweep-validated peak)
+  'attractor_dissolution', // Emergency stop: attractor < 2.0
 ];

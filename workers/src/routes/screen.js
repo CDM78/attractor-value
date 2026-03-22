@@ -6,8 +6,8 @@ import { getOrFetchBondYield } from '../services/fred.js';
 export async function screenRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
   const url = new URL(request.url);
 
-  // POST /api/screen/tier3 — Tier 3 emerging DKS pre-screen
-  if (request.method === 'POST' && path.startsWith('/api/screen/tier3')) {
+  // POST /api/screen/growth (alias: /api/screen/tier3) — Growth pipeline pre-screen
+  if (request.method === 'POST' && (path.startsWith('/api/screen/growth') || path.startsWith('/api/screen/tier3'))) {
     try {
       const { ensureMultiTierTables } = await import('../db/queries.js');
       await ensureMultiTierTables(env.DB);
@@ -76,19 +76,19 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
   }
 
   // GET /api/screen/tier3 — Get existing Tier 3 candidates
-  if (request.method === 'GET' && path.startsWith('/api/screen/tier3')) {
+  if (request.method === 'GET' && (path.startsWith('/api/screen/growth') || path.startsWith('/api/screen/tier3'))) {
     try {
       const { getCandidatesByTier } = await import('../db/queries.js');
       const signal = url.searchParams.get('signal') || null;
-      const candidates = await getCandidatesByTier(env.DB, 'tier3', signal);
+      const candidates = await getCandidatesByTier(env.DB, 'growth', signal);
       return jsonResponse({ candidates, count: candidates.length });
     } catch (err) {
       return errorResponse(err.message);
     }
   }
 
-  // POST /api/screen/tier2 — Tier 2 crisis dislocation pre-screen
-  if (request.method === 'POST' && path.startsWith('/api/screen/tier2')) {
+  // POST /api/screen/crisis (alias: /api/screen/tier2) — Crisis dislocation pre-screen
+  if (request.method === 'POST' && (path.startsWith('/api/screen/crisis') || path.startsWith('/api/screen/tier2'))) {
     try {
       const { ensureMultiTierTables } = await import('../db/queries.js');
       await ensureMultiTierTables(env.DB);
@@ -146,12 +146,12 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
     }
   }
 
-  // GET /api/screen/tier2 — Get existing Tier 2 candidates
-  if (request.method === 'GET' && path.startsWith('/api/screen/tier2')) {
+  // GET /api/screen/crisis (alias: /api/screen/tier2) — Get existing Crisis candidates
+  if (request.method === 'GET' && (path.startsWith('/api/screen/crisis') || path.startsWith('/api/screen/tier2'))) {
     try {
       const { getCandidatesByTier } = await import('../db/queries.js');
       const signal = url.searchParams.get('signal') || null;
-      const candidates = await getCandidatesByTier(env.DB, 'tier2', signal);
+      const candidates = await getCandidatesByTier(env.DB, 'crisis', signal);
       return jsonResponse({ candidates, count: candidates.length });
     } catch (err) {
       return errorResponse(err.message);
@@ -159,7 +159,7 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
   }
 
   // POST /api/screen/tier4 — Tier 4 regime transition beneficiary screen
-  if (request.method === 'POST' && path.startsWith('/api/screen/tier4')) {
+  if (request.method === 'POST' && (path.startsWith('/api/screen/regime') || path.startsWith('/api/screen/tier4'))) {
     try {
       const { ensureMultiTierTables, getActiveRegimes } = await import('../db/queries.js');
       await ensureMultiTierTables(env.DB);
@@ -205,11 +205,11 @@ export async function screenRoutes(request, env, ctx, { path, jsonResponse, erro
   }
 
   // GET /api/screen/tier4 — Get existing Tier 4 candidates
-  if (request.method === 'GET' && path.startsWith('/api/screen/tier4')) {
+  if (request.method === 'GET' && (path.startsWith('/api/screen/regime') || path.startsWith('/api/screen/tier4'))) {
     try {
       const { getCandidatesByTier } = await import('../db/queries.js');
       const signal = url.searchParams.get('signal') || null;
-      const candidates = await getCandidatesByTier(env.DB, 'tier4', signal);
+      const candidates = await getCandidatesByTier(env.DB, 'regime', signal);
       return jsonResponse({ candidates, count: candidates.length });
     } catch (err) {
       return errorResponse(err.message);

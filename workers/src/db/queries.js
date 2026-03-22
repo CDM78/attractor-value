@@ -218,7 +218,7 @@ export async function ensureMultiTierTables(db) {
   await db.prepare(`CREATE TABLE IF NOT EXISTS candidates (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     ticker TEXT NOT NULL,
-    discovery_tier TEXT NOT NULL CHECK(discovery_tier IN ('tier2', 'tier3', 'tier4')),
+    discovery_tier TEXT NOT NULL CHECK(discovery_tier IN ('tier2', 'tier3', 'tier4', 'crisis', 'growth', 'regime')),
     regime_id INTEGER,
     discovered_date TEXT NOT NULL,
     prescreen_pass INTEGER NOT NULL DEFAULT 0,
@@ -339,6 +339,18 @@ export async function ensureMultiTierTables(db) {
     await db.prepare('CREATE INDEX IF NOT EXISTS idx_candidates_signal ON candidates(signal)').run();
     await db.prepare('CREATE INDEX IF NOT EXISTS idx_regime_status ON regime_registry(status)').run();
   } catch { /* indexes already exist */ }
+
+  // Migration: rename tier2/tier3/tier4 → crisis/growth/regime
+  try {
+    await db.prepare("UPDATE candidates SET discovery_tier = 'crisis' WHERE discovery_tier = 'tier2'").run();
+    await db.prepare("UPDATE candidates SET discovery_tier = 'growth' WHERE discovery_tier = 'tier3'").run();
+    await db.prepare("UPDATE candidates SET discovery_tier = 'regime' WHERE discovery_tier = 'tier4'").run();
+  } catch { /* already migrated or table doesn't exist */ }
+
+  // Holdings: add position_type for VOO hybrid model
+  try {
+    await db.prepare("ALTER TABLE holdings ADD COLUMN position_type TEXT DEFAULT 'framework'").run();
+  } catch { /* column already exists */ }
 }
 
 // --- Multi-Tier Query Helpers ---
@@ -375,12 +387,19 @@ export async function upsertCandidate(db, candidate) {
 }
 
 export async function getCandidatesByTier(db, tier, signalFilter) {
+  // Accept both old (tier2/tier3/tier4) and new (crisis/growth/regime) names
+  const tierAliases = {
+    crisis: ['crisis', 'tier2'], growth: ['growth', 'tier3'], regime: ['regime', 'tier4'],
+    tier2: ['crisis', 'tier2'], tier3: ['growth', 'tier3'], tier4: ['regime', 'tier4'],
+  };
+  const tiers = tierAliases[tier] || [tier];
+
   let sql = `SELECT c.*, md.price as current_price, s.company_name, s.sector
      FROM candidates c
      LEFT JOIN market_data md ON c.ticker = md.ticker
      LEFT JOIN stocks s ON c.ticker = s.ticker
-     WHERE c.discovery_tier = ? AND c.status = ?`;
-  const params = [tier, 'active'];
+     WHERE c.discovery_tier IN (${tiers.map(() => '?').join(',')}) AND c.status = ?`;
+  const params = [...tiers, 'active'];
   if (signalFilter) {
     sql += ' AND c.signal = ?';
     params.push(signalFilter);

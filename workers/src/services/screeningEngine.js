@@ -188,21 +188,25 @@ export function runLayer1Screen(stock, financials, marketData, options = {}) {
     results.passes_earnings_growth = 0;
   }
 
-  // Count passes and classify tier (Update 4)
+  // Count passes and classify tier
+  // Calibration-validated: removed P/B (buyback-distorted, covered by P/E×P/B composite)
+  // and dividend record (excludes best capital allocators like BRK, early AAPL).
+  // What-If battery: 0% CV gap, 64% improved, 0% degraded.
   const hardFilters = [
-    'passes_pe', 'passes_pb', 'passes_pe_x_pb',
+    'passes_pe', 'passes_pe_x_pb',
     'passes_debt_equity', 'passes_current_ratio',
-    'passes_earnings_stability', 'passes_dividend_record',
+    'passes_earnings_stability',
     'passes_earnings_growth'
   ];
+  // P/B and dividend still computed above for informational display, but not gating
   const passCount = hardFilters.filter(f => results[f] === 1).length;
   results.pass_count = passCount;
-  results.passes_all_hard = passCount === 8 ? 1 : 0;
+  results.passes_all_hard = passCount === 6 ? 1 : 0;
 
-  // Tier classification
-  if (passCount === 8) {
+  // Tier classification (6 filters: full_pass=6, near_miss=5)
+  if (passCount === 6) {
     results.tier = 'full_pass';
-  } else if (passCount === 7) {
+  } else if (passCount === 5) {
     results.tier = 'near_miss';
     // Identify failed filter and compute miss severity
     const failedFilter = hardFilters.find(f => results[f] !== 1);

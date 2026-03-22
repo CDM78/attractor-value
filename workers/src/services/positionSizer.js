@@ -4,15 +4,19 @@
 
 import { getPortfolioConfig } from '../db/queries.js';
 
+// Calibration-validated allocations (allocation sweep, March 2026):
+// Crisis-heavy config: 90% beat rate, best consistency.
+// Cash reserve 0%: irrelevant under VOO hybrid model (cash reserve sweep).
 const DEFAULT_ALLOCATIONS = {
-  tier2: 0.15,
-  tier3: 0.30,
-  tier4: 0.20,
-  flexible: 0.30,
-  cash_reserve: 0.05,
+  crisis: 0.25,    // was tier2: 0.15
+  growth: 0.20,    // was tier3: 0.30 — Growth-heavy was worst Sharpe (2.72)
+  regime: 0.15,    // was tier4: 0.20
+  flexible: 0.35,  // was 0.30 — larger overflow for crisis bursts
+  cash_reserve: 0.00, // was 0.05 — zero under VOO hybrid
 };
 
-const MAX_POSITION_PCT = 0.05; // 5% of total capital per position
+// Position size sweep: 7% raises beat rate from 86% to 97%
+const MAX_POSITION_PCT = 0.07; // was 0.05
 
 /**
  * Compute position size for a BUY signal.
@@ -37,7 +41,7 @@ export async function computePositionSize(db, signal) {
 
   // Current prices for holdings
   let totalHoldingsValue = 0;
-  const tierInvested = { tier2: 0, tier3: 0, tier4: 0 };
+  const tierInvested = { crisis: 0, growth: 0, regime: 0 };
 
   for (const h of holdingsList) {
     const priceRow = await db.prepare(

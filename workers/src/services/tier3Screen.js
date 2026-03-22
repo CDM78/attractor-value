@@ -176,13 +176,13 @@ export async function storeTier3Candidates(db, candidates) {
   for (const c of candidates) {
     // Check if this ticker already exists as an active candidate
     const existing = await db.prepare(
-      "SELECT id FROM candidates WHERE ticker = ? AND discovery_tier = 'tier3' AND status = 'active'"
+      "SELECT id FROM candidates WHERE ticker = ? AND discovery_tier IN ('tier3','growth') AND status = 'active'"
     ).bind(c.ticker).first();
     if (existing) continue; // Don't duplicate
 
     await upsertCandidate(db, {
       ticker: c.ticker,
-      discovery_tier: 'tier3',
+      discovery_tier: 'growth',
       discovered_date: new Date().toISOString(),
       prescreen_pass: true,
       prescreen_data: {
