@@ -171,6 +171,19 @@ export default {
       }
     }
 
+    // Portfolio summary with VOO parking position
+    if (path === '/api/portfolio/summary') {
+      try {
+        const { ensureMultiTierTables } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const { getPortfolioSummary } = await import('./services/vooParkingManager.js');
+        const summary = await getPortfolioSummary(env.DB);
+        return jsonResponse(summary);
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Get all current signals (BUY, NOT_YET) with position sizing
     if (path === '/api/signals') {
       try {
@@ -606,6 +619,10 @@ export default {
         const newCapital = action === 'deposit' ? currentCapital + amount : Math.max(0, currentCapital - amount);
 
         await setPortfolioConfig(env.DB, 'total_capital', String(newCapital));
+
+        // Recalculate VOO parking position
+        const { recalculateVooParking } = await import('./services/vooParkingManager.js');
+        const voo = await recalculateVooParking(env.DB);
 
         // Log transaction
         await env.DB.prepare(
