@@ -383,3 +383,15 @@ CREATE TABLE IF NOT EXISTS portfolio_config (
     value TEXT NOT NULL,
     updated_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+
+-- Stock split history (auto-fetched from Finnhub + manual entries)
+CREATE TABLE IF NOT EXISTS stock_splits (
+    ticker TEXT NOT NULL,
+    split_date TEXT NOT NULL,
+    ratio REAL NOT NULL,          -- e.g. 10 for a 10-for-1 split
+    from_factor INTEGER,          -- e.g. 1
+    to_factor INTEGER,            -- e.g. 10
+    source TEXT DEFAULT 'finnhub', -- 'finnhub', 'manual', 'detected'
+    created_at TEXT NOT NULL DEFAULT (datetime('now')),
+    PRIMARY KEY (ticker, split_date)
+);

@@ -175,6 +175,7 @@ export async function backfillRoutes(request, env, ctx, { path, jsonResponse, er
   if (mode === 'edgar') {
     const { ensureEdgarTables, upsertFinancials, upsertDataConfidence, updateMarketDataRatios } = await import('../db/queries.js');
     const { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, getCik, delay } = await import('../services/edgarXbrl.js');
+    const { fetchAndMergeSplits } = await import('../services/aggregator.js');
     await ensureEdgarTables(env.DB);
 
     const tickers = await env.DB.prepare(
@@ -186,10 +187,14 @@ export async function backfillRoutes(request, env, ctx, { path, jsonResponse, er
        LIMIT ?`
     ).bind(limit).all();
 
-    const stats = { fetched: 0, ratios: 0, skipped: 0, errors: 0 };
+    const stats = { fetched: 0, ratios: 0, skipped: 0, errors: 0, splitsFound: 0 };
 
     for (const row of (tickers.results || [])) {
       try {
+        // Fetch and merge splits BEFORE parsing EDGAR data
+        const newSplits = await fetchAndMergeSplits(env.DB, row.ticker, env.FINNHUB_API_KEY);
+        stats.splitsFound += newSplits;
+
         const cik = await getCik(env.DB, row.ticker);
         if (!cik) { stats.skipped++; continue; }
 
@@ -342,6 +347,129 @@ export async function backfillRoutes(request, env, ctx, { path, jsonResponse, er
   }
 
   return jsonResponse(stats);
+}
+
+// POST /api/reprocess?tickers=NFLX,NOW  (or ?all=candidates for all current candidates)
+// Reprocesses financial data with current split adjustments:
+// 1. Fetches splits from Finnhub and merges into runtime
+// 2. Deletes existing financials for the ticker
+// 3. Re-fetches from EDGAR with corrected split normalization
+// 4. Re-computes derived ratios
+// Returns before/after comparison for verification
+export async function reprocessRoutes(request, env, ctx, { path, jsonResponse, errorResponse }) {
+  if (request.method !== 'POST') {
+    return errorResponse('POST required. Usage: POST /api/reprocess?tickers=NFLX,NOW', 405);
+  }
+
+  const url = new URL(request.url);
+  const tickerParam = url.searchParams.get('tickers');
+  const allCandidates = url.searchParams.get('all') === 'candidates';
+
+  let tickers;
+  if (tickerParam) {
+    tickers = tickerParam.split(',').map(t => t.trim().toUpperCase()).filter(Boolean);
+  } else if (allCandidates) {
+    const rows = await env.DB.prepare(
+      `SELECT DISTINCT ticker FROM (
+        SELECT ticker FROM candidates WHERE status = 'active'
+        UNION SELECT ticker FROM watchlist
+        UNION SELECT ticker FROM holdings
+      ) ORDER BY ticker`
+    ).all();
+    tickers = (rows.results || []).map(r => r.ticker);
+  } else {
+    return errorResponse('Provide ?tickers=NFLX,NOW or ?all=candidates', 400);
+  }
+
+  const { fetchAndMergeSplits } = await import('../services/aggregator.js');
+  const { ensureEdgarTables, upsertFinancials, upsertDataConfidence, updateMarketDataRatios } = await import('../db/queries.js');
+  const { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, getCik, delay, SPLIT_ADJUSTMENTS } = await import('../services/edgarXbrl.js');
+
+  await ensureEdgarTables(env.DB);
+
+  const results = [];
+
+  for (const ticker of tickers) {
+    const result = { ticker, status: 'ok', before: null, after: null, splitsFound: 0 };
+
+    try {
+      // Capture BEFORE state
+      const beforeFin = await env.DB.prepare(
+        'SELECT fiscal_year, eps, book_value_per_share, shares_outstanding FROM financials WHERE ticker = ? ORDER BY fiscal_year DESC LIMIT 5'
+      ).bind(ticker).all();
+      result.before = (beforeFin.results || []).map(r => ({
+        year: r.fiscal_year,
+        eps: r.eps,
+        bvps: r.book_value_per_share,
+        shares: r.shares_outstanding,
+      }));
+
+      // Step 1: Fetch and merge splits
+      const splitsFound = await fetchAndMergeSplits(env.DB, ticker, env.FINNHUB_API_KEY);
+      result.splitsFound = splitsFound;
+      result.activeSplits = (SPLIT_ADJUSTMENTS[ticker] || []).map(s => ({
+        date: s.date,
+        ratio: s.ratio,
+      }));
+
+      // Step 2: Delete existing financials for this ticker
+      await env.DB.prepare('DELETE FROM financials WHERE ticker = ?').bind(ticker).run();
+      await env.DB.prepare("DELETE FROM data_confidence WHERE ticker = ? AND data_source = 'edgar'").bind(ticker).run();
+
+      // Step 3: Re-fetch from EDGAR with corrected splits
+      const cik = await getCik(env.DB, ticker);
+      if (!cik) {
+        result.status = 'no_cik';
+        results.push(result);
+        continue;
+      }
+
+      await delay(200);
+      const facts = await fetchCompanyFacts(cik);
+      if (!facts) {
+        result.status = 'edgar_404';
+        results.push(result);
+        continue;
+      }
+
+      const { financials, confidence } = parseEdgarToFinancials(ticker, facts);
+      for (const fin of financials) await upsertFinancials(env.DB, fin);
+      for (const dc of confidence) await upsertDataConfidence(env.DB, dc);
+
+      // Step 4: Re-compute derived ratios
+      const md = await env.DB.prepare('SELECT price FROM market_data WHERE ticker = ?').bind(ticker).first();
+      if (md?.price && financials[0]) {
+        const ratios = computeDerivedRatios(md.price, financials[0]);
+        if (ratios) {
+          await updateMarketDataRatios(env.DB, ticker, ratios, 'edgar_computed');
+          result.ratios = ratios;
+        }
+      }
+
+      // Capture AFTER state
+      const afterFin = await env.DB.prepare(
+        'SELECT fiscal_year, eps, book_value_per_share, shares_outstanding FROM financials WHERE ticker = ? ORDER BY fiscal_year DESC LIMIT 5'
+      ).bind(ticker).all();
+      result.after = (afterFin.results || []).map(r => ({
+        year: r.fiscal_year,
+        eps: r.eps,
+        bvps: r.book_value_per_share,
+        shares: r.shares_outstanding,
+      }));
+
+      result.yearsStored = financials.length;
+    } catch (err) {
+      result.status = 'error';
+      result.error = err.message;
+    }
+
+    results.push(result);
+  }
+
+  return jsonResponse({
+    message: `Reprocessed ${results.length} tickers with split normalization`,
+    results,
+  });
 }
 
 // POST /api/fill-fundamentals?limit=6

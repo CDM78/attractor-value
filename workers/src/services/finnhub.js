@@ -74,6 +74,29 @@ export async function getBasicMetrics(ticker, apiKey) {
   };
 }
 
+// 0b. Stock Splits
+// GET /stock/split?symbol={ticker}&from={date}&to={date}
+// Returns array of { date, fromFactor, toFactor, symbol }
+// e.g. { date: "2025-11-17", fromFactor: 1, toFactor: 10, symbol: "NFLX" }
+export async function getStockSplits(ticker, apiKey, fromDate = '2000-01-01') {
+  const toDate = new Date().toISOString().split('T')[0];
+  const data = await rateLimitedFetch(
+    `${FINNHUB_BASE}/stock/split?symbol=${encodeURIComponent(ticker)}&from=${fromDate}&to=${toDate}&token=${apiKey}`
+  );
+
+  if (!Array.isArray(data)) return [];
+
+  return data
+    .filter(s => s.fromFactor > 0 && s.toFactor > 0 && s.toFactor !== s.fromFactor)
+    .map(s => ({
+      date: s.date,
+      ratio: s.toFactor / s.fromFactor,
+      from_factor: s.fromFactor,
+      to_factor: s.toFactor,
+    }))
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
 // 1. Insider Transactions
 // GET /stock/insider-transactions?symbol={ticker}&from={date}&to={date}
 // Returns raw transaction list
@@ -226,6 +249,24 @@ export async function getFinancialsReported(ticker, apiKey) {
 
 // Parse Finnhub financials-reported into our financials table format
 // XBRL tag names vary by company, so we try multiple common variants
+// Import split adjustments for per-share normalization in the Finnhub fallback path.
+// This is the same SPLIT_ADJUSTMENTS object used by edgarXbrl.js — since it's
+// imported by reference, runtime additions from aggregator.fetchAndMergeSplits()
+// are visible here too.
+import SPLIT_ADJUSTMENTS from '../data/splits.js';
+
+function adjustFinnhubForSplits(ticker, value, endDate) {
+  const splits = SPLIT_ADJUSTMENTS[ticker];
+  if (!splits || value == null) return value;
+  let adjusted = value;
+  for (const split of splits) {
+    if (endDate < split.date) {
+      adjusted = adjusted / split.ratio;
+    }
+  }
+  return adjusted;
+}
+
 export function parseFinancialsReported(ticker, reports) {
   const findValue = (report, ...tags) => {
     if (!report.report) return null;
@@ -291,10 +332,16 @@ export function parseFinancialsReported(ticker, reports) {
 
     const totalDebtVal = (totalDebt || 0) + (shortTermDebt || 0);
     const fcf = opCashflow != null ? opCashflow - Math.abs(capex || 0) : null;
-    const bvps = equity && shares ? equity / shares : null;
-    const epsCalc = eps || (netIncome && shares ? netIncome / shares : null);
+    const bvpsRaw = equity && shares ? equity / shares : null;
+    const epsRaw = eps || (netIncome && shares ? netIncome / shares : null);
     const investedCapital = (equity || 0) + totalDebtVal;
     const roic = netIncome && investedCapital > 0 ? (netIncome / investedCapital) * 100 : null;
+
+    // Apply split adjustment to per-share metrics
+    // Finnhub financials-reported returns as-filed values, same as EDGAR
+    const endDate = `${year}-12-31`;
+    const epsCalc = adjustFinnhubForSplits(ticker, epsRaw, endDate);
+    const bvps = adjustFinnhubForSplits(ticker, bvpsRaw, endDate);
 
     return {
       ticker,

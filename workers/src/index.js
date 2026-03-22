@@ -5,7 +5,7 @@ import { watchlistRoutes } from './routes/watchlist.js';
 import { portfolioRoutes } from './routes/portfolio.js';
 import { alertsRoutes } from './routes/alerts.js';
 import { refreshRoutes } from './routes/refresh.js';
-import { fillMetricsRoutes, fillFundamentalsRoutes, backfillRoutes } from './routes/fillMetrics.js';
+import { fillMetricsRoutes, fillFundamentalsRoutes, backfillRoutes, reprocessRoutes } from './routes/fillMetrics.js';
 import { transactionsRoutes } from './routes/transactions.js';
 import { reportRoutes } from './routes/report.js';
 import { quoteRoutes } from './routes/quote.js';
@@ -123,6 +123,7 @@ const routeMap = {
   '/api/fill-metrics': fillMetricsRoutes,
   '/api/fill-fundamentals': fillFundamentalsRoutes,
   '/api/backfill': backfillRoutes,
+  '/api/reprocess': reprocessRoutes,
   '/api/transactions': transactionsRoutes,
   '/api/report': reportRoutes,
   '/api/quote': quoteRoutes,

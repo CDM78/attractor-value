@@ -232,10 +232,11 @@ function buildReport(d) {
   // market_cap in stocks table is stored in millions; convert to billions for display
   // Fallback: compute from price * shares_outstanding if market_cap is null
   let marketCapDisplay = 'Not available';
-  const mcMillions = stock.market_cap
-    || (marketData?.price && financials?.[0]?.shares_outstanding
-        ? (marketData.price * financials[0].shares_outstanding) / 1e6
-        : null);
+  // Market cap: prefer stocks table (from Yahoo, already split-adjusted).
+  // Fallback: price × shares_outstanding from financials, but shares from older
+  // filings may be pre-split so we do NOT use that fallback for market cap —
+  // it would produce wildly wrong values for recently-split stocks.
+  const mcMillions = stock.market_cap || null;
   if (mcMillions && mcMillions > 0) {
     marketCapDisplay = mcMillions >= 1000
       ? '$' + (mcMillions / 1000).toFixed(1) + 'B'

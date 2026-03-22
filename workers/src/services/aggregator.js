@@ -4,32 +4,103 @@
 // This is the single source of truth for P/B, P/E, D/E, Current Ratio,
 // and Earnings Yield. No pre-computed values are ever taken from third parties.
 
-import { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, getCik, delay } from './edgarXbrl.js';
-import { getFinancialsReported, parseFinancialsReported, getBasicMetrics } from './finnhub.js';
-import { upsertFinancials, upsertDataConfidence, updateMarketDataRatios } from '../db/queries.js';
+import { fetchCompanyFacts, parseEdgarToFinancials, computeDerivedRatios, getCik, delay, SPLIT_ADJUSTMENTS } from './edgarXbrl.js';
+import { getFinancialsReported, parseFinancialsReported, getBasicMetrics, getStockSplits } from './finnhub.js';
+import { upsertFinancials, upsertDataConfidence, updateMarketDataRatios, ensureSplitsTable, upsertSplit, getSplitsForTicker } from '../db/queries.js';
+
+/**
+ * Fetch stock splits from Finnhub and merge into the runtime SPLIT_ADJUSTMENTS
+ * so that adjustForSplits() in edgarXbrl.js sees them when parsing.
+ *
+ * Also persists splits to the stock_splits table for durability.
+ * Returns the number of new splits discovered.
+ */
+export async function fetchAndMergeSplits(db, ticker, finnhubApiKey) {
+  let newSplits = 0;
+
+  // 1. Ensure the DB table exists
+  try { await ensureSplitsTable(db); } catch { /* already exists */ }
+
+  // 2. Load any splits already persisted in the DB for this ticker
+  const dbSplits = await getSplitsForTicker(db, ticker);
+  if (!SPLIT_ADJUSTMENTS[ticker]) SPLIT_ADJUSTMENTS[ticker] = [];
+  for (const s of dbSplits) {
+    const exists = SPLIT_ADJUSTMENTS[ticker].some(
+      e => e.date === s.split_date && Math.abs(e.ratio - s.ratio) < 0.01
+    );
+    if (!exists) {
+      SPLIT_ADJUSTMENTS[ticker].push({ date: s.split_date, ratio: s.ratio });
+    }
+  }
+
+  // 3. Fetch fresh splits from Finnhub
+  if (finnhubApiKey) {
+    try {
+      const finnhubSplits = await getStockSplits(ticker, finnhubApiKey);
+      for (const s of finnhubSplits) {
+        // Check if we already know about this split (in runtime or DB)
+        const existsRuntime = SPLIT_ADJUSTMENTS[ticker]?.some(
+          e => e.date === s.date && Math.abs(e.ratio - s.ratio) < 0.01
+        );
+        if (!existsRuntime) {
+          // New split discovered!
+          if (!SPLIT_ADJUSTMENTS[ticker]) SPLIT_ADJUSTMENTS[ticker] = [];
+          SPLIT_ADJUSTMENTS[ticker].push({ date: s.date, ratio: s.ratio });
+          newSplits++;
+          console.log(`Split discovered for ${ticker}: ${s.ratio}-for-1 on ${s.date}`);
+        }
+
+        // Persist to DB (upsert is safe for duplicates)
+        await upsertSplit(db, {
+          ticker,
+          split_date: s.date,
+          ratio: s.ratio,
+          from_factor: s.from_factor,
+          to_factor: s.to_factor,
+          source: 'finnhub',
+        });
+      }
+    } catch (err) {
+      console.warn(`Split fetch for ${ticker}: ${err.message}`);
+    }
+  }
+
+  // Sort splits by date for consistent adjustment
+  if (SPLIT_ADJUSTMENTS[ticker]) {
+    SPLIT_ADJUSTMENTS[ticker].sort((a, b) => a.date.localeCompare(b.date));
+  }
+
+  return newSplits;
+}
 
 /**
  * Fetch fundamentals for a ticker using EDGAR as primary, Finnhub as fallback.
  * Stores results in the financials and data_confidence tables.
  *
- * @returns {{ source: 'edgar'|'finnhub'|null, yearsStored: number }}
+ * Now fetches and merges splits BEFORE parsing EDGAR data, so that
+ * adjustForSplits() has complete split history for all per-share normalization.
+ *
+ * @returns {{ source: 'edgar'|'finnhub'|null, yearsStored: number, splitsFound: number }}
  */
 export async function fetchAndStoreFundamentals(db, ticker, finnhubApiKey) {
+  // Step 0: Fetch and merge splits BEFORE parsing financials
+  const splitsFound = await fetchAndMergeSplits(db, ticker, finnhubApiKey);
+
   // Try EDGAR first
   const edgarResult = await tryEdgar(db, ticker);
   if (edgarResult.yearsStored > 0) {
-    return { source: 'edgar', yearsStored: edgarResult.yearsStored };
+    return { source: 'edgar', yearsStored: edgarResult.yearsStored, splitsFound };
   }
 
   // Fallback to Finnhub
   if (finnhubApiKey) {
     const finnhubResult = await tryFinnhub(db, ticker, finnhubApiKey);
     if (finnhubResult.yearsStored > 0) {
-      return { source: 'finnhub', yearsStored: finnhubResult.yearsStored };
+      return { source: 'finnhub', yearsStored: finnhubResult.yearsStored, splitsFound };
     }
   }
 
-  return { source: null, yearsStored: 0 };
+  return { source: null, yearsStored: 0, splitsFound };
 }
 
 /**

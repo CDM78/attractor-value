@@ -525,3 +525,45 @@ export async function updateMarketDataRatios(db, ticker, ratios, source) {
     source || 'edgar_computed', new Date().toISOString(), ticker
   ).run();
 }
+
+// --- Stock split persistence ---
+
+export async function ensureSplitsTable(db) {
+  await db.prepare(`
+    CREATE TABLE IF NOT EXISTS stock_splits (
+      ticker TEXT NOT NULL,
+      split_date TEXT NOT NULL,
+      ratio REAL NOT NULL,
+      from_factor INTEGER,
+      to_factor INTEGER,
+      source TEXT DEFAULT 'finnhub',
+      created_at TEXT NOT NULL DEFAULT (datetime('now')),
+      PRIMARY KEY (ticker, split_date)
+    )
+  `).run();
+}
+
+export async function upsertSplit(db, split) {
+  return db.prepare(
+    `INSERT OR REPLACE INTO stock_splits (ticker, split_date, ratio, from_factor, to_factor, source, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?)`
+  ).bind(
+    split.ticker, split.split_date, split.ratio,
+    split.from_factor || null, split.to_factor || null,
+    split.source || 'finnhub', new Date().toISOString()
+  ).run();
+}
+
+export async function getSplitsForTicker(db, ticker) {
+  const result = await db.prepare(
+    'SELECT * FROM stock_splits WHERE ticker = ? ORDER BY split_date ASC'
+  ).bind(ticker).all();
+  return result.results || [];
+}
+
+export async function getAllSplits(db) {
+  const result = await db.prepare(
+    'SELECT * FROM stock_splits ORDER BY ticker, split_date ASC'
+  ).all();
+  return result.results || [];
+}

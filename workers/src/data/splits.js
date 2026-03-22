@@ -23,4 +23,6 @@ export default {
   ],
   SHOP: [{ date: '2022-06-29', ratio: 10 }],
   PANW: [{ date: '2022-09-14', ratio: 3 }],
+  NFLX: [{ date: '2025-11-17', ratio: 10 }],
+  NOW: [{ date: '2025-12-16', ratio: 5 }],
 };
