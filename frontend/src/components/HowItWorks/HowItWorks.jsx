@@ -26,390 +26,248 @@ function Section({ id, title, children }) {
 
 const TOC = [
   { id: 'what-it-does', label: '1. What This App Does' },
-  { id: 'discovery', label: '2. How Opportunities Are Found' },
-  { id: 'evaluation', label: '3. How Companies Are Evaluated' },
-  { id: 'valuation', label: '4. How Stocks Are Valued' },
-  { id: 'signals', label: '5. What the Signals Mean' },
-  { id: 'position-sizing', label: '6. Position Sizes' },
-  { id: 'market-monitoring', label: '7. Market Monitoring' },
-  { id: 'sell-discipline', label: '8. Sell Discipline' },
-  { id: 'glossary', label: '9. Glossary' },
-  { id: 'research', label: '10. The Research' },
+  { id: 'pipelines', label: '2. Three Discovery Pipelines' },
+  { id: 'evaluation', label: '3. AI Evaluation' },
+  { id: 'portfolio', label: '4. Portfolio Model' },
+  { id: 'sell', label: '5. Sell Discipline' },
+  { id: 'screening', label: '6. Graham Screen (6 Filters)' },
+  { id: 'evidence', label: '7. Calibration Evidence' },
 ]
 
 export default function HowItWorks() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold text-text-primary mb-2">How It Works</h1>
-      <p className="text-text-secondary mb-6">The Attractor Value Framework — how the system finds, evaluates, values, and sizes investment opportunities.</p>
+    <div className="max-w-3xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-text-primary mb-6">How It Works</h1>
+      <p className="text-text-secondary mb-6">
+        Every parameter in this system is backed by calibration data from 10 validation tests and 15 parameter
+        sweeps run against 292 historical cases spanning 2016-2025. No arbitrary numbers remain.
+      </p>
 
-      {/* Table of Contents */}
-      <nav className="bg-surface-secondary rounded-lg p-4 mb-8 border border-border">
-        <div className="text-xs font-bold text-text-secondary uppercase tracking-wider mb-2">Contents</div>
-        <div className="flex flex-wrap gap-x-4 gap-y-1">
-          {TOC.map(({ id, label }) => (
-            <a key={id} href={`#${id}`} className="text-sm text-accent hover:underline">{label}</a>
+      <nav className="mb-8 p-4 bg-surface rounded-lg">
+        <ul className="space-y-1">
+          {TOC.map(item => (
+            <li key={item.id}>
+              <a href={`#${item.id}`} className="text-accent hover:underline text-sm">{item.label}</a>
+            </li>
           ))}
-        </div>
+        </ul>
       </nav>
 
-      {/* Section 1: What This App Does */}
       <Section id="what-it-does" title="1. What This App Does">
-        <p>This system finds investment opportunities, decides whether they are worth buying, and tells you exactly what to do. You execute. The system makes the decisions.</p>
-
-        <p>It works through three steps:</p>
-        <ol className="list-decimal pl-5 space-y-2">
-          <li><strong className="text-text-primary">Find candidates</strong> — through three discovery methods (crisis buys, emerging growth companies, and companies positioned to benefit from structural economic shifts).</li>
-          <li><strong className="text-text-primary">Evaluate durability</strong> — every candidate gets adversarial analysis of its competitive position. Is this business getting stronger over time, or is it eroding?</li>
-          <li><strong className="text-text-primary">Value and size</strong> — calculate what each company is worth using the appropriate model, determine a buy-below price with a margin of safety, and produce a clear signal with an exact position size.</li>
-        </ol>
-
-        <p>The output is one of three signals: <strong className="text-pass">BUY</strong> (with exact share count and dollar amount), <strong className="text-warn">NOT YET</strong> (good company, price too high), or <strong className="text-text-secondary">PASS</strong> (failed quality checks or overvalued). No ambiguity. No judgment calls.</p>
+        <p>
+          Markets occasionally misprice quality businesses. This happens during crises (temporary fear),
+          for emerging growth companies (the market underestimates self-reinforcing advantages), and during
+          structural regime shifts (the market is slow to recognize new realities).
+        </p>
+        <p>
+          The framework identifies these mispricings through <strong>three discovery pipelines</strong>,
+          validates each opportunity through <strong>adversarial AI analysis</strong>, and applies discipline
+          on both entry (buy only below fair value) and exit (take profits at +125% or sell if the
+          competitive position dissolves).
+        </p>
+        <p>
+          <strong>All uninvested capital sits in VOO</strong> (Vanguard S&P 500 ETF). There is no idle cash.
+          When a signal fires, VOO shares are sold to fund the position. When a position is sold,
+          proceeds return to VOO.
+        </p>
       </Section>
 
-      {/* Section 2: How Opportunities Are Found */}
-      <Section id="discovery" title="2. How Opportunities Are Found">
-        <p>The system uses three separate funnels to find candidates. Each targets a different type of opportunity with its own logic and timing.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Crisis Dislocation (Tier 2)</h3>
-        <p>When markets crash 20% or more, quality companies get dragged down with everything else. Their businesses are fine — the market is just panicking. This funnel only activates during actual crises.</p>
-        <TechnicalDetails title="How Crisis Screening Works">
-          <p>The system monitors market-level drawdowns. When a broad index drops 20%+, it:</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Screens for companies whose stock price dropped with the market (beta-correlated decline, not company-specific bad news)</li>
-            <li>Verifies the underlying business model is intact — revenue, margins, and cash flow haven't fundamentally changed</li>
-            <li>Flags survivors as buying opportunities at crisis-discounted prices</li>
-          </ul>
-          <p className="mt-2">This funnel stays dormant during normal markets. It only produces candidates when there is genuine dislocation.</p>
-        </TechnicalDetails>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Emerging Growth (Tier 3)</h3>
-        <p>Monthly scan for companies building self-reinforcing competitive positions — businesses where success breeds more success (sometimes called "flywheels"). Two tracks:</p>
-        <ul className="list-disc pl-5 space-y-2">
-          <li><strong className="text-text-primary">High-growth track:</strong> Revenue growing at 20%+ per year. These are companies in the steep part of their growth curve.</li>
-          <li><strong className="text-text-primary">Steady compounder track:</strong> Revenue growing at 8%+ per year with strong margins and durable competitive advantages. Slower but more predictable.</li>
-        </ul>
-        <TechnicalDetails title="Growth Evaluation Details">
-          <p>For both tracks, AI evaluation assesses whether the flywheel (self-reinforcing competitive loop) is real or just a story the company tells. Key questions:</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Does each unit of growth actually make the next unit easier? (True flywheel)</li>
-            <li>Or is growth driven by spending that stops working when spending stops? (Not a flywheel)</li>
-            <li>Are switching costs real, or could customers leave easily?</li>
-          </ul>
-          <p className="mt-2">Revenue CAGR thresholds: high-growth track requires 20%+ over trailing 3 years. Compounder track requires 8%+ CAGR with operating margins above sector median and identifiable moat.</p>
-        </TechnicalDetails>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Regime Transition (Tier 4)</h3>
-        <p>Detects structural economic shifts — new legislation, geopolitical events, technology breakthroughs — and identifies companies positioned to benefit. The critical filter: if everyone already knows about it, the opportunity is already priced in.</p>
-        <TechnicalDetails title="Consensus Saturation Index">
-          <p>The Consensus Saturation Index (CSI) measures how widely a regime shift is already recognized by the market. High CSI means the opportunity is consensus — and consensus plays rarely produce outsized returns.</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Scans financial news and analyst reports for coverage density</li>
-            <li>Measures how many institutional investors have already positioned for the shift</li>
-            <li>Filters out plays where the market has already moved to price in the transition</li>
-          </ul>
-          <p className="mt-2">Only non-consensus opportunities (low CSI) proceed to evaluation. The best regime plays are the ones most investors haven't noticed yet.</p>
-          <p className="mt-2"><strong>Viability filter:</strong> Companies must have positive gross margins — this eliminates pre-revenue and cash-burning companies that look like regime beneficiaries on paper but lack viable business models. Calibration testing showed this filter combined with CSI produces 100% precision (0 false positives across 30 test cases).</p>
-        </TechnicalDetails>
-      </Section>
-
-      {/* Section 3: How Companies Are Evaluated */}
-      <Section id="evaluation" title="3. How Companies Are Evaluated">
-        <p>Every candidate from every funnel goes through the same evaluation process. The goal: determine whether this company's competitive advantages will persist, strengthen, or erode.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Adversarial Scoring</h3>
-        <p>Two AI analysts evaluate each company independently:</p>
-        <ul className="list-disc pl-5 space-y-2">
-          <li><strong className="text-text-primary">Bull case analyst</strong> — scores 6 factors, looking for reasons the company will succeed</li>
-          <li><strong className="text-text-primary">Bear case analyst</strong> — challenges every assumption, looking for reasons it will fail</li>
-        </ul>
-        <p>The final score weights the bear case more heavily (60% bear, 40% bull). This is intentionally pessimistic. Better to miss a good opportunity than to buy a bad one.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">The Six Factors</h3>
-        <ol className="list-decimal pl-5 space-y-2">
-          <li><strong className="text-text-primary">Revenue Durability</strong> — Is the revenue recurring? Is it diversified across customers? Are there switching costs that lock customers in?</li>
-          <li><strong className="text-text-primary">Competitive Reinforcement</strong> — Do the company's advantages get stronger as it grows? (A true flywheel.) Or do they stay flat or erode?</li>
-          <li><strong className="text-text-primary">Industry Structure</strong> — Is this an industry with rational competitors and high barriers to entry? Or a price-war bloodbath?</li>
-          <li><strong className="text-text-primary">Demand Feedback</strong> — Does customer behavior create positive feedback loops? (More users make the product better, which attracts more users.)</li>
-          <li><strong className="text-text-primary">Adaptation Capacity</strong> — Has the company shown it can evolve without destroying what makes it work? (Amazon going from books to everything. Not Kodak ignoring digital.)</li>
-          <li><strong className="text-text-primary">Capital Allocation</strong> — Does management invest money wisely? Do they buy back shares at good prices, make smart acquisitions, and avoid empire-building?</li>
-        </ol>
-
-        <TechnicalDetails title="Scoring and Thresholds">
-          <p>Each factor scored 1-5. Weighted composite = (bull average x 0.4) + (bear average x 0.6).</p>
-          <div className="overflow-x-auto mt-2">
-            <table className="text-sm w-full">
-              <thead><tr className="border-b border-border text-left">
-                <th className="py-2 pr-4">Score</th><th className="py-2 pr-4">Classification</th><th className="py-2">Action</th>
-              </tr></thead>
-              <tbody>
-                <tr className="border-b border-border/50"><td className="py-1 pr-4 font-semibold text-pass">{'≥'} 2.5</td><td className="py-1 pr-4">Passes</td><td className="py-1">Proceeds to valuation</td></tr>
-                <tr className="border-b border-border/50"><td className="py-1 pr-4 font-semibold text-warn">2.0 – 2.4</td><td className="py-1 pr-4">Borderline</td><td className="py-1">Proceeds with elevated margin of safety</td></tr>
-                <tr><td className="py-1 pr-4 font-semibold text-fail">{'<'} 2.0</td><td className="py-1 pr-4">Hard reject</td><td className="py-1">Do not buy under any circumstances</td></tr>
-              </tbody>
-            </table>
+      <Section id="pipelines" title="2. Three Discovery Pipelines">
+        <div className="space-y-6">
+          <div>
+            <h3 className="font-semibold text-text-primary">Crisis Pipeline (25% allocation)</h3>
+            <p>
+              Activates only during market crises (S&P 500 down 15%+, VIX above 30, credit spreads elevated).
+              Finds quality companies whose stock declined because of sector-wide fear, not fundamental
+              deterioration. Uses Graham valuation to identify buy-below prices.
+            </p>
+            <TechnicalDetails>
+              <p>5 quantitative filters: price decline ≥15-20%, earnings stability ≥70%, D/E &lt; 2.0,
+              positive FCF, P/E &lt; 40. Claude assesses whether damage is temporary or structural —
+              only "temporary dislocation" proceeds.</p>
+            </TechnicalDetails>
           </div>
-        </TechnicalDetails>
 
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Concentration Risk Penalties</h3>
-        <p>Even strong companies can be fragile if they depend too heavily on a single customer, supplier, market, or regulation. The system checks for these dependencies and penalizes the score accordingly.</p>
-        <TechnicalDetails title="Penalty Schedule">
-          <table className="text-sm w-full">
-            <thead><tr className="border-b border-border text-left">
-              <th className="py-2 pr-4">Risk Type</th><th className="py-2 pr-4">Threshold</th><th className="py-2">Penalty</th>
-            </tr></thead>
-            <tbody>
-              <tr className="border-b border-border/50"><td className="py-1 pr-4">Single customer {'≥'} 40% of revenue</td><td className="py-1 pr-4">Severe</td><td className="py-1">-1.0</td></tr>
-              <tr className="border-b border-border/50"><td className="py-1 pr-4">Single customer {'≥'} 25% of revenue</td><td className="py-1 pr-4">Moderate</td><td className="py-1">-0.5</td></tr>
-              <tr className="border-b border-border/50"><td className="py-1 pr-4">Critical single-source supplier</td><td className="py-1 pr-4">Binary dependency</td><td className="py-1">-0.5</td></tr>
-              <tr className="border-b border-border/50"><td className="py-1 pr-4">{'≥'} 70% revenue from one foreign market</td><td className="py-1 pr-4">Geographic</td><td className="py-1">-0.3</td></tr>
-              <tr><td className="py-1 pr-4">{'≥'} 50% revenue dependent on one regulation</td><td className="py-1 pr-4">Regulatory</td><td className="py-1">-0.5</td></tr>
-            </tbody>
-          </table>
-          <p className="mt-2">Penalties stack. Score has a floor of 1.0.</p>
-        </TechnicalDetails>
-      </Section>
+          <div>
+            <h3 className="font-semibold text-text-primary">Growth Pipeline (20% allocation) → Sector ETFs</h3>
+            <p>
+              Identifies which sectors have clusters of high-growth companies with durable competitive
+              advantages. Instead of picking individual stocks, the system recommends <strong>Vanguard
+              sector ETFs</strong> (VGT, VHT, VIS, etc.) weighted by candidate density. This approach
+              beats VOO in 83% of historical periods vs 59% for individual stock picks.
+            </p>
+            <p>
+              A sector signal fires when ≥2 growth candidates pass the pre-screen in that sector.
+              Budget is distributed across qualifying sectors by candidate count.
+            </p>
+            <TechnicalDetails>
+              <p>Monthly pre-screen: revenue CAGR ≥20% (or ≥8% steady compounder), gross margin ≥35%,
+              market cap ≥$500M. Candidates aggregated by sector → Vanguard ETF mapping.
+              Individual stock override possible when attractor ≥3.0 confirmed by deep analysis AND
+              price below buy-below.</p>
+            </TechnicalDetails>
+          </div>
 
-      {/* Section 4: How Stocks Are Valued */}
-      <Section id="valuation" title="4. How Stocks Are Valued">
-        <p>Different types of companies need different valuation methods. The system uses three approaches, matched to how each tier of company generates value.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Established Companies (Tier 2 — Crisis Buys)</h3>
-        <p>These are proven businesses with long earnings histories. Valued using Benjamin Graham's formula, which estimates what a company is worth based on its earnings, growth rate, and current interest rates. A modifier adjusts for companies with exceptionally high returns on equity (they deserve a premium).</p>
-        <TechnicalDetails title="Graham Formula with ROE Modifier">
-          <p className="font-mono">IV = Normalized EPS x (8.5 + 2g) x (4.4 / Y)</p>
-          <ul className="list-disc pl-5 space-y-1 mt-2">
-            <li>Normalized EPS = average EPS of 3 most recent years (smooths short-term noise)</li>
-            <li>g = estimated annual growth rate (capped to prevent over-optimism)</li>
-            <li>8.5 = base P/E for a zero-growth company</li>
-            <li>Y = current AAA corporate bond yield (from FRED)</li>
-          </ul>
-          <p className="mt-2">ROE modifier: companies with ROE 20-30% get 1.25x multiplier on the P/E x P/B ceiling. ROE 30%+ gets 1.50x. This recognizes that high returns on equity from buybacks and capital efficiency are a feature, not a valuation trap.</p>
-          <p className="mt-1">Crisis premium: during market dislocations, an additional discount is applied because even "cheap" can get cheaper during a panic.</p>
-        </TechnicalDetails>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Growth Companies (Tier 3 — Emerging Growth)</h3>
-        <p>Growth companies don't have stable earnings to plug into Graham's formula. Instead, the system projects revenue forward at a decelerating growth rate (because all growth slows eventually), estimates what the company will earn at maturity, applies a terminal P/E ratio, and discounts back to today.</p>
-        <TechnicalDetails title="Growth Valuation Method">
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Project revenue forward 5-7 years, with growth rate decelerating annually (regression to sector mean)</li>
-            <li>Estimate terminal margins based on industry comparables at maturity</li>
-            <li>Apply terminal P/E (industry-appropriate, typically 15-25x)</li>
-            <li>Discount back to present value at required rate of return</li>
-          </ul>
-          <p className="mt-2">The key discipline: the deceleration assumption. The system never assumes current growth rates will persist. A company growing at 40% today might be modeled at 15% in year 5.</p>
-        </TechnicalDetails>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Regime Plays (Tier 4 — Structural Shifts)</h3>
-        <p>Regime transitions are inherently uncertain. The system models bull and bear scenarios separately and weights them by how likely the structural shift is to actually materialize.</p>
-        <TechnicalDetails title="Scenario-Weighted Valuation">
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Bull case: the regime shift fully plays out, company captures expected share</li>
-            <li>Bear case: the shift stalls or competitors capture the opportunity</li>
-            <li>Weighted value = (bull value x shift probability) + (bear value x (1 - shift probability))</li>
-          </ul>
-          <p className="mt-2">Shift probability is assessed based on legislative progress, technology readiness, institutional adoption signals, and precedents from analogous transitions.</p>
-        </TechnicalDetails>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Margin of Safety</h3>
-        <p>For all three tiers, the system never pays full estimated value. It applies a margin of safety — a discount that protects you if the estimate is wrong. The size of the margin depends on two things: how strong the company's competitive position is (attractor score) and how stressed the broader economy is.</p>
-      </Section>
-
-      {/* Section 5: What the Signals Mean */}
-      <Section id="signals" title="5. What the Signals Mean">
-        <p>Three signals. No ambiguity. No "maybe" or "it depends."</p>
-
-        <div className="overflow-x-auto mt-4">
-          <table className="text-sm w-full">
-            <thead><tr className="border-b border-border text-left">
-              <th className="py-2 pr-4">Signal</th><th className="py-2 pr-4">When It Triggers</th><th className="py-2">What You Do</th>
-            </tr></thead>
-            <tbody>
-              <tr className="border-b border-border/50">
-                <td className="py-3 pr-4 font-bold text-pass">BUY</td>
-                <td className="py-3 pr-4">Price is below the buy-below threshold</td>
-                <td className="py-3">Execute. The system tells you exactly how many shares and how many dollars.</td>
-              </tr>
-              <tr className="border-b border-border/50">
-                <td className="py-3 pr-4 font-bold text-warn">NOT YET</td>
-                <td className="py-3 pr-4">Company passes all checks but price hasn't dropped enough</td>
-                <td className="py-3">Wait. The system shows the target price. Set an alert and move on.</td>
-              </tr>
-              <tr>
-                <td className="py-3 pr-4 font-bold text-text-secondary">PASS</td>
-                <td className="py-3 pr-4">Failed quality checks or overvalued</td>
-                <td className="py-3">Ignore. Don't look back.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div>
+            <h3 className="font-semibold text-text-primary">Regime Pipeline (15% allocation) → Individual Stocks</h3>
+            <p>
+              Identifies companies benefiting from structural shifts (technology transitions, geopolitical
+              realignment, policy changes) where the market hasn't yet priced the opportunity.
+              Stock selection adds real value here — 79th percentile vs random, 92% win rate.
+            </p>
+            <TechnicalDetails>
+              <p>Pre-screen: sector overlap with active regime, gross margin &gt;0%, D/E &lt;3.0,
+              current ratio &gt;0.8. Consensus Saturation Index (CSI ≤1) ensures we're early, not
+              chasing consensus. Scenario-weighted valuation: bull case (regime materializes) vs bear
+              case (regime fizzles), weighted by Adjacent Possible score.</p>
+            </TechnicalDetails>
+          </div>
         </div>
 
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Sell Triggers (6 Total)</h3>
-        <p>The system also monitors existing positions and generates sell signals:</p>
-        <ol className="list-decimal pl-5 space-y-1">
-          <li><strong className="text-text-primary">Overvalued</strong> — price has risen above intrinsic value. Take the gain.</li>
-          <li><strong className="text-text-primary">Attractor dissolving</strong> — competitive position is actively eroding. Sell immediately regardless of price.</li>
-          <li><strong className="text-text-primary">Thesis broken</strong> — the original reason you bought has been invalidated. Don't wait for price recovery.</li>
-          <li><strong className="text-text-primary">Overweight</strong> — position has grown too large relative to portfolio. Trim to target size.</li>
-          <li><strong className="text-text-primary">Growth stalled</strong> — (Tier 3 only) growth has decelerated below the minimum threshold.</li>
-          <li><strong className="text-text-primary">Regime maturing</strong> — (Tier 4 only) the structural shift has played out and the opportunity is now fully priced in.</li>
-        </ol>
+        <p className="mt-4 text-sm text-text-secondary italic">
+          Flexible pool: 35% of capital can overflow into any pipeline when its dedicated budget is
+          exhausted. This allows the system to concentrate capital during crisis periods when signals
+          are most plentiful.
+        </p>
       </Section>
 
-      {/* Section 6: How Position Sizes Are Determined */}
-      <Section id="position-sizing" title="6. How Position Sizes Are Determined">
-        <p>The system divides capital across tiers and sizes each position based on conviction level.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Capital Allocation by Tier</h3>
-        <div className="overflow-x-auto">
-          <table className="text-sm w-full">
-            <thead><tr className="border-b border-border text-left">
-              <th className="py-2 pr-4">Tier</th><th className="py-2 pr-4">Purpose</th><th className="py-2">Allocation</th>
-            </tr></thead>
-            <tbody>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4 font-semibold">Crisis (Tier 2)</td><td className="py-2 pr-4">Buying quality companies during market panics</td><td className="py-2">15%</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4 font-semibold">Emerging Growth (Tier 3)</td><td className="py-2 pr-4">Companies building self-reinforcing positions</td><td className="py-2">30%</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4 font-semibold">Regime (Tier 4)</td><td className="py-2 pr-4">Beneficiaries of structural economic shifts</td><td className="py-2">20%</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4 font-semibold">Flexible</td><td className="py-2 pr-4">Goes to whichever tier has the best opportunities</td><td className="py-2">30%</td></tr>
-              <tr><td className="py-2 pr-4 font-semibold">Cash Reserve</td><td className="py-2 pr-4">Always held in reserve for sudden opportunities</td><td className="py-2">5%</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <TechnicalDetails title="Position Sizing Rules">
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Maximum single position: 5% of total portfolio</li>
-            <li>Confidence multiplier: <strong>STRONG</strong> conviction = full position size (100%). <strong>STANDARD</strong> conviction = 75% of full size.</li>
-            <li>STRONG is assigned when the stock trades at 90% or less of buy-below price. STANDARD when it trades at or below buy-below.</li>
-            <li>The flexible pool (30%) is dynamically allocated to whichever tier is producing the most compelling opportunities at any given time</li>
-          </ul>
+      <Section id="evaluation" title="3. AI Evaluation (Attractor Analysis)">
+        <p>
+          Every candidate receives a two-pass AI evaluation using Claude. The <strong>bull case</strong> (40%
+          weight) evaluates competitive strengths. The <strong>adversarial bear case</strong> (60% weight)
+          challenges every strength identified. The intentional pessimistic weighting means a company must
+          have genuinely strong competitive dynamics to score well.
+        </p>
+        <p>
+          Six factors are scored 1-5: revenue durability, competitive reinforcement, industry structure,
+          demand feedback, adaptation capacity, and capital allocation.
+        </p>
+        <p>
+          <strong>Attractor gate: ≥ 3.0.</strong> Only companies scoring 3.0 or above on the composite
+          attractor score receive BUY signals. This threshold was validated by a sweep showing same
+          portfolio beat rate with +5pp additional alpha vs the prior 2.5 gate.
+        </p>
+        <TechnicalDetails>
+          <p>Test 4 (Hindsight Contamination): Claude was tested with and without company names.
+          Blinded scores discriminated winners from traps MORE accurately (gap: 0.86) than unblinded
+          (gap: 0.80). The AI reads genuine business quality from financial data, not hindsight.</p>
         </TechnicalDetails>
       </Section>
 
-      {/* Section 7: Market Environment Monitoring */}
-      <Section id="market-monitoring" title="7. Market Environment Monitoring">
-        <p>The system tracks macroeconomic conditions daily using data from the Federal Reserve (FRED API). These conditions affect how aggressively it buys and what margin of safety it requires.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">What It Tracks</h3>
-        <div className="overflow-x-auto">
-          <table className="text-sm w-full">
-            <thead><tr className="border-b border-border text-left">
-              <th className="py-2 pr-4">Indicator</th><th className="py-2">What It Tells You</th>
-            </tr></thead>
-            <tbody>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4">AAA/BAA corporate bond yields</td><td className="py-2">Cost of borrowing for strong vs. weaker companies</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4">Yield curve (10Y - 2Y Treasury spread)</td><td className="py-2">Inversion historically precedes recessions</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4">VIX (volatility index)</td><td className="py-2">Market fear gauge. Above 30 = elevated stress</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4">High-yield OAS (option-adjusted spread)</td><td className="py-2">How much extra investors demand for risky debt</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4">Unemployment rate</td><td className="py-2">Labor market health. Above 5% = concern</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4">GDP growth</td><td className="py-2">Negative = recession</td></tr>
-              <tr><td className="py-2 pr-4">Oil prices</td><td className="py-2">Input cost pressure and geopolitical signal</td></tr>
-            </tbody>
-          </table>
+      <Section id="portfolio" title="4. Portfolio Model">
+        <p>
+          <strong>All money is in VOO unless actively deployed in a framework position.</strong> There is
+          no idle cash. Pipeline allocations are budget caps, not reservations — they determine how much
+          VOO to sell when signals fire.
+        </p>
+        <div className="bg-surface p-4 rounded-lg my-4">
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <div>Crisis pipeline cap</div><div className="font-mono">25%</div>
+            <div>Growth pipeline cap</div><div className="font-mono">20%</div>
+            <div>Regime pipeline cap</div><div className="font-mono">15%</div>
+            <div>Flexible overflow</div><div className="font-mono">35%</div>
+            <div>Cash reserve</div><div className="font-mono">0%</div>
+          </div>
         </div>
+        <p>
+          <strong>Position sizing:</strong> Maximum 7% of total capital per individual position.
+          STRONG confidence signals get full 7%, STANDARD gets 5.25% (75%). Sector ETF positions
+          can exceed 7% because they're inherently diversified.
+        </p>
+        <p>
+          <strong>Default hold: 3 years.</strong> Sweep confirmed 3yr is optimal — 1yr exits too early,
+          5yr collapses from mean reversion.
+        </p>
+      </Section>
 
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Environment Classification</h3>
-        <div className="overflow-x-auto">
-          <table className="text-sm w-full">
-            <thead><tr className="border-b border-border text-left">
-              <th className="py-2 pr-4">Classification</th><th className="py-2 pr-4">Stress Indicators</th><th className="py-2">Effect</th>
-            </tr></thead>
-            <tbody>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4 font-bold text-pass">NORMAL</td><td className="py-2 pr-4">0 triggered</td><td className="py-2">Standard margins of safety</td></tr>
-              <tr className="border-b border-border/50"><td className="py-2 pr-4 font-bold text-warn">CAUTIOUS</td><td className="py-2 pr-4">1-2 triggered</td><td className="py-2">Increased vigilance, slightly wider margins</td></tr>
-              <tr><td className="py-2 pr-4 font-bold text-fail">STRESSED</td><td className="py-2 pr-4">3+ triggered</td><td className="py-2">+5% margin of safety added to all positions</td></tr>
-            </tbody>
-          </table>
+      <Section id="sell" title="5. Sell Discipline — Two Triggers">
+        <p>
+          The sell engine was simplified from 6 triggers to 2 after calibration testing showed the
+          others were either harmful or negligible:
+        </p>
+        <div className="space-y-3 mt-3">
+          <div className="p-3 bg-surface rounded">
+            <div className="font-semibold text-text-primary">Take Profit at +125%</div>
+            <p className="text-sm mt-1">
+              When a position reaches +125% return from entry, sell. This was the peak of a
+              sweep from +50% to +300% — it adds $29,187 vs buy-and-hold across 115 historical trades.
+              Tax delay analysis applies: if held 300-365 days, the system calculates whether waiting
+              for long-term capital gains rate is worth it.
+            </p>
+          </div>
+          <div className="p-3 bg-surface rounded">
+            <div className="font-semibold text-text-primary">Attractor Dissolution (&lt; 2.0)</div>
+            <p className="text-sm mt-1">
+              Emergency stop. If the competitive position collapses (attractor score drops below 2.0),
+              sell immediately regardless of tax implications. This overrides all delays.
+            </p>
+          </div>
         </div>
-
-        <TechnicalDetails title="Crisis and Regime Detection">
-          <p><strong>Crisis detection:</strong> When the environment is STRESSED and major indices have drawn down 20%+, the system activates the Tier 2 crisis funnel and begins screening for dislocation opportunities.</p>
-          <p className="mt-2"><strong>Regime detection:</strong> Continuous scan of financial news and policy developments for structural shifts (new legislation, trade realignments, technology breakthroughs). Identified shifts are evaluated for investment implications and filtered through the Consensus Saturation Index.</p>
+        <TechnicalDetails title="Removed Triggers">
+          <p><strong>Growth failure (-20% trigger):</strong> Actively hurt returns (-$1,512 net). Cut
+          underperformers that later recovered, losing more upside than trap damage saved.</p>
+          <p><strong>Concentration trim (8%→5%):</strong> Never fired in simulation — positions capped
+          at 7% at entry never hit 8%.</p>
+          <p><strong>Thesis violation (3+ red flags):</strong> Negligible impact — overlaps with attractor
+          dissolution.</p>
+          <p><strong>Regime expiry:</strong> Negligible impact — regime positions captured via take-profit
+          instead.</p>
         </TechnicalDetails>
       </Section>
 
-      {/* Section 8: Sell Discipline */}
-      <Section id="sell-discipline" title="8. Sell Discipline">
-        <p>Six triggers, each unambiguous. When a trigger fires, you sell. No second-guessing.</p>
-
-        <ol className="list-decimal pl-5 space-y-3">
-          <li><strong className="text-text-primary">Overvalued.</strong> Price has risen above intrinsic value. The margin of safety is consumed. Take the gain.</li>
-          <li><strong className="text-text-primary">Attractor dissolving.</strong> The company's competitive position is actively eroding (score dropped below 2.0). Sell immediately — regardless of price, regardless of loss. This is the one trigger with no exceptions.</li>
-          <li><strong className="text-text-primary">Thesis broken.</strong> The original reason you bought is invalidated by new evidence. A key product fails, a regulatory moat disappears, management changes strategy. Don't wait for price recovery.</li>
-          <li><strong className="text-text-primary">Overweight.</strong> A position has appreciated to the point where it's too large relative to the portfolio. Trim to target size to manage risk.</li>
-          <li><strong className="text-text-primary">Growth stalled.</strong> (Tier 3 only.) Growth has decelerated below the minimum threshold. The flywheel may be breaking down.</li>
-          <li><strong className="text-text-primary">Regime maturing.</strong> (Tier 4 only.) The structural shift has largely played out. The market has caught up and the opportunity is priced in.</li>
-        </ol>
-
-        <TechnicalDetails title="Tax-Aware Timing">
-          <p>When a sell trigger fires and the position has been held between 300-365 days, the system calculates whether waiting until the long-term capital gains threshold (1 year) would save enough in taxes to justify the holding risk.</p>
-          <ul className="list-disc pl-5 space-y-1 mt-2">
-            <li>Estimates tax savings from long-term vs. short-term capital gains rate</li>
-            <li>Weighs against the risk of further price decline during the waiting period</li>
-            <li>If the tax savings are material and the sell trigger isn't urgent, it recommends holding to the anniversary</li>
-          </ul>
-          <p className="mt-2"><strong>Exception:</strong> Attractor dissolution (trigger #2) always sells immediately. A dissolving competitive position can collapse faster than any tax savings are worth.</p>
+      <Section id="screening" title="6. Graham Screen (6 Filters)">
+        <p>
+          The quantitative value screen applies 6 hard filters. Stocks passing all 6 are "full pass";
+          passing 5 of 6 is "near miss" and may still qualify with a higher margin of safety.
+        </p>
+        <div className="bg-surface p-4 rounded-lg my-4">
+          <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <li><strong>P/E ≤ 1/(AAA yield + 1.5%)</strong> — dynamic ceiling from current bond yields</li>
+            <li><strong>P/E × P/B ≤ 40</strong> — composite valuation (with ROE modifier: 20-30% = ×1.25, 30%+ = ×1.50)</li>
+            <li><strong>Debt/Equity ≤ 1.0</strong> — solvency (2.0 for utilities, auto-pass for financials)</li>
+            <li><strong>Current Ratio ≥ 1.0</strong> — liquidity (auto-pass for financials)</li>
+            <li><strong>Earnings Stability ≥ 8/10 years</strong> — consistency</li>
+            <li><strong>Earnings Growth ≥ 3% CAGR</strong> — not in permanent decline</li>
+          </ol>
+        </div>
+        <TechnicalDetails title="Removed Filters">
+          <p><strong>P/B standalone filter:</strong> Removed. Systematically broken by share buybacks —
+          AAPL, DVA, HPQ, AXP all have distorted book values. The P/E×P/B composite with ROE modifier
+          provides sufficient valuation discipline.</p>
+          <p><strong>Dividend record (5 years):</strong> Removed. Excluded the best capital allocators
+          (Berkshire, early Apple). What-if testing: 0% cross-validation gap, 64% of bootstrap resamples
+          improved, 0% degraded.</p>
         </TechnicalDetails>
       </Section>
 
-      {/* Section 9: Glossary */}
-      <Section id="glossary" title="9. Glossary">
-        <div className="overflow-x-auto">
-          <table className="text-sm w-full">
-            <thead><tr className="border-b border-border text-left">
-              <th className="py-2 pr-4 w-56">Term</th><th className="py-2">Definition</th>
-            </tr></thead>
-            <tbody>
-              {GLOSSARY.map(({ term, def }) => (
-                <tr key={term} className="border-b border-border/50">
-                  <td className="py-2 pr-4 font-semibold text-text-primary align-top">{term}</td>
-                  <td className="py-2">{def}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <Section id="evidence" title="7. Calibration Evidence">
+        <p>
+          The system was validated against 292 historical cases across 29 vintage simulations
+          (Q1 2016 through Q1 2023), each running 3 years with $27,000 starting capital.
+        </p>
+        <div className="bg-surface p-4 rounded-lg my-4 text-sm space-y-2">
+          <div className="flex justify-between">
+            <span>Vintages beating S&P 500 (with VOO hybrid)</span>
+            <span className="font-mono font-bold text-green-400">97%</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Median 3-year alpha over S&P 500</span>
+            <span className="font-mono font-bold">+37pp</span>
+          </div>
+          <div className="flex justify-between">
+            <span>AI not contaminated by hindsight</span>
+            <span className="font-mono font-bold text-green-400">Confirmed</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Take-profit +125% benefit</span>
+            <span className="font-mono font-bold">+$29,187 vs hold</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Sector ETFs vs individual stocks (Growth)</span>
+            <span className="font-mono font-bold">83% vs 59% beat rate</span>
+          </div>
         </div>
       </Section>
-
-      {/* Section 10: The Research Behind This Approach */}
-      <Section id="research" title="10. The Research Behind This Approach">
-        <p>This framework draws on complex systems science — the study of how interconnected systems behave, grow, and sometimes collapse. The core insight: companies are not static entities with fixed "moats." They are dynamic systems that either reinforce themselves or erode over time.</p>
-
-        <h3 className="text-lg font-semibold text-text-primary mt-6">Key Ideas</h3>
-        <ul className="list-disc pl-5 space-y-3">
-          <li><strong className="text-text-primary">Scaling laws (Geoffrey West)</strong> — Companies that grow faster than their costs scale exhibit "superlinear" growth. Revenue doubles but costs less than double. This is the mathematical signature of a flywheel. West showed these scaling relationships predict which cities (and by extension, companies) will thrive and which will stagnate.</li>
-          <li><strong className="text-text-primary">Dynamic Kinetic Stability / DKS (Addy Pross)</strong> — Some systems persist not because they are static, but because they are constantly renewing themselves. A river is stable even though the water is always moving. Companies with DKS maintain their competitive position through continuous adaptation, not rigid defense. This is what the attractor analysis measures.</li>
-          <li><strong className="text-text-primary">Self-organized criticality (Per Bak)</strong> — Systems naturally evolve to a critical state where small perturbations can trigger large cascading changes — like a sandpile that collapses when one more grain is added. This explains why market crashes and competitive collapses happen suddenly, and why the sell discipline requires immediate action on attractor dissolution.</li>
-          <li><strong className="text-text-primary">The adjacent possible (Stuart Kauffman)</strong> — Innovation doesn't come from nowhere. It emerges from recombining things that already exist in new ways. The Tier 4 regime analysis uses this concept to evaluate whether a structural shift is genuinely imminent or still too far from current reality.</li>
-          <li><strong className="text-text-primary">Bass diffusion model</strong> — Describes how new products and ideas spread through a population in an S-curve: slow start, rapid adoption, eventual saturation. Used to assess where a growth company or regime play sits on its adoption curve.</li>
-        </ul>
-
-        <TechnicalDetails title="Validation and Practitioners">
-          <p><strong>Calibration:</strong> The framework was validated against 200 historical cases across bull, bear, and sideways markets, plus 5 targeted stress tests (crisis periods, value traps, growth collapses). The attractor trap test suite correctly identified 6/6 known traps as "Dissolving" (INTC, M, WBA, WFC, T, KHC).</p>
-          <p className="mt-2"><strong>Similar approaches in practice:</strong></p>
-          <ul className="list-disc pl-5 space-y-1 mt-1">
-            <li><strong>Michael Mauboussin</strong> (Counterpoint Global) — applies complex adaptive systems thinking to competitive advantage analysis</li>
-            <li><strong>Nick Sleep and Qais Zakaria</strong> (Nomad Investment Partnership) — pioneered "scale economies shared" as an investment framework, identifying self-reinforcing business models (early investments in Amazon, Costco)</li>
-            <li><strong>James Anderson / Baillie Gifford</strong> — uses power-law thinking and long-duration growth analysis, emphasizing that a small number of extreme winners drive portfolio returns</li>
-          </ul>
-        </TechnicalDetails>
-      </Section>
-
-      <div className="h-20" />
     </div>
   )
 }
-
-const GLOSSARY = [
-  { term: 'Attractor', def: 'A stable state that a system naturally tends toward. In investing: a competitive position that reinforces itself over time. A company with a strong attractor gets harder to compete with as it grows.' },
-  { term: 'Consensus Saturation Index', def: 'Measures how widely a regime shift is already recognized by the market. High CSI means the opportunity is consensus and likely already priced in. Only low-CSI opportunities proceed to evaluation.' },
-  { term: 'DKS (Dynamic Kinetic Stability)', def: 'A concept from chemistry: some systems are stable not because they are static, but because they are constantly renewing themselves. Applied to companies: a business that maintains its position through continuous adaptation rather than rigid defense of a fixed advantage.' },
-  { term: 'Fat-Tail Discount', def: 'A downward adjustment to intrinsic value that accounts for extreme events (crashes, black swans) happening more often than standard models predict. Based on the company\'s track record through past stress periods.' },
-  { term: 'Flywheel', def: 'A self-reinforcing cycle where each part of the business strengthens the next. Example: more customers generate more data, which improves the product, which attracts more customers. The attractor analysis checks whether a company\'s flywheel is real.' },
-  { term: 'Intrinsic Value', def: 'An estimate of what a business is actually worth based on its earnings, growth, and competitive position — independent of what the stock market currently prices it at. The system calculates this differently for each tier.' },
-  { term: 'Margin of Safety', def: 'The gap between what a company is worth (intrinsic value) and the maximum price the system will pay (buy-below price). Protects against errors in the valuation estimate. Ranges from 25% to 45% depending on conviction and market conditions.' },
-  { term: 'Network Regime', def: 'The type of competitive dynamics in an industry. Classical (brand, scale, cost advantages), Soft Network (mild network effects), Hard Network (winner-take-all dynamics), or Platform (multi-sided marketplaces). Affects margin of safety requirements.' },
-  { term: 'Regime Transition', def: 'A structural shift in the economy driven by new legislation, geopolitical events, or technology breakthroughs. Creates investment opportunities for companies positioned to benefit — but only if the shift isn\'t already priced in.' },
-  { term: 'S-Curve', def: 'The characteristic shape of adoption for new products and ideas: slow start, rapid growth, then saturation. Used to assess where a growth company or regime play sits in its lifecycle. Early S-curve = most upside remaining.' },
-  { term: 'Scaling Exponent', def: 'From Geoffrey West\'s research: measures whether a company\'s outputs grow faster (superlinear, exponent > 1) or slower (sublinear, exponent < 1) than its inputs. Superlinear scaling is the mathematical signature of a working flywheel.' },
-]
