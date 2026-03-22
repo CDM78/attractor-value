@@ -11,6 +11,7 @@ import { reportRoutes } from './routes/report.js';
 import { quoteRoutes } from './routes/quote.js';
 import { priceCheckRoutes } from './routes/priceCheck.js';
 import { universeRoutes } from './routes/universe.js';
+import { whatIfScreenRoutes } from './routes/whatIfScreen.js';
 import { dailyRefresh, finnhubRefresh, edgarRefresh } from './cron/dailyRefresh.js';
 import { alertsCheck } from './cron/alertsCheck.js';
 import { dailyAttractorCheck } from './cron/attractorCheck.js';
@@ -113,6 +114,7 @@ function errorResponse(message, status = 500) {
 }
 
 const routeMap = {
+  '/api/screen/what-if': whatIfScreenRoutes,
   '/api/screen': screenRoutes,
   '/api/valuate': valuateRoutes,
   '/api/analyze': analyzeRoutes,
