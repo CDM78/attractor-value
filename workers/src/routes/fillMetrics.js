@@ -53,10 +53,14 @@ export async function fillMetricsRoutes(request, env, ctx, { path, jsonResponse,
   const offset = parseInt(url.searchParams.get('offset') || '0');
 
   // Find stocks missing metrics (PE/PB, market_cap, or shares)
+  // Skip OTC/foreign tickers (ending in F with 5+ chars, or containing digits)
   const missing = await env.DB.prepare(
     `SELECT s.ticker FROM stocks s
      LEFT JOIN market_data md ON s.ticker = md.ticker
      WHERE s.ticker NOT LIKE '\\_\\_%' ESCAPE '\\'
+       AND s.ticker NOT GLOB '*[0-9]*'
+       AND NOT (LENGTH(s.ticker) = 5 AND s.ticker LIKE '%F')
+       AND NOT (LENGTH(s.ticker) >= 5 AND s.ticker LIKE '%S')
        AND (md.pe_ratio IS NULL OR md.pb_ratio IS NULL OR s.market_cap IS NULL OR s.shares_outstanding_m IS NULL)
      ORDER BY s.ticker
      LIMIT ? OFFSET ?`
