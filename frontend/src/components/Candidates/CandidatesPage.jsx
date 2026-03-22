@@ -107,6 +107,7 @@ export default function CandidatesPage() {
                 <th className="px-3 py-2">Attractor</th>
                 <th className="px-3 py-2">IV</th>
                 <th className="px-3 py-2">Buy Below</th>
+                <th className="px-3 py-2">Price</th>
                 <th className="px-3 py-2">DKS / CSI</th>
                 <th className="px-3 py-2">Model</th>
                 <th className="px-3 py-2">Discovered</th>
@@ -141,6 +142,13 @@ export default function CandidatesPage() {
                   <td className="px-3 py-2">
                     {c.buy_below_price ? (
                       <span className="text-pass">${c.buy_below_price.toFixed(2)}</span>
+                    ) : '--'}
+                  </td>
+                  <td className="px-3 py-2">
+                    {c.current_price ? (
+                      <span className={c.intrinsic_value && c.current_price <= c.intrinsic_value ? 'text-pass' : 'text-text-primary'}>
+                        ${c.current_price.toFixed(2)}
+                      </span>
                     ) : '--'}
                   </td>
                   <td className="px-3 py-2 text-text-secondary text-xs">

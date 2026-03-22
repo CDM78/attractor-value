@@ -375,13 +375,17 @@ export async function upsertCandidate(db, candidate) {
 }
 
 export async function getCandidatesByTier(db, tier, signalFilter) {
-  let sql = 'SELECT * FROM candidates WHERE discovery_tier = ? AND status = ?';
+  let sql = `SELECT c.*, md.price as current_price, s.company_name, s.sector
+     FROM candidates c
+     LEFT JOIN market_data md ON c.ticker = md.ticker
+     LEFT JOIN stocks s ON c.ticker = s.ticker
+     WHERE c.discovery_tier = ? AND c.status = ?`;
   const params = [tier, 'active'];
   if (signalFilter) {
-    sql += ' AND signal = ?';
+    sql += ' AND c.signal = ?';
     params.push(signalFilter);
   }
-  sql += ' ORDER BY discovered_date DESC';
+  sql += ' ORDER BY c.discovered_date DESC';
   const result = await db.prepare(sql).bind(...params).all();
   return result.results || [];
 }
