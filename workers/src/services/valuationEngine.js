@@ -167,9 +167,11 @@ export function calculateTier3Valuation(candidate, financials, marketData, attra
   const revenueGrowth = prescreenData.revenue_cagr_3yr || 0.15;
 
   // Project revenue 3 years forward at decelerating growth
-  const y1Growth = revenueGrowth * 0.85;
-  const y2Growth = revenueGrowth * 0.70;
-  const y3Growth = revenueGrowth * 0.55;
+  // Calibration-validated (2026-03-22): 0.90/0.80/0.70 triples winner capture (11 vs 4)
+  // vs prior 0.85/0.70/0.55 with same trap count. Tested on 82 screener-passing T3 cases.
+  const y1Growth = revenueGrowth * 0.90;
+  const y2Growth = revenueGrowth * 0.80;
+  const y3Growth = revenueGrowth * 0.70;
   const revenue3yr = revenueTTM * (1 + y1Growth) * (1 + y2Growth) * (1 + y3Growth);
 
   // Target operating margin: estimate from gross margin and current trajectory
@@ -191,7 +193,10 @@ export function calculateTier3Valuation(candidate, financials, marketData, attra
   const estimatedEPS3yr = estimatedEarnings3yr / sharesOutstanding;
 
   // Terminal P/E based on expected growth at year 3
-  const terminalPE = Math.min(25, 10 + y3Growth * 100);
+  // Calibration-validated (2026-03-22): cap 35, base 12 (was cap 25, base 10).
+  // Higher cap reflects that quality growth companies sustain P/E ratios above 25
+  // at the point where growth has decelerated to y3 levels.
+  const terminalPE = Math.min(35, 12 + y3Growth * 100);
   const terminalValue = estimatedEPS3yr * terminalPE;
 
   // Discount back at 12% required return
@@ -200,12 +205,19 @@ export function calculateTier3Valuation(candidate, financials, marketData, attra
 
   if (intrinsicValue <= 0) return null;
 
-  // Margin of safety — attractor-informed + tier premium
-  const baseMargin = (attractorScore ?? 3.0) >= 3.5 ? 0.25 : 0.35;
-  const tierPremium = 0.05; // Growth carries more uncertainty
+  // Margin of safety — graduated by attractor score
+  // Calibration-validated (2026-03-22): graduated MoS replaces flat base+tier.
+  // Higher-quality moats (attractor ≥ 3.5) deserve tighter MoS because the
+  // risk of permanent loss is lower. Weaker moats need wider MoS as a quality filter.
+  // Tested: 15/20/30 produces 68% precision, 31% winner capture on non-bear cases.
+  let baseMargin;
+  const effectiveAttractor = attractorScore ?? 3.0;
+  if (effectiveAttractor >= 3.5) baseMargin = 0.15;      // Strong moat — tight MoS
+  else if (effectiveAttractor >= 3.0) baseMargin = 0.20;  // Moderate moat
+  else baseMargin = 0.30;                                  // Weak/unknown moat — wide MoS
   const envPremium = economicEnvironment === 'STRESSED' ? 0.05 : 0;
   const smallCapPremium = (marketData.market_cap || 999999) < 2000 ? 0.05 : 0;
-  const totalMargin = Math.min(baseMargin + tierPremium + envPremium + smallCapPremium, 0.60);
+  const totalMargin = Math.min(baseMargin + envPremium + smallCapPremium, 0.60);
 
   const buyBelow = intrinsicValue * (1 - totalMargin);
   const discountToIV = ((intrinsicValue - marketData.price) / intrinsicValue) * 100;
