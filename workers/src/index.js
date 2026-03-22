@@ -171,6 +171,38 @@ export default {
       }
     }
 
+    // Generate sector signals manually (Growth pipeline)
+    if (path === '/api/signals/sectors' && request.method === 'POST') {
+      try {
+        const { ensureMultiTierTables, getPortfolioConfig } = await import('./db/queries.js');
+        await ensureMultiTierTables(env.DB);
+        const { generateSectorSignals, allocateSectorBudget, storeSectorSignals } = await import('./services/sectorSignalEngine.js');
+
+        const allGrowth = await env.DB.prepare(
+          "SELECT c.ticker, s.company_name, s.sector, s.industry FROM candidates c JOIN stocks s ON c.ticker = s.ticker WHERE c.discovery_tier IN ('growth','tier3') AND c.status = 'active' AND c.prescreen_pass = 1"
+        ).all();
+        const sectorSignals = generateSectorSignals(allGrowth.results || []);
+        const config = await getPortfolioConfig(env.DB);
+        const growthBudget = parseFloat(config.total_capital || '27000') * 0.20;
+        const allocated = allocateSectorBudget(sectorSignals, growthBudget);
+        const stored = await storeSectorSignals(env.DB, allocated);
+        return jsonResponse({ sector_signals: allocated, stored, growth_budget: growthBudget });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
+    // Get active sector signals
+    if (path === '/api/signals/sectors' && request.method === 'GET') {
+      try {
+        const { getActiveSectorSignals } = await import('./services/sectorSignalEngine.js');
+        const signals = await getActiveSectorSignals(env.DB);
+        return jsonResponse({ sector_signals: signals });
+      } catch (err) {
+        return errorResponse(err.message);
+      }
+    }
+
     // Portfolio summary with VOO parking position
     if (path === '/api/portfolio/summary') {
       try {
@@ -196,7 +228,11 @@ export default {
         const positions = await sizeAllBuySignals(env.DB);
         const signals = await getCurrentSignals(env.DB);
 
-        return jsonResponse({ ...signals, positions });
+        // Include sector signals from Growth pipeline
+        const { getActiveSectorSignals } = await import('./services/sectorSignalEngine.js');
+        const sectorSignals = await getActiveSectorSignals(env.DB);
+
+        return jsonResponse({ ...signals, positions, sector_signals: sectorSignals });
       } catch (err) {
         return errorResponse(err.message);
       }
@@ -1092,9 +1128,29 @@ export default {
             hasMore = results.has_more;
             offset += 100;
           }
-          console.log(`Monthly Tier 3 pre-screen complete: ${totalPasses} candidates`);
+          console.log(`Monthly Growth pre-screen complete: ${totalPasses} candidates`);
+
+          // Generate sector signals from Growth candidates (Change 7: sector ETF mode)
+          const { generateSectorSignals, allocateSectorBudget, storeSectorSignals } = await import('./services/sectorSignalEngine.js');
+          const { getPortfolioConfig } = await import('./db/queries.js');
+
+          // Get all active Growth candidates for sector aggregation
+          const allGrowth = await env.DB.prepare(
+            "SELECT c.ticker, s.company_name, s.sector, s.industry FROM candidates c JOIN stocks s ON c.ticker = s.ticker WHERE c.discovery_tier IN ('growth','tier3') AND c.status = 'active' AND c.prescreen_pass = 1"
+          ).all();
+          const growthCandidates = allGrowth.results || [];
+
+          const sectorSignals = generateSectorSignals(growthCandidates);
+          if (sectorSignals.length > 0) {
+            const config = await getPortfolioConfig(env.DB);
+            const totalCapital = parseFloat(config.total_capital || '27000');
+            const growthBudget = totalCapital * 0.20; // Growth allocation
+            const allocated = allocateSectorBudget(sectorSignals, growthBudget);
+            await storeSectorSignals(env.DB, allocated);
+            console.log(`Sector signals: ${allocated.map(s => `${s.etf}(${s.candidate_count})`).join(', ')}`);
+          }
         } catch (err) {
-          console.error('Monthly Tier 3 pre-screen error:', err.message);
+          console.error('Monthly Growth pre-screen error:', err.message);
         }
       })());
     }
