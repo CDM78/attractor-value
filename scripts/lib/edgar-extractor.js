@@ -172,6 +172,9 @@ const METRIC_TAGS = {
   grossProfit: ['GrossProfit'],
   costOfRevenue: ['CostOfRevenue', 'CostOfGoodsAndServicesSold', 'CostOfGoodsSold'],
   employees: ['EntityNumberOfEmployees'],
+  equity: ['StockholdersEquity', 'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest'],
+  totalLiabilities: ['Liabilities'],
+  operatingExpenses: ['OperatingExpenses', 'CostsAndExpenses'],
 };
 
 // Find the best quarterly value for a tag list from companyfacts
@@ -223,7 +226,7 @@ export function extractQuarterlyMetrics(facts, beforeDate = null) {
 
   const raw = {};
   for (const [metric, tags] of Object.entries(METRIC_TAGS)) {
-    raw[metric] = findQuarterlyValues(facts, tags, metric === 'assets' || metric === 'employees');
+    raw[metric] = findQuarterlyValues(facts, tags, metric === 'assets' || metric === 'employees' || metric === 'equity' || metric === 'totalLiabilities');
   }
 
   // Collect all quarters that have at least revenue or assets

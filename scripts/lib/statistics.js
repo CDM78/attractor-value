@@ -326,3 +326,30 @@ export function stddev(arr) {
   const m = mean(arr);
   return Math.sqrt(arr.reduce((s, v) => s + (v - m) ** 2, 0) / arr.length);
 }
+
+// ============================================
+// K-FOLD CROSS-VALIDATION SPLIT
+// ============================================
+// Deterministic k-fold split using seeded PRNG (simple LCG)
+export function kFoldSplit(items, k = 5, seed = 42) {
+  const n = items.length;
+  // Seeded shuffle using LCG
+  const indices = Array.from({ length: n }, (_, i) => i);
+  let s = seed;
+  const nextRand = () => { s = (s * 1664525 + 1013904223) & 0x7fffffff; return s / 0x7fffffff; };
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(nextRand() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+
+  const foldSize = Math.floor(n / k);
+  const folds = [];
+  for (let f = 0; f < k; f++) {
+    const testStart = f * foldSize;
+    const testEnd = f === k - 1 ? n : (f + 1) * foldSize;
+    const test = indices.slice(testStart, testEnd);
+    const train = [...indices.slice(0, testStart), ...indices.slice(testEnd)];
+    folds.push({ train, test });
+  }
+  return folds;
+}

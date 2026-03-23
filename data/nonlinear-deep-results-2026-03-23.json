@@ -1,0 +1,5410 @@
+{
+  "deepTest1": {
+    "denominators": [
+      {
+        "name": "Assets (orig)",
+        "winMean": 0.7942151553870046,
+        "trapMean": 0.4010258942460953,
+        "gap": 0.3931892611409093,
+        "p": 0.0005615068283029157,
+        "r": 0.2669383188101217,
+        "n": 167
+      },
+      {
+        "name": "Equity",
+        "winMean": 0.6497026055386498,
+        "trapMean": 0.3755251195078435,
+        "gap": 0.27417748603080627,
+        "p": 0.00010538263354531452,
+        "r": 0.29919002382937393,
+        "n": 168
+      },
+      {
+        "name": "Cost of revenue",
+        "winMean": 0.95645882953502,
+        "trapMean": 0.9767140755128736,
+        "gap": -0.020255245977853553,
+        "p": 0.18353170947139907,
+        "r": 0.11446469841249109,
+        "n": 135
+      },
+      {
+        "name": "OpEx",
+        "winMean": 0.9756167737512556,
+        "trapMean": 0.9321204994525811,
+        "gap": 0.04349627429867442,
+        "p": 0.25458373153951075,
+        "r": 0.10231095966480067,
+        "n": 124
+      },
+      {
+        "name": "Employees",
+        "winMean": 0,
+        "trapMean": 0,
+        "gap": null,
+        "n": 0
+      },
+      {
+        "name": "Liabilities",
+        "winMean": 0.6960724914089921,
+        "trapMean": 0.34814307301015435,
+        "gap": 0.34792941839883773,
+        "p": 0.0119152889621148,
+        "r": 0.2095536908744191,
+        "n": 144
+      }
+    ],
+    "minQuarters": [
+      {
+        "minQ": 4,
+        "n": 168,
+        "winMean": 0.7978759000705586,
+        "trapMean": 0.4010258942460953,
+        "p": 0.00046752749615830425,
+        "r": 0.2699346842426176
+      },
+      {
+        "minQ": 6,
+        "n": 168,
+        "winMean": 0.7978759000705586,
+        "trapMean": 0.4010258942460953,
+        "p": 0.00046752749615830425,
+        "r": 0.2699346842426176
+      },
+      {
+        "minQ": 8,
+        "n": 167,
+        "winMean": 0.7942151553870046,
+        "trapMean": 0.4010258942460953,
+        "p": 0.0005615068283029157,
+        "r": 0.2669383188101217
+      },
+      {
+        "minQ": 10,
+        "n": 166,
+        "winMean": 0.7942151553870046,
+        "trapMean": 0.3945170843671752,
+        "p": 0.0006031918806634895,
+        "r": 0.26623666933149126
+      },
+      {
+        "minQ": 12,
+        "n": 164,
+        "winMean": 0.7896817096228039,
+        "trapMean": 0.38446745177154046,
+        "p": 0.000538447735514147,
+        "r": 0.27025164153471615
+      },
+      {
+        "minQ": 16,
+        "n": 163,
+        "winMean": 0.7930428440424075,
+        "trapMean": 0.38446745177154046,
+        "p": 0.00043860583282140375,
+        "r": 0.27537451639654226
+      }
+    ],
+    "r2Filter": [
+      {
+        "r2Min": 0,
+        "n": 167,
+        "winMean": 0.7942151553870046,
+        "trapMean": 0.4010258942460953,
+        "p": 0.0005615068283029157,
+        "r": 0.2669383188101217
+      },
+      {
+        "r2Min": 0.5,
+        "n": 56,
+        "winMean": 0.9738062855293861,
+        "trapMean": 0.8788646294316211,
+        "p": 0.24150632329942479,
+        "r": 0.15651223794674865
+      },
+      {
+        "r2Min": 0.7,
+        "n": 27,
+        "winMean": 0.9459002773026749,
+        "trapMean": 0.9061033044809957,
+        "p": 0.8611082814691453,
+        "r": 0.03367175148507369
+      },
+      {
+        "r2Min": 0.9,
+        "n": 1,
+        "winMean": 1.3291617555626802,
+        "trapMean": 0
+      }
+    ],
+    "thresholdSweep": [
+      {
+        "thresh": 0.5,
+        "above": 125,
+        "winnersAbove": 99,
+        "trapsAbove": 26,
+        "precision": 0.792,
+        "winRate": 0.8319327731092437
+      },
+      {
+        "thresh": 0.6,
+        "above": 117,
+        "winnersAbove": 93,
+        "trapsAbove": 24,
+        "precision": 0.7948717948717948,
+        "winRate": 0.7815126050420168
+      },
+      {
+        "thresh": 0.7,
+        "above": 96,
+        "winnersAbove": 79,
+        "trapsAbove": 17,
+        "precision": 0.8229166666666666,
+        "winRate": 0.6638655462184874
+      },
+      {
+        "thresh": 0.8,
+        "above": 78,
+        "winnersAbove": 64,
+        "trapsAbove": 14,
+        "precision": 0.8205128205128205,
+        "winRate": 0.5378151260504201
+      },
+      {
+        "thresh": 0.9,
+        "above": 55,
+        "winnersAbove": 46,
+        "trapsAbove": 9,
+        "precision": 0.8363636363636363,
+        "winRate": 0.3865546218487395
+      },
+      {
+        "thresh": 1,
+        "above": 37,
+        "winnersAbove": 31,
+        "trapsAbove": 6,
+        "precision": 0.8378378378378378,
+        "winRate": 0.2605042016806723
+      },
+      {
+        "thresh": 1.1,
+        "above": 27,
+        "winnersAbove": 23,
+        "trapsAbove": 4,
+        "precision": 0.8518518518518519,
+        "winRate": 0.19327731092436976
+      },
+      {
+        "thresh": 1.2,
+        "above": 18,
+        "winnersAbove": 15,
+        "trapsAbove": 3,
+        "precision": 0.8333333333333334,
+        "winRate": 0.12605042016806722
+      }
+    ],
+    "optimalThreshold": 1.1,
+    "crossValidation": {
+      "foldResults": [
+        {
+          "fold": 1,
+          "trainP": 0.010469360077832945,
+          "testP": 0.004007570775561575,
+          "testR": 0.5009216105270845
+        },
+        {
+          "fold": 2,
+          "trainP": 0.0010775106020253222,
+          "testP": 0.29326429255368613,
+          "testR": 0.18295347673232462
+        },
+        {
+          "fold": 3,
+          "trainP": 0.004465385422948831,
+          "testP": 0.045735508166337535,
+          "testR": 0.34777667633237075
+        },
+        {
+          "fold": 4,
+          "trainP": 0.000406457887412337,
+          "testP": 0.5161955667197755,
+          "testR": 0.11301482918328383
+        },
+        {
+          "fold": 5,
+          "trainP": 0.0012639090800099506,
+          "testP": 0.22820743731726356,
+          "testR": 0.2036804219499613
+        }
+      ],
+      "meanTestP": 0.21748207510652487,
+      "sdTestP": 0.18447545918231545,
+      "meanTestR": 0.26966940294500497,
+      "sdTestR": 0.13855914449775425,
+      "sigFolds": 2
+    },
+    "sectorBaselines": [
+      {
+        "sector": "Technology",
+        "etf": "VGT",
+        "sectorMedian": 0.9160905777219925,
+        "winRelMean": 0.008317837081657392,
+        "trapRelMean": -0.3303155116437033,
+        "p": 0.04072269849527066,
+        "n": 44
+      },
+      {
+        "sector": "Financials",
+        "etf": "VFH",
+        "sectorMedian": 0.7391016958111252,
+        "winRelMean": -0.06007274481070586,
+        "trapRelMean": -0.8929936041286085,
+        "p": 0.5795437132617489,
+        "n": 27
+      },
+      {
+        "sector": "Energy",
+        "etf": "VDE",
+        "sectorMedian": 0.7738301492547067,
+        "winRelMean": -0.14507403391484758,
+        "trapRelMean": 0,
+        "n": 6
+      },
+      {
+        "sector": "Consumer Discretionary",
+        "etf": "VCR",
+        "sectorMedian": 0.676675829078203,
+        "winRelMean": 0.010243370582722662,
+        "trapRelMean": -0.24637320543537183,
+        "p": 0.2918957600677923,
+        "n": 24
+      },
+      {
+        "sector": "Consumer Staples",
+        "etf": "VDC",
+        "sectorMedian": 0.5000336089608617,
+        "winRelMean": 0.13323937804489458,
+        "trapRelMean": -0.12387016438267774,
+        "p": 0.5126906337634385,
+        "n": 6
+      },
+      {
+        "sector": "Communication Services",
+        "etf": "VOX",
+        "sectorMedian": 0.7072525490029247,
+        "winRelMean": 0.07488524191721217,
+        "trapRelMean": -0.2476557936074979,
+        "p": 0.2008252599983147,
+        "n": 10
+      },
+      {
+        "sector": "Healthcare",
+        "etf": "VHT",
+        "sectorMedian": 0.7614927071150684,
+        "winRelMean": -0.16612680958506812,
+        "trapRelMean": -0.1382677711731546,
+        "p": 0.5270891406088147,
+        "n": 17
+      },
+      {
+        "sector": "Industrials",
+        "etf": "VIS",
+        "sectorMedian": 0.7239124952874534,
+        "winRelMean": 0.09001843081901328,
+        "trapRelMean": -0.2183922424590378,
+        "p": 0.1797126230350108,
+        "n": 23
+      },
+      {
+        "sector": "Materials",
+        "etf": "VAW",
+        "sectorMedian": 0.45292645060688014,
+        "winRelMean": 0.3650443093498601,
+        "trapRelMean": -0.20269483133337407,
+        "p": 0.08326444141544798,
+        "n": 5
+      }
+    ],
+    "sectorRelativeMW": {
+      "p": 0.00523923666259174,
+      "r": 0.21935644381590566
+    }
+  },
+  "deepTest2": {
+    "lookback": [
+      {
+        "lookback": 4,
+        "winPct": 0.680672268907563,
+        "trapPct": 0.4791666666666667,
+        "gap": 0.20150560224089636,
+        "p": 0.04183998986439752,
+        "nWin": 119,
+        "nTrap": 48
+      },
+      {
+        "lookback": 8,
+        "winPct": 0.6779661016949152,
+        "trapPct": 0.5652173913043478,
+        "gap": 0.11274871039056744,
+        "p": 0.26267854628601506,
+        "nWin": 118,
+        "nTrap": 46
+      },
+      {
+        "lookback": 12,
+        "winPct": 0.7606837606837606,
+        "trapPct": 0.5217391304347826,
+        "gap": 0.23894463024897805,
+        "p": 0.017746223388465765,
+        "nWin": 117,
+        "nTrap": 46
+      },
+      {
+        "lookback": 16,
+        "winPct": 0.7155172413793104,
+        "trapPct": 0.42857142857142855,
+        "gap": 0.28694581280788184,
+        "p": 0.005938603143415877,
+        "nWin": 116,
+        "nTrap": 42
+      }
+    ],
+    "velocityBands": [
+      {
+        "label": "Rapidly improving",
+        "cases": 65,
+        "winners": 51,
+        "traps": 14,
+        "winRate": 0.7846153846153846
+      },
+      {
+        "label": "Moderately improving",
+        "cases": 20,
+        "winners": 18,
+        "traps": 2,
+        "winRate": 0.9
+      },
+      {
+        "label": "Stable",
+        "cases": 17,
+        "winners": 16,
+        "traps": 1,
+        "winRate": 0.9411764705882353
+      },
+      {
+        "label": "Moderately degrading",
+        "cases": 8,
+        "winners": 5,
+        "traps": 3,
+        "winRate": 0.625
+      },
+      {
+        "label": "Rapidly degrading",
+        "cases": 54,
+        "winners": 28,
+        "traps": 26,
+        "winRate": 0.5185185185185185
+      }
+    ],
+    "velocityMW": {
+      "p": 0.008266748236533283,
+      "r": 0.2062258692409283
+    },
+    "matrix": {
+      "β>1 + improving": {
+        "winner": 52,
+        "trap": 9
+      },
+      "β>1 + degrading": {
+        "winner": 3,
+        "trap": 1
+      },
+      "β<1 + improving": {
+        "winner": 32,
+        "trap": 10
+      },
+      "β<1 + degrading": {
+        "winner": 30,
+        "trap": 26
+      }
+    }
+  },
+  "deepTest3": {
+    "pairwise": [
+      {
+        "combo": "β trajectory + D1 (growth)",
+        "r": 0.406202682025943,
+        "p": 2.1520743187508629e-7,
+        "improvement": 0.07477760809634681
+      },
+      {
+        "combo": "β level + β trajectory",
+        "r": 0.3389113738766044,
+        "p": 0.00001513136405062454,
+        "improvement": 0.07197305506648272
+      },
+      {
+        "combo": "β level + D1 (growth)",
+        "r": 0.316741265015598,
+        "p": 0.00004256904665322914,
+        "improvement": -0.014683808913998175
+      },
+      {
+        "combo": "Zipf velocity + D1 (growth)",
+        "r": 0.2800205915091473,
+        "p": 0.0007157831873798592,
+        "improvement": -0.05140448242044887
+      },
+      {
+        "combo": "β level + Zipf velocity",
+        "r": 0.2656141161975489,
+        "p": 0.0013819691442145121,
+        "improvement": -0.0013242026125728223
+      },
+      {
+        "combo": "β trajectory + Zipf velocity",
+        "r": 0.25161200333826156,
+        "p": 0.0027150140635066045,
+        "improvement": -0.007300690892991846
+      },
+      {
+        "combo": "CSD index + D1 (growth)",
+        "r": 0.2241554954448229,
+        "p": 0.003668123635870657,
+        "improvement": -0.10726957848477328
+      },
+      {
+        "combo": "β trajectory + CSD index",
+        "r": 0.20981603163302354,
+        "p": 0.007389808345050097,
+        "improvement": -0.04909666259822987
+      },
+      {
+        "combo": "β level + CSD index",
+        "r": 0.19442303999445562,
+        "p": 0.011987965913312859,
+        "improvement": -0.07251527881566608
+      },
+      {
+        "combo": "Zipf velocity + CSD index",
+        "r": 0.12757694902733352,
+        "p": 0.12319076635283732,
+        "improvement": -0.11117934682184294
+      }
+    ],
+    "composite": {
+      "p": 0.000054690141907398626,
+      "r": 0.30764590129918595,
+      "winMean": 0.5418400660962516,
+      "trapMean": 0.4162384830221177
+    },
+    "compositeThreshold": [
+      {
+        "thresh": 0.3,
+        "above": 156,
+        "winners": 116,
+        "traps": 40,
+        "precision": 0.7435897435897436
+      },
+      {
+        "thresh": 0.4,
+        "above": 140,
+        "winners": 108,
+        "traps": 32,
+        "precision": 0.7714285714285715
+      },
+      {
+        "thresh": 0.5,
+        "above": 91,
+        "winners": 73,
+        "traps": 18,
+        "precision": 0.8021978021978022
+      },
+      {
+        "thresh": 0.6,
+        "above": 49,
+        "winners": 43,
+        "traps": 6,
+        "precision": 0.8775510204081632
+      },
+      {
+        "thresh": 0.7,
+        "above": 11,
+        "winners": 10,
+        "traps": 1,
+        "precision": 0.9090909090909091
+      },
+      {
+        "thresh": 0.8,
+        "above": 3,
+        "winners": 2,
+        "traps": 1,
+        "precision": 0.6666666666666666
+      }
+    ],
+    "optimalCompositeThreshold": 0.7,
+    "caseSignals": [
+      {
+        "ticker": "AAPL",
+        "outcome": "winner",
+        "score": 0.3852320448253391
+      },
+      {
+        "ticker": "BAC",
+        "outcome": "winner",
+        "score": 0.5808166230630574
+      },
+      {
+        "ticker": "CVX",
+        "outcome": "winner",
+        "score": 0.5738272751730858
+      },
+      {
+        "ticker": "OXY",
+        "outcome": "winner",
+        "score": 0.441361234181205
+      },
+      {
+        "ticker": "CB",
+        "outcome": "winner",
+        "score": 0.6365939899506402
+      },
+      {
+        "ticker": "HPQ",
+        "outcome": "winner",
+        "score": 0.452653957464915
+      },
+      {
+        "ticker": "GM",
+        "outcome": "winner",
+        "score": 0.4813942413715778
+      },
+      {
+        "ticker": "KR",
+        "outcome": "winner",
+        "score": 0.4755924029147761
+      },
+      {
+        "ticker": "C",
+        "outcome": "winner",
+        "score": 0.4050333750805265
+      },
+      {
+        "ticker": "ALLY",
+        "outcome": "trap",
+        "score": 0.4004848484848485
+      },
+      {
+        "ticker": "VZ",
+        "outcome": "trap",
+        "score": 0.1891102022967474
+      },
+      {
+        "ticker": "USB",
+        "outcome": "trap",
+        "score": 0.6825486630959425
+      },
+      {
+        "ticker": "AXP",
+        "outcome": "winner",
+        "score": 0.4907034916933329
+      },
+      {
+        "ticker": "MKL",
+        "outcome": "winner",
+        "score": 0.625506496926542
+      },
+      {
+        "ticker": "DVA",
+        "outcome": "winner",
+        "score": 0.22213172130272554
+      },
+      {
+        "ticker": "GE",
+        "outcome": "trap",
+        "score": 0.5862741013541789
+      },
+      {
+        "ticker": "IBM",
+        "outcome": "trap",
+        "score": 0.3070935587137454
+      },
+      {
+        "ticker": "INTC",
+        "outcome": "trap",
+        "score": 0.23736606808049068
+      },
+      {
+        "ticker": "T",
+        "outcome": "trap",
+        "score": 0.5464349018294087
+      },
+      {
+        "ticker": "MMM",
+        "outcome": "trap",
+        "score": 0.386553027472794
+      },
+      {
+        "ticker": "BBBY",
+        "outcome": "trap",
+        "score": 0.5349096262858299
+      },
+      {
+        "ticker": "M",
+        "outcome": "trap",
+        "score": 0.271476093450409
+      },
+      {
+        "ticker": "KSS",
+        "outcome": "trap",
+        "score": 0.16815894168011186
+      },
+      {
+        "ticker": "WFC",
+        "outcome": "trap",
+        "score": -0.7985800549813782
+      },
+      {
+        "ticker": "AIG",
+        "outcome": "trap",
+        "score": 0.5259891201041677
+      },
+      {
+        "ticker": "TEVA",
+        "outcome": "trap",
+        "score": 0.4172667497985826
+      },
+      {
+        "ticker": "NWL",
+        "outcome": "trap",
+        "score": 0.3578293735462751
+      },
+      {
+        "ticker": "IP",
+        "outcome": "trap",
+        "score": 0.6311201510821438
+      },
+      {
+        "ticker": "XOM",
+        "outcome": "winner",
+        "score": 0.5705969041865376
+      },
+      {
+        "ticker": "FCX",
+        "outcome": "winner",
+        "score": 0.5809532550900661
+      },
+      {
+        "ticker": "CLF",
+        "outcome": "winner",
+        "score": 0.9167036648955139
+      },
+      {
+        "ticker": "MPC",
+        "outcome": "winner",
+        "score": 0.7415821489036972
+      },
+      {
+        "ticker": "PGR",
+        "outcome": "winner",
+        "score": 0.4762003890445318
+      },
+      {
+        "ticker": "MSFT",
+        "outcome": "winner",
+        "score": 0.6154563138608177
+      },
+      {
+        "ticker": "HD",
+        "outcome": "winner",
+        "score": 0.6190027730389276
+      },
+      {
+        "ticker": "UNH",
+        "outcome": "winner",
+        "score": 0.7202192363382547
+      },
+      {
+        "ticker": "V",
+        "outcome": "winner",
+        "score": 0.6261819841395055
+      },
+      {
+        "ticker": "NKE",
+        "outcome": "winner",
+        "score": 0.4119135609093275
+      },
+      {
+        "ticker": "COST",
+        "outcome": "winner",
+        "score": 0.6499725934999049
+      },
+      {
+        "ticker": "TXN",
+        "outcome": "winner",
+        "score": 0.5536102552914159
+      },
+      {
+        "ticker": "GOOGL",
+        "outcome": "winner",
+        "score": 0.6963386659195792
+      },
+      {
+        "ticker": "AMZN",
+        "outcome": "winner",
+        "score": 0.41356561996262553
+      },
+      {
+        "ticker": "PANW",
+        "outcome": "winner",
+        "score": 0.37795319388260806
+      },
+      {
+        "ticker": "DE",
+        "outcome": "winner",
+        "score": 0.6899701605511975
+      },
+      {
+        "ticker": "JNJ",
+        "outcome": "winner",
+        "score": 0.5463722166975935
+      },
+      {
+        "ticker": "MCD",
+        "outcome": "winner",
+        "score": 0.28768010076399503
+      },
+      {
+        "ticker": "AAPL",
+        "outcome": "winner",
+        "score": 0.3852320448253391
+      },
+      {
+        "ticker": "SBUX",
+        "outcome": "winner",
+        "score": 0.44337416243739175
+      },
+      {
+        "ticker": "ADBE",
+        "outcome": "winner",
+        "score": 0.5751116631639582
+      },
+      {
+        "ticker": "MA",
+        "outcome": "winner",
+        "score": 0.7272983109299807
+      },
+      {
+        "ticker": "LOW",
+        "outcome": "winner",
+        "score": 0.6670990419044542
+      },
+      {
+        "ticker": "UNP",
+        "outcome": "winner",
+        "score": 0.5763565850105605
+      },
+      {
+        "ticker": "DIS",
+        "outcome": "winner",
+        "score": 0.12345809747586785
+      },
+      {
+        "ticker": "DHR",
+        "outcome": "winner",
+        "score": 0.41582000000105596
+      },
+      {
+        "ticker": "CVS",
+        "outcome": "winner",
+        "score": 0.4022596336759485
+      },
+      {
+        "ticker": "PYPL",
+        "outcome": "winner",
+        "score": 0.6502402314748356
+      },
+      {
+        "ticker": "CCL",
+        "outcome": "trap",
+        "score": -0.1745323185274948
+      },
+      {
+        "ticker": "BA",
+        "outcome": "winner",
+        "score": 0.23846429531460558
+      },
+      {
+        "ticker": "SPG",
+        "outcome": "winner",
+        "score": 0.640804335694044
+      },
+      {
+        "ticker": "OXY",
+        "outcome": "winner",
+        "score": 0.441361234181205
+      },
+      {
+        "ticker": "AFRM",
+        "outcome": "winner",
+        "score": 0.6147411715173735
+      },
+      {
+        "ticker": "COIN",
+        "outcome": "winner",
+        "score": 0.19571616486646745
+      },
+      {
+        "ticker": "GE",
+        "outcome": "winner",
+        "score": 0.5862741013541789
+      },
+      {
+        "ticker": "C",
+        "outcome": "winner",
+        "score": 0.4050333750805265
+      },
+      {
+        "ticker": "AIG",
+        "outcome": "winner",
+        "score": 0.5259891201041677
+      },
+      {
+        "ticker": "BAC",
+        "outcome": "winner",
+        "score": 0.5808166230630574
+      },
+      {
+        "ticker": "KHC",
+        "outcome": "winner",
+        "score": 0.5214286627842629
+      },
+      {
+        "ticker": "MMM",
+        "outcome": "trap",
+        "score": 0.386553027472794
+      },
+      {
+        "ticker": "LUMN",
+        "outcome": "trap",
+        "score": 0.5123871522585126
+      },
+      {
+        "ticker": "JPM",
+        "outcome": "winner",
+        "score": 0.6599999999999999
+      },
+      {
+        "ticker": "BABA",
+        "outcome": "winner",
+        "score": 0.4989512016846891
+      },
+      {
+        "ticker": "WBD",
+        "outcome": "winner",
+        "score": 0.340703067151882
+      },
+      {
+        "ticker": "DG",
+        "outcome": "trap",
+        "score": 0.49953249549567336
+      },
+      {
+        "ticker": "META",
+        "outcome": "winner",
+        "score": 0.5888258276943305
+      },
+      {
+        "ticker": "NFLX",
+        "outcome": "winner",
+        "score": 0.4951493037986385
+      },
+      {
+        "ticker": "CRM",
+        "outcome": "winner",
+        "score": 0.520282909932638
+      },
+      {
+        "ticker": "SHOP",
+        "outcome": "winner",
+        "score": 0.5
+      },
+      {
+        "ticker": "TTD",
+        "outcome": "winner",
+        "score": 0.5073734490782636
+      },
+      {
+        "ticker": "PAYC",
+        "outcome": "winner",
+        "score": 0.40771168681593045
+      },
+      {
+        "ticker": "VEEV",
+        "outcome": "winner",
+        "score": 0.5045547145647084
+      },
+      {
+        "ticker": "MDB",
+        "outcome": "winner",
+        "score": 0.5005345064832668
+      },
+      {
+        "ticker": "TWLO",
+        "outcome": "winner",
+        "score": 0.609154054429498
+      },
+      {
+        "ticker": "DDOG",
+        "outcome": "winner",
+        "score": 0.5972449581602685
+      },
+      {
+        "ticker": "CRWD",
+        "outcome": "winner",
+        "score": 0.5
+      },
+      {
+        "ticker": "ETSY",
+        "outcome": "winner",
+        "score": 0.478736726630647
+      },
+      {
+        "ticker": "DXCM",
+        "outcome": "winner",
+        "score": 0.6153127311626537
+      },
+      {
+        "ticker": "RGEN",
+        "outcome": "winner",
+        "score": 0.4906629679901102
+      },
+      {
+        "ticker": "PODD",
+        "outcome": "winner",
+        "score": 0.678150862701862
+      },
+      {
+        "ticker": "CPRT",
+        "outcome": "winner",
+        "score": 0.44932662541865714
+      },
+      {
+        "ticker": "TREX",
+        "outcome": "winner",
+        "score": 0.6491849751452067
+      },
+      {
+        "ticker": "POOL",
+        "outcome": "winner",
+        "score": 0.5899916998081343
+      },
+      {
+        "ticker": "RBC",
+        "outcome": "winner",
+        "score": 0.460631116636738
+      },
+      {
+        "ticker": "MKTX",
+        "outcome": "winner",
+        "score": 0.39878907731234725
+      },
+      {
+        "ticker": "FOUR",
+        "outcome": "winner",
+        "score": 0.5914567322780949
+      },
+      {
+        "ticker": "SPSC",
+        "outcome": "winner",
+        "score": 0.5571810901706211
+      },
+      {
+        "ticker": "FIVE",
+        "outcome": "winner",
+        "score": 0.4904551879460531
+      },
+      {
+        "ticker": "FND",
+        "outcome": "winner",
+        "score": 0.5417532281822283
+      },
+      {
+        "ticker": "AXON",
+        "outcome": "winner",
+        "score": 0.4401184045956752
+      },
+      {
+        "ticker": "MSCI",
+        "outcome": "winner",
+        "score": 0.6
+      },
+      {
+        "ticker": "OLLI",
+        "outcome": "winner",
+        "score": 0.6475380310692052
+      },
+      {
+        "ticker": "GPRO",
+        "outcome": "trap",
+        "score": 0.531684955870163
+      },
+      {
+        "ticker": "PTON",
+        "outcome": "trap",
+        "score": 0.28325116804158473
+      },
+      {
+        "ticker": "LMND",
+        "outcome": "trap",
+        "score": 0.6014031501350174
+      },
+      {
+        "ticker": "SNAP",
+        "outcome": "winner",
+        "score": 0.48979797979797984
+      },
+      {
+        "ticker": "BOX",
+        "outcome": "trap",
+        "score": 0.32888174474034493
+      },
+      {
+        "ticker": "CHGG",
+        "outcome": "trap",
+        "score": 0.4841501941597138
+      },
+      {
+        "ticker": "GRPN",
+        "outcome": "trap",
+        "score": 0.602276922250468
+      },
+      {
+        "ticker": "LC",
+        "outcome": "trap",
+        "score": 0.5501911231713298
+      },
+      {
+        "ticker": "W",
+        "outcome": "winner",
+        "score": 0.7332585668331169
+      },
+      {
+        "ticker": "ROKU",
+        "outcome": "winner",
+        "score": 0.6630276617644107
+      },
+      {
+        "ticker": "CVNA",
+        "outcome": "trap",
+        "score": 0.5858062723185701
+      },
+      {
+        "ticker": "FSLY",
+        "outcome": "trap",
+        "score": 0.5
+      },
+      {
+        "ticker": "TDOC",
+        "outcome": "trap",
+        "score": 0.423842823967726
+      },
+      {
+        "ticker": "SFIX",
+        "outcome": "winner",
+        "score": 0.46849646227415676
+      },
+      {
+        "ticker": "JMIA",
+        "outcome": "trap",
+        "score": 0.5
+      },
+      {
+        "ticker": "VRM",
+        "outcome": "trap",
+        "score": 0.5473430453694969
+      },
+      {
+        "ticker": "HNST",
+        "outcome": "trap",
+        "score": 0.19797100804365933
+      },
+      {
+        "ticker": "HUBS",
+        "outcome": "winner",
+        "score": 0.6252684168137471
+      },
+      {
+        "ticker": "NET",
+        "outcome": "winner",
+        "score": 0.46592929006503425
+      },
+      {
+        "ticker": "BILL",
+        "outcome": "trap",
+        "score": 0.4575702091085495
+      },
+      {
+        "ticker": "FICO",
+        "outcome": "winner",
+        "score": 0.625
+      },
+      {
+        "ticker": "IDXX",
+        "outcome": "winner",
+        "score": 0.3880234217238356
+      },
+      {
+        "ticker": "TMDX",
+        "outcome": "winner",
+        "score": 0.49774779592743784
+      },
+      {
+        "ticker": "LSCC",
+        "outcome": "winner",
+        "score": 0.6699083794768999
+      },
+      {
+        "ticker": "WST",
+        "outcome": "winner",
+        "score": 0.7263181223314041
+      },
+      {
+        "ticker": "MANH",
+        "outcome": "winner",
+        "score": 0.28421374306128205
+      },
+      {
+        "ticker": "HOOD",
+        "outcome": "winner",
+        "score": 0.4531329911751789
+      },
+      {
+        "ticker": "OPEN",
+        "outcome": "trap",
+        "score": 0.6357907089065923
+      },
+      {
+        "ticker": "UPST",
+        "outcome": "winner",
+        "score": 0.6278025353260482
+      },
+      {
+        "ticker": "FVRR",
+        "outcome": "trap",
+        "score": 0.3428233264258894
+      },
+      {
+        "ticker": "DASH",
+        "outcome": "winner",
+        "score": 0.6726771141357705
+      },
+      {
+        "ticker": "RBLX",
+        "outcome": "winner",
+        "score": 0.7029146560915753
+      },
+      {
+        "ticker": "GTLB",
+        "outcome": "trap",
+        "score": 0.4701395227518181
+      },
+      {
+        "ticker": "SOFI",
+        "outcome": "winner",
+        "score": 0.5687371050584514
+      },
+      {
+        "ticker": "AFRM",
+        "outcome": "winner",
+        "score": 0.6147411715173735
+      },
+      {
+        "ticker": "ALGN",
+        "outcome": "trap",
+        "score": 0.4199858598196142
+      },
+      {
+        "ticker": "ENPH",
+        "outcome": "trap",
+        "score": 0.48383727742800337
+      },
+      {
+        "ticker": "LOGI",
+        "outcome": "winner",
+        "score": 0.6237873471240187
+      },
+      {
+        "ticker": "LHX",
+        "outcome": "winner",
+        "score": 0.5458103997667927
+      },
+      {
+        "ticker": "BWXT",
+        "outcome": "winner",
+        "score": 0.3665472835091376
+      },
+      {
+        "ticker": "LRCX",
+        "outcome": "winner",
+        "score": 0.6486889100039799
+      },
+      {
+        "ticker": "ONTO",
+        "outcome": "winner",
+        "score": 0.4777425322007855
+      },
+      {
+        "ticker": "NVDA",
+        "outcome": "winner",
+        "score": 0.6442169216093142
+      },
+      {
+        "ticker": "VRT",
+        "outcome": "winner",
+        "score": 0.6986629853973759
+      },
+      {
+        "ticker": "ANET",
+        "outcome": "winner",
+        "score": 0.7123917552012607
+      },
+      {
+        "ticker": "LNG",
+        "outcome": "winner",
+        "score": 0.875
+      },
+      {
+        "ticker": "TT",
+        "outcome": "winner",
+        "score": 0.6799999999999999
+      },
+      {
+        "ticker": "PWR",
+        "outcome": "winner",
+        "score": 0.6538910522104306
+      },
+      {
+        "ticker": "PLTR",
+        "outcome": "winner",
+        "score": 0.6319909485405585
+      },
+      {
+        "ticker": "CEG",
+        "outcome": "winner",
+        "score": 0.75
+      },
+      {
+        "ticker": "PLUG",
+        "outcome": "trap",
+        "score": 0.576873851684602
+      },
+      {
+        "ticker": "CHPT",
+        "outcome": "trap",
+        "score": 0.4873155524652171
+      },
+      {
+        "ticker": "SPWR",
+        "outcome": "trap",
+        "score": 0.4428000306277291
+      },
+      {
+        "ticker": "TLRY",
+        "outcome": "trap",
+        "score": 0.2683474251965959
+      },
+      {
+        "ticker": "META",
+        "outcome": "winner",
+        "score": 0.5888258276943305
+      },
+      {
+        "ticker": "U",
+        "outcome": "trap",
+        "score": 0.36424178796204665
+      },
+      {
+        "ticker": "CLOV",
+        "outcome": "trap",
+        "score": 0.383135951306778
+      },
+      {
+        "ticker": "RIVN",
+        "outcome": "trap",
+        "score": 0.5033333333333333
+      },
+      {
+        "ticker": "ACHR",
+        "outcome": "winner",
+        "score": 0.5
+      },
+      {
+        "ticker": "BYND",
+        "outcome": "trap",
+        "score": 0.2910854667388445
+      },
+      {
+        "ticker": "FSLR",
+        "outcome": "winner",
+        "score": 0.5602631047111004
+      },
+      {
+        "ticker": "ALB",
+        "outcome": "trap",
+        "score": 0.8254877417678134
+      },
+      {
+        "ticker": "SHLS",
+        "outcome": "trap",
+        "score": 0.4595716350911682
+      },
+      {
+        "ticker": "MP",
+        "outcome": "trap",
+        "score": 0.5948063334294367
+      },
+      {
+        "ticker": "FLR",
+        "outcome": "winner",
+        "score": 0.4365216660383271
+      },
+      {
+        "ticker": "VST",
+        "outcome": "winner",
+        "score": 0.425
+      },
+      {
+        "ticker": "SMCI",
+        "outcome": "winner",
+        "score": 0.40672027858639037
+      },
+      {
+        "ticker": "HWM",
+        "outcome": "winner",
+        "score": 0.6297191289076045
+      },
+      {
+        "ticker": "KTOS",
+        "outcome": "winner",
+        "score": 0.5658656482948056
+      },
+      {
+        "ticker": "AXON",
+        "outcome": "winner",
+        "score": 0.3881420855148102
+      },
+      {
+        "ticker": "HIMS",
+        "outcome": "winner",
+        "score": 0.5396567910783459
+      },
+      {
+        "ticker": "GE",
+        "outcome": "winner",
+        "score": 0.5862741013541789
+      }
+    ]
+  },
+  "deepTest4": {
+    "betaByTier": {
+      "Tier 1": {
+        "winner": [
+          0.9392403361900431,
+          0.11248830933656767,
+          -0.15703634896148475,
+          0.84816740508723,
+          1.07263674281162,
+          0.6949046809868625,
+          0.010456810286833507,
+          0.6035544174886566,
+          -0.02043150507786917,
+          0.5159904734142821,
+          1.0585714542217926,
+          -2.0840120902295585,
+          -0.17641857488077403,
+          0.6357195305403969,
+          1.0002219893730837,
+          0.6994928934221835,
+          0.9938199149454895
+        ],
+        "trap": [
+          2.439721853900012,
+          0.3301446990437875,
+          0.6191149732195692,
+          0.6470557601563416,
+          -1.1467983096469097,
+          0.28024551060368,
+          0.34826176372056467,
+          0.199147706045955,
+          0.4118221971437246,
+          0.9860707008780676,
+          0.21119206260083892,
+          -6.889350412360336,
+          0.49491840078125704,
+          0.5795006234893694,
+          0.4337203015970634,
+          0.03672090649286267
+        ]
+      },
+      "Tier 2": {
+        "winner": [
+          0.8077405357743148,
+          0.8925207977919571,
+          0.9016442725369097,
+          1.190001244682656,
+          0.8011698886381379,
+          0.8998355609994293,
+          0.40207691468561974,
+          1.3052672671241161,
+          0.793560331537873,
+          0.8666639727232727,
+          0.791139840497618,
+          0.49779162523195186,
+          -0.0923992442700374,
+          0.9392403361900431,
+          0.6234880364622564,
+          1.3133374737296866,
+          0.8892827865203091,
+          0.803242814283407,
+          0.5563107512155674,
+          -0.574064268930991,
+          0.47153139439303254,
+          0.7614927071150684,
+          1.0086199178794482,
+          -0.04424505786773093,
+          0.8448260141642643,
+          0.84816740508723,
+          0.7877016435231586,
+          -0.08784304921577989,
+          0.6470557601563416,
+          -0.02043150507786917,
+          0.49491840078125704,
+          0.11248830933656767,
+          0.3964289825291829,
+          1.5815763142992105,
+          1.3291617555626802,
+          0.9516366400027513,
+          1.1434664349802057,
+          0.7027106875806979,
+          0.8336792919061418
+        ],
+        "trap": [
+          -3.4089923889562113,
+          0.199147706045955,
+          0.8429036419388443,
+          0.7471949729740403
+        ]
+      },
+      "Tier 3": {
+        "winner": [
+          0.9663610417043729,
+          1.1194051813433743,
+          0.784160359235313,
+          1.0548105583494014,
+          0.6751137625927544,
+          0.9037760520138447,
+          1.19590326694855,
+          0.840823352320041,
+          0.6659667119109922,
+          0.8533577643167576,
+          0.3699496906399285,
+          0.5926647763068598,
+          0.6749377485610076,
+          0.5815053889090522,
+          0.7391016958111252,
+          0.8766820190742837,
+          0.9646298115355906,
+          0.6784139095953984,
+          0.7631492113667123,
+          0.7474292777247126,
+          1.5746324105907703,
+          1.1065352330190381,
+          1.5954820093190953,
+          0.8521665239756494,
+          0.7117944104251513,
+          0.5137234670561759,
+          0.8274157513237231,
+          0.9444696754877566,
+          1.9698509227158696,
+          0.660175662928767,
+          1.333108469455784,
+          0.5243128460767496,
+          0.9473859174855311,
+          1.2079236875515387,
+          0.61706886238527,
+          0.6787942465058626,
+          1.1022212131611353,
+          1.0504313492582438,
+          0.17291965981177784,
+          0.7877016435231586,
+          0.9284051034301405
+        ],
+        "trap": [
+          0.7351646028314667,
+          0.6243837603118857,
+          1.0605236260126312,
+          0.9666130855525871,
+          0.44243941331087666,
+          0.31707691687851053,
+          1.351720108541968,
+          0.9771834060256396,
+          0.8671995581363234,
+          0.5050728402712265,
+          -0.015217439672555214,
+          1.1817765683141215,
+          0.06474425343955381,
+          0.7069399585553368,
+          1.0660464206386353,
+          0.8671666759198338,
+          0.6287795807100254
+        ]
+      },
+      "Tier 4": {
+        "winner": [
+          0.8299209229147317,
+          0.9491046263185322,
+          1.1151668250298488,
+          0.7330689915058911,
+          1.0788996393425836,
+          1.429972390480319,
+          0.8429381640094559,
+          1.7101639122847703,
+          2.3516835764134463,
+          1.0141828915782294,
+          0.989932114054189,
+          2.0026078849689677,
+          1.1434664349802057,
+          0.45197328533325276,
+          0.7239124952874534,
+          1.5160928556551516,
+          0.9504020893979281,
+          0.972893466807034,
+          0.7427908346532506,
+          0.7474292777247126,
+          1.2951249828947264,
+          0.6470557601563416
+        ],
+        "trap": [
+          0.6664101197068726,
+          0.8158399721869539,
+          0.8568001837663745,
+          0.6626056889744687,
+          0.4818134097153496,
+          0.1396521331895739,
+          3.120133943245201,
+          0.39651280043306675,
+          0.45292645060688014,
+          0.6861447158205145,
+          0.2610475007207754
+        ]
+      }
+    },
+    "preFilter": {
+      "totalWinners": 119,
+      "totalCases": 167
+    },
+    "pipelineSignals": {
+      "Stable Value": [
+        {
+          "outcome": "winner",
+          "beta": 0.9392403361900431,
+          "betaTrajectory": -3.7608685606746994,
+          "csdIndex": 0.4976374401369272,
+          "avgD1": 0.08113707481531193
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.11248830933656767,
+          "betaTrajectory": 1.2248310751399458,
+          "csdIndex": 0.5027852670885802,
+          "avgD1": 0.07292080121176088
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.15703634896148475,
+          "betaTrajectory": 3.3418620575982887,
+          "csdIndex": 0.5016182283679813,
+          "avgD1": -0.055282577272967134
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.84816740508723,
+          "betaTrajectory": -0.5851303789558002,
+          "csdIndex": 0.5027525455964033,
+          "avgD1": -0.0066098769375200345
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.07263674281162,
+          "betaTrajectory": 0.9528448982172995,
+          "csdIndex": 0.5047098589944325,
+          "avgD1": 0.05550671846475094
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6949046809868625,
+          "betaTrajectory": -0.08951092991654053,
+          "csdIndex": 0.5024520324805187,
+          "avgD1": 0.0397946583161184
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.010456810286833507,
+          "betaTrajectory": 1.704126092531689,
+          "csdIndex": 0.5007449884557937,
+          "avgD1": 0.0030351019719290764
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6035544174886566,
+          "betaTrajectory": -0.2836806929683808,
+          "csdIndex": 0.5038915705232501,
+          "avgD1": -0.005854957693165958
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.02043150507786917,
+          "betaTrajectory": 1.5376673997347732,
+          "csdIndex": 0.4998900173085505,
+          "avgD1": 0.046084704934033334
+        },
+        {
+          "outcome": "trap",
+          "beta": 2.439721853900012,
+          "betaTrajectory": -0.464622404312232,
+          "csdIndex": 0.49252219494501853,
+          "avgD1": -0.09917863242532733
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.3301446990437875,
+          "betaTrajectory": -1.2195958043441186,
+          "csdIndex": 0.5019323948506286,
+          "avgD1": 0.0253577273008882
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6191149732195692,
+          "betaTrajectory": 0.6104338454663795,
+          "csdIndex": 0.5002934641031722,
+          "avgD1": 0.03730963303006765
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.5159904734142821,
+          "betaTrajectory": 2.424426215469733,
+          "csdIndex": 0.49921884570795894,
+          "avgD1": 0.046847703665499396
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0585714542217926,
+          "betaTrajectory": 0.8473229449194992,
+          "csdIndex": 0.5270795865608129,
+          "avgD1": -0.10644148452139932
+        },
+        {
+          "outcome": "winner",
+          "beta": -2.0840120902295585,
+          "betaTrajectory": 7.40775167171909,
+          "csdIndex": 0.5029607216093829,
+          "avgD1": 0.05560528854718366
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6470557601563416,
+          "betaTrajectory": 0.3363659897287897,
+          "csdIndex": 0.470084871919841,
+          "avgD1": 0.03826475539249611
+        },
+        {
+          "outcome": "trap",
+          "beta": -1.1467983096469097,
+          "betaTrajectory": 0.3645411884940325,
+          "csdIndex": 0.4927669947726059,
+          "avgD1": 0.04572525204258586
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.28024551060368,
+          "betaTrajectory": -0.971616145286181,
+          "csdIndex": 0.49769489264456773,
+          "avgD1": -0.00041522470662771864
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.34826176372056467,
+          "betaTrajectory": 0.49944207100751603,
+          "csdIndex": 0.5025216890699322,
+          "avgD1": 0.024586726471694034
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.199147706045955,
+          "betaTrajectory": -0.647349135143616,
+          "csdIndex": 0.5001555916235685,
+          "avgD1": -0.05629611329195345
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.4118221971437246,
+          "betaTrajectory": 0.1523338643118069,
+          "csdIndex": 0.5035632004081045,
+          "avgD1": -0.31998614159064737
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.9860707008780676,
+          "betaTrajectory": -0.45712994793904904,
+          "csdIndex": 0.5084855947531598,
+          "avgD1": -0.031811454252501044
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.21119206260083892,
+          "betaTrajectory": -1.7998236490629465,
+          "csdIndex": 0.5015715432960166,
+          "avgD1": -0.044338271558024084
+        },
+        {
+          "outcome": "trap",
+          "beta": -6.889350412360336,
+          "betaTrajectory": -11.24375405287588,
+          "csdIndex": 0.6327095397579819,
+          "avgD1": -0.1345022126389845
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.49491840078125704,
+          "betaTrajectory": 0.15430376062574136,
+          "csdIndex": 0.4287491438189617,
+          "avgD1": -0.10732827618585976
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.5795006234893694,
+          "betaTrajectory": 1.2712447169751215,
+          "csdIndex": 0.4888365783339259,
+          "avgD1": -0.21527960280313446
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.4337203015970634,
+          "betaTrajectory": -0.5905695497893562,
+          "csdIndex": 0.5070130585518268,
+          "avgD1": -0.052637413297609834
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.03672090649286267,
+          "betaTrajectory": 0.6404110455939388,
+          "csdIndex": 0.494742421498787,
+          "avgD1": 0.2892436225340009
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.17641857488077403,
+          "betaTrajectory": 3.650232070326929,
+          "csdIndex": 0.5000257654457156,
+          "avgD1": -0.04383960722715357
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6357195305403969,
+          "betaTrajectory": 2.399238701963595,
+          "csdIndex": 0.4963127578303249,
+          "avgD1": -0.004957423913956547
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0002219893730837,
+          "betaTrajectory": 0.7691364427419672,
+          "csdIndex": 0.529780076985808,
+          "avgD1": -0.062059042421319995
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6994928934221835,
+          "betaTrajectory": 0.5113221420851874,
+          "csdIndex": 0.5085347355127499,
+          "avgD1": -0.0522104657624379
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9938199149454895,
+          "betaTrajectory": 0.02251220019256661,
+          "csdIndex": 0.5055248754874402,
+          "avgD1": 0.18102935340161358
+        }
+      ],
+      "Crisis": [
+        {
+          "outcome": "winner",
+          "beta": 0.8077405357743148,
+          "betaTrajectory": 0.5586967187076664,
+          "csdIndex": 0.5024808821167894,
+          "avgD1": 0.16177105022036414
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8925207977919571,
+          "betaTrajectory": 7.310556899024542,
+          "csdIndex": 0.5057248524583717,
+          "avgD1": 0.06303146723349569
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9016442725369097,
+          "betaTrajectory": 0.1374010841735407,
+          "csdIndex": 0.5020353507717346,
+          "avgD1": 0.11151775008963005
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.190001244682656,
+          "betaTrajectory": 1.1143333893492653,
+          "csdIndex": 0.4977193149179181,
+          "avgD1": 0.1174513455361455
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8011698886381379,
+          "betaTrajectory": -0.8326262252293266,
+          "csdIndex": 0.49559332946253165,
+          "avgD1": -0.04249999317362105
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8998355609994293,
+          "betaTrajectory": 0.36282459971480674,
+          "csdIndex": 0.4970270239463848,
+          "avgD1": 0.08355494512848866
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.40207691468561974,
+          "betaTrajectory": 0.16027665883662784,
+          "csdIndex": 0.49957543291917905,
+          "avgD1": 0.1299480054950614
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.3052672671241161,
+          "betaTrajectory": 0.6688738196888809,
+          "csdIndex": 0.5001935078166214,
+          "avgD1": 0.1351213804347609
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.793560331537873,
+          "betaTrajectory": -0.027756526812296456,
+          "csdIndex": 0.5023087690208393,
+          "avgD1": 0.10966651543118514
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8666639727232727,
+          "betaTrajectory": 0.06119899875975254,
+          "csdIndex": 0.500361041990921,
+          "avgD1": 0.1508485229678314
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.791139840497618,
+          "betaTrajectory": 0.296900388147774,
+          "csdIndex": 0.5008207869545189,
+          "avgD1": -0.09767340417100562
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.49779162523195186,
+          "betaTrajectory": 1.2753276444277268,
+          "csdIndex": 0.5114469681576013,
+          "avgD1": 0.04393297268281228
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.0923992442700374,
+          "betaTrajectory": -0.8826122579845451,
+          "csdIndex": 0.5032539590864977,
+          "avgD1": 0.007843477814269691
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9392403361900431,
+          "betaTrajectory": -3.7608685606746994,
+          "csdIndex": 0.4976374401369272,
+          "avgD1": 0.08113707481531193
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6234880364622564,
+          "betaTrajectory": -0.09084994327863272,
+          "csdIndex": 0.502582125600933,
+          "avgD1": 0.02783941500220663
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.3133374737296866,
+          "betaTrajectory": 1.0348814791569552,
+          "csdIndex": 0.49846639329027254,
+          "avgD1": 0.10445671006791948
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8892827865203091,
+          "betaTrajectory": 0.4228093546691245,
+          "csdIndex": 0.5001858729769042,
+          "avgD1": 0.1555046398273876
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.803242814283407,
+          "betaTrajectory": 7.860052561820282,
+          "csdIndex": 0.5058240387640796,
+          "avgD1": -0.011016230139757978
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.5563107512155674,
+          "betaTrajectory": 0.558636774361198,
+          "csdIndex": 0.5007667446744265,
+          "avgD1": 0.009566222605279593
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.574064268930991,
+          "betaTrajectory": -5.090683254733284,
+          "csdIndex": 0.44504247968086486,
+          "avgD1": 0.04766922563947738
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.47153139439303254,
+          "betaTrajectory": 0.024050331283416715,
+          "csdIndex": 0.5057952611301824,
+          "avgD1": 0.013541149661314346
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7614927071150684,
+          "betaTrajectory": -0.5521445519961541,
+          "csdIndex": 0.5001218525931592,
+          "avgD1": 0.07558828834895201
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0086199178794482,
+          "betaTrajectory": 0.6024023286413189,
+          "csdIndex": 0.5102486085895481,
+          "avgD1": 0.0331021574089361
+        },
+        {
+          "outcome": "trap",
+          "beta": -3.4089923889562113,
+          "betaTrajectory": -24.2619336426045,
+          "csdIndex": 0.7646266038401173,
+          "avgD1": 0.07179290621049791
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.04424505786773093,
+          "betaTrajectory": -1.3178725639711097,
+          "csdIndex": 0.5064582267577756,
+          "avgD1": 0.2657085417683981
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8448260141642643,
+          "betaTrajectory": 0.48846177307093563,
+          "csdIndex": 0.49988788921234933,
+          "avgD1": 0.039080526352328934
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.84816740508723,
+          "betaTrajectory": -0.5851303789558002,
+          "csdIndex": 0.5027525455964033,
+          "avgD1": -0.0066098769375200345
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7877016435231586,
+          "betaTrajectory": 1.1461511854661117,
+          "csdIndex": 0.5094200988950148,
+          "avgD1": 0.3623939483742133
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.08784304921577989,
+          "betaTrajectory": -0.1271593095346802,
+          "csdIndex": 0.24498979995065248,
+          "avgD1": 0.18457778827603125
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6470557601563416,
+          "betaTrajectory": 0.3363659897287897,
+          "csdIndex": 0.470084871919841,
+          "avgD1": 0.03826475539249611
+        },
+        {
+          "outcome": "winner",
+          "beta": -0.02043150507786917,
+          "betaTrajectory": 1.5376673997347732,
+          "csdIndex": 0.4998900173085505,
+          "avgD1": 0.046084704934033334
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.49491840078125704,
+          "betaTrajectory": 0.15430376062574136,
+          "csdIndex": 0.4287491438189617,
+          "avgD1": -0.10732827618585976
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.11248830933656767,
+          "betaTrajectory": 1.2248310751399458,
+          "csdIndex": 0.5027852670885802,
+          "avgD1": 0.07292080121176088
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.3964289825291829,
+          "betaTrajectory": null,
+          "csdIndex": 0.49985189593207857,
+          "avgD1": 0.5775684866709362
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.199147706045955,
+          "betaTrajectory": -0.647349135143616,
+          "csdIndex": 0.5001555916235685,
+          "avgD1": -0.05629611329195345
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.8429036419388443,
+          "betaTrajectory": -0.4308814730051945,
+          "csdIndex": 0.5000378653391977,
+          "avgD1": -0.04318438215041682
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.5815763142992105,
+          "betaTrajectory": 3.5832172491686194,
+          "csdIndex": 0.4973072620811507,
+          "avgD1": 0.3832020738463394
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.3291617555626802,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": 1.1725833362016516
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9516366400027513,
+          "betaTrajectory": -0.08491773926016899,
+          "csdIndex": 0.49839280828003774,
+          "avgD1": -0.06107982575277267
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.7471949729740403,
+          "betaTrajectory": -1.820137548283967,
+          "csdIndex": 0.5089879652745835,
+          "avgD1": 0.051492083169090534
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.1434664349802057,
+          "betaTrajectory": 0.399071508342987,
+          "csdIndex": 0.4994910915705417,
+          "avgD1": 0.1966741710285731
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7027106875806979,
+          "betaTrajectory": 0.6770013157442816,
+          "csdIndex": 0.49566818276356694,
+          "avgD1": 0.14452332856763028
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8336792919061418,
+          "betaTrajectory": 0.09607798702106107,
+          "csdIndex": 0.4997782698017959,
+          "avgD1": 0.08646612398994315
+        }
+      ],
+      "Growth": [
+        {
+          "outcome": "winner",
+          "beta": null,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": 0.2897710569266421
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9663610417043729,
+          "betaTrajectory": 1.0233653154686566,
+          "csdIndex": 0.4997774912795016,
+          "avgD1": 0.21481698508586378
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.1194051813433743,
+          "betaTrajectory": -0.23813634730401134,
+          "csdIndex": 0.49841932097894415,
+          "avgD1": 0.07938595771051365
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.784160359235313,
+          "betaTrajectory": 0.10115642659415258,
+          "csdIndex": 0.4936093043193722,
+          "avgD1": 0.1655615981380564
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0548105583494014,
+          "betaTrajectory": 1.3514829112765039,
+          "csdIndex": 0.4955558984803199,
+          "avgD1": 0.221886127088128
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6751137625927544,
+          "betaTrajectory": -2.5157097724047115,
+          "csdIndex": 0.510142238446783,
+          "avgD1": 0.12952297120106687
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9037760520138447,
+          "betaTrajectory": 0.4368993129777335,
+          "csdIndex": 0.4886074759223899,
+          "avgD1": 0.26440911236533216
+        },
+        {
+          "outcome": "winner",
+          "beta": null,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": null
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.19590326694855,
+          "betaTrajectory": -0.3322564348067137,
+          "csdIndex": 0.4936513278997761,
+          "avgD1": 0.020364824952301293
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.840823352320041,
+          "betaTrajectory": 0.08440547581565006,
+          "csdIndex": 0.49618717509218957,
+          "avgD1": 0.14633195544042915
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6659667119109922,
+          "betaTrajectory": -1.4051756117938161,
+          "csdIndex": 0.5084954179092,
+          "avgD1": 0.3100776524306849
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8533577643167576,
+          "betaTrajectory": 0.44626116109667935,
+          "csdIndex": 0.49651490733885895,
+          "avgD1": 0.3025912799223714
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.3699496906399285,
+          "betaTrajectory": -1.4408953777544002,
+          "csdIndex": 0.5483899062169612,
+          "avgD1": 0.0879102521988173
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.5926647763068598,
+          "betaTrajectory": 0.9244343970912827,
+          "csdIndex": 0.5053753911351877,
+          "avgD1": -0.017541167882131427
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6749377485610076,
+          "betaTrajectory": 1.5245037388540017,
+          "csdIndex": 0.5097376502001698,
+          "avgD1": -0.015936564837037228
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.5815053889090522,
+          "betaTrajectory": 0.01154853239109882,
+          "csdIndex": 0.5109713954406077,
+          "avgD1": 0.08971179777898439
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7391016958111252,
+          "betaTrajectory": -0.6180862527878728,
+          "csdIndex": 0.49732760178127583,
+          "avgD1": 0.028161919795418294
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8766820190742837,
+          "betaTrajectory": 0.16799285332183544,
+          "csdIndex": 0.48407054089017965,
+          "avgD1": 0.2152333967509994
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9646298115355906,
+          "betaTrajectory": 0.3400141881177897,
+          "csdIndex": 0.4954581355140568,
+          "avgD1": 0.20152827672390083
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6784139095953984,
+          "betaTrajectory": -0.046974293250221066,
+          "csdIndex": 0.504498384370886,
+          "avgD1": 0.215540937279109
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7631492113667123,
+          "betaTrajectory": 0.6279342504248282,
+          "csdIndex": 0.511723304147442,
+          "avgD1": 0.0588441329215248
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7474292777247126,
+          "betaTrajectory": -0.12827637861427366,
+          "csdIndex": 0.5077458614970748,
+          "avgD1": 0.3196958230630934
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.5746324105907703,
+          "betaTrajectory": 1.4292746330437607,
+          "csdIndex": 0.429661453987344,
+          "avgD1": 0.0956862468923463
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.1065352330190381,
+          "betaTrajectory": 0.1925370446581336,
+          "csdIndex": 0.4959711602267758,
+          "avgD1": 0.15515708417702773
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.7351646028314667,
+          "betaTrajectory": 0.21453704151743558,
+          "csdIndex": 0.49137539523030505,
+          "avgD1": -0.1835860815318196
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6243837603118857,
+          "betaTrajectory": -1.2287024365803938,
+          "csdIndex": 0.49424702789346386,
+          "avgD1": -0.0658942606810262
+        },
+        {
+          "outcome": "trap",
+          "beta": 1.0605236260126312,
+          "betaTrajectory": 4.576136699752463,
+          "csdIndex": 0.49282710656522377,
+          "avgD1": 0.3321363685466684
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.5954820093190953,
+          "betaTrajectory": -1.151865138930458,
+          "csdIndex": 0.3025809569002542,
+          "avgD1": 0.11726831842255314
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.9666130855525871,
+          "betaTrajectory": -0.26309111712461863,
+          "csdIndex": 0.48977005960167685,
+          "avgD1": 0.06632494496510515
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.44243941331087666,
+          "betaTrajectory": 0.02099415560843651,
+          "csdIndex": 0.5107726322503023,
+          "avgD1": -0.34514458363236095
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.31707691687851053,
+          "betaTrajectory": 0.9134872505879152,
+          "csdIndex": 0.5009509297508912,
+          "avgD1": -0.01141467341684723
+        },
+        {
+          "outcome": "trap",
+          "beta": 1.351720108541968,
+          "betaTrajectory": -1.2168235893204733,
+          "csdIndex": 0.5040156294775213,
+          "avgD1": -0.5069733954918605
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8521665239756494,
+          "betaTrajectory": 0.2192958193126,
+          "csdIndex": 0.500796951382621,
+          "avgD1": 0.03075771733175698
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7117944104251513,
+          "betaTrajectory": 8.173849188009989,
+          "csdIndex": 0.5036173504052677,
+          "avgD1": 0.15251582686808093
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.9771834060256396,
+          "betaTrajectory": -0.17297930162779118,
+          "csdIndex": 0.5130922508724969,
+          "avgD1": 0.431093385826942
+        },
+        {
+          "outcome": "trap",
+          "beta": null,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": null
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.8671995581363234,
+          "betaTrajectory": -0.7781489908558894,
+          "csdIndex": 0.603912059738391,
+          "avgD1": -0.02099772995550741
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.5137234670561759,
+          "betaTrajectory": -0.015920841340120173,
+          "csdIndex": 0.5149130349236575,
+          "avgD1": 0.010718060351406097
+        },
+        {
+          "outcome": "trap",
+          "beta": null,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": null
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.5050728402712265,
+          "betaTrajectory": 0.8384630235826066,
+          "csdIndex": 0.5272204065494511,
+          "avgD1": -0.6624555046167411
+        },
+        {
+          "outcome": "trap",
+          "beta": -0.015217439672555214,
+          "betaTrajectory": -2.526504743726876,
+          "csdIndex": 0.48963287752302576,
+          "avgD1": 0.04759751729548391
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8274157513237231,
+          "betaTrajectory": 1.3535231735739015,
+          "csdIndex": 0.50982472036133,
+          "avgD1": 0.1777892341842186
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9444696754877566,
+          "betaTrajectory": 0.4545071323165339,
+          "csdIndex": 0.513338986230302,
+          "avgD1": 0.27992956427987115
+        },
+        {
+          "outcome": "trap",
+          "beta": 1.1817765683141215,
+          "betaTrajectory": -0.8260116288086898,
+          "csdIndex": 0.5068113527440743,
+          "avgD1": 0.12546940386763472
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.9698509227158696,
+          "betaTrajectory": -1.008627305500381,
+          "csdIndex": 0.500456239476418,
+          "avgD1": 0.1601548993876164
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.660175662928767,
+          "betaTrajectory": -0.3103650238526205,
+          "csdIndex": 0.504149728593242,
+          "avgD1": 0.07569817193997194
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.333108469455784,
+          "betaTrajectory": 0.6079112178418136,
+          "csdIndex": 0.5123699303101853,
+          "avgD1": 0.41714416750449274
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.5243128460767496,
+          "betaTrajectory": 1.1967490759740285,
+          "csdIndex": 0.5016455481937637,
+          "avgD1": -0.058743539908867194
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9473859174855311,
+          "betaTrajectory": 0.27024387853847176,
+          "csdIndex": 0.5052942730500912,
+          "avgD1": 0.04308974934679955
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.2079236875515387,
+          "betaTrajectory": -2.3767245416541956,
+          "csdIndex": 0.5097571217442071,
+          "avgD1": 0.032598965941534275
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.61706886238527,
+          "betaTrajectory": 0.154591855970627,
+          "csdIndex": 0.2922095337318099,
+          "avgD1": 0.5341200343871603
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.06474425343955381,
+          "betaTrajectory": 1.1739861366059718,
+          "csdIndex": 0.40154534137378,
+          "avgD1": -0.06793097606383294
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6787942465058626,
+          "betaTrajectory": 1.625572024982985,
+          "csdIndex": 0.43665557972824365,
+          "avgD1": 0.7357561959561322
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.7069399585553368,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": 1.8391698130410448
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.1022212131611353,
+          "betaTrajectory": 0.21313494309780812,
+          "csdIndex": 0.45667103081417176,
+          "avgD1": 0.23941514794797503
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0504313492582438,
+          "betaTrajectory": 1.3025830651793977,
+          "csdIndex": 0.468067248852745,
+          "avgD1": 0.3069402429138698
+        },
+        {
+          "outcome": "trap",
+          "beta": 1.0660464206386353,
+          "betaTrajectory": 1.8946952904631478,
+          "csdIndex": 0.5105523691093887,
+          "avgD1": 0.2687292947204671
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.17291965981177784,
+          "betaTrajectory": 1.104702650843848,
+          "csdIndex": 0.7466273582860599,
+          "avgD1": 0.2258116244542511
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7877016435231586,
+          "betaTrajectory": 1.1461511854661117,
+          "csdIndex": 0.5094200988950148,
+          "avgD1": 0.3623939483742133
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.8671666759198338,
+          "betaTrajectory": -0.22137482949248144,
+          "csdIndex": 0.5027883415878653,
+          "avgD1": -0.007892039367065298
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6287795807100254,
+          "betaTrajectory": -0.08680602780195068,
+          "csdIndex": 0.501903333094815,
+          "avgD1": 0.2300927139141469
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9284051034301405,
+          "betaTrajectory": 0.6091065871006607,
+          "csdIndex": 0.5065813811391989,
+          "avgD1": 0.05812895094315493
+        }
+      ],
+      "Regime": [
+        {
+          "outcome": "winner",
+          "beta": 0.8299209229147317,
+          "betaTrajectory": 0.07763774441635363,
+          "csdIndex": 0.2752840502715727,
+          "avgD1": 0.3042670403682937
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9491046263185322,
+          "betaTrajectory": -0.45697670340093544,
+          "csdIndex": 0.5000666617038909,
+          "avgD1": 0.1548101538277186
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.1151668250298488,
+          "betaTrajectory": 0.5073056309778424,
+          "csdIndex": 0.49662093038148986,
+          "avgD1": 0.2412699246420745
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7330689915058911,
+          "betaTrajectory": 0.574628026402618,
+          "csdIndex": 0.4992911207670272,
+          "avgD1": 0.0769997865037483
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0788996393425836,
+          "betaTrajectory": 0.6740520439493641,
+          "csdIndex": 0.5071495664267011,
+          "avgD1": 0.6467482222567367
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.429972390480319,
+          "betaTrajectory": 0.7793627151046216,
+          "csdIndex": 0.49792264152545307,
+          "avgD1": 0.27940484982258756
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.8429381640094559,
+          "betaTrajectory": 0.3136593177569421,
+          "csdIndex": 0.5039587290318066,
+          "avgD1": 0.28431446294191187
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.7101639122847703,
+          "betaTrajectory": 2.59290837708389,
+          "csdIndex": 0.4406064096942953,
+          "avgD1": 0.2963382300105046
+        },
+        {
+          "outcome": "winner",
+          "beta": 2.3516835764134463,
+          "betaTrajectory": 2.292335128975285,
+          "csdIndex": 0.5015066437635178,
+          "avgD1": 0.09095653605466272
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.0141828915782294,
+          "betaTrajectory": 0.2014311113079037,
+          "csdIndex": 0.4880357805105019,
+          "avgD1": 0.21783670273316053
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.989932114054189,
+          "betaTrajectory": 1.018318535247933,
+          "csdIndex": 0.4985464039610293,
+          "avgD1": 0.474767997651644
+        },
+        {
+          "outcome": "winner",
+          "beta": 2.0026078849689677,
+          "betaTrajectory": -5.228500476758328,
+          "csdIndex": 0.5087985524321812,
+          "avgD1": 0.09068293090043306
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6664101197068726,
+          "betaTrajectory": -0.07842883092397412,
+          "csdIndex": 0.5144883785098894,
+          "avgD1": 0.12894717969213373
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.8158399721869539,
+          "betaTrajectory": 0.8320105624832212,
+          "csdIndex": 0.5166138993339477,
+          "avgD1": -0.09913260309851253
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.8568001837663745,
+          "betaTrajectory": null,
+          "csdIndex": 0.5986311508077597,
+          "avgD1": 6.795784645694756
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6626056889744687,
+          "betaTrajectory": -1.1112515936938647,
+          "csdIndex": 0.4443088749490085,
+          "avgD1": 0.0486810415054237
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.1434664349802057,
+          "betaTrajectory": 0.399071508342987,
+          "csdIndex": 0.4994910915705417,
+          "avgD1": 0.1966741710285731
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.4818134097153496,
+          "betaTrajectory": -0.01530582728594887,
+          "csdIndex": 0.49810834244052665,
+          "avgD1": -0.019794155715066136
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.1396521331895739,
+          "betaTrajectory": -0.4040183610332631,
+          "csdIndex": 0.45732460836011846,
+          "avgD1": 0.3654897824556362
+        },
+        {
+          "outcome": "trap",
+          "beta": 3.120133943245201,
+          "betaTrajectory": -6.955874825369405,
+          "csdIndex": 0.3079718612540944,
+          "avgD1": 0.11443476063770161
+        },
+        {
+          "outcome": "winner",
+          "beta": null,
+          "betaTrajectory": null,
+          "csdIndex": 0.5,
+          "avgD1": null
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.39651280043306675,
+          "betaTrajectory": -0.34034950188305746,
+          "csdIndex": 0.44112595174661706,
+          "avgD1": -0.10813766334611287
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.45197328533325276,
+          "betaTrajectory": 0.6069545967734715,
+          "csdIndex": 0.5003154691198178,
+          "avgD1": 0.17350234421897612
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.45292645060688014,
+          "betaTrajectory": 0.9067769448040282,
+          "csdIndex": 0.5028145690756796,
+          "avgD1": -0.12348024654301991
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.6861447158205145,
+          "betaTrajectory": 7.348481346225995,
+          "csdIndex": 0.5107645195395525,
+          "avgD1": 0.0501790732967322
+        },
+        {
+          "outcome": "trap",
+          "beta": 0.2610475007207754,
+          "betaTrajectory": 0.21592087813865585,
+          "csdIndex": 0.48224218786390943,
+          "avgD1": 0.257715230957434
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7239124952874534,
+          "betaTrajectory": 0.888876406892667,
+          "csdIndex": 0.4978925073894196,
+          "avgD1": -0.010998635826368775
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.5160928556551516,
+          "betaTrajectory": -1.3524622893509113,
+          "csdIndex": 0.4880663466505804,
+          "avgD1": 0.12531819981554176
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.9504020893979281,
+          "betaTrajectory": -0.13676133132297053,
+          "csdIndex": 0.5022393708266464,
+          "avgD1": 0.3794690028758398
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.972893466807034,
+          "betaTrajectory": 0.3616436009374209,
+          "csdIndex": 0.5114115957734988,
+          "avgD1": 0.08807061994737862
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7427908346532506,
+          "betaTrajectory": 1.050295986151686,
+          "csdIndex": 0.48986216929422355,
+          "avgD1": 0.14599117090350727
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.7474292777247126,
+          "betaTrajectory": -0.12827637861427366,
+          "csdIndex": 0.5077458614970748,
+          "avgD1": 0.3196958230630934
+        },
+        {
+          "outcome": "winner",
+          "beta": 1.2951249828947264,
+          "betaTrajectory": 0.058343872870000646,
+          "csdIndex": 0.510970281748198,
+          "avgD1": 0.8347132660023497
+        },
+        {
+          "outcome": "winner",
+          "beta": 0.6470557601563416,
+          "betaTrajectory": 0.3363659897287897,
+          "csdIndex": 0.470084871919841,
+          "avgD1": 0.03826475539249611
+        }
+      ]
+    }
+  },
+  "deepTest5": {
+    "scored": [
+      {
+        "ticker": "AAPL",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2016-01-15",
+        "beta": 0.9392403361900431,
+        "betaR2": 0.6264882370948228,
+        "betaTrajectory": -3.7608685606746994,
+        "csdIndex": 0.4976374401369272,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0006352787785780282,
+        "zipfVelocity": 0.22424242424242424,
+        "composite": 0.3852320448253391
+      },
+      {
+        "ticker": "BAC",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2017-07-15",
+        "beta": 0.11248830933656767,
+        "betaR2": 0.0013863037586500093,
+        "betaTrajectory": 1.2248310751399458,
+        "csdIndex": 0.5027852670885802,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0014707717305205796,
+        "zipfVelocity": -0.14545454545454545,
+        "composite": 0.5808166230630574
+      },
+      {
+        "ticker": "CVX",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-10-15",
+        "beta": -0.15703634896148475,
+        "betaR2": 0.0016424480085277526,
+        "betaTrajectory": 3.3418620575982887,
+        "csdIndex": 0.5016182283679813,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0024874250989349624,
+        "zipfVelocity": null,
+        "composite": 0.5738272751730858
+      },
+      {
+        "ticker": "OXY",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2022-01-15",
+        "beta": 0.84816740508723,
+        "betaR2": 0.15161506304079342,
+        "betaTrajectory": -0.5851303789558002,
+        "csdIndex": 0.5027525455964033,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0012197104376459223,
+        "zipfVelocity": null,
+        "composite": 0.441361234181205
+      },
+      {
+        "ticker": "CB",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2024-01-15",
+        "beta": 1.07263674281162,
+        "betaR2": 0.39896275533120984,
+        "betaTrajectory": 0.9528448982172995,
+        "csdIndex": 0.5047098589944325,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0007405203908356865,
+        "zipfVelocity": -0.3393939393939394,
+        "composite": 0.6365939899506402
+      },
+      {
+        "ticker": "HPQ",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2022-01-15",
+        "beta": 0.6949046809868625,
+        "betaR2": 0.38582224268363086,
+        "betaTrajectory": -0.08951092991654053,
+        "csdIndex": 0.5024520324805187,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.00024767022825409896,
+        "zipfVelocity": 0.7333333333333333,
+        "composite": 0.452653957464915
+      },
+      {
+        "ticker": "GM",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2012-01-15",
+        "beta": 0.010456810286833507,
+        "betaR2": 0.000017721854411734128,
+        "betaTrajectory": 1.704126092531689,
+        "csdIndex": 0.5007449884557937,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0016531282633745865,
+        "zipfVelocity": 0.1393939393939394,
+        "composite": 0.4813942413715778
+      },
+      {
+        "ticker": "KR",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2019-10-15",
+        "beta": 0.6035544174886566,
+        "betaR2": 0.16115750327054668,
+        "betaTrajectory": -0.2836806929683808,
+        "csdIndex": 0.5038915705232501,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0014620632847411523,
+        "zipfVelocity": null,
+        "composite": 0.4755924029147761
+      },
+      {
+        "ticker": "C",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2022-01-15",
+        "beta": -0.02043150507786917,
+        "betaR2": 0.000023431722577460512,
+        "betaTrajectory": 1.5376673997347732,
+        "csdIndex": 0.4998900173085505,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003449402524902368,
+        "zipfVelocity": -0.19393939393939394,
+        "composite": 0.4050333750805265
+      },
+      {
+        "ticker": "ALLY",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2022-04-15",
+        "beta": 2.439721853900012,
+        "betaR2": 0.13625156339821198,
+        "betaTrajectory": -0.464622404312232,
+        "csdIndex": 0.49252219494501853,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0016259657726473704,
+        "zipfVelocity": -0.012121212121212121,
+        "composite": 0.4004848484848485
+      },
+      {
+        "ticker": "VZ",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-07-15",
+        "beta": 0.3301446990437875,
+        "betaR2": 0.018165196747620738,
+        "betaTrajectory": -1.2195958043441186,
+        "csdIndex": 0.5019323948506286,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003080399321687595,
+        "zipfVelocity": -0.12727272727272726,
+        "composite": 0.1891102022967474
+      },
+      {
+        "ticker": "USB",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2019-01-15",
+        "beta": 0.6191149732195692,
+        "betaR2": 0.07539871074366966,
+        "betaTrajectory": 0.6104338454663795,
+        "csdIndex": 0.5002934641031722,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0006923963229889701,
+        "zipfVelocity": 0.050314465408805034,
+        "composite": 0.6825486630959425
+      },
+      {
+        "ticker": "AXP",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2018-01-15",
+        "beta": 0.5159904734142821,
+        "betaR2": 0.03929707924660142,
+        "betaTrajectory": 2.424426215469733,
+        "csdIndex": 0.49921884570795894,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.004366786828524673,
+        "zipfVelocity": -0.5476190476190477,
+        "composite": 0.4907034916933329
+      },
+      {
+        "ticker": "MKL",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-01-15",
+        "beta": 1.0585714542217926,
+        "betaR2": 0.4967566806361706,
+        "betaTrajectory": 0.8473229449194992,
+        "csdIndex": 0.5270795865608129,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0010527760242667787,
+        "zipfVelocity": -0.10909090909090909,
+        "composite": 0.625506496926542
+      },
+      {
+        "ticker": "DVA",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2019-07-15",
+        "beta": -2.0840120902295585,
+        "betaR2": 0.06365297041099072,
+        "betaTrajectory": 7.40775167171909,
+        "csdIndex": 0.5029607216093829,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.00213941470974921,
+        "zipfVelocity": 0,
+        "composite": 0.22213172130272554
+      },
+      {
+        "ticker": "GE",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2017-01-15",
+        "beta": 0.6470557601563416,
+        "betaR2": 0.34766955778194975,
+        "betaTrajectory": 0.3363659897287897,
+        "csdIndex": 0.470084871919841,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0010078998324949359,
+        "zipfVelocity": 0.3575757575757576,
+        "composite": 0.5862741013541789
+      },
+      {
+        "ticker": "IBM",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2014-10-15",
+        "beta": -1.1467983096469097,
+        "betaR2": 0.05347742242179587,
+        "betaTrajectory": 0.3645411884940325,
+        "csdIndex": 0.4927669947726059,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0012982186001834978,
+        "zipfVelocity": 0.8909090909090909,
+        "composite": 0.3070935587137454
+      },
+      {
+        "ticker": "INTC",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-01-15",
+        "beta": 0.28024551060368,
+        "betaR2": 0.04434099603598762,
+        "betaTrajectory": -0.971616145286181,
+        "csdIndex": 0.49769489264456773,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.001125295979412877,
+        "zipfVelocity": 0.5757575757575758,
+        "composite": 0.23736606808049068
+      },
+      {
+        "ticker": "T",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2019-01-15",
+        "beta": 0.34826176372056467,
+        "betaR2": 0.03125180425641527,
+        "betaTrajectory": 0.49944207100751603,
+        "csdIndex": 0.5025216890699322,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0020344840747898996,
+        "zipfVelocity": 0.40606060606060607,
+        "composite": 0.5464349018294087
+      },
+      {
+        "ticker": "MMM",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-01-15",
+        "beta": 0.199147706045955,
+        "betaR2": 0.004915487667850993,
+        "betaTrajectory": -0.647349135143616,
+        "csdIndex": 0.5001555916235685,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.002254296816286408,
+        "zipfVelocity": 0.23636363636363636,
+        "composite": 0.386553027472794
+      },
+      {
+        "ticker": "BBBY",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2018-01-15",
+        "beta": 0.4118221971437246,
+        "betaR2": 0.15544061657760833,
+        "betaTrajectory": 0.1523338643118069,
+        "csdIndex": 0.5035632004081045,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0012298108075875398,
+        "zipfVelocity": 0.8303030303030303,
+        "composite": 0.5349096262858299
+      },
+      {
+        "ticker": "M",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2015-07-15",
+        "beta": 0.9860707008780676,
+        "betaR2": 0.04247874700044885,
+        "betaTrajectory": -0.45712994793904904,
+        "csdIndex": 0.5084855947531598,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003687549000463263,
+        "zipfVelocity": 0.15757575757575756,
+        "composite": 0.271476093450409
+      },
+      {
+        "ticker": "KSS",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2018-01-15",
+        "beta": 0.21119206260083892,
+        "betaR2": 0.0008122982163342174,
+        "betaTrajectory": -1.7998236490629465,
+        "csdIndex": 0.5015715432960166,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.006943649401335244,
+        "zipfVelocity": 0.15151515151515152,
+        "composite": 0.16815894168011186
+      },
+      {
+        "ticker": "WFC",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2017-01-15",
+        "beta": -6.889350412360336,
+        "betaR2": 0.03879352032201122,
+        "betaTrajectory": -11.24375405287588,
+        "csdIndex": 0.6327095397579819,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.003459591741416075,
+        "zipfVelocity": 1,
+        "composite": -0.7985800549813782
+      },
+      {
+        "ticker": "AIG",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2015-01-15",
+        "beta": 0.49491840078125704,
+        "betaR2": 0.10850536859163218,
+        "betaTrajectory": 0.15430376062574136,
+        "csdIndex": 0.4287491438189617,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0020666593728626294,
+        "zipfVelocity": 0.23030303030303031,
+        "composite": 0.5259891201041677
+      },
+      {
+        "ticker": "TEVA",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2018-01-15",
+        "beta": 0.5795006234893694,
+        "betaR2": 0.03656621162510798,
+        "betaTrajectory": 1.2712447169751215,
+        "csdIndex": 0.4888365783339259,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0033033981834442966,
+        "zipfVelocity": 0.12121212121212122,
+        "composite": 0.4172667497985826
+      },
+      {
+        "ticker": "NWL",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2019-01-15",
+        "beta": 0.4337203015970634,
+        "betaR2": 0.14632697042646348,
+        "betaTrajectory": -0.5905695497893562,
+        "csdIndex": 0.5070130585518268,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0016818679425919525,
+        "zipfVelocity": 0.5515151515151515,
+        "composite": 0.3578293735462751
+      },
+      {
+        "ticker": "IP",
+        "outcome": "trap",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2019-01-15",
+        "beta": 0.03672090649286267,
+        "betaR2": 0.00011376168352328353,
+        "betaTrajectory": 0.6404110455939388,
+        "csdIndex": 0.494742421498787,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0030464312226079196,
+        "zipfVelocity": null,
+        "composite": 0.6311201510821438
+      },
+      {
+        "ticker": "XOM",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-07-15",
+        "beta": -0.17641857488077403,
+        "betaR2": 0.0012302574550617784,
+        "betaTrajectory": 3.650232070326929,
+        "csdIndex": 0.5000257654457156,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0028035922734204743,
+        "zipfVelocity": null,
+        "composite": 0.5705969041865376
+      },
+      {
+        "ticker": "FCX",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-07-15",
+        "beta": 0.6357195305403969,
+        "betaR2": 0.042904531480557395,
+        "betaTrajectory": 2.399238701963595,
+        "csdIndex": 0.4963127578303249,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0026320095102952018,
+        "zipfVelocity": null,
+        "composite": 0.5809532550900661
+      },
+      {
+        "ticker": "CLF",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-07-15",
+        "beta": 1.0002219893730837,
+        "betaR2": 0.531533506766851,
+        "betaTrajectory": 0.7691364427419672,
+        "csdIndex": 0.529780076985808,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0008403892113209707,
+        "zipfVelocity": null,
+        "composite": 0.9167036648955139
+      },
+      {
+        "ticker": "MPC",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-07-15",
+        "beta": 0.6994928934221835,
+        "betaR2": 0.25767561338943945,
+        "betaTrajectory": 0.5113221420851874,
+        "csdIndex": 0.5085347355127499,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.001740635833086587,
+        "zipfVelocity": null,
+        "composite": 0.7415821489036972
+      },
+      {
+        "ticker": "PGR",
+        "outcome": "winner",
+        "tier": 1,
+        "pipeline": "Stable Value",
+        "entry_date": "2020-07-15",
+        "beta": 0.9938199149454895,
+        "betaR2": 0.5748410259533978,
+        "betaTrajectory": 0.02251220019256661,
+        "csdIndex": 0.5055248754874402,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0019571485515767688,
+        "zipfVelocity": -0.4666666666666667,
+        "composite": 0.4762003890445318
+      },
+      {
+        "ticker": "MSFT",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.8077405357743148,
+        "betaR2": 0.4242019227378978,
+        "betaTrajectory": 0.5586967187076664,
+        "csdIndex": 0.5024808821167894,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.00048819232787739074,
+        "zipfVelocity": -0.19393939393939394,
+        "composite": 0.6154563138608177
+      },
+      {
+        "ticker": "HD",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-20",
+        "beta": 0.8925207977919571,
+        "betaR2": 0.20400114505776523,
+        "betaTrajectory": 7.310556899024542,
+        "csdIndex": 0.5057248524583717,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0028857244573116682,
+        "zipfVelocity": 0,
+        "composite": 0.6190027730389276
+      },
+      {
+        "ticker": "UNH",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.9016442725369097,
+        "betaR2": 0.49646526700668736,
+        "betaTrajectory": 0.1374010841735407,
+        "csdIndex": 0.5020353507717346,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0018660736848236095,
+        "zipfVelocity": 0.01818181818181818,
+        "composite": 0.7202192363382547
+      },
+      {
+        "ticker": "V",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 1.190001244682656,
+        "betaR2": 0.4639320487358185,
+        "betaTrajectory": 1.1143333893492653,
+        "csdIndex": 0.4977193149179181,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0025575510161527674,
+        "zipfVelocity": -0.18787878787878787,
+        "composite": 0.6261819841395055
+      },
+      {
+        "ticker": "NKE",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-18",
+        "beta": 0.8011698886381379,
+        "betaR2": 0.26075815844437766,
+        "betaTrajectory": -0.8326262252293266,
+        "csdIndex": 0.49559332946253165,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0029756125097921567,
+        "zipfVelocity": -0.12727272727272726,
+        "composite": 0.4119135609093275
+      },
+      {
+        "ticker": "COST",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-12",
+        "beta": 0.8998355609994293,
+        "betaR2": 0.28964344986184787,
+        "betaTrajectory": 0.36282459971480674,
+        "csdIndex": 0.4970270239463848,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0007162376343489043,
+        "zipfVelocity": null,
+        "composite": 0.6499725934999049
+      },
+      {
+        "ticker": "TXN",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.40207691468561974,
+        "betaR2": 0.049467432798530275,
+        "betaTrajectory": 0.16027665883662784,
+        "csdIndex": 0.49957543291917905,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0024169429637003696,
+        "zipfVelocity": 0.4484848484848485,
+        "composite": 0.5536102552914159
+      },
+      {
+        "ticker": "GOOGL",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-11-01",
+        "beta": 1.3052672671241161,
+        "betaR2": 0.5201521386491021,
+        "betaTrajectory": 0.6688738196888809,
+        "csdIndex": 0.5001935078166214,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0007122532693940133,
+        "zipfVelocity": -0.5575757575757576,
+        "composite": 0.6963386659195792
+      },
+      {
+        "ticker": "AMZN",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-11-01",
+        "beta": 0.793560331537873,
+        "betaR2": 0.8351390577609505,
+        "betaTrajectory": -0.027756526812296456,
+        "csdIndex": 0.5023087690208393,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0005767178172826565,
+        "zipfVelocity": -0.19393939393939394,
+        "composite": 0.41356561996262553
+      },
+      {
+        "ticker": "PANW",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-11-01",
+        "beta": 0.8666639727232727,
+        "betaR2": 0.8120686726489118,
+        "betaTrajectory": 0.06119899875975254,
+        "csdIndex": 0.500361041990921,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003341512257303908,
+        "zipfVelocity": 2.16969696969697,
+        "composite": 0.37795319388260806
+      },
+      {
+        "ticker": "DE",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-10-03",
+        "beta": 0.791139840497618,
+        "betaR2": 0.13330362967181764,
+        "betaTrajectory": 0.296900388147774,
+        "csdIndex": 0.5008207869545189,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.001097180462170495,
+        "zipfVelocity": -0.6121212121212121,
+        "composite": 0.6899701605511975
+      },
+      {
+        "ticker": "JNJ",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": 0.49779162523195186,
+        "betaR2": 0.044883632303885146,
+        "betaTrajectory": 1.2753276444277268,
+        "csdIndex": 0.5114469681576013,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.001059234181394358,
+        "zipfVelocity": 0.030303030303030304,
+        "composite": 0.5463722166975935
+      },
+      {
+        "ticker": "MCD",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": -0.0923992442700374,
+        "betaR2": 0.0015768642774288688,
+        "betaTrajectory": -0.8826122579845451,
+        "csdIndex": 0.5032539590864977,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.002741821689329342,
+        "zipfVelocity": 0.19393939393939394,
+        "composite": 0.28768010076399503
+      },
+      {
+        "ticker": "AAPL",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": 0.9392403361900431,
+        "betaR2": 0.6264882370948228,
+        "betaTrajectory": -3.7608685606746994,
+        "csdIndex": 0.4976374401369272,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0006352787785780282,
+        "zipfVelocity": 0.22424242424242424,
+        "composite": 0.3852320448253391
+      },
+      {
+        "ticker": "SBUX",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": 0.6234880364622564,
+        "betaR2": 0.359336470845699,
+        "betaTrajectory": -0.09084994327863272,
+        "csdIndex": 0.502582125600933,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.002082255387231566,
+        "zipfVelocity": -0.006060606060606061,
+        "composite": 0.44337416243739175
+      },
+      {
+        "ticker": "ADBE",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2018-12-24",
+        "beta": 1.3133374737296866,
+        "betaR2": 0.6125979382462607,
+        "betaTrajectory": 1.0348814791569552,
+        "csdIndex": 0.49846639329027254,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0012193502470071952,
+        "zipfVelocity": 0.12727272727272726,
+        "composite": 0.5751116631639582
+      },
+      {
+        "ticker": "MA",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2018-12-24",
+        "beta": 0.8892827865203091,
+        "betaR2": 0.5161973283449706,
+        "betaTrajectory": 0.4228093546691245,
+        "csdIndex": 0.5001858729769042,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.002885096057956068,
+        "zipfVelocity": -0.21818181818181817,
+        "composite": 0.7272983109299807
+      },
+      {
+        "ticker": "LOW",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2018-12-24",
+        "beta": 0.803242814283407,
+        "betaR2": 0.04471709985182226,
+        "betaTrajectory": 7.860052561820282,
+        "csdIndex": 0.5058240387640796,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0026848305318756018,
+        "zipfVelocity": 0.09090909090909091,
+        "composite": 0.6670990419044542
+      },
+      {
+        "ticker": "UNP",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2016-02-11",
+        "beta": 0.5563107512155674,
+        "betaR2": 0.02842755808114028,
+        "betaTrajectory": 0.558636774361198,
+        "csdIndex": 0.5007667446744265,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0026008069898459775,
+        "zipfVelocity": -0.05454545454545454,
+        "composite": 0.5763565850105605
+      },
+      {
+        "ticker": "DIS",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2016-02-11",
+        "beta": -0.574064268930991,
+        "betaR2": 0.02660776683633037,
+        "betaTrajectory": -5.090683254733284,
+        "csdIndex": 0.44504247968086486,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.004221424917130068,
+        "zipfVelocity": 0.11904761904761904,
+        "composite": 0.12345809747586785
+      },
+      {
+        "ticker": "DHR",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2016-02-11",
+        "beta": 0.47153139439303254,
+        "betaR2": 0.1522311999409517,
+        "betaTrajectory": 0.024050331283416715,
+        "csdIndex": 0.5057952611301824,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0006848751096533842,
+        "zipfVelocity": -0.12121212121212122,
+        "composite": 0.41582000000105596
+      },
+      {
+        "ticker": "CVS",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2019-02-15",
+        "beta": 0.7614927071150684,
+        "betaR2": 0.42107302652539,
+        "betaTrajectory": -0.5521445519961541,
+        "csdIndex": 0.5001218525931592,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0017281363633355586,
+        "zipfVelocity": -0.01818181818181818,
+        "composite": 0.4022596336759485
+      },
+      {
+        "ticker": "PYPL",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2023-02-15",
+        "beta": 1.0086199178794482,
+        "betaR2": 0.3860684210558535,
+        "betaTrajectory": 0.6024023286413189,
+        "csdIndex": 0.5102486085895481,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0017048729961374222,
+        "zipfVelocity": -0.3939393939393939,
+        "composite": 0.6502402314748356
+      },
+      {
+        "ticker": "CCL",
+        "outcome": "trap",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-18",
+        "beta": -3.4089923889562113,
+        "betaR2": 0.14230147810650007,
+        "betaTrajectory": -24.2619336426045,
+        "csdIndex": 0.7646266038401173,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0023424813631550342,
+        "zipfVelocity": 0.20606060606060606,
+        "composite": -0.1745323185274948
+      },
+      {
+        "ticker": "BA",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-20",
+        "beta": -0.04424505786773093,
+        "betaR2": 0.0005800652970944231,
+        "betaTrajectory": -1.3178725639711097,
+        "csdIndex": 0.5064582267577756,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.003947331429308284,
+        "zipfVelocity": -0.10909090909090909,
+        "composite": 0.23846429531460558
+      },
+      {
+        "ticker": "SPG",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.8448260141642643,
+        "betaR2": 0.03077079061636523,
+        "betaTrajectory": 0.48846177307093563,
+        "csdIndex": 0.49988788921234933,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0046584055707342194,
+        "zipfVelocity": null,
+        "composite": 0.640804335694044
+      },
+      {
+        "ticker": "OXY",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-18",
+        "beta": 0.84816740508723,
+        "betaR2": 0.15161506304079342,
+        "betaTrajectory": -0.5851303789558002,
+        "csdIndex": 0.5027525455964033,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0012197104376459223,
+        "zipfVelocity": null,
+        "composite": 0.441361234181205
+      },
+      {
+        "ticker": "AFRM",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-11-01",
+        "beta": 0.7877016435231586,
+        "betaR2": 0.3581643318517773,
+        "betaTrajectory": 1.1461511854661117,
+        "csdIndex": 0.5094200988950148,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0015973715414937433,
+        "zipfVelocity": -0.7428571428571429,
+        "composite": 0.6147411715173735
+      },
+      {
+        "ticker": "COIN",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-11-01",
+        "beta": -0.08784304921577989,
+        "betaR2": 0.028098164909792223,
+        "betaTrajectory": -0.1271593095346802,
+        "csdIndex": 0.24498979995065248,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0029850373434889173,
+        "zipfVelocity": -0.6857142857142857,
+        "composite": 0.19571616486646745
+      },
+      {
+        "ticker": "GE",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": 0.6470557601563416,
+        "betaR2": 0.34766955778194975,
+        "betaTrajectory": 0.3363659897287897,
+        "csdIndex": 0.470084871919841,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0010078998324949359,
+        "zipfVelocity": 0.3575757575757576,
+        "composite": 0.5862741013541789
+      },
+      {
+        "ticker": "C",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": -0.02043150507786917,
+        "betaR2": 0.000023431722577460512,
+        "betaTrajectory": 1.5376673997347732,
+        "csdIndex": 0.4998900173085505,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003449402524902368,
+        "zipfVelocity": -0.19393939393939394,
+        "composite": 0.4050333750805265
+      },
+      {
+        "ticker": "AIG",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": 0.49491840078125704,
+        "betaR2": 0.10850536859163218,
+        "betaTrajectory": 0.15430376062574136,
+        "csdIndex": 0.4287491438189617,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0020666593728626294,
+        "zipfVelocity": 0.23030303030303031,
+        "composite": 0.5259891201041677
+      },
+      {
+        "ticker": "BAC",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2009-03-01",
+        "beta": 0.11248830933656767,
+        "betaR2": 0.0013863037586500093,
+        "betaTrajectory": 1.2248310751399458,
+        "csdIndex": 0.5027852670885802,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0014707717305205796,
+        "zipfVelocity": -0.14545454545454545,
+        "composite": 0.5808166230630574
+      },
+      {
+        "ticker": "KHC",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.3964289825291829,
+        "betaR2": 0.1304088323861301,
+        "betaTrajectory": null,
+        "csdIndex": 0.49985189593207857,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.003652625804211747,
+        "zipfVelocity": null,
+        "composite": 0.5214286627842629
+      },
+      {
+        "ticker": "MMM",
+        "outcome": "trap",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.199147706045955,
+        "betaR2": 0.004915487667850993,
+        "betaTrajectory": -0.647349135143616,
+        "csdIndex": 0.5001555916235685,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.002254296816286408,
+        "zipfVelocity": 0.23636363636363636,
+        "composite": 0.386553027472794
+      },
+      {
+        "ticker": "LUMN",
+        "outcome": "trap",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 0.8429036419388443,
+        "betaR2": 0.2046011024887361,
+        "betaTrajectory": -0.4308814730051945,
+        "csdIndex": 0.5000378653391977,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0026551512115796884,
+        "zipfVelocity": 0.4303030303030303,
+        "composite": 0.5123871522585126
+      },
+      {
+        "ticker": "JPM",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2020-03-23",
+        "beta": 1.5815763142992105,
+        "betaR2": 0.35202736981985183,
+        "betaTrajectory": 3.5832172491686194,
+        "csdIndex": 0.4973072620811507,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0021451870258345656,
+        "zipfVelocity": 0,
+        "composite": 0.6599999999999999
+      },
+      {
+        "ticker": "BABA",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-10-15",
+        "beta": 1.3291617555626802,
+        "betaR2": 0.9894548312032123,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.002563147476255502,
+        "zipfVelocity": -1.0484848484848486,
+        "composite": 0.4989512016846891
+      },
+      {
+        "ticker": "WBD",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2023-01-15",
+        "beta": 0.9516366400027513,
+        "betaR2": 0.6972912087911145,
+        "betaTrajectory": -0.08491773926016899,
+        "csdIndex": 0.49839280828003774,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0008088867426780078,
+        "zipfVelocity": -0.34545454545454546,
+        "composite": 0.340703067151882
+      },
+      {
+        "ticker": "DG",
+        "outcome": "trap",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2023-01-15",
+        "beta": 0.7471949729740403,
+        "betaR2": 0.30513802118798317,
+        "betaTrajectory": -1.820137548283967,
+        "csdIndex": 0.5089879652745835,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.002389648307583166,
+        "zipfVelocity": null,
+        "composite": 0.49953249549567336
+      },
+      {
+        "ticker": "META",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-11-01",
+        "beta": 1.1434664349802057,
+        "betaR2": 0.8231952282562083,
+        "betaTrajectory": 0.399071508342987,
+        "csdIndex": 0.4994910915705417,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0011228862037830608,
+        "zipfVelocity": -0.9090909090909091,
+        "composite": 0.5888258276943305
+      },
+      {
+        "ticker": "NFLX",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-07-15",
+        "beta": 0.7027106875806979,
+        "betaR2": 0.7757363187516149,
+        "betaTrajectory": 0.6770013157442816,
+        "csdIndex": 0.49566818276356694,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0007469627424334163,
+        "zipfVelocity": -0.03636363636363636,
+        "composite": 0.4951493037986385
+      },
+      {
+        "ticker": "CRM",
+        "outcome": "winner",
+        "tier": 2,
+        "pipeline": "Crisis",
+        "entry_date": "2022-12-15",
+        "beta": 0.8336792919061418,
+        "betaR2": 0.8281067837480534,
+        "betaTrajectory": 0.09607798702106107,
+        "csdIndex": 0.4997782698017959,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0006694350881949656,
+        "zipfVelocity": -0.42424242424242425,
+        "composite": 0.520282909932638
+      },
+      {
+        "ticker": "SHOP",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": null,
+        "betaR2": null,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.005340568830423165,
+        "zipfVelocity": 0,
+        "composite": 0.5
+      },
+      {
+        "ticker": "TTD",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.9663610417043729,
+        "betaR2": 0.6837314233774417,
+        "betaTrajectory": 1.0233653154686566,
+        "csdIndex": 0.4997774912795016,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0038869238146993935,
+        "zipfVelocity": 0.6,
+        "composite": 0.5073734490782636
+      },
+      {
+        "ticker": "PAYC",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 1.1194051813433743,
+        "betaR2": 0.7236092135529639,
+        "betaTrajectory": -0.23813634730401134,
+        "csdIndex": 0.49841932097894415,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.002302228668739045,
+        "zipfVelocity": 1.8484848484848484,
+        "composite": 0.40771168681593045
+      },
+      {
+        "ticker": "VEEV",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.784160359235313,
+        "betaR2": 0.7165036584230235,
+        "betaTrajectory": 0.10115642659415258,
+        "csdIndex": 0.4936093043193722,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.001907779661875789,
+        "zipfVelocity": 1.993939393939394,
+        "composite": 0.5045547145647084
+      },
+      {
+        "ticker": "MDB",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 1.0548105583494014,
+        "betaR2": 0.7087412238183282,
+        "betaTrajectory": 1.3514829112765039,
+        "csdIndex": 0.4955558984803199,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.005864869631258391,
+        "zipfVelocity": 0.9166666666666666,
+        "composite": 0.5005345064832668
+      },
+      {
+        "ticker": "TWLO",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.6751137625927544,
+        "betaR2": 0.7182861477578107,
+        "betaTrajectory": -2.5157097724047115,
+        "csdIndex": 0.510142238446783,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0017637034376109919,
+        "zipfVelocity": -1.0242424242424242,
+        "composite": 0.609154054429498
+      },
+      {
+        "ticker": "DDOG",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": 0.9037760520138447,
+        "betaR2": 0.5972618246024313,
+        "betaTrajectory": 0.4368993129777335,
+        "csdIndex": 0.4886074759223899,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003302525861116959,
+        "zipfVelocity": -1.4047619047619047,
+        "composite": 0.5972449581602685
+      },
+      {
+        "ticker": "CRWD",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": null,
+        "betaR2": null,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": null,
+        "benfordKLD": 0.0006670716499346287,
+        "zipfVelocity": null,
+        "composite": 0.5
+      },
+      {
+        "ticker": "ETSY",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 1.19590326694855,
+        "betaR2": 0.7235487841362042,
+        "betaTrajectory": -0.3322564348067137,
+        "csdIndex": 0.4936513278997761,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0006449129053472174,
+        "zipfVelocity": -0.37575757575757573,
+        "composite": 0.478736726630647
+      },
+      {
+        "ticker": "DXCM",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.840823352320041,
+        "betaR2": 0.8711457968039724,
+        "betaTrajectory": 0.08440547581565006,
+        "csdIndex": 0.49618717509218957,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0031944729462644837,
+        "zipfVelocity": -0.43636363636363634,
+        "composite": 0.6153127311626537
+      },
+      {
+        "ticker": "RGEN",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.6659667119109922,
+        "betaR2": 0.41147780603501516,
+        "betaTrajectory": -1.4051756117938161,
+        "csdIndex": 0.5084954179092,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.002773176473539056,
+        "zipfVelocity": 0.6,
+        "composite": 0.4906629679901102
+      },
+      {
+        "ticker": "PODD",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.8533577643167576,
+        "betaR2": 0.7302482514615978,
+        "betaTrajectory": 0.44626116109667935,
+        "csdIndex": 0.49651490733885895,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.000663787152920228,
+        "zipfVelocity": 0.5515151515151515,
+        "composite": 0.678150862701862
+      },
+      {
+        "ticker": "CPRT",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 0.3699496906399285,
+        "betaR2": 0.04553278543182249,
+        "betaTrajectory": -1.4408953777544002,
+        "csdIndex": 0.5483899062169612,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0015289184017241364,
+        "zipfVelocity": 0.5142857142857142,
+        "composite": 0.44932662541865714
+      },
+      {
+        "ticker": "TREX",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.5926647763068598,
+        "betaR2": 0.383981691956912,
+        "betaTrajectory": 0.9244343970912827,
+        "csdIndex": 0.5053753911351877,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0006823916635826433,
+        "zipfVelocity": 0.37575757575757573,
+        "composite": 0.6491849751452067
+      },
+      {
+        "ticker": "POOL",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 0.6749377485610076,
+        "betaR2": 0.2557069180687874,
+        "betaTrajectory": 1.5245037388540017,
+        "csdIndex": 0.5097376502001698,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0012141921307759827,
+        "zipfVelocity": 0.18181818181818182,
+        "composite": 0.5899916998081343
+      },
+      {
+        "ticker": "RBC",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.5815053889090522,
+        "betaR2": 0.5064848509212341,
+        "betaTrajectory": 0.01154853239109882,
+        "csdIndex": 0.5109713954406077,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0007556945395272533,
+        "zipfVelocity": 0.2606060606060606,
+        "composite": 0.460631116636738
+      },
+      {
+        "ticker": "MKTX",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 0.7391016958111252,
+        "betaR2": 0.5374208218574713,
+        "betaTrajectory": -0.6180862527878728,
+        "csdIndex": 0.49732760178127583,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0016560759107675017,
+        "zipfVelocity": 0.4909090909090909,
+        "composite": 0.39878907731234725
+      },
+      {
+        "ticker": "FOUR",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2021-02-15",
+        "beta": 0.8766820190742837,
+        "betaR2": 0.5208226827871156,
+        "betaTrajectory": 0.16799285332183544,
+        "csdIndex": 0.48407054089017965,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0008367892379268762,
+        "zipfVelocity": -0.32142857142857145,
+        "composite": 0.5914567322780949
+      },
+      {
+        "ticker": "SPSC",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.9646298115355906,
+        "betaR2": 0.6797473721938851,
+        "betaTrajectory": 0.3400141881177897,
+        "csdIndex": 0.4954581355140568,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003402077111377527,
+        "zipfVelocity": 3.16969696969697,
+        "composite": 0.5571810901706211
+      },
+      {
+        "ticker": "FIVE",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.6784139095953984,
+        "betaR2": 0.6723287267827038,
+        "betaTrajectory": -0.046974293250221066,
+        "csdIndex": 0.504498384370886,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0026239487709128514,
+        "zipfVelocity": 0.21212121212121213,
+        "composite": 0.4904551879460531
+      },
+      {
+        "ticker": "FND",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.7631492113667123,
+        "betaR2": 0.45949783059655136,
+        "betaTrajectory": 0.6279342504248282,
+        "csdIndex": 0.511723304147442,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.006129518449747082,
+        "zipfVelocity": 0.012121212121212121,
+        "composite": 0.5417532281822283
+      },
+      {
+        "ticker": "AXON",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.7474292777247126,
+        "betaR2": 0.7991363193548251,
+        "betaTrajectory": -0.12827637861427366,
+        "csdIndex": 0.5077458614970748,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0020653169318031674,
+        "zipfVelocity": -0.21212121212121213,
+        "composite": 0.4401184045956752
+      },
+      {
+        "ticker": "MSCI",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 1.5746324105907703,
+        "betaR2": 0.3600224207894569,
+        "betaTrajectory": 1.4292746330437607,
+        "csdIndex": 0.429661453987344,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0013445085359590648,
+        "zipfVelocity": 0.14545454545454545,
+        "composite": 0.6
+      },
+      {
+        "ticker": "OLLI",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 1.1065352330190381,
+        "betaR2": 0.4014685608461286,
+        "betaTrajectory": 0.1925370446581336,
+        "csdIndex": 0.4959711602267758,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.004637875046264073,
+        "zipfVelocity": 0.45454545454545453,
+        "composite": 0.6475380310692052
+      },
+      {
+        "ticker": "GPRO",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 0.7351646028314667,
+        "betaR2": 0.10570501473955474,
+        "betaTrajectory": 0.21453704151743558,
+        "csdIndex": 0.49137539523030505,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.002338245314398123,
+        "zipfVelocity": 4.127272727272727,
+        "composite": 0.531684955870163
+      },
+      {
+        "ticker": "PTON",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": 0.6243837603118857,
+        "betaR2": 0.11298830875569699,
+        "betaTrajectory": -1.2287024365803938,
+        "csdIndex": 0.49424702789346386,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0027687756933294436,
+        "zipfVelocity": 0.17857142857142858,
+        "composite": 0.28325116804158473
+      },
+      {
+        "ticker": "LMND",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2021-02-15",
+        "beta": 1.0605236260126312,
+        "betaR2": 0.2679021092576156,
+        "betaTrajectory": 4.576136699752463,
+        "csdIndex": 0.49282710656522377,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.009405830015949836,
+        "zipfVelocity": 0.03571428571428571,
+        "composite": 0.6014031501350174
+      },
+      {
+        "ticker": "SNAP",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 1.5954820093190953,
+        "betaR2": 0.5566185308741409,
+        "betaTrajectory": -1.151865138930458,
+        "csdIndex": 0.3025809569002542,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0010482103845208326,
+        "zipfVelocity": -0.19393939393939394,
+        "composite": 0.48979797979797984
+      },
+      {
+        "ticker": "BOX",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2017-02-15",
+        "beta": 0.9666130855525871,
+        "betaR2": 0.40915682761565064,
+        "betaTrajectory": -0.26309111712461863,
+        "csdIndex": 0.48977005960167685,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.003575094112086493,
+        "zipfVelocity": 3.006060606060606,
+        "composite": 0.32888174474034493
+      },
+      {
+        "ticker": "CHGG",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2019-02-15",
+        "beta": 0.44243941331087666,
+        "betaR2": 0.36672056126441344,
+        "betaTrajectory": 0.02099415560843651,
+        "csdIndex": 0.5107726322503023,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0011631391790239403,
+        "zipfVelocity": 0.3918918918918919,
+        "composite": 0.4841501941597138
+      },
+      {
+        "ticker": "GRPN",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 0.31707691687851053,
+        "betaR2": 0.17666884516696013,
+        "betaTrajectory": 0.9134872505879152,
+        "csdIndex": 0.5009509297508912,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0010224300010571296,
+        "zipfVelocity": 0.4484848484848485,
+        "composite": 0.602276922250468
+      },
+      {
+        "ticker": "LC",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2016-02-15",
+        "beta": 1.351720108541968,
+        "betaR2": 0.8039286544412767,
+        "betaTrajectory": -1.2168235893204733,
+        "csdIndex": 0.5040156294775213,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0008219632056880874,
+        "zipfVelocity": 1.2285714285714286,
+        "composite": 0.5501911231713298
+      },
+      {
+        "ticker": "W",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.8521665239756494,
+        "betaR2": 0.6637040175261997,
+        "betaTrajectory": 0.2192958193126,
+        "csdIndex": 0.500796951382621,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0016272520390263612,
+        "zipfVelocity": -0.4909090909090909,
+        "composite": 0.7332585668331169
+      },
+      {
+        "ticker": "ROKU",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2019-02-15",
+        "beta": 0.7117944104251513,
+        "betaR2": 0.6421050062944398,
+        "betaTrajectory": 8.173849188009989,
+        "csdIndex": 0.5036173504052677,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0017004988321528472,
+        "zipfVelocity": -0.01818181818181818,
+        "composite": 0.6630276617644107
+      },
+      {
+        "ticker": "CVNA",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": 0.9771834060256396,
+        "betaR2": 0.8130452209851936,
+        "betaTrajectory": -0.17297930162779118,
+        "csdIndex": 0.5130922508724969,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.002842950225460497,
+        "zipfVelocity": -1.387878787878788,
+        "composite": 0.5858062723185701
+      },
+      {
+        "ticker": "FSLY",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": null,
+        "betaR2": null,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": null,
+        "benfordKLD": 0.002983050578595753,
+        "zipfVelocity": null,
+        "composite": 0.5
+      },
+      {
+        "ticker": "TDOC",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": 0.8671995581363234,
+        "betaR2": 0.7728845009112133,
+        "betaTrajectory": -0.7781489908558894,
+        "csdIndex": 0.603912059738391,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.002146287945950927,
+        "zipfVelocity": -0.20540540540540542,
+        "composite": 0.423842823967726
+      },
+      {
+        "ticker": "SFIX",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.5137234670561759,
+        "betaR2": 0.07833955225886136,
+        "betaTrajectory": -0.015920841340120173,
+        "csdIndex": 0.5149130349236575,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.002245605552766226,
+        "zipfVelocity": 0.4166666666666667,
+        "composite": 0.46849646227415676
+      },
+      {
+        "ticker": "JMIA",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2020-02-15",
+        "beta": null,
+        "betaR2": null,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": null,
+        "benfordKLD": 0.008523491838898112,
+        "zipfVelocity": null,
+        "composite": 0.5
+      },
+      {
+        "ticker": "VRM",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2021-02-15",
+        "beta": 0.5050728402712265,
+        "betaR2": 0.0740569697374065,
+        "betaTrajectory": 0.8384630235826066,
+        "csdIndex": 0.5272204065494511,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0022957103756023308,
+        "zipfVelocity": 0.5142857142857142,
+        "composite": 0.5473430453694969
+      },
+      {
+        "ticker": "HNST",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2021-09-15",
+        "beta": -0.015217439672555214,
+        "betaR2": 0.00001107333105399011,
+        "betaTrajectory": -2.526504743726876,
+        "csdIndex": 0.48963287752302576,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.010409747653169335,
+        "zipfVelocity": null,
+        "composite": 0.19797100804365933
+      },
+      {
+        "ticker": "HUBS",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2018-02-15",
+        "beta": 0.8274157513237231,
+        "betaR2": 0.7314829583883844,
+        "betaTrajectory": 1.3535231735739015,
+        "csdIndex": 0.50982472036133,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.002627259131497132,
+        "zipfVelocity": 0.3151515151515151,
+        "composite": 0.6252684168137471
+      },
+      {
+        "ticker": "NET",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 0.9444696754877566,
+        "betaR2": 0.5844199475063777,
+        "betaTrajectory": 0.4545071323165339,
+        "csdIndex": 0.513338986230302,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0034356122953570667,
+        "zipfVelocity": 0.2976190476190476,
+        "composite": 0.46592929006503425
+      },
+      {
+        "ticker": "BILL",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2022-11-15",
+        "beta": 1.1817765683141215,
+        "betaR2": 0.6131382105190177,
+        "betaTrajectory": -0.8260116288086898,
+        "csdIndex": 0.5068113527440743,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0010698764768519217,
+        "zipfVelocity": 0.14285714285714285,
+        "composite": 0.4575702091085495
+      },
+      {
+        "ticker": "FICO",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2019-01-15",
+        "beta": 1.9698509227158696,
+        "betaR2": 0.25280688213588554,
+        "betaTrajectory": -1.008627305500381,
+        "csdIndex": 0.500456239476418,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0016928166194881392,
+        "zipfVelocity": null,
+        "composite": 0.625
+      },
+      {
+        "ticker": "IDXX",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2019-01-15",
+        "beta": 0.660175662928767,
+        "betaR2": 0.31591738756626886,
+        "betaTrajectory": -0.3103650238526205,
+        "csdIndex": 0.504149728593242,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0011722803886559424,
+        "zipfVelocity": 0.3393939393939394,
+        "composite": 0.3880234217238356
+      },
+      {
+        "ticker": "TMDX",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2022-01-15",
+        "beta": 1.333108469455784,
+        "betaR2": 0.8578912114537387,
+        "betaTrajectory": 0.6079112178418136,
+        "csdIndex": 0.5123699303101853,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.003399285800256177,
+        "zipfVelocity": 0.07142857142857142,
+        "composite": 0.49774779592743784
+      },
+      {
+        "ticker": "LSCC",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2021-01-15",
+        "beta": 0.5243128460767496,
+        "betaR2": 0.052038959390297346,
+        "betaTrajectory": 1.1967490759740285,
+        "csdIndex": 0.5016455481937637,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0016934215167792254,
+        "zipfVelocity": 4.2,
+        "composite": 0.6699083794768999
+      },
+      {
+        "ticker": "WST",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2019-01-15",
+        "beta": 0.9473859174855311,
+        "betaR2": 0.3287435242051867,
+        "betaTrajectory": 0.27024387853847176,
+        "csdIndex": 0.5052942730500912,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0019041902502657639,
+        "zipfVelocity": 0.4666666666666667,
+        "composite": 0.7263181223314041
+      },
+      {
+        "ticker": "MANH",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2019-01-15",
+        "beta": 1.2079236875515387,
+        "betaR2": 0.40210661353111754,
+        "betaTrajectory": -2.3767245416541956,
+        "csdIndex": 0.5097571217442071,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0059733443453364584,
+        "zipfVelocity": 2.7515151515151515,
+        "composite": 0.28421374306128205
+      },
+      {
+        "ticker": "HOOD",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 0.61706886238527,
+        "betaR2": 0.11082511542341555,
+        "betaTrajectory": 0.154591855970627,
+        "csdIndex": 0.2922095337318099,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.00309465822347471,
+        "zipfVelocity": -0.7714285714285715,
+        "composite": 0.4531329911751789
+      },
+      {
+        "ticker": "OPEN",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2022-01-15",
+        "beta": 0.06474425343955381,
+        "betaR2": 0.06122194875717635,
+        "betaTrajectory": 1.1739861366059718,
+        "csdIndex": 0.40154534137378,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.00439267151659541,
+        "zipfVelocity": null,
+        "composite": 0.6357907089065923
+      },
+      {
+        "ticker": "UPST",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 0.6787942465058626,
+        "betaR2": 0.239089402325945,
+        "betaTrajectory": 1.625572024982985,
+        "csdIndex": 0.43665557972824365,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0022202286080747697,
+        "zipfVelocity": -0.5714285714285714,
+        "composite": 0.6278025353260482
+      },
+      {
+        "ticker": "FVRR",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 0.7069399585553368,
+        "betaR2": 0.8223539500860597,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0060948846164292445,
+        "zipfVelocity": 2.2738095238095237,
+        "composite": 0.3428233264258894
+      },
+      {
+        "ticker": "DASH",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 1.1022212131611353,
+        "betaR2": 0.5865178853713953,
+        "betaTrajectory": 0.21313494309780812,
+        "csdIndex": 0.45667103081417176,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0037652603278864934,
+        "zipfVelocity": -3.142857142857143,
+        "composite": 0.6726771141357705
+      },
+      {
+        "ticker": "RBLX",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 1.0504313492582438,
+        "betaR2": 0.39919749990288556,
+        "betaTrajectory": 1.3025830651793977,
+        "csdIndex": 0.468067248852745,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.005758590612996708,
+        "zipfVelocity": -2.5714285714285716,
+        "composite": 0.7029146560915753
+      },
+      {
+        "ticker": "GTLB",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 1.0660464206386353,
+        "betaR2": 0.26607607020602986,
+        "betaTrajectory": 1.8946952904631478,
+        "csdIndex": 0.5105523691093887,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.004575347071536193,
+        "zipfVelocity": -0.2,
+        "composite": 0.4701395227518181
+      },
+      {
+        "ticker": "SOFI",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 0.17291965981177784,
+        "betaR2": 0.37730934069923716,
+        "betaTrajectory": 1.104702650843848,
+        "csdIndex": 0.7466273582860599,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0023113664606324025,
+        "zipfVelocity": -0.4857142857142857,
+        "composite": 0.5687371050584514
+      },
+      {
+        "ticker": "AFRM",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2023-01-15",
+        "beta": 0.7877016435231586,
+        "betaR2": 0.3581643318517773,
+        "betaTrajectory": 1.1461511854661117,
+        "csdIndex": 0.5094200988950148,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0015973715414937433,
+        "zipfVelocity": -0.7428571428571429,
+        "composite": 0.6147411715173735
+      },
+      {
+        "ticker": "ALGN",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2022-10-15",
+        "beta": 0.8671666759198338,
+        "betaR2": 0.7068874818402482,
+        "betaTrajectory": -0.22137482949248144,
+        "csdIndex": 0.5027883415878653,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0008968829968635621,
+        "zipfVelocity": -0.10909090909090909,
+        "composite": 0.4199858598196142
+      },
+      {
+        "ticker": "ENPH",
+        "outcome": "trap",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2022-10-15",
+        "beta": 0.6287795807100254,
+        "betaR2": 0.6858540801459353,
+        "betaTrajectory": -0.08680602780195068,
+        "csdIndex": 0.501903333094815,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0016484820922474822,
+        "zipfVelocity": 1.1333333333333333,
+        "composite": 0.48383727742800337
+      },
+      {
+        "ticker": "LOGI",
+        "outcome": "winner",
+        "tier": 3,
+        "pipeline": "Growth",
+        "entry_date": "2022-10-15",
+        "beta": 0.9284051034301405,
+        "betaR2": 0.2990822702991093,
+        "betaTrajectory": 0.6091065871006607,
+        "csdIndex": 0.5065813811391989,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0005227325921650964,
+        "zipfVelocity": 0.9939393939393939,
+        "composite": 0.6237873471240187
+      },
+      {
+        "ticker": "LHX",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-05-15",
+        "beta": 0.8299209229147317,
+        "betaR2": 0.5260831550390102,
+        "betaTrajectory": 0.07763774441635363,
+        "csdIndex": 0.2752840502715727,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.0016959435068751804,
+        "zipfVelocity": -0.49696969696969695,
+        "composite": 0.5458103997667927
+      },
+      {
+        "ticker": "BWXT",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-05-15",
+        "beta": 0.9491046263185322,
+        "betaR2": 0.19985862407735178,
+        "betaTrajectory": -0.45697670340093544,
+        "csdIndex": 0.5000666617038909,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.004522267586716998,
+        "zipfVelocity": 0.21818181818181817,
+        "composite": 0.3665472835091376
+      },
+      {
+        "ticker": "LRCX",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-11-15",
+        "beta": 1.1151668250298488,
+        "betaR2": 0.5516022414662793,
+        "betaTrajectory": 0.5073056309778424,
+        "csdIndex": 0.49662093038148986,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0016081947339185128,
+        "zipfVelocity": 0.3393939393939394,
+        "composite": 0.6486889100039799
+      },
+      {
+        "ticker": "ONTO",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-11-15",
+        "beta": 0.7330689915058911,
+        "betaR2": 0.6196536728489133,
+        "betaTrajectory": 0.574628026402618,
+        "csdIndex": 0.4992911207670272,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0034866781517013026,
+        "zipfVelocity": 2.1575757575757577,
+        "composite": 0.4777425322007855
+      },
+      {
+        "ticker": "NVDA",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-02-15",
+        "beta": 1.0788996393425836,
+        "betaR2": 0.8236418003054138,
+        "betaTrajectory": 0.6740520439493641,
+        "csdIndex": 0.5071495664267011,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.001827464309675393,
+        "zipfVelocity": -0.509090909090909,
+        "composite": 0.6442169216093142
+      },
+      {
+        "ticker": "VRT",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-02-15",
+        "beta": 1.429972390480319,
+        "betaR2": 0.34893546047450885,
+        "betaTrajectory": 0.7793627151046216,
+        "csdIndex": 0.49792264152545307,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.006576302795588921,
+        "zipfVelocity": -0.2,
+        "composite": 0.6986629853973759
+      },
+      {
+        "ticker": "ANET",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-02-15",
+        "beta": 0.8429381640094559,
+        "betaR2": 0.7253839554657986,
+        "betaTrajectory": 0.3136593177569421,
+        "csdIndex": 0.5039587290318066,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0011283324556076706,
+        "zipfVelocity": 0.006060606060606061,
+        "composite": 0.7123917552012607
+      },
+      {
+        "ticker": "LNG",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 1.7101639122847703,
+        "betaR2": 0.693525087824562,
+        "betaTrajectory": 2.59290837708389,
+        "csdIndex": 0.4406064096942953,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.002546282336187697,
+        "zipfVelocity": null,
+        "composite": 0.875
+      },
+      {
+        "ticker": "TT",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-02-15",
+        "beta": 2.3516835764134463,
+        "betaR2": 0.07337797427806225,
+        "betaTrajectory": 2.292335128975285,
+        "csdIndex": 0.5015066437635178,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0019672087241174576,
+        "zipfVelocity": 0.012121212121212121,
+        "composite": 0.6799999999999999
+      },
+      {
+        "ticker": "PWR",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 1.0141828915782294,
+        "betaR2": 0.4040042994062254,
+        "betaTrajectory": 0.2014311113079037,
+        "csdIndex": 0.4880357805105019,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.00037749668524867525,
+        "zipfVelocity": -0.4666666666666667,
+        "composite": 0.6538910522104306
+      },
+      {
+        "ticker": "PLTR",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-02-15",
+        "beta": 0.989932114054189,
+        "betaR2": 0.4060073703419135,
+        "betaTrajectory": 1.018318535247933,
+        "csdIndex": 0.4985464039610293,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0034026468707474685,
+        "zipfVelocity": 0.6785714285714286,
+        "composite": 0.6319909485405585
+      },
+      {
+        "ticker": "CEG",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-02-15",
+        "beta": 2.0026078849689677,
+        "betaR2": 0.07641543151694763,
+        "betaTrajectory": -5.228500476758328,
+        "csdIndex": 0.5087985524321812,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0023671234514584423,
+        "zipfVelocity": null,
+        "composite": 0.75
+      },
+      {
+        "ticker": "PLUG",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2021-02-15",
+        "beta": 0.6664101197068726,
+        "betaR2": 0.7420606398015983,
+        "betaTrajectory": -0.07842883092397412,
+        "csdIndex": 0.5144883785098894,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.00114528171075115,
+        "zipfVelocity": -0.08484848484848485,
+        "composite": 0.576873851684602
+      },
+      {
+        "ticker": "CHPT",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2021-02-15",
+        "beta": 0.8158399721869539,
+        "betaR2": 0.2815851480881866,
+        "betaTrajectory": 0.8320105624832212,
+        "csdIndex": 0.5166138993339477,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.00488334302693565,
+        "zipfVelocity": -0.4,
+        "composite": 0.4873155524652171
+      },
+      {
+        "ticker": "SPWR",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.8568001837663745,
+        "betaR2": 0.40388042820790304,
+        "betaTrajectory": null,
+        "csdIndex": 0.5986311508077597,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0073862696014732505,
+        "zipfVelocity": 0,
+        "composite": 0.4428000306277291
+      },
+      {
+        "ticker": "TLRY",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2021-02-15",
+        "beta": 0.6626056889744687,
+        "betaR2": 0.5443000991179735,
+        "betaTrajectory": -1.1112515936938647,
+        "csdIndex": 0.4443088749490085,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.003090742740088439,
+        "zipfVelocity": 0.39285714285714285,
+        "composite": 0.2683474251965959
+      },
+      {
+        "ticker": "META",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-11-15",
+        "beta": 1.1434664349802057,
+        "betaR2": 0.8231952282562083,
+        "betaTrajectory": 0.399071508342987,
+        "csdIndex": 0.4994910915705417,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0011228862037830608,
+        "zipfVelocity": -0.9090909090909091,
+        "composite": 0.5888258276943305
+      },
+      {
+        "ticker": "U",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.4818134097153496,
+        "betaR2": 0.2139728878866154,
+        "betaTrajectory": -0.01530582728594887,
+        "csdIndex": 0.49810834244052665,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.009356027693290352,
+        "zipfVelocity": 0.25,
+        "composite": 0.36424178796204665
+      },
+      {
+        "ticker": "CLOV",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2021-02-15",
+        "beta": 0.1396521331895739,
+        "betaR2": 0.1753636410385715,
+        "betaTrajectory": -0.4040183610332631,
+        "csdIndex": 0.45732460836011846,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0030454767839502217,
+        "zipfVelocity": -0.02857142857142857,
+        "composite": 0.383135951306778
+      },
+      {
+        "ticker": "RIVN",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 3.120133943245201,
+        "betaR2": 0.09275834770449964,
+        "betaTrajectory": -6.955874825369405,
+        "csdIndex": 0.3079718612540944,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.006576056441176792,
+        "zipfVelocity": -3.6,
+        "composite": 0.5033333333333333
+      },
+      {
+        "ticker": "ACHR",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": null,
+        "betaR2": null,
+        "betaTrajectory": null,
+        "csdIndex": 0.5,
+        "sCurvePhase": null,
+        "benfordKLD": 0.003809339338686362,
+        "zipfVelocity": null,
+        "composite": 0.5
+      },
+      {
+        "ticker": "BYND",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2021-02-15",
+        "beta": 0.39651280043306675,
+        "betaR2": 0.1614008604055891,
+        "betaTrajectory": -0.34034950188305746,
+        "csdIndex": 0.44112595174661706,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.001920861938048322,
+        "zipfVelocity": null,
+        "composite": 0.2910854667388445
+      },
+      {
+        "ticker": "FSLR",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.45197328533325276,
+        "betaR2": 0.063115350728157,
+        "betaTrajectory": 0.6069545967734715,
+        "csdIndex": 0.5003154691198178,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0013543955346581368,
+        "zipfVelocity": 1.4242424242424243,
+        "composite": 0.5602631047111004
+      },
+      {
+        "ticker": "ALB",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.45292645060688014,
+        "betaR2": 0.2011299418122765,
+        "betaTrajectory": 0.9067769448040282,
+        "csdIndex": 0.5028145690756796,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0012665419143829569,
+        "zipfVelocity": null,
+        "composite": 0.8254877417678134
+      },
+      {
+        "ticker": "SHLS",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.6861447158205145,
+        "betaR2": 0.22901981564616924,
+        "betaTrajectory": 7.348481346225995,
+        "csdIndex": 0.5107645195395525,
+        "sCurvePhase": "ACCELERATING",
+        "benfordKLD": 0.010514682479463786,
+        "zipfVelocity": 0.9142857142857143,
+        "composite": 0.4595716350911682
+      },
+      {
+        "ticker": "MP",
+        "outcome": "trap",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.2610475007207754,
+        "betaR2": 0.3773502478135623,
+        "betaTrajectory": 0.21592087813865585,
+        "csdIndex": 0.48224218786390943,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.008541250459841805,
+        "zipfVelocity": null,
+        "composite": 0.5948063334294367
+      },
+      {
+        "ticker": "FLR",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2022-02-15",
+        "beta": 0.7239124952874534,
+        "betaR2": 0.026024130997999162,
+        "betaTrajectory": 0.888876406892667,
+        "csdIndex": 0.4978925073894196,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0007944930534542094,
+        "zipfVelocity": 0.3212121212121212,
+        "composite": 0.4365216660383271
+      },
+      {
+        "ticker": "VST",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-01-15",
+        "beta": 1.5160928556551516,
+        "betaR2": 0.3944966979575304,
+        "betaTrajectory": -1.3524622893509113,
+        "csdIndex": 0.4880663466505804,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0025618789171200813,
+        "zipfVelocity": null,
+        "composite": 0.425
+      },
+      {
+        "ticker": "SMCI",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-01-15",
+        "beta": 0.9504020893979281,
+        "betaR2": 0.7721154609512624,
+        "betaTrajectory": -0.13676133132297053,
+        "csdIndex": 0.5022393708266464,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0007258358928989971,
+        "zipfVelocity": 0.06666666666666667,
+        "composite": 0.40672027858639037
+      },
+      {
+        "ticker": "HWM",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-01-15",
+        "beta": 0.972893466807034,
+        "betaR2": 0.512950788102774,
+        "betaTrajectory": 0.3616436009374209,
+        "csdIndex": 0.5114115957734988,
+        "sCurvePhase": "INFLECTION",
+        "benfordKLD": 0.0015798087727049415,
+        "zipfVelocity": 0.6121212121212121,
+        "composite": 0.6297191289076045
+      },
+      {
+        "ticker": "KTOS",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-01-15",
+        "beta": 0.7427908346532506,
+        "betaR2": 0.12406065308144065,
+        "betaTrajectory": 1.050295986151686,
+        "csdIndex": 0.48986216929422355,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.00147197531497552,
+        "zipfVelocity": 0.6,
+        "composite": 0.5658656482948056
+      },
+      {
+        "ticker": "AXON",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2023-01-15",
+        "beta": 0.7474292777247126,
+        "betaR2": 0.7991363193548251,
+        "betaTrajectory": -0.12827637861427366,
+        "csdIndex": 0.5077458614970748,
+        "sCurvePhase": "BOTTOMING",
+        "benfordKLD": 0.0020653169318031674,
+        "zipfVelocity": -0.21212121212121213,
+        "composite": 0.3881420855148102
+      },
+      {
+        "ticker": "HIMS",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2024-01-15",
+        "beta": 1.2951249828947264,
+        "betaR2": 0.6366800833661159,
+        "betaTrajectory": 0.058343872870000646,
+        "csdIndex": 0.510970281748198,
+        "sCurvePhase": "DECELERATING",
+        "benfordKLD": 0.0022645970522639763,
+        "zipfVelocity": -0.2571428571428571,
+        "composite": 0.5396567910783459
+      },
+      {
+        "ticker": "GE",
+        "outcome": "winner",
+        "tier": 4,
+        "pipeline": "Regime",
+        "entry_date": "2024-01-15",
+        "beta": 0.6470557601563416,
+        "betaR2": 0.34766955778194975,
+        "betaTrajectory": 0.3363659897287897,
+        "csdIndex": 0.470084871919841,
+        "sCurvePhase": "PEAK",
+        "benfordKLD": 0.0010078998324949359,
+        "zipfVelocity": 0.3575757575757576,
+        "composite": 0.5862741013541789
+      }
+    ],
+    "summary": {
+      "totalScored": 172,
+      "withBeta": 167,
+      "withComposite": 172
+    }
+  }
+}

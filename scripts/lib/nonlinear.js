@@ -372,3 +372,105 @@ export function trackRankHistory(ticker, sectorCompanies, years) {
 
   return { ranks, years: validYears };
 }
+
+// ============================================
+// DEEP TEST EXTENSIONS
+// ============================================
+
+// Variant of computeScalingExponent with configurable minimum quarter count
+export function computeScalingExponentMinQ(quarterlyMetrics, xMetric = 'assets', yMetric = 'revenue', minQuarters = 8) {
+  const points = quarterlyMetrics
+    .filter(q => q[xMetric] > 0 && q[yMetric] > 0)
+    .map(q => ({
+      x: Math.log10(q[xMetric]),
+      y: Math.log10(q[yMetric]),
+    }));
+
+  if (points.length < minQuarters) return null;
+
+  const reg = linearRegression(points.map(p => p.x), points.map(p => p.y));
+  if (!reg) return null;
+
+  return {
+    beta: reg.slope,
+    logK: reg.intercept,
+    r2: reg.r2,
+    n: points.length,
+  };
+}
+
+// Compute β velocity: rate of change of β per quarter using rolling windows
+export function betaVelocity(quarterlyMetrics, windowSize = 8, stepSize = 2) {
+  const valid = quarterlyMetrics.filter(q => q.assets > 0 && q.revenue > 0);
+  if (valid.length < windowSize + stepSize * 2) return null;
+
+  const betas = [];
+  for (let i = 0; i <= valid.length - windowSize; i += stepSize) {
+    const window = valid.slice(i, i + windowSize);
+    const beta = computeScalingExponent(window);
+    if (beta) betas.push({ index: i, beta: beta.beta, r2: beta.r2 });
+  }
+
+  if (betas.length < 3) return null;
+
+  // Linear regression of β over window indices to get slope (Δβ per step)
+  const reg = linearRegression(
+    betas.map(b => b.index),
+    betas.map(b => b.beta)
+  );
+
+  if (!reg) return null;
+
+  // Convert slope from per-index to per-quarter
+  const velocityPerQuarter = reg.slope * stepSize;
+
+  return {
+    velocity: velocityPerQuarter,
+    r2: reg.r2,
+    nWindows: betas.length,
+    startBeta: betas[0].beta,
+    endBeta: betas[betas.length - 1].beta,
+    betaChange: betas[betas.length - 1].beta - betas[0].beta,
+  };
+}
+
+// Non-linear composite score combining all 5 signals
+export function nonLinearCompositeScore({ beta, betaTrajectory, zipfVelocity, csdIndex, benfordKLD, sCurvePhase, companyRevenue }) {
+  const scores = [];
+
+  // β level (higher = better, cap at 1.5)
+  if (beta != null) scores.push(Math.min(beta / 1.5, 1.0));
+
+  // β trajectory (improving = higher score)
+  if (betaTrajectory != null) scores.push(betaTrajectory > 0 ? Math.min(betaTrajectory / 0.1, 1.0) : 0);
+
+  // Zipf rank velocity (climbing = higher score, normalize by inverting)
+  if (zipfVelocity != null) scores.push(zipfVelocity < 0 ? Math.min(Math.abs(zipfVelocity) / 5, 1.0) : 0);
+
+  // CSD + Benford (only score highly if CSD elevated AND Benford conforming)
+  if (csdIndex != null && benfordKLD != null) {
+    const csdHigh = csdIndex > 0.5;
+    const benfordClean = benfordKLD < 0.003;
+    scores.push(csdHigh && benfordClean ? 1.0 : csdHigh && !benfordClean ? 0.2 : 0.5);
+  }
+
+  // S-curve phase
+  if (sCurvePhase != null) {
+    const phaseScores = {
+      'ACCELERATING': 0.8,
+      'PEAK': 1.0,
+      'INFLECTION': 0.5,
+      'BOTTOMING': 0.4,
+      'DECELERATING': 0.2,
+    };
+    scores.push(phaseScores[sCurvePhase] || 0.5);
+  }
+
+  // Maturity-adjusted Benford (only for $100M-$1B companies)
+  if (companyRevenue >= 1e8 && companyRevenue <= 1e9 && benfordKLD != null) {
+    scores.push(benfordKLD < 0.002 ? 1.0 : benfordKLD < 0.004 ? 0.7 : 0.3);
+  }
+
+  if (scores.length === 0) return null;
+  return scores.reduce((s, v) => s + v, 0) / scores.length;
+}
