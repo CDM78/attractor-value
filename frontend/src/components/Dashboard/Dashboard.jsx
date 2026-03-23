@@ -20,6 +20,9 @@ export default function Dashboard() {
   const [capitalSubmitting, setCapitalSubmitting] = useState(false)
   const [recentBanner, setRecentBanner] = useState(null)
   const [bannerDismissed, setBannerDismissed] = useState(false)
+  const [buyModal, setBuyModal] = useState(null) // { ticker, name, tier, suggestedShares, suggestedPrice }
+  const [buyForm, setBuyForm] = useState({ price: '', shares: '', date: new Date().toISOString().split('T')[0] })
+  const [buySubmitting, setBuySubmitting] = useState(false)
 
   useEffect(() => {
     fetchSignals()
@@ -98,27 +101,40 @@ export default function Dashboard() {
     setTimeout(() => setToast(null), 5000)
   }
 
-  const executeBuy = async (signal) => {
+  const openBuyModal = (ticker, name, tier, suggestedShares, suggestedPrice) => {
+    setBuyForm({
+      price: suggestedPrice ? String(suggestedPrice) : '',
+      shares: suggestedShares ? String(suggestedShares) : '',
+      date: new Date().toISOString().split('T')[0],
+    })
+    setBuyModal({ ticker, name, tier })
+  }
+
+  const submitBuy = async () => {
+    if (!buyModal || !buyForm.price || !buyForm.shares) return
+    setBuySubmitting(true)
     try {
       const res = await fetch(`${API_BASE}/api/portfolio`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          ticker: signal.ticker,
-          tier: signal.discovery_tier || 'tier3',
-          shares: signal.recommended_shares || 1,
-          cost_basis_per_share: signal.current_price,
-          purchase_date: new Date().toISOString().split('T')[0],
-          purchase_thesis: `${signal.signal_confidence || 'STANDARD'} BUY via ${signal.discovery_tier}`,
+          ticker: buyModal.ticker,
+          tier: buyModal.tier,
+          shares: parseFloat(buyForm.shares),
+          cost_basis_per_share: parseFloat(buyForm.price),
+          purchase_date: buyForm.date,
+          purchase_thesis: `BUY via ${buyModal.tier} pipeline`,
         }),
       })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      setActedSignals(prev => new Set([...prev, signal.ticker]))
-      showToast(`Bought ${signal.recommended_shares || '?'} shares of ${signal.ticker}`)
+      setActedSignals(prev => new Set([...prev, buyModal.ticker]))
+      showToast(`Recorded ${buyForm.shares} shares of ${buyModal.ticker} at $${buyForm.price}`)
+      setBuyModal(null)
       fetchHoldings()
     } catch (err) {
       showToast(`Failed: ${err.message}`, 'fail')
     }
+    setBuySubmitting(false)
   }
 
   const envColor = environment === 'STRESSED' ? 'bg-fail/15 text-fail'
@@ -211,6 +227,57 @@ export default function Dashboard() {
                 }`}
               >
                 {capitalSubmitting ? 'Processing...' : capitalModal === 'deposit' ? 'Add Capital' : 'Withdraw'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Buy Modal */}
+      {buyModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" onClick={() => setBuyModal(null)}>
+          <div className="bg-surface-secondary rounded-lg p-6 w-96 space-y-4" onClick={e => e.stopPropagation()}>
+            <h3 className="text-lg font-bold text-text-primary">
+              Buy {buyModal.ticker}
+            </h3>
+            <p className="text-sm text-text-secondary">
+              {buyModal.name && <span>{buyModal.name} — </span>}
+              Record your purchase details from your brokerage.
+            </p>
+            <div className="space-y-3">
+              <div>
+                <label className="text-xs text-text-secondary block mb-1">Price Per Share ($)</label>
+                <input type="number" step="0.01" value={buyForm.price}
+                  onChange={e => setBuyForm(f => ({ ...f, price: e.target.value }))}
+                  placeholder="e.g. 142.50" autoFocus
+                  className="w-full bg-surface-tertiary text-text-primary border border-border rounded px-3 py-2 text-sm" />
+              </div>
+              <div>
+                <label className="text-xs text-text-secondary block mb-1">Shares</label>
+                <input type="number" step="any" value={buyForm.shares}
+                  onChange={e => setBuyForm(f => ({ ...f, shares: e.target.value }))}
+                  placeholder="e.g. 10"
+                  className="w-full bg-surface-tertiary text-text-primary border border-border rounded px-3 py-2 text-sm" />
+              </div>
+              <div>
+                <label className="text-xs text-text-secondary block mb-1">Purchase Date</label>
+                <input type="date" value={buyForm.date}
+                  onChange={e => setBuyForm(f => ({ ...f, date: e.target.value }))}
+                  className="w-full bg-surface-tertiary text-text-primary border border-border rounded px-3 py-2 text-sm" />
+              </div>
+              {buyForm.price && buyForm.shares && (
+                <div className="text-sm text-text-secondary">
+                  Total: <span className="text-text-primary font-medium">${(parseFloat(buyForm.price) * parseFloat(buyForm.shares)).toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
+                </div>
+              )}
+            </div>
+            <div className="flex gap-2 justify-end">
+              <button onClick={() => setBuyModal(null)} className="text-xs px-4 py-2 rounded bg-surface-tertiary text-text-secondary">Cancel</button>
+              <button disabled={buySubmitting || !buyForm.price || !buyForm.shares}
+                onClick={submitBuy}
+                className="text-xs px-4 py-2 rounded bg-pass/20 text-pass font-medium disabled:opacity-50"
+              >
+                {buySubmitting ? 'Recording...' : 'Record Purchase'}
               </button>
             </div>
           </div>
@@ -384,13 +451,13 @@ export default function Dashboard() {
                     )}
                     {!actedSignals.has(s.ticker) ? (
                       <button
-                        onClick={() => executeBuy(s)}
+                        onClick={() => openBuyModal(s.ticker, s.company_name, s.discovery_tier || 'growth', s.recommended_shares, s.current_price)}
                         className="text-xs px-3 py-1.5 rounded bg-pass/20 text-pass hover:bg-pass/30 transition-colors font-medium"
                       >
-                        EXECUTE BUY
+                        BUY
                       </button>
                     ) : (
-                      <span className="text-xs px-3 py-1.5 rounded bg-pass/10 text-pass/60">Executed</span>
+                      <span className="text-xs px-3 py-1.5 rounded bg-pass/10 text-pass/60">Recorded</span>
                     )}
                   </div>
                 </div>
@@ -485,11 +552,23 @@ export default function Dashboard() {
                         </span>
                       )}
                     </div>
-                    {candidates.length > 0 && (
-                      <div className="text-xs text-text-secondary">
-                        Based on: {candidates.map(c => c.ticker).join(', ')}
-                      </div>
-                    )}
+                    <div className="flex items-center gap-2 flex-wrap">
+                      {candidates.length > 0 && (
+                        <span className="text-xs text-text-secondary">
+                          Based on: {candidates.map(c => c.ticker).join(', ')}
+                        </span>
+                      )}
+                      {!actedSignals.has(s.etf_ticker || s.etf) ? (
+                        <button
+                          onClick={() => openBuyModal(s.etf_ticker || s.etf, s.etf_name, 'growth', null, null)}
+                          className="text-xs px-3 py-1.5 rounded bg-pass/20 text-pass hover:bg-pass/30 transition-colors font-medium"
+                        >
+                          BUY
+                        </button>
+                      ) : (
+                        <span className="text-xs px-3 py-1.5 rounded bg-pass/10 text-pass/60">Recorded</span>
+                      )}
+                    </div>
                   </div>
                 )
               })}

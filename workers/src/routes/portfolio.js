@@ -2,12 +2,12 @@ export async function portfolioRoutes(request, env, ctx, { path, jsonResponse, e
   if (request.method === 'GET') {
     const holdings = await env.DB.prepare(
       `SELECT h.*, s.company_name, s.sector, md.price,
-              (md.price * h.shares) as current_value,
-              ((md.price - h.cost_basis_per_share) / h.cost_basis_per_share * 100) as gain_loss_pct,
+              (COALESCE(md.price, h.cost_basis_per_share) * h.shares) as current_value,
+              CASE WHEN md.price IS NOT NULL THEN ((md.price - h.cost_basis_per_share) / h.cost_basis_per_share * 100) ELSE 0 END as gain_loss_pct,
               aa.attractor_stability_score,
               v.adjusted_intrinsic_value, v.buy_below_price, v.discount_to_iv_pct
        FROM holdings h
-       JOIN stocks s ON h.ticker = s.ticker
+       LEFT JOIN stocks s ON h.ticker = s.ticker
        LEFT JOIN market_data md ON h.ticker = md.ticker
        LEFT JOIN attractor_analysis aa ON h.ticker = aa.ticker
          AND aa.id = (SELECT id FROM attractor_analysis WHERE ticker = h.ticker ORDER BY analysis_date DESC, id DESC LIMIT 1)
