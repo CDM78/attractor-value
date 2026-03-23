@@ -114,19 +114,19 @@ export default function AdminPage() {
                 placeholder="e.g. 100000"
               />
               <InputField
-                label="T2 Crisis Allocation (%)"
+                label="Crisis Allocation (%)"
                 value={config.t2_pct}
                 onChange={handleChange('t2_pct')}
                 placeholder="e.g. 30"
               />
               <InputField
-                label="T3 DKS Allocation (%)"
+                label="Growth Allocation (%)"
                 value={config.t3_pct}
                 onChange={handleChange('t3_pct')}
                 placeholder="e.g. 30"
               />
               <InputField
-                label="T4 Regime Allocation (%)"
+                label="Regime Allocation (%)"
                 value={config.t4_pct}
                 onChange={handleChange('t4_pct')}
                 placeholder="e.g. 20"

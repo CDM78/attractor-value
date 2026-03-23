@@ -7,7 +7,7 @@ import { API_BASE } from '../../config.js'
 import TierBadge from './TierBadge'
 
 export default function Dashboard() {
-  const { buySignals, notYetSignals, positions, loading: sigLoading, error: sigError, fetchSignals, analyzingId, triggerDeepAnalysis } = useSignalStore()
+  const { buySignals, notYetSignals, positions, sectorSignals, loading: sigLoading, error: sigError, fetchSignals, analyzingId, triggerDeepAnalysis } = useSignalStore()
   const { environment, crisis, regimes, snapshot, loading: envLoading, error: envError, fetchEnvironment } = useEnvironmentStore()
   const { holdings, summary, loading: pfLoading, error: pfError, fetchHoldings } = usePortfolioStore()
   const [toast, setToast] = useState(null)
@@ -457,8 +457,48 @@ export default function Dashboard() {
           </div>
         )}
 
+        {/* SECTOR ETF SIGNALS (Growth Pipeline) */}
+        {sectorSignals.length > 0 && (
+          <div className="bg-surface-secondary rounded overflow-hidden">
+            <div className="bg-emerald-500/15 px-4 py-2 border-b border-emerald-500/20">
+              <h3 className="text-emerald-400 font-bold text-sm">GROWTH PIPELINE — Sector ETF Signals ({sectorSignals.length})</h3>
+            </div>
+            <div className="divide-y divide-border/50">
+              {sectorSignals.map((s, i) => {
+                const candidates = (() => { try { return typeof s.candidates_json === 'string' ? JSON.parse(s.candidates_json) : (s.candidates || []) } catch { return [] } })()
+                return (
+                  <div key={i} className="px-4 py-3 space-y-1.5">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="font-bold text-text-primary">{s.etf_ticker || s.etf}</span>
+                      <span className="text-text-secondary text-sm">{s.etf_name}</span>
+                      <span className="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400">
+                        {s.candidate_count} candidate{s.candidate_count !== 1 ? 's' : ''}
+                      </span>
+                      {s.weight != null && (
+                        <span className="text-xs px-2 py-0.5 rounded bg-surface-tertiary text-text-secondary">
+                          {typeof s.weight === 'number' && s.weight < 1 ? (s.weight * 100).toFixed(0) : s.weight}% weight
+                        </span>
+                      )}
+                      {s.allocation != null && (
+                        <span className="text-xs text-text-secondary">
+                          ${Number(s.allocation).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                        </span>
+                      )}
+                    </div>
+                    {candidates.length > 0 && (
+                      <div className="text-xs text-text-secondary">
+                        Based on: {candidates.map(c => c.ticker).join(', ')}
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Empty state */}
-        {buySignals.length === 0 && sellSignals.length === 0 && notYetSignals.length === 0 && (
+        {buySignals.length === 0 && sellSignals.length === 0 && notYetSignals.length === 0 && sectorSignals.length === 0 && (
           <div className="bg-surface-secondary rounded p-8 text-center text-text-secondary">
             No active signals. Run a{' '}
             <Link to="/admin" className="text-accent hover:underline">Bulk Analysis</Link>{' '}
@@ -549,11 +589,10 @@ export default function Dashboard() {
         <h3 className="text-sm font-bold text-text-secondary mb-3">Tier Allocation — ${configuredCapital.toLocaleString(undefined, { maximumFractionDigits: 0 })} Total</h3>
         <div className="space-y-1.5">
           {[
-            { label: 'T2 Crisis', pct: 15, color: 'bg-blue-500' },
-            { label: 'T3 DKS', pct: 30, color: 'bg-emerald-500' },
-            { label: 'T4 Regime', pct: 20, color: 'bg-purple-500' },
-            { label: 'Flexible', pct: 30, color: 'bg-accent' },
-            { label: 'Cash Reserve', pct: 5, color: 'bg-surface-tertiary' },
+            { label: 'Crisis', pct: 25, color: 'bg-blue-500' },
+            { label: 'Growth', pct: 20, color: 'bg-emerald-500' },
+            { label: 'Regime', pct: 15, color: 'bg-purple-500' },
+            { label: 'Flexible', pct: 35, color: 'bg-accent' },
           ].map(a => {
             const budget = Math.round(configuredCapital * a.pct / 100)
             return (

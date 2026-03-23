@@ -220,9 +220,9 @@ function AddPositionForm({ onAdd }) {
         <label className="text-xs text-text-secondary block mb-1">Tier</label>
         <select value={tier} onChange={e => setTier(e.target.value)}
           className="bg-surface-tertiary border border-border rounded px-3 py-1.5 text-sm text-text-primary">
-          <option value="T2">T2 Crisis</option>
-          <option value="T3">T3 DKS</option>
-          <option value="T4">T4 Regime</option>
+          <option value="crisis">Crisis</option>
+          <option value="growth">Growth</option>
+          <option value="regime">Regime</option>
         </select>
       </div>
       <button type="submit" disabled={submitting}

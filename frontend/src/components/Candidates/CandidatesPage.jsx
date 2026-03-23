@@ -4,7 +4,8 @@ import { API_BASE } from '../../config.js'
 import TierBadge from '../Dashboard/TierBadge'
 
 export default function CandidatesPage() {
-  const [candidates, setCandidates] = useState({ tier2: [], tier3: [], tier4: [] })
+  const [candidates, setCandidates] = useState({ crisis: [], growth: [], regime: [] })
+  const [sectorSignals, setSectorSignals] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [tierFilter, setTierFilter] = useState('all')
@@ -19,16 +20,18 @@ export default function CandidatesPage() {
     setLoading(true)
     setError(null)
     try {
-      const [t2, t3, t4] = await Promise.all([
-        fetch(`${API_BASE}/api/screen/tier2`).then(r => r.json()),
-        fetch(`${API_BASE}/api/screen/tier3`).then(r => r.json()),
-        fetch(`${API_BASE}/api/screen/tier4`).then(r => r.json()),
+      const [crisis, growth, regime, sectors] = await Promise.all([
+        fetch(`${API_BASE}/api/screen/crisis`).then(r => r.json()),
+        fetch(`${API_BASE}/api/screen/growth`).then(r => r.json()),
+        fetch(`${API_BASE}/api/screen/regime`).then(r => r.json()),
+        fetch(`${API_BASE}/api/signals/sectors`).then(r => r.json()).catch(() => ({ sector_signals: [] })),
       ])
       setCandidates({
-        tier2: t2.candidates || [],
-        tier3: t3.candidates || [],
-        tier4: t4.candidates || [],
+        crisis: crisis.candidates || [],
+        growth: growth.candidates || [],
+        regime: regime.candidates || [],
       })
+      setSectorSignals(sectors.sector_signals || [])
     } catch (err) {
       setError(err.message)
     }
@@ -36,9 +39,9 @@ export default function CandidatesPage() {
   }
 
   const allCandidates = [
-    ...candidates.tier2.map(c => ({ ...c, discovery_tier: c.discovery_tier || 'tier2' })),
-    ...candidates.tier3.map(c => ({ ...c, discovery_tier: c.discovery_tier || 'tier3' })),
-    ...candidates.tier4.map(c => ({ ...c, discovery_tier: c.discovery_tier || 'tier4' })),
+    ...candidates.crisis.map(c => ({ ...c, discovery_tier: c.discovery_tier || 'crisis' })),
+    ...candidates.growth.map(c => ({ ...c, discovery_tier: c.discovery_tier || 'growth' })),
+    ...candidates.regime.map(c => ({ ...c, discovery_tier: c.discovery_tier || 'regime' })),
   ]
 
   const filtered = tierFilter === 'all'
@@ -77,7 +80,7 @@ export default function CandidatesPage() {
       <div className="flex items-center justify-between flex-wrap gap-3">
         <h1 className="text-2xl font-bold">Pipeline Candidates</h1>
         <div className="flex items-center gap-2">
-          {['all', 'tier2', 'tier3', 'tier4'].map(t => (
+          {['all', 'crisis', 'growth', 'regime'].map(t => (
             <button
               key={t}
               onClick={() => setTierFilter(t)}
@@ -87,7 +90,7 @@ export default function CandidatesPage() {
                   : 'bg-surface-tertiary text-text-secondary hover:text-text-primary'
               }`}
             >
-              {t === 'all' ? 'All' : t === 'tier2' ? 'T2 Crisis' : t === 'tier3' ? 'T3 DKS' : 'T4 Regime'}
+              {t === 'all' ? 'All' : t === 'crisis' ? 'Crisis' : t === 'growth' ? 'Growth' : 'Regime'}
             </button>
           ))}
         </div>
@@ -117,10 +120,55 @@ export default function CandidatesPage() {
         <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-warn inline-block" /> MARGINAL (&le;105%)</span>
       </div>
 
+      {/* Sector ETF Signals (Growth Pipeline) */}
+      {sectorSignals.length > 0 && (tierFilter === 'all' || tierFilter === 'growth') && (
+        <div className="bg-surface-secondary rounded overflow-hidden">
+          <div className="bg-emerald-500/15 px-4 py-2 border-b border-emerald-500/20">
+            <h3 className="text-emerald-400 font-bold text-sm">Growth Pipeline — Sector ETF Recommendations</h3>
+          </div>
+          <div className="p-4">
+            <p className="text-xs text-text-secondary mb-3">
+              Sectors with ≥2 growth candidates signal a sector ETF buy. This approach beats VOO in 83% of historical periods.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {sectorSignals.map((s, i) => {
+                const etfCandidates = (() => { try { return typeof s.candidates_json === 'string' ? JSON.parse(s.candidates_json) : (s.candidates || []) } catch { return [] } })()
+                return (
+                  <div key={i} className="bg-surface-tertiary rounded p-3 space-y-1.5">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-emerald-400">{s.etf_ticker || s.etf}</span>
+                      <span className="text-xs text-text-secondary">{s.etf_name}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs">
+                      <span className="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400">
+                        {s.candidate_count} candidate{s.candidate_count !== 1 ? 's' : ''}
+                      </span>
+                      {s.weight != null && (
+                        <span className="text-text-secondary">
+                          {typeof s.weight === 'number' && s.weight < 1 ? (s.weight * 100).toFixed(0) : s.weight}% weight
+                        </span>
+                      )}
+                      {s.allocation != null && (
+                        <span className="text-text-secondary">${Number(s.allocation).toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+                      )}
+                    </div>
+                    {etfCandidates.length > 0 && (
+                      <div className="text-xs text-text-secondary">
+                        {etfCandidates.map(c => c.ticker).join(', ')}
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Candidates table */}
       {sorted.length === 0 ? (
         <div className="bg-surface-secondary rounded p-8 text-center text-text-secondary">
-          No candidates yet. Run a Tier 3 pre-screen from{' '}
+          No candidates yet. Run a Growth pre-screen from{' '}
           <Link to="/admin" className="text-accent hover:underline">Settings</Link>{' '}
           to populate the pipeline.
         </div>
@@ -238,7 +286,7 @@ function parsePrescreen(data) {
 }
 
 function TierDetail({ candidate: c, prescreen }) {
-  if (c.discovery_tier === 'tier3') {
+  if (c.discovery_tier === 'growth' || c.discovery_tier === 'tier3') {
     return (
       <div className="space-y-0.5">
         {c.dks_score != null && <span className="text-accent">DKS {c.dks_score.toFixed(1)}</span>}
@@ -257,7 +305,7 @@ function TierDetail({ candidate: c, prescreen }) {
     )
   }
 
-  if (c.discovery_tier === 'tier4') {
+  if (c.discovery_tier === 'regime' || c.discovery_tier === 'tier4') {
     return (
       <div className="space-y-0.5">
         {c.csi_score != null && (
@@ -275,7 +323,7 @@ function TierDetail({ candidate: c, prescreen }) {
     )
   }
 
-  if (c.discovery_tier === 'tier2') {
+  if (c.discovery_tier === 'crisis' || c.discovery_tier === 'tier2') {
     return (
       <div className="space-y-0.5">
         {c.crisis_assessment && (

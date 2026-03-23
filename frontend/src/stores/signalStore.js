@@ -5,6 +5,7 @@ export const useSignalStore = create((set, get) => ({
   buySignals: [],
   notYetSignals: [],
   positions: [],
+  sectorSignals: [],
   loading: false,
   error: null,
   analyzingId: null,
@@ -20,6 +21,7 @@ export const useSignalStore = create((set, get) => ({
         buySignals: data.buy_signals || data.buySignals || [],
         notYetSignals: data.not_yet || data.notYetSignals || [],
         positions: data.positions || [],
+        sectorSignals: data.sector_signals || [],
         loading: false,
       })
     } catch (err) {
