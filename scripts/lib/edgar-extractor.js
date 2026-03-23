@@ -3,6 +3,7 @@
 
 const VALID_FORMS = new Set(['10-K', '10-K/A', '10-Q', '10-Q/A', '20-F', '20-F/A']);
 const NAMESPACES = ['us-gaap', 'ifrs-full'];
+const ALL_NAMESPACES = ['us-gaap', 'ifrs-full', 'dei']; // dei for employee counts
 
 // Extract ALL USD values from a companyfacts JSON object
 export function extractAllUsdValues(facts) {
@@ -155,6 +156,134 @@ export function extractKeyMetricDigits(facts, beforeDate) {
     operatingCashFlow: { value: ocf, leadingDigit: leadingDigit(ocf) },
     netIncome: { value: netIncome, leadingDigit: leadingDigit(netIncome) },
   };
+}
+
+// ============================================
+// QUARTERLY METRIC EXTRACTION (for nonlinear dynamics tests)
+// ============================================
+
+// Tag alternatives for each metric (tried in order)
+const METRIC_TAGS = {
+  revenue: ['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax', 'SalesRevenueNet', 'SalesRevenueGoodsNet'],
+  assets: ['Assets'],
+  operatingIncome: ['OperatingIncomeLoss'],
+  netIncome: ['NetIncomeLoss'],
+  ocf: ['NetCashProvidedByUsedInOperatingActivities', 'NetCashProvidedByOperatingActivities'],
+  grossProfit: ['GrossProfit'],
+  costOfRevenue: ['CostOfRevenue', 'CostOfGoodsAndServicesSold', 'CostOfGoodsSold'],
+  employees: ['EntityNumberOfEmployees'],
+};
+
+// Find the best quarterly value for a tag list from companyfacts
+function findQuarterlyValues(facts, tagList, useAbsoluteValue = false) {
+  if (!facts?.facts) return {};
+
+  const byQuarter = {}; // quarter → { value, end, form, filed }
+
+  const namespacesToSearch = tagList.includes('EntityNumberOfEmployees') ? ALL_NAMESPACES : NAMESPACES;
+
+  for (const ns of namespacesToSearch) {
+    const nsFacts = facts.facts[ns];
+    if (!nsFacts) continue;
+
+    for (const tag of tagList) {
+      const tagData = nsFacts[tag];
+      if (!tagData) continue;
+
+      // Check USD units first, then pure (for employee counts)
+      const entries = tagData.units?.USD || tagData.units?.pure || tagData.units?.[''] || [];
+
+      for (const entry of entries) {
+        if (!VALID_FORMS.has(entry.form)) continue;
+        if (entry.val == null) continue;
+
+        const qk = dateToQuarter(entry.end);
+        if (!qk) continue;
+
+        const val = useAbsoluteValue ? Math.abs(entry.val) : entry.val;
+
+        // Prefer quarterly filings (10-Q) over annual (10-K) for quarterly granularity
+        // But for cumulative metrics, we need to de-cumulate annual filings
+        const isQuarterly = entry.fp && entry.fp !== 'FY';
+        const existing = byQuarter[qk];
+
+        if (!existing || (isQuarterly && !existing.isQuarterly) || (!existing && !isQuarterly)) {
+          byQuarter[qk] = { value: val, end: entry.end, form: entry.form, fp: entry.fp, isQuarterly };
+        }
+      }
+    }
+  }
+
+  return byQuarter;
+}
+
+// Extract structured quarterly metrics for a company
+export function extractQuarterlyMetrics(facts, beforeDate = null) {
+  if (!facts?.facts) return [];
+
+  const raw = {};
+  for (const [metric, tags] of Object.entries(METRIC_TAGS)) {
+    raw[metric] = findQuarterlyValues(facts, tags, metric === 'assets' || metric === 'employees');
+  }
+
+  // Collect all quarters that have at least revenue or assets
+  const allQuarters = new Set();
+  for (const metric of Object.values(raw)) {
+    for (const qk of Object.keys(metric)) allQuarters.add(qk);
+  }
+
+  const quarters = [...allQuarters]
+    .sort((a, b) => quarterToSortKey(a) - quarterToSortKey(b))
+    .filter(qk => !beforeDate || qk <= dateToQuarter(beforeDate));
+
+  const result = [];
+  for (const qk of quarters) {
+    const q = { quarter: qk };
+    for (const [metric, qMap] of Object.entries(raw)) {
+      q[metric] = qMap[qk]?.value ?? null;
+    }
+
+    // Only include quarters that have at least revenue or assets
+    if (q.revenue != null || q.assets != null) {
+      result.push(q);
+    }
+  }
+
+  // Add derived metrics
+  for (let i = 0; i < result.length; i++) {
+    const q = result[i];
+
+    // Operating margin
+    q.operatingMargin = (q.revenue && q.operatingIncome != null) ? q.operatingIncome / q.revenue : null;
+
+    // FCF margin (using OCF as proxy)
+    q.fcfMargin = (q.revenue && q.ocf != null) ? q.ocf / q.revenue : null;
+
+    // Gross margin
+    q.grossMargin = (q.revenue && q.grossProfit != null) ? q.grossProfit / q.revenue : null;
+
+    // YoY revenue growth (4-quarter lag to remove seasonality)
+    if (i >= 4 && result[i - 4].revenue > 0 && q.revenue != null) {
+      q.revenueGrowthYoY = (q.revenue - result[i - 4].revenue) / Math.abs(result[i - 4].revenue);
+    } else {
+      q.revenueGrowthYoY = null;
+    }
+  }
+
+  return result;
+}
+
+// Get revenue at or before a date (for maturity segmentation)
+export function getRevenueAtDate(facts, date) {
+  const metrics = extractQuarterlyMetrics(facts, date);
+  // Find most recent quarter with revenue before date
+  for (let i = metrics.length - 1; i >= 0; i--) {
+    if (metrics[i].revenue != null && metrics[i].revenue > 0) {
+      // Annualize quarterly revenue (×4)
+      return metrics[i].revenue * 4;
+    }
+  }
+  return null;
 }
 
 // Summary stats for extracted data
