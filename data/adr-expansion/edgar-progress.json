@@ -1,0 +1,622 @@
+{
+  "ASML": {
+    "status": "ok",
+    "cik": "0000937966",
+    "accounting_standard": "foreign-gaap",
+    "quarters": 19,
+    "revenueByDate": {
+      "2014-06-15": 20981304000,
+      "2017-06-15": 27500400000,
+      "2020-06-15": 47280000000
+    },
+    "hasEnoughData": true
+  },
+  "SAP": {
+    "status": "ok",
+    "cik": "0001000184",
+    "accounting_standard": "ifrs",
+    "quarters": 1,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 112820000000
+    },
+    "hasEnoughData": false
+  },
+  "NVO": {
+    "status": "ok",
+    "cik": "0000353278",
+    "accounting_standard": "ifrs",
+    "quarters": 7,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 488084000000
+    },
+    "hasEnoughData": false
+  },
+  "AZN": {
+    "status": "ok",
+    "cik": "0000901832",
+    "accounting_standard": "ifrs",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 92008000000,
+      "2020-06-15": 97536000000
+    },
+    "hasEnoughData": true
+  },
+  "UL": {
+    "status": "ok",
+    "cik": "0000217410",
+    "accounting_standard": "ifrs",
+    "quarters": 12,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 210852000000,
+      "2020-06-15": 207920000000
+    },
+    "hasEnoughData": true
+  },
+  "SHOP": {
+    "status": "ok",
+    "cik": "0001594805",
+    "accounting_standard": "us-gaap",
+    "quarters": 12,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "GSK": {
+    "status": "not_found",
+    "cik": "0000809509"
+  },
+  "DEO": {
+    "status": "ok",
+    "cik": "0000835403",
+    "accounting_standard": "ifrs",
+    "quarters": 8,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 70788000000
+    },
+    "hasEnoughData": true
+  },
+  "RY": {
+    "status": "ok",
+    "cik": "0001000275",
+    "accounting_standard": "ifrs",
+    "quarters": 0,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": false
+  },
+  "BHP": {
+    "status": "ok",
+    "cik": "0000811809",
+    "accounting_standard": "ifrs",
+    "quarters": 10,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 144540000000,
+      "2020-06-15": 171724000000
+    },
+    "hasEnoughData": true
+  },
+  "RIO": {
+    "status": "ok",
+    "cik": "0000863064",
+    "accounting_standard": "ifrs",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 135124000000,
+      "2020-06-15": 172660000000
+    },
+    "hasEnoughData": true
+  },
+  "BP": {
+    "status": "ok",
+    "cik": "0000313807",
+    "accounting_standard": "ifrs",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 746424000000,
+      "2020-06-15": 1130464000000
+    },
+    "hasEnoughData": true
+  },
+  "SHEL": {
+    "status": "ok",
+    "cik": "0001306965",
+    "accounting_standard": "ifrs",
+    "quarters": 12,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 934364000000,
+      "2020-06-15": 1379508000000
+    },
+    "hasEnoughData": true
+  },
+  "TTE": {
+    "status": "ok",
+    "cik": "0000879764",
+    "accounting_standard": "ifrs",
+    "quarters": 10,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 511700000000,
+      "2020-06-15": 704996000000
+    },
+    "hasEnoughData": true
+  },
+  "SNY": {
+    "status": "ok",
+    "cik": "0001121404",
+    "accounting_standard": "ifrs",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 135284000000,
+      "2020-06-15": 144504000000
+    },
+    "hasEnoughData": true
+  },
+  "HSBC": {
+    "status": "ok",
+    "cik": "0000083246",
+    "accounting_standard": "us-gaap",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": 7408000000,
+      "2017-06-15": 9468000000,
+      "2020-06-15": 3792000000
+    },
+    "hasEnoughData": true
+  },
+  "TD": {
+    "status": "ok",
+    "cik": "0000947263",
+    "accounting_standard": "ifrs",
+    "quarters": 0,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": false
+  },
+  "ENB": {
+    "status": "ok",
+    "cik": "0000895728",
+    "accounting_standard": "foreign-gaap",
+    "quarters": 41,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 89048000000,
+      "2020-06-15": 79876000000
+    },
+    "hasEnoughData": true
+  },
+  "CNI": {
+    "status": "ok",
+    "cik": "0001001085",
+    "accounting_standard": "ifrs",
+    "quarters": 0,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": false
+  },
+  "CP": {
+    "status": "not_found",
+    "cik": "0001001882"
+  },
+  "BTI": {
+    "status": "ok",
+    "cik": "0000060714",
+    "accounting_standard": "us-gaap",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 1520748000,
+      "2017-06-15": 984788000,
+      "2020-06-15": 753776000
+    },
+    "hasEnoughData": true
+  },
+  "ABB": {
+    "status": "ok",
+    "cik": "0001091587",
+    "accounting_standard": "us-gaap",
+    "quarters": 17,
+    "revenueByDate": {
+      "2014-06-15": 167392000000,
+      "2017-06-15": 135312000000,
+      "2020-06-15": 111912000000
+    },
+    "hasEnoughData": true
+  },
+  "WCN": {
+    "status": "ok",
+    "cik": "0001057058",
+    "accounting_standard": "us-gaap",
+    "quarters": 29,
+    "revenueByDate": {
+      "2014-06-15": 4025608000,
+      "2017-06-15": 2058720000,
+      "2020-06-15": 2058720000
+    },
+    "hasEnoughData": true
+  },
+  "ING": {
+    "status": "not_found",
+    "cik": "0000052975"
+  },
+  "RELX": {
+    "status": "not_found",
+    "cik": "0000772274"
+  },
+  "MELI": {
+    "status": "ok",
+    "cik": "0001099590",
+    "accounting_standard": "us-gaap",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 2214232000,
+      "2020-06-15": 6121840000
+    },
+    "hasEnoughData": true
+  },
+  "TM": {
+    "status": "ok",
+    "cik": "0001094517",
+    "accounting_standard": "us-gaap",
+    "quarters": 12,
+    "revenueByDate": {
+      "2014-06-15": 938404000000,
+      "2017-06-15": 938404000000,
+      "2020-06-15": 119719968000000
+    },
+    "hasEnoughData": true
+  },
+  "SONY": {
+    "status": "ok",
+    "cik": "0000313838",
+    "accounting_standard": "us-gaap",
+    "quarters": 21,
+    "revenueByDate": {
+      "2014-06-15": 31069064000000,
+      "2017-06-15": 30413000000000,
+      "2020-06-15": 33039540000000
+    },
+    "hasEnoughData": true
+  },
+  "HMC": {
+    "status": "ok",
+    "cik": "0000715153",
+    "accounting_standard": "us-gaap",
+    "quarters": 35,
+    "revenueByDate": {
+      "2014-06-15": 47369804000000,
+      "2017-06-15": 55996800000000,
+      "2020-06-15": 59724036000000
+    },
+    "hasEnoughData": true
+  },
+  "MUFG": {
+    "status": "ok",
+    "cik": "0000067088",
+    "accounting_standard": "foreign-gaap",
+    "quarters": 17,
+    "revenueByDate": {
+      "2014-06-15": 17373456000000,
+      "2017-06-15": 16749892000000,
+      "2020-06-15": 23211352000000
+    },
+    "hasEnoughData": true
+  },
+  "BABA": {
+    "status": "ok",
+    "cik": "0001577552",
+    "accounting_standard": "us-gaap",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 91976000000,
+      "2020-06-15": 287940000000
+    },
+    "hasEnoughData": true
+  },
+  "TSM": {
+    "status": "ok",
+    "cik": "0001046179",
+    "accounting_standard": "ifrs",
+    "quarters": 10,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 3789663600000,
+      "2020-06-15": 143094000000
+    },
+    "hasEnoughData": true
+  },
+  "PDD": {
+    "status": "ok",
+    "cik": "0001737806",
+    "accounting_standard": "us-gaap",
+    "quarters": 7,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 17318444000
+    },
+    "hasEnoughData": false
+  },
+  "JD": {
+    "status": "ok",
+    "cik": "0001549802",
+    "accounting_standard": "us-gaap",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 149861240000,
+      "2020-06-15": 331459384000
+    },
+    "hasEnoughData": true
+  },
+  "BIDU": {
+    "status": "ok",
+    "cik": "0001329099",
+    "accounting_standard": "us-gaap",
+    "quarters": 17,
+    "revenueByDate": {
+      "2014-06-15": 21107040000,
+      "2017-06-15": 40644888000,
+      "2020-06-15": 61716000000
+    },
+    "hasEnoughData": true
+  },
+  "NIO": {
+    "status": "ok",
+    "cik": "0001736541",
+    "accounting_standard": "us-gaap",
+    "quarters": 7,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 4495912000
+    },
+    "hasEnoughData": false
+  },
+  "SE": {
+    "status": "ok",
+    "cik": "0001747748",
+    "accounting_standard": "us-gaap",
+    "quarters": 14,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 1428428000
+    },
+    "hasEnoughData": true
+  },
+  "GRAB": {
+    "status": "ok",
+    "cik": "0001855612",
+    "accounting_standard": "ifrs",
+    "quarters": 7,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": false
+  },
+  "WIT": {
+    "status": "ok",
+    "cik": "0001318220",
+    "accounting_standard": "us-gaap",
+    "quarters": 45,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 9067340000,
+      "2020-06-15": 10632748000
+    },
+    "hasEnoughData": true
+  },
+  "INFY": {
+    "status": "ok",
+    "cik": "0001067491",
+    "accounting_standard": "ifrs",
+    "quarters": 10,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 40832000000,
+      "2020-06-15": 51120000000
+    },
+    "hasEnoughData": true
+  },
+  "HDB": {
+    "status": "ok",
+    "cik": "0001144967",
+    "accounting_standard": "us-gaap",
+    "quarters": 16,
+    "revenueByDate": {
+      "2014-06-15": 16398400000,
+      "2017-06-15": 26163200000,
+      "2020-06-15": 35768000000
+    },
+    "hasEnoughData": true
+  },
+  "NU": {
+    "status": "ok",
+    "cik": "0001881551",
+    "accounting_standard": "us-gaap",
+    "quarters": 16,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "VALE": {
+    "status": "ok",
+    "cik": "0000917851",
+    "accounting_standard": "ifrs",
+    "quarters": 16,
+    "revenueByDate": {
+      "2014-06-15": 195012000000,
+      "2017-06-15": 109952000000,
+      "2020-06-15": 150280000000
+    },
+    "hasEnoughData": true
+  },
+  "PBR": {
+    "status": "ok",
+    "cik": "0001119639",
+    "accounting_standard": "ifrs",
+    "quarters": 14,
+    "revenueByDate": {
+      "2014-06-15": 603408000000,
+      "2017-06-15": 325620000000,
+      "2020-06-15": 306356000000
+    },
+    "hasEnoughData": true
+  },
+  "ITUB": {
+    "status": "not_found",
+    "cik": "0001132260"
+  },
+  "SBS": {
+    "status": "ok",
+    "cik": "0001178879",
+    "accounting_standard": "us-gaap",
+    "quarters": 62,
+    "revenueByDate": {
+      "2014-06-15": 3724000,
+      "2017-06-15": 45308000,
+      "2020-06-15": 491512000
+    },
+    "hasEnoughData": true
+  },
+  "LK": {
+    "status": "ok",
+    "cik": "0001767582",
+    "accounting_standard": "us-gaap",
+    "quarters": 6,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 1738020000
+    },
+    "hasEnoughData": false
+  },
+  "TAL": {
+    "status": "ok",
+    "cik": "0001499620",
+    "accounting_standard": "us-gaap",
+    "quarters": 16,
+    "revenueByDate": {
+      "2014-06-15": 1255580820,
+      "2017-06-15": 4172400000,
+      "2020-06-15": 13093232000
+    },
+    "hasEnoughData": true
+  },
+  "VNET": {
+    "status": "ok",
+    "cik": "0001495231",
+    "accounting_standard": "us-gaap",
+    "quarters": 63,
+    "revenueByDate": {
+      "2014-06-15": 15705100,
+      "2017-06-15": 42189636,
+      "2020-06-15": 31594828
+    },
+    "hasEnoughData": true
+  },
+  "GSX": {
+    "status": "ok",
+    "cik": "0001768259",
+    "accounting_standard": "foreign-gaap",
+    "quarters": 6,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 1215120000
+    },
+    "hasEnoughData": false
+  },
+  "IQ": {
+    "status": "ok",
+    "cik": "0001712184",
+    "accounting_standard": "us-gaap",
+    "quarters": 34,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "NOK": {
+    "status": "ok",
+    "cik": "0000804328",
+    "accounting_standard": "us-gaap",
+    "quarters": 72,
+    "revenueByDate": {
+      "2014-06-15": 79180000000,
+      "2017-06-15": 65548000000,
+      "2020-06-15": 60740000000
+    },
+    "hasEnoughData": true
+  },
+  "DB": {
+    "status": "ok",
+    "cik": "0001159508",
+    "accounting_standard": "ifrs",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 120056000000,
+      "2020-06-15": 92660000000
+    },
+    "hasEnoughData": true
+  },
+  "CS": {
+    "status": "ok",
+    "cik": "0001053092",
+    "accounting_standard": "foreign-gaap",
+    "quarters": 6,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 90744000000
+    },
+    "hasEnoughData": false
+  },
+  "PHG": {
+    "status": "ok",
+    "cik": "0000313216",
+    "accounting_standard": "ifrs",
+    "quarters": 11,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 69688000000,
+      "2020-06-15": 77928000000
+    },
+    "hasEnoughData": true
+  }
+}

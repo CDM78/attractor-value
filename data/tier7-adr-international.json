@@ -1,0 +1,2431 @@
+{
+  "metadata": {
+    "tier": 7,
+    "dataset_role": "adr_international",
+    "source": "ADR/International companies filing 20-F with SEC EDGAR (IFRS + US GAAP)",
+    "case_count": 100,
+    "winners": 29,
+    "traps": 33,
+    "underperform": 23,
+    "mixed": 15,
+    "countries": [
+      "Argentina",
+      "Australia",
+      "Brazil",
+      "Canada",
+      "China",
+      "Finland",
+      "France",
+      "Germany",
+      "India",
+      "Japan",
+      "Netherlands",
+      "Singapore",
+      "Taiwan",
+      "UK"
+    ],
+    "generated": "2026-03-24T15:13:14.598Z"
+  },
+  "cases": [
+    {
+      "case_id": "T7-001",
+      "ticker": "ASML",
+      "company_name": "ASML Holding",
+      "country": "Netherlands",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 80.12,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.499,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 19,
+        "revenue_at_entry": 20981304000
+      }
+    },
+    {
+      "case_id": "T7-002",
+      "ticker": "ASML",
+      "company_name": "ASML Holding",
+      "country": "Netherlands",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 120.13,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.771,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 19,
+        "revenue_at_entry": 27500400000
+      }
+    },
+    {
+      "case_id": "T7-003",
+      "ticker": "ASML",
+      "company_name": "ASML Holding",
+      "country": "Netherlands",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 332.84,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.172,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 19,
+        "revenue_at_entry": 47280000000
+      }
+    },
+    {
+      "case_id": "T7-004",
+      "ticker": "AZN",
+      "company_name": "AstraZeneca",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 51.18,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.056,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-005",
+      "ticker": "AZN",
+      "company_name": "AstraZeneca",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 54.04,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.707,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 92008000000
+      }
+    },
+    {
+      "case_id": "T7-006",
+      "ticker": "AZN",
+      "company_name": "AstraZeneca",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 92.23,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.487,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 97536000000
+      }
+    },
+    {
+      "case_id": "T7-007",
+      "ticker": "UL",
+      "company_name": "Unilever",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 34.38,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.316,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 12,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-008",
+      "ticker": "UL",
+      "company_name": "Unilever",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 45.24,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.121,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 12,
+        "revenue_at_entry": 210852000000
+      }
+    },
+    {
+      "case_id": "T7-009",
+      "ticker": "UL",
+      "company_name": "Unilever",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 50.7,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.016,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 12,
+        "revenue_at_entry": 207920000000
+      }
+    },
+    {
+      "case_id": "T7-010",
+      "ticker": "SHOP",
+      "company_name": "Shopify",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 8.54,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 8.436,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 12,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-011",
+      "ticker": "SHOP",
+      "company_name": "Shopify",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 80.55,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.182,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 12,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-012",
+      "ticker": "DEO",
+      "company_name": "Diageo",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 94.13,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.023,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 8,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-013",
+      "ticker": "DEO",
+      "company_name": "Diageo",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 96.29,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.249,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 8,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-014",
+      "ticker": "DEO",
+      "company_name": "Diageo",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 120.27,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.319,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 8,
+        "revenue_at_entry": 70788000000
+      }
+    },
+    {
+      "case_id": "T7-015",
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "country": "Australia",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 28.47,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.374,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-016",
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "country": "Australia",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 17.83,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.709,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 144540000000
+      }
+    },
+    {
+      "case_id": "T7-017",
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "country": "Australia",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 30.48,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.825,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 171724000000
+      }
+    },
+    {
+      "case_id": "T7-018",
+      "ticker": "RIO",
+      "company_name": "Rio Tinto",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 21.92,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.103,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-019",
+      "ticker": "RIO",
+      "company_name": "Rio Tinto",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 19.67,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.83,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 135124000000
+      }
+    },
+    {
+      "case_id": "T7-020",
+      "ticker": "RIO",
+      "company_name": "Rio Tinto",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 35.99,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.554,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 172660000000
+      }
+    },
+    {
+      "case_id": "T7-021",
+      "ticker": "BP",
+      "company_name": "BP plc",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 26,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.166,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-022",
+      "ticker": "BP",
+      "company_name": "BP plc",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 21.7,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.165,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 746424000000
+      }
+    },
+    {
+      "case_id": "T7-023",
+      "ticker": "BP",
+      "company_name": "BP plc",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 18.11,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.666,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 1130464000000
+      }
+    },
+    {
+      "case_id": "T7-024",
+      "ticker": "SHEL",
+      "company_name": "Shell plc",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 44.38,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.184,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 12,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-025",
+      "ticker": "SHEL",
+      "company_name": "Shell plc",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 36.22,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.232,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 12,
+        "revenue_at_entry": 934364000000
+      }
+    },
+    {
+      "case_id": "T7-026",
+      "ticker": "SHEL",
+      "company_name": "Shell plc",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 27.81,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.91,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 12,
+        "revenue_at_entry": 1379508000000
+      }
+    },
+    {
+      "case_id": "T7-027",
+      "ticker": "TTE",
+      "company_name": "TotalEnergies",
+      "country": "France",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 36.82,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.167,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-028",
+      "ticker": "TTE",
+      "company_name": "TotalEnergies",
+      "country": "France",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 30.66,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.085,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 511700000000
+      }
+    },
+    {
+      "case_id": "T7-029",
+      "ticker": "TTE",
+      "company_name": "TotalEnergies",
+      "country": "France",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 28.06,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.807,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 704996000000
+      }
+    },
+    {
+      "case_id": "T7-030",
+      "ticker": "SNY",
+      "company_name": "Sanofi",
+      "country": "France",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 34.97,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.014,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-031",
+      "ticker": "SNY",
+      "company_name": "Sanofi",
+      "country": "France",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 34.47,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.205,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 135284000000
+      }
+    },
+    {
+      "case_id": "T7-032",
+      "ticker": "SNY",
+      "company_name": "Sanofi",
+      "country": "France",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 41.53,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.122,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 144504000000
+      }
+    },
+    {
+      "case_id": "T7-033",
+      "ticker": "HSBC",
+      "company_name": "HSBC Holdings",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 26.38,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.009,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 60,
+        "revenue_at_entry": 7408000000
+      }
+    },
+    {
+      "case_id": "T7-034",
+      "ticker": "HSBC",
+      "company_name": "HSBC Holdings",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 26.61,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.355,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 60,
+        "revenue_at_entry": 9468000000
+      }
+    },
+    {
+      "case_id": "T7-035",
+      "ticker": "HSBC",
+      "company_name": "HSBC Holdings",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 17.16,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.835,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 60,
+        "revenue_at_entry": 3792000000
+      }
+    },
+    {
+      "case_id": "T7-036",
+      "ticker": "ENB",
+      "company_name": "Enbridge",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 25.06,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.106,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 41,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-037",
+      "ticker": "ENB",
+      "company_name": "Enbridge",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 22.4,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.038,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 41,
+        "revenue_at_entry": 89048000000
+      }
+    },
+    {
+      "case_id": "T7-038",
+      "ticker": "ENB",
+      "company_name": "Enbridge",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 21.55,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.45,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 41,
+        "revenue_at_entry": 79876000000
+      }
+    },
+    {
+      "case_id": "T7-039",
+      "ticker": "BTI",
+      "company_name": "British American Tobacco",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 28.67,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.328,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 64,
+        "revenue_at_entry": 1520748000
+      }
+    },
+    {
+      "case_id": "T7-040",
+      "ticker": "BTI",
+      "company_name": "British American Tobacco",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 38.08,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.348,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 64,
+        "revenue_at_entry": 984788000
+      }
+    },
+    {
+      "case_id": "T7-041",
+      "ticker": "BTI",
+      "company_name": "British American Tobacco",
+      "country": "UK",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 24.81,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.048,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 64,
+        "revenue_at_entry": 753776000
+      }
+    },
+    {
+      "case_id": "T7-042",
+      "ticker": "WCN",
+      "company_name": "Waste Connections",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 28.55,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.179,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 29,
+        "revenue_at_entry": 4025608000
+      }
+    },
+    {
+      "case_id": "T7-043",
+      "ticker": "WCN",
+      "company_name": "Waste Connections",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 62.21,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.412,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 29,
+        "revenue_at_entry": 2058720000
+      }
+    },
+    {
+      "case_id": "T7-044",
+      "ticker": "WCN",
+      "company_name": "Waste Connections",
+      "country": "Canada",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 87.83,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.53,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 29,
+        "revenue_at_entry": 2058720000
+      }
+    },
+    {
+      "case_id": "T7-045",
+      "ticker": "MELI",
+      "company_name": "MercadoLibre",
+      "country": "Argentina",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 86.26,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.067,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 64,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-046",
+      "ticker": "MELI",
+      "company_name": "MercadoLibre",
+      "country": "Argentina",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 264.57,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.492,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 64,
+        "revenue_at_entry": 2214232000
+      }
+    },
+    {
+      "case_id": "T7-047",
+      "ticker": "MELI",
+      "company_name": "MercadoLibre",
+      "country": "Argentina",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 924,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.312,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 64,
+        "revenue_at_entry": 6121840000
+      }
+    },
+    {
+      "case_id": "T7-048",
+      "ticker": "TM",
+      "company_name": "Toyota Motor",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 83.89,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.022,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 12,
+        "revenue_at_entry": 938404000000
+      }
+    },
+    {
+      "case_id": "T7-049",
+      "ticker": "TM",
+      "company_name": "Toyota Motor",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 85.74,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.29,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 12,
+        "revenue_at_entry": 938404000000
+      }
+    },
+    {
+      "case_id": "T7-050",
+      "ticker": "TM",
+      "company_name": "Toyota Motor",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 110.59,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.415,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 12,
+        "revenue_at_entry": 119719968000000
+      }
+    },
+    {
+      "case_id": "T7-051",
+      "ticker": "SONY",
+      "company_name": "Sony Group",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 3.05,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.313,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 21,
+        "revenue_at_entry": 31069064000000
+      }
+    },
+    {
+      "case_id": "T7-052",
+      "ticker": "SONY",
+      "company_name": "Sony Group",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 7.05,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.918,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 21,
+        "revenue_at_entry": 30413000000000
+      }
+    },
+    {
+      "case_id": "T7-053",
+      "ticker": "SONY",
+      "company_name": "Sony Group",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 13.53,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.458,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 21,
+        "revenue_at_entry": 33039540000000
+      }
+    },
+    {
+      "case_id": "T7-054",
+      "ticker": "HMC",
+      "company_name": "Honda Motor",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 25.67,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.143,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 35,
+        "revenue_at_entry": 47369804000000
+      }
+    },
+    {
+      "case_id": "T7-055",
+      "ticker": "HMC",
+      "company_name": "Honda Motor",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 21.99,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.002,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 35,
+        "revenue_at_entry": 55996800000000
+      }
+    },
+    {
+      "case_id": "T7-056",
+      "ticker": "HMC",
+      "company_name": "Honda Motor",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 22.03,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.357,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 35,
+        "revenue_at_entry": 59724036000000
+      }
+    },
+    {
+      "case_id": "T7-057",
+      "ticker": "MUFG",
+      "company_name": "Mitsubishi UFJ Financial",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 5.58,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.103,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 17,
+        "revenue_at_entry": 17373456000000
+      }
+    },
+    {
+      "case_id": "T7-058",
+      "ticker": "MUFG",
+      "company_name": "Mitsubishi UFJ Financial",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 6.15,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.374,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 17,
+        "revenue_at_entry": 16749892000000
+      }
+    },
+    {
+      "case_id": "T7-059",
+      "ticker": "MUFG",
+      "company_name": "Mitsubishi UFJ Financial",
+      "country": "Japan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 3.85,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.733,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "foreign-gaap",
+        "quarters_available": 17,
+        "revenue_at_entry": 23211352000000
+      }
+    },
+    {
+      "case_id": "T7-060",
+      "ticker": "BABA",
+      "company_name": "Alibaba Group",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 129.79,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.588,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 11,
+        "revenue_at_entry": 91976000000
+      }
+    },
+    {
+      "case_id": "T7-061",
+      "ticker": "BABA",
+      "company_name": "Alibaba Group",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 206.11,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.588,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 11,
+        "revenue_at_entry": 287940000000
+      }
+    },
+    {
+      "case_id": "T7-062",
+      "ticker": "TSM",
+      "company_name": "Taiwan Semiconductor",
+      "country": "Taiwan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 15.35,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.85,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-063",
+      "ticker": "TSM",
+      "company_name": "Taiwan Semiconductor",
+      "country": "Taiwan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 28.41,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.778,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 3789663600000
+      }
+    },
+    {
+      "case_id": "T7-064",
+      "ticker": "TSM",
+      "company_name": "Taiwan Semiconductor",
+      "country": "Taiwan",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 50.51,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.034,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 143094000000
+      }
+    },
+    {
+      "case_id": "T7-065",
+      "ticker": "JD",
+      "company_name": "JD.com",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 25.22,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.382,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-066",
+      "ticker": "JD",
+      "company_name": "JD.com",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 34.84,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.55,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 11,
+        "revenue_at_entry": 149861240000
+      }
+    },
+    {
+      "case_id": "T7-067",
+      "ticker": "JD",
+      "company_name": "JD.com",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 54,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.324,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 11,
+        "revenue_at_entry": 331459384000
+      }
+    },
+    {
+      "case_id": "T7-068",
+      "ticker": "BIDU",
+      "company_name": "Baidu",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 178.05,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.001,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 17,
+        "revenue_at_entry": 21107040000
+      }
+    },
+    {
+      "case_id": "T7-069",
+      "ticker": "BIDU",
+      "company_name": "Baidu",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 178.2,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.344,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 17,
+        "revenue_at_entry": 40644888000
+      }
+    },
+    {
+      "case_id": "T7-070",
+      "ticker": "BIDU",
+      "company_name": "Baidu",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 116.82,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.26,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 17,
+        "revenue_at_entry": 61716000000
+      }
+    },
+    {
+      "case_id": "T7-071",
+      "ticker": "SE",
+      "company_name": "Sea Limited",
+      "country": "Singapore",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 97.25,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.346,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 14,
+        "revenue_at_entry": 1428428000
+      }
+    },
+    {
+      "case_id": "T7-072",
+      "ticker": "WIT",
+      "company_name": "Wipro",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 2.64,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.098,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 45,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-073",
+      "ticker": "WIT",
+      "company_name": "Wipro",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 2.38,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.332,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 45,
+        "revenue_at_entry": 9067340000
+      }
+    },
+    {
+      "case_id": "T7-074",
+      "ticker": "WIT",
+      "company_name": "Wipro",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 1.59,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.422,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 45,
+        "revenue_at_entry": 10632748000
+      }
+    },
+    {
+      "case_id": "T7-075",
+      "ticker": "INFY",
+      "company_name": "Infosys",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 4.93,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.219,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-076",
+      "ticker": "INFY",
+      "company_name": "Infosys",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 6.01,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.336,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 40832000000
+      }
+    },
+    {
+      "case_id": "T7-077",
+      "ticker": "INFY",
+      "company_name": "Infosys",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 8.03,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.801,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 10,
+        "revenue_at_entry": 51120000000
+      }
+    },
+    {
+      "case_id": "T7-078",
+      "ticker": "HDB",
+      "company_name": "HDFC Bank",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 10.58,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.926,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 16,
+        "revenue_at_entry": 16398400000
+      }
+    },
+    {
+      "case_id": "T7-079",
+      "ticker": "HDB",
+      "company_name": "HDFC Bank",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 20.36,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.047,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 16,
+        "revenue_at_entry": 26163200000
+      }
+    },
+    {
+      "case_id": "T7-080",
+      "ticker": "HDB",
+      "company_name": "HDFC Bank",
+      "country": "India",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 19.4,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.602,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 16,
+        "revenue_at_entry": 35768000000
+      }
+    },
+    {
+      "case_id": "T7-081",
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 5.91,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.312,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 16,
+        "revenue_at_entry": 195012000000
+      }
+    },
+    {
+      "case_id": "T7-082",
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 4.07,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.441,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 16,
+        "revenue_at_entry": 109952000000
+      }
+    },
+    {
+      "case_id": "T7-083",
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 5.86,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.848,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 16,
+        "revenue_at_entry": 150280000000
+      }
+    },
+    {
+      "case_id": "T7-084",
+      "ticker": "PBR",
+      "company_name": "Petrobras",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 4.7,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.478,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 14,
+        "revenue_at_entry": 603408000000
+      }
+    },
+    {
+      "case_id": "T7-085",
+      "ticker": "PBR",
+      "company_name": "Petrobras",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 2.45,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.031,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 14,
+        "revenue_at_entry": 325620000000
+      }
+    },
+    {
+      "case_id": "T7-086",
+      "ticker": "PBR",
+      "company_name": "Petrobras",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 2.53,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.929,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 14,
+        "revenue_at_entry": 306356000000
+      }
+    },
+    {
+      "case_id": "T7-087",
+      "ticker": "SBS",
+      "company_name": "SABESP",
+      "country": "Brazil",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 9.51,
+        "sector": "Utilities",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.11,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 62,
+        "revenue_at_entry": 491512000
+      }
+    },
+    {
+      "case_id": "T7-088",
+      "ticker": "TAL",
+      "company_name": "TAL Education",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 4.4,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.522,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 16,
+        "revenue_at_entry": 1255580820
+      }
+    },
+    {
+      "case_id": "T7-089",
+      "ticker": "TAL",
+      "company_name": "TAL Education",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 19.88,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.262,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 16,
+        "revenue_at_entry": 4172400000
+      }
+    },
+    {
+      "case_id": "T7-090",
+      "ticker": "TAL",
+      "company_name": "TAL Education",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 64.84,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.903,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 16,
+        "revenue_at_entry": 13093232000
+      }
+    },
+    {
+      "case_id": "T7-091",
+      "ticker": "IQ",
+      "company_name": "iQIYI",
+      "country": "China",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 19.15,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.727,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 34,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-092",
+      "ticker": "NOK",
+      "company_name": "Nokia",
+      "country": "Finland",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 5.73,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.059,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 72,
+        "revenue_at_entry": 79180000000
+      }
+    },
+    {
+      "case_id": "T7-093",
+      "ticker": "NOK",
+      "company_name": "Nokia",
+      "country": "Finland",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 5.39,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.287,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 72,
+        "revenue_at_entry": 65548000000
+      }
+    },
+    {
+      "case_id": "T7-094",
+      "ticker": "NOK",
+      "company_name": "Nokia",
+      "country": "Finland",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 3.84,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.005,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 72,
+        "revenue_at_entry": 60740000000
+      }
+    },
+    {
+      "case_id": "T7-095",
+      "ticker": "DB",
+      "company_name": "Deutsche Bank",
+      "country": "Germany",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 28.22,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.464,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-096",
+      "ticker": "DB",
+      "company_name": "Deutsche Bank",
+      "country": "Germany",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 15.13,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.438,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 120056000000
+      }
+    },
+    {
+      "case_id": "T7-097",
+      "ticker": "DB",
+      "company_name": "Deutsche Bank",
+      "country": "Germany",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 8.5,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.191,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 92660000000
+      }
+    },
+    {
+      "case_id": "T7-098",
+      "ticker": "PHG",
+      "company_name": "Philips",
+      "country": "Netherlands",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 24.63,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.269,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T7-099",
+      "ticker": "PHG",
+      "company_name": "Philips",
+      "country": "Netherlands",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 31.24,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.328,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 69688000000
+      }
+    },
+    {
+      "case_id": "T7-100",
+      "ticker": "PHG",
+      "company_name": "Philips",
+      "country": "Netherlands",
+      "tier": 7,
+      "dataset_role": "adr_international",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 41.49,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.537,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "accounting_standard": "ifrs",
+        "quarters_available": 11,
+        "revenue_at_entry": 77928000000
+      }
+    }
+  ]
+}
