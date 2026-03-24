@@ -1,0 +1,408 @@
+{
+  "AAPL": {
+    "ticker": "AAPL",
+    "status": "ok",
+    "github_org": "apple",
+    "match_quality": "mapped",
+    "public_repos": 396,
+    "followers": 35847,
+    "company_name": "Apple",
+    "blog": "https://apple.com",
+    "created_at": "2015-01-21T20:19:28Z"
+  },
+  "ACN": {
+    "ticker": "ACN",
+    "status": "ok",
+    "github_org": "accenture-plc",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 0,
+    "company_name": "accenture-plc",
+    "blog": null,
+    "created_at": "2020-07-14T13:50:21Z"
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "status": "ok",
+    "github_org": "adobe",
+    "match_quality": "mapped",
+    "public_repos": 1071,
+    "followers": 2987,
+    "company_name": "Adobe, Inc.",
+    "blog": "https://adobe.com",
+    "created_at": "2010-11-10T16:36:26Z"
+  },
+  "ADI": {
+    "ticker": "ADI",
+    "status": "ok",
+    "github_org": "analog-devices",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 6,
+    "company_name": "analog-devices",
+    "blog": null,
+    "created_at": "2017-05-08T04:00:54Z"
+  },
+  "ADSK": {
+    "ticker": "ADSK",
+    "status": "not_found",
+    "searched": "autodesk,"
+  },
+  "AKAM": {
+    "ticker": "AKAM",
+    "status": "ok",
+    "github_org": "akamai-technologies",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 0,
+    "company_name": "akamai-technologies",
+    "blog": null,
+    "created_at": "2022-08-01T10:54:44Z"
+  },
+  "AMAT": {
+    "ticker": "AMAT",
+    "status": "not_found",
+    "searched": "applied-materials-inc-/de"
+  },
+  "AMD": {
+    "ticker": "AMD",
+    "status": "ok",
+    "github_org": "amd",
+    "match_quality": "mapped",
+    "public_repos": 103,
+    "followers": 1650,
+    "company_name": "AMD",
+    "blog": "http://www.amd.com",
+    "created_at": "2010-10-07T11:05:51Z"
+  },
+  "ANET": {
+    "ticker": "ANET",
+    "status": "not_found",
+    "searched": "arista-networks,"
+  },
+  "APH": {
+    "ticker": "APH",
+    "status": "not_found",
+    "searched": "amphenol-corp-/de/"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "status": "ok",
+    "github_org": "broadcom",
+    "match_quality": "inferred",
+    "public_repos": 132,
+    "followers": 217,
+    "company_name": "Broadcom Inc",
+    "blog": "https://www.broadcom.com",
+    "created_at": "2012-10-07T21:31:04Z"
+  },
+  "CDNS": {
+    "ticker": "CDNS",
+    "status": "not_found",
+    "searched": "cadence-design-systems"
+  },
+  "CHTR": {
+    "ticker": "CHTR",
+    "status": "not_found",
+    "searched": "charter-communications,-inc.-/mo/"
+  },
+  "CMCSA": {
+    "ticker": "CMCSA",
+    "status": "ok",
+    "github_org": "comcast",
+    "match_quality": "inferred",
+    "public_repos": 233,
+    "followers": 188,
+    "company_name": "comcast",
+    "blog": "https://comcast.github.io",
+    "created_at": "2011-04-04T19:35:30Z"
+  },
+  "CRM": {
+    "ticker": "CRM",
+    "status": "ok",
+    "github_org": "salesforce",
+    "match_quality": "mapped",
+    "public_repos": 405,
+    "followers": 3308,
+    "company_name": "Salesforce",
+    "blog": "https://opensource.salesforce.com",
+    "created_at": "2010-10-25T21:15:24Z"
+  },
+  "CSCO": {
+    "ticker": "CSCO",
+    "status": "ok",
+    "github_org": "cisco",
+    "match_quality": "mapped",
+    "public_repos": 84,
+    "followers": 1281,
+    "company_name": "Cisco Systems",
+    "blog": "https://cisco.com",
+    "created_at": "2012-01-24T21:40:34Z"
+  },
+  "CTSH": {
+    "ticker": "CTSH",
+    "status": "ok",
+    "github_org": "cognizant-technology-solutions",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 0,
+    "company_name": "cognizant-technology-solutions",
+    "blog": null,
+    "created_at": "2016-12-16T04:12:14Z"
+  },
+  "DIS": {
+    "ticker": "DIS",
+    "status": "not_found",
+    "searched": "walt-disney"
+  },
+  "EA": {
+    "ticker": "EA",
+    "status": "ok",
+    "github_org": "electronic-arts",
+    "match_quality": "inferred",
+    "public_repos": 1,
+    "followers": 4,
+    "company_name": "electronic-arts",
+    "blog": null,
+    "created_at": "2019-05-23T21:53:38Z"
+  },
+  "FTNT": {
+    "ticker": "FTNT",
+    "status": "not_found",
+    "searched": "fortinet,"
+  },
+  "GLW": {
+    "ticker": "GLW",
+    "status": "not_found",
+    "searched": "corning-inc-/ny"
+  },
+  "GOOG": {
+    "ticker": "GOOG",
+    "status": "ok",
+    "github_org": "google",
+    "match_quality": "mapped",
+    "public_repos": 2847,
+    "followers": 69688,
+    "company_name": "Google",
+    "blog": "https://opensource.google/",
+    "created_at": "2012-01-18T01:30:18Z"
+  },
+  "GOOGL": {
+    "ticker": "GOOGL",
+    "status": "ok",
+    "github_org": "google",
+    "match_quality": "mapped",
+    "public_repos": 2847,
+    "followers": 69688,
+    "company_name": "Google",
+    "blog": "https://opensource.google/",
+    "created_at": "2012-01-18T01:30:18Z"
+  },
+  "HPE": {
+    "ticker": "HPE",
+    "status": "ok",
+    "github_org": "hewlett-packard-enterprise",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 0,
+    "company_name": "hewlett-packard-enterprise",
+    "blog": null,
+    "created_at": "2019-04-27T23:24:55Z"
+  },
+  "HPQ": {
+    "ticker": "HPQ",
+    "status": "not_found",
+    "searched": "hp"
+  },
+  "IBM": {
+    "ticker": "IBM",
+    "status": "ok",
+    "github_org": "IBM",
+    "match_quality": "mapped",
+    "public_repos": 3834,
+    "followers": 7817,
+    "company_name": "International Business Machines",
+    "blog": "https://www.ibm.com/opensource/",
+    "created_at": "2012-02-21T22:13:01Z"
+  },
+  "INTC": {
+    "ticker": "INTC",
+    "status": "ok",
+    "github_org": "intel",
+    "match_quality": "mapped",
+    "public_repos": 1321,
+    "followers": 5101,
+    "company_name": "Intel® Corporation",
+    "blog": null,
+    "created_at": "2016-03-16T20:44:09Z"
+  },
+  "INTU": {
+    "ticker": "INTU",
+    "status": "ok",
+    "github_org": "intuit",
+    "match_quality": "inferred",
+    "public_repos": 142,
+    "followers": 524,
+    "company_name": "Intuit",
+    "blog": "https://opensource.intuit.com/",
+    "created_at": "2012-10-05T15:59:04Z"
+  },
+  "IT": {
+    "ticker": "IT",
+    "status": "not_found",
+    "searched": "gartner"
+  },
+  "KEYS": {
+    "ticker": "KEYS",
+    "status": "not_found",
+    "searched": "keysight-technologies,"
+  },
+  "KLAC": {
+    "ticker": "KLAC",
+    "status": "not_found",
+    "searched": "kla"
+  },
+  "LRCX": {
+    "ticker": "LRCX",
+    "status": "ok",
+    "github_org": "lam-research",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 3,
+    "company_name": "GIS Manufacturing",
+    "blog": null,
+    "created_at": "2020-07-28T05:37:27Z"
+  },
+  "MCHP": {
+    "ticker": "MCHP",
+    "status": "ok",
+    "github_org": "microchip-technology",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 0,
+    "company_name": "microchip-technology",
+    "blog": null,
+    "created_at": "2015-12-01T09:02:39Z"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "status": "ok",
+    "github_org": "microsoft",
+    "match_quality": "mapped",
+    "public_repos": 7691,
+    "followers": 115432,
+    "company_name": "Microsoft",
+    "blog": "https://opensource.microsoft.com",
+    "created_at": "2013-12-10T19:06:48Z"
+  },
+  "MSI": {
+    "ticker": "MSI",
+    "status": "not_found",
+    "searched": "motorola-solutions,"
+  },
+  "MU": {
+    "ticker": "MU",
+    "status": "ok",
+    "github_org": "micron-technology",
+    "match_quality": "inferred",
+    "public_repos": 1,
+    "followers": 16,
+    "company_name": "Micron Technology",
+    "blog": "https://www.micron.com/",
+    "created_at": "2023-02-22T19:31:59Z"
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "status": "ok",
+    "github_org": "netflix",
+    "match_quality": "mapped",
+    "public_repos": 234,
+    "followers": 9493,
+    "company_name": "Netflix, Inc.",
+    "blog": "http://netflix.github.io/",
+    "created_at": "2011-07-13T20:20:01Z"
+  },
+  "NTAP": {
+    "ticker": "NTAP",
+    "status": "not_found",
+    "searched": "netapp,"
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "status": "ok",
+    "github_org": "NVIDIA",
+    "match_quality": "mapped",
+    "public_repos": 704,
+    "followers": 23895,
+    "company_name": "NVIDIA Corporation",
+    "blog": "https://nvidia.com",
+    "created_at": "2012-05-10T22:06:34Z"
+  },
+  "NWS": {
+    "ticker": "NWS",
+    "status": "not_found",
+    "searched": "news"
+  },
+  "NWSA": {
+    "ticker": "NWSA",
+    "status": "not_found",
+    "searched": "news"
+  },
+  "OMC": {
+    "ticker": "OMC",
+    "status": "ok",
+    "github_org": "omnicom-group",
+    "match_quality": "inferred",
+    "public_repos": 0,
+    "followers": 1,
+    "company_name": "omnicom-group",
+    "blog": null,
+    "created_at": "2022-12-02T19:39:52Z"
+  },
+  "ORCL": {
+    "ticker": "ORCL",
+    "status": "ok",
+    "github_org": "oracle",
+    "match_quality": "mapped",
+    "public_repos": 301,
+    "followers": 5469,
+    "company_name": "Oracle",
+    "blog": "https://developer.oracle.com/open-source.html",
+    "created_at": "2013-05-14T18:05:13Z"
+  },
+  "QCOM": {
+    "ticker": "QCOM",
+    "status": "not_found",
+    "searched": "qualcomm-inc/de"
+  },
+  "ROP": {
+    "ticker": "ROP",
+    "status": "not_found",
+    "searched": "roper-technologies"
+  },
+  "SNPS": {
+    "ticker": "SNPS",
+    "status": "not_found",
+    "searched": "synopsys"
+  },
+  "STX": {
+    "ticker": "STX",
+    "status": "not_found",
+    "searched": "seagate-technology-holdings-plc"
+  },
+  "SWKS": {
+    "ticker": "SWKS",
+    "status": "not_found",
+    "searched": "skyworks-solutions,"
+  },
+  "T": {
+    "ticker": "T",
+    "status": "not_found",
+    "searched": "at&t"
+  },
+  "TEL": {
+    "ticker": "TEL",
+    "status": "not_found",
+    "searched": "te-connectivity-plc"
+  }
+}

@@ -117,13 +117,12 @@
   "unconventional_data": {
     "price_volume": {
       "file": "data/unconventional/price-volume-dynamics.json",
-      "coverage": "2803 case-entries",
+      "coverage": "2803 case-entries (direct storage, no status field)",
       "fields": [
         "momentum_6m",
         "momentum_12m",
         "volatility_annual",
         "avg_weekly_volume_recent",
-        "avg_weekly_volume_year",
         "relative_volume",
         "volume_trend_slope",
         "weekly_closes"
@@ -131,7 +130,7 @@
     },
     "economic_context": {
       "file": "data/unconventional/economic-context.json",
-      "coverage": "181 unique entry dates",
+      "coverage": "181 unique entry dates — 100% date coverage",
       "fields": [
         "treasury_10yr",
         "treasury_2yr",
@@ -155,24 +154,65 @@
         "total_10KA",
         "total_10Q",
         "total_10QA",
-        "total_20F",
         "nt_filings",
         "amendment_rate",
         "annual_filing_sizes",
         "filing_size_trend",
-        "sic",
-        "fiscal_year_end"
+        "sic"
+      ]
+    },
+    "wikipedia_pageviews": {
+      "file": "data/unconventional/wikipedia-pageviews.json",
+      "coverage": "130/661 tickers (20%)",
+      "fields": [
+        "monthly_views_24mo",
+        "mean_monthly_views",
+        "view_trend_slope",
+        "attention_spike_count"
+      ]
+    },
+    "clinical_trials": {
+      "file": "data/unconventional/clinical-trials.json",
+      "coverage": "34/59 healthcare tickers (58%)",
+      "fields": [
+        "total_trials_4yr",
+        "trials_by_phase",
+        "phase3_count",
+        "termination_rate",
+        "completion_rate",
+        "unique_conditions"
+      ],
+      "note": "Healthcare/biotech/pharma sector only"
+    },
+    "github_activity": {
+      "file": "data/unconventional/github-activity.json",
+      "coverage": "26/50 tech tickers (52%)",
+      "fields": [
+        "public_repos",
+        "followers"
+      ],
+      "note": "Tech sector only, rate-limited to 60 req/hr unauthenticated"
+    },
+    "customer_concentration": {
+      "file": "data/unconventional/customer-concentration.json",
+      "coverage": "296/300 tickers (99%)",
+      "fields": [
+        "concentration_disclosed",
+        "largest_customer_pct",
+        "customers_above_10pct",
+        "no_concentration_statement",
+        "concentration_mentions"
       ]
     },
     "patents": {
-      "file": null,
-      "coverage": "0% — PatentsView API discontinued (v1 410 Gone), v2 requires API key",
+      "file": "data/unconventional/patent-data.json",
+      "coverage": "0% — PatentsView API v1 discontinued",
       "status": "blocked"
     },
     "federal_contracts": {
-      "file": null,
-      "coverage": "0% — not built (lower priority)",
-      "status": "not_started"
+      "file": "data/unconventional/federal-contracts.json",
+      "coverage": "0% — USAspending API unreachable",
+      "status": "blocked"
     }
   },
   "known_results": {

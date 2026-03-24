@@ -1,0 +1,1134 @@
+{
+  "A": {
+    "ticker": "A",
+    "status": "no_trials",
+    "searched": "AGILENT TECHNOLOGIES,"
+  },
+  "ABBV": {
+    "ticker": "ABBV",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "AbbVie",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "Not Applicable": 30,
+      "PHASE2": 33,
+      "PHASE1": 18,
+      "PHASE3": 17,
+      "NA": 1,
+      "PHASE4": 1
+    },
+    "trials_by_year": {
+      "2009": 12,
+      "2010": 25,
+      "2011": 29,
+      "2012": 33,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 95,
+      "WITHDRAWN": 1,
+      "TERMINATED": 4
+    },
+    "unique_conditions": 80,
+    "phase3_count": 17,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "ABT": {
+    "ticker": "ABT",
+    "status": "no_trials",
+    "searched": "ABBOTT LABORATORIES"
+  },
+  "ALGN": {
+    "ticker": "ALGN",
+    "entry_date": "2015-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "ALIGN TECHNOLOGY",
+    "total_trials_4yr": 2,
+    "trials_by_phase": {
+      "NA": 2
+    },
+    "trials_by_year": {
+      "2011": 1,
+      "2014": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 2
+    },
+    "unique_conditions": 3,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "AMGN": {
+    "ticker": "AMGN",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "AMGEN",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "Not Applicable": 9,
+      "PHASE1": 23,
+      "PHASE3": 25,
+      "NA": 2,
+      "PHASE2": 34,
+      "PHASE4": 7
+    },
+    "trials_by_year": {
+      "2009": 21,
+      "2010": 36,
+      "2011": 22,
+      "2012": 21
+    },
+    "trials_by_status": {
+      "UNKNOWN": 4,
+      "COMPLETED": 75,
+      "TERMINATED": 17,
+      "WITHDRAWN": 4
+    },
+    "unique_conditions": 125,
+    "phase3_count": 25,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "BAX": {
+    "ticker": "BAX",
+    "status": "no_trials",
+    "searched": "BAXTER INTERNATIONAL"
+  },
+  "BDX": {
+    "ticker": "BDX",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "BECTON DICKINSON &",
+    "total_trials_4yr": 13,
+    "trials_by_phase": {
+      "NA": 5,
+      "Not Applicable": 3,
+      "PHASE2": 1,
+      "PHASE1": 3,
+      "PHASE4": 1
+    },
+    "trials_by_year": {
+      "2009": 1,
+      "2010": 4,
+      "2011": 2,
+      "2012": 5,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "TERMINATED": 2,
+      "COMPLETED": 11
+    },
+    "unique_conditions": 13,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "BIIB": {
+    "ticker": "BIIB",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "BIOGEN",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE1": 42,
+      "PHASE3": 14,
+      "PHASE2": 20,
+      "Not Applicable": 19,
+      "NA": 3,
+      "PHASE4": 2
+    },
+    "trials_by_year": {
+      "2009": 19,
+      "2010": 28,
+      "2011": 23,
+      "2012": 29,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 82,
+      "TERMINATED": 13,
+      "WITHDRAWN": 4,
+      "UNKNOWN": 1
+    },
+    "unique_conditions": 54,
+    "phase3_count": 14,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "BMY": {
+    "ticker": "BMY",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "BRISTOL MYERS SQUIBB",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE1": 36,
+      "Not Applicable": 17,
+      "PHASE2": 23,
+      "PHASE4": 5,
+      "PHASE3": 15,
+      "NA": 4
+    },
+    "trials_by_year": {
+      "2009": 24,
+      "2010": 26,
+      "2011": 20,
+      "2012": 28,
+      "2013": 2
+    },
+    "trials_by_status": {
+      "COMPLETED": 75,
+      "TERMINATED": 14,
+      "UNKNOWN": 3,
+      "WITHDRAWN": 7,
+      "ACTIVE_NOT_RECRUITING": 1
+    },
+    "unique_conditions": 89,
+    "phase3_count": 15,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "BSX": {
+    "ticker": "BSX",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "BOSTON SCIENTIFIC",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "Not Applicable": 31,
+      "NA": 38,
+      "PHASE1": 4,
+      "PHASE2": 4,
+      "PHASE3": 14,
+      "PHASE4": 9
+    },
+    "trials_by_year": {
+      "2009": 18,
+      "2010": 24,
+      "2011": 20,
+      "2012": 36,
+      "2013": 2
+    },
+    "trials_by_status": {
+      "UNKNOWN": 4,
+      "COMPLETED": 80,
+      "TERMINATED": 13,
+      "RECRUITING": 2,
+      "ACTIVE_NOT_RECRUITING": 1
+    },
+    "unique_conditions": 90,
+    "phase3_count": 14,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "CAH": {
+    "ticker": "CAH",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "CARDINAL HEALTH",
+    "total_trials_4yr": 1,
+    "trials_by_phase": {
+      "NA": 1
+    },
+    "trials_by_year": {
+      "2010": 1
+    },
+    "trials_by_status": {
+      "TERMINATED": 1
+    },
+    "unique_conditions": 2,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "CI": {
+    "ticker": "CI",
+    "status": "no_trials",
+    "searched": "Cigna Group"
+  },
+  "CNC": {
+    "ticker": "CNC",
+    "status": "no_trials",
+    "searched": "CENTENE"
+  },
+  "COO": {
+    "ticker": "COO",
+    "status": "no_trials",
+    "searched": "COOPER COMPANIES,"
+  },
+  "CVS": {
+    "ticker": "CVS",
+    "status": "no_trials",
+    "searched": "CVS HEALTH"
+  },
+  "DGX": {
+    "ticker": "DGX",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "QUEST DIAGNOSTICS",
+    "total_trials_4yr": 1,
+    "trials_by_phase": {
+      "PHASE3": 1
+    },
+    "trials_by_year": {
+      "2010": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 1
+    },
+    "unique_conditions": 2,
+    "phase3_count": 1,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "DHR": {
+    "ticker": "DHR",
+    "status": "no_trials",
+    "searched": "DANAHER CORP /DE/"
+  },
+  "DVA": {
+    "ticker": "DVA",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "DAVITA",
+    "total_trials_4yr": 4,
+    "trials_by_phase": {
+      "NA": 2,
+      "Not Applicable": 1,
+      "PHASE4": 1
+    },
+    "trials_by_year": {
+      "2009": 2,
+      "2010": 1,
+      "2011": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 3,
+      "UNKNOWN": 1
+    },
+    "unique_conditions": 5,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "EW": {
+    "ticker": "EW",
+    "entry_date": "2011-03-31",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "Edwards Lifesciences",
+    "total_trials_4yr": 22,
+    "trials_by_phase": {
+      "NA": 14,
+      "Not Applicable": 6,
+      "PHASE2": 1,
+      "PHASE4": 1
+    },
+    "trials_by_year": {
+      "2007": 5,
+      "2008": 3,
+      "2009": 2,
+      "2010": 8,
+      "2011": 4
+    },
+    "trials_by_status": {
+      "COMPLETED": 20,
+      "TERMINATED": 1,
+      "WITHDRAWN": 1
+    },
+    "unique_conditions": 46,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "GILD": {
+    "ticker": "GILD",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "GILEAD SCIENCES,",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE1": 21,
+      "PHASE3": 18,
+      "PHASE2": 28,
+      "PHASE4": 11,
+      "Not Applicable": 17,
+      "NA": 5
+    },
+    "trials_by_year": {
+      "2009": 10,
+      "2010": 16,
+      "2011": 31,
+      "2012": 39,
+      "2013": 4
+    },
+    "trials_by_status": {
+      "TERMINATED": 11,
+      "COMPLETED": 80,
+      "UNKNOWN": 4,
+      "WITHDRAWN": 3,
+      "ACTIVE_NOT_RECRUITING": 1,
+      "RECRUITING": 1
+    },
+    "unique_conditions": 114,
+    "phase3_count": 18,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "HCA": {
+    "ticker": "HCA",
+    "status": "no_trials",
+    "searched": "HCA Healthcare,"
+  },
+  "HOLX": {
+    "ticker": "HOLX",
+    "entry_date": "2015-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "HOLOGIC",
+    "total_trials_4yr": 9,
+    "trials_by_phase": {
+      "Not Applicable": 8,
+      "NA": 1
+    },
+    "trials_by_year": {
+      "2011": 2,
+      "2012": 1,
+      "2013": 3,
+      "2014": 3
+    },
+    "trials_by_status": {
+      "COMPLETED": 5,
+      "UNKNOWN": 4
+    },
+    "unique_conditions": 12,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "HSIC": {
+    "ticker": "HSIC",
+    "status": "no_trials",
+    "searched": "HENRY SCHEIN"
+  },
+  "HUM": {
+    "ticker": "HUM",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "HUMANA",
+    "total_trials_4yr": 7,
+    "trials_by_phase": {
+      "NA": 7
+    },
+    "trials_by_year": {
+      "2009": 2,
+      "2010": 2,
+      "2012": 3
+    },
+    "trials_by_status": {
+      "COMPLETED": 7
+    },
+    "unique_conditions": 8,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "IDXX": {
+    "ticker": "IDXX",
+    "status": "no_trials",
+    "searched": "IDEXX LABORATORIES INC /DE"
+  },
+  "INCY": {
+    "ticker": "INCY",
+    "entry_date": "2017-02-27",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "INCYTE",
+    "total_trials_4yr": 69,
+    "trials_by_phase": {
+      "PHASE1": 38,
+      "PHASE2": 24,
+      "NA": 1,
+      "Not Applicable": 3,
+      "PHASE3": 3
+    },
+    "trials_by_year": {
+      "2013": 7,
+      "2014": 23,
+      "2015": 11,
+      "2016": 19,
+      "2017": 9
+    },
+    "trials_by_status": {
+      "TERMINATED": 24,
+      "COMPLETED": 34,
+      "WITHDRAWN": 2,
+      "UNKNOWN": 2,
+      "ACTIVE_NOT_RECRUITING": 5,
+      "RECRUITING": 2
+    },
+    "unique_conditions": 95,
+    "phase3_count": 3,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "IQV": {
+    "ticker": "IQV",
+    "status": "no_trials",
+    "searched": "IQVIA HOLDINGS"
+  },
+  "ISRG": {
+    "ticker": "ISRG",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "INTUITIVE SURGICAL",
+    "total_trials_4yr": 6,
+    "trials_by_phase": {
+      "NA": 3,
+      "Not Applicable": 2,
+      "PHASE1": 1
+    },
+    "trials_by_year": {
+      "2010": 3,
+      "2011": 2,
+      "2012": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 3,
+      "TERMINATED": 1,
+      "WITHDRAWN": 1,
+      "UNKNOWN": 1
+    },
+    "unique_conditions": 8,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "JNJ": {
+    "ticker": "JNJ",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "JOHNSON & JOHNSON",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "Not Applicable": 18,
+      "NA": 34,
+      "PHASE1": 23,
+      "PHASE2": 10,
+      "PHASE4": 8,
+      "PHASE3": 4,
+      "EARLY_PHASE1": 3
+    },
+    "trials_by_year": {
+      "2009": 33,
+      "2010": 35,
+      "2011": 17,
+      "2012": 14,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 85,
+      "ACTIVE_NOT_RECRUITING": 2,
+      "UNKNOWN": 5,
+      "WITHDRAWN": 2,
+      "TERMINATED": 6
+    },
+    "unique_conditions": 99,
+    "phase3_count": 4,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "LH": {
+    "ticker": "LH",
+    "status": "no_trials",
+    "searched": "LABCORP HOLDINGS"
+  },
+  "LLY": {
+    "ticker": "LLY",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "ELI LILLY &",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE4": 8,
+      "PHASE1": 30,
+      "PHASE3": 28,
+      "PHASE2": 29,
+      "Not Applicable": 3,
+      "NA": 2
+    },
+    "trials_by_year": {
+      "2009": 23,
+      "2010": 34,
+      "2011": 20,
+      "2012": 21,
+      "2013": 2
+    },
+    "trials_by_status": {
+      "COMPLETED": 87,
+      "ACTIVE_NOT_RECRUITING": 1,
+      "TERMINATED": 7,
+      "UNKNOWN": 3,
+      "WITHDRAWN": 2
+    },
+    "unique_conditions": 82,
+    "phase3_count": 28,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "MCK": {
+    "ticker": "MCK",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "MCKESSON",
+    "total_trials_4yr": 2,
+    "trials_by_phase": {
+      "NA": 1,
+      "PHASE2": 1
+    },
+    "trials_by_year": {
+      "2012": 2
+    },
+    "trials_by_status": {
+      "COMPLETED": 2
+    },
+    "unique_conditions": 2,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "MDT": {
+    "ticker": "MDT",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "Medtronic",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE2": 6,
+      "PHASE3": 2,
+      "NA": 46,
+      "Not Applicable": 38,
+      "PHASE4": 6,
+      "PHASE1": 2
+    },
+    "trials_by_year": {
+      "2009": 19,
+      "2010": 19,
+      "2011": 34,
+      "2012": 27,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 80,
+      "TERMINATED": 13,
+      "UNKNOWN": 4,
+      "WITHDRAWN": 3
+    },
+    "unique_conditions": 113,
+    "phase3_count": 2,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "MRK": {
+    "ticker": "MRK",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "Merck & Co.,",
+    "total_trials_4yr": 91,
+    "trials_by_phase": {
+      "PHASE2": 23,
+      "PHASE1": 31,
+      "Not Applicable": 5,
+      "PHASE3": 14,
+      "PHASE4": 15,
+      "NA": 3
+    },
+    "trials_by_year": {
+      "2009": 17,
+      "2010": 29,
+      "2011": 22,
+      "2012": 22,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 71,
+      "TERMINATED": 19,
+      "UNKNOWN": 1
+    },
+    "unique_conditions": 85,
+    "phase3_count": 14,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "MTD": {
+    "ticker": "MTD",
+    "status": "no_trials",
+    "searched": "METTLER TOLEDO INTERNATIONAL INC/"
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "PFIZER",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE1": 39,
+      "Not Applicable": 15,
+      "PHASE3": 16,
+      "PHASE2": 18,
+      "PHASE4": 10,
+      "NA": 2
+    },
+    "trials_by_year": {
+      "2009": 26,
+      "2010": 26,
+      "2011": 27,
+      "2012": 21
+    },
+    "trials_by_status": {
+      "COMPLETED": 85,
+      "TERMINATED": 7,
+      "UNKNOWN": 5,
+      "WITHDRAWN": 3
+    },
+    "unique_conditions": 96,
+    "phase3_count": 16,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "REGN": {
+    "ticker": "REGN",
+    "entry_date": "2013-04-30",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "REGENERON PHARMACEUTICALS,",
+    "total_trials_4yr": 96,
+    "trials_by_phase": {
+      "PHASE1": 35,
+      "PHASE2": 18,
+      "PHASE3": 31,
+      "PHASE4": 7,
+      "Not Applicable": 4,
+      "NA": 1
+    },
+    "trials_by_year": {
+      "2009": 12,
+      "2010": 13,
+      "2011": 19,
+      "2012": 43,
+      "2013": 9
+    },
+    "trials_by_status": {
+      "COMPLETED": 87,
+      "TERMINATED": 7,
+      "UNKNOWN": 1,
+      "WITHDRAWN": 1
+    },
+    "unique_conditions": 51,
+    "phase3_count": 31,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "RMD": {
+    "ticker": "RMD",
+    "entry_date": "2017-07-25",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "RESMED",
+    "total_trials_4yr": 50,
+    "trials_by_phase": {
+      "NA": 34,
+      "Not Applicable": 15,
+      "PHASE3": 1
+    },
+    "trials_by_year": {
+      "2013": 2,
+      "2014": 12,
+      "2015": 13,
+      "2016": 18,
+      "2017": 5
+    },
+    "trials_by_status": {
+      "COMPLETED": 34,
+      "WITHDRAWN": 2,
+      "TERMINATED": 10,
+      "UNKNOWN": 3,
+      "ACTIVE_NOT_RECRUITING": 1
+    },
+    "unique_conditions": 53,
+    "phase3_count": 1,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "SYK": {
+    "ticker": "SYK",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "STRYKER",
+    "total_trials_4yr": 55,
+    "trials_by_phase": {
+      "Not Applicable": 11,
+      "NA": 35,
+      "PHASE4": 5,
+      "PHASE2": 1,
+      "PHASE1": 2,
+      "PHASE3": 1
+    },
+    "trials_by_year": {
+      "2009": 11,
+      "2010": 16,
+      "2011": 16,
+      "2012": 11,
+      "2013": 1
+    },
+    "trials_by_status": {
+      "TERMINATED": 13,
+      "COMPLETED": 33,
+      "ACTIVE_NOT_RECRUITING": 2,
+      "UNKNOWN": 5,
+      "WITHDRAWN": 2
+    },
+    "unique_conditions": 48,
+    "phase3_count": 1,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "TMO": {
+    "ticker": "TMO",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "THERMO FISHER SCIENTIFIC",
+    "total_trials_4yr": 7,
+    "trials_by_phase": {
+      "PHASE3": 2,
+      "NA": 2,
+      "PHASE1": 2,
+      "PHASE2": 1
+    },
+    "trials_by_year": {
+      "2009": 1,
+      "2010": 2,
+      "2011": 1,
+      "2012": 3
+    },
+    "trials_by_status": {
+      "COMPLETED": 5,
+      "TERMINATED": 2
+    },
+    "unique_conditions": 6,
+    "phase3_count": 2,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "UHS": {
+    "ticker": "UHS",
+    "status": "no_trials",
+    "searched": "UNIVERSAL HEALTH SERVICES"
+  },
+  "UNH": {
+    "ticker": "UNH",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "UNITEDHEALTH GROUP",
+    "total_trials_4yr": 3,
+    "trials_by_phase": {
+      "NA": 2,
+      "PHASE4": 1
+    },
+    "trials_by_year": {
+      "2011": 2,
+      "2012": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 3
+    },
+    "unique_conditions": 2,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "VRTX": {
+    "ticker": "VRTX",
+    "status": "no_trials",
+    "searched": "VERTEX PHARMACEUTICALS INC / MA"
+  },
+  "WAT": {
+    "ticker": "WAT",
+    "status": "no_trials",
+    "searched": "WATERS CORP /DE/"
+  },
+  "ZBH": {
+    "ticker": "ZBH",
+    "status": "no_trials",
+    "searched": "ZIMMER BIOMET HOLDINGS,"
+  },
+  "ZTS": {
+    "ticker": "ZTS",
+    "status": "no_trials",
+    "searched": "Zoetis"
+  },
+  "SUPN": {
+    "ticker": "SUPN",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "SUPERNUS PHARMACEUTICALS,",
+    "total_trials_4yr": 7,
+    "trials_by_phase": {
+      "PHASE1": 3,
+      "PHASE3": 1,
+      "PHASE4": 1,
+      "PHASE2": 2
+    },
+    "trials_by_year": {
+      "2011": 3,
+      "2012": 1,
+      "2013": 2,
+      "2014": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 7
+    },
+    "unique_conditions": 10,
+    "phase3_count": 1,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "LGND": {
+    "ticker": "LGND",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "LIGAND PHARMACEUTICALS",
+    "total_trials_4yr": 1,
+    "trials_by_phase": {
+      "PHASE1": 1
+    },
+    "trials_by_year": {
+      "2013": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 1
+    },
+    "unique_conditions": 1,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "OMCL": {
+    "ticker": "OMCL",
+    "status": "no_trials",
+    "searched": "OMNICELL,"
+  },
+  "NVCR": {
+    "ticker": "NVCR",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "NovoCure",
+    "total_trials_4yr": 19,
+    "trials_by_phase": {
+      "PHASE2": 7,
+      "EARLY_PHASE1": 1,
+      "NA": 4,
+      "PHASE1": 4,
+      "PHASE3": 2,
+      "Not Applicable": 1
+    },
+    "trials_by_year": {
+      "2013": 3,
+      "2014": 3,
+      "2015": 2,
+      "2016": 6,
+      "2017": 5
+    },
+    "trials_by_status": {
+      "RECRUITING": 1,
+      "TERMINATED": 6,
+      "UNKNOWN": 3,
+      "COMPLETED": 7,
+      "ACTIVE_NOT_RECRUITING": 1,
+      "WITHDRAWN": 1
+    },
+    "unique_conditions": 31,
+    "phase3_count": 2,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "TCMD": {
+    "ticker": "TCMD",
+    "status": "no_trials",
+    "searched": "TACTILE SYSTEMS TECHNOLOGY"
+  },
+  "GKOS": {
+    "ticker": "GKOS",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "GLAUKOS",
+    "total_trials_4yr": 10,
+    "trials_by_phase": {
+      "NA": 5,
+      "PHASE3": 1,
+      "PHASE1": 1,
+      "Not Applicable": 2,
+      "PHASE2": 1
+    },
+    "trials_by_year": {
+      "2013": 5,
+      "2014": 2,
+      "2016": 3
+    },
+    "trials_by_status": {
+      "TERMINATED": 4,
+      "COMPLETED": 5,
+      "UNKNOWN": 1
+    },
+    "unique_conditions": 13,
+    "phase3_count": 1,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "AVNS": {
+    "ticker": "AVNS",
+    "status": "no_trials",
+    "searched": "AVANOS MEDICAL,"
+  },
+  "LNTH": {
+    "ticker": "LNTH",
+    "status": "no_trials",
+    "searched": "Lantheus Holdings,"
+  },
+  "DXCM": {
+    "ticker": "DXCM",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "DEXCOM",
+    "total_trials_4yr": 17,
+    "trials_by_phase": {
+      "NA": 10,
+      "Not Applicable": 6,
+      "PHASE4": 1
+    },
+    "trials_by_year": {
+      "2010": 1,
+      "2011": 2,
+      "2012": 8,
+      "2013": 5,
+      "2014": 1
+    },
+    "trials_by_status": {
+      "COMPLETED": 16,
+      "TERMINATED": 1
+    },
+    "unique_conditions": 9,
+    "phase3_count": 0,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "AZN": {
+    "ticker": "AZN",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "ASTRAZENECA",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE4": 9,
+      "EARLY_PHASE1": 1,
+      "Not Applicable": 33,
+      "PHASE1": 33,
+      "PHASE2": 13,
+      "PHASE3": 10,
+      "NA": 1
+    },
+    "trials_by_year": {
+      "2010": 17,
+      "2011": 29,
+      "2012": 22,
+      "2013": 18,
+      "2014": 14
+    },
+    "trials_by_status": {
+      "TERMINATED": 9,
+      "COMPLETED": 82,
+      "WITHDRAWN": 4,
+      "UNKNOWN": 4,
+      "RECRUITING": 1
+    },
+    "unique_conditions": 101,
+    "phase3_count": 10,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "SNY": {
+    "ticker": "SNY",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "match_quality": "exact",
+    "matched_name": "Sanofi",
+    "total_trials_4yr": 100,
+    "trials_by_phase": {
+      "PHASE1": 30,
+      "PHASE3": 23,
+      "Not Applicable": 7,
+      "PHASE2": 23,
+      "PHASE4": 12,
+      "NA": 5
+    },
+    "trials_by_year": {
+      "2010": 14,
+      "2011": 31,
+      "2012": 28,
+      "2013": 19,
+      "2014": 8
+    },
+    "trials_by_status": {
+      "COMPLETED": 83,
+      "TERMINATED": 8,
+      "UNKNOWN": 5,
+      "ACTIVE_NOT_RECRUITING": 1,
+      "WITHDRAWN": 3
+    },
+    "unique_conditions": 103,
+    "phase3_count": 23,
+    "termination_rate": 0,
+    "completion_rate": 0
+  },
+  "PHG": {
+    "ticker": "PHG",
+    "status": "no_trials",
+    "searched": "KONINKLIJKE PHILIPS NV"
+  },
+  "WST": {
+    "ticker": "WST",
+    "status": "no_trials",
+    "searched": "WEST PHARMACEUTICAL SERVICES"
+  }
+}
