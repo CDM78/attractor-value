@@ -155,3 +155,69 @@ export function groupBySector(cases) {
   }
   return groups;
 }
+
+// ============================================
+// SYSTEMATIC DATASET LOADER
+// ============================================
+// Loads from data/systematic-*.json files. These are the fully reproducible,
+// self-contained calibration datasets with no external dependencies.
+
+const SYSTEMATIC_FILES = [
+  'systematic-sp500-crosssection.json',
+  'systematic-sp500-changes.json',
+  'systematic-smallcap.json',
+  'systematic-adr.json',
+  'systematic-multi-entry.json',
+  'systematic-fraud.json',
+];
+
+export function loadSystematicCases() {
+  const cases = [];
+  const seen = new Set();
+  const dataDir = resolve(import.meta.dirname, '../../data');
+
+  for (const file of SYSTEMATIC_FILES) {
+    const path = resolve(dataDir, file);
+    let data;
+    try {
+      data = JSON.parse(readFileSync(path, 'utf-8'));
+    } catch {
+      continue; // File not built yet
+    }
+
+    for (const c of data.cases || []) {
+      const key = `${c.ticker}-${c.source}-${c.entry_date || ''}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      cases.push({
+        ticker: c.ticker,
+        company: c.company || c.ticker,
+        outcome: c.outcome,
+        entry_date: c.entry_date,
+        entry_price: c.entry_price,
+        sector: c.sector,
+        source: c.source,
+        forward_return_3yr: c.forward_return_3yr,
+        sp500_return_3yr: c.sp500_return_3yr,
+        cik: c.cik,
+        // Preserve extra fields
+        country: c.country,
+        fraud_type: c.fraud_type,
+      });
+    }
+  }
+
+  return cases;
+}
+
+// Group systematic cases by source
+export function groupBySource(cases) {
+  const groups = {};
+  for (const c of cases) {
+    const s = c.source || 'unknown';
+    if (!groups[s]) groups[s] = [];
+    groups[s].push(c);
+  }
+  return groups;
+}
