@@ -12,6 +12,7 @@ const TIER_FILES = [
   'tier3-emerging-dks.json',
   'tier4-regime-transition.json',
   'tier5-sp500-expansion.json',
+  'tier6-multi-entry.json',
 ];
 
 const TIER_PIPELINES = {
@@ -20,6 +21,7 @@ const TIER_PIPELINES = {
   3: 'Growth',
   4: 'Regime',
   5: 'SP500 Expansion',
+  6: 'Multi-Entry',
 };
 
 // Convert "2016-Q1" → "2016-01-15", "2020-03-23" → "2020-03-23"
@@ -81,8 +83,8 @@ export function loadCalibrationCases() {
       const tier = c.tier || (file.includes('tier1') ? 1 : null);
       const normalized = tier === 1 ? normalizeTier1Case(c) : normalizeTier234Case(c);
 
-      // Deduplicate by ticker+tier (same ticker can appear in multiple tiers)
-      const key = `${normalized.ticker}-T${normalized.tier}`;
+      // Deduplicate by ticker+tier+date (same ticker can appear in multiple tiers or with different entry dates)
+      const key = `${normalized.ticker}-T${normalized.tier}-${normalized.entry_date || ''}`;
       if (seen.has(key)) continue;
       seen.add(key);
 
