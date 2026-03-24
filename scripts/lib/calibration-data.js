@@ -11,6 +11,7 @@ const TIER_FILES = [
   'tier2-crisis-dislocation.json',
   'tier3-emerging-dks.json',
   'tier4-regime-transition.json',
+  'tier5-sp500-expansion.json',
 ];
 
 const TIER_PIPELINES = {
@@ -18,6 +19,7 @@ const TIER_PIPELINES = {
   2: 'Crisis',
   3: 'Growth',
   4: 'Regime',
+  5: 'SP500 Expansion',
 };
 
 // Convert "2016-Q1" → "2016-01-15", "2020-03-23" → "2020-03-23"

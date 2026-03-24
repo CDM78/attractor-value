@@ -1,0 +1,4398 @@
+{
+  "AAL-2015-03-23": {
+    "status": "ok",
+    "ticker": "AAL",
+    "event_date": "2015-03-23",
+    "entry_price": 51.648616790771484,
+    "entry_date_actual": "2015-03-23",
+    "exit_price": 51.08283233642578,
+    "exit_date_actual": "2018-03-22",
+    "return_3yr": -0.01095449383741864,
+    "sp500_return_3yr": 0.25625589927449943,
+    "alpha_3yr": -0.2672103931119181
+  },
+  "AAP-2015-07-09": {
+    "status": "ok",
+    "ticker": "AAP",
+    "event_date": "2015-07-09",
+    "entry_price": 139.9916229248047,
+    "entry_date_actual": "2015-07-08",
+    "exit_price": 123.99214172363281,
+    "exit_date_actual": "2018-07-09",
+    "return_3yr": -0.11428884719599158,
+    "sp500_return_3yr": 0.36033471222181646,
+    "alpha_3yr": -0.47462355941780804
+  },
+  "ABBV-2013-01-02": {
+    "status": "ok",
+    "ticker": "ABBV",
+    "event_date": "2013-01-02",
+    "entry_price": 20.73164939880371,
+    "entry_date_actual": "2013-01-02",
+    "exit_price": 38.77442169189453,
+    "exit_date_actual": "2015-12-31",
+    "return_3yr": 0.870300859618625,
+    "sp500_return_3yr": 0.39764218212717795,
+    "alpha_3yr": 0.4726586774914471
+  },
+  "ACGL-2022-11-01": {
+    "status": "ok",
+    "ticker": "ACGL",
+    "event_date": "2022-11-01",
+    "entry_price": 54.676666259765625,
+    "entry_date_actual": "2022-10-31",
+    "exit_price": 86.30999755859375,
+    "exit_date_actual": "2025-10-31",
+    "return_3yr": 0.5785526708695082,
+    "sp500_return_3yr": 0.7665897628128777,
+    "alpha_3yr": -0.18803709194336948
+  },
+  "ACN-2011-07-06": {
+    "status": "ok",
+    "ticker": "ACN",
+    "event_date": "2011-07-06",
+    "entry_price": 47.47567367553711,
+    "entry_date_actual": "2011-07-05",
+    "exit_price": 66.83457946777344,
+    "exit_date_actual": "2014-07-07",
+    "return_3yr": 0.40776474125550816,
+    "sp500_return_3yr": 0.4781968615991751,
+    "alpha_3yr": -0.07043212034366697
+  },
+  "ADS-2013-12-23": {
+    "status": "no_price_data",
+    "ticker": "ADS"
+  },
+  "ADT-2012-10-02": {
+    "status": "no_price_data",
+    "ticker": "ADT"
+  },
+  "AJG-2016-05-31": {
+    "status": "ok",
+    "ticker": "AJG",
+    "event_date": "2016-05-31",
+    "entry_price": 40.96462631225586,
+    "entry_date_actual": "2016-05-31",
+    "exit_price": 77.40240478515625,
+    "exit_date_actual": "2019-05-30",
+    "return_3yr": 0.8894937352815271,
+    "sp500_return_3yr": 0.32996026245801807,
+    "alpha_3yr": 0.5595334728235091
+  },
+  "ALK-2016-05-13": {
+    "status": "ok",
+    "ticker": "ALK",
+    "event_date": "2016-05-13",
+    "entry_price": 60.861595153808594,
+    "entry_date_actual": "2016-05-12",
+    "exit_price": 58.81679153442383,
+    "exit_date_actual": "2019-05-13",
+    "return_3yr": -0.03359760147950716,
+    "sp500_return_3yr": 0.36226750069045294,
+    "alpha_3yr": -0.39586510216996007
+  },
+  "ALLE-2013-12-02": {
+    "status": "ok",
+    "ticker": "ALLE",
+    "event_date": "2013-12-02",
+    "entry_price": 37.91100311279297,
+    "entry_date_actual": "2013-12-02",
+    "exit_price": 58.563629150390625,
+    "exit_date_actual": "2016-12-01",
+    "return_3yr": 0.54476601360697,
+    "sp500_return_3yr": 0.21665836438526662,
+    "alpha_3yr": 0.3281076492217033
+  },
+  "ALXN-2012-05-25": {
+    "status": "no_price_data",
+    "ticker": "ALXN"
+  },
+  "AMCR-2019-06-07": {
+    "status": "ok",
+    "ticker": "AMCR",
+    "event_date": "2019-06-07",
+    "entry_price": 41.88612747192383,
+    "entry_date_actual": "2019-06-06",
+    "exit_price": 57.5101432800293,
+    "exit_date_actual": "2022-06-06",
+    "return_3yr": 0.37301170461695726,
+    "sp500_return_3yr": 0.44942665173283786,
+    "alpha_3yr": -0.0764149471158806
+  },
+  "AMD-2017-03-20": {
+    "status": "ok",
+    "ticker": "AMD",
+    "event_date": "2017-03-20",
+    "entry_price": 14.399999618530273,
+    "entry_date_actual": "2017-03-20",
+    "exit_price": 39.81999969482422,
+    "exit_date_actual": "2020-03-19",
+    "return_3yr": 1.7652778298398608,
+    "sp500_return_3yr": 0.015133927253505111,
+    "alpha_3yr": 1.7501439025863557
+  },
+  "AME-2013-09-23": {
+    "status": "ok",
+    "ticker": "AME",
+    "event_date": "2013-09-23",
+    "entry_price": 42.36360549926758,
+    "entry_date_actual": "2013-09-23",
+    "exit_price": 45.16348648071289,
+    "exit_date_actual": "2016-09-22",
+    "return_3yr": 0.06609165930160783,
+    "sp500_return_3yr": 0.27930943882328646,
+    "alpha_3yr": -0.21321777952167864
+  },
+  "AMG-2014-07-01": {
+    "status": "ok",
+    "ticker": "AMG",
+    "event_date": "2014-07-01",
+    "entry_price": 198.84573364257812,
+    "entry_date_actual": "2014-06-30",
+    "exit_price": 160.9804229736328,
+    "exit_date_actual": "2017-06-30",
+    "return_3yr": -0.19042556244635137,
+    "sp500_return_3yr": 0.23628856626805836,
+    "alpha_3yr": -0.4267141287144097
+  },
+  "ANRZQ-2011-06-02": {
+    "status": "no_price_data",
+    "ticker": "ANRZQ"
+  },
+  "ANSS-2017-06-19": {
+    "status": "no_price_data",
+    "ticker": "ANSS"
+  },
+  "AOS-2017-07-26": {
+    "status": "ok",
+    "ticker": "AOS",
+    "event_date": "2017-07-26",
+    "entry_price": 47.20983123779297,
+    "entry_date_actual": "2017-07-25",
+    "exit_price": 46.21034622192383,
+    "exit_date_actual": "2020-07-24",
+    "return_3yr": -0.02117112028710285,
+    "sp500_return_3yr": 0.2981272823536879,
+    "alpha_3yr": -0.31929840264079073
+  },
+  "APTV-2012-12-24": {
+    "status": "ok",
+    "ticker": "APTV",
+    "event_date": "2012-12-24",
+    "entry_price": 27.79083251953125,
+    "entry_date_actual": "2012-12-24",
+    "exit_price": 69.52586364746094,
+    "exit_date_actual": "2015-12-23",
+    "return_3yr": 1.5017553395925987,
+    "sp500_return_3yr": 0.4469389971027275,
+    "alpha_3yr": 1.054816342489871
+  },
+  "ARE-2017-03-20": {
+    "status": "ok",
+    "ticker": "ARE",
+    "event_date": "2017-03-20",
+    "entry_price": 79.88780975341797,
+    "entry_date_actual": "2017-03-20",
+    "exit_price": 104.5876693725586,
+    "exit_date_actual": "2020-03-19",
+    "return_3yr": 0.30918183506819513,
+    "sp500_return_3yr": 0.015133927253505111,
+    "alpha_3yr": 0.29404790781469003
+  },
+  "ATO-2019-02-15": {
+    "status": "ok",
+    "ticker": "ATO",
+    "event_date": "2019-02-15",
+    "entry_price": 80.58466339111328,
+    "entry_date_actual": "2019-02-14",
+    "exit_price": 95.43238067626953,
+    "exit_date_actual": "2022-02-14",
+    "return_3yr": 0.1842499138216122,
+    "sp500_return_3yr": 0.6030964272472082,
+    "alpha_3yr": -0.41884651342559603
+  },
+  "ATVI-2015-08-31": {
+    "status": "no_price_data",
+    "ticker": "ATVI"
+  },
+  "AVGO-2014-05-08": {
+    "status": "ok",
+    "ticker": "AVGO",
+    "event_date": "2014-05-08",
+    "entry_price": 4.989572048187256,
+    "entry_date_actual": "2014-05-07",
+    "exit_price": 17.54851722717285,
+    "exit_date_actual": "2017-05-08",
+    "return_3yr": 2.517038547133184,
+    "sp500_return_3yr": 0.277482247839246,
+    "alpha_3yr": 2.239556299293938
+  },
+  "AWK-2016-03-04": {
+    "status": "ok",
+    "ticker": "AWK",
+    "event_date": "2016-03-04",
+    "entry_price": 55.9032096862793,
+    "entry_date_actual": "2016-03-03",
+    "exit_price": 88.99931335449219,
+    "exit_date_actual": "2019-03-04",
+    "return_3yr": 0.5920251065000278,
+    "sp500_return_3yr": 0.40102840593405986,
+    "alpha_3yr": 0.19099670056596796
+  },
+  "AYI-2016-05-03": {
+    "status": "ok",
+    "ticker": "AYI",
+    "event_date": "2016-05-03",
+    "entry_price": 237.59368896484375,
+    "entry_date_actual": "2016-05-02",
+    "exit_price": 141.40863037109375,
+    "exit_date_actual": "2019-05-02",
+    "return_3yr": -0.40483002310714705,
+    "sp500_return_3yr": 0.4016902395708329,
+    "alpha_3yr": -0.8065202626779799
+  },
+  "BALL-2022-05-10": {
+    "status": "ok",
+    "ticker": "BALL",
+    "event_date": "2022-05-10",
+    "entry_price": 65.73973846435547,
+    "entry_date_actual": "2022-05-09",
+    "exit_price": 51.37565231323242,
+    "exit_date_actual": "2025-05-09",
+    "return_3yr": -0.21849928957218703,
+    "sp500_return_3yr": 0.41808314461131585,
+    "alpha_3yr": -0.6365824341835029
+  },
+  "BBWI-2021-08-03": {
+    "status": "ok",
+    "ticker": "BBWI",
+    "event_date": "2021-08-03",
+    "entry_price": 58.0007438659668,
+    "entry_date_actual": "2021-08-02",
+    "exit_price": 31.492454528808594,
+    "exit_date_actual": "2024-08-02",
+    "return_3yr": -0.4570336097484522,
+    "sp500_return_3yr": 0.21868358304106533,
+    "alpha_3yr": -0.6757171927895176
+  },
+  "BG-2023-03-15": {
+    "status": "ok",
+    "ticker": "BG",
+    "event_date": "2023-03-15",
+    "entry_price": 95.81952667236328,
+    "entry_date_actual": "2023-03-14",
+    "exit_price": 124.7300033569336,
+    "exit_date_actual": "2026-03-13",
+    "return_3yr": 0.30171800768150536,
+    "sp500_return_3yr": 0.6921916661704066,
+    "alpha_3yr": -0.39047365848890125
+  },
+  "BHF-2017-08-07": {
+    "status": "ok",
+    "ticker": "BHF",
+    "event_date": "2017-08-07",
+    "entry_price": 61.720001220703125,
+    "entry_date_actual": "2017-08-07",
+    "exit_price": 28.68000030517578,
+    "exit_date_actual": "2020-08-06",
+    "return_3yr": -0.535320807875236,
+    "sp500_return_3yr": 0.349972401562045,
+    "alpha_3yr": -0.885293209437281
+  },
+  "BIO-2020-06-22": {
+    "status": "ok",
+    "ticker": "BIO",
+    "event_date": "2020-06-22",
+    "entry_price": 456.489990234375,
+    "entry_date_actual": "2020-06-22",
+    "exit_price": 366.4700012207031,
+    "exit_date_actual": "2023-06-21",
+    "return_3yr": -0.19720035693981602,
+    "sp500_return_3yr": 0.4002199556721588,
+    "alpha_3yr": -0.5974203126119748
+  },
+  "BKR-2019-10-18": {
+    "status": "ok",
+    "ticker": "BKR",
+    "event_date": "2019-10-18",
+    "entry_price": 18.40721321105957,
+    "entry_date_actual": "2019-10-17",
+    "exit_price": 22.060379028320312,
+    "exit_date_actual": "2022-10-17",
+    "return_3yr": 0.19846381825282589,
+    "sp500_return_3yr": 0.22682166516295355,
+    "alpha_3yr": -0.02835784691012766
+  },
+  "BLK-2011-04-04": {
+    "status": "ok",
+    "ticker": "BLK",
+    "event_date": "2011-04-04",
+    "entry_price": 136.80857849121094,
+    "entry_date_actual": "2011-04-04",
+    "exit_price": 233.78341674804688,
+    "exit_date_actual": "2014-04-03",
+    "return_3yr": 0.708835946739012,
+    "sp500_return_3yr": 0.41706995164609967,
+    "alpha_3yr": 0.2917659950929123
+  },
+  "BR-2018-06-18": {
+    "status": "ok",
+    "ticker": "BR",
+    "event_date": "2018-06-18",
+    "entry_price": 101.99303436279297,
+    "entry_date_actual": "2018-06-18",
+    "exit_price": 147.2512969970703,
+    "exit_date_actual": "2021-06-17",
+    "return_3yr": 0.44373876036761534,
+    "sp500_return_3yr": 0.5220765617958539,
+    "alpha_3yr": -0.0783378014282386
+  },
+  "BRO-2021-09-20": {
+    "status": "ok",
+    "ticker": "BRO",
+    "event_date": "2021-09-20",
+    "entry_price": 54.651512145996094,
+    "entry_date_actual": "2021-09-20",
+    "exit_price": 100.42733764648438,
+    "exit_date_actual": "2024-09-19",
+    "return_3yr": 0.8375948569950399,
+    "sp500_return_3yr": 0.3111505674576349,
+    "alpha_3yr": 0.526444289537405
+  },
+  "BWA-2011-12-19": {
+    "status": "ok",
+    "ticker": "BWA",
+    "event_date": "2011-12-19",
+    "entry_price": 22.81771469116211,
+    "entry_date_actual": "2011-12-19",
+    "exit_price": 39.9354362487793,
+    "exit_date_actual": "2014-12-18",
+    "return_3yr": 0.7501943901615759,
+    "sp500_return_3yr": 0.7100676336486896,
+    "alpha_3yr": 0.04012675651288622
+  },
+  "BXLT-2015-07-01": {
+    "status": "no_price_data",
+    "ticker": "BXLT"
+  },
+  "CARR-2020-04-03": {
+    "status": "ok",
+    "ticker": "CARR",
+    "event_date": "2020-04-03",
+    "entry_price": 12.28091812133789,
+    "entry_date_actual": "2020-04-02",
+    "exit_price": 43.811222076416016,
+    "exit_date_actual": "2023-04-03",
+    "return_3yr": 2.5674223737633057,
+    "sp500_return_3yr": 0.6322410562442283,
+    "alpha_3yr": 1.9351813175190773
+  },
+  "CBE-2011-11-23": {
+    "status": "ok",
+    "ticker": "CBE",
+    "event_date": "2011-11-23",
+    "entry_price": 0.07999999821186066,
+    "entry_date_actual": "2011-11-22",
+    "exit_price": 0.029999999329447746,
+    "exit_date_actual": "2014-11-21",
+    "return_3yr": -0.625,
+    "sp500_return_3yr": 0.7368943235518716,
+    "alpha_3yr": -1.3618943235518715
+  },
+  "CBOE-2017-03-01": {
+    "status": "ok",
+    "ticker": "CBOE",
+    "event_date": "2017-03-01",
+    "entry_price": 69.45022583007812,
+    "entry_date_actual": "2017-02-28",
+    "exit_price": 105.2900161743164,
+    "exit_date_actual": "2020-02-28",
+    "return_3yr": 0.5160500187850572,
+    "sp500_return_3yr": 0.2498604292385794,
+    "alpha_3yr": 0.26618958954647776
+  },
+  "CCEP-2016-01-04": {
+    "status": "ok",
+    "ticker": "CCEP",
+    "event_date": "2016-01-04",
+    "entry_price": 26.520898818969727,
+    "entry_date_actual": "2016-01-04",
+    "exit_price": 36.40593719482422,
+    "exit_date_actual": "2019-01-03",
+    "return_3yr": 0.3727263711282656,
+    "sp500_return_3yr": 0.21624608776803522,
+    "alpha_3yr": 0.1564802833602304
+  },
+  "CCI-2012-03-13": {
+    "status": "ok",
+    "ticker": "CCI",
+    "event_date": "2012-03-13",
+    "entry_price": 33.57271957397461,
+    "entry_date_actual": "2012-03-12",
+    "exit_price": 53.832759857177734,
+    "exit_date_actual": "2015-03-12",
+    "return_3yr": 0.603467355051826,
+    "sp500_return_3yr": 0.5067938666853514,
+    "alpha_3yr": 0.0966734883664746
+  },
+  "CDAY-2021-09-20": {
+    "status": "no_price_data",
+    "ticker": "CDAY"
+  },
+  "CDNS-2017-09-18": {
+    "status": "ok",
+    "ticker": "CDNS",
+    "event_date": "2017-09-18",
+    "entry_price": 38.779998779296875,
+    "entry_date_actual": "2017-09-18",
+    "exit_price": 101.1500015258789,
+    "exit_date_actual": "2020-09-17",
+    "return_3yr": 1.6083033705477818,
+    "sp500_return_3yr": 0.34072849335189315,
+    "alpha_3yr": 1.2675748771958886
+  },
+  "CDW-2019-09-23": {
+    "status": "ok",
+    "ticker": "CDW",
+    "event_date": "2019-09-23",
+    "entry_price": 110.11553955078125,
+    "entry_date_actual": "2019-09-23",
+    "exit_price": 155.23715209960938,
+    "exit_date_actual": "2022-09-22",
+    "return_3yr": 0.4097660760043744,
+    "sp500_return_3yr": 0.2561050456365182,
+    "alpha_3yr": 0.15366103036785622
+  },
+  "CE-2018-12-24": {
+    "status": "ok",
+    "ticker": "CE",
+    "event_date": "2018-12-24",
+    "entry_price": 73.78265380859375,
+    "entry_date_actual": "2018-12-24",
+    "exit_price": 150.47915649414062,
+    "exit_date_actual": "2021-12-23",
+    "return_3yr": 1.0394923295184286,
+    "sp500_return_3yr": 1.0100335344180011,
+    "alpha_3yr": 0.02945879510042748
+  },
+  "CERN-2010-04-30": {
+    "status": "no_price_data",
+    "ticker": "CERN"
+  },
+  "CFG-2016-02-01": {
+    "status": "ok",
+    "ticker": "CFG",
+    "event_date": "2016-02-01",
+    "entry_price": 14.256041526794434,
+    "entry_date_actual": "2016-02-01",
+    "exit_price": 24.986146926879883,
+    "exit_date_actual": "2019-01-31",
+    "return_3yr": 0.75267074523584,
+    "sp500_return_3yr": 0.3943116309583928,
+    "alpha_3yr": 0.3583591142774472
+  },
+  "CHD-2015-12-29": {
+    "status": "ok",
+    "ticker": "CHD",
+    "event_date": "2015-12-29",
+    "entry_price": 37.3129997253418,
+    "entry_date_actual": "2015-12-28",
+    "exit_price": 60.27336883544922,
+    "exit_date_actual": "2018-12-28",
+    "return_3yr": 0.6153450346827375,
+    "sp500_return_3yr": 0.20872355469699733,
+    "alpha_3yr": 0.40662147998574016
+  },
+  "CHTR-2016-09-08": {
+    "status": "ok",
+    "ticker": "CHTR",
+    "event_date": "2016-09-08",
+    "entry_price": 277.55999755859375,
+    "entry_date_actual": "2016-09-07",
+    "exit_price": 425.7200012207031,
+    "exit_date_actual": "2019-09-06",
+    "return_3yr": 0.5337945127731613,
+    "sp500_return_3yr": 0.36253068425512014,
+    "alpha_3yr": 0.17126382851804112
+  },
+  "CMCSK-2015-09-21": {
+    "status": "no_price_data",
+    "ticker": "CMCSK"
+  },
+  "CMG-2011-04-28": {
+    "status": "ok",
+    "ticker": "CMG",
+    "event_date": "2011-04-28",
+    "entry_price": 5.260000228881836,
+    "entry_date_actual": "2011-04-27",
+    "exit_price": 9.52560043334961,
+    "exit_date_actual": "2014-04-28",
+    "return_3yr": 0.8109505739269804,
+    "sp500_return_3yr": 0.37898146037928543,
+    "alpha_3yr": 0.431969113547695
+  },
+  "CNC-2016-03-30": {
+    "status": "ok",
+    "ticker": "CNC",
+    "event_date": "2016-03-30",
+    "entry_price": 31.299999237060547,
+    "entry_date_actual": "2016-03-29",
+    "exit_price": 53.099998474121094,
+    "exit_date_actual": "2019-03-29",
+    "return_3yr": 0.6964856156050129,
+    "sp500_return_3yr": 0.37926330717338685,
+    "alpha_3yr": 0.317222308431626
+  },
+  "COO-2016-09-23": {
+    "status": "ok",
+    "ticker": "COO",
+    "event_date": "2016-09-23",
+    "entry_price": 46.06025314331055,
+    "entry_date_actual": "2016-09-22",
+    "exit_price": 75.4966049194336,
+    "exit_date_actual": "2019-09-23",
+    "return_3yr": 0.6390835865477255,
+    "sp500_return_3yr": 0.37415377838909436,
+    "alpha_3yr": 0.2649298081586311
+  },
+  "COTY-2016-10-03": {
+    "status": "ok",
+    "ticker": "COTY",
+    "event_date": "2016-10-03",
+    "entry_price": 20.898210525512695,
+    "entry_date_actual": "2016-10-03",
+    "exit_price": 9.839366912841797,
+    "exit_date_actual": "2019-10-02",
+    "return_3yr": -0.5291765818499233,
+    "sp500_return_3yr": 0.3361142757087867,
+    "alpha_3yr": -0.86529085755871
+  },
+  "COV-2011-03-01": {
+    "status": "no_price_data",
+    "ticker": "COV"
+  },
+  "CPGX-2015-07-02": {
+    "status": "no_price_data",
+    "ticker": "CPGX"
+  },
+  "CPRI-2016-01-04": {
+    "status": "ok",
+    "ticker": "CPRI",
+    "event_date": "2016-01-04",
+    "entry_price": 40.369998931884766,
+    "entry_date_actual": "2016-01-04",
+    "exit_price": 37.119998931884766,
+    "exit_date_actual": "2019-01-03",
+    "return_3yr": -0.08050532786695484,
+    "sp500_return_3yr": 0.21624608776803522,
+    "alpha_3yr": -0.2967514156349901
+  },
+  "CPT-2022-04-04": {
+    "status": "ok",
+    "ticker": "CPT",
+    "event_date": "2022-04-04",
+    "entry_price": 147.21722412109375,
+    "entry_date_actual": "2022-04-04",
+    "exit_price": 115.4700698852539,
+    "exit_date_actual": "2025-04-03",
+    "return_3yr": -0.21564836876509894,
+    "sp500_return_3yr": 0.17760065345110257,
+    "alpha_3yr": -0.3932490222162015
+  },
+  "CRL-2021-05-14": {
+    "status": "ok",
+    "ticker": "CRL",
+    "event_date": "2021-05-14",
+    "entry_price": 321.010009765625,
+    "entry_date_actual": "2021-05-13",
+    "exit_price": 228.41000366210938,
+    "exit_date_actual": "2024-05-13",
+    "return_3yr": -0.28846454405307953,
+    "sp500_return_3yr": 0.2696461816109422,
+    "alpha_3yr": -0.5581107256640218
+  },
+  "CSGP-2022-09-19": {
+    "status": "ok",
+    "ticker": "CSGP",
+    "event_date": "2022-09-19",
+    "entry_price": 72.06999969482422,
+    "entry_date_actual": "2022-09-19",
+    "exit_price": 89.26000213623047,
+    "exit_date_actual": "2025-09-18",
+    "return_3yr": 0.238518142281063,
+    "sp500_return_3yr": 0.7005505651733331,
+    "alpha_3yr": -0.46203242289227014
+  },
+  "CSRA-2015-11-30": {
+    "status": "missing_price",
+    "ticker": "CSRA"
+  },
+  "CTLT-2020-09-21": {
+    "status": "no_price_data",
+    "ticker": "CTLT"
+  },
+  "CTRA-2021-10-04": {
+    "status": "ok",
+    "ticker": "CTRA",
+    "event_date": "2021-10-04",
+    "entry_price": 17.775793075561523,
+    "entry_date_actual": "2021-10-04",
+    "exit_price": 23.513620376586914,
+    "exit_date_actual": "2024-10-03",
+    "return_3yr": 0.32278882166522616,
+    "sp500_return_3yr": 0.32542565055382205,
+    "alpha_3yr": -0.002636828888595899
+  },
+  "CTVA-2019-06-03": {
+    "status": "ok",
+    "ticker": "CTVA",
+    "event_date": "2019-06-03",
+    "entry_price": 22.764493942260742,
+    "entry_date_actual": "2019-06-03",
+    "exit_price": 60.05636978149414,
+    "exit_date_actual": "2022-06-02",
+    "return_3yr": 1.6381596680259847,
+    "sp500_return_3yr": 0.5219151008511763,
+    "alpha_3yr": 1.1162445671748085
+  },
+  "CVC-2010-12-20": {
+    "status": "no_price_data",
+    "ticker": "CVC"
+  },
+  "CXO-2016-02-22": {
+    "status": "no_price_data",
+    "ticker": "CXO"
+  },
+  "CZR-2021-03-22": {
+    "status": "ok",
+    "ticker": "CZR",
+    "event_date": "2021-03-22",
+    "entry_price": 88.47000122070312,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 41.630001068115234,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": -0.5294450040272716,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": -0.8595833001325663
+  },
+  "DAL-2013-09-11": {
+    "status": "ok",
+    "ticker": "DAL",
+    "event_date": "2013-09-11",
+    "entry_price": 19.558015823364258,
+    "entry_date_actual": "2013-09-10",
+    "exit_price": 33.682899475097656,
+    "exit_date_actual": "2016-09-09",
+    "return_3yr": 0.7222043268243822,
+    "sp500_return_3yr": 0.26355267604506655,
+    "alpha_3yr": 0.45865165077931563
+  },
+  "DD-2019-06-03": {
+    "status": "ok",
+    "ticker": "DD",
+    "event_date": "2019-06-03",
+    "entry_price": 27.922529220581055,
+    "entry_date_actual": "2019-06-03",
+    "exit_price": 26.71611213684082,
+    "exit_date_actual": "2022-06-02",
+    "return_3yr": -0.0432058669975717,
+    "sp500_return_3yr": 0.5219151008511763,
+    "alpha_3yr": -0.565120967848748
+  },
+  "DISCA-2010-03-01": {
+    "status": "no_price_data",
+    "ticker": "DISCA"
+  },
+  "DISCK-2014-08-07": {
+    "status": "no_price_data",
+    "ticker": "DISCK"
+  },
+  "DISH-2017-03-13": {
+    "status": "no_price_data",
+    "ticker": "DISH"
+  },
+  "DLR-2016-05-18": {
+    "status": "ok",
+    "ticker": "DLR",
+    "event_date": "2016-05-18",
+    "entry_price": 67.5881576538086,
+    "entry_date_actual": "2016-05-17",
+    "exit_price": 92.87513732910156,
+    "exit_date_actual": "2019-05-17",
+    "return_3yr": 0.3741332883315846,
+    "sp500_return_3yr": 0.3967937260267046,
+    "alpha_3yr": -0.022660437695119995
+  },
+  "DLTR-2011-12-19": {
+    "status": "ok",
+    "ticker": "DLTR",
+    "event_date": "2011-12-19",
+    "entry_price": 40.665000915527344,
+    "entry_date_actual": "2011-12-19",
+    "exit_price": 69.11000061035156,
+    "exit_date_actual": "2014-12-18",
+    "return_3yr": 0.6994958577257256,
+    "sp500_return_3yr": 0.7100676336486896,
+    "alpha_3yr": -0.010571775922963988
+  },
+  "DOW-2019-04-02": {
+    "status": "ok",
+    "ticker": "DOW",
+    "event_date": "2019-04-02",
+    "entry_price": 36.23967742919922,
+    "entry_date_actual": "2019-04-01",
+    "exit_price": 51.11117172241211,
+    "exit_date_actual": "2022-04-01",
+    "return_3yr": 0.4103649741989854,
+    "sp500_return_3yr": 0.5854756595064207,
+    "alpha_3yr": -0.1751106853074353
+  },
+  "DPZ-2020-05-12": {
+    "status": "ok",
+    "ticker": "DPZ",
+    "event_date": "2020-05-12",
+    "entry_price": 350.4163818359375,
+    "entry_date_actual": "2020-05-11",
+    "exit_price": 293.67950439453125,
+    "exit_date_actual": "2023-05-11",
+    "return_3yr": -0.16191274261820915,
+    "sp500_return_3yr": 0.4096765738009265,
+    "alpha_3yr": -0.5715893164191357
+  },
+  "DRE-2017-07-26": {
+    "status": "no_price_data",
+    "ticker": "DRE"
+  },
+  "DWDP-2017-09-01": {
+    "status": "no_price_data",
+    "ticker": "DWDP"
+  },
+  "DXC-2017-04-04": {
+    "status": "ok",
+    "ticker": "DXC",
+    "event_date": "2017-04-04",
+    "entry_price": 55.6529426574707,
+    "entry_date_actual": "2017-04-03",
+    "exit_price": 11.670000076293945,
+    "exit_date_actual": "2020-04-03",
+    "return_3yr": -0.7903075826893873,
+    "sp500_return_3yr": 0.05503120585389341,
+    "alpha_3yr": -0.8453387885432807
+  },
+  "ELV-2022-06-28": {
+    "status": "ok",
+    "ticker": "ELV",
+    "event_date": "2022-06-28",
+    "entry_price": 456.0552673339844,
+    "entry_date_actual": "2022-06-27",
+    "exit_price": 375.1614990234375,
+    "exit_date_actual": "2025-06-27",
+    "return_3yr": -0.1773771165574669,
+    "sp500_return_3yr": 0.582793729969688,
+    "alpha_3yr": -0.7601708465271549
+  },
+  "ENDP-2015-01-27": {
+    "status": "no_price_data",
+    "ticker": "ENDP"
+  },
+  "EPAM-2021-12-14": {
+    "status": "ok",
+    "ticker": "EPAM",
+    "event_date": "2021-12-14",
+    "entry_price": 685,
+    "entry_date_actual": "2021-12-13",
+    "exit_price": 244.63999938964844,
+    "exit_date_actual": "2024-12-13",
+    "return_3yr": -0.6428613147596374,
+    "sp500_return_3yr": 0.2960223700961227,
+    "alpha_3yr": -0.93888368485576
+  },
+  "EQIX-2015-03-23": {
+    "status": "ok",
+    "ticker": "EQIX",
+    "event_date": "2015-03-23",
+    "entry_price": 184.635498046875,
+    "entry_date_actual": "2015-03-23",
+    "exit_price": 358.13690185546875,
+    "exit_date_actual": "2018-03-22",
+    "return_3yr": 0.9396968927640635,
+    "sp500_return_3yr": 0.25625589927449943,
+    "alpha_3yr": 0.6834409934895641
+  },
+  "EQT-2022-10-03": {
+    "status": "ok",
+    "ticker": "EQT",
+    "event_date": "2022-10-03",
+    "entry_price": 39.60934066772461,
+    "entry_date_actual": "2022-10-03",
+    "exit_price": 55.43899154663086,
+    "exit_date_actual": "2025-10-02",
+    "return_3yr": 0.3996443922583374,
+    "sp500_return_3yr": 0.82560228751214,
+    "alpha_3yr": -0.4259578952538026
+  },
+  "ESS-2014-04-02": {
+    "status": "ok",
+    "ticker": "ESS",
+    "event_date": "2014-04-02",
+    "entry_price": 119.79009246826172,
+    "entry_date_actual": "2014-04-01",
+    "exit_price": 173.00523376464844,
+    "exit_date_actual": "2017-03-31",
+    "return_3yr": 0.44423658250773973,
+    "sp500_return_3yr": 0.2530866531401291,
+    "alpha_3yr": 0.1911499293676106
+  },
+  "ESV-2012-07-31": {
+    "status": "no_price_data",
+    "ticker": "ESV"
+  },
+  "EVHC-2016-12-02": {
+    "status": "missing_price",
+    "ticker": "EVHC"
+  },
+  "EVRG-2018-06-05": {
+    "status": "ok",
+    "ticker": "EVRG",
+    "event_date": "2018-06-05",
+    "entry_price": 40.337623596191406,
+    "entry_date_actual": "2018-06-04",
+    "exit_price": 51.8570556640625,
+    "exit_date_actual": "2021-06-04",
+    "return_3yr": 0.28557537705217556,
+    "sp500_return_3yr": 0.5398944821787581,
+    "alpha_3yr": -0.25431910512658257
+  },
+  "EW-2011-04-01": {
+    "status": "ok",
+    "ticker": "EW",
+    "event_date": "2011-04-01",
+    "entry_price": 14.5,
+    "entry_date_actual": "2011-03-31",
+    "exit_price": 12.361666679382324,
+    "exit_date_actual": "2014-03-31",
+    "return_3yr": -0.1474712634908742,
+    "sp500_return_3yr": 0.41220218872704567,
+    "alpha_3yr": -0.5596734522179199
+  },
+  "EXR-2016-01-19": {
+    "status": "ok",
+    "ticker": "EXR",
+    "event_date": "2016-01-19",
+    "entry_price": 60.26237106323242,
+    "entry_date_actual": "2016-01-19",
+    "exit_price": 70.36616516113281,
+    "exit_date_actual": "2019-01-18",
+    "return_3yr": 0.1676634012176293,
+    "sp500_return_3yr": 0.4195861562414129,
+    "alpha_3yr": -0.2519227550237836
+  },
+  "FANG-2018-12-03": {
+    "status": "ok",
+    "ticker": "FANG",
+    "event_date": "2018-12-03",
+    "entry_price": 86.4894027709961,
+    "entry_date_actual": "2018-12-03",
+    "exit_price": 87.4505844116211,
+    "exit_date_actual": "2021-12-02",
+    "return_3yr": 0.011113287984771804,
+    "sp500_return_3yr": 0.6403200670273985,
+    "alpha_3yr": -0.6292067790426267
+  },
+  "FB-2013-12-23": {
+    "status": "no_price_data",
+    "ticker": "FB"
+  },
+  "FBHS-2016-06-24": {
+    "status": "no_price_data",
+    "ticker": "FBHS"
+  },
+  "FCPT-2015-11-10": {
+    "status": "ok",
+    "ticker": "FCPT",
+    "event_date": "2015-11-10",
+    "entry_price": 7.944920063018799,
+    "entry_date_actual": "2015-11-10",
+    "exit_price": 18.741209030151367,
+    "exit_date_actual": "2018-11-09",
+    "return_3yr": 1.358892082172863,
+    "sp500_return_3yr": 0.3379373924695062,
+    "alpha_3yr": 1.0209546897033568
+  },
+  "FDS-2021-12-20": {
+    "status": "ok",
+    "ticker": "FDS",
+    "event_date": "2021-12-20",
+    "entry_price": 450.9171447753906,
+    "entry_date_actual": "2021-12-20",
+    "exit_price": 481.6161193847656,
+    "exit_date_actual": "2024-12-19",
+    "return_3yr": 0.06808118734244774,
+    "sp500_return_3yr": 0.2843814285050033,
+    "alpha_3yr": -0.21630024116255558
+  },
+  "FFIV-2010-12-20": {
+    "status": "ok",
+    "ticker": "FFIV",
+    "event_date": "2010-12-20",
+    "entry_price": 135.60000610351562,
+    "entry_date_actual": "2010-12-20",
+    "exit_price": 84.9800033569336,
+    "exit_date_actual": "2013-12-19",
+    "return_3yr": -0.3733038382604441,
+    "sp500_return_3yr": 0.4510697303730717,
+    "alpha_3yr": -0.8243735686335159
+  },
+  "FL-2016-04-04": {
+    "status": "no_price_data",
+    "ticker": "FL"
+  },
+  "FLT-2018-06-20": {
+    "status": "no_price_data",
+    "ticker": "FLT"
+  },
+  "FOSL-2012-04-04": {
+    "status": "ok",
+    "ticker": "FOSL",
+    "event_date": "2012-04-04",
+    "entry_price": 134.38999938964844,
+    "entry_date_actual": "2012-04-03",
+    "exit_price": 83.37000274658203,
+    "exit_date_actual": "2015-04-02",
+    "return_3yr": -0.3796413191069356,
+    "sp500_return_3yr": 0.46242337785787324,
+    "alpha_3yr": -0.8420646969648089
+  },
+  "FOX-2015-09-21": {
+    "status": "no_price_data",
+    "ticker": "FOX"
+  },
+  "FRC-2019-01-02": {
+    "status": "no_price_data",
+    "ticker": "FRC"
+  },
+  "FRT-2016-02-01": {
+    "status": "ok",
+    "ticker": "FRT",
+    "event_date": "2016-02-01",
+    "entry_price": 104.2220687866211,
+    "entry_date_actual": "2016-02-01",
+    "exit_price": 99.47919464111328,
+    "exit_date_actual": "2019-01-31",
+    "return_3yr": -0.045507388221376885,
+    "sp500_return_3yr": 0.3943116309583928,
+    "alpha_3yr": -0.4398190191797697
+  },
+  "FTNT-2018-10-11": {
+    "status": "ok",
+    "ticker": "FTNT",
+    "event_date": "2018-10-11",
+    "entry_price": 15.913999557495117,
+    "entry_date_actual": "2018-10-10",
+    "exit_price": 61.36000061035156,
+    "exit_date_actual": "2021-10-11",
+    "return_3yr": 2.855724664856639,
+    "sp500_return_3yr": 0.5655746706111097,
+    "alpha_3yr": 2.2901499942455295
+  },
+  "FTV-2016-07-05": {
+    "status": "ok",
+    "ticker": "FTV",
+    "event_date": "2016-07-05",
+    "entry_price": 29.427799224853516,
+    "entry_date_actual": "2016-07-05",
+    "exit_price": 49.64447021484375,
+    "exit_date_actual": "2019-07-05",
+    "return_3yr": 0.6869922835723326,
+    "sp500_return_3yr": 0.4318114683377011,
+    "alpha_3yr": 0.25518081523463143
+  },
+  "GAS-2011-12-13": {
+    "status": "no_price_data",
+    "ticker": "GAS"
+  },
+  "GEHC-2023-01-04": {
+    "status": "ok",
+    "ticker": "GEHC",
+    "event_date": "2023-01-04",
+    "entry_price": 55.72682189941406,
+    "entry_date_actual": "2023-01-03",
+    "exit_price": 82.78711700439453,
+    "exit_date_actual": "2026-01-02",
+    "return_3yr": 0.4855883429674821,
+    "sp500_return_3yr": 0.7934673959377482,
+    "alpha_3yr": -0.3078790529702661
+  },
+  "GEN-2022-11-08": {
+    "status": "ok",
+    "ticker": "GEN",
+    "event_date": "2022-11-08",
+    "entry_price": 20.107463836669922,
+    "entry_date_actual": "2022-11-07",
+    "exit_price": 25.51321029663086,
+    "exit_date_actual": "2025-11-07",
+    "return_3yr": 0.26884277917250277,
+    "sp500_return_3yr": 0.7675737412998288,
+    "alpha_3yr": -0.49873096212732604
+  },
+  "GGP-2013-12-10": {
+    "status": "no_price_data",
+    "ticker": "GGP"
+  },
+  "GL-2019-08-08": {
+    "status": "ok",
+    "ticker": "GL",
+    "event_date": "2019-08-08",
+    "entry_price": 81.36971282958984,
+    "entry_date_actual": "2019-08-07",
+    "exit_price": 95.30575561523438,
+    "exit_date_actual": "2022-08-08",
+    "return_3yr": 0.17126818199334645,
+    "sp500_return_3yr": 0.4355370309889745,
+    "alpha_3yr": -0.2642688489956281
+  },
+  "GMCR-2014-03-24": {
+    "status": "no_price_data",
+    "ticker": "GMCR"
+  },
+  "GOOG-2014-04-03": {
+    "status": "ok",
+    "ticker": "GOOG",
+    "event_date": "2014-04-03",
+    "entry_price": 28.04215431213379,
+    "entry_date_actual": "2014-04-02",
+    "exit_price": 41.58607482910156,
+    "exit_date_actual": "2017-04-03",
+    "return_3yr": 0.4829843087735718,
+    "sp500_return_3yr": 0.24746948936211693,
+    "alpha_3yr": 0.23551481941145486
+  },
+  "GPN-2016-04-25": {
+    "status": "ok",
+    "ticker": "GPN",
+    "event_date": "2016-04-25",
+    "entry_price": 69.46037292480469,
+    "entry_date_actual": "2016-04-25",
+    "exit_price": 135.59933471679688,
+    "exit_date_actual": "2019-04-24",
+    "return_3yr": 0.952182647559233,
+    "sp500_return_3yr": 0.4020806427999104,
+    "alpha_3yr": 0.5501020047593226
+  },
+  "GRMN-2012-12-12": {
+    "status": "ok",
+    "ticker": "GRMN",
+    "event_date": "2012-12-12",
+    "entry_price": 27.860342025756836,
+    "entry_date_actual": "2012-12-11",
+    "exit_price": 26.773845672607422,
+    "exit_date_actual": "2015-12-11",
+    "return_3yr": -0.038997954588818405,
+    "sp500_return_3yr": 0.4093806331867556,
+    "alpha_3yr": -0.448378587775574
+  },
+  "HBI-2015-03-23": {
+    "status": "no_price_data",
+    "ticker": "HBI"
+  },
+  "HCA-2015-01-27": {
+    "status": "ok",
+    "ticker": "HCA",
+    "event_date": "2015-01-27",
+    "entry_price": 67.75678253173828,
+    "entry_date_actual": "2015-01-26",
+    "exit_price": 90.09793853759766,
+    "exit_date_actual": "2018-01-26",
+    "return_3yr": 0.3297257510035168,
+    "sp500_return_3yr": 0.39656990916396356,
+    "alpha_3yr": -0.06684415816044675
+  },
+  "HFC-2018-06-18": {
+    "status": "no_price_data",
+    "ticker": "HFC"
+  },
+  "HII-2018-01-03": {
+    "status": "ok",
+    "ticker": "HII",
+    "event_date": "2018-01-03",
+    "entry_price": 192.7000732421875,
+    "entry_date_actual": "2018-01-02",
+    "exit_price": 146.09588623046875,
+    "exit_date_actual": "2021-01-04",
+    "return_3yr": -0.24184830979875194,
+    "sp500_return_3yr": 0.37274133633664364,
+    "alpha_3yr": -0.6145896461353956
+  },
+  "HLT-2017-06-19": {
+    "status": "ok",
+    "ticker": "HLT",
+    "event_date": "2017-06-19",
+    "entry_price": 64.66233825683594,
+    "entry_date_actual": "2017-06-19",
+    "exit_price": 77.15576934814453,
+    "exit_date_actual": "2020-06-18",
+    "return_3yr": 0.19321032038286706,
+    "sp500_return_3yr": 0.2697741709631209,
+    "alpha_3yr": -0.07656385058025383
+  },
+  "HOLX-2016-03-30": {
+    "status": "ok",
+    "ticker": "HOLX",
+    "event_date": "2016-03-30",
+    "entry_price": 34.5,
+    "entry_date_actual": "2016-03-29",
+    "exit_price": 48.400001525878906,
+    "exit_date_actual": "2019-03-29",
+    "return_3yr": 0.4028985949530118,
+    "sp500_return_3yr": 0.37926330717338685,
+    "alpha_3yr": 0.023635287779624925
+  },
+  "HP-2010-03-01": {
+    "status": "ok",
+    "ticker": "HP",
+    "event_date": "2010-03-01",
+    "entry_price": 22.22441291809082,
+    "entry_date_actual": "2010-03-01",
+    "exit_price": 36.9012336730957,
+    "exit_date_actual": "2013-02-28",
+    "return_3yr": 0.6603918316806404,
+    "sp500_return_3yr": 0.35759301856388737,
+    "alpha_3yr": 0.30279881311675305
+  },
+  "HPE-2015-11-02": {
+    "status": "ok",
+    "ticker": "HPE",
+    "event_date": "2015-11-02",
+    "entry_price": 6.367465019226074,
+    "entry_date_actual": "2015-11-02",
+    "exit_price": 12.558340072631836,
+    "exit_date_actual": "2018-11-01",
+    "return_3yr": 0.9722668337733914,
+    "sp500_return_3yr": 0.3024262986109959,
+    "alpha_3yr": 0.6698405351623955
+  },
+  "HSIC-2015-03-18": {
+    "status": "ok",
+    "ticker": "HSIC",
+    "event_date": "2015-03-18",
+    "entry_price": 54.250980377197266,
+    "entry_date_actual": "2015-03-17",
+    "exit_price": 53.3725471496582,
+    "exit_date_actual": "2018-03-16",
+    "return_3yr": -0.0161920249446457,
+    "sp500_return_3yr": 0.3267302248956628,
+    "alpha_3yr": -0.3429222498403085
+  },
+  "IEX-2019-08-09": {
+    "status": "ok",
+    "ticker": "IEX",
+    "event_date": "2019-08-09",
+    "entry_price": 149.6146697998047,
+    "entry_date_actual": "2019-08-08",
+    "exit_price": 201.5981903076172,
+    "exit_date_actual": "2022-08-08",
+    "return_3yr": 0.3474493549153317,
+    "sp500_return_3yr": 0.4090990863952944,
+    "alpha_3yr": -0.06164973147996272
+  },
+  "ILMN-2015-11-19": {
+    "status": "ok",
+    "ticker": "ILMN",
+    "event_date": "2015-11-19",
+    "entry_price": 171.62451171875,
+    "entry_date_actual": "2015-11-18",
+    "exit_price": 293.37548828125,
+    "exit_date_actual": "2018-11-19",
+    "return_3yr": 0.7094031927212102,
+    "sp500_return_3yr": 0.2913974407406123,
+    "alpha_3yr": 0.4180057519805979
+  },
+  "INCY-2017-02-28": {
+    "status": "ok",
+    "ticker": "INCY",
+    "event_date": "2017-02-28",
+    "entry_price": 134.02000427246094,
+    "entry_date_actual": "2017-02-27",
+    "exit_price": 75.83999633789062,
+    "exit_date_actual": "2020-02-27",
+    "return_3yr": -0.4341143566619436,
+    "sp500_return_3yr": 0.2569933578502479,
+    "alpha_3yr": -0.6911077145121916
+  },
+  "INFO-2017-06-02": {
+    "status": "no_price_data",
+    "ticker": "INFO"
+  },
+  "INVH-2022-09-19": {
+    "status": "ok",
+    "ticker": "INVH",
+    "event_date": "2022-09-19",
+    "entry_price": 32.64350891113281,
+    "entry_date_actual": "2022-09-19",
+    "exit_price": 28.906217575073242,
+    "exit_date_actual": "2025-09-18",
+    "return_3yr": -0.11448803945169621,
+    "sp500_return_3yr": 0.7005505651733331,
+    "alpha_3yr": -0.8150386046250293
+  },
+  "IPGP-2018-03-07": {
+    "status": "ok",
+    "ticker": "IPGP",
+    "event_date": "2018-03-07",
+    "entry_price": 241.44000244140625,
+    "entry_date_actual": "2018-03-06",
+    "exit_price": 206.5,
+    "exit_date_actual": "2021-03-05",
+    "return_3yr": -0.14471505172340132,
+    "sp500_return_3yr": 0.4082737476262665,
+    "alpha_3yr": -0.5529887993496678
+  },
+  "IQV-2017-08-29": {
+    "status": "ok",
+    "ticker": "IQV",
+    "event_date": "2017-08-29",
+    "entry_price": 95.55000305175781,
+    "entry_date_actual": "2017-08-28",
+    "exit_price": 161.22000122070312,
+    "exit_date_actual": "2020-08-28",
+    "return_3yr": 0.6872841033126184,
+    "sp500_return_3yr": 0.4352150458962282,
+    "alpha_3yr": 0.25206905741639013
+  },
+  "IR-2010-11-17": {
+    "status": "no_price_data",
+    "ticker": "IR"
+  },
+  "IT-2017-04-05": {
+    "status": "ok",
+    "ticker": "IT",
+    "event_date": "2017-04-05",
+    "entry_price": 108.69999694824219,
+    "entry_date_actual": "2017-04-04",
+    "exit_price": 91.81999969482422,
+    "exit_date_actual": "2020-04-03",
+    "return_3yr": -0.1552897675006875,
+    "sp500_return_3yr": 0.05444122221342962,
+    "alpha_3yr": -0.2097309897141171
+  },
+  "J-2019-12-10": {
+    "status": "ok",
+    "ticker": "J",
+    "event_date": "2019-12-10",
+    "entry_price": 67.44677734375,
+    "entry_date_actual": "2019-12-09",
+    "exit_price": 97.53624725341797,
+    "exit_date_actual": "2022-12-09",
+    "return_3yr": 0.44612168430692606,
+    "sp500_return_3yr": 0.25460144001210755,
+    "alpha_3yr": 0.1915202442948185
+  },
+  "JBHT-2015-07-01": {
+    "status": "ok",
+    "ticker": "JBHT",
+    "event_date": "2015-07-01",
+    "entry_price": 74.16806030273438,
+    "entry_date_actual": "2015-06-30",
+    "exit_price": 113.16503143310547,
+    "exit_date_actual": "2018-06-29",
+    "return_3yr": 0.5257919779915476,
+    "sp500_return_3yr": 0.31760787144049124,
+    "alpha_3yr": 0.2081841065510564
+  },
+  "JKHY-2018-11-13": {
+    "status": "ok",
+    "ticker": "JKHY",
+    "event_date": "2018-11-13",
+    "entry_price": 129.16082763671875,
+    "entry_date_actual": "2018-11-12",
+    "exit_price": 149.0347900390625,
+    "exit_date_actual": "2021-11-12",
+    "return_3yr": 0.1538698904767148,
+    "sp500_return_3yr": 0.7177080895818126,
+    "alpha_3yr": -0.5638381991050978
+  },
+  "JOY-2011-02-28": {
+    "status": "no_price_data",
+    "ticker": "JOY"
+  },
+  "KDP-2022-06-21": {
+    "status": "ok",
+    "ticker": "KDP",
+    "event_date": "2022-06-21",
+    "entry_price": 31.625532150268555,
+    "entry_date_actual": "2022-06-21",
+    "exit_price": 32.77701950073242,
+    "exit_date_actual": "2025-06-20",
+    "return_3yr": 0.036410054540508,
+    "sp500_return_3yr": 0.5851720233609891,
+    "alpha_3yr": -0.548761968820481
+  },
+  "KEYS-2018-11-06": {
+    "status": "ok",
+    "ticker": "KEYS",
+    "event_date": "2018-11-06",
+    "entry_price": 58.34000015258789,
+    "entry_date_actual": "2018-11-05",
+    "exit_price": 183.67999267578125,
+    "exit_date_actual": "2021-11-05",
+    "return_3yr": 2.1484400444869287,
+    "sp500_return_3yr": 0.7154849833070587,
+    "alpha_3yr": 1.43295506117987
+  },
+  "KMI-2012-05-25": {
+    "status": "ok",
+    "ticker": "KMI",
+    "event_date": "2012-05-25",
+    "entry_price": 16.32140350341797,
+    "entry_date_actual": "2012-05-24",
+    "exit_price": 24.3756103515625,
+    "exit_date_actual": "2015-05-26",
+    "return_3yr": 0.4934751381189644,
+    "sp500_return_3yr": 0.5932700317986551,
+    "alpha_3yr": -0.09979489367969074
+  },
+  "KMX-2010-06-28": {
+    "status": "ok",
+    "ticker": "KMX",
+    "event_date": "2010-06-28",
+    "entry_price": 20.93000030517578,
+    "entry_date_actual": "2010-06-28",
+    "exit_price": 46.70000076293945,
+    "exit_date_actual": "2013-06-27",
+    "return_3yr": 1.2312470177743384,
+    "sp500_return_3yr": 0.5012516930544412,
+    "alpha_3yr": 0.7299953247198973
+  },
+  "KORS-2013-11-13": {
+    "status": "no_price_data",
+    "ticker": "KORS"
+  },
+  "KRFT-2012-10-02": {
+    "status": "no_price_data",
+    "ticker": "KRFT"
+  },
+  "KSU-2013-05-24": {
+    "status": "no_price_data",
+    "ticker": "KSU"
+  },
+  "LDOS-2019-08-09": {
+    "status": "ok",
+    "ticker": "LDOS",
+    "event_date": "2019-08-09",
+    "entry_price": 76.6872329711914,
+    "entry_date_actual": "2019-08-08",
+    "exit_price": 93.92253875732422,
+    "exit_date_actual": "2022-08-08",
+    "return_3yr": 0.22474804629614797,
+    "sp500_return_3yr": 0.4090990863952944,
+    "alpha_3yr": -0.18435104009914643
+  },
+  "LIN-2018-11-06": {
+    "status": "ok",
+    "ticker": "LIN",
+    "event_date": "2018-11-06",
+    "entry_price": 144.61502075195312,
+    "entry_date_actual": "2018-11-05",
+    "exit_price": 312.273681640625,
+    "exit_date_actual": "2021-11-05",
+    "return_3yr": 1.1593447210179066,
+    "sp500_return_3yr": 0.7154849833070587,
+    "alpha_3yr": 0.44385973771084797
+  },
+  "LKQ-2016-05-23": {
+    "status": "ok",
+    "ticker": "LKQ",
+    "event_date": "2016-05-23",
+    "entry_price": 28.359893798828125,
+    "entry_date_actual": "2016-05-23",
+    "exit_price": 24.003671646118164,
+    "exit_date_actual": "2019-05-22",
+    "return_3yr": -0.15360502347473412,
+    "sp500_return_3yr": 0.39463582989262314,
+    "alpha_3yr": -0.5482408533673573
+  },
+  "LNT-2016-07-01": {
+    "status": "ok",
+    "ticker": "LNT",
+    "event_date": "2016-07-01",
+    "entry_price": 29.214458465576172,
+    "entry_date_actual": "2016-06-30",
+    "exit_price": 39.62129592895508,
+    "exit_date_actual": "2019-07-01",
+    "return_3yr": 0.3562221588204839,
+    "sp500_return_3yr": 0.4123523848219789,
+    "alpha_3yr": -0.056130226001494976
+  },
+  "LVLT-2014-11-05": {
+    "status": "no_price_data",
+    "ticker": "LVLT"
+  },
+  "LVS-2019-10-03": {
+    "status": "ok",
+    "ticker": "LVS",
+    "event_date": "2019-10-03",
+    "entry_price": 52.0311164855957,
+    "entry_date_actual": "2019-10-02",
+    "exit_price": 36.66498947143555,
+    "exit_date_actual": "2022-10-03",
+    "return_3yr": -0.29532572145389413,
+    "sp500_return_3yr": 0.2738665522004327,
+    "alpha_3yr": -0.5691922736543269
+  },
+  "LW-2018-12-03": {
+    "status": "ok",
+    "ticker": "LW",
+    "event_date": "2018-12-03",
+    "entry_price": 67.33922576904297,
+    "entry_date_actual": "2018-12-03",
+    "exit_price": 49.122615814208984,
+    "exit_date_actual": "2021-12-02",
+    "return_3yr": -0.2705200386074008,
+    "sp500_return_3yr": 0.6403200670273985,
+    "alpha_3yr": -0.9108401056347993
+  },
+  "LYB-2012-09-05": {
+    "status": "ok",
+    "ticker": "LYB",
+    "event_date": "2012-09-05",
+    "entry_price": 22.72284698486328,
+    "entry_date_actual": "2012-09-04",
+    "exit_price": 44.654685974121094,
+    "exit_date_actual": "2015-09-04",
+    "return_3yr": 0.9651888693290768,
+    "sp500_return_3yr": 0.3674748037842198,
+    "alpha_3yr": 0.597714065544857
+  },
+  "LYV-2019-12-23": {
+    "status": "ok",
+    "ticker": "LYV",
+    "event_date": "2019-12-23",
+    "entry_price": 70.44000244140625,
+    "entry_date_actual": "2019-12-23",
+    "exit_price": 70.56999969482422,
+    "exit_date_actual": "2022-12-22",
+    "return_3yr": 0.0018455032497493695,
+    "sp500_return_3yr": 0.1856011243761617,
+    "alpha_3yr": -0.18375562112641233
+  },
+  "MAA-2016-12-02": {
+    "status": "ok",
+    "ticker": "MAA",
+    "event_date": "2016-12-02",
+    "entry_price": 64.21031951904297,
+    "entry_date_actual": "2016-12-01",
+    "exit_price": 107.43132019042969,
+    "exit_date_actual": "2019-12-02",
+    "return_3yr": 0.6731161127234165,
+    "sp500_return_3yr": 0.4211576054546443,
+    "alpha_3yr": 0.2519585072687722
+  },
+  "MAC-2013-05-09": {
+    "status": "ok",
+    "ticker": "MAC",
+    "event_date": "2013-05-09",
+    "entry_price": 35.13384246826172,
+    "entry_date_actual": "2013-05-08",
+    "exit_price": 47.45071792602539,
+    "exit_date_actual": "2016-05-09",
+    "return_3yr": 0.3505701224934382,
+    "sp500_return_3yr": 0.2609191060692654,
+    "alpha_3yr": 0.08965101642417284
+  },
+  "MGM-2017-07-26": {
+    "status": "ok",
+    "ticker": "MGM",
+    "event_date": "2017-07-26",
+    "entry_price": 32.61772918701172,
+    "entry_date_actual": "2017-07-25",
+    "exit_price": 15.776521682739258,
+    "exit_date_actual": "2020-07-24",
+    "return_3yr": -0.5163206613101251,
+    "sp500_return_3yr": 0.2981272823536879,
+    "alpha_3yr": -0.814447943663813
+  },
+  "MHK-2013-12-23": {
+    "status": "ok",
+    "ticker": "MHK",
+    "event_date": "2013-12-23",
+    "entry_price": 145.42999267578125,
+    "entry_date_actual": "2013-12-23",
+    "exit_price": 202.99000549316406,
+    "exit_date_actual": "2016-12-22",
+    "return_3yr": 0.39579189793198966,
+    "sp500_return_3yr": 0.23685576672529368,
+    "alpha_3yr": 0.15893613120669597
+  },
+  "MLM-2014-07-02": {
+    "status": "ok",
+    "ticker": "MLM",
+    "event_date": "2014-07-02",
+    "entry_price": 120.15538024902344,
+    "entry_date_actual": "2014-07-01",
+    "exit_price": 208.6444091796875,
+    "exit_date_actual": "2017-06-30",
+    "return_3yr": 0.7364549864289848,
+    "sp500_return_3yr": 0.22808767866900226,
+    "alpha_3yr": 0.5083673077599825
+  },
+  "MMI-2011-01-04": {
+    "status": "missing_price",
+    "ticker": "MMI"
+  },
+  "MNK-2014-08-19": {
+    "status": "no_price_data",
+    "ticker": "MNK"
+  },
+  "MNST-2012-06-29": {
+    "status": "ok",
+    "ticker": "MNST",
+    "event_date": "2012-06-29",
+    "entry_price": 11.4399995803833,
+    "entry_date_actual": "2012-06-28",
+    "exit_price": 22.398332595825195,
+    "exit_date_actual": "2015-06-29",
+    "return_3yr": 0.9578962777439833,
+    "sp500_return_3yr": 0.5482151267839731,
+    "alpha_3yr": 0.40968115096001023
+  },
+  "MOH-2022-03-02": {
+    "status": "ok",
+    "ticker": "MOH",
+    "event_date": "2022-03-02",
+    "entry_price": 311.8800048828125,
+    "entry_date_actual": "2022-03-01",
+    "exit_price": 301.1199951171875,
+    "exit_date_actual": "2025-02-28",
+    "return_3yr": -0.03450047966258057,
+    "sp500_return_3yr": 0.3827544839566311,
+    "alpha_3yr": -0.41725496361921166
+  },
+  "MOS-2011-09-26": {
+    "status": "ok",
+    "ticker": "MOS",
+    "event_date": "2011-09-26",
+    "entry_price": 44.402244567871094,
+    "entry_date_actual": "2011-09-26",
+    "exit_price": 35.97834014892578,
+    "exit_date_actual": "2014-09-25",
+    "return_3yr": -0.1897179861272316,
+    "sp500_return_3yr": 0.6905198613691819,
+    "alpha_3yr": -0.8802378474964134
+  },
+  "MPWR-2021-02-12": {
+    "status": "ok",
+    "ticker": "MPWR",
+    "event_date": "2021-02-12",
+    "entry_price": 370.98333740234375,
+    "entry_date_actual": "2021-02-11",
+    "exit_price": 718.9231567382812,
+    "exit_date_actual": "2024-02-12",
+    "return_3yr": 0.9378853017287545,
+    "sp500_return_3yr": 0.28226576430671163,
+    "alpha_3yr": 0.6556195374220428
+  },
+  "MRNA-2021-07-21": {
+    "status": "ok",
+    "ticker": "MRNA",
+    "event_date": "2021-07-21",
+    "entry_price": 307.3299865722656,
+    "entry_date_actual": "2021-07-20",
+    "exit_price": 121.13999938964844,
+    "exit_date_actual": "2024-07-19",
+    "return_3yr": -0.6058308506086387,
+    "sp500_return_3yr": 0.2734035441068389,
+    "alpha_3yr": -0.8792343947154777
+  },
+  "MTCH-2021-09-20": {
+    "status": "ok",
+    "ticker": "MTCH",
+    "event_date": "2021-09-20",
+    "entry_price": 147.1141815185547,
+    "entry_date_actual": "2021-09-20",
+    "exit_price": 35.782958984375,
+    "exit_date_actual": "2024-09-19",
+    "return_3yr": -0.75676743999108,
+    "sp500_return_3yr": 0.3111505674576349,
+    "alpha_3yr": -1.067918007448715
+  },
+  "MTD-2016-09-06": {
+    "status": "ok",
+    "ticker": "MTD",
+    "event_date": "2016-09-06",
+    "entry_price": 404.80999755859375,
+    "entry_date_actual": "2016-09-06",
+    "exit_price": 685.780029296875,
+    "exit_date_actual": "2019-09-05",
+    "return_3yr": 0.6940787861782306,
+    "sp500_return_3yr": 0.36109181267783125,
+    "alpha_3yr": 0.33298697350039935
+  },
+  "MXIM-2018-12-03": {
+    "status": "no_price_data",
+    "ticker": "MXIM"
+  },
+  "NAVI-2014-05-01": {
+    "status": "ok",
+    "ticker": "NAVI",
+    "event_date": "2014-05-01",
+    "entry_price": 9.534198760986328,
+    "entry_date_actual": "2014-04-30",
+    "exit_price": 10.087949752807617,
+    "exit_date_actual": "2017-05-01",
+    "return_3yr": 0.0580804958762998,
+    "sp500_return_3yr": 0.2677248016272327,
+    "alpha_3yr": -0.20964430575093293
+  },
+  "NCLH-2017-10-13": {
+    "status": "ok",
+    "ticker": "NCLH",
+    "event_date": "2017-10-13",
+    "entry_price": 58.86000061035156,
+    "entry_date_actual": "2017-10-12",
+    "exit_price": 18.079999923706055,
+    "exit_date_actual": "2020-10-12",
+    "return_3yr": -0.6928304496054257,
+    "sp500_return_3yr": 0.3854633664634211,
+    "alpha_3yr": -1.0782938160688469
+  },
+  "NDSN-2022-02-15": {
+    "status": "ok",
+    "ticker": "NDSN",
+    "event_date": "2022-02-15",
+    "entry_price": 211.08729553222656,
+    "entry_date_actual": "2022-02-14",
+    "exit_price": 212.64157104492188,
+    "exit_date_actual": "2025-02-14",
+    "return_3yr": 0.0073631883376800485,
+    "sp500_return_3yr": 0.3891613845065017,
+    "alpha_3yr": -0.3817981961688216
+  },
+  "NE-2011-01-18": {
+    "status": "no_price_data",
+    "ticker": "NE"
+  },
+  "NFX-2010-12-20": {
+    "status": "ok",
+    "ticker": "NFX",
+    "event_date": "2010-12-20",
+    "entry_price": 71.20999908447266,
+    "entry_date_actual": "2010-12-20",
+    "exit_price": 23.850000381469727,
+    "exit_date_actual": "2013-12-19",
+    "return_3yr": -0.6650751202344809,
+    "sp500_return_3yr": 0.4510697303730717,
+    "alpha_3yr": -1.1161448506075526
+  },
+  "NKTR-2018-03-19": {
+    "status": "ok",
+    "ticker": "NKTR",
+    "event_date": "2018-03-19",
+    "entry_price": 1575.1500244140625,
+    "entry_date_actual": "2018-03-19",
+    "exit_price": 331.5,
+    "exit_date_actual": "2021-03-18",
+    "return_3yr": -0.7895438562283525,
+    "sp500_return_3yr": 0.443264111618665,
+    "alpha_3yr": -1.2328079678470176
+  },
+  "NLOK-2019-11-05": {
+    "status": "no_price_data",
+    "ticker": "NLOK"
+  },
+  "NLSN-2013-07-09": {
+    "status": "no_price_data",
+    "ticker": "NLSN"
+  },
+  "NOW-2019-11-21": {
+    "status": "ok",
+    "ticker": "NOW",
+    "event_date": "2019-11-21",
+    "entry_price": 56.599998474121094,
+    "entry_date_actual": "2019-11-20",
+    "exit_price": 77.47599792480469,
+    "exit_date_actual": "2022-11-21",
+    "return_3yr": 0.36883392249963776,
+    "sp500_return_3yr": 0.2707063919250106,
+    "alpha_3yr": 0.09812753057462714
+  },
+  "NRG-2010-01-29": {
+    "status": "ok",
+    "ticker": "NRG",
+    "event_date": "2010-01-29",
+    "entry_price": 18.456037521362305,
+    "entry_date_actual": "2010-01-28",
+    "exit_price": 17.758228302001953,
+    "exit_date_actual": "2013-01-28",
+    "return_3yr": -0.03780926531779417,
+    "sp500_return_3yr": 0.38325358743965593,
+    "alpha_3yr": -0.4210628527574501
+  },
+  "NVR-2019-09-26": {
+    "status": "ok",
+    "ticker": "NVR",
+    "event_date": "2019-09-26",
+    "entry_price": 3575,
+    "entry_date_actual": "2019-09-25",
+    "exit_price": 3951.5400390625,
+    "exit_date_actual": "2022-09-26",
+    "return_3yr": 0.10532588505244755,
+    "sp500_return_3yr": 0.22452230601794793,
+    "alpha_3yr": -0.11919642096550037
+  },
+  "NWS-2015-09-21": {
+    "status": "ok",
+    "ticker": "NWS",
+    "event_date": "2015-09-21",
+    "entry_price": 11.41220760345459,
+    "entry_date_actual": "2015-09-21",
+    "exit_price": 12.119014739990234,
+    "exit_date_actual": "2018-09-20",
+    "return_3yr": 0.06193430413250517,
+    "sp500_return_3yr": 0.4899820758078764,
+    "alpha_3yr": -0.4280477716753712
+  },
+  "NWSA-2013-07-01": {
+    "status": "ok",
+    "ticker": "NWSA",
+    "event_date": "2013-07-01",
+    "entry_price": 12.934328079223633,
+    "entry_date_actual": "2013-07-01",
+    "exit_price": 10.094355583190918,
+    "exit_date_actual": "2016-06-30",
+    "return_3yr": -0.21956861451462276,
+    "sp500_return_3yr": 0.2996360022470565,
+    "alpha_3yr": -0.5192046167616793
+  },
+  "NXPI-2021-03-22": {
+    "status": "ok",
+    "ticker": "NXPI",
+    "event_date": "2021-03-22",
+    "entry_price": 184.20143127441406,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 238.5618133544922,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": 0.2951137876833039,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": -0.03502450842199095
+  },
+  "O-2015-04-07": {
+    "status": "ok",
+    "ticker": "O",
+    "event_date": "2015-04-07",
+    "entry_price": 29.395170211791992,
+    "entry_date_actual": "2015-04-06",
+    "exit_price": 34.551292419433594,
+    "exit_date_actual": "2018-04-06",
+    "return_3yr": 0.17540712200309702,
+    "sp500_return_3yr": 0.2517758283639709,
+    "alpha_3yr": -0.07636870636087387
+  },
+  "ODFL-2019-12-09": {
+    "status": "ok",
+    "ticker": "ODFL",
+    "event_date": "2019-12-09",
+    "entry_price": 60.51960754394531,
+    "entry_date_actual": "2019-12-09",
+    "exit_price": 141.05516052246094,
+    "exit_date_actual": "2022-12-08",
+    "return_3yr": 1.3307348848889355,
+    "sp500_return_3yr": 0.2638905021544751,
+    "alpha_3yr": 1.0668443827344605
+  },
+  "OGN-2021-06-04": {
+    "status": "ok",
+    "ticker": "OGN",
+    "event_date": "2021-06-04",
+    "entry_price": 30.200029373168945,
+    "entry_date_actual": "2021-06-03",
+    "exit_price": 20.148366928100586,
+    "exit_date_actual": "2024-06-03",
+    "return_3yr": -0.33283618107996626,
+    "sp500_return_3yr": 0.2600974943743168,
+    "alpha_3yr": -0.5929336754542831
+  },
+  "OKE-2010-03-15": {
+    "status": "ok",
+    "ticker": "OKE",
+    "event_date": "2010-03-15",
+    "entry_price": 8.724730491638184,
+    "entry_date_actual": "2010-03-15",
+    "exit_price": 18.657546997070312,
+    "exit_date_actual": "2013-03-14",
+    "return_3yr": 1.1384668575094417,
+    "sp500_return_3yr": 0.3587278400013241,
+    "alpha_3yr": 0.7797390175081176
+  },
+  "ON-2022-06-21": {
+    "status": "ok",
+    "ticker": "ON",
+    "event_date": "2022-06-21",
+    "entry_price": 51.95000076293945,
+    "entry_date_actual": "2022-06-21",
+    "exit_price": 52.81999969482422,
+    "exit_date_actual": "2025-06-20",
+    "return_3yr": 0.016746851185908223,
+    "sp500_return_3yr": 0.5851720233609891,
+    "alpha_3yr": -0.5684251721750808
+  },
+  "OTIS-2020-04-03": {
+    "status": "ok",
+    "ticker": "OTIS",
+    "event_date": "2020-04-03",
+    "entry_price": 40.22262191772461,
+    "entry_date_actual": "2020-04-02",
+    "exit_price": 80.06547546386719,
+    "exit_date_actual": "2023-04-03",
+    "return_3yr": 0.9905583387289161,
+    "sp500_return_3yr": 0.6322410562442283,
+    "alpha_3yr": 0.35831728248468775
+  },
+  "PCG-2022-10-03": {
+    "status": "ok",
+    "ticker": "PCG",
+    "event_date": "2022-10-03",
+    "entry_price": 12.959734916687012,
+    "entry_date_actual": "2022-10-03",
+    "exit_price": 15.581398963928223,
+    "exit_date_actual": "2025-10-02",
+    "return_3yr": 0.20229303022745818,
+    "sp500_return_3yr": 0.82560228751214,
+    "alpha_3yr": -0.6233092572846819
+  },
+  "PEAK-2019-11-05": {
+    "status": "no_price_data",
+    "ticker": "PEAK"
+  },
+  "PENN-2021-03-22": {
+    "status": "ok",
+    "ticker": "PENN",
+    "event_date": "2021-03-22",
+    "entry_price": 113.16000366210938,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 17.530000686645508,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": -0.8450866019853684,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": -1.1752248980906632
+  },
+  "PETM-2012-10-05": {
+    "status": "no_price_data",
+    "ticker": "PETM"
+  },
+  "PKG-2017-07-26": {
+    "status": "ok",
+    "ticker": "PKG",
+    "event_date": "2017-07-26",
+    "entry_price": 84.06106567382812,
+    "entry_date_actual": "2017-07-25",
+    "exit_price": 86.72306823730469,
+    "exit_date_actual": "2020-07-24",
+    "return_3yr": 0.03166748532317691,
+    "sp500_return_3yr": 0.2981272823536879,
+    "alpha_3yr": -0.266459797030511
+  },
+  "PNR-2012-10-01": {
+    "status": "ok",
+    "ticker": "PNR",
+    "event_date": "2012-10-01",
+    "entry_price": 22.71116828918457,
+    "entry_date_actual": "2012-10-01",
+    "exit_price": 28.77297019958496,
+    "exit_date_actual": "2015-09-30",
+    "return_3yr": 0.26690841409894,
+    "sp500_return_3yr": 0.32920964650322115,
+    "alpha_3yr": -0.06230123240428115
+  },
+  "PRGO-2011-12-19": {
+    "status": "ok",
+    "ticker": "PRGO",
+    "event_date": "2011-12-19",
+    "entry_price": 76.33429718017578,
+    "entry_date_actual": "2011-12-19",
+    "exit_price": 129.5164337158203,
+    "exit_date_actual": "2014-12-18",
+    "return_3yr": 0.6967004151504269,
+    "sp500_return_3yr": 0.7100676336486896,
+    "alpha_3yr": -0.013367218498262723
+  },
+  "PSX-2012-05-01": {
+    "status": "ok",
+    "ticker": "PSX",
+    "event_date": "2012-05-01",
+    "entry_price": 21.34202003479004,
+    "entry_date_actual": "2012-04-30",
+    "exit_price": 52.93877410888672,
+    "exit_date_actual": "2015-04-30",
+    "return_3yr": 1.4804950057487622,
+    "sp500_return_3yr": 0.4918771299824244,
+    "alpha_3yr": 0.9886178757663379
+  },
+  "PTC-2021-04-20": {
+    "status": "ok",
+    "ticker": "PTC",
+    "event_date": "2021-04-20",
+    "entry_price": 139.8000030517578,
+    "entry_date_actual": "2021-04-19",
+    "exit_price": 176.3699951171875,
+    "exit_date_actual": "2024-04-19",
+    "return_3yr": 0.2615879203657132,
+    "sp500_return_3yr": 0.1931107497739949,
+    "alpha_3yr": 0.06847717059171832
+  },
+  "PVH-2013-02-14": {
+    "status": "ok",
+    "ticker": "PVH",
+    "event_date": "2013-02-14",
+    "entry_price": 118.20729064941406,
+    "entry_date_actual": "2013-02-13",
+    "exit_price": 72.2434310913086,
+    "exit_date_actual": "2016-02-12",
+    "return_3yr": -0.3888411561214757,
+    "sp500_return_3yr": 0.22656270888462146,
+    "alpha_3yr": -0.6154038650060971
+  },
+  "QEP-2010-07-01": {
+    "status": "no_price_data",
+    "ticker": "QEP"
+  },
+  "QRVO-2015-06-12": {
+    "status": "ok",
+    "ticker": "QRVO",
+    "event_date": "2015-06-12",
+    "entry_price": 82,
+    "entry_date_actual": "2015-06-11",
+    "exit_price": 79.83000183105469,
+    "exit_date_actual": "2018-06-11",
+    "return_3yr": -0.026463392304211127,
+    "sp500_return_3yr": 0.31919608617427564,
+    "alpha_3yr": -0.34565947847848677
+  },
+  "RCL-2014-12-05": {
+    "status": "ok",
+    "ticker": "RCL",
+    "event_date": "2014-12-05",
+    "entry_price": 67.26338195800781,
+    "entry_date_actual": "2014-12-04",
+    "exit_price": 114.9149169921875,
+    "exit_date_actual": "2017-12-04",
+    "return_3yr": 0.7084320420273886,
+    "sp500_return_3yr": 0.27391020933746724,
+    "alpha_3yr": 0.4345218326899214
+  },
+  "RE-2017-06-19": {
+    "status": "no_price_data",
+    "ticker": "RE"
+  },
+  "REG-2017-03-02": {
+    "status": "ok",
+    "ticker": "REG",
+    "event_date": "2017-03-02",
+    "entry_price": 47.72229766845703,
+    "entry_date_actual": "2017-03-01",
+    "exit_price": 46.80359649658203,
+    "exit_date_actual": "2020-03-02",
+    "return_3yr": -0.019250983644113876,
+    "sp500_return_3yr": 0.2897669538933336,
+    "alpha_3yr": -0.3090179375374475
+  },
+  "REGN-2013-05-01": {
+    "status": "ok",
+    "ticker": "REGN",
+    "event_date": "2013-05-01",
+    "entry_price": 213.69631958007812,
+    "entry_date_actual": "2013-04-30",
+    "exit_price": 374.1821594238281,
+    "exit_date_actual": "2016-04-29",
+    "return_3yr": 0.7509995500114889,
+    "sp500_return_3yr": 0.2927759774309324,
+    "alpha_3yr": 0.45822357258055646
+  },
+  "RIG-2013-10-29": {
+    "status": "ok",
+    "ticker": "RIG",
+    "event_date": "2013-10-29",
+    "entry_price": 42.00935363769531,
+    "entry_date_actual": "2013-10-28",
+    "exit_price": 10.210000038146973,
+    "exit_date_actual": "2016-10-28",
+    "return_3yr": -0.7569588876276958,
+    "sp500_return_3yr": 0.20674074251110394,
+    "alpha_3yr": -0.9636996301387998
+  },
+  "RJF-2017-03-20": {
+    "status": "ok",
+    "ticker": "RJF",
+    "event_date": "2017-03-20",
+    "entry_price": 45.335235595703125,
+    "entry_date_actual": "2017-03-20",
+    "exit_price": 40.695350646972656,
+    "exit_date_actual": "2020-03-19",
+    "return_3yr": -0.10234610866718949,
+    "sp500_return_3yr": 0.015133927253505111,
+    "alpha_3yr": -0.1174800359206946
+  },
+  "RMD-2017-07-26": {
+    "status": "ok",
+    "ticker": "RMD",
+    "event_date": "2017-07-26",
+    "entry_price": 71.02580261230469,
+    "entry_date_actual": "2017-07-25",
+    "exit_price": 192.7707061767578,
+    "exit_date_actual": "2020-07-24",
+    "return_3yr": 1.714094020577273,
+    "sp500_return_3yr": 0.2981272823536879,
+    "alpha_3yr": 1.415966738223585
+  },
+  "ROL-2018-10-01": {
+    "status": "ok",
+    "ticker": "ROL",
+    "event_date": "2018-10-01",
+    "entry_price": 23.93659782409668,
+    "entry_date_actual": "2018-10-01",
+    "exit_price": 33.29371643066406,
+    "exit_date_actual": "2021-09-30",
+    "return_3yr": 0.39091263826756895,
+    "sp500_return_3yr": 0.47286967048750905,
+    "alpha_3yr": -0.0819570322199401
+  },
+  "SBAC-2017-09-01": {
+    "status": "ok",
+    "ticker": "SBAC",
+    "event_date": "2017-09-01",
+    "entry_price": 140.8690185546875,
+    "entry_date_actual": "2017-08-31",
+    "exit_price": 282.95758056640625,
+    "exit_date_actual": "2020-08-31",
+    "return_3yr": 1.008657286531444,
+    "sp500_return_3yr": 0.416183600790132,
+    "alpha_3yr": 0.592473685741312
+  },
+  "SBNY-2021-12-20": {
+    "status": "missing_price",
+    "ticker": "SBNY"
+  },
+  "SIG-2015-07-29": {
+    "status": "ok",
+    "ticker": "SIG",
+    "event_date": "2015-07-29",
+    "entry_price": 98.68356323242188,
+    "entry_date_actual": "2015-07-28",
+    "exit_price": 52.123958587646484,
+    "exit_date_actual": "2018-07-27",
+    "return_3yr": -0.47180708843191144,
+    "sp500_return_3yr": 0.34662370398154785,
+    "alpha_3yr": -0.8184307924134593
+  },
+  "SIVB-2018-03-19": {
+    "status": "no_price_data",
+    "ticker": "SIVB"
+  },
+  "SLG-2015-03-23": {
+    "status": "ok",
+    "ticker": "SLG",
+    "event_date": "2015-03-23",
+    "entry_price": 77.07145690917969,
+    "entry_date_actual": "2015-03-23",
+    "exit_price": 60.18752670288086,
+    "exit_date_actual": "2018-03-22",
+    "return_3yr": -0.21906852268531396,
+    "sp500_return_3yr": 0.25625589927449943,
+    "alpha_3yr": -0.4753244219598134
+  },
+  "SNPS-2017-03-16": {
+    "status": "ok",
+    "ticker": "SNPS",
+    "event_date": "2017-03-16",
+    "entry_price": 70.25,
+    "entry_date_actual": "2017-03-15",
+    "exit_price": 112.75,
+    "exit_date_actual": "2020-03-16",
+    "return_3yr": 0.604982206405694,
+    "sp500_return_3yr": 0.0003646868866763391,
+    "alpha_3yr": 0.6046175195190177
+  },
+  "STE-2019-12-23": {
+    "status": "ok",
+    "ticker": "STE",
+    "event_date": "2019-12-23",
+    "entry_price": 143.2785186767578,
+    "entry_date_actual": "2019-12-23",
+    "exit_price": 176.61277770996094,
+    "exit_date_actual": "2022-12-22",
+    "return_3yr": 0.2326535711079382,
+    "sp500_return_3yr": 0.1856011243761617,
+    "alpha_3yr": 0.0470524467317765
+  },
+  "STLD-2022-12-22": {
+    "status": "ok",
+    "ticker": "STLD",
+    "event_date": "2022-12-22",
+    "entry_price": 99.93379974365234,
+    "entry_date_actual": "2022-12-21",
+    "exit_price": 175.24615478515625,
+    "exit_date_actual": "2025-12-22",
+    "return_3yr": 0.7536224504091034,
+    "sp500_return_3yr": 0.7735198529027596,
+    "alpha_3yr": -0.019897402493656235
+  },
+  "STX-2012-07-02": {
+    "status": "ok",
+    "ticker": "STX",
+    "event_date": "2012-07-02",
+    "entry_price": 13.414159774780273,
+    "entry_date_actual": "2012-07-02",
+    "exit_price": 29.092899322509766,
+    "exit_date_actual": "2015-07-01",
+    "return_3yr": 1.1688200983863943,
+    "sp500_return_3yr": 0.5213509289701703,
+    "alpha_3yr": 0.647469169416224
+  },
+  "SWKS-2015-03-12": {
+    "status": "ok",
+    "ticker": "SWKS",
+    "event_date": "2015-03-12",
+    "entry_price": 73.40306854248047,
+    "entry_date_actual": "2015-03-11",
+    "exit_price": 95.3147964477539,
+    "exit_date_actual": "2018-03-12",
+    "return_3yr": 0.2985124238040878,
+    "sp500_return_3yr": 0.3640650280615014,
+    "alpha_3yr": -0.06555260425741355
+  },
+  "TDG-2016-06-03": {
+    "status": "ok",
+    "ticker": "TDG",
+    "event_date": "2016-06-03",
+    "entry_price": 166.13632202148438,
+    "entry_date_actual": "2016-06-02",
+    "exit_price": 327.4568786621094,
+    "exit_date_actual": "2019-06-03",
+    "return_3yr": 0.9710131696533127,
+    "sp500_return_3yr": 0.30361567618310953,
+    "alpha_3yr": 0.6673974934702032
+  },
+  "TDY-2020-06-22": {
+    "status": "ok",
+    "ticker": "TDY",
+    "event_date": "2020-06-22",
+    "entry_price": 325.6499938964844,
+    "entry_date_actual": "2020-06-22",
+    "exit_price": 401.94000244140625,
+    "exit_date_actual": "2023-06-21",
+    "return_3yr": 0.23426995232547887,
+    "sp500_return_3yr": 0.4002199556721588,
+    "alpha_3yr": -0.16595000334667992
+  },
+  "TECH-2021-08-30": {
+    "status": "ok",
+    "ticker": "TECH",
+    "event_date": "2021-08-30",
+    "entry_price": 123.97118377685547,
+    "entry_date_actual": "2021-08-30",
+    "exit_price": 73.92166137695312,
+    "exit_date_actual": "2024-08-29",
+    "return_3yr": -0.4037190004573162,
+    "sp500_return_3yr": 0.23475805076074704,
+    "alpha_3yr": -0.6384770512180632
+  },
+  "TEL-2011-10-17": {
+    "status": "ok",
+    "ticker": "TEL",
+    "event_date": "2011-10-17",
+    "entry_price": 25.844802856445312,
+    "entry_date_actual": "2011-10-17",
+    "exit_price": 42.56624984741211,
+    "exit_date_actual": "2014-10-16",
+    "return_3yr": 0.6469945653617828,
+    "sp500_return_3yr": 0.5511883420949241,
+    "alpha_3yr": 0.09580622326685873
+  },
+  "TER-2020-09-21": {
+    "status": "ok",
+    "ticker": "TER",
+    "event_date": "2020-09-21",
+    "entry_price": 75.28044128417969,
+    "entry_date_actual": "2020-09-21",
+    "exit_price": 95.02979278564453,
+    "exit_date_actual": "2023-09-20",
+    "return_3yr": 0.26234372653199634,
+    "sp500_return_3yr": 0.3417005835605662,
+    "alpha_3yr": -0.07935685702856987
+  },
+  "TFC-2019-12-09": {
+    "status": "ok",
+    "ticker": "TFC",
+    "event_date": "2019-12-09",
+    "entry_price": 41.04820251464844,
+    "entry_date_actual": "2019-12-09",
+    "exit_price": 35.371028900146484,
+    "exit_date_actual": "2022-12-08",
+    "return_3yr": -0.13830504788793127,
+    "sp500_return_3yr": 0.2638905021544751,
+    "alpha_3yr": -0.40219555004240637
+  },
+  "TFX-2019-01-18": {
+    "status": "ok",
+    "ticker": "TFX",
+    "event_date": "2019-01-18",
+    "entry_price": 243.91070556640625,
+    "entry_date_actual": "2019-01-17",
+    "exit_price": 315.6016845703125,
+    "exit_date_actual": "2022-01-18",
+    "return_3yr": 0.2939230520342533,
+    "sp500_return_3yr": 0.7364109967942627,
+    "alpha_3yr": -0.4424879447600094
+  },
+  "TMUS-2019-07-15": {
+    "status": "ok",
+    "ticker": "TMUS",
+    "event_date": "2019-07-15",
+    "entry_price": 76.25518035888672,
+    "entry_date_actual": "2019-07-15",
+    "exit_price": 130.4347381591797,
+    "exit_date_actual": "2022-07-14",
+    "return_3yr": 0.7105033067301496,
+    "sp500_return_3yr": 0.257466019113158,
+    "alpha_3yr": 0.45303728761699164
+  },
+  "TRGP-2022-10-12": {
+    "status": "ok",
+    "ticker": "TRGP",
+    "event_date": "2022-10-12",
+    "entry_price": 60.91054916381836,
+    "entry_date_actual": "2022-10-11",
+    "exit_price": 150.65281677246094,
+    "exit_date_actual": "2025-10-10",
+    "return_3yr": 1.4733452388892698,
+    "sp500_return_3yr": 0.8258015417667439,
+    "alpha_3yr": 0.6475436971225259
+  },
+  "TRIP-2011-12-21": {
+    "status": "ok",
+    "ticker": "TRIP",
+    "event_date": "2011-12-21",
+    "entry_price": 26.900585174560547,
+    "entry_date_actual": "2011-12-20",
+    "exit_price": 67.27369689941406,
+    "exit_date_actual": "2014-12-19",
+    "return_3yr": 1.5008265233959937,
+    "sp500_return_3yr": 0.6681300418046304,
+    "alpha_3yr": 0.8326964815913632
+  },
+  "TRMB-2021-01-21": {
+    "status": "ok",
+    "ticker": "TRMB",
+    "event_date": "2021-01-21",
+    "entry_price": 71.41999816894531,
+    "entry_date_actual": "2021-01-20",
+    "exit_price": 50.0099983215332,
+    "exit_date_actual": "2024-01-19",
+    "return_3yr": -0.2997759786658964,
+    "sp500_return_3yr": 0.2564897220529552,
+    "alpha_3yr": -0.5562657007188516
+  },
+  "TSCO-2014-01-24": {
+    "status": "ok",
+    "ticker": "TSCO",
+    "event_date": "2014-01-24",
+    "entry_price": 12.077592849731445,
+    "entry_date_actual": "2014-01-23",
+    "exit_price": 12.926834106445312,
+    "exit_date_actual": "2017-01-23",
+    "return_3yr": 0.07031544011129261,
+    "sp500_return_3yr": 0.2388567425947062,
+    "alpha_3yr": -0.1685413024834136
+  },
+  "TSLA-2020-12-21": {
+    "status": "ok",
+    "ticker": "TSLA",
+    "event_date": "2020-12-21",
+    "entry_price": 216.6199951171875,
+    "entry_date_actual": "2020-12-21",
+    "exit_price": 247.13999938964844,
+    "exit_date_actual": "2023-12-20",
+    "return_3yr": 0.14089190730500278,
+    "sp500_return_3yr": 0.2715702090972667,
+    "alpha_3yr": -0.13067830179226392
+  },
+  "TTWO-2018-03-19": {
+    "status": "ok",
+    "ticker": "TTWO",
+    "event_date": "2018-03-19",
+    "entry_price": 104.5,
+    "entry_date_actual": "2018-03-19",
+    "exit_price": 167.22000122070312,
+    "exit_date_actual": "2021-03-18",
+    "return_3yr": 0.6001913992411783,
+    "sp500_return_3yr": 0.443264111618665,
+    "alpha_3yr": 0.15692728762251323
+  },
+  "TWTR-2018-06-07": {
+    "status": "no_price_data",
+    "ticker": "TWTR"
+  },
+  "TYL-2020-06-22": {
+    "status": "ok",
+    "ticker": "TYL",
+    "event_date": "2020-06-22",
+    "entry_price": 338.29998779296875,
+    "entry_date_actual": "2020-06-22",
+    "exit_price": 392.19000244140625,
+    "exit_date_actual": "2023-06-21",
+    "return_3yr": 0.1592965314601692,
+    "sp500_return_3yr": 0.4002199556721588,
+    "alpha_3yr": -0.2409234242119896
+  },
+  "UA-2016-04-08": {
+    "status": "ok",
+    "ticker": "UA",
+    "event_date": "2016-04-08",
+    "entry_price": 41.267086029052734,
+    "entry_date_actual": "2016-04-07",
+    "exit_price": 19.5,
+    "exit_date_actual": "2019-04-08",
+    "return_3yr": -0.5274684530361153,
+    "sp500_return_3yr": 0.41816728996808633,
+    "alpha_3yr": -0.9456357430042017
+  },
+  "UAA-2014-05-01": {
+    "status": "ok",
+    "ticker": "UAA",
+    "event_date": "2014-05-01",
+    "entry_price": 24.44499969482422,
+    "entry_date_actual": "2014-04-30",
+    "exit_price": 21.170000076293945,
+    "exit_date_actual": "2017-05-01",
+    "return_3yr": -0.13397421392579092,
+    "sp500_return_3yr": 0.2677248016272327,
+    "alpha_3yr": -0.4016990155530237
+  },
+  "UAL-2015-09-03": {
+    "status": "ok",
+    "ticker": "UAL",
+    "event_date": "2015-09-03",
+    "entry_price": 57.290000915527344,
+    "entry_date_actual": "2015-09-02",
+    "exit_price": 88.30000305175781,
+    "exit_date_actual": "2018-09-04",
+    "return_3yr": 0.5412812295456921,
+    "sp500_return_3yr": 0.48636638469467797,
+    "alpha_3yr": 0.054914844851014166
+  },
+  "UDR-2016-03-07": {
+    "status": "ok",
+    "ticker": "UDR",
+    "event_date": "2016-03-07",
+    "entry_price": 24.97745704650879,
+    "entry_date_actual": "2016-03-07",
+    "exit_price": 34.38177490234375,
+    "exit_date_actual": "2019-03-06",
+    "return_3yr": 0.3765122221338959,
+    "sp500_return_3yr": 0.38450660301499817,
+    "alpha_3yr": -0.00799438088110227
+  },
+  "UHS-2014-09-22": {
+    "status": "ok",
+    "ticker": "UHS",
+    "event_date": "2014-09-22",
+    "entry_price": 107.9491958618164,
+    "entry_date_actual": "2014-09-22",
+    "exit_price": 104.45210266113281,
+    "exit_date_actual": "2017-09-21",
+    "return_3yr": -0.03239573183259422,
+    "sp500_return_3yr": 0.253879851313785,
+    "alpha_3yr": -0.2862755831463792
+  },
+  "ULTA-2016-04-18": {
+    "status": "ok",
+    "ticker": "ULTA",
+    "event_date": "2016-04-18",
+    "entry_price": 206.91000366210938,
+    "entry_date_actual": "2016-04-18",
+    "exit_price": 354.3299865722656,
+    "exit_date_actual": "2019-04-17",
+    "return_3yr": 0.7124835933544218,
+    "sp500_return_3yr": 0.38489921858543363,
+    "alpha_3yr": 0.32758437476898816
+  },
+  "URBN-2010-02-08": {
+    "status": "ok",
+    "ticker": "URBN",
+    "event_date": "2010-02-08",
+    "entry_price": 30.90999984741211,
+    "entry_date_actual": "2010-02-08",
+    "exit_price": 43.16999816894531,
+    "exit_date_actual": "2013-02-07",
+    "return_3yr": 0.39663534073293283,
+    "sp500_return_3yr": 0.4283456939238847,
+    "alpha_3yr": -0.03171035319095189
+  },
+  "URI-2014-09-22": {
+    "status": "ok",
+    "ticker": "URI",
+    "event_date": "2014-09-22",
+    "entry_price": 110.98262023925781,
+    "entry_date_actual": "2014-09-22",
+    "exit_price": 125.73841857910156,
+    "exit_date_actual": "2017-09-21",
+    "return_3yr": 0.13295593767774633,
+    "sp500_return_3yr": 0.253879851313785,
+    "alpha_3yr": -0.12092391363603866
+  },
+  "VIAC-2019-12-05": {
+    "status": "no_price_data",
+    "ticker": "VIAC"
+  },
+  "VICI-2022-06-08": {
+    "status": "ok",
+    "ticker": "VICI",
+    "event_date": "2022-06-08",
+    "entry_price": 25.858448028564453,
+    "entry_date_actual": "2022-06-07",
+    "exit_price": 29.65053367614746,
+    "exit_date_actual": "2025-06-06",
+    "return_3yr": 0.1466478438069482,
+    "sp500_return_3yr": 0.4421583995348943,
+    "alpha_3yr": -0.29551055572794604
+  },
+  "VNT-2020-10-12": {
+    "status": "ok",
+    "ticker": "VNT",
+    "event_date": "2020-10-12",
+    "entry_price": 27.409257888793945,
+    "entry_date_actual": "2020-10-12",
+    "exit_price": 31.36870574951172,
+    "exit_date_actual": "2023-10-11",
+    "return_3yr": 0.1444565875071197,
+    "sp500_return_3yr": 0.23844871898047584,
+    "alpha_3yr": -0.09399213147335614
+  },
+  "VRSK-2015-10-08": {
+    "status": "ok",
+    "ticker": "VRSK",
+    "event_date": "2015-10-08",
+    "entry_price": 77.16294860839844,
+    "entry_date_actual": "2015-10-07",
+    "exit_price": 113.60897827148438,
+    "exit_date_actual": "2018-10-08",
+    "return_3yr": 0.47232551788617294,
+    "sp500_return_3yr": 0.445228298578353,
+    "alpha_3yr": 0.027097219307819942
+  },
+  "VRTX-2013-09-23": {
+    "status": "ok",
+    "ticker": "VRTX",
+    "event_date": "2013-09-23",
+    "entry_price": 75.58999633789062,
+    "entry_date_actual": "2013-09-23",
+    "exit_price": 92.12000274658203,
+    "exit_date_actual": "2016-09-22",
+    "return_3yr": 0.21867981491626942,
+    "sp500_return_3yr": 0.27930943882328646,
+    "alpha_3yr": -0.06062962390701704
+  },
+  "VTRS-2020-11-17": {
+    "status": "ok",
+    "ticker": "VTRS",
+    "event_date": "2020-11-17",
+    "entry_price": 12.854315757751465,
+    "entry_date_actual": "2020-11-16",
+    "exit_price": 8.204755783081055,
+    "exit_date_actual": "2023-11-16",
+    "return_3yr": -0.36171197769641006,
+    "sp500_return_3yr": 0.24299757744825043,
+    "alpha_3yr": -0.6047095551446605
+  },
+  "WAB-2019-02-27": {
+    "status": "ok",
+    "ticker": "WAB",
+    "event_date": "2019-02-27",
+    "entry_price": 70.94113159179688,
+    "entry_date_actual": "2019-02-26",
+    "exit_price": 92.27928924560547,
+    "exit_date_actual": "2022-02-25",
+    "return_3yr": 0.3007868238780108,
+    "sp500_return_3yr": 0.5693654231010745,
+    "alpha_3yr": -0.2685785992230637
+  },
+  "WCG-2018-09-17": {
+    "status": "no_price_data",
+    "ticker": "WCG"
+  },
+  "WLTW-2016-01-05": {
+    "status": "no_price_data",
+    "ticker": "WLTW"
+  },
+  "WPX-2012-01-03": {
+    "status": "no_price_data",
+    "ticker": "WPX"
+  },
+  "WRB-2019-12-05": {
+    "status": "ok",
+    "ticker": "WRB",
+    "event_date": "2019-12-05",
+    "entry_price": 26.676740646362305,
+    "entry_date_actual": "2019-12-04",
+    "exit_price": 45.66461181640625,
+    "exit_date_actual": "2022-12-05",
+    "return_3yr": 0.7117762781351316,
+    "sp500_return_3yr": 0.28466058268067934,
+    "alpha_3yr": 0.4271156954544522
+  },
+  "WRK-2015-07-02": {
+    "status": "no_price_data",
+    "ticker": "WRK"
+  },
+  "WTW-2022-01-10": {
+    "status": "ok",
+    "ticker": "WTW",
+    "event_date": "2022-01-10",
+    "entry_price": 220.56297302246094,
+    "entry_date_actual": "2022-01-10",
+    "exit_price": 309.4310607910156,
+    "exit_date_actual": "2025-01-10",
+    "return_3yr": 0.40291480728048057,
+    "sp500_return_3yr": 0.24768269000959148,
+    "alpha_3yr": 0.1552321172708891
+  },
+  "XEC-2014-06-20": {
+    "status": "no_price_data",
+    "ticker": "XEC"
+  },
+  "XYL-2011-11-01": {
+    "status": "ok",
+    "ticker": "XYL",
+    "event_date": "2011-11-01",
+    "entry_price": 22.044612884521484,
+    "entry_date_actual": "2011-10-31",
+    "exit_price": 31.54515838623047,
+    "exit_date_actual": "2014-10-31",
+    "return_3yr": 0.4309690331817868,
+    "sp500_return_3yr": 0.610189077001206,
+    "alpha_3yr": -0.17922004381941914
+  },
+  "ZBRA-2019-12-23": {
+    "status": "ok",
+    "ticker": "ZBRA",
+    "event_date": "2019-12-23",
+    "entry_price": 256.7300109863281,
+    "entry_date_actual": "2019-12-23",
+    "exit_price": 247.50999450683594,
+    "exit_date_actual": "2022-12-22",
+    "return_3yr": -0.035913278872500766,
+    "sp500_return_3yr": 0.1856011243761617,
+    "alpha_3yr": -0.22151440324866245
+  },
+  "ZTS-2013-06-24": {
+    "status": "ok",
+    "ticker": "ZTS",
+    "event_date": "2013-06-24",
+    "entry_price": 27.40546989440918,
+    "entry_date_actual": "2013-06-24",
+    "exit_price": 44.28450393676758,
+    "exit_date_actual": "2016-06-23",
+    "return_3yr": 0.6159001873491607,
+    "sp500_return_3yr": 0.3434197116992931,
+    "alpha_3yr": 0.27248047564986766
+  },
+  "AABA-2017-06-19": {
+    "status": "no_price_data",
+    "ticker": "AABA"
+  },
+  "ACS-2010-02-08": {
+    "status": "no_price_data",
+    "ticker": "ACS"
+  },
+  "ADS-2020-06-22": {
+    "status": "no_price_data",
+    "ticker": "ADS"
+  },
+  "ADT-2016-05-02": {
+    "status": "missing_price",
+    "ticker": "ADT"
+  },
+  "AET-2018-11-29": {
+    "status": "missing_price",
+    "ticker": "AET"
+  },
+  "AGN-2020-05-12": {
+    "status": "no_price_data",
+    "ticker": "AGN"
+  },
+  "AIV-2020-12-21": {
+    "status": "ok",
+    "ticker": "AIV",
+    "event_date": "2020-12-21",
+    "entry_price": 2.4202873706817627,
+    "entry_date_actual": "2020-12-21",
+    "exit_price": 3.8488049507141113,
+    "exit_date_actual": "2023-12-20",
+    "return_3yr": 0.5902264323388814,
+    "sp500_return_3yr": 0.2715702090972667,
+    "alpha_3yr": 0.3186562232416147
+  },
+  "AKS-2011-12-19": {
+    "status": "no_price_data",
+    "ticker": "AKS"
+  },
+  "ALTR-2015-12-28": {
+    "status": "no_price_data",
+    "ticker": "ALTR"
+  },
+  "ALXN-2021-07-21": {
+    "status": "no_price_data",
+    "ticker": "ALXN"
+  },
+  "AMD-2013-09-23": {
+    "status": "ok",
+    "ticker": "AMD",
+    "event_date": "2013-09-23",
+    "entry_price": 3.7899999618530273,
+    "entry_date_actual": "2013-09-23",
+    "exit_price": 6.369999885559082,
+    "exit_date_actual": "2016-09-22",
+    "return_3yr": 0.6807387730011024,
+    "sp500_return_3yr": 0.27930943882328646,
+    "alpha_3yr": 0.40142933417781596
+  },
+  "AMG-2019-12-23": {
+    "status": "ok",
+    "ticker": "AMG",
+    "event_date": "2019-12-23",
+    "entry_price": 85.25288391113281,
+    "entry_date_actual": "2019-12-23",
+    "exit_price": 155.21261596679688,
+    "exit_date_actual": "2022-12-22",
+    "return_3yr": 0.8206142577955455,
+    "sp500_return_3yr": 0.1856011243761617,
+    "alpha_3yr": 0.6350131334193838
+  },
+  "AN-2017-08-08": {
+    "status": "ok",
+    "ticker": "AN",
+    "event_date": "2017-08-08",
+    "entry_price": 40.34000015258789,
+    "entry_date_actual": "2017-08-07",
+    "exit_price": 53.31999969482422,
+    "exit_date_actual": "2020-08-07",
+    "return_3yr": 0.32176498495634326,
+    "sp500_return_3yr": 0.350826973982088,
+    "alpha_3yr": -0.02906198902574475
+  },
+  "ANDV-2018-10-01": {
+    "status": "missing_price",
+    "ticker": "ANDV"
+  },
+  "ANF-2013-12-23": {
+    "status": "ok",
+    "ticker": "ANF",
+    "event_date": "2013-12-23",
+    "entry_price": 25.836915969848633,
+    "entry_date_actual": "2013-12-23",
+    "exit_price": 10.29708480834961,
+    "exit_date_actual": "2016-12-22",
+    "return_3yr": -0.6014584395302371,
+    "sp500_return_3yr": 0.23685576672529368,
+    "alpha_3yr": -0.8383142062555309
+  },
+  "ANRZQ-2012-10-02": {
+    "status": "no_price_data",
+    "ticker": "ANRZQ"
+  },
+  "ANTM-2022-06-28": {
+    "status": "no_price_data",
+    "ticker": "ANTM"
+  },
+  "APC-2019-08-09": {
+    "status": "no_price_data",
+    "ticker": "APC"
+  },
+  "APOL-2013-07-01": {
+    "status": "no_price_data",
+    "ticker": "APOL"
+  },
+  "ARG-2016-05-23": {
+    "status": "no_price_data",
+    "ticker": "ARG"
+  },
+  "ARNC-2020-04-06": {
+    "status": "no_price_data",
+    "ticker": "ARNC"
+  },
+  "ATGE-2012-10-01": {
+    "status": "ok",
+    "ticker": "ATGE",
+    "event_date": "2012-10-01",
+    "entry_price": 22.78663444519043,
+    "entry_date_actual": "2012-10-01",
+    "exit_price": 26.574451446533203,
+    "exit_date_actual": "2015-09-30",
+    "return_3yr": 0.16622976993174468,
+    "sp500_return_3yr": 0.32920964650322115,
+    "alpha_3yr": -0.16297987657147647
+  },
+  "ATI-2015-07-02": {
+    "status": "ok",
+    "ticker": "ATI",
+    "event_date": "2015-07-02",
+    "entry_price": 29.14801788330078,
+    "entry_date_actual": "2015-07-01",
+    "exit_price": 25.25,
+    "exit_date_actual": "2018-07-02",
+    "return_3yr": -0.13373183380452083,
+    "sp500_return_3yr": 0.31254636206457265,
+    "alpha_3yr": -0.44627819586909345
+  },
+  "AVP-2015-03-23": {
+    "status": "no_price_data",
+    "ticker": "AVP"
+  },
+  "AYE-2011-02-28": {
+    "status": "no_price_data",
+    "ticker": "AYE"
+  },
+  "AYI-2018-06-18": {
+    "status": "ok",
+    "ticker": "AYI",
+    "event_date": "2018-06-18",
+    "entry_price": 119.96812438964844,
+    "entry_date_actual": "2018-06-18",
+    "exit_price": 179.70816040039062,
+    "exit_date_actual": "2021-06-17",
+    "return_3yr": 0.4979659081499895,
+    "sp500_return_3yr": 0.5220765617958539,
+    "alpha_3yr": -0.024110653645864455
+  },
+  "BBT-2019-12-09": {
+    "status": "ok",
+    "ticker": "BBT",
+    "event_date": "2019-12-09",
+    "entry_price": 26.310619354248047,
+    "entry_date_actual": "2019-12-09",
+    "exit_price": 27.60946273803711,
+    "exit_date_actual": "2022-12-08",
+    "return_3yr": 0.04936574720272993,
+    "sp500_return_3yr": 0.2638905021544751,
+    "alpha_3yr": -0.2145247549517452
+  },
+  "BCR-2017-12-29": {
+    "status": "no_price_data",
+    "ticker": "BCR"
+  },
+  "BDK-2010-03-15": {
+    "status": "no_price_data",
+    "ticker": "BDK"
+  },
+  "BEAM-2014-05-01": {
+    "status": "no_price_data",
+    "ticker": "BEAM"
+  },
+  "BHF-2019-04-02": {
+    "status": "ok",
+    "ticker": "BHF",
+    "event_date": "2019-04-02",
+    "entry_price": 38.2400016784668,
+    "entry_date_actual": "2019-04-01",
+    "exit_price": 52.40999984741211,
+    "exit_date_actual": "2022-04-01",
+    "return_3yr": 0.37055432915748365,
+    "sp500_return_3yr": 0.5854756595064207,
+    "alpha_3yr": -0.214921330348937
+  },
+  "BHGE-2019-10-18": {
+    "status": "no_price_data",
+    "ticker": "BHGE"
+  },
+  "BIG-2013-02-14": {
+    "status": "no_price_data",
+    "ticker": "BIG"
+  },
+  "BJS-2010-04-29": {
+    "status": "no_price_data",
+    "ticker": "BJS"
+  },
+  "BLL-2022-05-10": {
+    "status": "no_price_data",
+    "ticker": "BLL"
+  },
+  "BMC-2013-09-11": {
+    "status": "ok",
+    "ticker": "BMC",
+    "event_date": "2013-09-11",
+    "entry_price": 2380,
+    "entry_date_actual": "2013-09-10",
+    "exit_price": 14600,
+    "exit_date_actual": "2016-09-09",
+    "return_3yr": 5.1344537815126055,
+    "sp500_return_3yr": 0.26355267604506655,
+    "alpha_3yr": 4.870901105467539
+  },
+  "BMS-2014-12-05": {
+    "status": "ok",
+    "ticker": "BMS",
+    "event_date": "2014-12-05",
+    "entry_price": 35.5671272277832,
+    "entry_date_actual": "2014-12-04",
+    "exit_price": 44.89979934692383,
+    "exit_date_actual": "2017-12-04",
+    "return_3yr": 0.2623960057097449,
+    "sp500_return_3yr": 0.27391020933746724,
+    "alpha_3yr": -0.01151420362772232
+  },
+  "BNI-2010-02-16": {
+    "status": "no_price_data",
+    "ticker": "BNI"
+  },
+  "BRCM-2016-02-01": {
+    "status": "no_price_data",
+    "ticker": "BRCM"
+  },
+  "BTUUQ-2014-09-22": {
+    "status": "no_price_data",
+    "ticker": "BTUUQ"
+  },
+  "BXLT-2016-06-03": {
+    "status": "no_price_data",
+    "ticker": "BXLT"
+  },
+  "CA-2018-11-06": {
+    "status": "no_price_data",
+    "ticker": "CA"
+  },
+  "CAM-2016-04-04": {
+    "status": "no_price_data",
+    "ticker": "CAM"
+  },
+  "CBE-2012-12-03": {
+    "status": "ok",
+    "ticker": "CBE",
+    "event_date": "2012-12-03",
+    "entry_price": 0.07000000029802322,
+    "entry_date_actual": "2012-12-03",
+    "exit_price": 0.009999999776482582,
+    "exit_date_actual": "2015-12-02",
+    "return_3yr": -0.8571428609441738,
+    "sp500_return_3yr": 0.4753948798818253,
+    "alpha_3yr": -1.332537740825999
+  },
+  "CBS-2019-12-05": {
+    "status": "no_price_data",
+    "ticker": "CBS"
+  },
+  "CCE-2016-05-31": {
+    "status": "missing_price",
+    "ticker": "CCE"
+  },
+  "CCEP-2016-05-31": {
+    "status": "ok",
+    "ticker": "CCEP",
+    "event_date": "2016-05-31",
+    "entry_price": 29.78710174560547,
+    "entry_date_actual": "2016-05-31",
+    "exit_price": 46.016136169433594,
+    "exit_date_actual": "2019-05-30",
+    "return_3yr": 0.5448342897684706,
+    "sp500_return_3yr": 0.32996026245801807,
+    "alpha_3yr": 0.21487402731045252
+  },
+  "CELG-2019-11-21": {
+    "status": "no_price_data",
+    "ticker": "CELG"
+  },
+  "CEPH-2011-10-14": {
+    "status": "no_price_data",
+    "ticker": "CEPH"
+  },
+  "CERN-2022-06-08": {
+    "status": "no_price_data",
+    "ticker": "CERN"
+  },
+  "CFN-2015-03-17": {
+    "status": "no_price_data",
+    "ticker": "CFN"
+  },
+  "CHK-2018-03-19": {
+    "status": "no_price_data",
+    "ticker": "CHK"
+  },
+  "CMCSK-2015-12-14": {
+    "status": "no_price_data",
+    "ticker": "CMCSK"
+  },
+  "CNX-2016-03-04": {
+    "status": "ok",
+    "ticker": "CNX",
+    "event_date": "2016-03-04",
+    "entry_price": 8.583333015441895,
+    "entry_date_actual": "2016-03-03",
+    "exit_price": 11,
+    "exit_date_actual": "2019-03-04",
+    "return_3yr": 0.2815534455217323,
+    "sp500_return_3yr": 0.40102840593405986,
+    "alpha_3yr": -0.11947496041232758
+  },
+  "COG-2021-10-04": {
+    "status": "no_price_data",
+    "ticker": "COG"
+  },
+  "COL-2018-11-27": {
+    "status": "missing_price",
+    "ticker": "COL"
+  },
+  "COTY-2020-09-21": {
+    "status": "ok",
+    "ticker": "COTY",
+    "event_date": "2020-09-21",
+    "entry_price": 3.0199999809265137,
+    "entry_date_actual": "2020-09-21",
+    "exit_price": 11.979999542236328,
+    "exit_date_actual": "2023-09-20",
+    "return_3yr": 2.9668872906949333,
+    "sp500_return_3yr": 0.3417005835605662,
+    "alpha_3yr": 2.6251867071343673
+  },
+  "COV-2015-01-27": {
+    "status": "no_price_data",
+    "ticker": "COV"
+  },
+  "CPGX-2016-07-01": {
+    "status": "no_price_data",
+    "ticker": "CPGX"
+  },
+  "CPRI-2020-05-12": {
+    "status": "ok",
+    "ticker": "CPRI",
+    "event_date": "2020-05-12",
+    "entry_price": 14.3100004196167,
+    "entry_date_actual": "2020-05-11",
+    "exit_price": 38.130001068115234,
+    "exit_date_actual": "2023-05-11",
+    "return_3yr": 1.6645702271150993,
+    "sp500_return_3yr": 0.4096765738009265,
+    "alpha_3yr": 1.2548936533141728
+  },
+  "CPWR-2012-01-03": {
+    "status": "ok",
+    "ticker": "CPWR",
+    "event_date": "2012-01-03",
+    "entry_price": 0.34600600600242615,
+    "entry_date_actual": "2012-01-03",
+    "exit_price": 1.1533540487289429,
+    "exit_date_actual": "2015-01-02",
+    "return_3yr": 2.3333353430889745,
+    "sp500_return_3yr": 0.6116704436268147,
+    "alpha_3yr": 1.72166489946216
+  },
+  "CSRA-2018-04-04": {
+    "status": "missing_price",
+    "ticker": "CSRA"
+  },
+  "CTL-2020-09-18": {
+    "status": "no_price_data",
+    "ticker": "CTL"
+  },
+  "CTXS-2022-10-03": {
+    "status": "no_price_data",
+    "ticker": "CTXS"
+  },
+  "CVC-2016-06-21": {
+    "status": "no_price_data",
+    "ticker": "CVC"
+  },
+  "CVH-2013-05-07": {
+    "status": "no_price_data",
+    "ticker": "CVH"
+  },
+  "CXO-2021-01-21": {
+    "status": "no_price_data",
+    "ticker": "CXO"
+  },
+  "DD-2017-09-01": {
+    "status": "ok",
+    "ticker": "DD",
+    "event_date": "2017-09-01",
+    "entry_price": 33.47186279296875,
+    "entry_date_actual": "2017-08-31",
+    "exit_price": 21.011011123657227,
+    "exit_date_actual": "2020-08-31",
+    "return_3yr": -0.37227840429392256,
+    "sp500_return_3yr": 0.416183600790132,
+    "alpha_3yr": -0.7884620050840545
+  },
+  "DELL-2013-10-29": {
+    "status": "missing_price",
+    "ticker": "DELL"
+  },
+  "DF-2013-05-24": {
+    "status": "no_price_data",
+    "ticker": "DF"
+  },
+  "DISCA-2022-04-11": {
+    "status": "no_price_data",
+    "ticker": "DISCA"
+  },
+  "DISCK-2022-04-11": {
+    "status": "no_price_data",
+    "ticker": "DISCK"
+  },
+  "DNB-2017-04-05": {
+    "status": "no_price_data",
+    "ticker": "DNB"
+  },
+  "DNR-2015-03-23": {
+    "status": "no_price_data",
+    "ticker": "DNR"
+  },
+  "DO-2016-10-03": {
+    "status": "no_price_data",
+    "ticker": "DO"
+  },
+  "DOW-2017-09-01": {
+    "status": "missing_price",
+    "ticker": "DOW"
+  },
+  "DRE-2022-10-03": {
+    "status": "no_price_data",
+    "ticker": "DRE"
+  },
+  "DTV-2015-07-27": {
+    "status": "no_price_data",
+    "ticker": "DTV"
+  },
+  "DWDP-2019-06-03": {
+    "status": "no_price_data",
+    "ticker": "DWDP"
+  },
+  "DXC-2015-12-01": {
+    "status": "ok",
+    "ticker": "DXC",
+    "event_date": "2015-12-01",
+    "entry_price": 25.19133186340332,
+    "entry_date_actual": "2015-11-30",
+    "exit_price": 60.43661117553711,
+    "exit_date_actual": "2018-11-30",
+    "return_3yr": 1.3991034496804962,
+    "sp500_return_3yr": 0.3267433046771061,
+    "alpha_3yr": 1.07236014500339
+  },
+  "EKDKQ-2010-12-20": {
+    "status": "no_price_data",
+    "ticker": "EKDKQ"
+  },
+  "EMC-2016-09-07": {
+    "status": "no_price_data",
+    "ticker": "EMC"
+  },
+  "ENDP-2017-03-02": {
+    "status": "no_price_data",
+    "ticker": "ENDP"
+  },
+  "EP-2012-05-25": {
+    "status": "ok",
+    "ticker": "EP",
+    "event_date": "2012-05-25",
+    "entry_price": 0.9599999785423279,
+    "entry_date_actual": "2012-05-24",
+    "exit_price": 0.4000000059604645,
+    "exit_date_actual": "2015-05-26",
+    "return_3yr": -0.58333331781129,
+    "sp500_return_3yr": 0.5932700317986551,
+    "alpha_3yr": -1.176603349609945
+  },
+  "EQT-2018-11-13": {
+    "status": "ok",
+    "ticker": "EQT",
+    "event_date": "2018-11-13",
+    "entry_price": 17.38851547241211,
+    "entry_date_actual": "2018-11-12",
+    "exit_price": 20.007768630981445,
+    "exit_date_actual": "2021-11-12",
+    "return_3yr": 0.15063121188953327,
+    "sp500_return_3yr": 0.7177080895818126,
+    "alpha_3yr": -0.5670768776922794
+  },
+  "ESRX-2018-12-21": {
+    "status": "missing_price",
+    "ticker": "ESRX"
+  },
+  "ESV-2016-03-30": {
+    "status": "no_price_data",
+    "ticker": "ESV"
+  },
+  "ETFC-2020-10-07": {
+    "status": "no_price_data",
+    "ticker": "ETFC"
+  },
+  "EVHC-2018-10-11": {
+    "status": "missing_price",
+    "ticker": "EVHC"
+  },
+  "FB-2022-06-09": {
+    "status": "no_price_data",
+    "ticker": "FB"
+  },
+  "FBHS-2022-12-19": {
+    "status": "no_price_data",
+    "ticker": "FBHS"
+  },
+  "FCPT-2015-11-17": {
+    "status": "ok",
+    "ticker": "FCPT",
+    "event_date": "2015-11-17",
+    "entry_price": 7.89423942565918,
+    "entry_date_actual": "2015-11-16",
+    "exit_price": 18.67185401916504,
+    "exit_date_actual": "2018-11-16",
+    "return_3yr": 1.3652505342661194,
+    "sp500_return_3yr": 0.3326921023474096,
+    "alpha_3yr": 1.0325584319187098
+  },
+  "FDO-2015-07-07": {
+    "status": "no_price_data",
+    "ticker": "FDO"
+  },
+  "FHN-2013-06-24": {
+    "status": "ok",
+    "ticker": "FHN",
+    "event_date": "2013-06-24",
+    "entry_price": 7.322232246398926,
+    "entry_date_actual": "2013-06-24",
+    "exit_price": 10.132499694824219,
+    "exit_date_actual": "2016-06-23",
+    "return_3yr": 0.38379927785101087,
+    "sp500_return_3yr": 0.3434197116992931,
+    "alpha_3yr": 0.04037956615171778
+  },
+  "FII-2013-01-02": {
+    "status": "no_price_data",
+    "ticker": "FII"
+  },
+  "FL-2019-08-09": {
+    "status": "no_price_data",
+    "ticker": "FL"
+  },
+  "FLIR-2021-05-14": {
+    "status": "no_price_data",
+    "ticker": "FLIR"
+  },
+  "FLS-2021-03-22": {
+    "status": "ok",
+    "ticker": "FLS",
+    "event_date": "2021-03-22",
+    "entry_price": 35.57392501831055,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 44.51547622680664,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": 0.2513512693326282,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": -0.07878702677266664
+  },
+  "FOSL-2016-01-05": {
+    "status": "ok",
+    "ticker": "FOSL",
+    "event_date": "2016-01-05",
+    "entry_price": 34.290000915527344,
+    "entry_date_actual": "2016-01-04",
+    "exit_price": 16.5,
+    "exit_date_actual": "2019-01-04",
+    "return_3yr": -0.5188101615789575,
+    "sp500_return_3yr": 0.2580067663728458,
+    "alpha_3yr": -0.7768169279518033
+  },
+  "FRX-2014-07-01": {
+    "status": "no_price_data",
+    "ticker": "FRX"
+  },
+  "FTI-2021-02-12": {
+    "status": "ok",
+    "ticker": "FTI",
+    "event_date": "2021-02-12",
+    "entry_price": 7.552425384521484,
+    "entry_date_actual": "2021-02-11",
+    "exit_price": 18.927387237548828,
+    "exit_date_actual": "2024-02-12",
+    "return_3yr": 1.5061336291173504,
+    "sp500_return_3yr": 0.28226576430671163,
+    "alpha_3yr": 1.2238678648106387
+  },
+  "FTR-2017-03-20": {
+    "status": "no_price_data",
+    "ticker": "FTR"
+  },
+  "GAS-2011-12-12": {
+    "status": "no_price_data",
+    "ticker": "GAS"
+  },
+  "GAS-2016-07-01": {
+    "status": "no_price_data",
+    "ticker": "GAS"
+  },
+  "GENZ-2011-04-04": {
+    "status": "no_price_data",
+    "ticker": "GENZ"
+  },
+  "GGP-2018-08-28": {
+    "status": "no_price_data",
+    "ticker": "GGP"
+  },
+  "GHC-2014-09-22": {
+    "status": "ok",
+    "ticker": "GHC",
+    "event_date": "2014-09-22",
+    "entry_price": 382.47943115234375,
+    "entry_date_actual": "2014-09-22",
+    "exit_price": 519.50927734375,
+    "exit_date_actual": "2017-09-21",
+    "return_3yr": 0.3582672296352231,
+    "sp500_return_3yr": 0.253879851313785,
+    "alpha_3yr": 0.10438737832143813
+  },
+  "GMCR-2016-03-03": {
+    "status": "no_price_data",
+    "ticker": "GMCR"
+  },
+  "GME-2016-04-25": {
+    "status": "ok",
+    "ticker": "GME",
+    "event_date": "2016-04-25",
+    "entry_price": 6.400915622711182,
+    "entry_date_actual": "2016-04-25",
+    "exit_price": 2.252500057220459,
+    "exit_date_actual": "2019-04-24",
+    "return_3yr": -0.6480972114007673,
+    "sp500_return_3yr": 0.4020806427999104,
+    "alpha_3yr": -1.0501778542006777
+  },
+  "GNW-2015-11-18": {
+    "status": "ok",
+    "ticker": "GNW",
+    "event_date": "2015-11-18",
+    "entry_price": 4.630000114440918,
+    "entry_date_actual": "2015-11-17",
+    "exit_price": 4.579999923706055,
+    "exit_date_actual": "2018-11-16",
+    "return_3yr": -0.01079917699762323,
+    "sp500_return_3yr": 0.33447947646524984,
+    "alpha_3yr": -0.34527865346287306
+  },
+  "GR-2012-07-27": {
+    "status": "ok",
+    "ticker": "GR",
+    "event_date": "2012-07-27",
+    "entry_price": 2,
+    "entry_date_actual": "2012-07-26",
+    "exit_price": 0.10000000149011612,
+    "exit_date_actual": "2015-07-23",
+    "return_3yr": -0.9499999992549419,
+    "sp500_return_3yr": 0.5203010712230296,
+    "alpha_3yr": -1.4703010704779715
+  },
+  "GT-2019-02-27": {
+    "status": "ok",
+    "ticker": "GT",
+    "event_date": "2019-02-27",
+    "entry_price": 18.983779907226562,
+    "entry_date_actual": "2019-02-26",
+    "exit_price": 15.510000228881836,
+    "exit_date_actual": "2022-02-25",
+    "return_3yr": -0.18298672315634895,
+    "sp500_return_3yr": 0.5693654231010745,
+    "alpha_3yr": -0.7523521462574234
+  },
+  "HAR-2017-03-13": {
+    "status": "ok",
+    "ticker": "HAR",
+    "event_date": "2017-03-13",
+    "entry_price": 3167.4599609375,
+    "entry_date_actual": "2017-03-13",
+    "exit_price": 2840,
+    "exit_date_actual": "2020-03-12",
+    "return_3yr": -0.10338250995304733,
+    "sp500_return_3yr": 0.045153266398079435,
+    "alpha_3yr": -0.14853577635112677
+  },
+  "HBI-2021-12-20": {
+    "status": "no_price_data",
+    "ticker": "HBI"
+  },
+  "HCBK-2015-11-02": {
+    "status": "no_price_data",
+    "ticker": "HCBK"
+  },
+  "HCP-2019-11-05": {
+    "status": "no_price_data",
+    "ticker": "HCP"
+  },
+  "HFC-2021-06-04": {
+    "status": "no_price_data",
+    "ticker": "HFC"
+  },
+  "HNZ-2013-06-07": {
+    "status": "no_price_data",
+    "ticker": "HNZ"
+  },
+  "HOG-2020-06-22": {
+    "status": "ok",
+    "ticker": "HOG",
+    "event_date": "2020-06-22",
+    "entry_price": 22.006486892700195,
+    "entry_date_actual": "2020-06-22",
+    "exit_price": 31.861616134643555,
+    "exit_date_actual": "2023-06-21",
+    "return_3yr": 0.44782837396969616,
+    "sp500_return_3yr": 0.4002199556721588,
+    "alpha_3yr": 0.04760841829753737
+  },
+  "HOT-2016-09-23": {
+    "status": "missing_price",
+    "ticker": "HOT"
+  },
+  "HP-2020-05-22": {
+    "status": "ok",
+    "ticker": "HP",
+    "event_date": "2020-05-22",
+    "entry_price": 14.696603775024414,
+    "entry_date_actual": "2020-05-21",
+    "exit_price": 29.300853729248047,
+    "exit_date_actual": "2023-05-22",
+    "return_3yr": 0.9937159753222898,
+    "sp500_return_3yr": 0.4219486686245875,
+    "alpha_3yr": 0.5717673066977023
+  },
+  "HRB-2020-09-21": {
+    "status": "ok",
+    "ticker": "HRB",
+    "event_date": "2020-09-21",
+    "entry_price": 11.679306030273438,
+    "entry_date_actual": "2020-09-21",
+    "exit_price": 38.419677734375,
+    "exit_date_actual": "2023-09-20",
+    "return_3yr": 2.2895514198180074,
+    "sp500_return_3yr": 0.3417005835605662,
+    "alpha_3yr": 1.9478508362574412
+  },
+  "HRS-2019-06-01": {
+    "status": "no_price_data",
+    "ticker": "HRS"
+  },
+  "HSH-2012-06-29": {
+    "status": "no_price_data",
+    "ticker": "HSH"
+  },
+  "HSP-2015-09-03": {
+    "status": "no_price_data",
+    "ticker": "HSP"
+  },
+  "IGT-2014-06-20": {
+    "status": "no_price_data",
+    "ticker": "IGT"
+  },
+  "INFO-2022-03-02": {
+    "status": "missing_price",
+    "ticker": "INFO"
+  },
+  "IPGP-2022-06-21": {
+    "status": "ok",
+    "ticker": "IPGP",
+    "event_date": "2022-06-21",
+    "entry_price": 93.20999908447266,
+    "entry_date_actual": "2022-06-21",
+    "exit_price": 66.01000213623047,
+    "exit_date_actual": "2025-06-20",
+    "return_3yr": -0.2918141531531598,
+    "sp500_return_3yr": 0.5851720233609891,
+    "alpha_3yr": -0.8769861765141489
+  },
+  "ITT-2011-11-01": {
+    "status": "ok",
+    "ticker": "ITT",
+    "event_date": "2011-11-01",
+    "entry_price": 12.771248817443848,
+    "entry_date_actual": "2011-10-31",
+    "exit_price": 39.65473556518555,
+    "exit_date_actual": "2014-10-31",
+    "return_3yr": 2.1050006253908693,
+    "sp500_return_3yr": 0.610189077001206,
+    "alpha_3yr": 1.4948115483896633
+  },
+  "JAVA-2010-01-27": {
+    "status": "no_price_data",
+    "ticker": "JAVA"
+  },
+  "JBL-2014-11-05": {
+    "status": "ok",
+    "ticker": "JBL",
+    "event_date": "2014-11-05",
+    "entry_price": 18.912424087524414,
+    "entry_date_actual": "2014-11-04",
+    "exit_price": 26.54131317138672,
+    "exit_date_actual": "2017-11-03",
+    "return_3yr": 0.4033797597048759,
+    "sp500_return_3yr": 0.28613891918418616,
+    "alpha_3yr": 0.11724084052068973
+  },
+  "JCP-2013-12-02": {
+    "status": "no_price_data",
+    "ticker": "JCP"
+  },
+  "JEC-2019-12-10": {
+    "status": "no_price_data",
+    "ticker": "JEC"
+  },
+  "JEF-2019-09-26": {
+    "status": "ok",
+    "ticker": "JEF",
+    "event_date": "2019-09-26",
+    "entry_price": 14.477139472961426,
+    "entry_date_actual": "2019-09-25",
+    "exit_price": 25.18743133544922,
+    "exit_date_actual": "2022-09-26",
+    "return_3yr": 0.7398071892925481,
+    "sp500_return_3yr": 0.22452230601794793,
+    "alpha_3yr": 0.5152848832746002
+  },
+  "JNS-2011-11-23": {
+    "status": "no_price_data",
+    "ticker": "JNS"
+  },
+  "JOY-2015-10-08": {
+    "status": "no_price_data",
+    "ticker": "JOY"
+  },
+  "JWN-2020-06-22": {
+    "status": "no_price_data",
+    "ticker": "JWN"
+  },
+  "KDP-2018-07-02": {
+    "status": "ok",
+    "ticker": "KDP",
+    "event_date": "2018-07-02",
+    "entry_price": 16.625722885131836,
+    "entry_date_actual": "2018-07-02",
+    "exit_price": 31.390527725219727,
+    "exit_date_actual": "2021-07-01",
+    "return_3yr": 0.8880699469189313,
+    "sp500_return_3yr": 0.5843048961177243,
+    "alpha_3yr": 0.30376505080120697
+  },
+  "KG-2010-12-20": {
+    "status": "ok",
+    "ticker": "KG",
+    "event_date": "2010-12-20",
+    "entry_price": 110.12616729736328,
+    "entry_date_actual": "2010-12-20",
+    "exit_price": 166.539794921875,
+    "exit_date_actual": "2013-12-19",
+    "return_3yr": 0.5122636064522552,
+    "sp500_return_3yr": 0.4510697303730717,
+    "alpha_3yr": 0.06119387607918353
+  },
+  "KORS-2018-09-19": {
+    "status": "no_price_data",
+    "ticker": "KORS"
+  },
+  "KRFT-2015-07-06": {
+    "status": "no_price_data",
+    "ticker": "KRFT"
+  },
+  "KSU-2021-12-14": {
+    "status": "no_price_data",
+    "ticker": "KSU"
+  },
+  "LB-2021-08-03": {
+    "status": "missing_price",
+    "ticker": "LB"
+  },
+  "LDOS-2013-09-23": {
+    "status": "ok",
+    "ticker": "LDOS",
+    "event_date": "2013-09-23",
+    "entry_price": 21.469602584838867,
+    "entry_date_actual": "2013-09-23",
+    "exit_price": 37.316627502441406,
+    "exit_date_actual": "2016-09-22",
+    "return_3yr": 0.7381144972284299,
+    "sp500_return_3yr": 0.27930943882328646,
+    "alpha_3yr": 0.45880505840514346
+  },
+  "LEG-2021-12-20": {
+    "status": "ok",
+    "ticker": "LEG",
+    "event_date": "2021-12-20",
+    "entry_price": 31.883434295654297,
+    "entry_date_actual": "2021-12-20",
+    "exit_price": 9.568567276000977,
+    "exit_date_actual": "2024-12-19",
+    "return_3yr": -0.6998890650463846,
+    "sp500_return_3yr": 0.2843814285050033,
+    "alpha_3yr": -0.984270493551388
+  },
+  "LIFE-2014-01-24": {
+    "status": "no_price_data",
+    "ticker": "LIFE"
+  },
+  "LLL-2019-07-01": {
+    "status": "no_price_data",
+    "ticker": "LLL"
+  },
+  "LLTC-2017-03-13": {
+    "status": "no_price_data",
+    "ticker": "LLTC"
+  },
+  "LM-2016-12-02": {
+    "status": "no_price_data",
+    "ticker": "LM"
+  },
+  "LO-2015-06-12": {
+    "status": "no_price_data",
+    "ticker": "LO"
+  },
+  "LSI-2014-05-07": {
+    "status": "no_price_data",
+    "ticker": "LSI"
+  },
+  "LVLT-2017-10-13": {
+    "status": "no_price_data",
+    "ticker": "LVLT"
+  },
+  "LXK-2012-10-01": {
+    "status": "no_price_data",
+    "ticker": "LXK"
+  },
+  "MAC-2019-12-23": {
+    "status": "ok",
+    "ticker": "MAC",
+    "event_date": "2019-12-23",
+    "entry_price": 18.777631759643555,
+    "entry_date_actual": "2019-12-23",
+    "exit_price": 9.860958099365234,
+    "exit_date_actual": "2022-12-22",
+    "return_3yr": -0.4748561359820585,
+    "sp500_return_3yr": 0.1856011243761617,
+    "alpha_3yr": -0.6604572603582202
+  },
+  "MAT-2019-06-07": {
+    "status": "ok",
+    "ticker": "MAT",
+    "event_date": "2019-06-07",
+    "entry_price": 10.789999961853027,
+    "entry_date_actual": "2019-06-06",
+    "exit_price": 24.540000915527344,
+    "exit_date_actual": "2022-06-06",
+    "return_3yr": 1.2743281744472732,
+    "sp500_return_3yr": 0.44942665173283786,
+    "alpha_3yr": 0.8249015227144354
+  },
+  "MDP-2011-01-04": {
+    "status": "no_price_data",
+    "ticker": "MDP"
+  },
+  "MEE-2011-06-02": {
+    "status": "ok",
+    "ticker": "MEE",
+    "event_date": "2011-06-02",
+    "entry_price": 17.840099334716797,
+    "entry_date_actual": "2011-06-01",
+    "exit_price": 0.5,
+    "exit_date_actual": "2014-06-02",
+    "return_3yr": -0.9719732502258549,
+    "sp500_return_3yr": 0.46435654726053815,
+    "alpha_3yr": -1.4363297974863931
+  },
+  "MFE-2011-03-01": {
+    "status": "no_price_data",
+    "ticker": "MFE"
+  },
+  "MHS-2012-04-02": {
+    "status": "no_price_data",
+    "ticker": "MHS"
+  },
+  "MI-2011-07-06": {
+    "status": "no_price_data",
+    "ticker": "MI"
+  },
+  "MIL-2010-07-15": {
+    "status": "no_price_data",
+    "ticker": "MIL"
+  },
+  "MJN-2017-06-15": {
+    "status": "no_price_data",
+    "ticker": "MJN"
+  },
+  "MMI-2012-05-22": {
+    "status": "missing_price",
+    "ticker": "MMI"
+  },
+  "MNK-2017-07-26": {
+    "status": "no_price_data",
+    "ticker": "MNK"
+  },
+  "MOLX-2013-12-09": {
+    "status": "missing_price",
+    "ticker": "MOLX"
+  },
+  "MON-2018-06-07": {
+    "status": "no_price_data",
+    "ticker": "MON"
+  },
+  "MUR-2017-07-26": {
+    "status": "ok",
+    "ticker": "MUR",
+    "event_date": "2017-07-26",
+    "entry_price": 18.888450622558594,
+    "entry_date_actual": "2017-07-25",
+    "exit_price": 11.529203414916992,
+    "exit_date_actual": "2020-07-24",
+    "return_3yr": -0.3896162451171303,
+    "sp500_return_3yr": 0.2981272823536879,
+    "alpha_3yr": -0.6877435274708181
+  },
+  "MWV-2015-07-02": {
+    "status": "no_price_data",
+    "ticker": "MWV"
+  },
+  "MWW-2011-12-19": {
+    "status": "no_price_data",
+    "ticker": "MWW"
+  },
+  "MXIM-2021-08-30": {
+    "status": "no_price_data",
+    "ticker": "MXIM"
+  },
+  "MYL-2020-11-17": {
+    "status": "no_price_data",
+    "ticker": "MYL"
+  },
+  "NAVI-2018-06-05": {
+    "status": "ok",
+    "ticker": "NAVI",
+    "event_date": "2018-06-05",
+    "entry_price": 9.954917907714844,
+    "entry_date_actual": "2018-06-04",
+    "exit_price": 15.171420097351074,
+    "exit_date_actual": "2021-06-04",
+    "return_3yr": 0.5240125773004672,
+    "sp500_return_3yr": 0.5398944821787581,
+    "alpha_3yr": -0.015881904878290887
+  },
+  "NBL-2020-10-12": {
+    "status": "no_price_data",
+    "ticker": "NBL"
+  },
+  "NBR-2015-03-23": {
+    "status": "ok",
+    "ticker": "NBR",
+    "event_date": "2015-03-23",
+    "entry_price": 576.94091796875,
+    "entry_date_actual": "2015-03-23",
+    "exit_price": 335.6634521484375,
+    "exit_date_actual": "2018-03-22",
+    "return_3yr": -0.41820134142987114,
+    "sp500_return_3yr": 0.25625589927449943,
+    "alpha_3yr": -0.6744572407043705
+  },
+  "NE-2015-07-20": {
+    "status": "no_price_data",
+    "ticker": "NE"
+  },
+  "NFX-2019-02-15": {
+    "status": "missing_price",
+    "ticker": "NFX"
+  },
+  "NKTR-2019-10-03": {
+    "status": "ok",
+    "ticker": "NKTR",
+    "event_date": "2019-10-03",
+    "entry_price": 259.95001220703125,
+    "entry_date_actual": "2019-10-02",
+    "exit_price": 47.099998474121094,
+    "exit_date_actual": "2022-10-03",
+    "return_3yr": -0.8188113242456424,
+    "sp500_return_3yr": 0.2738665522004327,
+    "alpha_3yr": -1.0926778764460752
+  },
+  "NLOK-2022-11-08": {
+    "status": "no_price_data",
+    "ticker": "NLOK"
+  },
+  "NLSN-2022-10-12": {
+    "status": "no_price_data",
+    "ticker": "NLSN"
+  },
+  "NOV-2021-09-20": {
+    "status": "ok",
+    "ticker": "NOV",
+    "event_date": "2021-09-20",
+    "entry_price": 11.840805053710938,
+    "entry_date_actual": "2021-09-20",
+    "exit_price": 16.099258422851562,
+    "exit_date_actual": "2024-09-19",
+    "return_3yr": 0.35964221603378355,
+    "sp500_return_3yr": 0.3111505674576349,
+    "alpha_3yr": 0.04849164857614863
+  },
+  "NOVL-2011-04-28": {
+    "status": "no_price_data",
+    "ticker": "NOVL"
+  },
+  "NSM-2011-09-26": {
+    "status": "missing_price",
+    "ticker": "NSM"
+  },
+  "NVLS-2012-06-05": {
+    "status": "no_price_data",
+    "ticker": "NVLS"
+  },
+  "NYT-2010-12-20": {
+    "status": "ok",
+    "ticker": "NYT",
+    "event_date": "2010-12-20",
+    "entry_price": 8.755640029907227,
+    "entry_date_actual": "2010-12-20",
+    "exit_price": 12.625101089477539,
+    "exit_date_actual": "2013-12-19",
+    "return_3yr": 0.4419392581642387,
+    "sp500_return_3yr": 0.4510697303730717,
+    "alpha_3yr": -0.009130472208833007
+  },
+  "NYX-2013-11-13": {
+    "status": "no_price_data",
+    "ticker": "NYX"
+  },
+  "ODP-2010-12-20": {
+    "status": "no_price_data",
+    "ticker": "ODP"
+  },
+  "OI-2016-12-02": {
+    "status": "ok",
+    "ticker": "OI",
+    "event_date": "2016-12-02",
+    "entry_price": 18.004186630249023,
+    "entry_date_actual": "2016-12-01",
+    "exit_price": 9.819255828857422,
+    "exit_date_actual": "2019-12-02",
+    "return_3yr": -0.4546126392424756,
+    "sp500_return_3yr": 0.4211576054546443,
+    "alpha_3yr": -0.8757702446971198
+  },
+  "PBCT-2022-04-04": {
+    "status": "no_price_data",
+    "ticker": "PBCT"
+  },
+  "PBG-2010-03-01": {
+    "status": "ok",
+    "ticker": "PBG",
+    "event_date": "2010-03-01",
+    "entry_price": 199.5,
+    "entry_date_actual": "2010-03-01",
+    "exit_price": 7.019999980926514,
+    "exit_date_actual": "2013-02-28",
+    "return_3yr": -0.9648120301707944,
+    "sp500_return_3yr": 0.35759301856388737,
+    "alpha_3yr": -1.322405048734682
+  },
+  "PBI-2017-03-01": {
+    "status": "ok",
+    "ticker": "PBI",
+    "event_date": "2017-03-01",
+    "entry_price": 8.906983375549316,
+    "entry_date_actual": "2017-02-28",
+    "exit_price": 2.684711217880249,
+    "exit_date_actual": "2020-02-28",
+    "return_3yr": -0.698583560260134,
+    "sp500_return_3yr": 0.2498604292385794,
+    "alpha_3yr": -0.9484439894987134
+  },
+  "PCG-2019-01-18": {
+    "status": "ok",
+    "ticker": "PCG",
+    "event_date": "2019-01-18",
+    "entry_price": 6.287103176116943,
+    "entry_date_actual": "2019-01-17",
+    "exit_price": 12.564321517944336,
+    "exit_date_actual": "2022-01-18",
+    "return_3yr": 0.9984277601285277,
+    "sp500_return_3yr": 0.7364109967942627,
+    "alpha_3yr": 0.26201676333426505
+  },
+  "PCL-2016-02-22": {
+    "status": "no_price_data",
+    "ticker": "PCL"
+  },
+  "PCP-2016-02-01": {
+    "status": "no_price_data",
+    "ticker": "PCP"
+  },
+  "PDCO-2018-03-19": {
+    "status": "no_price_data",
+    "ticker": "PDCO"
+  },
+  "PENN-2022-09-19": {
+    "status": "ok",
+    "ticker": "PENN",
+    "event_date": "2022-09-19",
+    "entry_price": 31.40999984741211,
+    "entry_date_actual": "2022-09-19",
+    "exit_price": 19.209999084472656,
+    "exit_date_actual": "2025-09-18",
+    "return_3yr": -0.3884113601466515,
+    "sp500_return_3yr": 0.7005505651733331,
+    "alpha_3yr": -1.0889619253199847
+  },
+  "PETM-2015-03-12": {
+    "status": "no_price_data",
+    "ticker": "PETM"
+  },
+  "PGN-2012-07-02": {
+    "status": "no_price_data",
+    "ticker": "PGN"
+  },
+  "PLL-2015-08-31": {
+    "status": "no_price_data",
+    "ticker": "PLL"
+  },
+  "POM-2016-03-24": {
+    "status": "no_price_data",
+    "ticker": "POM"
+  },
+  "PRGO-2021-09-20": {
+    "status": "ok",
+    "ticker": "PRGO",
+    "event_date": "2021-09-20",
+    "entry_price": 36.84196472167969,
+    "entry_date_actual": "2021-09-20",
+    "exit_price": 26.02269744873047,
+    "exit_date_actual": "2024-09-19",
+    "return_3yr": -0.293666946230547,
+    "sp500_return_3yr": 0.3111505674576349,
+    "alpha_3yr": -0.6048175136881819
+  },
+  "PTV-2010-11-17": {
+    "status": "missing_price",
+    "ticker": "PTV"
+  },
+  "PVH-2022-09-19": {
+    "status": "ok",
+    "ticker": "PVH",
+    "event_date": "2022-09-19",
+    "entry_price": 54.63584518432617,
+    "entry_date_actual": "2022-09-19",
+    "exit_price": 86.79017639160156,
+    "exit_date_actual": "2025-09-18",
+    "return_3yr": 0.5885207979998407,
+    "sp500_return_3yr": 0.7005505651733331,
+    "alpha_3yr": -0.11202976717349244
+  },
+  "PX-2018-10-31": {
+    "status": "missing_price",
+    "ticker": "PX"
+  },
+  "Q-2011-04-01": {
+    "status": "no_price_data",
+    "ticker": "Q"
+  },
+  "QEP-2015-07-01": {
+    "status": "no_price_data",
+    "ticker": "QEP"
+  },
+  "QLGC-2011-01-18": {
+    "status": "no_price_data",
+    "ticker": "QLGC"
+  },
+  "R-2017-06-19": {
+    "status": "ok",
+    "ticker": "R",
+    "event_date": "2017-06-19",
+    "entry_price": 51.86496353149414,
+    "entry_date_actual": "2017-06-19",
+    "exit_price": 32.88116455078125,
+    "exit_date_actual": "2020-06-18",
+    "return_3yr": -0.36602356751268694,
+    "sp500_return_3yr": 0.2697741709631209,
+    "alpha_3yr": -0.6357977384758078
+  },
+  "RAI-2017-07-25": {
+    "status": "no_price_data",
+    "ticker": "RAI"
+  },
+  "RDC-2014-08-19": {
+    "status": "no_price_data",
+    "ticker": "RDC"
+  },
+  "RHT-2019-07-15": {
+    "status": "no_price_data",
+    "ticker": "RHT"
+  },
+  "RIG-2017-07-26": {
+    "status": "ok",
+    "ticker": "RIG",
+    "event_date": "2017-07-26",
+    "entry_price": 8.770000457763672,
+    "entry_date_actual": "2017-07-25",
+    "exit_price": 2.190000057220459,
+    "exit_date_actual": "2020-07-24",
+    "return_3yr": -0.7502850692234851,
+    "sp500_return_3yr": 0.2981272823536879,
+    "alpha_3yr": -1.048412351577173
+  },
+  "RRC-2018-06-18": {
+    "status": "ok",
+    "ticker": "RRC",
+    "event_date": "2018-06-18",
+    "entry_price": 15.48677921295166,
+    "entry_date_actual": "2018-06-18",
+    "exit_price": 13.5952787399292,
+    "exit_date_actual": "2021-06-17",
+    "return_3yr": -0.12213646536915765,
+    "sp500_return_3yr": 0.5220765617958539,
+    "alpha_3yr": -0.6442130271650116
+  },
+  "RRD-2012-12-12": {
+    "status": "no_price_data",
+    "ticker": "RRD"
+  },
+  "RSHCQ-2011-07-01": {
+    "status": "no_price_data",
+    "ticker": "RSHCQ"
+  },
+  "RTN-2020-04-06": {
+    "status": "no_price_data",
+    "ticker": "RTN"
+  },
+  "RX-2010-02-26": {
+    "status": "missing_price",
+    "ticker": "RX"
+  },
+  "S-2013-07-09": {
+    "status": "no_price_data",
+    "ticker": "S"
+  },
+  "SBNY-2023-03-15": {
+    "status": "missing_price",
+    "ticker": "SBNY"
+  },
+  "SCG-2019-01-02": {
+    "status": "missing_price",
+    "ticker": "SCG"
+  },
+  "SE-2017-02-27": {
+    "status": "missing_price",
+    "ticker": "SE"
+  },
+  "SHLD-2012-09-05": {
+    "status": "no_price_data",
+    "ticker": "SHLD"
+  },
+  "SIAL-2015-11-18": {
+    "status": "no_price_data",
+    "ticker": "SIAL"
+  },
+  "SIG-2018-03-19": {
+    "status": "ok",
+    "ticker": "SIG",
+    "event_date": "2018-03-19",
+    "entry_price": 33.43333435058594,
+    "entry_date_actual": "2018-03-19",
+    "exit_price": 58.102596282958984,
+    "exit_date_actual": "2021-03-18",
+    "return_3yr": 0.7378642427251861,
+    "sp500_return_3yr": 0.443264111618665,
+    "alpha_3yr": 0.2946001311065211
+  },
+  "SII-2010-08-27": {
+    "status": "ok",
+    "ticker": "SII",
+    "event_date": "2010-08-27",
+    "entry_price": 24.39512825012207,
+    "entry_date_actual": "2010-08-26",
+    "exit_price": 17.329877853393555,
+    "exit_date_actual": "2013-08-26",
+    "return_3yr": -0.28961726801715676,
+    "sp500_return_3yr": 0.5820745169560497,
+    "alpha_3yr": -0.8716917849732064
+  },
+  "SIVB-2023-03-15": {
+    "status": "no_price_data",
+    "ticker": "SIVB"
+  },
+  "SLG-2021-03-22": {
+    "status": "ok",
+    "ticker": "SLG",
+    "event_date": "2021-03-22",
+    "entry_price": 52.25983810424805,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 50.03615188598633,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": -0.04255057610063591,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": -0.3726888722059307
+  },
+  "SLM-2014-05-01": {
+    "status": "ok",
+    "ticker": "SLM",
+    "event_date": "2014-05-01",
+    "entry_price": 8.028176307678223,
+    "entry_date_actual": "2014-04-30",
+    "exit_price": 11.122376441955566,
+    "exit_date_actual": "2017-05-01",
+    "return_3yr": 0.3854175613106581,
+    "sp500_return_3yr": 0.2677248016272327,
+    "alpha_3yr": 0.11769275968342535
+  },
+  "SNDK-2016-05-12": {
+    "status": "no_price_data",
+    "ticker": "SNDK"
+  },
+  "SNI-2018-03-07": {
+    "status": "no_price_data",
+    "ticker": "SNI"
+  },
+  "SPLS-2017-09-13": {
+    "status": "no_price_data",
+    "ticker": "SPLS"
+  },
+  "SRCL-2018-12-03": {
+    "status": "no_price_data",
+    "ticker": "SRCL"
+  },
+  "STI-2019-12-09": {
+    "status": "missing_price",
+    "ticker": "STI"
+  },
+  "STJ-2017-01-05": {
+    "status": "no_price_data",
+    "ticker": "STJ"
+  },
+  "STR-2010-07-01": {
+    "status": "no_price_data",
+    "ticker": "STR"
+  },
+  "SUN-2012-10-05": {
+    "status": "ok",
+    "ticker": "SUN",
+    "event_date": "2012-10-05",
+    "entry_price": 7.823347091674805,
+    "entry_date_actual": "2012-10-04",
+    "exit_price": 12.982255935668945,
+    "exit_date_actual": "2015-10-05",
+    "return_3yr": 0.6594247683940778,
+    "sp500_return_3yr": 0.35968934968700167,
+    "alpha_3yr": 0.29973541870707615
+  },
+  "SUNEQ-2011-12-19": {
+    "status": "no_price_data",
+    "ticker": "SUNEQ"
+  },
+  "SVU-2012-05-01": {
+    "status": "ok",
+    "ticker": "SVU",
+    "event_date": "2012-05-01",
+    "entry_price": 40.826778411865234,
+    "entry_date_actual": "2012-04-30",
+    "exit_price": 61.530059814453125,
+    "exit_date_actual": "2015-04-30",
+    "return_3yr": 0.5071005405748846,
+    "sp500_return_3yr": 0.4918771299824244,
+    "alpha_3yr": 0.01522341059246024
+  },
+  "SWN-2017-04-04": {
+    "status": "no_price_data",
+    "ticker": "SWN"
+  },
+  "SWY-2015-01-27": {
+    "status": "no_price_data",
+    "ticker": "SWY"
+  },
+  "SYMC-2019-11-05": {
+    "status": "no_price_data",
+    "ticker": "SYMC"
+  },
+  "TDC-2017-06-19": {
+    "status": "ok",
+    "ticker": "TDC",
+    "event_date": "2017-06-19",
+    "entry_price": 28.65999984741211,
+    "entry_date_actual": "2017-06-19",
+    "exit_price": 20.540000915527344,
+    "exit_date_actual": "2020-06-18",
+    "return_3yr": -0.28332166696148714,
+    "sp500_return_3yr": 0.2697741709631209,
+    "alpha_3yr": -0.553095837924608
+  },
+  "TE-2016-07-01": {
+    "status": "no_price_data",
+    "ticker": "TE"
+  },
+  "TEG-2015-06-30": {
+    "status": "missing_price",
+    "ticker": "TEG"
+  },
+  "TER-2013-12-23": {
+    "status": "ok",
+    "ticker": "TER",
+    "event_date": "2013-12-23",
+    "entry_price": 15.825685501098633,
+    "entry_date_actual": "2013-12-23",
+    "exit_price": 24.336612701416016,
+    "exit_date_actual": "2016-12-22",
+    "return_3yr": 0.5377920090555665,
+    "sp500_return_3yr": 0.23685576672529368,
+    "alpha_3yr": 0.3009362423302728
+  },
+  "TGNA-2017-06-02": {
+    "status": "ok",
+    "ticker": "TGNA",
+    "event_date": "2017-06-02",
+    "entry_price": 12.469990730285645,
+    "entry_date_actual": "2017-06-01",
+    "exit_price": 10.214012145996094,
+    "exit_date_actual": "2020-06-01",
+    "return_3yr": -0.1809126111706319,
+    "sp500_return_3yr": 0.257470970588714,
+    "alpha_3yr": -0.4383835817593459
+  },
+  "THC-2016-04-18": {
+    "status": "ok",
+    "ticker": "THC",
+    "event_date": "2016-04-18",
+    "entry_price": 31.8700008392334,
+    "entry_date_actual": "2016-04-18",
+    "exit_price": 22.950000762939453,
+    "exit_date_actual": "2019-04-17",
+    "return_3yr": -0.27988703612812665,
+    "sp500_return_3yr": 0.38489921858543363,
+    "alpha_3yr": -0.6647862547135603
+  },
+  "TIE-2012-12-24": {
+    "status": "ok",
+    "ticker": "TIE",
+    "event_date": "2012-12-24",
+    "entry_price": 10500,
+    "entry_date_actual": "2012-12-24",
+    "exit_price": 2.703000068664551,
+    "exit_date_actual": "2015-12-23",
+    "return_3yr": -0.9997425714220319,
+    "sp500_return_3yr": 0.4469389971027275,
+    "alpha_3yr": -1.4466815685247594
+  },
+  "TIF-2021-01-07": {
+    "status": "no_price_data",
+    "ticker": "TIF"
+  },
+  "TLAB-2011-12-21": {
+    "status": "missing_price",
+    "ticker": "TLAB"
+  },
+  "TMK-2019-08-08": {
+    "status": "no_price_data",
+    "ticker": "TMK"
+  },
+  "TMUS-2013-05-01": {
+    "status": "ok",
+    "ticker": "TMUS",
+    "event_date": "2013-05-01",
+    "entry_price": 18.864290237426758,
+    "entry_date_actual": "2013-04-30",
+    "exit_price": 37.767032623291016,
+    "exit_date_actual": "2016-04-29",
+    "return_3yr": 1.0020383564901483,
+    "sp500_return_3yr": 0.2927759774309324,
+    "alpha_3yr": 0.7092623790592159
+  },
+  "TRIP-2019-12-23": {
+    "status": "ok",
+    "ticker": "TRIP",
+    "event_date": "2019-12-23",
+    "entry_price": 29.889999389648438,
+    "entry_date_actual": "2019-12-23",
+    "exit_price": 17.479999542236328,
+    "exit_date_actual": "2022-12-22",
+    "return_3yr": -0.41518902980339184,
+    "sp500_return_3yr": 0.1856011243761617,
+    "alpha_3yr": -0.6007901541795535
+  },
+  "TSS-2019-09-23": {
+    "status": "no_price_data",
+    "ticker": "TSS"
+  },
+  "TWC-2016-05-18": {
+    "status": "no_price_data",
+    "ticker": "TWC"
+  },
+  "TWTR-2022-11-01": {
+    "status": "no_price_data",
+    "ticker": "TWTR"
+  },
+  "TWX-2018-06-15": {
+    "status": "missing_price",
+    "ticker": "TWX"
+  },
+  "UA-2022-06-21": {
+    "status": "ok",
+    "ticker": "UA",
+    "event_date": "2022-06-21",
+    "entry_price": 8.079999923706055,
+    "entry_date_actual": "2022-06-21",
+    "exit_price": 6.590000152587891,
+    "exit_date_actual": "2025-06-20",
+    "return_3yr": -0.18440591400831916,
+    "sp500_return_3yr": 0.5851720233609891,
+    "alpha_3yr": -0.7695779373693082
+  },
+  "UAA-2022-06-21": {
+    "status": "ok",
+    "ticker": "UAA",
+    "event_date": "2022-06-21",
+    "entry_price": 8.869999885559082,
+    "entry_date_actual": "2022-06-21",
+    "exit_price": 7.03000020980835,
+    "exit_date_actual": "2025-06-20",
+    "return_3yr": -0.207440777845597,
+    "sp500_return_3yr": 0.5851720233609891,
+    "alpha_3yr": -0.7926128012065861
+  },
+  "UNM-2021-09-20": {
+    "status": "ok",
+    "ticker": "UNM",
+    "event_date": "2021-09-20",
+    "entry_price": 20.751554489135742,
+    "entry_date_actual": "2021-09-20",
+    "exit_price": 54.91204833984375,
+    "exit_date_actual": "2024-09-19",
+    "return_3yr": 1.6461655375549034,
+    "sp500_return_3yr": 0.3111505674576349,
+    "alpha_3yr": 1.3350149700972684
+  },
+  "URBN-2017-03-20": {
+    "status": "ok",
+    "ticker": "URBN",
+    "event_date": "2017-03-20",
+    "entry_price": 23.18000030517578,
+    "entry_date_actual": "2017-03-20",
+    "exit_price": 16.1200008392334,
+    "exit_date_actual": "2020-03-19",
+    "return_3yr": -0.3045728806295995,
+    "sp500_return_3yr": 0.015133927253505111,
+    "alpha_3yr": -0.31970680788310457
+  },
+  "UTX-2020-04-03": {
+    "status": "no_price_data",
+    "ticker": "UTX"
+  },
+  "VAR-2021-04-20": {
+    "status": "no_price_data",
+    "ticker": "VAR"
+  },
+  "VIAB-2019-12-05": {
+    "status": "no_price_data",
+    "ticker": "VIAB"
+  },
+  "VIAC-2022-02-17": {
+    "status": "no_price_data",
+    "ticker": "VIAC"
+  },
+  "VIAV-2013-12-23": {
+    "status": "ok",
+    "ticker": "VIAV",
+    "event_date": "2013-12-23",
+    "entry_price": 7.172924041748047,
+    "entry_date_actual": "2013-12-23",
+    "exit_price": 8.319999694824219,
+    "exit_date_actual": "2016-12-22",
+    "return_3yr": 0.15991744041898828,
+    "sp500_return_3yr": 0.23685576672529368,
+    "alpha_3yr": -0.0769383263063054
+  },
+  "VNO-2023-01-04": {
+    "status": "ok",
+    "ticker": "VNO",
+    "event_date": "2023-01-04",
+    "entry_price": 19.689769744873047,
+    "entry_date_actual": "2023-01-03",
+    "exit_price": 33.45000076293945,
+    "exit_date_actual": "2026-01-02",
+    "return_3yr": 0.6988517995061566,
+    "sp500_return_3yr": 0.7934673959377482,
+    "alpha_3yr": -0.09461559643159156
+  },
+  "VNT-2021-03-22": {
+    "status": "ok",
+    "ticker": "VNT",
+    "event_date": "2021-03-22",
+    "entry_price": 31.6608829498291,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 44.7580451965332,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": 0.41367015150709174,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": 0.08353185540179692
+  },
+  "WCG-2020-01-28": {
+    "status": "no_price_data",
+    "ticker": "WCG"
+  },
+  "WFM-2017-08-28": {
+    "status": "no_price_data",
+    "ticker": "WFM"
+  },
+  "WIN-2015-04-07": {
+    "status": "no_price_data",
+    "ticker": "WIN"
+  },
+  "WLTW-2022-01-10": {
+    "status": "no_price_data",
+    "ticker": "WLTW"
+  },
+  "WPX-2014-03-24": {
+    "status": "no_price_data",
+    "ticker": "WPX"
+  },
+  "WU-2021-12-20": {
+    "status": "ok",
+    "ticker": "WU",
+    "event_date": "2021-12-20",
+    "entry_price": 12.403472900390625,
+    "entry_date_actual": "2021-12-20",
+    "exit_price": 9.20573616027832,
+    "exit_date_actual": "2024-12-19",
+    "return_3yr": -0.25780978970910623,
+    "sp500_return_3yr": 0.2843814285050033,
+    "alpha_3yr": -0.5421912182141095
+  },
+  "WYND-2018-05-31": {
+    "status": "no_price_data",
+    "ticker": "WYND"
+  },
+  "X-2014-07-02": {
+    "status": "no_price_data",
+    "ticker": "X"
+  },
+  "XEC-2020-03-03": {
+    "status": "no_price_data",
+    "ticker": "XEC"
+  },
+  "XL-2018-09-12": {
+    "status": "no_price_data",
+    "ticker": "XL"
+  },
+  "XLNX-2022-02-15": {
+    "status": "no_price_data",
+    "ticker": "XLNX"
+  },
+  "XRX-2021-03-22": {
+    "status": "ok",
+    "ticker": "XRX",
+    "event_date": "2021-03-22",
+    "entry_price": 18.333574295043945,
+    "entry_date_actual": "2021-03-22",
+    "exit_price": 14.938603401184082,
+    "exit_date_actual": "2024-03-21",
+    "return_3yr": -0.18517779671461088,
+    "sp500_return_3yr": 0.3301382961052948,
+    "alpha_3yr": -0.5153160928199056
+  },
+  "XTO-2010-06-28": {
+    "status": "no_price_data",
+    "ticker": "XTO"
+  }
+}
