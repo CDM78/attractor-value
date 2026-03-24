@@ -175,6 +175,17 @@ const METRIC_TAGS = {
   equity: ['StockholdersEquity', 'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest'],
   totalLiabilities: ['Liabilities'],
   operatingExpenses: ['OperatingExpenses', 'CostsAndExpenses'],
+  capex: ['PaymentsToAcquirePropertyPlantAndEquipment'],
+  rAndD: ['ResearchAndDevelopmentExpense'],
+  sga: ['SellingGeneralAndAdministrativeExpense'],
+  accountsReceivable: ['AccountsReceivableNetCurrent'],
+  inventory: ['InventoryNet'],
+  deferredRevenue: ['ContractWithCustomerLiabilityCurrent', 'DeferredRevenueCurrent'],
+  goodwill: ['Goodwill'],
+  longTermDebt: ['LongTermDebt', 'LongTermDebtNoncurrent', 'LongTermDebtAndCapitalLeaseObligations'],
+  sharesOutstanding: ['EntityCommonStockSharesOutstanding', 'CommonStockSharesOutstanding'],
+  dividendsPerShare: ['CommonStockDividendsPerShareDeclared', 'CommonStockDividendsPerShareCashPaid'],
+  eps: ['EarningsPerShareDiluted', 'EarningsPerShareBasic'],
 };
 
 // Find the best quarterly value for a tag list from companyfacts
@@ -226,7 +237,8 @@ export function extractQuarterlyMetrics(facts, beforeDate = null) {
 
   const raw = {};
   for (const [metric, tags] of Object.entries(METRIC_TAGS)) {
-    raw[metric] = findQuarterlyValues(facts, tags, metric === 'assets' || metric === 'employees' || metric === 'equity' || metric === 'totalLiabilities');
+    const useAbsVal = ['assets', 'employees', 'equity', 'totalLiabilities', 'goodwill', 'accountsReceivable', 'inventory', 'capex'].includes(metric);
+    raw[metric] = findQuarterlyValues(facts, tags, useAbsVal);
   }
 
   // Collect all quarters that have at least revenue or assets
