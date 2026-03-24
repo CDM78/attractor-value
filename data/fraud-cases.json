@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "tier": 9,
+    "dataset_role": "fraud_validation",
+    "source": "Known accounting fraud and value trap companies",
+    "case_count": 18,
+    "winners": 0,
+    "traps": 18,
+    "underperform": 0,
+    "mixed": 0,
+    "generated": "2026-03-24T13:16:25.300Z"
+  },
+  "cases": [
+    {
+      "case_id": "T9-001",
+      "ticker": "GE",
+      "company_name": "General Electric",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Accounting manipulation, insurance reserves, power division writedowns",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-002",
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Samarco dam disaster, environmental fraud concealment",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-003",
+      "ticker": "VRX",
+      "company_name": "Valeant Pharmaceuticals",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Channel stuffing, Philidor pharmacy fraud, accounting manipulation",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-004",
+      "ticker": "WFC",
+      "company_name": "Wells Fargo",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "Fake accounts scandal, systematic consumer fraud",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-005",
+      "ticker": "KHC",
+      "company_name": "Kraft Heinz",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "SEC investigation, goodwill impairment, aggressive accounting",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-006",
+      "ticker": "T",
+      "company_name": "AT&T",
+      "entry_date": "2018-06-15",
+      "outcome": "trap",
+      "reason": "Capital misallocation, debt-fueled acquisitions, dividend trap",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2018-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-007",
+      "ticker": "INTC",
+      "company_name": "Intel",
+      "entry_date": "2020-06-15",
+      "outcome": "trap",
+      "reason": "Process technology failure, competitive collapse to TSMC/AMD",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2020-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-008",
+      "ticker": "IBM",
+      "company_name": "IBM",
+      "entry_date": "2014-06-15",
+      "outcome": "trap",
+      "reason": "Revenue decline disguised by buybacks, financial engineering",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2014-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-009",
+      "ticker": "M",
+      "company_name": "Macys",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Secular retail decline, real estate value trap narrative",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-010",
+      "ticker": "WBA",
+      "company_name": "Walgreens Boots Alliance",
+      "entry_date": "2019-06-15",
+      "outcome": "trap",
+      "reason": "PBM pressure, opioid liability, secular pharmacy disruption",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2019-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-011",
+      "ticker": "PCG",
+      "company_name": "PG&E",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Wildfire liability, safety negligence, bankruptcy",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-012",
+      "ticker": "LB",
+      "company_name": "L Brands",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "Victoria's Secret brand decline, management denial",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-013",
+      "ticker": "CTL",
+      "company_name": "CenturyLink/Lumen",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Unsustainable dividend, declining legacy telecom revenue",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-014",
+      "ticker": "F",
+      "company_name": "Ford Motor",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "EV transition costs, declining sedan market, quality issues",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-015",
+      "ticker": "GPS",
+      "company_name": "Gap Inc",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Brand erosion, fast fashion competition, Old Navy cannibalization",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-016",
+      "ticker": "XRX",
+      "company_name": "Xerox",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "Secular print decline, failed transformation",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-017",
+      "ticker": "HPQ",
+      "company_name": "HP Inc",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "PC commoditization, ink subscription controversy",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-018",
+      "ticker": "KSS",
+      "company_name": "Kohls",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Department store secular decline, activist distractions",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    }
+  ]
+}
