@@ -99,7 +99,16 @@ async function loadData() {
 
     if (quarterlyMetrics.length < 4) { failed++; continue; }
 
-    companyData[ticker] = { facts: result.facts, quarterlyMetrics, numbers, cik: result.cik };
+    // Pre-compute revenue at various dates, then drop raw facts to save memory
+    const caseForTicker = cases.filter(c => c.ticker === ticker);
+    const revenueByDate = {};
+    for (const c of caseForTicker) {
+      const date = c.entry_date || '2025-12-31';
+      revenueByDate[date] = getRevenueAtDate(result.facts, date);
+    }
+    revenueByDate['2025-12-31'] = getRevenueAtDate(result.facts, '2025-12-31');
+
+    companyData[ticker] = { quarterlyMetrics, numbers, cik: result.cik, revenueByDate };
     loaded++;
 
     if (!VERBOSE && (i + 1) % 20 === 0) process.stdout.write(`  ${i + 1}/${tickers.length}...\r`);
@@ -574,7 +583,7 @@ function runDeepTest3(cases, companyData) {
     const csd = companyCSD(qm);
     const deriv = revenueDerivatives(qm);
     const d1 = benfordFirstDigit(data.numbers);
-    const annRev = getRevenueAtDate(data.facts, c.entry_date || '2025-12-31');
+    const annRev = (data.revenueByDate?.[c.entry_date] ?? data.revenueByDate?.['2025-12-31'] ?? null);
 
     // Zipf velocity
     let zipfVel = null;
@@ -918,7 +927,7 @@ function runDeepTest5(cases, companyData) {
     const csd = companyCSD(qm);
     const deriv = revenueDerivatives(qm);
     const d1 = benfordFirstDigit(data.numbers);
-    const annRev = getRevenueAtDate(data.facts, c.entry_date || '2025-12-31');
+    const annRev = (data.revenueByDate?.[c.entry_date] ?? data.revenueByDate?.['2025-12-31'] ?? null);
 
     let zipfVel = null;
     const etf = getSectorETF(c.sector);

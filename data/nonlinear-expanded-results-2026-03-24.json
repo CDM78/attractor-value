@@ -1,0 +1,120 @@
+{
+  "theory6": {
+    "hurstByOutcome": {
+      "winner": {
+        "n": 177,
+        "mean": 0.6502673426679831,
+        "pctPersistent": 0.711864406779661
+      },
+      "trap": {
+        "n": 118,
+        "mean": 0.6681408281291344,
+        "pctPersistent": 0.7288135593220338
+      }
+    },
+    "mw": {
+      "p": 0.7145755715592235,
+      "r": 0.021292930198506217
+    },
+    "crossTab": {
+      "H persistent + β>1.0": {
+        "winner": 31,
+        "trap": 16
+      },
+      "H persistent + β<1.0": {
+        "winner": 95,
+        "trap": 70
+      },
+      "H random/MR + β>1.0": {
+        "winner": 10,
+        "trap": 6
+      },
+      "H random/MR + β<1.0": {
+        "winner": 41,
+        "trap": 26
+      }
+    },
+    "pass": false
+  },
+  "theory7": {
+    "coverage": {
+      "withSegments": 22,
+      "withoutSegments": 386
+    },
+    "mw": {
+      "p": 0.777007875683533,
+      "r": 0.07080514800462759
+    },
+    "pass": false
+  },
+  "theory8": {
+    "hBetaByOutcome": {
+      "winner": {
+        "n": 166,
+        "mean": 0.7652264996599825
+      },
+      "trap": {
+        "n": 109,
+        "mean": 0.7663029196627941
+      }
+    },
+    "mw": {
+      "p": 0.9746492093578865,
+      "r": 0.001916268246297264
+    },
+    "crossTab": {
+      "H(β) persistent + β improving": {
+        "winner": 101,
+        "trap": 44
+      },
+      "H(β) persistent + β degrading": {
+        "winner": 47,
+        "trap": 52
+      },
+      "H(β) not persistent + β improving": {
+        "winner": 13,
+        "trap": 8
+      },
+      "H(β) not persistent + β degrading": {
+        "winner": 5,
+        "trap": 5
+      }
+    },
+    "pass": false
+  },
+  "theory9": {
+    "miByOutcome": {
+      "winner": {
+        "n": 176,
+        "mean": 0.5783442975896862
+      },
+      "trap": {
+        "n": 120,
+        "mean": 0.6086829711750812
+      }
+    },
+    "mw": {
+      "p": 0.23478809581580928,
+      "r": 0.06905780174642229
+    },
+    "crossTab": {
+      "Independent + β>1.0": {
+        "winner": 11,
+        "trap": 6
+      },
+      "Independent + β<1.0": {
+        "winner": 27,
+        "trap": 12
+      },
+      "Sector-dep + β>1.0": {
+        "winner": 29,
+        "trap": 17
+      },
+      "Sector-dep + β<1.0": {
+        "winner": 109,
+        "trap": 85
+      }
+    },
+    "pass": false
+  }
+}

@@ -106,7 +106,12 @@ async function loadData() {
 
     if (quarterlyMetrics.length < 4) { failed++; continue; }
 
-    companyData[ticker] = { facts: result.facts, quarterlyMetrics, numbers, cik: result.cik };
+    // Pre-compute segment data, then drop raw facts to save memory
+    const caseForTicker = cases.filter(c => c.ticker === ticker);
+    const segmentData = extractSegmentRevenues(result.facts, caseForTicker[0]?.entry_date);
+    const segmentDataNoDate = extractSegmentRevenues(result.facts);
+
+    companyData[ticker] = { quarterlyMetrics, numbers, cik: result.cik, segmentData, segmentDataNoDate };
     loaded++;
 
     if (!VERBOSE && (i + 1) % 20 === 0) process.stdout.write(`  ${i + 1}/${tickers.length}...\r`);
@@ -233,7 +238,7 @@ function runTheory7(cases, companyData) {
     const outcome = c.outcome;
     if (!entropyByOutcome[outcome]) continue;
 
-    const segData = extractSegmentRevenues(data.facts, c.entry_date);
+    const segData = data.segmentData;
     if (!segData || segData.nSegments < 2) {
       withoutSegments++;
       continue;
@@ -572,7 +577,7 @@ function runDiagnostic(ticker, companyData, cases) {
   }
 
   // Segment entropy
-  const segData = extractSegmentRevenues(data.facts);
+  const segData = data.segmentDataNoDate;
   if (segData) {
     printSub('Theory 7: Revenue Entropy');
     const ent = revenueEntropy(segData.segments);
