@@ -100,3 +100,17 @@ When the work computer rebuilt the dataset systematically — taking EVERY S&P 5
 ## How This Was Discovered
 
 The work computer couldn't pull the curated tier files from the av-calibration-tool repo. It was forced to reconstruct the dataset from scratch using systematic methods. When it re-ran the signals on this unbiased dataset, everything collapsed. The accident of a failed data transfer revealed a fundamental methodological flaw.
+
+---
+
+## EDGAR Cache (data/edgar-cache/)
+
+The `data/edgar-cache/` directory (700 files, ~2.3GB) is **gitignored** — too large for git. Each machine must build its own cache by running any script without `--dry-run`. The scripts fetch from SEC EDGAR at ~9 req/sec and cache each companyfacts JSON locally.
+
+To rebuild the cache on a new machine:
+```bash
+node scripts/dataset-expansion.js --phase 2
+# Or run any test script without --dry-run — it will fetch and cache as needed
+```
+
+The `data/cik-cache.json` file (ticker → CIK mapping) IS in git and does not need rebuilding.
