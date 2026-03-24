@@ -1,0 +1,721 @@
+{
+  "metadata": {
+    "tier": 3,
+    "dataset_role": "growth_dks",
+    "source": "Reconstructed Growth/DKS cases based on framework methodology",
+    "case_count": 47,
+    "winner": 32,
+    "trap": 12,
+    "mixed": 3,
+    "underperform": 0,
+    "generated": "2026-03-24T16:13:47.879Z",
+    "reconstructed": true
+  },
+  "cases": [
+    {
+      "case_id": "T3-001",
+      "ticker": "NVDA",
+      "company_name": "NVDA",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "AI/data center GPU monopoly"
+    },
+    {
+      "case_id": "T3-002",
+      "ticker": "AVGO",
+      "company_name": "AVGO",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Semiconductor M&A + VMware"
+    },
+    {
+      "case_id": "T3-003",
+      "ticker": "NOW",
+      "company_name": "NOW",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Enterprise workflow platform"
+    },
+    {
+      "case_id": "T3-004",
+      "ticker": "ADBE",
+      "company_name": "ADBE",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Creative cloud subscription model"
+    },
+    {
+      "case_id": "T3-005",
+      "ticker": "INTU",
+      "company_name": "INTU",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Tax/accounting platform monopoly"
+    },
+    {
+      "case_id": "T3-006",
+      "ticker": "ISRG",
+      "company_name": "ISRG",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Surgical robotics dominance"
+    },
+    {
+      "case_id": "T3-007",
+      "ticker": "SNPS",
+      "company_name": "SNPS",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "EDA tools, chip design critical path"
+    },
+    {
+      "case_id": "T3-008",
+      "ticker": "CDNS",
+      "company_name": "CDNS",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "EDA tools, semiconductor complexity"
+    },
+    {
+      "case_id": "T3-009",
+      "ticker": "PANW",
+      "company_name": "PANW",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cybersecurity platform"
+    },
+    {
+      "case_id": "T3-010",
+      "ticker": "CRWD",
+      "company_name": "CRWD",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Endpoint security, cloud-native"
+    },
+    {
+      "case_id": "T3-011",
+      "ticker": "DDOG",
+      "company_name": "DDOG",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Observability platform"
+    },
+    {
+      "case_id": "T3-012",
+      "ticker": "SNOW",
+      "company_name": "SNOW",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Overvalued, slowing growth"
+    },
+    {
+      "case_id": "T3-013",
+      "ticker": "PLTR",
+      "company_name": "PLTR",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "AI/government data analytics"
+    },
+    {
+      "case_id": "T3-014",
+      "ticker": "TSLA",
+      "company_name": "TSLA",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "EV market creation, manufacturing scale"
+    },
+    {
+      "case_id": "T3-015",
+      "ticker": "AMD",
+      "company_name": "AMD",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Zen architecture, Intel stumbles"
+    },
+    {
+      "case_id": "T3-016",
+      "ticker": "MRVL",
+      "company_name": "MRVL",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Data center semiconductor pivot"
+    },
+    {
+      "case_id": "T3-017",
+      "ticker": "ABNB",
+      "company_name": "ABNB",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Travel recovery but valuation rich"
+    },
+    {
+      "case_id": "T3-018",
+      "ticker": "UBER",
+      "company_name": "UBER",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Ride-share + delivery dominance"
+    },
+    {
+      "case_id": "T3-019",
+      "ticker": "TTD",
+      "company_name": "TTD",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Programmatic ad platform"
+    },
+    {
+      "case_id": "T3-020",
+      "ticker": "MELI",
+      "company_name": "MELI",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Latin America e-commerce + fintech"
+    },
+    {
+      "case_id": "T3-021",
+      "ticker": "SE",
+      "company_name": "SE",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Overexpansion, cash burn"
+    },
+    {
+      "case_id": "T3-022",
+      "ticker": "COIN",
+      "company_name": "COIN",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Crypto winter exposure"
+    },
+    {
+      "case_id": "T3-023",
+      "ticker": "RIVN",
+      "company_name": "RIVN",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-11-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Overvalued, production ramp issues"
+    },
+    {
+      "case_id": "T3-024",
+      "ticker": "LCID",
+      "company_name": "LCID",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-11-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Production delays, cash burn"
+    },
+    {
+      "case_id": "T3-025",
+      "ticker": "DASH",
+      "company_name": "DASH",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Delivery market leader"
+    },
+    {
+      "case_id": "T3-026",
+      "ticker": "RBLX",
+      "company_name": "RBLX",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Post-COVID normalization"
+    },
+    {
+      "case_id": "T3-027",
+      "ticker": "U",
+      "company_name": "U",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Game engine, ironSource acquisition"
+    },
+    {
+      "case_id": "T3-028",
+      "ticker": "LLY",
+      "company_name": "LLY",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "GLP-1 obesity drugs (Mounjaro)"
+    },
+    {
+      "case_id": "T3-029",
+      "ticker": "NVO",
+      "company_name": "NVO",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "GLP-1 obesity drugs (Ozempic)"
+    },
+    {
+      "case_id": "T3-030",
+      "ticker": "ASML",
+      "company_name": "ASML",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "EUV lithography monopoly"
+    },
+    {
+      "case_id": "T3-031",
+      "ticker": "LRCX",
+      "company_name": "LRCX",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Semiconductor equipment"
+    },
+    {
+      "case_id": "T3-032",
+      "ticker": "KLAC",
+      "company_name": "KLAC",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Wafer inspection monopoly"
+    },
+    {
+      "case_id": "T3-033",
+      "ticker": "AMAT",
+      "company_name": "AMAT",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Semiconductor equipment leader"
+    },
+    {
+      "case_id": "T3-034",
+      "ticker": "ENPH",
+      "company_name": "ENPH",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Solar microinverter growth (pre-IRA)"
+    },
+    {
+      "case_id": "T3-035",
+      "ticker": "SEDG",
+      "company_name": "SEDG",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Solar competition, quality issues"
+    },
+    {
+      "case_id": "T3-036",
+      "ticker": "NET",
+      "company_name": "NET",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Edge computing/CDN platform"
+    },
+    {
+      "case_id": "T3-037",
+      "ticker": "MDB",
+      "company_name": "MDB",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Database market share gain"
+    },
+    {
+      "case_id": "T3-038",
+      "ticker": "ZS",
+      "company_name": "ZS",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Zero-trust security"
+    },
+    {
+      "case_id": "T3-039",
+      "ticker": "OKTA",
+      "company_name": "OKTA",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Identity management, Auth0 integration"
+    },
+    {
+      "case_id": "T3-040",
+      "ticker": "HUBS",
+      "company_name": "HUBS",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "CRM/marketing platform for SMB"
+    },
+    {
+      "case_id": "T3-041",
+      "ticker": "VEEV",
+      "company_name": "VEEV",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Life sciences cloud, slowing growth"
+    },
+    {
+      "case_id": "T3-042",
+      "ticker": "WDAY",
+      "company_name": "WDAY",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "HR/finance cloud platform"
+    },
+    {
+      "case_id": "T3-043",
+      "ticker": "MNDY",
+      "company_name": "MNDY",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Work management platform"
+    },
+    {
+      "case_id": "T3-044",
+      "ticker": "BILL",
+      "company_name": "BILL",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Fintech slowdown, competition"
+    },
+    {
+      "case_id": "T3-045",
+      "ticker": "SOFI",
+      "company_name": "SOFI",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Fintech competition, bank charter growing slowly"
+    },
+    {
+      "case_id": "T3-046",
+      "ticker": "AFRM",
+      "company_name": "AFRM",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "BNPL credit risk, rate sensitivity"
+    },
+    {
+      "case_id": "T3-047",
+      "ticker": "UPST",
+      "company_name": "UPST",
+      "tier": 3,
+      "dataset_role": "growth_dks",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "AI lending model blew up in rate hikes"
+    }
+  ]
+}

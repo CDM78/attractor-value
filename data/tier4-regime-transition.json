@@ -1,0 +1,481 @@
+{
+  "metadata": {
+    "tier": 4,
+    "dataset_role": "regime_transition",
+    "source": "Reconstructed Regime Transition cases based on framework methodology",
+    "case_count": 31,
+    "winner": 22,
+    "trap": 7,
+    "mixed": 2,
+    "underperform": 0,
+    "generated": "2026-03-24T16:13:54.164Z",
+    "reconstructed": true
+  },
+  "cases": [
+    {
+      "case_id": "T4-001",
+      "ticker": "GS",
+      "company_name": "GS",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-01-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Higher rates benefit trading/banking"
+    },
+    {
+      "case_id": "T4-002",
+      "ticker": "MS",
+      "company_name": "MS",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-01-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Wealth management + rates"
+    },
+    {
+      "case_id": "T4-003",
+      "ticker": "SCHW",
+      "company_name": "SCHW",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-01-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "SVB contagion, unrealized losses"
+    },
+    {
+      "case_id": "T4-004",
+      "ticker": "BLK",
+      "company_name": "BLK",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-01-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Asset management, ETF flows"
+    },
+    {
+      "case_id": "T4-005",
+      "ticker": "ICE",
+      "company_name": "ICE",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-01-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Exchange volumes in volatility"
+    },
+    {
+      "case_id": "T4-006",
+      "ticker": "FSLR",
+      "company_name": "FSLR",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "IRA solar manufacturing onshoring"
+    },
+    {
+      "case_id": "T4-007",
+      "ticker": "ENPH",
+      "company_name": "ENPH",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Solar/IRA beneficiary (earlier entry)"
+    },
+    {
+      "case_id": "T4-008",
+      "ticker": "NEE",
+      "company_name": "NEE",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Renewable utility leader"
+    },
+    {
+      "case_id": "T4-009",
+      "ticker": "XOM",
+      "company_name": "XOM",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Energy security post-Ukraine"
+    },
+    {
+      "case_id": "T4-010",
+      "ticker": "CVX",
+      "company_name": "CVX",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Energy security post-Ukraine"
+    },
+    {
+      "case_id": "T4-011",
+      "ticker": "OXY",
+      "company_name": "OXY",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Buffett bet, Permian basin"
+    },
+    {
+      "case_id": "T4-012",
+      "ticker": "DVN",
+      "company_name": "DVN",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Variable dividend, shale returns"
+    },
+    {
+      "case_id": "T4-013",
+      "ticker": "PXD",
+      "company_name": "PXD",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Permian pure-play, acquired by XOM"
+    },
+    {
+      "case_id": "T4-014",
+      "ticker": "NVDA",
+      "company_name": "NVDA",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "AI compute monopoly (ChatGPT catalyst)"
+    },
+    {
+      "case_id": "T4-015",
+      "ticker": "MSFT",
+      "company_name": "MSFT",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2023-01-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "OpenAI partnership, Copilot"
+    },
+    {
+      "case_id": "T4-016",
+      "ticker": "ORCL",
+      "company_name": "ORCL",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cloud infrastructure for AI"
+    },
+    {
+      "case_id": "T4-017",
+      "ticker": "ARM",
+      "company_name": "ARM",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2023-09-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "AI chip design licensing"
+    },
+    {
+      "case_id": "T4-018",
+      "ticker": "GE",
+      "company_name": "GE",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "GE Aerospace spinoff, defense"
+    },
+    {
+      "case_id": "T4-019",
+      "ticker": "LMT",
+      "company_name": "LMT",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-02-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Defense spending post-Ukraine"
+    },
+    {
+      "case_id": "T4-020",
+      "ticker": "RTX",
+      "company_name": "RTX",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-02-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Defense + commercial aero recovery"
+    },
+    {
+      "case_id": "T4-021",
+      "ticker": "NOC",
+      "company_name": "NOC",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-02-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Defense spending increase"
+    },
+    {
+      "case_id": "T4-022",
+      "ticker": "CMG",
+      "company_name": "CMG",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Digital ordering acceleration"
+    },
+    {
+      "case_id": "T4-023",
+      "ticker": "LULU",
+      "company_name": "LULU",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Athleisure secular trend"
+    },
+    {
+      "case_id": "T4-024",
+      "ticker": "NKE",
+      "company_name": "NKE",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "DTC pivot mixed results"
+    },
+    {
+      "case_id": "T4-025",
+      "ticker": "DPZ",
+      "company_name": "DPZ",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Delivery competition"
+    },
+    {
+      "case_id": "T4-026",
+      "ticker": "ARKK",
+      "company_name": "ARKK",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Growth-at-any-price regime ended"
+    },
+    {
+      "case_id": "T4-027",
+      "ticker": "BYND",
+      "company_name": "BYND",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Plant-based fad faded"
+    },
+    {
+      "case_id": "T4-028",
+      "ticker": "HOOD",
+      "company_name": "HOOD",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-08-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Retail trading frenzy ended"
+    },
+    {
+      "case_id": "T4-029",
+      "ticker": "SPCE",
+      "company_name": "SPCE",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Space tourism hype collapsed"
+    },
+    {
+      "case_id": "T4-030",
+      "ticker": "DKNG",
+      "company_name": "DKNG",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Sports betting cash burn"
+    },
+    {
+      "case_id": "T4-031",
+      "ticker": "CHPT",
+      "company_name": "CHPT",
+      "tier": 4,
+      "dataset_role": "regime_transition",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "EV charging cash burn"
+    }
+  ]
+}

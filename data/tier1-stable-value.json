@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "tier": 1,
+    "dataset_role": "stable_value",
+    "source": "Reconstructed Stable Value cases based on framework methodology",
+    "case_count": 36,
+    "winner": 18,
+    "trap": 15,
+    "mixed": 3,
+    "underperform": 0,
+    "generated": "2026-03-24T16:13:27.775Z",
+    "reconstructed": true
+  },
+  "cases": [
+    {
+      "case_id": "T1-001",
+      "ticker": "INTC",
+      "company_name": "INTC",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Process tech failure, AMD/TSMC competitive collapse"
+    },
+    {
+      "case_id": "T1-002",
+      "ticker": "M",
+      "company_name": "M",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "E-commerce secular decline"
+    },
+    {
+      "case_id": "T1-003",
+      "ticker": "WBA",
+      "company_name": "WBA",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "PBM pressure, opioid liability"
+    },
+    {
+      "case_id": "T1-004",
+      "ticker": "WFC",
+      "company_name": "WFC",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Fake accounts scandal"
+    },
+    {
+      "case_id": "T1-005",
+      "ticker": "T",
+      "company_name": "T",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Debt-fueled acquisitions, cord-cutting"
+    },
+    {
+      "case_id": "T1-006",
+      "ticker": "KHC",
+      "company_name": "KHC",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Goodwill impairment, brand erosion"
+    },
+    {
+      "case_id": "T1-007",
+      "ticker": "ALLY",
+      "company_name": "ALLY",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Auto lending risks but digital banking growth"
+    },
+    {
+      "case_id": "T1-008",
+      "ticker": "VZ",
+      "company_name": "VZ",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Dividend stable but no growth"
+    },
+    {
+      "case_id": "T1-009",
+      "ticker": "USB",
+      "company_name": "USB",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Solid but rate-sensitive"
+    },
+    {
+      "case_id": "T1-010",
+      "ticker": "BRK-B",
+      "company_name": "BRK-B",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Berkshire Hathaway — diversified value"
+    },
+    {
+      "case_id": "T1-011",
+      "ticker": "JPM",
+      "company_name": "JPM",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Best-in-class bank, post-crisis recovery"
+    },
+    {
+      "case_id": "T1-012",
+      "ticker": "JNJ",
+      "company_name": "JNJ",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Healthcare conglomerate, dividend aristocrat"
+    },
+    {
+      "case_id": "T1-013",
+      "ticker": "PG",
+      "company_name": "PG",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Consumer staples leader, pricing power"
+    },
+    {
+      "case_id": "T1-014",
+      "ticker": "AXP",
+      "company_name": "AXP",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "High ROE franchise, network effects"
+    },
+    {
+      "case_id": "T1-015",
+      "ticker": "CB",
+      "company_name": "CB",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Insurance underwriting discipline"
+    },
+    {
+      "case_id": "T1-016",
+      "ticker": "BMY",
+      "company_name": "BMY",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Pharma pipeline value"
+    },
+    {
+      "case_id": "T1-017",
+      "ticker": "PFE",
+      "company_name": "PFE",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Pharma value, pre-COVID"
+    },
+    {
+      "case_id": "T1-018",
+      "ticker": "CVS",
+      "company_name": "CVS",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Aetna acquisition, vertical integration"
+    },
+    {
+      "case_id": "T1-019",
+      "ticker": "LOW",
+      "company_name": "LOW",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Home improvement, housing cycle"
+    },
+    {
+      "case_id": "T1-020",
+      "ticker": "TXN",
+      "company_name": "TXN",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Analog semiconductor franchise"
+    },
+    {
+      "case_id": "T1-021",
+      "ticker": "MMM",
+      "company_name": "MMM",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Litigation overhang, innovation decline"
+    },
+    {
+      "case_id": "T1-022",
+      "ticker": "IBM",
+      "company_name": "IBM",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Revenue decline masked by buybacks"
+    },
+    {
+      "case_id": "T1-023",
+      "ticker": "GE",
+      "company_name": "GE",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Accounting manipulation, insurance reserves"
+    },
+    {
+      "case_id": "T1-024",
+      "ticker": "F",
+      "company_name": "F",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "EV transition costs, margin pressure"
+    },
+    {
+      "case_id": "T1-025",
+      "ticker": "XOM",
+      "company_name": "XOM",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Oil price collapse"
+    },
+    {
+      "case_id": "T1-026",
+      "ticker": "CVX",
+      "company_name": "CVX",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Oil price collapse"
+    },
+    {
+      "case_id": "T1-027",
+      "ticker": "KSS",
+      "company_name": "KSS",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Department store secular decline"
+    },
+    {
+      "case_id": "T1-028",
+      "ticker": "HPQ",
+      "company_name": "HPQ",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "PC commoditization"
+    },
+    {
+      "case_id": "T1-029",
+      "ticker": "XRX",
+      "company_name": "XRX",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Print secular decline"
+    },
+    {
+      "case_id": "T1-030",
+      "ticker": "UNH",
+      "company_name": "UNH",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Healthcare services dominance"
+    },
+    {
+      "case_id": "T1-031",
+      "ticker": "V",
+      "company_name": "V",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Payment network duopoly"
+    },
+    {
+      "case_id": "T1-032",
+      "ticker": "MA",
+      "company_name": "MA",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Payment network duopoly"
+    },
+    {
+      "case_id": "T1-033",
+      "ticker": "HD",
+      "company_name": "HD",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Home improvement market leader"
+    },
+    {
+      "case_id": "T1-034",
+      "ticker": "AAPL",
+      "company_name": "AAPL",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Ecosystem lock-in, services pivot"
+    },
+    {
+      "case_id": "T1-035",
+      "ticker": "ABBV",
+      "company_name": "ABBV",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Humira cash flow, pipeline optionality"
+    },
+    {
+      "case_id": "T1-036",
+      "ticker": "MRK",
+      "company_name": "MRK",
+      "tier": 1,
+      "dataset_role": "stable_value",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Keytruda franchise"
+    }
+  ]
+}

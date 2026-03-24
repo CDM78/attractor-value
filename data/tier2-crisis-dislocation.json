@@ -1,0 +1,751 @@
+{
+  "metadata": {
+    "tier": 2,
+    "dataset_role": "crisis_dislocation",
+    "source": "Reconstructed Crisis Dislocation cases based on framework methodology",
+    "case_count": 49,
+    "winner": 31,
+    "trap": 14,
+    "mixed": 4,
+    "underperform": 0,
+    "generated": "2026-03-24T16:13:38.325Z",
+    "reconstructed": true
+  },
+  "cases": [
+    {
+      "case_id": "T2-001",
+      "ticker": "DIS",
+      "company_name": "DIS",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Disney+ launch during parks shutdown"
+    },
+    {
+      "case_id": "T2-002",
+      "ticker": "SBUX",
+      "company_name": "SBUX",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Brand resilience, drive-through pivot"
+    },
+    {
+      "case_id": "T2-003",
+      "ticker": "JPM",
+      "company_name": "JPM",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Bank oversold in COVID panic"
+    },
+    {
+      "case_id": "T2-004",
+      "ticker": "BAC",
+      "company_name": "BAC",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Bank oversold in COVID panic"
+    },
+    {
+      "case_id": "T2-005",
+      "ticker": "MSFT",
+      "company_name": "MSFT",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cloud/remote work acceleration"
+    },
+    {
+      "case_id": "T2-006",
+      "ticker": "GOOGL",
+      "company_name": "GOOGL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Digital ad recovery"
+    },
+    {
+      "case_id": "T2-007",
+      "ticker": "AMZN",
+      "company_name": "AMZN",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "E-commerce acceleration"
+    },
+    {
+      "case_id": "T2-008",
+      "ticker": "BRK-B",
+      "company_name": "BRK-B",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cash-rich, buying opportunity"
+    },
+    {
+      "case_id": "T2-009",
+      "ticker": "UNP",
+      "company_name": "UNP",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Railroad monopoly, GDP recovery"
+    },
+    {
+      "case_id": "T2-010",
+      "ticker": "NEE",
+      "company_name": "NEE",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Utility/renewable leader"
+    },
+    {
+      "case_id": "T2-011",
+      "ticker": "DE",
+      "company_name": "DE",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Ag equipment, precision farming"
+    },
+    {
+      "case_id": "T2-012",
+      "ticker": "CAT",
+      "company_name": "CAT",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Infrastructure cycle"
+    },
+    {
+      "case_id": "T2-013",
+      "ticker": "COST",
+      "company_name": "COST",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Membership model, essential retail"
+    },
+    {
+      "case_id": "T2-014",
+      "ticker": "TMO",
+      "company_name": "TMO",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Life sciences, COVID testing"
+    },
+    {
+      "case_id": "T2-015",
+      "ticker": "AAPL",
+      "company_name": "AAPL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-12-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Oversold on China fears"
+    },
+    {
+      "case_id": "T2-016",
+      "ticker": "BA",
+      "company_name": "BA",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-12-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "737 MAX crisis ahead"
+    },
+    {
+      "case_id": "T2-017",
+      "ticker": "GE",
+      "company_name": "GE",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-12-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Continued decline"
+    },
+    {
+      "case_id": "T2-018",
+      "ticker": "FB",
+      "company_name": "FB",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-12-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Privacy scare oversold, ad growth continued"
+    },
+    {
+      "case_id": "T2-019",
+      "ticker": "GILD",
+      "company_name": "GILD",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2018-12-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "HCV peak passed, pipeline uncertainty"
+    },
+    {
+      "case_id": "T2-020",
+      "ticker": "ABBV",
+      "company_name": "ABBV",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-12-24",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Humira biosimilar fears overdone"
+    },
+    {
+      "case_id": "T2-021",
+      "ticker": "XOM",
+      "company_name": "XOM",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2016-02-11",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Oil recovery partial"
+    },
+    {
+      "case_id": "T2-022",
+      "ticker": "CVX",
+      "company_name": "CVX",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-02-11",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Permian basin, oil recovery"
+    },
+    {
+      "case_id": "T2-023",
+      "ticker": "SLB",
+      "company_name": "SLB",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-02-11",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Oilfield services slow recovery"
+    },
+    {
+      "case_id": "T2-024",
+      "ticker": "HAL",
+      "company_name": "HAL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2016-02-11",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Partial oil recovery"
+    },
+    {
+      "case_id": "T2-025",
+      "ticker": "DAL",
+      "company_name": "DAL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Airline recovery, Buffett sold too early"
+    },
+    {
+      "case_id": "T2-026",
+      "ticker": "LUV",
+      "company_name": "LUV",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Partial airline recovery"
+    },
+    {
+      "case_id": "T2-027",
+      "ticker": "MGM",
+      "company_name": "MGM",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Casino/resort recovery + iGaming"
+    },
+    {
+      "case_id": "T2-028",
+      "ticker": "WYNN",
+      "company_name": "WYNN",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Macau recovery"
+    },
+    {
+      "case_id": "T2-029",
+      "ticker": "MAR",
+      "company_name": "MAR",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Hotel asset-light recovery"
+    },
+    {
+      "case_id": "T2-030",
+      "ticker": "RCL",
+      "company_name": "RCL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cruise pent-up demand"
+    },
+    {
+      "case_id": "T2-031",
+      "ticker": "CCL",
+      "company_name": "CCL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Dilution, debt, slow recovery"
+    },
+    {
+      "case_id": "T2-032",
+      "ticker": "AAL",
+      "company_name": "AAL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Worst balance sheet airline"
+    },
+    {
+      "case_id": "T2-033",
+      "ticker": "NCLH",
+      "company_name": "NCLH",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cruise dilution and debt"
+    },
+    {
+      "case_id": "T2-034",
+      "ticker": "SPG",
+      "company_name": "SPG",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Premium mall REIT recovery"
+    },
+    {
+      "case_id": "T2-035",
+      "ticker": "BXP",
+      "company_name": "BXP",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-03-23",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Office REIT, WFH secular shift"
+    },
+    {
+      "case_id": "T2-036",
+      "ticker": "GOOGL",
+      "company_name": "GOOGL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Ad resilience, AI pivot"
+    },
+    {
+      "case_id": "T2-037",
+      "ticker": "MSFT",
+      "company_name": "MSFT",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Cloud + AI (ChatGPT)"
+    },
+    {
+      "case_id": "T2-038",
+      "ticker": "AMZN",
+      "company_name": "AMZN",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "AWS + retail recovery"
+    },
+    {
+      "case_id": "T2-039",
+      "ticker": "META",
+      "company_name": "META",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Year of efficiency, Reels growth"
+    },
+    {
+      "case_id": "T2-040",
+      "ticker": "PYPL",
+      "company_name": "PYPL",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Competitive pressure, slowing growth"
+    },
+    {
+      "case_id": "T2-041",
+      "ticker": "SQ",
+      "company_name": "SQ",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Overexpansion, Cash App slowdown"
+    },
+    {
+      "case_id": "T2-042",
+      "ticker": "SHOP",
+      "company_name": "SHOP",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "E-commerce recovery, logistics shed"
+    },
+    {
+      "case_id": "T2-043",
+      "ticker": "ZM",
+      "company_name": "ZM",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "COVID pull-forward reversal"
+    },
+    {
+      "case_id": "T2-044",
+      "ticker": "DOCU",
+      "company_name": "DOCU",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "COVID pull-forward, competition"
+    },
+    {
+      "case_id": "T2-045",
+      "ticker": "PTON",
+      "company_name": "PTON",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "COVID pull-forward, cash burn"
+    },
+    {
+      "case_id": "T2-046",
+      "ticker": "ROKU",
+      "company_name": "ROKU",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Ad market weakness, competition"
+    },
+    {
+      "case_id": "T2-047",
+      "ticker": "SNAP",
+      "company_name": "SNAP",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "ATT impact, ad competition"
+    },
+    {
+      "case_id": "T2-048",
+      "ticker": "NFLX",
+      "company_name": "NFLX",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Ad tier + password sharing crackdown"
+    },
+    {
+      "case_id": "T2-049",
+      "ticker": "CRM",
+      "company_name": "CRM",
+      "tier": 2,
+      "dataset_role": "crisis_dislocation",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-06-15",
+        "price": null,
+        "sector": null,
+        "industry": null
+      },
+      "reason": "Activist-driven efficiency"
+    }
+  ]
+}

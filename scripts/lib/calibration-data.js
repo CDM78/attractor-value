@@ -56,7 +56,7 @@ function normalizeTier1Case(c) {
   return {
     ticker: c.ticker,
     company: c.company || c.company_name,
-    outcome: c.outcome_class,
+    outcome: c.outcome_class || c.outcome,
     entry_date: normalizeDate(c.entry_date),
     entry_price: c.entry_price,
     sector: c.sector,
