@@ -474,3 +474,216 @@ export function nonLinearCompositeScore({ beta, betaTrajectory, zipfVelocity, cs
   if (scores.length === 0) return null;
   return scores.reduce((s, v) => s + v, 0) / scores.length;
 }
+
+// ============================================
+// THEORY 6: HURST EXPONENT — Revenue Persistence
+// ============================================
+
+// Rescaled range (R/S) analysis for Hurst exponent estimation
+export function hurstExponent(series) {
+  if (series.length < 16) return null;
+
+  const n = series.length;
+  const logRS = [];
+  const logN = [];
+
+  // Compute R/S for different sub-series lengths
+  for (let size = 8; size <= n; size = Math.floor(size * 1.5)) {
+    const numSubseries = Math.floor(n / size);
+    if (numSubseries < 1) continue;
+
+    let totalRS = 0;
+    let validCount = 0;
+    for (let i = 0; i < numSubseries; i++) {
+      const sub = series.slice(i * size, (i + 1) * size);
+      const m = mean(sub);
+      const cumDev = [];
+      let runningSum = 0;
+      for (const val of sub) {
+        runningSum += (val - m);
+        cumDev.push(runningSum);
+      }
+      const R = Math.max(...cumDev) - Math.min(...cumDev);
+      const S = Math.sqrt(sub.reduce((s, v) => s + (v - m) ** 2, 0) / sub.length);
+      if (S > 0) {
+        totalRS += R / S;
+        validCount++;
+      }
+    }
+    if (validCount > 0) {
+      const avgRS = totalRS / validCount;
+      if (avgRS > 0) {
+        logRS.push(Math.log(avgRS));
+        logN.push(Math.log(size));
+      }
+    }
+  }
+
+  if (logRS.length < 3) return null;
+
+  // Linear regression: log(R/S) = H * log(n) + c
+  const reg = linearRegression(logN, logRS);
+  if (!reg) return null;
+
+  const H = reg.slope;
+
+  return {
+    hurst: H,
+    r2: reg.r2,
+    persistent: H > 0.55,
+    meanReverting: H < 0.45,
+    random: H >= 0.45 && H <= 0.55,
+    nPoints: series.length,
+  };
+}
+
+// Compute Hurst exponent of quarterly revenue YoY growth
+export function revenueHurst(quarterlyMetrics) {
+  const growthSeries = quarterlyMetrics
+    .map(q => q.revenueGrowthYoY)
+    .filter(v => v != null && isFinite(v));
+
+  return hurstExponent(growthSeries);
+}
+
+// ============================================
+// THEORY 7: REVENUE STREAM ENTROPY
+// ============================================
+
+// Shannon entropy of revenue segments
+export function revenueEntropy(segmentRevenues) {
+  if (!segmentRevenues || segmentRevenues.length < 2) {
+    return { entropy: 0, normalizedEntropy: 0, nSegments: segmentRevenues?.length ?? 0, concentration: 1.0 };
+  }
+
+  const total = segmentRevenues.reduce((s, v) => s + v, 0);
+  if (total <= 0) return null;
+
+  const probs = segmentRevenues.map(r => r / total).filter(p => p > 0);
+  const entropy = -probs.reduce((s, p) => s + p * Math.log2(p), 0);
+  const maxEntropy = Math.log2(probs.length);
+  const normalizedEntropy = maxEntropy > 0 ? entropy / maxEntropy : 0;
+
+  return {
+    entropy,
+    normalizedEntropy,
+    nSegments: probs.length,
+    concentration: Math.max(...probs),
+  };
+}
+
+// ============================================
+// THEORY 8: HURST OF β TRAJECTORY — Meta-Persistence
+// ============================================
+
+// Compute Hurst exponent of the rolling β time series
+export function hurstOfBeta(quarterlyMetrics, windowSize = 8, stepSize = 1) {
+  const valid = quarterlyMetrics.filter(q => q.assets > 0 && q.revenue > 0);
+  if (valid.length < windowSize + 16) return null; // Need 16+ β data points
+
+  const betaSeries = [];
+  for (let i = 0; i <= valid.length - windowSize; i += stepSize) {
+    const window = valid.slice(i, i + windowSize);
+    const beta = computeScalingExponent(window);
+    if (beta) betaSeries.push(beta.beta);
+  }
+
+  if (betaSeries.length < 16) return null;
+
+  const h = hurstExponent(betaSeries);
+  if (!h) return null;
+
+  return {
+    ...h,
+    nBetaPoints: betaSeries.length,
+    betaMean: mean(betaSeries),
+  };
+}
+
+// ============================================
+// THEORY 9: MUTUAL INFORMATION — Sector Independence
+// ============================================
+
+// Compute mutual information between company and sector growth series
+export function mutualInformation(companySeries, sectorSeries) {
+  if (companySeries.length !== sectorSeries.length || companySeries.length < 12) return null;
+
+  const bins = 5;
+  const discretize = (series) => {
+    const sorted = [...series].sort((a, b) => a - b);
+    const thresholds = [];
+    for (let i = 1; i < bins; i++) {
+      thresholds.push(sorted[Math.floor(i * sorted.length / bins)]);
+    }
+    return series.map(v => {
+      for (let i = 0; i < thresholds.length; i++) {
+        if (v <= thresholds[i]) return i;
+      }
+      return bins - 1;
+    });
+  };
+
+  const dComp = discretize(companySeries);
+  const dSect = discretize(sectorSeries);
+
+  // Compute joint and marginal distributions
+  const joint = {};
+  const margComp = {};
+  const margSect = {};
+  const n = dComp.length;
+
+  for (let i = 0; i < n; i++) {
+    const key = `${dComp[i]},${dSect[i]}`;
+    joint[key] = (joint[key] || 0) + 1;
+    margComp[dComp[i]] = (margComp[dComp[i]] || 0) + 1;
+    margSect[dSect[i]] = (margSect[dSect[i]] || 0) + 1;
+  }
+
+  // MI = Σ p(x,y) * log2(p(x,y) / (p(x) * p(y)))
+  let mi = 0;
+  for (const key of Object.keys(joint)) {
+    const [c, s] = key.split(',').map(Number);
+    const pJoint = joint[key] / n;
+    const pComp = margComp[c] / n;
+    const pSect = margSect[s] / n;
+    if (pJoint > 0 && pComp > 0 && pSect > 0) {
+      mi += pJoint * Math.log2(pJoint / (pComp * pSect));
+    }
+  }
+
+  // Normalize MI by min of marginal entropies
+  const hComp = -Object.values(margComp).reduce((s, c) => { const p = c / n; return s + (p > 0 ? p * Math.log2(p) : 0); }, 0);
+  const hSect = -Object.values(margSect).reduce((s, c) => { const p = c / n; return s + (p > 0 ? p * Math.log2(p) : 0); }, 0);
+  const normalizedMI = Math.min(hComp, hSect) > 0 ? mi / Math.min(hComp, hSect) : 0;
+
+  return {
+    mi,
+    normalizedMI,
+    independent: normalizedMI < 0.15,
+    nPoints: n,
+  };
+}
+
+// Compute sector median revenue growth for each quarter
+export function computeSectorMedianGrowth(sectorCompanies) {
+  // sectorCompanies: array of { ticker, quarterlyMetrics }
+  // Returns: { quarterKey: medianGrowth }
+  const byQuarter = {};
+
+  for (const { quarterlyMetrics } of sectorCompanies) {
+    for (const q of quarterlyMetrics) {
+      if (q.revenueGrowthYoY != null && isFinite(q.revenueGrowthYoY)) {
+        if (!byQuarter[q.quarter]) byQuarter[q.quarter] = [];
+        byQuarter[q.quarter].push(q.revenueGrowthYoY);
+      }
+    }
+  }
+
+  const result = {};
+  for (const [qk, values] of Object.entries(byQuarter)) {
+    const sorted = [...values].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    result[qk] = sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+  }
+  return result;
+}

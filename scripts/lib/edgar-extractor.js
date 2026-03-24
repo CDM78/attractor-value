@@ -309,3 +309,64 @@ export function extractionSummary(facts) {
     temporalEligible: quarters.size >= 12, // ~3 years of quarterly data
   };
 }
+
+// ============================================
+// SEGMENT REVENUE EXTRACTION (for Theory 7: Revenue Entropy)
+// ============================================
+
+// Extract segment revenue data from companyfacts JSON.
+// Note: companyfacts API provides aggregate segment tags but not dimensional breakdowns.
+// We extract distinct segment-related revenue tags as a proxy for segment count and distribution.
+const SEGMENT_REVENUE_TAGS = [
+  'SegmentReportingInformationRevenueForReportableSegment',
+  'RevenueFromExternalCustomers',
+  'SegmentReportingInformationRevenue',
+];
+
+export function extractSegmentRevenues(facts, beforeDate = null) {
+  if (!facts?.facts) return null;
+
+  // Approach: For each fiscal year, collect all distinct segment revenue values
+  // reported under segment tags. Each unique accession+value pair for the same
+  // period likely represents a different segment.
+  const byYear = {};
+
+  for (const ns of NAMESPACES) {
+    const nsFacts = facts.facts[ns];
+    if (!nsFacts) continue;
+
+    for (const tag of SEGMENT_REVENUE_TAGS) {
+      const tagData = nsFacts[tag];
+      if (!tagData) continue;
+
+      const entries = tagData.units?.USD;
+      if (!entries) continue;
+
+      for (const entry of entries) {
+        if (!VALID_FORMS.has(entry.form)) continue;
+        if (entry.val == null || entry.val <= 0) continue;
+        if (entry.fp !== 'FY' && !entry.form.includes('10-K')) continue;
+        if (beforeDate && entry.end > beforeDate) continue;
+
+        const year = entry.fy || entry.end?.substring(0, 4);
+        if (!year) continue;
+
+        if (!byYear[year]) byYear[year] = new Map();
+        // Use accession number + value as unique key to deduplicate
+        const key = `${entry.accn}-${entry.val}`;
+        byYear[year].set(key, entry.val);
+      }
+    }
+  }
+
+  // Find the most recent year with multiple segment values
+  const years = Object.keys(byYear).sort().reverse();
+  for (const year of years) {
+    const segments = [...byYear[year].values()];
+    if (segments.length >= 2) {
+      return { year, segments, nSegments: segments.length };
+    }
+  }
+
+  return null;
+}
