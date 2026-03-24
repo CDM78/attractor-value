@@ -1,0 +1,204 @@
+{
+  "calibration_cases": {
+    "total": 2832,
+    "sources": {
+      "sp500_crosssection_2013": {
+        "file": "data/systematic-sp500-crosssection-2013.json",
+        "cases": 373,
+        "winners": 155,
+        "traps": 62,
+        "underperform": 83,
+        "mixed": 73
+      },
+      "sp500_crosssection_2016": {
+        "file": "data/systematic-sp500-crosssection-2016.json",
+        "cases": 399,
+        "winners": 135,
+        "traps": 98,
+        "underperform": 94,
+        "mixed": 72
+      },
+      "sp500_crosssection_2019": {
+        "file": "data/systematic-sp500-crosssection.json",
+        "cases": 433,
+        "winners": 137,
+        "traps": 33,
+        "underperform": 222,
+        "mixed": 41
+      },
+      "sp500_crosssection_2022": {
+        "file": "data/systematic-sp500-crosssection-2022.json",
+        "cases": 468,
+        "winners": 110,
+        "traps": 194,
+        "underperform": 97,
+        "mixed": 67
+      },
+      "sp500_changes": {
+        "file": "data/systematic-sp500-changes.json",
+        "cases": 263,
+        "winners": 77,
+        "traps": 90,
+        "underperform": 70,
+        "mixed": 26
+      },
+      "smallcap": {
+        "file": "data/systematic-smallcap.json",
+        "cases": 169,
+        "winners": 72,
+        "traps": 51,
+        "underperform": 31,
+        "mixed": 15
+      },
+      "adr": {
+        "file": "data/systematic-adr.json",
+        "cases": 100,
+        "winners": 29,
+        "traps": 33,
+        "underperform": 23,
+        "mixed": 15
+      },
+      "multi_entry": {
+        "file": "data/systematic-multi-entry.json",
+        "cases": 596,
+        "winners": 212,
+        "traps": 138,
+        "underperform": 148,
+        "mixed": 98
+      },
+      "fraud": {
+        "file": "data/systematic-fraud.json",
+        "cases": 31,
+        "winners": 0,
+        "traps": 31,
+        "underperform": 0,
+        "mixed": 0
+      }
+    },
+    "outcome_distribution": {
+      "winner": 927,
+      "trap": 730,
+      "underperform": 768,
+      "mixed": 407
+    }
+  },
+  "financial_data": {
+    "source": "EDGAR companyfacts (SEC XBRL)",
+    "edgar_cache_files": 700,
+    "coverage": "700 companies cached",
+    "fields": [
+      "revenue",
+      "assets",
+      "equity",
+      "liabilities",
+      "operatingIncome",
+      "netIncome",
+      "ocf",
+      "grossProfit",
+      "costOfRevenue",
+      "employees",
+      "capex",
+      "rAndD",
+      "sga",
+      "accountsReceivable",
+      "inventory",
+      "goodwill",
+      "longTermDebt",
+      "sharesOutstanding",
+      "eps",
+      "operatingMargin",
+      "fcfMargin",
+      "grossMargin",
+      "revenueGrowthYoY"
+    ],
+    "ifrs_support": true,
+    "currency_fallback": "EUR, GBP, JPY auto-detected for ADR filers"
+  },
+  "unconventional_data": {
+    "price_volume": {
+      "file": "data/unconventional/price-volume-dynamics.json",
+      "coverage": "2803 case-entries",
+      "fields": [
+        "momentum_6m",
+        "momentum_12m",
+        "volatility_annual",
+        "avg_weekly_volume_recent",
+        "avg_weekly_volume_year",
+        "relative_volume",
+        "volume_trend_slope",
+        "weekly_closes"
+      ]
+    },
+    "economic_context": {
+      "file": "data/unconventional/economic-context.json",
+      "coverage": "181 unique entry dates",
+      "fields": [
+        "treasury_10yr",
+        "treasury_2yr",
+        "aaa_yield",
+        "baa_yield",
+        "vix",
+        "unemployment",
+        "fed_funds",
+        "gdp_nominal",
+        "yield_curve_10y2y",
+        "credit_spread",
+        "sp500_trailing_12m",
+        "regime"
+      ]
+    },
+    "sec_filing_metadata": {
+      "file": "data/unconventional/sec-filing-metadata.json",
+      "coverage": "629 tickers",
+      "fields": [
+        "total_10K",
+        "total_10KA",
+        "total_10Q",
+        "total_10QA",
+        "total_20F",
+        "nt_filings",
+        "amendment_rate",
+        "annual_filing_sizes",
+        "filing_size_trend",
+        "sic",
+        "fiscal_year_end"
+      ]
+    },
+    "patents": {
+      "file": null,
+      "coverage": "0% — PatentsView API discontinued (v1 410 Gone), v2 requires API key",
+      "status": "blocked"
+    },
+    "federal_contracts": {
+      "file": null,
+      "coverage": "0% — not built (lower priority)",
+      "status": "not_started"
+    }
+  },
+  "known_results": {
+    "best_signal_on_systematic": "Zipf velocity r=0.103, p=0.004 on 1,592-case dataset",
+    "best_pair_on_systematic": "FM+D1 r=0.047 — not robust on systematic data",
+    "original_curated_results": "FM+D1 r=0.397 on hand-curated 719-case dataset (selection bias suspected)",
+    "signals_tested": [
+      "Flywheel Momentum (assets_rank x ROIC_rank)",
+      "D1 growth rate (revenue YoY)",
+      "Zipf rank velocity (sector rank trajectory)",
+      "Revenue growth (4Q vs prior 4Q)",
+      "Scale invariance CV (metric consistency)",
+      "Plus 50+ signals from the full test battery (tests 1-59)"
+    ],
+    "validation_standard": "5-fold CV, 4/5 folds significant at p<0.05 on systematic data",
+    "key_finding": "Signals that appeared robust on curated data collapsed on unbiased systematic data. True population effect likely r=0.05-0.10. Research agent should explore: (1) regime-conditional signals, (2) interaction effects with unconventional data, (3) nonlinear combinations, (4) sector-specific signals"
+  },
+  "data_construction": {
+    "built_by": "Claude Code",
+    "date": "2026-03-24",
+    "reproducible": true,
+    "sources_used": [
+      "SEC EDGAR (companyfacts + submissions)",
+      "Yahoo Finance (prices)",
+      "FRED (economic data)"
+    ],
+    "no_external_dependencies": true
+  }
+}
