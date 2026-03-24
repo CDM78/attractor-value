@@ -1,0 +1,854 @@
+{
+  "CATO": {
+    "status": "ok",
+    "cik": "0000018255",
+    "quarters": 63,
+    "revenueByDate": {
+      "2014-06-15": 1138928000,
+      "2017-06-15": 958964000,
+      "2020-06-15": 402928000
+    },
+    "hasEnoughData": true
+  },
+  "SCVL": {
+    "status": "ok",
+    "cik": "0000895447",
+    "quarters": 63,
+    "revenueByDate": {
+      "2014-06-15": 943080000,
+      "2017-06-15": 1013556000,
+      "2020-06-15": 589980000
+    },
+    "hasEnoughData": true
+  },
+  "PLCE": {
+    "status": "ok",
+    "cik": "0001041859",
+    "quarters": 67,
+    "revenueByDate": {
+      "2014-06-15": 1640596000,
+      "2017-06-15": 1746704000,
+      "2020-06-15": 1020828000
+    },
+    "hasEnoughData": true
+  },
+  "DIN": {
+    "status": "ok",
+    "cik": "0000049754",
+    "quarters": 65,
+    "revenueByDate": {
+      "2014-06-15": 1310888000,
+      "2017-06-15": 1245492000,
+      "2020-06-15": 1266384000
+    },
+    "hasEnoughData": true
+  },
+  "JACK": {
+    "status": "ok",
+    "cik": "0000807882",
+    "quarters": 58,
+    "revenueByDate": {
+      "2014-06-15": 3163808000,
+      "2017-06-15": 3429288000,
+      "2020-06-15": 2095320000
+    },
+    "hasEnoughData": true
+  },
+  "SHAK": {
+    "status": "ok",
+    "cik": "0001620533",
+    "quarters": 48,
+    "revenueByDate": {
+      "2014-06-15": 207732000,
+      "2017-06-15": 672260000,
+      "2020-06-15": 939824000
+    },
+    "hasEnoughData": true
+  },
+  "CAKE": {
+    "status": "ok",
+    "cik": "0000887596",
+    "quarters": 63,
+    "revenueByDate": {
+      "2014-06-15": 1925724000,
+      "2017-06-15": 2253704000,
+      "2020-06-15": 9042008000
+    },
+    "hasEnoughData": true
+  },
+  "BJRI": {
+    "status": "ok",
+    "cik": "0001013488",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": 823288000,
+      "2017-06-15": 1031264000,
+      "2020-06-15": 1530476000
+    },
+    "hasEnoughData": true
+  },
+  "BOOT": {
+    "status": "ok",
+    "cik": "0001610250",
+    "quarters": 50,
+    "revenueByDate": {
+      "2014-06-15": 329988000,
+      "2017-06-15": 2519264000,
+      "2020-06-15": 591064000
+    },
+    "hasEnoughData": true
+  },
+  "PRPL": {
+    "status": "ok",
+    "cik": "0001643953",
+    "quarters": 42,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 311236000,
+      "2020-06-15": 1149884000
+    },
+    "hasEnoughData": true
+  },
+  "LL": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "BGFV": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "PRFT": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "SIGI": {
+    "status": "ok",
+    "cik": "0000230557",
+    "quarters": 68,
+    "revenueByDate": {
+      "2014-06-15": 4063680000,
+      "2017-06-15": 4859816000,
+      "2020-06-15": 5389104000
+    },
+    "hasEnoughData": true
+  },
+  "SANM": {
+    "status": "ok",
+    "cik": "0000897723",
+    "quarters": 61,
+    "revenueByDate": {
+      "2014-06-15": 18115748000,
+      "2017-06-15": 13608956000,
+      "2020-06-15": 20341648000
+    },
+    "hasEnoughData": true
+  },
+  "QLYS": {
+    "status": "ok",
+    "cik": "0001107843",
+    "quarters": 61,
+    "revenueByDate": {
+      "2014-06-15": 250632000,
+      "2017-06-15": 433692000,
+      "2020-06-15": 700372000
+    },
+    "hasEnoughData": true
+  },
+  "CALX": {
+    "status": "ok",
+    "cik": "0001406666",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": 735300000,
+      "2017-06-15": 470072000,
+      "2020-06-15": 844420000
+    },
+    "hasEnoughData": true
+  },
+  "IIPR": {
+    "status": "ok",
+    "cik": "0001677576",
+    "quarters": 37,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 10316000,
+      "2020-06-15": 181904000
+    },
+    "hasEnoughData": true
+  },
+  "PAYO": {
+    "status": "ok",
+    "cik": "0001845815",
+    "quarters": 24,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 641392000
+    },
+    "hasEnoughData": true
+  },
+  "JAMF": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "VERX": {
+    "status": "ok",
+    "cik": "0001806837",
+    "quarters": 28,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 722064000
+    },
+    "hasEnoughData": true
+  },
+  "WEAV": {
+    "status": "ok",
+    "cik": "0001609151",
+    "quarters": 23,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 182984000
+    },
+    "hasEnoughData": true
+  },
+  "SUPN": {
+    "status": "ok",
+    "cik": "0001356576",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": 155024000,
+      "2017-06-15": 533620000,
+      "2020-06-15": 886820000
+    },
+    "hasEnoughData": true
+  },
+  "LGND": {
+    "status": "ok",
+    "cik": "0000886163",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 106264000,
+      "2017-06-15": 229056000,
+      "2020-06-15": 165680000
+    },
+    "hasEnoughData": true
+  },
+  "PDCO": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "OMCL": {
+    "status": "ok",
+    "cik": "0000926326",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 827264000,
+      "2017-06-15": 1325756000,
+      "2020-06-15": 1717228000
+    },
+    "hasEnoughData": true
+  },
+  "NVCR": {
+    "status": "ok",
+    "cik": "0001645113",
+    "quarters": 47,
+    "revenueByDate": {
+      "2014-06-15": 41436000,
+      "2017-06-15": 293024000,
+      "2020-06-15": 871012000
+    },
+    "hasEnoughData": true
+  },
+  "TMDX": {
+    "status": "ok",
+    "cik": "0001756262",
+    "quarters": 32,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 43684000
+    },
+    "hasEnoughData": true
+  },
+  "TCMD": {
+    "status": "ok",
+    "cik": "0001027838",
+    "quarters": 45,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 184456000,
+      "2020-06-15": 315180000
+    },
+    "hasEnoughData": true
+  },
+  "ITCI": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "GKOS": {
+    "status": "ok",
+    "cik": "0001192448",
+    "quarters": 49,
+    "revenueByDate": {
+      "2014-06-15": 77392000,
+      "2017-06-15": 308768000,
+      "2020-06-15": 347576000
+    },
+    "hasEnoughData": true
+  },
+  "AVNS": {
+    "status": "ok",
+    "cik": "0001606498",
+    "quarters": 51,
+    "revenueByDate": {
+      "2014-06-15": 3296800000,
+      "2017-06-15": 1179200000,
+      "2020-06-15": 1376400000
+    },
+    "hasEnoughData": true
+  },
+  "KTOS": {
+    "status": "ok",
+    "cik": "0001069258",
+    "quarters": 61,
+    "revenueByDate": {
+      "2014-06-15": 1717600000,
+      "2017-06-15": 1119600000,
+      "2020-06-15": 1357200000
+    },
+    "hasEnoughData": true
+  },
+  "PRIM": {
+    "status": "ok",
+    "cik": "0001361538",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 4770668000,
+      "2020-06-15": 6605836000
+    },
+    "hasEnoughData": true
+  },
+  "MATX": {
+    "status": "ok",
+    "cik": "0000003453",
+    "quarters": 68,
+    "revenueByDate": {
+      "2014-06-15": 3315600000,
+      "2017-06-15": 3947600000,
+      "2020-06-15": 4152000000
+    },
+    "hasEnoughData": true
+  },
+  "ASGN": {
+    "status": "ok",
+    "cik": "0000890564",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 5119364000,
+      "2020-06-15": 7709200000
+    },
+    "hasEnoughData": true
+  },
+  "ARCB": {
+    "status": "ok",
+    "cik": "0000894405",
+    "quarters": 68,
+    "revenueByDate": {
+      "2014-06-15": 1739724000,
+      "2017-06-15": 5485824000,
+      "2020-06-15": 5315076000
+    },
+    "hasEnoughData": true
+  },
+  "GMS": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "WDFC": {
+    "status": "ok",
+    "cik": "0000105132",
+    "quarters": 62,
+    "revenueByDate": {
+      "2014-06-15": 1141500000,
+      "2017-06-15": 1135780000,
+      "2020-06-15": 1187408000
+    },
+    "hasEnoughData": true
+  },
+  "SITE": {
+    "status": "ok",
+    "cik": "0001650729",
+    "quarters": 42,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 1340000000,
+      "2020-06-15": 5110000000
+    },
+    "hasEnoughData": true
+  },
+  "ROAD": {
+    "status": "ok",
+    "cik": "0001718227",
+    "quarters": 36,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 1522340000,
+      "2020-06-15": 2244136000
+    },
+    "hasEnoughData": true
+  },
+  "MYRG": {
+    "status": "ok",
+    "cik": "0000700923",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 2625256000,
+      "2020-06-15": 4126084000
+    },
+    "hasEnoughData": true
+  },
+  "CASH": {
+    "status": "ok",
+    "cik": "0000907471",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 1574276000
+    },
+    "hasEnoughData": true
+  },
+  "HOMB": {
+    "status": "ok",
+    "cik": "0001331520",
+    "quarters": 61,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "UBSI": {
+    "status": "ok",
+    "cik": "0000729986",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 1106500000
+    },
+    "hasEnoughData": true
+  },
+  "SBCF": {
+    "status": "ok",
+    "cik": "0000730708",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "CADE": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "PNFP": {
+    "status": "ok",
+    "cik": "0002082866",
+    "quarters": 2,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": false
+  },
+  "IBOC": {
+    "status": "ok",
+    "cik": "0000315709",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "GBCI": {
+    "status": "ok",
+    "cik": "0000868671",
+    "quarters": 66,
+    "revenueByDate": {
+      "2014-06-15": 352888000,
+      "2017-06-15": 352888000,
+      "2020-06-15": 352888000
+    },
+    "hasEnoughData": true
+  },
+  "BKU": {
+    "status": "ok",
+    "cik": "0001504008",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": null
+    },
+    "hasEnoughData": true
+  },
+  "OZK": {
+    "status": "failed",
+    "error": "Not found on EDGAR"
+  },
+  "SM": {
+    "status": "ok",
+    "cik": "0000893538",
+    "quarters": 68,
+    "revenueByDate": {
+      "2014-06-15": 5230800000,
+      "2017-06-15": 1973836000,
+      "2020-06-15": 2101464000
+    },
+    "hasEnoughData": true
+  },
+  "MTDR": {
+    "status": "ok",
+    "cik": "0001520006",
+    "quarters": 61,
+    "revenueByDate": {
+      "2014-06-15": 659552000,
+      "2017-06-15": 1057700000,
+      "2020-06-15": 1738020000
+    },
+    "hasEnoughData": true
+  },
+  "TALO": {
+    "status": "ok",
+    "cik": "0001724965",
+    "quarters": 37,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 789000000,
+      "2020-06-15": 1106552000
+    },
+    "hasEnoughData": true
+  },
+  "HESM": {
+    "status": "ok",
+    "cik": "0001789832",
+    "quarters": 33,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 2242400000
+    },
+    "hasEnoughData": true
+  },
+  "ARCH": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "HCC": {
+    "status": "ok",
+    "cik": "0001691303",
+    "quarters": 39,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 1453480000,
+      "2020-06-15": 1687152000
+    },
+    "hasEnoughData": true
+  },
+  "ITE": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "UFPI": {
+    "status": "ok",
+    "cik": "0000912767",
+    "quarters": 62,
+    "revenueByDate": {
+      "2014-06-15": 5307004000,
+      "2017-06-15": 3384520000,
+      "2020-06-15": 14003996000
+    },
+    "hasEnoughData": true
+  },
+  "TREX": {
+    "status": "ok",
+    "cik": "0001069878",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 887824000,
+      "2017-06-15": 1210988000,
+      "2020-06-15": 1684172000
+    },
+    "hasEnoughData": true
+  },
+  "BECN": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "BGCP": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "CENTA": {
+    "status": "ok",
+    "cik": "0000887733",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 4920476000,
+      "2017-06-15": 6256056000,
+      "2020-06-15": 8078160000
+    },
+    "hasEnoughData": true
+  },
+  "GTN": {
+    "status": "ok",
+    "cik": "0000043196",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 794184000,
+      "2017-06-15": 1720568000,
+      "2020-06-15": 3940000000
+    },
+    "hasEnoughData": true
+  },
+  "LEE": {
+    "status": "ok",
+    "cik": "0000058361",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 1978412000,
+      "2017-06-15": 1706924000,
+      "2020-06-15": 1035620000
+    },
+    "hasEnoughData": true
+  },
+  "MBI": {
+    "status": "ok",
+    "cik": "0000814585",
+    "quarters": 68,
+    "revenueByDate": {
+      "2014-06-15": 3056000000,
+      "2017-06-15": 596000000,
+      "2020-06-15": 432000000
+    },
+    "hasEnoughData": true
+  },
+  "TWNK": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "BBBY": {
+    "status": "ok",
+    "cik": "0001130713",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 2695008000,
+      "2017-06-15": 3457836000,
+      "2020-06-15": 4536468000
+    },
+    "hasEnoughData": true
+  },
+  "EXPR": {
+    "status": "failed",
+    "error": "No CIK mapping"
+  },
+  "TLYS": {
+    "status": "ok",
+    "cik": "0001524025",
+    "quarters": 60,
+    "revenueByDate": {
+      "2014-06-15": 444536000,
+      "2017-06-15": 483788000,
+      "2020-06-15": 309156000
+    },
+    "hasEnoughData": true
+  },
+  "RRGB": {
+    "status": "ok",
+    "cik": "0001171759",
+    "quarters": 48,
+    "revenueByDate": {
+      "2014-06-15": 1361936000,
+      "2017-06-15": 1674228000,
+      "2020-06-15": 1224260000
+    },
+    "hasEnoughData": true
+  },
+  "LNTH": {
+    "status": "ok",
+    "cik": "0001521036",
+    "quarters": 49,
+    "revenueByDate": {
+      "2014-06-15": 595796000,
+      "2017-06-15": 680784000,
+      "2020-06-15": 626856000
+    },
+    "hasEnoughData": true
+  },
+  "OSCR": {
+    "status": "ok",
+    "cik": "0001568651",
+    "quarters": 25,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 813712000
+    },
+    "hasEnoughData": true
+  },
+  "CELH": {
+    "status": "ok",
+    "cik": "0001341766",
+    "quarters": 42,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 64949308,
+      "2020-06-15": 232888464
+    },
+    "hasEnoughData": true
+  },
+  "ASPN": {
+    "status": "ok",
+    "cik": "0001145986",
+    "quarters": 53,
+    "revenueByDate": {
+      "2014-06-15": 195912000,
+      "2017-06-15": 192284000,
+      "2020-06-15": 212240000
+    },
+    "hasEnoughData": true
+  },
+  "XPEL": {
+    "status": "ok",
+    "cik": "0001767258",
+    "quarters": 31,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 256777284
+    },
+    "hasEnoughData": true
+  },
+  "LMND": {
+    "status": "ok",
+    "cik": "0001691421",
+    "quarters": 28,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 224400000
+    },
+    "hasEnoughData": true
+  },
+  "SFM": {
+    "status": "ok",
+    "cik": "0001575515",
+    "quarters": 52,
+    "revenueByDate": {
+      "2014-06-15": 5865664000,
+      "2017-06-15": 4522580000,
+      "2020-06-15": 13157308000
+    },
+    "hasEnoughData": true
+  },
+  "DXCM": {
+    "status": "ok",
+    "cik": "0001093557",
+    "quarters": 65,
+    "revenueByDate": {
+      "2014-06-15": 423600000,
+      "2017-06-15": 1251600000,
+      "2020-06-15": 3427600000
+    },
+    "hasEnoughData": true
+  },
+  "AXON": {
+    "status": "ok",
+    "cik": "0001069183",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 293440000,
+      "2017-06-15": 635540000,
+      "2020-06-15": 1153684000
+    },
+    "hasEnoughData": true
+  },
+  "ENPH": {
+    "status": "ok",
+    "cik": "0001463101",
+    "quarters": 61,
+    "revenueByDate": {
+      "2014-06-15": 558336000,
+      "2017-06-15": 517820000,
+      "2020-06-15": 1324332000
+    },
+    "hasEnoughData": true
+  },
+  "CROX": {
+    "status": "ok",
+    "cik": "0001334036",
+    "quarters": 64,
+    "revenueByDate": {
+      "2014-06-15": 2757396000,
+      "2017-06-15": 2324512000,
+      "2020-06-15": 2450836000
+    },
+    "hasEnoughData": true
+  },
+  "YETI": {
+    "status": "ok",
+    "cik": "0001670592",
+    "quarters": 34,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": 422804000,
+      "2020-06-15": 1685400000
+    },
+    "hasEnoughData": true
+  },
+  "BROS": {
+    "status": "ok",
+    "cik": "0001866581",
+    "quarters": 23,
+    "revenueByDate": {
+      "2014-06-15": null,
+      "2017-06-15": null,
+      "2020-06-15": 953472000
+    },
+    "hasEnoughData": true
+  },
+  "PLAY": {
+    "status": "ok",
+    "cik": "0001525769",
+    "quarters": 52,
+    "revenueByDate": {
+      "2014-06-15": 779292000,
+      "2017-06-15": 1216592000,
+      "2020-06-15": 639224000
+    },
+    "hasEnoughData": true
+  },
+  "WING": {
+    "status": "ok",
+    "cik": "0001636222",
+    "quarters": 47,
+    "revenueByDate": {
+      "2014-06-15": 131900000,
+      "2017-06-15": 106276000,
+      "2020-06-15": 486164000
+    },
+    "hasEnoughData": true
+  }
+}

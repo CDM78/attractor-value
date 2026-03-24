@@ -1,0 +1,3903 @@
+{
+  "metadata": {
+    "tier": 8,
+    "dataset_role": "smallcap",
+    "source": "Small-cap companies (Russell 2000 / $300M-$2B assets) from EDGAR",
+    "case_count": 169,
+    "winners": 72,
+    "traps": 51,
+    "underperform": 31,
+    "mixed": 15,
+    "benchmark": "IWM (Russell 2000 ETF)",
+    "generated": "2026-03-24T15:13:15.322Z"
+  },
+  "cases": [
+    {
+      "case_id": "T8-001",
+      "ticker": "CATO",
+      "company_name": "Cato Corporation",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 16,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.325,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 1138928000
+      }
+    },
+    {
+      "case_id": "T8-002",
+      "ticker": "CATO",
+      "company_name": "Cato Corporation",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 10.8,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.416,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 958964000
+      }
+    },
+    {
+      "case_id": "T8-003",
+      "ticker": "CATO",
+      "company_name": "Cato Corporation",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 6.31,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.112,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 402928000
+      }
+    },
+    {
+      "case_id": "T8-004",
+      "ticker": "SCVL",
+      "company_name": "Shoe Carnival",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 8.3,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.069,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 943080000
+      }
+    },
+    {
+      "case_id": "T8-005",
+      "ticker": "SCVL",
+      "company_name": "Shoe Carnival",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 8.88,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.386,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 1013556000
+      }
+    },
+    {
+      "case_id": "T8-006",
+      "ticker": "SCVL",
+      "company_name": "Shoe Carnival",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 12.3,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.722,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 589980000
+      }
+    },
+    {
+      "case_id": "T8-007",
+      "ticker": "PLCE",
+      "company_name": "Children's Place",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 44.41,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.295,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 67,
+        "revenue_at_entry": 1640596000
+      }
+    },
+    {
+      "case_id": "T8-008",
+      "ticker": "PLCE",
+      "company_name": "Children's Place",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 101.9,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.55,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 67,
+        "revenue_at_entry": 1746704000
+      }
+    },
+    {
+      "case_id": "T8-009",
+      "ticker": "PLCE",
+      "company_name": "Children's Place",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 45.88,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.584,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 67,
+        "revenue_at_entry": 1020828000
+      }
+    },
+    {
+      "case_id": "T8-010",
+      "ticker": "DIN",
+      "company_name": "Dine Brands",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 48.74,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.362,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 65,
+        "revenue_at_entry": 1310888000
+      }
+    },
+    {
+      "case_id": "T8-011",
+      "ticker": "DIN",
+      "company_name": "Dine Brands",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 31.12,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.274,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 65,
+        "revenue_at_entry": 1245492000
+      }
+    },
+    {
+      "case_id": "T8-012",
+      "ticker": "DIN",
+      "company_name": "Dine Brands",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 39.64,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.309,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 65,
+        "revenue_at_entry": 1266384000
+      }
+    },
+    {
+      "case_id": "T8-013",
+      "ticker": "JACK",
+      "company_name": "Jack in the Box",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 48.74,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.851,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 58,
+        "revenue_at_entry": 3163808000
+      }
+    },
+    {
+      "case_id": "T8-014",
+      "ticker": "JACK",
+      "company_name": "Jack in the Box",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 90.23,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.28,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 58,
+        "revenue_at_entry": 3429288000
+      }
+    },
+    {
+      "case_id": "T8-015",
+      "ticker": "JACK",
+      "company_name": "Jack in the Box",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 64.95,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.332,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 58,
+        "revenue_at_entry": 2095320000
+      }
+    },
+    {
+      "case_id": "T8-016",
+      "ticker": "SHAK",
+      "company_name": "Shake Shack",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 37.56,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.486,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 48,
+        "revenue_at_entry": 672260000
+      }
+    },
+    {
+      "case_id": "T8-017",
+      "ticker": "SHAK",
+      "company_name": "Shake Shack",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 55.8,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.304,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 48,
+        "revenue_at_entry": 939824000
+      }
+    },
+    {
+      "case_id": "T8-018",
+      "ticker": "CAKE",
+      "company_name": "Cheesecake Factory",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 36.79,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.209,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 1925724000
+      }
+    },
+    {
+      "case_id": "T8-019",
+      "ticker": "CAKE",
+      "company_name": "Cheesecake Factory",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 44.48,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.494,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 2253704000
+      }
+    },
+    {
+      "case_id": "T8-020",
+      "ticker": "CAKE",
+      "company_name": "Cheesecake Factory",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 22.53,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.409,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 63,
+        "revenue_at_entry": 9042008000
+      }
+    },
+    {
+      "case_id": "T8-021",
+      "ticker": "BJRI",
+      "company_name": "BJ's Restaurants",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 34.07,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.16,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 823288000
+      }
+    },
+    {
+      "case_id": "T8-022",
+      "ticker": "BJRI",
+      "company_name": "BJ's Restaurants",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 39.5,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.409,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 1031264000
+      }
+    },
+    {
+      "case_id": "T8-023",
+      "ticker": "BJRI",
+      "company_name": "BJ's Restaurants",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 23.34,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.357,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 1530476000
+      }
+    },
+    {
+      "case_id": "T8-024",
+      "ticker": "BOOT",
+      "company_name": "Boot Barn Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 6.98,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.272,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 50,
+        "revenue_at_entry": 2519264000
+      }
+    },
+    {
+      "case_id": "T8-025",
+      "ticker": "BOOT",
+      "company_name": "Boot Barn Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 22.84,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.394,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 50,
+        "revenue_at_entry": 591064000
+      }
+    },
+    {
+      "case_id": "T8-026",
+      "ticker": "PRPL",
+      "company_name": "Purple Innovation",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 9.93,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.673,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": 311236000
+      }
+    },
+    {
+      "case_id": "T8-027",
+      "ticker": "PRPL",
+      "company_name": "Purple Innovation",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 16.6,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.823,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": 1149884000
+      }
+    },
+    {
+      "case_id": "T8-028",
+      "ticker": "SIGI",
+      "company_name": "Selective Insurance",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 20.16,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.277,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 4063680000
+      }
+    },
+    {
+      "case_id": "T8-029",
+      "ticker": "SIGI",
+      "company_name": "Selective Insurance",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 45.91,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.038,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 4859816000
+      }
+    },
+    {
+      "case_id": "T8-030",
+      "ticker": "SIGI",
+      "company_name": "Selective Insurance",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 47.65,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.965,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 5389104000
+      }
+    },
+    {
+      "case_id": "T8-031",
+      "ticker": "SANM",
+      "company_name": "Sanmina",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 21.71,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.739,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 18115748000
+      }
+    },
+    {
+      "case_id": "T8-032",
+      "ticker": "SANM",
+      "company_name": "Sanmina",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 37.75,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.317,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 13608956000
+      }
+    },
+    {
+      "case_id": "T8-033",
+      "ticker": "SANM",
+      "company_name": "Sanmina",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 25.78,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.25,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 20341648000
+      }
+    },
+    {
+      "case_id": "T8-034",
+      "ticker": "QLYS",
+      "company_name": "Qualys",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 24.3,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.683,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 250632000
+      }
+    },
+    {
+      "case_id": "T8-035",
+      "ticker": "QLYS",
+      "company_name": "Qualys",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 40.9,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.484,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 433692000
+      }
+    },
+    {
+      "case_id": "T8-036",
+      "ticker": "QLYS",
+      "company_name": "Qualys",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 101.61,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.274,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 700372000
+      }
+    },
+    {
+      "case_id": "T8-037",
+      "ticker": "CALX",
+      "company_name": "Calix",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 7.74,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.089,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 735300000
+      }
+    },
+    {
+      "case_id": "T8-038",
+      "ticker": "CALX",
+      "company_name": "Calix",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 7.05,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.902,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 470072000
+      }
+    },
+    {
+      "case_id": "T8-039",
+      "ticker": "CALX",
+      "company_name": "Calix",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 13.41,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.882,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 844420000
+      }
+    },
+    {
+      "case_id": "T8-040",
+      "ticker": "IIPR",
+      "company_name": "Innovative Industrial Properties",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 62.87,
+        "sector": "Real Estate",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.128,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 37,
+        "revenue_at_entry": 181904000
+      }
+    },
+    {
+      "case_id": "T8-041",
+      "ticker": "SUPN",
+      "company_name": "Supernus Pharmaceuticals",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 10.23,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.798,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 155024000
+      }
+    },
+    {
+      "case_id": "T8-042",
+      "ticker": "SUPN",
+      "company_name": "Supernus Pharmaceuticals",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 38.85,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.406,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 533620000
+      }
+    },
+    {
+      "case_id": "T8-043",
+      "ticker": "SUPN",
+      "company_name": "Supernus Pharmaceuticals",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 23.07,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.466,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 886820000
+      }
+    },
+    {
+      "case_id": "T8-044",
+      "ticker": "LGND",
+      "company_name": "Ligand Pharmaceuticals",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 41.64,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.733,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 106264000
+      }
+    },
+    {
+      "case_id": "T8-045",
+      "ticker": "LGND",
+      "company_name": "Ligand Pharmaceuticals",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 72.17,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.036,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 229056000
+      }
+    },
+    {
+      "case_id": "T8-046",
+      "ticker": "LGND",
+      "company_name": "Ligand Pharmaceuticals",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 69.55,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.121,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 165680000
+      }
+    },
+    {
+      "case_id": "T8-047",
+      "ticker": "OMCL",
+      "company_name": "Omnicell",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 26.81,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.593,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 827264000
+      }
+    },
+    {
+      "case_id": "T8-048",
+      "ticker": "OMCL",
+      "company_name": "Omnicell",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 42.7,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.548,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1325756000
+      }
+    },
+    {
+      "case_id": "T8-049",
+      "ticker": "OMCL",
+      "company_name": "Omnicell",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 66.09,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.093,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1717228000
+      }
+    },
+    {
+      "case_id": "T8-050",
+      "ticker": "NVCR",
+      "company_name": "NovoCure",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 14.95,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.369,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 47,
+        "revenue_at_entry": 293024000
+      }
+    },
+    {
+      "case_id": "T8-051",
+      "ticker": "NVCR",
+      "company_name": "NovoCure",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 65.32,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.311,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 47,
+        "revenue_at_entry": 871012000
+      }
+    },
+    {
+      "case_id": "T8-052",
+      "ticker": "TCMD",
+      "company_name": "Tactile Systems",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 24.41,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.702,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 45,
+        "revenue_at_entry": 184456000
+      }
+    },
+    {
+      "case_id": "T8-053",
+      "ticker": "TCMD",
+      "company_name": "Tactile Systems",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 41.55,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.434,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 45,
+        "revenue_at_entry": 315180000
+      }
+    },
+    {
+      "case_id": "T8-054",
+      "ticker": "GKOS",
+      "company_name": "Glaukos",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 40.97,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.029,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 49,
+        "revenue_at_entry": 308768000
+      }
+    },
+    {
+      "case_id": "T8-055",
+      "ticker": "GKOS",
+      "company_name": "Glaukos",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 39.8,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.68,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 49,
+        "revenue_at_entry": 347576000
+      }
+    },
+    {
+      "case_id": "T8-056",
+      "ticker": "AVNS",
+      "company_name": "Avanos Medical",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 39.08,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.258,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 51,
+        "revenue_at_entry": 1179200000
+      }
+    },
+    {
+      "case_id": "T8-057",
+      "ticker": "AVNS",
+      "company_name": "Avanos Medical",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 29.01,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.117,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 51,
+        "revenue_at_entry": 1376400000
+      }
+    },
+    {
+      "case_id": "T8-058",
+      "ticker": "KTOS",
+      "company_name": "Kratos Defense",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 8.47,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.277,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 1717600000
+      }
+    },
+    {
+      "case_id": "T8-059",
+      "ticker": "KTOS",
+      "company_name": "Kratos Defense",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 10.82,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.626,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 1119600000
+      }
+    },
+    {
+      "case_id": "T8-060",
+      "ticker": "KTOS",
+      "company_name": "Kratos Defense",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 17.59,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.209,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 1357200000
+      }
+    },
+    {
+      "case_id": "T8-061",
+      "ticker": "PRIM",
+      "company_name": "Primoris Services",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 26.5,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.142,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-062",
+      "ticker": "PRIM",
+      "company_name": "Primoris Services",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 22.74,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.298,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 4770668000
+      }
+    },
+    {
+      "case_id": "T8-063",
+      "ticker": "PRIM",
+      "company_name": "Primoris Services",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 15.96,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.841,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 6605836000
+      }
+    },
+    {
+      "case_id": "T8-064",
+      "ticker": "MATX",
+      "company_name": "Matson",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 19.85,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.316,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 3315600000
+      }
+    },
+    {
+      "case_id": "T8-065",
+      "ticker": "MATX",
+      "company_name": "Matson",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 26.12,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.054,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 3947600000
+      }
+    },
+    {
+      "case_id": "T8-066",
+      "ticker": "MATX",
+      "company_name": "Matson",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 27.52,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.625,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 4152000000
+      }
+    },
+    {
+      "case_id": "T8-067",
+      "ticker": "ASGN",
+      "company_name": "ASGN Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 35.25,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.541,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-068",
+      "ticker": "ASGN",
+      "company_name": "ASGN Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 54.33,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.126,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 5119364000
+      }
+    },
+    {
+      "case_id": "T8-069",
+      "ticker": "ASGN",
+      "company_name": "ASGN Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 61.17,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.173,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 7709200000
+      }
+    },
+    {
+      "case_id": "T8-070",
+      "ticker": "ARCB",
+      "company_name": "ArcBest",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 38.73,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.509,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 1739724000
+      }
+    },
+    {
+      "case_id": "T8-071",
+      "ticker": "ARCB",
+      "company_name": "ArcBest",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 19.02,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.186,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 5485824000
+      }
+    },
+    {
+      "case_id": "T8-072",
+      "ticker": "ARCB",
+      "company_name": "ArcBest",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 22.56,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.897,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 5315076000
+      }
+    },
+    {
+      "case_id": "T8-073",
+      "ticker": "WDFC",
+      "company_name": "WD-40",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 60.72,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.602,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 62,
+        "revenue_at_entry": 1141500000
+      }
+    },
+    {
+      "case_id": "T8-074",
+      "ticker": "WDFC",
+      "company_name": "WD-40",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 97.29,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.779,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 62,
+        "revenue_at_entry": 1135780000
+      }
+    },
+    {
+      "case_id": "T8-075",
+      "ticker": "WDFC",
+      "company_name": "WD-40",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 173.09,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.099,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 62,
+        "revenue_at_entry": 1187408000
+      }
+    },
+    {
+      "case_id": "T8-076",
+      "ticker": "SITE",
+      "company_name": "SiteOne Landscape",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 50.63,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.165,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": 1340000000
+      }
+    },
+    {
+      "case_id": "T8-077",
+      "ticker": "SITE",
+      "company_name": "SiteOne Landscape",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 109.62,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.412,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": 5110000000
+      }
+    },
+    {
+      "case_id": "T8-078",
+      "ticker": "ROAD",
+      "company_name": "Construction Partners",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 17.2,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.906,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 36,
+        "revenue_at_entry": 2244136000
+      }
+    },
+    {
+      "case_id": "T8-079",
+      "ticker": "MYRG",
+      "company_name": "MYR Group",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 24.72,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.267,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-080",
+      "ticker": "MYRG",
+      "company_name": "MYR Group",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 31.33,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.088,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 2625256000
+      }
+    },
+    {
+      "case_id": "T8-081",
+      "ticker": "MYRG",
+      "company_name": "MYR Group",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 28.58,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.678,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 4126084000
+      }
+    },
+    {
+      "case_id": "T8-082",
+      "ticker": "CASH",
+      "company_name": "Pathward Financial",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 12.43,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.351,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-083",
+      "ticker": "CASH",
+      "company_name": "Pathward Financial",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 29.22,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.393,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-084",
+      "ticker": "CASH",
+      "company_name": "Pathward Financial",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 17.73,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.765,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 1574276000
+      }
+    },
+    {
+      "case_id": "T8-085",
+      "ticker": "HOMB",
+      "company_name": "Home BancFins",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 12.18,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.671,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-086",
+      "ticker": "HOMB",
+      "company_name": "Home BancFins",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 20.36,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.383,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-087",
+      "ticker": "HOMB",
+      "company_name": "Home BancFins",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 12.57,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.73,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-088",
+      "ticker": "UBSI",
+      "company_name": "United Bankshares",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 19.86,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.431,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-089",
+      "ticker": "UBSI",
+      "company_name": "United Bankshares",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 28.42,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.231,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-090",
+      "ticker": "UBSI",
+      "company_name": "United Bankshares",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 21.86,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.28,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1106500000
+      }
+    },
+    {
+      "case_id": "T8-091",
+      "ticker": "SBCF",
+      "company_name": "Seacoast Banking",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 9.39,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.352,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-092",
+      "ticker": "SBCF",
+      "company_name": "Seacoast Banking",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 22.09,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.171,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-093",
+      "ticker": "SBCF",
+      "company_name": "Seacoast Banking",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 18.3,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.158,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-094",
+      "ticker": "IBOC",
+      "company_name": "International Bancshares",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 19.13,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.503,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-095",
+      "ticker": "IBOC",
+      "company_name": "International Bancshares",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 28.75,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.095,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-096",
+      "ticker": "IBOC",
+      "company_name": "International Bancshares",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 26.02,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.678,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-097",
+      "ticker": "GBCI",
+      "company_name": "Glacier Bancorp",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 18.67,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.476,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 66,
+        "revenue_at_entry": 352888000
+      }
+    },
+    {
+      "case_id": "T8-098",
+      "ticker": "GBCI",
+      "company_name": "Glacier Bancorp",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 27.56,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.132,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 66,
+        "revenue_at_entry": 352888000
+      }
+    },
+    {
+      "case_id": "T8-099",
+      "ticker": "GBCI",
+      "company_name": "Glacier Bancorp",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 31.18,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.033,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 66,
+        "revenue_at_entry": 352888000
+      }
+    },
+    {
+      "case_id": "T8-100",
+      "ticker": "BKU",
+      "company_name": "BankUnited",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 23.75,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.124,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-101",
+      "ticker": "BKU",
+      "company_name": "BankUnited",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 26.69,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.371,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-102",
+      "ticker": "BKU",
+      "company_name": "BankUnited",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 16.78,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.194,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-103",
+      "ticker": "SM",
+      "company_name": "SM Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 68.8,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.776,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 5230800000
+      }
+    },
+    {
+      "case_id": "T8-104",
+      "ticker": "SM",
+      "company_name": "SM Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 15.39,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.714,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 1973836000
+      }
+    },
+    {
+      "case_id": "T8-105",
+      "ticker": "SM",
+      "company_name": "SM Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 4.4,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 4.993,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 2101464000
+      }
+    },
+    {
+      "case_id": "T8-106",
+      "ticker": "MTDR",
+      "company_name": "Matador Resources",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 25.59,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.165,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 659552000
+      }
+    },
+    {
+      "case_id": "T8-107",
+      "ticker": "MTDR",
+      "company_name": "Matador Resources",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 21.37,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.556,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 1057700000
+      }
+    },
+    {
+      "case_id": "T8-108",
+      "ticker": "MTDR",
+      "company_name": "Matador Resources",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 9.49,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.95,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 1738020000
+      }
+    },
+    {
+      "case_id": "T8-109",
+      "ticker": "TALO",
+      "company_name": "Talos Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 13.73,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.009,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 37,
+        "revenue_at_entry": 1106552000
+      }
+    },
+    {
+      "case_id": "T8-110",
+      "ticker": "HESM",
+      "company_name": "Hess Midstream",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 11.32,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.07,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 33,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-111",
+      "ticker": "HESM",
+      "company_name": "Hess Midstream",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 12.1,
+        "sector": "Energy",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.926,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 33,
+        "revenue_at_entry": 2242400000
+      }
+    },
+    {
+      "case_id": "T8-112",
+      "ticker": "HCC",
+      "company_name": "Warrior Met Coal",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 6.38,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.251,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 39,
+        "revenue_at_entry": 1453480000
+      }
+    },
+    {
+      "case_id": "T8-113",
+      "ticker": "HCC",
+      "company_name": "Warrior Met Coal",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 14.36,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.366,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 39,
+        "revenue_at_entry": 1687152000
+      }
+    },
+    {
+      "case_id": "T8-114",
+      "ticker": "UFPI",
+      "company_name": "UFP Industries",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 14.13,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.882,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 62,
+        "revenue_at_entry": 5307004000
+      }
+    },
+    {
+      "case_id": "T8-115",
+      "ticker": "UFPI",
+      "company_name": "UFP Industries",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 26.6,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.654,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 62,
+        "revenue_at_entry": 3384520000
+      }
+    },
+    {
+      "case_id": "T8-116",
+      "ticker": "UFPI",
+      "company_name": "UFP Industries",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 43.98,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.942,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 62,
+        "revenue_at_entry": 14003996000
+      }
+    },
+    {
+      "case_id": "T8-117",
+      "ticker": "TREX",
+      "company_name": "Trex Company",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 7.69,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.175,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 887824000
+      }
+    },
+    {
+      "case_id": "T8-118",
+      "ticker": "TREX",
+      "company_name": "Trex Company",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 16.72,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.511,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1210988000
+      }
+    },
+    {
+      "case_id": "T8-119",
+      "ticker": "TREX",
+      "company_name": "Trex Company",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 58.71,
+        "sector": "Materials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.012,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1684172000
+      }
+    },
+    {
+      "case_id": "T8-120",
+      "ticker": "CENTA",
+      "company_name": "Central Garden",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 7.21,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.279,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 4920476000
+      }
+    },
+    {
+      "case_id": "T8-121",
+      "ticker": "CENTA",
+      "company_name": "Central Garden",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 23.63,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.09,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 6256056000
+      }
+    },
+    {
+      "case_id": "T8-122",
+      "ticker": "CENTA",
+      "company_name": "Central Garden",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 25.75,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.116,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 8078160000
+      }
+    },
+    {
+      "case_id": "T8-123",
+      "ticker": "GTN",
+      "company_name": "Gray Television",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 9.44,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.15,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 794184000
+      }
+    },
+    {
+      "case_id": "T8-124",
+      "ticker": "GTN",
+      "company_name": "Gray Television",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 10.85,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.086,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1720568000
+      }
+    },
+    {
+      "case_id": "T8-125",
+      "ticker": "GTN",
+      "company_name": "Gray Television",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 11.78,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.472,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 3940000000
+      }
+    },
+    {
+      "case_id": "T8-126",
+      "ticker": "LEE",
+      "company_name": "Lee Enterprises",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 41.3,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.504,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1978412000
+      }
+    },
+    {
+      "case_id": "T8-127",
+      "ticker": "LEE",
+      "company_name": "Lee Enterprises",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 20.5,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.429,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1706924000
+      }
+    },
+    {
+      "case_id": "T8-128",
+      "ticker": "LEE",
+      "company_name": "Lee Enterprises",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 11.7,
+        "sector": "Communication Services",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.143,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1035620000
+      }
+    },
+    {
+      "case_id": "T8-129",
+      "ticker": "MBI",
+      "company_name": "MBIA",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 5.45,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.307,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 3056000000
+      }
+    },
+    {
+      "case_id": "T8-130",
+      "ticker": "MBI",
+      "company_name": "MBIA",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 3.78,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.158,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 596000000
+      }
+    },
+    {
+      "case_id": "T8-131",
+      "ticker": "MBI",
+      "company_name": "MBIA",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 3.18,
+        "sector": "Financials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.181,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 68,
+        "revenue_at_entry": 432000000
+      }
+    },
+    {
+      "case_id": "T8-132",
+      "ticker": "BBBY",
+      "company_name": "Bed Bath & Beyond",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 15.25,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": null,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 2695008000
+      }
+    },
+    {
+      "case_id": "T8-133",
+      "ticker": "BBBY",
+      "company_name": "Bed Bath & Beyond",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 15.25,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.421,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 3457836000
+      }
+    },
+    {
+      "case_id": "T8-134",
+      "ticker": "BBBY",
+      "company_name": "Bed Bath & Beyond",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 21.67,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.031,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 4536468000
+      }
+    },
+    {
+      "case_id": "T8-135",
+      "ticker": "TLYS",
+      "company_name": "Tillys",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 5.08,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.35,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 444536000
+      }
+    },
+    {
+      "case_id": "T8-136",
+      "ticker": "TLYS",
+      "company_name": "Tillys",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 6.86,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.228,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 483788000
+      }
+    },
+    {
+      "case_id": "T8-137",
+      "ticker": "TLYS",
+      "company_name": "Tillys",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 5.29,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.237,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 60,
+        "revenue_at_entry": 309156000
+      }
+    },
+    {
+      "case_id": "T8-138",
+      "ticker": "RRGB",
+      "company_name": "Red Robin",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 73.54,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.103,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 48,
+        "revenue_at_entry": 1361936000
+      }
+    },
+    {
+      "case_id": "T8-139",
+      "ticker": "RRGB",
+      "company_name": "Red Robin",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 66,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.807,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 48,
+        "revenue_at_entry": 1674228000
+      }
+    },
+    {
+      "case_id": "T8-140",
+      "ticker": "RRGB",
+      "company_name": "Red Robin",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 12.76,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.034,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 48,
+        "revenue_at_entry": 1224260000
+      }
+    },
+    {
+      "case_id": "T8-141",
+      "ticker": "LNTH",
+      "company_name": "Lantheus Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 16.25,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.164,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 49,
+        "revenue_at_entry": 680784000
+      }
+    },
+    {
+      "case_id": "T8-142",
+      "ticker": "LNTH",
+      "company_name": "Lantheus Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 13.59,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 5.343,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 49,
+        "revenue_at_entry": 626856000
+      }
+    },
+    {
+      "case_id": "T8-143",
+      "ticker": "CELH",
+      "company_name": "Celsius Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 0.23,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 5.029,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": null
+      }
+    },
+    {
+      "case_id": "T8-144",
+      "ticker": "CELH",
+      "company_name": "Celsius Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 1.37,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.341,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": 64949308
+      }
+    },
+    {
+      "case_id": "T8-145",
+      "ticker": "CELH",
+      "company_name": "Celsius Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 3.2,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 13.902,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 42,
+        "revenue_at_entry": 232888464
+      }
+    },
+    {
+      "case_id": "T8-146",
+      "ticker": "ASPN",
+      "company_name": "Aspen Aerogels",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 10.75,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.614,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 53,
+        "revenue_at_entry": 195912000
+      }
+    },
+    {
+      "case_id": "T8-147",
+      "ticker": "ASPN",
+      "company_name": "Aspen Aerogels",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 4.15,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.752,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 53,
+        "revenue_at_entry": 192284000
+      }
+    },
+    {
+      "case_id": "T8-148",
+      "ticker": "ASPN",
+      "company_name": "Aspen Aerogels",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 7.27,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.047,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 53,
+        "revenue_at_entry": 212240000
+      }
+    },
+    {
+      "case_id": "T8-149",
+      "ticker": "XPEL",
+      "company_name": "XPEL Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 16.82,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.609,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 31,
+        "revenue_at_entry": 256777284
+      }
+    },
+    {
+      "case_id": "T8-150",
+      "ticker": "SFM",
+      "company_name": "Sprouts Farmers Market",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 30.33,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.184,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 52,
+        "revenue_at_entry": 5865664000
+      }
+    },
+    {
+      "case_id": "T8-151",
+      "ticker": "SFM",
+      "company_name": "Sprouts Farmers Market",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 24.74,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.075,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 52,
+        "revenue_at_entry": 4522580000
+      }
+    },
+    {
+      "case_id": "T8-152",
+      "ticker": "SFM",
+      "company_name": "Sprouts Farmers Market",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 22.88,
+        "sector": "Consumer Staples",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.542,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 52,
+        "revenue_at_entry": 13157308000
+      }
+    },
+    {
+      "case_id": "T8-153",
+      "ticker": "DXCM",
+      "company_name": "DexCom",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 9,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.074,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 65,
+        "revenue_at_entry": 423600000
+      }
+    },
+    {
+      "case_id": "T8-154",
+      "ticker": "DXCM",
+      "company_name": "DexCom",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 18.67,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 4.34,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 65,
+        "revenue_at_entry": 1251600000
+      }
+    },
+    {
+      "case_id": "T8-155",
+      "ticker": "DXCM",
+      "company_name": "DexCom",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 99.69,
+        "sector": "Healthcare",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.275,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 65,
+        "revenue_at_entry": 3427600000
+      }
+    },
+    {
+      "case_id": "T8-156",
+      "ticker": "AXON",
+      "company_name": "Axon Enterprise",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 13.87,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.75,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 293440000
+      }
+    },
+    {
+      "case_id": "T8-157",
+      "ticker": "AXON",
+      "company_name": "Axon Enterprise",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 24.27,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.135,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 635540000
+      }
+    },
+    {
+      "case_id": "T8-158",
+      "ticker": "AXON",
+      "company_name": "Axon Enterprise",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 100.35,
+        "sector": "Industrials",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.971,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 1153684000
+      }
+    },
+    {
+      "case_id": "T8-159",
+      "ticker": "ENPH",
+      "company_name": "Enphase Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 8.43,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.905,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 558336000
+      }
+    },
+    {
+      "case_id": "T8-160",
+      "ticker": "ENPH",
+      "company_name": "Enphase Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 0.8,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 62.063,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 517820000
+      }
+    },
+    {
+      "case_id": "T8-161",
+      "ticker": "ENPH",
+      "company_name": "Enphase Energy",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 50.45,
+        "sector": "Technology",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.552,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 61,
+        "revenue_at_entry": 1324332000
+      }
+    },
+    {
+      "case_id": "T8-162",
+      "ticker": "CROX",
+      "company_name": "Crocs Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-13",
+        "price": 14.56,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.49,
+        "iwm_return_3yr": 0.276,
+        "sp500_return_3yr": 0.259
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 2757396000
+      }
+    },
+    {
+      "case_id": "T8-163",
+      "ticker": "CROX",
+      "company_name": "Crocs Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 7.43,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.268,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 2324512000
+      }
+    },
+    {
+      "case_id": "T8-164",
+      "ticker": "CROX",
+      "company_name": "Crocs Inc",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 31.71,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.618,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 64,
+        "revenue_at_entry": 2450836000
+      }
+    },
+    {
+      "case_id": "T8-165",
+      "ticker": "YETI",
+      "company_name": "YETI Holdings",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 35.87,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.031,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 34,
+        "revenue_at_entry": 1685400000
+      }
+    },
+    {
+      "case_id": "T8-166",
+      "ticker": "PLAY",
+      "company_name": "Dave & Buster's",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 66.39,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.742,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 52,
+        "revenue_at_entry": 1216592000
+      }
+    },
+    {
+      "case_id": "T8-167",
+      "ticker": "PLAY",
+      "company_name": "Dave & Buster's",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 17.1,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.539,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 52,
+        "revenue_at_entry": 639224000
+      }
+    },
+    {
+      "case_id": "T8-168",
+      "ticker": "WING",
+      "company_name": "Wingstop",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-06-14",
+        "price": 24.05,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 3.526,
+        "iwm_return_3yr": 0.042,
+        "sp500_return_3yr": 0.258
+      },
+      "source": {
+        "quarters_available": 47,
+        "revenue_at_entry": 106276000
+      }
+    },
+    {
+      "case_id": "T8-169",
+      "ticker": "WING",
+      "company_name": "Wingstop",
+      "tier": 8,
+      "dataset_role": "smallcap",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-06-15",
+        "price": 108.84,
+        "sector": "Consumer Discretionary",
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.743,
+        "iwm_return_3yr": 0.369,
+        "sp500_return_3yr": 0.426
+      },
+      "source": {
+        "quarters_available": 47,
+        "revenue_at_entry": 486164000
+      }
+    }
+  ]
+}
