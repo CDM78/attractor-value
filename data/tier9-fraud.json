@@ -1,0 +1,540 @@
+{
+  "metadata": {
+    "tier": 9,
+    "dataset_role": "fraud_validation",
+    "source": "Known accounting fraud, SEC enforcement actions, and confirmed value trap companies",
+    "case_count": 31,
+    "winners": 0,
+    "traps": 31,
+    "underperform": 0,
+    "mixed": 0,
+    "fraud_types": [
+      "antitrust",
+      "expense_manipulation",
+      "financial_misstatement",
+      "liability_concealment",
+      "misleading_disclosures",
+      "operational_fraud",
+      "related_party_fraud",
+      "reserve_manipulation",
+      "revenue_fabrication",
+      "revenue_manipulation",
+      "revenue_recognition"
+    ],
+    "generated": "2026-03-24T15:08:46.602Z"
+  },
+  "cases": [
+    {
+      "case_id": "T9-001",
+      "ticker": "GE",
+      "company_name": "General Electric",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Accounting manipulation, insurance reserves, power division writedowns",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-002",
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Samarco dam disaster, environmental fraud concealment",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-003",
+      "ticker": "VRX",
+      "company_name": "Valeant Pharmaceuticals",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Channel stuffing, Philidor pharmacy fraud, accounting manipulation",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-004",
+      "ticker": "WFC",
+      "company_name": "Wells Fargo",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "Fake accounts scandal, systematic consumer fraud",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-005",
+      "ticker": "KHC",
+      "company_name": "Kraft Heinz",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "SEC investigation, goodwill impairment, aggressive accounting",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-006",
+      "ticker": "T",
+      "company_name": "AT&T",
+      "entry_date": "2018-06-15",
+      "outcome": "trap",
+      "reason": "Capital misallocation, debt-fueled acquisitions, dividend trap",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2018-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-007",
+      "ticker": "INTC",
+      "company_name": "Intel",
+      "entry_date": "2020-06-15",
+      "outcome": "trap",
+      "reason": "Process technology failure, competitive collapse to TSMC/AMD",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2020-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-008",
+      "ticker": "IBM",
+      "company_name": "IBM",
+      "entry_date": "2014-06-15",
+      "outcome": "trap",
+      "reason": "Revenue decline disguised by buybacks, financial engineering",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2014-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-009",
+      "ticker": "M",
+      "company_name": "Macys",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Secular retail decline, real estate value trap narrative",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-010",
+      "ticker": "WBA",
+      "company_name": "Walgreens Boots Alliance",
+      "entry_date": "2019-06-15",
+      "outcome": "trap",
+      "reason": "PBM pressure, opioid liability, secular pharmacy disruption",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2019-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-011",
+      "ticker": "PCG",
+      "company_name": "PG&E",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Wildfire liability, safety negligence, bankruptcy",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-012",
+      "ticker": "LB",
+      "company_name": "L Brands",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "Victoria's Secret brand decline, management denial",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-013",
+      "ticker": "CTL",
+      "company_name": "CenturyLink/Lumen",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Unsustainable dividend, declining legacy telecom revenue",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-014",
+      "ticker": "F",
+      "company_name": "Ford Motor",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "EV transition costs, declining sedan market, quality issues",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-015",
+      "ticker": "GPS",
+      "company_name": "Gap Inc",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Brand erosion, fast fashion competition, Old Navy cannibalization",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-016",
+      "ticker": "XRX",
+      "company_name": "Xerox",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "Secular print decline, failed transformation",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-017",
+      "ticker": "HPQ",
+      "company_name": "HP Inc",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "PC commoditization, ink subscription controversy",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-018",
+      "ticker": "KSS",
+      "company_name": "Kohls",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "Department store secular decline, activist distractions",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      }
+    },
+    {
+      "case_id": "T9-019",
+      "ticker": "UAA",
+      "company_name": "Under Armour",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "SEC charged with misleading revenue growth via channel stuffing, pull-forward of orders",
+      "fraud_type": "revenue_manipulation",
+      "disclosure_date": "2019-11-04",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 30
+      }
+    },
+    {
+      "case_id": "T9-020",
+      "ticker": "DG",
+      "company_name": "Dollar General",
+      "entry_date": "2021-06-15",
+      "outcome": "trap",
+      "reason": "OSHA violations, safety negligence, deceptive pricing practices, SEC scrutiny",
+      "fraud_type": "operational_fraud",
+      "disclosure_date": "2023-06-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2021-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 46
+      }
+    },
+    {
+      "case_id": "T9-021",
+      "ticker": "SMCI",
+      "company_name": "Super Micro Computer",
+      "entry_date": "2017-06-15",
+      "outcome": "trap",
+      "reason": "SEC charges for understating expenses and overstating earnings, $17.5M settlement (2020)",
+      "fraud_type": "expense_manipulation",
+      "disclosure_date": "2018-08-27",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2017-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 29
+      }
+    },
+    {
+      "case_id": "T9-022",
+      "ticker": "CAKE",
+      "company_name": "Cheesecake Factory",
+      "entry_date": "2018-06-15",
+      "outcome": "trap",
+      "reason": "SEC charged with misleading COVID disclosures, $125K settlement",
+      "fraud_type": "misleading_disclosures",
+      "disclosure_date": "2020-12-04",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2018-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 35
+      }
+    },
+    {
+      "case_id": "T9-023",
+      "ticker": "TAL",
+      "company_name": "TAL Education",
+      "entry_date": "2019-06-15",
+      "outcome": "trap",
+      "reason": "Employee fabricated sales, self-reported $39M revenue inflation",
+      "fraud_type": "revenue_fabrication",
+      "disclosure_date": "2020-04-07",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2019-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 10
+      }
+    },
+    {
+      "case_id": "T9-024",
+      "ticker": "VNET",
+      "company_name": "VNET Group",
+      "entry_date": "2019-06-15",
+      "outcome": "trap",
+      "reason": "Short seller alleged related-party fraud, inflated customers, undisclosed debt",
+      "fraud_type": "related_party_fraud",
+      "disclosure_date": "2021-12-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2019-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 8
+      }
+    },
+    {
+      "case_id": "T9-025",
+      "ticker": "VRSN",
+      "company_name": "Symantec (now Gen Digital)",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "SEC investigation into revenue recognition, $4.7B writedown post-Broadcom sale",
+      "fraud_type": "revenue_recognition",
+      "disclosure_date": "2018-05-10",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 34
+      }
+    },
+    {
+      "case_id": "T9-026",
+      "ticker": "MATX",
+      "company_name": "Mattel",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "SEC charged former CEO with misleading investors about turnaround progress",
+      "fraud_type": "misleading_disclosures",
+      "disclosure_date": "2019-09-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 30
+      }
+    },
+    {
+      "case_id": "T9-027",
+      "ticker": "DHI",
+      "company_name": "Diplomat Pharmacy",
+      "entry_date": "2018-06-15",
+      "outcome": "trap",
+      "reason": "SEC investigation, material misstatements in financial reporting, delisted",
+      "fraud_type": "financial_misstatement",
+      "disclosure_date": "2019-11-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2018-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 36
+      }
+    },
+    {
+      "case_id": "T9-028",
+      "ticker": "JBLU",
+      "company_name": "JetBlue Airways",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "DOJ antitrust suit (Northeast Alliance), concealed competitive harm",
+      "fraud_type": "antitrust",
+      "disclosure_date": "2021-09-21",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 26
+      }
+    },
+    {
+      "case_id": "T9-029",
+      "ticker": "CPB",
+      "company_name": "Campbell Soup",
+      "entry_date": "2016-06-15",
+      "outcome": "trap",
+      "reason": "SEC settlement for improper revenue recognition, misleading organic growth metrics",
+      "fraud_type": "revenue_manipulation",
+      "disclosure_date": "2018-09-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2016-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 32
+      }
+    },
+    {
+      "case_id": "T9-030",
+      "ticker": "GNW",
+      "company_name": "Genworth Financial",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "LTC reserve deficiency concealment, repeated earnings misses, SEC scrutiny",
+      "fraud_type": "reserve_manipulation",
+      "disclosure_date": "2018-01-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 30
+      }
+    },
+    {
+      "case_id": "T9-031",
+      "ticker": "RIG",
+      "company_name": "Transocean",
+      "entry_date": "2015-06-15",
+      "outcome": "trap",
+      "reason": "Environmental liability concealment, Deepwater Horizon aftermath, accounting adjustments",
+      "fraud_type": "liability_concealment",
+      "disclosure_date": "2016-01-01",
+      "tier": 9,
+      "dataset_role": "fraud_validation",
+      "entry": {
+        "date": "2015-06-15",
+        "sector": null
+      },
+      "source": {
+        "accounting_standard": "us-gaap",
+        "quarters_available": 30
+      }
+    }
+  ]
+}
