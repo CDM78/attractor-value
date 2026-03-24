@@ -1,0 +1,392 @@
+{
+  "timestamp": "2026-03-24T15:16:09.881Z",
+  "populations": {
+    "Original (T1-6)": {
+      "n_cases": 263
+    },
+    "ADR/International (T7)": {
+      "n_cases": 100
+    },
+    "Small-Cap (T8)": {
+      "n_cases": 169
+    },
+    "Fraud/Failure (T9)": {
+      "n_cases": 31
+    },
+    "All Combined": {
+      "n_cases": 563
+    }
+  },
+  "results": {
+    "Original (T1-6)": {
+      "status": "ok",
+      "n_cases": 263,
+      "n_with_data": 263,
+      "signals": {
+        "Flywheel Momentum": {
+          "signal": "Flywheel Momentum",
+          "n_total": 250,
+          "n_winners": 68,
+          "n_traps": 90,
+          "winner_mean": 11350832204.097797,
+          "trap_mean": 1830025763.1735592,
+          "effect_r": 0.1072800656675731,
+          "mwu_p": 0.17750111649992917,
+          "spearman_rho": 0.027900514173522795,
+          "spearman_p": 0.6606465581298056,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.09730245430583088,
+          "status": "ok"
+        },
+        "D1 Growth": {
+          "signal": "D1 Growth",
+          "n_total": 244,
+          "n_winners": 70,
+          "n_traps": 86,
+          "winner_mean": 0.5178941482400315,
+          "trap_mean": 0.7024336194325356,
+          "effect_r": 0.012837863857666911,
+          "mwu_p": 0.8726094002069213,
+          "spearman_rho": 0.021611770682315092,
+          "spearman_p": 0.7369470010330033,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.15139188070200124,
+          "status": "ok"
+        },
+        "Zipf Rank Velocity": {
+          "signal": "Zipf Rank Velocity",
+          "n_total": 224,
+          "n_winners": 60,
+          "n_traps": 83,
+          "winner_mean": 0.9680253399754477,
+          "trap_mean": 2.288279544122016,
+          "effect_r": 0.018130198392856452,
+          "mwu_p": 0.8283598900122993,
+          "spearman_rho": 0.022761583429973354,
+          "spearman_p": 0.7347553134548721,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.10979264494645383,
+          "status": "ok"
+        },
+        "Revenue Growth (4Q)": {
+          "signal": "Revenue Growth (4Q)",
+          "n_total": 221,
+          "n_winners": 59,
+          "n_traps": 82,
+          "winner_mean": 0.15672022502657784,
+          "trap_mean": 0.7741734200369581,
+          "effect_r": 0.04399607923285787,
+          "mwu_p": 0.6013747780102494,
+          "spearman_rho": -0.029982036618311593,
+          "spearman_p": 0.6575580312082758,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.10235264735424279,
+          "status": "ok"
+        },
+        "Scale Invariance CV": {
+          "signal": "Scale Invariance CV",
+          "n_total": 188,
+          "n_winners": 51,
+          "n_traps": 67,
+          "winner_mean": -0.7310066082217691,
+          "trap_mean": -0.6373555750770485,
+          "effect_r": 0.06476247202445695,
+          "mwu_p": 0.48174374604781,
+          "spearman_rho": 0.06514052093600378,
+          "spearman_p": 0.3744607448936079,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.14751542091818742,
+          "status": "ok"
+        }
+      }
+    },
+    "ADR/International (T7)": {
+      "status": "ok",
+      "n_cases": 100,
+      "n_with_data": 100,
+      "signals": {
+        "Flywheel Momentum": {
+          "signal": "Flywheel Momentum",
+          "n_total": 55,
+          "n_winners": 20,
+          "n_traps": 12,
+          "winner_mean": 334435182212.1655,
+          "trap_mean": 493770411348.9492,
+          "effect_r": 0.048167164724278275,
+          "mwu_p": 0.7852572217863589,
+          "spearman_rho": -0.042857915914546296,
+          "spearman_p": 0.7560400081052308,
+          "cv_folds_significant": 1,
+          "cv_mean_r": 0.3453853723013893,
+          "status": "ok"
+        },
+        "D1 Growth": {
+          "signal": "D1 Growth",
+          "n_total": 52,
+          "n_winners": 18,
+          "n_traps": 12,
+          "winner_mean": 0.821675854567334,
+          "trap_mean": 1.765291803742426,
+          "effect_r": 0.1777665767080645,
+          "mwu_p": 0.3302215886672788,
+          "spearman_rho": 0.0619469209964676,
+          "spearman_p": 0.6626437141485917,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.3557358279000668,
+          "status": "ok"
+        },
+        "Zipf Rank Velocity": {
+          "signal": "Zipf Rank Velocity",
+          "n_total": 23,
+          "n_winners": 8,
+          "n_traps": 5,
+          "winner_mean": 0.7685069785497227,
+          "trap_mean": 3.5699734739101814,
+          "effect_r": 0.24359938288234506,
+          "mwu_p": 0.37977540065512594,
+          "spearman_rho": -0.3165270824738287,
+          "spearman_p": 0.14115600823370178,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0,
+          "status": "ok"
+        },
+        "Revenue Growth (4Q)": {
+          "signal": "Revenue Growth (4Q)",
+          "n_total": 22,
+          "n_winners": 7,
+          "n_traps": 5,
+          "winner_mean": 0.5624699704931994,
+          "trap_mean": 1.7350457138396422,
+          "effect_r": 0.3984861462977211,
+          "mwu_p": 0.1674647128372475,
+          "spearman_rho": -0.26919095102908275,
+          "spearman_p": 0.2257289081282663,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.20701966780270628,
+          "status": "ok"
+        },
+        "Scale Invariance CV": {
+          "signal": "Scale Invariance CV",
+          "n_total": 21,
+          "n_winners": 8,
+          "n_traps": 4,
+          "winner_mean": -0.2759255773669904,
+          "trap_mean": -0.1803823591377982,
+          "effect_r": 0.24514516892273006,
+          "mwu_p": 0.3957655937680049,
+          "spearman_rho": 0.2267125964709535,
+          "spearman_p": 0.323026345226336,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0,
+          "status": "ok"
+        }
+      }
+    },
+    "Small-Cap (T8)": {
+      "status": "ok",
+      "n_cases": 169,
+      "n_with_data": 169,
+      "signals": {
+        "Flywheel Momentum": {
+          "signal": "Flywheel Momentum",
+          "n_total": 161,
+          "n_winners": 68,
+          "n_traps": 49,
+          "winner_mean": 11652554.353149962,
+          "trap_mean": -35456401.35129635,
+          "effect_r": 0.1404548971158285,
+          "mwu_p": 0.12869912497784375,
+          "spearman_rho": -0.15395346225653236,
+          "spearman_p": 0.05119159258901651,
+          "cv_folds_significant": 2,
+          "cv_mean_r": 0.34781890324339376,
+          "status": "ok"
+        },
+        "D1 Growth": {
+          "signal": "D1 Growth",
+          "n_total": 144,
+          "n_winners": 63,
+          "n_traps": 42,
+          "winner_mean": 1.612620103054898,
+          "trap_mean": 0.17810140640795863,
+          "effect_r": 0.03638505004539669,
+          "mwu_p": 0.7092707624883996,
+          "spearman_rho": 0.08099217866240752,
+          "spearman_p": 0.33453375695855625,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.2002806873190393,
+          "status": "ok"
+        },
+        "Zipf Rank Velocity": {
+          "signal": "Zipf Rank Velocity",
+          "n_total": 141,
+          "n_winners": 62,
+          "n_traps": 41,
+          "winner_mean": 1.716206490512085,
+          "trap_mean": 6.9059316708524205,
+          "effect_r": 0.15932312259816306,
+          "mwu_p": 0.1058883949824323,
+          "spearman_rho": 0.19343118868462378,
+          "spearman_p": 0.021552030112318876,
+          "cv_folds_significant": 1,
+          "cv_mean_r": 0.3444609081657714,
+          "status": "ok"
+        },
+        "Revenue Growth (4Q)": {
+          "signal": "Revenue Growth (4Q)",
+          "n_total": 138,
+          "n_winners": 61,
+          "n_traps": 41,
+          "winner_mean": 0.5983034349370175,
+          "trap_mean": 0.13736768893875329,
+          "effect_r": 0.12400841239201865,
+          "mwu_p": 0.21041569817757777,
+          "spearman_rho": 0.15438682580067858,
+          "spearman_p": 0.07060746745948654,
+          "cv_folds_significant": 1,
+          "cv_mean_r": 0.23021590941616527,
+          "status": "ok"
+        },
+        "Scale Invariance CV": {
+          "signal": "Scale Invariance CV",
+          "n_total": 127,
+          "n_winners": 57,
+          "n_traps": 37,
+          "winner_mean": -0.8230458760136009,
+          "trap_mean": -1.5260266975717327,
+          "effect_r": 0.06585375631314089,
+          "mwu_p": 0.5231638464859203,
+          "spearman_rho": 0.006477466518839389,
+          "spearman_p": 0.8722397550060068,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.08851548906954002,
+          "status": "ok"
+        }
+      }
+    },
+    "Fraud/Failure (T9)": {
+      "status": "ok",
+      "n_cases": 31,
+      "n_with_data": 27,
+      "signals": {
+        "Flywheel Momentum": {
+          "signal": "Flywheel Momentum",
+          "n_total": 24,
+          "n_winners": 0,
+          "n_traps": 24,
+          "status": "insufficient_data"
+        },
+        "D1 Growth": {
+          "signal": "D1 Growth",
+          "n_total": 23,
+          "n_winners": 0,
+          "n_traps": 23,
+          "status": "insufficient_data"
+        },
+        "Zipf Rank Velocity": {
+          "signal": "Zipf Rank Velocity",
+          "n_total": 22,
+          "n_winners": 0,
+          "n_traps": 22,
+          "status": "insufficient_data"
+        },
+        "Revenue Growth (4Q)": {
+          "signal": "Revenue Growth (4Q)",
+          "n_total": 22,
+          "n_winners": 0,
+          "n_traps": 22,
+          "status": "insufficient_data"
+        },
+        "Scale Invariance CV": {
+          "signal": "Scale Invariance CV",
+          "n_total": 19,
+          "n_winners": 0,
+          "n_traps": 19,
+          "status": "insufficient_data"
+        }
+      }
+    },
+    "All Combined": {
+      "status": "ok",
+      "n_cases": 563,
+      "n_with_data": 559,
+      "signals": {
+        "Flywheel Momentum": {
+          "signal": "Flywheel Momentum",
+          "n_total": 490,
+          "n_winners": 156,
+          "n_traps": 175,
+          "winner_mean": 47829183383.44856,
+          "trap_mean": 36320314746.92425,
+          "effect_r": 0.04559965170430963,
+          "mwu_p": 0.40675754770354566,
+          "spearman_rho": -0.09080796582713643,
+          "spearman_p": 0.044522423929419075,
+          "cv_folds_significant": 2,
+          "cv_mean_r": 0.1651728881683216,
+          "status": "ok"
+        },
+        "D1 Growth": {
+          "signal": "D1 Growth",
+          "n_total": 463,
+          "n_winners": 151,
+          "n_traps": 163,
+          "winner_mean": 1.0108465049766409,
+          "trap_mean": 0.5751699515702666,
+          "effect_r": 0.05177859608660753,
+          "mwu_p": 0.3588706645927391,
+          "spearman_rho": 0.06656214248848316,
+          "spearman_p": 0.15272815585271426,
+          "cv_folds_significant": 1,
+          "cv_mean_r": 0.11767544910550712,
+          "status": "ok"
+        },
+        "Zipf Rank Velocity": {
+          "signal": "Zipf Rank Velocity",
+          "n_total": 410,
+          "n_winners": 130,
+          "n_traps": 151,
+          "winner_mean": 1.3125721433744153,
+          "trap_mean": 3.3700006196570063,
+          "effect_r": 0.09116961327901184,
+          "mwu_p": 0.12644277683822214,
+          "spearman_rho": 0.07559464616962006,
+          "spearman_p": 0.1264656203138972,
+          "cv_folds_significant": 1,
+          "cv_mean_r": 0.07606972834223795,
+          "status": "ok"
+        },
+        "Revenue Growth (4Q)": {
+          "signal": "Revenue Growth (4Q)",
+          "n_total": 403,
+          "n_winners": 127,
+          "n_traps": 150,
+          "winner_mean": 0.39118340630849263,
+          "trap_mean": 0.5572662507463504,
+          "effect_r": 0.02876126413294514,
+          "mwu_p": 0.6321642986020826,
+          "spearman_rho": 0.030899087647218645,
+          "spearman_p": 0.5362353738190584,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.04389153201168381,
+          "status": "ok"
+        },
+        "Scale Invariance CV": {
+          "signal": "Scale Invariance CV",
+          "n_total": 355,
+          "n_winners": 116,
+          "n_traps": 127,
+          "winner_mean": -0.7448479014743219,
+          "trap_mean": -0.8335139071594349,
+          "effect_r": 0.006329297036736739,
+          "mwu_p": 0.921404956059177,
+          "spearman_rho": 0.0056847041764091,
+          "spearman_p": 0.870852127831913,
+          "cv_folds_significant": 0,
+          "cv_mean_r": 0.12132300737726529,
+          "status": "ok"
+        }
+      }
+    }
+  }
+}

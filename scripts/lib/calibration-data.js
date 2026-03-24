@@ -1,10 +1,14 @@
-// Load and normalize all 292 calibration cases from the calibration tool's tier files.
-// Handles schema differences between tier 1 (flat fields) and tiers 2-4 (nested entry object).
+// Load and normalize all calibration cases from tier files.
+// Handles schema differences between tier 1 (flat fields) and tiers 2-4 (nested entry object),
+// and tiers 7-9 (international, small-cap, fraud — flat fields with entry sub-object).
 
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 
-const CAL_TOOL = resolve(import.meta.dirname, '../../../av-calibration-tool/data');
+// Try calibration tool first, fall back to local data directory
+const CAL_TOOL_EXT = resolve(import.meta.dirname, '../../../av-calibration-tool/data');
+const CAL_TOOL_LOCAL = resolve(import.meta.dirname, '../../data');
+const CAL_TOOL = existsSync(CAL_TOOL_EXT) ? CAL_TOOL_EXT : CAL_TOOL_LOCAL;
 
 const TIER_FILES = [
   'tier1-stable-value.json',
@@ -13,6 +17,9 @@ const TIER_FILES = [
   'tier4-regime-transition.json',
   'tier5-sp500-expansion.json',
   'tier6-multi-entry.json',
+  'tier7-adr-international.json',
+  'tier8-smallcap.json',
+  'tier9-fraud.json',
 ];
 
 const TIER_PIPELINES = {
@@ -22,6 +29,9 @@ const TIER_PIPELINES = {
   4: 'Regime',
   5: 'SP500 Expansion',
   6: 'Multi-Entry',
+  7: 'ADR/International',
+  8: 'Small-Cap',
+  9: 'Fraud/Failure',
 };
 
 // Convert "2016-Q1" → "2016-01-15", "2020-03-23" → "2020-03-23"
@@ -35,6 +45,11 @@ function normalizeDate(raw) {
   // Already ISO date
   if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return raw;
   return raw;
+}
+
+function inferTierFromFile(file) {
+  const m = file.match(/tier(\d+)/);
+  return m ? parseInt(m[1]) : null;
 }
 
 function normalizeTier1Case(c) {
@@ -65,6 +80,26 @@ function normalizeTier234Case(c) {
   };
 }
 
+// Universal normalizer — handles all tier formats
+function normalizeCaseUniversal(c, tier) {
+  if (tier === 1) return normalizeTier1Case(c);
+  if (tier >= 7) {
+    // Tiers 7-9: flat fields with optional entry sub-object
+    return {
+      ticker: c.ticker,
+      company: c.company_name || c.company || c.ticker,
+      outcome: c.outcome || c.outcome_class,
+      entry_date: normalizeDate(c.entry?.date || c.entry_date),
+      entry_price: c.entry?.price || c.entry_price || null,
+      sector: c.entry?.sector || c.sector || null,
+      industry: c.entry?.industry || c.industry || null,
+      tier,
+      pipeline: TIER_PIPELINES[tier] || `Tier ${tier}`,
+    };
+  }
+  return normalizeTier234Case(c);
+}
+
 export function loadCalibrationCases() {
   const cases = [];
   const seen = new Set();
@@ -80,8 +115,8 @@ export function loadCalibrationCases() {
     }
 
     for (const c of data.cases || []) {
-      const tier = c.tier || (file.includes('tier1') ? 1 : null);
-      const normalized = tier === 1 ? normalizeTier1Case(c) : normalizeTier234Case(c);
+      const tier = c.tier || inferTierFromFile(file);
+      const normalized = normalizeCaseUniversal(c, tier);
 
       // Deduplicate by ticker+tier+date (same ticker can appear in multiple tiers or with different entry dates)
       const key = `${normalized.ticker}-T${normalized.tier}-${normalized.entry_date || ''}`;

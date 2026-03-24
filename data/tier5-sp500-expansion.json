@@ -1,0 +1,4749 @@
+{
+  "metadata": {
+    "tier": 5,
+    "dataset_role": "sp500_expansion",
+    "source": "S&P 500 constituent changes 2010-2024",
+    "case_count": 263,
+    "winner": 77,
+    "trap": 90,
+    "underperform": 70,
+    "mixed": 26,
+    "generated": "2026-03-24T15:14:18.216Z"
+  },
+  "cases": [
+    {
+      "case_id": "T5-001",
+      "ticker": "AAL",
+      "company_name": "AAL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-03-23",
+        "price": 51.65,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.011,
+        "sp500_return_3yr": 0.256
+      }
+    },
+    {
+      "case_id": "T5-002",
+      "ticker": "AAP",
+      "company_name": "AAP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-07-08",
+        "price": 139.99,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.114,
+        "sp500_return_3yr": 0.36
+      }
+    },
+    {
+      "case_id": "T5-003",
+      "ticker": "ABBV",
+      "company_name": "ABBV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-01-02",
+        "price": 20.73,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.87,
+        "sp500_return_3yr": 0.398
+      }
+    },
+    {
+      "case_id": "T5-004",
+      "ticker": "ACGL",
+      "company_name": "ACGL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-10-31",
+        "price": 54.68,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.579,
+        "sp500_return_3yr": 0.767
+      }
+    },
+    {
+      "case_id": "T5-005",
+      "ticker": "ACN",
+      "company_name": "ACN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2011-07-05",
+        "price": 47.48,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.408,
+        "sp500_return_3yr": 0.478
+      }
+    },
+    {
+      "case_id": "T5-006",
+      "ticker": "AJG",
+      "company_name": "AJG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-05-31",
+        "price": 40.96,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.889,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-007",
+      "ticker": "ALK",
+      "company_name": "ALK",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-05-12",
+        "price": 60.86,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.034,
+        "sp500_return_3yr": 0.362
+      }
+    },
+    {
+      "case_id": "T5-008",
+      "ticker": "ALLE",
+      "company_name": "ALLE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-12-02",
+        "price": 37.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.545,
+        "sp500_return_3yr": 0.217
+      }
+    },
+    {
+      "case_id": "T5-009",
+      "ticker": "AMCR",
+      "company_name": "AMCR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-06-06",
+        "price": 41.89,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.373,
+        "sp500_return_3yr": 0.449
+      }
+    },
+    {
+      "case_id": "T5-010",
+      "ticker": "AMD",
+      "company_name": "AMD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-03-20",
+        "price": 14.4,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.765,
+        "sp500_return_3yr": 0.015
+      }
+    },
+    {
+      "case_id": "T5-011",
+      "ticker": "AME",
+      "company_name": "AME",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2013-09-23",
+        "price": 42.36,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.066,
+        "sp500_return_3yr": 0.279
+      }
+    },
+    {
+      "case_id": "T5-012",
+      "ticker": "AMG",
+      "company_name": "AMG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-06-30",
+        "price": 198.85,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.19,
+        "sp500_return_3yr": 0.236
+      }
+    },
+    {
+      "case_id": "T5-013",
+      "ticker": "AOS",
+      "company_name": "AOS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-07-25",
+        "price": 47.21,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.021,
+        "sp500_return_3yr": 0.298
+      }
+    },
+    {
+      "case_id": "T5-014",
+      "ticker": "APTV",
+      "company_name": "APTV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2012-12-24",
+        "price": 27.79,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.502,
+        "sp500_return_3yr": 0.447
+      }
+    },
+    {
+      "case_id": "T5-015",
+      "ticker": "ARE",
+      "company_name": "ARE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-03-20",
+        "price": 79.89,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.309,
+        "sp500_return_3yr": 0.015
+      }
+    },
+    {
+      "case_id": "T5-016",
+      "ticker": "ATO",
+      "company_name": "ATO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-02-14",
+        "price": 80.58,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.184,
+        "sp500_return_3yr": 0.603
+      }
+    },
+    {
+      "case_id": "T5-017",
+      "ticker": "AVGO",
+      "company_name": "AVGO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-05-07",
+        "price": 4.99,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.517,
+        "sp500_return_3yr": 0.277
+      }
+    },
+    {
+      "case_id": "T5-018",
+      "ticker": "AWK",
+      "company_name": "AWK",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2016-03-03",
+        "price": 55.9,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.592,
+        "sp500_return_3yr": 0.401
+      }
+    },
+    {
+      "case_id": "T5-019",
+      "ticker": "AYI",
+      "company_name": "AYI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-05-02",
+        "price": 237.59,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.405,
+        "sp500_return_3yr": 0.402
+      }
+    },
+    {
+      "case_id": "T5-020",
+      "ticker": "BALL",
+      "company_name": "BALL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-05-09",
+        "price": 65.74,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.218,
+        "sp500_return_3yr": 0.418
+      }
+    },
+    {
+      "case_id": "T5-021",
+      "ticker": "BBWI",
+      "company_name": "BBWI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-08-02",
+        "price": 58,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.457,
+        "sp500_return_3yr": 0.219
+      }
+    },
+    {
+      "case_id": "T5-022",
+      "ticker": "BG",
+      "company_name": "BG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2023-03-14",
+        "price": 95.82,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.302,
+        "sp500_return_3yr": 0.692
+      }
+    },
+    {
+      "case_id": "T5-023",
+      "ticker": "BHF",
+      "company_name": "BHF",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-08-07",
+        "price": 61.72,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.535,
+        "sp500_return_3yr": 0.35
+      }
+    },
+    {
+      "case_id": "T5-024",
+      "ticker": "BIO",
+      "company_name": "BIO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-06-22",
+        "price": 456.49,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.197,
+        "sp500_return_3yr": 0.4
+      }
+    },
+    {
+      "case_id": "T5-025",
+      "ticker": "BKR",
+      "company_name": "BKR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-10-17",
+        "price": 18.41,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.198,
+        "sp500_return_3yr": 0.227
+      }
+    },
+    {
+      "case_id": "T5-026",
+      "ticker": "BLK",
+      "company_name": "BLK",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2011-04-04",
+        "price": 136.81,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.709,
+        "sp500_return_3yr": 0.417
+      }
+    },
+    {
+      "case_id": "T5-027",
+      "ticker": "BR",
+      "company_name": "BR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-06-18",
+        "price": 101.99,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.444,
+        "sp500_return_3yr": 0.522
+      }
+    },
+    {
+      "case_id": "T5-028",
+      "ticker": "BRO",
+      "company_name": "BRO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-09-20",
+        "price": 54.65,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.838,
+        "sp500_return_3yr": 0.311
+      }
+    },
+    {
+      "case_id": "T5-029",
+      "ticker": "BWA",
+      "company_name": "BWA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2011-12-19",
+        "price": 22.82,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.75,
+        "sp500_return_3yr": 0.71
+      }
+    },
+    {
+      "case_id": "T5-030",
+      "ticker": "CARR",
+      "company_name": "CARR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-04-02",
+        "price": 12.28,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.567,
+        "sp500_return_3yr": 0.632
+      }
+    },
+    {
+      "case_id": "T5-031",
+      "ticker": "CBOE",
+      "company_name": "CBOE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-02-28",
+        "price": 69.45,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.516,
+        "sp500_return_3yr": 0.25
+      }
+    },
+    {
+      "case_id": "T5-032",
+      "ticker": "CCI",
+      "company_name": "CCI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2012-03-12",
+        "price": 33.57,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.603,
+        "sp500_return_3yr": 0.507
+      }
+    },
+    {
+      "case_id": "T5-033",
+      "ticker": "CDNS",
+      "company_name": "CDNS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-09-18",
+        "price": 38.78,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.608,
+        "sp500_return_3yr": 0.341
+      }
+    },
+    {
+      "case_id": "T5-034",
+      "ticker": "CDW",
+      "company_name": "CDW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-09-23",
+        "price": 110.12,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.41,
+        "sp500_return_3yr": 0.256
+      }
+    },
+    {
+      "case_id": "T5-035",
+      "ticker": "CE",
+      "company_name": "CE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2018-12-24",
+        "price": 73.78,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.039,
+        "sp500_return_3yr": 1.01
+      }
+    },
+    {
+      "case_id": "T5-036",
+      "ticker": "CFG",
+      "company_name": "CFG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-02-01",
+        "price": 14.26,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.753,
+        "sp500_return_3yr": 0.394
+      }
+    },
+    {
+      "case_id": "T5-037",
+      "ticker": "CHD",
+      "company_name": "CHD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-12-28",
+        "price": 37.31,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.615,
+        "sp500_return_3yr": 0.209
+      }
+    },
+    {
+      "case_id": "T5-038",
+      "ticker": "CHTR",
+      "company_name": "CHTR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2016-09-07",
+        "price": 277.56,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.534,
+        "sp500_return_3yr": 0.363
+      }
+    },
+    {
+      "case_id": "T5-039",
+      "ticker": "CMG",
+      "company_name": "CMG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2011-04-27",
+        "price": 5.26,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.811,
+        "sp500_return_3yr": 0.379
+      }
+    },
+    {
+      "case_id": "T5-040",
+      "ticker": "CNC",
+      "company_name": "CNC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-03-29",
+        "price": 31.3,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.696,
+        "sp500_return_3yr": 0.379
+      }
+    },
+    {
+      "case_id": "T5-041",
+      "ticker": "COO",
+      "company_name": "COO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-09-22",
+        "price": 46.06,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.639,
+        "sp500_return_3yr": 0.374
+      }
+    },
+    {
+      "case_id": "T5-042",
+      "ticker": "COTY",
+      "company_name": "COTY",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-10-03",
+        "price": 20.9,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.529,
+        "sp500_return_3yr": 0.336
+      }
+    },
+    {
+      "case_id": "T5-043",
+      "ticker": "CPRI",
+      "company_name": "CPRI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-01-04",
+        "price": 40.37,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.081,
+        "sp500_return_3yr": 0.216
+      }
+    },
+    {
+      "case_id": "T5-044",
+      "ticker": "CRL",
+      "company_name": "CRL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-05-13",
+        "price": 321.01,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.288,
+        "sp500_return_3yr": 0.27
+      }
+    },
+    {
+      "case_id": "T5-045",
+      "ticker": "CSGP",
+      "company_name": "CSGP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-09-19",
+        "price": 72.07,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.239,
+        "sp500_return_3yr": 0.701
+      }
+    },
+    {
+      "case_id": "T5-046",
+      "ticker": "CTRA",
+      "company_name": "CTRA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2021-10-04",
+        "price": 17.78,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.323,
+        "sp500_return_3yr": 0.325
+      }
+    },
+    {
+      "case_id": "T5-047",
+      "ticker": "CTVA",
+      "company_name": "CTVA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-03",
+        "price": 22.76,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.638,
+        "sp500_return_3yr": 0.522
+      }
+    },
+    {
+      "case_id": "T5-048",
+      "ticker": "CZR",
+      "company_name": "CZR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 88.47,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.529,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-049",
+      "ticker": "DAL",
+      "company_name": "DAL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-09-10",
+        "price": 19.56,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.722,
+        "sp500_return_3yr": 0.264
+      }
+    },
+    {
+      "case_id": "T5-050",
+      "ticker": "DD",
+      "company_name": "DD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-06-03",
+        "price": 27.92,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.043,
+        "sp500_return_3yr": 0.522
+      }
+    },
+    {
+      "case_id": "T5-051",
+      "ticker": "DLR",
+      "company_name": "DLR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2016-05-17",
+        "price": 67.59,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.374,
+        "sp500_return_3yr": 0.397
+      }
+    },
+    {
+      "case_id": "T5-052",
+      "ticker": "DLTR",
+      "company_name": "DLTR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2011-12-19",
+        "price": 40.67,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.699,
+        "sp500_return_3yr": 0.71
+      }
+    },
+    {
+      "case_id": "T5-053",
+      "ticker": "DOW",
+      "company_name": "DOW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-04-01",
+        "price": 36.24,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.41,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-054",
+      "ticker": "DPZ",
+      "company_name": "DPZ",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-05-11",
+        "price": 350.42,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.162,
+        "sp500_return_3yr": 0.41
+      }
+    },
+    {
+      "case_id": "T5-055",
+      "ticker": "DXC",
+      "company_name": "DXC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-04-03",
+        "price": 55.65,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.79,
+        "sp500_return_3yr": 0.055
+      }
+    },
+    {
+      "case_id": "T5-056",
+      "ticker": "ELV",
+      "company_name": "ELV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-27",
+        "price": 456.06,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.177,
+        "sp500_return_3yr": 0.583
+      }
+    },
+    {
+      "case_id": "T5-057",
+      "ticker": "EPAM",
+      "company_name": "EPAM",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-12-13",
+        "price": 685,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.643,
+        "sp500_return_3yr": 0.296
+      }
+    },
+    {
+      "case_id": "T5-058",
+      "ticker": "EQIX",
+      "company_name": "EQIX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-03-23",
+        "price": 184.64,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.94,
+        "sp500_return_3yr": 0.256
+      }
+    },
+    {
+      "case_id": "T5-059",
+      "ticker": "EQT",
+      "company_name": "EQT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-10-03",
+        "price": 39.61,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.4,
+        "sp500_return_3yr": 0.826
+      }
+    },
+    {
+      "case_id": "T5-060",
+      "ticker": "ESS",
+      "company_name": "ESS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-04-01",
+        "price": 119.79,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.444,
+        "sp500_return_3yr": 0.253
+      }
+    },
+    {
+      "case_id": "T5-061",
+      "ticker": "EVRG",
+      "company_name": "EVRG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-06-04",
+        "price": 40.34,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.286,
+        "sp500_return_3yr": 0.54
+      }
+    },
+    {
+      "case_id": "T5-062",
+      "ticker": "EW",
+      "company_name": "EW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2011-03-31",
+        "price": 14.5,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.147,
+        "sp500_return_3yr": 0.412
+      }
+    },
+    {
+      "case_id": "T5-063",
+      "ticker": "EXR",
+      "company_name": "EXR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2016-01-19",
+        "price": 60.26,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.168,
+        "sp500_return_3yr": 0.42
+      }
+    },
+    {
+      "case_id": "T5-064",
+      "ticker": "FANG",
+      "company_name": "FANG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-12-03",
+        "price": 86.49,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.011,
+        "sp500_return_3yr": 0.64
+      }
+    },
+    {
+      "case_id": "T5-065",
+      "ticker": "FCPT",
+      "company_name": "FCPT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-11-10",
+        "price": 7.94,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.359,
+        "sp500_return_3yr": 0.338
+      }
+    },
+    {
+      "case_id": "T5-066",
+      "ticker": "FDS",
+      "company_name": "FDS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2021-12-20",
+        "price": 450.92,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.068,
+        "sp500_return_3yr": 0.284
+      }
+    },
+    {
+      "case_id": "T5-067",
+      "ticker": "FFIV",
+      "company_name": "FFIV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2010-12-20",
+        "price": 135.6,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.373,
+        "sp500_return_3yr": 0.451
+      }
+    },
+    {
+      "case_id": "T5-068",
+      "ticker": "FOSL",
+      "company_name": "FOSL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2012-04-03",
+        "price": 134.39,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.38,
+        "sp500_return_3yr": 0.462
+      }
+    },
+    {
+      "case_id": "T5-069",
+      "ticker": "FRT",
+      "company_name": "FRT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-02-01",
+        "price": 104.22,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.046,
+        "sp500_return_3yr": 0.394
+      }
+    },
+    {
+      "case_id": "T5-070",
+      "ticker": "FTNT",
+      "company_name": "FTNT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-10-10",
+        "price": 15.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.856,
+        "sp500_return_3yr": 0.566
+      }
+    },
+    {
+      "case_id": "T5-071",
+      "ticker": "FTV",
+      "company_name": "FTV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-07-05",
+        "price": 29.43,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.687,
+        "sp500_return_3yr": 0.432
+      }
+    },
+    {
+      "case_id": "T5-072",
+      "ticker": "GEHC",
+      "company_name": "GEHC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2023-01-03",
+        "price": 55.73,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.486,
+        "sp500_return_3yr": 0.793
+      }
+    },
+    {
+      "case_id": "T5-073",
+      "ticker": "GEN",
+      "company_name": "GEN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-11-07",
+        "price": 20.11,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.269,
+        "sp500_return_3yr": 0.768
+      }
+    },
+    {
+      "case_id": "T5-074",
+      "ticker": "GL",
+      "company_name": "GL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-08-07",
+        "price": 81.37,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.171,
+        "sp500_return_3yr": 0.436
+      }
+    },
+    {
+      "case_id": "T5-075",
+      "ticker": "GOOG",
+      "company_name": "GOOG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-04-02",
+        "price": 28.04,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.483,
+        "sp500_return_3yr": 0.247
+      }
+    },
+    {
+      "case_id": "T5-076",
+      "ticker": "GPN",
+      "company_name": "GPN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-04-25",
+        "price": 69.46,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.952,
+        "sp500_return_3yr": 0.402
+      }
+    },
+    {
+      "case_id": "T5-077",
+      "ticker": "GRMN",
+      "company_name": "GRMN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2012-12-11",
+        "price": 27.86,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.039,
+        "sp500_return_3yr": 0.409
+      }
+    },
+    {
+      "case_id": "T5-078",
+      "ticker": "HCA",
+      "company_name": "HCA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2015-01-26",
+        "price": 67.76,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.33,
+        "sp500_return_3yr": 0.397
+      }
+    },
+    {
+      "case_id": "T5-079",
+      "ticker": "HII",
+      "company_name": "HII",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-01-02",
+        "price": 192.7,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.242,
+        "sp500_return_3yr": 0.373
+      }
+    },
+    {
+      "case_id": "T5-080",
+      "ticker": "HLT",
+      "company_name": "HLT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-06-19",
+        "price": 64.66,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.193,
+        "sp500_return_3yr": 0.27
+      }
+    },
+    {
+      "case_id": "T5-081",
+      "ticker": "HOLX",
+      "company_name": "HOLX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2016-03-29",
+        "price": 34.5,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.403,
+        "sp500_return_3yr": 0.379
+      }
+    },
+    {
+      "case_id": "T5-082",
+      "ticker": "HP",
+      "company_name": "HP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2010-03-01",
+        "price": 22.22,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.66,
+        "sp500_return_3yr": 0.358
+      }
+    },
+    {
+      "case_id": "T5-083",
+      "ticker": "HPE",
+      "company_name": "HPE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-11-02",
+        "price": 6.37,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.972,
+        "sp500_return_3yr": 0.302
+      }
+    },
+    {
+      "case_id": "T5-084",
+      "ticker": "HSIC",
+      "company_name": "HSIC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-03-17",
+        "price": 54.25,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.016,
+        "sp500_return_3yr": 0.327
+      }
+    },
+    {
+      "case_id": "T5-085",
+      "ticker": "IEX",
+      "company_name": "IEX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-08-08",
+        "price": 149.61,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.347,
+        "sp500_return_3yr": 0.409
+      }
+    },
+    {
+      "case_id": "T5-086",
+      "ticker": "ILMN",
+      "company_name": "ILMN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-11-18",
+        "price": 171.62,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.709,
+        "sp500_return_3yr": 0.291
+      }
+    },
+    {
+      "case_id": "T5-087",
+      "ticker": "INCY",
+      "company_name": "INCY",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-02-27",
+        "price": 134.02,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.434,
+        "sp500_return_3yr": 0.257
+      }
+    },
+    {
+      "case_id": "T5-088",
+      "ticker": "INVH",
+      "company_name": "INVH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-09-19",
+        "price": 32.64,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.114,
+        "sp500_return_3yr": 0.701
+      }
+    },
+    {
+      "case_id": "T5-089",
+      "ticker": "IPGP",
+      "company_name": "IPGP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-03-06",
+        "price": 241.44,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.145,
+        "sp500_return_3yr": 0.408
+      }
+    },
+    {
+      "case_id": "T5-090",
+      "ticker": "IQV",
+      "company_name": "IQV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-08-28",
+        "price": 95.55,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.687,
+        "sp500_return_3yr": 0.435
+      }
+    },
+    {
+      "case_id": "T5-091",
+      "ticker": "IT",
+      "company_name": "IT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-04-04",
+        "price": 108.7,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.155,
+        "sp500_return_3yr": 0.054
+      }
+    },
+    {
+      "case_id": "T5-092",
+      "ticker": "J",
+      "company_name": "J",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-12-09",
+        "price": 67.45,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.446,
+        "sp500_return_3yr": 0.255
+      }
+    },
+    {
+      "case_id": "T5-093",
+      "ticker": "JBHT",
+      "company_name": "JBHT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-06-30",
+        "price": 74.17,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.526,
+        "sp500_return_3yr": 0.318
+      }
+    },
+    {
+      "case_id": "T5-094",
+      "ticker": "JKHY",
+      "company_name": "JKHY",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-11-12",
+        "price": 129.16,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.154,
+        "sp500_return_3yr": 0.718
+      }
+    },
+    {
+      "case_id": "T5-095",
+      "ticker": "KDP",
+      "company_name": "KDP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-06-21",
+        "price": 31.63,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.036,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-096",
+      "ticker": "KEYS",
+      "company_name": "KEYS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-11-05",
+        "price": 58.34,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.148,
+        "sp500_return_3yr": 0.715
+      }
+    },
+    {
+      "case_id": "T5-097",
+      "ticker": "KMI",
+      "company_name": "KMI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2012-05-24",
+        "price": 16.32,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.493,
+        "sp500_return_3yr": 0.593
+      }
+    },
+    {
+      "case_id": "T5-098",
+      "ticker": "KMX",
+      "company_name": "KMX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2010-06-28",
+        "price": 20.93,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.231,
+        "sp500_return_3yr": 0.501
+      }
+    },
+    {
+      "case_id": "T5-099",
+      "ticker": "LDOS",
+      "company_name": "LDOS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-08-08",
+        "price": 76.69,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.225,
+        "sp500_return_3yr": 0.409
+      }
+    },
+    {
+      "case_id": "T5-100",
+      "ticker": "LIN",
+      "company_name": "LIN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-11-05",
+        "price": 144.62,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.159,
+        "sp500_return_3yr": 0.715
+      }
+    },
+    {
+      "case_id": "T5-101",
+      "ticker": "LKQ",
+      "company_name": "LKQ",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-05-23",
+        "price": 28.36,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.154,
+        "sp500_return_3yr": 0.395
+      }
+    },
+    {
+      "case_id": "T5-102",
+      "ticker": "LNT",
+      "company_name": "LNT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2016-06-30",
+        "price": 29.21,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.356,
+        "sp500_return_3yr": 0.412
+      }
+    },
+    {
+      "case_id": "T5-103",
+      "ticker": "LVS",
+      "company_name": "LVS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-10-02",
+        "price": 52.03,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.295,
+        "sp500_return_3yr": 0.274
+      }
+    },
+    {
+      "case_id": "T5-104",
+      "ticker": "LW",
+      "company_name": "LW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-12-03",
+        "price": 67.34,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.271,
+        "sp500_return_3yr": 0.64
+      }
+    },
+    {
+      "case_id": "T5-105",
+      "ticker": "LYB",
+      "company_name": "LYB",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2012-09-04",
+        "price": 22.72,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.965,
+        "sp500_return_3yr": 0.367
+      }
+    },
+    {
+      "case_id": "T5-106",
+      "ticker": "LYV",
+      "company_name": "LYV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-12-23",
+        "price": 70.44,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.002,
+        "sp500_return_3yr": 0.186
+      }
+    },
+    {
+      "case_id": "T5-107",
+      "ticker": "MAA",
+      "company_name": "MAA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-12-01",
+        "price": 64.21,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.673,
+        "sp500_return_3yr": 0.421
+      }
+    },
+    {
+      "case_id": "T5-108",
+      "ticker": "MAC",
+      "company_name": "MAC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2013-05-08",
+        "price": 35.13,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.351,
+        "sp500_return_3yr": 0.261
+      }
+    },
+    {
+      "case_id": "T5-109",
+      "ticker": "MGM",
+      "company_name": "MGM",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-07-25",
+        "price": 32.62,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.516,
+        "sp500_return_3yr": 0.298
+      }
+    },
+    {
+      "case_id": "T5-110",
+      "ticker": "MHK",
+      "company_name": "MHK",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2013-12-23",
+        "price": 145.43,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.396,
+        "sp500_return_3yr": 0.237
+      }
+    },
+    {
+      "case_id": "T5-111",
+      "ticker": "MLM",
+      "company_name": "MLM",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-07-01",
+        "price": 120.16,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.736,
+        "sp500_return_3yr": 0.228
+      }
+    },
+    {
+      "case_id": "T5-112",
+      "ticker": "MNST",
+      "company_name": "MNST",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2012-06-28",
+        "price": 11.44,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.958,
+        "sp500_return_3yr": 0.548
+      }
+    },
+    {
+      "case_id": "T5-113",
+      "ticker": "MOH",
+      "company_name": "MOH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-03-01",
+        "price": 311.88,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.035,
+        "sp500_return_3yr": 0.383
+      }
+    },
+    {
+      "case_id": "T5-114",
+      "ticker": "MOS",
+      "company_name": "MOS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2011-09-26",
+        "price": 44.4,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.19,
+        "sp500_return_3yr": 0.691
+      }
+    },
+    {
+      "case_id": "T5-115",
+      "ticker": "MPWR",
+      "company_name": "MPWR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-02-11",
+        "price": 370.98,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.938,
+        "sp500_return_3yr": 0.282
+      }
+    },
+    {
+      "case_id": "T5-116",
+      "ticker": "MRNA",
+      "company_name": "MRNA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-07-20",
+        "price": 307.33,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.606,
+        "sp500_return_3yr": 0.273
+      }
+    },
+    {
+      "case_id": "T5-117",
+      "ticker": "MTCH",
+      "company_name": "MTCH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-09-20",
+        "price": 147.11,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.757,
+        "sp500_return_3yr": 0.311
+      }
+    },
+    {
+      "case_id": "T5-118",
+      "ticker": "MTD",
+      "company_name": "MTD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-09-06",
+        "price": 404.81,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.694,
+        "sp500_return_3yr": 0.361
+      }
+    },
+    {
+      "case_id": "T5-119",
+      "ticker": "NAVI",
+      "company_name": "NAVI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-04-30",
+        "price": 9.53,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.058,
+        "sp500_return_3yr": 0.268
+      }
+    },
+    {
+      "case_id": "T5-120",
+      "ticker": "NCLH",
+      "company_name": "NCLH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-10-12",
+        "price": 58.86,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.693,
+        "sp500_return_3yr": 0.385
+      }
+    },
+    {
+      "case_id": "T5-121",
+      "ticker": "NDSN",
+      "company_name": "NDSN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-02-14",
+        "price": 211.09,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.007,
+        "sp500_return_3yr": 0.389
+      }
+    },
+    {
+      "case_id": "T5-122",
+      "ticker": "NKTR",
+      "company_name": "NKTR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-03-19",
+        "price": 1575.15,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.79,
+        "sp500_return_3yr": 0.443
+      }
+    },
+    {
+      "case_id": "T5-123",
+      "ticker": "NOW",
+      "company_name": "NOW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-11-20",
+        "price": 56.6,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.369,
+        "sp500_return_3yr": 0.271
+      }
+    },
+    {
+      "case_id": "T5-124",
+      "ticker": "NRG",
+      "company_name": "NRG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2010-01-28",
+        "price": 18.46,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.038,
+        "sp500_return_3yr": 0.383
+      }
+    },
+    {
+      "case_id": "T5-125",
+      "ticker": "NVR",
+      "company_name": "NVR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-09-25",
+        "price": 3575,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.105,
+        "sp500_return_3yr": 0.225
+      }
+    },
+    {
+      "case_id": "T5-126",
+      "ticker": "NWS",
+      "company_name": "NWS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2015-09-21",
+        "price": 11.41,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.062,
+        "sp500_return_3yr": 0.49
+      }
+    },
+    {
+      "case_id": "T5-127",
+      "ticker": "NWSA",
+      "company_name": "NWSA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2013-07-01",
+        "price": 12.93,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.22,
+        "sp500_return_3yr": 0.3
+      }
+    },
+    {
+      "case_id": "T5-128",
+      "ticker": "NXPI",
+      "company_name": "NXPI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 184.2,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.295,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-129",
+      "ticker": "O",
+      "company_name": "O",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2015-04-06",
+        "price": 29.4,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.175,
+        "sp500_return_3yr": 0.252
+      }
+    },
+    {
+      "case_id": "T5-130",
+      "ticker": "ODFL",
+      "company_name": "ODFL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-12-09",
+        "price": 60.52,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.331,
+        "sp500_return_3yr": 0.264
+      }
+    },
+    {
+      "case_id": "T5-131",
+      "ticker": "OGN",
+      "company_name": "OGN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-06-03",
+        "price": 30.2,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.333,
+        "sp500_return_3yr": 0.26
+      }
+    },
+    {
+      "case_id": "T5-132",
+      "ticker": "OKE",
+      "company_name": "OKE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2010-03-15",
+        "price": 8.72,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.138,
+        "sp500_return_3yr": 0.359
+      }
+    },
+    {
+      "case_id": "T5-133",
+      "ticker": "ON",
+      "company_name": "ON",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-06-21",
+        "price": 51.95,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.017,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-134",
+      "ticker": "OTIS",
+      "company_name": "OTIS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-04-02",
+        "price": 40.22,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.991,
+        "sp500_return_3yr": 0.632
+      }
+    },
+    {
+      "case_id": "T5-135",
+      "ticker": "PCG",
+      "company_name": "PCG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-10-03",
+        "price": 12.96,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.202,
+        "sp500_return_3yr": 0.826
+      }
+    },
+    {
+      "case_id": "T5-136",
+      "ticker": "PENN",
+      "company_name": "PENN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 113.16,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.845,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-137",
+      "ticker": "PKG",
+      "company_name": "PKG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-07-25",
+        "price": 84.06,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.032,
+        "sp500_return_3yr": 0.298
+      }
+    },
+    {
+      "case_id": "T5-138",
+      "ticker": "PNR",
+      "company_name": "PNR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2012-10-01",
+        "price": 22.71,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.267,
+        "sp500_return_3yr": 0.329
+      }
+    },
+    {
+      "case_id": "T5-139",
+      "ticker": "PRGO",
+      "company_name": "PRGO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2011-12-19",
+        "price": 76.33,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.697,
+        "sp500_return_3yr": 0.71
+      }
+    },
+    {
+      "case_id": "T5-140",
+      "ticker": "PSX",
+      "company_name": "PSX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2012-04-30",
+        "price": 21.34,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.48,
+        "sp500_return_3yr": 0.492
+      }
+    },
+    {
+      "case_id": "T5-141",
+      "ticker": "PTC",
+      "company_name": "PTC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2021-04-19",
+        "price": 139.8,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.262,
+        "sp500_return_3yr": 0.193
+      }
+    },
+    {
+      "case_id": "T5-142",
+      "ticker": "PVH",
+      "company_name": "PVH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2013-02-13",
+        "price": 118.21,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.389,
+        "sp500_return_3yr": 0.227
+      }
+    },
+    {
+      "case_id": "T5-143",
+      "ticker": "QRVO",
+      "company_name": "QRVO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-06-11",
+        "price": 82,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.026,
+        "sp500_return_3yr": 0.319
+      }
+    },
+    {
+      "case_id": "T5-144",
+      "ticker": "RCL",
+      "company_name": "RCL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2014-12-04",
+        "price": 67.26,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.708,
+        "sp500_return_3yr": 0.274
+      }
+    },
+    {
+      "case_id": "T5-145",
+      "ticker": "REG",
+      "company_name": "REG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-03-01",
+        "price": 47.72,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.019,
+        "sp500_return_3yr": 0.29
+      }
+    },
+    {
+      "case_id": "T5-146",
+      "ticker": "REGN",
+      "company_name": "REGN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-04-30",
+        "price": 213.7,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.751,
+        "sp500_return_3yr": 0.293
+      }
+    },
+    {
+      "case_id": "T5-147",
+      "ticker": "RIG",
+      "company_name": "RIG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2013-10-28",
+        "price": 42.01,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.757,
+        "sp500_return_3yr": 0.207
+      }
+    },
+    {
+      "case_id": "T5-148",
+      "ticker": "RJF",
+      "company_name": "RJF",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-03-20",
+        "price": 45.34,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.102,
+        "sp500_return_3yr": 0.015
+      }
+    },
+    {
+      "case_id": "T5-149",
+      "ticker": "RMD",
+      "company_name": "RMD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-07-25",
+        "price": 71.03,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.714,
+        "sp500_return_3yr": 0.298
+      }
+    },
+    {
+      "case_id": "T5-150",
+      "ticker": "ROL",
+      "company_name": "ROL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-10-01",
+        "price": 23.94,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.391,
+        "sp500_return_3yr": 0.473
+      }
+    },
+    {
+      "case_id": "T5-151",
+      "ticker": "SBAC",
+      "company_name": "SBAC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-08-31",
+        "price": 140.87,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.009,
+        "sp500_return_3yr": 0.416
+      }
+    },
+    {
+      "case_id": "T5-152",
+      "ticker": "SIG",
+      "company_name": "SIG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-07-28",
+        "price": 98.68,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.472,
+        "sp500_return_3yr": 0.347
+      }
+    },
+    {
+      "case_id": "T5-153",
+      "ticker": "SLG",
+      "company_name": "SLG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-03-23",
+        "price": 77.07,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.219,
+        "sp500_return_3yr": 0.256
+      }
+    },
+    {
+      "case_id": "T5-154",
+      "ticker": "SNPS",
+      "company_name": "SNPS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2017-03-15",
+        "price": 70.25,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.605,
+        "sp500_return_3yr": 0
+      }
+    },
+    {
+      "case_id": "T5-155",
+      "ticker": "STE",
+      "company_name": "STE",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2019-12-23",
+        "price": 143.28,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.233,
+        "sp500_return_3yr": 0.186
+      }
+    },
+    {
+      "case_id": "T5-156",
+      "ticker": "STLD",
+      "company_name": "STLD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-12-21",
+        "price": 99.93,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.754,
+        "sp500_return_3yr": 0.774
+      }
+    },
+    {
+      "case_id": "T5-157",
+      "ticker": "STX",
+      "company_name": "STX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2012-07-02",
+        "price": 13.41,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.169,
+        "sp500_return_3yr": 0.521
+      }
+    },
+    {
+      "case_id": "T5-158",
+      "ticker": "SWKS",
+      "company_name": "SWKS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2015-03-11",
+        "price": 73.4,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.299,
+        "sp500_return_3yr": 0.364
+      }
+    },
+    {
+      "case_id": "T5-159",
+      "ticker": "TDG",
+      "company_name": "TDG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-06-02",
+        "price": 166.14,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.971,
+        "sp500_return_3yr": 0.304
+      }
+    },
+    {
+      "case_id": "T5-160",
+      "ticker": "TDY",
+      "company_name": "TDY",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-22",
+        "price": 325.65,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.234,
+        "sp500_return_3yr": 0.4
+      }
+    },
+    {
+      "case_id": "T5-161",
+      "ticker": "TECH",
+      "company_name": "TECH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-08-30",
+        "price": 123.97,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.404,
+        "sp500_return_3yr": 0.235
+      }
+    },
+    {
+      "case_id": "T5-162",
+      "ticker": "TEL",
+      "company_name": "TEL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2011-10-17",
+        "price": 25.84,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.647,
+        "sp500_return_3yr": 0.551
+      }
+    },
+    {
+      "case_id": "T5-163",
+      "ticker": "TER",
+      "company_name": "TER",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-09-21",
+        "price": 75.28,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.262,
+        "sp500_return_3yr": 0.342
+      }
+    },
+    {
+      "case_id": "T5-164",
+      "ticker": "TFC",
+      "company_name": "TFC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-12-09",
+        "price": 41.05,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.138,
+        "sp500_return_3yr": 0.264
+      }
+    },
+    {
+      "case_id": "T5-165",
+      "ticker": "TFX",
+      "company_name": "TFX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-01-17",
+        "price": 243.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.294,
+        "sp500_return_3yr": 0.736
+      }
+    },
+    {
+      "case_id": "T5-166",
+      "ticker": "TMUS",
+      "company_name": "TMUS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-07-15",
+        "price": 76.26,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.711,
+        "sp500_return_3yr": 0.257
+      }
+    },
+    {
+      "case_id": "T5-167",
+      "ticker": "TRGP",
+      "company_name": "TRGP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2022-10-11",
+        "price": 60.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.473,
+        "sp500_return_3yr": 0.826
+      }
+    },
+    {
+      "case_id": "T5-168",
+      "ticker": "TRIP",
+      "company_name": "TRIP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2011-12-20",
+        "price": 26.9,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.501,
+        "sp500_return_3yr": 0.668
+      }
+    },
+    {
+      "case_id": "T5-169",
+      "ticker": "TRMB",
+      "company_name": "TRMB",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-01-20",
+        "price": 71.42,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.3,
+        "sp500_return_3yr": 0.256
+      }
+    },
+    {
+      "case_id": "T5-170",
+      "ticker": "TSCO",
+      "company_name": "TSCO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-01-23",
+        "price": 12.08,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.07,
+        "sp500_return_3yr": 0.239
+      }
+    },
+    {
+      "case_id": "T5-171",
+      "ticker": "TSLA",
+      "company_name": "TSLA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-12-21",
+        "price": 216.62,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.141,
+        "sp500_return_3yr": 0.272
+      }
+    },
+    {
+      "case_id": "T5-172",
+      "ticker": "TTWO",
+      "company_name": "TTWO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2018-03-19",
+        "price": 104.5,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.6,
+        "sp500_return_3yr": 0.443
+      }
+    },
+    {
+      "case_id": "T5-173",
+      "ticker": "TYL",
+      "company_name": "TYL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-06-22",
+        "price": 338.3,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.159,
+        "sp500_return_3yr": 0.4
+      }
+    },
+    {
+      "case_id": "T5-174",
+      "ticker": "UA",
+      "company_name": "UA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-04-07",
+        "price": 41.27,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.527,
+        "sp500_return_3yr": 0.418
+      }
+    },
+    {
+      "case_id": "T5-175",
+      "ticker": "UAA",
+      "company_name": "UAA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-04-30",
+        "price": 24.44,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.134,
+        "sp500_return_3yr": 0.268
+      }
+    },
+    {
+      "case_id": "T5-176",
+      "ticker": "UAL",
+      "company_name": "UAL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2015-09-02",
+        "price": 57.29,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.541,
+        "sp500_return_3yr": 0.486
+      }
+    },
+    {
+      "case_id": "T5-177",
+      "ticker": "UDR",
+      "company_name": "UDR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2016-03-07",
+        "price": 24.98,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.377,
+        "sp500_return_3yr": 0.385
+      }
+    },
+    {
+      "case_id": "T5-178",
+      "ticker": "UHS",
+      "company_name": "UHS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2014-09-22",
+        "price": 107.95,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.032,
+        "sp500_return_3yr": 0.254
+      }
+    },
+    {
+      "case_id": "T5-179",
+      "ticker": "ULTA",
+      "company_name": "ULTA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2016-04-18",
+        "price": 206.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.712,
+        "sp500_return_3yr": 0.385
+      }
+    },
+    {
+      "case_id": "T5-180",
+      "ticker": "URBN",
+      "company_name": "URBN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2010-02-08",
+        "price": 30.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.397,
+        "sp500_return_3yr": 0.428
+      }
+    },
+    {
+      "case_id": "T5-181",
+      "ticker": "URI",
+      "company_name": "URI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2014-09-22",
+        "price": 110.98,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.133,
+        "sp500_return_3yr": 0.254
+      }
+    },
+    {
+      "case_id": "T5-182",
+      "ticker": "VICI",
+      "company_name": "VICI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-06-07",
+        "price": 25.86,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.147,
+        "sp500_return_3yr": 0.442
+      }
+    },
+    {
+      "case_id": "T5-183",
+      "ticker": "VNT",
+      "company_name": "VNT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2020-10-12",
+        "price": 27.41,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.144,
+        "sp500_return_3yr": 0.238
+      }
+    },
+    {
+      "case_id": "T5-184",
+      "ticker": "VRSK",
+      "company_name": "VRSK",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2015-10-07",
+        "price": 77.16,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.472,
+        "sp500_return_3yr": 0.445
+      }
+    },
+    {
+      "case_id": "T5-185",
+      "ticker": "VRTX",
+      "company_name": "VRTX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2013-09-23",
+        "price": 75.59,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.219,
+        "sp500_return_3yr": 0.279
+      }
+    },
+    {
+      "case_id": "T5-186",
+      "ticker": "VTRS",
+      "company_name": "VTRS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2020-11-16",
+        "price": 12.85,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.362,
+        "sp500_return_3yr": 0.243
+      }
+    },
+    {
+      "case_id": "T5-187",
+      "ticker": "WAB",
+      "company_name": "WAB",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-02-26",
+        "price": 70.94,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.301,
+        "sp500_return_3yr": 0.569
+      }
+    },
+    {
+      "case_id": "T5-188",
+      "ticker": "WRB",
+      "company_name": "WRB",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-12-04",
+        "price": 26.68,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.712,
+        "sp500_return_3yr": 0.285
+      }
+    },
+    {
+      "case_id": "T5-189",
+      "ticker": "WTW",
+      "company_name": "WTW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2022-01-10",
+        "price": 220.56,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.403,
+        "sp500_return_3yr": 0.248
+      }
+    },
+    {
+      "case_id": "T5-190",
+      "ticker": "XYL",
+      "company_name": "XYL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2011-10-31",
+        "price": 22.04,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.431,
+        "sp500_return_3yr": 0.61
+      }
+    },
+    {
+      "case_id": "T5-191",
+      "ticker": "ZBRA",
+      "company_name": "ZBRA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-12-23",
+        "price": 256.73,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.036,
+        "sp500_return_3yr": 0.186
+      }
+    },
+    {
+      "case_id": "T5-192",
+      "ticker": "ZTS",
+      "company_name": "ZTS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-06-24",
+        "price": 27.41,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.616,
+        "sp500_return_3yr": 0.343
+      }
+    },
+    {
+      "case_id": "T5-193",
+      "ticker": "AIV",
+      "company_name": "AIV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-12-21",
+        "price": 2.42,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.59,
+        "sp500_return_3yr": 0.272
+      }
+    },
+    {
+      "case_id": "T5-194",
+      "ticker": "AMD",
+      "company_name": "AMD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-09-23",
+        "price": 3.79,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.681,
+        "sp500_return_3yr": 0.279
+      }
+    },
+    {
+      "case_id": "T5-195",
+      "ticker": "AMG",
+      "company_name": "AMG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-12-23",
+        "price": 85.25,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.821,
+        "sp500_return_3yr": 0.186
+      }
+    },
+    {
+      "case_id": "T5-196",
+      "ticker": "AN",
+      "company_name": "AN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2017-08-07",
+        "price": 40.34,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.322,
+        "sp500_return_3yr": 0.351
+      }
+    },
+    {
+      "case_id": "T5-197",
+      "ticker": "ANF",
+      "company_name": "ANF",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2013-12-23",
+        "price": 25.84,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.601,
+        "sp500_return_3yr": 0.237
+      }
+    },
+    {
+      "case_id": "T5-198",
+      "ticker": "ATI",
+      "company_name": "ATI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-07-01",
+        "price": 29.15,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.134,
+        "sp500_return_3yr": 0.313
+      }
+    },
+    {
+      "case_id": "T5-199",
+      "ticker": "AYI",
+      "company_name": "AYI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-06-18",
+        "price": 119.97,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.498,
+        "sp500_return_3yr": 0.522
+      }
+    },
+    {
+      "case_id": "T5-200",
+      "ticker": "BBT",
+      "company_name": "BBT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-12-09",
+        "price": 26.31,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.049,
+        "sp500_return_3yr": 0.264
+      }
+    },
+    {
+      "case_id": "T5-201",
+      "ticker": "BHF",
+      "company_name": "BHF",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2019-04-01",
+        "price": 38.24,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.371,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-202",
+      "ticker": "CNX",
+      "company_name": "CNX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2016-03-03",
+        "price": 8.58,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.282,
+        "sp500_return_3yr": 0.401
+      }
+    },
+    {
+      "case_id": "T5-203",
+      "ticker": "COTY",
+      "company_name": "COTY",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-09-21",
+        "price": 3.02,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.967,
+        "sp500_return_3yr": 0.342
+      }
+    },
+    {
+      "case_id": "T5-204",
+      "ticker": "CPRI",
+      "company_name": "CPRI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-05-11",
+        "price": 14.31,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.665,
+        "sp500_return_3yr": 0.41
+      }
+    },
+    {
+      "case_id": "T5-205",
+      "ticker": "DD",
+      "company_name": "DD",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-08-31",
+        "price": 33.47,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.372,
+        "sp500_return_3yr": 0.416
+      }
+    },
+    {
+      "case_id": "T5-206",
+      "ticker": "DXC",
+      "company_name": "DXC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-11-30",
+        "price": 25.19,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.399,
+        "sp500_return_3yr": 0.327
+      }
+    },
+    {
+      "case_id": "T5-207",
+      "ticker": "EP",
+      "company_name": "EP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2012-05-24",
+        "price": 0.96,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.583,
+        "sp500_return_3yr": 0.593
+      }
+    },
+    {
+      "case_id": "T5-208",
+      "ticker": "EQT",
+      "company_name": "EQT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-11-12",
+        "price": 17.39,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.151,
+        "sp500_return_3yr": 0.718
+      }
+    },
+    {
+      "case_id": "T5-209",
+      "ticker": "FCPT",
+      "company_name": "FCPT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2015-11-16",
+        "price": 7.89,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.365,
+        "sp500_return_3yr": 0.333
+      }
+    },
+    {
+      "case_id": "T5-210",
+      "ticker": "FHN",
+      "company_name": "FHN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2013-06-24",
+        "price": 7.32,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.384,
+        "sp500_return_3yr": 0.343
+      }
+    },
+    {
+      "case_id": "T5-211",
+      "ticker": "FLS",
+      "company_name": "FLS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 35.57,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.251,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-212",
+      "ticker": "FOSL",
+      "company_name": "FOSL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-01-04",
+        "price": 34.29,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.519,
+        "sp500_return_3yr": 0.258
+      }
+    },
+    {
+      "case_id": "T5-213",
+      "ticker": "FTI",
+      "company_name": "FTI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-02-11",
+        "price": 7.55,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.506,
+        "sp500_return_3yr": 0.282
+      }
+    },
+    {
+      "case_id": "T5-214",
+      "ticker": "GHC",
+      "company_name": "GHC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-09-22",
+        "price": 382.48,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.358,
+        "sp500_return_3yr": 0.254
+      }
+    },
+    {
+      "case_id": "T5-215",
+      "ticker": "GME",
+      "company_name": "GME",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-04-25",
+        "price": 6.4,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.648,
+        "sp500_return_3yr": 0.402
+      }
+    },
+    {
+      "case_id": "T5-216",
+      "ticker": "GNW",
+      "company_name": "GNW",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-11-17",
+        "price": 4.63,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.011,
+        "sp500_return_3yr": 0.334
+      }
+    },
+    {
+      "case_id": "T5-217",
+      "ticker": "GT",
+      "company_name": "GT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-02-26",
+        "price": 18.98,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.183,
+        "sp500_return_3yr": 0.569
+      }
+    },
+    {
+      "case_id": "T5-218",
+      "ticker": "HOG",
+      "company_name": "HOG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2020-06-22",
+        "price": 22.01,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.448,
+        "sp500_return_3yr": 0.4
+      }
+    },
+    {
+      "case_id": "T5-219",
+      "ticker": "HP",
+      "company_name": "HP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-05-21",
+        "price": 14.7,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.994,
+        "sp500_return_3yr": 0.422
+      }
+    },
+    {
+      "case_id": "T5-220",
+      "ticker": "HRB",
+      "company_name": "HRB",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2020-09-21",
+        "price": 11.68,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.29,
+        "sp500_return_3yr": 0.342
+      }
+    },
+    {
+      "case_id": "T5-221",
+      "ticker": "IPGP",
+      "company_name": "IPGP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-21",
+        "price": 93.21,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.292,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-222",
+      "ticker": "ITT",
+      "company_name": "ITT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2011-10-31",
+        "price": 12.77,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 2.105,
+        "sp500_return_3yr": 0.61
+      }
+    },
+    {
+      "case_id": "T5-223",
+      "ticker": "JBL",
+      "company_name": "JBL",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-11-04",
+        "price": 18.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.403,
+        "sp500_return_3yr": 0.286
+      }
+    },
+    {
+      "case_id": "T5-224",
+      "ticker": "JEF",
+      "company_name": "JEF",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-09-25",
+        "price": 14.48,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.74,
+        "sp500_return_3yr": 0.225
+      }
+    },
+    {
+      "case_id": "T5-225",
+      "ticker": "KDP",
+      "company_name": "KDP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-07-02",
+        "price": 16.63,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.888,
+        "sp500_return_3yr": 0.584
+      }
+    },
+    {
+      "case_id": "T5-226",
+      "ticker": "LDOS",
+      "company_name": "LDOS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-09-23",
+        "price": 21.47,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.738,
+        "sp500_return_3yr": 0.279
+      }
+    },
+    {
+      "case_id": "T5-227",
+      "ticker": "LEG",
+      "company_name": "LEG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-12-20",
+        "price": 31.88,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.7,
+        "sp500_return_3yr": 0.284
+      }
+    },
+    {
+      "case_id": "T5-228",
+      "ticker": "MAC",
+      "company_name": "MAC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-12-23",
+        "price": 18.78,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.475,
+        "sp500_return_3yr": 0.186
+      }
+    },
+    {
+      "case_id": "T5-229",
+      "ticker": "MAT",
+      "company_name": "MAT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-06-06",
+        "price": 10.79,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.274,
+        "sp500_return_3yr": 0.449
+      }
+    },
+    {
+      "case_id": "T5-230",
+      "ticker": "MUR",
+      "company_name": "MUR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-07-25",
+        "price": 18.89,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.39,
+        "sp500_return_3yr": 0.298
+      }
+    },
+    {
+      "case_id": "T5-231",
+      "ticker": "NAVI",
+      "company_name": "NAVI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2018-06-04",
+        "price": 9.95,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.524,
+        "sp500_return_3yr": 0.54
+      }
+    },
+    {
+      "case_id": "T5-232",
+      "ticker": "NBR",
+      "company_name": "NBR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2015-03-23",
+        "price": 576.94,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.418,
+        "sp500_return_3yr": 0.256
+      }
+    },
+    {
+      "case_id": "T5-233",
+      "ticker": "NKTR",
+      "company_name": "NKTR",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-10-02",
+        "price": 259.95,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.819,
+        "sp500_return_3yr": 0.274
+      }
+    },
+    {
+      "case_id": "T5-234",
+      "ticker": "NOV",
+      "company_name": "NOV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2021-09-20",
+        "price": 11.84,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.36,
+        "sp500_return_3yr": 0.311
+      }
+    },
+    {
+      "case_id": "T5-235",
+      "ticker": "NYT",
+      "company_name": "NYT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2010-12-20",
+        "price": 8.76,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.442,
+        "sp500_return_3yr": 0.451
+      }
+    },
+    {
+      "case_id": "T5-236",
+      "ticker": "OI",
+      "company_name": "OI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-12-01",
+        "price": 18,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.455,
+        "sp500_return_3yr": 0.421
+      }
+    },
+    {
+      "case_id": "T5-237",
+      "ticker": "PBI",
+      "company_name": "PBI",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-02-28",
+        "price": 8.91,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.699,
+        "sp500_return_3yr": 0.25
+      }
+    },
+    {
+      "case_id": "T5-238",
+      "ticker": "PCG",
+      "company_name": "PCG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2019-01-17",
+        "price": 6.29,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.998,
+        "sp500_return_3yr": 0.736
+      }
+    },
+    {
+      "case_id": "T5-239",
+      "ticker": "PENN",
+      "company_name": "PENN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-09-19",
+        "price": 31.41,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.388,
+        "sp500_return_3yr": 0.701
+      }
+    },
+    {
+      "case_id": "T5-240",
+      "ticker": "PRGO",
+      "company_name": "PRGO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-09-20",
+        "price": 36.84,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.294,
+        "sp500_return_3yr": 0.311
+      }
+    },
+    {
+      "case_id": "T5-241",
+      "ticker": "PVH",
+      "company_name": "PVH",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2022-09-19",
+        "price": 54.64,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.589,
+        "sp500_return_3yr": 0.701
+      }
+    },
+    {
+      "case_id": "T5-242",
+      "ticker": "R",
+      "company_name": "R",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-19",
+        "price": 51.86,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.366,
+        "sp500_return_3yr": 0.27
+      }
+    },
+    {
+      "case_id": "T5-243",
+      "ticker": "RIG",
+      "company_name": "RIG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-07-25",
+        "price": 8.77,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.75,
+        "sp500_return_3yr": 0.298
+      }
+    },
+    {
+      "case_id": "T5-244",
+      "ticker": "RRC",
+      "company_name": "RRC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2018-06-18",
+        "price": 15.49,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.122,
+        "sp500_return_3yr": 0.522
+      }
+    },
+    {
+      "case_id": "T5-245",
+      "ticker": "SIG",
+      "company_name": "SIG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2018-03-19",
+        "price": 33.43,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.738,
+        "sp500_return_3yr": 0.443
+      }
+    },
+    {
+      "case_id": "T5-246",
+      "ticker": "SLG",
+      "company_name": "SLG",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 52.26,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.043,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-247",
+      "ticker": "SLM",
+      "company_name": "SLM",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2014-04-30",
+        "price": 8.03,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.385,
+        "sp500_return_3yr": 0.268
+      }
+    },
+    {
+      "case_id": "T5-248",
+      "ticker": "SUN",
+      "company_name": "SUN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2012-10-04",
+        "price": 7.82,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.659,
+        "sp500_return_3yr": 0.36
+      }
+    },
+    {
+      "case_id": "T5-249",
+      "ticker": "TDC",
+      "company_name": "TDC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-19",
+        "price": 28.66,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.283,
+        "sp500_return_3yr": 0.27
+      }
+    },
+    {
+      "case_id": "T5-250",
+      "ticker": "TER",
+      "company_name": "TER",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-12-23",
+        "price": 15.83,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.538,
+        "sp500_return_3yr": 0.237
+      }
+    },
+    {
+      "case_id": "T5-251",
+      "ticker": "TGNA",
+      "company_name": "TGNA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-06-01",
+        "price": 12.47,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.181,
+        "sp500_return_3yr": 0.257
+      }
+    },
+    {
+      "case_id": "T5-252",
+      "ticker": "THC",
+      "company_name": "THC",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2016-04-18",
+        "price": 31.87,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.28,
+        "sp500_return_3yr": 0.385
+      }
+    },
+    {
+      "case_id": "T5-253",
+      "ticker": "TMUS",
+      "company_name": "TMUS",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2013-04-30",
+        "price": 18.86,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.002,
+        "sp500_return_3yr": 0.293
+      }
+    },
+    {
+      "case_id": "T5-254",
+      "ticker": "TRIP",
+      "company_name": "TRIP",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2019-12-23",
+        "price": 29.89,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.415,
+        "sp500_return_3yr": 0.186
+      }
+    },
+    {
+      "case_id": "T5-255",
+      "ticker": "UA",
+      "company_name": "UA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-21",
+        "price": 8.08,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.184,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-256",
+      "ticker": "UAA",
+      "company_name": "UAA",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2022-06-21",
+        "price": 8.87,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.207,
+        "sp500_return_3yr": 0.585
+      }
+    },
+    {
+      "case_id": "T5-257",
+      "ticker": "UNM",
+      "company_name": "UNM",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "winner",
+      "entry": {
+        "date": "2021-09-20",
+        "price": 20.75,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 1.646,
+        "sp500_return_3yr": 0.311
+      }
+    },
+    {
+      "case_id": "T5-258",
+      "ticker": "URBN",
+      "company_name": "URBN",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2017-03-20",
+        "price": 23.18,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.305,
+        "sp500_return_3yr": 0.015
+      }
+    },
+    {
+      "case_id": "T5-259",
+      "ticker": "VIAV",
+      "company_name": "VIAV",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2013-12-23",
+        "price": 7.17,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.16,
+        "sp500_return_3yr": 0.237
+      }
+    },
+    {
+      "case_id": "T5-260",
+      "ticker": "VNO",
+      "company_name": "VNO",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "underperform",
+      "entry": {
+        "date": "2023-01-03",
+        "price": 19.69,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.699,
+        "sp500_return_3yr": 0.793
+      }
+    },
+    {
+      "case_id": "T5-261",
+      "ticker": "VNT",
+      "company_name": "VNT",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "mixed",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 31.66,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": 0.414,
+        "sp500_return_3yr": 0.33
+      }
+    },
+    {
+      "case_id": "T5-262",
+      "ticker": "WU",
+      "company_name": "WU",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-12-20",
+        "price": 12.4,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.258,
+        "sp500_return_3yr": 0.284
+      }
+    },
+    {
+      "case_id": "T5-263",
+      "ticker": "XRX",
+      "company_name": "XRX",
+      "tier": 5,
+      "dataset_role": "sp500_expansion",
+      "outcome": "trap",
+      "entry": {
+        "date": "2021-03-22",
+        "price": 18.33,
+        "sector": null,
+        "industry": null
+      },
+      "forward_returns": {
+        "return_3yr": -0.185,
+        "sp500_return_3yr": 0.33
+      }
+    }
+  ]
+}
