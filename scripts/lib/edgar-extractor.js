@@ -5,7 +5,9 @@ const VALID_FORMS = new Set(['10-K', '10-K/A', '10-Q', '10-Q/A', '20-F', '20-F/A
 const NAMESPACES = ['us-gaap', 'ifrs-full'];
 const ALL_NAMESPACES = ['us-gaap', 'ifrs-full', 'dei']; // dei for employee counts
 
-// Extract ALL USD values from a companyfacts JSON object
+// Extract ALL monetary values from a companyfacts JSON object
+// Checks USD first, then falls back to any other currency (EUR, GBP, JPY, etc.)
+// for international/ADR companies filing 20-F
 export function extractAllUsdValues(facts) {
   if (!facts?.facts) return [];
 
@@ -16,10 +18,16 @@ export function extractAllUsdValues(facts) {
     if (!nsFacts) continue;
 
     for (const [tag, tagData] of Object.entries(nsFacts)) {
-      const usdEntries = tagData?.units?.USD;
-      if (!usdEntries) continue;
+      // Try USD first, then any currency
+      let entries = tagData?.units?.USD;
+      if (!entries || entries.length === 0) {
+        const unitKeys = Object.keys(tagData?.units || {});
+        const currencyKey = unitKeys.find(k => k !== 'pure' && k !== 'shares' && k !== '');
+        entries = currencyKey ? tagData.units[currencyKey] : null;
+      }
+      if (!entries) continue;
 
-      for (const entry of usdEntries) {
+      for (const entry of entries) {
         if (!VALID_FORMS.has(entry.form)) continue;
         const val = Math.abs(entry.val);
         if (val === 0) continue;
@@ -143,10 +151,10 @@ export function extractKeyMetricDigits(facts, beforeDate) {
     return null;
   };
 
-  const revenue = findMostRecent(['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax', 'SalesRevenueNet', 'SalesRevenueGoodsNet']);
-  const assets = findMostRecent(['Assets']);
-  const ocf = findMostRecent(['NetCashProvidedByOperatingActivities']);
-  const netIncome = findMostRecent(['NetIncomeLoss']);
+  const revenue = findMostRecent(getCombinedMetricTags('revenue'));
+  const assets = findMostRecent(getCombinedMetricTags('assets'));
+  const ocf = findMostRecent(getCombinedMetricTags('ocf'));
+  const netIncome = findMostRecent(getCombinedMetricTags('netIncome'));
 
   const leadingDigit = (n) => n ? parseInt(n.toExponential().charAt(0)) : null;
 
@@ -162,7 +170,63 @@ export function extractKeyMetricDigits(facts, beforeDate) {
 // QUARTERLY METRIC EXTRACTION (for nonlinear dynamics tests)
 // ============================================
 
+// ============================================
+// IFRS ↔ US GAAP TAG MAPPING
+// ============================================
+// ADR companies filing 20-F use IFRS XBRL tags under the ifrs-full namespace.
+// This mapping lets the extractor find the same metrics regardless of accounting standard.
+// Primary IFRS tags listed first, then common alternatives.
+
+const IFRS_METRIC_TAGS = {
+  revenue: ['Revenue', 'RevenueFromContractsWithCustomers', 'RevenueFromSaleOfGoods', 'RevenueFromRenderingOfServices'],
+  assets: ['Assets'],
+  operatingIncome: ['ProfitLossFromOperatingActivities', 'OperatingIncomeLoss'],
+  netIncome: ['ProfitLoss', 'ProfitLossAttributableToOwnersOfParent'],
+  ocf: ['CashFlowsFromUsedInOperatingActivities', 'CashFlowsFromUsedInOperations'],
+  grossProfit: ['GrossProfit'],
+  costOfRevenue: ['CostOfSales', 'CostOfMerchandiseSold'],
+  employees: ['NumberOfEmployees'],
+  equity: ['Equity', 'EquityAttributableToOwnersOfParent'],
+  totalLiabilities: ['Liabilities'],
+  operatingExpenses: ['OtherExpenseByNature', 'AdministrativeExpense'],
+  capex: ['PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities', 'AdditionsToPropertyPlantAndEquipment'],
+  rAndD: ['ResearchAndDevelopmentExpense'],
+  sga: ['SellingGeneralAndAdministrativeExpense', 'DistributionCosts', 'AdministrativeExpense'],
+  accountsReceivable: ['TradeAndOtherCurrentReceivables', 'CurrentTradeReceivables', 'TradeReceivables'],
+  inventory: ['Inventories', 'CurrentInventories'],
+  deferredRevenue: ['ContractLiabilities', 'DeferredIncome', 'DeferredIncomeClassifiedAsCurrent'],
+  goodwill: ['Goodwill'],
+  longTermDebt: ['NoncurrentPortionOfNoncurrentBorrowings', 'NoncurrentBorrowings', 'LongtermBorrowings', 'BorrowingsNoncurrent'],
+  sharesOutstanding: ['OrdinarySharesIssued', 'IssuedCapital'],
+  dividendsPerShare: ['DividendsPerShare', 'DividendsPaidPerShare'],
+  eps: ['DilutedEarningsLossPerShare', 'BasicEarningsLossPerShare'],
+};
+
+// Detect whether a companyfacts JSON uses IFRS or US GAAP
+// Also detects foreign filers using us-gaap namespace but reporting in non-USD currency
+export function detectAccountingStandard(facts) {
+  if (!facts?.facts) return 'unknown';
+  const hasUsGaap = !!facts.facts['us-gaap'];
+  const hasIfrs = !!facts.facts['ifrs-full'];
+  if (hasIfrs && !hasUsGaap) return 'ifrs';
+  if (hasUsGaap && !hasIfrs) {
+    // Check if this is a foreign filer using us-gaap but non-USD currency
+    const tags = facts.facts['us-gaap'];
+    const sampleTag = Object.values(tags)[0];
+    const units = Object.keys(sampleTag?.units || {});
+    const hasNonUsd = units.some(u => u !== 'USD' && u !== 'pure' && u !== 'shares' && u !== '');
+    const hasUsd = units.includes('USD');
+    if (hasNonUsd && !hasUsd) return 'foreign-gaap'; // Foreign filer, non-USD
+    return 'us-gaap';
+  }
+  // Both present — count tags to determine primary
+  const usGaapCount = hasUsGaap ? Object.keys(facts.facts['us-gaap']).length : 0;
+  const ifrsCount = hasIfrs ? Object.keys(facts.facts['ifrs-full']).length : 0;
+  return ifrsCount > usGaapCount ? 'ifrs' : 'us-gaap';
+}
+
 // Tag alternatives for each metric (tried in order)
+// US GAAP tags — searched in us-gaap namespace
 const METRIC_TAGS = {
   revenue: ['Revenues', 'RevenueFromContractWithCustomerExcludingAssessedTax', 'SalesRevenueNet', 'SalesRevenueGoodsNet'],
   assets: ['Assets'],
@@ -188,6 +252,13 @@ const METRIC_TAGS = {
   eps: ['EarningsPerShareDiluted', 'EarningsPerShareBasic'],
 };
 
+// Build combined tag list: US GAAP tags + IFRS tags for each metric
+function getCombinedMetricTags(metric) {
+  const gaap = METRIC_TAGS[metric] || [];
+  const ifrs = IFRS_METRIC_TAGS[metric] || [];
+  return [...gaap, ...ifrs];
+}
+
 // Find the best quarterly value for a tag list from companyfacts
 function findQuarterlyValues(facts, tagList, useAbsoluteValue = false) {
   if (!facts?.facts) return {};
@@ -204,8 +275,15 @@ function findQuarterlyValues(facts, tagList, useAbsoluteValue = false) {
       const tagData = nsFacts[tag];
       if (!tagData) continue;
 
-      // Check USD units first, then pure (for employee counts)
-      const entries = tagData.units?.USD || tagData.units?.pure || tagData.units?.[''] || [];
+      // Check USD first, then any other currency (EUR, GBP, JPY, etc.), then pure (for employee counts)
+      // For international/ADR companies filing 20-F, data may be in native currency
+      let entries = tagData.units?.USD;
+      if (!entries || entries.length === 0) {
+        // Find first available currency unit
+        const unitKeys = Object.keys(tagData.units || {});
+        const currencyKey = unitKeys.find(k => k !== 'pure' && k !== 'shares' && k !== '');
+        entries = currencyKey ? tagData.units[currencyKey] : (tagData.units?.pure || tagData.units?.[''] || []);
+      }
 
       for (const entry of entries) {
         if (!VALID_FORMS.has(entry.form)) continue;
@@ -232,13 +310,15 @@ function findQuarterlyValues(facts, tagList, useAbsoluteValue = false) {
 }
 
 // Extract structured quarterly metrics for a company
+// Automatically searches both US GAAP and IFRS tag names
 export function extractQuarterlyMetrics(facts, beforeDate = null) {
   if (!facts?.facts) return [];
 
   const raw = {};
-  for (const [metric, tags] of Object.entries(METRIC_TAGS)) {
+  for (const metric of Object.keys(METRIC_TAGS)) {
+    const combinedTags = getCombinedMetricTags(metric);
     const useAbsVal = ['assets', 'employees', 'equity', 'totalLiabilities', 'goodwill', 'accountsReceivable', 'inventory', 'capex'].includes(metric);
-    raw[metric] = findQuarterlyValues(facts, tags, useAbsVal);
+    raw[metric] = findQuarterlyValues(facts, combinedTags, useAbsVal);
   }
 
   // Collect all quarters that have at least revenue or assets
