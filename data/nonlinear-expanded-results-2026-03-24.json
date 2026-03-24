@@ -2,82 +2,82 @@
   "theory6": {
     "hurstByOutcome": {
       "winner": {
-        "n": 177,
-        "mean": 0.6502673426679831,
-        "pctPersistent": 0.711864406779661
+        "n": 278,
+        "mean": 0.6436648925074702,
+        "pctPersistent": 0.7158273381294964
       },
       "trap": {
-        "n": 118,
-        "mean": 0.6681408281291344,
-        "pctPersistent": 0.7288135593220338
+        "n": 168,
+        "mean": 0.6636338006346613,
+        "pctPersistent": 0.7142857142857143
       }
     },
     "mw": {
-      "p": 0.7145755715592235,
-      "r": 0.021292930198506217
+      "p": 0.4218193916095221,
+      "r": 0.038035869994829836
     },
     "crossTab": {
       "H persistent + β>1.0": {
-        "winner": 31,
-        "trap": 16
+        "winner": 45,
+        "trap": 26
       },
       "H persistent + β<1.0": {
-        "winner": 95,
-        "trap": 70
+        "winner": 154,
+        "trap": 94
       },
       "H random/MR + β>1.0": {
-        "winner": 10,
-        "trap": 6
+        "winner": 18,
+        "trap": 9
       },
       "H random/MR + β<1.0": {
-        "winner": 41,
-        "trap": 26
+        "winner": 61,
+        "trap": 39
       }
     },
     "pass": false
   },
   "theory7": {
     "coverage": {
-      "withSegments": 22,
-      "withoutSegments": 386
+      "withSegments": 29,
+      "withoutSegments": 595
     },
     "mw": {
-      "p": 0.777007875683533,
-      "r": 0.07080514800462759
+      "p": 0.5126906337634385,
+      "r": 0.14638501094227999
     },
     "pass": false
   },
   "theory8": {
     "hBetaByOutcome": {
       "winner": {
-        "n": 166,
-        "mean": 0.7652264996599825
+        "n": 266,
+        "mean": 0.7609275453850859
       },
       "trap": {
-        "n": 109,
-        "mean": 0.7663029196627941
+        "n": 159,
+        "mean": 0.7585552435868143
       }
     },
     "mw": {
-      "p": 0.9746492093578865,
-      "r": 0.001916268246297264
+      "p": 0.9697282894100563,
+      "r": 0.0018407929012125223
     },
     "crossTab": {
       "H(β) persistent + β improving": {
-        "winner": 101,
-        "trap": 44
+        "winner": 157,
+        "trap": 62
       },
       "H(β) persistent + β degrading": {
-        "winner": 47,
-        "trap": 52
+        "winner": 80,
+        "trap": 75
       },
       "H(β) not persistent + β improving": {
-        "winner": 13,
-        "trap": 8
+        "winner": 21,
+        "trap": 14
       },
       "H(β) not persistent + β degrading": {
-        "winner": 5,
-        "trap": 5
+        "winner": 8,
+        "trap": 8
       }
     },
     "pass": false
@@ -85,34 +85,34 @@
   "theory9": {
     "miByOutcome": {
       "winner": {
-        "n": 176,
-        "mean": 0.5783442975896862
+        "n": 279,
+        "mean": 0.5632143422173878
       },
       "trap": {
-        "n": 120,
-        "mean": 0.6086829711750812
+        "n": 171,
+        "mean": 0.5676074094586353
       }
     },
     "mw": {
-      "p": 0.23478809581580928,
-      "r": 0.06905780174642229
+      "p": 0.3773911215490311,
+      "r": 0.04161150416842683
     },
     "crossTab": {
       "Independent + β>1.0": {
-        "winner": 11,
+        "winner": 17,
         "trap": 6
       },
       "Independent + β<1.0": {
-        "winner": 27,
-        "trap": 12
+        "winner": 43,
+        "trap": 22
       },
       "Sector-dep + β>1.0": {
-        "winner": 29,
-        "trap": 17
+        "winner": 45,
+        "trap": 30
       },
       "Sector-dep + β<1.0": {
-        "winner": 109,
-        "trap": 85
+        "winner": 174,
+        "trap": 113
       }
     },
     "pass": false
