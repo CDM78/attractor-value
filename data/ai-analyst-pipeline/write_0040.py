@@ -1,0 +1,150 @@
+import json
+
+result = {
+    "blindId": "ANALYST-0040",
+    "job1": {
+        "total_commitments_tracked": 6,
+        "commitments_delivered": 4,
+        "commitments_missed": 2,
+        "credibility_score": 0.67,
+        "language_shifts": [
+            {
+                "quarter": "Q2",
+                "shift": "Storage Systems exit (IntelliFlash/ActiveScale) and K1 facility investment commitments from Q1 are dropped entirely from Q2 disclosure; COVID-19 discussion replaces all prior strategic themes with no follow-through on previous capital commitments."
+            },
+            {
+                "quarter": "Q3",
+                "shift": "Business reorganization into two segments announced but management explicitly states 'discrete information has not yet been established.' Language transitions from confident structural commitment to process-in-progress hedging."
+            },
+            {
+                "quarter": "Q5",
+                "shift": "Restructure completion target reset to first quarter of fiscal 2022. 18-terabyte hard drive ramp stated with moderate specificity ('expect revenue to increase as we progress through calendar 2021') but no quantified revenue or unit targets given."
+            },
+            {
+                "quarter": "Q6",
+                "shift": "Segment restructure formally completed and two reportable segments (HDD and Flash) finalized as committed. COVID language shifts from 'cannot predict' to 'expect supply disruptions to be transitory,' reflecting more confident forward tone."
+            }
+        ],
+        "red_flags": [
+            "K1 meaningful output commitment ('first half of fiscal year 2021') from Q1 never revisited or confirmed in subsequent quarters -- topic disappears from Q2 onward with no delivery confirmation or updated timeline.",
+            "Storage Systems exit promised to 'redirect investments to other higher value priorities' but no specific higher-value investment commitments were subsequently named or tracked.",
+            "COVID-19 charge forecast in Q2 ('expect charges to be higher in Q4') was partially validated but full Q4 FY2020 charge detail was not confirmed in subsequent quarters Key Developments, making full delivery unverifiable.",
+            "Business restructure took three quarters (Q3 FY2021 announced to Q1 FY2022 delivered) versus initial implication of near-term completion, indicating execution delay."
+        ]
+    },
+    "job2": {
+        "current_risk_count": 7,
+        "prior_risk_count": 7,
+        "new_risks": [
+            {
+                "risk": "Climate change as amplifier of natural disaster risk to manufacturing facilities",
+                "key_phrase": "Climate change has in the past, and is expected to continue to increase the incidence and severity of certain natural disasters.",
+                "severity": "medium"
+            },
+            {
+                "risk": "Immigration policy risk to talent acquisition",
+                "key_phrase": "Changes in immigration policies may impair our ability to recruit and hire technical and professional talent.",
+                "severity": "medium"
+            },
+            {
+                "risk": "Corporate responsibility and ESG as new disclosure framing category",
+                "key_phrase": "We are deeply committed to protecting and supporting our people, our environment, and our communities.",
+                "severity": "low"
+            },
+            {
+                "risk": "Vaccine variant uncertainty added to COVID-19 risk scope",
+                "key_phrase": "the emergence of more contagious or vaccine-resistant variants",
+                "severity": "medium"
+            }
+        ],
+        "escalated_risks": [
+            {
+                "risk": "COVID-19 pandemic impact on business",
+                "prior_language": "COVID-19 pandemic could adversely affect our business, results of operations and financial condition",
+                "current_language": "COVID-19 pandemic could negatively affect our business"
+            },
+            {
+                "risk": "Supply chain disruption",
+                "prior_language": "supply chain disruption referenced only as sub-item within COVID-19 risk bullet list, not a standalone risk factor",
+                "current_language": "We are dependent on a limited number of qualified suppliers who provide critical services, materials or components, and a disruption in our supply chain could negatively affect our business [elevated to standalone named risk factor]"
+            }
+        ],
+        "disappeared_risks": [
+            {
+                "risk": "Flash Ventures Kioxia financing constraints and K1 ramp execution risks",
+                "likely_reason": "resolved"
+            },
+            {
+                "risk": "Highly competitive industry with declining ASPs and technology transition execution",
+                "likely_reason": "unclear"
+            },
+            {
+                "risk": "COVID-19 as direct constraint on management time and attention",
+                "likely_reason": "resolved"
+            },
+            {
+                "risk": "Deepening global economic downturn language",
+                "likely_reason": "resolved"
+            }
+        ],
+        "overall_trajectory": "stable"
+    },
+    "job3": {
+        "contradictions": [],
+        "corroborations": [],
+        "target_language_quality": "vague",
+        "competitive_position_assessment": "stable",
+        "confidence": "low"
+    },
+    "job4": {
+        "guidance_trend": "more_vague",
+        "hedging_trend": "increasing",
+        "topics_dropped": [
+            "K1 Kitakami facility investment and meaningful output timeline",
+            "Storage Systems exit reinvestment plans (specific higher-value priorities never named in subsequent quarters)",
+            "COVID-19 charge quantification specifics (Q2 gave dollar forecast; later quarters dropped forward charge guidance)"
+        ],
+        "confidence_trend": "decreasing",
+        "quarters_analyzed": 6,
+        "overall_communication_trajectory": "deteriorating",
+        "notable_shifts": [
+            {
+                "quarter": "Q1",
+                "observation": "Language is operationally specific with dollar amounts for K1 commitments ($660M total investment, $500M still to incur, $265M remaining prepayments), explicit product exit timelines (IntelliFlash sold for $28M, ActiveScale agreement February 2020). Guidance specificity is high."
+            },
+            {
+                "quarter": "Q2",
+                "observation": "COVID-19 dominates narrative entirely; prior strategic commitments (K1, Storage Systems reinvestment) disappear without resolution. Forward guidance narrows to a single near-term cost statement. Hedging language spikes with 'cannot predict the duration,' 'may take further actions.'"
+            },
+            {
+                "quarter": "Q3",
+                "observation": "Business restructure announced but framed with maximum ambiguity: 'discrete information has not yet been established,' 'evaluating the impact of these changes.' Positive demand commentary appears alongside heavy COVID hedging. Mixed confidence signals."
+            },
+            {
+                "quarter": "Q4",
+                "observation": "Business restructure disclosure is near-verbatim copy from Q3 indicating lack of progress. Vaccine emergence added to uncertainty register. Positive signals retained but specificity has not increased."
+            },
+            {
+                "quarter": "Q5",
+                "observation": "First product-specific forward guidance since Q1: 'we expect revenue to increase as we progress through calendar 2021, led by the ramp of our 18-terabyte hard drives.' Modest specificity improvement but still lacks quantification (no revenue targets or unit volumes)."
+            },
+            {
+                "quarter": "Q6",
+                "observation": "Segment structure formally completed; communication transitions to new end-market framework (Cloud, Client, Consumer). Supply chain disruption language added with 'expect that they will be transitory' assertion. Overall guidance specificity remains below Q1 baseline; no dollar-level forward commitments provided."
+            }
+        ]
+    },
+    "timestamp": "2026-03-24T00:00:00Z"
+}
+
+out_path = "C:/Users/charl/attractor-value/data/ai-analyst-pipeline/eval-results/ANALYST-0040.json"
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(result, f, indent=2)
+
+with open(out_path, "r", encoding="utf-8") as f:
+    loaded = json.load(f)
+
+print("Saved and validated:", out_path)
+print("Top-level keys:", list(loaded.keys()))
+print("blindId:", loaded["blindId"])
+print("File size:", len(json.dumps(loaded)), "chars")

@@ -1,0 +1,25 @@
+KEYS: ['blindId', 'sector', 'job1', 'job2', 'job3', 'job4', 'quantContext', 'available_jobs']
+blindId : ANALYST-0047
+sector : Health Care
+job1 : You are analyzing management's track record of delivering on commitments.
+You will be given MD&A sections from sequential quarters for an anonymous company.
+Do NOT attempt to identify the company.
+
+CO
+job2 : You are analyzing changes in a company's SEC risk factor disclosures.
+Do NOT attempt to identify the company.
+
+COMPANY: ANALYST-0047
+SECTOR: Health Care
+
+CURRENT 10-K RISK FACTORS (Item 1A, filed 2021
+job3 : None
+job4 : You are analyzing how management's communication style has changed over
+recent quarters. Do NOT attempt to identify the company.
+
+COMPANY: ANALYST-0047
+
+QUARTERLY MD&A DOCUMENTS (chronological):
+--- Q
+quantContext : Short interest days-to-cover: 2.92
+Insider Form 4 filings (12mo): 44

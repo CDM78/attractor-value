@@ -1,0 +1,29 @@
+, volume (measured by test requisitions) and revenue per requisition. Each requisition accompanies patient specimens, indicating the test(s) to be performed and the party to be billed for the test(s). Revenue per requisition is impacted by various factors, including, among other items, the impact of fee schedule changes (i.e., unit price), test mix, payer mix, and the number of tests per requisition. Management uses number of requisitions and revenue per requisition data to assist with assessing the growth and performance of the business, including understanding trends affecting number of requisitions, pricing and test mix. Therefore, we believe that information related to changes in these metrics from period to period are useful information for investors as it allows them to assess the performance of the business. Diagnostic Solutions In our Diagnostic Solutions ("DS") businesses, which represent the balance of our consolidated net revenues, we offer a variety of solutions for life insurers and healthcare organizations and clinicians. We are the leading provider of risk assessment services for the life insurance industry. In addition, we offer healthcare organizations and clinicians robust information technology solutions. Third Quarter Highlights Three Months Ended September 30, 2021 2020 (dollars in millions, except per share data) Net revenues $2,774 $2,786 DIS revenues $2,703 $2,709 Revenue per requisition change (5.4)% 20.9% Requisition volume change 5.3% 19.7% Organic requisition volume change 3.2% 16.6% DS revenues $71 $77 Net income attributable to Quest Diagnostics $505 $568 Diluted earnings per share $4.02 $4.14 Net cash provided by operating activities $561 $862 For further discussion of the year-over-year changes for the three months ended September 30, 2021 compared to the three months ended September 30, 2020, see Results of Operations below. 25 Table of Contents Impact of COVID - 19 As a novel strain of coronavirus (COVID-19) continues to impact the economy of the United States and other countries around the world, we are committed to being a part of the coordinated public and private sector response to this unprecedented challenge. We have made substantial investments to expand the amount of COVID-19 testing available to the country. We have been effectively managing challenges in the global supply chain; and, at this point, we have sufficient supplies to conduct our business. During 2020 and 2021, our testing volume and revenues were materially impacted by the COVID-19 pandemic. Beginning in March 2020, we experienced a material decline in base testing volume (which excludes COVID-19 testing) due to the COVID-19 pandemic. The decrease in base testing volume was driven by federal, state and local governmental policies and initiatives designed to reduce the transmission of COVID-19, a significant reduction in physician office visits, the cancellation of elective medical procedures, customers closing or severely curtailing their operations (voluntarily or in response to government orders), and the adoption of work-from-home policies, all of which have had, and may continue to have, an impact on our operating results, financial position and cash flows. During May and June 2020, we began to experience a recovery in base testing volume, which continued in 2021. The recovery trend stalled somewhat in August 2021, but resumed in September 2021. The recovery has been driven by people returning to the healthcare system as well as contributions from new Professional Laboratory Services offerings. For the first, second and third quarters of 2021, our base testing volume, excluding volume associated with recent acquisitions, was 2.8% below, 1.9% above and 3.8% above our historical first, second and third quarter of 2019 levels, respectively. Recent agreements associated with our Professional Laboratory Services offerings contributed 5.2%, 5.8% and 5.2% volume growth compared to 2019 for the first, second and third quarters of 2021, respectively. Unless there is a change in the severity of the COVID-19 pandemic, we believe that there will be a continued return to healthcare with, in some cases, patients pursuing care delayed during the COVID-19 pandemic. Beginning in the second quarter of 2020, we experienced growing demand for COVID-19 testing services and we expanded our capacity throughout 2020 in order to satisfy the demand, which has ha
+
+TASK — focus ONLY on linguistic patterns, not financial content:
+
+1. GUIDANCE SPECIFICITY: Is management's forward-looking language becoming
+   more specific or more vague over time?
+
+2. HEDGING FREQUENCY: Count hedging language ("subject to," "depending on,"
+   "uncertain," "cautiously") per quarter. Is the frequency increasing?
+
+3. TOPIC AVOIDANCE: Are there topics discussed in earlier quarters that
+   management stops mentioning?
+
+4. CONFIDENCE MARKERS: Track phrases indicating confidence ("clearly,"
+   "definitely," "strong momentum") vs uncertainty ("challenging environment,"
+   "headwinds," "transitional period"). Which direction is the trend?
+
+Return ONLY valid JSON (no markdown, no code fences):
+{
+  "guidance_trend": "more_specific/stable/more_vague",
+  "hedging_trend": "decreasing/stable/increasing",
+  "topics_dropped": ["topic1", "topic2"],
+  "confidence_trend": "increasing/stable/decreasing",
+  "quarters_analyzed": X,
+  "overall_communication_trajectory": "improving/stable/deteriorating",
+  "notable_shifts": [
+    {"quarter": "QX", "observation": "description"}
+  ]
+}

@@ -1,0 +1,29 @@
+lthcare programs and the loss of various licenses, certificates and authorizations necessary to operate our business, as well as incur additional liabilities from third-party claims. If any of the foregoing were to occur, our reputation could be damaged and important b
+
+TASK:
+1. Identify NEW risk factors that appear in the current filing but were
+   NOT present in the prior year. Quote the key phrase.
+
+2. Identify risk factors where LANGUAGE ESCALATED — e.g., "may face" became
+   "are experiencing," "could impact" became "has materially impacted."
+   Quote both versions.
+
+3. Identify risk factors that DISAPPEARED from the prior year.
+
+4. Count total risk factors in each year.
+
+Return ONLY valid JSON (no markdown, no code fences):
+{
+  "current_risk_count": X,
+  "prior_risk_count": X,
+  "new_risks": [
+    {"risk": "description", "key_phrase": "quoted text", "severity": "high/medium/low"}
+  ],
+  "escalated_risks": [
+    {"risk": "description", "prior_language": "quoted", "current_language": "quoted"}
+  ],
+  "disappeared_risks": [
+    {"risk": "description", "likely_reason": "resolved/materialized/unclear"}
+  ],
+  "overall_trajectory": "improving/stable/deteriorating"
+}

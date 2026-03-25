@@ -1,0 +1,27 @@
+-19 pandemic; healthcare insurer, government, and client payer reimbursement rates for COVID-19 molecular testing; the COVID-19 pandemic s impact on the U.S. healthcare system and the U.S. economy; and the timing, scope and effectiveness of federal, state and local governmental responses to the COVID-19 pandemic, including the impact of vaccination efforts. We may also be impacted by changes in the severity of the COVID-19 pandemic at different times in the various cities and regions where we operate and offer services
+
+TASK:
+1. Identify every SPECIFIC, TRACKABLE commitment management made in earlier
+   quarters. Examples: revenue growth targets, margin expansion plans, product
+   launch timelines, cost reduction goals, market share claims.
+
+2. For each commitment, check whether subsequent quarters' documents confirm
+   delivery, partial delivery, or failure. Only count commitments where a
+   later document provides evidence either way.
+
+3. Compute: commitments_delivered / total_trackable_commitments
+
+4. Flag any pattern of language shifts: specific guidance becoming vague,
+   confident statements becoming hedged, or topics being dropped entirely.
+
+Return ONLY valid JSON (no markdown, no code fences):
+{
+  "total_commitments_tracked": X,
+  "commitments_delivered": X,
+  "commitments_missed": X,
+  "credibility_score": X.XX,
+  "language_shifts": [
+    {"quarter": "QX", "shift": "description of linguistic change"}
+  ],
+  "red_flags": ["flag1", "flag2"]
+}

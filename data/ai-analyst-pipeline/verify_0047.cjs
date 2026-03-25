@@ -1,0 +1,12 @@
+const fs = require('fs');
+const d = JSON.parse(fs.readFileSync('C:/Users/charl/attractor-value/data/ai-analyst-pipeline/eval-results/ANALYST-0047.json', 'utf8'));
+console.log('Valid JSON. Top-level keys:', Object.keys(d).join(', '));
+console.log('job1 keys:', Object.keys(d.job1).join(', '));
+console.log('job2 keys:', Object.keys(d.job2).join(', '));
+console.log('job3:', d.job3);
+console.log('job4 keys:', Object.keys(d.job4).join(', '));
+console.log('timestamp:', d.timestamp);
+console.log('job1 commitments_delivered:', d.job1.commitments_delivered);
+console.log('job1 credibility_score:', d.job1.credibility_score);
+console.log('job2 overall_trajectory:', d.job2.overall_trajectory);
+console.log('job4 guidance_trend:', d.job4.guidance_trend);

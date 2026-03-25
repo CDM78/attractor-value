@@ -1,0 +1,168 @@
+import json
+from datetime import datetime, timezone
+
+data = {
+  "blindId": "ANALYST-0022",
+  "job1": {
+    "total_commitments_tracked": 8,
+    "commitments_delivered": 3,
+    "commitments_missed": 3,
+    "credibility_score": 0.44,
+    "language_shifts": [
+      {
+        "quarter": "Q2",
+        "shift": "No forward-looking guidance provided -- COVID disruption caused management to drop all near-term outlook language entirely"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "No looking-ahead section present; management shifted to purely retrospective reporting citing unprecedented pandemic uncertainty"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Guidance resumed but hedged: Planters acquisition closing qualified with subject to regulatory review and approval"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Confident language softened from affirmative expects to conditional may help offset, signaling reduced confidence in pricing power vs. inflation"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Earnings declined 21% while record sales were front-loaded -- management led with highest in Company history sales before disclosing EPS miss, indicating selective positive framing"
+      }
+    ],
+    "red_flags": [
+      "Full-year FY2020 tax rate guidance of 20.5-22.5% already missed in Q1 (16.3% actual), not revised in Q2 or Q3 filings reviewed",
+      "Advertising investment guidance (in line with prior year) contradicted by actuals: -3% in Q4 and -7.2% YTD in Q5 without explanation",
+      "Q2 and Q3 FY2020 filings contain zero forward-looking guidance sections -- management avoided accountability during the most uncertain period",
+      "Jennie-O Turkey Store recurring underperformance: promised improvement in Q2 FY2020 and Q2 FY2021 yet both periods showed segment pressure from different attributed causes, suggesting chronic structural issues masked by external explanations"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 20,
+    "prior_risk_count": 18,
+    "new_risks": [
+      {
+        "risk": "Planters acquisition integration and materially elevated debt load",
+        "key_phrase": "The Company's level of indebtedness increased significantly to fund the purchase of the Planters snack nuts business and may continue to increase to fund future acquisitions.",
+        "severity": "high"
+      },
+      {
+        "risk": "COVID-19 vaccine mandate as new operational cost vector",
+        "key_phrase": "Any new or additional measures required by national, state or local governments to combat COVID-19, such as a COVID-19 vaccine mandate, may similarly add additional operational costs.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Labor availability elevated to standalone risk dimension",
+        "key_phrase": "Labor and skilled labor availability challenges could continue to have an adverse effect on the Company's business.",
+        "severity": "high"
+      },
+      {
+        "risk": "Logistics providers and customers added as supply chain disruption nodes",
+        "key_phrase": "Disruption of operations at co manufacturers, suppliers, logistics providers, customers, or other third-party service providers have and may continue to impact",
+        "severity": "medium"
+      },
+      {
+        "risk": "ASF geographic spread expanded to include Caribbean",
+        "key_phrase": "In recent years, the outbreak of ASF has impacted hog herds in China, Asia, Europe, and the Caribbean.",
+        "severity": "low"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "COVID-19 labor impact shifted from hypothetical to confirmed ongoing reality",
+        "prior_language": "It is possible that the COVID-19 pandemic could negatively affect the Company's labor availability, relations, or labor costs.",
+        "current_language": "It is possible that the COVID-19 pandemic has and continues to negatively affect the Company's labor availability, relations, or labor costs."
+      },
+      {
+        "risk": "Supply chain disruption scope broadened and verb tense escalated from potential to actual",
+        "prior_language": "Disruption of operations at co manufacturers or other suppliers may impact the Company's product or raw material supply",
+        "current_language": "Disruption of operations at co manufacturers, suppliers, logistics providers, customers, or other third-party service providers have and may continue to impact the Company's product and input supplies"
+      },
+      {
+        "risk": "Labor risk expanded to include availability as separate dimension",
+        "prior_language": "Deterioration of labor relations or increases in labor costs could harm the Company's Business.",
+        "current_language": "Deterioration of labor relations, labor availability or increases in labor costs could harm the Company's business."
+      },
+      {
+        "risk": "Interest rate exposure introduced as new financial risk channel tied to post-acquisition leverage",
+        "prior_language": "Future volatility or disruption in the capital and credit markets could impair the Company's liquidity or increase costs of borrowing.",
+        "current_language": "Higher levels of debt may among other things, impact the Company's liquidity and increase the Company's exposure to negative fluctuations in interest rates."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Specific Wholestone Farms pork supply concentration risk (approximately 30% of pork raw materials from single supplier, supply agreement expiring December 2021, Company in active negotiations for alternatives)",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [],
+    "corroborations": [
+      {
+        "claim": "COVID-19 pandemic severely disrupted foodservice channel demand during 2020",
+        "evidence": "Lower out-of-home consumption caused by COVID-19 lockdown measures negatively impacted flavors and textured plant-based protein volumes, especially in the food service channel"
+      },
+      {
+        "claim": "Recovery in foodservice and food-adjacent demand during second half of 2020 and into 2021",
+        "evidence": "Nutrition benefited from growing demand for flavors, pet food, feed for livestock, plant-based proteins, edible beans, and probiotics -- Competitor A confirms food-adjacent demand recovery consistent with target foodservice rebound narrative"
+      },
+      {
+        "claim": "Broad inflationary raw material and commodity cost pressures across food sector in FY2021",
+        "evidence": "North American crushing margins were volatile due to slow farmer selling...Record U.S. industry exports in the fourth quarter were driven by strong demand from China -- Competitor A confirms commodity tightness and global demand dynamics driving cost inflation"
+      },
+      {
+        "claim": "ASF-related supply disruptions affected pork and animal protein raw material availability",
+        "evidence": "Global demand for amino acids was also negatively impacted by lower livestock counts following an African swine fever outbreak -- Competitor A confirms ASF-related supply disruption consistent with target sourcing cost commentary"
+      }
+    ],
+    "target_language_quality": "specific",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Full-year effective tax rate guidance (stated Q1 as 20.5-22.5%; dropped after Q1, never revisited despite Q1 actual of 16.3% falling below the stated range)",
+      "Advertising investment guidance (stated Q1 as in line with prior year; actuals showed -3% in Q4 and -7.2% first-half underperformance in Q5; management never addressed the miss)",
+      "Detailed COVID-19 safety protocol specifics with itemized measures and cost disclosures (prominent Q2/Q3; reduced to brief formulaic summary language by Q5/Q6)",
+      "International segment country-specific performance commentary (Brazil explicitly named as negative driver in Q1; later quarters shifted to generic regional aggregates)"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q2",
+        "observation": "Complete elimination of forward-looking guidance section -- zero future-tense operational commitments made during peak COVID uncertainty, a significant accountability gap relative to specific Q1 guidance on taxes, advertising, and segment outlook"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "1.0B bond issuance at 1.8% framed as offensive opportunity (ample liquidity to take advantage of strategic opportunities) with no acknowledgment of the defensive debt accumulation rationale"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Reintroduction of forward guidance tied exclusively to Planters acquisition announcement -- guidance specificity serves deal narrative (tax benefit approximately 560M, effective purchase price 2.79B) rather than standalone operational transparency"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "First use of conditional hedge may help offset for margin guidance -- all prior quarters containing guidance used affirmative expects; signals reduced management confidence in pricing power relative to escalating inflationary headwinds"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "GAAP EPS down 14% while opening statement leads with net sales for the third quarter were the highest in the Company history; Adjusted EPS (up 5.4%) prominently featured in reconciliation table to soften GAAP miss -- increasing reliance on non-GAAP framing as profitability diverges from revenue"
+      }
+    ]
+  },
+  "timestamp": ""
+}
+
+data["timestamp"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+out = "C:/Users/charl/attractor-value/data/ai-analyst-pipeline/eval-results/ANALYST-0022.json"
+with open(out, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+print("Written:", out)
+print("Timestamp:", data["timestamp"])
