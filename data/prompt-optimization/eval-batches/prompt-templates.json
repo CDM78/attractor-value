@@ -1,0 +1,71 @@
+{
+  "buy": {
+    "buy_v1_binary": {
+      "name": "Original Binary",
+      "system": "You are analyzing SEC 10-K risk factor disclosures for an anonymous company. You will receive the current year's Item 1A Risk Factors and the prior year's Item 1A Risk Factors. Do NOT attempt to identify this company.",
+      "template": "Compare these two consecutive years of 10-K Item 1A Risk Factors for a {sector} company.\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nIs the company's risk profile STABLE or DETERIORATING?\n\nRespond with JSON only:\n{\"assessment\": \"stable\" or \"deteriorating\", \"confidence\": \"high\" or \"medium\" or \"low\", \"key_changes\": [\"brief list of notable changes\"]}"
+    },
+    "buy_v2_character": {
+      "name": "Character Change",
+      "system": "You are analyzing SEC 10-K risk factor disclosures for an anonymous company. You will receive the current year's Item 1A Risk Factors and the prior year's Item 1A Risk Factors. Do NOT attempt to identify this company.",
+      "template": "Compare these two consecutive years of 10-K Item 1A Risk Factors for a {sector} company.\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nHas the fundamental CHARACTER of the company's risk profile changed, or are these the same types of risks as last year? We're not asking if risks got worse — we're asking if the NATURE of what threatens the company has shifted.\n\nExamples of character change: A company that previously faced only competitive risks now faces regulatory/legal risks. A company that had industry-wide risks now has company-specific operational problems.\n\nRespond with JSON only:\n{\"character_changed\": true or false, \"assessment\": \"same_character\" or \"new_risk_types\", \"confidence\": \"high\" or \"medium\" or \"low\", \"new_risk_categories\": [\"list any fundamentally new types of risk\"]}"
+    },
+    "buy_v3_sector_adjusted": {
+      "name": "Sector Adjusted",
+      "system": "You are analyzing SEC 10-K risk factor disclosures for an anonymous company. You will receive the current year's Item 1A Risk Factors and the prior year's Item 1A Risk Factors. Do NOT attempt to identify this company.",
+      "template": "Compare these two consecutive years of 10-K Item 1A Risk Factors for a {sector} company.\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nSeparate the risk factor changes into two categories:\n1. SECTOR-WIDE changes that any {sector} company would report (regulatory changes, market conditions, etc.)\n2. COMPANY-SPECIFIC changes that reflect this particular company's situation (operational problems, legal issues, customer losses, etc.)\n\nIs the deterioration (if any) company-specific, or is it sector-wide noise?\n\nRespond with JSON only:\n{\"assessment\": \"stable\" or \"sector_deterioration\" or \"company_specific_deterioration\", \"confidence\": \"high\" or \"medium\" or \"low\", \"sector_wide_changes\": [\"list\"], \"company_specific_changes\": [\"list\"]}"
+    },
+    "buy_v4_confession_context": {
+      "name": "Confession as Context",
+      "system": "You are analyzing SEC 10-K risk factor disclosures for an anonymous company being evaluated as a potential VALUE investment during a period of market stress. Confessions of current problems may indicate the distress that CREATED the buying opportunity — the market has likely already punished this stock. Do NOT attempt to identify this company.",
+      "template": "This {sector} company is being evaluated as a value investment candidate. Compare these risk factors:\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nAssess whether the risk evolution suggests:\n- TEMPORARY DISLOCATION: Problems are known, specific, and likely priced in. Company is confessing to current pain but the business model is intact.\n- STRUCTURAL DECLINE: Problems are worsening beyond what the market expects. New categories of risk are appearing. The competitive position is eroding.\n\nRemember: Severe confessions (restatements, covenant breaches, emergency actions) at the time of purchase can be BULLISH — they explain why the stock is cheap.\n\nRespond with JSON only:\n{\"assessment\": \"temporary_dislocation\" or \"structural_decline\", \"confidence\": \"high\" or \"medium\" or \"low\", \"confessions\": [\"list of specific admissions of problems\"], \"structural_concerns\": [\"list of worsening competitive/business model risks\"]}"
+    },
+    "buy_v5_resolution": {
+      "name": "Resolution Focused",
+      "system": "You are analyzing SEC 10-K risk factor disclosures for an anonymous company. You will receive the current year's Item 1A Risk Factors and the prior year's Item 1A Risk Factors. Do NOT attempt to identify this company.",
+      "template": "Compare these two consecutive years of 10-K Item 1A Risk Factors for a {sector} company.\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nFocus on the FLOW of risks:\n- How many risks from last year have been RESOLVED or removed?\n- How many NEW risks have appeared?\n- What is the net change?\n\nA company resolving old problems faster than new ones emerge is improving. The reverse is deteriorating.\n\nRespond with JSON only:\n{\"risks_resolved\": 0, \"risks_new\": 0, \"net_change\": 0, \"assessment\": \"improving\" or \"stable\" or \"deteriorating\", \"confidence\": \"high\" or \"medium\" or \"low\", \"resolved_examples\": [\"list\"], \"new_examples\": [\"list\"]}"
+    },
+    "buy_v6_minimal": {
+      "name": "Minimal",
+      "system": "Analyze SEC 10-K risk factors. Do NOT identify the company.",
+      "template": "CURRENT YEAR RISK FACTORS:\n{current_risk_factors}\n\nPRIOR YEAR RISK FACTORS:\n{prior_risk_factors}\n\nIn one word, is this company's competitive position STABLE or CHANGING?\n\nRespond with JSON only:\n{\"assessment\": \"stable\" or \"changing\"}"
+    },
+    "buy_v7_quantified": {
+      "name": "Quantified Only",
+      "system": "You are analyzing SEC 10-K risk factor disclosures. Focus ONLY on quantified, specific risks. Ignore boilerplate language. Do NOT attempt to identify this company.",
+      "template": "Compare these risk factors for a {sector} company. IGNORE all generic/boilerplate risk language.\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nIdentify ONLY risks that include:\n- Specific dollar amounts or percentages\n- Named customers, suppliers, or counterparties\n- Specific regulatory actions, lawsuits, or government investigations\n- Quantified operational metrics (capacity, headcount, facilities)\n\nHow many such quantified material risks are NEW this year vs last year?\n\nRespond with JSON only:\n{\"quantified_risks_prior\": 0, \"quantified_risks_current\": 0, \"net_new_quantified\": 0, \"assessment\": \"fewer_risks\" or \"same\" or \"more_risks\", \"confidence\": \"high\" or \"medium\" or \"low\", \"notable_quantified\": [\"list the most significant quantified risks\"]}"
+    },
+    "buy_v8_forward": {
+      "name": "Forward Looking",
+      "system": "You are analyzing SEC 10-K risk factor disclosures for an anonymous company. Focus on whether risks are likely to resolve naturally or persist. Do NOT attempt to identify this company.",
+      "template": "Compare these risk factors for a {sector} company:\n\nCURRENT YEAR 10-K RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nPRIOR YEAR 10-K RISK FACTORS (filed {prior_filed}):\n{prior_risk_factors}\n\nBased on the risk factors, is the company's FUTURE risk profile likely to improve, stay the same, or worsen?\n\nClassify each major risk as:\n- TRANSIENT: Will likely resolve within 1-2 years (cyclical downturns, one-time charges, temporary disruptions)\n- STRUCTURAL: Will likely persist or intensify (competitive displacement, secular decline, regulatory burden, debt spiral)\n\nRespond with JSON only:\n{\"trajectory\": \"improving\" or \"stable\" or \"worsening\", \"confidence\": \"high\" or \"medium\" or \"low\", \"transient_risks\": [\"list\"], \"structural_risks\": [\"list\"], \"ratio_transient_to_structural\": 0.0}"
+    }
+  },
+  "sell": {
+    "sell_v1_thesis_drift": {
+      "name": "Thesis Drift",
+      "system": "You are monitoring an existing investment position by comparing 10-K risk factors. The investor bought this stock based on the original risk profile. You are checking whether the investment thesis is still intact. Do NOT attempt to identify this company.",
+      "template": "This {sector} company was purchased {time_since_entry} ago. Compare the risk factors at ENTRY vs NOW:\n\nRISK FACTORS AT ENTRY (filed {entry_filed}):\n{entry_risk_factors}\n\nCURRENT RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nHave NEW material risks appeared that were NOT part of the original investment thesis? The original risks are \"known\" — they were accepted when the position was entered. We only care about SURPRISES.\n\nIf the original risks are the same (even if still present), the thesis is intact.\nIf fundamentally new problems have emerged, the thesis may be broken.\n\nRespond with JSON only:\n{\"thesis_intact\": true or false, \"action\": \"hold\" or \"sell\", \"confidence\": \"high\" or \"medium\" or \"low\", \"new_risks\": [\"list of genuinely new risks not present at entry\"], \"resolved_risks\": [\"list of entry risks that have been resolved\"]}"
+    },
+    "sell_v2_escalation": {
+      "name": "Escalation Only",
+      "system": "You are monitoring an investment position. Focus on language ESCALATION — risks that existed before but are now described more urgently. Do NOT attempt to identify this company.",
+      "template": "This {sector} company was purchased {time_since_entry} ago. Compare risk factor language:\n\nRISK FACTORS AT ENTRY (filed {entry_filed}):\n{entry_risk_factors}\n\nCURRENT RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nFocus ONLY on risks that existed at entry but have ESCALATED in language:\n- \"may face\" → \"are experiencing\" (hypothetical became real)\n- \"could impact\" → \"has materially impacted\" (future risk materialized)\n- \"we believe we can manage\" → \"we may not be able to\" (confidence lost)\n- Generic description → specific dollar/percentage impact added\n\nHow many risks have escalated?\n\nRespond with JSON only:\n{\"escalated_count\": 0, \"action\": \"hold\" or \"sell\", \"confidence\": \"high\" or \"medium\" or \"low\", \"escalations\": [{\"risk\": \"description\", \"before\": \"prior language\", \"after\": \"current language\"}]}"
+    },
+    "sell_v3_new_confessions": {
+      "name": "New Confessions",
+      "system": "You are monitoring an investment position. At entry, certain problems were already disclosed and priced in. You are looking for NEW confessions — problems the company is admitting to NOW that they did not disclose at entry. Do NOT attempt to identify this company.",
+      "template": "This {sector} company was purchased {time_since_entry} ago based on its distressed valuation. The problems at entry were known and accepted.\n\nRISK FACTORS AT ENTRY (filed {entry_filed}):\n{entry_risk_factors}\n\nCURRENT RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nSince entry, have ANY new confessions appeared? Look for:\n- New restatements or accounting issues\n- New covenant modifications or debt problems\n- New quantified declines in key metrics\n- New customer/contract losses\n- New regulatory actions or investigations\n- New going concern language\n\nThese were NOT present at entry and represent NEW bad news.\n\nRespond with JSON only:\n{\"new_confessions_found\": true or false, \"action\": \"hold\" or \"sell\", \"confidence\": \"high\" or \"medium\" or \"low\", \"confessions\": [\"list each new confession with specifics\"]}"
+    },
+    "sell_v4_simple": {
+      "name": "Simple Comparison",
+      "system": "Compare SEC 10-K risk factors over time. Do NOT identify the company.",
+      "template": "RISK FACTORS AT ENTRY ({time_since_entry} ago, filed {entry_filed}):\n{entry_risk_factors}\n\nCURRENT RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nIs the company's risk profile BETTER, SAME, or WORSE than at entry?\n\nRespond with JSON only:\n{\"trajectory\": \"better\" or \"same\" or \"worse\", \"action\": \"hold\" or \"sell\"}"
+    },
+    "sell_v5_exit_urgency": {
+      "name": "Exit Urgency",
+      "system": "You are monitoring an investment position by comparing 10-K risk factors. Rate the urgency of exiting. Do NOT attempt to identify this company.",
+      "template": "This {sector} company was purchased {time_since_entry} ago. Compare:\n\nRISK FACTORS AT ENTRY (filed {entry_filed}):\n{entry_risk_factors}\n\nCURRENT RISK FACTORS (filed {current_filed}):\n{current_risk_factors}\n\nOn a scale of 1-5, how urgently should the investor consider exiting?\n1 = No concern, thesis fully intact, hold confidently\n2 = Minor changes, thesis mostly intact, continue holding\n3 = Notable deterioration, thesis questionable, review position\n4 = Significant new problems, thesis likely broken, consider selling\n5 = Urgent exit, fundamental thesis destroyed, sell immediately\n\nRespond with JSON only:\n{\"urgency\": 1, \"action\": \"hold\" or \"sell\", \"confidence\": \"high\" or \"medium\" or \"low\", \"reasoning\": \"brief explanation\"}"
+    }
+  }
+}

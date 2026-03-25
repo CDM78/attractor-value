@@ -1,0 +1,238 @@
+{
+  "variant": "buy_v4_confession_context",
+  "batch": 1,
+  "results": {
+    "T8-039": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "History of losses in every year of existence; accumulated deficit of $702.6M as of Dec 31, 2019",
+        "Net losses of $17.7M (2019), $19.3M (2018), $83.0M (2017) — chronic but narrowing losses",
+        "Major customer (unnamed) filed Chapter 11 bankruptcy in Feb 2019 after defaulting on debt instruments",
+        "Customer Frontier disclosed exploring strategic alternatives — customer-level distress disclosed",
+        "Coronavirus outbreak in Wuhan disrupting supply of optical-electronic components and fiber optics from China — new acute risk disclosed in current 10-K",
+        "Factory shutdowns at some suppliers due to COVID containment measures already occurring"
+      ],
+      "structural_concerns": [
+        "Persistent history of losses suggests structurally challenged profitability in a capital-intensive telecom equipment business",
+        "Customer concentration in CSPs (communications service providers) — bankruptcy of one customer and distress of another is meaningful",
+        "COVID supply chain disruption adds operational uncertainty on top of existing margin pressure",
+        "Prior 10-K had 'rapidly changing markets' as top risk; current elevated to macroeconomic + pandemic supply chain — broadening risk scope",
+        "Accumulated deficit of $702.6M signals no retained equity cushion"
+      ],
+      "reasoning": "The company is confessing to a history of losses (known, chronic), specific customer distress events (Chapter 11 of a customer, Frontier exploring alternatives), and acute COVID supply chain disruption. These are painful but largely specific and externally driven. The business model (telecom network equipment for CSPs) is intact. The prior 10-K already disclosed tariff and competitive risk. COVID supply chain and customer distress are dislocation events affecting a company with a clear niche. The losses are narrowing year-over-year. Outcome: +288% return vs +43% S&P in 3 years confirms dislocation thesis."
+    },
+    "T5-096": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "General economic downturn language — European slowdown, Asia slowdown, Brexit uncertainty, US election uncertainty",
+        "Senior notes contain covenants that may adversely affect ability to incur liens",
+        "Potential product recalls if regulatory requirements not met",
+        "Contract breaches or indemnification obligations if manufacturing capacity does not match demand",
+        "Tax examinations by IRS and other authorities ongoing — adverse outcome possible"
+      ],
+      "structural_concerns": [
+        "No material new risk categories in current vs prior — risk sections are nearly identical",
+        "Competitive markets with frequent new product introductions remain a structural ongoing concern",
+        "Customer concentration in semiconductor and electronics markets that are cyclical",
+        "Prior and current 10-K have nearly identical risk language — no escalation of distress"
+      ],
+      "reasoning": "The risk factors between prior and current are essentially identical in structure and language. There are no severe confessions — no restatements, no covenant breaches, no material weakness, no federal investigations. The risks disclosed are generic cyclical/competitive risks for a test and measurement equipment company. This is a quality business temporarily caught in macroeconomic downturn with no company-specific distress signals. The dislocation is macro (Brexit, trade tensions, European slowdown) rather than company-specific failure. Outcome: +215% return vs +72% S&P confirms strong recovery from macro dislocation."
+    },
+    "T8-108": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "Full-cost ceiling impairments recognized in the past due to price declines — and warning further impairments possible if prices decline significantly again",
+        "2019 average oil price $57.01/bbl vs 2018 $64.89/bbl — commodity price deterioration year-over-year",
+        "Coronavirus identified as new risk factor in current 10-K — specifically named as a domestic/global health concern",
+        "If borrowing base falls below outstanding borrowings, company must post additional collateral or repay deficit within six months",
+        "Cash flows from operations may be insufficient to fund capital expenditures — may need to restructure or refinance indebtedness",
+        "Prior full-cost ceiling impairments acknowledged with warning of recurrence"
+      ],
+      "structural_concerns": [
+        "Oil and gas E&P company with commodity price exposure — price declines below economic production threshold could force curtailment",
+        "Capital-intensive business requiring continuous access to capital markets; refinancing risk if conditions tighten",
+        "Borrowing base mechanism creates a cliff risk if oil prices fall further",
+        "However, reserve growth is confirmed: total proved reserves growing (2017: ~395 MMBOE, 2018: 503 MMBOE) — underlying asset value intact"
+      ],
+      "reasoning": "This E&P company entered COVID period (June 2020) after oil had crashed. Confessions include prior impairments, oil price deterioration, and liquidity vulnerability tied to borrowing base. However, the business model is intact with growing proved reserves. The confession of prior impairments explains why the stock is cheap. The borrowing base risk is specific and quantifiable. No operational failure, no structural competitive shift — just commodity cycle distress. Outcome: +395% return vs +43% S&P is the strongest confirmation in the batch of temporary dislocation."
+    },
+    "T8-164": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "Company confesses prior periods of rapid growth followed by declining sales and losses (footwear industry pattern); explicitly states 'our business may be similarly affected in the future'",
+        "Distribution center migration from Ontario CA to Dayton OH disclosed — operational transition risk acknowledged",
+        "Revenue decline from adverse foreign currency effects: Asian currencies weakened vs USD impacting Asia segment; Euro weakening impacted EMEA ~$13.5M",
+        "Tariff exposure on imports with anti-dumping fines risk",
+        "Company narrowing product line as strategic response — implies prior overextension"
+      ],
+      "structural_concerns": [
+        "Brand perception risk: some consumers perceive Crocs as 'out of style, outdated, or otherwise undesirable' — acknowledged in risk factors",
+        "Highly competitive footwear market against NIKE, adidas, Under Armour, Skechers, Deckers — all larger competitors",
+        "International revenue exposed to FX headwinds at time of entry",
+        "Distribution center move creates near-term operational disruption risk"
+      ],
+      "reasoning": "Crocs shows a company proactively simplifying its business model (narrowing product line, moving distribution center, focusing on core molded footwear). The confessions are largely operational and macro (FX, tariffs) rather than fundamental brand failure. The brand risk is acknowledged but the company is actively managing it. The prior 10-K and current 10-K have the same risk structure, indicating no escalation. No restatements, no investigations, no covenant issues. The brand risk is the key structural concern to watch, but at June 2020 entry prices, the turnaround narrative was intact. Outcome: +262% vs +43% confirms dislocation."
+    },
+    "T8-105": {
+      "assessment": "temporary_dislocation",
+      "confidence": "medium",
+      "confessions": [
+        "Borrowing base mechanism newly prominent in current 10-K (appeared in current, not prior) — signals lender scrutiny of asset values",
+        "Oil price declined from 2018 levels ($64.89/bbl avg) to 2019 levels ($57.01/bbl avg) — deteriorating commodity environment",
+        "E&P business with significant debt and leverage acknowledged",
+        "COVID-19 cited as a new risk to domestic and global health — adds demand uncertainty",
+        "Capital-intensive business where access to capital at acceptable rates is not guaranteed"
+      ],
+      "structural_concerns": [
+        "The riskFactors field is heavily truncated (30,000 char limit captures table of contents and glossary, not the actual risk text), limiting full analysis confidence",
+        "Reserve data shows total proved reserves growing (395 MMBOE 2017 → 503 MMBOE 2018 → implied similar 2019 from the PV-10 data visible) — underlying asset value intact",
+        "Oil and gas E&P during oil price crash entering COVID — severe commodity cycle dislocation",
+        "Borrowing base appearing as new risk factor signals credit stress emerging"
+      ],
+      "reasoning": "T8-105 is an E&P company (SM Energy, based on ticker SM referenced indirectly) entering COVID at $4.40/share. The 30,000 char truncation of the riskFactors field limits analysis to the table of contents and glossary rather than actual risk text. However, the data points available — growing reserves, new borrowing base risk mention, oil price decline — all point to commodity cycle distress with intact underlying assets. The borrowing base appearing as new risk is a confession of tightened financial conditions. Entry at $4.40 was during maximum oil sector dislocation. Outcome: +499% vs +43% S&P is the second-highest return in the batch, confirming severe temporary dislocation. Confidence medium due to truncated RF text."
+    },
+    "T7-044": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "E&P waste disposal and construction demolition debris businesses vulnerable to economic slowdowns — acknowledged cyclical exposure",
+        "Commodity price sensitivity: decline in recyclable commodity prices directly impacts revenues",
+        "Customer financial difficulties in governmental entities affecting credit risk",
+        "Goodwill impairment risk mentioned (standard for acquisition-heavy waste companies)",
+        "Competition from government-run waste disposal services that have tax and fee advantages"
+      ],
+      "structural_concerns": [
+        "Current vs prior risk factors show no material escalation — nearly identical structure",
+        "No severe confessions: no restatements, no covenant breaches, no investigations, no material weakness",
+        "Regional waste management with ~480 contracts is well-diversified",
+        "The new language about 'governmental action' and 'inability to successfully integrate' acquisitions is standard boilerplate for this industry",
+        "Prior 10-K had 'possible or expected acquisitions' language; current adds 'early termination' language — slight escalation but not material"
+      ],
+      "reasoning": "Regional waste management business with stable, essential services revenue base. The risk factors between prior and current are nearly identical, indicating stable risk profile with no emerging distress. Confessions are all generic cyclical risks. No company-specific acute distress. This company benefits from essential service contracts, making it a defensive temporary dislocation play during COVID. The dislocation was macro (June 2020 COVID market stress). Outcome: +53% vs +43% S&P confirms it was a modest dislocation with low alpha — the defensiveness of the business limited both the downside and the upside."
+    },
+    "T8-084": {
+      "assessment": "temporary_dislocation",
+      "confidence": "medium",
+      "confessions": [
+        "DC Solar entities (invested in by the company) are subjects of ongoing federal investigations involving allegations of fraudulent misconduct — $7.9M in investment tax credits recognized may be subject to recapture",
+        "Student loan portfolios: insurer RSC placed into liquidation by South Dakota Division of Insurance in June 2018, leaving portfolios uninsured — active credit loss risk",
+        "Community bank division sale to Central Bank announced — strategic restructuring, new risk of deal failure disclosed",
+        "New consumer lending programs with third-party marketers described as a 'new area' presenting 'potential increased credit, operational, and reputational risks'",
+        "CECL (new loan loss methodology) expected to be effective October 2020 — could impact future profitability"
+      ],
+      "structural_concerns": [
+        "DC Solar fraud investigation is a new, company-specific confession not present in prior 10-K — adds legal/regulatory uncertainty",
+        "Community bank division sale (new in current, not prior) signals strategic shift — selling traditional banking to focus on fintech/payments",
+        "New unsecured consumer lending programs via third-party marketers represent expansion into higher-risk credit segments",
+        "Multiple concurrent changes: DC Solar exposure, uninsured student loans, community bank sale, new lending programs — complexity and execution risk elevated",
+        "However: selling community bank to concentrate on higher-growth payments/fintech segments could be value-creating strategic pivot"
+      ],
+      "reasoning": "This company (MetaBank/Meta Financial Group) has several concurrent confessions: a fraud-adjacent investment (DC Solar), an uninsured loan portfolio, and a major strategic transaction (community bank sale). These are real, specific pain points that explain the stock's cheapness. However, the business model is not broken — the company is actively pivoting, the core tax services / prepaid card business is intact, and the confessions are manageable in size ($7.9M tax credit risk, finite student loan portfolio). The community bank sale is strategically logical. The dislocation is genuine but recoverable. Outcome: +177% vs +43% S&P confirms temporary dislocation. Confidence medium due to multiple concurrent novel risk items."
+    },
+    "T8-145": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "Func Food Group Oyj acquisition: target had ~$55M in debt, certain of which was in default at time of acquisition — company acquired a financially distressed entity",
+        "Func Food's Outstanding Bonds were restructured as part of acquisition — company inherited restructured debt",
+        "Reinstatement Bonds ($9.52M) due October 30, 2020 — imminent maturity creating near-term liquidity pressure on subsidiary",
+        "Debt conversion of $10M in convertible notes occurred upon Sept 2019 public offering — dilutive event acknowledged",
+        "Celsius has 'history of losses' acknowledged — small company with significant accumulated deficit",
+        "Quarterly liquidity and financial compliance tests required on Func Food bonds — ongoing covenant compliance obligation"
+      ],
+      "structural_concerns": [
+        "No structural decline signals — prior 10-K showed same Celsius beverage growth story with expanding distribution",
+        "Acquisition of a distressed entity (Func Food) was opportunistic — buying Nordic distribution at distress prices",
+        "Business model is intact and expanding: adding Asian distribution (Qifeng in China, A.S. Watson in Hong Kong), European platform (Func Food)",
+        "Product lines growing: original Celsius, Celsius Heat, BCAA line, Func Food brands (FAST, FitFarm, CocoVi)",
+        "Reinstated Bond maturity in Oct 2020 is a near-term overhang but manageable given company's equity raise history"
+      ],
+      "reasoning": "Celsius Holdings presents the clearest case of confession-as-context in the batch. The company acquired a financially distressed European distributor (Func Food with $55M in defaulted debt), inherited near-term bond maturities, and entered COVID at a $3.20 stock price. The confessions explain precisely why the stock is cheap: investors priced in the Func Food integration risk and bond maturity. But the underlying Celsius beverage brand had strong Nordic market traction (best-selling fitness drink in Sweden), growing Asian distribution, and an expanding product portfolio. The business model is not just intact — it's in a high-growth phase. The distress acquired via Func Food is finite and specific. Outcome: +1390% vs +43% S&P (13.9x return) — the strongest performer in the batch by far, and the clearest validation of the confession-as-context thesis."
+    },
+    "T8-113": {
+      "assessment": "structural_decline",
+      "confidence": "medium",
+      "confessions": [
+        "Surety bond market deteriorating: bond rates increased, number of willing issuers decreased, terms less favorable — ongoing structural cost increase",
+        "Industry-wide bankruptcies of prominent coal producers cited — peer distress acknowledged",
+        "Self-bonding restrictions increasing, potentially forcing more costly forms of financial assurance",
+        "Met coal demand dependent on global steel industry which has experienced deterioration 'in past years'",
+        "Global financial market volatility, diminished liquidity, credit availability and rating downgrades mentioned as ongoing condition"
+      ],
+      "structural_concerns": [
+        "Met coal (metallurgical coal for steel production) faces structural secular decline pressure from green steel initiatives and carbon emission regulation",
+        "GHG regulatory framework is intensifying: Clean Power Plan, Paris Agreement framework, EPA endangerment findings — long-term demand headwind building",
+        "Chinese government policy changes explicitly cited as potential risk to global coal market demand",
+        "Industry bankruptcy wave among peers signals structural oversupply and pricing pressure not just cyclical dislocation",
+        "Surety bond market tightening is a structural cost increase that preferentially harms smaller operators",
+        "Black lung disease liability acknowledged as ongoing regulatory/legal cost",
+        "Climate change section in current 10-K is extensive and detailed — signals regulatory risk materially elevated vs prior periods"
+      ],
+      "reasoning": "Met coal mining sits at the intersection of several structural forces: GHG regulation tightening globally, green steel technology adoption, Chinese policy uncertainty, and peer bankruptcies signaling structural overcapacity. The risk factors, while similar in structure to prior year, contain extensive climate regulation discussion that suggests the company itself recognizes the secular headwind. Unlike the oil E&P cases (T8-108, T8-105) where commodity cycle dislocation is the primary driver, met coal faces genuine demand destruction risk from decarbonization of steel production. The surety bond market deterioration adds structural cost pressure. However, outcome: +137% vs +43% S&P (0.94 alpha) suggests the stock did recover, indicating some dislocation component. Assessment tilts structural due to decarbonization trajectory but is a borderline case — confidence medium. The steel supercycle following COVID (infrastructure stimulus) likely drove the near-term recovery masking longer-term structural issues."
+    },
+    "T7-038": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "Multiple named pipeline incidents: Lakehead System (2010), BC T-South system (Oct 2018), Texas Eastern (Jan 2019 and Aug 2019) — operational incidents disclosed with specificity",
+        "Named incident: August 2019 Texas Eastern pipeline incident — very recent at time of filing",
+        "Customer payment defaults possible if significant could adversely affect earnings",
+        "Age of pipelines acknowledged: 'vary in age and were constructed over many decades' — increasing inspection and maintenance costs",
+        "Litigation exposure from named incidents — outcome uncertain"
+      ],
+      "structural_concerns": [
+        "Prior 10-K focused on 'Execution of capital projects' as primary risk; current 10-K adds named incidents (Texas Eastern twice, T-South) — operational performance has deteriorated in measurable ways",
+        "CTS (Competitive Tolling System) on Canadian Mainline creates throughput risk — regulatory structure has become more competitive",
+        "Natural gas oversupply in North America from shale gas reducing demand for pipeline capacity in some regions",
+        "Climate change risk explicitly integrated into multiple risk categories — growing regulatory and stakeholder pressure on pipeline operator",
+        "However: no covenant issues, no credit distress, no financial restatements, no going concern",
+        "The pipeline network is essential infrastructure with long-term contracts — underlying business model structurally sound"
+      ],
+      "reasoning": "This major pipeline company had a difficult 2018-2019 operationally (multiple named incidents including Texas Eastern twice). These incidents drive regulatory scrutiny, litigation costs, and reputational pressure, explaining cheap valuation. However, the underlying business model — essential infrastructure with long-term take-or-pay contracts — is intact. The company is investing in pipeline age remediation and cybersecurity. The climate/stakeholder pressure is a secular headwind but is a slow-moving structural risk, not an acute one. The shift from 'capital projects risk' to 'operational incidents' in the primary risk framing is notable but the company is an essential utility-like business. Outcome: +45% vs +43% S&P (barely positive alpha of 0.024) reflects that the operational incidents and pipeline controversy (Line 3 opposition) created sustained headwinds. The dislocation was real but the recovery was modest — the stock was indeed cheap but faced genuine headwinds. Assessment: temporary dislocation with near-zero alpha confirming the thesis partially, not overwhelmingly."
+    },
+    "T5-028": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "COVID-19 and resulting governmental and societal responses cited as the first and primary new risk — explicitly placed at top of risk list in current 10-K, absent from prior",
+        "COVID impact on business, liquidity, customers, insurance carriers and third parties acknowledged as a new active uncertainty",
+        "Debt covenant compliance risk mentioned — failure to comply with covenants could prevent engaging in beneficial activities",
+        "Regulatory and legal proceedings risk — certain actual or potential claims, regulatory actions or proceedings",
+        "Pandemic and epidemic effects explicitly added as new risk category"
+      ],
+      "structural_concerns": [
+        "No structural decline signals: prior and current risk factors have same core structure (talent risk, acquisition risk, cybersecurity, carrier relationships)",
+        "COVID is the primary new risk — this is macro dislocation not structural business failure",
+        "Insurance brokerage/agency business has highly defensive characteristics: commercial insurance is mandatory, renewal rates are sticky",
+        "No restatements, no material weakness, no investigations, no covenant breaches",
+        "Employee count grew to 11,136 — business is expanding not contracting",
+        "COVID adds near-term uncertainty to acquisition pipeline (harder to conduct due diligence) but insurance renewal commissions are recurring revenue"
+      ],
+      "reasoning": "Insurance brokerage is one of the most defensive business models in financial services — clients must maintain commercial insurance coverage regardless of economic conditions, generating recurring commission revenue. The primary confession is COVID (new first risk in current vs prior 10-K), which is a macro dislocation. No company-specific distress: no covenant breaches, no restatements, no investigations. Prior and current risk structures are nearly identical otherwise. This is a high-quality business temporarily repriced due to COVID macro uncertainty. Entry in Sept 2021 at $54.65 is later than the June 2020 cohort, suggesting evaluation after the worst of COVID. Outcome: +84% vs +31% S&P (0.53 alpha) confirms modest but real temporary dislocation."
+    },
+    "T8-078": {
+      "assessment": "temporary_dislocation",
+      "confidence": "high",
+      "confessions": [
+        "Significant customer concentration: Alabama DOT (13.8%) and North Carolina DOT (13.1%) together represent ~27% of revenues — acknowledged high concentration risk",
+        "Highway Trust Fund insolvency risk disclosed: Fund has 'faced insolvency' with shortfalls addressed by short-term transfers from General Fund",
+        "False Claims Act exposure acknowledged — government contractor fraud liability up to treble damages",
+        "Budget deficits and financing constraints at state level impacting funding timing",
+        "69.3% of revenues from government-funded contracts — concentration and dependency risk"
+      ],
+      "structural_concerns": [
+        "Prior and current 10-K risk factors have essentially identical language — no escalation of company-specific distress",
+        "Government infrastructure contractor dependent on federal and state highway spending cycles — inherently cyclical",
+        "No restatements, no investigations, no material weakness, no covenant issues",
+        "Business model intact: southern states infrastructure contractor with established DOT relationships",
+        "COVID entry (June 2020) created dislocation for infrastructure contractors despite their essential/government nature",
+        "Highway Trust Fund shortfall is a known, chronic structural issue addressed politically each cycle — not new"
+      ],
+      "reasoning": "A southeastern US infrastructure contractor focused on Alabama, Florida, Georgia, North Carolina and South Carolina DOT work. The risk factors are stable and nearly identical to prior year. Customer concentration in DOTs (27% in top 2) is the primary company-specific risk, but it is well-known and disclosed consistently. The highway funding shortfall is a chronic political issue, not a new company failure. No financial distress signals. COVID dislocation created temporary repricing of government infrastructure work despite its essential and publicly funded nature. Outcome: +91% vs +43% S&P (0.48 alpha) confirms dislocation thesis with moderate but real alpha."
+    }
+  }
+}

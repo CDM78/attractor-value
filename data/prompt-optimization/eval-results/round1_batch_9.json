@@ -1,0 +1,43 @@
+{
+  "batch": 9,
+  "results": {
+    "T8-102": {
+      "buy": {
+        "buy_v1_binary": {"assessment": "stable", "confidence": "high"},
+        "buy_v2_character": {"character_changed": false, "assessment": "same_character", "confidence": "high"},
+        "buy_v3_sector_adjusted": {"assessment": "stable", "confidence": "medium"},
+        "buy_v4_confession": {"assessment": "temporary_dislocation", "confidence": "medium"},
+        "buy_v5_resolution": {"risks_resolved": 0, "risks_new": 0, "assessment": "stable", "confidence": "high"},
+        "buy_v6_minimal": {"assessment": "stable"},
+        "buy_v7_quantified": {"quantified_risks_prior": 2, "quantified_risks_current": 2, "assessment": "same", "confidence": "high"},
+        "buy_v8_forward": {"trajectory": "stable", "confidence": "medium"}
+      },
+      "sell": {
+        "sell_v1_thesis_drift": {"thesis_intact": false, "action": "sell", "confidence": "high"},
+        "sell_v2_escalation": {"escalated_count": 4, "action": "sell", "confidence": "high"},
+        "sell_v3_new_confessions": {"new_confessions_found": true, "action": "sell", "confidence": "high"},
+        "sell_v4_simple": {"trajectory": "worse", "action": "sell"},
+        "sell_v5_exit_urgency": {"urgency": 8, "action": "sell", "confidence": "high"}
+      }
+    },
+    "T8-020": {
+      "buy": {
+        "buy_v1_binary": {"assessment": "deteriorating", "confidence": "high"},
+        "buy_v2_character": {"character_changed": true, "assessment": "new_risk_types", "confidence": "high"},
+        "buy_v3_sector_adjusted": {"assessment": "company_specific_deterioration", "confidence": "medium"},
+        "buy_v4_confession": {"assessment": "structural_decline", "confidence": "medium"},
+        "buy_v5_resolution": {"risks_resolved": 0, "risks_new": 3, "assessment": "deteriorating", "confidence": "high"},
+        "buy_v6_minimal": {"assessment": "changing"},
+        "buy_v7_quantified": {"quantified_risks_prior": 1, "quantified_risks_current": 3, "assessment": "more_risks", "confidence": "high"},
+        "buy_v8_forward": {"trajectory": "worsening", "confidence": "high"}
+      },
+      "sell": {
+        "sell_v1_thesis_drift": {"thesis_intact": false, "action": "sell", "confidence": "high"},
+        "sell_v2_escalation": {"escalated_count": 5, "action": "sell", "confidence": "high"},
+        "sell_v3_new_confessions": {"new_confessions_found": true, "action": "sell", "confidence": "high"},
+        "sell_v4_simple": {"trajectory": "worse", "action": "sell"},
+        "sell_v5_exit_urgency": {"urgency": 9, "action": "sell", "confidence": "high"}
+      }
+    }
+  }
+}
