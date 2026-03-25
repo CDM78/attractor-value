@@ -1,0 +1,66 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "COVID-19 pandemic risk to financial condition and operations"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Programming contracts restrict video package structure, impacting affordability and competitive positioning",
+        "points": 1
+      },
+      {
+        "risk": "Satellite-based internet delivery added as distinct competitive threat to broadband service",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "CBRS PALs spectrum licenses subject to revocation and expiration, loss could impair mobile traffic offload and cost reductions",
+        "key_phrase": "we now hold CBRS PALs to support existing and future mobile services. These licenses are subject to revocation and expiration",
+        "points": 3
+      },
+      {
+        "risk": "Third-party device platform dependency risk for service delivery to substantial customer base",
+        "key_phrase": "if we are no longer able to make our services available to our customers on a third-party device on which a substantial number of customers have relied to access our services",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Mobile business investment risk expanded from initial launch phase to ongoing growth with spectrum acquisition and partnership considerations",
+      "prior": "as we launch our new mobile services using virtual network operator rights from a third party, we expect an initial funding period to grow a new product",
+      "current": "as we continue to grow our mobile services using virtual network operator rights from a third party, we expect continued growth-related sales and marketing and other customer acquisition costs",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Supplier and vendor risk language expanded to include non-renewal, non-monetary compensation demands, and service interruption scenarios",
+      "prior": "If any of these parties breaches or terminates its agreement with us or otherwise fails to perform its obligations in a timely manner",
+      "current": "If any of these parties breach or terminate or elect not to renew their agreements with us or otherwise fail to perform their obligations in a timely manner",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    {
+      "risk": "Commercial business standalone risk section removed — scaling difficulties, SLA requirements, infrastructure investment, and third-party interconnection dependency risks for commercial services no longer separately disclosed",
+      "points": -2
+    },
+    {
+      "risk": "Wireline and wireless overbuild competition risk removed — prior year warning about overbuilds adversely affecting growth and financial condition eliminated",
+      "points": -2
+    }
+  ],
+  "severity_score": 6,
+  "trajectory": "MODERATE_CONCERN",
+  "boilerplate_count": 1,
+  "sector_wide_count": 2,
+  "company_specific_count": 2,
+  "escalation_count": 2,
+  "confession_count": 0,
+  "resolved_count": 2
+}

@@ -1,0 +1,42 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      "Added generic widespread illness/health epidemic language as potential business risk",
+      "Added climate change as a factor that could increase weather disruptions to supply chain"
+    ],
+    "sector_wide": [
+      "Broadened competitive scope to explicitly include food delivery market, order and delivery aggregators, meal delivery platforms — reflecting sector-wide delivery aggregator boom (DoorDash, UberEats, etc.)",
+      "Added FTC enforcement and regulatory compliance risk for social media use, plus collective action/boycott risk from social media"
+    ],
+    "company_specific": [
+      "New cannibalization disclosure: admitted strategy of building stores in existing markets 'may negatively impact sales at existing stores' — acknowledges self-inflicted headwind from own growth strategy"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Litigation and regulatory investigations",
+      "direction": "MINOR",
+      "detail": "Language changed from hypothetical 'may initiate investigations' to 'have initiated and may in the future initiate investigations'; added 'We are currently subject to these types of claims' — shift from theoretical to actual"
+    },
+    {
+      "risk": "Cheese cost pressure",
+      "direction": "MINOR",
+      "detail": "Cost range narrowed from 'approximately 20-25%' to 'approximately 25%' of market basket — tightened to upper bound suggesting persistent cost pressure"
+    },
+    {
+      "risk": "Competitive landscape consequences",
+      "direction": "MINOR",
+      "detail": "Added 'loss of management or hourly employees, disruption in our supply chain centers' as explicit consequences of competitive pressure — expanded downside scenario language"
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [],
+  "severity_score": 8,
+  "trajectory": "MODERATE_CONCERN",
+  "boilerplate_count": 2,
+  "sector_wide_count": 2,
+  "company_specific_count": 1,
+  "escalation_count": 3,
+  "confession_count": 0,
+  "resolved_count": 0
+}

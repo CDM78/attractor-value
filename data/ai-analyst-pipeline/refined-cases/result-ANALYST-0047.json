@@ -1,0 +1,67 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      "CARES Act/COVID-19 pandemic factual update to PAMA reimbursement timeline"
+    ],
+    "sector_wide": [
+      "Failure to develop or acquire licenses for new tests, technology and services (broken out as standalone risk)",
+      "Failure to establish appropriate quality standards in diagnostic services",
+      "New players entering clinical lab testing services (employers, government agencies)",
+      "DCEs (Direct Contracting Entities) added as competitive/reimbursement factor alongside ACOs and IDNs"
+    ],
+    "company_specific": [
+      "International operations risk - political, legal, operational risks in non-U.S. markets",
+      "False Claims Act explicit disclosure with treble damages and qui tam provisions added to billing risk"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Hospital physician practice competition - language changed from hospitals \"may require\" to \"encourage or require\" referrals to hospital labs",
+      "severity": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "Health plan reimbursement pressure - removed positive language about expanded network access reducing spending variation; replaced with neutral cautionary language about health plans focusing on value",
+      "severity": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "FDA regulatory authority over LDTs escalated - added HHS views on LDT regulation and FDA assertion of authority over pharmacogenetic testing annotation software",
+      "severity": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "PAMA reimbursement cuts confirmed as having occurred (past tense vs scheduled); timeline extended through 2022-24 cap period",
+      "severity": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "Billing compliance risk expanded with explicit False Claims Act treble damages and qui tam whistleblower provisions",
+      "severity": "MINOR",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    {
+      "risk": "Privacy laws / information security policies risk factor removed from Item 1A",
+      "points": -2
+    },
+    {
+      "risk": "Business development activities and M&A integration risk factor removed",
+      "points": -2
+    },
+    {
+      "risk": "Efficiency improvement risk factor removed",
+      "points": -2
+    }
+  ],
+  "severity_score": 9,
+  "trajectory": "MODERATE_CONCERN",
+  "boilerplate_count": 1,
+  "sector_wide_count": 4,
+  "company_specific_count": 2,
+  "escalation_count": 5,
+  "confession_count": 0,
+  "resolved_count": 3
+}

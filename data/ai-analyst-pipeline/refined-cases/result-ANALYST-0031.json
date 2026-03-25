@@ -1,0 +1,57 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "Added reference to 5G deployments as specific driver of carrier network upgrades and demand for communications infrastructure"
+      },
+      {
+        "risk": "Added cross-reference to impairment evaluation for towers with no tenants in accounting policies discussion"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Added telehealth, remote working, and remote communications as new data consumption drivers reflecting pandemic-era demand shifts across all telecom infrastructure",
+        "points": 1
+      },
+      {
+        "risk": "Added increased government initiatives to expand broadband infrastructure as a new anticipated demand factor for communications infrastructure sector",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "T-Mobile/Sprint merger completed in 2020 reduced Crown Castle's major tenant base from four carriers to three, increasing customer concentration from 75% to 76% of site rental revenues with fewer counterparties",
+        "key_phrase": "T-Mobile (which merged with Sprint in April 2020), AT&T and Verizon Wireless, which collectively accounted for approximately 76% of our 2020 consolidated site rental revenues",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Customer concentration risk intensified as top tenant base consolidated from four carriers to three while revenue concentration increased",
+      "prior": "T-Mobile, AT&T, Verizon Wireless and Sprint, which collectively accounted for approximately 75% of our 2019 consolidated site rental revenues",
+      "current": "T-Mobile (which merged with Sprint in April 2020), AT&T and Verizon Wireless, which collectively accounted for approximately 76% of our 2020 consolidated site rental revenues",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    {
+      "risk": "Financial restatement resolved - prior year disclosed historical revenue recognition errors with cumulative net income reduction of approximately $516 million; current filing contains no restatement references",
+      "points": -2
+    },
+    {
+      "risk": "Material weakness in internal controls resolved - prior year disclosed material weakness in internal control over financial reporting with ineffective disclosure controls and procedures; current filing contains no material weakness or remediation references indicating successful remediation",
+      "points": -2
+    }
+  ],
+  "severity_score": 2,
+  "trajectory": "NORMAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 2,
+  "company_specific_count": 1,
+  "escalation_count": 1,
+  "confession_count": 0,
+  "resolved_count": 2
+}

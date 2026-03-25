@@ -1,0 +1,47 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "Evolving privacy laws broken out as dedicated section with CCPA, UK Data Protection Act, and Brexit privacy implications"
+      },
+      {
+        "risk": "Uncertain economic and political conditions in countries where we do business added to global operations risk factors"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Public health crises and epidemics including novel coronavirus outbreak significantly affecting China, with potential supply chain disruption, quarantines, and business closures",
+        "points": 1
+      },
+      {
+        "risk": "Domestic supplier favoritism risk where government or customer policies may lead non-U.S. customers to favor domestic suppliers over Trimble products",
+        "points": 1
+      }
+    ],
+    "company_specific": []
+  },
+  "escalated_risks": [
+    {
+      "risk": "Trade disruption risk expanded from tariff-focused to broader diplomatic/military disruption scenarios including embargoes and export restrictions",
+      "prior": "A significant trade disruption or the establishment or increase of any trade barrier in any area where we do business",
+      "current": "There is inherent risk that political, diplomatic, or military events could result in trade disruptions, including tariffs, trade embargoes, export restrictions, and other trade barriers",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    {
+      "risk": "Specific large acquisition integration risk for Viewpoint ($1,211.3M) and e-Builder ($485.2M) no longer called out by name, suggesting integration progressed past acute risk phase",
+      "points": -2
+    }
+  ],
+  "severity_score": 1,
+  "trajectory": "NORMAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 2,
+  "company_specific_count": 0,
+  "escalation_count": 1,
+  "confession_count": 0,
+  "resolved_count": 1
+}

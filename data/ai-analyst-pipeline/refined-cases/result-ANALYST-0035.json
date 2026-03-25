@@ -1,0 +1,44 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      "General risk factor section reorganization and expansion of boilerplate language (restructured risk categories from individual topics to grouped headings)"
+    ],
+    "sector_wide": [
+      "Developments with respect to low-carbon fuel policies and the market for alternative fuels may affect demand for renewable fuels and could adversely affect financial performance",
+      "Pandemic/public health risks affecting demand for transportation fuels (inferred from 50% expansion of risk factor section during COVID year, sector-wide impact on refining margins)",
+      "Increased ESG and climate-related regulatory risk disclosure (new TCFD, SASB reporting framework risks)"
+    ],
+    "company_specific": [
+      "Joint venture investment risk - DGD expansion with nearly $2B additional capital commitment decreases ability to manage risk",
+      "Feedstock supply disruption risk expanded to include rendered and recycled materials reflecting material growth in renewable diesel operations",
+      "Ethanol plant reduction from 14 to 13 plants indicating operational restructuring/asset rationalization"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Refining margin volatility - escalated from normal cycle risk to severe demand destruction during COVID-19 pandemic year (FY2020)",
+      "severity": "MAJOR"
+    },
+    {
+      "risk": "Feedstock supply and pricing risk - expanded scope to include renewable feedstocks (rendered materials, recycled oils) reflecting larger and more complex supply chain",
+      "severity": "MINOR"
+    },
+    {
+      "risk": "Environmental and climate regulatory compliance risk - significantly escalated disclosure from 1 to 21 ESG/climate mentions, indicating heightened regulatory scrutiny",
+      "severity": "MINOR"
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    "Rail car transportation cost risk - prior filing specifically referenced 'additional costs as a result of our use of rail cars for the transportation of crude oil'; this specific risk factor title is not cross-referenced in current filing",
+    "VLP segment integration risk - merger transaction with VLP completed and fully integrated into refining segment, no longer referenced as ongoing risk"
+  ],
+  "severity_score": 14,
+  "trajectory": "SIGNIFICANT_CONCERN",
+  "boilerplate_count": 1,
+  "sector_wide_count": 3,
+  "company_specific_count": 3,
+  "escalation_count": 3,
+  "confession_count": 0,
+  "resolved_count": 2
+}

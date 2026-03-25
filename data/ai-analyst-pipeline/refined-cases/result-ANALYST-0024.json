@@ -1,0 +1,86 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "COVID-19 pandemic workforce management risk - new section on managing employees during COVID-19, ensuring safety and enabling remote work"
+      },
+      {
+        "risk": "Human Capital Management disclosure - new expanded section on employee engagement, training, inclusion and diversity (SEC-mandated HCM disclosure)"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Ongoing portfolio shaping and divestiture execution risk - company discloses it will continue divesting assets not aligned with enterprise technology stack strategy, creating integration and operational disruption risks across IT services sector undergoing consolidation",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "Revenue stabilization acknowledged as key strategic priority, implying ongoing revenue declines requiring remediation",
+        "key_phrase": "continued focus on our people, revenue stabilization, cost optimization and winning in the market",
+        "points": 3
+      },
+      {
+        "risk": "Balance sheet strengthening elevated to explicit strategic pillar, signaling financial leverage concerns",
+        "key_phrase": "Unlock Value to Strengthen Balance Sheet",
+        "points": 3
+      },
+      {
+        "risk": "Workforce reduction of approximately 4,000 employees (from ~138,000 to ~134,000) reflecting business contraction from divestitures and cost-cutting",
+        "key_phrase": "we employed approximately 134,000 people worldwide",
+        "points": 3
+      },
+      {
+        "risk": "Major business divestitures completed (HHS for $5.0B and HPS for ~$543M) fundamentally reshaping the company and reducing revenue base",
+        "key_phrase": "completed the sale of two businesses that comprised the Strategic Alternatives plan",
+        "points": 3
+      },
+      {
+        "risk": "Customer count disclosure removed - prior year disclosed 'more than 6,000 private and public-sector customers' but current year omits this metric, potentially indicating customer attrition",
+        "key_phrase": "over half of today s fortune 500 companies",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Strategic execution risk escalated from general strategic objectives uncertainty to structured Transformation Journey with specific pillars indicating deeper operational challenges",
+      "prior": "We may not succeed in our strategic objectives, which could adversely affect our business",
+      "current": "The DXC Transformation Journey strategy focuses on building stronger relationships with customers, its people, and unlocking value across the Enterprise Technology Stack",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "Divestiture risk escalated from single pending transaction to ongoing portfolio shaping program with continued divestitures planned",
+      "prior": "DXC entered into a definitive agreement to sell our U.S. State and Local Health and Human Services business",
+      "current": "the Company will continue its portfolio shaping efforts and divest assets that the Company does not believe are well integrated with its enterprise technology stack",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [
+    {
+      "type": "Quantified revenue/operational decline acknowledged",
+      "detail": "Revenue stabilization cited as explicit strategic priority, combined with workforce reduction from ~138,000 to ~134,000 employees and removal of '6,000+ customers' metric from business description, collectively confirming material business contraction",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "HHS Sale completion risk resolved - previously pending $5.0B divestiture to Veritas Capital was subject to multiple closing conditions; now completed successfully as Gainwell Technologies",
+      "points": -2
+    },
+    {
+      "risk": "Senior leadership transition risk resolved - prior year disclosed 'recently announced a number of senior leadership changes' as risk; current year shows stable executive team in place",
+      "points": -2
+    }
+  ],
+  "severity_score": 22,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 1,
+  "company_specific_count": 5,
+  "escalation_count": 2,
+  "confession_count": 1,
+  "resolved_count": 2
+}

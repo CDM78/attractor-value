@@ -1,0 +1,103 @@
+{
+  "new_risks": {
+    "boilerplate": [],
+    "sector_wide": [
+      {
+        "risk": "Customers migrating toward lump-sum contracts and procurement-led contracting model across EPC industry, increasing risk profile for contractors",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "Financial restatement of FY2016-2018 and quarterly 2018-2019 financial statements due to material accounting errors on the Radford project",
+        "key_phrase": "previously issued financial statements for the years ended December 31, 2018, 2017 and 2016 ... should no longer be relied upon due to errors",
+        "points": 3
+      },
+      {
+        "risk": "SEC and DOJ conducting investigations of past accounting and financial reporting",
+        "key_phrase": "the SEC and DOJ are conducting investigations of our past accounting and financial reporting",
+        "points": 3
+      },
+      {
+        "risk": "Special Committee investigation found management applied inappropriate pressure causing override of project-level controls",
+        "key_phrase": "prior business line management applied inappropriate pressure to project personnel, which pressure caused an override of our project-level controls on a project and resulted in accounting errors",
+        "points": 3
+      },
+      {
+        "risk": "Material weaknesses identified in internal controls over financial reporting (ICFR) and disclosure controls deemed not effective",
+        "key_phrase": "identification of material weaknesses and the conclusion that our ICFR, as well as our disclosure controls and procedures were not effective as of December 31, 2019",
+        "points": 3
+      },
+      {
+        "risk": "Former CEO management style fostered environment weakening compliance culture",
+        "key_phrase": "our prior chief executive officer s management style may have fostered an environment that could have contributed to this conduct and could have served to weaken certain aspects of our otherwise strong culture of compliance",
+        "points": 3
+      },
+      {
+        "risk": "Significant project charges recognized across three largest segments with overly optimistic bidding on high-risk lump-sum contracts",
+        "key_phrase": "we recognized significant charges across the company s three largest segments during the second quarter of 2019",
+        "points": 3
+      },
+      {
+        "risk": "Plan to sell AMECO equipment business and prior attempted divestiture of government segment reported as discontinued operations",
+        "key_phrase": "we committed to a plan to sell substantially all of our government and equipment ( AMECO ) businesses, which are reported as discontinued operations",
+        "points": 3
+      },
+      {
+        "risk": "Removal of Financial Strength competitive advantage claim - no longer claiming strong balance sheet, investment grade credit, or ability to pay dividends and repurchase stock",
+        "key_phrase": "Financial Strength section entirely removed from current filing",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Risk management capabilities - language shifted from confident proven ability to acknowledging need for new pursuit criteria and guidelines",
+      "prior": "our ability to assess, understand, gauge, mitigate and manage project risk ... provides us with a proven ability to deliver the project certainty our clients demand",
+      "current": "In combination with our new pursuit criteria and guidelines we believe we have the ability to assess, understand, gauge, mitigate and manage project risk",
+      "severity": "major",
+      "points": 4
+    }
+  ],
+  "confessions": [
+    {
+      "type": "Financial restatement",
+      "detail": "previously issued financial statements for the years ended December 31, 2018, 2017 and 2016 and each of our previously issued unaudited quarterly financial statements for 2018 and 2019 should no longer be relied upon due to errors ... negatively impacted cumulative pre-tax earnings reported through September 30, 2019 by $3.8 million",
+      "points": 5
+    },
+    {
+      "type": "Material weakness disclosure",
+      "detail": "management has assessed the effectiveness of our ICFR, which resulted in the identification of material weaknesses and the conclusion that our ICFR, as well as our disclosure controls and procedures were not effective as of December 31, 2019",
+      "points": 5
+    },
+    {
+      "type": "Regulatory actions / enforcement proceedings",
+      "detail": "the SEC and DOJ are conducting investigations of our past accounting and financial reporting, and, as part of their respective investigations, they have requested documents and information",
+      "points": 5
+    },
+    {
+      "type": "Internal controls override and management misconduct",
+      "detail": "prior business line management applied inappropriate pressure to project personnel, which pressure caused an override of our project-level controls on a project and resulted in accounting errors",
+      "points": 5
+    },
+    {
+      "type": "Quantified revenue/margin deterioration across segments",
+      "detail": "we recognized significant charges across the company s three largest segments during the second quarter of 2019 ... errors associated with variable consideration caused us to overstate revenue and the errors associated with forecasted costs caused us to understate cost of revenue between 2016 and September 30, 2019",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "Fixed-price gas-fired power market exposure (prior noted exit during 2018, risk no longer mentioned as current filing restructured segments)",
+      "points": -2
+    }
+  ],
+  "severity_score": 52,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 0,
+  "sector_wide_count": 1,
+  "company_specific_count": 8,
+  "escalation_count": 1,
+  "confession_count": 5,
+  "resolved_count": 1
+}

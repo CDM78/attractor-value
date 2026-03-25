@@ -1,0 +1,44 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      "Reorganized risk factors with formal section headers (cosmetic restructuring)",
+      "Added generic language about costs to comply with new government regulations",
+      "Added boilerplate about cybersecurity compliance requirements for supply chain"
+    ],
+    "sector_wide": [
+      "COVID-19 impact on defense funding priorities and potential reductions in defense spending",
+      "Non-U.S. government customers facing budget pressures could reduce/delay spending"
+    ],
+    "company_specific": []
+  },
+  "escalated_risks": [
+    {
+      "risk": "U.S. Government revenue concentration increased from 71% to 74% (DoD: 61% to 64%)",
+      "level": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "F-35 program concentration increased from 27% to 28% of net sales; removed optimistic forward-looking growth language",
+      "level": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "Broadened F-35 funding risk from 'production contracts' to all 'contracts' - wider scope of funding concern",
+      "level": "MINOR",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    "Turkey sanctions/F-35 supply chain disruption risk removed (transition substantially completed)",
+    "GAO contract financing policy review risk removed"
+  ],
+  "severity_score": 1,
+  "trajectory": "NORMAL",
+  "boilerplate_count": 3,
+  "sector_wide_count": 2,
+  "company_specific_count": 0,
+  "escalation_count": 3,
+  "confession_count": 0,
+  "resolved_count": 2
+}

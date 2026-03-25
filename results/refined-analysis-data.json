@@ -1,0 +1,185 @@
+{
+  "sectionA": [
+    {
+      "range": "<=0 (improving)",
+      "cases": 3,
+      "w": 1,
+      "t": 2,
+      "wr": "33.3",
+      "tr": "66.7"
+    },
+    {
+      "range": "1-5 (normal)",
+      "cases": 5,
+      "w": 2,
+      "t": 3,
+      "wr": "40.0",
+      "tr": "60.0"
+    },
+    {
+      "range": "6-12 (moderate)",
+      "cases": 12,
+      "w": 3,
+      "t": 9,
+      "wr": "25.0",
+      "tr": "75.0"
+    },
+    {
+      "range": "13-20 (significant)",
+      "cases": 2,
+      "w": 2,
+      "t": 0,
+      "wr": "100.0",
+      "tr": "0.0"
+    },
+    {
+      "range": ">20 (critical)",
+      "cases": 11,
+      "w": 4,
+      "t": 7,
+      "wr": "36.4",
+      "tr": "63.6"
+    }
+  ],
+  "sectionB": [
+    {
+      "cat": "Boilerplate",
+      "mean": "1.52",
+      "r": "-0.304",
+      "p": "0.086"
+    },
+    {
+      "cat": "Sector-wide",
+      "mean": "1.88",
+      "r": "-0.213",
+      "p": "0.234"
+    },
+    {
+      "cat": "Company-specific",
+      "mean": "2.30",
+      "r": "0.069",
+      "p": "0.702"
+    },
+    {
+      "cat": "Escalation",
+      "mean": "2.33",
+      "r": "0.000",
+      "p": "1.000"
+    },
+    {
+      "cat": "Confession",
+      "mean": "0.88",
+      "r": "0.152",
+      "p": "0.398"
+    },
+    {
+      "cat": "Resolved",
+      "mean": "1.12",
+      "r": "-0.194",
+      "p": "0.279"
+    }
+  ],
+  "sectionC": {
+    "withConf": 12,
+    "cW": 4,
+    "cT": 8,
+    "noConf": 21,
+    "ncW": 8,
+    "ncT": 13
+  },
+  "sectionD": {
+    "rComp": "-0.150",
+    "pSev": "0.405",
+    "okayN": 8,
+    "problemN": 25,
+    "okW": 3,
+    "probT": 16,
+    "okayPct": "24",
+    "problemPct": "76",
+    "okayWR": "37.5",
+    "problemTR": "64.0"
+  },
+  "sectionE": [
+    {
+      "th": 3,
+      "okN": 8,
+      "wr": "37.5",
+      "conN": 25,
+      "tr": "64.0",
+      "sv": "49.0"
+    },
+    {
+      "th": 5,
+      "okN": 8,
+      "wr": "37.5",
+      "conN": 25,
+      "tr": "64.0",
+      "sv": "49.0"
+    },
+    {
+      "th": 8,
+      "okN": 13,
+      "wr": "46.2",
+      "conN": 20,
+      "tr": "70.0",
+      "sv": "56.8"
+    },
+    {
+      "th": 10,
+      "okN": 17,
+      "wr": "35.3",
+      "conN": 16,
+      "tr": "62.5",
+      "sv": "47.0"
+    },
+    {
+      "th": 15,
+      "okN": 22,
+      "wr": "36.4",
+      "conN": 11,
+      "tr": "63.6",
+      "sv": "48.1"
+    }
+  ],
+  "sectionF": [
+    {
+      "name": "Paragraph diff",
+      "r": "0.000",
+      "p": "1.000"
+    },
+    {
+      "name": "Dollar amount diff",
+      "r": "-0.074",
+      "p": "0.684"
+    },
+    {
+      "name": "New restatement kw",
+      "r": "-0.201",
+      "p": "0.262"
+    },
+    {
+      "name": "Total restatement kw",
+      "r": "-0.029",
+      "p": "0.874"
+    },
+    {
+      "name": "Text length diff",
+      "r": "0.241",
+      "p": "0.176"
+    }
+  ],
+  "summary": {
+    "rComp": "-0.150",
+    "pSev": "0.405",
+    "fpRate": "76",
+    "promptVerdict": "USE ORIGINAL",
+    "fpVerdict": "Still too pessimistic",
+    "hVerdict": "AI adds value beyond heuristics",
+    "bestThreshold": 8,
+    "bestWR": "46.2",
+    "bestTR": "70.0",
+    "finalVerdict": "USE HEURISTIC",
+    "ready": "NO",
+    "bestHR": "0.241"
+  }
+}

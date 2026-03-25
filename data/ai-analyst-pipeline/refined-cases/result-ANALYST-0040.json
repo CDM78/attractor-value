@@ -1,0 +1,45 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      "Added climate change language to operations disruption section (generic ESG disclosure)",
+      "Added immigration policy risk to talent retention section",
+      "Added diversity/inclusion workplace culture language to talent section",
+      "Added decisions to realign our business to personnel risk heading"
+    ],
+    "sector_wide": [
+      "Added ransomware to cyber attack types (sector-wide post-2020 wave)",
+      "Added import restrictions to trade risk list (semiconductor sector tensions)",
+      "Added cloud service offerings/cloud-based environments to cyber risk (sector-wide cloud shift)"
+    ],
+    "company_specific": [
+      "Admitted past cyber breaches: unauthorized parties have obtained in the past access to our computer systems and networks including cloud-based platforms"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "COVID-19 section escalated with vaccine variant/resistance concerns and vaccine efficacy uncertainty",
+      "severity": "MINOR",
+      "points": 1
+    },
+    {
+      "risk": "Operations disruption expanded with physical security breach, civil unrest, and localized labor unrest scenarios",
+      "severity": "MINOR",
+      "points": 1
+    }
+  ],
+  "confessions": [
+    "Confirmed past cyber breaches: unauthorized parties have obtained in the past access to our computer systems and networks including cloud-based platforms - admission of actual security incidents"
+  ],
+  "resolved_risks": [
+    "Removed deepening of economic downturn and further deterioration of credit markets intensification language from COVID section",
+    "Removed COVID heightening many other risks cross-reference paragraph (cost saving initiatives, indebtedness, liquidity concerns)"
+  ],
+  "severity_score": 9,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 4,
+  "sector_wide_count": 3,
+  "company_specific_count": 1,
+  "escalation_count": 2,
+  "confession_count": 1,
+  "resolved_count": 2
+}

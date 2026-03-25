@@ -1,0 +1,115 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "Summary of Risk Factors section added at top of filing per new SEC requirement"
+      },
+      {
+        "risk": "Natural disasters and catastrophic events risk factor"
+      },
+      {
+        "risk": "Soundness of other financial institutions risk factor"
+      },
+      {
+        "risk": "Anti-takeover provisions in articles of incorporation"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Negative interest rate environment risk - FRB lowered federal funds rate to 0%-0.25%, Treasury yields briefly dropped below zero",
+        "points": 1
+      },
+      {
+        "risk": "LIBOR transition deadline crystallized with specific cessation dates announced (Dec 31, 2021 and June 30, 2023) and regulatory directive to stop new LIBOR contracts",
+        "points": 1
+      },
+      {
+        "risk": "Regulatory capital and liquidity standards affecting dividends and capital returns to shareholders",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "COVID-19 pandemic impact - entirely new risk category with detailed disclosure of realized adverse impacts on financials",
+        "key_phrase": "The effects of the pandemic have already resulted in an increase in the allowance for credit losses, a reduction of fee income, a reduction of net interest margin and an increase in expenses",
+        "points": 3
+      },
+      {
+        "risk": "PPP program litigation risk - Truist named as defendant in lawsuits related to SBA PPP participation",
+        "key_phrase": "Truist has been named in several lawsuits relating to its participation in the PPP",
+        "points": 3
+      },
+      {
+        "risk": "Concentrated COVID-sensitive loan exposure to specific vulnerable industries",
+        "key_phrase": "hotels, resorts, cruise lines, oil and gas companies, senior and acute care facilities, restaurants, and other sensitive retail businesses, and Truist has outstanding loans to clients in these industries",
+        "points": 3
+      },
+      {
+        "risk": "Goodwill impairment risk explicitly disclosed as potential COVID consequence",
+        "key_phrase": "result in goodwill impairment charges, result in the impairment of other financial and nonfinancial assets",
+        "points": 3
+      },
+      {
+        "risk": "Sales practices and incentive compensation scrutiny risk added as reputational threat",
+        "key_phrase": "Scrutiny of the Company's sales, training and incentive compensation practices could damage the Company s reputation",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Merger integration timeline shortened and language escalated from aspirational to ongoing reality",
+      "prior": "Truist anticipates further integration of systems, operations, and personnel of BB&T and SunTrust over the next several years",
+      "current": "Truist anticipates further integration of systems, operations, and personnel of BB&T and SunTrust over the next couple of years",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Merger integration resource diversion escalated from hypothetical to confirmed ongoing",
+      "prior": "Integration activities could divert resources from regular operations",
+      "current": "Integration activities have and will continue to divert resources from regular operations",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Interest rate risk expanded with COVID-specific negative rate scenario and quantified FRB action",
+      "prior": "changes in interest rates or in valuations in the debt or equity markets could directly impact the Company",
+      "current": "the FRB lowered its target for the federal funds rate to a range of 0% to 0.25%. Low rates increase the risk of a negative interest rate environment",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "Credit rating risk escalated with actual downgrades disclosed",
+      "prior": "Failure to maintain those ratings could adversely affect funding cost",
+      "current": "In 2020, several credit rating agencies downgraded their outlook on U.S. banks due in part to the concerns presented by the pandemic",
+      "severity": "major",
+      "points": 4
+    }
+  ],
+  "confessions": [
+    {
+      "type": "quantified_declines",
+      "detail": "The effects of the pandemic have already resulted in an increase in the allowance for credit losses, a reduction of fee income, a reduction of net interest margin and an increase in expenses",
+      "points": 5
+    },
+    {
+      "type": "regulatory_actions",
+      "detail": "In 2020, several credit rating agencies downgraded their outlook on U.S. banks due in part to the concerns presented by the pandemic",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "Prior year reference to 2020 presidential election regulatory uncertainty removed (election concluded)",
+      "points": -2
+    }
+  ],
+  "severity_score": 36,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 4,
+  "sector_wide_count": 3,
+  "company_specific_count": 5,
+  "escalation_count": 4,
+  "confession_count": 2,
+  "resolved_count": 1
+}

@@ -1,0 +1,46 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      "General COVID-19 impact on global economy and capital markets",
+      "Remote work cybersecurity risks heightened by pandemic"
+    ],
+    "sector_wide": [
+      "COVID-19 pandemic reducing elective medical procedures and hospital admissions sector-wide",
+      "Supply chain disruptions from pandemic affecting healthcare suppliers and distributors",
+      "Amino acid raw materials diverted to COVID-19 vaccine production constraining parenteral nutrition supply",
+      "Climate change impacting supply, energy and transportation costs (new addition to supply chain risk)"
+    ],
+    "company_specific": [
+      "Mountain Home, Arkansas sterilization facility ethylene oxide emissions non-compliance with state air permit (Feb 2020, received temporary variance)",
+      "Quantified demand decline: lower hospital admissions and elective surgery volumes across Q2-Q4 2020 negatively impacting product demand"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Supply chain and raw materials risk escalated from general to acute -- specific amino acid shortages for parenteral nutrition products due to COVID vaccine production diversion",
+      "severity": "MAJOR"
+    },
+    {
+      "risk": "Product demand risk escalated -- elective procedures suspended/postponed across principal markets with quantified multi-quarter impact in 2020",
+      "severity": "MAJOR"
+    },
+    {
+      "risk": "Employee retention and workforce availability risk escalated due to COVID-19 direct health impacts on personnel",
+      "severity": "MINOR"
+    }
+  ],
+  "confessions": [
+    "RESTATEMENT: Financial statements for 2018, 2017, 2016 restated due to misstatements in non-operating foreign exchange gains and losses. Intra-company transactions undertaken solely to generate FX gains had occurred for at least ten years. Quantified impact: income reduced by $35M (H1 2019), $78M (FY2018), $115M (FY2017).",
+    "MATERIAL WEAKNESS: Internal control over financial reporting material weakness identified as of Dec 31, 2018, continuing through Dec 31, 2019. Disclosure controls and procedures not effective throughout 2019.",
+    "REGULATORY ACTION: SEC investigation -- company voluntarily advised SEC staff of internal investigation into intra-company FX transactions and is cooperating with SEC staff."
+  ],
+  "resolved_risks": [],
+  "severity_score": 34,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 4,
+  "company_specific_count": 2,
+  "escalation_count": 3,
+  "confession_count": 3,
+  "resolved_count": 0
+}

@@ -1,0 +1,102 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "Stock repurchase amount and frequency may fluctuate"
+      },
+      {
+        "risk": "ESG and social responsibility provisions expanded to include investor demands alongside customer demands"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Inflation added as explicit macroeconomic risk factor affecting supply chain costs and economic conditions",
+        "points": 1
+      },
+      {
+        "risk": "Water shortages added as specific disruption risk for TSMC and semiconductor contract manufacturing in Taiwan",
+        "points": 1
+      },
+      {
+        "risk": "Growing public concern over concentration of economic power likely to result in increased anti-competition legislation and enforcement activity",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "Korean Fair Trade Commission ongoing investigation into Broadcom contracting and business practices explicitly named",
+        "key_phrase": "the ongoing investigation by the Korean Fair Trade Commission into certain of our contracting and business practices, which may evolve into legal or other administrative proceedings",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Customer concentration increased with quantified metrics across all channels",
+      "prior": "sales to distributors accounted for 42% of our net revenue...Apple and our top five end customers, accounted for approximately 15% and more than 30% of our net revenue for fiscal year 2020",
+      "current": "sales to distributors accounted for 53% of our net revenue...Apple and our top five end customers, accounted for approximately 20% and more than 35% of our net revenue for fiscal year 2021",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "TSMC wafer manufacturing dependency increased from 87% to 89%",
+      "prior": "TSMC manufactured approximately 87% of the wafers manufactured by our CMs during fiscal year 2020",
+      "current": "TSMC, one of our CMs, manufactured approximately 89% of the wafers manufactured by our CMs during fiscal year 2021",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Supply chain order fulfillment language escalated from hypothetical to confirmed impact",
+      "prior": "This may limit our ability to fulfill orders and we may be unable to satisfy all of the demand for our products",
+      "current": "This has limited and may continue to limit our ability to fulfill orders and satisfy all of the demand for our products",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "Supply constraints confirmed as having damaged customer relationships",
+      "prior": "we may be unable to meet our customer demand and may fail to meet our contractual obligations",
+      "current": "This has in the past damaged, and may in the future damage, our relationships with our customers",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "Supplier price increases confirmed as realized impact alongside supply constraints",
+      "prior": "we have experienced some supply constraints, including with respect to wafers and substrates",
+      "current": "we have experienced some supply constraints and increases in prices, including with respect to wafers and substrates",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Materials supplier concentration increased from six to five providers for two-thirds of manufacturing materials",
+      "prior": "we purchased approximately two-thirds of the materials for our manufacturing processes from six materials providers",
+      "current": "we purchased approximately two-thirds of our manufacturing materials from five materials providers",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [
+    {
+      "type": "Regulatory enforcement proceeding",
+      "detail": "the ongoing investigation by the Korean Fair Trade Commission into certain of our contracting and business practices, which may evolve into legal or other administrative proceedings",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "Huawei-specific TSMC supply chain dislocation removed as Huawei export restrictions curtailed their TSMC ordering",
+      "points": -2
+    },
+    {
+      "risk": "COVID-19 recession and economic downturn concern replaced by acknowledgment of record profitability driven by supply imbalance",
+      "points": -2
+    }
+  ],
+  "severity_score": 22,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 3,
+  "company_specific_count": 1,
+  "escalation_count": 6,
+  "confession_count": 1,
+  "resolved_count": 2
+}

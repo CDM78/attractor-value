@@ -1,0 +1,56 @@
+{
+  "new_risks": {
+    "boilerplate": [],
+    "sector_wide": [],
+    "company_specific": [
+      "Heavy dependence on BMS Strategic Collaboration Agreement for NKTR-214 development and commercialization - concentration risk on single massive partnership (.85B deal)",
+      "Eli Lilly co-development dependency for NKTR-358 immunology program with Nektar bearing Phase 1 costs and minority cost share going forward",
+      "Multiple simultaneous large-scale clinical programs (NKTR-214 in 20+ indications, NKTR-262 Phase 1, NKTR-358 Phase 1, NKTR-181 NDA filing) creating execution risk across pipeline"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "ONZEALD (NKTR-102) regulatory pathway significantly worsened - EMA CHMP negative opinion for conditional marketing authorization, appeal unsuccessful, Daiichi collaboration terminated",
+      "severity": "MAJOR",
+      "points": 4
+    },
+    {
+      "risk": "Cipro DPI collaboration with Bayer Schering deteriorated - FDA Advisory Committee voted against approval, Bayer discontinuing development in NCFB",
+      "severity": "MAJOR",
+      "points": 4
+    },
+    {
+      "risk": "Loss of Bayer Amikacin Inhale collaboration program - previously described as significant drug development program, now absent from current filing",
+      "severity": "MINOR",
+      "points": 1
+    }
+  ],
+  "confessions": [
+    {
+      "confession": "Daiichi Sankyo Europe exercised termination right on Collaboration and License Agreement for ONZEALD, requiring Nektar to make 2.5 million termination payment - quantified partner loss",
+      "points": 5
+    },
+    {
+      "confession": "EMA CHMP adopted negative opinion rejecting conditional marketing authorization for ONZEALD in EU; CHMP appeal was unsuccessful - regulatory action/rejection",
+      "points": 5
+    },
+    {
+      "confession": "FDA Antimicrobial Drugs Advisory Committee voted not to recommend Cipro DPI approval for non-cystic fibrosis bronchiectasis; Bayer discontinuing development - regulatory action",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "NKTR-181 Phase 3 clinical uncertainty resolved - SUMMIT-07 met primary and secondary endpoints with high statistical significance (p=0.0019); HAP study positive; NDA filing planned",
+      "points": -2
+    }
+  ],
+  "severity_score": 31,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 0,
+  "sector_wide_count": 0,
+  "company_specific_count": 3,
+  "escalation_count": 3,
+  "confession_count": 3,
+  "resolved_count": 1
+}

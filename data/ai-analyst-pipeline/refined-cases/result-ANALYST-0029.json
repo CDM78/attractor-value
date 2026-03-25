@@ -1,0 +1,106 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "COVID-19 pandemic causing demand volatility across product categories"
+      },
+      {
+        "risk": "E-commerce channel growth accelerated by the pandemic requiring new digital marketing resources"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Decline in cough and cold product demand due to social distancing and mask mandates reducing illness transmission",
+        "points": 1
+      },
+      {
+        "risk": "Demand shifts in consumer self-care categories (upper respiratory, skincare, healthy lifestyle decreased) attributed to COVID-19 restrictions and behavioral changes",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "IRS transfer pricing audit proposing $141.6 million in adjustments for omeprazole distribution profits (2013-2015 tax years)",
+        "key_phrase": "transfer pricing adjustments regarding our profits from the distribution of omeprazole during our 2013 to 2015 tax years in the aggregate amount of $141.6 million",
+        "points": 3
+      },
+      {
+        "risk": "IRS NOPA disallowing $414.7 million in interest expense deductions on $7.5 billion in intercompany debt (2014-2015 tax years)",
+        "key_phrase": "disallowed interest expense deductions of $414.7 million on $7.5 billion in debts owed by Perrigo U.S. to Perrigo Company plc",
+        "points": 3
+      },
+      {
+        "risk": "Irish High Court ruled against Perrigo on NoA constitutional challenge; technical merits to be heard by Tax Appeals Commission",
+        "key_phrase": "the Irish High Court ruled that the NoA did not violate our constitutional rights and legitimate expectations as a taxpayer",
+        "points": 3
+      },
+      {
+        "risk": "Israeli Tax Authority assessment of $63.8 million for 2015-2017 tax years relating to intangible income attribution and capital gains tax exemption",
+        "key_phrase": "received a Stage A assessment from the Israeli Tax Authority for the 2015-2017 tax years in the amount of $63.8 million",
+        "points": 3
+      },
+      {
+        "risk": "Acknowledged continued lower demand for cough and cold products expected into first half of 2021",
+        "key_phrase": "we currently anticipate that we will continue to experience lower demand for cough and cold products into the first half of 2021",
+        "points": 3
+      },
+      {
+        "risk": "CSCI segment demand decreases in upper respiratory, skincare and personal hygiene, and healthy lifestyle categories with acknowledgment declines may continue",
+        "key_phrase": "demand for products in our upper respiratory, skincare and personal hygiene, and healthy lifestyle categories decreased. It is possible that demand in these categories may continue to decrease",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Multi-jurisdictional tax disputes expanded from general reference to specific quantified disputes across IRS, Irish, and Israeli authorities",
+      "prior": "Tax Related Risks and Item 8. Note 15",
+      "current": "we are engaged in tax disputes in several jurisdictions. The following update notes certain material developments in such disputes since December 31, 2019",
+      "severity": "major",
+      "points": 4
+    }
+  ],
+  "confessions": [
+    {
+      "type": "Quantified regulatory/tax enforcement proceedings",
+      "detail": "IRS issued 30-day letter proposing transfer pricing adjustments of $141.6 million; IRS NOPA disallowing $414.7 million in interest deductions on $7.5 billion intercompany debt; Israeli Tax Authority assessment of $63.8 million - combined quantified tax exposure exceeding $620 million across three jurisdictions",
+      "points": 5
+    },
+    {
+      "type": "Adverse court ruling in Irish tax dispute",
+      "detail": "On November 4, 2020 the Irish High Court ruled that the NoA did not violate our constitutional rights and legitimate expectations as a taxpayer - court ruled against the company on its constitutional challenge",
+      "points": 5
+    },
+    {
+      "type": "Quantified revenue decline acknowledged",
+      "detail": "net sales of cough and cold products decreased as a result of the decline in total cough cold illnesses...we currently anticipate that we will continue to experience lower demand for cough and cold products into the first half of 2021",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "Ranitidine/NDMA contamination and voluntary retail market withdrawal (both CSCA and CSCI segments) - no longer mentioned as issue resolved",
+      "points": -2
+    },
+    {
+      "risk": "Third-party pain relief product license impairment ($9.7 million) - no longer referenced, issue resolved or written off",
+      "points": -2
+    },
+    {
+      "risk": "Tysabri financial asset milestone payment uncertainty ($400 million contingent on Biogen sales threshold) - no longer referenced",
+      "points": -2
+    },
+    {
+      "risk": "India and Israel API business divestitures and associated impairment charges - no longer referenced as completed and resolved",
+      "points": -2
+    }
+  ],
+  "severity_score": 31,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 2,
+  "company_specific_count": 6,
+  "escalation_count": 1,
+  "confession_count": 3,
+  "resolved_count": 4
+}

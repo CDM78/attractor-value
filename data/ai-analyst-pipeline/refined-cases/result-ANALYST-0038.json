@@ -1,0 +1,35 @@
+{
+  "new_risks": {
+    "boilerplate": [],
+    "sector_wide": [
+      "COVID-19 pandemic operational disruption risk (new in 2020 filing, reflects pandemic impacts on workforce, operations, and demand patterns)",
+      "Failure to attract or retain qualified employees could materially adversely affect us (new risk factor cross-reference added in current filing reflecting tight labor market)"
+    ],
+    "company_specific": [
+      "UPS Freight divestiture execution risk - definitive agreement to divest entire LTL business unit announced Jan 2021, subject to regulatory approval and closing conditions; represents major strategic repositioning"
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Amazon customer concentration increased from 11.6% to 13.3% of consolidated revenue (+1.7 percentage points year-over-year), deepening dependence on a single customer that is simultaneously building competing delivery infrastructure",
+      "severity": "MAJOR",
+      "points": 4
+    },
+    {
+      "risk": "Competition risk language upgraded from 'could adversely affect us' to 'could materially adversely affect us' - addition of 'materially' signals management's acknowledgment of intensified competitive threat",
+      "severity": "MINOR",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [],
+  "severity_score": 10,
+  "trajectory": "MODERATE_CONCERN",
+  "boilerplate_count": 0,
+  "sector_wide_count": 2,
+  "company_specific_count": 1,
+  "escalation_count": 2,
+  "confession_count": 0,
+  "resolved_count": 0,
+  "analysis_notes": "Both currentRF and priorRF fields are truncated at 25,000 characters containing only Item 1 Business Overview; actual enumerated Item 1A risk factors are not present in the data. Analysis is based on risk factor cross-references embedded in the business description, quantified disclosures (Amazon concentration, revenue, volume), structural changes (strategy overhaul, UPS Freight divestiture, risk factor reorganization under 'Business and Operating Risks'), and year-over-year content comparison. Key signals: (1) Amazon concentration rising 11.6% to 13.3% while Amazon builds competing delivery network is a MAJOR escalation; (2) UPS Freight divestiture is a company-specific material new risk; (3) strategy completely revamped to 'Customer First, People Led, Innovation Driven' suggesting transformational uncertainty; (4) SF Express JV and several product mentions dropped from narrative. The origTrajectory of 'deteriorating' aligns with MODERATE_CONCERN given the customer concentration trend and strategic overhaul."
+}

@@ -1,0 +1,73 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "COVID-19 pandemic operational and financial impact risk"
+      },
+      {
+        "risk": "Natural disaster and catastrophic event business continuity risk"
+      },
+      {
+        "risk": "International operations and foreign currency exchange rate risk"
+      },
+      {
+        "risk": "Business systems upgrade and integration implementation risk"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Animal rights and special interest group opposition to animal research activities",
+        "points": 1
+      },
+      {
+        "risk": "Environmental and conservation area restrictions on animal research habitat procurement",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "Named acquisition integration risk for multiple recent deals",
+        "key_phrase": "recent acquisitions of HemaCare, Cellero and Distributed Bio and our recently announced planned acquisition of Cognate BioServices, Inc.",
+        "points": 3
+      },
+      {
+        "risk": "Business email compromise fraud with admitted past victimization",
+        "key_phrase": "we have in the past been victim to, business email compromise fraud, which results in payments being made to illegitimate bank accounts",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Cybersecurity threat landscape expanding with acknowledged ongoing incidents",
+      "prior": "Unauthorized third parties could attempt to gain entry to such information systems to steal data or disrupt the systems",
+      "current": "we have on occasion experienced, and will continue to experience, threats and incursions to our data and systems, including malicious codes and viruses, phishing, business email compromise and social engineering attacks or other cyber-attacks. The number and complexity of these threats continue to increase over time",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Contract termination risk escalated with COVID-19 force majeure trigger",
+      "prior": "Our counterparties may elect to terminate their agreements with us for various reasons including: the products being tested fail to satisfy safety requirements",
+      "current": "the invocation of force majeure clauses, or the legal doctrines of impossibility or impracticability (or other similar legal doctrines), as a result of the COVID-19 pandemic",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "R&D demand reduction risk escalated with explicit COVID-19 pandemic impact",
+      "prior": "economic factors and industry trends that affect our clients in these industries also affect their R&D budgets",
+      "current": "economic factors and industry trends that affect our clients in these industries (including the COVID-19 pandemic and the impact of measures intended to reduce the spread of COVID-19) also affect their R&D budgets",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [],
+  "severity_score": 11,
+  "trajectory": "MODERATE_CONCERN",
+  "boilerplate_count": 4,
+  "sector_wide_count": 2,
+  "company_specific_count": 2,
+  "escalation_count": 3,
+  "confession_count": 0,
+  "resolved_count": 0
+}

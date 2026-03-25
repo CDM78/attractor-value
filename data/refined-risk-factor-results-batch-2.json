@@ -1,0 +1,821 @@
+[
+  {
+    "caseId": "ANALYST-0019",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "COVID-19 pandemic impact on consumer behavior and shift to e-commerce and contactless payments"
+        },
+        {
+          "risk": "Expanded cybersecurity threat language — changed from 'address cybersecurity risks' to 'mitigate cybersecurity risks' and added explicit reference to 'Cyberattacks and security vulnerabilities' as risk factor caption"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Buy Now Pay Later (BNPL) and installment credit products recognized as competitive threat category",
+          "points": 1
+        },
+        {
+          "risk": "Cryptocurrency and stablecoin competition — virtual currencies including cryptocurrencies and stablecoins now named as competing payment forms",
+          "points": 1
+        },
+        {
+          "risk": "Distributed ledger technology recognized as competitive threat to traditional payment platforms",
+          "points": 1
+        },
+        {
+          "risk": "Real-time payment systems added as new competitive category threatening PayPal's payment processing position",
+          "points": 1
+        },
+        {
+          "risk": "Card on file services from banks and financial institutions added as explicit competitive threat",
+          "points": 1
+        },
+        {
+          "risk": "Contactless payment competition (NFC, QR codes, tokenized cards) newly enumerated as competitive forms",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "Synchrony Bank exclusivity diluted — consumer credit program changed from 'exclusively through Synchrony Bank' to 'primarily through Synchrony Bank' for PayPal- and Venmo-branded products, indicating potential partner diversification risk and relationship restructuring",
+          "key_phrase": "offered primarily through Synchrony Bank",
+          "points": 3
+        },
+        {
+          "risk": "Expanded and intensified competitive threat disclosure — added 'emerging competitors, business alliances' and 'price sensitivity on the part of merchants and consumers' as competitive dynamics, and explicitly acknowledged competitors with 'larger customer bases, greater brand recognition, broader geographic scope, volume, scale, resources, and market share'",
+          "key_phrase": "price sensitivity on the part of merchants and consumers",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Competition description intensified from general to specific and more threatening",
+        "prior": "rapidly changing...those that are larger than we are, have greater name recognition, longer operating histories, or a dominant or more secure position",
+        "current": "continuously changing...larger than we are, have larger customer bases, greater brand recognition, longer operating histories, a dominant or more secure position, broader geographic scope, volume, scale, resources, and market share",
+        "severity": "minor",
+        "points": 1
+      },
+      {
+        "risk": "Cybersecurity risk language escalated from general to specific threat acknowledgment",
+        "prior": "to help address cybersecurity risks...against these challenges",
+        "current": "to help mitigate cybersecurity risks...against cybersecurity threats",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [],
+    "resolved_risks": [
+      {
+        "risk": "PayPal for Marketplaces launch risk — prior year highlighted 2019 launch of new marketplace platform as key initiative; current year integrates this as established capability, no longer flagged as new/developing",
+        "points": -2
+      }
+    ],
+    "severity_score": 12,
+    "trajectory": "MODERATE_CONCERN",
+    "boilerplate_count": 2,
+    "sector_wide_count": 6,
+    "company_specific_count": 2,
+    "escalation_count": 2,
+    "confession_count": 0,
+    "resolved_count": 1
+  },
+  {
+    "caseId": "ANALYST-0020",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "COVID-19 pandemic operational and financial impact risk"
+        },
+        {
+          "risk": "Natural disaster and catastrophic event business continuity risk"
+        },
+        {
+          "risk": "International operations and foreign currency exchange rate risk"
+        },
+        {
+          "risk": "Business systems upgrade and integration implementation risk"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Animal rights and special interest group opposition to animal research activities",
+          "points": 1
+        },
+        {
+          "risk": "Environmental and conservation area restrictions on animal research habitat procurement",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "Named acquisition integration risk for multiple recent deals",
+          "key_phrase": "recent acquisitions of HemaCare, Cellero and Distributed Bio and our recently announced planned acquisition of Cognate BioServices, Inc.",
+          "points": 3
+        },
+        {
+          "risk": "Business email compromise fraud with admitted past victimization",
+          "key_phrase": "we have in the past been victim to, business email compromise fraud, which results in payments being made to illegitimate bank accounts",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Cybersecurity threat landscape expanding with acknowledged ongoing incidents",
+        "prior": "Unauthorized third parties could attempt to gain entry to such information systems to steal data or disrupt the systems",
+        "current": "we have on occasion experienced, and will continue to experience, threats and incursions to our data and systems, including malicious codes and viruses, phishing, business email compromise and social engineering attacks or other cyber-attacks. The number and complexity of these threats continue to increase over time",
+        "severity": "minor",
+        "points": 1
+      },
+      {
+        "risk": "Contract termination risk escalated with COVID-19 force majeure trigger",
+        "prior": "Our counterparties may elect to terminate their agreements with us for various reasons including: the products being tested fail to satisfy safety requirements",
+        "current": "the invocation of force majeure clauses, or the legal doctrines of impossibility or impracticability (or other similar legal doctrines), as a result of the COVID-19 pandemic",
+        "severity": "minor",
+        "points": 1
+      },
+      {
+        "risk": "R&D demand reduction risk escalated with explicit COVID-19 pandemic impact",
+        "prior": "economic factors and industry trends that affect our clients in these industries also affect their R&D budgets",
+        "current": "economic factors and industry trends that affect our clients in these industries (including the COVID-19 pandemic and the impact of measures intended to reduce the spread of COVID-19) also affect their R&D budgets",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [],
+    "resolved_risks": [],
+    "severity_score": 11,
+    "trajectory": "MODERATE_CONCERN",
+    "boilerplate_count": 4,
+    "sector_wide_count": 2,
+    "company_specific_count": 2,
+    "escalation_count": 3,
+    "confession_count": 0,
+    "resolved_count": 0
+  },
+  {
+    "caseId": "ANALYST-0022",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "COVID-19 vaccine mandate may add additional operational costs"
+        },
+        {
+          "risk": "Acknowledgment of past cybersecurity breaches (none material to date)"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Labor and skilled labor availability challenges adversely affecting business operations",
+          "points": 1
+        },
+        {
+          "risk": "Supply chain disruptions expanded to include logistics providers and customer-side disruptions driven by labor shortages",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "Significant increase in indebtedness to fund Planters snack nuts acquisition, impacting liquidity and interest rate exposure",
+          "key_phrase": "The Company's level of indebtedness increased significantly to fund the purchase of the Planters snack nuts business",
+          "points": 3
+        },
+        {
+          "risk": "Federal district court ruling negatively impacting harvest capacity and labor costs with no assurance of resolution",
+          "key_phrase": "A recent federal district court ruling has had a negative impact on harvest capacity and labor costs",
+          "points": 3
+        },
+        {
+          "risk": "New agricultural commodity exposure (nuts, tomatoes) from Planters acquisition with availability and pricing risk",
+          "key_phrase": "The Company may be subject to decreased availability or less favorable pricing for nuts, tomatoes, avocados, or other produce",
+          "points": 3
+        },
+        {
+          "risk": "Liquidity and borrowing cost risk requiring potential asset disposals to service debt",
+          "key_phrase": "The Company may be required to redirect cash flow from operations or explore alternative strategies, such as disposing of assets, to fulfill the payment of principal and interest on its indebtedness",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "COVID-19 labor impact escalated from hypothetical to confirmed ongoing",
+        "prior": "It is possible that the COVID-19 pandemic could negatively affect the Company's labor availability, relations, or labor costs",
+        "current": "It is possible that the COVID-19 pandemic has and continues to negatively affect the Company's labor availability, relations, or labor costs",
+        "severity": "major",
+        "points": 4
+      },
+      {
+        "risk": "Supply chain disruption at co-manufacturers and suppliers escalated from hypothetical to confirmed",
+        "prior": "Disruption of operations at co manufacturers or other suppliers may impact the Company s product or raw material supply",
+        "current": "Disruption of operations at co manufacturers, suppliers, or logistics providers have and may continue to impact the Company s product and input supplies as well as the ability to distribute products",
+        "severity": "major",
+        "points": 4
+      },
+      {
+        "risk": "African swine fever geographic spread expanded to include the Caribbean",
+        "prior": "the outbreak of ASF has impacted hog herds in China, Asia, and Europe",
+        "current": "the outbreak of ASF has impacted hog herds in China, Asia, Europe, and the Caribbean",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [
+      {
+        "type": "regulatory_action",
+        "detail": "A recent federal district court ruling has had a negative impact on harvest capacity and labor costs. Harvest facilities the Company uses are negotiating to resolve the situation and expect to reach a solution, but harvest capacity and labor costs will continue to be negatively impacted until a solution is reached. There can be no assurance a solution will be reached.",
+        "points": 5
+      }
+    ],
+    "resolved_risks": [
+      {
+        "risk": "Wholestone Farms supply concentration risk (30% of pork raw materials under expiring contract) — removed from current year, indicating successful renegotiation or alternative sourcing",
+        "points": -2
+      }
+    ],
+    "severity_score": 26,
+    "trajectory": "CRITICAL",
+    "boilerplate_count": 2,
+    "sector_wide_count": 2,
+    "company_specific_count": 4,
+    "escalation_count": 3,
+    "confession_count": 1,
+    "resolved_count": 1
+  },
+  {
+    "caseId": "ANALYST-0023",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "COVID-19 pandemic risk to financial condition and operations"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Programming contracts restrict video package structure, impacting affordability and competitive positioning",
+          "points": 1
+        },
+        {
+          "risk": "Satellite-based internet delivery added as distinct competitive threat to broadband service",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "CBRS PALs spectrum licenses subject to revocation and expiration, loss could impair mobile traffic offload and cost reductions",
+          "key_phrase": "we now hold CBRS PALs to support existing and future mobile services. These licenses are subject to revocation and expiration",
+          "points": 3
+        },
+        {
+          "risk": "Third-party device platform dependency risk for service delivery to substantial customer base",
+          "key_phrase": "if we are no longer able to make our services available to our customers on a third-party device on which a substantial number of customers have relied to access our services",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Mobile business investment risk expanded from initial launch phase to ongoing growth with spectrum acquisition and partnership considerations",
+        "prior": "as we launch our new mobile services using virtual network operator rights from a third party, we expect an initial funding period to grow a new product",
+        "current": "as we continue to grow our mobile services using virtual network operator rights from a third party, we expect continued growth-related sales and marketing and other customer acquisition costs",
+        "severity": "minor",
+        "points": 1
+      },
+      {
+        "risk": "Supplier and vendor risk language expanded to include non-renewal, non-monetary compensation demands, and service interruption scenarios",
+        "prior": "If any of these parties breaches or terminates its agreement with us or otherwise fails to perform its obligations in a timely manner",
+        "current": "If any of these parties breach or terminate or elect not to renew their agreements with us or otherwise fail to perform their obligations in a timely manner",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [],
+    "resolved_risks": [
+      {
+        "risk": "Commercial business standalone risk section removed — scaling difficulties, SLA requirements, infrastructure investment, and third-party interconnection dependency risks for commercial services no longer separately disclosed",
+        "points": -2
+      },
+      {
+        "risk": "Wireline and wireless overbuild competition risk removed — prior year warning about overbuilds adversely affecting growth and financial condition eliminated",
+        "points": -2
+      }
+    ],
+    "severity_score": 6,
+    "trajectory": "MODERATE_CONCERN",
+    "boilerplate_count": 1,
+    "sector_wide_count": 2,
+    "company_specific_count": 2,
+    "escalation_count": 2,
+    "confession_count": 0,
+    "resolved_count": 2
+  },
+  {
+    "caseId": "ANALYST-0024",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "COVID-19 pandemic workforce management risk - new section on managing employees during COVID-19, ensuring safety and enabling remote work"
+        },
+        {
+          "risk": "Human Capital Management disclosure - new expanded section on employee engagement, training, inclusion and diversity (SEC-mandated HCM disclosure)"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Ongoing portfolio shaping and divestiture execution risk - company discloses it will continue divesting assets not aligned with enterprise technology stack strategy, creating integration and operational disruption risks across IT services sector undergoing consolidation",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "Revenue stabilization acknowledged as key strategic priority, implying ongoing revenue declines requiring remediation",
+          "key_phrase": "continued focus on our people, revenue stabilization, cost optimization and winning in the market",
+          "points": 3
+        },
+        {
+          "risk": "Balance sheet strengthening elevated to explicit strategic pillar, signaling financial leverage concerns",
+          "key_phrase": "Unlock Value to Strengthen Balance Sheet",
+          "points": 3
+        },
+        {
+          "risk": "Workforce reduction of approximately 4,000 employees (from ~138,000 to ~134,000) reflecting business contraction from divestitures and cost-cutting",
+          "key_phrase": "we employed approximately 134,000 people worldwide",
+          "points": 3
+        },
+        {
+          "risk": "Major business divestitures completed (HHS for $5.0B and HPS for ~$543M) fundamentally reshaping the company and reducing revenue base",
+          "key_phrase": "completed the sale of two businesses that comprised the Strategic Alternatives plan",
+          "points": 3
+        },
+        {
+          "risk": "Customer count disclosure removed - prior year disclosed 'more than 6,000 private and public-sector customers' but current year omits this metric, potentially indicating customer attrition",
+          "key_phrase": "over half of today s fortune 500 companies",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Strategic execution risk escalated from general strategic objectives uncertainty to structured Transformation Journey with specific pillars indicating deeper operational challenges",
+        "prior": "We may not succeed in our strategic objectives, which could adversely affect our business",
+        "current": "The DXC Transformation Journey strategy focuses on building stronger relationships with customers, its people, and unlocking value across the Enterprise Technology Stack",
+        "severity": "major",
+        "points": 4
+      },
+      {
+        "risk": "Divestiture risk escalated from single pending transaction to ongoing portfolio shaping program with continued divestitures planned",
+        "prior": "DXC entered into a definitive agreement to sell our U.S. State and Local Health and Human Services business",
+        "current": "the Company will continue its portfolio shaping efforts and divest assets that the Company does not believe are well integrated with its enterprise technology stack",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [
+      {
+        "type": "Quantified revenue/operational decline acknowledged",
+        "detail": "Revenue stabilization cited as explicit strategic priority, combined with workforce reduction from ~138,000 to ~134,000 employees and removal of '6,000+ customers' metric from business description, collectively confirming material business contraction",
+        "points": 5
+      }
+    ],
+    "resolved_risks": [
+      {
+        "risk": "HHS Sale completion risk resolved - previously pending $5.0B divestiture to Veritas Capital was subject to multiple closing conditions; now completed successfully as Gainwell Technologies",
+        "points": -2
+      },
+      {
+        "risk": "Senior leadership transition risk resolved - prior year disclosed 'recently announced a number of senior leadership changes' as risk; current year shows stable executive team in place",
+        "points": -2
+      }
+    ],
+    "severity_score": 22,
+    "trajectory": "CRITICAL",
+    "boilerplate_count": 2,
+    "sector_wide_count": 1,
+    "company_specific_count": 5,
+    "escalation_count": 2,
+    "confession_count": 1,
+    "resolved_count": 2
+  },
+  {
+    "caseId": "ANALYST-0025",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "Stock repurchase amount and frequency may fluctuate"
+        },
+        {
+          "risk": "ESG and social responsibility provisions expanded to include investor demands alongside customer demands"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Inflation added as explicit macroeconomic risk factor affecting supply chain costs and economic conditions",
+          "points": 1
+        },
+        {
+          "risk": "Water shortages added as specific disruption risk for TSMC and semiconductor contract manufacturing in Taiwan",
+          "points": 1
+        },
+        {
+          "risk": "Growing public concern over concentration of economic power likely to result in increased anti-competition legislation and enforcement activity",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "Korean Fair Trade Commission ongoing investigation into Broadcom contracting and business practices explicitly named",
+          "key_phrase": "the ongoing investigation by the Korean Fair Trade Commission into certain of our contracting and business practices, which may evolve into legal or other administrative proceedings",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Customer concentration increased with quantified metrics across all channels",
+        "prior": "sales to distributors accounted for 42% of our net revenue...Apple and our top five end customers, accounted for approximately 15% and more than 30% of our net revenue for fiscal year 2020",
+        "current": "sales to distributors accounted for 53% of our net revenue...Apple and our top five end customers, accounted for approximately 20% and more than 35% of our net revenue for fiscal year 2021",
+        "severity": "major",
+        "points": 4
+      },
+      {
+        "risk": "TSMC wafer manufacturing dependency increased from 87% to 89%",
+        "prior": "TSMC manufactured approximately 87% of the wafers manufactured by our CMs during fiscal year 2020",
+        "current": "TSMC, one of our CMs, manufactured approximately 89% of the wafers manufactured by our CMs during fiscal year 2021",
+        "severity": "minor",
+        "points": 1
+      },
+      {
+        "risk": "Supply chain order fulfillment language escalated from hypothetical to confirmed impact",
+        "prior": "This may limit our ability to fulfill orders and we may be unable to satisfy all of the demand for our products",
+        "current": "This has limited and may continue to limit our ability to fulfill orders and satisfy all of the demand for our products",
+        "severity": "major",
+        "points": 4
+      },
+      {
+        "risk": "Supply constraints confirmed as having damaged customer relationships",
+        "prior": "we may be unable to meet our customer demand and may fail to meet our contractual obligations",
+        "current": "This has in the past damaged, and may in the future damage, our relationships with our customers",
+        "severity": "major",
+        "points": 4
+      },
+      {
+        "risk": "Supplier price increases confirmed as realized impact alongside supply constraints",
+        "prior": "we have experienced some supply constraints, including with respect to wafers and substrates",
+        "current": "we have experienced some supply constraints and increases in prices, including with respect to wafers and substrates",
+        "severity": "minor",
+        "points": 1
+      },
+      {
+        "risk": "Materials supplier concentration increased from six to five providers for two-thirds of manufacturing materials",
+        "prior": "we purchased approximately two-thirds of the materials for our manufacturing processes from six materials providers",
+        "current": "we purchased approximately two-thirds of our manufacturing materials from five materials providers",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [
+      {
+        "type": "Regulatory enforcement proceeding",
+        "detail": "the ongoing investigation by the Korean Fair Trade Commission into certain of our contracting and business practices, which may evolve into legal or other administrative proceedings",
+        "points": 5
+      }
+    ],
+    "resolved_risks": [
+      {
+        "risk": "Huawei-specific TSMC supply chain dislocation removed as Huawei export restrictions curtailed their TSMC ordering",
+        "points": -2
+      },
+      {
+        "risk": "COVID-19 recession and economic downturn concern replaced by acknowledgment of record profitability driven by supply imbalance",
+        "points": -2
+      }
+    ],
+    "severity_score": 22,
+    "trajectory": "CRITICAL",
+    "boilerplate_count": 2,
+    "sector_wide_count": 3,
+    "company_specific_count": 1,
+    "escalation_count": 6,
+    "confession_count": 1,
+    "resolved_count": 2
+  },
+  {
+    "caseId": "ANALYST-0029",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "COVID-19 pandemic causing demand volatility across product categories"
+        },
+        {
+          "risk": "E-commerce channel growth accelerated by the pandemic requiring new digital marketing resources"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Decline in cough and cold product demand due to social distancing and mask mandates reducing illness transmission",
+          "points": 1
+        },
+        {
+          "risk": "Demand shifts in consumer self-care categories (upper respiratory, skincare, healthy lifestyle decreased) attributed to COVID-19 restrictions and behavioral changes",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "IRS transfer pricing audit proposing $141.6 million in adjustments for omeprazole distribution profits (2013-2015 tax years)",
+          "key_phrase": "transfer pricing adjustments regarding our profits from the distribution of omeprazole during our 2013 to 2015 tax years in the aggregate amount of $141.6 million",
+          "points": 3
+        },
+        {
+          "risk": "IRS NOPA disallowing $414.7 million in interest expense deductions on $7.5 billion in intercompany debt (2014-2015 tax years)",
+          "key_phrase": "disallowed interest expense deductions of $414.7 million on $7.5 billion in debts owed by Perrigo U.S. to Perrigo Company plc",
+          "points": 3
+        },
+        {
+          "risk": "Irish High Court ruled against Perrigo on NoA constitutional challenge; technical merits to be heard by Tax Appeals Commission",
+          "key_phrase": "the Irish High Court ruled that the NoA did not violate our constitutional rights and legitimate expectations as a taxpayer",
+          "points": 3
+        },
+        {
+          "risk": "Israeli Tax Authority assessment of $63.8 million for 2015-2017 tax years relating to intangible income attribution and capital gains tax exemption",
+          "key_phrase": "received a Stage A assessment from the Israeli Tax Authority for the 2015-2017 tax years in the amount of $63.8 million",
+          "points": 3
+        },
+        {
+          "risk": "Acknowledged continued lower demand for cough and cold products expected into first half of 2021",
+          "key_phrase": "we currently anticipate that we will continue to experience lower demand for cough and cold products into the first half of 2021",
+          "points": 3
+        },
+        {
+          "risk": "CSCI segment demand decreases in upper respiratory, skincare and personal hygiene, and healthy lifestyle categories with acknowledgment declines may continue",
+          "key_phrase": "demand for products in our upper respiratory, skincare and personal hygiene, and healthy lifestyle categories decreased. It is possible that demand in these categories may continue to decrease",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Multi-jurisdictional tax disputes expanded from general reference to specific quantified disputes across IRS, Irish, and Israeli authorities",
+        "prior": "Tax Related Risks and Item 8. Note 15",
+        "current": "we are engaged in tax disputes in several jurisdictions. The following update notes certain material developments in such disputes since December 31, 2019",
+        "severity": "major",
+        "points": 4
+      }
+    ],
+    "confessions": [
+      {
+        "type": "Quantified regulatory/tax enforcement proceedings",
+        "detail": "IRS issued 30-day letter proposing transfer pricing adjustments of $141.6 million; IRS NOPA disallowing $414.7 million in interest deductions on $7.5 billion intercompany debt; Israeli Tax Authority assessment of $63.8 million - combined quantified tax exposure exceeding $620 million across three jurisdictions",
+        "points": 5
+      },
+      {
+        "type": "Adverse court ruling in Irish tax dispute",
+        "detail": "On November 4, 2020 the Irish High Court ruled that the NoA did not violate our constitutional rights and legitimate expectations as a taxpayer - court ruled against the company on its constitutional challenge",
+        "points": 5
+      },
+      {
+        "type": "Quantified revenue decline acknowledged",
+        "detail": "net sales of cough and cold products decreased as a result of the decline in total cough cold illnesses...we currently anticipate that we will continue to experience lower demand for cough and cold products into the first half of 2021",
+        "points": 5
+      }
+    ],
+    "resolved_risks": [
+      {
+        "risk": "Ranitidine/NDMA contamination and voluntary retail market withdrawal (both CSCA and CSCI segments) - no longer mentioned as issue resolved",
+        "points": -2
+      },
+      {
+        "risk": "Third-party pain relief product license impairment ($9.7 million) - no longer referenced, issue resolved or written off",
+        "points": -2
+      },
+      {
+        "risk": "Tysabri financial asset milestone payment uncertainty ($400 million contingent on Biogen sales threshold) - no longer referenced",
+        "points": -2
+      },
+      {
+        "risk": "India and Israel API business divestitures and associated impairment charges - no longer referenced as completed and resolved",
+        "points": -2
+      }
+    ],
+    "severity_score": 31,
+    "trajectory": "CRITICAL",
+    "boilerplate_count": 2,
+    "sector_wide_count": 2,
+    "company_specific_count": 6,
+    "escalation_count": 1,
+    "confession_count": 3,
+    "resolved_count": 4
+  },
+  {
+    "caseId": "ANALYST-0030",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "Evolving privacy laws broken out as dedicated section with CCPA, UK Data Protection Act, and Brexit privacy implications"
+        },
+        {
+          "risk": "Uncertain economic and political conditions in countries where we do business added to global operations risk factors"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Public health crises and epidemics including novel coronavirus outbreak significantly affecting China, with potential supply chain disruption, quarantines, and business closures",
+          "points": 1
+        },
+        {
+          "risk": "Domestic supplier favoritism risk where government or customer policies may lead non-U.S. customers to favor domestic suppliers over Trimble products",
+          "points": 1
+        }
+      ],
+      "company_specific": []
+    },
+    "escalated_risks": [
+      {
+        "risk": "Trade disruption risk expanded from tariff-focused to broader diplomatic/military disruption scenarios including embargoes and export restrictions",
+        "prior": "A significant trade disruption or the establishment or increase of any trade barrier in any area where we do business",
+        "current": "There is inherent risk that political, diplomatic, or military events could result in trade disruptions, including tariffs, trade embargoes, export restrictions, and other trade barriers",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [],
+    "resolved_risks": [
+      {
+        "risk": "Specific large acquisition integration risk for Viewpoint ($1,211.3M) and e-Builder ($485.2M) no longer called out by name, suggesting integration progressed past acute risk phase",
+        "points": -2
+      }
+    ],
+    "severity_score": 1,
+    "trajectory": "NORMAL",
+    "boilerplate_count": 2,
+    "sector_wide_count": 2,
+    "company_specific_count": 0,
+    "escalation_count": 1,
+    "confession_count": 0,
+    "resolved_count": 1
+  },
+  {
+    "caseId": "ANALYST-0031",
+    "new_risks": {
+      "boilerplate": [
+        {
+          "risk": "Added reference to 5G deployments as specific driver of carrier network upgrades and demand for communications infrastructure"
+        },
+        {
+          "risk": "Added cross-reference to impairment evaluation for towers with no tenants in accounting policies discussion"
+        }
+      ],
+      "sector_wide": [
+        {
+          "risk": "Added telehealth, remote working, and remote communications as new data consumption drivers reflecting pandemic-era demand shifts across all telecom infrastructure",
+          "points": 1
+        },
+        {
+          "risk": "Added increased government initiatives to expand broadband infrastructure as a new anticipated demand factor for communications infrastructure sector",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "T-Mobile/Sprint merger completed in 2020 reduced Crown Castle's major tenant base from four carriers to three, increasing customer concentration from 75% to 76% of site rental revenues with fewer counterparties",
+          "key_phrase": "T-Mobile (which merged with Sprint in April 2020), AT&T and Verizon Wireless, which collectively accounted for approximately 76% of our 2020 consolidated site rental revenues",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Customer concentration risk intensified as top tenant base consolidated from four carriers to three while revenue concentration increased",
+        "prior": "T-Mobile, AT&T, Verizon Wireless and Sprint, which collectively accounted for approximately 75% of our 2019 consolidated site rental revenues",
+        "current": "T-Mobile (which merged with Sprint in April 2020), AT&T and Verizon Wireless, which collectively accounted for approximately 76% of our 2020 consolidated site rental revenues",
+        "severity": "minor",
+        "points": 1
+      }
+    ],
+    "confessions": [],
+    "resolved_risks": [
+      {
+        "risk": "Financial restatement resolved - prior year disclosed historical revenue recognition errors with cumulative net income reduction of approximately $516 million; current filing contains no restatement references",
+        "points": -2
+      },
+      {
+        "risk": "Material weakness in internal controls resolved - prior year disclosed material weakness in internal control over financial reporting with ineffective disclosure controls and procedures; current filing contains no material weakness or remediation references indicating successful remediation",
+        "points": -2
+      }
+    ],
+    "severity_score": 2,
+    "trajectory": "NORMAL",
+    "boilerplate_count": 2,
+    "sector_wide_count": 2,
+    "company_specific_count": 1,
+    "escalation_count": 1,
+    "confession_count": 0,
+    "resolved_count": 2
+  },
+  {
+    "caseId": "ANALYST-0032",
+    "new_risks": {
+      "boilerplate": [],
+      "sector_wide": [
+        {
+          "risk": "Customers migrating toward lump-sum contracts and procurement-led contracting model across EPC industry, increasing risk profile for contractors",
+          "points": 1
+        }
+      ],
+      "company_specific": [
+        {
+          "risk": "Financial restatement of FY2016-2018 and quarterly 2018-2019 financial statements due to material accounting errors on the Radford project",
+          "key_phrase": "previously issued financial statements for the years ended December 31, 2018, 2017 and 2016 ... should no longer be relied upon due to errors",
+          "points": 3
+        },
+        {
+          "risk": "SEC and DOJ conducting investigations of past accounting and financial reporting",
+          "key_phrase": "the SEC and DOJ are conducting investigations of our past accounting and financial reporting",
+          "points": 3
+        },
+        {
+          "risk": "Special Committee investigation found management applied inappropriate pressure causing override of project-level controls",
+          "key_phrase": "prior business line management applied inappropriate pressure to project personnel, which pressure caused an override of our project-level controls on a project and resulted in accounting errors",
+          "points": 3
+        },
+        {
+          "risk": "Material weaknesses identified in internal controls over financial reporting (ICFR) and disclosure controls deemed not effective",
+          "key_phrase": "identification of material weaknesses and the conclusion that our ICFR, as well as our disclosure controls and procedures were not effective as of December 31, 2019",
+          "points": 3
+        },
+        {
+          "risk": "Former CEO management style fostered environment weakening compliance culture",
+          "key_phrase": "our prior chief executive officer s management style may have fostered an environment that could have contributed to this conduct and could have served to weaken certain aspects of our otherwise strong culture of compliance",
+          "points": 3
+        },
+        {
+          "risk": "Significant project charges recognized across three largest segments with overly optimistic bidding on high-risk lump-sum contracts",
+          "key_phrase": "we recognized significant charges across the company s three largest segments during the second quarter of 2019",
+          "points": 3
+        },
+        {
+          "risk": "Plan to sell AMECO equipment business and prior attempted divestiture of government segment reported as discontinued operations",
+          "key_phrase": "we committed to a plan to sell substantially all of our government and equipment ( AMECO ) businesses, which are reported as discontinued operations",
+          "points": 3
+        },
+        {
+          "risk": "Removal of Financial Strength competitive advantage claim - no longer claiming strong balance sheet, investment grade credit, or ability to pay dividends and repurchase stock",
+          "key_phrase": "Financial Strength section entirely removed from current filing",
+          "points": 3
+        }
+      ]
+    },
+    "escalated_risks": [
+      {
+        "risk": "Risk management capabilities - language shifted from confident proven ability to acknowledging need for new pursuit criteria and guidelines",
+        "prior": "our ability to assess, understand, gauge, mitigate and manage project risk ... provides us with a proven ability to deliver the project certainty our clients demand",
+        "current": "In combination with our new pursuit criteria and guidelines we believe we have the ability to assess, understand, gauge, mitigate and manage project risk",
+        "severity": "major",
+        "points": 4
+      }
+    ],
+    "confessions": [
+      {
+        "type": "Financial restatement",
+        "detail": "previously issued financial statements for the years ended December 31, 2018, 2017 and 2016 and each of our previously issued unaudited quarterly financial statements for 2018 and 2019 should no longer be relied upon due to errors ... negatively impacted cumulative pre-tax earnings reported through September 30, 2019 by $3.8 million",
+        "points": 5
+      },
+      {
+        "type": "Material weakness disclosure",
+        "detail": "management has assessed the effectiveness of our ICFR, which resulted in the identification of material weaknesses and the conclusion that our ICFR, as well as our disclosure controls and procedures were not effective as of December 31, 2019",
+        "points": 5
+      },
+      {
+        "type": "Regulatory actions / enforcement proceedings",
+        "detail": "the SEC and DOJ are conducting investigations of our past accounting and financial reporting, and, as part of their respective investigations, they have requested documents and information",
+        "points": 5
+      },
+      {
+        "type": "Internal controls override and management misconduct",
+        "detail": "prior business line management applied inappropriate pressure to project personnel, which pressure caused an override of our project-level controls on a project and resulted in accounting errors",
+        "points": 5
+      },
+      {
+        "type": "Quantified revenue/margin deterioration across segments",
+        "detail": "we recognized significant charges across the company s three largest segments during the second quarter of 2019 ... errors associated with variable consideration caused us to overstate revenue and the errors associated with forecasted costs caused us to understate cost of revenue between 2016 and September 30, 2019",
+        "points": 5
+      }
+    ],
+    "resolved_risks": [
+      {
+        "risk": "Fixed-price gas-fired power market exposure (prior noted exit during 2018, risk no longer mentioned as current filing restructured segments)",
+        "points": -2
+      }
+    ],
+    "severity_score": 52,
+    "trajectory": "CRITICAL",
+    "boilerplate_count": 0,
+    "sector_wide_count": 1,
+    "company_specific_count": 8,
+    "escalation_count": 1,
+    "confession_count": 5,
+    "resolved_count": 1
+  }
+]

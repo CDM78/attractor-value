@@ -1,0 +1,81 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "COVID-19 pandemic impact on consumer behavior and shift to e-commerce and contactless payments"
+      },
+      {
+        "risk": "Expanded cybersecurity threat language — changed from 'address cybersecurity risks' to 'mitigate cybersecurity risks' and added explicit reference to 'Cyberattacks and security vulnerabilities' as risk factor caption"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Buy Now Pay Later (BNPL) and installment credit products recognized as competitive threat category",
+        "points": 1
+      },
+      {
+        "risk": "Cryptocurrency and stablecoin competition — virtual currencies including cryptocurrencies and stablecoins now named as competing payment forms",
+        "points": 1
+      },
+      {
+        "risk": "Distributed ledger technology recognized as competitive threat to traditional payment platforms",
+        "points": 1
+      },
+      {
+        "risk": "Real-time payment systems added as new competitive category threatening PayPal's payment processing position",
+        "points": 1
+      },
+      {
+        "risk": "Card on file services from banks and financial institutions added as explicit competitive threat",
+        "points": 1
+      },
+      {
+        "risk": "Contactless payment competition (NFC, QR codes, tokenized cards) newly enumerated as competitive forms",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "Synchrony Bank exclusivity diluted — consumer credit program changed from 'exclusively through Synchrony Bank' to 'primarily through Synchrony Bank' for PayPal- and Venmo-branded products, indicating potential partner diversification risk and relationship restructuring",
+        "key_phrase": "offered primarily through Synchrony Bank",
+        "points": 3
+      },
+      {
+        "risk": "Expanded and intensified competitive threat disclosure — added 'emerging competitors, business alliances' and 'price sensitivity on the part of merchants and consumers' as competitive dynamics, and explicitly acknowledged competitors with 'larger customer bases, greater brand recognition, broader geographic scope, volume, scale, resources, and market share'",
+        "key_phrase": "price sensitivity on the part of merchants and consumers",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "Competition description intensified from general to specific and more threatening",
+      "prior": "rapidly changing...those that are larger than we are, have greater name recognition, longer operating histories, or a dominant or more secure position",
+      "current": "continuously changing...larger than we are, have larger customer bases, greater brand recognition, longer operating histories, a dominant or more secure position, broader geographic scope, volume, scale, resources, and market share",
+      "severity": "minor",
+      "points": 1
+    },
+    {
+      "risk": "Cybersecurity risk language escalated from general to specific threat acknowledgment",
+      "prior": "to help address cybersecurity risks...against these challenges",
+      "current": "to help mitigate cybersecurity risks...against cybersecurity threats",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [],
+  "resolved_risks": [
+    {
+      "risk": "PayPal for Marketplaces launch risk — prior year highlighted 2019 launch of new marketplace platform as key initiative; current year integrates this as established capability, no longer flagged as new/developing",
+      "points": -2
+    }
+  ],
+  "severity_score": 12,
+  "trajectory": "MODERATE_CONCERN",
+  "boilerplate_count": 2,
+  "sector_wide_count": 6,
+  "company_specific_count": 2,
+  "escalation_count": 2,
+  "confession_count": 0,
+  "resolved_count": 1
+}

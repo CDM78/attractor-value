@@ -1,0 +1,88 @@
+{
+  "new_risks": {
+    "boilerplate": [
+      {
+        "risk": "COVID-19 vaccine mandate may add additional operational costs"
+      },
+      {
+        "risk": "Acknowledgment of past cybersecurity breaches (none material to date)"
+      }
+    ],
+    "sector_wide": [
+      {
+        "risk": "Labor and skilled labor availability challenges adversely affecting business operations",
+        "points": 1
+      },
+      {
+        "risk": "Supply chain disruptions expanded to include logistics providers and customer-side disruptions driven by labor shortages",
+        "points": 1
+      }
+    ],
+    "company_specific": [
+      {
+        "risk": "Significant increase in indebtedness to fund Planters snack nuts acquisition, impacting liquidity and interest rate exposure",
+        "key_phrase": "The Company's level of indebtedness increased significantly to fund the purchase of the Planters snack nuts business",
+        "points": 3
+      },
+      {
+        "risk": "Federal district court ruling negatively impacting harvest capacity and labor costs with no assurance of resolution",
+        "key_phrase": "A recent federal district court ruling has had a negative impact on harvest capacity and labor costs",
+        "points": 3
+      },
+      {
+        "risk": "New agricultural commodity exposure (nuts, tomatoes) from Planters acquisition with availability and pricing risk",
+        "key_phrase": "The Company may be subject to decreased availability or less favorable pricing for nuts, tomatoes, avocados, or other produce",
+        "points": 3
+      },
+      {
+        "risk": "Liquidity and borrowing cost risk requiring potential asset disposals to service debt",
+        "key_phrase": "The Company may be required to redirect cash flow from operations or explore alternative strategies, such as disposing of assets, to fulfill the payment of principal and interest on its indebtedness",
+        "points": 3
+      }
+    ]
+  },
+  "escalated_risks": [
+    {
+      "risk": "COVID-19 labor impact escalated from hypothetical to confirmed ongoing",
+      "prior": "It is possible that the COVID-19 pandemic could negatively affect the Company's labor availability, relations, or labor costs",
+      "current": "It is possible that the COVID-19 pandemic has and continues to negatively affect the Company's labor availability, relations, or labor costs",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "Supply chain disruption at co-manufacturers and suppliers escalated from hypothetical to confirmed",
+      "prior": "Disruption of operations at co manufacturers or other suppliers may impact the Company s product or raw material supply",
+      "current": "Disruption of operations at co manufacturers, suppliers, or logistics providers have and may continue to impact the Company s product and input supplies as well as the ability to distribute products",
+      "severity": "major",
+      "points": 4
+    },
+    {
+      "risk": "African swine fever geographic spread expanded to include the Caribbean",
+      "prior": "the outbreak of ASF has impacted hog herds in China, Asia, and Europe",
+      "current": "the outbreak of ASF has impacted hog herds in China, Asia, Europe, and the Caribbean",
+      "severity": "minor",
+      "points": 1
+    }
+  ],
+  "confessions": [
+    {
+      "type": "regulatory_action",
+      "detail": "A recent federal district court ruling has had a negative impact on harvest capacity and labor costs. Harvest facilities the Company uses are negotiating to resolve the situation and expect to reach a solution, but harvest capacity and labor costs will continue to be negatively impacted until a solution is reached. There can be no assurance a solution will be reached.",
+      "points": 5
+    }
+  ],
+  "resolved_risks": [
+    {
+      "risk": "Wholestone Farms supply concentration risk (30% of pork raw materials under expiring contract) — removed from current year, indicating successful renegotiation or alternative sourcing",
+      "points": -2
+    }
+  ],
+  "severity_score": 26,
+  "trajectory": "CRITICAL",
+  "boilerplate_count": 2,
+  "sector_wide_count": 2,
+  "company_specific_count": 4,
+  "escalation_count": 3,
+  "confession_count": 1,
+  "resolved_count": 1
+}
