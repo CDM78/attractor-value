@@ -207,12 +207,13 @@
     "ticker": "AIV",
     "entry_date": "2013-01-02",
     "status": "ok",
+    "filing_date": "2012-02-23",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2011-02-25",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "AIZ": {
@@ -255,25 +256,27 @@
     "ticker": "ALB",
     "entry_date": "2015-01-02",
     "status": "ok",
+    "filing_date": "2014-02-25",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
+    "concentration_mentions": 2,
     "parsing_confidence": "low"
   },
   "ALGN": {
     "ticker": "ALGN",
     "entry_date": "2015-01-02",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
-    "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
-    "parsing_confidence": "low"
+    "filing_date": "2014-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "ALK": {
     "ticker": "ALK",
@@ -349,7 +352,16 @@
   },
   "AMG": {
     "ticker": "AMG",
-    "status": "search_failed"
+    "entry_date": "2014-06-30",
+    "status": "ok",
+    "filing_date": "2014-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
   },
   "AMGN": {
     "ticker": "AMGN",
@@ -871,13 +883,14 @@
     "ticker": "CCL",
     "entry_date": "2013-01-02",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2012-01-30",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2011-02-25",
-    "parsing_confidence": "low"
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "CDNS": {
     "ticker": "CDNS",
@@ -1115,12 +1128,13 @@
     "ticker": "COO",
     "entry_date": "2015-01-02",
     "status": "ok",
+    "filing_date": "2014-12-19",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
+    "concentration_mentions": 1,
     "parsing_confidence": "low"
   },
   "COP": {
@@ -1151,12 +1165,13 @@
     "ticker": "COTY",
     "entry_date": "2015-01-02",
     "status": "ok",
+    "filing_date": "2014-08-28",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
+    "concentration_mentions": 1,
     "parsing_confidence": "low"
   },
   "CPB": {
@@ -1175,25 +1190,27 @@
     "ticker": "CPRI",
     "entry_date": "2015-01-02",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2014-05-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 14.4,
+    "customers_above_10pct": 3,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
-    "parsing_confidence": "low"
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
   },
   "CPRT": {
     "ticker": "CPRT",
     "entry_date": "2015-01-02",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
-    "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
-    "parsing_confidence": "low"
+    "filing_date": "2014-09-29",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "CRM": {
     "ticker": "CRM",
@@ -1235,12 +1252,13 @@
     "ticker": "CTAS",
     "entry_date": "2013-01-02",
     "status": "ok",
+    "filing_date": "2012-07-30",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2011-02-25",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "CTSH": {
@@ -1643,12 +1661,13 @@
     "ticker": "ESS",
     "entry_date": "2014-04-01",
     "status": "ok",
+    "filing_date": "2014-02-26",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "ETN": {
@@ -1907,12 +1926,13 @@
     "ticker": "FRT",
     "entry_date": "2015-01-02",
     "status": "ok",
+    "filing_date": "2014-02-11",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "FTI": {
@@ -1941,7 +1961,8 @@
   },
   "FTV": {
     "ticker": "FTV",
-    "status": "search_failed"
+    "status": "no_10k",
+    "before_date": "2016-07-05"
   },
   "GD": {
     "ticker": "GD",
@@ -2223,13 +2244,14 @@
     "ticker": "HOLX",
     "entry_date": "2015-01-02",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2014-11-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 18.8,
+    "customers_above_10pct": 3,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
-    "parsing_confidence": "low"
+    "concentration_mentions": 2,
+    "parsing_confidence": "medium"
   },
   "HON": {
     "ticker": "HON",
@@ -2283,12 +2305,13 @@
     "ticker": "HRB",
     "entry_date": "2013-01-02",
     "status": "ok",
+    "filing_date": "2012-06-26",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2011-02-25",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "HRL": {
@@ -2379,12 +2402,13 @@
     "ticker": "IDXX",
     "entry_date": "2019-01-02",
     "status": "ok",
+    "filing_date": "2018-02-16",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
+    "concentration_mentions": 4,
     "parsing_confidence": "low"
   },
   "IFF": {
@@ -2463,36 +2487,39 @@
     "ticker": "IPGP",
     "entry_date": "2018-03-06",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2018-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 28,
+    "customers_above_10pct": 5,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
-    "parsing_confidence": "low"
+    "concentration_mentions": 13,
+    "parsing_confidence": "medium"
   },
   "IQV": {
     "ticker": "IQV",
     "entry_date": "2017-08-28",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2017-02-16",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2017-02-24",
-    "parsing_confidence": "low"
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "IR": {
     "ticker": "IR",
     "entry_date": "2019-01-02",
     "status": "ok",
+    "filing_date": "2018-02-16",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "IRM": {
@@ -2595,12 +2622,13 @@
     "ticker": "JKHY",
     "entry_date": "2018-11-12",
     "status": "ok",
+    "filing_date": "2018-08-24",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "JNJ": {
@@ -2643,13 +2671,14 @@
     "ticker": "KEYS",
     "entry_date": "2018-11-05",
     "status": "ok",
-    "concentration_disclosed": false,
+    "filing_date": "2017-12-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
-    "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
-    "parsing_confidence": "low"
+    "no_concentration_statement": true,
+    "concentration_mentions": 5,
+    "parsing_confidence": "medium"
   },
   "KHC": {
     "ticker": "KHC",
@@ -2811,25 +2840,27 @@
     "ticker": "LIN",
     "entry_date": "2018-11-05",
     "status": "ok",
+    "filing_date": "2018-03-23",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "LKQ": {
     "ticker": "LKQ",
     "entry_date": "2016-05-23",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2016-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 54,
+    "customers_above_10pct": 2,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2014-03-04",
-    "parsing_confidence": "low"
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
   },
   "LLY": {
     "ticker": "LLY",
@@ -2871,13 +2902,14 @@
     "ticker": "LNT",
     "entry_date": "2016-06-30",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2016-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 2,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2014-03-04",
-    "parsing_confidence": "low"
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "LOW": {
     "ticker": "LOW",
@@ -2919,12 +2951,13 @@
     "ticker": "LW",
     "entry_date": "2018-12-03",
     "status": "ok",
+    "filing_date": "2018-07-26",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
+    "concentration_mentions": 9,
     "parsing_confidence": "low"
   },
   "LYB": {
@@ -2979,13 +3012,14 @@
     "ticker": "MAC",
     "entry_date": "2013-05-08",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2013-02-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2011-02-25",
-    "parsing_confidence": "low"
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "MAR": {
     "ticker": "MAR",
@@ -3193,7 +3227,8 @@
   },
   "MOS": {
     "ticker": "MOS",
-    "status": "search_failed"
+    "status": "no_10k",
+    "before_date": "2011-09-26"
   },
   "MPC": {
     "ticker": "MPC",
@@ -3235,13 +3270,14 @@
     "ticker": "MSCI",
     "entry_date": "2019-01-02",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
-    "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
-    "parsing_confidence": "low"
+    "filing_date": "2018-02-26",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 20,
+    "customers_above_10pct": 7,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "MSFT": {
     "ticker": "MSFT",
@@ -3283,13 +3319,14 @@
     "ticker": "MTD",
     "entry_date": "2016-09-06",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
+    "filing_date": "2016-02-04",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 9,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2014-03-04",
-    "parsing_confidence": "low"
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
   },
   "MU": {
     "ticker": "MU",
@@ -3307,12 +3344,13 @@
     "ticker": "NCLH",
     "entry_date": "2015-12-31",
     "status": "ok",
+    "filing_date": "2015-02-27",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "NDAQ": {
@@ -3391,13 +3429,14 @@
     "ticker": "NKTR",
     "entry_date": "2018-03-19",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2018-03-01",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 43,
+    "customers_above_10pct": 7,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2018-02-23",
-    "parsing_confidence": "low"
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
   },
   "NOC": {
     "ticker": "NOC",
@@ -3415,12 +3454,13 @@
     "ticker": "NOV",
     "entry_date": "2013-01-02",
     "status": "ok",
+    "filing_date": "2012-02-23",
+    "filing_form": "10-K",
     "concentration_disclosed": false,
     "largest_customer_pct": null,
     "customers_above_10pct": 0,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2011-02-25",
+    "concentration_mentions": 0,
     "parsing_confidence": "low"
   },
   "NRG": {
@@ -3535,13 +3575,14 @@
     "ticker": "O",
     "entry_date": "2015-04-06",
     "status": "ok",
-    "concentration_disclosed": false,
-    "largest_customer_pct": null,
-    "customers_above_10pct": 0,
+    "filing_date": "2015-02-18",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
     "no_concentration_statement": false,
-    "concentration_mentions": 100,
-    "filing_date": "2013-08-21",
-    "parsing_confidence": "low"
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
   },
   "OKE": {
     "ticker": "OKE",
@@ -3566,5 +3607,3028 @@
     "concentration_mentions": 100,
     "filing_date": "2011-02-25",
     "parsing_confidence": "low"
+  },
+  "ABNB": {
+    "ticker": "ABNB",
+    "status": "no_10k",
+    "before_date": "2021-12-31"
+  },
+  "ACGL": {
+    "ticker": "ACGL",
+    "entry_date": "2022-10-31",
+    "status": "ok",
+    "filing_date": "2022-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "AET": {
+    "ticker": "AET",
+    "status": "no_cik"
+  },
+  "AMCR": {
+    "ticker": "AMCR",
+    "status": "no_10k",
+    "before_date": "2019-06-06"
+  },
+  "AN": {
+    "ticker": "AN",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ANDV": {
+    "ticker": "ANDV",
+    "status": "no_cik"
+  },
+  "ANF": {
+    "ticker": "ANF",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ARCB": {
+    "ticker": "ARCB",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 76,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": true,
+    "concentration_mentions": 2,
+    "parsing_confidence": "medium"
+  },
+  "ASGN": {
+    "ticker": "ASGN",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-03",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "ASML": {
+    "ticker": "ASML",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-12",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 19,
+    "parsing_confidence": "low"
+  },
+  "ASPN": {
+    "ticker": "ASPN",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "ATI": {
+    "ticker": "ATI",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ATO": {
+    "ticker": "ATO",
+    "entry_date": "2019-02-14",
+    "status": "ok",
+    "filing_date": "2018-11-13",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "AVNS": {
+    "ticker": "AVNS",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 19,
+    "customers_above_10pct": 6,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "AXON": {
+    "ticker": "AXON",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "AYI": {
+    "ticker": "AYI",
+    "entry_date": "2016-05-02",
+    "status": "ok",
+    "filing_date": "2015-10-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "AZN": {
+    "ticker": "AZN",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "BABA": {
+    "ticker": "BABA",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-06-15",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "BALL": {
+    "ticker": "BALL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "BBBY": {
+    "ticker": "BBBY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "BBWI": {
+    "ticker": "BBWI",
+    "entry_date": "2021-08-02",
+    "status": "ok",
+    "filing_date": "2021-03-19",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "BG": {
+    "ticker": "BG",
+    "status": "no_10k",
+    "before_date": "2023-03-14"
+  },
+  "BHP": {
+    "ticker": "BHP",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "BIDU": {
+    "ticker": "BIDU",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-28",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "BIO": {
+    "ticker": "BIO",
+    "entry_date": "2020-06-22",
+    "status": "ok",
+    "filing_date": "2020-03-02",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "BJRI": {
+    "ticker": "BJRI",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "BKR": {
+    "ticker": "BKR",
+    "entry_date": "2019-10-17",
+    "status": "ok",
+    "filing_date": "2019-02-19",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "BKU": {
+    "ticker": "BKU",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "BMC": {
+    "ticker": "BMC",
+    "status": "no_cik"
+  },
+  "BMS": {
+    "ticker": "BMS",
+    "status": "no_cik"
+  },
+  "BOOT": {
+    "ticker": "BOOT",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-06-07",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "BP": {
+    "ticker": "BP",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-06",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "BRO": {
+    "ticker": "BRO",
+    "entry_date": "2021-09-20",
+    "status": "ok",
+    "filing_date": "2021-02-23",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "BTI": {
+    "ticker": "BTI",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "CAKE": {
+    "ticker": "CAKE",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "CALX": {
+    "ticker": "CALX",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 26,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "CARR": {
+    "ticker": "CARR",
+    "status": "no_10k",
+    "before_date": "2020-04-02"
+  },
+  "CASH": {
+    "ticker": "CASH",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "CATO": {
+    "ticker": "CATO",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-04-02",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "CDW": {
+    "ticker": "CDW",
+    "entry_date": "2019-09-23",
+    "status": "ok",
+    "filing_date": "2019-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "CELH": {
+    "ticker": "CELH",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2011-03-31",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 89.8,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "medium"
+  },
+  "CENTA": {
+    "ticker": "CENTA",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "CLF": {
+    "ticker": "CLF",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "CNX": {
+    "ticker": "CNX",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "COL": {
+    "ticker": "COL",
+    "status": "no_cik"
+  },
+  "CRL": {
+    "ticker": "CRL",
+    "entry_date": "2021-05-13",
+    "status": "ok",
+    "filing_date": "2021-02-17",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "CROX": {
+    "ticker": "CROX",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 35,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": true,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "CSGP": {
+    "ticker": "CSGP",
+    "entry_date": "2022-09-19",
+    "status": "ok",
+    "filing_date": "2022-02-23",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 5,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "CTL": {
+    "ticker": "CTL",
+    "status": "no_cik"
+  },
+  "CTRA": {
+    "ticker": "CTRA",
+    "entry_date": "2021-10-04",
+    "status": "ok",
+    "filing_date": "2021-02-26",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "CTVA": {
+    "ticker": "CTVA",
+    "status": "no_10k",
+    "before_date": "2019-06-03"
+  },
+  "CZR": {
+    "ticker": "CZR",
+    "entry_date": "2021-03-22",
+    "status": "ok",
+    "filing_date": "2021-03-01",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "DB": {
+    "ticker": "DB",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "DD": {
+    "ticker": "DD",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "DELL": {
+    "ticker": "DELL",
+    "status": "no_10k",
+    "before_date": "2019-01-02"
+  },
+  "DEO": {
+    "ticker": "DEO",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-08-12",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 85,
+    "customers_above_10pct": 12,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "DIN": {
+    "ticker": "DIN",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "DOW": {
+    "ticker": "DOW",
+    "status": "no_10k",
+    "before_date": "2019-04-01"
+  },
+  "DPZ": {
+    "ticker": "DPZ",
+    "entry_date": "2020-05-11",
+    "status": "ok",
+    "filing_date": "2020-02-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "DXCM": {
+    "ticker": "DXCM",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "ELV": {
+    "ticker": "ELV",
+    "entry_date": "2022-06-27",
+    "status": "ok",
+    "filing_date": "2022-02-16",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "ENB": {
+    "ticker": "ENB",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "ENPH": {
+    "ticker": "ENPH",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-04",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 7,
+    "parsing_confidence": "low"
+  },
+  "EP": {
+    "ticker": "EP",
+    "entry_date": "2012-05-24",
+    "status": "ok",
+    "filing_date": "2012-03-21",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "EPAM": {
+    "ticker": "EPAM",
+    "entry_date": "2021-12-13",
+    "status": "ok",
+    "filing_date": "2021-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 8,
+    "parsing_confidence": "low"
+  },
+  "EQT": {
+    "ticker": "EQT",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ESRX": {
+    "ticker": "ESRX",
+    "status": "no_cik"
+  },
+  "ETSY": {
+    "ticker": "ETSY",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-26",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "FCPT": {
+    "ticker": "FCPT",
+    "status": "no_10k",
+    "before_date": "2015-11-10"
+  },
+  "FDS": {
+    "ticker": "FDS",
+    "entry_date": "2021-12-20",
+    "status": "ok",
+    "filing_date": "2021-10-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "FHN": {
+    "ticker": "FHN",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "FOSL": {
+    "ticker": "FOSL",
+    "entry_date": "2012-04-03",
+    "status": "ok",
+    "filing_date": "2012-02-29",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 45.3,
+    "customers_above_10pct": 10,
+    "no_concentration_statement": true,
+    "concentration_mentions": 7,
+    "parsing_confidence": "medium"
+  },
+  "FOX": {
+    "ticker": "FOX",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-08-10",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "FOXA": {
+    "ticker": "FOXA",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-08-10",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "FSLR": {
+    "ticker": "FSLR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "GBCI": {
+    "ticker": "GBCI",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "GEHC": {
+    "ticker": "GEHC",
+    "status": "no_10k",
+    "before_date": "2023-01-03"
+  },
+  "GEN": {
+    "ticker": "GEN",
+    "entry_date": "2022-11-07",
+    "status": "ok",
+    "filing_date": "2022-05-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": true,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "GHC": {
+    "ticker": "GHC",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-29",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "GKOS": {
+    "ticker": "GKOS",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-03-15",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "GL": {
+    "ticker": "GL",
+    "entry_date": "2019-08-07",
+    "status": "ok",
+    "filing_date": "2019-03-01",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "GME": {
+    "ticker": "GME",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-03-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "GNRC": {
+    "ticker": "GNRC",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-23",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 6,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "GNW": {
+    "ticker": "GNW",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "GPS": {
+    "ticker": "GPS",
+    "status": "no_cik"
+  },
+  "GTN": {
+    "ticker": "GTN",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-11",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 25,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "HAR": {
+    "ticker": "HAR",
+    "status": "no_cik"
+  },
+  "HCC": {
+    "ticker": "HCC",
+    "status": "no_10k",
+    "before_date": "2017-06-15"
+  },
+  "HDB": {
+    "ticker": "HDB",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-07-29",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 23.6,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "HESM": {
+    "ticker": "HESM",
+    "status": "no_10k",
+    "before_date": "2017-06-15"
+  },
+  "HMC": {
+    "ticker": "HMC",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-06-25",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "HOMB": {
+    "ticker": "HOMB",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "HSBC": {
+    "ticker": "HSBC",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "HWM": {
+    "ticker": "HWM",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-16",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 4,
+    "parsing_confidence": "low"
+  },
+  "IBOC": {
+    "ticker": "IBOC",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "IEX": {
+    "ticker": "IEX",
+    "entry_date": "2019-08-08",
+    "status": "ok",
+    "filing_date": "2019-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "low"
+  },
+  "IIPR": {
+    "ticker": "IIPR",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-03-02",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "INFY": {
+    "ticker": "INFY",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-05-09",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "low"
+  },
+  "INVH": {
+    "ticker": "INVH",
+    "entry_date": "2022-09-19",
+    "status": "ok",
+    "filing_date": "2022-02-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "IQ": {
+    "ticker": "IQ",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-03-12",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "ITT": {
+    "ticker": "ITT",
+    "status": "no_10k",
+    "before_date": "2011-10-31"
+  },
+  "J": {
+    "ticker": "J",
+    "entry_date": "2019-12-09",
+    "status": "ok",
+    "filing_date": "2019-11-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 76,
+    "customers_above_10pct": 11,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "JACK": {
+    "ticker": "JACK",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "JBL": {
+    "ticker": "JBL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "JBLU": {
+    "ticker": "JBLU",
+    "status": "no_10k",
+    "before_date": "2016-06-15"
+  },
+  "JD": {
+    "ticker": "JD",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "KDP": {
+    "ticker": "KDP",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "KTOS": {
+    "ticker": "KTOS",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "LB": {
+    "ticker": "LB",
+    "status": "no_10k",
+    "before_date": "2016-06-15"
+  },
+  "LDOS": {
+    "ticker": "LDOS",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "LEE": {
+    "ticker": "LEE",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-12-13",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "LGND": {
+    "ticker": "LGND",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "LHX": {
+    "ticker": "LHX",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-03-01",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 19,
+    "parsing_confidence": "low"
+  },
+  "LNTH": {
+    "ticker": "LNTH",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-02-23",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 7,
+    "parsing_confidence": "low"
+  },
+  "LULU": {
+    "ticker": "LULU",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-03-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "LUMN": {
+    "ticker": "LUMN",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "LVS": {
+    "ticker": "LVS",
+    "entry_date": "2019-10-02",
+    "status": "ok",
+    "filing_date": "2019-02-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "LYV": {
+    "ticker": "LYV",
+    "entry_date": "2019-12-23",
+    "status": "ok",
+    "filing_date": "2019-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "MATX": {
+    "ticker": "MATX",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "MBI": {
+    "ticker": "MBI",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-03",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "MELI": {
+    "ticker": "MELI",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-03",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 7.2,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "MKTX": {
+    "ticker": "MKTX",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-19",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "MOH": {
+    "ticker": "MOH",
+    "entry_date": "2022-03-01",
+    "status": "ok",
+    "filing_date": "2022-02-14",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 74,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "MPWR": {
+    "ticker": "MPWR",
+    "entry_date": "2021-02-11",
+    "status": "ok",
+    "filing_date": "2020-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 23,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 6,
+    "parsing_confidence": "medium"
+  },
+  "MRNA": {
+    "ticker": "MRNA",
+    "entry_date": "2021-07-20",
+    "status": "ok",
+    "filing_date": "2021-02-26",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 65,
+    "customers_above_10pct": 12,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "MTCH": {
+    "ticker": "MTCH",
+    "entry_date": "2021-09-20",
+    "status": "ok",
+    "filing_date": "2021-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "MTDR": {
+    "ticker": "MTDR",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "MUFG": {
+    "ticker": "MUFG",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-07-22",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "MUR": {
+    "ticker": "MUR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "MYRG": {
+    "ticker": "MYRG",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-05",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 57.8,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 4,
+    "parsing_confidence": "medium"
+  },
+  "NAVI": {
+    "ticker": "NAVI",
+    "status": "no_10k",
+    "before_date": "2014-04-30"
+  },
+  "NBR": {
+    "ticker": "NBR",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-29",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "NDSN": {
+    "ticker": "NDSN",
+    "entry_date": "2022-02-14",
+    "status": "ok",
+    "filing_date": "2021-12-17",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "NFX": {
+    "ticker": "NFX",
+    "status": "no_cik"
+  },
+  "NOK": {
+    "ticker": "NOK",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-04-30",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "low"
+  },
+  "NOW": {
+    "ticker": "NOW",
+    "status": "no_10k",
+    "before_date": "2019-11-20"
+  },
+  "NVCR": {
+    "ticker": "NVCR",
+    "status": "no_10k",
+    "before_date": "2017-06-15"
+  },
+  "NVR": {
+    "ticker": "NVR",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "NXPI": {
+    "ticker": "NXPI",
+    "entry_date": "2021-03-22",
+    "status": "ok",
+    "filing_date": "2021-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "low"
+  },
+  "NYT": {
+    "ticker": "NYT",
+    "status": "no_10k",
+    "before_date": "2010-12-20"
+  },
+  "ODFL": {
+    "ticker": "ODFL",
+    "entry_date": "2019-12-09",
+    "status": "ok",
+    "filing_date": "2019-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 26,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "OGN": {
+    "ticker": "OGN",
+    "status": "no_10k",
+    "before_date": "2021-06-03"
+  },
+  "OI": {
+    "ticker": "OI",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-09",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "OMCL": {
+    "ticker": "OMCL",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-17",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 89,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "ON": {
+    "ticker": "ON",
+    "entry_date": "2022-06-21",
+    "status": "ok",
+    "filing_date": "2022-02-14",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 64,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "ORCL": {
+    "ticker": "ORCL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ORLY": {
+    "ticker": "ORLY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "OTIS": {
+    "ticker": "OTIS",
+    "status": "no_10k",
+    "before_date": "2020-04-02"
+  },
+  "OXY": {
+    "ticker": "OXY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PAYC": {
+    "ticker": "PAYC",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-18",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "PAYX": {
+    "ticker": "PAYX",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-07-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "PBI": {
+    "ticker": "PBI",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PBR": {
+    "ticker": "PBR",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "PCAR": {
+    "ticker": "PCAR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PCG": {
+    "ticker": "PCG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PEG": {
+    "ticker": "PEG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PENN": {
+    "ticker": "PENN",
+    "entry_date": "2021-03-22",
+    "status": "ok",
+    "filing_date": "2021-02-26",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "PEP": {
+    "ticker": "PEP",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PFG": {
+    "ticker": "PFG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PG": {
+    "ticker": "PG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PGR": {
+    "ticker": "PGR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PH": {
+    "ticker": "PH",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PHG": {
+    "ticker": "PHG",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-25",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "PHM": {
+    "ticker": "PHM",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-09",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "PKG": {
+    "ticker": "PKG",
+    "entry_date": "2017-07-25",
+    "status": "ok",
+    "filing_date": "2017-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 50,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": false,
+    "concentration_mentions": 5,
+    "parsing_confidence": "medium"
+  },
+  "PLAY": {
+    "ticker": "PLAY",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-03-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 29,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "PLCE": {
+    "ticker": "PLCE",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 12.8,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "PLD": {
+    "ticker": "PLD",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PM": {
+    "ticker": "PM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PNC": {
+    "ticker": "PNC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PNR": {
+    "ticker": "PNR",
+    "status": "no_10k",
+    "before_date": "2012-10-01"
+  },
+  "PNW": {
+    "ticker": "PNW",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "POOL": {
+    "ticker": "POOL",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 54,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": true,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "PPG": {
+    "ticker": "PPG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PPL": {
+    "ticker": "PPL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PRGO": {
+    "ticker": "PRGO",
+    "status": "no_10k",
+    "before_date": "2011-12-19"
+  },
+  "PRIM": {
+    "ticker": "PRIM",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-03",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 55.9,
+    "customers_above_10pct": 8,
+    "no_concentration_statement": false,
+    "concentration_mentions": 5,
+    "parsing_confidence": "medium"
+  },
+  "PRPL": {
+    "ticker": "PRPL",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-03-14",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "PRU": {
+    "ticker": "PRU",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PSA": {
+    "ticker": "PSA",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PSX": {
+    "ticker": "PSX",
+    "status": "no_10k",
+    "before_date": "2012-04-30"
+  },
+  "PTC": {
+    "ticker": "PTC",
+    "entry_date": "2021-04-19",
+    "status": "ok",
+    "filing_date": "2020-11-20",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "PVH": {
+    "ticker": "PVH",
+    "status": "no_10k",
+    "before_date": "2013-02-13"
+  },
+  "PWR": {
+    "ticker": "PWR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "PYPL": {
+    "ticker": "PYPL",
+    "status": "no_10k",
+    "before_date": "2015-12-31"
+  },
+  "QCOM": {
+    "ticker": "QCOM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "QLYS": {
+    "ticker": "QLYS",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "QRVO": {
+    "ticker": "QRVO",
+    "status": "no_10k",
+    "before_date": "2015-06-11"
+  },
+  "R": {
+    "ticker": "R",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "RCL": {
+    "ticker": "RCL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "REG": {
+    "ticker": "REG",
+    "entry_date": "2017-03-01",
+    "status": "ok",
+    "filing_date": "2017-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "REGN": {
+    "ticker": "REGN",
+    "status": "no_10k",
+    "before_date": "2013-04-30"
+  },
+  "RF": {
+    "ticker": "RF",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "RHI": {
+    "ticker": "RHI",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-17",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "RIG": {
+    "ticker": "RIG",
+    "status": "no_10k",
+    "before_date": "2013-10-28"
+  },
+  "RIO": {
+    "ticker": "RIO",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-14",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "RJF": {
+    "ticker": "RJF",
+    "status": "no_10k",
+    "before_date": "2017-03-20"
+  },
+  "RL": {
+    "ticker": "RL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "RMD": {
+    "ticker": "RMD",
+    "status": "no_10k",
+    "before_date": "2017-07-25"
+  },
+  "ROAD": {
+    "ticker": "ROAD",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2019-12-13",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 69.3,
+    "customers_above_10pct": 7,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "ROK": {
+    "ticker": "ROK",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ROL": {
+    "ticker": "ROL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ROP": {
+    "ticker": "ROP",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "ROST": {
+    "ticker": "ROST",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "RRC": {
+    "ticker": "RRC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "RRGB": {
+    "ticker": "RRGB",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "RSG": {
+    "ticker": "RSG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "RTX": {
+    "ticker": "RTX",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-08",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 85,
+    "customers_above_10pct": 9,
+    "no_concentration_statement": false,
+    "concentration_mentions": 4,
+    "parsing_confidence": "medium"
+  },
+  "SANM": {
+    "ticker": "SANM",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-11-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 50,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": false,
+    "concentration_mentions": 11,
+    "parsing_confidence": "medium"
+  },
+  "SBAC": {
+    "ticker": "SBAC",
+    "entry_date": "2017-08-31",
+    "status": "ok",
+    "filing_date": "2017-03-01",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 9,
+    "parsing_confidence": "medium"
+  },
+  "SBCF": {
+    "ticker": "SBCF",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "SBS": {
+    "ticker": "SBS",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-04-30",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "SBUX": {
+    "ticker": "SBUX",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SCG": {
+    "ticker": "SCG",
+    "status": "no_cik"
+  },
+  "SCHW": {
+    "ticker": "SCHW",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SCVL": {
+    "ticker": "SCVL",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-04-10",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 51,
+    "customers_above_10pct": 1,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "SE": {
+    "ticker": "SE",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-04-14",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": true,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "SEDG": {
+    "ticker": "SEDG",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-19",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 48.5,
+    "customers_above_10pct": 9,
+    "no_concentration_statement": false,
+    "concentration_mentions": 18,
+    "parsing_confidence": "medium"
+  },
+  "SEE": {
+    "ticker": "SEE",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-29",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "SFM": {
+    "ticker": "SFM",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "SHAK": {
+    "ticker": "SHAK",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-03-13",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "SHEL": {
+    "ticker": "SHEL",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-13",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "SHOP": {
+    "ticker": "SHOP",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2016-02-17",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "SHW": {
+    "ticker": "SHW",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SIG": {
+    "ticker": "SIG",
+    "status": "no_10k",
+    "before_date": "2015-07-28"
+  },
+  "SIGI": {
+    "ticker": "SIGI",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 25,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "SITE": {
+    "ticker": "SITE",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-03-15",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 54,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "SJM": {
+    "ticker": "SJM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SLB": {
+    "ticker": "SLB",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SLG": {
+    "ticker": "SLG",
+    "entry_date": "2015-03-23",
+    "status": "ok",
+    "filing_date": "2015-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "SLM": {
+    "ticker": "SLM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SM": {
+    "ticker": "SM",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-19",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 12,
+    "parsing_confidence": "low"
+  },
+  "SMCI": {
+    "ticker": "SMCI",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SNA": {
+    "ticker": "SNA",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SNPS": {
+    "ticker": "SNPS",
+    "entry_date": "2017-03-15",
+    "status": "ok",
+    "filing_date": "2016-12-12",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 15.9,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "SNY": {
+    "ticker": "SNY",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-07",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "low"
+  },
+  "SO": {
+    "ticker": "SO",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SONY": {
+    "ticker": "SONY",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-06-27",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "SPG": {
+    "ticker": "SPG",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SPGI": {
+    "ticker": "SPGI",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SRE": {
+    "ticker": "SRE",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "STE": {
+    "ticker": "STE",
+    "entry_date": "2019-12-23",
+    "status": "ok",
+    "filing_date": "2019-05-30",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": true,
+    "concentration_mentions": 6,
+    "parsing_confidence": "medium"
+  },
+  "STLD": {
+    "ticker": "STLD",
+    "entry_date": "2022-12-21",
+    "status": "ok",
+    "filing_date": "2022-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "STT": {
+    "ticker": "STT",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "STX": {
+    "ticker": "STX",
+    "status": "no_10k",
+    "before_date": "2012-07-02"
+  },
+  "STZ": {
+    "ticker": "STZ",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SUN": {
+    "ticker": "SUN",
+    "status": "no_10k",
+    "before_date": "2012-10-04"
+  },
+  "SUPN": {
+    "ticker": "SUPN",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-21",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "SWK": {
+    "ticker": "SWK",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SWKS": {
+    "ticker": "SWKS",
+    "entry_date": "2015-03-11",
+    "status": "ok",
+    "filing_date": "2014-11-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 6,
+    "parsing_confidence": "low"
+  },
+  "SYF": {
+    "ticker": "SYF",
+    "status": "no_10k",
+    "before_date": "2015-12-31"
+  },
+  "SYK": {
+    "ticker": "SYK",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "SYY": {
+    "ticker": "SYY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "T": {
+    "ticker": "T",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TAL": {
+    "ticker": "TAL",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-05-12",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TALO": {
+    "ticker": "TALO",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-03-12",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 80,
+    "customers_above_10pct": 7,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "TAP": {
+    "ticker": "TAP",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TCMD": {
+    "ticker": "TCMD",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TDC": {
+    "ticker": "TDC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TDG": {
+    "ticker": "TDG",
+    "status": "no_10k",
+    "before_date": "2016-06-02"
+  },
+  "TDY": {
+    "ticker": "TDY",
+    "entry_date": "2020-06-22",
+    "status": "ok",
+    "filing_date": "2020-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TECH": {
+    "ticker": "TECH",
+    "entry_date": "2021-08-30",
+    "status": "ok",
+    "filing_date": "2021-08-25",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "TEL": {
+    "ticker": "TEL",
+    "status": "no_10k",
+    "before_date": "2011-10-17"
+  },
+  "TER": {
+    "ticker": "TER",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TFC": {
+    "ticker": "TFC",
+    "status": "no_10k",
+    "before_date": "2019-12-09"
+  },
+  "TFX": {
+    "ticker": "TFX",
+    "entry_date": "2019-01-17",
+    "status": "ok",
+    "filing_date": "2018-02-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "TGNA": {
+    "ticker": "TGNA",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TGT": {
+    "ticker": "TGT",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "THC": {
+    "ticker": "THC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TJX": {
+    "ticker": "TJX",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TLYS": {
+    "ticker": "TLYS",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-04-01",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "low"
+  },
+  "TM": {
+    "ticker": "TM",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-06-24",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TMO": {
+    "ticker": "TMO",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TMUS": {
+    "ticker": "TMUS",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TPR": {
+    "ticker": "TPR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TREX": {
+    "ticker": "TREX",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 90,
+    "customers_above_10pct": 3,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "medium"
+  },
+  "TRGP": {
+    "ticker": "TRGP",
+    "entry_date": "2022-10-11",
+    "status": "ok",
+    "filing_date": "2022-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TRIP": {
+    "ticker": "TRIP",
+    "status": "no_10k",
+    "before_date": "2011-12-20"
+  },
+  "TRMB": {
+    "ticker": "TRMB",
+    "entry_date": "2021-01-20",
+    "status": "ok",
+    "filing_date": "2020-02-28",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 55,
+    "customers_above_10pct": 12,
+    "no_concentration_statement": true,
+    "concentration_mentions": 2,
+    "parsing_confidence": "medium"
+  },
+  "TROW": {
+    "ticker": "TROW",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TRV": {
+    "ticker": "TRV",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TSCO": {
+    "ticker": "TSCO",
+    "status": "no_10k",
+    "before_date": "2014-01-23"
+  },
+  "TSLA": {
+    "ticker": "TSLA",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TSM": {
+    "ticker": "TSM",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-04-14",
+    "filing_form": "20-F",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 62,
+    "customers_above_10pct": 4,
+    "no_concentration_statement": false,
+    "concentration_mentions": 8,
+    "parsing_confidence": "medium"
+  },
+  "TSN": {
+    "ticker": "TSN",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TT": {
+    "ticker": "TT",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-09",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TTE": {
+    "ticker": "TTE",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-27",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "TTWO": {
+    "ticker": "TTWO",
+    "entry_date": "2018-03-19",
+    "status": "ok",
+    "filing_date": "2017-05-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 81,
+    "customers_above_10pct": 15,
+    "no_concentration_statement": false,
+    "concentration_mentions": 14,
+    "parsing_confidence": "medium"
+  },
+  "TWX": {
+    "ticker": "TWX",
+    "status": "no_cik"
+  },
+  "TXN": {
+    "ticker": "TXN",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TXT": {
+    "ticker": "TXT",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "TYL": {
+    "ticker": "TYL",
+    "entry_date": "2020-06-22",
+    "status": "ok",
+    "filing_date": "2020-02-19",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "UA": {
+    "ticker": "UA",
+    "status": "no_10k",
+    "before_date": "2016-04-07"
+  },
+  "UAA": {
+    "ticker": "UAA",
+    "status": "no_10k",
+    "before_date": "2014-04-30"
+  },
+  "UAL": {
+    "ticker": "UAL",
+    "status": "no_10k",
+    "before_date": "2015-09-02"
+  },
+  "UBSI": {
+    "ticker": "UBSI",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "UDR": {
+    "ticker": "UDR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "UFPI": {
+    "ticker": "UFPI",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "UHS": {
+    "ticker": "UHS",
+    "entry_date": "2014-09-22",
+    "status": "ok",
+    "filing_date": "2014-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "UL": {
+    "ticker": "UL",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-03-07",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "ULTA": {
+    "ticker": "ULTA",
+    "entry_date": "2016-04-18",
+    "status": "ok",
+    "filing_date": "2016-03-30",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "UNH": {
+    "ticker": "UNH",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "UNM": {
+    "ticker": "UNM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "UNP": {
+    "ticker": "UNP",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "UPS": {
+    "ticker": "UPS",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "URBN": {
+    "ticker": "URBN",
+    "status": "no_10k",
+    "before_date": "2010-02-08"
+  },
+  "URI": {
+    "ticker": "URI",
+    "status": "no_10k",
+    "before_date": "2014-09-22"
+  },
+  "USB": {
+    "ticker": "USB",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "V": {
+    "ticker": "V",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VALE": {
+    "ticker": "VALE",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "VFC": {
+    "ticker": "VFC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VIAV": {
+    "ticker": "VIAV",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VICI": {
+    "ticker": "VICI",
+    "entry_date": "2022-06-07",
+    "status": "ok",
+    "filing_date": "2022-02-23",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "VLO": {
+    "ticker": "VLO",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VMC": {
+    "ticker": "VMC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VNET": {
+    "ticker": "VNET",
+    "entry_date": "2019-06-15",
+    "status": "ok",
+    "filing_date": "2019-03-27",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "low"
+  },
+  "VNO": {
+    "ticker": "VNO",
+    "entry_date": "2013-01-02",
+    "status": "ok",
+    "filing_date": "2012-02-27",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 10,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "medium"
+  },
+  "VNT": {
+    "ticker": "VNT",
+    "status": "no_10k",
+    "before_date": "2020-10-12"
+  },
+  "VRSK": {
+    "ticker": "VRSK",
+    "entry_date": "2015-10-07",
+    "status": "ok",
+    "filing_date": "2015-02-24",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 2,
+    "parsing_confidence": "low"
+  },
+  "VRSN": {
+    "ticker": "VRSN",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VRTX": {
+    "ticker": "VRTX",
+    "status": "no_10k",
+    "before_date": "2013-09-23"
+  },
+  "VRX": {
+    "ticker": "VRX",
+    "status": "no_cik"
+  },
+  "VTR": {
+    "ticker": "VTR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "VTRS": {
+    "ticker": "VTRS",
+    "entry_date": "2020-11-16",
+    "status": "ok",
+    "filing_date": "2020-05-07",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "VZ": {
+    "ticker": "VZ",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WAB": {
+    "ticker": "WAB",
+    "entry_date": "2019-02-26",
+    "status": "ok",
+    "filing_date": "2018-02-26",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 18,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "WAT": {
+    "ticker": "WAT",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WBA": {
+    "ticker": "WBA",
+    "status": "no_cik"
+  },
+  "WCN": {
+    "ticker": "WCN",
+    "status": "no_10k",
+    "before_date": "2014-06-15"
+  },
+  "WDAY": {
+    "ticker": "WDAY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WDC": {
+    "ticker": "WDC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WDFC": {
+    "ticker": "WDFC",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2013-10-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 4,
+    "parsing_confidence": "low"
+  },
+  "WEC": {
+    "ticker": "WEC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WELL": {
+    "ticker": "WELL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WFC": {
+    "ticker": "WFC",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WHR": {
+    "ticker": "WHR",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WING": {
+    "ticker": "WING",
+    "entry_date": "2017-06-15",
+    "status": "ok",
+    "filing_date": "2017-03-03",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "WIT": {
+    "ticker": "WIT",
+    "entry_date": "2014-06-15",
+    "status": "ok",
+    "filing_date": "2014-05-19",
+    "filing_form": "20-F",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "low"
+  },
+  "WM": {
+    "ticker": "WM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WMB": {
+    "ticker": "WMB",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WMT": {
+    "ticker": "WMT",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WRB": {
+    "ticker": "WRB",
+    "entry_date": "2019-12-04",
+    "status": "ok",
+    "filing_date": "2019-02-22",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "WSM": {
+    "ticker": "WSM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WST": {
+    "ticker": "WST",
+    "entry_date": "2021-12-31",
+    "status": "ok",
+    "filing_date": "2021-02-23",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 42,
+    "customers_above_10pct": 2,
+    "no_concentration_statement": false,
+    "concentration_mentions": 1,
+    "parsing_confidence": "medium"
+  },
+  "WTW": {
+    "ticker": "WTW",
+    "status": "no_10k",
+    "before_date": "2022-01-10"
+  },
+  "WU": {
+    "ticker": "WU",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WY": {
+    "ticker": "WY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "WYNN": {
+    "ticker": "WYNN",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "XEL": {
+    "ticker": "XEL",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "XOM": {
+    "ticker": "XOM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "XPEL": {
+    "ticker": "XPEL",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-03-16",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "low"
+  },
+  "XRAY": {
+    "ticker": "XRAY",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "XRX": {
+    "ticker": "XRX",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "XYL": {
+    "ticker": "XYL",
+    "status": "no_10k",
+    "before_date": "2011-10-31"
+  },
+  "YETI": {
+    "ticker": "YETI",
+    "entry_date": "2020-06-15",
+    "status": "ok",
+    "filing_date": "2020-02-18",
+    "filing_form": "10-K",
+    "concentration_disclosed": false,
+    "largest_customer_pct": null,
+    "customers_above_10pct": 0,
+    "no_concentration_statement": false,
+    "concentration_mentions": 0,
+    "parsing_confidence": "low"
+  },
+  "YUM": {
+    "ticker": "YUM",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ZBH": {
+    "ticker": "ZBH",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ZBRA": {
+    "ticker": "ZBRA",
+    "entry_date": "2019-12-23",
+    "status": "ok",
+    "filing_date": "2019-02-14",
+    "filing_form": "10-K",
+    "concentration_disclosed": true,
+    "largest_customer_pct": 23,
+    "customers_above_10pct": 21,
+    "no_concentration_statement": false,
+    "concentration_mentions": 3,
+    "parsing_confidence": "medium"
+  },
+  "ZION": {
+    "ticker": "ZION",
+    "status": "no_10k",
+    "before_date": "2013-01-02"
+  },
+  "ZTS": {
+    "ticker": "ZTS",
+    "status": "no_10k",
+    "before_date": "2013-06-24"
   }
 }

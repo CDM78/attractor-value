@@ -1,0 +1,122 @@
+{
+  "test4": {
+    "screenDistribution": {
+      "fail": {
+        "count": 613,
+        "winners": 318,
+        "winRate": 0.5187601957585645,
+        "meanReturn": 0.45044857683684164,
+        "meanSP500": 0.3405215236339778
+      },
+      "insufficient_data": {
+        "count": 392,
+        "winners": 230,
+        "winRate": 0.5867346938775511,
+        "meanReturn": 0.8421150579228202,
+        "meanSP500": 0.3580922173376723
+      },
+      "near_miss": {
+        "count": 308,
+        "winners": 169,
+        "winRate": 0.5487012987012987,
+        "meanReturn": 0.45017456094648006,
+        "meanSP500": 0.367234281608465
+      },
+      "full_pass": {
+        "count": 291,
+        "winners": 202,
+        "winRate": 0.6941580756013745,
+        "meanReturn": 0.7605608716238533,
+        "meanSP500": 0.3725130382416062
+      },
+      "no_data": {
+        "count": 21,
+        "winners": 7,
+        "winRate": 0.3333333333333333,
+        "meanReturn": 0.32119047619047614,
+        "meanSP500": 0.2752380952380952
+      }
+    },
+    "edgarHits": 1604,
+    "edgarMisses": 21
+  },
+  "test5": [
+    {
+      "name": "Alt D: Graham Full Pass + Low Short Interest",
+      "precision": 0.8235294117647058,
+      "buyReturn": 0.9728042255374363,
+      "buySP": 0.37978143242469126,
+      "alphaAnn": 0.12656926247686906,
+      "frequency": 0.09415384615384616,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.577
+    },
+    {
+      "name": "Alt F: Low Short Interest + High Credit Spread",
+      "precision": 0.8159203980099502,
+      "buyReturn": 1.252044338848901,
+      "buySP": 0.6210527338633993,
+      "alphaAnn": 0.1158177471406654,
+      "frequency": 0.1236923076923077,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.8229358574340079
+    },
+    {
+      "name": "Alt E: Graham Pass + 3-Way Composite (all favorable)",
+      "precision": 0.7986111111111112,
+      "buyReturn": 0.9190746739956916,
+      "buySP": 0.4104952461870708,
+      "alphaAnn": 0.10808586709109846,
+      "frequency": 0.08861538461538461,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.577
+    },
+    {
+      "name": "Alt B: 3-Way Composite (all 3 favorable)",
+      "precision": 0.7522123893805309,
+      "buyReturn": 0.8147863529267662,
+      "buySP": 0.39060563866165554,
+      "alphaAnn": 0.09279954680995783,
+      "frequency": 0.20861538461538462,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.717
+    },
+    {
+      "name": "Alt A: Short Interest Below Median",
+      "precision": 0.7089084065244667,
+      "buyReturn": 0.7479464349056534,
+      "buySP": 0.3641087034260039,
+      "alphaAnn": 0.08615810333017593,
+      "frequency": 0.49046153846153845,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.8229358574340079
+    },
+    {
+      "name": "Alt C: P/E < 15 During High Credit Spread",
+      "precision": 0.7350993377483444,
+      "buyReturn": 1.05554704036686,
+      "buySP": 0.6177611871850663,
+      "alphaAnn": 0.08310610235816585,
+      "frequency": 0.09292307692307693,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.6480972114007673
+    },
+    {
+      "name": "Alt B2: 3-Way Composite (2+ of 3 favorable)",
+      "precision": 0.7272727272727273,
+      "buyReturn": 0.7996875050573815,
+      "buySP": 0.4202503753035789,
+      "alphaAnn": 0.08212491457011595,
+      "frequency": 0.4603076923076923,
+      "verdict": "STRONG PASS",
+      "worstReturn": -0.9026835240721296
+    }
+  ],
+  "metadata": {
+    "totalCases": 1625,
+    "baseWinRate": 0.5698461538461539,
+    "siMedian": 0.0358,
+    "csMedian": 0.94,
+    "timestamp": "2026-03-24T22:49:29.827Z"
+  }
+}

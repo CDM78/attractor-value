@@ -1,0 +1,242 @@
+{
+  "CASE-0002": {
+    "bull_scores": [
+      3,
+      3,
+      2,
+      3,
+      2,
+      3
+    ],
+    "bull_avg": 2.67,
+    "bear_scores": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "bear_avg": 2,
+    "composite": 2.27,
+    "win_probability": 32,
+    "is_trap": true,
+    "trap_confidence": "medium"
+  },
+  "CASE-0009": {
+    "bull_scores": [
+      4,
+      3,
+      3,
+      4,
+      3,
+      3
+    ],
+    "bull_avg": 3.33,
+    "bear_scores": [
+      2,
+      2,
+      2,
+      3,
+      2,
+      2
+    ],
+    "bear_avg": 2.17,
+    "composite": 2.63,
+    "win_probability": 34,
+    "is_trap": true,
+    "trap_confidence": "medium"
+  },
+  "CASE-0013": {
+    "bull_scores": [
+      4,
+      3,
+      4,
+      4,
+      2,
+      2
+    ],
+    "bull_avg": 3.17,
+    "bear_scores": [
+      3,
+      2,
+      3,
+      3,
+      1,
+      1
+    ],
+    "bear_avg": 2.17,
+    "composite": 2.57,
+    "win_probability": 32,
+    "is_trap": true,
+    "trap_confidence": "high"
+  },
+  "CASE-0015": {
+    "bull_scores": [
+      4,
+      3,
+      3,
+      3,
+      3,
+      4
+    ],
+    "bull_avg": 3.33,
+    "bear_scores": [
+      3,
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "bear_avg": 2.33,
+    "composite": 3.73,
+    "win_probability": 48,
+    "is_trap": false,
+    "trap_confidence": "medium"
+  },
+  "CASE-0016": {
+    "bull_scores": [
+      4,
+      4,
+      3,
+      3,
+      4,
+      4
+    ],
+    "bull_avg": 3.67,
+    "bear_scores": [
+      3,
+      3,
+      2,
+      2,
+      3,
+      3
+    ],
+    "bear_avg": 2.67,
+    "composite": 3.07,
+    "win_probability": 48,
+    "is_trap": false,
+    "trap_confidence": "medium"
+  },
+  "CASE-0001": {
+    "bull_scores": [
+      3,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "bull_avg": 2.17,
+    "bear_scores": [
+      2,
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    "bear_avg": 1.33,
+    "composite": 1.67,
+    "win_probability": 22,
+    "is_trap": true,
+    "trap_confidence": "high"
+  },
+  "CASE-0003": {
+    "bull_scores": [
+      3,
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "bull_avg": 2.83,
+    "bear_scores": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "bear_avg": 2,
+    "composite": 2.33,
+    "win_probability": 32,
+    "is_trap": true,
+    "trap_confidence": "high"
+  },
+  "CASE-0005": {
+    "bull_scores": [
+      4,
+      3,
+      3,
+      3,
+      2,
+      2
+    ],
+    "bull_avg": 2.83,
+    "bear_scores": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "bear_avg": 1.83,
+    "composite": 2.23,
+    "win_probability": 28,
+    "is_trap": true,
+    "trap_confidence": "high"
+  },
+  "CASE-0007": {
+    "bull_scores": [
+      4,
+      3,
+      3,
+      4,
+      3,
+      4
+    ],
+    "bull_avg": 3.5,
+    "bear_scores": [
+      3,
+      2,
+      2,
+      3,
+      2,
+      3
+    ],
+    "bear_avg": 2.5,
+    "composite": 2.9,
+    "win_probability": 42,
+    "is_trap": true,
+    "trap_confidence": "medium"
+  },
+  "CASE-0008": {
+    "bull_scores": [
+      3,
+      3,
+      3,
+      2,
+      2,
+      2
+    ],
+    "bull_avg": 2.5,
+    "bear_scores": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "bear_avg": 2,
+    "composite": 2.2,
+    "win_probability": 35,
+    "is_trap": true,
+    "trap_confidence": "medium"
+  }
+}

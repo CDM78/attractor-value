@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "date": "2026-03-24T23:59:19.455Z",
+    "description": "Nonlinear dynamics replication test — same algorithms on 1,656-case unbiased dataset",
+    "totalCases": 1656,
+    "winners": 926,
+    "traps": 730
+  },
+  "signalCoverage": {
+    "beta": 1400,
+    "d1Growth": 1437,
+    "zipfVelocity": 1131,
+    "csd": 1378,
+    "benford": 1529,
+    "sCurve": 1437
+  },
+  "results": [
+    {
+      "name": "β scaling exponent (static)",
+      "curated": {
+        "r": 0.267,
+        "p": 0.0006,
+        "n": 292
+      },
+      "unbiased": {
+        "r": -0.009372536363525497,
+        "p": 0.7260025028637132,
+        "n": 1400
+      },
+      "ratio": 0.035103132447661035,
+      "verdict": "DROP",
+      "winMean": 0.5215145688549092,
+      "trapMean": 0.6345771614304679,
+      "directionSame": false
+    },
+    {
+      "name": "β trajectory (late-early)",
+      "curated": {
+        "r": 0.169,
+        "p": 0.0003,
+        "n": 719
+      },
+      "unbiased": {
+        "r": 0.00962695595207748,
+        "p": 0.7373828848017174,
+        "n": 1215
+      },
+      "ratio": 0.05696423640282532,
+      "verdict": "DROP",
+      "winMean": 0.3407607292201917,
+      "trapMean": 0.28643487360472264,
+      "directionSame": true
+    },
+    {
+      "name": "D1 growth rate",
+      "curated": {
+        "r": 0.285,
+        "p": 0.0001,
+        "n": 719
+      },
+      "unbiased": {
+        "r": 0.004567494697792145,
+        "p": 0.8520352514247338,
+        "n": 1437
+      },
+      "ratio": 0.0160262971852356,
+      "verdict": "DROP",
+      "winMean": 353.1760498516784,
+      "trapMean": 1.5806018184118966,
+      "directionSame": true
+    },
+    {
+      "name": "Zipf rank velocity",
+      "curated": {
+        "r": 0.282,
+        "p": 0.0001,
+        "n": 719
+      },
+      "unbiased": {
+        "r": 0.01190626105798959,
+        "p": 0.6891598909709888,
+        "n": 1131
+      },
+      "ratio": 0.04222078389358011,
+      "verdict": "DROP",
+      "winMean": -3.228623757195188,
+      "trapMean": -3.251406926406928,
+      "directionSame": true
+    },
+    {
+      "name": "Zipf effort-adjusted velocity",
+      "curated": {
+        "r": 0.239,
+        "p": 0.0005,
+        "n": 292
+      },
+      "unbiased": {
+        "r": -0.04327682613329059,
+        "p": 0.147609239314759,
+        "n": 1121
+      },
+      "ratio": 0.1810745863317598,
+      "verdict": "DROP",
+      "winMean": 0.743669808759566,
+      "trapMean": 0.8391467752492782,
+      "directionSame": false
+    },
+    {
+      "name": "CSD index",
+      "curated": {
+        "r": 0.074,
+        "p": 0.74,
+        "n": 719
+      },
+      "unbiased": {
+        "r": -0.0368668845388869,
+        "p": 0.17138275960796046,
+        "n": 1378
+      },
+      "ratio": 0.4982011424173906,
+      "verdict": "DROP",
+      "winMean": 0.5000784475093399,
+      "trapMean": 0.49685313979182305,
+      "directionSame": false
+    },
+    {
+      "name": "Benford first-digit KLD",
+      "curated": {
+        "r": 0.02,
+        "p": 0.02,
+        "n": 292
+      },
+      "unbiased": {
+        "r": -0.02716196820755332,
+        "p": 0.2884962749460427,
+        "n": 1529
+      },
+      "ratio": 1.3580984103776659,
+      "verdict": "DROP",
+      "winMean": 0.0021849338592638654,
+      "trapMean": 0.0023319317763651317,
+      "directionSame": false
+    },
+    {
+      "name": "S-curve D1 (avg growth rate)",
+      "curated": {
+        "r": 0.331,
+        "p": 0.0001,
+        "n": 292
+      },
+      "unbiased": {
+        "r": -0.06871564596794645,
+        "p": 0.009169440639303916,
+        "n": 1437
+      },
+      "ratio": 0.20760013887597115,
+      "verdict": "CURATION ARTIFACT",
+      "winMean": 706.2510612624143,
+      "trapMean": 0.9886620823493597,
+      "directionSame": false
+    },
+    {
+      "name": "S-curve D2 (acceleration)",
+      "curated": {
+        "r": 0.15,
+        "p": 0.01,
+        "n": 292
+      },
+      "unbiased": {
+        "r": -0.06627355203114353,
+        "p": 0.011975680492346541,
+        "n": 1437
+      },
+      "ratio": 0.4418236802076236,
+      "verdict": "DROP (direction reversed)",
+      "winMean": 0.10665181910708509,
+      "trapMean": 0.531566811579228,
+      "directionSame": false
+    },
+    {
+      "name": "β trajectory + D1 (combined)",
+      "curated": {
+        "r": 0.406,
+        "p": 0.0001,
+        "n": 292
+      },
+      "unbiased": {
+        "r": 0.011983418996626305,
+        "p": 0.6764611061848478,
+        "n": 1215
+      },
+      "ratio": 0.02951581033651799,
+      "verdict": "DROP",
+      "winMean": 0.014007858285443972,
+      "trapMean": -0.01810449608590399,
+      "directionSame": true
+    },
+    {
+      "name": "Full nonlinear composite",
+      "curated": {
+        "r": 0.45,
+        "p": 0.0001,
+        "n": 292
+      },
+      "unbiased": {
+        "r": -0.05065254817630383,
+        "p": 0.05785421921234324,
+        "n": 1403
+      },
+      "ratio": 0.11256121816956406,
+      "verdict": "DROP",
+      "winMean": 0.49222903522340195,
+      "trapMean": 0.5335589906986409,
+      "directionSame": false
+    }
+  ],
+  "zipfDiagnostic": {
+    "explanation": "f060 in blind agent was a STATIC percentile rank of revenue growth within sector. Original Zipf was DYNAMIC rank trajectory over 4 years. Completely different computation.",
+    "f060_code": "rank = revGrowths.filter(g => g <= f001).length / revGrowths.length",
+    "original_code": "trackRankHistory() → rankVelocity() → effortAdjustedVelocity()",
+    "realZipfCoverage": 1131
+  }
+}

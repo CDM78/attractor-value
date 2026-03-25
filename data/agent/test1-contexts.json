@@ -1,0 +1,72 @@
+{
+  "META": {
+    "ticker": "META",
+    "name": "Meta Platforms Inc",
+    "sector": "Information Technology",
+    "category": "BUY",
+    "context": "Company: Meta Platforms Inc (META)\nSector: Information Technology\n\nFinancial History:\n  FY2021: EPS=$13.77 Rev=$7.9B FCF=$N/A D/E=0.15 ROIC=27.5%\n  FY2022: EPS=$8.59 Rev=$12.5B FCF=$N/A D/E=0.23 ROIC=15.0%\n  FY2023: EPS=$14.87 Rev=$17.9B FCF=$N/A D/E=0.38 ROIC=18.5%\n  FY2024: EPS=$23.86 Rev=$27.6B FCF=$N/A D/E=N/A ROIC=34.1%\n  FY2025: EPS=$23.49 Rev=$40.7B FCF=$N/A D/E=N/A ROIC=27.8%\n\nEarnings Quality:\n  Goodwill/Assets: 6.7%"
+  },
+  "AAPL": {
+    "ticker": "AAPL",
+    "name": "Apple Inc",
+    "sector": "Information Technology",
+    "category": "BUY",
+    "context": "Company: Apple Inc (AAPL)\nSector: Information Technology\n\nFinancial History:\n  FY2021: EPS=$5.61 Rev=$265.6B FCF=$N/A D/E=0.27 ROIC=118.3%\n  FY2022: EPS=$6.11 Rev=$N/A FCF=$N/A D/E=0.57 ROIC=125.3%\n  FY2023: EPS=$6.13 Rev=$N/A FCF=$N/A D/E=1.69 ROIC=58.0%\n  FY2024: EPS=$6.08 Rev=$N/A FCF=$N/A D/E=1.70 ROIC=61.0%\n  FY2025: EPS=$7.46 Rev=$N/A FCF=$N/A D/E=1.23 ROIC=68.1%\n\nEarnings Quality:\n  Goodwill/Assets: 1.6%"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "name": "Microsoft Corp",
+    "sector": "Information Technology",
+    "category": "BUY",
+    "context": "Company: Microsoft Corp (MSFT)\nSector: Information Technology\n\nFinancial History:\n  FY2021: EPS=$8.05 Rev=$62.5B FCF=$N/A D/E=0.41 ROIC=30.6%\n  FY2022: EPS=$9.65 Rev=$N/A FCF=$N/A D/E=0.30 ROIC=33.6%\n  FY2023: EPS=$9.68 Rev=$N/A FCF=$N/A D/E=0.23 ROIC=28.5%\n  FY2024: EPS=$11.80 Rev=$N/A FCF=$N/A D/E=0.17 ROIC=28.1%\n  FY2025: EPS=$13.64 Rev=$N/A FCF=$N/A D/E=0.13 ROIC=26.3%\n\nEarnings Quality:\n  Goodwill/Assets: 19.3%"
+  },
+  "IBM": {
+    "ticker": "IBM",
+    "name": "International Business Machines Corp",
+    "sector": "Information Technology",
+    "category": "BOUNDARY",
+    "context": "Company: International Business Machines Corp (IBM)\nSector: Information Technology\n\nFinancial History:\n  FY2021: EPS=$6.35 Rev=$57.4B FCF=$N/A D/E=2.10 ROIC=9.8%\n  FY2022: EPS=$1.80 Rev=$60.5B FCF=$N/A D/E=1.76 ROIC=2.7%\n  FY2023: EPS=$8.14 Rev=$61.9B FCF=$N/A D/E=1.81 ROIC=11.8%\n  FY2024: EPS=$6.43 Rev=$62.8B FCF=$N/A D/E=1.65 ROIC=8.3%\n  FY2025: EPS=$11.17 Rev=$67.5B FCF=$N/A D/E=1.31 ROIC=14.1%\n\nEarnings Quality:\n  Goodwill/Assets: 44.6%"
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "name": "Pfizer Inc",
+    "sector": "Health Care",
+    "category": "BOUNDARY",
+    "context": "Company: Pfizer Inc (PFE)\nSector: Health Care\n\nFinancial History:\n  FY2021: EPS=$3.85 Rev=$100.3B FCF=$N/A D/E=0.41 ROIC=20.2%\n  FY2022: EPS=$5.47 Rev=$58.5B FCF=$N/A D/E=0.30 ROIC=25.2%\n  FY2023: EPS=$0.37 Rev=$63.6B FCF=$N/A D/E=0.35 ROIC=1.8%\n  FY2024: EPS=$1.41 Rev=$62.6B FCF=$N/A D/E=0.05 ROIC=8.7%\n  FY2025: EPS=$1.36 Rev=$N/A FCF=$N/A D/E=N/A ROIC=9.0%\n\nEarnings Quality:\n  Goodwill/Assets: 34.2%"
+  },
+  "DIS": {
+    "ticker": "DIS",
+    "name": "Walt Disney Co",
+    "sector": "Communication Services",
+    "category": "BOUNDARY",
+    "context": "Company: Walt Disney Co (DIS)\nSector: Communication Services\n\nFinancial History:\n  FY2021: EPS=$1.09 Rev=$67.4B FCF=$N/A D/E=0.61 ROIC=1.4%\n  FY2022: EPS=$1.72 Rev=$82.7B FCF=$N/A D/E=0.51 ROIC=2.2%\n  FY2023: EPS=$1.29 Rev=$88.9B FCF=$N/A D/E=0.47 ROIC=1.6%\n  FY2024: EPS=$2.72 Rev=$91.4B FCF=$N/A D/E=0.45 ROIC=3.4%\n  FY2025: EPS=$6.85 Rev=$94.4B FCF=$N/A D/E=0.38 ROIC=8.2%\n\nEarnings Quality:\n  Goodwill/Assets: 37.1%"
+  },
+  "FDX": {
+    "ticker": "FDX",
+    "name": "FedEx Corp",
+    "sector": "Industrials",
+    "category": "BOUNDARY",
+    "context": "Company: FedEx Corp (FDX)\nSector: Industrials\n\nFinancial History:\n  FY2021: EPS=$19.45 Rev=$45.6B FCF=$N/A D/E=0.80 ROIC=12.0%\n  FY2022: EPS=$14.33 Rev=$47.5B FCF=$N/A D/E=0.79 ROIC=8.6%\n  FY2023: EPS=$15.48 Rev=$50.4B FCF=$N/A D/E=0.76 ROIC=8.7%\n  FY2024: EPS=$17.21 Rev=$60.3B FCF=$N/A D/E=0.72 ROIC=9.1%\n  FY2025: EPS=$16.81 Rev=$65.5B FCF=$N/A D/E=0.71 ROIC=8.5%\n\nEarnings Quality:\n  Goodwill/Assets: 7.5%"
+  },
+  "INTC": {
+    "ticker": "INTC",
+    "name": "Intel Corp",
+    "sector": "Information Technology",
+    "category": "TRAP",
+    "context": "Company: Intel Corp (INTC)\nSector: Information Technology\n\nFinancial History:\n  FY2021: EPS=$4.86 Rev=$79.0B FCF=$N/A D/E=0.40 ROIC=14.9%\n  FY2022: EPS=$1.94 Rev=$63.1B FCF=$N/A D/E=0.38 ROIC=5.7%\n  FY2023: EPS=$0.40 Rev=$54.2B FCF=$N/A D/E=0.47 ROIC=1.1%\n  FY2024: EPS=$-4.38 Rev=$53.1B FCF=$N/A D/E=0.50 ROIC=-12.6%\n  FY2025: EPS=$-0.06 Rev=$52.9B FCF=$N/A D/E=0.41 ROIC=-0.2%\n\nEarnings Quality:\n  Goodwill/Assets: 11.3%"
+  },
+  "M": {
+    "ticker": "M",
+    "name": "Macys Inc",
+    "sector": "Consumer Discretionary",
+    "category": "TRAP",
+    "context": "Company: Macys Inc (M)\nSector: Consumer Discretionary\n\nFinancial History:\n  FY2020: EPS=$-12.68 Rev=$23.9B FCF=$N/A D/E=0.58 ROIC=-39.1%\n  FY2021: EPS=$4.55 Rev=$23.0B FCF=$N/A D/E=1.19 ROIC=18.0%\n  FY2022: EPS=$4.19 Rev=$N/A FCF=$N/A D/E=0.80 ROIC=16.0%\n  FY2023: EPS=$0.38 Rev=$N/A FCF=$N/A D/E=0.72 ROIC=1.5%\n  FY2024: EPS=$2.07 Rev=$N/A FCF=$N/A D/E=0.66 ROIC=7.7%\n\nEarnings Quality:\n  Goodwill/Assets: 5.0%"
+  },
+  "T": {
+    "ticker": "T",
+    "name": "AT&T Inc",
+    "sector": "Communication Services",
+    "category": "TRAP",
+    "context": "Company: AT&T Inc (T)\nSector: Communication Services\n\nFinancial History:\n  FY2021: EPS=$2.76 Rev=$168.9B FCF=$N/A D/E=0.92 ROIC=5.7%\n  FY2022: EPS=$-1.13 Rev=$120.7B FCF=$N/A D/E=1.25 ROIC=-3.6%\n  FY2023: EPS=$1.97 Rev=$122.4B FCF=$N/A D/E=1.14 ROIC=5.7%\n  FY2024: EPS=$1.49 Rev=$122.3B FCF=$N/A D/E=1.03 ROIC=4.6%\n  FY2025: EPS=$3.04 Rev=$125.6B FCF=$N/A D/E=1.07 ROIC=8.4%\n\nEarnings Quality:\n  Goodwill/Assets: 15.1%"
+  }
+}

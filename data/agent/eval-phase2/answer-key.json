@@ -1,0 +1,1289 @@
+{
+  "CASE-0001": {
+    "ticker": "KMI",
+    "company": "KINDER MORGAN, INC.",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.529,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0002": {
+    "ticker": "APTV",
+    "company": "Aptiv PLC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.733,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0003": {
+    "ticker": "PSX",
+    "company": "Phillips 66",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.06,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0005": {
+    "ticker": "TAP",
+    "company": "MOLSON COORS BEVERAGE CO",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.135,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0007": {
+    "ticker": "ABT",
+    "company": "ABBOTT LABORATORIES",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.147,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0008": {
+    "ticker": "IBM",
+    "company": "INTERNATIONAL BUSINESS MACHINES CORP",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.244,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0009": {
+    "ticker": "TMO",
+    "company": "THERMO FISHER SCIENTIFIC INC.",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.062,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0010": {
+    "ticker": "AES",
+    "company": "AES CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.406,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0012": {
+    "ticker": "IQV",
+    "company": "IQVIA HOLDINGS INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.308,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0013": {
+    "ticker": "EXC",
+    "company": "EXELON CORP",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.766,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0015": {
+    "ticker": "NVR",
+    "company": "NVR INC",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.473,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0016": {
+    "ticker": "MAR",
+    "company": "MARRIOTT INTERNATIONAL INC /MD/",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.706,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0018": {
+    "ticker": "MTD",
+    "company": "METTLER TOLEDO INTERNATIONAL INC/",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.108,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0019": {
+    "ticker": "IVZ",
+    "company": "Invesco Ltd.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.434,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0020": {
+    "ticker": "DTE",
+    "company": "DTE ENERGY CO",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.483,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0021": {
+    "ticker": "JBHT",
+    "company": "HUNT J B TRANSPORT SERVICES INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.251,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0022": {
+    "ticker": "AMP",
+    "company": "AMERIPRISE FINANCIAL INC",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.74,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0023": {
+    "ticker": "ADP",
+    "company": "AUTOMATIC DATA PROCESSING INC",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.643,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0024": {
+    "ticker": "PFE",
+    "company": "PFIZER INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.484,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0025": {
+    "ticker": "FCX",
+    "company": "FREEPORT-MCMORAN INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.051,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0026": {
+    "ticker": "WYNN",
+    "company": "WYNN RESORTS LTD",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.152,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0027": {
+    "ticker": "CSCO",
+    "company": "CISCO SYSTEMS, INC.",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.746,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0028": {
+    "ticker": "DGX",
+    "company": "QUEST DIAGNOSTICS INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.242,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0029": {
+    "ticker": "CMS",
+    "company": "CMS ENERGY CORP",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.465,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0030": {
+    "ticker": "MKC",
+    "company": "MCCORMICK & CO INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.165,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0032": {
+    "ticker": "CNX",
+    "company": "CNX Resources Corp",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.739,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0033": {
+    "ticker": "OKE",
+    "company": "ONEOK INC /NEW/",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 1.619,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0034": {
+    "ticker": "MHK",
+    "company": "MOHAWK INDUSTRIES INC",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.374,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0036": {
+    "ticker": "CTSH",
+    "company": "COGNIZANT TECHNOLOGY SOLUTIONS CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.096,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0038": {
+    "ticker": "CAG",
+    "company": "CONAGRA BRANDS INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.082,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0039": {
+    "ticker": "LMT",
+    "company": "LOCKHEED MARTIN CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.468,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0040": {
+    "ticker": "TMUS",
+    "company": "T-Mobile US, Inc.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.434,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0041": {
+    "ticker": "LEN",
+    "company": "LENNAR CORP /NEW/",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.161,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0042": {
+    "ticker": "V",
+    "company": "VISA INC.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.041,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0044": {
+    "ticker": "PHM",
+    "company": "PULTEGROUP INC/MI/",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.261,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0046": {
+    "ticker": "CVS",
+    "company": "CVS HEALTH Corp",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.057,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0048": {
+    "ticker": "BIIB",
+    "company": "BIOGEN INC.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.005,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0049": {
+    "ticker": "NSC",
+    "company": "NORFOLK SOUTHERN CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.157,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0050": {
+    "ticker": "DOW",
+    "company": "DOW INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.185,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0051": {
+    "ticker": "CTAS",
+    "company": "CINTAS CORP",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.279,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0052": {
+    "ticker": "CBOE",
+    "company": "Cboe Global Markets, Inc.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.573,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0053": {
+    "ticker": "TDC",
+    "company": "TERADATA CORP /DE/",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.429,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0054": {
+    "ticker": "UNM",
+    "company": "Unum Group",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.645,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0055": {
+    "ticker": "PNR",
+    "company": "PENTAIR plc",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.436,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0056": {
+    "ticker": "MCK",
+    "company": "MCKESSON CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 1.316,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0057": {
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.044,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0059": {
+    "ticker": "IPGP",
+    "company": "IPG PHOTONICS CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.578,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0060": {
+    "ticker": "ESS",
+    "company": "ESSEX PROPERTY TRUST, INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.112,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0062": {
+    "ticker": "PSX",
+    "company": "Phillips 66",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.766,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0063": {
+    "ticker": "NVDA",
+    "company": "NVIDIA CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 3.71,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0065": {
+    "ticker": "BXP",
+    "company": "BXP, Inc.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.078,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0066": {
+    "ticker": "L",
+    "company": "LOEWS CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.474,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0068": {
+    "ticker": "PENN",
+    "company": "PENN Entertainment, Inc.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.629,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0069": {
+    "ticker": "CB",
+    "company": "Chubb Ltd",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.477,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0070": {
+    "ticker": "SBAC",
+    "company": "SBA COMMUNICATIONS CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.463,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0071": {
+    "ticker": "D",
+    "company": "DOMINION ENERGY, INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.204,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0072": {
+    "ticker": "CCI",
+    "company": "CROWN CASTLE INC.",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.167,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0073": {
+    "ticker": "GILD",
+    "company": "GILEAD SCIENCES, INC.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.319,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0075": {
+    "ticker": "NOW",
+    "company": "ServiceNow, Inc.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.624,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0078": {
+    "ticker": "NEM",
+    "company": "NEWMONT Corp /DE/",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.969,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0079": {
+    "ticker": "MET",
+    "company": "METLIFE INC",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.437,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0081": {
+    "ticker": "LNC",
+    "company": "LINCOLN NATIONAL CORP",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.911,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0082": {
+    "ticker": "XRAY",
+    "company": "DENTSPLY SIRONA Inc.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.365,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0083": {
+    "ticker": "SLG",
+    "company": "SL GREEN REALTY CORP",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.243,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0084": {
+    "ticker": "EQR",
+    "company": "EQUITY RESIDENTIAL",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.129,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0085": {
+    "ticker": "NTRS",
+    "company": "NORTHERN TRUST CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.048,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0086": {
+    "ticker": "AWK",
+    "company": "American Water Works Company, Inc.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.304,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0088": {
+    "ticker": "FRT",
+    "company": "FEDERAL REALTY INVESTMENT TRUST",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.092,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0089": {
+    "ticker": "AIZ",
+    "company": "ASSURANT, INC.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.431,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0090": {
+    "ticker": "PVH",
+    "company": "PVH CORP. /DE/",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.011,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0091": {
+    "ticker": "SEDG",
+    "company": "SOLAREDGE TECHNOLOGIES, INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.947,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0092": {
+    "ticker": "MDT",
+    "company": "Medtronic plc",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.145,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0093": {
+    "ticker": "JEF",
+    "company": "Jefferies Financial Group Inc.",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.239,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0096": {
+    "ticker": "SHW",
+    "company": "SHERWIN WILLIAMS CO",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.027,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0097": {
+    "ticker": "ALL",
+    "company": "ALLSTATE CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.763,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0098": {
+    "ticker": "NCLH",
+    "company": "Norwegian Cruise Line Holdings Ltd.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.277,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0099": {
+    "ticker": "PGR",
+    "company": "PROGRESSIVE CORP/OH/",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.623,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0100": {
+    "ticker": "PPL",
+    "company": "PPL Corp",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.05,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0103": {
+    "ticker": "ES",
+    "company": "EVERSOURCE ENERGY",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.292,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0104": {
+    "ticker": "EW",
+    "company": "Edwards Lifesciences Corp",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.604,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0105": {
+    "ticker": "CRM",
+    "company": "Salesforce, Inc.",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.729,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0106": {
+    "ticker": "ZBH",
+    "company": "ZIMMER BIOMET HOLDINGS, INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.132,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0107": {
+    "ticker": "LUV",
+    "company": "SOUTHWEST AIRLINES CO",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.181,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0108": {
+    "ticker": "WAT",
+    "company": "WATERS CORP /DE/",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.012,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0112": {
+    "ticker": "EOG",
+    "company": "EOG RESOURCES INC",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.631,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0113": {
+    "ticker": "DHI",
+    "company": "HORTON D R INC /DE/",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.183,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0115": {
+    "ticker": "NRG",
+    "company": "NRG ENERGY, INC.",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.452,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0116": {
+    "ticker": "MA",
+    "company": "Mastercard Inc",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.94,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0117": {
+    "ticker": "VRSN",
+    "company": "VERISIGN INC/CA",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.192,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0118": {
+    "ticker": "MOS",
+    "company": "MOSAIC CO",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.337,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0119": {
+    "ticker": "MA",
+    "company": "Mastercard Inc",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.99,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0120": {
+    "ticker": "LDOS",
+    "company": "Leidos Holdings, Inc.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.679,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0121": {
+    "ticker": "SPGI",
+    "company": "S&P Global Inc.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.855,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0123": {
+    "ticker": "ILMN",
+    "company": "ILLUMINA, INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.646,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0124": {
+    "ticker": "LLY",
+    "company": "ELI LILLY & Co",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 1.902,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0125": {
+    "ticker": "NKTR",
+    "company": "NEKTAR THERAPEUTICS",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.605,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0126": {
+    "ticker": "BWA",
+    "company": "BORGWARNER INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.176,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0127": {
+    "ticker": "GPC",
+    "company": "GENUINE PARTS CO",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.104,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0128": {
+    "ticker": "SBUX",
+    "company": "STARBUCKS CORP",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.274,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0129": {
+    "ticker": "NDAQ",
+    "company": "NASDAQ, INC.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.367,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0132": {
+    "ticker": "DVN",
+    "company": "DEVON ENERGY CORP/DE",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.359,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0134": {
+    "ticker": "CCL",
+    "company": "CARNIVAL CORP",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.575,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0137": {
+    "ticker": "EFX",
+    "company": "EQUIFAX INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.239,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0138": {
+    "ticker": "ALL",
+    "company": "ALLSTATE CORP",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.598,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0139": {
+    "ticker": "RSG",
+    "company": "REPUBLIC SERVICES, INC.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.624,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0140": {
+    "ticker": "NEE",
+    "company": "NEXTERA ENERGY INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.344,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0141": {
+    "ticker": "WDAY",
+    "company": "Workday, Inc.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.078,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0143": {
+    "ticker": "CE",
+    "company": "Celanese Corp",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.565,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0144": {
+    "ticker": "NEE",
+    "company": "NEXTERA ENERGY INC",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.619,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0146": {
+    "ticker": "MRNA",
+    "company": "Moderna, Inc.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.835,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0147": {
+    "ticker": "GILD",
+    "company": "GILEAD SCIENCES, INC.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.728,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0148": {
+    "ticker": "BAX",
+    "company": "BAXTER INTERNATIONAL INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.633,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0151": {
+    "ticker": "NWL",
+    "company": "NEWELL BRANDS INC.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 1.074,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0152": {
+    "ticker": "AFL",
+    "company": "AFLAC INC",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.631,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0156": {
+    "ticker": "MUR",
+    "company": "MURPHY OIL CORP",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.535,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0157": {
+    "ticker": "REGN",
+    "company": "REGENERON PHARMACEUTICALS, INC.",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.314,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0159": {
+    "ticker": "MA",
+    "company": "Mastercard Inc",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.48,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0160": {
+    "ticker": "PHM",
+    "company": "PULTEGROUP INC/MI/",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.006,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0161": {
+    "ticker": "CRM",
+    "company": "Salesforce, Inc.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.832,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0162": {
+    "ticker": "WY",
+    "company": "WEYERHAEUSER CO",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.121,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0163": {
+    "ticker": "RL",
+    "company": "RALPH LAUREN CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 1.091,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0164": {
+    "ticker": "MCK",
+    "company": "MCKESSON CORP",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.412,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0166": {
+    "ticker": "HAL",
+    "company": "HALLIBURTON CO",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.156,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0167": {
+    "ticker": "IBM",
+    "company": "INTERNATIONAL BUSINESS MACHINES CORP",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.056,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0168": {
+    "ticker": "AON",
+    "company": "Aon plc",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 0.621,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0170": {
+    "ticker": "LEG",
+    "company": "LEGGETT & PLATT INC",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.061,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0173": {
+    "ticker": "UNM",
+    "company": "Unum Group",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.037,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0177": {
+    "ticker": "CAT",
+    "company": "CATERPILLAR INC",
+    "outcome": 1,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": 1.039,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0179": {
+    "ticker": "AOS",
+    "company": "SMITH A O CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.173,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0180": {
+    "ticker": "DVN",
+    "company": "DEVON ENERGY CORP/DE",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.1,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0181": {
+    "ticker": "ADM",
+    "company": "Archer-Daniels-Midland Co",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.197,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0184": {
+    "ticker": "TER",
+    "company": "TERADYNE, INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.216,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0188": {
+    "ticker": "GOOGL",
+    "company": "Alphabet Inc.",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.747,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0189": {
+    "ticker": "BKNG",
+    "company": "Booking Holdings Inc.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 1.071,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0191": {
+    "ticker": "LNC",
+    "company": "LINCOLN NATIONAL CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.45,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0192": {
+    "ticker": "NSC",
+    "company": "NORFOLK SOUTHERN CORP",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.102,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0193": {
+    "ticker": "PH",
+    "company": "Parker-Hannifin Corp",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.226,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0194": {
+    "ticker": "EXPD",
+    "company": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.151,
+    "sp500_return_3yr": 0.231,
+    "u160": null
+  },
+  "CASE-0196": {
+    "ticker": "CVX",
+    "company": "CHEVRON CORP",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.089,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0197": {
+    "ticker": "BEN",
+    "company": "FRANKLIN RESOURCES INC",
+    "outcome": 0,
+    "entry_date": "2015-12-31",
+    "forward_return_3yr": -0.055,
+    "sp500_return_3yr": 0.228,
+    "u160": null
+  },
+  "CASE-0198": {
+    "ticker": "PCG",
+    "company": "PG&E Corp",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.49,
+    "sp500_return_3yr": 0.899,
+    "u160": 1.244
+  },
+  "CASE-0199": {
+    "ticker": "BEN",
+    "company": "FRANKLIN RESOURCES INC",
+    "outcome": 0,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": -0.115,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  },
+  "CASE-0200": {
+    "ticker": "TRIP",
+    "company": "TripAdvisor, Inc.",
+    "outcome": 1,
+    "entry_date": "2013-01-02",
+    "forward_return_3yr": 0.93,
+    "sp500_return_3yr": 0.398,
+    "u160": 0.157
+  }
+}

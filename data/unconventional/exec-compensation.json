@@ -1,0 +1,4979 @@
+{
+  "A": {
+    "ticker": "A",
+    "status": "parse_failed",
+    "filing_date": "2012-02-08"
+  },
+  "AAL": {
+    "ticker": "AAL",
+    "status": "ok",
+    "filing_date": "2014-04-25",
+    "ceo_total_comp": 76155,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "AAP": {
+    "ticker": "AAP",
+    "status": "parse_failed",
+    "filing_date": "2014-04-09"
+  },
+  "AAPL": {
+    "ticker": "AAPL",
+    "status": "ok",
+    "filing_date": "2012-01-09",
+    "ceo_total_comp": 502025,
+    "ceo_salary": 200090,
+    "ceo_salary_pct": 0.399,
+    "ceo_equity_pct": 0.421,
+    "ceo_bonus_pct": 0.18,
+    "amounts_found": 30,
+    "parsing_confidence": "medium"
+  },
+  "ABBV": {
+    "ticker": "ABBV",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "ABNB": {
+    "ticker": "ABNB",
+    "status": "parse_failed",
+    "filing_date": "2021-04-30"
+  },
+  "ABT": {
+    "ticker": "ABT",
+    "status": "parse_failed",
+    "filing_date": "2012-03-15"
+  },
+  "ACGL": {
+    "ticker": "ACGL",
+    "status": "parse_failed",
+    "filing_date": "2022-03-25"
+  },
+  "ACN": {
+    "ticker": "ACN",
+    "status": "ok",
+    "filing_date": "2010-12-20",
+    "ceo_total_comp": 204000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ADBE": {
+    "ticker": "ADBE",
+    "status": "ok",
+    "filing_date": "2012-03-01",
+    "ceo_total_comp": 95110,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ADI": {
+    "ticker": "ADI",
+    "status": "parse_failed",
+    "filing_date": "2012-02-02"
+  },
+  "ADM": {
+    "ticker": "ADM",
+    "status": "ok",
+    "filing_date": "2012-09-21",
+    "ceo_total_comp": 321000,
+    "ceo_salary": 273000,
+    "ceo_salary_pct": 0.85,
+    "ceo_equity_pct": 0.105,
+    "ceo_bonus_pct": 0.045,
+    "amounts_found": 2,
+    "parsing_confidence": "medium"
+  },
+  "ADP": {
+    "ticker": "ADP",
+    "status": "parse_failed",
+    "filing_date": "2012-09-27"
+  },
+  "ADSK": {
+    "ticker": "ADSK",
+    "status": "parse_failed",
+    "filing_date": "2012-04-24"
+  },
+  "AEE": {
+    "ticker": "AEE",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "AEP": {
+    "ticker": "AEP",
+    "status": "parse_failed",
+    "filing_date": "2012-03-14"
+  },
+  "AES": {
+    "ticker": "AES",
+    "status": "parse_failed",
+    "filing_date": "2012-03-01"
+  },
+  "AET": {
+    "ticker": "AET",
+    "status": "no_cik"
+  },
+  "AFL": {
+    "ticker": "AFL",
+    "status": "parse_failed",
+    "filing_date": "2012-03-22"
+  },
+  "AIG": {
+    "ticker": "AIG",
+    "status": "ok",
+    "filing_date": "2012-04-05",
+    "ceo_total_comp": 103316,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "AIV": {
+    "ticker": "AIV",
+    "status": "ok",
+    "filing_date": "2012-03-07",
+    "ceo_total_comp": 80237,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "AIZ": {
+    "ticker": "AIZ",
+    "status": "parse_failed",
+    "filing_date": "2012-03-27"
+  },
+  "AJG": {
+    "ticker": "AJG",
+    "status": "parse_failed",
+    "filing_date": "2014-03-25"
+  },
+  "AKAM": {
+    "ticker": "AKAM",
+    "status": "ok",
+    "filing_date": "2012-04-04",
+    "ceo_total_comp": 11876747,
+    "ceo_salary": 756843,
+    "ceo_salary_pct": 0.064,
+    "ceo_equity_pct": 0.655,
+    "ceo_bonus_pct": 0.281,
+    "amounts_found": 86,
+    "parsing_confidence": "medium"
+  },
+  "ALB": {
+    "ticker": "ALB",
+    "status": "ok",
+    "filing_date": "2014-03-28",
+    "ceo_total_comp": 79537592,
+    "ceo_salary": 377900,
+    "ceo_salary_pct": 0.005,
+    "ceo_equity_pct": 0.697,
+    "ceo_bonus_pct": 0.298,
+    "amounts_found": 17,
+    "parsing_confidence": "medium"
+  },
+  "ALGN": {
+    "ticker": "ALGN",
+    "status": "ok",
+    "filing_date": "2014-04-04",
+    "ceo_total_comp": 95131,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "ALK": {
+    "ticker": "ALK",
+    "status": "parse_failed",
+    "filing_date": "2014-03-28"
+  },
+  "ALL": {
+    "ticker": "ALL",
+    "status": "ok",
+    "filing_date": "2012-04-11",
+    "ceo_total_comp": 4693242,
+    "ceo_salary": 1100000,
+    "ceo_salary_pct": 0.234,
+    "ceo_equity_pct": 0.536,
+    "ceo_bonus_pct": 0.23,
+    "amounts_found": 11,
+    "parsing_confidence": "medium"
+  },
+  "ALLE": {
+    "ticker": "ALLE",
+    "status": "no_def14a",
+    "before_date": "2013-12-02"
+  },
+  "AMAT": {
+    "ticker": "AMAT",
+    "status": "ok",
+    "filing_date": "2012-01-23",
+    "ceo_total_comp": 9555333,
+    "ceo_salary": 980000,
+    "ceo_salary_pct": 0.103,
+    "ceo_equity_pct": 0.628,
+    "ceo_bonus_pct": 0.269,
+    "amounts_found": 26,
+    "parsing_confidence": "medium"
+  },
+  "AMCR": {
+    "ticker": "AMCR",
+    "status": "no_def14a",
+    "before_date": "2019-06-06"
+  },
+  "AMD": {
+    "ticker": "AMD",
+    "status": "ok",
+    "filing_date": "2012-03-15",
+    "ceo_total_comp": 78735,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "AME": {
+    "ticker": "AME",
+    "status": "ok",
+    "filing_date": "2013-03-22",
+    "ceo_total_comp": 425000,
+    "ceo_salary": 120000,
+    "ceo_salary_pct": 0.282,
+    "ceo_equity_pct": 0.503,
+    "ceo_bonus_pct": 0.215,
+    "amounts_found": 3,
+    "parsing_confidence": "medium"
+  },
+  "AMG": {
+    "ticker": "AMG",
+    "status": "ok",
+    "filing_date": "2014-04-30",
+    "ceo_total_comp": 19800156,
+    "ceo_salary": 750000,
+    "ceo_salary_pct": 0.038,
+    "ceo_equity_pct": 0.673,
+    "ceo_bonus_pct": 0.289,
+    "amounts_found": 74,
+    "parsing_confidence": "medium"
+  },
+  "AMGN": {
+    "ticker": "AMGN",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "AMP": {
+    "ticker": "AMP",
+    "status": "ok",
+    "filing_date": "2012-03-09",
+    "ceo_total_comp": 55474,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "AMT": {
+    "ticker": "AMT",
+    "status": "parse_failed",
+    "filing_date": "2012-04-27"
+  },
+  "AMZN": {
+    "ticker": "AMZN",
+    "status": "parse_failed",
+    "filing_date": "2012-04-13"
+  },
+  "AN": {
+    "ticker": "AN",
+    "status": "parse_failed",
+    "filing_date": "2012-03-26"
+  },
+  "ANDV": {
+    "ticker": "ANDV",
+    "status": "no_cik"
+  },
+  "ANET": {
+    "ticker": "ANET",
+    "status": "no_def14a",
+    "before_date": "2015-01-02"
+  },
+  "ANF": {
+    "ticker": "ANF",
+    "status": "parse_failed",
+    "filing_date": "2012-05-11"
+  },
+  "AON": {
+    "ticker": "AON",
+    "status": "ok",
+    "filing_date": "2012-04-18",
+    "ceo_total_comp": 120000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "AOS": {
+    "ticker": "AOS",
+    "status": "ok",
+    "filing_date": "2014-03-07",
+    "ceo_total_comp": 82067138,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 4,
+    "parsing_confidence": "low"
+  },
+  "APA": {
+    "ticker": "APA",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "APD": {
+    "ticker": "APD",
+    "status": "ok",
+    "filing_date": "2012-12-12",
+    "ceo_total_comp": 208731430,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "APH": {
+    "ticker": "APH",
+    "status": "parse_failed",
+    "filing_date": "2012-04-30"
+  },
+  "APTV": {
+    "ticker": "APTV",
+    "status": "parse_failed",
+    "filing_date": "2012-04-27"
+  },
+  "ARCB": {
+    "ticker": "ARCB",
+    "status": "ok",
+    "filing_date": "2014-02-28",
+    "ceo_total_comp": 72917,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "ARE": {
+    "ticker": "ARE",
+    "status": "ok",
+    "filing_date": "2014-04-29",
+    "ceo_total_comp": 123126,
+    "ceo_salary": 110000,
+    "ceo_salary_pct": 0.893,
+    "ceo_equity_pct": 0.075,
+    "ceo_bonus_pct": 0.032,
+    "amounts_found": 10,
+    "parsing_confidence": "medium"
+  },
+  "ASGN": {
+    "ticker": "ASGN",
+    "status": "ok",
+    "filing_date": "2014-04-25",
+    "ceo_total_comp": 91301,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ASML": {
+    "ticker": "ASML",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "ASPN": {
+    "ticker": "ASPN",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "ATI": {
+    "ticker": "ATI",
+    "status": "ok",
+    "filing_date": "2012-03-26",
+    "ceo_total_comp": 107071593,
+    "ceo_salary": 2963180,
+    "ceo_salary_pct": 0.028,
+    "ceo_equity_pct": 0.68,
+    "ceo_bonus_pct": 0.292,
+    "amounts_found": 11,
+    "parsing_confidence": "medium"
+  },
+  "ATO": {
+    "ticker": "ATO",
+    "status": "parse_failed",
+    "filing_date": "2018-12-21"
+  },
+  "AVB": {
+    "ticker": "AVB",
+    "status": "parse_failed",
+    "filing_date": "2012-03-29"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "status": "no_def14a",
+    "before_date": "2014-05-07"
+  },
+  "AVNS": {
+    "ticker": "AVNS",
+    "status": "ok",
+    "filing_date": "2017-03-10",
+    "ceo_total_comp": 837375,
+    "ceo_salary": 436450,
+    "ceo_salary_pct": 0.521,
+    "ceo_equity_pct": 0.335,
+    "ceo_bonus_pct": 0.144,
+    "amounts_found": 5,
+    "parsing_confidence": "medium"
+  },
+  "AVY": {
+    "ticker": "AVY",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "AWK": {
+    "ticker": "AWK",
+    "status": "ok",
+    "filing_date": "2014-03-25",
+    "ceo_total_comp": 178701315,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "AXON": {
+    "ticker": "AXON",
+    "status": "ok",
+    "filing_date": "2014-04-04",
+    "ceo_total_comp": 1076920,
+    "ceo_salary": 312488,
+    "ceo_salary_pct": 0.29,
+    "ceo_equity_pct": 0.497,
+    "ceo_bonus_pct": 0.213,
+    "amounts_found": 60,
+    "parsing_confidence": "medium"
+  },
+  "AXP": {
+    "ticker": "AXP",
+    "status": "parse_failed",
+    "filing_date": "2009-03-16"
+  },
+  "AYI": {
+    "ticker": "AYI",
+    "status": "parse_failed",
+    "filing_date": "2015-11-20"
+  },
+  "AZN": {
+    "ticker": "AZN",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "AZO": {
+    "ticker": "AZO",
+    "status": "parse_failed",
+    "filing_date": "2012-10-22"
+  },
+  "BA": {
+    "ticker": "BA",
+    "status": "parse_failed",
+    "filing_date": "2012-03-16"
+  },
+  "BABA": {
+    "ticker": "BABA",
+    "status": "no_def14a",
+    "before_date": "2017-06-15"
+  },
+  "BAC": {
+    "ticker": "BAC",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "BALL": {
+    "ticker": "BALL",
+    "status": "ok",
+    "filing_date": "2012-03-09",
+    "ceo_total_comp": 809283,
+    "ceo_salary": 202197,
+    "ceo_salary_pct": 0.25,
+    "ceo_equity_pct": 0.525,
+    "ceo_bonus_pct": 0.225,
+    "amounts_found": 7,
+    "parsing_confidence": "medium"
+  },
+  "BAX": {
+    "ticker": "BAX",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 14361305,
+    "ceo_salary": 1408846,
+    "ceo_salary_pct": 0.098,
+    "ceo_equity_pct": 0.631,
+    "ceo_bonus_pct": 0.271,
+    "amounts_found": 81,
+    "parsing_confidence": "medium"
+  },
+  "BBBY": {
+    "ticker": "BBBY",
+    "status": "parse_failed",
+    "filing_date": "2012-03-21"
+  },
+  "BBT": {
+    "ticker": "BBT",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "BBWI": {
+    "ticker": "BBWI",
+    "status": "ok",
+    "filing_date": "2021-04-08",
+    "ceo_total_comp": 43230,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "BBY": {
+    "ticker": "BBY",
+    "status": "ok",
+    "filing_date": "2012-05-09",
+    "ceo_total_comp": 55423,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "BDX": {
+    "ticker": "BDX",
+    "status": "ok",
+    "filing_date": "2012-12-20",
+    "ceo_total_comp": 195850121,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "BEN": {
+    "ticker": "BEN",
+    "status": "parse_failed",
+    "filing_date": "2012-01-24"
+  },
+  "BG": {
+    "ticker": "BG",
+    "status": "no_def14a",
+    "before_date": "2023-03-14"
+  },
+  "BHF": {
+    "ticker": "BHF",
+    "status": "no_def14a",
+    "before_date": "2017-08-07"
+  },
+  "BHP": {
+    "ticker": "BHP",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "BIDU": {
+    "ticker": "BIDU",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "BIIB": {
+    "ticker": "BIIB",
+    "status": "parse_failed",
+    "filing_date": "2012-04-27"
+  },
+  "BIO": {
+    "ticker": "BIO",
+    "status": "ok",
+    "filing_date": "2020-04-01",
+    "ceo_total_comp": 229880593,
+    "ceo_salary": 110000,
+    "ceo_salary_pct": 0,
+    "ceo_equity_pct": 0.7,
+    "ceo_bonus_pct": 0.3,
+    "amounts_found": 6,
+    "parsing_confidence": "medium"
+  },
+  "BJRI": {
+    "ticker": "BJRI",
+    "status": "ok",
+    "filing_date": "2014-04-30",
+    "ceo_total_comp": 54589,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 4,
+    "parsing_confidence": "low"
+  },
+  "BK": {
+    "ticker": "BK",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "BKNG": {
+    "ticker": "BKNG",
+    "status": "ok",
+    "filing_date": "2012-04-24",
+    "ceo_total_comp": 9057771,
+    "ceo_salary": 550000,
+    "ceo_salary_pct": 0.061,
+    "ceo_equity_pct": 0.657,
+    "ceo_bonus_pct": 0.282,
+    "amounts_found": 22,
+    "parsing_confidence": "medium"
+  },
+  "BKR": {
+    "ticker": "BKR",
+    "status": "ok",
+    "filing_date": "2019-03-25",
+    "ceo_total_comp": 77073,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "BKU": {
+    "ticker": "BKU",
+    "status": "parse_failed",
+    "filing_date": "2014-04-11"
+  },
+  "BLK": {
+    "ticker": "BLK",
+    "status": "no_def14a",
+    "before_date": "2011-04-04"
+  },
+  "BMC": {
+    "ticker": "BMC",
+    "status": "no_cik"
+  },
+  "BMS": {
+    "ticker": "BMS",
+    "status": "no_cik"
+  },
+  "BMY": {
+    "ticker": "BMY",
+    "status": "parse_failed",
+    "filing_date": "2012-03-20"
+  },
+  "BOOT": {
+    "ticker": "BOOT",
+    "status": "ok",
+    "filing_date": "2016-07-15",
+    "ceo_total_comp": 2628349,
+    "ceo_salary": 663462,
+    "ceo_salary_pct": 0.252,
+    "ceo_equity_pct": 0.524,
+    "ceo_bonus_pct": 0.224,
+    "amounts_found": 46,
+    "parsing_confidence": "medium"
+  },
+  "BP": {
+    "ticker": "BP",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "BR": {
+    "ticker": "BR",
+    "status": "parse_failed",
+    "filing_date": "2014-10-03"
+  },
+  "BRO": {
+    "ticker": "BRO",
+    "status": "parse_failed",
+    "filing_date": "2021-03-23"
+  },
+  "BSX": {
+    "ticker": "BSX",
+    "status": "parse_failed",
+    "filing_date": "2012-03-27"
+  },
+  "BTI": {
+    "ticker": "BTI",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "BWA": {
+    "ticker": "BWA",
+    "status": "parse_failed",
+    "filing_date": "2011-03-17"
+  },
+  "BXP": {
+    "ticker": "BXP",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "C": {
+    "ticker": "C",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "CAG": {
+    "ticker": "CAG",
+    "status": "parse_failed",
+    "filing_date": "2012-08-08"
+  },
+  "CAH": {
+    "ticker": "CAH",
+    "status": "ok",
+    "filing_date": "2012-09-14",
+    "ceo_total_comp": 3436925,
+    "ceo_salary": 1441773,
+    "ceo_salary_pct": 0.419,
+    "ceo_equity_pct": 0.407,
+    "ceo_bonus_pct": 0.174,
+    "amounts_found": 18,
+    "parsing_confidence": "medium"
+  },
+  "CAKE": {
+    "ticker": "CAKE",
+    "status": "parse_failed",
+    "filing_date": "2014-04-17"
+  },
+  "CALX": {
+    "ticker": "CALX",
+    "status": "ok",
+    "filing_date": "2014-04-07",
+    "ceo_total_comp": 50321551,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "CARR": {
+    "ticker": "CARR",
+    "status": "no_def14a",
+    "before_date": "2020-04-02"
+  },
+  "CASH": {
+    "ticker": "CASH",
+    "status": "parse_failed",
+    "filing_date": "2013-12-26"
+  },
+  "CAT": {
+    "ticker": "CAT",
+    "status": "ok",
+    "filing_date": "2012-04-23",
+    "ceo_total_comp": 16902023,
+    "ceo_salary": 1429506,
+    "ceo_salary_pct": 0.085,
+    "ceo_equity_pct": 0.641,
+    "ceo_bonus_pct": 0.274,
+    "amounts_found": 99,
+    "parsing_confidence": "medium"
+  },
+  "CATO": {
+    "ticker": "CATO",
+    "status": "parse_failed",
+    "filing_date": "2014-04-08"
+  },
+  "CB": {
+    "ticker": "CB",
+    "status": "parse_failed",
+    "filing_date": "2012-04-04"
+  },
+  "CBOE": {
+    "ticker": "CBOE",
+    "status": "parse_failed",
+    "filing_date": "2014-04-11"
+  },
+  "CBRE": {
+    "ticker": "CBRE",
+    "status": "parse_failed",
+    "filing_date": "2012-03-23"
+  },
+  "CCI": {
+    "ticker": "CCI",
+    "status": "ok",
+    "filing_date": "2011-04-11",
+    "ceo_total_comp": 77057,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "CCL": {
+    "ticker": "CCL",
+    "status": "ok",
+    "filing_date": "2012-03-01",
+    "ceo_total_comp": 180428756,
+    "ceo_salary": 2247295,
+    "ceo_salary_pct": 0.012,
+    "ceo_equity_pct": 0.692,
+    "ceo_bonus_pct": 0.296,
+    "amounts_found": 5,
+    "parsing_confidence": "medium"
+  },
+  "CDNS": {
+    "ticker": "CDNS",
+    "status": "parse_failed",
+    "filing_date": "2014-03-26"
+  },
+  "CDW": {
+    "ticker": "CDW",
+    "status": "parse_failed",
+    "filing_date": "2019-04-10"
+  },
+  "CE": {
+    "ticker": "CE",
+    "status": "ok",
+    "filing_date": "2014-03-14",
+    "ceo_total_comp": 8933148,
+    "ceo_salary": 1038462,
+    "ceo_salary_pct": 0.116,
+    "ceo_equity_pct": 0.619,
+    "ceo_bonus_pct": 0.265,
+    "amounts_found": 30,
+    "parsing_confidence": "medium"
+  },
+  "CELH": {
+    "ticker": "CELH",
+    "status": "parse_failed",
+    "filing_date": "2010-05-03"
+  },
+  "CENTA": {
+    "ticker": "CENTA",
+    "status": "ok",
+    "filing_date": "2013-12-27",
+    "ceo_total_comp": 3318729,
+    "ceo_salary": 414154,
+    "ceo_salary_pct": 0.125,
+    "ceo_equity_pct": 0.612,
+    "ceo_bonus_pct": 0.263,
+    "amounts_found": 76,
+    "parsing_confidence": "medium"
+  },
+  "CF": {
+    "ticker": "CF",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "CFG": {
+    "ticker": "CFG",
+    "status": "no_def14a",
+    "before_date": "2015-01-02"
+  },
+  "CHD": {
+    "ticker": "CHD",
+    "status": "parse_failed",
+    "filing_date": "2014-03-20"
+  },
+  "CHRW": {
+    "ticker": "CHRW",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "CHTR": {
+    "ticker": "CHTR",
+    "status": "parse_failed",
+    "filing_date": "2014-03-27"
+  },
+  "CI": {
+    "ticker": "CI",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "CINF": {
+    "ticker": "CINF",
+    "status": "ok",
+    "filing_date": "2012-03-16",
+    "ceo_total_comp": 8449750,
+    "ceo_salary": 110484,
+    "ceo_salary_pct": 0.013,
+    "ceo_equity_pct": 0.691,
+    "ceo_bonus_pct": 0.296,
+    "amounts_found": 21,
+    "parsing_confidence": "medium"
+  },
+  "CL": {
+    "ticker": "CL",
+    "status": "ok",
+    "filing_date": "2012-03-28",
+    "ceo_total_comp": 477752948,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "CLF": {
+    "ticker": "CLF",
+    "status": "parse_failed",
+    "filing_date": "2012-03-23"
+  },
+  "CLX": {
+    "ticker": "CLX",
+    "status": "ok",
+    "filing_date": "2012-09-28",
+    "ceo_total_comp": 11716,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "CMA": {
+    "ticker": "CMA",
+    "status": "no_cik"
+  },
+  "CMCSA": {
+    "ticker": "CMCSA",
+    "status": "parse_failed",
+    "filing_date": "2012-04-20"
+  },
+  "CME": {
+    "ticker": "CME",
+    "status": "ok",
+    "filing_date": "2012-04-09",
+    "ceo_total_comp": 8045975,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "CMG": {
+    "ticker": "CMG",
+    "status": "parse_failed",
+    "filing_date": "2011-04-06"
+  },
+  "CMI": {
+    "ticker": "CMI",
+    "status": "parse_failed",
+    "filing_date": "2012-03-27"
+  },
+  "CMS": {
+    "ticker": "CMS",
+    "status": "parse_failed",
+    "filing_date": "2012-04-06"
+  },
+  "CNC": {
+    "ticker": "CNC",
+    "status": "parse_failed",
+    "filing_date": "2014-03-11"
+  },
+  "CNP": {
+    "ticker": "CNP",
+    "status": "parse_failed",
+    "filing_date": "2012-03-16"
+  },
+  "CNX": {
+    "ticker": "CNX",
+    "status": "ok",
+    "filing_date": "2012-03-26",
+    "ceo_total_comp": 31800000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "COF": {
+    "ticker": "COF",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 5000000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "COL": {
+    "ticker": "COL",
+    "status": "no_cik"
+  },
+  "COO": {
+    "ticker": "COO",
+    "status": "ok",
+    "filing_date": "2014-01-31",
+    "ceo_total_comp": 94588,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "COP": {
+    "ticker": "COP",
+    "status": "ok",
+    "filing_date": "2012-03-28",
+    "ceo_total_comp": 27713594,
+    "ceo_salary": 1500000,
+    "ceo_salary_pct": 0.054,
+    "ceo_equity_pct": 0.662,
+    "ceo_bonus_pct": 0.284,
+    "amounts_found": 85,
+    "parsing_confidence": "medium"
+  },
+  "COST": {
+    "ticker": "COST",
+    "status": "parse_failed",
+    "filing_date": "2012-12-13"
+  },
+  "COTY": {
+    "ticker": "COTY",
+    "status": "parse_failed",
+    "filing_date": "2014-10-06"
+  },
+  "CPB": {
+    "ticker": "CPB",
+    "status": "parse_failed",
+    "filing_date": "2012-10-05"
+  },
+  "CPRI": {
+    "ticker": "CPRI",
+    "status": "parse_failed",
+    "filing_date": "2014-06-17"
+  },
+  "CPRT": {
+    "ticker": "CPRT",
+    "status": "ok",
+    "filing_date": "2014-10-24",
+    "ceo_total_comp": 75254,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "CRL": {
+    "ticker": "CRL",
+    "status": "ok",
+    "filing_date": "2021-03-26",
+    "ceo_total_comp": 348447,
+    "ceo_salary": 105000,
+    "ceo_salary_pct": 0.301,
+    "ceo_equity_pct": 0.489,
+    "ceo_bonus_pct": 0.21,
+    "amounts_found": 46,
+    "parsing_confidence": "medium"
+  },
+  "CRM": {
+    "ticker": "CRM",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "CROX": {
+    "ticker": "CROX",
+    "status": "ok",
+    "filing_date": "2014-04-29",
+    "ceo_total_comp": 87888964,
+    "ceo_salary": 200000,
+    "ceo_salary_pct": 0.002,
+    "ceo_equity_pct": 0.699,
+    "ceo_bonus_pct": 0.299,
+    "amounts_found": 19,
+    "parsing_confidence": "medium"
+  },
+  "CSCO": {
+    "ticker": "CSCO",
+    "status": "parse_failed",
+    "filing_date": "2012-09-26"
+  },
+  "CSGP": {
+    "ticker": "CSGP",
+    "status": "parse_failed",
+    "filing_date": "2022-04-25"
+  },
+  "CSX": {
+    "ticker": "CSX",
+    "status": "ok",
+    "filing_date": "2012-03-26",
+    "ceo_total_comp": 60603,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "CTAS": {
+    "ticker": "CTAS",
+    "status": "parse_failed",
+    "filing_date": "2012-09-06"
+  },
+  "CTL": {
+    "ticker": "CTL",
+    "status": "no_cik"
+  },
+  "CTRA": {
+    "ticker": "CTRA",
+    "status": "ok",
+    "filing_date": "2021-03-12",
+    "ceo_total_comp": 399419748,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "CTSH": {
+    "ticker": "CTSH",
+    "status": "parse_failed",
+    "filing_date": "2012-04-19"
+  },
+  "CTVA": {
+    "ticker": "CTVA",
+    "status": "no_def14a",
+    "before_date": "2019-06-03"
+  },
+  "CVS": {
+    "ticker": "CVS",
+    "status": "parse_failed",
+    "filing_date": "2012-03-26"
+  },
+  "CVX": {
+    "ticker": "CVX",
+    "status": "ok",
+    "filing_date": "2012-04-12",
+    "ceo_total_comp": 94583,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "CZR": {
+    "ticker": "CZR",
+    "status": "ok",
+    "filing_date": "2020-05-19",
+    "ceo_total_comp": 89501,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "D": {
+    "ticker": "D",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 100000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "DAL": {
+    "ticker": "DAL",
+    "status": "parse_failed",
+    "filing_date": "2013-04-30"
+  },
+  "DB": {
+    "ticker": "DB",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "DD": {
+    "ticker": "DD",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "DE": {
+    "ticker": "DE",
+    "status": "parse_failed",
+    "filing_date": "2012-01-13"
+  },
+  "DELL": {
+    "ticker": "DELL",
+    "status": "parse_failed",
+    "filing_date": "2018-05-15"
+  },
+  "DEO": {
+    "ticker": "DEO",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "DG": {
+    "ticker": "DG",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "DGX": {
+    "ticker": "DGX",
+    "status": "ok",
+    "filing_date": "2012-03-28",
+    "ceo_total_comp": 3639542,
+    "ceo_salary": 2905708,
+    "ceo_salary_pct": 0.798,
+    "ceo_equity_pct": 0.141,
+    "ceo_bonus_pct": 0.061,
+    "amounts_found": 2,
+    "parsing_confidence": "medium"
+  },
+  "DHI": {
+    "ticker": "DHI",
+    "status": "ok",
+    "filing_date": "2012-12-20",
+    "ceo_total_comp": 76102,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "DHR": {
+    "ticker": "DHR",
+    "status": "parse_failed",
+    "filing_date": "2012-04-02"
+  },
+  "DIN": {
+    "ticker": "DIN",
+    "status": "ok",
+    "filing_date": "2014-04-17",
+    "ceo_total_comp": 91203,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "DIS": {
+    "ticker": "DIS",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "DLR": {
+    "ticker": "DLR",
+    "status": "ok",
+    "filing_date": "2014-03-19",
+    "ceo_total_comp": 11500000,
+    "ceo_salary": 127644,
+    "ceo_salary_pct": 0.011,
+    "ceo_equity_pct": 0.692,
+    "ceo_bonus_pct": 0.297,
+    "amounts_found": 9,
+    "parsing_confidence": "medium"
+  },
+  "DLTR": {
+    "ticker": "DLTR",
+    "status": "parse_failed",
+    "filing_date": "2011-05-16"
+  },
+  "DOV": {
+    "ticker": "DOV",
+    "status": "parse_failed",
+    "filing_date": "2012-03-19"
+  },
+  "DOW": {
+    "ticker": "DOW",
+    "status": "no_def14a",
+    "before_date": "2019-04-01"
+  },
+  "DPZ": {
+    "ticker": "DPZ",
+    "status": "parse_failed",
+    "filing_date": "2020-03-12"
+  },
+  "DRI": {
+    "ticker": "DRI",
+    "status": "parse_failed",
+    "filing_date": "2012-08-07"
+  },
+  "DTE": {
+    "ticker": "DTE",
+    "status": "parse_failed",
+    "filing_date": "2012-03-15"
+  },
+  "DUK": {
+    "ticker": "DUK",
+    "status": "parse_failed",
+    "filing_date": "2012-03-22"
+  },
+  "DVA": {
+    "ticker": "DVA",
+    "status": "ok",
+    "filing_date": "2012-04-27",
+    "ceo_total_comp": 80401,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "DVN": {
+    "ticker": "DVN",
+    "status": "parse_failed",
+    "filing_date": "2012-04-25"
+  },
+  "DXC": {
+    "ticker": "DXC",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "DXCM": {
+    "ticker": "DXCM",
+    "status": "parse_failed",
+    "filing_date": "2014-04-16"
+  },
+  "EA": {
+    "ticker": "EA",
+    "status": "parse_failed",
+    "filing_date": "2012-06-08"
+  },
+  "EBAY": {
+    "ticker": "EBAY",
+    "status": "ok",
+    "filing_date": "2012-03-19",
+    "ceo_total_comp": 95125,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "ECL": {
+    "ticker": "ECL",
+    "status": "ok",
+    "filing_date": "2012-03-16",
+    "ceo_total_comp": 55102,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "ED": {
+    "ticker": "ED",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "EFX": {
+    "ticker": "EFX",
+    "status": "parse_failed",
+    "filing_date": "2012-03-21"
+  },
+  "EIX": {
+    "ticker": "EIX",
+    "status": "ok",
+    "filing_date": "2012-03-16",
+    "ceo_total_comp": 91770,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "EL": {
+    "ticker": "EL",
+    "status": "ok",
+    "filing_date": "2012-09-25",
+    "ceo_total_comp": 10153,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ELV": {
+    "ticker": "ELV",
+    "status": "parse_failed",
+    "filing_date": "2022-04-01"
+  },
+  "EMN": {
+    "ticker": "EMN",
+    "status": "ok",
+    "filing_date": "2012-03-21",
+    "ceo_total_comp": 748106,
+    "ceo_salary": 250000,
+    "ceo_salary_pct": 0.334,
+    "ceo_equity_pct": 0.466,
+    "ceo_bonus_pct": 0.2,
+    "amounts_found": 8,
+    "parsing_confidence": "medium"
+  },
+  "EMR": {
+    "ticker": "EMR",
+    "status": "parse_failed",
+    "filing_date": "2012-12-07"
+  },
+  "ENB": {
+    "ticker": "ENB",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "ENPH": {
+    "ticker": "ENPH",
+    "status": "ok",
+    "filing_date": "2014-03-21",
+    "ceo_total_comp": 4201989,
+    "ceo_salary": 205842,
+    "ceo_salary_pct": 0.049,
+    "ceo_equity_pct": 0.666,
+    "ceo_bonus_pct": 0.285,
+    "amounts_found": 4,
+    "parsing_confidence": "medium"
+  },
+  "EOG": {
+    "ticker": "EOG",
+    "status": "parse_failed",
+    "filing_date": "2012-03-27"
+  },
+  "EP": {
+    "ticker": "EP",
+    "status": "parse_failed",
+    "filing_date": "2012-05-07"
+  },
+  "EPAM": {
+    "ticker": "EPAM",
+    "status": "ok",
+    "filing_date": "2021-04-30",
+    "ceo_total_comp": 252625499,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "EQIX": {
+    "ticker": "EQIX",
+    "status": "parse_failed",
+    "filing_date": "2014-04-28"
+  },
+  "EQR": {
+    "ticker": "EQR",
+    "status": "parse_failed",
+    "filing_date": "2012-04-16"
+  },
+  "EQT": {
+    "ticker": "EQT",
+    "status": "ok",
+    "filing_date": "2012-03-01",
+    "ceo_total_comp": 15222,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "ES": {
+    "ticker": "ES",
+    "status": "parse_failed",
+    "filing_date": "2012-09-20"
+  },
+  "ESRX": {
+    "ticker": "ESRX",
+    "status": "no_cik"
+  },
+  "ESS": {
+    "ticker": "ESS",
+    "status": "ok",
+    "filing_date": "2013-04-01",
+    "ceo_total_comp": 297178,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "ETN": {
+    "ticker": "ETN",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "ETR": {
+    "ticker": "ETR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-23"
+  },
+  "ETSY": {
+    "ticker": "ETSY",
+    "status": "parse_failed",
+    "filing_date": "2021-04-20"
+  },
+  "EVRG": {
+    "ticker": "EVRG",
+    "status": "no_def14a",
+    "before_date": "2015-01-02"
+  },
+  "EW": {
+    "ticker": "EW",
+    "status": "ok",
+    "filing_date": "2011-03-31",
+    "ceo_total_comp": 114811280,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "EXC": {
+    "ticker": "EXC",
+    "status": "parse_failed",
+    "filing_date": "2012-02-22"
+  },
+  "EXPD": {
+    "ticker": "EXPD",
+    "status": "parse_failed",
+    "filing_date": "2011-03-18"
+  },
+  "EXPE": {
+    "ticker": "EXPE",
+    "status": "ok",
+    "filing_date": "2012-04-27",
+    "ceo_total_comp": 114285451,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 4,
+    "parsing_confidence": "low"
+  },
+  "EXR": {
+    "ticker": "EXR",
+    "status": "ok",
+    "filing_date": "2014-04-04",
+    "ceo_total_comp": 110924746,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "F": {
+    "ticker": "F",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "FANG": {
+    "ticker": "FANG",
+    "status": "ok",
+    "filing_date": "2014-04-30",
+    "ceo_total_comp": 25000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "FAST": {
+    "ticker": "FAST",
+    "status": "parse_failed",
+    "filing_date": "2012-02-23"
+  },
+  "FCPT": {
+    "ticker": "FCPT",
+    "status": "no_def14a",
+    "before_date": "2015-11-10"
+  },
+  "FCX": {
+    "ticker": "FCX",
+    "status": "parse_failed",
+    "filing_date": "2012-04-27"
+  },
+  "FDS": {
+    "ticker": "FDS",
+    "status": "parse_failed",
+    "filing_date": "2021-10-29"
+  },
+  "FDX": {
+    "ticker": "FDX",
+    "status": "parse_failed",
+    "filing_date": "2012-08-13"
+  },
+  "FE": {
+    "ticker": "FE",
+    "status": "ok",
+    "filing_date": "2012-04-02",
+    "ceo_total_comp": 44308,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "FFIV": {
+    "ticker": "FFIV",
+    "status": "parse_failed",
+    "filing_date": "2010-01-21"
+  },
+  "FHN": {
+    "ticker": "FHN",
+    "status": "ok",
+    "filing_date": "2012-03-12",
+    "ceo_total_comp": 38103,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "FIS": {
+    "ticker": "FIS",
+    "status": "parse_failed",
+    "filing_date": "2012-04-19"
+  },
+  "FISV": {
+    "ticker": "FISV",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "FITB": {
+    "ticker": "FITB",
+    "status": "ok",
+    "filing_date": "2012-03-08",
+    "ceo_total_comp": 7238198,
+    "ceo_salary": 1659947,
+    "ceo_salary_pct": 0.229,
+    "ceo_equity_pct": 0.54,
+    "ceo_bonus_pct": 0.231,
+    "amounts_found": 75,
+    "parsing_confidence": "medium"
+  },
+  "FLR": {
+    "ticker": "FLR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-13"
+  },
+  "FLS": {
+    "ticker": "FLS",
+    "status": "ok",
+    "filing_date": "2012-04-05",
+    "ceo_total_comp": 75039,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "FMC": {
+    "ticker": "FMC",
+    "status": "parse_failed",
+    "filing_date": "2012-03-16"
+  },
+  "FOSL": {
+    "ticker": "FOSL",
+    "status": "parse_failed",
+    "filing_date": "2011-04-15"
+  },
+  "FOX": {
+    "ticker": "FOX",
+    "status": "parse_failed",
+    "filing_date": "2021-09-17"
+  },
+  "FOXA": {
+    "ticker": "FOXA",
+    "status": "parse_failed",
+    "filing_date": "2021-09-17"
+  },
+  "FRT": {
+    "ticker": "FRT",
+    "status": "ok",
+    "filing_date": "2014-03-28",
+    "ceo_total_comp": 20852,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "FSLR": {
+    "ticker": "FSLR",
+    "status": "parse_failed",
+    "filing_date": "2012-04-11"
+  },
+  "FTI": {
+    "ticker": "FTI",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "FTNT": {
+    "ticker": "FTNT",
+    "status": "ok",
+    "filing_date": "2014-04-29",
+    "ceo_total_comp": 94086,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "FTV": {
+    "ticker": "FTV",
+    "status": "no_def14a",
+    "before_date": "2016-07-05"
+  },
+  "GBCI": {
+    "ticker": "GBCI",
+    "status": "parse_failed",
+    "filing_date": "2014-03-24"
+  },
+  "GD": {
+    "ticker": "GD",
+    "status": "parse_failed",
+    "filing_date": "2012-03-16"
+  },
+  "GE": {
+    "ticker": "GE",
+    "status": "ok",
+    "filing_date": "2012-03-09",
+    "ceo_total_comp": 21581228,
+    "ceo_salary": 3300000,
+    "ceo_salary_pct": 0.153,
+    "ceo_equity_pct": 0.593,
+    "ceo_bonus_pct": 0.254,
+    "amounts_found": 42,
+    "parsing_confidence": "medium"
+  },
+  "GEHC": {
+    "ticker": "GEHC",
+    "status": "no_def14a",
+    "before_date": "2023-01-03"
+  },
+  "GEN": {
+    "ticker": "GEN",
+    "status": "parse_failed",
+    "filing_date": "2022-08-03"
+  },
+  "GHC": {
+    "ticker": "GHC",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 2609467,
+    "ceo_salary": 400000,
+    "ceo_salary_pct": 0.153,
+    "ceo_equity_pct": 0.593,
+    "ceo_bonus_pct": 0.254,
+    "amounts_found": 85,
+    "parsing_confidence": "medium"
+  },
+  "GILD": {
+    "ticker": "GILD",
+    "status": "ok",
+    "filing_date": "2012-03-20",
+    "ceo_total_comp": 94404,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "GIS": {
+    "ticker": "GIS",
+    "status": "parse_failed",
+    "filing_date": "2012-08-09"
+  },
+  "GKOS": {
+    "ticker": "GKOS",
+    "status": "ok",
+    "filing_date": "2017-04-18",
+    "ceo_total_comp": 3412001,
+    "ceo_salary": 562380,
+    "ceo_salary_pct": 0.165,
+    "ceo_equity_pct": 0.584,
+    "ceo_bonus_pct": 0.251,
+    "amounts_found": 21,
+    "parsing_confidence": "medium"
+  },
+  "GL": {
+    "ticker": "GL",
+    "status": "parse_failed",
+    "filing_date": "2019-03-18"
+  },
+  "GLW": {
+    "ticker": "GLW",
+    "status": "parse_failed",
+    "filing_date": "2012-03-13"
+  },
+  "GM": {
+    "ticker": "GM",
+    "status": "parse_failed",
+    "filing_date": "2014-04-25"
+  },
+  "GME": {
+    "ticker": "GME",
+    "status": "parse_failed",
+    "filing_date": "2012-05-10"
+  },
+  "GNRC": {
+    "ticker": "GNRC",
+    "status": "parse_failed",
+    "filing_date": "2021-04-29"
+  },
+  "GNW": {
+    "ticker": "GNW",
+    "status": "ok",
+    "filing_date": "2012-04-04",
+    "ceo_total_comp": 491475307,
+    "ceo_salary": 1238547,
+    "ceo_salary_pct": 0.003,
+    "ceo_equity_pct": 0.698,
+    "ceo_bonus_pct": 0.299,
+    "amounts_found": 21,
+    "parsing_confidence": "medium"
+  },
+  "GOOG": {
+    "ticker": "GOOG",
+    "status": "no_def14a",
+    "before_date": "2014-04-02"
+  },
+  "GOOGL": {
+    "ticker": "GOOGL",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "GPC": {
+    "ticker": "GPC",
+    "status": "parse_failed",
+    "filing_date": "2012-02-27"
+  },
+  "GPN": {
+    "ticker": "GPN",
+    "status": "parse_failed",
+    "filing_date": "2014-09-26"
+  },
+  "GPS": {
+    "ticker": "GPS",
+    "status": "no_cik"
+  },
+  "GRMN": {
+    "ticker": "GRMN",
+    "status": "ok",
+    "filing_date": "2012-04-16",
+    "ceo_total_comp": 45419059,
+    "ceo_salary": 717505,
+    "ceo_salary_pct": 0.016,
+    "ceo_equity_pct": 0.689,
+    "ceo_bonus_pct": 0.295,
+    "amounts_found": 9,
+    "parsing_confidence": "medium"
+  },
+  "GS": {
+    "ticker": "GS",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "GT": {
+    "ticker": "GT",
+    "status": "parse_failed",
+    "filing_date": "2012-03-12"
+  },
+  "GTN": {
+    "ticker": "GTN",
+    "status": "parse_failed",
+    "filing_date": "2014-04-10"
+  },
+  "GWW": {
+    "ticker": "GWW",
+    "status": "ok",
+    "filing_date": "2012-03-16",
+    "ceo_total_comp": 70266546,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "HAL": {
+    "ticker": "HAL",
+    "status": "parse_failed",
+    "filing_date": "2012-04-03"
+  },
+  "HAR": {
+    "ticker": "HAR",
+    "status": "no_cik"
+  },
+  "HAS": {
+    "ticker": "HAS",
+    "status": "ok",
+    "filing_date": "2012-04-04",
+    "ceo_total_comp": 23153471,
+    "ceo_salary": 4694232,
+    "ceo_salary_pct": 0.203,
+    "ceo_equity_pct": 0.558,
+    "ceo_bonus_pct": 0.239,
+    "amounts_found": 30,
+    "parsing_confidence": "medium"
+  },
+  "HBAN": {
+    "ticker": "HBAN",
+    "status": "parse_failed",
+    "filing_date": "2012-03-08"
+  },
+  "HCA": {
+    "ticker": "HCA",
+    "status": "parse_failed",
+    "filing_date": "2014-03-14"
+  },
+  "HCC": {
+    "ticker": "HCC",
+    "status": "no_def14a",
+    "before_date": "2017-06-15"
+  },
+  "HD": {
+    "ticker": "HD",
+    "status": "parse_failed",
+    "filing_date": "2012-04-02"
+  },
+  "HDB": {
+    "ticker": "HDB",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "HESM": {
+    "ticker": "HESM",
+    "status": "no_def14a",
+    "before_date": "2017-06-15"
+  },
+  "HIG": {
+    "ticker": "HIG",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "HII": {
+    "ticker": "HII",
+    "status": "ok",
+    "filing_date": "2014-03-18",
+    "ceo_total_comp": 3800000,
+    "ceo_salary": 1210000,
+    "ceo_salary_pct": 0.318,
+    "ceo_equity_pct": 0.477,
+    "ceo_bonus_pct": 0.205,
+    "amounts_found": 5,
+    "parsing_confidence": "medium"
+  },
+  "HLT": {
+    "ticker": "HLT",
+    "status": "parse_failed",
+    "filing_date": "2014-04-07"
+  },
+  "HMC": {
+    "ticker": "HMC",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "HOG": {
+    "ticker": "HOG",
+    "status": "parse_failed",
+    "filing_date": "2012-03-26"
+  },
+  "HOLX": {
+    "ticker": "HOLX",
+    "status": "ok",
+    "filing_date": "2014-01-15",
+    "ceo_total_comp": 6504480,
+    "ceo_salary": 539016,
+    "ceo_salary_pct": 0.083,
+    "ceo_equity_pct": 0.642,
+    "ceo_bonus_pct": 0.275,
+    "amounts_found": 104,
+    "parsing_confidence": "medium"
+  },
+  "HOMB": {
+    "ticker": "HOMB",
+    "status": "ok",
+    "filing_date": "2014-03-04",
+    "ceo_total_comp": 360000,
+    "ceo_salary": 265000,
+    "ceo_salary_pct": 0.736,
+    "ceo_equity_pct": 0.185,
+    "ceo_bonus_pct": 0.079,
+    "amounts_found": 2,
+    "parsing_confidence": "medium"
+  },
+  "HON": {
+    "ticker": "HON",
+    "status": "parse_failed",
+    "filing_date": "2012-03-08"
+  },
+  "HP": {
+    "ticker": "HP",
+    "status": "parse_failed",
+    "filing_date": "2010-01-26"
+  },
+  "HPE": {
+    "ticker": "HPE",
+    "status": "no_def14a",
+    "before_date": "2015-11-02"
+  },
+  "HPQ": {
+    "ticker": "HPQ",
+    "status": "parse_failed",
+    "filing_date": "2012-02-03"
+  },
+  "HRB": {
+    "ticker": "HRB",
+    "status": "parse_failed",
+    "filing_date": "2012-07-31"
+  },
+  "HRL": {
+    "ticker": "HRL",
+    "status": "parse_failed",
+    "filing_date": "2012-12-19"
+  },
+  "HSBC": {
+    "ticker": "HSBC",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "HSIC": {
+    "ticker": "HSIC",
+    "status": "parse_failed",
+    "filing_date": "2014-04-14"
+  },
+  "HST": {
+    "ticker": "HST",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "HSY": {
+    "ticker": "HSY",
+    "status": "ok",
+    "filing_date": "2012-03-20",
+    "ceo_total_comp": 431474,
+    "ceo_salary": 155951,
+    "ceo_salary_pct": 0.361,
+    "ceo_equity_pct": 0.447,
+    "ceo_bonus_pct": 0.192,
+    "amounts_found": 11,
+    "parsing_confidence": "medium"
+  },
+  "HUM": {
+    "ticker": "HUM",
+    "status": "ok",
+    "filing_date": "2012-03-05",
+    "ceo_total_comp": 10640,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "HWM": {
+    "ticker": "HWM",
+    "status": "ok",
+    "filing_date": "2021-04-14",
+    "ceo_total_comp": 434076077,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "IBM": {
+    "ticker": "IBM",
+    "status": "parse_failed",
+    "filing_date": "2012-03-12"
+  },
+  "IBOC": {
+    "ticker": "IBOC",
+    "status": "parse_failed",
+    "filing_date": "2014-04-18"
+  },
+  "ICE": {
+    "ticker": "ICE",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "IDXX": {
+    "ticker": "IDXX",
+    "status": "ok",
+    "filing_date": "2018-03-29",
+    "ceo_total_comp": 87151029,
+    "ceo_salary": 1102234,
+    "ceo_salary_pct": 0.013,
+    "ceo_equity_pct": 0.691,
+    "ceo_bonus_pct": 0.296,
+    "amounts_found": 34,
+    "parsing_confidence": "medium"
+  },
+  "IEX": {
+    "ticker": "IEX",
+    "status": "ok",
+    "filing_date": "2019-03-22",
+    "ceo_total_comp": 75793975,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "IFF": {
+    "ticker": "IFF",
+    "status": "parse_failed",
+    "filing_date": "2012-03-12"
+  },
+  "IIPR": {
+    "ticker": "IIPR",
+    "status": "ok",
+    "filing_date": "2020-04-17",
+    "ceo_total_comp": 92127,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ILMN": {
+    "ticker": "ILMN",
+    "status": "ok",
+    "filing_date": "2015-04-08",
+    "ceo_total_comp": 12733556,
+    "ceo_salary": 859192,
+    "ceo_salary_pct": 0.067,
+    "ceo_equity_pct": 0.653,
+    "ceo_bonus_pct": 0.28,
+    "amounts_found": 4,
+    "parsing_confidence": "medium"
+  },
+  "INCY": {
+    "ticker": "INCY",
+    "status": "ok",
+    "filing_date": "2016-04-18",
+    "ceo_total_comp": 80000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "INFY": {
+    "ticker": "INFY",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "INTC": {
+    "ticker": "INTC",
+    "status": "ok",
+    "filing_date": "2012-04-04",
+    "ceo_total_comp": 53999,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 6,
+    "parsing_confidence": "low"
+  },
+  "INTU": {
+    "ticker": "INTU",
+    "status": "parse_failed",
+    "filing_date": "2012-11-27"
+  },
+  "INVH": {
+    "ticker": "INVH",
+    "status": "parse_failed",
+    "filing_date": "2022-04-05"
+  },
+  "IP": {
+    "ticker": "IP",
+    "status": "ok",
+    "filing_date": "2012-04-05",
+    "ceo_total_comp": 437084397,
+    "ceo_salary": 460146,
+    "ceo_salary_pct": 0.001,
+    "ceo_equity_pct": 0.699,
+    "ceo_bonus_pct": 0.3,
+    "amounts_found": 2,
+    "parsing_confidence": "medium"
+  },
+  "IPGP": {
+    "ticker": "IPGP",
+    "status": "parse_failed",
+    "filing_date": "2017-04-05"
+  },
+  "IQ": {
+    "ticker": "IQ",
+    "status": "no_def14a",
+    "before_date": "2020-06-15"
+  },
+  "IQV": {
+    "ticker": "IQV",
+    "status": "parse_failed",
+    "filing_date": "2017-02-22"
+  },
+  "IR": {
+    "ticker": "IR",
+    "status": "parse_failed",
+    "filing_date": "2018-03-27"
+  },
+  "IRM": {
+    "ticker": "IRM",
+    "status": "ok",
+    "filing_date": "2012-04-30",
+    "ceo_total_comp": 2000000,
+    "ceo_salary": 296209,
+    "ceo_salary_pct": 0.148,
+    "ceo_equity_pct": 0.596,
+    "ceo_bonus_pct": 0.256,
+    "amounts_found": 9,
+    "parsing_confidence": "medium"
+  },
+  "ISRG": {
+    "ticker": "ISRG",
+    "status": "ok",
+    "filing_date": "2012-03-01",
+    "ceo_total_comp": 5050593,
+    "ceo_salary": 520417,
+    "ceo_salary_pct": 0.103,
+    "ceo_equity_pct": 0.628,
+    "ceo_bonus_pct": 0.269,
+    "amounts_found": 54,
+    "parsing_confidence": "medium"
+  },
+  "IT": {
+    "ticker": "IT",
+    "status": "parse_failed",
+    "filing_date": "2016-04-11"
+  },
+  "ITT": {
+    "ticker": "ITT",
+    "status": "parse_failed",
+    "filing_date": "2011-03-29"
+  },
+  "ITW": {
+    "ticker": "ITW",
+    "status": "parse_failed",
+    "filing_date": "2012-03-21"
+  },
+  "IVZ": {
+    "ticker": "IVZ",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "J": {
+    "ticker": "J",
+    "status": "ok",
+    "filing_date": "2019-12-04",
+    "ceo_total_comp": 133249387,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "JACK": {
+    "ticker": "JACK",
+    "status": "ok",
+    "filing_date": "2014-01-10",
+    "ceo_total_comp": 92123,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "JBHT": {
+    "ticker": "JBHT",
+    "status": "ok",
+    "filing_date": "2015-03-12",
+    "ceo_total_comp": 10000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "JBL": {
+    "ticker": "JBL",
+    "status": "ok",
+    "filing_date": "2012-12-18",
+    "ceo_total_comp": 202919667,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 4,
+    "parsing_confidence": "low"
+  },
+  "JBLU": {
+    "ticker": "JBLU",
+    "status": "ok",
+    "filing_date": "2016-04-05",
+    "ceo_total_comp": 3276159,
+    "ceo_salary": 550000,
+    "ceo_salary_pct": 0.168,
+    "ceo_equity_pct": 0.582,
+    "ceo_bonus_pct": 0.25,
+    "amounts_found": 5,
+    "parsing_confidence": "medium"
+  },
+  "JCI": {
+    "ticker": "JCI",
+    "status": "ok",
+    "filing_date": "2012-01-13",
+    "ceo_total_comp": 462609088,
+    "ceo_salary": 3189301,
+    "ceo_salary_pct": 0.007,
+    "ceo_equity_pct": 0.695,
+    "ceo_bonus_pct": 0.298,
+    "amounts_found": 22,
+    "parsing_confidence": "medium"
+  },
+  "JD": {
+    "ticker": "JD",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "JEF": {
+    "ticker": "JEF",
+    "status": "parse_failed",
+    "filing_date": "2012-04-13"
+  },
+  "JKHY": {
+    "ticker": "JKHY",
+    "status": "ok",
+    "filing_date": "2018-10-05",
+    "ceo_total_comp": 10003,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 27,
+    "parsing_confidence": "low"
+  },
+  "JNJ": {
+    "ticker": "JNJ",
+    "status": "parse_failed",
+    "filing_date": "2012-03-14"
+  },
+  "JPM": {
+    "ticker": "JPM",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "KDP": {
+    "ticker": "KDP",
+    "status": "ok",
+    "filing_date": "2012-03-29",
+    "ceo_total_comp": 8690406,
+    "ceo_salary": 1057692,
+    "ceo_salary_pct": 0.122,
+    "ceo_equity_pct": 0.615,
+    "ceo_bonus_pct": 0.263,
+    "amounts_found": 90,
+    "parsing_confidence": "medium"
+  },
+  "KEY": {
+    "ticker": "KEY",
+    "status": "ok",
+    "filing_date": "2012-03-29",
+    "ceo_total_comp": 500000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "KEYS": {
+    "ticker": "KEYS",
+    "status": "parse_failed",
+    "filing_date": "2018-02-09"
+  },
+  "KHC": {
+    "ticker": "KHC",
+    "status": "no_def14a",
+    "before_date": "2015-12-31"
+  },
+  "KIM": {
+    "ticker": "KIM",
+    "status": "parse_failed",
+    "filing_date": "2012-03-20"
+  },
+  "KLAC": {
+    "ticker": "KLAC",
+    "status": "ok",
+    "filing_date": "2012-09-27",
+    "ceo_total_comp": 95035,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "KMB": {
+    "ticker": "KMB",
+    "status": "ok",
+    "filing_date": "2012-03-07",
+    "ceo_total_comp": 393342197,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "KMI": {
+    "ticker": "KMI",
+    "status": "ok",
+    "filing_date": "2012-03-30",
+    "ceo_total_comp": 300000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "KMX": {
+    "ticker": "KMX",
+    "status": "ok",
+    "filing_date": "2010-05-03",
+    "ceo_total_comp": 23060,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "KO": {
+    "ticker": "KO",
+    "status": "parse_failed",
+    "filing_date": "2012-05-25"
+  },
+  "KR": {
+    "ticker": "KR",
+    "status": "ok",
+    "filing_date": "2012-05-11",
+    "ceo_total_comp": 5000000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "KSS": {
+    "ticker": "KSS",
+    "status": "ok",
+    "filing_date": "2012-03-19",
+    "ceo_total_comp": 53202,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "KTOS": {
+    "ticker": "KTOS",
+    "status": "ok",
+    "filing_date": "2014-04-11",
+    "ceo_total_comp": 2517523,
+    "ceo_salary": 695000,
+    "ceo_salary_pct": 0.276,
+    "ceo_equity_pct": 0.507,
+    "ceo_bonus_pct": 0.217,
+    "amounts_found": 74,
+    "parsing_confidence": "medium"
+  },
+  "L": {
+    "ticker": "L",
+    "status": "parse_failed",
+    "filing_date": "2012-03-26"
+  },
+  "LB": {
+    "ticker": "LB",
+    "status": "no_def14a",
+    "before_date": "2016-06-15"
+  },
+  "LDOS": {
+    "ticker": "LDOS",
+    "status": "ok",
+    "filing_date": "2012-04-27",
+    "ceo_total_comp": 12000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "LEE": {
+    "ticker": "LEE",
+    "status": "ok",
+    "filing_date": "2014-01-10",
+    "ceo_total_comp": 450000,
+    "ceo_salary": 225000,
+    "ceo_salary_pct": 0.5,
+    "ceo_equity_pct": 0.35,
+    "ceo_bonus_pct": 0.15,
+    "amounts_found": 2,
+    "parsing_confidence": "medium"
+  },
+  "LEG": {
+    "ticker": "LEG",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "LEN": {
+    "ticker": "LEN",
+    "status": "parse_failed",
+    "filing_date": "2012-03-02"
+  },
+  "LGND": {
+    "ticker": "LGND",
+    "status": "parse_failed",
+    "filing_date": "2014-04-21"
+  },
+  "LH": {
+    "ticker": "LH",
+    "status": "parse_failed",
+    "filing_date": "2012-03-20"
+  },
+  "LHX": {
+    "ticker": "LHX",
+    "status": "ok",
+    "filing_date": "2021-03-11",
+    "ceo_total_comp": 48000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "LIN": {
+    "ticker": "LIN",
+    "status": "no_def14a",
+    "before_date": "2018-11-05"
+  },
+  "LKQ": {
+    "ticker": "LKQ",
+    "status": "ok",
+    "filing_date": "2016-03-21",
+    "ceo_total_comp": 501889,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "LLY": {
+    "ticker": "LLY",
+    "status": "parse_failed",
+    "filing_date": "2012-03-05"
+  },
+  "LMT": {
+    "ticker": "LMT",
+    "status": "ok",
+    "filing_date": "2012-03-09",
+    "ceo_total_comp": 35807,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "LNC": {
+    "ticker": "LNC",
+    "status": "parse_failed",
+    "filing_date": "2012-04-13"
+  },
+  "LNT": {
+    "ticker": "LNT",
+    "status": "parse_failed",
+    "filing_date": "2016-03-31"
+  },
+  "LNTH": {
+    "ticker": "LNTH",
+    "status": "ok",
+    "filing_date": "2017-03-17",
+    "ceo_total_comp": 2770672,
+    "ceo_salary": 600000,
+    "ceo_salary_pct": 0.217,
+    "ceo_equity_pct": 0.548,
+    "ceo_bonus_pct": 0.235,
+    "amounts_found": 42,
+    "parsing_confidence": "medium"
+  },
+  "LOW": {
+    "ticker": "LOW",
+    "status": "parse_failed",
+    "filing_date": "2012-04-13"
+  },
+  "LRCX": {
+    "ticker": "LRCX",
+    "status": "parse_failed",
+    "filing_date": "2012-09-21"
+  },
+  "LULU": {
+    "ticker": "LULU",
+    "status": "parse_failed",
+    "filing_date": "2012-04-25"
+  },
+  "LUMN": {
+    "ticker": "LUMN",
+    "status": "parse_failed",
+    "filing_date": "2021-04-07"
+  },
+  "LUV": {
+    "ticker": "LUV",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "LVS": {
+    "ticker": "LVS",
+    "status": "parse_failed",
+    "filing_date": "2019-04-03"
+  },
+  "LW": {
+    "ticker": "LW",
+    "status": "ok",
+    "filing_date": "2018-08-07",
+    "ceo_total_comp": 83616,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "LYB": {
+    "ticker": "LYB",
+    "status": "parse_failed",
+    "filing_date": "2012-03-29"
+  },
+  "LYV": {
+    "ticker": "LYV",
+    "status": "ok",
+    "filing_date": "2019-04-22",
+    "ceo_total_comp": 90210,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "M": {
+    "ticker": "M",
+    "status": "parse_failed",
+    "filing_date": "2012-03-28"
+  },
+  "MA": {
+    "ticker": "MA",
+    "status": "parse_failed",
+    "filing_date": "2012-04-24"
+  },
+  "MAA": {
+    "ticker": "MAA",
+    "status": "parse_failed",
+    "filing_date": "2016-04-14"
+  },
+  "MAC": {
+    "ticker": "MAC",
+    "status": "parse_failed",
+    "filing_date": "2013-04-19"
+  },
+  "MAR": {
+    "ticker": "MAR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "MAS": {
+    "ticker": "MAS",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "MAT": {
+    "ticker": "MAT",
+    "status": "ok",
+    "filing_date": "2012-03-28",
+    "ceo_total_comp": 90045,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "MATX": {
+    "ticker": "MATX",
+    "status": "ok",
+    "filing_date": "2014-03-10",
+    "ceo_total_comp": 96819,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "MBI": {
+    "ticker": "MBI",
+    "status": "parse_failed",
+    "filing_date": "2014-03-19"
+  },
+  "MCD": {
+    "ticker": "MCD",
+    "status": "parse_failed",
+    "filing_date": "2012-04-13"
+  },
+  "MCHP": {
+    "ticker": "MCHP",
+    "status": "ok",
+    "filing_date": "2012-07-12",
+    "ceo_total_comp": 16648000,
+    "ceo_salary": 273438,
+    "ceo_salary_pct": 0.016,
+    "ceo_equity_pct": 0.689,
+    "ceo_bonus_pct": 0.295,
+    "amounts_found": 13,
+    "parsing_confidence": "medium"
+  },
+  "MCK": {
+    "ticker": "MCK",
+    "status": "ok",
+    "filing_date": "2012-06-15",
+    "ceo_total_comp": 236187328,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "MCO": {
+    "ticker": "MCO",
+    "status": "ok",
+    "filing_date": "2012-03-06",
+    "ceo_total_comp": 10007,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "MDLZ": {
+    "ticker": "MDLZ",
+    "status": "parse_failed",
+    "filing_date": "2012-04-02"
+  },
+  "MDT": {
+    "ticker": "MDT",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "MELI": {
+    "ticker": "MELI",
+    "status": "ok",
+    "filing_date": "2014-04-29",
+    "ceo_total_comp": 3733243,
+    "ceo_salary": 600434,
+    "ceo_salary_pct": 0.161,
+    "ceo_equity_pct": 0.587,
+    "ceo_bonus_pct": 0.252,
+    "amounts_found": 115,
+    "parsing_confidence": "medium"
+  },
+  "MET": {
+    "ticker": "MET",
+    "status": "parse_failed",
+    "filing_date": "2012-03-26"
+  },
+  "MGM": {
+    "ticker": "MGM",
+    "status": "parse_failed",
+    "filing_date": "2017-04-19"
+  },
+  "MHK": {
+    "ticker": "MHK",
+    "status": "ok",
+    "filing_date": "2013-04-01",
+    "ceo_total_comp": 1000000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "MKC": {
+    "ticker": "MKC",
+    "status": "parse_failed",
+    "filing_date": "2012-02-16"
+  },
+  "MKTX": {
+    "ticker": "MKTX",
+    "status": "parse_failed",
+    "filing_date": "2021-04-28"
+  },
+  "MLM": {
+    "ticker": "MLM",
+    "status": "parse_failed",
+    "filing_date": "2014-04-17"
+  },
+  "MMM": {
+    "ticker": "MMM",
+    "status": "ok",
+    "filing_date": "2012-03-21",
+    "ceo_total_comp": 55144,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "MNST": {
+    "ticker": "MNST",
+    "status": "parse_failed",
+    "filing_date": "2012-04-24"
+  },
+  "MO": {
+    "ticker": "MO",
+    "status": "ok",
+    "filing_date": "2012-04-05",
+    "ceo_total_comp": 23230,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "MOH": {
+    "ticker": "MOH",
+    "status": "ok",
+    "filing_date": "2021-03-22",
+    "ceo_total_comp": 200000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "MOS": {
+    "ticker": "MOS",
+    "status": "parse_failed",
+    "filing_date": "2011-08-25"
+  },
+  "MPC": {
+    "ticker": "MPC",
+    "status": "parse_failed",
+    "filing_date": "2012-03-14"
+  },
+  "MPWR": {
+    "ticker": "MPWR",
+    "status": "parse_failed",
+    "filing_date": "2020-04-29"
+  },
+  "MRK": {
+    "ticker": "MRK",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "MRNA": {
+    "ticker": "MRNA",
+    "status": "parse_failed",
+    "filing_date": "2021-03-10"
+  },
+  "MS": {
+    "ticker": "MS",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "MSCI": {
+    "ticker": "MSCI",
+    "status": "ok",
+    "filing_date": "2018-03-23",
+    "ceo_total_comp": 1000000,
+    "ceo_salary": 950000,
+    "ceo_salary_pct": 0.95,
+    "ceo_equity_pct": 0.035,
+    "ceo_bonus_pct": 0.015,
+    "amounts_found": 2,
+    "parsing_confidence": "medium"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "status": "parse_failed",
+    "filing_date": "2012-10-09"
+  },
+  "MSI": {
+    "ticker": "MSI",
+    "status": "parse_failed",
+    "filing_date": "2012-03-12"
+  },
+  "MTB": {
+    "ticker": "MTB",
+    "status": "ok",
+    "filing_date": "2012-03-07",
+    "ceo_total_comp": 7236147,
+    "ceo_salary": 400000,
+    "ceo_salary_pct": 0.055,
+    "ceo_equity_pct": 0.662,
+    "ceo_bonus_pct": 0.283,
+    "amounts_found": 4,
+    "parsing_confidence": "medium"
+  },
+  "MTCH": {
+    "ticker": "MTCH",
+    "status": "parse_failed",
+    "filing_date": "2021-04-30"
+  },
+  "MTD": {
+    "ticker": "MTD",
+    "status": "ok",
+    "filing_date": "2016-03-15",
+    "ceo_total_comp": 6673786,
+    "ceo_salary": 917715,
+    "ceo_salary_pct": 0.138,
+    "ceo_equity_pct": 0.603,
+    "ceo_bonus_pct": 0.259,
+    "amounts_found": 84,
+    "parsing_confidence": "medium"
+  },
+  "MTDR": {
+    "ticker": "MTDR",
+    "status": "parse_failed",
+    "filing_date": "2014-04-24"
+  },
+  "MU": {
+    "ticker": "MU",
+    "status": "parse_failed",
+    "filing_date": "2012-12-13"
+  },
+  "MUFG": {
+    "ticker": "MUFG",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "MUR": {
+    "ticker": "MUR",
+    "status": "ok",
+    "filing_date": "2012-03-29",
+    "ceo_total_comp": 13748097,
+    "ceo_salary": 1277500,
+    "ceo_salary_pct": 0.093,
+    "ceo_equity_pct": 0.635,
+    "ceo_bonus_pct": 0.272,
+    "amounts_found": 94,
+    "parsing_confidence": "medium"
+  },
+  "MYRG": {
+    "ticker": "MYRG",
+    "status": "parse_failed",
+    "filing_date": "2014-03-10"
+  },
+  "NAVI": {
+    "ticker": "NAVI",
+    "status": "no_def14a",
+    "before_date": "2014-04-30"
+  },
+  "NBR": {
+    "ticker": "NBR",
+    "status": "parse_failed",
+    "filing_date": "2012-04-23"
+  },
+  "NCLH": {
+    "ticker": "NCLH",
+    "status": "parse_failed",
+    "filing_date": "2015-04-16"
+  },
+  "NDAQ": {
+    "ticker": "NDAQ",
+    "status": "ok",
+    "filing_date": "2012-04-12",
+    "ceo_total_comp": 7990030,
+    "ceo_salary": 1000000,
+    "ceo_salary_pct": 0.125,
+    "ceo_equity_pct": 0.612,
+    "ceo_bonus_pct": 0.263,
+    "amounts_found": 26,
+    "parsing_confidence": "medium"
+  },
+  "NDSN": {
+    "ticker": "NDSN",
+    "status": "ok",
+    "filing_date": "2022-01-21",
+    "ceo_total_comp": 870000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "NEE": {
+    "ticker": "NEE",
+    "status": "parse_failed",
+    "filing_date": "2012-04-06"
+  },
+  "NEM": {
+    "ticker": "NEM",
+    "status": "parse_failed",
+    "filing_date": "2012-03-08"
+  },
+  "NFLX": {
+    "ticker": "NFLX",
+    "status": "parse_failed",
+    "filing_date": "2012-04-20"
+  },
+  "NFX": {
+    "ticker": "NFX",
+    "status": "no_cik"
+  },
+  "NI": {
+    "ticker": "NI",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "NKE": {
+    "ticker": "NKE",
+    "status": "parse_failed",
+    "filing_date": "2012-07-27"
+  },
+  "NKTR": {
+    "ticker": "NKTR",
+    "status": "ok",
+    "filing_date": "2017-05-01",
+    "ceo_total_comp": 155124403,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "NOC": {
+    "ticker": "NOC",
+    "status": "parse_failed",
+    "filing_date": "2012-04-06"
+  },
+  "NOK": {
+    "ticker": "NOK",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "NOV": {
+    "ticker": "NOV",
+    "status": "ok",
+    "filing_date": "2012-04-05",
+    "ceo_total_comp": 77036,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "NOW": {
+    "ticker": "NOW",
+    "status": "ok",
+    "filing_date": "2019-04-25",
+    "ceo_total_comp": 95054,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "NRG": {
+    "ticker": "NRG",
+    "status": "parse_failed",
+    "filing_date": "2008-04-02"
+  },
+  "NSC": {
+    "ticker": "NSC",
+    "status": "ok",
+    "filing_date": "2012-03-21",
+    "ceo_total_comp": 2454449,
+    "ceo_salary": 773934,
+    "ceo_salary_pct": 0.315,
+    "ceo_equity_pct": 0.48,
+    "ceo_bonus_pct": 0.205,
+    "amounts_found": 17,
+    "parsing_confidence": "medium"
+  },
+  "NTAP": {
+    "ticker": "NTAP",
+    "status": "ok",
+    "filing_date": "2012-07-20",
+    "ceo_total_comp": 900000,
+    "ceo_salary": 300000,
+    "ceo_salary_pct": 0.333,
+    "ceo_equity_pct": 0.467,
+    "ceo_bonus_pct": 0.2,
+    "amounts_found": 4,
+    "parsing_confidence": "medium"
+  },
+  "NTRS": {
+    "ticker": "NTRS",
+    "status": "ok",
+    "filing_date": "2012-03-08",
+    "ceo_total_comp": 60603,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "NUE": {
+    "ticker": "NUE",
+    "status": "parse_failed",
+    "filing_date": "2012-03-22"
+  },
+  "NVCR": {
+    "ticker": "NVCR",
+    "status": "parse_failed",
+    "filing_date": "2017-03-28"
+  },
+  "NVDA": {
+    "ticker": "NVDA",
+    "status": "ok",
+    "filing_date": "2012-04-04",
+    "ceo_total_comp": 95113,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "NVR": {
+    "ticker": "NVR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-26"
+  },
+  "NWL": {
+    "ticker": "NWL",
+    "status": "parse_failed",
+    "filing_date": "2012-03-29"
+  },
+  "NWS": {
+    "ticker": "NWS",
+    "status": "ok",
+    "filing_date": "2015-09-01",
+    "ceo_total_comp": 10036,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "NWSA": {
+    "ticker": "NWSA",
+    "status": "no_def14a",
+    "before_date": "2013-07-01"
+  },
+  "NXPI": {
+    "ticker": "NXPI",
+    "status": "ok",
+    "filing_date": "2020-04-13",
+    "ceo_total_comp": 279001118,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "NYT": {
+    "ticker": "NYT",
+    "status": "parse_failed",
+    "filing_date": "2010-03-12"
+  },
+  "O": {
+    "ticker": "O",
+    "status": "ok",
+    "filing_date": "2015-03-27",
+    "ceo_total_comp": 92130,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ODFL": {
+    "ticker": "ODFL",
+    "status": "ok",
+    "filing_date": "2019-04-15",
+    "ceo_total_comp": 27360,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "OGN": {
+    "ticker": "OGN",
+    "status": "no_def14a",
+    "before_date": "2021-06-03"
+  },
+  "OI": {
+    "ticker": "OI",
+    "status": "ok",
+    "filing_date": "2012-03-30",
+    "ceo_total_comp": 43551,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "OKE": {
+    "ticker": "OKE",
+    "status": "parse_failed",
+    "filing_date": "2009-03-27"
+  },
+  "OMC": {
+    "ticker": "OMC",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "OMCL": {
+    "ticker": "OMCL",
+    "status": "parse_failed",
+    "filing_date": "2014-04-21"
+  },
+  "ON": {
+    "ticker": "ON",
+    "status": "ok",
+    "filing_date": "2022-04-06",
+    "ceo_total_comp": 85008,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "ORCL": {
+    "ticker": "ORCL",
+    "status": "parse_failed",
+    "filing_date": "2012-09-21"
+  },
+  "ORLY": {
+    "ticker": "ORLY",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 4896696,
+    "ceo_salary": 525000,
+    "ceo_salary_pct": 0.107,
+    "ceo_equity_pct": 0.625,
+    "ceo_bonus_pct": 0.268,
+    "amounts_found": 27,
+    "parsing_confidence": "medium"
+  },
+  "OTIS": {
+    "ticker": "OTIS",
+    "status": "no_def14a",
+    "before_date": "2020-04-02"
+  },
+  "OXY": {
+    "ticker": "OXY",
+    "status": "parse_failed",
+    "filing_date": "2012-03-20"
+  },
+  "PAYC": {
+    "ticker": "PAYC",
+    "status": "ok",
+    "filing_date": "2021-04-01",
+    "ceo_total_comp": 73142,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "PAYX": {
+    "ticker": "PAYX",
+    "status": "parse_failed",
+    "filing_date": "2012-09-14"
+  },
+  "PBI": {
+    "ticker": "PBI",
+    "status": "parse_failed",
+    "filing_date": "2012-03-23"
+  },
+  "PBR": {
+    "ticker": "PBR",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "PCAR": {
+    "ticker": "PCAR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-14"
+  },
+  "PCG": {
+    "ticker": "PCG",
+    "status": "parse_failed",
+    "filing_date": "2012-04-02"
+  },
+  "PEG": {
+    "ticker": "PEG",
+    "status": "parse_failed",
+    "filing_date": "2012-03-05"
+  },
+  "PENN": {
+    "ticker": "PENN",
+    "status": "ok",
+    "filing_date": "2020-04-27",
+    "ceo_total_comp": 1591350,
+    "ceo_salary": 1100000,
+    "ceo_salary_pct": 0.691,
+    "ceo_equity_pct": 0.216,
+    "ceo_bonus_pct": 0.093,
+    "amounts_found": 4,
+    "parsing_confidence": "medium"
+  },
+  "PEP": {
+    "ticker": "PEP",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 28562,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "status": "parse_failed",
+    "filing_date": "2012-03-15"
+  },
+  "PFG": {
+    "ticker": "PFG",
+    "status": "ok",
+    "filing_date": "2012-04-11",
+    "ceo_total_comp": 300874236,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PG": {
+    "ticker": "PG",
+    "status": "parse_failed",
+    "filing_date": "2012-08-24"
+  },
+  "PGR": {
+    "ticker": "PGR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "PH": {
+    "ticker": "PH",
+    "status": "ok",
+    "filing_date": "2012-09-24",
+    "ceo_total_comp": 149232910,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "PHG": {
+    "ticker": "PHG",
+    "status": "parse_failed",
+    "filing_date": "2007-12-18"
+  },
+  "PHM": {
+    "ticker": "PHM",
+    "status": "parse_failed",
+    "filing_date": "2012-04-03"
+  },
+  "PKG": {
+    "ticker": "PKG",
+    "status": "parse_failed",
+    "filing_date": "2017-03-24"
+  },
+  "PLAY": {
+    "ticker": "PLAY",
+    "status": "parse_failed",
+    "filing_date": "2017-04-26"
+  },
+  "PLCE": {
+    "ticker": "PLCE",
+    "status": "parse_failed",
+    "filing_date": "2014-04-17"
+  },
+  "PLD": {
+    "ticker": "PLD",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 94111,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "PM": {
+    "ticker": "PM",
+    "status": "ok",
+    "filing_date": "2012-03-30",
+    "ceo_total_comp": 10017,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PNC": {
+    "ticker": "PNC",
+    "status": "parse_failed",
+    "filing_date": "2012-03-14"
+  },
+  "PNR": {
+    "ticker": "PNR",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "PNW": {
+    "ticker": "PNW",
+    "status": "ok",
+    "filing_date": "2012-03-29",
+    "ceo_total_comp": 109365892,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "POOL": {
+    "ticker": "POOL",
+    "status": "ok",
+    "filing_date": "2021-03-30",
+    "ceo_total_comp": 3947327,
+    "ceo_salary": 297404,
+    "ceo_salary_pct": 0.075,
+    "ceo_equity_pct": 0.648,
+    "ceo_bonus_pct": 0.277,
+    "amounts_found": 13,
+    "parsing_confidence": "medium"
+  },
+  "PPG": {
+    "ticker": "PPG",
+    "status": "ok",
+    "filing_date": "2012-03-08",
+    "ceo_total_comp": 15222,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PPL": {
+    "ticker": "PPL",
+    "status": "ok",
+    "filing_date": "2012-04-03",
+    "ceo_total_comp": 18101,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PRGO": {
+    "ticker": "PRGO",
+    "status": "no_def14a",
+    "before_date": "2011-12-19"
+  },
+  "PRIM": {
+    "ticker": "PRIM",
+    "status": "parse_failed",
+    "filing_date": "2014-04-01"
+  },
+  "PRPL": {
+    "ticker": "PRPL",
+    "status": "parse_failed",
+    "filing_date": "2016-11-21"
+  },
+  "PRU": {
+    "ticker": "PRU",
+    "status": "parse_failed",
+    "filing_date": "2012-03-27"
+  },
+  "PSA": {
+    "ticker": "PSA",
+    "status": "parse_failed",
+    "filing_date": "2012-03-23"
+  },
+  "PSX": {
+    "ticker": "PSX",
+    "status": "no_def14a",
+    "before_date": "2012-04-30"
+  },
+  "PTC": {
+    "ticker": "PTC",
+    "status": "ok",
+    "filing_date": "2020-12-29",
+    "ceo_total_comp": 10003,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PVH": {
+    "ticker": "PVH",
+    "status": "ok",
+    "filing_date": "2012-05-10",
+    "ceo_total_comp": 4500000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "PWR": {
+    "ticker": "PWR",
+    "status": "ok",
+    "filing_date": "2012-04-10",
+    "ceo_total_comp": 207255983,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "PYPL": {
+    "ticker": "PYPL",
+    "status": "no_def14a",
+    "before_date": "2015-12-31"
+  },
+  "QCOM": {
+    "ticker": "QCOM",
+    "status": "ok",
+    "filing_date": "2012-01-18",
+    "ceo_total_comp": 92121,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "QLYS": {
+    "ticker": "QLYS",
+    "status": "ok",
+    "filing_date": "2014-04-21",
+    "ceo_total_comp": 1858296,
+    "ceo_salary": 350000,
+    "ceo_salary_pct": 0.188,
+    "ceo_equity_pct": 0.568,
+    "ceo_bonus_pct": 0.244,
+    "amounts_found": 18,
+    "parsing_confidence": "medium"
+  },
+  "QRVO": {
+    "ticker": "QRVO",
+    "status": "no_def14a",
+    "before_date": "2015-06-11"
+  },
+  "R": {
+    "ticker": "R",
+    "status": "parse_failed",
+    "filing_date": "2012-03-19"
+  },
+  "RCL": {
+    "ticker": "RCL",
+    "status": "ok",
+    "filing_date": "2012-04-20",
+    "ceo_total_comp": 8615185,
+    "ceo_salary": 1000000,
+    "ceo_salary_pct": 0.116,
+    "ceo_equity_pct": 0.619,
+    "ceo_bonus_pct": 0.265,
+    "amounts_found": 100,
+    "parsing_confidence": "medium"
+  },
+  "REG": {
+    "ticker": "REG",
+    "status": "ok",
+    "filing_date": "2016-03-14",
+    "ceo_total_comp": 32202,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "REGN": {
+    "ticker": "REGN",
+    "status": "parse_failed",
+    "filing_date": "2013-04-29"
+  },
+  "RF": {
+    "ticker": "RF",
+    "status": "ok",
+    "filing_date": "2012-03-27",
+    "ceo_total_comp": 35203,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "RHI": {
+    "ticker": "RHI",
+    "status": "parse_failed",
+    "filing_date": "2012-04-23"
+  },
+  "RIG": {
+    "ticker": "RIG",
+    "status": "parse_failed",
+    "filing_date": "2012-04-06"
+  },
+  "RIO": {
+    "ticker": "RIO",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "RJF": {
+    "ticker": "RJF",
+    "status": "parse_failed",
+    "filing_date": "2017-01-10"
+  },
+  "RL": {
+    "ticker": "RL",
+    "status": "parse_failed",
+    "filing_date": "2012-07-02"
+  },
+  "RMD": {
+    "ticker": "RMD",
+    "status": "parse_failed",
+    "filing_date": "2016-09-26"
+  },
+  "ROAD": {
+    "ticker": "ROAD",
+    "status": "parse_failed",
+    "filing_date": "2020-01-23"
+  },
+  "ROK": {
+    "ticker": "ROK",
+    "status": "parse_failed",
+    "filing_date": "2012-12-20"
+  },
+  "ROL": {
+    "ticker": "ROL",
+    "status": "ok",
+    "filing_date": "2012-03-19",
+    "ceo_total_comp": 82976689,
+    "ceo_salary": 1767671,
+    "ceo_salary_pct": 0.021,
+    "ceo_equity_pct": 0.685,
+    "ceo_bonus_pct": 0.294,
+    "amounts_found": 14,
+    "parsing_confidence": "medium"
+  },
+  "ROP": {
+    "ticker": "ROP",
+    "status": "parse_failed",
+    "filing_date": "2012-04-30"
+  },
+  "ROST": {
+    "ticker": "ROST",
+    "status": "parse_failed",
+    "filing_date": "2012-04-03"
+  },
+  "RRC": {
+    "ticker": "RRC",
+    "status": "parse_failed",
+    "filing_date": "2012-04-04"
+  },
+  "RRGB": {
+    "ticker": "RRGB",
+    "status": "parse_failed",
+    "filing_date": "2014-04-08"
+  },
+  "RSG": {
+    "ticker": "RSG",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "RTX": {
+    "ticker": "RTX",
+    "status": "parse_failed",
+    "filing_date": "2021-03-12"
+  },
+  "SANM": {
+    "ticker": "SANM",
+    "status": "ok",
+    "filing_date": "2014-01-23",
+    "ceo_total_comp": 95134,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "SBAC": {
+    "ticker": "SBAC",
+    "status": "ok",
+    "filing_date": "2017-04-07",
+    "ceo_total_comp": 121235809,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "SBCF": {
+    "ticker": "SBCF",
+    "status": "parse_failed",
+    "filing_date": "2014-04-08"
+  },
+  "SBS": {
+    "ticker": "SBS",
+    "status": "no_def14a",
+    "before_date": "2020-06-15"
+  },
+  "SBUX": {
+    "ticker": "SBUX",
+    "status": "parse_failed",
+    "filing_date": "2012-01-26"
+  },
+  "SCG": {
+    "ticker": "SCG",
+    "status": "no_cik"
+  },
+  "SCHW": {
+    "ticker": "SCHW",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "SCVL": {
+    "ticker": "SCVL",
+    "status": "parse_failed",
+    "filing_date": "2014-05-02"
+  },
+  "SE": {
+    "ticker": "SE",
+    "status": "no_def14a",
+    "before_date": "2020-06-15"
+  },
+  "SEDG": {
+    "ticker": "SEDG",
+    "status": "ok",
+    "filing_date": "2021-04-22",
+    "ceo_total_comp": 4673335,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "SEE": {
+    "ticker": "SEE",
+    "status": "ok",
+    "filing_date": "2012-04-04",
+    "ceo_total_comp": 7512570,
+    "ceo_salary": 675000,
+    "ceo_salary_pct": 0.09,
+    "ceo_equity_pct": 0.637,
+    "ceo_bonus_pct": 0.273,
+    "amounts_found": 54,
+    "parsing_confidence": "medium"
+  },
+  "SFM": {
+    "ticker": "SFM",
+    "status": "ok",
+    "filing_date": "2014-03-17",
+    "ceo_total_comp": 85254,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "SHAK": {
+    "ticker": "SHAK",
+    "status": "ok",
+    "filing_date": "2017-04-28",
+    "ceo_total_comp": 6679150,
+    "ceo_salary": 500000,
+    "ceo_salary_pct": 0.075,
+    "ceo_equity_pct": 0.648,
+    "ceo_bonus_pct": 0.277,
+    "amounts_found": 23,
+    "parsing_confidence": "medium"
+  },
+  "SHEL": {
+    "ticker": "SHEL",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "SHOP": {
+    "ticker": "SHOP",
+    "status": "no_def14a",
+    "before_date": "2017-06-15"
+  },
+  "SHW": {
+    "ticker": "SHW",
+    "status": "ok",
+    "filing_date": "2012-03-07",
+    "ceo_total_comp": 44115,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "SIG": {
+    "ticker": "SIG",
+    "status": "parse_failed",
+    "filing_date": "2015-05-01"
+  },
+  "SIGI": {
+    "ticker": "SIGI",
+    "status": "ok",
+    "filing_date": "2014-03-24",
+    "ceo_total_comp": 56217293,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "SITE": {
+    "ticker": "SITE",
+    "status": "parse_failed",
+    "filing_date": "2017-03-31"
+  },
+  "SJM": {
+    "ticker": "SJM",
+    "status": "ok",
+    "filing_date": "2012-07-03",
+    "ceo_total_comp": 44667,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "SLB": {
+    "ticker": "SLB",
+    "status": "parse_failed",
+    "filing_date": "2012-03-01"
+  },
+  "SLG": {
+    "ticker": "SLG",
+    "status": "ok",
+    "filing_date": "2014-04-30",
+    "ceo_total_comp": 10170,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "SLM": {
+    "ticker": "SLM",
+    "status": "ok",
+    "filing_date": "2012-04-13",
+    "ceo_total_comp": 494714314,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "SM": {
+    "ticker": "SM",
+    "status": "ok",
+    "filing_date": "2014-04-10",
+    "ceo_total_comp": 6148796,
+    "ceo_salary": 744231,
+    "ceo_salary_pct": 0.121,
+    "ceo_equity_pct": 0.615,
+    "ceo_bonus_pct": 0.264,
+    "amounts_found": 84,
+    "parsing_confidence": "medium"
+  },
+  "SMCI": {
+    "ticker": "SMCI",
+    "status": "ok",
+    "filing_date": "2012-01-13",
+    "ceo_total_comp": 41012477,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 4,
+    "parsing_confidence": "low"
+  },
+  "SNA": {
+    "ticker": "SNA",
+    "status": "parse_failed",
+    "filing_date": "2012-03-12"
+  },
+  "SNPS": {
+    "ticker": "SNPS",
+    "status": "parse_failed",
+    "filing_date": "2017-02-17"
+  },
+  "SNY": {
+    "ticker": "SNY",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "SO": {
+    "ticker": "SO",
+    "status": "ok",
+    "filing_date": "2012-04-13",
+    "ceo_total_comp": 31822,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "SONY": {
+    "ticker": "SONY",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "SPG": {
+    "ticker": "SPG",
+    "status": "ok",
+    "filing_date": "2012-04-05",
+    "ceo_total_comp": 303040556,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "SPGI": {
+    "ticker": "SPGI",
+    "status": "ok",
+    "filing_date": "2012-03-16",
+    "ceo_total_comp": 10020,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "SRE": {
+    "ticker": "SRE",
+    "status": "ok",
+    "filing_date": "2012-03-26",
+    "ceo_total_comp": 1077222,
+    "ceo_salary": 136195,
+    "ceo_salary_pct": 0.126,
+    "ceo_equity_pct": 0.612,
+    "ceo_bonus_pct": 0.262,
+    "amounts_found": 26,
+    "parsing_confidence": "medium"
+  },
+  "STE": {
+    "ticker": "STE",
+    "status": "parse_failed",
+    "filing_date": "2019-06-05"
+  },
+  "STLD": {
+    "ticker": "STLD",
+    "status": "parse_failed",
+    "filing_date": "2022-03-21"
+  },
+  "STT": {
+    "ticker": "STT",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "STX": {
+    "ticker": "STX",
+    "status": "parse_failed",
+    "filing_date": "2011-09-26"
+  },
+  "STZ": {
+    "ticker": "STZ",
+    "status": "ok",
+    "filing_date": "2012-06-15",
+    "ceo_total_comp": 14618,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "SUN": {
+    "ticker": "SUN",
+    "status": "no_def14a",
+    "before_date": "2012-10-04"
+  },
+  "SUPN": {
+    "ticker": "SUPN",
+    "status": "ok",
+    "filing_date": "2014-04-07",
+    "ceo_total_comp": 2588289,
+    "ceo_salary": 462938,
+    "ceo_salary_pct": 0.179,
+    "ceo_equity_pct": 0.575,
+    "ceo_bonus_pct": 0.246,
+    "amounts_found": 28,
+    "parsing_confidence": "medium"
+  },
+  "SWK": {
+    "ticker": "SWK",
+    "status": "ok",
+    "filing_date": "2012-03-09",
+    "ceo_total_comp": 32730259,
+    "ceo_salary": 1250000,
+    "ceo_salary_pct": 0.038,
+    "ceo_equity_pct": 0.673,
+    "ceo_bonus_pct": 0.289,
+    "amounts_found": 92,
+    "parsing_confidence": "medium"
+  },
+  "SWKS": {
+    "ticker": "SWKS",
+    "status": "ok",
+    "filing_date": "2014-03-26",
+    "ceo_total_comp": 6009672,
+    "ceo_salary": 677846,
+    "ceo_salary_pct": 0.113,
+    "ceo_equity_pct": 0.621,
+    "ceo_bonus_pct": 0.266,
+    "amounts_found": 90,
+    "parsing_confidence": "medium"
+  },
+  "SYF": {
+    "ticker": "SYF",
+    "status": "parse_failed",
+    "filing_date": "2015-04-06"
+  },
+  "SYK": {
+    "ticker": "SYK",
+    "status": "parse_failed",
+    "filing_date": "2012-03-19"
+  },
+  "SYY": {
+    "ticker": "SYY",
+    "status": "ok",
+    "filing_date": "2012-10-04",
+    "ceo_total_comp": 77077,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "T": {
+    "ticker": "T",
+    "status": "parse_failed",
+    "filing_date": "2012-03-12"
+  },
+  "TAL": {
+    "ticker": "TAL",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "TALO": {
+    "ticker": "TALO",
+    "status": "parse_failed",
+    "filing_date": "2020-04-08"
+  },
+  "TAP": {
+    "ticker": "TAP",
+    "status": "ok",
+    "filing_date": "2012-04-18",
+    "ceo_total_comp": 155869260,
+    "ceo_salary": 2583694,
+    "ceo_salary_pct": 0.017,
+    "ceo_equity_pct": 0.688,
+    "ceo_bonus_pct": 0.295,
+    "amounts_found": 4,
+    "parsing_confidence": "medium"
+  },
+  "TCMD": {
+    "ticker": "TCMD",
+    "status": "ok",
+    "filing_date": "2017-03-24",
+    "ceo_total_comp": 1389659,
+    "ceo_salary": 390192,
+    "ceo_salary_pct": 0.281,
+    "ceo_equity_pct": 0.503,
+    "ceo_bonus_pct": 0.216,
+    "amounts_found": 22,
+    "parsing_confidence": "medium"
+  },
+  "TDC": {
+    "ticker": "TDC",
+    "status": "ok",
+    "filing_date": "2012-03-01",
+    "ceo_total_comp": 167351957,
+    "ceo_salary": 161143,
+    "ceo_salary_pct": 0.001,
+    "ceo_equity_pct": 0.699,
+    "ceo_bonus_pct": 0.3,
+    "amounts_found": 27,
+    "parsing_confidence": "medium"
+  },
+  "TDG": {
+    "ticker": "TDG",
+    "status": "ok",
+    "filing_date": "2016-01-21",
+    "ceo_total_comp": 77734,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "TDY": {
+    "ticker": "TDY",
+    "status": "parse_failed",
+    "filing_date": "2020-03-10"
+  },
+  "TECH": {
+    "ticker": "TECH",
+    "status": "parse_failed",
+    "filing_date": "2020-09-15"
+  },
+  "TEL": {
+    "ticker": "TEL",
+    "status": "parse_failed",
+    "filing_date": "2011-01-20"
+  },
+  "TER": {
+    "ticker": "TER",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "TFC": {
+    "ticker": "TFC",
+    "status": "parse_failed",
+    "filing_date": "2019-03-19"
+  },
+  "TFX": {
+    "ticker": "TFX",
+    "status": "parse_failed",
+    "filing_date": "2018-03-30"
+  },
+  "TGNA": {
+    "ticker": "TGNA",
+    "status": "parse_failed",
+    "filing_date": "2012-03-16"
+  },
+  "TGT": {
+    "ticker": "TGT",
+    "status": "ok",
+    "filing_date": "2012-04-30",
+    "ceo_total_comp": 61922482,
+    "ceo_salary": 488774,
+    "ceo_salary_pct": 0.008,
+    "ceo_equity_pct": 0.694,
+    "ceo_bonus_pct": 0.298,
+    "amounts_found": 20,
+    "parsing_confidence": "medium"
+  },
+  "THC": {
+    "ticker": "THC",
+    "status": "parse_failed",
+    "filing_date": "2012-03-30"
+  },
+  "TJX": {
+    "ticker": "TJX",
+    "status": "parse_failed",
+    "filing_date": "2012-04-27"
+  },
+  "TLYS": {
+    "ticker": "TLYS",
+    "status": "ok",
+    "filing_date": "2014-05-01",
+    "ceo_total_comp": 1083250,
+    "ceo_salary": 100000,
+    "ceo_salary_pct": 0.092,
+    "ceo_equity_pct": 0.636,
+    "ceo_bonus_pct": 0.272,
+    "amounts_found": 13,
+    "parsing_confidence": "medium"
+  },
+  "TM": {
+    "ticker": "TM",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "TMO": {
+    "ticker": "TMO",
+    "status": "parse_failed",
+    "filing_date": "2012-04-09"
+  },
+  "TMUS": {
+    "ticker": "TMUS",
+    "status": "parse_failed",
+    "filing_date": "2012-04-16"
+  },
+  "TPR": {
+    "ticker": "TPR",
+    "status": "parse_failed",
+    "filing_date": "2012-09-28"
+  },
+  "TREX": {
+    "ticker": "TREX",
+    "status": "parse_failed",
+    "filing_date": "2014-03-21"
+  },
+  "TRGP": {
+    "ticker": "TRGP",
+    "status": "ok",
+    "filing_date": "2022-03-31",
+    "ceo_total_comp": 14691940,
+    "ceo_salary": 875000,
+    "ceo_salary_pct": 0.06,
+    "ceo_equity_pct": 0.658,
+    "ceo_bonus_pct": 0.282,
+    "amounts_found": 75,
+    "parsing_confidence": "medium"
+  },
+  "TRIP": {
+    "ticker": "TRIP",
+    "status": "no_def14a",
+    "before_date": "2011-12-20"
+  },
+  "TRMB": {
+    "ticker": "TRMB",
+    "status": "ok",
+    "filing_date": "2020-04-15",
+    "ceo_total_comp": 36488951,
+    "ceo_salary": 771473,
+    "ceo_salary_pct": 0.021,
+    "ceo_equity_pct": 0.685,
+    "ceo_bonus_pct": 0.294,
+    "amounts_found": 33,
+    "parsing_confidence": "medium"
+  },
+  "TROW": {
+    "ticker": "TROW",
+    "status": "ok",
+    "filing_date": "2012-03-08",
+    "ceo_total_comp": 74144,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "TRV": {
+    "ticker": "TRV",
+    "status": "parse_failed",
+    "filing_date": "2012-04-10"
+  },
+  "TSCO": {
+    "ticker": "TSCO",
+    "status": "parse_failed",
+    "filing_date": "2013-03-20"
+  },
+  "TSLA": {
+    "ticker": "TSLA",
+    "status": "ok",
+    "filing_date": "2012-04-13",
+    "ceo_total_comp": 94304,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "TSM": {
+    "ticker": "TSM",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "TSN": {
+    "ticker": "TSN",
+    "status": "ok",
+    "filing_date": "2012-12-21",
+    "ceo_total_comp": 72762,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "TT": {
+    "ticker": "TT",
+    "status": "parse_failed",
+    "filing_date": "2021-04-23"
+  },
+  "TTE": {
+    "ticker": "TTE",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "TTWO": {
+    "ticker": "TTWO",
+    "status": "ok",
+    "filing_date": "2017-07-27",
+    "ceo_total_comp": 10003,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 10,
+    "parsing_confidence": "low"
+  },
+  "TWX": {
+    "ticker": "TWX",
+    "status": "no_cik"
+  },
+  "TXN": {
+    "ticker": "TXN",
+    "status": "parse_failed",
+    "filing_date": "2012-03-06"
+  },
+  "TXT": {
+    "ticker": "TXT",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "TYL": {
+    "ticker": "TYL",
+    "status": "ok",
+    "filing_date": "2020-04-01",
+    "ceo_total_comp": 39751343,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "UA": {
+    "ticker": "UA",
+    "status": "parse_failed",
+    "filing_date": "2016-03-11"
+  },
+  "UAA": {
+    "ticker": "UAA",
+    "status": "parse_failed",
+    "filing_date": "2014-03-21"
+  },
+  "UAL": {
+    "ticker": "UAL",
+    "status": "ok",
+    "filing_date": "2015-04-24",
+    "ceo_total_comp": 60606,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "UBSI": {
+    "ticker": "UBSI",
+    "status": "parse_failed",
+    "filing_date": "2014-04-01"
+  },
+  "UDR": {
+    "ticker": "UDR",
+    "status": "parse_failed",
+    "filing_date": "2012-04-04"
+  },
+  "UFPI": {
+    "ticker": "UFPI",
+    "status": "parse_failed",
+    "filing_date": "2014-03-07"
+  },
+  "UHS": {
+    "ticker": "UHS",
+    "status": "parse_failed",
+    "filing_date": "2014-04-09"
+  },
+  "UL": {
+    "ticker": "UL",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "ULTA": {
+    "ticker": "ULTA",
+    "status": "ok",
+    "filing_date": "2015-04-22",
+    "ceo_total_comp": 10246714,
+    "ceo_salary": 3127919,
+    "ceo_salary_pct": 0.305,
+    "ceo_equity_pct": 0.487,
+    "ceo_bonus_pct": 0.208,
+    "amounts_found": 12,
+    "parsing_confidence": "medium"
+  },
+  "UNH": {
+    "ticker": "UNH",
+    "status": "parse_failed",
+    "filing_date": "2012-04-25"
+  },
+  "UNM": {
+    "ticker": "UNM",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "UNP": {
+    "ticker": "UNP",
+    "status": "ok",
+    "filing_date": "2012-03-26",
+    "ceo_total_comp": 478746621,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "UPS": {
+    "ticker": "UPS",
+    "status": "ok",
+    "filing_date": "2012-03-12",
+    "ceo_total_comp": 12396000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "URBN": {
+    "ticker": "URBN",
+    "status": "ok",
+    "filing_date": "2009-04-01",
+    "ceo_total_comp": 5768000,
+    "ceo_salary": 1003846,
+    "ceo_salary_pct": 0.174,
+    "ceo_equity_pct": 0.578,
+    "ceo_bonus_pct": 0.248,
+    "amounts_found": 48,
+    "parsing_confidence": "medium"
+  },
+  "URI": {
+    "ticker": "URI",
+    "status": "parse_failed",
+    "filing_date": "2014-03-26"
+  },
+  "USB": {
+    "ticker": "USB",
+    "status": "parse_failed",
+    "filing_date": "2012-03-09"
+  },
+  "V": {
+    "ticker": "V",
+    "status": "ok",
+    "filing_date": "2012-12-17",
+    "ceo_total_comp": 6000000,
+    "ceo_salary": 2000000,
+    "ceo_salary_pct": 0.333,
+    "ceo_equity_pct": 0.467,
+    "ceo_bonus_pct": 0.2,
+    "amounts_found": 6,
+    "parsing_confidence": "medium"
+  },
+  "VALE": {
+    "ticker": "VALE",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "VFC": {
+    "ticker": "VFC",
+    "status": "parse_failed",
+    "filing_date": "2012-03-21"
+  },
+  "VIAV": {
+    "ticker": "VIAV",
+    "status": "parse_failed",
+    "filing_date": "2012-10-02"
+  },
+  "VICI": {
+    "ticker": "VICI",
+    "status": "parse_failed",
+    "filing_date": "2022-03-14"
+  },
+  "VLO": {
+    "ticker": "VLO",
+    "status": "parse_failed",
+    "filing_date": "2012-03-23"
+  },
+  "VMC": {
+    "ticker": "VMC",
+    "status": "ok",
+    "filing_date": "2011-03-31",
+    "ceo_total_comp": 2945443,
+    "ceo_salary": 186984,
+    "ceo_salary_pct": 0.063,
+    "ceo_equity_pct": 0.656,
+    "ceo_bonus_pct": 0.281,
+    "amounts_found": 21,
+    "parsing_confidence": "medium"
+  },
+  "VNET": {
+    "ticker": "VNET",
+    "status": "no_def14a",
+    "before_date": "2019-06-15"
+  },
+  "VNO": {
+    "ticker": "VNO",
+    "status": "ok",
+    "filing_date": "2012-04-13",
+    "ceo_total_comp": 5850036,
+    "ceo_salary": 1000000,
+    "ceo_salary_pct": 0.171,
+    "ceo_equity_pct": 0.58,
+    "ceo_bonus_pct": 0.249,
+    "amounts_found": 23,
+    "parsing_confidence": "medium"
+  },
+  "VNT": {
+    "ticker": "VNT",
+    "status": "no_def14a",
+    "before_date": "2020-10-12"
+  },
+  "VRSK": {
+    "ticker": "VRSK",
+    "status": "parse_failed",
+    "filing_date": "2015-04-02"
+  },
+  "VRSN": {
+    "ticker": "VRSN",
+    "status": "parse_failed",
+    "filing_date": "2012-04-10"
+  },
+  "VRTX": {
+    "ticker": "VRTX",
+    "status": "ok",
+    "filing_date": "2013-04-04",
+    "ceo_total_comp": 3300000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "VRX": {
+    "ticker": "VRX",
+    "status": "no_cik"
+  },
+  "VTR": {
+    "ticker": "VTR",
+    "status": "ok",
+    "filing_date": "2012-04-02",
+    "ceo_total_comp": 60654,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "VTRS": {
+    "ticker": "VTRS",
+    "status": "no_def14a",
+    "before_date": "2020-11-16"
+  },
+  "VZ": {
+    "ticker": "VZ",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "WAB": {
+    "ticker": "WAB",
+    "status": "parse_failed",
+    "filing_date": "2018-04-05"
+  },
+  "WAT": {
+    "ticker": "WAT",
+    "status": "ok",
+    "filing_date": "2012-03-30",
+    "ceo_total_comp": 467909000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "WBA": {
+    "ticker": "WBA",
+    "status": "no_cik"
+  },
+  "WCN": {
+    "ticker": "WCN",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "WDAY": {
+    "ticker": "WDAY",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "WDC": {
+    "ticker": "WDC",
+    "status": "parse_failed",
+    "filing_date": "2012-09-27"
+  },
+  "WDFC": {
+    "ticker": "WDFC",
+    "status": "ok",
+    "filing_date": "2013-10-31",
+    "ceo_total_comp": 720461,
+    "ceo_salary": 608249,
+    "ceo_salary_pct": 0.844,
+    "ceo_equity_pct": 0.109,
+    "ceo_bonus_pct": 0.047,
+    "amounts_found": 13,
+    "parsing_confidence": "medium"
+  },
+  "WEC": {
+    "ticker": "WEC",
+    "status": "ok",
+    "filing_date": "2012-03-26",
+    "ceo_total_comp": 11579228,
+    "ceo_salary": 1174168,
+    "ceo_salary_pct": 0.101,
+    "ceo_equity_pct": 0.629,
+    "ceo_bonus_pct": 0.27,
+    "amounts_found": 99,
+    "parsing_confidence": "medium"
+  },
+  "WELL": {
+    "ticker": "WELL",
+    "status": "ok",
+    "filing_date": "2012-03-29",
+    "ceo_total_comp": 150000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "WFC": {
+    "ticker": "WFC",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "WHR": {
+    "ticker": "WHR",
+    "status": "ok",
+    "filing_date": "2012-03-05",
+    "ceo_total_comp": 68000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 2,
+    "parsing_confidence": "low"
+  },
+  "WING": {
+    "ticker": "WING",
+    "status": "ok",
+    "filing_date": "2017-03-23",
+    "ceo_total_comp": 658000,
+    "ceo_salary": 585000,
+    "ceo_salary_pct": 0.889,
+    "ceo_equity_pct": 0.078,
+    "ceo_bonus_pct": 0.033,
+    "amounts_found": 5,
+    "parsing_confidence": "medium"
+  },
+  "WIT": {
+    "ticker": "WIT",
+    "status": "no_def14a",
+    "before_date": "2014-06-15"
+  },
+  "WM": {
+    "ticker": "WM",
+    "status": "parse_failed",
+    "filing_date": "2012-03-28"
+  },
+  "WMB": {
+    "ticker": "WMB",
+    "status": "parse_failed",
+    "filing_date": "2012-04-05"
+  },
+  "WMT": {
+    "ticker": "WMT",
+    "status": "parse_failed",
+    "filing_date": "2012-04-16"
+  },
+  "WRB": {
+    "ticker": "WRB",
+    "status": "parse_failed",
+    "filing_date": "2019-04-26"
+  },
+  "WSM": {
+    "ticker": "WSM",
+    "status": "ok",
+    "filing_date": "2012-04-06",
+    "ceo_total_comp": 13555412,
+    "ceo_salary": 1156731,
+    "ceo_salary_pct": 0.085,
+    "ceo_equity_pct": 0.641,
+    "ceo_bonus_pct": 0.274,
+    "amounts_found": 70,
+    "parsing_confidence": "medium"
+  },
+  "WST": {
+    "ticker": "WST",
+    "status": "ok",
+    "filing_date": "2021-03-24",
+    "ceo_total_comp": 10003,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "WTW": {
+    "ticker": "WTW",
+    "status": "ok",
+    "filing_date": "2021-03-24",
+    "ceo_total_comp": 46000,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "WU": {
+    "ticker": "WU",
+    "status": "ok",
+    "filing_date": "2012-04-10",
+    "ceo_total_comp": 80112,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 3,
+    "parsing_confidence": "low"
+  },
+  "WY": {
+    "ticker": "WY",
+    "status": "parse_failed",
+    "filing_date": "2012-02-23"
+  },
+  "WYNN": {
+    "ticker": "WYNN",
+    "status": "ok",
+    "filing_date": "2012-09-20",
+    "ceo_total_comp": 89109,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "XEL": {
+    "ticker": "XEL",
+    "status": "ok",
+    "filing_date": "2012-04-02",
+    "ceo_total_comp": 24575204,
+    "ceo_salary": 164250,
+    "ceo_salary_pct": 0.007,
+    "ceo_equity_pct": 0.695,
+    "ceo_bonus_pct": 0.298,
+    "amounts_found": 26,
+    "parsing_confidence": "medium"
+  },
+  "XOM": {
+    "ticker": "XOM",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "XPEL": {
+    "ticker": "XPEL",
+    "status": "ok",
+    "filing_date": "2020-04-17",
+    "ceo_total_comp": 78216,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "XRAY": {
+    "ticker": "XRAY",
+    "status": "parse_failed",
+    "filing_date": "2012-04-23"
+  },
+  "XRX": {
+    "ticker": "XRX",
+    "status": "no_def14a",
+    "before_date": "2013-01-02"
+  },
+  "XYL": {
+    "ticker": "XYL",
+    "status": "no_def14a",
+    "before_date": "2011-10-31"
+  },
+  "YETI": {
+    "ticker": "YETI",
+    "status": "parse_failed",
+    "filing_date": "2020-04-09"
+  },
+  "YUM": {
+    "ticker": "YUM",
+    "status": "ok",
+    "filing_date": "2012-04-06",
+    "ceo_total_comp": 40213,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "ZBH": {
+    "ticker": "ZBH",
+    "status": "ok",
+    "filing_date": "2012-03-23",
+    "ceo_total_comp": 177197774,
+    "ceo_salary": null,
+    "ceo_salary_pct": null,
+    "ceo_equity_pct": null,
+    "ceo_bonus_pct": null,
+    "amounts_found": 1,
+    "parsing_confidence": "low"
+  },
+  "ZBRA": {
+    "ticker": "ZBRA",
+    "status": "ok",
+    "filing_date": "2019-04-05",
+    "ceo_total_comp": 9496092,
+    "ceo_salary": 988462,
+    "ceo_salary_pct": 0.104,
+    "ceo_equity_pct": 0.627,
+    "ceo_bonus_pct": 0.269,
+    "amounts_found": 83,
+    "parsing_confidence": "medium"
+  },
+  "ZION": {
+    "ticker": "ZION",
+    "status": "parse_failed",
+    "filing_date": "2012-04-12"
+  },
+  "ZTS": {
+    "ticker": "ZTS",
+    "status": "no_def14a",
+    "before_date": "2013-06-24"
+  }
+}
