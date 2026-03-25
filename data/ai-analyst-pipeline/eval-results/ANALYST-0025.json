@@ -1,0 +1,153 @@
+{
+  "blindId": "ANALYST-0025",
+  "job1": {
+    "total_commitments_tracked": 6,
+    "commitments_delivered": 5,
+    "commitments_missed": 1,
+    "credibility_score": 0.83,
+    "language_shifts": [
+      {
+        "quarter": "Q2",
+        "shift": "Introduced 'principally building semiconductor products to order' as a de-risking commitment; language weakened to 'largely' from Q3 onward, suggesting incomplete discipline without explanation"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "'reducing semiconductor inventory in our distribution channels' dropped from operational narrative; inventory reduction goal quietly retired without confirmation of completion"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Cybersecurity product description rebranded, removing original Symantec-era scope language ('data loss prevention, endpoint protection') in favor of generic 'endpoint, network, information and identity security solutions'"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Build-to-order discipline language ('we are largely building semiconductor products to order, instead of based on customer forecasts') dropped entirely while supply constraints remained; stated operational posture abandoned without acknowledgment"
+      }
+    ],
+    "red_flags": [
+      "Symantec integration commitment ('expand our footprint of mission critical infrastructure software with our existing customer base') never quantified or validated with performance data across six quarters",
+      "Inventory reduction in distribution channels stated in Q2-Q3 quietly dropped from Q4 onward with no confirmation of completion",
+      "Build-to-order posture weakened progressively ('principally' -> 'largely' -> omitted) while supply constraints persisted, signaling gradual retreat from stated commitment",
+      "Q1 Symantec rationale referencing specific product categories (advanced threat protection, information protection across endpoints, network, email and cloud applications) never followed with integration progress metrics in subsequent quarters"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 45,
+    "prior_risk_count": 44,
+    "new_risks": [
+      {
+        "risk": "Stock repurchase frequency and amount volatility",
+        "key_phrase": "The amount and frequency of our stock repurchases may fluctuate.",
+        "severity": "low"
+      },
+      {
+        "risk": "Vaccine mandates as governmental measure disrupting workforce and operations",
+        "key_phrase": "factory and office shutdowns and vaccine mandates. These measures have impacted, and will likely continue to impact our workforce and operations",
+        "severity": "medium"
+      },
+      {
+        "risk": "Water shortages as manufacturing disruption trigger",
+        "key_phrase": "as a result of a natural disaster, climate change, water shortages, political unrest, military conflicts",
+        "severity": "medium"
+      },
+      {
+        "risk": "TSMC government-compelled capacity reallocation to other customers",
+        "key_phrase": "TSMC also fabricates wafers for other companies, including certain of our competitors, and could choose or be required to prioritize capacity for other customers",
+        "severity": "high"
+      },
+      {
+        "risk": "Government orders as explicit supply chain disruption trigger (added alongside trade tensions and military conflicts)",
+        "key_phrase": "political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, medical epidemics",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "COVID-19 supply chain disruption language escalated from macro framing to concrete operational specifics",
+        "prior_language": "The ongoing COVID-19 pandemic has, and will likely continue to, negatively impact the global economy and disrupt normal business activity",
+        "current_language": "We have been, and expect to continue, experiencing some disruption to parts of our global semiconductor supply chain, including procuring necessary components and inputs, such as wafers and substrates, in a timely fashion, with suppliers increasing lead times or placing products on allocation and raising prices"
+      },
+      {
+        "risk": "Regulatory compliance penalty scope expanded to include administrative proceedings",
+        "prior_language": "we may be forced to cease manufacture and distribution of certain products or subjected to civil or criminal penalties",
+        "current_language": "we may be forced to cease manufacture and distribution of certain products or subjected to administrative proceedings and civil or criminal penalties"
+      },
+      {
+        "risk": "Social and environmental responsibility risk broadened to include investor demands",
+        "prior_language": "Social and environmental responsibility regulations, policies and provisions, as well as customer demand, may make our supply chain more complex and may adversely affect our relationships with customers.",
+        "current_language": "Social and environmental responsibility regulations, policies and provisions, as well as customer and investor demands, may make our supply chain more complex and may adversely affect our relationships with customers and investors."
+      },
+      {
+        "risk": "Tax position re-framed from benefit to expense, reflecting shift from net tax benefit to net tax cost",
+        "prior_language": "Our benefit from income taxes and overall cash tax costs are affected by a number of factors that could materially, adversely affect financial results.",
+        "current_language": "Our income taxes and overall cash tax costs are affected by a number of factors that could materially, adversely affect financial results."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Anti-competition litigation and regulatory investigations as named categories in legal proceedings risk",
+        "likely_reason": "resolved"
+      },
+      {
+        "risk": "Huawei / U.S. export restriction-driven TSMC wafer allocation dislocation (named example of TSMC capacity risk)",
+        "likely_reason": "materialized"
+      },
+      {
+        "risk": "COVID-19 long-term global economic downturn and recession scenario",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "stable"
+  },
+  "job3": {
+    "contradictions": [],
+    "corroborations": [
+      {
+        "claim": "Robust semiconductor demand driven by remote work infrastructure, data center, and connectivity investment",
+        "evidence": "Competitor A filing (filed 2021-10-29) references comparable infrastructure and connectivity demand tailwinds consistent with the target's characterization of 'continued demand for products and infrastructure to support a dramatic increase around the world in remote or tele-work and learning due to COVID-19'"
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "Inventory reduction in distribution channels (explicit Q2-Q3, absent Q4-Q6 without resolution noted)",
+      "Build-to-order discipline as stated operational posture (Q2-Q5, dropped Q6 while constraints persisted)",
+      "CA, Inc. named entity in segment description (Q1 only, removed Q2 after organizational rebranding)",
+      "Data loss prevention as named cybersecurity capability (Q1-Q3, replaced by generic category language from Q4)"
+    ],
+    "confidence_trend": "stable",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "stable",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Pre-COVID period; no supply chain caveats; Symantec acquisition framed with concrete strategic rationale: 'expand our footprint of mission critical infrastructure software with our existing customer base'; no hedging on demand environment"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "COVID-19 Update section introduced with specific operational commitments: 'principally building semiconductor products to order' and 'reducing semiconductor inventory in our distribution channels'; recurring hedge phrase 'environment remains uncertain and it may not be sustainable over the longer term' introduced and repeated every subsequent quarter verbatim"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "'principally' softened to 'largely' in build-to-order commitment; assembly and test disruptions described as 'largely resolved'; phased return to facilities described as 'currently implementing'; supply constraints acknowledged as ongoing but tone modestly more optimistic"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Segment description rebranded with BizOps language replacing CA-era and Symantec-era nomenclature; COVID Update section becomes largely boilerplate with no situational differentiation; active debt refinancing language replaced with generic 'closely managing working capital and our debt instruments'"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "First constructive supply signal introduced: 'supply lead times have stabilized'; note repurchases highlighted; forward-looking language remains fully hedged with no outlook quantification; tone modestly more confident without commitment to sustained improvement"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Build-to-order operational commitment dropped entirely; remote work described as affecting 'some of our employees' vs earlier quarters' 'most' or 'many' (implicit improvement without explicit acknowledgment); 'supply lead times have stabilized' repeated verbatim from Q5; de-risk section reduced to a single vague sentence without any operational specifics"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T00:00:00Z"
+}

@@ -1,0 +1,79 @@
+{
+  "blindId": "ANALYST-0010",
+  "job1": {
+    "total_commitments_tracked": 4,
+    "commitments_delivered": 2,
+    "commitments_missed": 2,
+    "credibility_score": 0.50,
+    "language_shifts": [
+      {
+        "quarter": "Q3",
+        "shift": "Introduction of extensive wildfire liability language with 'materially adversely affected' wording — more alarming than earlier boilerplate; specific causal uncertainty emphasized ('It is uncertain when the investigations will be complete and whether Cal Fire will release preliminary findings before its investigation is complete')"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Shift from 'materially adversely affected' (Q3) to 'materially affected' (Q4 onward) — subtle softening of wildfire risk language despite actual liability growing; Tax Act forward guidance introduces specific dollar figures but immediately hedged with 'The Utility is unable to predict the timing and outcome of the CPUC decisions in connection with these submittals'"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Butte fire disappears as standalone discussion topic; non-GAAP measure rebranded from 'Earnings from Operations' to 'Non-GAAP Earnings from Operations' without explanation; management continues repeating Tax Act guidance numbers ($325M, $125M) across three quarters without confirming CPUC approval; GAAP loss of -$984M masked by non-GAAP framing"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "New affirmative 'Community Wildfire Safety Program' narrative added — management shifts from reactive wildfire disclosure to proactive safety initiative framing; Cal Fire determinations now explicitly allege 'each of these fires involved the Utility's equipment' — escalation in disclosed legal exposure not previously acknowledged so directly, yet embedded in boilerplate overview"
+      }
+    ],
+    "red_flags": [
+      "GAAP net loss of -$984M in Q2 2018 (Q5) obscured behind non-GAAP rebranding; measure renamed 'Non-GAAP Earnings from Operations' in Q5/Q6 without explanation — metric change coincides with worst quarterly GAAP result",
+      "Tax Act revenue reduction guidance ($325M annual reduction) repeated verbatim across Q4, Q5, Q6 but consistently qualified with 'unable to predict timing and outcome of CPUC decisions' — three consecutive quarters of unresolved forward guidance with no confirmation of delivery",
+      "Wildfire liability language progressively de-alarmed: 'materially adversely affected' (Q3) downgraded to 'materially affected' (Q4-Q6) even as Cal Fire expanded determinations from 0 to 17 fires attributing Utility equipment",
+      "Diablo Canyon retirement proposal topic dropped entirely after Q2 — no further disclosure of CPUC joint proposal status in Q3 through Q6",
+      "TO19 rate base increase commitment (~$100M) partially underdelivered: TO19 settlement (Q6) yields only $59M rate base increase with a corresponding $131M revenue requirement reduction; remainder of commitments still pending CPUC decisions as of Q6 filing"
+    ]
+  },
+  "job2": null,
+  "job3": {
+    "contradictions": [],
+    "corroborations": [
+      {
+        "claim": "Revenue requirements based on forecast costs, with differences between forecast and actual costs affecting earnings — standard regulated utility earnings model consistent across both companies",
+        "evidence": "Ameren (Competitor A): 'Ameren evaluates competitive electric transmission investment opportunities as they arise' — both companies operate under similar regulated utility frameworks where authorized returns and rate cases drive earnings, consistent with target's description of CPUC/FERC rate-setting where 'differences between forecast costs and actual costs can occur for numerous reasons, including the volume of work required and the impact of market forces on the cost of labor and materials'"
+      }
+    ],
+    "target_language_quality": "vague",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Diablo Canyon Power Plant retirement proposal (discussed Q2, absent Q3-Q6)",
+      "Butte fire as standalone litigation and cost topic (prominent line item Q1-Q2, reduced to geographic county name reference Q3-Q6)",
+      "GT&S revenue timing impact (resolved after 2017, no longer discussed as forward item in 2018 quarters)",
+      "Ex parte communication settlement and CPUC OII investigation (prominent Q1-Q2, absent Q3-Q6)"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q3",
+        "observation": "Wildfire disclosure abruptly introduced with unprecedented open-ended uncertainty language: 'It is uncertain when the investigations will be complete and whether Cal Fire will release preliminary findings before its investigation is complete' — first use of unresolved investigative contingency framing; prior quarters contained no analogous open-ended uncertainty statements; 'could be materially adversely affected' language added"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Tax Act forward guidance adds specific dollar figures ($325M, $125M, $271M, $613M) but each is immediately qualified with 'The Utility is unable to predict the timing and outcome of the CPUC decisions in connection with these submittals' — creates structural appearance of specificity without actual commitment; wildfire language softened from 'materially adversely affected' to 'materially affected'"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Non-GAAP measure rebranded to 'Non-GAAP Earnings from Operations' (vs plain 'Earnings from Operations' in Q1-Q4) simultaneously with GAAP loss of -$984M; narrative architecture centers non-GAAP figure of $601M; 'additional potential losses' phrase added to wildfire disclosure — signals open-ended rather than bounded liability exposure"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "New proactive 'Community Wildfire Safety Program' section introduced — management adopts solution-oriented language ('is implementing a comprehensive community wildfire safety program,' 'focuses on three areas: enhancing the Utility's situational awareness, monitoring potential fire threats across the Utility's service area in real time') while simultaneously hedging frequency increases (two instances of 'subject to,' two of 'uncertain'); Cal Fire explicitly alleges Utility equipment involvement in 17 fires but disclosure is embedded in boilerplate overview rather than foregrounded as material escalation"
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00.000000+00:00"
+}

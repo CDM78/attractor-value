@@ -1,0 +1,142 @@
+{
+  "blindId": "ANALYST-0014",
+  "job1": {
+    "total_commitments_tracked": 8,
+    "commitments_delivered": 2,
+    "commitments_missed": 6,
+    "credibility_score": 0.25,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Specific volume guidance 'flat compared to 2016' with confidence; raw material headwind stated as 'offset by improvements in price and product mix'"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "Volume guidance slashed to 'down approximately 3.5%'; 'offset' language abandoned — 'we now expect those higher raw material costs to exceed improvements in price and product mix by approximately $175 million'; overhead headwind nearly doubled from $85M to $155M"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Volume guidance cut again to 'down approximately 5%'; price/mix shortfall vs raw materials widened to 'approximately $300 million'; language becomes increasingly passive ('continued to experience challenging')"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Fresh 2018 guidance issued with optimistic framing around TireHub JV; overhead absorption reframed as 'better' rather than 'higher headwind'; positive FX tailwind projected (+$40M) reversing prior year drag"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "2018 volume guidance trimmed from '+2%' to '+1% to 1.5%'; overhead improvement cut from $55M to $45M; China singled out with 'softening market conditions' as reason for downgrades"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Volume guidance cut again to '+1%'; overhead improvement reduced to $30M; raw material headwind escalated to +$270M; FX now a headwind (-$30M); language escalates to 'deteriorating market conditions in China' and 'growing economic volatility in Latin America, particularly in Brazil'"
+      }
+    ],
+    "red_flags": [
+      "Full-year 2017 tire unit volume guidance deteriorated every single quarter — from 'flat' (Q1) to '-3.5%' (Q2) to '-5%' (Q3), indicating systematic demand overestimation",
+      "Raw material cost guidance committed as 'offset by price/mix' in Q1 was abandoned by Q2, widening to a $175M net headwind by Q2 and $300M by Q3 — a $300M swing from the initial commitment",
+      "Overhead absorption guidance deteriorated continuously: initial Q1 2017 estimate of $85M headwind rose to $155M (Q2) then $145M (Q3) before management declared it resolved for 2018",
+      "2018 guidance cycle repeated the same pattern: volume, overhead improvement, and cost savings estimates were all revised downward in Q5 and Q6 after being set optimistically in Q4",
+      "Cost savings pledge ('cost savings to more than offset general inflation') was consistently maintained in boilerplate form even as operating results deteriorated, suggesting this was a defensive talking point rather than a tracked commitment",
+      "FX guidance flipped from '-$30M' (Q1 2017) to 'essentially neutral' (Q2) to '+$10M' (Q3) for 2017; then guided '+$40M' for 2018 (Q4) before turning to '-$30M' by Q6 2018 — showing poor FX forecasting reliability"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 14,
+    "prior_risk_count": 11,
+    "new_risks": [
+      {
+        "risk": "TireHub distribution joint venture execution risk",
+        "key_phrase": "in 2018, we formed TireHub, a new national tire distributor in the United States, which is expected to provide a superior, fully integrated distribution, warehousing, sales and delivery solution for our dealers",
+        "severity": "medium"
+      },
+      {
+        "risk": "Tariffs expanded to include 'other goods' beyond tires, with supply chain and retaliatory tariff risk",
+        "key_phrase": "We could be negatively impacted by the imposition of tariffs on imported tires and other goods. Broad-based tariffs and other trade restrictions could also increase costs for our suppliers who may increase prices to us.",
+        "severity": "high"
+      },
+      {
+        "risk": "GDPR / data privacy regulation named explicitly as compliance risk",
+        "key_phrase": "data privacy laws such as the European Union's General Data Protection Regulation",
+        "severity": "medium"
+      },
+      {
+        "risk": "Financial difficulties of major customers, dealers or suppliers newly identified as standalone risk",
+        "key_phrase": "Financial difficulties, work stoppages, supply disruptions or economic conditions affecting our major customers, dealers or suppliers could harm our business. We experienced challenging global industry conditions in 2018, particularly in Americas and Asia Pacific.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Capital expenditure adequacy and timely implementation risk added as standalone risk factor",
+        "key_phrase": "Our capital expenditures may not be adequate to maintain our competitive position and may not be implemented in a timely or cost-effective manner.",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Challenging industry conditions — moved from hypothetical future risk to stated present-tense experience",
+        "prior_language": "We experienced challenging global industry conditions in 2017, and our business was impacted by trends that negatively affected the tire industry in general. These negative trends include higher raw material costs, increased competition and weak demand in many of our key markets despite favorable trends in miles driven, gasoline prices and unemployment.",
+        "current_language": "We continued to experience challenging global industry conditions in 2018, and our business was impacted by trends that negatively affected the tire industry in general. These negative trends include higher raw material costs, foreign currency headwinds due to a strong U.S. dollar, and volatility in emerging markets, including softening industry conditions in China."
+      },
+      {
+        "risk": "Tariff risk scope escalated from tires-only to broader goods and supply chain",
+        "prior_language": "We could be negatively impacted by the imposition of tariffs on imported tires.",
+        "current_language": "We could be negatively impacted by the imposition of tariffs on imported tires and other goods. Broad-based tariffs and other trade restrictions could also increase costs for our suppliers who may increase prices to us. Finally, tariffs and other trade restrictions may weaken the economies of key markets for us, such as China, resulting in lower economic growth rates and weakened demand for our products and services."
+      },
+      {
+        "risk": "Competitive pressure from EV/autonomous vehicles — risk to demand and product range escalated with added 'ride sharing' and changing consumer preference language",
+        "prior_language": "If we do not accurately predict, prepare for and respond to market developments, technological innovations and changing customer and consumer needs, our results of operations and financial condition could be materially adversely affected.",
+        "current_language": "If we do not accurately predict, prepare for and respond to market developments, technological innovations and changing customer and consumer needs and preferences, our results of operations and financial condition could be materially adversely affected."
+      },
+      {
+        "risk": "Foreign currency translation risk — moved from theoretical to quantified, actual 2018 impact disclosed",
+        "prior_language": "The volatility of currency exchange rates may materially adversely affect our operating results.",
+        "current_language": "For the year ended December 31, 2018, foreign currency translation unfavorably affected sales by $139 million and unfavorably affected segment operating income by $31 million compared to the year ended December 31, 2017."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Venezuela currency exchange controls and operating restrictions",
+        "likely_reason": "materialized — Venezuelan subsidiary was already deconsolidated (cost method adopted December 31, 2015); by 2019 filing the Venezuela situation is no longer a forward-looking risk to disclose"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Brazil economic recovery — Q1 2017 mentioned 'signs of economic recovery in Brazil' as a positive; by Q6 the language shifted to 'growing economic volatility in Latin America, particularly in Brazil'",
+      "USW labor contract stability — Q3 2017 highlighted new five-year USW agreement providing 'increased stability'; no further mention in Q4-Q6 as it became boilerplate background"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Guidance is quantified and specific: volume 'flat', overhead $85M headwind, FX '-$30M', raw material costs '+20%', all offset by price/mix. Language is assertive — 'we continue to expect those higher raw material costs to be offset by improvements in price and product mix.'"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "All major guidance items revised negatively. The confident 'offset' commitment abandoned; replaced by 'we now expect those higher raw material costs to exceed improvements in price and product mix by approximately $175 million.' The qualifier 'now' appears repeatedly — a linguistic marker of reactive course correction. Descriptor escalates from 'volatile' (Q1) to 'challenging' with added 'increased price competition.'"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Volume guidance cut a third time. Raw material net headwind widens to $300M. Outlook section grows shorter — less quantified forward color is provided compared to Q1 and Q2, marking a retreat toward vaguer language as conditions worsen. 'Challenging' appears again; Brazil recovery language disappears."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "New 2018 guidance cycle with positive reset framing around TireHub JV announcement. Language becomes more specific again (nine 'approximately' quantifiers in the Outlook vs. two in Q3). Strategic narrative shifts to distribution innovation; management confidence language rises: 'expected to provide enhanced fill rates,' 'expected to have the scale to reach the vast majority.'"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "2018 guidance trimmed within one quarter of being set. Phrase 'both of which were reduced from our prior outlook' signals management acknowledging the downgrade openly. Language introduces 'softening market conditions in China' as a named external factor — a hedging device to attribute misses to macro, not execution. Q5 Outlook section appears truncated, providing less forward color than prior quarters."
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Language escalates to present-tense negatives: 'deteriorating market conditions in China' and 'growing economic volatility in Latin America, particularly in Brazil.' 'Challenging macro-economic industry conditions have persisted' uses the present-perfect tense, implying entrenched difficulty. FX guidance swings from +$40M headwind (Q4) to -$30M drag. The phrase 'macro-economic' appears for the first time — a distancing mechanism attributing conditions to systemic forces beyond management control."
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00.000Z"
+}

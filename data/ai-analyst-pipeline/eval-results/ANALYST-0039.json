@@ -1,0 +1,148 @@
+{
+  "blindId": "ANALYST-0039",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 3,
+    "commitments_missed": 1,
+    "credibility_score": 0.75,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Q1 (2017-05-08) contains a dedicated REIT Conversion section discussing NOL utilization (~$1.1B as of December 31, 2016), REIT distribution requirements, and dividend timing factors. This entire section is dropped from Q2 onward with no explanation, suggesting the topic was de-emphasized once the REIT election was completed."
+      },
+      {
+        "quarter": "Q2",
+        "shift": "Q2 (2017-08-04) introduces forward guidance for the first time: organic site leasing revenue growth in both domestic and international segments to be consistent with our growth in 2016. This is a vague benchmark anchored to prior-year results rather than a specific percentage target."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Q3 (2017-11-07) maintains the same guidance but adds a trailing qualifier -- consistent with our growth in 2016 and the nine months ended September 30, 2017 -- a hedge that widens the acceptable outcome range as the year progresses without acknowledging a potential shortfall."
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Q4 (2018-05-07) upgrades guidance from consistent with to increase over 2017 levels and adds a specific causal factor (wireless carriers deploying unused spectrum and spectrum acquired during auctions completed in 2017). The phrase in terms of revenue added per tower is also inserted, subtly shifting the metric from total revenue to per-tower revenue -- a narrower measure easier to satisfy."
+      },
+      {
+        "quarter": "Q5-Q6",
+        "shift": "Q5 (2018-08-06) and Q6 (2018-11-08) repeat Q4 guidance verbatim including the spectrum auction rationale. Total site leasing segment profit share dips to 97.9% in the nine months ended September 30, 2018 (versus 98.7% throughout 2017) and international segment operating profit share falls from 17.1% (Q3 2017) to 16.1% (Q6 2018). Management does not acknowledge or explain this margin softening."
+      }
+    ],
+    "red_flags": [
+      "Commitment to organic growth consistent with 2016 in Q2-Q3 2017 is an unverifiable benchmark -- the prior-year growth rate is not quantified in the MD&A text, making it impossible for investors to assess whether the commitment was met.",
+      "The metric used for guidance silently shifts from organic site leasing revenue growth (Q2-Q3 2017) to organic site leasing revenue, in terms of revenue added per tower (Q4-Q6 2018) -- a narrower, more favorable metric with no explanation provided.",
+      "Total site leasing segment profit share declines from a consistent 98.6%-98.7% throughout 2017 to 97.9% in the nine months ended September 30, 2018 -- a deterioration management does not acknowledge in the visible filing text.",
+      "International segment operating profit share drops from 17.1% (Q3 2017) to 16.1% (Q6 2018), suggesting mounting pressure in international markets despite continued geographic expansion into Argentina and Peru.",
+      "The Q1 NOL reference (~$1.1B as of December 31, 2016) and REIT distribution requirements discussion disappear entirely from Q2 onward, removing investor transparency around a significant tax asset and progress toward its utilization."
+    ]
+  },
+  "job2": {
+    "current_risk_count": 12,
+    "prior_risk_count": 14,
+    "new_risks": [
+      {
+        "risk": "Expansion into Argentina and Peru introduces new currency and regulatory exposure in jurisdictions with historically volatile macroeconomic environments",
+        "key_phrase": "In Argentina and Peru, our revenue, expenses, and capital expenditures, including tenant leases, ground leases, and other tower-related expenses are denominated in a mix of local currency and U.S. dollars",
+        "severity": "medium"
+      },
+      {
+        "risk": "Capital available for acquisitions now described as a portion of operating cash rather than the full amount, signaling tighter balance sheet discipline or emerging leverage constraints",
+        "key_phrase": "We intend to use a portion of our available cash from operating activities and available liquidity, including borrowings, to build and/or acquire new towers",
+        "severity": "low"
+      },
+      {
+        "risk": "FirstNet government contract creates new dependency on a single government-sponsored program, introducing regulatory and political risk not present in prior year",
+        "key_phrase": "a new network for first responders that is being developed by AT&T for the First Responder Network Authority (FirstNet), an independent authority within the Department of Commerce, are expected to contribute to growth in the upcoming years",
+        "severity": "low"
+      },
+      {
+        "risk": "Average tenants per tower declined from 1.8 (December 31, 2016) to 1.7 (December 31, 2017), suggesting reduced tower utilization density which may indicate competitive pressure or slower-than-expected lease-up",
+        "key_phrase": "As of December 31, 2017, we had an average of 1.7 tenants per tower structure",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "International currency exposure widened materially -- Colombia added to the list of local-currency-denominated markets, and Argentina and Peru added as mixed-currency markets, increasing total FX risk across the portfolio",
+        "prior_language": "In Brazil, Canada, Chile, significantly all of our revenue, expenses, and capital expenditures, including tenant leases, ground leases, and other tower-related expenses are denominated in local currency",
+        "current_language": "In Brazil, Canada, Chile, and Colombia, significantly all of our revenue, expenses, and capital expenditures, including tenant leases, ground leases, and other tower-related expenses are denominated in local currency"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "REIT conversion risk -- prior year filing discussed REIT election intent, pending merger with predecessor, and execution risks associated with the conversion process",
+        "likely_reason": "resolved -- REIT election was completed for taxable year 2016 and merger with predecessor closed January 13, 2017"
+      },
+      {
+        "risk": "NOL utilization uncertainty -- prior year discussed approximately $1.1B federal NOL balance and its effect on required shareholder distributions under REIT rules",
+        "likely_reason": "resolved -- REIT conversion completed; NOL discussion moved to routine tax disclosures and is no longer elevated as a risk-factor-level item in the current filing"
+      }
+    ],
+    "overall_trajectory": "stable"
+  },
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "We are a leading independent owner and operator of wireless communications infrastructure",
+        "competitor_claim": "We are one of the largest global REITs and a leading independent owner, operator and developer of multitenant communications real estate",
+        "competitor": "A"
+      },
+      {
+        "target_claim": "we have historically experienced low tenant lease terminations as a percentage of revenue other than in connection with customer consolidation or cessations of a specific technology",
+        "competitor_claim": "We do anticipate an increase in revenue lost from cancellations or non-renewals in 2018 primarily due to carrier consolidation-driven churn in Asia, which is likely to result in a modestly higher impact on our revenues, including tenant billings, as compared to the historical average",
+        "competitor": "A"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Long-term non-cancellable lease structure with built-in rent escalators provides stable, recurring revenue",
+        "evidence": "In most of our markets, our tenant leases with wireless carriers have an initial non-cancellable term of at least ten years, with multiple renewal terms. Accordingly, the vast majority of the revenue generated by our property operations during the year ended December 31, 2017 was recurring revenue that we should continue to receive in future periods"
+      },
+      {
+        "claim": "Wireless data traffic growth and ongoing network investment will continue driving tower leasing demand from wireless service providers",
+        "evidence": "We continue to believe that our site leasing revenue is likely to increase due to the growing use of wireless services globally and our ability to meet the corresponding incremental demand for our communications real estate"
+      },
+      {
+        "claim": "Organic lease-up on existing towers generates consistent and predictable revenue growth",
+        "evidence": "Our site portfolio and our established tenant base provide us with new business opportunities, which have historically resulted in consistent and predictable organic revenue growth as wireless carriers seek to increase the coverage and capacity of their existing networks, while also deploying next generation wireless technologies"
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "stable",
+    "confidence": "medium"
+  },
+  "job4": {
+    "guidance_trend": "more_specific",
+    "hedging_trend": "decreasing",
+    "topics_dropped": [
+      "REIT Conversion -- entire section present in Q1 (2017-05-08) describing REIT election, NOL balance (~$1.1B as of December 31, 2016), and dividend distribution requirements; dropped entirely from Q2 onward without explanation",
+      "NOL utilization -- Q1 explicitly references the ~$1.1B federal NOL balance and its effect on required shareholder distributions; no further mention across Q2 through Q6",
+      "REIT taxable income distribution requirements -- Q1 states we will generally be required to distribute at least 90% of our REIT taxable income; this compliance language is absent from all subsequent quarters"
+    ],
+    "confidence_trend": "increasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "improving",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Highest hedging density -- Q1 contains extensive REIT-related conditional language: will generally be required, we may also be subject to, and may be reduced or eliminated. Three instances of subject to versus one in each subsequent quarter. The REIT Conversion section introduces future uncertainty absent in all later filings."
+      },
+      {
+        "quarter": "Q2",
+        "observation": "REIT section eliminated; forward guidance introduced for the first time with a vague benchmark -- consistent with our growth in 2016. The phrase site leasing business is characterized by stable and long-term recurring revenues, predictable operating costs establishes a positive confidence frame that persists through Q3."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Guidance trailing qualifier added: consistent with our growth in 2016 and the nine months ended September 30, 2017. This expands the acceptable benchmark range as the year matures, a mild softening of the original commitment without acknowledging a potential shortfall."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Language shifts to more assertive framing -- the Q2-Q3 phrase site leasing business is characterized by is replaced with site leasing business continues to be attractive due to its long-term contracts, built-in rent escalators, high operating margins. Guidance upgrades from consistent with to increase over 2017 levels and introduces a named causal catalyst: wireless carriers deploying unused spectrum and spectrum acquired during auctions completed in 2017."
+      },
+      {
+        "quarter": "Q5-Q6",
+        "observation": "Guidance and confidence framing repeated verbatim across both quarters, signaling a stable management narrative. However, total site leasing segment profit share falls to 97.9% in the Q6 nine-month period versus 98.7% in Q3 2017, and international segment operating profit share declines from 17.1% (Q3 2017) to 16.1% (Q6 2018) -- underlying margin softening not reflected in management communication style."
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

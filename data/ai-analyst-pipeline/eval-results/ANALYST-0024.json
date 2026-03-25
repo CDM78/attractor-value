@@ -1,0 +1,146 @@
+{
+  "blindId": "ANALYST-0024",
+  "job1": {
+    "total_commitments_tracked": 7,
+    "commitments_delivered": 3,
+    "commitments_missed": 4,
+    "credibility_score": 0.43,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Specific revenue growth narrative for GBS ('increase of 8.8%') and acknowledgment of ongoing GIS decline ('ongoing decline in our traditional application maintenance business and legacy infrastructure services') — candid but not forward-looking"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "COVID-19 introduced as explicit revenue headwind driver ('terminations, price-downs, and demand weakness related to the COVID-19 pandemic'); HHS sale commitment re-stated with specific close timeline ('expected to close by September 2020, but no later than December 2020')"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Revenue decline language softened to attribute causes to 'prior terminations and price-downs' rather than new deterioration; management adds 'customer settlements that were actioned in the quarter' — framing cleanup activity as progress"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Disposition gain ($882M cumulative items) used to show headline net income positive ($1,103M); organic revenue decline continues at -14.6% but language focuses on 'cost optimization realized in the current year' as primary positive story"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Shift to 'pass-through revenue' growth as partial offset narrative; contract awards declined from $3.5B to $2.4B in GBS Q1 FY2022 vs Q1 FY2021 — specific metric quietly moved backward; cash from operations turned negative ($-29M vs $+119M)"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Persistent use of disposition-driven comparisons to obscure organic decline; GBS revenue down 16.5% YoY with no updated forward guidance on stabilization timeline; 'increasing' pass-through revenue framing replaces earlier growth commitments"
+      }
+    ],
+    "red_flags": [
+      "Revenue stabilization commitment made repeatedly across Q2-Q4 FY2021 but never defined with a specific timeline or quantitative target; organic decline continued through Q6 (FY2022 Q2) at double-digit rates",
+      "GBS contract awards declined from $3.5B (Q1 FY2021) to $2.4B (Q1 FY2022) — a 31% drop — while management language around bookings remained generally positive",
+      "Cash from operations deteriorated sharply: $2,062M (9mo FY2020) vs $404M (9mo FY2021), and turned negative in Q1 FY2022 (-$29M); management did not flag this trend in forward-looking commentary",
+      "HHS sale close timeline was met (closed Q3 FY2021 as committed), but proceeds were used primarily for debt repayment and buybacks rather than reinvestment into organic growth as implied by 'strengthen balance sheet' language",
+      "Workforce reduction from ~138,000 (FY2020) to ~134,000 (FY2021) presented under 'Human Capital' narrative without explicitly connecting headcount decline to revenue volume loss"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 28,
+    "prior_risk_count": 26,
+    "new_risks": [
+      {
+        "risk": "Human capital and talent retention risk elevated to standalone disclosure with specific engagement metrics",
+        "key_phrase": "At DXC our people are our number one asset - ensuring they feel valued and respected",
+        "severity": "high"
+      },
+      {
+        "risk": "COVID-19 pandemic as an ongoing operational and demand risk explicitly retained in current filing",
+        "key_phrase": "Ensuring the health and safety of our people is a top priority, especially in the current environment",
+        "severity": "high"
+      },
+      {
+        "risk": "Portfolio divestiture execution risk — risk that continued asset sales may not realize expected value or may disrupt customer relationships",
+        "key_phrase": "the Company will continue its portfolio shaping efforts and divest assets that the Company does not believe are well integrated with its enterprise technology stack",
+        "severity": "medium"
+      },
+      {
+        "risk": "Governance risk — addition of a Risk Committee to the Board's committee structure signals elevated enterprise risk oversight requirements",
+        "key_phrase": "Nominating/Corporate Governance Committee and Risk Committee",
+        "severity": "medium"
+      },
+      {
+        "risk": "Human rights and supply chain risk disclosed as new focus area",
+        "key_phrase": "DXC is firmly committed to preventing the exploitation of vulnerable groups. Our main human rights related focus areas are promoting good practice through our large and diverse global supply chain",
+        "severity": "low"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Talent and workforce risk — language moved from passive employment disclosure to active priority framing",
+        "prior_language": "we employed approximately 138,000 employees and had offices and operations in approximately 70 countries",
+        "current_language": "As of March 31, 2021, we employed approximately 134,000 people worldwide. At DXC our people are our number one asset - ensuring they feel valued and respected"
+      },
+      {
+        "risk": "Competitive positioning — prior year emphasized 'digital services capabilities' as key differentiator; current year replaced with 'integrated solutions capabilities' and added 'global and diverse talent' — reflecting shift from digital-growth to defensive talent narrative",
+        "prior_language": "vision and strategic advisory ability; digital services capabilities; performance and reliability",
+        "current_language": "vision and strategic advisory ability; integrated solutions capabilities; performance and reliability; global and diverse talent; delivery excellence and ongoing support"
+      },
+      {
+        "risk": "Revenue trajectory risk — prior year described HHS sale as pending at $5B; current year discloses completion while adding ongoing portfolio rationalization risk with no revenue floor guidance",
+        "prior_language": "The transaction is expected to close by September 2020, but no later than December 2020",
+        "current_language": "the Company will continue to focus on execution of its strategy in the next fiscal year, with a continued focus on our people, revenue stabilization, cost optimization and winning in the market"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "HHS Sale execution risk — risk that the $5B HHS sale would not close on terms or within timeline",
+        "likely_reason": "resolved"
+      },
+      {
+        "risk": "Luxoft integration risk — prior year highlighted Luxoft acquisition as recent and requiring integration",
+        "likely_reason": "resolved"
+      },
+      {
+        "risk": "Explicit mention of $250M termination fee provision in HHS Purchase Agreement",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Shareholder return program (dividends and share repurchases — mentioned in Q1 as $897M returned; dropped from highlights in Q3 onward)",
+      "Arbitration award gain (mentioned as a positive one-time item in Q2/Q3 comparisons but never re-introduced as a category)",
+      "Specific GIS revenue stabilization target or timeline (mentioned as a structural issue in Q1 but never given a resolution date in later quarters)",
+      "Luxoft acquisition contributions as a growth driver (prominently cited in Q2-Q3 as offsetting GIS declines; largely absent from Q5-Q6 as disposition comparisons dominate)"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Language is specific and comparatively candid: explicit acknowledgment of 'ongoing decline in our traditional application maintenance business and legacy infrastructure services'; forward-looking statements reference specific dollar figures for contract awards and shareholder returns"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "COVID-19 introduced as exogenous explanatory variable; guidance language becomes conditional ('subject to closing conditions'); contract awards highlighted positively ($3.5B GBS) to signal momentum while revenue decline attributed entirely to external forces"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Shift to 'prior terminations and price-downs' framing — attributing current-quarter weakness to past decisions rather than current conditions; 'customer settlements that were actioned in the quarter' implies active cleanup but is vague on financial impact"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Headline net income ($1,103M) led by $882M gain on disposition of businesses; management language increasingly leads with non-cash/non-recurring items; organic decline language softened with 'changes in run volume' replacing more direct 'terminations' language in some contexts"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "New confidence marker introduced: 'additional services provided to new and existing customers' used repeatedly as partial offset language — aspirational and non-specific; pass-through hardware/software resale cited as growth driver, which typically carries near-zero margin; forward-looking language on revenue stabilization conspicuously absent"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "No specific forward guidance on revenue stabilization; 'debt extinguishment costs' added as a new burden item; organic GBS revenue declined 16.5% YoY; management communication has fully transitioned to a cost-optimization and portfolio-cleanup narrative with no explicit growth commitment — confidence markers at cycle low"
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00.000Z"
+}

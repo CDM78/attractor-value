@@ -1,0 +1,128 @@
+{
+  "blindId": "ANALYST-0023",
+  "job1": {
+    "total_commitments_tracked": 6,
+    "commitments_delivered": 5,
+    "commitments_missed": 1,
+    "credibility_score": 0.83,
+    "language_shifts": [
+      {
+        "quarter": "Q4",
+        "shift": "TWC/Bright House regulatory compliance language dropped from forward-looking risk boilerplate; COVID-19 framing shifts from economy-wide impact to customer/vendor-specific impact; subsidy language added for regulatory risk"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "New vendor procurement language introduced: 'our ability to procure necessary services and equipment from our vendors at reasonable costs' — signals emerging supply chain concern not present in Q1-Q3"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Forward-looking keyword 'grow' added to enumerated forward-looking terms list (absent from Q1-Q5 version), suggesting incremental emphasis on top-line expansion narrative"
+      }
+    ],
+    "red_flags": [
+      "Enterprise segment revenue declined year-over-year ($2,556M in 2019 to $2,468M in 2020) despite stated commercial growth focus; management attributed this to asset sales and COVID programs but the directional miss against growth commitment warrants scrutiny",
+      "Provided quarterly MD&A sections contain only standardized forward-looking disclaimers and financial tables with no substantive narrative discussion, making specific management commitments unquotable and trackable only via financial performance inference",
+      "Boilerplate forward-looking risk language reproduced verbatim across all six quarters with near-zero customization to current operating context, indicating formulaic disclosure rather than responsive communication"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 9,
+    "prior_risk_count": 9,
+    "new_risks": [
+      {
+        "risk": "COVID-19 pandemic financial impact with forward-looking churn and bad debt expectation",
+        "key_phrase": "We expect that some of the COVID-19 programs may result in incremental churn and bad debt in 2021",
+        "severity": "high"
+      },
+      {
+        "risk": "CBRS spectrum license revocation and expiration risk",
+        "key_phrase": "we now hold CBRS PALs to support existing and future mobile services. These licenses are subject to revocation and expiration",
+        "severity": "medium"
+      },
+      {
+        "risk": "Mobile spectrum acquisition and joint venture investment risk",
+        "key_phrase": "We also continue to consider and pursue opportunities in the mobile space which may include the acquisition of additional licensed spectrum and may include entering into or expanding joint ventures or partnerships with wireless or cable providers which may require significant investment",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Mobile service risk profile shifted from launch-phase startup risk to ongoing scale/growth risk",
+        "prior_language": "as we launch our new mobile services using virtual network operator rights from a third party, we expect an initial funding period to grow a new product",
+        "current_language": "as we continue to grow our mobile services using virtual network operator rights from a third party, we expect continued growth-related sales and marketing and other customer acquisition costs"
+      },
+      {
+        "risk": "Competitor 5G deployment shifted from forward-looking plan to present-tense ongoing reality",
+        "prior_language": "some began deploying 5G mobile services in 2019 with plans to expand 5G more broadly in the 2020",
+        "current_language": "also continue to expand 5G mobile services"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Commercial business scaling and service-level agreement execution risks — prior year had dedicated section: 'We face risks inherent in our commercial business'",
+        "likely_reason": "materialized"
+      },
+      {
+        "risk": "Wireline and wireless overbuild risk — prior year explicitly flagged traditional overbuild situations impacting service areas",
+        "likely_reason": "unclear"
+      },
+      {
+        "risk": "Mobile product framed as experimental wireless strategy via MVNO launch-phase language",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "stable"
+  },
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "lower local advertising revenues as a result of COVID-19",
+        "competitor_claim": "higher advertising revenue from the return of live sporting events was more than offset by higher sports programming costs",
+        "competitor": "A"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Canceled and delayed live sports events caused material revenue disruption in fiscal 2020",
+        "evidence": "significant disruptions in the production and availability of content, including the delay of key live sports programming during fiscal 2020 and fiscal 2021"
+      },
+      {
+        "claim": "COVID-19 produced broad disruption across media and entertainment value chain affecting distribution and advertising",
+        "evidence": "COVID-19 and measures to prevent its spread has impacted our segments in a number of ways, most significantly at the DPEP segment where our theme parks and resorts were closed and cruise ship sailings and guided tours were suspended"
+      },
+      {
+        "claim": "Programming cost increases are structurally embedded and persist regardless of revenue recovery",
+        "evidence": "higher sports programming costs [offset] higher advertising revenue from the return of live sporting events"
+      }
+    ],
+    "target_language_quality": "specific",
+    "competitive_position_assessment": "stable",
+    "confidence": "medium"
+  },
+  "job4": {
+    "guidance_trend": "stable",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "Time Warner Cable and Bright House Networks post-merger regulatory compliance language (removed from Q4 onward)",
+      "COVID-19 broad economy-wide impact framing (replaced by narrower customer/vendor-specific COVID language from Q4 onward)"
+    ],
+    "confidence_trend": "stable",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "stable",
+    "notable_shifts": [
+      {
+        "quarter": "Q4",
+        "observation": "Removal of explicit TWC/Bright House regulatory compliance risk from forward-looking boilerplate marks end of post-merger disclosure period; COVID framing narrows from 'impact of the COVID-19 pandemic on the economy' to operations-specific customer and vendor framing; subsidy language added to regulatory risk list"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "New vendor procurement risk added to forward-looking disclaimer list — 'our ability to procure necessary services and equipment from our vendors at reasonable costs' — signals supply chain as an emerging management concern first flagged in Q5"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Word 'grow' added to enumerated forward-looking terms list alongside existing terms; language otherwise substantively unchanged from Q4-Q5, indicating a stable communication posture with minor incremental additions rather than any pivot in narrative tone"
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

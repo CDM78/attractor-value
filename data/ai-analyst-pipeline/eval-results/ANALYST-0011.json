@@ -1,0 +1,102 @@
+{
+  "blindId": "ANALYST-0011",
+  "job1": {
+    "total_commitments_tracked": 6,
+    "commitments_delivered": 4,
+    "commitments_missed": 2,
+    "credibility_score": 0.67,
+    "language_shifts": [
+      {
+        "quarter": "Q3",
+        "shift": "Removed food and aerosol packaging from facility-consolidation narrative. Q1/Q2 stated consolidating beverage AND food AND aerosol facilities; Q3 narrowed to beverage only, silently dropping food and aerosol scope."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Dropped all references to the G3 two-piece lightweight steel aerosol can from the innovation lever. Q1/Q2 described it as an active new product launch; Q3 omits it entirely with no explanation."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Removed the Sonoco metal-end/closure acquisition from Lever 2, which Q1/Q2 cited as evidence of expanding new products and capabilities. Prior achievement reference silently deleted."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Business description shortened from serving beverage, food, personal care and household products industries to beverage, personal care and household products only, quietly removing food packaging from the company positioning statement."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Lever 3 language shifted from customers who use beverage containers to aluminum containers, broadening scope in a way that is vaguer about the product category driving growth and consistent with a substrate-level repositioning away from the food and aerosol can formats."
+      }
+    ],
+    "red_flags": [
+      "G3 two-piece steel aerosol can dropped from innovation claims between Q2 and Q3 with no explanation; suggests the product launch underperformed or was abandoned.",
+      "Food packaging silently removed from both the business description and the facility-consolidation commitment in Q3, a material scope reduction not disclosed to investors.",
+      "The RESULTS OF CONSOLIDATED OPERATIONS sections are truncated across all three quarters, preventing quantitative verification of financial commitments.",
+      "Specialty container mix maintained at approximately 40 percent in all three quarters with no evidence of progression toward a higher target, suggesting stagnation on stated growth commitment.",
+      "No quantified financial targets (revenue growth rate, margin goal, debt paydown amount) provided in any quarter, making most commitments structurally unverifiable."
+    ]
+  },
+  "job2": null,
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "The overall metal container industry is growing globally and is expected to continue to grow in the medium to long term despite the North American industry having seen recent declines in standard-sized aluminum beverage packaging for the carbonated soft drink market.",
+        "competitor_claim": "Neither competitor filing addresses metal packaging markets. Competitor B (industrial gases) reported 9% sales growth in fiscal 2018 driven by base business volume gains but this is in an entirely different product category and does not address beverage can demand trends.",
+        "competitor": "B"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Global geographic expansion through acquisitions in Asia, particularly China, as a growth vector is consistent across materials-sector companies in this period.",
+        "evidence": "We became a leading integrated and low cost global producer of lithium and lithium compounds used in lithium-ion batteries... meeting the significant growth in global demand for these products. (Competitor A, referencing Jiangli New Materials acquisition in China)"
+      },
+      {
+        "claim": "Portfolio rationalization through divestiture of non-core businesses to focus on higher-priority growth segments is a shared materials-sector strategy in this period.",
+        "evidence": "The sale of the polyolefin catalysts business and components reflects our commitment to investing in the future growth of our high priority businesses and returning capital to shareholders. (Competitor A)"
+      },
+      {
+        "claim": "Sustained dividend growth as a shareholder-return mechanism alongside organic investment is a materials-sector norm in this period.",
+        "evidence": "We increased our quarterly dividend by 16% from $.95 to $1.10 per share, or $4.40 per share annually, the largest increase in Company history. This represents the 36th consecutive year that we have increased our dividend payment. (Competitor B)"
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "food packaging (removed from business description and facility consolidation scope in Q3)",
+      "G3 two-piece lightweight steel aerosol can new product launch",
+      "Sonoco acquisition as evidence of new-product capability expansion",
+      "carbonated soft drink market decline acknowledgment",
+      "food and aerosol packaging facility closures"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 3,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q3",
+        "observation": "Business description shortened by removing food packaging. Q1/Q2: one of the worlds leading suppliers of metal packaging to the beverage, food, personal care and household products industries. Q3: to the beverage, personal care and household products industries. Food quietly excised without disclosure."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "G3 two-piece lightweight steel aerosol can entirely absent. Q1/Q2 Lever 5 specifically cited introduction of a new two-piece, lightweight steel aerosol can, G3 as an active innovation. Q3 omits this entirely, the most abrupt and unexplained topic drop across the three quarters."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Lever 2 drops the Sonoco metal-end acquisition reference. Q1/Q2 cited it as proof of expanding into new products and capabilities. Removing a prior achievement reference suggests possible write-down, underperformance, or strategic reversal being quietly buried."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Lever 1 narrows facility rationalization scope. Q1/Q2 referenced beverage AND food AND aerosol packaging facility consolidations; Q3 references only beverage packaging facilities. Scope reduction without announcement is consistent with strategic retreat from food and aerosol categories."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Customer language shifted from those who continue to use beverage containers to aluminum containers. Subtle repositioning from container-format to substrate-level language, potentially signaling a strategic pivot away from steel-based formats (including the dropped G3 steel aerosol can) toward pure aluminum."
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T03:49:53Z"
+}

@@ -1,0 +1,73 @@
+{
+  "blindId": "ANALYST-0036",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 4,
+    "commitments_missed": 1,
+    "credibility_score": 0.8,
+    "language_shifts": [
+      {
+        "quarter": "Q2",
+        "shift": "BLA rolling submission originally committed for 'May 2021' but was initiated June 1, 2021; language shifts from 'plan to initiate' to confirmed initiation with completion targeted August 2021, introducing a new downstream milestone not previously disclosed."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Adolescent EUA discussion turns defensive: confident Q1/Q2 language about pending adolescent authorization gives way to disclosure that FDA review 'may not be completed before January 2022' and that pediatric (6-11) filing will also be delayed; topic of near-term adolescent approval effectively dropped."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "2022 capacity guidance shifts from a single confident figure ('up to 3 billion doses') in Q1 to a range explicitly conditional on dose-level ('up to 3 billion at 50ug / approximately 2 billion at 100ug'), introducing uncertainty not present in Q1 language."
+      }
+    ],
+    "red_flags": [
+      "BLA rolling submission initiated June 2021 vs. committed May 2021, indicating a mild execution slip on a high-visibility regulatory milestone.",
+      "Adolescent EUA delayed due to FDA myocarditis safety review; topic pivots from confident pending authorization to open-ended review timeline, revealing an unanticipated regulatory headwind.",
+      "2022 capacity range now explicitly dose-level dependent; confident '3 billion doses' figure from Q1 becomes conditional on 50ug vs 100ug mix, reducing investor certainty about 2022 revenue capacity.",
+      "Nine-month cumulative dose delivery (287M US + 222M ex-US = 509M total) implies full-year supply toward the lower end of the 800M-1B guidance range, raising questions about whether the top of range is achievable."
+    ]
+  },
+  "job2": null,
+  "job3": {
+    "contradictions": [],
+    "corroborations": [
+      {
+        "claim": "Favorable demand environment for life sciences and biopharmaceutical products entering 2021, supporting the target's commercial ramp narrative",
+        "evidence": "Despite the economic challenges due to the COVID-19 pandemic, we ended our fiscal year 2021 with revenue growth of 18 percent year over year. This revenue growth was primarily non-COVID related revenue and came from all of our segments, key end markets and geographies."
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "strengthening",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Specific US delivery sub-milestones (second 100M doses by end of May, additional 100M by end of July) stated in Q1 are not revisited or confirmed in Q2 or Q3",
+      "Confident near-term adolescent EUA authorization language present in Q1 and Q2 is absent from Q3",
+      "Pediatric (6-11 age group) EUA filing timeline dropped from forward-looking discussion in Q3"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 3,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q2",
+        "observation": "BLA submission commitment shifts from 'plan to initiate in May 2021' to 'initiated June 1, currently anticipate completing in August 2021'; original May target quietly abandoned and replaced with a downstream completion milestone."
+      },
+      {
+        "quarter": "Q2",
+        "observation": "2022 capacity language introduces explicit dose-level conditionality for the first time: 'up to 3 billion doses' if dedicated to 50ug booster vs 'approximately 2 billion doses' if dedicated to 100ug; Q1 cited only the 3 billion figure, suggesting range ambiguity was withheld initially."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Adolescent EUA discussion pivots to defensive risk disclosure: 'FDA informed us that the agency will require additional time to evaluate recently conducted international analyses of the risk of myocarditis'; confident pending-authorization framing replaced with open-ended safety review language."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "New phrase 'We do not yet have access to data from some recent international analyses' is a notable confidence reversal; management acknowledges an active information gap, a posture absent in prior quarters."
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T03:34:06Z"
+}

@@ -1,0 +1,129 @@
+{
+  "blindId": "ANALYST-0044",
+  "job1": {
+    "total_commitments_tracked": 7,
+    "commitments_delivered": 4,
+    "commitments_missed": 2,
+    "credibility_score": 0.57,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Highly confident forward-looking language: 'sustained our strong domestic and international same store sales performance'; specific technology launches named (HotSpots, Piece of the Pie Rewards); emphasis on technology and digital ordering growth as concrete SSS drivers"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Deceleration reframed as strategic choice: 'pressured by our current strategy to increase store concentration in certain markets where we compete' introduced as blanket explanation; 'strong' downgraded to 'healthy' for retail sales characterization; loyalty program and HotSpots disappeared from narrative"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "'Positive but was pressured' becomes standard SSS boilerplate; FX negative impact added as second recurring qualifier alongside store concentration; fewer forward-looking specific initiatives named"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "'Aggressive competitive activity' added as a third new explanation for U.S. delivery SSS pressure; carryout 'continued strong growth' selectively spotlighted to offset weak delivery narrative; overall tone more defensive"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Post-period COVID-19 caveat appended for the first time; net new store openings fell sharply to 69 (from 214 in Q5) attributed to South Africa closure; 'positive but was pressured' repeated verbatim; no new strategic initiatives named; communication reactive rather than proactive"
+      }
+    ],
+    "red_flags": [
+      "Same store sales growth decelerated every quarter from +6.9% domestic (Q1) to +1.6% (Q6), yet management consistently attributed pressure to an internal strategic choice ('store concentration') rather than acknowledging competitive or demand-side deterioration until Q5",
+      "Domino's HotSpots and Piece of the Pie Rewards loyalty program, both cited in Q1-Q2 as key SSS drivers, disappeared from Q3 onward without explanation as performance softened",
+      "Net new store openings declined sharply in Q6 (69 net new vs. 200+ in prior quarters); solely attributed to South Africa market closure, obscuring whether franchisee appetite may be weakening",
+      "Management stated 'we strive to consistently increase both metrics' (SSS and store counts) in Q1 yet both metrics decelerated materially through the period with no revision to the stated commitment",
+      "FX impact cited as positive tailwind in Q1-Q2 but increasingly invoked as a negative headwind explanation in Q3-Q6 without explicitly acknowledging the change in sign"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 14,
+    "prior_risk_count": 12,
+    "new_risks": [
+      {
+        "risk": "Epidemic, widespread illness, or general health concern",
+        "key_phrase": "the occurrence of a widespread illness, health epidemic or other general health concern could adversely affect us on a local, regional or international basis",
+        "severity": "high"
+      },
+      {
+        "risk": "Climate change impact on supply chain and operations",
+        "key_phrase": "the effects of climate change could increase the frequency and duration of weather impacts on our operations and could adversely affect our operating results",
+        "severity": "medium"
+      },
+      {
+        "risk": "Social media regulatory compliance and FTC enforcement",
+        "key_phrase": "laws and regulations, including FTC enforcement, rapidly evolve to govern social media platforms and communications. A failure of us, our employees, our franchisees or third parties acting at our direction to abide by applicable laws and regulations in the use of social media could adversely impact our brand, reputation, marketing partners, financial condition, and results of operations or subject us or our franchisees to fines or other penalties",
+        "severity": "medium"
+      },
+      {
+        "risk": "Expanded food delivery market competition and order aggregators",
+        "key_phrase": "Competition from order and delivery aggregators and other food delivery services has also increased in recent years",
+        "severity": "high"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Competitive landscape scope broadened beyond pizza to food delivery market broadly",
+        "prior_language": "The quick service restaurant pizza category is highly competitive and such competition could adversely affect our operating results",
+        "current_language": "The quick service restaurant pizza category and the food service and food delivery markets in general are highly competitive and such competition could adversely affect our operating results"
+      },
+      {
+        "risk": "Regulatory and enforcement actions: hypothetical escalated to confirmed past action",
+        "prior_language": "State attorney general offices or other regulators may initiate investigations or enforcement actions against us",
+        "current_language": "State attorney general offices or other regulators have initiated and may in the future initiate investigations or enforcement actions against us"
+      },
+      {
+        "risk": "Current litigation exposure confirmed in present tense",
+        "prior_language": "Claims of illness or injury relating to food quality or food handling are common in the food service industry, and vehicular accidents and injuries occur in the food delivery business",
+        "current_language": "We are currently subject to these types of claims and have been subject to these types of claims in the past"
+      },
+      {
+        "risk": "Social media risk expanded to include collective boycotts and brand-damaging organized actions",
+        "prior_language": "The rising popularity of social media and other consumer-oriented technologies has increased the speed and accessibility of information dissemination",
+        "current_language": "The rising popularity of social media and other consumer-oriented technologies has increased the speed and accessibility of information dissemination and given users the ability to more effectively organize collective actions such as boycotts and other brand-damaging behaviors"
+      }
+    ],
+    "disappeared_risks": [],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Domino's Piece of the Pie Rewards loyalty program as a named SSS driver (present Q1-Q2, absent Q3 onward)",
+      "Domino's HotSpots technology initiative (launched Q1, confirmed Q2, not mentioned Q3 onward)",
+      "Digital customer experience improvement as a forward-looking investment theme (Q1-Q2 only)",
+      "Positive foreign currency exchange rate impact on results (cited as tailwind in Q1-Q2, reframed as headwind Q3 onward)"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Peak confidence: 'sustained our strong domestic and international same store sales performance'; concrete named initiatives (HotSpots launch, Piece of the Pie Rewards); specific net new store counts; FX cited as positive contributor; technology and digital ordering highlighted as growth levers"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Tone consistent with Q1; HotSpots confirmed as 'recent launch'; 'continued our global expansion' with specific year-to-date store count (498 net new); minimal hedging; FX cited as negative for Q3 but positive YTD"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "First hedging phrase introduced: 'pressured by our current strategy to increase store concentration'; growth downgraded from 'strong' to 'healthy'; loyalty program and HotSpots absent; 'higher investments in technological initiatives and other strategic areas partially offset' used to rationalize margin compression"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "'Positive but was pressured' becomes template phrase for SSS; FX consistently described as negative impact; store sale loss ($2.4M) disclosed as partial offset; fewer forward-looking specifics; strategic initiatives increasingly absent from commentary"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "'Aggressive competitive activity' introduced as new third explanation for delivery SSS weakness alongside store concentration and FX; carryout 'continued strong growth' selectively highlighted; delivery vs. carryout bifurcation new to the disclosure; tone more defensive"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "COVID-19 post-period caveat appended for first time; net new store count declined to 69 (from 200+ in prior quarters); 'positive but was pressured' repeated verbatim; no new strategic initiatives named; communication has become fully reactive with three concurrent headwind narratives (store concentration, FX, competitive activity) plus pandemic"
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

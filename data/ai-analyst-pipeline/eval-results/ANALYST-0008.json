@@ -1,0 +1,133 @@
+{
+  "blindId": "ANALYST-0008",
+  "job1": {
+    "total_commitments_tracked": 7,
+    "commitments_delivered": 5,
+    "commitments_missed": 2,
+    "credibility_score": 0.71,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Highly specific pricing commitment: 'we continue to expect an overall decline in net average charge by the end of the fiscal year' \u2014 most concrete forward-looking language in the series"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "Post-Wave acquisition language shifts to integration-optimistic framing; 'small business financial solutions' added to business description suggesting expanded ambition, but no financial targets set for Wave contribution"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Legal fees spike ($12.1M increase, +1,322%) described matter-of-factly as 'fees associated with ongoing legal matters' \u2014 minimal disclosure, topic not flagged in prior quarters and not followed up with resolution timeline"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Volume recovery described with confidence ('primarily due to higher tax return volumes') but net average charge decline acknowledged without a recovery path articulated \u2014 specific pricing commitment from Q1 now dropped"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "COVID-19 dominates the narrative; language shifts to highly hedged: 'unprecedented nature of the COVID-19 pandemic makes it difficult to predict,' replacing prior quarters' specific operational targets with open-ended uncertainty framing"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Net average charge declines sharply (company-owned: -11.5%, franchise: -14.0%, DIY: -14.3%) but MD&A frames performance primarily through the seasonality distortion lens rather than addressing pricing trajectory directly"
+      }
+    ],
+    "red_flags": [
+      "Pricing overhaul commitment (Q1 FY2019) delivered a net average charge decline as promised, but Q4 and subsequent quarters show net average charge trending further down without management providing a floor or recovery guidance \u2014 specific commitment became an ongoing open-ended drag",
+      "Wave acquisition ($407M, June 2019) presented with integration confidence, but Wave revenues ($3.6M in Q2, $10.9M in Q3, $11.2M in Q4, $14.3M in Q6) imply only partial-season contribution data \u2014 no explicit revenue or profitability targets set for Wave at time of acquisition announcement, making delivery unverifiable",
+      "Legal fees and settlements surged $12.1M (+1,322%) in Q3 with minimal narrative explanation and no prior disclosure of pending matters \u2014 the topic is abruptly introduced and not followed by resolution language in subsequent quarters",
+      "CLOC covenant violation at April 30, 2020 (debt-to-EBITDA covenant breach) disclosed in risk factors but not prefigured in any prior MD&A outlook section \u2014 represents a material financial condition development with no forward signal",
+      "Net average charge declined in every quarter after Q1 FY2019, with the FY2021 COVID-affected periods showing double-digit declines (-11.5% to -14.3%) \u2014 consistent structural pricing erosion with no management commitment to stabilization"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 7,
+    "prior_risk_count": 6,
+    "new_risks": [
+      {
+        "risk": "COVID-19 pandemic impact on business operations, financial results, and consumer behavior",
+        "key_phrase": "Our financial condition and results of operations have been, and may continue to be, adversely affected by the recent COVID-19 pandemic, and may be impacted by a resurgence of COVID-19 or a future outbreak of another highly infectious or contagious disease.",
+        "severity": "high"
+      },
+      {
+        "risk": "Liquidity risk from CLOC covenant violation, credit rating downgrade, and refinancing of $650M senior notes",
+        "key_phrase": "as of April 30, 2020, we were not in compliance with the debt-to-EBITDA ratio covenant due to the impacts of the COVID-19 pandemic described above",
+        "severity": "high"
+      },
+      {
+        "risk": "Wave small business competitive risk \u2014 Wave may fail to compete in its market",
+        "key_phrase": "Wave faces intense competition with its small business financial solutions. Wave may be unsuccessful in competing with other providers, which may diminish our revenue and profitability",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Tax law changes and tax filing deadline risk",
+        "prior_language": "It is difficult to predict the manner in which future changes to the Internal Revenue Code and state, local, and foreign tax laws may impact us",
+        "current_language": "These delays negatively impacted the demand for our services in our fiscal year ended April 30, 2020, resulting in a substantial decrease in the number of tax returns prepared by or through H&R Block, impacting our revenue, cash flows, and earnings for the fiscal year ended April 30, 2020."
+      },
+      {
+        "risk": "Competition and free services threat",
+        "prior_language": "Increased competition for tax preparation clients could adversely affect our current market share and profitability.",
+        "current_language": "Increased competition for tax preparation and small business clients could adversely affect our current market share and profitability. Offers of free services or products could adversely affect our revenues and profitability."
+      },
+      {
+        "risk": "Privacy and data protection compliance",
+        "prior_language": "Compliance with the complex and evolving laws and regulations regarding privacy and data protection could require changes in our business practices",
+        "current_language": "Compliance with the complex and evolving laws, regulations, standards, and contractual requirements regarding privacy and data protection could require changes in our business practices"
+      },
+      {
+        "risk": "Governmental free tax preparation / IRS competition",
+        "prior_language": "If the Free File program is terminated and the IRS itself provides tax preparation services, the federal government would become our direct competitor, which could potentially have material adverse revenue implications.",
+        "current_language": "Free File, Inc., which operates under an agreement that expires in October 2021, is currently the sole means through which the IRS offers DIY tax software to taxpayers, however the IRS is not prohibited from offering competing services."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Explicit framing of IRS program termination as a direct competitive threat creating 'material adverse revenue implications'",
+        "likely_reason": "materialized/reframed \u2014 the specific alarming framing was softened in current year, possibly as the Free File arrangement was still in effect and the direct threat language was diluted into more general competitive risk language"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Specific net average charge recovery path or floor \u2014 discussed explicitly in Q1 but absent from all subsequent quarters",
+      "Share repurchase program \u2014 mentioned in Q2 context ('pay dividends, repurchase shares') but not discussed as an active commitment in Q5/Q6 amid COVID liquidity concerns",
+      "Technology investment specifics \u2014 cloud computing investment highlighted in Q2/Q3 as a growth driver but dropped as a forward-looking theme by Q5/Q6",
+      "Wave financial targets and integration milestones \u2014 mentioned as strategic addition in Q2 but never given specific revenue or profitability targets; topic becomes purely backward-looking by Q6"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Most specific and commitment-oriented language in the series: 'we continue to expect an overall decline in net average charge by the end of the fiscal year' \u2014 management willing to make a concrete, verifiable forward-looking statement with a defined timeframe"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Tone shifts to acquisitive optimism post-Wave deal; language adds 'small business financial solutions' and 'virtual' to the business description \u2014 scope expansion signals ambition but forward-looking specificity diminishes relative to Q1"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Legal fees spike (+1,322%) introduced with minimal narrative; management adopts a pass-through explanatory style ('fees associated with ongoing legal matters') rather than providing context or outlook \u2014 avoidance pattern on an emerging negative topic"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Volume recovery described confidently, but absence of net average charge guidance (after explicit Q1 commitment) represents a notable omission \u2014 confident on volumes, silent on pricing trajectory"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Hedging language dominates: 'unprecedented nature,' 'difficult to predict,' 'uncertain' \u2014 COVID provides structural cover for abandoning nearly all forward guidance; qualifier density highest in the series"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Net average charge declines framed entirely as COVID seasonality distortion rather than structural pricing pressure; management uses the pandemic narrative to avoid acknowledging whether the pricing model itself has deteriorated"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T03:49:47.000Z"
+}

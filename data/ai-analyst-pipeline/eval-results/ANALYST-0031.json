@@ -1,0 +1,161 @@
+{
+  "blindId": "ANALYST-0031",
+  "job1": {
+    "total_commitments_tracked": 6,
+    "commitments_delivered": 4,
+    "commitments_missed": 2,
+    "credibility_score": 0.67,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Management references the restatement of prior-year financials prominently in strategy boilerplate, signaling historical credibility concern from the outset"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Site rental revenue as a percent of total net revenues drops from 92% (Q1-Q2) to 90% (Q3), with no explicit management commentary on the mix shift away from recurring revenue"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Header changes from 'Business Fundamentals and Results' to 'Highlights of Business Fundamentals and Results' \u2014 subtle reframing toward selective emphasis; restatement preamble language dropped"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Fiber segment small cell share rises to 32% (from 30%) and fiber solutions falls to 68% (from 70%) with no commentary \u2014 first unremarked sub-segment mix shift in 18 months"
+      }
+    ],
+    "red_flags": [
+      "Historical restatement disclosed in Q1 2020 MD&A affecting 2016-2019 financials (cumulative net income reduction ~$516M) creates baseline credibility overhang across the entire period",
+      "Towers services gross margin collapsed 52% YoY in 2020 ($71M vs $147M) \u2014 attributed to 'slowdown of carrier activity' \u2014 not flagged as a risk in prior quarters despite explicit variable-nature disclosure",
+      "Sprint Cancellation generated $362M one-time Fiber operating income, inflating 45% Fiber operating profit growth; management did not pre-signal the magnitude of cancellation revenue recognition",
+      "Asset write-downs of ~$63M post-Sprint Cancellation indicate capital deployed in small cells with no alternative use \u2014 capital allocation risk not adequately disclosed in prior quarters"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 28,
+    "prior_risk_count": 26,
+    "new_risks": [
+      {
+        "risk": "Material weakness in internal controls over financial reporting requiring active remediation following multi-year restatement",
+        "key_phrase": "We have determined that the restatement of our previously issued financial statements as described above indicates the existence of a material weakness in our internal control over financial reporting",
+        "severity": "high"
+      },
+      {
+        "risk": "Sprint/T-Mobile merger creating stranded small cell assets with no alternative future use following contract cancellation",
+        "key_phrase": "write-off of approximately $63 million in property and equipment which, following the Sprint Cancellation, we deemed to have no alternative future use",
+        "severity": "high"
+      },
+      {
+        "risk": "Government broadband connectivity initiatives creating regulatory dependency for future demand assumptions",
+        "key_phrase": "increased government initiatives to support connectivity throughout the U.S.",
+        "severity": "low"
+      },
+      {
+        "risk": "Workforce reduction charges following Sprint Cancellation indicating operational restructuring costs",
+        "key_phrase": "charges incurred related to a reduction in staffing during the fourth quarter of 2020, comprised of employee severance payments and termination benefits",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Tenant concentration risk \u2014 top carrier revenue share increasing as Sprint absorbed into T-Mobile reducing to three dominant tenants",
+        "prior_language": "Our largest tenants are T-Mobile, AT&T, Verizon Wireless and Sprint, which collectively accounted for approximately 75% of our 2019 consolidated site rental revenues.",
+        "current_language": "Our largest tenants are T-Mobile (which merged with Sprint in April 2020), AT&T and Verizon Wireless, which collectively accounted for approximately 76% of our 2020 consolidated site rental revenues."
+      },
+      {
+        "risk": "Services revenue variability risk \u2014 previously theoretical, now quantified as a realized 52% gross margin decline",
+        "prior_language": "Revenues from our services and other offerings are of a variable nature as these revenues are not under long-term contracts.",
+        "current_language": "Towers services and other gross margin for 2020 was $71 million and decreased by $76 million, or 52%, from $147 million during 2019, which is a result of a slowdown of carrier activity and the volume and mix of services and other work."
+      },
+      {
+        "risk": "Revenue recognition complexity \u2014 restatement scope and remediation elevated from plan to early SEC standard adoption",
+        "prior_language": "We have created a plan of remediation to address the material weakness.",
+        "current_language": "Although mandatory compliance is not required until our fiscal year ending December 31, 2021, early adoption is permitted, and we have elected to early adopt amended Items 301, 302 and 303 of Regulation S-K in this 2020 Form 10-K."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Explicit four-carrier tenant disclosure (T-Mobile, AT&T, Verizon, Sprint as distinct counterparties)",
+        "likely_reason": "materialized \u2014 Sprint merged into T-Mobile in April 2020, permanently reducing the named major tenant count from four to three"
+      },
+      {
+        "risk": "Active unresolved material weakness with no completion date \u2014 the open-ended remediation plan language from 2019 10-K",
+        "likely_reason": "resolved \u2014 2020 10-K language shifts from plan creation to active implementation steps including early adoption of updated SEC disclosure standards"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "our strategy is based, in part, on our belief that the U.S. is the most attractive market for shared communications infrastructure investment with the greatest long-term growth potential",
+        "competitor_claim": "we signed agreements for the Pending Telxius Acquisition, pursuant to which we expect to acquire approximately 31,000 communications sites in Argentina, Brazil, Chile, Germany, Peru and Spain, for approximately 7.7 billion EUR (approximately $9.4 billion at the time of signing)",
+        "competitor": "A"
+      },
+      {
+        "target_claim": "We believe our product offerings of towers and small cells provide a comprehensive solution to our wireless tenants' growing communications infrastructure needs.",
+        "competitor_claim": "We are one of the largest global REITs and a leading independent owner, operator and developer of multitenant communications real estate... we also hold other telecommunications infrastructure, fiber and property interests that we lease primarily to communications service providers and third-party tower operators.",
+        "competitor": "A"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Growing wireless carrier demand for towers and small cells driven by 5G and network capacity expansion",
+        "evidence": "consumers' growing wireless data consumption likely resulting in major wireless carriers continuing to upgrade and enhance their networks through the efficient use of both towers and small cells, including in connection with 5G deployments, in an effort to improve network quality and capacity and customer retention or satisfaction"
+      },
+      {
+        "claim": "Long-term non-cancellable tenant contracts providing stable recurring revenue base with contractual escalators",
+        "evidence": "Based upon existing tenant leases and foreign currency exchange rates as of December 31, 2020, we expect to generate nearly $59 billion of non-cancellable tenant lease revenue over future periods, before the impact of straight-line lease accounting. Most of our tenant leases have provisions that periodically increase the rent due under the lease, typically based on an annual fixed escalation (averaging approximately 3% in the United States)"
+      },
+      {
+        "claim": "Carrier consolidation creates manageable but real churn risk in the shared communications infrastructure business model",
+        "evidence": "Revenue lost from either tenant lease cancellations or the non-renewal of leases or rent renegotiations, which we refer to as churn, has historically not had a material adverse effect on the revenues generated by our consolidated property operations. During the year ended December 31, 2020, churn was approximately 3% of our tenant billings."
+      },
+      {
+        "claim": "U.S.-focused shared infrastructure generates high-quality recurring site rental revenues from wireless carriers",
+        "evidence": "the vast majority of the revenue generated by our property operations during the year ended December 31, 2020 was recurring revenue that we should continue to receive in future periods"
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "stable",
+    "confidence": "medium"
+  },
+  "job4": {
+    "guidance_trend": "stable",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "Explicit restatement Explanatory Note preamble language in MD&A (present Q1-Q3 2020, absent Q4 2021 onward after new 10-K base year)",
+      "Sprint named as standalone active major tenant (dropped after T-Mobile merger completion in April 2020)",
+      "Historical Adjustments cross-reference boilerplate in quarterly filing preamble (present Q1-Q3 2020, removed in Q4-Q6 2021 filings)"
+    ],
+    "confidence_trend": "stable",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "stable",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "MD&A opens with explicit restatement Explanatory Note reference and Historical Adjustments disclosure \u2014 elevated caution and defensive framing; Fiber segment sub-breakdown (fiber solutions vs small cells) not yet provided in overview section"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Fiber segment sub-breakdown introduced (70% fiber solutions / 30% small cells) \u2014 increased disclosure granularity added to general overview; restatement Explanatory Note preamble language retained"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Site rental revenues as percent of total fall to 90% from 92% with no management commentary; Towers segment share slips to 65%; language otherwise boilerplate with no adjustment for the mix shift"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "First quarter after 2020 Annual Report filing; restatement preamble language dropped; section renamed to 'Highlights of Business Fundamentals and Results'; new government broadband connectivity demand driver added as eighth enumerated factor in growth thesis"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Towers segment share rises to 67%, Fiber falls to 33% \u2014 reversal of Q3 mix trend; language pattern otherwise boilerplate repetition with government initiatives demand driver now permanently embedded"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "First sub-segment fiber mix shift in 18 months: small cells rise to 32% from 30%, fiber solutions fall to 68% from 70%; no management commentary offered on the deviation from the consistent 70/30 split reported since Q2 2020"
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

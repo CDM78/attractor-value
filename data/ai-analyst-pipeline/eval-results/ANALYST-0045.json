@@ -1,0 +1,160 @@
+{
+  "blindId": "ANALYST-0045",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 3,
+    "commitments_missed": 1,
+    "credibility_score": 0.60,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Restatement disclosure prominently featured in opening paragraphs: 'As previously disclosed, we have restated our condensed consolidated financial statements.' Forward-looking guidance entirely absent. Tone is backward-looking and remediation-focused."
+      },
+      {
+        "quarter": "Q2",
+        "shift": "Restatement language persists for the second consecutive quarter. Investigation costs rise to $18M in Q1 and are referenced cumulatively. No explicit future-period revenue or margin commitments offered."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Restatement disclosure language drops entirely — implicit commitment to completing the restatement process delivered. However, investigation costs continue at $22M for the first nine months. Tone shifts to neutral operational reporting."
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Investigation costs re-escalate; a proposed settlement of shareholder litigation ($9M) appears for the first time: 'We also recorded a charge of $9 million in the first quarter of 2021 for a proposed settlement of shareholder litigation related to that investigation.' Implicit commitment to resolving the investigation is not fully delivered. COVID language introduced."
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Investigation costs reach $28M for H1 2021, up from $20M H1 2020. Language shifts from 'professional fees for the investigation' to 'matters associated with our previously announced investigation' — a subtle de-escalation of urgency without resolution."
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Major acquisition announcement (Hillrom, ~$10.5B enterprise value) dominates the quarter. Forward-looking strategic language appears for the first time: 'should enable us to provide a broader array of medical products and services' and 'expected to accelerate our expansion into digital and connected care solutions.' Communication shifts from defensive/remedial to strategic/aspirational."
+      }
+    ],
+    "red_flags": [
+      "Investigation costs never fully resolved across 6 quarters — escalated from $18M (Q1 2020) to ongoing litigation settlements in 2021, contradicting implicit remediation timeline.",
+      "Business optimization charges persist at every quarter ($32M Q1 2020, $77M 9-mo 2020, $81M 9-mo 2021) with no stated completion date or endpoint — commitment to structural cost reduction is ongoing but termination point absent.",
+      "Net income declined year-over-year in 3 of the first 5 comparable quarters (Q1 2021: $298M vs $332M; Q2 2021 recovered), suggesting operational headwinds despite ongoing optimization.",
+      "The reference to the 2020 Annual Report was superseded by a Form 8-K filed April 29, 2021 ('which revised and superseded the Management's Discussion and Analysis'), indicating material post-period restatements or corrections continued into 2021.",
+      "No explicit numerical guidance (revenue growth targets, margin targets, EPS targets) was provided in any of the 6 quarters analyzed, making management's track record on forward commitments largely untrackable from MD&A alone."
+    ]
+  },
+  "job2": {
+    "current_risk_count": 14,
+    "prior_risk_count": 6,
+    "new_risks": [
+      {
+        "risk": "COVID-19 Pandemic — entire dedicated risk section added",
+        "key_phrase": "The effects of the COVID-19 pandemic have had, and we expect will continue to have, a material adverse effect on our business.",
+        "severity": "high"
+      },
+      {
+        "risk": "Demand disruption from elective procedure deferrals due to COVID-19",
+        "key_phrase": "We have experienced, and expect to continue to experience, significant and unpredictable reductions or increases in demand for certain of our products as healthcare customers re-prioritize the treatment of patients.",
+        "severity": "high"
+      },
+      {
+        "risk": "Raw material supply constraints due to COVID-19 vaccine production competing for inputs",
+        "key_phrase": "we have experienced and expect to continue to experience supply constraints for amino acid raw materials used in our parenteral nutrition products, as such materials are also being used to produce COVID-19 vaccines.",
+        "severity": "high"
+      },
+      {
+        "risk": "Heightened cybersecurity risk from remote work arrangements",
+        "key_phrase": "remote working arrangements heighten our risks associated with information technology systems and networks, including cyber-attacks, computer viruses, malicious software, security breaches, and telecommunication failures",
+        "severity": "medium"
+      },
+      {
+        "risk": "Access to capital and capital markets disruption due to COVID-19",
+        "key_phrase": "COVID-19 and related impacts have affected and may further affect the global economy and capital markets worldwide, which, among other consequences, may restrict our access to capital, increase financing costs, adversely affect our liquidity",
+        "severity": "medium"
+      },
+      {
+        "risk": "Climate change cost risk explicitly added to supply/manufacturing discussion",
+        "key_phrase": "Climate change (including laws or regulations passed in response thereto) could increase our costs, in particular our costs of supply, energy and transportation/freight.",
+        "severity": "low"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Supply and manufacturing disruption",
+        "prior_language": "we at times may experience shortages of supply",
+        "current_language": "we have experienced and expect to continue to experience supply constraints for amino acid raw materials"
+      },
+      {
+        "risk": "Overall business impact from pandemic/epidemic events",
+        "prior_language": "We are subject to risks associated with doing business globally",
+        "current_language": "The effects of the COVID-19 pandemic have had, and we expect will continue to have, a material adverse effect on our business."
+      },
+      {
+        "risk": "Demand sensitivity for elective-procedure-dependent products",
+        "prior_language": "demand levels vary in response to macro-economic conditions, regulatory requirements, seasonality, natural disasters, pandemics",
+        "current_language": "In the second, third and fourth quarters of 2020, this resulted in lower levels of general hospital admissions and elective surgery volumes in those markets, which negatively impacted the demand for certain of our products."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Material weakness in internal control over financial reporting (disclosed in prior year Explanatory Note and Item 9A)",
+        "likely_reason": "materialized"
+      },
+      {
+        "risk": "Restatement of previously issued financial statements and related uncertainty",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [],
+    "corroborations": [
+      {
+        "claim": "COVID-19 pandemic continued to adversely affect healthcare company operations and demand levels through 2021",
+        "evidence": "The COVID-19 pandemic continues to be dynamic, and near-term challenges across the economy remain. The ongoing effects of COVID-19 remain difficult to predict due to numerous uncertainties, including the severity, duration and resurgence of the outbreak, new variants, the effectiveness of health and safety measures including vaccines"
+      },
+      {
+        "claim": "Supply chain pressures were a broad industry challenge during 2021, not company-specific",
+        "evidence": "supply chain pressures, among others. We will continue to actively monitor the effects of the pandemic"
+      }
+    ],
+    "target_language_quality": "vague",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_specific",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "Restatement of Previously Issued Condensed Consolidated Financial Statements (prominent in Q1-Q2 2020, absent from Q3 2020 onward)",
+      "Reference to 2019 Annual Report for context (Q1-Q3 2020 referenced '2019 Annual Report'; Q4-Q6 reference '2020 Annual Report' or the 8-K revision)"
+    ],
+    "confidence_trend": "increasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "improving",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Opening paragraphs dominated by restatement disclosure. Tone is remedial and backward-looking. No forward guidance. Language: 'As previously disclosed, we have restated our condensed consolidated financial statements.' Zero strategic forward-looking content."
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Restatement disclosure continues. Net income down significantly year-over-year (Q2 2020: $0.48/share vs $0.60/share prior year). COVID impact implied through lower performance but not explicitly discussed in MD&A excerpt. Defensive posture maintained."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Restatement language dropped entirely — significant linguistic shift indicating management's view that the restatement process was no longer a disclosure priority. However, investigation costs ($22M YTD) continue to be disclosed. Neutral operational tone."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "First appearance of COVID-related discussion in the MD&A: 'Our global operations expose us to risks associated with public health crises and epidemics/pandemics, such as the COVID-19 pandemic.' Proposed settlement announced ($9M charge). Sales recovery to +5% actual (but only +1% constant currency) disclosed."
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Recovery language begins: Q2 2021 net income $298M vs $246M prior year (+21%), H1 net income $596M vs $578M. Sales growth accelerating (+14% actual, +9% constant currency). Investigation language softens from 'foreign exchange investigation' to 'matters associated with our previously announced investigation.'"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Transformative shift: major acquisition announcement leads the quarter ('PROPOSED ACQUISITION OF HILLROM'). Forward-looking strategic language appears for the first time: 'should enable us to provide a broader array of medical products,' 'expected to accelerate our expansion into digital and connected care solutions.' Net income up 26% year-over-year (Q3 2021: $450M vs $356M). Communication trajectory moves decisively from remedial/defensive to strategic/growth-oriented."
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00.000Z"
+}

@@ -1,0 +1,111 @@
+{
+  "blindId": "ANALYST-0041",
+  "job1": {
+    "total_commitments_tracked": 4,
+    "commitments_delivered": 2,
+    "commitments_missed": 2,
+    "credibility_score": 0.5,
+    "language_shifts": [
+      {
+        "quarter": "Q4",
+        "shift": "Cyclical risk expanded to include 'our client s vulnerability to downturns, which may result in decreased capital investment or expenditures and reduced demand for our services' \u2014 broadening headwind scope beyond prior language which only referenced the company's own vulnerability"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "New government contracts risk added: 'Uncertainties, restrictions and regulations impacting our government contracts' \u2014 absent in Q1-Q3, signaling emerging government sector execution exposure"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Competition risk escalated mid-year: prior language 'place downward pressure on our contract prices and profit margins' extended with 'and may increase our contractual risks' \u2014 mid-year addition outside the annual 10-K cycle"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Contract cost and schedule estimation risk elevated to the #1 position in the risk factor list, displacing the cyclical market risk that led Q1-Q5; language expanded to include 'those related to project delays'"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Annual report reference changed to include 'as adjusted' qualifier: 'Annual Report on Form 10-K for the fiscal year ended December 31, 2017, as adjusted' \u2014 absent in all prior quarters, indicating a restatement of the 2017 10-K financials"
+      }
+    ],
+    "red_flags": [
+      "Revenue stagnated in the $4.7B-$4.9B range across all 6 quarters despite forward-looking language implying projected revenue growth",
+      "Energy & Chemicals segment revenue declined in both Q4 (Q1 2018) and Q5 (Q2 2018) with no reversal, representing a persistent structural decline",
+      "2017 Annual Report described as 'as adjusted' in Q6 (filed 2018-11-01) \u2014 indicates a prior-period restatement undisclosed in earlier quarterly filings",
+      "Contract cost and schedule estimation risk elevated to #1 priority in Q6 disclosures, suggesting realized or anticipated contract execution problems",
+      "Multiple segments (Mining, IIP, Energy & Chemicals) reported revenue declines in Q4 2018 while only Government and Diversified Services grew"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 29,
+    "prior_risk_count": 31,
+    "new_risks": [
+      {
+        "risk": "Government contract regulatory uncertainty",
+        "key_phrase": "Uncertainties, restrictions and regulations impacting our government contracts",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Contract cost and schedule estimation failure",
+        "prior_language": "Difficulties or delays incurred in the execution of contracts, or failure to accurately estimate the resources and time necessary for our contracts, resulting in cost overruns or liabilities",
+        "current_language": "Failure to accurately estimate the cost and schedule for our contracts, resulting in cost overruns or liabilities, including those related to project delays and those caused by the performance of our clients, subcontractors, suppliers and joint venture or teaming partners"
+      },
+      {
+        "risk": "Competitive pricing and contractual pressure",
+        "prior_language": "Intense competition in the global engineering, procurement and construction industry, which can place downward pressure on our contract prices and profit margins",
+        "current_language": "Intense competition in the global engineering, procurement and construction industry, which can place downward pressure on our contract prices and profit margins and may increase our contractual risks"
+      },
+      {
+        "risk": "Cyclical market and client capital spending vulnerability",
+        "prior_language": "The cyclical nature of many of the markets the company serves, including our commodity-based business lines, and our vulnerability to downturns",
+        "current_language": "The cyclical nature of many of the markets the company serves, including our commodity-based business lines, and our and our client s vulnerability to downturns, which may result in decreased capital investment or expenditures and reduced demand for our services"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Client cancellations of or scope adjustments to existing contracts and the related impacts on staffing levels and cost",
+        "likely_reason": "materialized"
+      },
+      {
+        "risk": "Liabilities arising from faulty services that could result in significant professional or product liability, warranty or other claims",
+        "likely_reason": "unclear"
+      },
+      {
+        "risk": "Current economic conditions affecting clients, partners, subcontractors and suppliers resulting in decreased capital investment or expenditures",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Client cancellations as a distinct standalone risk category",
+      "Faulty services and product liability as a standalone risk",
+      "Current economic conditions affecting client capital spending as standalone concern",
+      "Difficulties or delays in execution as distinct from estimation failures",
+      "MMAI (Maintenance, Modification and Asset Integrity) segment identity \u2014 rebranded as Diversified Services without substantive explanation"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q4",
+        "observation": "Risk boilerplate updated with new reference to 2017 10-K; risk factor count reduced from 31 to 29 with three risks consolidated or removed while one new government contracts risk was added; cyclical risk language broadened to include client-side capital spending impacts"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Competition risk language escalated mid-year with 'and may increase our contractual risks' \u2014 mid-year escalation outside of annual 10-K cycles signals active management concern about contract terms and margin compression"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Annual 10-K reference carries 'as adjusted' qualifier signaling a restatement of fiscal year 2017 financials; contract cost and schedule estimation elevated to the #1 risk factor position, displacing the cyclical market risk that held the top position in Q1-Q5"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T04:05:16Z"
+}

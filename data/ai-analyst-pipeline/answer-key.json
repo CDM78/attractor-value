@@ -1,0 +1,452 @@
+{
+  "ANALYST-0001": {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.767,
+    "sp500_return_3yr": 0.899,
+    "sector": "Communication Services"
+  },
+  "ANALYST-0002": {
+    "ticker": "V",
+    "company": "VISA INC.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.485,
+    "sp500_return_3yr": 0.231,
+    "sector": "Financials"
+  },
+  "ANALYST-0003": {
+    "ticker": "DE",
+    "company": "DEERE & CO",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.425,
+    "sp500_return_3yr": 0.899,
+    "sector": "Industrials"
+  },
+  "ANALYST-0004": {
+    "ticker": "DHR",
+    "company": "DANAHER CORP /DE/",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.202,
+    "sp500_return_3yr": 0.231,
+    "sector": "Health Care"
+  },
+  "ANALYST-0005": {
+    "ticker": "CAH",
+    "company": "CARDINAL HEALTH INC",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 1.165,
+    "sp500_return_3yr": 0.271,
+    "sector": "Health Care"
+  },
+  "ANALYST-0006": {
+    "ticker": "AMP",
+    "company": "AMERIPRISE FINANCIAL INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.999,
+    "sp500_return_3yr": 0.899,
+    "sector": "Financials"
+  },
+  "ANALYST-0007": {
+    "ticker": "HP",
+    "company": "Helmerich & Payne, Inc.",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 0.769,
+    "sp500_return_3yr": 0.271,
+    "sector": null
+  },
+  "ANALYST-0008": {
+    "ticker": "HRB",
+    "company": "H&R BLOCK INC",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 2.367,
+    "sp500_return_3yr": 0.271,
+    "sector": null
+  },
+  "ANALYST-0009": {
+    "ticker": "PLD",
+    "company": "Prologis, Inc.",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.173,
+    "sp500_return_3yr": 0.899,
+    "sector": "Real Estate"
+  },
+  "ANALYST-0010": {
+    "ticker": "PCG",
+    "company": "PG&E Corp",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.49,
+    "sp500_return_3yr": 0.899,
+    "sector": "Utilities"
+  },
+  "ANALYST-0011": {
+    "ticker": "BALL",
+    "company": "BALL Corp",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.207,
+    "sp500_return_3yr": 0.899,
+    "sector": "Materials"
+  },
+  "ANALYST-0012": {
+    "ticker": "ODFL",
+    "company": "ODFL",
+    "outcome": 1,
+    "entry_date": "2019-12-09",
+    "forward_return_3yr": 1.3307348848889355,
+    "sp500_return_3yr": 0.2638905021544751,
+    "sector": null
+  },
+  "ANALYST-0013": {
+    "ticker": "ALB",
+    "company": "ALBEMARLE CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.624,
+    "sp500_return_3yr": 0.231,
+    "sector": "Materials"
+  },
+  "ANALYST-0014": {
+    "ticker": "GT",
+    "company": "GT",
+    "outcome": 0,
+    "entry_date": "2019-02-26",
+    "forward_return_3yr": -0.18298672315634895,
+    "sp500_return_3yr": 0.5693654231010745,
+    "sector": null
+  },
+  "ANALYST-0015": {
+    "ticker": "WST",
+    "company": "WEST PHARMACEUTICAL SERVICES INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.295,
+    "sp500_return_3yr": 0.231,
+    "sector": "Health Care"
+  },
+  "ANALYST-0016": {
+    "ticker": "PAYX",
+    "company": "PAYCHEX INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.291,
+    "sp500_return_3yr": 0.899,
+    "sector": "Industrials"
+  },
+  "ANALYST-0017": {
+    "ticker": "ALB",
+    "company": "ALBEMARLE CORP",
+    "outcome": 0,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": -0.06,
+    "sp500_return_3yr": 0.271,
+    "sector": "Materials"
+  },
+  "ANALYST-0018": {
+    "ticker": "ALB",
+    "company": "ALBEMARLE CORP",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.131,
+    "sp500_return_3yr": 0.899,
+    "sector": "Materials"
+  },
+  "ANALYST-0019": {
+    "ticker": "PYPL",
+    "company": "PayPal Holdings, Inc.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.543,
+    "sp500_return_3yr": 0.231,
+    "sector": "Financials"
+  },
+  "ANALYST-0020": {
+    "ticker": "CRL",
+    "company": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.515,
+    "sp500_return_3yr": 0.231,
+    "sector": "Health Care"
+  },
+  "ANALYST-0021": {
+    "ticker": "CMCSA",
+    "company": "COMCAST CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.191,
+    "sp500_return_3yr": 0.231,
+    "sector": "Communication Services"
+  },
+  "ANALYST-0022": {
+    "ticker": "HRL",
+    "company": "HORMEL FOODS CORP /DE/",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.297,
+    "sp500_return_3yr": 0.231,
+    "sector": "Consumer Staples"
+  },
+  "ANALYST-0023": {
+    "ticker": "CHTR",
+    "company": "CHARTER COMMUNICATIONS, INC. /MO/",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.464,
+    "sp500_return_3yr": 0.231,
+    "sector": "Communication Services"
+  },
+  "ANALYST-0024": {
+    "ticker": "DXC",
+    "company": "DXC Technology Co",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.386,
+    "sp500_return_3yr": 0.231,
+    "sector": null
+  },
+  "ANALYST-0025": {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 2.73,
+    "sp500_return_3yr": 0.231,
+    "sector": "Information Technology"
+  },
+  "ANALYST-0026": {
+    "ticker": "ABT",
+    "company": "ABBOTT LABORATORIES",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.123,
+    "sp500_return_3yr": 0.899,
+    "sector": "Health Care"
+  },
+  "ANALYST-0027": {
+    "ticker": "MET",
+    "company": "METLIFE INC",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.437,
+    "sp500_return_3yr": 0.231,
+    "sector": "Financials"
+  },
+  "ANALYST-0028": {
+    "ticker": "TER",
+    "company": "TERADYNE, INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.216,
+    "sp500_return_3yr": 0.231,
+    "sector": "Information Technology"
+  },
+  "ANALYST-0029": {
+    "ticker": "PRGO",
+    "company": "PRGO",
+    "outcome": 0,
+    "entry_date": "2021-09-20",
+    "forward_return_3yr": -0.293666946230547,
+    "sp500_return_3yr": 0.3111505674576349,
+    "sector": null
+  },
+  "ANALYST-0030": {
+    "ticker": "TRMB",
+    "company": "TRMB",
+    "outcome": 0,
+    "entry_date": "2021-01-20",
+    "forward_return_3yr": -0.2997759786658964,
+    "sp500_return_3yr": 0.2564897220529552,
+    "sector": null
+  },
+  "ANALYST-0031": {
+    "ticker": "CCI",
+    "company": "CROWN CASTLE INC.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.502,
+    "sp500_return_3yr": 0.231,
+    "sector": "Real Estate"
+  },
+  "ANALYST-0032": {
+    "ticker": "FLR",
+    "company": "FLUOR CORP",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 1.334,
+    "sp500_return_3yr": 0.271,
+    "sector": null
+  },
+  "ANALYST-0033": {
+    "ticker": "HAL",
+    "company": "HALLIBURTON CO",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 1.021,
+    "sp500_return_3yr": 0.271,
+    "sector": "Energy"
+  },
+  "ANALYST-0034": {
+    "ticker": "TFC",
+    "company": "TRUIST FINANCIAL CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.136,
+    "sp500_return_3yr": 0.231,
+    "sector": "Financials"
+  },
+  "ANALYST-0035": {
+    "ticker": "VLO",
+    "company": "VALERO ENERGY CORP/TX",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.806,
+    "sp500_return_3yr": 0.231,
+    "sector": "Energy"
+  },
+  "ANALYST-0036": {
+    "ticker": "MRNA",
+    "company": "Moderna, Inc.",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.835,
+    "sp500_return_3yr": 0.231,
+    "sector": "Health Care"
+  },
+  "ANALYST-0037": {
+    "ticker": "AMP",
+    "company": "AMERIPRISE FINANCIAL INC",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 1.127,
+    "sp500_return_3yr": 0.271,
+    "sector": "Financials"
+  },
+  "ANALYST-0038": {
+    "ticker": "UPS",
+    "company": "UNITED PARCEL SERVICE INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.349,
+    "sp500_return_3yr": 0.231,
+    "sector": "Industrials"
+  },
+  "ANALYST-0039": {
+    "ticker": "SBAC",
+    "company": "SBA COMMUNICATIONS CORP",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.461,
+    "sp500_return_3yr": 0.899,
+    "sector": "Real Estate"
+  },
+  "ANALYST-0040": {
+    "ticker": "WDC",
+    "company": "WESTERN DIGITAL CORP",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.051,
+    "sp500_return_3yr": 0.231,
+    "sector": "Information Technology"
+  },
+  "ANALYST-0041": {
+    "ticker": "FLR",
+    "company": "FLUOR CORP",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.217,
+    "sp500_return_3yr": 0.899,
+    "sector": null
+  },
+  "ANALYST-0042": {
+    "ticker": "NKTR",
+    "company": "NEKTAR THERAPEUTICS",
+    "outcome": 0,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": -0.605,
+    "sp500_return_3yr": 0.899,
+    "sector": null
+  },
+  "ANALYST-0043": {
+    "ticker": "CTVA",
+    "company": "CTVA",
+    "outcome": 1,
+    "entry_date": "2019-06-03",
+    "forward_return_3yr": 1.6381596680259847,
+    "sp500_return_3yr": 0.5219151008511763,
+    "sector": null
+  },
+  "ANALYST-0044": {
+    "ticker": "DPZ",
+    "company": "DPZ",
+    "outcome": 0,
+    "entry_date": "2020-05-11",
+    "forward_return_3yr": -0.16191274261820915,
+    "sp500_return_3yr": 0.4096765738009265,
+    "sector": null
+  },
+  "ANALYST-0045": {
+    "ticker": "BAX",
+    "company": "BAXTER INTERNATIONAL INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.633,
+    "sp500_return_3yr": 0.231,
+    "sector": "Health Care"
+  },
+  "ANALYST-0046": {
+    "ticker": "MLM",
+    "company": "MARTIN MARIETTA MATERIALS INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 1.643,
+    "sp500_return_3yr": 0.899,
+    "sector": "Materials"
+  },
+  "ANALYST-0047": {
+    "ticker": "DGX",
+    "company": "QUEST DIAGNOSTICS INC",
+    "outcome": 0,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": -0.072,
+    "sp500_return_3yr": 0.231,
+    "sector": "Health Care"
+  },
+  "ANALYST-0048": {
+    "ticker": "LMT",
+    "company": "LOCKHEED MARTIN CORP",
+    "outcome": 1,
+    "entry_date": "2021-12-31",
+    "forward_return_3yr": 0.468,
+    "sp500_return_3yr": 0.231,
+    "sector": "Industrials"
+  },
+  "ANALYST-0049": {
+    "ticker": "ANET",
+    "company": "Arista Networks, Inc.",
+    "outcome": 1,
+    "entry_date": "2021-01-04",
+    "forward_return_3yr": 2.241,
+    "sp500_return_3yr": 0.271,
+    "sector": "Information Technology"
+  },
+  "ANALYST-0050": {
+    "ticker": "ALGN",
+    "company": "ALIGN TECHNOLOGY INC",
+    "outcome": 1,
+    "entry_date": "2019-01-02",
+    "forward_return_3yr": 2.251,
+    "sp500_return_3yr": 0.899,
+    "sector": "Health Care"
+  }
+}

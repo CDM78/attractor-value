@@ -1,0 +1,123 @@
+{
+  "blindId": "ANALYST-0030",
+  "job1": {
+    "total_commitments_tracked": 6,
+    "commitments_delivered": 4,
+    "commitments_missed": 2,
+    "credibility_score": 0.67,
+    "language_shifts": [
+      {
+        "quarter": "Q3",
+        "shift": "Revenue growth reversed: after Q1 +59.4M and Q2 +69.3M vs prior year, Q3 reported -11.3M vs prior year with no updated guidance or explanation provided."
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Critical accounting hedge removed: Q1-Q3 included disclaimer about estimates based on management best knowledge; Q4 onward replaced with narrower procedural language."
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Distribution reach quietly reduced: claimed over 100 countries in Q1-Q3, reduced to over 85 countries in Q4 onward with no disclosed reason."
+      },
+      {
+        "quarter": "Q5",
+        "shift": "ARR introduced as a new metric without prior-year baseline or target, potentially reframing business narrative without providing comparable data."
+      }
+    ],
+    "red_flags": [
+      "R&D spending inconsistently stated: 15% in Q1, then 14% in Q2-Q3, then back to 15% in Q4-Q6 without explanation.",
+      "Q3 revenue declined year-over-year after two growth quarters with no guidance adjustment or commentary.",
+      "Distribution channel countries reduced from over 100 to over 85 starting Q4 with no disclosure.",
+      "No quantitative forward guidance provided across any of the 6 quarters - management avoided trackable numerical commitments.",
+      "Recurring revenue mix stalled at 58-59% in Q4-Q6 fiscal 2020 with slight regression from Q5 to Q6 not flagged."
+    ]
+  },
+  "job2": {
+    "current_risk_count": 8,
+    "prior_risk_count": 9,
+    "new_risks": [
+      {
+        "risk": "Public health crises and pandemic risk",
+        "key_phrase": "Public health crises and epidemics, such as the novel coronavirus outbreak that is significantly affecting China, could impact our international operations and sales",
+        "severity": "high"
+      },
+      {
+        "risk": "Trade disruption via diplomatic and military events",
+        "key_phrase": "There is inherent risk that political, diplomatic, or military events could result in trade disruptions, including tariffs, trade embargoes, export restrictions, and other trade barriers",
+        "severity": "medium"
+      },
+      {
+        "risk": "Domestic supplier favoritism by non-US customers",
+        "key_phrase": "government or customer efforts, attitudes, laws or policies may lead to non-U.S. customers favoring domestic suppliers that could compete with or replace our products",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Trade policy uncertainty scope expanded",
+        "prior_language": "there is significant uncertainty about the trade policies, treaties, government regulations and tariffs that could apply to trade between the U.S. and China",
+        "current_language": "there is significant uncertainty about the trade policies, treaties, government regulations, and tariffs that could apply to trade between the U.S. and China, as well as other nations"
+      },
+      {
+        "risk": "Country-specific political and economic risk",
+        "prior_language": "local business and cultural factors that differ from our normal standards and practices",
+        "current_language": "uncertain economic and political conditions in countries where we do business, local business and cultural factors that differ from our normal standards and practices"
+      },
+      {
+        "risk": "Acquisition integration reference updated",
+        "prior_language": "In the past year, two of our acquisitions, Viewpoint and e-Builder, were acquired for 1,211.3 million and 485.2 million respectively",
+        "current_language": "We typically acquire a number of businesses each year and intend to continue to acquire other businesses (specific named acquisitions removed, language made generic)"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Information systems and SaaS service disruption as standalone section",
+        "likely_reason": "unclear"
+      },
+      {
+        "risk": "Alliance and distribution relationship maintenance",
+        "likely_reason": "unclear"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "decreasing",
+    "topics_dropped": [
+      "management best knowledge of current events qualifier in critical accounting policies",
+      "distribution channels in over 100 countries reduced to over 85 without explanation",
+      "long haul trucking companies as explicit customer segment label"
+    ],
+    "confidence_trend": "stable",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "stable",
+    "notable_shifts": [
+      {
+        "quarter": "Q1-Q3",
+        "observation": "MD&A included explicit epistemic hedge: Although these estimates are based on management s best knowledge of current events and actions that may impact the company in the future, actual results may be different from the estimates."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Best knowledge qualifier removed. Replaced with: Management believes that the Notes to the Condensed Consolidated Financial Statements have had no significant changes - a narrower procedural statement reducing transparency about forecast uncertainty."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Mission language shifted from optimize the work processes of office and mobile field professionals around the world to enable professionals and field mobile workers to improve or transform their work processes, subtly broadening scope."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Customer segment changed from long haul trucking companies to trucking companies and from contractors, surveying companies to contractors, owners, surveying companies adding owners but removing long haul specificity."
+      },
+      {
+        "quarter": "Q5",
+        "observation": "ARR introduced as a new performance measure without prior-year comparison or numerical target; definition truncated in available text. Introduction of a new KPI mid-period without baseline is a communication ambiguity flag."
+      },
+      {
+        "quarter": "Q5-Q6",
+        "observation": "Software/recurring revenue mix reported at 58% (Q4), 59% (Q5), 58% (Q6). The slight decline from Q5 to Q6 was not flagged. Management presented this as continuing to experience a shift without noting the reversal."
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

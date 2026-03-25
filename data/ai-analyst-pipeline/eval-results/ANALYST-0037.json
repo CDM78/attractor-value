@@ -1,0 +1,61 @@
+{
+  "blindId": "ANALYST-0037",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 4,
+    "commitments_missed": 1,
+    "credibility_score": 0.80,
+    "language_shifts": [
+      {
+        "quarter": "Q2",
+        "shift": "Management introduced a specific quantitative interest rate sensitivity estimate ($200M-$300M adjusted operating earnings after tax decline if long-term rate assumptions decrease by 125-150 bps) — an increase in precision relative to Q1's qualitative-only risk language."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "The specific $200M-$300M interest rate sensitivity quantification introduced in Q2 was silently dropped in Q3, reverting to qualitative-only risk language around spread compression and DAC/DSIC amortization."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Q1 stated results 'will cause results not to be comparable to the same period in previous years'; Q3 softened this to 'may cause results not to be comparable' — increasing hedge on a previously definitive statement."
+      }
+    ],
+    "red_flags": [
+      "Quantitative interest rate sensitivity disclosure ($200M-$300M) introduced in Q2 was quietly removed in Q3 with no explanation — a specific metric dropped rather than updated suggests potential discomfort with the implied forward outlook.",
+      "AUM figure migrated from a precise dollar value ($839B in Q1, $947B in Q2) to an approximate descriptor ('nearly $1 trillion' in Q3), reducing measurability at a threshold milestone.",
+      "No explicit revenue growth targets, margin expansion goals, or product launch timelines were set in any quarter, making management's forward commitments structurally difficult to hold to account — low commitment density is itself a pattern."
+    ]
+  },
+  "job2": null,
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Quantitative interest rate sensitivity range ($200M-$300M adjusted operating earnings after tax impact) — introduced in Q2, absent in Q3",
+      "Specific enumeration of pandemic operational response actions (work-from-home protocol, restricted business travel, WHO/CDC resource provision) — detailed in Q1, summarized by reference in Q2/Q3",
+      "Phrase 'client activity' replaced by 'client behavior' in Q2/Q3, and original reference to 'yet to be seen impacts' dropped after Q1"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 3,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Language is largely definitive and action-oriented: 'We have implemented,' 'we have been satisfying elevated customer service volumes,' 'our operations teams have continued to operate successfully and without disruptions in service.' Forward-looking statements use 'will' rather than 'may.'"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Management increases specificity in one narrow area — introducing a quantitative interest rate sensitivity scenario ('adjusted operating earnings after tax could decline by $200 million to $300 million') — while simultaneously expanding hedging language ('there is still uncertainty surrounding the magnitude, duration, speed and reach'). Net effect is mixed: one concrete data point added, broader uncertainty language maintained."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Two simultaneous regressions: (1) the Q2 quantitative rate-sensitivity disclosure is silently dropped, removing the only new concrete metric introduced in the sequence; (2) the previously definitive 'will cause results not to be comparable' is softened to 'may cause results not to be comparable.' The description of AUM shifts from a precise figure to 'nearly $1 trillion.' Combined, Q3 marks a clear move toward vagueness and hedging relative to Q2."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Risk factor ordering in the interest rate sensitivity paragraph changed: Q1/Q2 led with 'asset management and other asset-based fees' then listed spread income; Q3 moved spread income language to the end. The resequencing de-emphasizes fee-based revenue vulnerability and leads with DAC/DSIC balance sheet items, which may reflect a shift in management's internal concern priorities."
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00.000Z"
+}

@@ -1,0 +1,142 @@
+{
+  "blindId": "ANALYST-0029",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 4,
+    "commitments_missed": 1,
+    "credibility_score": 0.8,
+    "language_shifts": [
+      {
+        "quarter": "Q2",
+        "shift": "RX separation language weakened: Q1 stated 'which, when completed, will enable us to focus on expanding our consumer-facing businesses' (certain future); Q2 shifted to 'which, if completed, would enable us to focus solely' (conditional hypothetical). 'We remain committed to transforming to a consumer-focused business' was dropped and replaced with 'we have not committed to a time frame for a separation.'"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "COVID-19 surge quantified at '$90.0 million to $110.0 million in net sales on a consolidated basis in the first quarter' but paired with explicit inability to forecast: 'we cannot realistically estimate how much of March's surge in sales was consumed...or how much was a result of consumer pantry loading.' No forward-looking guidance provided."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "COVID sales impact revised downward: Q2 indicated $90-110M for Q1 alone; Q3 stated 'the net positive impact on net sales attributed to consumer and customer behavior surrounding the COVID-19 pandemic during the first half of 2020 is between $50.0 million to $70.0 million' for the full six-month period, indicating pantry de-load materially offset the March surge."
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Cough and cold demand forecast confirmed as delivered but framed as ongoing problem: Q4 had anticipated 'lower demand for cough and cold products into the first half of 2021'; Q5 stated 'our segments continued to experience a decline in net sales for cough and cold products...due to the very low incidence of cough and cold related illness this year' -- no recovery timeline offered."
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Post-RX-sale completion, language shifted to definitively confident: 'The sale of the RX business establishes Perrigo as a pure-play consumer self-care company, and was an essential milestone in our transformation plan.' New 'Operating Trends' section introduced with concrete recovery narrative. Ranir acquisition integration no longer mentioned (fully assimilated)."
+      }
+    ],
+    "red_flags": [
+      "RX separation announced August 2018 with confident 'when completed' language; by Q2 2020 had become 'if completed'; ultimately closed July 2021 -- nearly three years elapsed with no timeline commitment ever made despite it being the stated top strategic priority",
+      "COVID net sales impact estimate revised downward between Q2 ($90-110M for Q1 2020 alone) and Q3 ($50-70M net for full H1 2020), suggesting Q2 disclosure reflected optimistic gross surge without adequately weighting the ensuing pantry de-load",
+      "Boilerplate COVID-19 operational language (safety protocols, supply chain, financial resilience) was copied nearly verbatim across Q2, Q3, Q4, and Q5 -- four consecutive quarters -- indicating formulaic compliance disclosure rather than substantive updated management assessment",
+      "No specific date or binding timeline was ever provided for the RX business separation across all six quarters spanning 2019-2021, despite the transaction being described as enabling the company to 'focus on expanding our consumer-facing businesses'"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 10,
+    "prior_risk_count": 6,
+    "new_risks": [
+      {
+        "risk": "IRS Audit 2013-2015 transfer pricing on omeprazole distribution profits",
+        "key_phrase": "the IRS issued a 30-day letter proposing...certain transfer pricing adjustments regarding our profits from the distribution of omeprazole during our 2013 to 2015 tax years in the aggregate amount of $141.6 million",
+        "severity": "high"
+      },
+      {
+        "risk": "IRS NOPA disallowing $414.7M interest deductions on $7.5B intercompany debt for 2014-2015 tax years",
+        "key_phrase": "we received a Revenue Agent Report (RAR) for our 2013-2015 tax years, which retains the adjustment...which disallowed interest expense deductions of $414.7 million on $7.5 billion in debts owed by Perrigo U.S. to Perrigo Company plc",
+        "severity": "high"
+      },
+      {
+        "risk": "Irish Revenue NoA proceeding before Tax Appeals Commission (scheduled November 2021)",
+        "key_phrase": "The Tax Appeals Commission will now consider whether the NoA is correct as a matter of Irish tax law, which is currently scheduled to be heard in November 2021",
+        "severity": "high"
+      },
+      {
+        "risk": "Israeli Tax Authority Stage A assessment for 2015-2017 tax years ($63.8M)",
+        "key_phrase": "we received a Stage A assessment from the Israeli Tax Authority for the 2015-2017 tax years in the amount of $63.8 million relating to attribution of intangible income to Israel",
+        "severity": "medium"
+      },
+      {
+        "risk": "COVID-19 sustained demand weakness in cough/cold category expected into H1 2021",
+        "key_phrase": "we currently anticipate that we will continue to experience lower demand for cough and cold products into the first half of 2021",
+        "severity": "medium"
+      },
+      {
+        "risk": "CBD/cannabidiol market entry via $50M equity stake in Kazmira -- new unproven market",
+        "key_phrase": "we acquired an approximate 20% equity stake in Kazmira for $50.0 million with $15.0 million paid at close of the transaction and the balance due within 18 months",
+        "severity": "medium"
+      },
+      {
+        "risk": "IRS Audit 2009-2012 transfer pricing (active litigation -- trial rescheduled to May 2021)",
+        "key_phrase": "Our previously scheduled trial date of January 26, 2021 for our rebate claims has been continued to May 25, 2021",
+        "severity": "medium"
+      },
+      {
+        "risk": "IRS NOPA Athena IPR&D royalty rate -- Competent Authority Assistance request pending",
+        "key_phrase": "on April 14, 2020, we filed a request for Competent Authority Assistance with the IRS to alleviate potential double taxation. The request was accepted and is under review",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Multi-jurisdiction tax dispute exposure expanded from a general cross-reference to six individually enumerated proceedings with stated dollar amounts",
+        "prior_language": "Item 1A. Risk Factors - Tax Related Risks and Item 8. Note 15",
+        "current_language": "Item 1A. Risk Factors - Tax Related Risks, and Item 8. Note 15, we are engaged in tax disputes in several jurisdictions. The following update notes certain material developments...IRS Audit (2013-2015 Tax Years)...$141.6 million...IRS NOPA...disallowed interest expense deductions of $414.7 million...Irish Revenue NoA...Israeli Notice of Assessment...$63.8 million"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Ranitidine/NDMA voluntary recall -- product withdrawn; shipments halted October 2019, retail market withdrawal completed",
+        "likely_reason": "materialized and resolved -- the recall was completed, the product was withdrawn from market, and the residual financial impact ($7.4M net sales reduction, $15.5M gross profit impact) was absorbed in 2019"
+      },
+      {
+        "risk": "Tysabri financial asset contingent milestone payment risk ($400M dependent on 2020 Biogen sales exceeding $351M)",
+        "likely_reason": "resolved -- the 2020 measurement period elapsed; the milestone either paid or did not, and the contingent asset is no longer a current risk item"
+      },
+      {
+        "risk": "High Ridge Brands acquisition execution and bankruptcy court approval risk",
+        "likely_reason": "resolved -- acquisition closed April 1, 2020 for $113.0M; execution risk resolved and integration underway as of 2021 filing"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Ranir acquisition integration progress (Q1: key transformation driver with $750M transaction; absent by Q6 -- assimilated without update)",
+      "Animal health business sale finalization timeline (Q1: 'expected to be finalized in the fourth quarter of 2019'; resolved and never revisited)",
+      "Explicit committed transformation language: 'We remain committed to transforming to a consumer-focused business' (Q1) -- dropped from Q2 onward, replaced by passive 'if completed' framing",
+      "RX separation cost guidance range of '$45.0 million to $80.0 million' (maintained Q1-Q4, then dropped after RX sale closed in Q6)"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q2",
+        "observation": "Major hedging inflection point: RX separation language converted from certain future ('when completed, will enable') to conditional hypothetical ('if completed, would enable'). New COVID-19 section introduced pervasive uncertainty: 'The magnitude of any such adverse impact cannot currently be determined due to a number of uncertainties surrounding COVID-19.' Forward-looking guidance on demand impact explicitly disclaimed."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "COVID impact quantification provided but surrounded by hedges: '$50.0 million to $70.0 million' net positive for H1 2020 paired with 'we cannot be certain if these trends will continue' and 'it is possible that lower demand may continue and could depend on the duration and severity.' Boilerplate COVID safety language copied near-verbatim from Q2."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Third consecutive quarter of near-identical COVID operational boilerplate. No new COVID impact quantification. Uncertainty dimension broadened with references to jurisdictions 'contemplating or implementing new or renewed restrictions' -- less specific, more contingent framing than Q2/Q3 which at least had dollar estimates."
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Cough/cold demand decline confirmed without recovery forecast: 'our segments continued to experience a decline in net sales for cough and cold products...due to the very low incidence of cough and cold related illness this year.' Confidence measure lowest of the series -- no forward targets, no timeline for normalization."
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Bifurcated communication style: highly confident on completed events ('completed the sale,' 'essential milestone,' 'establishes Perrigo as a pure-play consumer self-care company') but newly hedged on near-term outlook ('net sales for the second quarter of 2021 significantly lagged this consumer takeaway, which we attribute to year over year reductions in customer inventories and unfavorable channel shifting'). New headwinds vocabulary introduced: 'channel dynamics,' 'input costs,' 'inventory adjustments.'"
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

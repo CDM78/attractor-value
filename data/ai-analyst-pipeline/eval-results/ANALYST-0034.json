@@ -1,0 +1,144 @@
+{
+  "blindId": "ANALYST-0034",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 4,
+    "commitments_missed": 0,
+    "credibility_score": 0.80,
+    "language_shifts": [
+      {
+        "quarter": "Q1-Q3",
+        "shift": "Q1 through Q3 MDA is dominated by COVID-19 government response boilerplate (CARES Act, FRB facility descriptions) with no Executive Overview and no company-specific forward guidance. No trackable management commitments are made in these three filings."
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Structural shift from COVID-focused disclosure to milestone-focused disclosure. The Government Response to COVID-19 section was replaced by an Executive Overview containing specific integration commitments for the first time. Language shifted from reactive (describing external programs) to active (describing internal achievements such as completed Wealth brokerage and trust transitions, activated IRM approach)."
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Community Benefits Plan progress reporting loses specificity relative to Q4. Q4 cited 114% of annual target with contextual dollar narrative; Q5 cites the same 114% figure but with reduced supporting detail. Q6 omits the metric entirely, suggesting selective continuation of favorable disclosures."
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Diversity commitment gains quantification (14.2% progress toward more than 15% by 2023) for the first time in Q6, suggesting management disclosed numerical progress only after the figure was near target. Earlier quarters stated the commitment without any numerical progress update."
+      }
+    ],
+    "red_flags": [
+      "Core cost saves commitment of $1.6 billion by Q4 2022 is repeatedly reaffirmed (Q4, Q5, Q6) but never accompanied by actual realized run-rate figures in the MD&A, making independent tracking impossible from these filings alone.",
+      "Diversity hiring commitment (increase racially and ethnically diverse senior leaders to more than 15% by 2023) was first stated in the annual 10-K but only quantified in Q6 at 14.2% progress -- multiple quarters passed without any numerical update on this trackable target.",
+      "Community Benefits Plan progress (114% of annual target) was reported in Q4 and Q5 but dropped entirely from Q6 MDA, suggesting selective reporting of favorable metrics and potential topic avoidance when no incremental positive news was available.",
+      "Forbearance and payment relief programs discussed extensively in Q1-Q3 are entirely absent from Q4-Q6 MD&A despite programs still being active, representing a deliberate topic avoidance pattern as credit quality issues moved from future risk to present reality."
+    ]
+  },
+  "job2": {
+    "current_risk_count": 29,
+    "prior_risk_count": 22,
+    "new_risks": [
+      {
+        "risk": "COVID-19 pandemic adverse impact on financial condition and operations",
+        "key_phrase": "The effects of COVID-19 have adversely impacted, and will likely continue to adversely impact, the Company's financial condition and results of operations.",
+        "severity": "high"
+      },
+      {
+        "risk": "Negative interest rate environment risk arising from FRB emergency rate actions",
+        "key_phrase": "Low rates increase the risk of a negative interest rate environment, either broadly or for some types of instruments.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Scrutiny of sales, training and incentive compensation practices damaging reputation",
+        "key_phrase": "Scrutiny of the Company's sales, training and incentive compensation practices could damage the Company s reputation and adversely impact business and revenues.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Goodwill impairment risk from sustained depressed market values and adverse economic conditions",
+        "key_phrase": "Depressed market values for the Company's stock and adverse economic conditions sustained over a period of time may require the Company to write down all or some portion of the Company's goodwill.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Increased fraud risk linked to pandemic conditions and PPP participation",
+        "key_phrase": "The Company is at risk of increased losses from fraud.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Cybersecurity risks including denial of service, hacking and social engineering attacks",
+        "key_phrase": "The Company faces cybersecurity risks, including denial of service, hacking and social engineering attacks that could result in the disclosure of confidential information.",
+        "severity": "high"
+      },
+      {
+        "risk": "Reputational damage from negative public opinion",
+        "key_phrase": "Negative public opinion could damage the Company's reputation and adversely impact business and revenues.",
+        "severity": "low"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Merger integration timeline shortened, indicating compressed operational pressure",
+        "prior_language": "Truist anticipates further integration of systems, operations, and personnel of BB&T and SunTrust over the next several years.",
+        "current_language": "Truist anticipates further integration of systems, operations, and personnel of BB&T and SunTrust over the next couple of years."
+      },
+      {
+        "risk": "LIBOR transition escalated from hypothetical future risk to active execution risk with no guarantee of success",
+        "prior_language": "The replacement of LIBOR could adversely affect Truist s profitability and financial condition.",
+        "current_language": "There can be no guarantee that these efforts will successfully mitigate the operational risks associated with the transition away from LIBOR to an alternative reference rate."
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Trade negotiations uncertainty and trade wars as specific geopolitical risk drivers (referenced three times in prior year including explicit mention of trade negotiations between U.S. and other nations)",
+        "likely_reason": "resolved"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "Truist reaffirmed its commitment to achieving $1.6 billion in net cost saves on a run rate basis by the fourth quarter of 2022.",
+        "competitor_claim": "Competitor A (supplemental insurance company operating in Japan and U.S.) disclosed no overlapping banking or integration cost-save programs. The competitor's strategy centered on supplemental insurance products and brand-driven distribution with no regional bank positioning, offering no direct basis to contradict the target's integration cost claims.",
+        "competitor": "A"
+      },
+      {
+        "target_claim": "Truist positioned itself as an integrated diversified financial services company with broad banking, insurance brokerage, wealth management and investment banking capabilities following merger completion.",
+        "competitor_claim": "Competitor B described itself as a leading provider of insurance products and services with one of the world's most far-reaching property casualty networks, and on October 26, 2020, announced its intention to separate its Life and Retirement business from AIG -- an opposite strategic trajectory (separation) compared to the target's integration-focused positioning.",
+        "competitor": "B"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Insurance income growth contributing to fee revenue diversification as a strategic differentiator for a large diversified financial company",
+        "evidence": "Competitor A confirmed strong and stable insurance market demand: Aflac Japan continued to be the number one seller of cancer insurance policies in Japan throughout 2020, with more than 15 million cancer policies in force -- corroborating robust insurance market conditions that supported the target company's insurance income growth cited in its 2020 annual results."
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_specific",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Government Response to COVID-19 section including CARES Act provisions and FRB emergency facility descriptions (present Q1-Q3, absent Q4-Q6)",
+      "Paycheck Protection Program borrower forbearance and payment deferral program updates for clients",
+      "Main Street Loan Facility and other FRB Section 13(3) emergency program participation details",
+      "Community Benefits Plan 114% annual target progress metric (present Q4 and Q5, absent Q6)"
+    ],
+    "confidence_trend": "increasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "improving",
+    "notable_shifts": [
+      {
+        "quarter": "Q4",
+        "observation": "Structural shift: the MD&A dropped the extensive Government Response to COVID-19 section that dominated Q1-Q3 and replaced it with an Executive Overview section containing integration milestones, specific performance metrics (net income available to common shareholders up 35.3%, annualized return on average assets 1.17%), and named integration achievements (Wealth brokerage and trust transitions completed, IRM approach activated). Communication became materially more substantive and company-specific starting this quarter."
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Confidence language intensified with quantified achievements: specific PPP loan origination volume (approximately $17 billion through June 30, 2021), net income up 73% year-over-year, voluntary separation program specifics (nearly 2,000 teammates). Management shifted from describing programs to reporting numerical results. The subject to construction for regulatory items increased (3 instances versus 2 in Q4) as post-pandemic regulatory normalization was discussed."
+      },
+      {
+        "quarter": "Q6",
+        "observation": "The SCB of 2.5% was finalized and disclosed as fact (no longer preliminary as in Q5), the consent order lifting was confirmed by the FDIC, and the client migration milestone (approximately 7 million clients migrated to new Truist technology ecosystem, described as the most significant milestone to date) was announced. The $1.6 billion cost saves commitment is reaffirmed concurrently with this operational achievement, pairing forward commitment with present delivery evidence -- the most specific and confident language in the entire six-quarter series."
+      }
+    ]
+  },
+  "timestamp": "2026-03-24T00:00:00Z"
+}

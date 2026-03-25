@@ -1,0 +1,155 @@
+{
+  "blindId": "ANALYST-0035",
+  "job1": {
+    "total_commitments_tracked": 4,
+    "commitments_delivered": 3,
+    "commitments_missed": 0,
+    "credibility_score": 0.75,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Baseline: shortest FLS topics list; qualifier word list contains 20 terms ending with 'may'; cautionary statement reads 'not guarantees of future performance and involve risks, uncertainties, and assumptions that we cannot predict'; uncertainty attribution framed as 'our actual results may differ materially from the future performance that we have expressed or forecast'"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "COVID-19 language shifts from 'recent outbreak of COVID-19' to 'COVID-19 pandemic'; 'strive' added to qualifier word list; basis statement expands from 'ourselves and our industry' to 'ourselves, our industry, and the global economy and financial markets generally' — first signal of broadened macroeconomic uncertainty acknowledgment"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "FLS topics grow to include two new forward-looking areas: (1) 'our anticipated level of cash distributions or contributions, such as our dividend rate and contributions to our qualified pension plans' — signals management re-committing to capital return during COVID downturn; (2) 'the expected timing applicable to such capital investments and any related projects' — first explicit timing specificity added to capex guidance"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "Most significant linguistic shift in the series: qualifier word list expands by 6 terms to 26 total ('strive, seek, potential, opportunity, aimed, considering, continue' added); cautionary statement materially escalates from 'risks, uncertainties, and assumptions that we cannot predict' to 'known and unknown risks and uncertainties, the ultimate outcomes of which we cannot predict with certainty'; new FLS topics added: Winter Storm Uri frequency expectations, government restrictions and vaccine language, share repurchase program reintroduction, low-carbon fuel standards, and 'several carbon transition projects, which are in early development'"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Uncertainty framing widens further: 'expressed or forecast' becomes 'expressed, suggested, or forecast'; new FLS topics: hedge transactions, counterparty credit risk, deferred tax repatriation, debt securities transactions; GHG targets upgraded from vague 'carbon transition projects in early development' (Q4) to 'our publicly announced GHG emissions reduction/offset targets' — commitment now public and trackable"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "COVID risk disclosure adds 'requirements and mandates with respect to vaccines' and 'administrative costs' to the impact list; otherwise stable vs Q5 — linguistic equilibrium reached; the broader hedging framework from Q4 is normalized rather than further escalated"
+      }
+    ],
+    "red_flags": [
+      "Share repurchase program entirely absent from Q1-Q3 FLS topic lists; reintroduced in Q4 — suspension implied by topic omission but never explicitly disclosed as a commitment change in the available safe harbor sections",
+      "Carbon transition projects described in Q4 as 'several carbon transition projects, which are in early development' — structurally non-trackable commitment with no investment scale, timeline, or technology disclosed",
+      "Cautionary language escalation from Q3 to Q4 ('known and unknown risks... cannot predict with certainty') is material and coincides with Winter Storm Uri losses, suggesting internal recognition of elevated operational uncertainty",
+      "The provided MD&A text contains only boilerplate safe harbor sections (~8,000 characters per quarter); substantive OVERVIEW AND OUTLOOK and RESULTS OF OPERATIONS sections were not included in the data extract, limiting the ability to track specific financial guidance delivery against actuals"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 12,
+    "prior_risk_count": 8,
+    "new_risks": [
+      {
+        "risk": "COVID-19 pandemic and public health threats",
+        "key_phrase": "the effects of public health threats, pandemics and epidemics, such as the recent outbreak of COVID-19, and the adverse impacts thereof on our business, financial condition, results of operations, and liquidity",
+        "severity": "high"
+      },
+      {
+        "risk": "Climate change regulation and GHG emissions reduction obligations",
+        "key_phrase": "expectations regarding our publicly announced greenhouse gas (GHG) emissions reduction/offset targets and our current and any future carbon transition projects",
+        "severity": "high"
+      },
+      {
+        "risk": "Low-carbon fuel standards and energy transition policy risk",
+        "key_phrase": "expectations regarding adoptions of new, or changes to existing, low-carbon fuel standards or policies, blending and tax credits, or efficiency standards that impact demand for renewable fuels",
+        "severity": "high"
+      },
+      {
+        "risk": "Severe weather events causing large excess operational costs",
+        "key_phrase": "our expectations with respect to the frequency of large excess costs and expenses arising out of storms and other weather events, such as Winter Storm Uri",
+        "severity": "medium"
+      },
+      {
+        "risk": "Counterparty and trade receivables credit risk",
+        "key_phrase": "expectations regarding our counterparties, including our ability to pass on increased compliance costs and timely collect receivables, and the credit risk within our accounts receivable or accounts payable",
+        "severity": "medium"
+      },
+      {
+        "risk": "Deferred tax liability and foreign cash repatriation",
+        "key_phrase": "expectations regarding environmental, tax, and other regulatory matters, including the anticipated amounts and timing of payment with respect to our deferred tax liabilities, matters impacting our ability to repatriate cash held by our foreign subsidiaries",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Renewable diesel investment scale and capital commitment",
+        "prior_language": "We also a joint venture partner in Diamond Green Diesel Holdings LLC (DGD), which owns and operates a renewable diesel plant in Norco, Louisiana",
+        "current_language": "We have invested over $3 billion to date in our renewable fuels businesses, and we expect additional growth opportunities in this area. For example, we expect to invest almost $2 billion over the next three years to complete the expansion of DGD s existing renewable diesel plant located next to our St. Charles Refinery in Norco, Louisiana (the DGD Plant) and to build DGD s second plant next to our Port Arthur Refinery in Port Arthur, Texas"
+      },
+      {
+        "risk": "ESG and environmental stewardship disclosure obligations",
+        "prior_language": "No Environmental Stewardship section present; no ESG, GHG, or carbon language in Items 1-2 of prior 10-K",
+        "current_language": "We strive to manage our business to responsibly meet the world s demand for reliable and affordable energy and have made multibillion-dollar investments to develop and grow our low-carbon renewable diesel and ethanol businesses. These renewable fuels businesses have made us one of the world s largest renewable fuels producers"
+      },
+      {
+        "risk": "Overall uncertainty and unpredictability of outcomes",
+        "prior_language": "risks, uncertainties, and assumptions that we cannot predict",
+        "current_language": "known and unknown risks and uncertainties, the ultimate outcomes of which we cannot predict with certainty"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Valero Energy Partners LP (VLP) MLP structure and integration risk",
+        "likely_reason": "resolved — VLP was fully absorbed into the refining segment on January 1, 2019 per the Merger Transaction; no longer a separate operational or governance risk"
+      },
+      {
+        "risk": "One ethanol plant (14 plants in prior vs 13 plants in current)",
+        "likely_reason": "materialized — one ethanol plant was permanently closed or divested between fiscal year-end 2019 and fiscal year-end 2020, eliminating that operational risk exposure"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [],
+    "corroborations": [
+      {
+        "claim": "Both target and Competitor A operate in the downstream energy sector with structurally analogous MD&A disclosure frameworks, corroborating that industry-wide market conditions (not company-specific factors) drove disclosure similarities in the 2021 filing period",
+        "evidence": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS Management's Discussion and Analysis of Financial Condition and Results of Operations (MD&A) should be read in conjunction with the consolidated financial statements included in"
+      }
+    ],
+    "target_language_quality": "vague",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_specific",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "Share repurchase program — absent from FLS topics in Q1, Q2, and Q3; reintroduced in Q4 as 'our evaluation of, and expectations regarding, any future activity under our share repurchase program'",
+      "Simple single-sentence risk characterization — Q1 uses 'risks, uncertainties, and assumptions that we cannot predict'; abandoned from Q4 onward in favor of multi-clause uncertainty framework"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Baseline: 20-word qualifier list; cautionary statement says 'not guarantees of future performance and involve risks, uncertainties, and assumptions that we cannot predict'; uncertainty statement: 'our actual results may differ materially from the future performance that we have expressed or forecast'"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "COVID-19 framing escalates from 'recent outbreak' to 'pandemic'; qualifier list adds 'strive'; macroeconomic scope explicitly widened; otherwise structurally similar to Q1 — management absorbing COVID shock without yet expanding hedging vocabulary further"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Two new forward-looking topics introduced: dividend/pension commitment and capital investment timing — both additive specificity signals. Corn-related co-products added to product scope. Underlying cautionary language unchanged from Q2"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Largest single-quarter linguistic expansion: qualifier word list grows from 20 to 26 terms; cautionary language upgrades to 'known and unknown risks and uncertainties, the ultimate outcomes of which we cannot predict with certainty'; six new FLS topics added including Winter Storm Uri, vaccine distribution, share repurchase reinstatement, low-carbon standards, and early-stage carbon transition projects"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Uncertainty framing broadens: 'expressed or forecast' becomes 'expressed, suggested, or forecast'; three new financial disclosure topics added (hedge transactions, deferred tax repatriation, counterparty risk); GHG targets shift from 'early development' to 'publicly announced' — accountability now explicit"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Incremental additions only: COVID impact list gains 'requirements and mandates with respect to vaccines' and 'administrative costs'; language otherwise stable vs Q5. Pattern suggests the deterioration in communication confidence peaked at Q4-Q5 and has stabilized rather than continued to worsen"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T04:06:08Z"
+}

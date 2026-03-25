@@ -1,0 +1,102 @@
+{
+  "blindId": "ANALYST-0046",
+  "job1": {
+    "total_commitments_tracked": 4,
+    "commitments_delivered": 3,
+    "commitments_missed": 1,
+    "credibility_score": 0.75,
+    "language_shifts": [
+      {
+        "quarter": "Q2",
+        "shift": "Dropped adjusted EBITDA reconciliation and acquisition-related expense adjustments that were prominent in Q1; Q2 reverts to reporting only consolidated (unadjusted) EBITDA, reducing comparability but suggesting integration costs resolved"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "Weather language softened from 'Because of the potentially significant impact' (Q1) to 'Due to the potentially significant impact' (Q2), a minor hedge reduction signaling slightly more confident framing"
+      }
+    ],
+    "red_flags": [
+      "West Group aggregates volumes grew only modestly (+2.8% to $217.7M in Q3 2018) despite management's 'leading position' claims in western US growth markets, suggesting demand softness or competitive pressure",
+      "Adjusted EBITDA metric dropped in Q2 without explanation after being introduced in Q1 specifically to highlight acquisition adjustments; its removal limits period-over-period transparency on underlying performance"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 6,
+    "prior_risk_count": 6,
+    "new_risks": [
+      {
+        "risk": "Hurricane-specific operational disruption risk with named storm impacts on revenue",
+        "key_phrase": "Hurricane Harvey, a Category 4 storm that made landfall in Houston in August 2017, brought nearly 20 trillion gallons of precipitation",
+        "severity": "high"
+      },
+      {
+        "risk": "Extended delay of meaningful FAST Act federal funding impact beyond 2018",
+        "key_phrase": "no meaningful impact from the FAST Act funding or an enhanced federal infrastructure bill until 2019 or later",
+        "severity": "high"
+      },
+      {
+        "risk": "Aggregate shipment volume decline reversing multi-year growth trend",
+        "key_phrase": "aggregates product line shipments showed a 0.6% decline compared with 2016 levels",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Weather and precipitation risk to operations and profitability",
+        "prior_language": "Weather-related hindrances were exacerbated over the last two years by record precipitation in many of our key markets",
+        "current_language": "The last few years brought an unprecedented amount of precipitation to the United States and particularly to Texas...fifth consecutive year with above-average precipitation...These weather events reduced the Company s overall profitability in 2017 and 2016"
+      },
+      {
+        "risk": "Infrastructure funding uncertainty and public construction headwinds",
+        "prior_language": "We expect to see meaningful impact from the FAST Act funding beginning in 2017, along with increased infrastructure spending at the state level",
+        "current_language": "Government uncertainty, attendant project delays and tight labor markets have exerted disproportionate downward pressure on public construction activity and, for the past three years, as these headwinds have worsened"
+      },
+      {
+        "risk": "Aggregates shipment volume trend reversal after five consecutive years of growth",
+        "prior_language": "For the last five years, our aggregates shipments have increased, reflecting degrees of stability and modest growth",
+        "current_language": "During 2017 our aggregates product line shipments showed a 0.6% decline compared with 2016 levels, after a 1.4% increase in 2016"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Trump administration federal infrastructure investment proposal as near-term positive catalyst",
+        "likely_reason": "materialized as non-event; current filing omits any reference to the proposed federal infrastructure bill as a near-term positive, instead explicitly pushing any meaningful federal impact to 2019 or later"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [],
+    "corroborations": [],
+    "target_language_quality": "vague",
+    "competitive_position_assessment": "stable",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "stable",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "Adjusted EBITDA and non-GAAP reconciliation tables (three-way reconciliation present in Q1, absent in Q2)",
+      "Acquisition-related expense adjustments and integration costs for Bluegrass Materials acquisition",
+      "Impact of selling acquired inventory at fair value markup as a separate line item"
+    ],
+    "confidence_trend": "increasing",
+    "quarters_analyzed": 2,
+    "overall_communication_trajectory": "improving",
+    "notable_shifts": [
+      {
+        "quarter": "Q2",
+        "observation": "Management dropped the three-way adjusted EBITDA / adjusted EPS / adjusted earnings from operations reconciliation that dominated Q1 disclosure, signaling that Bluegrass acquisition integration costs have normalized and no longer require separate non-GAAP carve-out"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Introduction of a formal structured 'Significant items' bullet-point summary (absent in Q1) represents a shift toward more investor-friendly declarative communication that leads directly with key financial metrics rather than explanatory narrative"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "Weather caveat phrasing changed from 'Because of the potentially significant impact of weather' (Q1) to 'Due to the potentially significant impact of weather' (Q2), a subtle shift from conditional to causal framing that slightly reduces hedging tone"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T03:54:36Z"
+}

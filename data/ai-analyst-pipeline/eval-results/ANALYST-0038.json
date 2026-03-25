@@ -1,0 +1,163 @@
+{
+  "blindId": "ANALYST-0038",
+  "job1": {
+    "total_commitments_tracked": 12,
+    "commitments_delivered": 10,
+    "commitments_missed": 1,
+    "credibility_score": 0.83,
+    "language_shifts": [
+      {
+        "quarter": "Q4",
+        "shift": "Pivot from reactive COVID-hedging language to proactive strategy narrative; Customer First, People Led, Innovation Driven framework introduced and repeated verbatim each subsequent quarter, replacing ad hoc crisis commentary"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Residential delivery volume decline reframed positively as volume mix normalization contributing to margin improvement rather than a missed commitment on prior elevated-residential guidance"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Specific delivery milestone cited (approximately 90% of the population for Saturday services), shift from vague network investment claims to quantified capability achievements"
+      }
+    ],
+    "red_flags": [
+      "Q1-Q3 repeated we cannot reasonably estimate the duration or severity of this pandemic verbatim across three consecutive quarters, stock language masking absence of substantive forward guidance",
+      "Q5 residential volume decline positioned as strategy execution success, obscuring that prior guidance (elevated residential deliveries will persist) proved incorrect",
+      "UPS Freight divestiture introduced in Q4 as previously-decided fact despite being announced mid-quarter; prior quarters carried no signal of this strategic exit despite truckload brokerage margin pressure visible in Q2-Q3",
+      "Transformation strategy costs remained elevated across all six quarters ($45M to $232M cumulative YTD by Q6) with no concrete wind-down timeline provided"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 18,
+    "prior_risk_count": 15,
+    "new_risks": [
+      {
+        "risk": "Human capital and workforce attraction/retention risk",
+        "key_phrase": "Failure to attract or retain qualified employees could materially adversely affect us",
+        "severity": "high"
+      },
+      {
+        "risk": "Pandemic-related healthcare logistics and vaccine cold chain obligations",
+        "key_phrase": "increased our cold-chain logistics capabilities to support the rapid deployment of COVID-19 vaccines both in the U.S. and internationally",
+        "severity": "medium"
+      },
+      {
+        "risk": "Diversity, equity and inclusion governance and oversight risk",
+        "key_phrase": "We believe in creating an inclusive and equitable environment that represents a broad spectrum of backgrounds, cultures and stakeholders",
+        "severity": "low"
+      },
+      {
+        "risk": "Strategic concentration risk from UPS Freight divestiture and portfolio narrowing",
+        "key_phrase": "This will allow us to be even more focused on the core parts of our business that drive the greatest value for our shareholders",
+        "severity": "medium"
+      },
+      {
+        "risk": "Union representation and labor relations risk made structurally explicit in new Human Capital disclosure",
+        "key_phrase": "More than three-quarters of our U.S. employees are represented by unions, primarily those employees handling or transporting packages",
+        "severity": "high"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "E-commerce structural demand mix pressure on margins",
+        "prior_language": "global Business to Consumer (B2C) and Business to Business (B2B) e-commerce",
+        "current_language": "our customers are changing, our competitors are changing, and the rate of change is accelerating"
+      },
+      {
+        "risk": "Workforce transformation and employee value proposition under restructuring",
+        "prior_language": "our strategic investments are primarily focused in areas we believe will drive growth",
+        "current_language": "we are creating fewer but more impactful jobs...enhancing the employee value proposition to align with evolving market practices"
+      },
+      {
+        "risk": "International competitive positioning required to justify premium pricing",
+        "prior_language": "We offer more guaranteed time-definite express options than any other carrier",
+        "current_language": "more guaranteed time-definite express options than any other carrier...since 2017, we have doubled our air capacity to Dubai"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Platform-based digital venture execution risk (UPS eFulfillment, Ware2Go)",
+        "likely_reason": "materialized: these ventures deemphasized or absorbed into broader Digital Access Program, no longer highlighted as standalone strategic bets"
+      },
+      {
+        "risk": "Foreign trade zone expansion and management complexity (Zone Solutions acquisition)",
+        "likely_reason": "unclear: FTZ management services no longer cited as strategic initiative in 2021 filing"
+      },
+      {
+        "risk": "Asia Pacific joint venture execution risk (SF Express JV specifically named in 2020)",
+        "likely_reason": "unclear: SF Express joint venture explicitly cited in 2020, absent from 2021 strategic disclosures"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "The pandemic also resulted in a reduction in global air cargo capacity. This caused market rates in the industry to increase and we experienced increased demand for our services.",
+        "competitor_claim": "we experienced temporary production shut-downs due either to government mandate or to help ensure employee safety...the vast majority of our manufacturing facilities have remained open and operational throughout 2020",
+        "competitor": "B"
+      },
+      {
+        "target_claim": "we focused on enhancing the capabilities that we believe our customers value the most; speed and ease of access to our services",
+        "competitor_claim": "our next-gen payroll solution earned ADP its 6th consecutive Top HR Product Award...we announced the launch of Roll, a new mobile-first payroll and tax filing product aimed at small businesses",
+        "competitor": "A"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Global supply chain disruption from COVID-19 created capacity constraints and elevated market rates",
+        "evidence": "The impacts of the COVID-19 pandemic negatively affected the global economy, disrupted supply chains and created significant volatility and disruption in financial markets"
+      },
+      {
+        "claim": "Healthcare sector experienced elevated and broad-based demand through the pandemic period",
+        "evidence": "changes in commercial real estate occupancy, constraints on government and institutional budgets and the uncertain business climate have led to declines and delays in new construction activity"
+      },
+      {
+        "claim": "E-commerce growth as structural trend accelerated significantly by pandemic conditions",
+        "evidence": "the pandemic reinforced the need for robust workforce management solutions for our clients while they navigate the new norm of increasingly flexible schedules and work arrangements"
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "strengthening",
+    "confidence": "low"
+  },
+  "job4": {
+    "guidance_trend": "more_specific",
+    "hedging_trend": "decreasing",
+    "topics_dropped": [
+      "Accounts receivable credit loss allowances (discussed Q1-Q2, absent Q4-Q6)",
+      "Casualty self-insurance reserve adverse developments (Q1-Q3, absent Q4-Q6)",
+      "Buy-sell spread compression in Supply Chain and Freight (Q1 only, not revisited)",
+      "Goodwill and long-lived asset impairment risk (Q1-Q3, absent Q4-Q6)"
+    ],
+    "confidence_trend": "increasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "improving",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Crisis-reactive tone with three separate instances of we cannot reasonably estimate or we are unable to predict within a single overview; all forward guidance hedged with may or could; four distinct risk admissions in opening paragraphs"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "First use of specific operational fact in forward context (hired approximately 39,000 additional employees); still mirrors Q1 hedging language almost verbatim on pandemic duration uncertainty"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "First segment-level confident forward statement (We expect the segment will continue to see strong results) for International Package; U.S. Domestic guidance remains hedged; SMB growth attributed to network optimization for first time"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Structural pivot: COVID-as-cause replaced by Customer First, People Led, Innovation Driven as primary narrative frame; hedging frequency drops approximately 50% from Q1-Q3 baseline; strategy brand leads opening paragraph"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Past-tense achievement language replaces future-hedge language (we have improved time-in-transit versus prior we expect to improve); revenue quality initiatives introduced as branded concept signaling confident pricing posture; UPS Freight divestiture gain absorbed matter-of-factly"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "Most specific milestone language across all six quarters (approximately 90% of the population for Saturday services); new supply chain disruption language externalized (Global supply chains continue to be disrupted) rather than internalized as company risk; demand outlook stated confidently (we anticipate demand for our services will remain strong)"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T03:52:03Z"
+}

@@ -1,0 +1,152 @@
+{
+  "blindId": "ANALYST-0013",
+  "job1": {
+    "total_commitments_tracked": 6,
+    "commitments_delivered": 4,
+    "commitments_missed": 1,
+    "credibility_score": 0.67,
+    "language_shifts": [
+      {
+        "quarter": "Q1",
+        "shift": "Lithium market described as 'continues to accelerate' - highest-confidence forward-looking language in the series"
+      },
+      {
+        "quarter": "Q2",
+        "shift": "'continues to accelerate' downgraded to 'remains strong' - first sign of hedging, coinciding with 14% revenue decline YoY"
+      },
+      {
+        "quarter": "Q3",
+        "shift": "Added caveat 'while managing the high cost of expanding capacity' alongside lithium market positivity - acknowledges execution challenge for first time"
+      },
+      {
+        "quarter": "Q4",
+        "shift": "New CEO introduces corporate purpose statement 'making the world safe and sustainable by powering the potential of people' - aspirational mission language replaces operational specificity"
+      },
+      {
+        "quarter": "Q5",
+        "shift": "End-market list drops 'custom chemistry services' consistent with FCS divestiture completion; forward-looking risk factors list expanded to include acquisition/divestiture transaction risks"
+      },
+      {
+        "quarter": "Q6",
+        "shift": "Disclosure of $504.5M after-tax arbitration loss (Huntsman matter from legacy Rockwood acquisition) not prefigured in prior quarter outlooks; defensive/explanatory tone introduced"
+      }
+    ],
+    "red_flags": [
+      "Arbitration ruling in Q3 2021 resulted in $504.5M after-tax loss ($(3.36) diluted EPS impact) - not disclosed or foreshadowed in any prior quarter outlook section",
+      "Credit covenant modified in May 2020 to expand net debt/EBITDA tolerance to 4.5x through Sept 2021 - signals balance sheet stress undisclosed in Q1 2020 outlook framing",
+      "Silver Peak capacity doubling commitment ($30-50M investment, target 2025) announced Q1 2021 with no subsequent progress confirmation in Q5 or Q6 filings reviewed",
+      "Lithium market tone progression from 'accelerates' to 'remains strong' to 'managing high cost of expanding capacity' shows systematic hedging despite nominally positive framing each quarter"
+    ]
+  },
+  "job2": {
+    "current_risk_count": 25,
+    "prior_risk_count": 24,
+    "new_risks": [
+      {
+        "risk": "COVID-19 pandemic duration and impact uncertainty elevated as a standalone identified risk factor",
+        "key_phrase": "uncertainties as to the duration and impact of the novel coronavirus (COVID-19) pandemic",
+        "severity": "high"
+      },
+      {
+        "risk": "CEO leadership transition following health-related retirement creates organizational continuity risk",
+        "key_phrase": "Chairman and Chief Executive Officer Luke Kissam advised the Board of Directors that he will retire...for health reasons",
+        "severity": "medium"
+      },
+      {
+        "risk": "Credit agreement covenant modification signals financial covenant stress and constrains capital allocation flexibility",
+        "key_phrase": "maximum ratio to 4.00:1 for the fiscal quarter ending June 30, 2020, 4.50:1 for the fiscal quarters ending September 30, 2020 through September 30, 2021",
+        "severity": "high"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "International operations geopolitical and regulatory risk",
+        "prior_language": "could adversely affect our business, financial condition and results of operations",
+        "current_language": "could adversely affect our business, financial condition and results of operations"
+      },
+      {
+        "risk": "Raw material cost and pass-through risk - language unchanged despite heightened commodity volatility in 2020",
+        "prior_language": "our raw material and energy costs can be volatile and may increase significantly",
+        "current_language": "our raw material and energy costs can be volatile and may increase significantly"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Specific US-China trade war and tariff escalation risks prominent in 2019 macro environment",
+        "likely_reason": "unclear"
+      }
+    ],
+    "overall_trajectory": "deteriorating"
+  },
+  "job3": {
+    "contradictions": [
+      {
+        "target_claim": "we continue to monitor the market and offer solutions where we have appropriate technology and believe we are well positioned to take advantage of opportunities that may arise from such demand or legislation",
+        "competitor_claim": "We are the world's largest supplier of hydrogen and have built leading positions in growth markets such as helium and liquefied natural gas process technology and equipment",
+        "competitor": "A"
+      },
+      {
+        "target_claim": "Some of our competitors are larger than we are and may have greater financial resources. These competitors may also be able to maintain significantly greater operating and financial flexibility.",
+        "competitor_claim": "Sales of $10.3 billion increased 17%...Adjusted EBITDA of $3,883.2 increased 7%...adjusted EBITDA margin of 37.6%",
+        "competitor": "A"
+      }
+    ],
+    "corroborations": [
+      {
+        "claim": "Energy transition and clean energy demand represents a structural multi-year growth driver for the materials and specialty chemicals sector",
+        "evidence": "we continued to execute our growth strategy, including announcement of several new gasification, carbon capture, and hydrogen projects that will drive the world's energy transition from fossil fuels"
+      },
+      {
+        "claim": "Second-half 2021 industrial demand recovery after pandemic disruption",
+        "evidence": "In the second half of the year, demand for most merchant products returned to pre-pandemic levels"
+      },
+      {
+        "claim": "Sustainability and ESG initiatives gaining importance in capital allocation decisions",
+        "evidence": "we continued to create shareholder value by increasing the quarterly dividend on our common stock to $1.50 per share, representing a 12% increase from the previous dividend. This is the 39th consecutive year that we have increased our quarterly dividend payment."
+      }
+    ],
+    "target_language_quality": "mixed",
+    "competitive_position_assessment": "stable",
+    "confidence": "medium"
+  },
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "increasing",
+    "topics_dropped": [
+      "custom chemistry services (end market removed from Q5 onward following FCS divestiture)",
+      "crop protection (end market dropped from end-market list starting Q5)",
+      "specific lithium market acceleration framing (replaced with generic 'remains strong' language)",
+      "explicit COVID-19 pandemic as a discrete macro event (absorbed into general uncertainty language)"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q1",
+        "observation": "Lithium battery and energy storage market described with peak confidence: 'continues to accelerate, providing the opportunity to continue to develop high quality and innovative products' - most optimistic framing in the series"
+      },
+      {
+        "quarter": "Q2",
+        "observation": "'continues to accelerate' replaced by 'remains strong' - subtle but deliberate tonal downgrade coinciding with a 14% YoY revenue decline; no explicit acknowledgment of the shift"
+      },
+      {
+        "quarter": "Q3",
+        "observation": "Qualifying phrase 'while managing the high cost of expanding capacity' inserted into lithium market discussion for the first time - acknowledges margin pressure in growth business"
+      },
+      {
+        "quarter": "Q4",
+        "observation": "New CEO introduces aspirational purpose statement ('making the world safe and sustainable by powering the potential of people'); forward-looking risk factor list unchanged from prior quarters"
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Forward-looking risk factors section expanded with new hedging categories: 'product development; future acquisition and divestiture transactions; expected benefits from proposed transactions; timing of active and proposed projects' - broader disclaimer scope signals increased M&A activity complexity"
+      },
+      {
+        "quarter": "Q6",
+        "observation": "$(3.36) diluted loss per share from $504.5M Huntsman arbitration ruling disclosed without prior quarters having mentioned any material litigation risk; management narrative pivots to Tianyuan acquisition as growth signal"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T03:41:49Z"
+}

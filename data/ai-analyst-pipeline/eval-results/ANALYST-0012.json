@@ -1,0 +1,137 @@
+{
+  "blindId": "ANALYST-0012",
+  "job1": {
+    "total_commitments_tracked": 5,
+    "commitments_delivered": 3,
+    "commitments_missed": 2,
+    "credibility_score": 0.6,
+    "language_shifts": [
+      {
+        "quarter": "Q4",
+        "shift": "Yield management commitment language softened: Q1-Q3 stated 'We are committed to a disciplined yield management process'; Q4 replaced with 'We believe our yield management process focused on individual account profitability' - removing the declarative commitment in favor of a belief statement."
+      },
+      {
+        "quarter": "Q4",
+        "shift": "New defensive framing added to yield objective: Q4-Q6 insert 'to offset our cost inflation and support our ongoing investments in capacity and technology' - repositioning yield management from a growth driver to a cost-defense mechanism, coinciding with the onset of tonnage declines."
+      },
+      {
+        "quarter": "Q5",
+        "shift": "Technology upgrade language weakened: Q1-Q4 used 'We continually upgrade our technological capabilities'; Q5-Q6 changed to 'We regularly upgrade' - removing the implied constant-improvement imperative."
+      },
+      {
+        "quarter": "Q3",
+        "shift": "LTL tonnage growth rate decelerated from double-digit (Q1: +15.4%, Q2: +14.6%) to single-digit (Q3: +8.1%) without management comment on the deceleration, even as overview language continued to emphasize density growth as the primary revenue focus."
+      },
+      {
+        "quarter": "Q5-Q6",
+        "shift": "Revenue commentary shifted from record-setting superlatives (Q1-Q3: 'Company records for revenue and net income') to muted framing as tonnage turned negative; no explicit acknowledgment of failure to sustain density growth."
+      }
+    ],
+    "red_flags": [
+      "Primary stated revenue focus - density growth (shipment and tonnage growth within existing infrastructure) - was explicitly and persistently missed: LTL tons declined -3.0% in Q4, -6.3% in Q5, and -3.7% in Q6 after strong gains of +15.4%, +14.6%, and +8.1% in Q1-Q3.",
+      "Operating ratio improvement commitment missed in Q6: Q3-2019 operating ratio deteriorated to 79.3% vs. 78.4% in Q3-2018, reversing the consistent year-over-year improvement trend that management highlighted throughout Q1-Q3 2018.",
+      "Revenue growth decelerated from four consecutive double-digit quarters (Q1 2018: +22.7%, Q2 2018: +23.0%, Q3 2018: +21.2%) to single-digit (Q4 2019: +7.1%, Q5 2019: +2.6%) and ultimately turned negative (Q6 2019: -0.9%) - management did not disclose any explicit guidance or warning about the deceleration.",
+      "The removal of 'consumer household pickup and delivery (P&D)' from the service description (dropped after Q1) and 'warehousing' from value-added services (dropped after Q2) without explanation suggests a quiet retreat from previously advertised service offerings.",
+      "Management used 'we believe' to attribute record Q2-Q3 performance to external tailwinds ('strong domestic economy,' 'tightening capacity') rather than management execution, which presages difficulty when those tailwinds reverse."
+    ]
+  },
+  "job2": {
+    "current_risk_count": 12,
+    "prior_risk_count": 15,
+    "new_risks": [
+      {
+        "risk": "ESG profile competitive disadvantage",
+        "key_phrase": "some customers may perceive our environmental, social and governance (ESG) profile to be less robust than that of our competitors, which could influence the selection of their carrier",
+        "severity": "medium"
+      },
+      {
+        "risk": "Competitors with more fully developed information technology systems",
+        "key_phrase": "more fully developed information technology systems",
+        "severity": "medium"
+      },
+      {
+        "risk": "Tariffs and active trade war risk escalated from general NAFTA uncertainty",
+        "key_phrase": "The U.S. government has made significant changes in U.S. trade policy and has taken certain other actions that may impact U.S. trade, including imposing tariffs on certain goods imported into the United States. To date, several governments, including the European Union, China, and India, have imposed tariffs on certain goods imported from the United States.",
+        "severity": "high"
+      },
+      {
+        "risk": "Expanded federal regulatory oversight scope",
+        "key_phrase": "We are regulated by the DOT and by various state and federal agencies",
+        "severity": "medium"
+      },
+      {
+        "risk": "ELD hardware and software platform transition compliance risk",
+        "key_phrase": "the transition of our fleet and safety management systems from our legacy electronic AOBRDs to a new ELD hardware and software platform",
+        "severity": "medium"
+      },
+      {
+        "risk": "Growing compliance complexity from divergence between federal and state regulations",
+        "key_phrase": "growing compliance risks presented by increased differences between applicable federal and state regulations",
+        "severity": "medium"
+      }
+    ],
+    "escalated_risks": [
+      {
+        "risk": "Trade policy and economic conditions",
+        "prior_language": "any other action that the U.S. government may take to withdraw from or materially modify the North American Free Trade Agreement and certain other international trade arrangements, may lead to fewer goods being transported",
+        "current_language": "The U.S. government has made significant changes in U.S. trade policy and has taken certain other actions that may impact U.S. trade, including imposing tariffs on certain goods imported into the United States. To date, several governments, including the European Union, China, and India, have imposed tariffs on certain goods imported from the United States."
+      },
+      {
+        "risk": "ELD regulatory compliance specificity",
+        "prior_language": "costs and potential adverse impact of compliance associated with addressing interoperability between electronic AOBRDs and ELDs in accordance with FMCSA's ELD regulations and guidance, which includes our existing waiver and pending exemption request",
+        "current_language": "costs and potential adverse impact of compliance associated with FMCSA's ELD regulations and guidance, including the transition of our fleet and safety management systems from our legacy electronic AOBRDs to a new ELD hardware and software platform"
+      }
+    ],
+    "disappeared_risks": [
+      {
+        "risk": "Significant ongoing cash requirements and capital access - standalone section: 'We have significant ongoing cash requirements that could limit our growth and affect our profitability if we are unable to obtain sufficient capital'",
+        "likely_reason": "resolved"
+      },
+      {
+        "risk": "Capital intensity and financing risk - standalone section: 'Our business is highly capital intensive'",
+        "likely_reason": "resolved"
+      },
+      {
+        "risk": "Limited supply and increased costs of new equipment",
+        "likely_reason": "unclear"
+      }
+    ],
+    "overall_trajectory": "stable"
+  },
+  "job3": null,
+  "job4": {
+    "guidance_trend": "more_vague",
+    "hedging_trend": "stable",
+    "topics_dropped": [
+      "consumer household pickup and delivery (P&D) - mentioned in Q1 overview as a named core LTL service; silently dropped from Q2 onward without explanation",
+      "warehousing - listed as a value-added service offering in Q1-Q2; absent from service description starting Q3 and not mentioned again",
+      "ground and air expedited transportation - Q1 described services as including 'ground and air expedited transportation and consumer household pickup and delivery'; Q2 onward simplified to 'expedited transportation' only"
+    ],
+    "confidence_trend": "decreasing",
+    "quarters_analyzed": 6,
+    "overall_communication_trajectory": "deteriorating",
+    "notable_shifts": [
+      {
+        "quarter": "Q2",
+        "observation": "Service scope description silently narrowed: Q1 explicitly included 'consumer household pickup and delivery (P&D)' and 'ground and air expedited transportation' as named services; Q2 replaced with the more generic 'our service offerings, which include expedited transportation' - a reduction in specificity about service breadth without explanation."
+      },
+      {
+        "quarter": "Q3",
+        "observation": "'Warehousing' dropped from the list of value-added services: Q1-Q2 listed 'container drayage, truckload brokerage, supply chain consulting and warehousing'; Q3-Q6 reads 'container drayage, truckload brokerage and supply chain consulting' - a specific service offering disappeared without disclosure."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Yield management commitment converted from first-person declarative ('We are committed to a disciplined yield management process that focuses on individual account profitability') to hedged belief statement ('We believe our yield management process focused on individual account profitability, and ongoing improvements in operating efficiencies, are both key components') - the shift occurred precisely when tonnage began declining in early 2019."
+      },
+      {
+        "quarter": "Q4",
+        "observation": "Defensive cost language inserted into yield framework: new phrase 'to offset our cost inflation and support our ongoing investments in capacity and technology' added to the yield objective - reframing pricing discipline from an offensive growth tool to a defensive cost-offset mechanism."
+      },
+      {
+        "quarter": "Q5",
+        "observation": "Technology upgrade commitment softened from 'We continually upgrade our technological capabilities' (Q1-Q4) to 'We regularly upgrade' (Q5-Q6) - replacing the absolute imperative 'continually' with the weaker periodic qualifier 'regularly.'"
+      }
+    ]
+  },
+  "timestamp": "2026-03-25T04:08:07Z"
+}
