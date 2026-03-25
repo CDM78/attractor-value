@@ -1,0 +1,136 @@
+{
+  "batch": 3,
+  "partition": "holdout",
+  "results": {
+    "T5-191": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Zebra Technologies is a leading enterprise mobile computing, data capture, and printing solutions provider. Risk factors between prior and current filings are nearly identical, with only minor editorial changes (e.g., adding 'Managing parties to whom we have outsourced portions of our business operations' to the complexity list). No confessions of customer losses, product failures, competitive displacement, or financial distress. The company has grown rapidly through acquisitions and organically, serving a diverse global customer base. The December 2019 entry date reflects broader market dynamics, not company-specific distress. Standard technology company risks (competition, international operations, acquisition integration, IP protection) are unchanged."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No distress confessions. Risk factors virtually unchanged between filings. Standard tech company risks. Market dislocation not company-specific."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-02-13) shows risk factors reorganized into clearer categories (General Business and Industry Risks, Operational Risks) and updated with minor additions (RFID mention, ESG stakeholder management language, internal controls compliance risk for acquisitions). These are disclosure improvements, not confessions. No restatements, covenant breaches, customer losses, product failures, or going concern warnings. Business continues to execute growth strategy."
+        }
+      }
+    },
+    "T8-053": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Tactile Medical is a medical technology company focused on at-home treatment for lymphedema and chronic venous insufficiency via proprietary Flexitouch and Actitouch systems. Revenue grew 32% to $189.5M with $11.0M net income in fiscal 2019. The company has a unique direct-to-patient model that captures both manufacturer and distributor margins. Comparing current vs prior risk factors: the main new risk is CEO transition (loss/retirement of key executives) which is a normal corporate lifecycle event. The prior filing's emerging growth company transition is now complete. Standard medtech risks (reimbursement, regulation, single-supplier, competition) remain unchanged. COVID-19 temporarily disrupted patient visits and referrals, creating the June 2020 buying opportunity, but the underlying need for lymphedema treatment is chronic and non-discretionary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. CEO transition is normal lifecycle. COVID disrupted patient visits temporarily. Chronic disease treatment demand is non-discretionary and durable."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-02-23) adds COVID-19 impact language and a risk factor summary section, both of which are disclosure enhancements rather than confessions. CEO transition risk language was removed (resolved). The company acknowledges COVID adversely affected its business but this was already known at entry. No restatements, covenant breaches, reimbursement loss confessions, product recalls, regulatory actions, or going concern warnings. Single-product dependency (Flexitouch) was already known at entry. Risk profile substantively unchanged."
+        }
+      }
+    },
+    "T5-054": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Domino's Pizza is the dominant global delivery-focused pizza franchise. Risk factors between prior and current filings are nearly identical with minor updates: added 'food delivery market' to competitive landscape description, expanded social media risk language, noted 'substantially all' vs 'all' U.S. franchisees purchased from supply chain. These are editorial refinements, not confessions. The franchise-heavy, asset-light model generates recurring royalties. The company's delivery-and-carryout focus is structurally advantaged during COVID rather than disadvantaged. May 2020 entry date represents broader market uncertainty, not company-specific distress. The competitive moat -- leading delivery infrastructure, technology platform, brand, and scale -- is intact."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No confessions. Risk factors identical. Franchise model is structurally advantaged for delivery during COVID. Market dislocation is exogenous."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-02-25) adds comprehensive COVID-19 risk language but notably acknowledges increased sales in the U.S. during the pandemic due to heightened reliance on delivery. Competitive risks updated to note delivery aggregators 'continued to grow in size and scale' -- an observation, not a confession. Store opening risks now include COVID-related construction/permitting delays. No restatements, franchise system failures, covenant breaches, or going concern warnings. Domino's delivery-first model thrived during COVID."
+        }
+      }
+    },
+    "T8-069": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "ASGN Incorporated (formerly On Assignment) is a leading IT professional staffing and consulting firm with commercial (Apex, Oxford) and federal government (ECS) segments. Comparing current vs prior risk factors shows evolution from 'contract staffing' to 'professional staffing and consulting services' -- reflecting strategic upmarket shift. ECS Federal acquisition ($1.7B+ in government IT) diversified revenue away from purely cyclical commercial staffing. Prior risk factor about 'contract staffing industry' is now 'professional staffing and consulting services industry.' No confessions of client losses, margin compression, or operational failure. COVID temporarily reduced commercial demand but government business was unaffected. The staffing industry is inherently cyclical and COVID represents a standard cyclical downturn, not structural decline."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. Service model evolved upmarket. Government segment provides counter-cyclical resilience. COVID is a standard cyclical staffing downturn."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-03-01) shows strong recovery: commercial revenues began improving from mid-May 2020, federal government business delivered double-digit year-over-year growth throughout COVID. Addressable market quantified at $319.7B ($31.7B IT staffing + $120B IT consulting + $168B government IT). Contract backlog $2.6B. Six tuck-in acquisitions completed over three years. No restatements, client loss confessions, covenant breaches, or going concern warnings. Business emerged from COVID stronger with government diversification validated."
+        }
+      }
+    },
+    "T5-173": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Tyler Technologies is a leading provider of software solutions for the public sector (government). Risk factors between prior and current filings are nearly identical with only trivial wording changes. No confessions of customer losses, product failures, competitive displacement, or financial distress. The company's government software business provides highly recurring revenue with strong customer retention (government agencies rarely switch core software). The June 2020 entry date reflects COVID-era market uncertainty, but government software demand is non-discretionary. Standard software company risks (cyber threats, data center operations, technological change, IP protection, acquisition integration) are unchanged between filings."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No confessions. Risk factors unchanged. Government software is non-discretionary with high switching costs. COVID market dislocation is exogenous."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-02-19) reveals one significant new confession: a ransomware security incident on September 29, 2020 that disrupted internal IT and telephone systems. The company incurred $4.2M in third-party costs and expanded its cybersecurity risk disclosure substantially. However, the incident was contained -- client hosting environments were unaffected, hosting services were not interrupted, no evidence of malicious activity on client networks, and the company has cybersecurity insurance coverage. This is a real new confession but not one that threatens the business model or triggers a sell. Government clients continued to receive service. The $4.2M cost is manageable for a company of Tyler's size. Action: hold despite the incident because it was contained and remediated."
+        }
+      }
+    }
+  }
+}

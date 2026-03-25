@@ -1,0 +1,156 @@
+{
+  "batch": 5,
+  "partition": "validation",
+  "results": {
+    "T8-119": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "Trex is the world's largest composite decking manufacturer with strong market position and eco-friendly competitive advantages. Risk factors are standard manufacturing/competitive boilerplate. Product line was expanded (Enhance re-engineered). No restatements, covenant breaches, going concern, or quantified losses. Growth company with healthy fundamentals."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "Company executed another 2-for-1 stock split (July 2020), indicating strong performance. Product line evolved (removed steel deck framing, added licensed products). Changed from 'the largest' to 'one of the largest' recyclers but this is minor. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T5-085": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "IDEX Corporation is a well-diversified industrial conglomerate with balanced domestic/international sales (49%/51%). New tariff disclosures reflect industry-wide trade war concerns, not company-specific problems. Added interest rate risk detail is standard. No restatements, going concern, covenant breaches. Acquisition-driven growth model is intact. Trade tensions are cyclical."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "Checkpoint risk factors expanded with macro preamble and added end markets (semiconductor, automotive). Trade deal language updated to Phase 1. 'Public health issues' added to geopolitical risks (prescient but generic). All changes are boilerplate updates, not specific confessions. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T8-122": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "Central Garden & Pet is a leading consumer staples company. The November 2019 DMC facility fire in Texas is a specific new confession but is a discrete, insurable event — not a structural problem. Product portfolio expanded (outdoor cushions/pillows, C&S Products brand). Core pet and garden markets are stable with defensive characteristics. Temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "One new confession: COVID-19 pandemic risk factor. However, pet and garden categories actually benefited from stay-at-home trends. The DMC fire risk was removed (resolved). New 'Vision 2025' strategy risk is forward-looking, not a confession. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T5-160": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "Teledyne is a diversified defense/instrumentation company. Expanded tariff/trade risk section with specific examples (Huawei entity listing, cancelled orders) reflects geopolitical environment, not company-specific structural problems. Coronavirus mention is early-stage generic language. Oil & gas cyclicality is well-understood. Defense business provides stability. No restatements, going concern, covenant issues."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "Company grew with backlog steady at ~$1.7B, workforce ~10,670. Added sustainability/ESG disclosures and human capital section. Defense contracts discussion expanded. These are all positive/neutral operational disclosures. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T8-148": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "rationale": "Aspen Aerogels has never been profitable since inception with $486.2M accumulated deficit. Multiple covenant waivers in 2018 (4 occasions). Negative operating cash flow every year. Dependent on SVB credit facility expiring April 2021. The company explicitly warns it may never reach profitability and may need to raise additional capital. While losses improved ($34.4M to $14.6M), the structural inability to generate profit is a fundamental concern, not a temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "rationale": "One new development: COVID-19 risk acknowledgment. However, a transformative positive emerged — a major US automotive OEM contract for EV thermal barriers (Sept 2020), capacity expansion to 60M sq ft, and planning for significant further expansion. The EV pivot fundamentally changes the growth narrative. Despite persistent profitability concerns, the new contract and capacity plans suggest improving trajectory. Hold given the positive catalyst outweighs the lingering structural concerns."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "medium"
+        }
+      }
+    }
+  }
+}

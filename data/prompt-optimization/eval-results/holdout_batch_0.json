@@ -1,0 +1,141 @@
+{
+  "batch": 0,
+  "partition": "holdout",
+  "results": {
+    "T5-218": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Harley-Davidson entered at COVID lows (June 2020). Confessions are well-known, long-standing issues: declining US 601+cc market (288K to 252K registrations over 3 years), EU tariff escalation (25% rising to 50%), plant consolidation costs. No restatements, covenant breaches, or going concern. Brand commands 49% US market share and premium pricing. Manufacturing optimization (Kansas City consolidation) is proactive cost management, not distress. Business model intact with iconic brand franchise. Problems are cyclical and priced in at COVID-panic levels."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Declining US motorcycle registrations and tariff headwinds are known cyclical/policy issues, not competitive position erosion. Dominant market share maintained. No financial distress indicators. COVID entry creates buying opportunity in durable brand franchise."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2021-02-23) shows strategic overhaul from 'More Roads' to 'The Hardwire' - a tighter, more focused plan. No new restatements, covenant breaches, going concern warnings, or quantified losses. Strategy actually improved with focus on most profitable segments (Touring, large Cruiser, Trike). No new material negative confessions."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new specific confessions at checkpoint. Strategic pivot to The Hardwire is a positive restructuring, not a confession of failure. No financial distress indicators emerged."
+        }
+      }
+    },
+    "T5-195": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "reasoning": "AMG (Affiliated Managers Group) saw AUM decline from $836B to $736B (12% drop). The active management industry faces secular headwinds from passive investing and fee compression. While the partnership model is sound and there are no restatements or covenant breaches, the risk factors reveal a business model under structural pressure from the passive investing revolution. The decline in AUM is not merely cyclical - it reflects an industry-wide shift away from active management. New language about 'succession planning solutions' suggests difficulty retaining affiliate talent. Product count dropped from 550+ to 500+."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "reasoning": "AUM declining despite market gains suggests organic outflows. Active-to-passive industry shift is structural. No financial distress but business model faces persistent secular headwinds that are not merely cyclical."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2020-02-28) shows AUM relatively stable at ~$726B pro forma. Strategy refined with more explicit language about growth capital and seed capital to affiliates. No new restatements, covenant breaches, going concern warnings, or quantified losses. Risk factors largely unchanged from entry filing."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new specific confessions at checkpoint. Language evolution is cosmetic. No new material risks disclosed."
+        }
+      }
+    },
+    "T5-070": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Fortinet is a cybersecurity leader with highly generic risk factors. No confessions of financial distress, restatements, covenant breaches, or going concern. Risk factors are standard growth-company boilerplate: operating variability, competition, technology change, cloud transition uncertainty. The stock likely traded down on broader market correction (Oct 2018). Cybersecurity demand is structurally growing. Business model (hardware appliances + subscription services) is strong with high renewal rates. No evidence of competitive position erosion."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Completely generic risk factors with zero specific confessions. Cybersecurity market growing. No distress indicators. Market-wide selloff created entry point in structurally sound business."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2019-02-27) risk factors nearly identical to entry. Minor additions: product refresh cycle competition, tariff specificity, Brexit mention, litigation costs added to risk list. These are incremental disclosure updates, not new confessions of problems. No restatements, covenant breaches, or going concern warnings."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new specific confessions. Minor risk factor updates reflect evolving macro environment (tariffs, Brexit) rather than company-specific problems. Business fundamentals unchanged."
+        }
+      }
+    },
+    "T8-087": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Arkansas-based regional bank (recently crossed $10B threshold) entered during COVID banking panic (June 2020). Confession: $6M interchange fee reduction from Durbin amendment ($20.4M to $14.4M). This is a known, quantified, one-time regulatory step-down - not ongoing erosion. No loan loss confessions, no restatements, no covenant breaches, no going concern. Standard banking risks (credit, interest rate, regulation). The $10B threshold costs are fully absorbed. Bank appears well-managed with proactive compliance hiring. COVID banking fears created temporary dislocation in fundamentally sound community bank."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Regulatory interchange fee hit is known and absorbed. COVID banking panic at entry. No financial distress. Standard well-managed regional bank risk profile. Temporary dislocation from pandemic fears."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2021-02-26) shows interchange fees stable ($14.4M to $14.9M). No new restatements, covenant breaches, going concern warnings, or quantified losses. Language shifted from Trump-specific CFPB language to neutral acknowledgment of 2018 reforms. COVID acknowledged in general economic language but no specific loan loss confessions."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new specific confessions. Interchange fees actually improved slightly. Economic risk language updated for COVID but no bank-specific negative disclosures. Regulatory language became more neutral/stable."
+        }
+      }
+    },
+    "T8-158": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Axon Enterprise (TASER/body cameras/SaaS) entered during COVID panic (June 2020). No confessions of financial distress whatsoever. Risk factors are standard growth-company disclosures: product development complexity, supply chain, competition. Strong product pipeline (Axon Body 3, Axon Aware, Records, Dispatch). Successfully transitioning from hardware to SaaS model with recurring revenue. No restatements, covenant breaches, or going concern. Law enforcement demand is structurally driven by accountability trends. COVID-related pullback created opportunity in secular growth company."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Zero financial distress confessions. Growth company with expanding SaaS platform. COVID entry point in structurally growing law enforcement technology market. No problems to price in."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2021-02-26) shows risk factors reorganized into categories (Strategic, Operational) with no new material negative confessions. Product names evolved (Axon Respond replacing Axon Aware/Dispatch). Key man risk (Patrick Smith) and acquisition risk added - these are standard growth company disclosures, not confessions. No restatements, covenant breaches, going concern warnings, or quantified losses."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new specific confessions. Risk factor restructuring is improved disclosure, not a warning sign. Product portfolio expanding. Business trajectory positive."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "batch": 4,
+  "partition": "holdout",
+  "results": {
+    "T7-047": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "MercadoLibre is the dominant LatAm e-commerce and fintech platform with deep network effects across Marketplace, Mercado Pago, Mercado Envios, and Mercado Credito. Current vs prior filings show massive business expansion -- MPOS launch, QR codes, merchant/consumer credits, money market fund, pre-paid cards. No confessions of losses, covenant breaches, competitive erosion, or market share decline. Employee base grew from 7,239 to well beyond. COVID-era entry in June 2020 is exogenous to a platform benefiting from secular digital commerce adoption in a region with 644M+ people and low e-commerce penetration. The business model is strengthening, not weakening."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No new structural confessions. Dominant platform with expanding ecosystem. COVID dislocation is temporary and arguably a positive catalyst for digital adoption."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-03-01) shows accelerating business: launched Meli Air cargo fleet in Brazil and Mexico, added first-party commerce, expanded fulfillment and warehousing. COVID had a net positive effect on e-commerce and online payment flows. No restatements, covenant breaches, quantified losses, or going concern warnings. The company is executing on all strategic fronts."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    },
+    "T8-109": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Talos Energy is a deepwater Gulf of Mexico and offshore Mexico E&P company with the significant Zama discovery. Stone Combination completed, adding material deepwater assets. Revenue of $891M with $655M debt is manageable. Risk factors are standard for the sector -- commodity price volatility, regulatory/environmental compliance, hurricane exposure. No unique confessions of impairment, covenant breaches, or reserve write-downs beyond sector norms. Entry in June 2020 during COVID oil price collapse represents a commodity cycle dislocation, not structural decline. Medium confidence due to commodity price dependence and high-cost offshore operations."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Standard E&P commodity cycle dislocation. No unique structural confessions. Zama discovery provides growth optionality. Medium confidence due to commodity price sensitivity and leverage."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "Checkpoint (2021-03-11) adds a comprehensive risk factors summary section and prominently features COVID and BOEM decommissioning financial assurance risks. However, these are disclosure enhancements, not new confessions of actual losses or breaches. The company added 11% Second-Priority Senior Secured Notes reflecting recapitalization. Apollo/Riverstone still control the company. No restatements, covenant breaches, going concern, or quantified losses. Standard oil recovery trajectory. Medium confidence due to high-cost debt and decommissioning liability uncertainty."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    },
+    "T8-131": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "high",
+          "reasoning": "MBIA is a legacy financial guarantee insurer in effective runoff. The company's National subsidiary has $2.3B gross insured par outstanding related to Puerto Rico, which is in PROMESA Title III bankruptcy proceedings. National has already paid $1.2B in total gross claims related to Puerto Rico. Puerto Rico defaulted on scheduled debt service on Jan 1, 2020, triggering $59M in additional claims. The PREPA RSA restructuring faces multiple uncertain conditions. Loss reserves use non-actuarial methods and may be inadequate. The monoline bond insurance business model is structurally impaired -- no meaningful new business is being written, and the company is managing a deteriorating legacy insured portfolio. This is structural decline, not a temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "high",
+          "reasoning": "Massive Puerto Rico exposure ($2.3B), $1.2B in cumulative claims paid, ongoing Title III bankruptcy proceedings, uncertain recovery. Legacy monoline insurer in runoff. Structural decline."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "sell",
+          "confidence": "medium",
+          "reasoning": "Checkpoint (2021-03-01) reveals: (1) Puerto Rico debt service outstanding increased to $2.9B from $2.3B (now including accreted interest on capital appreciation bonds), and (2) National paid additional $51M in gross claims on Jan 1, 2021 default. The 2021 PSA (Plan Support Agreement) joined Feb 22, 2021 has uncertain outcome with a right to terminate by March 31, 2021. The PREPA RSA hearing has been repeatedly delayed. The situation is not resolving. While not formal restatements, the increasing exposure and continuing claim payments represent material new confessions of ongoing losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T5-046": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "This is a natural gas E&P company (later Coterra Energy after Cimarex merger). Current filing (2021-02-26) adds COVID impact risk and OPEC+ actions as new risk factors compared to the prior filing (2020-02-25). These are standard energy sector risks. No confessions of reserve write-downs, covenant breaches, quantified losses, or going concern. The company has sufficient liquidity and hedging programs. Entry in Oct 2021 during energy price recovery suggests any prior weakness was commodity-cycle driven. Medium confidence because natural gas producers inherently face commodity price volatility and the forward-looking Cimarex merger adds integration uncertainty."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Standard natural gas E&P with commodity cycle sensitivity. No structural confessions. COVID and OPEC+ risks are sector-wide and temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2022-03-01) shows the completed merger with Cimarex forming Coterra Energy -- a transformational positive event creating a larger, more diversified E&P company. Risk factors expanded to reflect broader commodity exposure and merger integration risks, which are standard disclosure. Added ESG/climate risk language reflects evolving regulatory environment, not company-specific distress. No restatements, covenant breaches, going concern, or quantified losses. The company is larger and better positioned."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    },
+    "T5-074": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Globe Life (formerly Torchmark) is a stable life and supplemental health insurance company serving the lower-middle to middle-income market through established distribution channels (career agents, direct response, independent agencies). Prior vs current filings show only cosmetic changes -- rebranding from Torchmark to Globe Life, minor wording updates. No new confessions of reserve inadequacy, ratings downgrades, claims spikes, investment losses, or regulatory actions. The risk profile is remarkably stable year-over-year. This is a steady, predictable insurance business with a defensive market niche. Any price dislocation is clearly temporary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Virtually identical risk factors between filings. Rebranding to Globe Life is cosmetic. Extremely stable insurance business. Clearly temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-02-27) shows continued stability with only minor wording refinements. Rebranded terminology ('supplemental health' replacing 'health insurance'). No new confessions of reserve problems, ratings actions, claims deterioration, or investment losses. Distribution channels and competitive position unchanged. Rock-solid hold."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    }
+  }
+}

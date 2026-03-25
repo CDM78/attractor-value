@@ -1,0 +1,141 @@
+{
+  "batch": 1,
+  "partition": "holdout",
+  "results": {
+    "T5-257": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Unum Group (insurance) entered Sept 2021 with dominant COVID-19 risk factor added to the current 10-K. Confessions: higher mortality in life products, higher disability claims, low interest rate pressure on reserves and profit margins, potential investment portfolio losses. These are pandemic-specific, industry-wide impacts - not company-specific competitive erosion. Prior year 10-K had no COVID section at all. Core insurance model (group/individual disability, life, voluntary benefits) is intact and diversified. No restatements, covenant breaches, or going concern. COVID mortality and disability claims are inherently temporary. Business model has operated through multiple economic cycles. Interest rate risk is industry-standard. TEMPORARY_DISLOCATION - pandemic stress created buying opportunity in durable insurance franchise."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "COVID-driven mortality, disability claims, and low interest rate pressure are temporary cyclical stressors. Insurance business model fundamentally intact. No financial distress indicators beyond pandemic impacts affecting entire industry."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2022-02-25) shows COVID language softened ('continues to cause' vs 'is causing'). Acknowledged 'economic conditions have improved.' Added forward-looking 'any future pandemic' risk. No new restatements, covenant breaches, going concern warnings, or quantified losses. COVID impact tone shifted toward recovery. No materially new confessions."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new specific confessions at checkpoint. COVID language evolved toward normalization. Future pandemic risk added as generic forward-looking disclosure. Business trajectory improving per disclosures."
+        }
+      }
+    },
+    "T5-193": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Aimco apartment REIT entered Dec 2020 during COVID apartment demand concerns. Current 10-K (2020-02-24) risk factors are standard REIT boilerplate: redevelopment execution risk, competition, illiquidity, interest rate sensitivity, rent control risk. Planned $250-300M in redevelopment investment suggests confidence in portfolio. No restatements, covenant breaches, or going concern. Risk factors nearly identical to prior year. Apartment demand is cyclical but structurally supported by housing undersupply. COVID rent collection fears were temporary. TEMPORARY_DISLOCATION - pandemic fears in fundamentally sound apartment market."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Standard REIT risk factors with no specific confessions. COVID apartment demand fears at entry are temporary. Apartment fundamentals structurally sound. Medium confidence due to upcoming corporate restructuring not yet visible in risk factors."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold",
+          "reasoning": "Checkpoint (2021-03-12) reveals massive corporate transformation: Aimco underwent spin-off, reducing from ~950 employees to 52. New company focused purely on development. New risk: Parkmerced partnership exposure (San Francisco rent downturn, COVID impact, loan repayment uncertainty). New COVID-related operational risks added. However, these are disclosed structural changes from a planned spin-off (AIR Communities separation in Dec 2020), not distress confessions. The Parkmerced loan risk is a new specific quantified exposure. Despite new disclosures, this is a planned corporate restructuring, not a deterioration. HOLD - new disclosures reflect planned transformation, not emerging distress."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "Two new specific confessions: (1) Parkmerced partnership risk with explicit loan repayment concern due to San Francisco rent collapse and COVID, (2) COVID-related rent collection and eviction moratorium risks. However, the corporate spin-off was planned and the Parkmerced exposure is a disclosed legacy position. Hold because new risks are known consequences of planned restructuring, not emerging business deterioration."
+        }
+      }
+    },
+    "T8-142": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Lantheus Holdings (medical imaging) entered June 2020 during COVID panic that reduced diagnostic imaging volumes. DEFINITY commands 80%+ US ultrasound enhancing agent market share. Progenics acquisition underway (terms improved from 0.2502 to 0.31 exchange ratio with CVR). Active patent portfolio and IP strategy for DEFINITY. Pipeline includes DEFINITY RT (room temp formulation), LVEF indication expansion, in-house manufacturing buildout. No restatements, covenant breaches, or going concern. Risk factors discuss generic patent/competition risks but company has strong IP moat. COVID reduced procedure volumes temporarily but cardiovascular diagnostic demand is structurally driven. TEMPORARY_DISLOCATION - COVID procedure volume dip in company with dominant market position and expanding pipeline."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Dominant market position (80%+ share), expanding pipeline, strategic acquisition. COVID procedure volume reduction is temporary. No financial distress indicators. Strong business model with medical necessity demand."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "Checkpoint (2021-02-25) shows significant positive developments: Progenics acquisition completed, DEFINITY RT FDA approved (Nov 2020), expanded product portfolio (AZEDRA, RELISTOR royalties, aBSI clearances). No new restatements, covenant breaches, going concern warnings, or quantified losses. Business improved materially with acquisition completion and new FDA approval."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Business fundamentally improved: merger completed, FDA approval received, product portfolio expanded. Trajectory is strongly positive."
+        }
+      }
+    },
+    "T5-203": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "high",
+          "reasoning": "Coty Inc. (beauty/cosmetics) entered Sept 2020 shows severe confessions across multiple dimensions. COVID-19 is layered on top of pre-existing structural problems visible in prior year 10-K: CoverGirl shelf space losses, retail consolidation reducing distribution, inability to compete with digital-native disruptor brands, consumer preference shifts away from legacy brands. Current filing adds massive COVID operational disruption (facility closures, supply chain breakdown, demand collapse for discretionary beauty). The combination of structural competitive erosion (losing shelf space, failing to adapt to digital/DTC channels, being outmaneuvered by nimble competitors) AND cyclical COVID shock indicates STRUCTURAL_DECLINE. The prior year already showed competitive position weakening before COVID. Business model under attack from multiple vectors: e-commerce shift, indie brands, retailer consolidation. These are not temporary problems that will resolve with pandemic end."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "high",
+          "reasoning": "Pre-COVID competitive erosion (shelf space losses, CoverGirl decline, digital disruption) plus COVID demand destruction. Business model failing to adapt to beauty industry transformation. Structural competitive decline, not just cyclical stress."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell",
+          "reasoning": "Checkpoint (2022-08-25, 2 years post-entry) shows multiple new confessions: (1) Goodwill impairment risk explicitly highlighted as separate bullet, (2) Ukraine war and energy price inflation creating new cost pressures, (3) JABC/KKR 54% controlling shareholder status explicitly disclosed with 'controlled company' NYSE exemption from governance requirements, (4) New debt burden risks prominent with language about ability to service indebtedness, (5) New risk factor summary section suggests SEC or legal pressure for clearer disclosure. Multiple new material risk categories appeared that were not in entry filing."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 4,
+          "action": "sell",
+          "confidence": "high",
+          "reasoning": "Four new specific confessions since entry: (1) Goodwill/asset impairment risk elevated to standalone risk factor, (2) Ukraine war/inflation supply chain impact as new category, (3) Controlled company status (JABC 54% ownership) explicitly disclosed with governance exemptions, (4) Debt serviceability risk newly prominent. The accumulation of new risk categories beyond the original competitive and COVID issues indicates deteriorating business condition."
+        }
+      }
+    },
+    "T5-213": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "TechnipFMC (oilfield services) entered Feb 2021 during oil price recovery from COVID collapse. Current 10-K (2020-03-03) risk factors dominated by oil/gas price volatility dependence, industry consolidation, and technology competition. Added new risk category header 'Risks Related to Our Business and Industry'. No restatements, covenant breaches, or going concern. Oil services industry is inherently cyclical and entry during early recovery is typical value play. Company has diversified technology portfolio. However, oil/gas structural demand debate (energy transition) creates medium confidence. TEMPORARY_DISLOCATION for cyclical recovery, but energy transition risk prevents high confidence."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Oil services cyclical downturn with recovery underway. No financial distress confessions. Standard industry risks. Medium confidence due to energy transition secular headwind."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold",
+          "reasoning": "Checkpoint (2021-03-05) reveals significant corporate restructuring: Technip Energies spin-off completed. New risk factors: (1) Significant Technip Energies shareholder position with value fluctuation risk, (2) Share Purchase Agreement refund obligation to BPI, (3) DTC/Euroclear depository risk for shares, (4) UK vs France tax residency uncertainty, (5) COVID-19 impact on oil demand. However, these new disclosures are consequences of a planned strategic spin-off, not emerging business deterioration. The spin-off was designed to unlock value by separating the subsea/surface business from the engineering/construction business. HOLD - new risks are structural transformation disclosures, not distress signals."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "Three new specific confessions/risks: (1) Technip Energies investment value fluctuation exposure, (2) BPI Share Purchase Agreement refund contingency, (3) Tax residency uncertainty (UK vs France). These arise from planned spin-off restructuring rather than operational deterioration. Hold because new risks are known consequences of strategic transformation, but medium confidence due to complexity of post-spin-off risk profile."
+        }
+      }
+    }
+  }
+}

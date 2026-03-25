@@ -1,0 +1,166 @@
+{
+  "batch": 0,
+  "partition": "validation",
+  "results": {
+    "T8-063": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Primoris Services is a diversified specialty contractor with 5 segments, long-standing MSA-based customer relationships, and equipment ownership as a barrier to entry. Current vs prior risk factors are virtually identical -- no new confessions of project losses, covenant breaches, or competitive erosion. The COVID-era market stress that created the buying opportunity is exogenous to the business model. Willbros acquisition fully integrated, geographic expansion proceeding. Problems are known (general economic sensitivity, project execution risk) and standard for the industry."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No new distress indicators between filings. Standard specialty contractor risk profile unchanged. COVID dislocation is temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint shows positive development: $621.7M acquisition of Future Infrastructure Holdings expanding into telecom/utility maintenance. No restatements, covenant breaches, quantified declines, regulatory actions, or going concern warnings. Business is growing."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Company made a major strategic acquisition and maintained its operational profile. Risk factors are substantively unchanged aside from adding FIH acquisition details."
+        }
+      }
+    },
+    "T8-161": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Enphase Energy is a solar microinverter company benefiting from strong secular tailwinds. Prior year had prominent tariff risk (10-25% on China-manufactured products) which appears mitigated in the current filing. Revenue concentration broadened (1 customer at 19% to 2 at 21% and 12%). No new confessions of manufacturing failures, quality issues, or competitive erosion. The company faces standard solar industry demand risks, but its technology differentiation (microinverter vs central inverter) creates a structural advantage. Market stress creating the buying opportunity is exogenous."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Tariff risk reduced, customer diversification improved, no new structural confessions. Solar demand sensitivity is cyclical, not structural."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint shows major product expansion (IQ 7A, IQ 7X for high-power modules), transition to integrated home energy solutions with storage. Company expanding from microinverter vendor to full energy management platform. No restatements, covenant breaches, regulatory actions, or going concern warnings."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Company's competitive position strengthened with expanded product line and integrated energy solution platform."
+        }
+      }
+    },
+    "T8-169": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Wingstop is a franchise-heavy restaurant model (asset-light). Growth target doubled from ~3,000 domestic to ~6,000 worldwide restaurants. Restaurant count grew from 1,223 to 1,354. Top franchisees grew operations. Wing cost volatility (18.1% increase) is a known, specific, cyclical issue with no established fixed-price hedging market -- this is an industry feature, not a structural decline. The franchise model generates recurring royalty revenue with minimal capex. COVID dislocation created the buying opportunity but the digital-forward model (delivery/carryout) is well-positioned."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. Growth trajectory accelerating (doubled target). Wing cost volatility is cyclical and known. Franchise model resilient."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint filing streamlines risk language without adding new confessions. Removed granular detail (specific restaurant counts, SBA lending specifics) in favor of cleaner disclosure. No restatements, covenant breaches, quantified declines, regulatory actions, or going concern warnings. Franchise model intact."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions found. Risk factor evolution is editorial cleanup, not substantive deterioration."
+        }
+      }
+    },
+    "T8-030": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Selective Insurance is a well-managed P&C insurance holding company with robust ERM framework (three lines of defense, Executive Risk Committee, ORSA compliance). Capital substantially exceeds 3x Authorized Control Level. Emerging risks noted (wildfires, cannabis, reviver statutes) represent forward-looking risk awareness, not confessions of actual losses. LIBOR transition is industry-wide. Investment portfolio well-diversified. No reserve deficiency confessions, rating downgrades, or material loss admissions between filings. Market stress creating the buying opportunity is temporary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No distress confessions. Capital position strong, ERM framework mature, standard insurance regulatory risks. COVID market dislocation is temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint reorganizes regulatory risk presentation into more structured format but adds no new confessions. Capital position remains strong (2020 statutory financials exceed 3x Authorized Control Level). No restatements, reserve deficiency admissions, rating downgrades, covenant breaches, or going concern warnings. COVID mentioned as economic context only."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Regulatory disclosure expanded for clarity but no substantive new problems identified. Capital adequacy unchanged."
+        }
+      }
+    },
+    "T8-081": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "MYR Group is a specialty electrical construction holding company with operations dating to 1891. Risk factors between current and prior filings are nearly identical. Customer concentration improving (top 10 declined from 32.9% to 30.8%). Added CSI Electrical Contractors as subsidiary (growth via acquisition). Revenue mix diversifying toward C&I (from 41.7% to 45.2%). No confessions of project losses, labor disputes, covenant issues, or competitive erosion. Standard construction industry risks. COVID market stress is the temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No distress confessions. Business fundamentals stable with improving customer diversification. COVID dislocation is temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint shows headquarters relocation to Henderson, CO and subsidiary renamed (MYR Transmission Services to MYR Energy Services), signaling strategic evolution. C&I share grew to 48.6%. No single customer over 10%. No restatements, covenant breaches, quantified declines, regulatory actions, or going concern warnings."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Business continues to diversify and grow. Risk profile unchanged."
+        }
+      }
+    }
+  }
+}

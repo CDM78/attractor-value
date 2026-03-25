@@ -1,0 +1,136 @@
+{
+  "batch": 2,
+  "partition": "holdout",
+  "results": {
+    "T8-167": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Dave & Buster's is a leading entertainment-dining venue operator with 136 stores and a differentiated Eat-Drink-Play-Watch concept. All 137 stores were closed due to COVID-19 mandates, and the company drew its full $500M revolver to preserve liquidity. However, comparing prior and current risk factors reveals no new confessions of competitive erosion, brand deterioration, or operational failure. The prior filing shows standard growth-execution and competition risks unchanged. The COVID closure is a classic exogenous temporary shock to a business model that requires physical presence. The underlying franchise value -- high-margin amusement revenue (59% of total), full-service bar, and experiential differentiation -- remains intact."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. COVID mandated closures are exogenous. Business model, brand, and competitive position unchanged between filings."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint filing (2021-03-31) shows progressive recovery: 107 of 140 stores reopened with limited operations, 5 new stores opened during fiscal 2020. Store count grew from 136 to 140. Menu evolution continues (Inspired American Kitchen identity). Amusement revenue share increased to 63.5%. No restatements, covenant breaches, going concern warnings, or quantified permanent losses. COVID impact was severe on revenue but the business is recovering as restrictions lift."
+        }
+      }
+    },
+    "T5-092": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Jacobs Engineering is a top-tier technical professional services firm that completed a major portfolio transformation: $3.2B CH2M acquisition, $3.4B divestiture of energy/chemicals/resources business, plus KeyW and Wood Group nuclear acquisitions. The company has repositioned from traditional E&C to a technology-forward solutions company with two high-value segments (Critical Mission Solutions and People & Places Solutions). Comparing current vs prior risk factors shows no new confessions -- the transformation risks from CH2M integration are now behind the company, and the prior filing's heavier E&C construction risk profile has been deliberately shed. Standard professional services risks remain. Market dislocation at entry date (Dec 2019) is not company-specific."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No distress confessions. Portfolio transformation complete, risk profile actually improved by shedding volatile energy/chemicals business. Standard professional services risks unchanged."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-11-24) shows continued strategic execution: workforce grew to 55,000+ from ~52,000, company achieved carbon neutral status and 100% renewable electricity, began trading under ticker J on NYSE. CH2M integration successful and serving as model for follow-on acquisitions. Published first Climate Action Plan. No restatements, covenant breaches, project loss confessions, or going concern warnings. Risk factors substantively unchanged."
+        }
+      }
+    },
+    "T5-035": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Celanese is a leading global specialty materials and chemicals company with differentiated positions in engineered polymers and acetyl products. Risk factors between prior and current filings are nearly identical. The company expanded from 30 to 31 production facilities, grew headcount from 7,293 to 7,592, and formed a cellulose derivatives JV with Blackstone to create incremental value. No confessions of margin erosion, customer losses, competitive displacement, or operational failures. The end-of-2018 entry price reflects broader market selloff (Q4 2018), not company-specific distress. Diversified end-markets (automotive, medical, industrial, consumer electronics) and geographically balanced global positions provide resilience."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No distress confessions between filings. Risk factors essentially identical. Q4 2018 market selloff is exogenous to Celanese's strong competitive position."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2019-02-07) shows strategic progress: reorganized segments to better reflect the business (Engineered Materials absorbing food ingredients, Acetyl Chain consolidating Industrial Specialties and Acetyl Intermediates), expanded to 32 production facilities, grew headcount to 7,684. Added PPS (polyphenylene sulfide) to product portfolio. No restatements, covenant breaches, quantified losses, or going concern warnings. Business continues to execute its differentiated strategy."
+        }
+      }
+    },
+    "T5-117": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Match Group is the dominant global dating platform operator with Tinder, Match, Hinge, Meetic, OkCupid, PlentyOfFish, and OurTime. Post-IAC separation (June 2020), the company operates independently with strong network effects across its brand portfolio. Comparing current (post-separation) vs prior (pre-separation under IAC umbrella) risk factors shows the key risks are platform dependency (Apple/Google app stores) and competitive dynamics -- both pre-existing and well-understood. No confessions of user decline, monetization failure, or competitive displacement. The September 2021 entry date suggests valuation compression rather than acute crisis. Medium confidence because the dislocation is more valuation-driven than event-driven, making the 'distress priced in' thesis less clear-cut."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "No structural confessions. Platform dominance intact, brand portfolio strong. Valuation compression rather than business distress."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2022-02-24) shows strategic broadening: rebranded from 'dating products' to 'relationship technologies,' added Azar and Hakuna Live brands (social discovery/live streaming), expanded from dating to friendship and broader connections. Language evolution from 'dating' to 'relationship technology' throughout. No restatements, covenant breaches, user decline confessions, or going concern warnings. The business is expanding its addressable market."
+        }
+      }
+    },
+    "T8-134": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "reasoning": "Overstock.com (now with tZERO blockchain subsidiary) presents multiple serious confessions: (1) history of significant losses with accumulated deficit of $458.9M, (2) negative working capital of -$26.2M, (3) no access to any credit facility, (4) multiple SEC investigations and subpoenas (Feb 2018, Dec 2018, Oct 2019, Dec 2019) related to tZERO token offering, GSR Capital transaction, insider trading, and the Series A-1 Preferred stock dividend, (5) shareholder class action and derivative lawsuits against officers and directors, (6) former CEO Patrick Byrne departed amid controversy, (7) D&O insurance costs substantially increased with larger self-retention and more exclusions, (8) risk of becoming an investment company under the Investment Company Act. These are not temporary dislocations -- they reflect deep governance, financial, and strategic problems. The blockchain/tZERO pivot has consumed capital while generating minimal revenue."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "reasoning": "Multiple structural confessions: significant cumulative losses, negative working capital, no credit facility, active SEC investigations, shareholder lawsuits, CEO departure, D&O insurance problems. Not temporary."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "low",
+          "reasoning": "Checkpoint (2021-02-26) shows COVID-driven sales surge from home confinement mandates, but company itself warns this is uncertain to sustain. Key pre-existing issues (SEC investigations, litigation, tZERO's limited revenue, blockchain risks) remain but no NEW confessions beyond what was already disclosed at entry. The sales increase is potentially masking underlying structural weaknesses. Low confidence on hold because the structural problems remain even though no incremental confessions emerged. The absence of new confessions narrowly favors hold over sell under the confession-based framework."
+        }
+      }
+    }
+  }
+}

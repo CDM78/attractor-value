@@ -1,0 +1,171 @@
+{
+  "batch": 2,
+  "partition": "validation",
+  "results": {
+    "T5-234": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "NOV oilfield equipment maker. Backlog declined (CPS $1.3B->$0.7B, Rig $3.0B->$2.7B) and headcount dropped 35,479->27,631. Risk factors are nearly identical boilerplate year-over-year with no restatements, covenant breaches, or going concern. Cyclical oilfield downturn, not structural collapse. Company maintains diversified technology portfolio and global operations."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Cyclical oilfield downturn. No confessions in risk factors. Backlog and headcount declines are industry-wide, not company-specific structural issues."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2022-02-11) vs entry (2021-02-12): Risk factors remain boilerplate. Backlog recovered (CPS $0.7B->$1.3B, Rig $2.7B->$2.8B). No new restatements, covenant breaches, or going concern language. No new confessions."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses in checkpoint filing."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint risk factors nearly identical to entry. Backlog actually recovering. No new material confessions."
+        }
+      }
+    },
+    "T5-130": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Old Dominion Freight Line, premier LTL carrier. Risk factors are standard competitive industry risks with no confessions. Minor additions (ESG perception, corporate culture maintenance) are proactive risk disclosures, not admissions of problems. Non-union workforce, strong service center network. No quantified losses, restatements, or going concern."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No confessions whatsoever. Standard LTL competitive risk factors. Well-run company with routine risk disclosures."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-02-26) adds 'rapidly evolving' language and mentions e-commerce competition and projected freight volume differing from actual. These are minor forward-looking cautions, not confessions of problems. No restatements, covenant breaches, or going concern."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. Minor language evolution only."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Added competitive language about e-commerce and freight volume uncertainty is standard forward-looking risk disclosure."
+        }
+      }
+    },
+    "T5-220": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "H&R Block tax preparation. COVID-19 created major disruption: drew down full $2.0B CLOC, $650M Senior Notes due Oct 2020, shift to drop-off/virtual model. But tax filing is non-discretionary -- people must file taxes. The pandemic forced operational adaptation but did not eliminate demand for tax preparation services. COVID is clearly temporary dislocation, not structural decline."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "COVID disruption to tax prep is textbook temporary. Tax filing is legally required. Company adapted operations. Liquidity draw was precautionary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-06-15) shows COVID risk language de-emphasized and generalized. No new restatements, covenant breaches, going concern, or quantified losses. Company appears to be recovering from pandemic disruption. Human capital and brand sections suggest stability."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No new restatements, covenant breaches, going concern, or quantified losses in checkpoint. COVID risks normalizing."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. COVID language is less urgent than at entry. Engagement scores meeting/exceeding benchmarks. Business stabilizing."
+        }
+      }
+    },
+    "T5-021": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "L Brands (becoming Bath & Body Works) at entry. Risk factors include COVID impacts, VS spin-off execution risk, mall traffic dependence. The VS spin-off is actually a positive catalyst removing a struggling brand. BBW standalone is a strong consumer brand. COVID mall traffic concerns are temporary. No restatements, covenant breaches, or going concern. The laundry list of risks is extensive but generic retail boilerplate."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "COVID and VS spin-off are transitional, not structural decline. BBW brand strong. No financial confessions in risk factors."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "Checkpoint (2022-03-18) is post-spin-off as Bath & Body Works Inc. New risks include VS IT dependency (transitional), LIBOR transition, inflation impact, ESG execution. These are evolution of business circumstances, not confessions. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. Post-spin risks are operational transition items."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "No new confessions. Risk factor changes reflect completed VS spin-off and post-separation operational reality, plus macro inflation. Not company-specific deterioration."
+        }
+      }
+    },
+    "T8-036": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Qualys cybersecurity/vulnerability management SaaS. Risk factors extremely similar year-over-year. VM revenue concentration stable (73-74%). No COVID risk factor yet in Feb 2020 filing. No restatements, no quantified losses, no going concern, no covenant issues. Standard SaaS competitive and operational risks. Cybersecurity demand is secular growth -- any dislocation is temporary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No confessions. Virtually identical risk factors year-over-year. Cybersecurity is a growing market with secular tailwinds."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-02-22) adds COVID-19 pandemic risk factor. This is standard boilerplate pandemic language adopted by virtually all public companies. No company-specific confessions. VM concentration not disclosed differently. Risk factors reorganized under 'Risks Related to Our Business and Industry' heading but substantively unchanged. 'Actual or perceived' security breaches language slightly expanded. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. COVID boilerplate only new addition."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Only addition is generic COVID pandemic risk language common to all 2020/2021 filings."
+        }
+      }
+    }
+  }
+}

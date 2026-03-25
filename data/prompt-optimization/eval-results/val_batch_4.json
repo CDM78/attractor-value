@@ -1,0 +1,156 @@
+{
+  "batch": 4,
+  "partition": "validation",
+  "results": {
+    "T5-231": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "Navient risk factors are largely boilerplate with no restatements, covenant breaches, or going concern language. Delinquencies actually improved from 7.4% to 5.8%. CECL accounting change is regulatory, not operational. Political/regulatory sentiment around student loan servicers created price dislocation, not structural decline."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "Checkpoint vs entry risk factors are nearly identical. Delinquencies barely changed (5.8% to 5.9%). No new restatements, covenant breaches, going concern, or quantified losses. Risk factor language is substantially unchanged."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T5-228": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "rationale": "Macerich is a mall REIT facing structural headwinds from e-commerce disruption. Insurance aggregate limits were reduced, headcount dropped from 855 to 718. Retail tenant bankruptcies and declining foot traffic are long-term secular trends, not temporary dislocations. The brick-and-mortar retail real estate model faces permanent impairment."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium",
+          "rationale": "Entry to checkpoint risk factors are largely unchanged. COVID-19 had not yet been disclosed in the Feb 2020 filing. No new restatements, covenant breaches, or going concern language. However, the structural retail headwinds persisted."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "medium"
+        }
+      }
+    },
+    "T5-024": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "Bio-Rad resolved its FCPA investigation (NPA expired, DOJ/SEC closed). The December 2019 cyberattack is a discrete event, not structural. The removal of the FCPA overhang is a material positive. Core life science and diagnostics businesses remain competitive with strong market position. Standard industry risks only."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "One new confession: extensive COVID-19 pandemic risk factor added describing operational disruption, supply chain challenges, and demand impacts. However, this is industry-wide, not company-specific, and Bio-Rad also benefited from increased demand for certain pandemic-related products. No restatements, covenant breaches, or going concern."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T5-165": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "Teleflex completed two major acquisitions (Vascular Solutions $975.5M, NeoTract $975.2M) representing strategic growth investments. No restatements, covenant issues, or going concern. Risk factors are standard medical device industry boilerplate. Integration risk is normal course for acquisition-driven growth companies."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "Checkpoint risk factors were restructured and expanded with more detail but contain no material new confessions. Added detail on reimbursement risk, distributor destocking, and ERP upgrade are operational disclosures, not confessions. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    },
+    "T5-066": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "rationale": "FactSet is a stable subscription-based financial data business serving 160,000+ professionals. Risk factors are standard technology company boilerplate. No confessions, no restatements, no going concern. Strategic evolution (4 to 3 workflow solutions, CGS acquisition) reflects healthy business development. Subscription revenue model provides high visibility and stability."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "rationale": "Client count grew from 160,000 to 180,000. CGS business added. Risk factors expanded slightly with standard language updates. No restatements, covenant breaches, going concern, or quantified losses. Business is performing well with growing client base."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high"
+        }
+      }
+    }
+  }
+}

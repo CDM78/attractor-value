@@ -1,0 +1,72 @@
+{
+  "partition": "holdout",
+  "timestamp": "2026-03-25T20:02:18.765Z",
+  "cases_evaluated": 35,
+  "total_cases": 35,
+  "mean_voo": 0.4050857142857144,
+  "pair_results": [
+    {
+      "buy": "NO_FILTER",
+      "sell": "NONE",
+      "return": 0.5629714285714287,
+      "alpha": 0.1578857142857143,
+      "n": 35
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "NONE",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v3_new_confessions",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v6_confession_count",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v8_minimal_confession",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "NONE",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v3_new_confessions",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v6_confession_count",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v8_minimal_confession",
+      "return": 0.5405714285714284,
+      "alpha": 0.135485714285714,
+      "n": 35
+    }
+  ]
+}

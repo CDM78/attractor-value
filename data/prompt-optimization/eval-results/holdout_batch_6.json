@@ -1,0 +1,141 @@
+{
+  "batch": 6,
+  "partition": "holdout",
+  "results": {
+    "T8-057": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "Healthcare/medical device company. Comparing current (Feb 2020) to prior (Feb 2019): removed PPACA/healthcare reform and third-party reimbursement risk factors (consistent with Surgical & Infection Prevention divestiture in 2018). Added IT infrastructure transition/stabilization risk, employee retention risk, and expanded cybersecurity language. These are operational adjustments post-divestiture, not confessions of structural decline. No quantified losses, no going concern, no restatement language. The COVID entry date (June 2020) represents temporary demand dislocation for elective medical procedures — the underlying medical device business model is intact."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Risk factor changes reflect post-divestiture operational adjustments, not structural deterioration. IT transition risk is inherently temporary. No new financial distress confessions. COVID-era entry into a medical device company is a cyclical buying opportunity."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language, no quantified losses at checkpoint (Feb 2021). COVID-19 pandemic risk factor was added (elective procedure delays, supply chain disruption) but is industry-wide boilerplate. IT infrastructure stabilization risk was removed, suggesting successful resolution. Risk profile is stable to improving."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "One new risk factor added: COVID-19 pandemic impact (elective procedure delays, supply chain, uncertain demand). This is generic pandemic disclosure, not a company-specific operational failure. IT infrastructure stabilization risk was actually removed (positive signal). No restatements, covenant breaches, or quantified losses. Hold."
+        }
+      }
+    },
+    "T8-027": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "notes": "Purple Innovation — DTC mattress company, Consumer Discretionary. Current (Mar 2020) vs prior (Mar 2019): added showroom expansion risks, employee retention language, real estate location risks, inventory theft/damage, and 'discounts' as competitive factor. Financials improving materially: generated $22.9M operating cash flow in 2019 (vs -$21.7M in 2018), positive working capital of $27.3M. Still has net losses ($12.4M) and short operating history. The new risk factors reflect growth-stage operational expansion, not decline. However, medium confidence because the company is still unprofitable with a short track record, heavy capital needs, and is entering COVID disruption. The dislocation is real but this is a speculative growth company, not a classic value play."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "Growth-stage risks from channel expansion (showrooms, wholesale). Financials improving year-over-year. New risk factors reflect growing pains, not structural decline. Medium confidence due to unprofitable history and speculative growth profile."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern, no quantified losses at checkpoint (Mar 2021). COVID-19 risk factors added along with expanded risk factor summary format. Company actually benefited from at-home spending trends during pandemic. Financial trajectory was improving. No sell triggers."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "One new thematic risk category: COVID-19 pandemic impact on operations, supply chain, and customer demand. Also added political/social unrest risk and internal controls risk. However, these are generic pandemic disclosures, and the company was actually benefiting from stay-at-home trends. No company-specific operational failures, no quantified losses. The internal controls language is standard growth-company disclosure as they scale. Hold."
+        }
+      }
+    },
+    "T5-128": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "NXP Semiconductors — global semiconductor company with 50+ years of history. Current (Feb 2021) vs prior (Feb 2020): only meaningful change is the addition of 'potential impacts of the COVID-19 pandemic' to the forward-looking risk factors. Revenue dipped modestly to $8,612M from $8,877M. Risk factors are virtually identical otherwise. NXP is a market leader in automotive, IoT, mobile, and communication infrastructure semiconductors. The COVID impact on auto and industrial end markets is clearly cyclical. Entry date (Mar 2021) with semiconductor demand already recovering strongly represents a temporary dislocation buying opportunity."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Near-identical risk factors year-over-year. Only addition is COVID-19 pandemic reference. Established semiconductor leader with diversified end markets. Revenue dip is cyclical. No structural concerns."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern, no quantified losses at checkpoint (Feb 2022). Risk factors are virtually unchanged. Revenue surged to $11,063M from $8,612M — a 28% increase — confirming the cyclical recovery thesis. Semiconductor market grew to $555.9B from $440.4B. Business is thriving. No sell triggers whatsoever."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Zero new confessions at checkpoint. Risk factors are nearly word-for-word identical. Revenue grew 28% year-over-year to $11,063M. The only trivial wording change is 'strategic alliance partners' vs 'alliance partners.' Business fundamentals are excellent. Strong hold."
+        }
+      }
+    },
+    "T8-099": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "Regional bank (Montana, Idaho, Utah, Washington, Wyoming, Colorado, Arizona, Nevada). Current (Feb 2020) vs prior (Feb 2019): shifted from third-person to first-person voice. Added Nevada to market areas (geographic expansion). Updated geopolitical risk language (trade disputes/tariffs replacing 'new presidential administration'). Durbin Amendment interchange fee cap impact now realized (effective July 2019). Expanded cybersecurity language. Removed stress testing requirement reference. These are modest operational and regulatory updates reflecting growth and maturation, not structural decline. No loan loss confessions, no capital adequacy concerns. Entry during COVID (June 2020) for a well-capitalized regional bank in growing Western US markets is a temporary dislocation opportunity."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Risk factors show routine year-over-year updates. Geographic expansion (Nevada added). Durbin Amendment impact already absorbed. No new financial distress signals. Well-capitalized regional bank in growing markets. COVID entry is temporary dislocation."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern, no quantified losses at checkpoint (Mar 2021). COVID-19 pandemic risk factor added as extended new section, but the company describes proactive pandemic management — launched pandemic team, PPP lending, credit quality monitoring, strong liquidity and capital position. Acquisition/growth risk section expanded. No sell triggers. The bank appears well-positioned."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "One new major risk factor: COVID-19 pandemic impact (credit risk, market volatility, economic disruption in served markets). Also expanded acquisition integration risk disclosure and added competition risk section. However, COVID disclosure includes strong mitigating language — describes proactive management, strong capital/liquidity position, pandemic response team, PPP program participation. No loan loss deterioration confessions, no capital concerns. Hold."
+        }
+      }
+    },
+    "T8-015": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "Jack in the Box — QSR franchise, Consumer Discretionary. Current (Nov 2019) vs prior (Nov 2018): very minor changes. Removed 'Jack in the Box' brand name references (reflecting Qdoba divestiture completion — now a single-brand company). Changed 'royalties' to 'rents, royalties and marketing fees' for franchisee revenue description. Added environmental/animal welfare concerns to customer preference risks. These are cosmetic updates reflecting post-divestiture simplification. No financial distress, no new operational concerns. Nearly 70% of restaurants in California and Texas provides geographic concentration but the franchise model generates high-margin fee income. Entry during COVID (June 2020) for a drive-thru-heavy QSR franchise is a classic temporary dislocation — drive-thru was actually a competitive advantage during lockdowns."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Near-identical risk factors year-over-year. Minor cosmetic changes from Qdoba divestiture. No new confessions. Drive-thru-heavy QSR franchise model is resilient. COVID entry is temporary dislocation."
+        }
+      },
+      "sell": {
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern, no quantified losses at checkpoint (Nov 2020). COVID-19 pandemic risk factor added as extended new section. Variable Funding Notes drawdown of $107.9M disclosed as precautionary liquidity measure — this is prudent cash management, not a covenant breach or financial distress event. Franchise financial distress risk mentioned but framed as contingent. Drive-thru QSR model held up well during pandemic. No sell triggers."
+        },
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "One new major risk factor: COVID-19 pandemic operational disruption. Includes franchise financial distress concerns, $107.9M VFN drawdown for liquidity, employee retention risks, and supply chain concerns. However, the VFN drawdown is precautionary (not a covenant breach), restaurants continued operating via drive-thru/off-premise, and the company proactively supported franchisees with marketing fee reductions and deferred rent. No restatements, no going concern. The drive-thru model actually proved resilient. Hold."
+        }
+      }
+    }
+  }
+}

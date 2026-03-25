@@ -1,0 +1,171 @@
+{
+  "batch": 6,
+  "partition": "validation",
+  "results": {
+    "T8-077": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "Landscape supply distributor with cyclical exposure to residential/commercial construction. Risk factors between current and prior 10-K are nearly identical — minor additions of 'geopolitics,' 'wildfires,' and updated California drought timeline. No new confessions of operational distress, financial deterioration, or structural impairment. Cyclicality and weather dependence are well-known, inherent industry risks. Entry date (June 2020) during COVID dislocation is a classic cyclical buying opportunity for a business tied to housing starts and outdoor activity."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Risk factors are virtually unchanged year-over-year. Cyclical construction/landscaping demand risks are temporary by nature. No new confessions, no structural business model threat. Seasonal and weather-dependent demand patterns are well-understood and priced in."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Mar 2021) vs entry (Feb 2020): COVID-19 pandemic risk factor added as new disclosure. Cybersecurity risk added. Risk factor summary section is new organizational format. However, no company-specific operational failures, no quantified losses, no restatements. COVID disclosure is industry-wide boilerplate. The one genuinely new confession is the pandemic impact on business, but by March 2021 the landscape supply business was likely benefiting from the housing boom."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language, no quantified losses at checkpoint. COVID pandemic risk factor was added but contains no company-specific financial distress admissions. Business fundamentals appear intact."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "The COVID-19 risk factor is the only material addition, and it is generic industry-level language, not a company-specific confession of deterioration. No new financial distress, impairment, or operational failure disclosures. Risk profile is essentially stable to improving given the housing market tailwind in 2021."
+        }
+      }
+    },
+    "T5-262": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "notes": "Western Union faces structural headwinds from digital disruption of its physical agent-based money transfer model. Competition from fintech, digital currencies, mobile payments, and bank-based transfer services threatens the core business model. COVID accelerated digital adoption, making the physical agent network less relevant. Consent orders and settlement agreements from prior compliance failures add regulatory overhang. The digital transformation risk is not cyclical — it represents permanent market share erosion. Revenue declines in traditional corridors are structural, not temporary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "notes": "Digital disruption of physical money transfer is structural. COVID accelerated the shift to digital/mobile payments. The agent network dependency is a structural liability in an increasingly digital world. Regulatory consent orders reflect past compliance failures. While remittance demand persists, the channel shift away from physical agents is permanent."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (Feb 2022) vs entry (Feb 2021): Risk factors are nearly identical. Minor additions include climate change mentioned alongside natural disasters, and slight COVID language update. No new material confessions, no restatements, no covenant breaches, no quantified losses. The structural digital disruption risk persists but was already known at entry."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language, no new quantified losses at checkpoint. Risk factor language is essentially unchanged from entry filing."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "No new confessions appeared between entry and checkpoint. Risk factors are substantively identical. Climate change added as a minor qualifier to natural disaster language, but this is boilerplate expansion, not a new confession."
+        }
+      }
+    },
+    "T8-060": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "Kratos Defense is a defense contractor focused on unmanned systems, space/satellite, microwave electronics, and missile defense — all priority DoD spending areas. Risk factors between current and prior 10-K show positive developments: FTT acquisition completed adding turbine technology capabilities, budget increased to $738B for military. Primary risks are standard defense industry budget uncertainty and government shutdown risk. No financial distress confessions, no impairments, no going concern. Entry during June 2020 COVID dislocation for a defense company aligned with DoD priorities is a temporary dislocation opportunity."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Standard defense budget uncertainty risks. Company added capabilities through FTT acquisition. Aligned with DoD priority areas (unmanned, space, hypersonics). No confessions of financial distress. Budget risks are cyclical and political, not structural to the company's competitive position."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): COVID-19 pandemic risk factor added with extensive operational impact language. DoD budget decreased $9.7B from FY2020 to FY2021. However, the company expanded its capability descriptions (added 'disruptive, transformative,' rocket/hypersonic systems). No restatements, no covenant breaches, no quantified losses. The COVID operational risk is the one new confession, but it is generic defense industry language."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language, no quantified losses. COVID pandemic operational risk was added but reflects industry-wide conditions, not company-specific financial distress. Company appears to have continued operations as 'critical infrastructure.'"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "COVID operational risk is the only new material disclosure, and it is generic defense sector language. Company actually expanded its capability descriptions, suggesting business momentum. No company-specific confessions of deterioration found."
+        }
+      }
+    },
+    "T5-246": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "notes": "SL Green Realty is a Manhattan office REIT. The current 10-K (Feb 2021) adds COVID-19 as the lead risk factor, explicitly acknowledging work-from-home as a threat to office demand. This is a genuine confession: 'the extent to which work-from-home policies continue subsequent to the easing of pandemic-related restrictions' directly challenges the core demand thesis. Credit Suisse departed, reducing top tenant concentration. Lease expirations of 35.3% by 2025 create re-leasing risk in a weakened office market. The WFH shift is structural — it permanently reduces peak office demand in Manhattan. While not existential, it represents sustained headwinds to occupancy and rent growth."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "low",
+          "notes": "WFH risk is potentially structural for Manhattan office demand, but the degree is uncertain. NYC office has historically rebounded from crises, and trophy assets may prove more resilient. The COVID pandemic disclosure is a genuine new confession about demand risk, but whether it is fully structural or partially temporary remains debatable. Low confidence because the structural vs temporary distinction for Manhattan office post-COVID is genuinely uncertain."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2022) vs entry (Feb 2021): Risk factors are very similar. Minor updates: 'future variants' added to COVID language, 'governmental relief programs' removed from impact list, multifamily residential no longer mentioned in property holdings (divested). One Vanderbilt Avenue replaces 220 East 42nd Street in top 5 properties (positive — new trophy asset). Top 5 concentration increased to 39.0% from 35.1%. No new confessions of financial distress. Leasehold rents declined from $318.1M to $281.9M but this appears operational, not a distress signal."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language, no new quantified losses at checkpoint. WFH risk was already disclosed at entry. One Vanderbilt opening is a positive development. No new material confessions."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "No new confessions between entry and checkpoint. WFH structural risk was already fully disclosed at entry. Portfolio changes (One Vanderbilt addition, multifamily exit) are operational shifts, not confessions. Medium confidence because the WFH risk trajectory remains unclear — office return rates were still uncertain in early 2022."
+        }
+      }
+    },
+    "T8-093": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "notes": "Seacoast Banking Corporation of Florida — community bank in growth mode via M&A (First Bank and Fourth Street acquisitions). The risk factors between current and prior are dominated by new merger-related disclosures, which are growth-oriented, not distress confessions. Core banking risks (real estate, interest rates, competition, Florida housing exposure) are standard and unchanged. The merger integration risks are temporary by nature. Entry in June 2020 during COVID banking panic is a classic cyclical buying opportunity for a well-positioned Florida community bank with acquisition growth strategy."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Merger-related risks are temporary integration risks associated with growth strategy. Core banking risks are standard industry boilerplate. Florida real estate exposure is cyclical. No financial distress confessions, no impairments, no going concern. COVID dislocation created the buying opportunity."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Mar 2021) vs entry (Feb 2020): Merger-related risks replaced by extensive COVID-19 pandemic section covering credit risk, strategic risk, operational risk, and PPP loan risks. PPP participation and loan deferral programs are new disclosures. However, these are industry-wide pandemic responses, not company-specific distress. The one new confession is the acknowledgment of potential credit deterioration from COVID loan deferrals. No restatements, no covenant breaches, no going concern."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language, no quantified losses at checkpoint. COVID credit risk and PPP program risks are industry-standard disclosures for all community banks. Merger integration appears completed (merger-specific risks removed from checkpoint)."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "COVID pandemic risks are industry-wide, not company-specific confessions. The removal of merger-related risks at checkpoint suggests successful integration. PPP loan risks are standard for all participating banks. No company-specific deterioration or new material confessions found."
+        }
+      }
+    }
+  }
+}

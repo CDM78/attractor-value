@@ -1,0 +1,166 @@
+{
+  "batch": 1,
+  "partition": "validation",
+  "results": {
+    "T5-172": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Take-Two Interactive (GTA publisher) shows improving revenue diversification: GTA concentration declined from 54.5% to 38.2%, top 5 franchises from 93.7% to 89.8%. Added new risk about pursuing new technology/business models -- this is forward-looking awareness, not a confession of failure. Platform risks are standard for the industry. No restatements, covenant breaches, or quantified losses. Hit-driven business is inherently volatile but GTA Online provides recurring monetization. Problems are known and specific to the industry."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. Revenue diversification improving. Standard hit-driven entertainment industry cyclicality."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint shows GTA contribution stable at 39.7%, top 5 at 90.6%. Added Nintendo Switch as platform (expansion). New risk factor about recurring revenue fluctuations is a forward-looking disclosure, not a confession of actual decline. No restatements, covenant breaches, quantified losses, regulatory actions, or going concern warnings."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Added recurring revenue risk disclosure is precautionary, not indicative of actual problems. Platform expansion to Switch is positive."
+        }
+      }
+    },
+    "T5-204": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Capri Holdings (Michael Kors/Versace/Jimmy Choo) is undergoing a major transformation from single-brand to multi-brand luxury house. The acquisition of Versace (Dec 2018) carries significant integration risk and elevated debt. Michael Kors brand had suffered from over-distribution and brand dilution prior to entry. However, the strategic pivot to a diversified luxury group with three iconic brands addresses the core issue. Current risk factors show no restatements, covenant breaches, or going concern warnings. The distress is real (MK brand erosion) but management has a coherent turnaround plan via brand diversification. Medium confidence because MK brand rehabilitation remains uncertain."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Brand dilution risk for Michael Kors is real but being addressed through multi-brand strategy. No structural collapse -- brands retain value. Integration risk is the key uncertainty."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "Checkpoint filed July 2020, deep into COVID. Added COVID-19 related charges as a new unallocated cost category -- this is a quantified new charge category. Wholesale doors declined across brands (MK from 3,202 to 2,982). However, Versace grew from ~3% to ~15% of revenue (full year vs partial), showing integration progress. COVID impact is industry-wide and likely temporary. The one new confession (COVID charges) is pandemic-related, not company-specific structural decline. Hold with medium confidence due to ongoing COVID uncertainty."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "COVID-19 charges are pandemic-driven, not company-specific confessions. No restatements, covenant breaches, or going concern warnings. Versace integration progressing. Wholesale door decline is COVID-related."
+        }
+      }
+    },
+    "T5-219": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Helmerich & Payne is the largest provider of advanced AC drive land rigs in the Western Hemisphere. Rig utilization declined (194 contracted from 299 available in U.S. Land, down from higher levels). Fleet downsized by 51 FlexRig4 rigs and 2 international rigs. This is classic cyclical energy services distress driven by oil price volatility. However, H&P maintains best-in-class super-spec technology (FlexRig platform), no customer represents >10% of revenue (improved from prior year when EOG was >10%), and the company has strong balance sheet. Problems are cyclical and well-understood by the market. Medium confidence because oil price recovery timing is uncertain and the energy transition creates long-term headwinds."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Cyclical energy downturn, not structural decline. Technology leadership intact. Fleet rightsizing is prudent management. Oil price recovery timing uncertain."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "low",
+          "reasoning": "Two new confessions: (1) Restructuring charges disclosed with organizational restructuring from 4 segments to 3, combining U.S. Land and H&P Technologies into North America Solutions. (2) Quantified dramatic decline -- contracted rigs collapsed from 194 to 69 in North America (massive 64% drop). However, these are cyclical responses to the COVID/oil price crash, not structural competitive erosion. H&P maintained its super-spec technology advantage and restructured proactively. No restatements or going concern warnings. Hold with low confidence because the magnitude of activity decline is severe and recovery uncertain."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": true,
+          "action": "hold",
+          "confidence": "low",
+          "reasoning": "New confessions found: restructuring charges and massive utilization decline (194 to 69 contracted rigs). However, these are cyclical rather than structural. No going concern, no restatements, no covenant breaches. Technology position maintained. Hold but with low confidence given severity of downturn."
+        }
+      }
+    },
+    "T8-066": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Matson Inc operates Jones Act-protected shipping routes to Hawaii, Alaska, Guam, and Pacific islands. The Jones Act provides a durable competitive moat (U.S.-built, U.S.-flagged, U.S.-crewed vessels required). Current vs prior risk factors show: Jones Act risks elevated to a separate prominent section (heightened disclosure but not a new problem), IMO 2020 fuel compliance more detailed (successfully managing transition to LSFO/scrubbers), tariff uncertainty added. No confessions of vessel losses, route abandonment, covenant breaches, or competitive erosion. The regulatory moat is intact. COVID-era tourism decline is the temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. Jones Act moat intact. IMO 2020 compliance proceeding. COVID tourism impact is temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint adds extensive COVID-19 risk factor but this is descriptive of industry-wide conditions, not a company-specific confession. Notably, China service experiencing increased demand and high volumes/rates due to pandemic-driven supply chain disruption. UK PM Jones Act trade negotiation comment is a minor new disclosure. No restatements, covenant breaches, quantified losses specific to Matson, regulatory actions, or going concern warnings. Mixed COVID impact -- some segments benefiting from disruption."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new company-specific confessions. COVID-19 risk factor is industry-wide context. China service benefiting from supply chain disruption. Jones Act moat unchanged."
+        }
+      }
+    },
+    "T8-043": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Supernus Pharmaceuticals is a specialty pharma company dependent on Oxtellar XR and Trokendi XR. Prior filing (2019-03-01) had extensive anxious language about generic competition (Paragraph IV challenges), IP litigation, and concentrated revenue risk. Current filing (2020-02-28) shifts tone significantly -- more focus on regulatory process description and expanded pipeline (SPN-809, SPN-817 with Orphan Drug designation for Dravet Syndrome). This suggests the company has moved past the most acute generic threat period. However, reliance on two products with known patent expiry timelines remains a real risk. The distress appears temporary as the pipeline diversification addresses the core vulnerability. Medium confidence because pipeline execution risk is inherent."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Generic competition threat appears managed. Pipeline expanding with Orphan Drug candidate. Two-product dependence is being addressed. Patent/IP litigation risk remains."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint shows significant positive pipeline development: SPN-812 advancing (multiple patents issued), SPN-817, SPN-820 (NV-5138 option from Navitor), SPN-830 (apomorphine pump, Orphan Drug eligible). Patent portfolio materially strengthened. Three proprietary technology platforms disclosed (Microtrol, Solutrol, EnSoTrol). Trokendi XR settlement allows generic by Jan 2023 -- this is a known, quantified date from a settlement, not a new confession. Oxtellar XR litigation with Apotex ongoing but not new. No restatements, covenant breaches, going concern warnings, or unexpected losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Pipeline dramatically expanded. Patent portfolio strengthened. Generic settlement date (Jan 2023) is a known event from prior period. Company's competitive position improved."
+        }
+      }
+    }
+  }
+}

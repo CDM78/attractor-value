@@ -1,0 +1,352 @@
+[
+  {
+    "case_id": "T5-218",
+    "ticker": "HOG",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-22",
+    "sector": null,
+    "return_3yr": 0.448,
+    "sp500_return_3yr": 0.4,
+    "alpha": 0.04799999999999999
+  },
+  {
+    "case_id": "T5-195",
+    "ticker": "AMG",
+    "binary_outcome": "winner",
+    "entry_date": "2019-12-23",
+    "sector": null,
+    "return_3yr": 0.821,
+    "sp500_return_3yr": 0.186,
+    "alpha": 0.635
+  },
+  {
+    "case_id": "T5-070",
+    "ticker": "FTNT",
+    "binary_outcome": "winner",
+    "entry_date": "2018-10-10",
+    "sector": null,
+    "return_3yr": 2.856,
+    "sp500_return_3yr": 0.566,
+    "alpha": 2.29
+  },
+  {
+    "case_id": "T8-087",
+    "ticker": "HOMB",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.73,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.304
+  },
+  {
+    "case_id": "T8-158",
+    "ticker": "AXON",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.971,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.5449999999999999
+  },
+  {
+    "case_id": "T5-257",
+    "ticker": "UNM",
+    "binary_outcome": "winner",
+    "entry_date": "2021-09-20",
+    "sector": null,
+    "return_3yr": 1.646,
+    "sp500_return_3yr": 0.311,
+    "alpha": 1.335
+  },
+  {
+    "case_id": "T5-193",
+    "ticker": "AIV",
+    "binary_outcome": "winner",
+    "entry_date": "2020-12-21",
+    "sector": null,
+    "return_3yr": 0.59,
+    "sp500_return_3yr": 0.272,
+    "alpha": 0.31799999999999995
+  },
+  {
+    "case_id": "T8-142",
+    "ticker": "LNTH",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Healthcare",
+    "return_3yr": 5.343,
+    "sp500_return_3yr": 0.426,
+    "alpha": 4.917
+  },
+  {
+    "case_id": "T5-203",
+    "ticker": "COTY",
+    "binary_outcome": "winner",
+    "entry_date": "2020-09-21",
+    "sector": null,
+    "return_3yr": 2.967,
+    "sp500_return_3yr": 0.342,
+    "alpha": 2.625
+  },
+  {
+    "case_id": "T5-213",
+    "ticker": "FTI",
+    "binary_outcome": "winner",
+    "entry_date": "2021-02-11",
+    "sector": null,
+    "return_3yr": 1.506,
+    "sp500_return_3yr": 0.282,
+    "alpha": 1.224
+  },
+  {
+    "case_id": "T8-167",
+    "ticker": "PLAY",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 1.539,
+    "sp500_return_3yr": 0.426,
+    "alpha": 1.113
+  },
+  {
+    "case_id": "T5-092",
+    "ticker": "J",
+    "binary_outcome": "winner",
+    "entry_date": "2019-12-09",
+    "sector": null,
+    "return_3yr": 0.446,
+    "sp500_return_3yr": 0.255,
+    "alpha": 0.191
+  },
+  {
+    "case_id": "T5-035",
+    "ticker": "CE",
+    "binary_outcome": "winner",
+    "entry_date": "2018-12-24",
+    "sector": null,
+    "return_3yr": 1.039,
+    "sp500_return_3yr": 1.01,
+    "alpha": 0.028999999999999915
+  },
+  {
+    "case_id": "T5-117",
+    "ticker": "MTCH",
+    "binary_outcome": "trap",
+    "entry_date": "2021-09-20",
+    "sector": null,
+    "return_3yr": -0.757,
+    "sp500_return_3yr": 0.311,
+    "alpha": -1.068
+  },
+  {
+    "case_id": "T8-134",
+    "ticker": "BBBY",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.031,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.395
+  },
+  {
+    "case_id": "T5-191",
+    "ticker": "ZBRA",
+    "binary_outcome": "trap",
+    "entry_date": "2019-12-23",
+    "sector": null,
+    "return_3yr": -0.036,
+    "sp500_return_3yr": 0.186,
+    "alpha": -0.222
+  },
+  {
+    "case_id": "T8-053",
+    "ticker": "TCMD",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Healthcare",
+    "return_3yr": -0.434,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.86
+  },
+  {
+    "case_id": "T5-054",
+    "ticker": "DPZ",
+    "binary_outcome": "trap",
+    "entry_date": "2020-05-11",
+    "sector": null,
+    "return_3yr": -0.162,
+    "sp500_return_3yr": 0.41,
+    "alpha": -0.572
+  },
+  {
+    "case_id": "T8-069",
+    "ticker": "ASGN",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.173,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.253
+  },
+  {
+    "case_id": "T5-173",
+    "ticker": "TYL",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-22",
+    "sector": null,
+    "return_3yr": 0.159,
+    "sp500_return_3yr": 0.4,
+    "alpha": -0.24100000000000002
+  },
+  {
+    "case_id": "T7-047",
+    "ticker": "MELI",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Technology",
+    "return_3yr": 0.312,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.11399999999999999
+  },
+  {
+    "case_id": "T8-109",
+    "ticker": "TALO",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Energy",
+    "return_3yr": 0.009,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.417
+  },
+  {
+    "case_id": "T8-131",
+    "ticker": "MBI",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.181,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.245
+  },
+  {
+    "case_id": "T5-046",
+    "ticker": "CTRA",
+    "binary_outcome": "trap",
+    "entry_date": "2021-10-04",
+    "sector": null,
+    "return_3yr": 0.323,
+    "sp500_return_3yr": 0.325,
+    "alpha": -0.0020000000000000018
+  },
+  {
+    "case_id": "T5-074",
+    "ticker": "GL",
+    "binary_outcome": "trap",
+    "entry_date": "2019-08-07",
+    "sector": null,
+    "return_3yr": 0.171,
+    "sp500_return_3yr": 0.436,
+    "alpha": -0.265
+  },
+  {
+    "case_id": "T8-140",
+    "ticker": "RRGB",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": -0.034,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.45999999999999996
+  },
+  {
+    "case_id": "T8-128",
+    "ticker": "LEE",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Communication Services",
+    "return_3yr": 0.143,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.28300000000000003
+  },
+  {
+    "case_id": "T8-049",
+    "ticker": "OMCL",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Healthcare",
+    "return_3yr": 0.093,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.33299999999999996
+  },
+  {
+    "case_id": "T5-233",
+    "ticker": "NKTR",
+    "binary_outcome": "trap",
+    "entry_date": "2019-10-02",
+    "sector": null,
+    "return_3yr": -0.819,
+    "sp500_return_3yr": 0.274,
+    "alpha": -1.093
+  },
+  {
+    "case_id": "T5-104",
+    "ticker": "LW",
+    "binary_outcome": "trap",
+    "entry_date": "2018-12-03",
+    "sector": null,
+    "return_3yr": -0.271,
+    "sp500_return_3yr": 0.64,
+    "alpha": -0.911
+  },
+  {
+    "case_id": "T8-057",
+    "ticker": "AVNS",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Healthcare",
+    "return_3yr": -0.117,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.543
+  },
+  {
+    "case_id": "T8-027",
+    "ticker": "PRPL",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": -0.823,
+    "sp500_return_3yr": 0.426,
+    "alpha": -1.2489999999999999
+  },
+  {
+    "case_id": "T5-128",
+    "ticker": "NXPI",
+    "binary_outcome": "trap",
+    "entry_date": "2021-03-22",
+    "sector": null,
+    "return_3yr": 0.295,
+    "sp500_return_3yr": 0.33,
+    "alpha": -0.03500000000000003
+  },
+  {
+    "case_id": "T8-099",
+    "ticker": "GBCI",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.033,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.393
+  },
+  {
+    "case_id": "T8-015",
+    "ticker": "JACK",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.332,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.09399999999999997
+  }
+]

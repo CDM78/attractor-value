@@ -1,0 +1,136 @@
+{
+  "batch": 5,
+  "partition": "holdout",
+  "results": {
+    "T8-140": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "reasoning": "Red Robin is a casual dining restaurant chain explicitly describing itself as executing a 'turnaround strategy' -- a confession that the business was failing. The current filing (2020-02-25) introduces turnaround language, Donatos pizza partnership, new service model, and menu rationalization that were absent from the prior filing (2019-02-27). The prior filing focused on family dining and adult occasions; the current one shifts to off-premise sales and cost reduction. Competition is intense from fast-casual and better-burger concepts that 'are expanding faster than we are.' The company has 'substantially less financial, marketing, and other resources' than competitors. Casual dining faces secular headwinds from changing consumer preferences. This is a structurally challenged business in a declining segment, not a temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "reasoning": "Explicit turnaround language. Secular decline in casual dining. Competitors expanding faster with more resources. Structural decline of a challenged business model."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "sell",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-03-03) reveals multiple new material confessions: (1) COVID had a 'material adverse effect on our business' with restaurant closures, dine-in restrictions, and heavily off-premise operating model; (2) Company implemented furloughs, modified hours, reduced staff, and sought rent abatement/deferral from landlords indicating severe liquidity stress; (3) Strategic growth plans materially delayed including Donatos rollout, technology implementation, and restaurant remodels. The already-struggling turnaround was devastated by COVID. The checkpoint filing is dominated by an extensive new COVID risk section that was the single largest risk factor."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T8-128": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "high",
+          "reasoning": "This is a legacy newspaper/media publishing company (Lee Enterprises) with $444M in debt at 3.6x adjusted EBITDA, carrying 9.5% Senior Secured Notes and a 12% second lien term loan -- punitive interest rates reflecting distressed credit. The filing contains explicit going concern language: 'Our ability to operate as a going concern is dependent on our ability to remain in compliance with debt covenants and to refinance or amend our debt agreements as they become due.' Revenue is declining as advertising shifts from print to digital -- a secular, irreversible trend. Advertising revenue (52% of total) is falling. The Revolving Facility matures Dec 2020 and other debt matures in 2022. Only $26M total liquidity. This is a structurally declining business with going concern risk, not a temporary dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "high",
+          "reasoning": "Going concern language. $444M debt at punitive rates. Secular print-to-digital decline. Only $26M liquidity. Structural decline."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "sell",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-12-11) reveals multiple new material confessions: (1) 'Material drop in advertising revenues as COVID-19 continues' -- new explicit quantified revenue decline admission; (2) Goodwill impairment risk with $328M goodwill, $40M mastheads subject to impairment testing with management noting 'Changes in key assumptions impacting the analyses could have resulted in the recognition of additional impairment'; (3) Stock price decline threatening NYSE listing compliance. The already-structurally-challenged print media business has been further damaged by COVID with new existential risks around delisting and impairment."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T8-049": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Omnicell is a healthcare medication management automation company with a clear vision (autonomous pharmacy) and expanding product portfolio (XT Series, XR2, IVX Workflow). Current vs prior filings show minor updates: acknowledged XT Series quality issues (honest, corrective action taken), reorganized competitive landscape to reflect narrower 'medication management automation' focus from broader 'supply chain solutions.' No confessions of lost market share, revenue decline, covenant breaches, or customer attrition. The competitive list expanded with Loccioni added, reflecting market awareness not competitive erosion. The company is executing on product innovation in a growing healthcare technology market. COVID-era entry is clearly a temporary dislocation for a company providing essential hospital infrastructure."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No structural confessions. Growing healthcare automation company with clear product roadmap. XT quality issues addressed. COVID dislocation is temporary for essential hospital infrastructure provider."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-02-24) adds COVID risk section but explicitly notes 'starting in the third quarter of 2020, we began to see our customers returning to pre-pandemic purchasing patterns consistent with long-term strategic investments.' No restatements, covenant breaches, going concern, or quantified losses. Product development continuing. Risk factors reorganized but substantively unchanged. The COVID impact was temporary and the company is recovering to normal purchasing patterns."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    },
+    "T5-233": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "reasoning": "Nektar Therapeutics is a clinical-stage biotech with no meaningful commercial revenue, entirely dependent on clinical trial outcomes for its lead candidate NKTR-214 (bempegaldesleukin) partnered with BMS. While the BMS deal provides substantial funding ($1B upfront + $850M equity), the risk is fundamentally binary -- trial success or failure. Prior vs current filings show pipeline progression but also subtle concerning shifts: the broad '20+ indications across nine tumor types' framing suggests shotgun approach rather than focused execution. For a value investing framework, a pre-revenue company with binary clinical risk represents structural vulnerability, not a temporary dislocation. The business has no earnings base, no recurring revenue, and no margin of safety from operations. Medium confidence because the BMS partnership does provide some financial stability."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "reasoning": "Pre-revenue biotech with binary clinical trial risk. No earnings, no recurring revenue, no margin of safety from operations. Structural risk for value investing framework."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "low",
+          "reasoning": "Checkpoint (2020-02-28) shows the chronic pain program NKTR-181 appears dropped from the pipeline description, representing a pipeline contraction. However, core I-O program advancing with Breakthrough Therapy designation in melanoma and expanded BMS collaboration including Amendment No.1 to the Collaboration Development Plan. NKTR-255 progressing toward clinical studies. No restatement or going concern. The dropped pain program is a mild negative but the core thesis (I-O pipeline with BMS) remains intact. Low confidence because biotech outcomes are inherently unpredictable."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    },
+    "T5-104": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Lamb Weston is the leading frozen potato products company, recently spun off from Conagra (Nov 2016). Prior (2017-07-25) vs current (2018-07-26) filings are nearly identical in risk profile. Employee base grew from 6,500 to 7,200, suggesting healthy business expansion. Executive team is stable. No new confessions of market share loss, margin compression, supply chain issues, or competitive deterioration. The company operates in a structurally stable food category with strong brands (Lamb Weston, Stealth Fries, Grown in Idaho, Alexia), seasonal but predictable cash flows, and limited competitive disruption risk. Any market price dislocation for this type of defensive food company is clearly temporary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "Virtually identical risk factors. Growing employee base. Stable leadership team. Defensive food business with strong competitive position. Clearly temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2019-07-25) shows continued stability and growth. Employee base grew to 7,600. Named competitors listed (McCain, Simplot, Cavendish Farms, etc.) reflecting standard disclosure enhancement. Supply chain officer retiring with orderly succession planned. No restatements, covenant breaches, going concern, impairments, or quantified losses. Business executing as expected. Strong hold."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    }
+  }
+}

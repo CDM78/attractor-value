@@ -1,0 +1,171 @@
+{
+  "batch": 3,
+  "partition": "validation",
+  "results": {
+    "T8-003": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Cato Corporation discount retailer. Major new COVID risk: all stores (Cato, Its Fashion, Its Fashion Metro, Versona) temporarily closed March 19, 2020. Supply chain risks expanded to include public health threats and China material dependency. Prior year had no disease/pandemic risk factor. However, store closures are clearly temporary -- retail will reopen. Business model (discount women's apparel in strip centers) faces some structural headwinds from e-commerce but COVID closure is the dominant new risk and is temporary."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "COVID store closures are temporary. No financial confessions, restatements, or going concern. Structural e-commerce risk exists but is not new."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "Checkpoint (2021-03-29) shows all stores reopened by June 15, 2020 (albeit reduced hours). COVID risk factor is more detailed but backward-looking. New mention of potential long-term behavioral changes (shift to online, reduced wardrobe updating) is a forward-looking caution, not a confession of realized losses. No restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. Stores reopened. COVID impact was temporary as expected."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "medium",
+          "reasoning": "No new confessions. COVID language evolved from uncertain to more retrospective. Mention of potential long-term e-commerce shift is a forward-looking risk, not a realized confession."
+        }
+      }
+    },
+    "T5-125": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "NVR Inc homebuilder. Risk factors nearly identical year-over-year. Standard cyclical homebuilding risks: interest rates, mortgage availability, housing market conditions, land inventory. No confessions whatsoever. No restatements, no quantified losses, no covenant breaches, no going concern. Geographic concentration in DC/Baltimore metro (~30%/10% of revenue) is a known and stable risk, not a new confession. Clean risk profile."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No confessions. Nearly identical risk factors year-over-year. Standard cyclical homebuilder risks. Clean profile."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-02-19) is nearly identical to entry. Actually removed construction financing cost language from interest rate risk (slightly positive). Geographic concentration percentages barely changed (22%/9% vs 23%/8%). No new confessions, restatements, covenant breaches, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. Risk factors essentially unchanged."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Risk factors virtually unchanged between entry and checkpoint. Clean."
+        }
+      }
+    },
+    "T5-025": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Baker Hughes (BHGE) oilfield services. GE ownership reduced to ~50.4% creating overhang uncertainty. Risk factors are standard oilfield services: competition, geopolitical, commodity exposure, cybersecurity. The GE separation is a known structural transition that creates uncertainty but also potential value unlock. Revenue of $22.9B with $21B remaining performance obligations. No restatements, covenant breaches, or going concern. The confession is the GE overhang and potential loss of controlling interest, but this is a known transitional issue, not deterioration."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "GE separation overhang is transitional, not structural decline. Strong order backlog. Standard oilfield services cyclical risks. No financial confessions."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2020-02-13) shows rebranding to Baker Hughes Company. GE relationship evolving with Omnibus Agreement. Added energy transition strategy language (positive positioning). Revenue grew to $23.8B, RPO grew to $22.9B. No new restatements, covenant breaches, going concern, or quantified losses. Company is executing on separation and diversification."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. Company rebranded and growing revenue."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. Positive evolution: rebranding complete, energy transition positioning, revenue and backlog growth."
+        }
+      }
+    },
+    "T5-169": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "high",
+          "reasoning": "Trimble Inc technology/positioning company. Risk factors very similar year-over-year. Minor additions: political/diplomatic/military trade disruption language, government/customer attitudes favoring domestic suppliers. These are macro risk expansions, not company-specific confessions. Stock price range $30.93-$45.94. No restatements, no quantified losses, no covenant breaches, no going concern. Serves agriculture, engineering, construction -- diversified end markets."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "reasoning": "No confessions. Minor expansion of existing geopolitical risk language. Diversified technology company with no company-specific deterioration signals."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "Checkpoint (2021-02-26) adds major COVID-19 risk section at top of risk factors, covering supply chain disruption, remote work impacts, vaccine uncertainty, financial covenant compliance risk. Also adds differing regional pandemic responses as an international risk. These are standard pandemic boilerplate adopted industry-wide. The covenant compliance mention is worth monitoring but is hypothetical, not a realized breach. No restatements, going concern, or quantified losses."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "reasoning": "No restatements, covenant breaches, going concern, or quantified losses. COVID risk factor is standard pandemic boilerplate, not company-specific confession."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": false,
+          "action": "hold",
+          "confidence": "high",
+          "reasoning": "No new confessions. COVID language is standard pandemic disclosure. Covenant compliance is mentioned as a potential risk, not a realized breach."
+        }
+      }
+    },
+    "T5-200": {
+      "buy": {
+        "buy_v4_confession": {
+          "assessment": "temporary_dislocation",
+          "confidence": "medium",
+          "reasoning": "Brookline Bancorp community bank. Risk factors are standard banking risks: real estate lending, interest rate sensitivity, commercial loan concentration, competition. Crossed $10B Dodd-Frank threshold introducing additional regulatory costs. Geographic expansion into Greater Boston with larger loan amounts and less experience. Headquarters relocation risk mentioned. These are execution risks from growth strategy, not confessions of deterioration. No restatements, quantified losses, covenant breaches, or going concern."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "reasoning": "Growth/expansion execution risks, not structural decline. Standard community bank risk profile. Crossing $10B threshold is a one-time regulatory adjustment."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "sell",
+          "confidence": "medium",
+          "reasoning": "Checkpoint (2020-02-28) contains two significant new confessions: (1) Wrote off $16M secured commercial loan involving alleged borrower fraud, with legal claims filed against lead lender; (2) Discontinued national mortgage banking operations (FCLS), their largest source of fee income, held for sale with uncertain pricing and potential additional expenses. Also initiated strategic review with uncertain outcomes. These are real, quantified confessions of loss and strategic dislocation."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell",
+          "reasoning": "New quantified loss: $16M loan write-off from alleged borrower fraud. Discontinuation of national mortgage banking operations (largest fee income source). Strategic review initiated. These are material new confessions."
+        },
+        "sell_v3_new_confessions": {
+          "new_confessions_found": true,
+          "action": "sell",
+          "confidence": "medium",
+          "reasoning": "Two new confessions: (1) $16M fraud-related loan write-off with legal proceedings, (2) discontinuation of FCLS national mortgage banking operations (largest fee income source) with uncertain sale prospects and potential additional costs. Strategic review signals management concern about business direction."
+        }
+      }
+    }
+  }
+}
