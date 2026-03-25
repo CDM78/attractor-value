@@ -1,0 +1,236 @@
+{
+  "batch": 8,
+  "round": 2,
+  "results": {
+    "T5-016": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION: Atmos Energy restructured its risk factor presentation between 2017 and 2018, moving regulatory lag to the top position and dropping standalone economic/inflation risk sections that appeared in 2017. The 2018 filing adds a new explicit PHMSA pipeline integrity management risk section absent from 2017. This is company-level repositioning of risk emphasis, not sector-wide dislocation or structural decline. The regulated utility business model itself is stable.",
+          "confidence": "medium"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY: The changes between 2017 and 2018 risk factors reflect regulatory evolution (increased PHMSA oversight) and a reorganization of risk factor ordering rather than any fundamental business deterioration. The new pipeline integrity risk represents ongoing but recoverable compliance costs management expects to pass through to rates. No structural business model change is evident.",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: The addition of a dedicated PHMSA pipeline integrity section was broadly expected given increasing federal pipeline safety oversight industrywide following high-profile incidents. The removal of standalone economic deterioration and inflation risk factors from 2017 represents a de-emphasis rather than a new development. The regulatory utility sector predictably expands safety disclosures when regulatory scrutiny intensifies.",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: Risk profile between 2017 and 2018 is materially unchanged. Regulatory lag, commodity pass-through, safety operations, and capital intensity risks persist at similar levels. The reordering of risk factors and addition of PHMSA pipeline integrity language reflects incremental disclosure evolution, not a worsening or improving trajectory. Regulatory mechanisms that reduce lag remain in place.",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 5,
+          "escalating_count": 0,
+          "new_count": 1,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "high"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold"
+        }
+      }
+    },
+    "T5-048": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION: Eldorado Resorts completed the massive Caesars Entertainment acquisition, transforming from a regional gaming operator into one of the largest casino companies in the US. The 2021 10-K reflects a fundamentally different company versus 2020. COVID-19 dominates as the operative new risk, but the underlying company transformation—new Las Vegas exposure, new lease obligations to VICI, new debt load—represents company-level dislocation. Gaming sector broadly faces COVID disruption but ERI's situation is amplified by the transformative M&A.",
+          "confidence": "high"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY: COVID-19 disruption to casino operations is framed as temporary with properties largely reopened by mid-2020. The operational restrictions and capacity limits are expected to ease as vaccination expands. The deeper acquisition integration risk is also time-bounded. However, structural leverage from the Caesars deal and VICI lease obligations are permanent additions.",
+          "confidence": "low"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: For a company that just closed a transformative acquisition in mid-2020, COVID being the primary new risk in the 2021 filing is expected—the entire gaming sector faced shutdowns. The Caesars integration being the primary prior-year focus (2020 filing was pre-close) naturally transitions to COVID and integration execution risks. The emergence of online gaming competition as a more prominent structural risk is slightly more notable.",
+          "confidence": "medium",
+          "surprise_count": 1
+        },
+        "buy_v12_severity": {
+          "severity": 4,
+          "trend": "stable",
+          "confidence": "medium"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: The 2021 filing reflects a company mid-transformation. COVID risks are elevated but partially resolving as properties reopen. Caesars integration risks are newly introduced. Net severity is elevated but not compounding—the trajectory depends on vaccine rollout and integration execution, both of which were trending positively at the time of the filing.",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "sell",
+          "confidence": "medium"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 3,
+          "escalating_count": 2,
+          "new_count": 3,
+          "dominant": "new",
+          "action": "sell",
+          "confidence": "medium"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T8-165": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION: YETI's 2020 vs 2019 risk factors show incremental evolution in a growing premium outdoor products company. The 2020 filing adds more explicit language around new product marketing (not just design and development) and introduces explicit inventory risk from forecasting errors. These are company-level growing pains as YETI scales, not sector-wide pressure or structural decline. COVID is not yet prominent in the February 2020 filing.",
+          "confidence": "medium"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY: The incremental risk additions in 2020 vs 2019—more explicit inventory risk, expanded product marketing language—reflect normal operational scaling disclosures. No fundamental business model challenge is present. The COVID risk that would emerge shortly after this filing is not yet captured.",
+          "confidence": "high"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: YETI's risk factor evolution from 2019 to 2020 is orderly and expected for a growing DTC/wholesale premium brand. The addition of inventory forecasting risk as explicit language is standard for companies expanding SKU count and distribution channels. No surprising new disclosures appear. The overall risk profile is consistent with a company executing its stated growth strategy.",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: YETI's risk trajectory between 2019 and 2020 filings is stable. The brand strength, product development cadence, and supply chain risks persist at similar levels. The incremental additions reflect disclosure maturity as the company has operated as a public company for two years. No worsening trajectory is visible.",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 6,
+          "escalating_count": 1,
+          "new_count": 2,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "high"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold"
+        }
+      }
+    },
+    "T5-244": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "STRUCTURAL_DECLINE: Range Resources is a natural gas-focused E&P operating in the Marcellus Shale. The 2018 vs 2017 risk factors show continued heavy concentration in natural gas (67-68% of production) during a period of structurally depressed nat gas prices. The addition of 'well production timing' and 'third-party infrastructure' to explicit risk callouts signals growing operational complexity as the company aggressively expanded production 30% in 2017. The sector faces long-term structural pressure from gas oversupply driven by Marcellus/Utica production growth of which Range itself is a contributor.",
+          "confidence": "medium"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "STRUCTURAL: Range Resources faces structural commodity price pressure as a pure-play natural gas producer in an era of persistent oversupply. The 2018 filing maintains language about managing through 'lower commodity cycles' as a permanent feature of the business environment. The expansion of production volumes without commensurate price improvement is a structural tension that risk factors acknowledge implicitly through continued commodity price volatility language.",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: The incremental risk factor changes between 2017 and 2018 for Range Resources are expected for a growing E&P. Adding 'well production timing' as an explicit risk reflects the company's rapid production growth creating timing complexity. The 'third-party infrastructure' risk reflecting Appalachian pipeline takeaway constraints was a known sector-wide concern at the time. No surprising new disclosures.",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: Risk factors between 2017 and 2018 are structurally similar with minor additions. The underlying commodity price, reserve estimation, and regulatory risks persist at comparable levels. The company grew production significantly but structural gas price weakness persists. No clear resolving or compounding trend visible in the risk factor evolution alone.",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 5,
+          "escalating_count": 1,
+          "new_count": 1,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "medium"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold"
+        }
+      }
+    },
+    "T8-046": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION: Ligand Pharmaceuticals underwent a significant strategic shift between 2019 and 2020. The 2020 filing reflects the Q1 2019 sale of Promacta IP rights to Royalty Pharma—a major revenue stream divested. The company is actively repositioning from a diversified royalty holder into a technology platform licensor (OmniAb, Captisol). This is company-level dislocation driven by portfolio restructuring, not sector pressure or structural decline in biopharma royalties broadly.",
+          "confidence": "high"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "STRUCTURAL: The divestiture of Promacta IP and repositioning toward OmniAb and Captisol platform licensing represents a structural business model shift. Ligand is transitioning from passive royalty collection on approved drugs toward platform licensing that requires ongoing partner pipeline success. This creates more binary outcome risk per program and longer revenue timelines—a structural change in risk profile.",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: The Promacta IP sale was disclosed in 2019 and its reflection in the 2020 risk factors is expected. The continued build-out of OmniAb partnerships was the stated strategy. Patent litigation against Teva over EVOMELA is a known ongoing matter. No materially surprising new disclosures appear in the 2020 vs 2019 comparison.",
+          "confidence": "medium",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "medium"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: The transition away from Promacta royalties was deliberate and disclosed. Captisol and Kyprolis royalties continue. OmniAb platform is expanding. The 2020 risk profile reflects a company in purposeful transition with manageable near-term risk. No compounding downside visible from the risk factor comparison alone.",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 1,
+          "stable_count": 4,
+          "escalating_count": 0,
+          "new_count": 0,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "medium"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    }
+  }
+}

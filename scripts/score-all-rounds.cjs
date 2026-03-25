@@ -44,8 +44,8 @@ if (Object.keys(allResults).length === 0) { console.log('No results.'); process.
 // === BUY DECISION LOGIC ===
 function buyDecision(variant, result) {
   if (!result) return null;
-  const a = result.assessment || '';
-  const t = result.trajectory || '';
+  const a = (result.assessment || '').toLowerCase();
+  const t = (result.trajectory || '').toLowerCase();
 
   // Round 1 variants
   if (variant === 'buy_v1_binary') return a === 'stable' ? 'buy' : 'reject';
@@ -64,7 +64,7 @@ function buyDecision(variant, result) {
   if (variant === 'buy_v12_severity') {
     // Buy if severity ≤ 3 OR trend is resolving
     const sev = result.severity || 3;
-    const trend = result.trend || 'stable';
+    const trend = (result.trend || 'stable').toLowerCase();
     if (trend === 'resolving') return 'buy';
     if (sev >= 4 && trend === 'worsening') return 'reject';
     return 'buy';
@@ -78,21 +78,24 @@ function buyDecision(variant, result) {
 function sellDecision(variant, result) {
   if (!result) return null;
 
+  const action = (result.action || '').toLowerCase();
+  const traj = (result.trajectory || '').toLowerCase();
+  const dom = (result.dominant || '').toLowerCase();
+
   // Round 1 variants
-  if (variant === 'sell_v1_thesis_drift') return result.action || (result.thesis_intact === false ? 'sell' : 'hold');
-  if (variant === 'sell_v2_escalation') return result.action || ((result.escalated_count || 0) > 2 ? 'sell' : 'hold');
-  if (variant === 'sell_v3_new_confessions') return result.action || (result.new_confessions_found ? 'sell' : 'hold');
-  if (variant === 'sell_v4_simple') return result.action || (result.trajectory === 'worse' ? 'sell' : 'hold');
-  if (variant === 'sell_v5_exit_urgency') return result.action || ((result.urgency || 1) >= 4 ? 'sell' : 'hold');
+  if (variant === 'sell_v1_thesis_drift') return action || (result.thesis_intact === false ? 'sell' : 'hold');
+  if (variant === 'sell_v2_escalation') return action || ((result.escalated_count || 0) > 2 ? 'sell' : 'hold');
+  if (variant === 'sell_v3_new_confessions') return action || (result.new_confessions_found ? 'sell' : 'hold');
+  if (variant === 'sell_v4_simple') return action || (traj === 'worse' ? 'sell' : 'hold');
+  if (variant === 'sell_v5_exit_urgency') return action || ((result.urgency || 1) >= 4 ? 'sell' : 'hold');
 
   // Round 2 variants
-  if (variant === 'sell_v6_confession_count') return result.action || ((result.new_confession_count || 0) >= 2 ? 'sell' : 'hold');
+  if (variant === 'sell_v6_confession_count') return action || ((result.new_confession_count || 0) >= 2 ? 'sell' : 'hold');
   if (variant === 'sell_v7_confession_escalation') {
-    const dom = result.dominant || 'stable';
-    if (result.action) return result.action;
+    if (action) return action;
     return (dom === 'escalating' || dom === 'new_appearing') ? 'sell' : 'hold';
   }
-  if (variant === 'sell_v8_minimal_confession') return result.action || (result.new_confessions ? 'sell' : 'hold');
+  if (variant === 'sell_v8_minimal_confession') return action || (result.new_confessions ? 'sell' : 'hold');
 
   return null;
 }

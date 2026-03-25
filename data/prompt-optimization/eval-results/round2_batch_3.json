@@ -1,0 +1,277 @@
+{
+  "batch": 3,
+  "round": 2,
+  "results": {
+    "T5-141": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "company_dislocation",
+          "confidence": "medium",
+          "notes": "PTC is an industrial software company (CAD, PLM, IIoT, AR). The current filing (Nov 2020) shows double-digit ARR growth for the 3rd consecutive year despite COVID. The distress prompting the buy thesis is likely prior-year revenue recognition/subscription transition complexity - a company-specific execution challenge during business model shift, not a sector-wide structural decline or macro dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "PTC was in mid-subscription transition. The current filing signals this is largely complete ('as we have completed our subscription transition'). ARR growth accelerating. COVID created near-term volatility but demand for digital transformation solutions (IoT, AR, remote collaboration) is cited as strong. The dislocation is transient."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "Current (2020) vs Prior (2019): Onshape acquisition now integrated and described in detail. COVID mentioned but company performing well through it. The addition of Onshape, refinement of product strategy language, and SaaS transition completion narrative are all expected evolution. No surprising new risk disclosures."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "resolving",
+          "confidence": "high",
+          "notes": "Low-to-moderate severity. The subscription transition risk (the primary source of prior investor concern) is described as largely complete. ARR growth is strong. The prior year's higher risk around transition execution is resolving. COVID adds modest uncertainty but core demand is resilient."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "resolving",
+          "confidence": "high",
+          "notes": "The subscription transition confession is explicitly resolving ('as we have completed our subscription transition'). ARR stability increasing. Onshape integration proceeding. Prior competitive and transition-related risks are abating."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (Nov 2021) vs Entry (Nov 2020): Fourth consecutive year of double-digit ARR growth. Organizational restructuring toward SaaS model is strategic evolution, not a confession. Arena acquisition added (positive expansion). SaaS transition risks being replaced by SaaS optimization focus. No new material risk confessions."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 2,
+          "stable_count": 6,
+          "escalating_count": 0,
+          "new_count": 0,
+          "dominant": "resolving",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Resolving: subscription transition risk (explicitly complete), COVID operational uncertainty (reduced prominence in checkpoint). Stable: cybersecurity, customer concentration, international operations, regulatory. No escalating or new confession categories. Dominant picture is continued improvement."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No new confessions at checkpoint. Business executing well on strategy. Strong hold signal."
+        }
+      }
+    },
+    "T8-006": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "Shoe Carnival is a value-priced brick-and-mortar footwear retailer. The pressures (e-commerce competition, changing consumer shopping patterns, COVID disruption) are sector-wide challenges for physical retail, particularly for mid-market/value-oriented formats. No evidence of company-specific execution failure versus peers."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "COVID uncertainty acknowledged as potentially impacting store growth, but the company is investing in new supply chain systems (TMS/WMS/OMS) to compete better omnichannel. The core value-price, physical retail format has proven resilient for Shoe Carnival historically. Technology investments signal adaptation rather than structural retreat."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 1,
+          "notes": "One notable addition: COVID-19 impact on store growth plans - expected given March 2020 filing timing. New TMS/WMS/OMS system development is a positive evolution. Mobile app now explicitly cited alongside e-commerce site (minor positive). Net: expected updates, no surprises."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium",
+          "notes": "Physical retail faces genuine structural pressure from e-commerce, but Shoe Carnival targets a value segment with strong in-store experience differentiation. Store count modest decline (397 to 392) is controlled. COVID adds meaningful near-term uncertainty at March 2020 filing. Severity elevated but manageable."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "medium",
+          "notes": "Risk factors are largely stable year-over-year. The omnichannel investment (TMS/WMS/OMS) signals proactive adaptation rather than compounding distress. No major new confessions beyond COVID uncertainty. Technology system deployment adds transition risk but is temporary."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (March 2021) shows: TMS/WMS/OMS systems implemented successfully, no debt, $106.5M cash, $181.6M returned to shareholders over 5 years. Store count at 383 (managed decline). Nike shops expansion in 100+ stores. No new risk confessions - the COVID operational stress was absorbed without balance sheet damage."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 2,
+          "stable_count": 5,
+          "escalating_count": 0,
+          "new_count": 0,
+          "dominant": "resolving",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Resolving: technology system deployment risk (implemented); COVID-era liquidity concern (strong cash position). Stable: e-commerce competition, consumer preference, seasonal risks, supplier concentration. Escalating: none. New: none. Company emerged from COVID with financial strength intact."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No new confessions at checkpoint. Financial metrics improved. Hold signal is strong."
+        }
+      }
+    },
+    "T8-090": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "high",
+          "notes": "United Bankshares is a regional bank (West Virginia/mid-Atlantic focused). The risks described - credit quality, interest rate sensitivity, regulatory burden, real estate loan concentration - are all sector-wide banking challenges. No company-specific failures identified. The Dodd-Frank regulatory environment affects all banks equally."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "The current filing (March 2020) is pre-COVID awareness in risk disclosures. Interest rate risk and credit cycle concerns are cyclical. Real estate concentration is a structural feature of this regional bank but not unique. The regulatory environment (pending incentive comp rules) has been pending since 2016 without finalization - low near-term risk."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "Current vs Prior: risk factors are substantively identical. The only material update is 'February 2020' replacing 'February 2019' in the incentive compensation pending rule language. This is pure boilerplate roll-forward. No new risks, no changed language beyond date updates."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high",
+          "notes": "Low-to-moderate severity. Regional community bank with conservative lending, stable deposit base, and long-standing franchise value. The risk language is entirely stable. No escalating credit, rate, or regulatory concerns at entry."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "Risk factors are copy-paste from prior year. No evolution whatsoever in confession content. Purely stable profile."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (March 2021) adds an entirely new COVID-19 risk section as the first item under risk factors. This includes: increased unemployment, business disruption, credit quality concerns, real estate value declines, PPP loan complexity, and heightened cybersecurity risks from remote work. One major new confession cluster (COVID credit/operational impact), though all regional banks experienced the same."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 8,
+          "escalating_count": 0,
+          "new_count": 1,
+          "dominant": "new_appearing",
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "No prior risks resolving or escalating. COVID adds a substantive new section. However, the COVID confession for a community bank in WV/mid-Atlantic is sector-wide, not company-specific. The bank's conservative underwriting and strong capital position likely provide buffer. Dominant signal: one new risk cluster in a stable base."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold",
+          "notes": "COVID is a genuine new confession but sector-wide for banks. Community bank franchise value and conservative lending posture support holding. The confession is macro-driven rather than indicating company-specific deterioration."
+        }
+      }
+    },
+    "T5-094": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "company_dislocation",
+          "confidence": "medium",
+          "notes": "Jack Henry & Associates (JHA) is a fintech/banking software provider. The core risks (cybersecurity, operational failure, payment transaction integrity, third-party dependency, regulatory compliance) are specific to JHA's business model as a technology infrastructure provider to financial institutions. While some are industry-wide, the specificity of the operational and third-party risks reflects JHA's unique position as a critical infrastructure provider."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "The main additions in current vs prior are expanded third-party risk language (new explicit section) and expanded cybersecurity threats (ransomware, malware, hostile foreign governments). These reflect genuine and growing threats but not evidence of actual incidents. The new 'Failures of third party service providers' section is precautionary disclosure expansion."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "medium",
+          "surprise_count": 2,
+          "notes": "Two notable additions: (1) New explicit 'Failures of third party service providers' risk section - substantive new disclosure, though expected given industry trend; (2) Expanded cyber threat actors list (organized crime, hostile foreign governments, ransomware) - directionally expected post-2017 major cyber incidents. Both are meaningful but contextually anticipated."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high",
+          "notes": "JHA serves community banks and credit unions with long-term contracts and high switching costs. Severity is low-moderate. The cybersecurity and third-party risk expansions reflect growing threat awareness but no actual incidents disclosed. Business model is highly stable and recurring."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "Core risks stable. New third-party and cybersecurity language represents disclosure expansion rather than emerging operational problems. The company's stable, contract-based recurring revenue model with financial institution customers provides consistent base."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (Aug 2019) vs Entry (Aug 2018): Risk factors are nearly identical. Minor additions: 'real-time payments through faster payment networks' added to transaction types (positive expansion); 'suppliers' added to phishing target list; minor JHA name change to 'we' throughout. No new material risk confessions. Business evolving positively."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 9,
+          "escalating_count": 0,
+          "new_count": 0,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "All risk categories stable from entry to checkpoint. The real-time payments addition is a positive business expansion, not a risk escalation. No new confessions, no escalating existing risks. Highly stable risk profile throughout the holding period."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No new confessions at checkpoint. Risk profile unchanged. Strong hold signal."
+        }
+      }
+    },
+    "T8-017": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "high",
+          "notes": "Shake Shack is a premium fast-casual restaurant brand. The entry date of June 2020 is during peak COVID disruption. The distress is primarily sector-wide: COVID-19 devastated restaurant industry foot traffic, dine-in revenues, and urban location performance universally. Shake Shack's urban-heavy footprint made it particularly exposed to this sector dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "The pre-COVID filing (Feb 2020) risk factors are essentially unchanged from Feb 2019 - standard growth execution and expansion risks. The COVID disruption causing the buy opportunity is temporary. Shake Shack's brand, digital capabilities, and premium positioning are structural positives. The thesis appears to be buying sector disruption at a brand-specific valuation."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 1,
+          "notes": "Current (Feb 2020) vs Prior (Feb 2019): Minor reordering of strategic priorities (digital moved up in priority listing). The growth and expansion risks are nearly identical. One minor note: prior filing had 'not an exhaustive list' language removed in current - slightly more confident framing. Both expected given the company's stable growth trajectory pre-COVID."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium",
+          "notes": "At entry date (June 2020), COVID was actively devastating restaurant sector. Pre-COVID risk profile (the 10-K) is moderate severity - fast-casual growth execution risks, real estate dependency, food cost exposure. The actual COVID-era severity was higher than the pre-COVID disclosures indicated at time of buy entry."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "The buy-time 10-K (Feb 2020, pre-COVID awareness) shows stable, unchanged risk profile from prior year. The entry was made with COVID already underway but the confession data is pre-COVID. Risk factors stable at filing."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 5,
+          "action": "sell",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2021) adds major new confession categories: (1) COVID-19 pandemic as the first listed risk with material operational impact; (2) environmental/sustainability risk (new section); (3) digital/delivery business uncertainty (new section); (4) single national distributor concentration risk explicitly named; (5) international supply chain interruption risk for licensed locations. Five distinct new confession categories."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 6,
+          "escalating_count": 2,
+          "new_count": 5,
+          "dominant": "new_appearing",
+          "action": "sell",
+          "confidence": "medium",
+          "notes": "Escalating: (1) food safety/delivery risk elevated with pandemic context; (2) capital expenditure needs (new Shacks + digital) explicitly expanded. New: COVID, ESG, digital/delivery risk, distributor concentration, international supply chain. No risks resolving. The risk profile expanded substantially. However, note that Shake Shack's digital/delivery pivot and strong brand may offset - sell signal is moderate not strong.",
+          "caveat": "The 'sell' action reflects the risk expansion signal. However, Shake Shack's brand recovery potential and digital pivot mean the actual investment decision is more nuanced - this is the prompt's risk-factor-based signal only."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell",
+          "notes": "Multiple significant new confessions including COVID operational impact, distributor concentration, and strategic uncertainty around digital/delivery model. Sell signal based on risk factor escalation, though brand quality provides some offset."
+        }
+      }
+    }
+  }
+}

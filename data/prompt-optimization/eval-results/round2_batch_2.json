@@ -1,0 +1,259 @@
+{
+  "batch": 2,
+  "round": 2,
+  "results": {
+    "T5-028": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "Brown & Brown is a stable insurance brokerage. COVID-19 is the main new risk added in the current filing, which is an external macroeconomic shock affecting the entire sector. The core business model and competitive position are intact. No company-specific execution failures or structural industry decline."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "The dominant new addition is COVID-19 pandemic risk. The underlying business (insurance intermediary, acquisition-driven growth) is unchanged and structurally sound. Pandemic impacts on insurance brokerage volume are transient. All other risks are identical to prior year."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "The current filing is from February 2021. Adding COVID-19 as a top risk is entirely expected for any company filing at this time. The addition of pandemic, global economy, and contingent commission language are standard updates. No genuinely surprising new disclosures."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "medium",
+          "notes": "Risk profile is low-severity overall. COVID adds a layer but insurance brokerage is relatively resilient to pandemic (insurance premiums still collected, claims managed by carriers). The prior risk set was already conservative and unchanged. Overall severity is modest."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "The risk factor language is largely carried forward unchanged from prior year, with COVID added as a new overlay. No existing risks are described as worsening or resolving. The core confession-level risks (acquisition integration, talent retention, cyber) remain at steady-state."
+        }
+      },
+      "sell": {
+        "notes": "No sell checkpoint data available for T5-028.",
+        "sell_v6_confession_count": null,
+        "sell_v7_confession_escalation": null,
+        "sell_v8_minimal_confession": null
+      }
+    },
+    "T8-078": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "BBGI (infrastructure/asphalt paving) operates in a sector highly dependent on government funding. The risks around Highway Trust Fund insolvency, state DOT budget pressures, and political uncertainty around infrastructure bills are sector-wide conditions. No company-specific execution failures noted. Oil and gas industry depression is an end-market effect."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "The current vs prior risk factors are nearly identical. The main changes are minor updates to revenue percentages (DOT concentration declining slightly from 42.9% to 40.4%) and removal of 2011 congressional repeal language. Infrastructure funding uncertainty is cyclical and tied to legislative cycles (FAST Act renewal), not a permanent structural decline."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "The risk factors are substantively identical year-over-year. No new risks added, no removed risks. Revenue percentages updated routinely. The administration infrastructure plan mention is unchanged. Fully expected boilerplate continuity."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high",
+          "notes": "Government-funded infrastructure is relatively non-discretionary. The company's DOT revenue concentration is slightly declining (diversifying), which is modestly positive. The fundamental risks are unchanged and at a stable, moderate severity level."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "Risk language is virtually copy-paste from prior year. No new confessions added. Existing risks neither resolved nor worsening. Infrastructure funding uncertainty is a permanent feature of this business, not escalating."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (2020) adds COVID-19 as a significant new risk section with specific operational impacts (logistics disruption, potential demand reduction). However, the FAST Act was extended with $13.6B added to Highway Trust Fund, providing near-term funding visibility. Net: one major new confession (COVID), offset by positive legislative development."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 1,
+          "stable_count": 8,
+          "escalating_count": 0,
+          "new_count": 1,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "FAST Act extension resolves the immediate funding cliff risk. COVID adds a new risk. All other core risks (DOT concentration, government contracting, competition, labor, weather) are stable. DOT customer concentration is actually declining (Alabama DOT from 13.8% to 11.6%), a mild positive."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold",
+          "notes": "COVID-19 is a genuine new confession, but infrastructure is classified as non-discretionary and the FAST Act extension provides near-term stability. Hold is appropriate."
+        }
+      }
+    },
+    "T5-229": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "structural_decline",
+          "confidence": "medium",
+          "notes": "Mattel faces structural headwinds: children outgrowing traditional toys at younger ages, shorter product lifecycles, digital/electronic competition intensifying, Toys R Us bankruptcy removed a major retail channel. These are industry-wide structural shifts, not merely Mattel-specific execution failures, though Mattel's execution (Barbie struggles pre-2019) amplified them."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "notes": "The core risk language around consumer preferences, digital disruption of toys, and competition is largely unchanged from 2018 to 2019. These are not temporary pandemic or cycle-driven issues - they represent ongoing secular pressures on the traditional toy industry. The company is in the middle of a multi-year restructuring."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "Risk factors are nearly identical between 2018 and 2019 filings. No new material risk categories added. The seasonal, competitive, and consumer preference risks are all continuation of prior disclosures. Entry in June 2019 was likely a value/turnaround thesis."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium",
+          "notes": "Severity is moderate - Mattel has enduring brand equity (Barbie, Hot Wheels) but faces real structural pressure. Risk language unchanged year-over-year suggesting management views risks as stable, not escalating. The turnaround (Ynon Kreiz era) was underway."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "Risk factors are substantively copy-paste between 2018 and 2019. No material change in confession content. Structural headwinds acknowledged but neither resolving nor compounding based on disclosure changes."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2020, pre-COVID) shows risk factors that are structurally identical to entry with only minor wording improvements (e.g., shifting from conditional 'if Mattel does not' to 'Mattel is not always able to'). No substantively new confessions. The reframing is actually more candid but not materially different."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 10,
+          "escalating_count": 0,
+          "new_count": 0,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "All major risk categories (consumer preference, competition, seasonality, licensing, manufacturing) remain stable in disclosure. The minor rewording to more direct acknowledgment language is a style change, not evidence of escalating underlying risk."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No meaningful new confessions at checkpoint. Risk profile unchanged. Hold signal."
+        }
+      }
+    },
+    "T5-188": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "high",
+          "notes": "This is a property/casualty insurer and reinsurer. The competitive pressures (excess capital, new entrants, low interest rates) are sector-wide pricing dynamics, not company-specific failures. The company (likely W.R. Berkley or similar) is navigating a hard/soft market cycle that affects all P&C insurers equally."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "The current 2019 filing shows improving conditions: rates 'beginning to modestly accelerate again' vs prior year's pure decline narrative. Low interest rates and capital surplus are cyclical factors. The insurance cycle is mean-reverting. Technology disruption risk is structural but incremental."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 1,
+          "notes": "One modestly notable change: technology companies/third parties framed as 'technology-enabled business models, processes, platforms' in current vs 'digitally-enabled business models, platforms' in prior - slight expansion of competitive threat framing. Adding 'access to third-party capital' language for new entrants is a minor expansion. Both expected given industry trends."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "resolving",
+          "confidence": "medium",
+          "notes": "Severity is moderate and the trend is improving. Premium rates accelerating, reserves growing appropriately ($11.7B to $12.0B), competitive language shifted from 'reduced' to 'pressured' rates. The insurance market was entering a hardening cycle in 2019."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "resolving",
+          "confidence": "medium",
+          "notes": "The pricing environment language improved year-over-year. Prior year described declining rates; current year describes rates beginning to modestly accelerate. The market cycle confession is moving toward resolution. Other risks (reserves, regulatory, cyber) remain stable."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2020) adds: (1) 'social inflation' as a new specific risk alongside economic inflation for loss reserves; (2) 'insurtech companies' explicitly named as competitors. Reserves grew to $12.6B. Workers' compensation specifically called out as declining in rates while others accelerate. These are modest new confessions in an otherwise improving environment."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 1,
+          "stable_count": 8,
+          "escalating_count": 1,
+          "new_count": 2,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Resolving: premium rate environment (now accelerating for most lines). Escalating: workers comp rates specifically declining. New: social inflation, insurtech competitors. Stable: cyber, regulatory, catastrophe, reserve uncertainty. Dominant picture is stable with positive drift."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold",
+          "notes": "New confessions (social inflation, insurtech) are present but modest and context of improving pricing cycle supports hold. No evidence of fundamental deterioration."
+        }
+      }
+    },
+    "T8-033": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "SMTC/similar EMS company. The end-market pressures (oil and gas depression, communications market competitiveness) are sector conditions. The tariff risk is a macro/trade policy issue. Customer concentration and EMS industry overcapacity are structural features but shared across all EMS providers."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "Oil and gas depression is cyclical. Tariff risk (added in current filing) is policy-driven and potentially temporary. The addition of 'cloud solutions' as a growth end market signals positive diversification. Core EMS risks are stable and cyclical rather than permanent."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "medium",
+          "surprise_count": 2,
+          "notes": "Two notable additions: (1) 'our ability to pass tariffs through to our customers' - new explicit tariff risk not in prior filing; (2) 'resolution of claims with our customers' - suggests active customer disputes. Both directionally expected given trade war context but the 'claims resolution' language hints at operational issues."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium",
+          "notes": "EMS companies operate on thin margins with high customer concentration. The addition of tariff risk and claims language is mildly concerning. End-market diversification (adding cloud solutions) is positive. Overall severity is moderate and stable."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "medium",
+          "notes": "New tariff and claims language is net-neutral to slightly negative, but the prior risks are all stable. Oil and gas depression continues but is embedded. The restructuring of international risks section (moved earlier, given more prominence) is a mild flag."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 4,
+          "action": "sell",
+          "confidence": "high",
+          "notes": "Checkpoint (Nov 2020) adds substantial new confessions: (1) COVID-19 full new risk section with specific impact admissions (China closure, automotive demand reduction, supply chain interruption, staffing restrictions); (2) 5G ramp slower than expected explicitly acknowledged; (3) pandemic-driven customer/supplier insolvency risk elevated; (4) extended remote work operational risk. Four distinct new confession categories."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 5,
+          "escalating_count": 1,
+          "new_count": 4,
+          "dominant": "new_appearing",
+          "action": "sell",
+          "confidence": "high",
+          "notes": "No risks are resolving. Oil and gas depression is stable. COVID-19 generated four new major confession categories (operational closures, demand reduction, supply chain, 5G delay). The 5G ramp disappointment is company-specific escalation within communications end market. Dominant picture: new risks appearing rapidly."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell",
+          "notes": "Multiple substantial new confessions including specific operational impact admissions. COVID materially disrupted EMS operations. 5G delay confession adds company-specific disappointment beyond macro. Sell signal."
+        }
+      }
+    }
+  }
+}

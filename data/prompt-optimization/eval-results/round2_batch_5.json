@@ -1,0 +1,236 @@
+{
+  "batch": 5,
+  "round": 2,
+  "results": {
+    "T5-199": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "SECTOR_DISLOCATION",
+          "confidence": "medium"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "STRUCTURAL",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "sell",
+          "confidence": "medium"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 4,
+          "escalating_count": 2,
+          "new_count": 2,
+          "dominant": "stable",
+          "action": "sell",
+          "confidence": "medium"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T5-136": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION",
+          "confidence": "high"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "SURPRISING",
+          "confidence": "high",
+          "surprise_count": 3
+        },
+        "buy_v12_severity": {
+          "severity": 4,
+          "trend": "worsening",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "COMPOUNDING",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 2,
+          "stable_count": 3,
+          "escalating_count": 1,
+          "new_count": 3,
+          "dominant": "new",
+          "action": "sell",
+          "confidence": "medium"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T5-122": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION",
+          "confidence": "medium"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "SURPRISING",
+          "confidence": "high",
+          "surprise_count": 2
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 4,
+          "escalating_count": 1,
+          "new_count": 1,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "medium"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "hold"
+        }
+      }
+    },
+    "T8-023": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION",
+          "confidence": "high"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 1,
+          "trend": "stable",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 4,
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 2,
+          "escalating_count": 2,
+          "new_count": 4,
+          "dominant": "new",
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T5-106": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION",
+          "confidence": "medium"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "STRUCTURAL",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 0,
+          "action": "hold",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 5,
+          "escalating_count": 0,
+          "new_count": 0,
+          "dominant": "stable",
+          "action": "hold",
+          "confidence": "high"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "batch": 1,
+  "round": 2,
+  "results": {
+    "T7-044": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "Waste management company. Primary risk drivers are broad economic conditions, construction activity (linked to GDP), E&P waste disposal (linked to oil prices), and recycled commodity prices. These are sector-level sensitivities rather than company-specific distress. The company added new risk items (contract loss through bidding, customer credit risk, employee safety) which are operational updates, not acute distress signals."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Economic cyclicality is the primary risk - waste volumes decline in recessions and recover with GDP. Waste management is a largely essential service with regulatory barriers to entry. No structural business model change detected. The distress is cyclical/macro exposure rather than structural company impairment."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "surprising",
+          "confidence": "medium",
+          "surprise_count": 3,
+          "notes": "Three new risk items added to the current vs prior year: (1) 'possibility of losing contracts through competitive bidding, early termination or governmental action' - new explicit contract risk; (2) 'effects of financial difficulties of some of our customers, including governmental entities, affecting their credit risk' - new government customer credit risk; (3) 'operational and safety risks, including the risk of personal injury to employees and others' - new safety risk disclosure. Also added tax law change risk. These represent genuine new disclosures expanding the risk picture."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high",
+          "notes": "Waste management is a relatively defensive business. The new risk additions are operational refinements rather than acute distress signals. No losses, no leverage crisis, no going concern indicators. Severity is low and stable."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "No prior-year problems appear to be resolving or compounding. The company is adding new risk disclosures (expanding the set) rather than updating the status of known problems. Stable risk environment with some new operational risks added."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): (1) COVID-19 public health crisis risk is an entirely new, lead risk factor with extensive sub-bullets about commercial/industrial/E&P customer volume impacts, workforce illness, PPE/emergency wage costs, commodity input cost volatility; (2) New language about COVID complicating acquisition timelines ('logistical constraints associated with business closures or travel restrictions'). Core business model risks are unchanged and stable. COVID is a sector-wide risk, not a company-specific confession."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 6,
+          "escalating_count": 0,
+          "new_count": 2,
+          "dominant": "new_appearing",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "New: COVID pandemic risk section (large and detailed), acquisition execution complication from COVID. Stable: competition, acquisition market dynamics, capital access, regulatory/environmental risks, labor/pension risks, recycling commodity risks. Escalating: none. Resolving: none. This is a healthy waste company with new macro risks added - hold is appropriate."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language. Waste management is an essential service business with no signs of acute financial distress at checkpoint."
+        }
+      }
+    },
+    "T8-084": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "company_dislocation",
+          "confidence": "high",
+          "notes": "Community bank/savings institution. Prior year (FY2018) led with 'robust growth' risk - the Crestmark Acquisition had rapidly expanded assets from $5.23B to $5.84B with higher-risk loan mix and capital adequacy strain. Current year (FY2019) has dropped the growth-strain lead and now leads with standard credit risk framework. New specific risk: entry into unsecured consumer loans through Marketer agreements is a company-specific new business line with elevated credit and reputational risk. Also flagged: CECL accounting change effective October 1, 2020. These are company-level strategy and accounting transition risks."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "notes": "The bank has materially changed its asset mix (Crestmark Acquisition) and is now entering new markets (unsecured consumer loans via Marketers). The CECL adoption could require significant allowance builds. These structural changes - not cyclical factors - dominate the risk picture. The business model is being expanded in ways that create lasting structural risk changes."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "surprising",
+          "confidence": "high",
+          "surprise_count": 2,
+          "notes": "Two significant new disclosures vs prior year: (1) 'Agreements with Marketers' - entry into unsecured consumer loan origination via third-party marketing agreements is a genuinely new business line with new credit, fraud, and regulatory risks not present in prior year; (2) CECL accounting change explicitly flagged as 'expected to be effective for the Company on October 1, 2020' with potential profitability impact - this is a forward-looking material accounting change. Prior year also removed the capital adequacy/growth risk as lead item, suggesting that concern has passed or been managed."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium",
+          "notes": "Moderate severity: the bank is navigating post-acquisition integration, new business line entry, and upcoming accounting change. These are meaningful but manageable risks for a regulated institution. Severity is stable compared to prior year - the acute capital strain from the acquisition has been absorbed."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "medium",
+          "notes": "Prior year capital adequacy/growth strain risk has been de-emphasized (potential resolution), but new risks (Marketer agreements, CECL) are emerging. Net result is a stable but shifting risk profile rather than clear resolution or compounding."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Nov 2020) vs entry (Nov 2019): (1) COVID-19 pandemic risk inserted throughout existing credit risk factors - loan losses confirmed to be 'negatively impacted by the economic consequences of the COVID-19 pandemic'; (2) New 'investments in certain tax-advantaged projects' risk factor - renewable energy investments with tax credit recapture risk; (3) CECL now effective as of October 1, 2020 (was pending at entry, now implemented) with confirmed profitability impact. These are genuine new or materialized risks."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 1,
+          "stable_count": 4,
+          "escalating_count": 2,
+          "new_count": 2,
+          "dominant": "escalating",
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Escalating: credit risk (COVID has materially impacted borrowers, allowance for loan losses 'negatively impacted'); CECL implementation now confirmed with potential impact. New: tax-advantaged renewable energy investment risk; COVID-specific credit deterioration language. Resolving: Marketer agreements risk appears to have been absorbed (less prominent in checkpoint). Stable: regulatory, capital adequacy, competitive risks. Dominant escalating but not severe enough to sell - bank appears adequately reserved."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language identified. The bank is a regulated institution with ongoing oversight. COVID impacts are disclosed but not at a level suggesting acute distress."
+        }
+      }
+    },
+    "T8-145": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "company_dislocation",
+          "confidence": "high",
+          "notes": "Celsius Holdings - small functional beverage company. The Func Food acquisition (October 2019) brought a distressed target with $55M in debt (some in default) onto Celsius's balance sheet. The Reinstated Bonds ($9.52M) are due October 30, 2020 - a near-term liquidity event. Prior year showed convertible debt risk and going-concern-adjacent capital constraints. This is company-specific acquisition-related distress, not sector-wide. The energy drink/functional beverage sector itself is growing."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "The near-term Reinstated Bond maturity (October 2020) is a specific, time-bounded liquidity event. The acquisition integration risk is also temporary in nature. Core product demand (Celsius brand in Sweden is best-selling fitness drink) appears strong. The distress is execution and capital structure related, not permanent brand or market impairment."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "surprising",
+          "confidence": "high",
+          "surprise_count": 3,
+          "notes": "Three significant new elements vs prior year: (1) Func Food acquisition completed - entire $55M debt restructuring, Reinstated Bonds due Oct 2020, Buyer Bonds ($33M) acquired by Celsius - entirely new capital structure complexity; (2) September 2019 public offering ($26.8M proceeds) - dilutive event; (3) Convertible debt-to-equity conversion completed - prior year debt overhang resolved but replaced by acquisition debt. The Func Food deal is a major new disclosure with significant near-term financial risk."
+        },
+        "buy_v12_severity": {
+          "severity": 4,
+          "trend": "worsening",
+          "confidence": "high",
+          "notes": "Higher severity: $9.52M bond maturity due October 2020 within one year of entry date (June 2020), acquired a company with $55M in distressed debt, small company with limited cash generation history. The severity is real and near-term. However, the business itself appears to be growing (best-selling fitness drink in Sweden). Net: severity 4 but with possible recovery path."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "compounding",
+          "confidence": "medium",
+          "notes": "Prior year had convertible debt overhang (resolved via conversion), but the Func Food acquisition has introduced new and larger debt obligations. The resolution of prior debt was offset by the addition of acquisition debt. Near-term bond maturity creates compounding pressure."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (March 2021) vs entry (March 2020): The Reinstated Bonds ($9.52M) were fully repaid October 30, 2020 - the key near-term risk at entry has been resolved. Checkpoint now shows 5 beverage lines (vs 4 at entry), cooler program launched. COVID risk section added but company explicitly states it has not experienced significant adverse effects. One new item: can supply shortage mentioned but managed. Net: the key risk has resolved, not escalated."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 2,
+          "stable_count": 2,
+          "escalating_count": 0,
+          "new_count": 1,
+          "dominant": "resolving",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Resolving: Reinstated Bonds repaid (key near-term liquidity risk gone); convertible debt was previously resolved via equity conversion. Stable: distribution, co-packer dependency, regulatory risks. Escalating: none. New: COVID general risk section added (but disclosed as not materially impacting). The dominant pattern is clear resolution of the most acute risks. Strong hold signal - company is executing."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language at checkpoint. The Reinstated Bond repayment eliminates what would have been the most likely going concern trigger. Company is financially improving."
+        }
+      }
+    },
+    "T8-113": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "structural_decline",
+          "confidence": "high",
+          "notes": "Metallurgical coal company. The risk factors contain extensive regulatory risk (SMCRA, environmental, black lung liability, surety bonds), and the current risk factors include surety bond market strain caused by 'bankruptcies involving prominent coal producers' - explicit acknowledgment of sector-wide financial distress. Coal for electricity generation is in structural decline; met coal is more defensible but faces ESG headwinds and climate regulation risk. This is structural sector decline, not a cyclical dip."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "high",
+          "notes": "Coal sector faces structural headwinds: energy transition from coal power, increasing climate regulation, declining surety bond market capacity, black lung liability accumulation. The risk factors describe an environment where the industry is contracting (peer bankruptcies mentioned), regulatory burden increasing, and financial assurance markets tightening. These are structural, not temporary challenges."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "Risk factors between current (Feb 2020) and prior (Feb 2019) are nearly identical in structure and content. Same regulatory risks (SMCRA, climate, surety bonds, AMD), same language about peer bankruptcies and self-bonding. Surety bond amounts decreased slightly ($44.4M to $40.6M), suggesting minor operational change. No new surprise disclosures."
+        },
+        "buy_v12_severity": {
+          "severity": 4,
+          "trend": "worsening",
+          "confidence": "high",
+          "notes": "Met coal company in a sector with structural headwinds. Extensive regulatory obligations (black lung, environmental reclamation, climate regulation), peers are bankrupt, surety bond markets are strained. Severity is high even though current operations appear intact. The structural decline trajectory means worsening over time."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "medium",
+          "notes": "Year-over-year the risk factors are nearly unchanged - no new problems emerging, but no resolution of structural challenges either. The sector headwinds are persistent. Characterize as stable in the short term but with structural decline as the medium-term trajectory."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): (1) NEW: $17.0M surety bond specifically for black lung liabilities added - this is a significant new financial obligation not present at entry ($40.6M reclamation + $17.0M black lung + $3.6M misc vs prior $40.6M + $2.2M misc). This represents a ~$17M increase in disclosed financial assurance obligations; (2) Biden Administration reference replacing Trump Administration, with 'unclear whether and how additional actions by the Biden Administration could further impact' - new regulatory uncertainty. Two specific new confessions."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 4,
+          "escalating_count": 2,
+          "new_count": 1,
+          "dominant": "escalating",
+          "action": "sell",
+          "confidence": "medium",
+          "notes": "Escalating: Black lung liability surety bond ($17M new obligation) suggests actual black lung claims have grown significantly requiring more bonding; regulatory uncertainty escalated with Biden Administration expected to increase environmental/climate regulation vs Trump era. New: regulatory transition risk (Biden Administration). Stable: SMCRA permit structure, AMD risk, impoundment risks, climate change risk language. Resolving: none. The $17M black lung surety bond is a material new financial obligation suggesting claims accumulation. Lean toward sell given structural decline + escalating liabilities."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No explicit restatements, covenant breaches, or going concern language in the excerpts. However, the $17M black lung surety bond addition is a material new obligation that could presage financial pressure if the underlying liability is large. No formal distress triggers confirmed."
+        }
+      }
+    },
+    "T7-038": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "high",
+          "notes": "Large pipeline/midstream/utility company (Enbridge-like). Primary risks are operational (pipeline incidents, catastrophic events) and regulatory (environmental, Indigenous rights, government approval). The prior year risk structure led with capital project execution risk; current year leads with pipeline operations risk. The change in lead risk reflects the company having experienced several actual incidents (Texas Eastern pipeline Jan 2019, Aug 2019, T-South Oct 2018). These are sector-level operational risks affecting all pipeline companies, not company-specific financial distress."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "high",
+          "notes": "Pipeline incidents are operational events that can be repaired and remediated. The company has insurance and regulatory frameworks. The core business - transporting oil, gas, and providing gas distribution - is an essential utility function with stable long-term demand. Regulatory risk from climate policy is real but unfolds slowly. Short-term distress is event-driven and temporary."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "surprising",
+          "confidence": "high",
+          "surprise_count": 3,
+          "notes": "Three new disclosures vs prior year: (1) Multiple specific past incidents now cited (Lines 6A/6B 2010, T-South Oct 2018, Texas Eastern Jan 2019 and Aug 2019) - these actual past events are named and acknowledged; (2) 'climate change' added to catastrophic events language ('including those related to climate change'); (3) 'injury or loss of life' phrasing strengthened vs prior year's 'injury' only - reflecting lessons from incidents. These disclosures reflect actual events that occurred and are now being reported."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high",
+          "notes": "Pipeline/utility companies are regulated, essential infrastructure businesses with stable revenue streams. The incidents disclosed have been contained. Regulatory and ESG pressure is real but managed. Severity is low-moderate and the business model is inherently stable."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "The pipeline incidents from 2018-2019 are now disclosed but appear to be historical events being acknowledged rather than ongoing crises. The capital project execution risks from prior year may be partially resolved (projects completed). Overall risk profile is stable with incident acknowledgment."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): (1) COVID-19 pandemic added as new named risk with dedicated section covering demand impacts, employee health, financing disruptions; (2) Additional Texas Eastern incident (May 2020) added to the list of past incidents; (3) Cyber risk language significantly expanded - 'Cybersecurity risks have increased in recent years as a result of the proliferation of new technologies and increased sophistication, magnitude and frequency of cyber-attacks' and explicit statement that 'During the normal course of business, we have experienced... attempts to gain unauthorized access.' This is a new admission. Three genuine new confessions."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 4,
+          "escalating_count": 2,
+          "new_count": 3,
+          "dominant": "new_appearing",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "New: COVID pandemic risk, May 2020 Texas Eastern incident, cyber attack attempts confirmed. Escalating: climate-related physical risks expanded (now includes 'increased volatility in season temperatures, rising sea levels'); cyber risk severity language elevated. Stable: pipeline operational risks, regulatory risks, utilization risks, reputational risks. Resolving: none. Dominant is new_appearing but these are macro/sector risks not company-specific deterioration. Pipeline business remains regulated and stable. Hold."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language. The cyber attempt admission ('we have experienced... attempts to gain unauthorized access') does not rise to a material breach level as stated. Texas Eastern incidents are operational events with remediation underway. No formal distress triggers."
+        }
+      }
+    }
+  }
+}

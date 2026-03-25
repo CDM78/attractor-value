@@ -1,0 +1,276 @@
+{
+  "batch": 0,
+  "round": 2,
+  "results": {
+    "T8-039": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "company_dislocation",
+          "confidence": "medium",
+          "notes": "Persistent losses ($702.6M accumulated deficit) are company-specific. COVID/supply chain risk is sector-wide but is newly disclosed, not yet priced in. Tariff disruption affects this telecom equipment maker more than peers due to China dependency. The combination is company-level execution and financial distress overlaid with a sector supply shock."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "COVID supply disruption and coronavirus-specific component shortages are presented as potentially temporary (containment measures may be lifted). Core losses reflect ongoing investment phase, not permanent impairment. Company is scaling toward larger CSP customers."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "surprising",
+          "confidence": "high",
+          "surprise_count": 2,
+          "notes": "Two notable surprises vs prior year: (1) Full dedicated coronavirus/Wuhan risk factor section added - prior had only generic pandemic language; (2) Vietnam tariff on steel newly called out. COVID component shortage for telecom equipment was a genuine new disclosure in Feb 2020."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "worsening",
+          "confidence": "high",
+          "notes": "Losses narrowed from $19.3M to $17.7M (improving slightly) but COVID adds new supply chain risk on top of existing accumulated deficit and tariff headwinds. Net risk trajectory is worsening as of filing date due to emerging pandemic."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "compounding",
+          "confidence": "medium",
+          "notes": "Existing losses and tariff risks are not yet resolved; COVID supply chain risk is now layered on top. The loss trajectory is improving numerically but macro risks are compounding. No clear resolution catalyst disclosed."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): COVID has fully materialized (US offices remain closed, work-from-anywhere model, supply chain materially longer lead times, factory closures confirmed). These are escalations of risks that were anticipated at entry, not entirely new confessions. New material supply chain dependency disclosures added. Net: 2 new operationally specific confessions (office closures confirmed, supply shortage materialized)."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 2,
+          "escalating_count": 2,
+          "new_count": 1,
+          "dominant": "escalating",
+          "action": "sell",
+          "confidence": "medium",
+          "notes": "COVID supply chain disruption escalated from 'may disrupt' to confirmed material disruption with longer lead times and component shortages. Accumulated deficit continues growing. Loss risk escalated. New: vendor dependency risk newly enumerated with specificity. Stable: tariff/trade risks, competitive positioning. No resolutions."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, no covenant breaches, no going concern language present at checkpoint. COVID impacts are disclosed but no financial covenant violations or audit qualifications found in the excerpts."
+        }
+      }
+    },
+    "T5-096": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "Test and measurement equipment for semiconductor market. Risks are primarily cyclical/seasonal market risk affecting the entire semiconductor test sector. No company-specific operational or financial distress visible. The risk factors are nearly identical year-over-year, suggesting no new company-specific confession."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "Cyclical semiconductor market fluctuations are the primary risk driver. These are historical cyclical patterns explicitly noted as 'seasonal and cyclical.' No structural business model impairment identified."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "high",
+          "surprise_count": 0,
+          "notes": "Risk factors between current (2017) and prior (2016) are nearly word-for-word identical. The economic slowdown language, outsourcing risks, demand forecasting risks are all carry-forward boilerplate. No new disclosures of surprise."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high",
+          "notes": "Low severity - no financial distress, no losses flagged, standard cyclical industry risks. Year-over-year risk factor text is virtually unchanged, indicating management sees no meaningful change in risk profile."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "high",
+          "notes": "Essentially no change in disclosed problems from prior year to current year. The company is neither resolving nor compounding disclosed issues - the risk set is static and generic."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Dec 2018) vs entry (Dec 2017): Three meaningful new items appear: (1) New section on 5G technology investment risk and return uncertainty; (2) New 'Economic and political policies favoring national interests' section - explicitly addresses US-China trade tensions and tariff risk with specificity; (3) New Brexit/EU withdrawal risk section with more specificity. These are genuine new risk disclosures driven by macro developments."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 4,
+          "escalating_count": 1,
+          "new_count": 3,
+          "dominant": "new_appearing",
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "New risks dominate the change: US-China trade policy, 5G investment risk, political nationalism risk are all new. Escalating: general geopolitical risk has intensified. Stable: core semiconductor cyclicality, outsourcing, demand forecasting risks unchanged. No resolutions. New-appearing is the dominant dynamic but these are macro/external, not company confessions per se."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language. The new risk factors reflect macro environment changes, not company-specific financial distress."
+        }
+      }
+    },
+    "T8-108": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "high",
+          "notes": "Oil and gas E&P company. The primary risk is commodity price volatility - an industry-wide phenomenon. OPEC actions, global supply/demand dynamics, and COVID-related demand shock are sector-wide. The company also has specific capital expenditure/debt risks, but the dominant distress driver (early 2020 oil price collapse from $65 to below $45/Bbl) is sector dislocation."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "medium",
+          "notes": "Oil price volatility risk is endemic to the business model. Full-cost ceiling impairments have occurred before. Substantial capital requirements dependent on oil prices that are declining. The COVID overlay adds an acute shock on top of what is fundamentally structural commodity exposure. The sector is undergoing structural pressure from energy transition concerns as well."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "surprising",
+          "confidence": "high",
+          "surprise_count": 2,
+          "notes": "Two new disclosures vs prior year: (1) Coronavirus/pandemic explicitly added as a factor in the oil price risk section ('domestic or global health concerns, including the outbreak of contagious or pandemic diseases, such as the recent coronavirus'); (2) 'gathering and disposal systems for produced water' added to infrastructure risk. The pandemic addition was the significant surprise at Feb 2020 filing date."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "worsening",
+          "confidence": "high",
+          "notes": "Oil prices already fell from $64.89 avg (2018) to $57.01 avg (2019), and early 2020 showed further volatility ($65 to below $45/Bbl by late February). COVID adds demand destruction on top of existing price decline. Severity is moderate but trending clearly worse."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "compounding",
+          "confidence": "high",
+          "notes": "Oil price decline from 2018 to 2019, further decline in early 2020, now COVID demand shock layered on top. No resolution catalyst. Capital expenditure requirements remain high while commodity prices fall. Classic compounding dynamic in E&P sector."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 3,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2021) vs entry (March 2020): (1) COVID-19 pandemic now listed as explicit named risk factor with dedicated section in risk summary; (2) ESG/conservation measures and market perception risk added ('negative shift in market perception towards the oil and natural gas industry'); (3) Federal lands percentage (28%) disclosed with associated regulatory risks. The COVID risk was emerging at entry; it is now a confirmed major operational risk. But business is intact and oil prices were recovering by end 2020."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 5,
+          "escalating_count": 2,
+          "new_count": 3,
+          "dominant": "new_appearing",
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "New: COVID pandemic risk, ESG/perception risk, federal lands disclosure. Escalating: climate/environmental regulatory risk has expanded language; capital expenditure liquidity risk more prominent. Stable: core commodity price, OPEC, production/reserve risks. No resolutions. Hold recommended as new risks are macro/sector-wide, not company-specific deterioration."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language identified in the excerpts. The company appears financially stable despite sector headwinds."
+        }
+      }
+    },
+    "T8-164": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "company_dislocation",
+          "confidence": "medium",
+          "notes": "Crocs footwear - a specialty consumer brand in turnaround. The prior year risk factors show extensive company-specific strategic risks (brand preservation, long-term growth strategy execution, international distributor model shift). These are company-specific restructuring/transformation risks rather than industry-wide issues. The broader footwear market is competitive but not in sector-wide crisis."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "temporary",
+          "confidence": "medium",
+          "notes": "Crocs is executing a strategic turnaround (narrowing product line, shifting to DSD distribution, closing underperforming retail stores). These are company-specific transformation challenges. The prior year risk factors describe this explicitly as a deliberate strategic shift. Distress is repositioning-related rather than structural demand decline."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "medium",
+          "surprise_count": 1,
+          "notes": "Prior year had extensive confession-style risks about brand strategy uncertainty and inability to execute growth plan. Current year risk factors (where visible) reflect a company that has moved its distribution center (California to Ohio) and is expanding - suggesting execution is on track. One partial surprise: the scale of the US distribution move and its completion may be somewhat new information vs prior year plans."
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "resolving",
+          "confidence": "medium",
+          "notes": "The prior year risk profile was higher severity (genuine brand strategy uncertainty, multi-geography operational complexity). By Feb 2020, the company has completed the distribution center move, has 3,803 employees suggesting operational scale, and the risk factor structure suggests reduced acute distress. Trend appears to be improving."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "resolving",
+          "confidence": "medium",
+          "notes": "Prior year showed significant strategic uncertainty around brand repositioning and international market exits. Current year the distribution center has been moved (completed), product portfolio has been narrowed, and the company has executed key elements of its stated strategy. Problems appear to be resolving through execution."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 1,
+          "action": "hold",
+          "confidence": "medium",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): The checkpoint shows significant distribution expansion (Ohio campus expanded, EMEA distribution center under construction in Netherlands, distribution footprint grew from 1.3M to 2.3M sq ft). This is positive execution. One new item: Hong Kong distribution center removed (possibly COVID-related). No operational deterioration confessions. COVID mentioned as general risk but company explicitly states business performing well."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 3,
+          "stable_count": 2,
+          "escalating_count": 0,
+          "new_count": 1,
+          "dominant": "resolving",
+          "action": "hold",
+          "confidence": "high",
+          "notes": "Resolving: distribution center execution complete and expanded, EMEA expansion begun, product line simplified. Stable: competitive landscape, IP protection risks. Escalating: none. New: COVID general macro risk added. The dominant pattern is resolution of prior strategic risks. Strong hold signal."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language. Company appears to be in growth mode by checkpoint."
+        }
+      }
+    },
+    "T8-105": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "sector_dislocation",
+          "confidence": "medium",
+          "notes": "SM Energy - oil and gas E&P company. The extracted risk factors are primarily table of contents and forward-looking statement boilerplate rather than full risk factors. Based on what is available: SM Energy is an E&P company with $2.6B long-term debt (down from $3.0B in 2017), heavily exposed to oil/gas commodity prices. The distress context is sector-wide commodity price decline (oil sector dislocation) combined with company-specific high leverage."
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "structural",
+          "confidence": "low",
+          "notes": "Oil and gas E&P with high leverage ($2.6B LTD) faces both structural sector headwinds (energy transition) and cyclical commodity price pressure. The debt reduction efforts (from $3.0B to $2.6B between 2017-2018) suggest active management, but structural leverage risk in a declining commodity price environment is concerning. Low confidence due to limited risk factor content in the excerpt."
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "expected",
+          "confidence": "low",
+          "surprise_count": 1,
+          "notes": "The forward-looking statements in the current 10-K explicitly add 'the impacts of the global COVID-19 pandemic' as a new item - this would be a surprise element in the February 2020 filing. However full risk factors weren't extractable from this case. Low confidence due to data limitation."
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "worsening",
+          "confidence": "low",
+          "notes": "High leverage E&P company at a moment of oil price decline and emerging COVID shock. Sector conditions are clearly worsening. But insufficient risk factor text to assess company-specific severity with confidence."
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "stable",
+          "confidence": "low",
+          "notes": "Debt was being actively reduced (positive), but COVID shock is emerging. Based on limited available text, the risk profile appears to be transitioning from stable to potentially compounding. Low confidence."
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 2,
+          "action": "hold",
+          "confidence": "low",
+          "notes": "Checkpoint (Feb 2021) vs entry (Feb 2020): Forward-looking statements in checkpoint explicitly add COVID-19 pandemic as a named concern. Also removed 'Selected Financial Data' section (no longer required under new SEC rules) which may obscure some comparison. Two new macro confessions visible. Low confidence due to limited actual risk factor text extraction."
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 3,
+          "escalating_count": 1,
+          "new_count": 2,
+          "dominant": "new_appearing",
+          "action": "hold",
+          "confidence": "low",
+          "notes": "New: COVID pandemic explicit mention, farmout/joint development language added (suggests capital discipline mode). Escalating: commodity price risk (oil prices crashed in 2020). Stable: reserve estimation, capital expenditure, hedging risks. Hold recommendation with low confidence given data limitations."
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": false,
+          "action": "hold",
+          "notes": "No restatements, covenant breaches, or going concern language visible in the extracted content. Low confidence due to data limitations."
+        }
+      }
+    }
+  }
+}

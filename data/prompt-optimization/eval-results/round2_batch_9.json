@@ -1,0 +1,98 @@
+{
+  "batch": 9,
+  "round": 2,
+  "results": {
+    "T8-102": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION: BankUnited's 2020 vs 2019 risk factors reflect a key company-specific confession: the language around CECL adoption shifted from 'could require us to significantly increase our ALLL' (uncertain) to 'will require us to increase our ALLL' (certain), acknowledging a definitive balance sheet impact. Additionally, the 2020 filing notes the CECL adoption is effective January 1, 2020 with an expected impact now disclosed in the financial statements. This is a company-level accounting change with real capital consequences, not a sector-wide dislocation. Broader banking sector faces the same CECL transition but BankUnited's communication shift is notable.",
+          "confidence": "high"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "TEMPORARY: The CECL adoption creates a one-time step-up in allowance levels but is a permanent methodology change rather than a temporary disruption. However, the core business risks (credit quality, interest rate sensitivity, real estate collateral exposure) remain fundamentally unchanged between the two filings. The macro risk environment at the time of the February 2020 filing did not yet reflect COVID. Net assessment leans temporary for the CECL impact specifically.",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: The certainty upgrade on CECL impact ('will increase' vs 'could significantly increase') was telegraphed by FASB implementation guidance and peer bank disclosures. The rest of the risk factor changes are minimal—credit risk, real estate exposure, regulatory capital, and interest rate risk sections are near-identical. No surprising disclosures appear in the 2020 vs 2019 comparison for BankUnited.",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 2,
+          "trend": "stable",
+          "confidence": "high"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: BankUnited's risk trajectory between 2019 and 2020 is stable with a minor incremental confession on CECL certainty. The underlying credit, interest rate, real estate, and competitive risks persist at comparable intensity. No worsening or improvement trajectory is evident from the risk factor comparison. The CECL transition was known and manageable.",
+          "confidence": "high"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 4,
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 4,
+          "escalating_count": 2,
+          "new_count": 4,
+          "dominant": "new",
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    },
+    "T8-020": {
+      "buy": {
+        "buy_v9_confession_sector": {
+          "assessment": "COMPANY_DISLOCATION: The Cheesecake Factory's 2020 filing (March 12, 2020) reflects the completed acquisition of North Italia and FRC in October 2019, fundamentally transforming the company from a single-brand restaurant operator to a multi-brand portfolio. This is company-level dislocation from a transformative acquisition. The competitive environment in upscale casual dining is also noted as structurally more challenging with persistent comparable traffic declines industrywide—suggesting sector pressure exists alongside the company event. COVID is not yet reflected as the filing was made at the very onset of the pandemic.",
+          "confidence": "high"
+        },
+        "buy_v10_confession_minimal": {
+          "assessment": "STRUCTURAL: The 2020 filing acknowledges two structural dynamics: (1) the multi-brand acquisition increases execution complexity permanently, and (2) the casual dining sector faces structural headwinds from oversupply and fast-casual competition driving persistent comparable traffic declines. These are not temporary cyclical issues. The off-premise consumption growth (14% to 16% of sales) also reflects a structural shift in consumer dining behavior that the company is adapting to.",
+          "confidence": "medium"
+        },
+        "buy_v11_surprise_focus": {
+          "assessment": "EXPECTED: The FRC/North Italia acquisition was announced and disclosed before the 2020 filing, so its integration as a risk factor is expected. The competitive pressures from fast-casual and delivery services were visible trends. The filing shows no surprising new operational or financial risks. The COVID-19 risk that would dominate the checkpoint filing was not yet present—that would be the genuine surprise shortly after.",
+          "confidence": "high",
+          "surprise_count": 0
+        },
+        "buy_v12_severity": {
+          "severity": 3,
+          "trend": "stable",
+          "confidence": "medium"
+        },
+        "buy_v13_confession_resolution": {
+          "assessment": "STABLE: The 2020 buy-point risk profile reflects a company mid-integration with acknowledged structural competitive pressures. The acquisition adds both risk and opportunity. The risk trajectory at time of filing is stable-to-slightly-worsening given the structural casual dining headwinds, but no clear compounding dynamic is evident from the risk factor comparison alone. The COVID disruption that would arrive immediately after is not captured.",
+          "confidence": "medium"
+        }
+      },
+      "sell": {
+        "sell_v6_confession_count": {
+          "new_confession_count": 6,
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v7_confession_escalation": {
+          "resolving_count": 0,
+          "stable_count": 2,
+          "escalating_count": 3,
+          "new_count": 6,
+          "dominant": "new",
+          "action": "sell",
+          "confidence": "high"
+        },
+        "sell_v8_minimal_confession": {
+          "new_confessions": true,
+          "action": "sell"
+        }
+      }
+    }
+  }
+}

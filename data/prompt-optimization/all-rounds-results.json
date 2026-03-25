@@ -1,0 +1,1675 @@
+{
+  "timestamp": "2026-03-25T19:50:37.449Z",
+  "cases_evaluated": 47,
+  "buy_variants": [
+    "buy_v10_confession_minimal",
+    "buy_v11_surprise_focus",
+    "buy_v12_severity",
+    "buy_v13_confession_resolution",
+    "buy_v1_binary",
+    "buy_v2_character",
+    "buy_v3_sector_adjusted",
+    "buy_v4_confession",
+    "buy_v5_resolution",
+    "buy_v6_minimal",
+    "buy_v7_quantified",
+    "buy_v8_forward",
+    "buy_v9_confession_sector"
+  ],
+  "sell_variants": [
+    "notes",
+    "sell_v1_thesis_drift",
+    "sell_v2_escalation",
+    "sell_v3_new_confessions",
+    "sell_v4_simple",
+    "sell_v5_exit_urgency",
+    "sell_v6_confession_count",
+    "sell_v7_confession_escalation",
+    "sell_v8_minimal_confession"
+  ],
+  "buy_scores": {
+    "buy_v10_confession_minimal": {
+      "total": 47,
+      "passed": 23,
+      "passRate": "48.9",
+      "winnersPassed": 12,
+      "trapsPassed": 11,
+      "precision": "52.2",
+      "r": "0.326",
+      "meanPassedAlpha": "0.737",
+      "meanRejectedAlpha": "0.079",
+      "separation": "0.657"
+    },
+    "buy_v11_surprise_focus": {
+      "total": 47,
+      "passed": 28,
+      "passRate": "59.6",
+      "winnersPassed": 11,
+      "trapsPassed": 17,
+      "precision": "39.3",
+      "r": "0.079",
+      "meanPassedAlpha": "0.203",
+      "meanRejectedAlpha": "0.693",
+      "separation": "-0.489"
+    },
+    "buy_v12_severity": {
+      "total": 47,
+      "passed": 41,
+      "passRate": "87.2",
+      "winnersPassed": 15,
+      "trapsPassed": 26,
+      "precision": "36.6",
+      "r": "0.023",
+      "meanPassedAlpha": "0.169",
+      "meanRejectedAlpha": "1.989",
+      "separation": "-1.820"
+    },
+    "buy_v13_confession_resolution": {
+      "total": 47,
+      "passed": 36,
+      "passRate": "76.6",
+      "winnersPassed": 14,
+      "trapsPassed": 22,
+      "precision": "38.9",
+      "r": "0.102",
+      "meanPassedAlpha": "0.130",
+      "meanRejectedAlpha": "1.287",
+      "separation": "-1.156"
+    },
+    "buy_v1_binary": {
+      "total": 47,
+      "passed": 26,
+      "passRate": "55.3",
+      "winnersPassed": 10,
+      "trapsPassed": 16,
+      "precision": "38.5",
+      "r": "0.053",
+      "meanPassedAlpha": "0.062",
+      "meanRejectedAlpha": "0.821",
+      "separation": "-0.760"
+    },
+    "buy_v2_character": {
+      "total": 47,
+      "passed": 28,
+      "passRate": "59.6",
+      "winnersPassed": 11,
+      "trapsPassed": 17,
+      "precision": "39.3",
+      "r": "0.079",
+      "meanPassedAlpha": "0.226",
+      "meanRejectedAlpha": "0.658",
+      "separation": "-0.432"
+    },
+    "buy_v3_sector_adjusted": {
+      "total": 47,
+      "passed": 33,
+      "passRate": "70.2",
+      "winnersPassed": 15,
+      "trapsPassed": 18,
+      "precision": "45.5",
+      "r": "0.297",
+      "meanPassedAlpha": "0.365",
+      "meanRejectedAlpha": "0.487",
+      "separation": "-0.122"
+    },
+    "buy_v4_confession": {
+      "total": 47,
+      "passed": 40,
+      "passRate": "85.1",
+      "winnersPassed": 16,
+      "trapsPassed": 24,
+      "precision": "40.0",
+      "r": "0.191",
+      "meanPassedAlpha": "0.517",
+      "meanRejectedAlpha": "-0.260",
+      "separation": "0.776"
+    },
+    "buy_v5_resolution": {
+      "total": 47,
+      "passed": 26,
+      "passRate": "55.3",
+      "winnersPassed": 9,
+      "trapsPassed": 17,
+      "precision": "34.6",
+      "r": "-0.036",
+      "meanPassedAlpha": "0.033",
+      "meanRejectedAlpha": "0.857",
+      "separation": "-0.825"
+    },
+    "buy_v6_minimal": {
+      "total": 47,
+      "passed": 24,
+      "passRate": "51.1",
+      "winnersPassed": 9,
+      "trapsPassed": 15,
+      "precision": "37.5",
+      "r": "0.028",
+      "meanPassedAlpha": "0.084",
+      "meanRejectedAlpha": "0.732",
+      "separation": "-0.648"
+    },
+    "buy_v7_quantified": {
+      "total": 47,
+      "passed": 27,
+      "passRate": "57.4",
+      "winnersPassed": 10,
+      "trapsPassed": 17,
+      "precision": "37.0",
+      "r": "0.021",
+      "meanPassedAlpha": "0.102",
+      "meanRejectedAlpha": "0.805",
+      "separation": "-0.704"
+    },
+    "buy_v8_forward": {
+      "total": 47,
+      "passed": 25,
+      "passRate": "53.2",
+      "winnersPassed": 9,
+      "trapsPassed": 16,
+      "precision": "36.0",
+      "r": "-0.004",
+      "meanPassedAlpha": "0.031",
+      "meanRejectedAlpha": "0.821",
+      "separation": "-0.790"
+    },
+    "buy_v9_confession_sector": {
+      "total": 47,
+      "passed": 43,
+      "passRate": "91.5",
+      "winnersPassed": 15,
+      "trapsPassed": 28,
+      "precision": "34.9",
+      "r": "-0.088",
+      "meanPassedAlpha": "0.414",
+      "meanRejectedAlpha": "0.259",
+      "separation": "0.155"
+    }
+  },
+  "sell_scores": {
+    "notes": {
+      "total": 0,
+      "sells": 0,
+      "sellRate": "0.0",
+      "truePos": 0,
+      "falsePos": 0,
+      "truePosRate": "0.0",
+      "falsePosRate": "0.0"
+    },
+    "sell_v1_thesis_drift": {
+      "total": 46,
+      "sells": 20,
+      "sellRate": "43.5",
+      "truePos": 15,
+      "falsePos": 5,
+      "truePosRate": "75.0",
+      "falsePosRate": "25.0"
+    },
+    "sell_v2_escalation": {
+      "total": 46,
+      "sells": 18,
+      "sellRate": "39.1",
+      "truePos": 13,
+      "falsePos": 5,
+      "truePosRate": "72.2",
+      "falsePosRate": "27.8"
+    },
+    "sell_v3_new_confessions": {
+      "total": 46,
+      "sells": 14,
+      "sellRate": "30.4",
+      "truePos": 12,
+      "falsePos": 2,
+      "truePosRate": "85.7",
+      "falsePosRate": "14.3"
+    },
+    "sell_v4_simple": {
+      "total": 46,
+      "sells": 19,
+      "sellRate": "41.3",
+      "truePos": 14,
+      "falsePos": 5,
+      "truePosRate": "73.7",
+      "falsePosRate": "26.3"
+    },
+    "sell_v5_exit_urgency": {
+      "total": 46,
+      "sells": 19,
+      "sellRate": "41.3",
+      "truePos": 14,
+      "falsePos": 5,
+      "truePosRate": "73.7",
+      "falsePosRate": "26.3"
+    },
+    "sell_v6_confession_count": {
+      "total": 46,
+      "sells": 13,
+      "sellRate": "28.3",
+      "truePos": 12,
+      "falsePos": 1,
+      "truePosRate": "92.3",
+      "falsePosRate": "7.7"
+    },
+    "sell_v7_confession_escalation": {
+      "total": 46,
+      "sells": 15,
+      "sellRate": "32.6",
+      "truePos": 12,
+      "falsePos": 3,
+      "truePosRate": "80.0",
+      "falsePosRate": "20.0"
+    },
+    "sell_v8_minimal_confession": {
+      "total": 46,
+      "sells": 13,
+      "sellRate": "28.3",
+      "truePos": 12,
+      "falsePos": 1,
+      "truePosRate": "92.3",
+      "falsePosRate": "7.7"
+    }
+  },
+  "pair_rankings": [
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "90.5",
+      "alpha": "48.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "90.5",
+      "alpha": "48.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "87.4",
+      "alpha": "45.6",
+      "buyPrecision": "40.0",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "85.8",
+      "alpha": "44.0",
+      "buyPrecision": "40.0",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "notes",
+      "portfolioReturn": "85.8",
+      "alpha": "44.0",
+      "buyPrecision": "40.0",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "85.4",
+      "alpha": "43.6",
+      "buyPrecision": "34.9",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "85.4",
+      "alpha": "43.6",
+      "buyPrecision": "34.9",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "84.5",
+      "alpha": "42.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "82.3",
+      "alpha": "40.5",
+      "buyPrecision": "34.9",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "79.8",
+      "alpha": "38.0",
+      "buyPrecision": "34.9",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "79.7",
+      "alpha": "37.9",
+      "buyPrecision": "34.9",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "notes",
+      "portfolioReturn": "79.7",
+      "alpha": "37.9",
+      "buyPrecision": "34.9",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "78.7",
+      "alpha": "36.9",
+      "buyPrecision": "52.2",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "78.7",
+      "alpha": "36.9",
+      "buyPrecision": "52.2",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "77.9",
+      "alpha": "36.0",
+      "buyPrecision": "52.2",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "notes",
+      "portfolioReturn": "77.9",
+      "alpha": "36.0",
+      "buyPrecision": "52.2",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "77.4",
+      "alpha": "35.6",
+      "buyPrecision": "52.2",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "76.6",
+      "alpha": "34.8",
+      "buyPrecision": "40.0",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "76.6",
+      "alpha": "34.8",
+      "buyPrecision": "40.0",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "76.5",
+      "alpha": "34.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "75.6",
+      "alpha": "33.8",
+      "buyPrecision": "52.2",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "75.0",
+      "alpha": "33.2",
+      "buyPrecision": "40.0",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "74.0",
+      "alpha": "32.2",
+      "buyPrecision": "52.2",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "74.0",
+      "alpha": "32.2",
+      "buyPrecision": "52.2",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "73.9",
+      "alpha": "32.1",
+      "buyPrecision": "52.2",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "72.6",
+      "alpha": "30.8",
+      "buyPrecision": "34.9",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v10_confession_minimal",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "72.4",
+      "alpha": "30.6",
+      "buyPrecision": "52.2",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "71.9",
+      "alpha": "30.1",
+      "buyPrecision": "34.9",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "71.9",
+      "alpha": "30.1",
+      "buyPrecision": "34.9",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "70.3",
+      "alpha": "28.5",
+      "buyPrecision": "34.9",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "68.1",
+      "alpha": "26.3",
+      "buyPrecision": "45.5",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "68.1",
+      "alpha": "26.3",
+      "buyPrecision": "45.5",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "67.4",
+      "alpha": "25.6",
+      "buyPrecision": "45.5",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "notes",
+      "portfolioReturn": "67.4",
+      "alpha": "25.6",
+      "buyPrecision": "45.5",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "63.8",
+      "alpha": "22.0",
+      "buyPrecision": "45.5",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "63.6",
+      "alpha": "21.8",
+      "buyPrecision": "45.5",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "60.8",
+      "alpha": "19.0",
+      "buyPrecision": "36.6",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "60.8",
+      "alpha": "19.0",
+      "buyPrecision": "36.6",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "57.6",
+      "alpha": "15.8",
+      "buyPrecision": "36.6",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "56.6",
+      "alpha": "14.8",
+      "buyPrecision": "36.6",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "56.5",
+      "alpha": "14.7",
+      "buyPrecision": "36.6",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "notes",
+      "portfolioReturn": "56.5",
+      "alpha": "14.7",
+      "buyPrecision": "36.6",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "55.9",
+      "alpha": "14.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "55.9",
+      "alpha": "14.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "55.7",
+      "alpha": "13.9",
+      "buyPrecision": "45.5",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "55.7",
+      "alpha": "13.9",
+      "buyPrecision": "45.5",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "55.3",
+      "alpha": "13.5",
+      "buyPrecision": "39.3",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "notes",
+      "portfolioReturn": "55.3",
+      "alpha": "13.5",
+      "buyPrecision": "39.3",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "55.2",
+      "alpha": "13.4",
+      "buyPrecision": "39.3",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "55.2",
+      "alpha": "13.4",
+      "buyPrecision": "39.3",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "54.7",
+      "alpha": "12.9",
+      "buyPrecision": "39.3",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "54.1",
+      "alpha": "12.3",
+      "buyPrecision": "45.5",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v3_sector_adjusted",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "54.1",
+      "alpha": "12.3",
+      "buyPrecision": "45.5",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "54.0",
+      "alpha": "12.2",
+      "buyPrecision": "39.3",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "53.9",
+      "alpha": "12.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "notes",
+      "portfolioReturn": "53.9",
+      "alpha": "12.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "52.4",
+      "alpha": "10.6",
+      "buyPrecision": "38.9",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "52.4",
+      "alpha": "10.6",
+      "buyPrecision": "38.9",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "51.8",
+      "alpha": "10.0",
+      "buyPrecision": "38.9",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "notes",
+      "portfolioReturn": "51.8",
+      "alpha": "10.0",
+      "buyPrecision": "38.9",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "51.4",
+      "alpha": "9.6",
+      "buyPrecision": "39.3",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "51.2",
+      "alpha": "9.4",
+      "buyPrecision": "38.9",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "50.1",
+      "alpha": "8.2",
+      "buyPrecision": "39.3",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "50.0",
+      "alpha": "8.1",
+      "buyPrecision": "37.0",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "49.6",
+      "alpha": "7.8",
+      "buyPrecision": "39.3",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "49.6",
+      "alpha": "7.8",
+      "buyPrecision": "39.3",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "49.6",
+      "alpha": "7.8",
+      "buyPrecision": "39.3",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v2_character",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "49.6",
+      "alpha": "7.8",
+      "buyPrecision": "39.3",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "48.9",
+      "alpha": "7.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "48.9",
+      "alpha": "7.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "48.9",
+      "alpha": "7.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v11_surprise_focus",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "48.9",
+      "alpha": "7.1",
+      "buyPrecision": "39.3",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "48.7",
+      "alpha": "6.9",
+      "buyPrecision": "36.6",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "48.7",
+      "alpha": "6.9",
+      "buyPrecision": "36.6",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "48.3",
+      "alpha": "6.5",
+      "buyPrecision": "38.9",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "48.3",
+      "alpha": "6.5",
+      "buyPrecision": "37.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "48.3",
+      "alpha": "6.5",
+      "buyPrecision": "37.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "48.1",
+      "alpha": "6.3",
+      "buyPrecision": "37.5",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "48.1",
+      "alpha": "6.3",
+      "buyPrecision": "37.0",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "48.1",
+      "alpha": "6.3",
+      "buyPrecision": "37.0",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "48.1",
+      "alpha": "6.3",
+      "buyPrecision": "37.0",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "48.1",
+      "alpha": "6.3",
+      "buyPrecision": "37.0",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "48.0",
+      "alpha": "6.2",
+      "buyPrecision": "38.9",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "48.0",
+      "alpha": "6.2",
+      "buyPrecision": "38.9",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "47.7",
+      "alpha": "5.8",
+      "buyPrecision": "37.0",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "notes",
+      "portfolioReturn": "47.7",
+      "alpha": "5.8",
+      "buyPrecision": "37.0",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "47.2",
+      "alpha": "5.3",
+      "buyPrecision": "36.6",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v12_severity",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "47.2",
+      "alpha": "5.3",
+      "buyPrecision": "36.6",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "47.1",
+      "alpha": "5.3",
+      "buyPrecision": "34.6",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v7_quantified",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "47.1",
+      "alpha": "5.3",
+      "buyPrecision": "37.0",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "46.8",
+      "alpha": "5.0",
+      "buyPrecision": "37.5",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "46.8",
+      "alpha": "5.0",
+      "buyPrecision": "37.5",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "46.5",
+      "alpha": "4.7",
+      "buyPrecision": "38.9",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v13_confession_resolution",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "46.5",
+      "alpha": "4.7",
+      "buyPrecision": "38.9",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "46.3",
+      "alpha": "4.5",
+      "buyPrecision": "37.5",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "46.3",
+      "alpha": "4.5",
+      "buyPrecision": "37.5",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "46.3",
+      "alpha": "4.5",
+      "buyPrecision": "37.5",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "46.3",
+      "alpha": "4.5",
+      "buyPrecision": "37.5",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "46.2",
+      "alpha": "4.4",
+      "buyPrecision": "38.5",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "46.1",
+      "alpha": "4.3",
+      "buyPrecision": "37.5",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "notes",
+      "portfolioReturn": "46.1",
+      "alpha": "4.3",
+      "buyPrecision": "37.5",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "45.9",
+      "alpha": "4.1",
+      "buyPrecision": "38.5",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "45.9",
+      "alpha": "4.1",
+      "buyPrecision": "38.5",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v6_minimal",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "45.6",
+      "alpha": "3.8",
+      "buyPrecision": "37.5",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "45.5",
+      "alpha": "3.7",
+      "buyPrecision": "36.0",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "45.4",
+      "alpha": "3.6",
+      "buyPrecision": "34.6",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "45.4",
+      "alpha": "3.6",
+      "buyPrecision": "34.6",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "45.3",
+      "alpha": "3.5",
+      "buyPrecision": "34.6",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "45.3",
+      "alpha": "3.5",
+      "buyPrecision": "34.6",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "45.3",
+      "alpha": "3.5",
+      "buyPrecision": "34.6",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "45.3",
+      "alpha": "3.5",
+      "buyPrecision": "34.6",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "45.2",
+      "alpha": "3.4",
+      "buyPrecision": "38.5",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "notes",
+      "portfolioReturn": "45.2",
+      "alpha": "3.4",
+      "buyPrecision": "38.5",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v4_simple",
+      "portfolioReturn": "45.2",
+      "alpha": "3.4",
+      "buyPrecision": "36.0",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v5_exit_urgency",
+      "portfolioReturn": "45.2",
+      "alpha": "3.4",
+      "buyPrecision": "36.0",
+      "sellTruePos": "73.7",
+      "sellFalsePos": "26.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "44.9",
+      "alpha": "3.1",
+      "buyPrecision": "38.5",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "44.9",
+      "alpha": "3.1",
+      "buyPrecision": "38.5",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "44.4",
+      "alpha": "2.6",
+      "buyPrecision": "38.5",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "44.4",
+      "alpha": "2.6",
+      "buyPrecision": "38.5",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "44.2",
+      "alpha": "2.4",
+      "buyPrecision": "34.6",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "44.2",
+      "alpha": "2.4",
+      "buyPrecision": "36.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "44.2",
+      "alpha": "2.4",
+      "buyPrecision": "36.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v1_binary",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "43.7",
+      "alpha": "1.9",
+      "buyPrecision": "38.5",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v1_thesis_drift",
+      "portfolioReturn": "43.7",
+      "alpha": "1.9",
+      "buyPrecision": "36.0",
+      "sellTruePos": "75.0",
+      "sellFalsePos": "25.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v2_escalation",
+      "portfolioReturn": "43.7",
+      "alpha": "1.9",
+      "buyPrecision": "36.0",
+      "sellTruePos": "72.2",
+      "sellFalsePos": "27.8",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "43.6",
+      "alpha": "1.8",
+      "buyPrecision": "34.6",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v5_resolution",
+      "sell": "notes",
+      "portfolioReturn": "43.6",
+      "alpha": "1.8",
+      "buyPrecision": "34.6",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "43.5",
+      "alpha": "1.7",
+      "buyPrecision": "36.0",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "notes",
+      "portfolioReturn": "43.5",
+      "alpha": "1.7",
+      "buyPrecision": "36.0",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v8_forward",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "43.0",
+      "alpha": "1.2",
+      "buyPrecision": "36.0",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    }
+  ],
+  "top_10": [
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "90.5",
+      "alpha": "48.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "90.5",
+      "alpha": "48.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "87.4",
+      "alpha": "45.6",
+      "buyPrecision": "40.0",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "NONE (hold)",
+      "portfolioReturn": "85.8",
+      "alpha": "44.0",
+      "buyPrecision": "40.0",
+      "sellTruePos": "N/A",
+      "sellFalsePos": "N/A",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "notes",
+      "portfolioReturn": "85.8",
+      "alpha": "44.0",
+      "buyPrecision": "40.0",
+      "sellTruePos": "0.0",
+      "sellFalsePos": "0.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v6_confession_count",
+      "portfolioReturn": "85.4",
+      "alpha": "43.6",
+      "buyPrecision": "34.9",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v8_minimal_confession",
+      "portfolioReturn": "85.4",
+      "alpha": "43.6",
+      "buyPrecision": "34.9",
+      "sellTruePos": "92.3",
+      "sellFalsePos": "7.7",
+      "n": 47
+    },
+    {
+      "buy": "buy_v4_confession",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "84.5",
+      "alpha": "42.7",
+      "buyPrecision": "40.0",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v7_confession_escalation",
+      "portfolioReturn": "82.3",
+      "alpha": "40.5",
+      "buyPrecision": "34.9",
+      "sellTruePos": "80.0",
+      "sellFalsePos": "20.0",
+      "n": 47
+    },
+    {
+      "buy": "buy_v9_confession_sector",
+      "sell": "sell_v3_new_confessions",
+      "portfolioReturn": "79.8",
+      "alpha": "38.0",
+      "buyPrecision": "34.9",
+      "sellTruePos": "85.7",
+      "sellFalsePos": "14.3",
+      "n": 47
+    }
+  ]
+}
