@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-020",
+  "ticker": "RIO",
+  "company": "Rio Tinto",
+  "tier": "T7",
+  "sector": "Materials",
+  "entry_date": "2020-06-15",
+  "entry_price": 35.99,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 172660000000
+  },
+  "outcome": {
+    "return_3yr": 0.554,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.12800000000000006,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:05.989Z"
+}

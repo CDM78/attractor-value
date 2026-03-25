@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-245",
+  "ticker": "SIG",
+  "company": "SIG",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2018-03-19",
+  "entry_price": 33.43,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.738,
+    "sp500_return_3yr": 0.443,
+    "alpha": 0.295,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:55:46.479Z"
+}

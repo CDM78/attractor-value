@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-224",
+  "ticker": "JEF",
+  "company": "JEF",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2019-09-25",
+  "entry_price": 14.48,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.74,
+    "sp500_return_3yr": 0.225,
+    "alpha": 0.515,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:55:33.920Z"
+}

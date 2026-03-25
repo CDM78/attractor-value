@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-131",
+  "ticker": "OGN",
+  "company": "OGN",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2021-06-03",
+  "entry_price": 30.2,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": -0.333,
+    "sp500_return_3yr": 0.26,
+    "alpha": -0.593,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:54:54.249Z"
+}

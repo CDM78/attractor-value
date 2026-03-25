@@ -1,0 +1,29 @@
+{
+  "case_id": "T8-040",
+  "ticker": "IIPR",
+  "company": "Innovative Industrial Properties",
+  "tier": "T8",
+  "sector": "Real Estate",
+  "entry_date": "2020-06-15",
+  "entry_price": 62.87,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "10-K"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 181904000
+  },
+  "outcome": {
+    "return_3yr": -0.128,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.554,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:57:09.150Z"
+}

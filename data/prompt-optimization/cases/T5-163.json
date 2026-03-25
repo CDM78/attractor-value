@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-163",
+  "ticker": "TER",
+  "company": "TER",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2020-09-21",
+  "entry_price": 75.28,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "10-K"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.262,
+    "sp500_return_3yr": 0.342,
+    "alpha": -0.08000000000000002,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:55:02.921Z"
+}

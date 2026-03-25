@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-061",
+  "ticker": "EVRG",
+  "company": "EVRG",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2018-06-04",
+  "entry_price": 40.34,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.286,
+    "sp500_return_3yr": 0.54,
+    "alpha": -0.25400000000000006,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:54:14.327Z"
+}

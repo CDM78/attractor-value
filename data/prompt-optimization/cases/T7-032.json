@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-032",
+  "ticker": "SNY",
+  "company": "Sanofi",
+  "tier": "T7",
+  "sector": "Healthcare",
+  "entry_date": "2020-06-15",
+  "entry_price": 41.53,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 144504000000
+  },
+  "outcome": {
+    "return_3yr": 0.122,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.304,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:13.702Z"
+}

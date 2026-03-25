@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-074",
+  "ticker": "WIT",
+  "company": "Wipro",
+  "tier": "T7",
+  "sector": "Technology",
+  "entry_date": "2020-06-15",
+  "entry_price": 1.59,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 10632748000
+  },
+  "outcome": {
+    "return_3yr": 0.422,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.0040000000000000036,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:37.182Z"
+}

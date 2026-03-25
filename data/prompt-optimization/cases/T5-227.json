@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-227",
+  "ticker": "LEG",
+  "company": "LEG",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2021-12-20",
+  "entry_price": 31.88,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": -0.7,
+    "sp500_return_3yr": 0.284,
+    "alpha": -0.984,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:55:35.709Z"
+}

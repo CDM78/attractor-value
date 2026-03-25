@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-097",
+  "ticker": "DB",
+  "company": "Deutsche Bank",
+  "tier": "T7",
+  "sector": "Financials",
+  "entry_date": "2020-06-15",
+  "entry_price": 8.5,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 92660000000
+  },
+  "outcome": {
+    "return_3yr": 0.191,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.235,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:51.031Z"
+}

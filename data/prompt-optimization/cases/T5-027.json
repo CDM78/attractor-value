@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-027",
+  "ticker": "BR",
+  "company": "BR",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2018-06-18",
+  "entry_price": 101.99,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.444,
+    "sp500_return_3yr": 0.522,
+    "alpha": -0.07800000000000001,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:53:58.076Z"
+}

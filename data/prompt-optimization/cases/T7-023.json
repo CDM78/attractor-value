@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-023",
+  "ticker": "BP",
+  "company": "BP plc",
+  "tier": "T7",
+  "sector": "Energy",
+  "entry_date": "2020-06-15",
+  "entry_price": 18.11,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 1130464000000
+  },
+  "outcome": {
+    "return_3yr": 0.666,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.24000000000000005,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:07.402Z"
+}

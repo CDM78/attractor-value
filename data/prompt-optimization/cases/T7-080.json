@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-080",
+  "ticker": "HDB",
+  "company": "HDFC Bank",
+  "tier": "T7",
+  "sector": "Financials",
+  "entry_date": "2020-06-15",
+  "entry_price": 19.4,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 35768000000
+  },
+  "outcome": {
+    "return_3yr": 0.602,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.176,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:40.890Z"
+}

@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-047",
+  "ticker": "CTVA",
+  "company": "CTVA",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2019-06-03",
+  "entry_price": 22.76,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 1.638,
+    "sp500_return_3yr": 0.522,
+    "alpha": 1.1159999999999999,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:54:07.219Z"
+}

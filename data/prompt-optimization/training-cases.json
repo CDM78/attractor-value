@@ -1,0 +1,472 @@
+[
+  {
+    "case_id": "T8-039",
+    "ticker": "CALX",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Technology",
+    "return_3yr": 2.882,
+    "sp500_return_3yr": 0.426,
+    "alpha": 2.456
+  },
+  {
+    "case_id": "T5-096",
+    "ticker": "KEYS",
+    "binary_outcome": "winner",
+    "entry_date": "2018-11-05",
+    "sector": null,
+    "return_3yr": 2.148,
+    "sp500_return_3yr": 0.715,
+    "alpha": 1.4330000000000003
+  },
+  {
+    "case_id": "T8-108",
+    "ticker": "MTDR",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Energy",
+    "return_3yr": 3.95,
+    "sp500_return_3yr": 0.426,
+    "alpha": 3.524
+  },
+  {
+    "case_id": "T8-164",
+    "ticker": "CROX",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 2.618,
+    "sp500_return_3yr": 0.426,
+    "alpha": 2.1919999999999997
+  },
+  {
+    "case_id": "T8-105",
+    "ticker": "SM",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Energy",
+    "return_3yr": 4.993,
+    "sp500_return_3yr": 0.426,
+    "alpha": 4.567
+  },
+  {
+    "case_id": "T7-044",
+    "ticker": "WCN",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.53,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.10400000000000004
+  },
+  {
+    "case_id": "T8-084",
+    "ticker": "CASH",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 1.765,
+    "sp500_return_3yr": 0.426,
+    "alpha": 1.339
+  },
+  {
+    "case_id": "T8-145",
+    "ticker": "CELH",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Staples",
+    "return_3yr": 13.902,
+    "sp500_return_3yr": 0.426,
+    "alpha": 13.475999999999999
+  },
+  {
+    "case_id": "T8-113",
+    "ticker": "HCC",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Materials",
+    "return_3yr": 1.366,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.9400000000000002
+  },
+  {
+    "case_id": "T7-038",
+    "ticker": "ENB",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Energy",
+    "return_3yr": 0.45,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.02400000000000002
+  },
+  {
+    "case_id": "T5-028",
+    "ticker": "BRO",
+    "binary_outcome": "winner",
+    "entry_date": "2021-09-20",
+    "sector": null,
+    "return_3yr": 0.838,
+    "sp500_return_3yr": 0.311,
+    "alpha": 0.5269999999999999
+  },
+  {
+    "case_id": "T8-078",
+    "ticker": "ROAD",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.906,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.48000000000000004
+  },
+  {
+    "case_id": "T5-229",
+    "ticker": "MAT",
+    "binary_outcome": "winner",
+    "entry_date": "2019-06-06",
+    "sector": null,
+    "return_3yr": 1.274,
+    "sp500_return_3yr": 0.449,
+    "alpha": 0.825
+  },
+  {
+    "case_id": "T5-188",
+    "ticker": "WRB",
+    "binary_outcome": "winner",
+    "entry_date": "2019-12-04",
+    "sector": null,
+    "return_3yr": 0.712,
+    "sp500_return_3yr": 0.285,
+    "alpha": 0.427
+  },
+  {
+    "case_id": "T8-033",
+    "ticker": "SANM",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Technology",
+    "return_3yr": 1.25,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.8240000000000001
+  },
+  {
+    "case_id": "T5-141",
+    "ticker": "PTC",
+    "binary_outcome": "winner",
+    "entry_date": "2021-04-19",
+    "sector": null,
+    "return_3yr": 0.262,
+    "sp500_return_3yr": 0.193,
+    "alpha": 0.069
+  },
+  {
+    "case_id": "T8-006",
+    "ticker": "SCVL",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.722,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.296
+  },
+  {
+    "case_id": "T8-090",
+    "ticker": "UBSI",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.28,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.14599999999999996
+  },
+  {
+    "case_id": "T5-094",
+    "ticker": "JKHY",
+    "binary_outcome": "trap",
+    "entry_date": "2018-11-12",
+    "sector": null,
+    "return_3yr": 0.154,
+    "sp500_return_3yr": 0.718,
+    "alpha": -0.564
+  },
+  {
+    "case_id": "T8-017",
+    "ticker": "SHAK",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.304,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.122
+  },
+  {
+    "case_id": "T5-089",
+    "ticker": "IPGP",
+    "binary_outcome": "trap",
+    "entry_date": "2018-03-06",
+    "sector": null,
+    "return_3yr": -0.145,
+    "sp500_return_3yr": 0.408,
+    "alpha": -0.5529999999999999
+  },
+  {
+    "case_id": "T5-201",
+    "ticker": "BHF",
+    "binary_outcome": "trap",
+    "entry_date": "2019-04-01",
+    "sector": null,
+    "return_3yr": 0.371,
+    "sp500_return_3yr": 0.585,
+    "alpha": -0.21399999999999997
+  },
+  {
+    "case_id": "T5-211",
+    "ticker": "FLS",
+    "binary_outcome": "trap",
+    "entry_date": "2021-03-22",
+    "sector": null,
+    "return_3yr": 0.251,
+    "sp500_return_3yr": 0.33,
+    "alpha": -0.07900000000000001
+  },
+  {
+    "case_id": "T8-137",
+    "ticker": "TLYS",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.237,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.189
+  },
+  {
+    "case_id": "T5-103",
+    "ticker": "LVS",
+    "binary_outcome": "trap",
+    "entry_date": "2019-10-02",
+    "sector": null,
+    "return_3yr": -0.295,
+    "sp500_return_3yr": 0.274,
+    "alpha": -0.569
+  },
+  {
+    "case_id": "T5-199",
+    "ticker": "AYI",
+    "binary_outcome": "trap",
+    "entry_date": "2018-06-18",
+    "sector": null,
+    "return_3yr": 0.498,
+    "sp500_return_3yr": 0.522,
+    "alpha": -0.02400000000000002
+  },
+  {
+    "case_id": "T5-136",
+    "ticker": "PENN",
+    "binary_outcome": "trap",
+    "entry_date": "2021-03-22",
+    "sector": null,
+    "return_3yr": -0.845,
+    "sp500_return_3yr": 0.33,
+    "alpha": -1.175
+  },
+  {
+    "case_id": "T5-122",
+    "ticker": "NKTR",
+    "binary_outcome": "trap",
+    "entry_date": "2018-03-19",
+    "sector": null,
+    "return_3yr": -0.79,
+    "sp500_return_3yr": 0.443,
+    "alpha": -1.233
+  },
+  {
+    "case_id": "T8-023",
+    "ticker": "BJRI",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.357,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.069
+  },
+  {
+    "case_id": "T5-106",
+    "ticker": "LYV",
+    "binary_outcome": "trap",
+    "entry_date": "2019-12-23",
+    "sector": null,
+    "return_3yr": 0.002,
+    "sp500_return_3yr": 0.186,
+    "alpha": -0.184
+  },
+  {
+    "case_id": "T8-125",
+    "ticker": "GTN",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Communication Services",
+    "return_3yr": -0.472,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.8979999999999999
+  },
+  {
+    "case_id": "T5-161",
+    "ticker": "TECH",
+    "binary_outcome": "trap",
+    "entry_date": "2021-08-30",
+    "sector": null,
+    "return_3yr": -0.404,
+    "sp500_return_3yr": 0.235,
+    "alpha": -0.639
+  },
+  {
+    "case_id": "T8-009",
+    "ticker": "PLCE",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": -0.584,
+    "sp500_return_3yr": 0.426,
+    "alpha": -1.01
+  },
+  {
+    "case_id": "T8-012",
+    "ticker": "DIN",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.309,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.11699999999999999
+  },
+  {
+    "case_id": "T5-240",
+    "ticker": "PRGO",
+    "binary_outcome": "trap",
+    "entry_date": "2021-09-20",
+    "sector": null,
+    "return_3yr": -0.294,
+    "sp500_return_3yr": 0.311,
+    "alpha": -0.605
+  },
+  {
+    "case_id": "T5-217",
+    "ticker": "GT",
+    "binary_outcome": "trap",
+    "entry_date": "2019-02-26",
+    "sector": null,
+    "return_3yr": -0.183,
+    "sp500_return_3yr": 0.569,
+    "alpha": -0.752
+  },
+  {
+    "case_id": "T5-064",
+    "ticker": "FANG",
+    "binary_outcome": "trap",
+    "entry_date": "2018-12-03",
+    "sector": null,
+    "return_3yr": 0.011,
+    "sp500_return_3yr": 0.64,
+    "alpha": -0.629
+  },
+  {
+    "case_id": "T5-044",
+    "ticker": "CRL",
+    "binary_outcome": "trap",
+    "entry_date": "2021-05-13",
+    "sector": null,
+    "return_3yr": -0.288,
+    "sp500_return_3yr": 0.27,
+    "alpha": -0.558
+  },
+  {
+    "case_id": "T5-057",
+    "ticker": "EPAM",
+    "binary_outcome": "trap",
+    "entry_date": "2021-12-13",
+    "sector": null,
+    "return_3yr": -0.643,
+    "sp500_return_3yr": 0.296,
+    "alpha": -0.9390000000000001
+  },
+  {
+    "case_id": "T5-263",
+    "ticker": "XRX",
+    "binary_outcome": "trap",
+    "entry_date": "2021-03-22",
+    "sector": null,
+    "return_3yr": -0.185,
+    "sp500_return_3yr": 0.33,
+    "alpha": -0.515
+  },
+  {
+    "case_id": "T5-016",
+    "ticker": "ATO",
+    "binary_outcome": "trap",
+    "entry_date": "2019-02-14",
+    "sector": null,
+    "return_3yr": 0.184,
+    "sp500_return_3yr": 0.603,
+    "alpha": -0.419
+  },
+  {
+    "case_id": "T5-048",
+    "ticker": "CZR",
+    "binary_outcome": "trap",
+    "entry_date": "2021-03-22",
+    "sector": null,
+    "return_3yr": -0.529,
+    "sp500_return_3yr": 0.33,
+    "alpha": -0.859
+  },
+  {
+    "case_id": "T8-165",
+    "ticker": "YETI",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.031,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.395
+  },
+  {
+    "case_id": "T5-244",
+    "ticker": "RRC",
+    "binary_outcome": "trap",
+    "entry_date": "2018-06-18",
+    "sector": null,
+    "return_3yr": -0.122,
+    "sp500_return_3yr": 0.522,
+    "alpha": -0.644
+  },
+  {
+    "case_id": "T8-046",
+    "ticker": "LGND",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Healthcare",
+    "return_3yr": 0.121,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.305
+  },
+  {
+    "case_id": "T8-102",
+    "ticker": "BKU",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.194,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.23199999999999998
+  },
+  {
+    "case_id": "T8-020",
+    "ticker": "CAKE",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.409,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.017000000000000015
+  }
+]

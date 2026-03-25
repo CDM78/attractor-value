@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-225",
+  "ticker": "KDP",
+  "company": "KDP",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2018-07-02",
+  "entry_price": 16.63,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.888,
+    "sp500_return_3yr": 0.584,
+    "alpha": 0.30400000000000005,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:55:34.891Z"
+}

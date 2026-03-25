@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-150",
+  "ticker": "ROL",
+  "company": "ROL",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2018-10-01",
+  "entry_price": 23.94,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "10-K"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.391,
+    "sp500_return_3yr": 0.473,
+    "alpha": -0.08199999999999996,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:54:58.505Z"
+}

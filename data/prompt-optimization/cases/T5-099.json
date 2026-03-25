@@ -1,0 +1,29 @@
+{
+  "case_id": "T5-099",
+  "ticker": "LDOS",
+  "company": "LDOS",
+  "tier": "T5",
+  "sector": null,
+  "entry_date": "2019-08-08",
+  "entry_price": 76.69,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": null
+  },
+  "outcome": {
+    "return_3yr": 0.225,
+    "sp500_return_3yr": 0.409,
+    "alpha": -0.18399999999999997,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:54:40.019Z"
+}

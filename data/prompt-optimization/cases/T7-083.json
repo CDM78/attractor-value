@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-083",
+  "ticker": "VALE",
+  "company": "Vale S.A.",
+  "tier": "T7",
+  "sector": "Materials",
+  "entry_date": "2020-06-15",
+  "entry_price": 5.86,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 150280000000
+  },
+  "outcome": {
+    "return_3yr": 0.848,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.422,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:42.518Z"
+}

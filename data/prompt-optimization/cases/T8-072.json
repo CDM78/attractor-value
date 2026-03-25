@@ -1,0 +1,29 @@
+{
+  "case_id": "T8-072",
+  "ticker": "ARCB",
+  "company": "ArcBest",
+  "tier": "T8",
+  "sector": "Industrials",
+  "entry_date": "2020-06-15",
+  "entry_price": 22.56,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "10-K"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 5315076000
+  },
+  "outcome": {
+    "return_3yr": 2.897,
+    "sp500_return_3yr": 0.426,
+    "alpha": 2.4709999999999996,
+    "binary": "winner"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:57:23.318Z"
+}

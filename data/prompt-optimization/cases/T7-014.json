@@ -1,0 +1,29 @@
+{
+  "case_id": "T7-014",
+  "ticker": "DEO",
+  "company": "Diageo",
+  "tier": "T7",
+  "sector": "Consumer Staples",
+  "entry_date": "2020-06-15",
+  "entry_price": 120.27,
+  "entry_10k": {
+    "current": null,
+    "prior": null,
+    "formType": "20-F"
+  },
+  "year1_10k": null,
+  "year2_10k": null,
+  "short_interest": null,
+  "credit_spread": null,
+  "financials": {
+    "revenue_at_entry": 70788000000
+  },
+  "outcome": {
+    "return_3yr": 0.319,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.10699999999999998,
+    "binary": "trap"
+  },
+  "date_integrity": {},
+  "collected_at": "2026-03-25T18:56:01.874Z"
+}

@@ -1,0 +1,352 @@
+[
+  {
+    "case_id": "T8-063",
+    "ticker": "PRIM",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.841,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.415
+  },
+  {
+    "case_id": "T8-161",
+    "ticker": "ENPH",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Technology",
+    "return_3yr": 2.552,
+    "sp500_return_3yr": 0.426,
+    "alpha": 2.126
+  },
+  {
+    "case_id": "T8-169",
+    "ticker": "WING",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.743,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.317
+  },
+  {
+    "case_id": "T8-030",
+    "ticker": "SIGI",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.965,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.5389999999999999
+  },
+  {
+    "case_id": "T8-081",
+    "ticker": "MYRG",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 3.678,
+    "sp500_return_3yr": 0.426,
+    "alpha": 3.252
+  },
+  {
+    "case_id": "T5-172",
+    "ticker": "TTWO",
+    "binary_outcome": "winner",
+    "entry_date": "2018-03-19",
+    "sector": null,
+    "return_3yr": 0.6,
+    "sp500_return_3yr": 0.443,
+    "alpha": 0.15699999999999997
+  },
+  {
+    "case_id": "T5-204",
+    "ticker": "CPRI",
+    "binary_outcome": "winner",
+    "entry_date": "2020-05-11",
+    "sector": null,
+    "return_3yr": 1.665,
+    "sp500_return_3yr": 0.41,
+    "alpha": 1.2550000000000001
+  },
+  {
+    "case_id": "T5-219",
+    "ticker": "HP",
+    "binary_outcome": "winner",
+    "entry_date": "2020-05-21",
+    "sector": null,
+    "return_3yr": 0.994,
+    "sp500_return_3yr": 0.422,
+    "alpha": 0.5720000000000001
+  },
+  {
+    "case_id": "T8-066",
+    "ticker": "MATX",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 1.625,
+    "sp500_return_3yr": 0.426,
+    "alpha": 1.199
+  },
+  {
+    "case_id": "T8-043",
+    "ticker": "SUPN",
+    "binary_outcome": "winner",
+    "entry_date": "2020-06-15",
+    "sector": "Healthcare",
+    "return_3yr": 0.466,
+    "sp500_return_3yr": 0.426,
+    "alpha": 0.040000000000000036
+  },
+  {
+    "case_id": "T5-234",
+    "ticker": "NOV",
+    "binary_outcome": "winner",
+    "entry_date": "2021-09-20",
+    "sector": null,
+    "return_3yr": 0.36,
+    "sp500_return_3yr": 0.311,
+    "alpha": 0.04899999999999999
+  },
+  {
+    "case_id": "T5-130",
+    "ticker": "ODFL",
+    "binary_outcome": "winner",
+    "entry_date": "2019-12-09",
+    "sector": null,
+    "return_3yr": 1.331,
+    "sp500_return_3yr": 0.264,
+    "alpha": 1.067
+  },
+  {
+    "case_id": "T5-220",
+    "ticker": "HRB",
+    "binary_outcome": "winner",
+    "entry_date": "2020-09-21",
+    "sector": null,
+    "return_3yr": 2.29,
+    "sp500_return_3yr": 0.342,
+    "alpha": 1.948
+  },
+  {
+    "case_id": "T5-021",
+    "ticker": "BBWI",
+    "binary_outcome": "trap",
+    "entry_date": "2021-08-02",
+    "sector": null,
+    "return_3yr": -0.457,
+    "sp500_return_3yr": 0.219,
+    "alpha": -0.676
+  },
+  {
+    "case_id": "T8-036",
+    "ticker": "QLYS",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Technology",
+    "return_3yr": 0.274,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.15199999999999997
+  },
+  {
+    "case_id": "T8-003",
+    "ticker": "CATO",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Discretionary",
+    "return_3yr": 0.112,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.314
+  },
+  {
+    "case_id": "T5-125",
+    "ticker": "NVR",
+    "binary_outcome": "trap",
+    "entry_date": "2019-09-25",
+    "sector": null,
+    "return_3yr": 0.105,
+    "sp500_return_3yr": 0.225,
+    "alpha": -0.12000000000000001
+  },
+  {
+    "case_id": "T5-025",
+    "ticker": "BKR",
+    "binary_outcome": "trap",
+    "entry_date": "2019-10-17",
+    "sector": null,
+    "return_3yr": 0.198,
+    "sp500_return_3yr": 0.227,
+    "alpha": -0.028999999999999998
+  },
+  {
+    "case_id": "T5-169",
+    "ticker": "TRMB",
+    "binary_outcome": "trap",
+    "entry_date": "2021-01-20",
+    "sector": null,
+    "return_3yr": -0.3,
+    "sp500_return_3yr": 0.256,
+    "alpha": -0.556
+  },
+  {
+    "case_id": "T5-200",
+    "ticker": "BBT",
+    "binary_outcome": "trap",
+    "entry_date": "2019-12-09",
+    "sector": null,
+    "return_3yr": 0.049,
+    "sp500_return_3yr": 0.264,
+    "alpha": -0.21500000000000002
+  },
+  {
+    "case_id": "T5-231",
+    "ticker": "NAVI",
+    "binary_outcome": "trap",
+    "entry_date": "2018-06-04",
+    "sector": null,
+    "return_3yr": 0.524,
+    "sp500_return_3yr": 0.54,
+    "alpha": -0.016000000000000014
+  },
+  {
+    "case_id": "T5-228",
+    "ticker": "MAC",
+    "binary_outcome": "trap",
+    "entry_date": "2019-12-23",
+    "sector": null,
+    "return_3yr": -0.475,
+    "sp500_return_3yr": 0.186,
+    "alpha": -0.661
+  },
+  {
+    "case_id": "T5-024",
+    "ticker": "BIO",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-22",
+    "sector": null,
+    "return_3yr": -0.197,
+    "sp500_return_3yr": 0.4,
+    "alpha": -0.597
+  },
+  {
+    "case_id": "T5-165",
+    "ticker": "TFX",
+    "binary_outcome": "trap",
+    "entry_date": "2019-01-17",
+    "sector": null,
+    "return_3yr": 0.294,
+    "sp500_return_3yr": 0.736,
+    "alpha": -0.442
+  },
+  {
+    "case_id": "T5-066",
+    "ticker": "FDS",
+    "binary_outcome": "trap",
+    "entry_date": "2021-12-20",
+    "sector": null,
+    "return_3yr": 0.068,
+    "sp500_return_3yr": 0.284,
+    "alpha": -0.21599999999999997
+  },
+  {
+    "case_id": "T8-119",
+    "ticker": "TREX",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Materials",
+    "return_3yr": -0.012,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.438
+  },
+  {
+    "case_id": "T5-085",
+    "ticker": "IEX",
+    "binary_outcome": "trap",
+    "entry_date": "2019-08-08",
+    "sector": null,
+    "return_3yr": 0.347,
+    "sp500_return_3yr": 0.409,
+    "alpha": -0.062
+  },
+  {
+    "case_id": "T8-122",
+    "ticker": "CENTA",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Consumer Staples",
+    "return_3yr": 0.116,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.31
+  },
+  {
+    "case_id": "T5-160",
+    "ticker": "TDY",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-22",
+    "sector": null,
+    "return_3yr": 0.234,
+    "sp500_return_3yr": 0.4,
+    "alpha": -0.166
+  },
+  {
+    "case_id": "T8-148",
+    "ticker": "ASPN",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.047,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.379
+  },
+  {
+    "case_id": "T8-077",
+    "ticker": "SITE",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": 0.412,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.014000000000000012
+  },
+  {
+    "case_id": "T5-262",
+    "ticker": "WU",
+    "binary_outcome": "trap",
+    "entry_date": "2021-12-20",
+    "sector": null,
+    "return_3yr": -0.258,
+    "sp500_return_3yr": 0.284,
+    "alpha": -0.542
+  },
+  {
+    "case_id": "T8-060",
+    "ticker": "KTOS",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Industrials",
+    "return_3yr": -0.209,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.635
+  },
+  {
+    "case_id": "T5-246",
+    "ticker": "SLG",
+    "binary_outcome": "trap",
+    "entry_date": "2021-03-22",
+    "sector": null,
+    "return_3yr": -0.043,
+    "sp500_return_3yr": 0.33,
+    "alpha": -0.373
+  },
+  {
+    "case_id": "T8-093",
+    "ticker": "SBCF",
+    "binary_outcome": "trap",
+    "entry_date": "2020-06-15",
+    "sector": "Financials",
+    "return_3yr": 0.158,
+    "sp500_return_3yr": 0.426,
+    "alpha": -0.268
+  }
+]
