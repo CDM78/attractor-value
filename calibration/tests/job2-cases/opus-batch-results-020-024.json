@@ -1,0 +1,179 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-NTAP-2021-12-31-411499",
+      "ticker": "NTAP",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "15% word growth reflects standard annual updates and refreshed language rather than new severe risks; no new escalation terms appeared."
+    },
+    {
+      "case_id": "CASE-ROST-2013-01-02-d90e7d",
+      "ticker": "ROST",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Virtually identical word count with no new escalation terms; risk factors were reformulated but substantively unchanged."
+    },
+    {
+      "case_id": "CASE-CHRW-2013-01-02-fc803a",
+      "ticker": "CHRW",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 7% word growth; new mention of bond defaults is standard investment risk language for a company holding bond funds, not a company-specific deterioration."
+    },
+    {
+      "case_id": "CASE-VFC-2021-12-31-54ec14",
+      "ticker": "VFC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "57% word growth with new goodwill impairment charges, supply chain disruptions, and significant COVID-19 operational impacts including store closures and reduced demand."
+    },
+    {
+      "case_id": "CASE-SLB-2013-01-02-457853",
+      "ticker": "SLB",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "92% word decrease appears to be a filing format change rather than risk reduction; the remaining risk factors cover standard operational risks without escalation."
+    },
+    {
+      "case_id": "CASE-RCL-2019-01-02-e8fa2e",
+      "ticker": "RCL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "High sentence overlap (59%) with modest 5.6% word growth and no new escalation terms; risk factors are largely carried forward."
+    },
+    {
+      "case_id": "CASE-FIS-2019-01-02-c21493",
+      "ticker": "FIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal 1.6% word growth with 68% sentence overlap and no new escalation terms; risk factors are substantively unchanged."
+    },
+    {
+      "case_id": "CASE-AES-2015-12-31-01124a",
+      "ticker": "AES",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Despite 28% word growth, escalation terms for bankruptcy, covenant violation, and goodwill impairment were removed, suggesting improving rather than worsening risk profile."
+    },
+    {
+      "case_id": "CASE-DVA-2019-01-02-e620c7",
+      "ticker": "DVA",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "19% word growth reflects expanded disclosure detail but no new escalation terms; the healthcare regulatory risk language is consistent year-over-year."
+    },
+    {
+      "case_id": "CASE-PSA-2019-01-02-5d2aae",
+      "ticker": "PSA",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 6.4% word growth with 52% sentence overlap and no new escalation terms; standard REIT risk factors carried forward."
+    },
+    {
+      "case_id": "CASE-FIS-2017-06-14-440933",
+      "ticker": "FIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Slight 2.3% word decrease with 62% sentence overlap and no new escalation terms; risk factors slightly trimmed with no material changes."
+    },
+    {
+      "case_id": "CASE-AVY-2021-01-04-3079ee",
+      "ticker": "AVY",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "The 'going concern' mention refers to eurozone stability concerns, not the company's own viability; removed goodwill impairment and class action terms suggest stable-to-improving trajectory."
+    },
+    {
+      "case_id": "CASE-INTU-2015-12-31-a73aae",
+      "ticker": "INTU",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Virtually unchanged word count with 61% sentence overlap and no new escalation terms; risk factors are substantively the same."
+    },
+    {
+      "case_id": "CASE-DXC-2021-12-31-16d7ea",
+      "ticker": "DXC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "107% word growth indicates substantially expanded risk disclosure reflecting post-merger integration complexity and increased operational risk surface area."
+    },
+    {
+      "case_id": "CASE-BKNG-2015-12-31-a23f76",
+      "ticker": "BKNG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Virtually unchanged word count with no new escalation terms; risk factors were refreshed in language but not in substance."
+    },
+    {
+      "case_id": "CASE-NKE-2013-01-02-f24231",
+      "ticker": "NKE",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 8% word growth with 68% sentence overlap and no new escalation terms; standard consumer/retail risk factors carried forward."
+    },
+    {
+      "case_id": "CASE-DRI-2017-06-14-5e8c69",
+      "ticker": "DRI",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "10% word growth but removed default and impairment terms, with 58% sentence overlap suggesting stable-to-improving risk posture."
+    },
+    {
+      "case_id": "CASE-PNC-2013-01-02-b8be0b",
+      "ticker": "PNC",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "69% word growth is significant but 'liquidity risk' appears in standard banking risk management framework context; the expansion likely reflects enhanced regulatory disclosure requirements post-financial-crisis rather than new risks."
+    },
+    {
+      "case_id": "CASE-AN-2013-01-02-cfc440",
+      "ticker": "AN",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal 2.4% word growth; the supply chain disruption reference is backward-looking (2011 Japan earthquake/Thailand flooding) rather than indicating new ongoing risk."
+    },
+    {
+      "case_id": "CASE-BBT-2019-12-09-fa4520",
+      "ticker": "BBT",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New impairment risk language added while the 34% word reduction and significant text restructuring suggest merger-related transformation risks as BB&T prepared for the Truist merger."
+    },
+    {
+      "case_id": "CASE-GOOGL-2019-01-02-b9d9d6",
+      "ticker": "GOOGL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "The 'delisting' reference is about search result removal under EU right-to-be-forgotten law, not stock delisting; modest 7.8% word growth with 52% overlap and no actual escalation."
+    },
+    {
+      "case_id": "CASE-NVDA-2021-12-31-77c693",
+      "ticker": "NVDA",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "45% word growth with new COVID-19 pandemic risk section reflecting supply chain uncertainty, demand volatility, and workforce disruption risks not present in prior filing."
+    },
+    {
+      "case_id": "CASE-FIS-2021-01-04-3a28b6",
+      "ticker": "FIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal 1.6% word growth with 68% sentence overlap and no new escalation terms; risk factors are substantively unchanged from prior year."
+    },
+    {
+      "case_id": "CASE-TER-2021-12-31-3e88e7",
+      "ticker": "TER",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "13% word growth with entirely new COVID-19 pandemic risk section, new covenant default language, and low sentence overlap (17%) indicating substantially rewritten and escalated risk disclosures."
+    },
+    {
+      "case_id": "CASE-CMG-2021-12-31-e85cae",
+      "ticker": "CMG",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "23% word growth with new COVID-19 pandemic references and substantially rewritten risk factors (21% sentence overlap) reflecting new operational risks around pandemic impacts on restaurant operations."
+    }
+  ]
+}

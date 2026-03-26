@@ -1,0 +1,1922 @@
+{
+  "timestamp": "2026-03-26T21:57:07.473Z",
+  "method": "opus_sub_agent_evaluation",
+  "total": 190,
+  "winner_trap_n": 103,
+  "spearman_r": 0.3156,
+  "spearman_p": 0.00083,
+  "return_r": 0.1649,
+  "cv_mean_r": 0.3582,
+  "cv_sd": 0.1104,
+  "cv_per_fold": [
+    0.2364,
+    0.5023,
+    0.4409,
+    0.3864,
+    0.225
+  ],
+  "stable_count": 118,
+  "deteriorating_count": 72,
+  "results": [
+    {
+      "case_id": "CASE-BIIB-2013-01-02-7553e7",
+      "ticker": "BIIB",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New litigation references (0 to 8 mentions) and escalated language around PML risk stratification challenges for TYSABRI, plus increased competitive threats in MS market.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.042,
+      "alpha_3yr": 0.644
+    },
+    {
+      "case_id": "CASE-EXPE-2021-12-31-1312f8",
+      "ticker": "EXPE",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Massive new COVID-19 pandemic section with material adverse impact language, new covenant/default references, $8.3B+ in new quantified exposures, and explicit statements that the pandemic has materially affected the business.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.026,
+      "alpha_3yr": -0.205
+    },
+    {
+      "case_id": "CASE-ADM-2021-12-31-cf4a10",
+      "ticker": "ADM",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Risk factor text doubled in size (+102%), with entirely new sections on acquisition integration risks, industry-specific product safety/quality risks, and livestock/poultry feed safety risks not present in prior year.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.197,
+      "alpha_3yr": -0.428
+    },
+    {
+      "case_id": "CASE-APD-2021-01-04-ca034a",
+      "ticker": "APD",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Modest 2.8% word count increase with new but largely boilerplate language about economic conditions and demand risks; no new litigation, regulatory, or quantified deterioration in risk exposures.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.085,
+      "alpha_3yr": -0.186
+    },
+    {
+      "case_id": "CASE-WM-2013-01-02-349bad",
+      "ticker": "WM",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant 23% expansion in risk factors with new competitive pressure warnings, execution risk language around strategy implementation, new bankruptcy and cannot-assure references, and $216M-$305M in new quantified exposures.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.734,
+      "alpha_3yr": 0.336
+    },
+    {
+      "case_id": "CASE-MDLZ-2021-12-31-8b9d57",
+      "ticker": "MDLZ",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Risk factors grew ~50% with extensive new COVID-19 pandemic language, new impairment (5 mentions), restructuring, covenant references, and significant uncertainty language describing actual negative impacts on emerging markets.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.035,
+      "alpha_3yr": -0.266
+    },
+    {
+      "case_id": "CASE-VNO-2021-12-31-2438d1",
+      "ticker": "VNO",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "New COVID-19 pandemic section (14 mentions) describing concrete adverse impacts including forced retail closures, hotel closure, tenant rent non-payment requiring legal proceedings, and cancelled trade shows.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.141,
+      "alpha_3yr": -0.09
+    },
+    {
+      "case_id": "CASE-WMT-2021-12-31-913fa4",
+      "ticker": "WMT",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Modest 3.3% word growth with minor updates; new dollar figures relate to routine LIFO/FIFO inventory and international divestitures rather than new risk escalation; impairment charges described as immaterial.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.947,
+      "alpha_3yr": 0.716
+    },
+    {
+      "case_id": "CASE-D-2021-01-04-531112",
+      "ticker": "D",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk factors actually decreased 14% in length; new content is largely operational/financial detail (credit facilities, cash flows) rather than new risk categories; no new escalation terms detected.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.258,
+      "alpha_3yr": -0.529
+    },
+    {
+      "case_id": "CASE-CNX-2013-01-02-1a885f",
+      "ticker": "CNX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "15% increase in risk factors with new language about natural gas prices falling to ten-year lows, significant drilling activity reduction announcements, and new NGL/oil price volatility risks not previously disclosed.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.739,
+      "alpha_3yr": -1.137
+    },
+    {
+      "case_id": "CASE-LMT-2021-12-31-65f7ec",
+      "ticker": "LMT",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New material adverse references (0 to 2), default references (0 to 3), and extensive COVID-19 pandemic language (20 combined mentions) with explicit statements that the pandemic has affected operations, despite overall word count decrease.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.468,
+      "alpha_3yr": 0.237
+    },
+    {
+      "case_id": "CASE-XEL-2021-12-31-858855",
+      "ticker": "XEL",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Moderate 10% word increase with new operational risk detail (equipment, water, weather) that is largely boilerplate utility-industry language; COVID references increased modestly but without material impact language.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.081,
+      "alpha_3yr": -0.15
+    },
+    {
+      "case_id": "CASE-BDX-2015-12-31-80f315",
+      "ticker": "BDX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk factors decreased 29% suggesting consolidation/simplification; new content is largely about ongoing macro conditions and healthcare reform (PPACA excise tax) that are routine industry disclosures rather than new escalated risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.493,
+      "alpha_3yr": 0.265
+    },
+    {
+      "case_id": "CASE-STZ-2019-01-02-ff060d",
+      "ticker": "STZ",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Material adverse mentions more than doubled (4 to 10), new litigation references (0 to 2), new tariff/trade agreement risk language, and new interest rate exposure risks despite overall word count decrease.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.602,
+      "alpha_3yr": -0.297
+    },
+    {
+      "case_id": "CASE-ACN-2015-12-31-6eb38c",
+      "ticker": "ACN",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal 2.4% word decrease with largely routine updates including new technology references (IoT, EaaS) and standard cybersecurity/data protection language; only one new litigation mention without specifics.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.425,
+      "alpha_3yr": 0.197
+    },
+    {
+      "case_id": "CASE-EFX-2013-01-02-8ad141",
+      "ticker": "EFX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "17% increase in risk factors with new regulatory action references, new $650M-$750M quantified exposures, new cybersecurity/security breach risk language, and new data access and industry consolidation risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.116,
+      "alpha_3yr": 0.718
+    },
+    {
+      "case_id": "CASE-NBR-2013-01-02-99e64e",
+      "ticker": "NBR",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Despite large 41% word decrease, the new content appears to be financial data and operational description rather than risk factor escalation; reduction may indicate risk consolidation or restructuring of disclosure format.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.401,
+      "alpha_3yr": -0.799
+    },
+    {
+      "case_id": "CASE-ZBH-2013-01-02-652c91",
+      "ticker": "ZBH",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "17% growth in risk factors with new Corporate Integrity Agreement compliance risk, DOJ investigation settlement details, increased litigation references, and new cannot-assure language about regulatory compliance.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.557,
+      "alpha_3yr": 0.159
+    },
+    {
+      "case_id": "CASE-AZO-2021-12-31-d81d99",
+      "ticker": "AZO",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Increased pandemic references (5 to 9) with new language about persisting COVID-19 impacts, risk of demand reversion, inability to reduce expenses if demand subsides, and new climate change variability risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.55,
+      "alpha_3yr": 0.319
+    },
+    {
+      "case_id": "CASE-AVB-2021-01-04-ec7ac8",
+      "ticker": "AVB",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal 2.3% word increase; new content is primarily development rights and acquisition details ($83.7M land parcels) representing routine business activity disclosure rather than new risk escalation.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.302,
+      "alpha_3yr": 0.031
+    },
+    {
+      "case_id": "CASE-HPQ-2013-01-02-d09c11",
+      "ticker": "HPQ",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "11% risk factor growth with explicit new language about business challenges, structural/execution issues, need to align costs with revenue trajectory, restructuring plan mentions quadrupled (1 to 4), and weak demand acknowledgments.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.859,
+      "alpha_3yr": 0.461
+    },
+    {
+      "case_id": "CASE-NFLX-2015-12-31-392a29",
+      "ticker": "NFLX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "6.5% word decrease with updated competitive landscape language (new piracy and distribution channel risks) that represents routine evolution of industry risk disclosure rather than material deterioration.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.34,
+      "alpha_3yr": 1.112
+    },
+    {
+      "case_id": "CASE-AMAT-2013-01-02-f5dc8a",
+      "ticker": "AMAT",
+      "trajectory": "deteriorating",
+      "confidence": "low",
+      "reasoning": "Minimal word change (+0.5%) but new material adverse, litigation, and have-experienced references with new language about uncertain global economy, slowing growth in China/Europe/US, and customer scale-back risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.684,
+      "alpha_3yr": 0.286
+    },
+    {
+      "case_id": "CASE-ADSK-2021-01-04-e4c7ed",
+      "ticker": "ADSK",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "45% word decrease suggests significant risk factor consolidation; new content is primarily financial data (cash flows, investment portfolio details) rather than new risk categories; no escalation terms detected.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.235,
+      "alpha_3yr": -0.506
+    },
+    {
+      "case_id": "CASE-NI-2019-01-02-517cc3",
+      "ticker": "NI",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New materially adverse and significant losses language appeared where none existed before, plus new workforce retention risk and holding company dependency/dividend risk disclosures not previously present.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.214,
+      "alpha_3yr": -0.685
+    },
+    {
+      "case_id": "CASE-EBAY-2021-12-31-d9348c",
+      "ticker": "EBAY",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Risk factor text nearly tripled (192% increase) with new COVID-19 pandemic risks, regulatory approval uncertainties for divestitures, and expanded international currency exposure disclosures.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.005,
+      "alpha_3yr": -0.236
+    },
+    {
+      "case_id": "CASE-BBT-2019-01-02-73b43e",
+      "ticker": "BBT",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk text decreased 34% with fewer adverse mentions and removal of restatement language; new risks around larger Boston market loans and loan repurchase obligations are routine banking disclosures.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.15,
+      "alpha_3yr": -0.749
+    },
+    {
+      "case_id": "CASE-EQT-2015-12-31-c0b25d",
+      "ticker": "EQT",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 11% text increase with minor additions around infrastructure security threats and commodity price sensitivity, all standard energy sector boilerplate with no escalated language.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.294,
+      "alpha_3yr": -0.522
+    },
+    {
+      "case_id": "CASE-ADSK-2019-01-02-5297a5",
+      "ticker": "ADSK",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk text decreased 45% with removal of impairment and decline references; reduced disclosure length signals streamlining rather than new risk emergence.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.18,
+      "alpha_3yr": 0.281
+    },
+    {
+      "case_id": "CASE-GIS-2019-01-02-afcc9c",
+      "ticker": "GIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal 7% text increase with updated financial figures and hedging disclosures; no new risk categories or escalated language detected.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.953,
+      "alpha_3yr": 0.054
+    },
+    {
+      "case_id": "CASE-HAS-2021-01-04-2c0b25",
+      "ticker": "HAS",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk text decreased 22% with removal of goodwill impairment and restructuring language; pandemic mention is singular and routine; significant reduction in decline references from 33 to 3.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.414,
+      "alpha_3yr": -0.685
+    },
+    {
+      "case_id": "CASE-WMB-2019-01-02-f30a0b",
+      "ticker": "WMB",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Impairment mentions surged from 7 to 19, new default language appeared, and extensive new regulatory approval risks for pipeline projects including Constitution pipeline denial by NY court.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.426,
+      "alpha_3yr": -0.473
+    },
+    {
+      "case_id": "CASE-WEC-2013-01-02-9fb59e",
+      "ticker": "WEC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Text expanded 432% with substantial new environmental regulatory risks (Clean Water Act, effluent guidelines), class action litigation, and coal plant conversion uncertainties.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.512,
+      "alpha_3yr": 0.114
+    },
+    {
+      "case_id": "CASE-KSS-2019-01-02-7b59e1",
+      "ticker": "KSS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Near-identical word count with only 2% decrease; minor paragraph reshuffling with no meaningful change in risk language intensity.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.191,
+      "alpha_3yr": -1.09
+    },
+    {
+      "case_id": "CASE-HIG-2021-12-31-848feb",
+      "ticker": "HIG",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major addition of COVID-19 risks (17 new mentions), new restructuring charges (0 to 10 mentions), new impairment and decline language, and explicit warnings about capital return program dependence on pandemic impacts.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.683,
+      "alpha_3yr": 0.452
+    },
+    {
+      "case_id": "CASE-BXP-2015-01-02-1302f8",
+      "ticker": "BXP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 10% text increase with nearly identical risk language; slight reduction in adverse mentions and only one new uncertainty reference added.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.062,
+      "alpha_3yr": -0.248
+    },
+    {
+      "case_id": "CASE-LDOS-2021-12-31-751e88",
+      "ticker": "LDOS",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Text grew 47% with new COVID-19 pandemic risk section, new cybersecurity and employee misconduct risk categories, and addition of a formal risk factor summary indicating expanded risk landscape.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.679,
+      "alpha_3yr": 0.448
+    },
+    {
+      "case_id": "CASE-MKC-2019-01-02-3bfbf1",
+      "ticker": "MKC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "New risk factors around credit rating downgrade following RB Foods acquisition, substantial new indebtedness warnings, and new covenant/default language not present in prior year.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.49,
+      "alpha_3yr": -0.409
+    },
+    {
+      "case_id": "CASE-APD-2019-01-02-55da0f",
+      "ticker": "APD",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal 3% text increase with only a slight uptick in adverse mentions (21 to 24); no new risk categories or escalated language.",
+      "outcome": "mixed",
+      "forward_return_3yr": 1.033,
+      "alpha_3yr": 0.134
+    },
+    {
+      "case_id": "CASE-CHRW-2015-01-02-c8ffdc",
+      "ticker": "CHRW",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Modest 7% text increase with high paragraph churn likely reflecting routine annual updates; new default mention is minor and adverse count increase is marginal.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.306,
+      "alpha_3yr": -0.004
+    },
+    {
+      "case_id": "CASE-MNST-2013-01-02-cf8ed9",
+      "ticker": "MNST",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk text decreased 8% with no changes detected in any escalation terms; annual update with no new risk categories.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.747,
+      "alpha_3yr": 1.349
+    },
+    {
+      "case_id": "CASE-FCX-2017-06-14-8cda03",
+      "ticker": "FCX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Despite new adverse/decline/investigation mentions, the 60% text reduction indicates major streamlining; new language around commodity price volatility and financial risks is standard mining sector boilerplate replacing prior extensive disclosures.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.106,
+      "alpha_3yr": -0.364
+    },
+    {
+      "case_id": "CASE-IP-2021-12-31-023481",
+      "ticker": "IP",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "COVID-19 mentions surged from 5 to 19 with new prominent all-caps pandemic risk header, adverse mentions increased from 21 to 30, and new deterioration and severe language around supply chain disruption and capital market volatility.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.301,
+      "alpha_3yr": 0.07
+    },
+    {
+      "case_id": "CASE-DRI-2013-01-02-0b6244",
+      "ticker": "DRI",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 10% text increase with mixed signals: removal of default/covenant/impairment language offset by one new deterioration mention; net risk profile essentially unchanged.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.771,
+      "alpha_3yr": 0.373
+    },
+    {
+      "case_id": "CASE-FISV-2021-12-31-064834",
+      "ticker": "FISV",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Dramatic 80% text reduction makes comparison difficult; remaining text appears to be primarily financial statements rather than risk factors, suggesting filing format change rather than risk escalation.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.985,
+      "alpha_3yr": 0.754
+    },
+    {
+      "case_id": "CASE-ABBV-2021-01-04-9a305a",
+      "ticker": "ABBV",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Near-identical word count with less than 1% change and no detected differences in any escalation terms; essentially unchanged risk profile.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.724,
+      "alpha_3yr": 0.453
+    },
+    {
+      "case_id": "CASE-ABT-2019-01-02-5bbd3d",
+      "ticker": "ABT",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk text decreased 10% with removal of material weakness references and investigation language; covenant mentions reduced; overall risk profile improving.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.123,
+      "alpha_3yr": 0.224
+    },
+    {
+      "case_id": "CASE-KEY-2015-12-31-507c54",
+      "ticker": "KEY",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text decreased 3% with removal of covenant language; increase in severe mentions (3 to 6) relates to stress testing scenarios which is routine for bank holding companies.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.228,
+      "alpha_3yr": 0
+    },
+    {
+      "case_id": "CASE-MNST-2012-06-28-852f51",
+      "ticker": "MNST",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Identical to the other MNST case with same filing dates; 8% text reduction and no changes in any escalation terms.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.9578962777439833,
+      "alpha_3yr": 0.4097
+    },
+    {
+      "case_id": "CASE-EL-2021-12-31-67f44f",
+      "ticker": "EL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minor 3% text decrease with slightly reduced pandemic/COVID references and impairment mentions; marginal increase in adverse mentions is not meaningful against the overall improving trend.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.79,
+      "alpha_3yr": -1.021
+    },
+    {
+      "case_id": "CASE-SPG-2013-01-02-acdc3e",
+      "ticker": "SPG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Only +2.4% text growth with minor formatting differences; core risk factors around retail REIT operations, interest rates, and REIT qualification are substantively unchanged year-over-year.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.417,
+      "alpha_3yr": 0.019
+    },
+    {
+      "case_id": "CASE-CAH-2019-01-02-c6ad28",
+      "ticker": "CAH",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal +0.7% text change with differences limited to page numbers, dates, and officer names (CEO transition from Barrett to Kaufmann); no new substantive risk categories.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.281,
+      "alpha_3yr": -0.618
+    },
+    {
+      "case_id": "CASE-ALL-2021-01-04-f97a6b",
+      "ticker": "ALL",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant +59.6% text expansion with entirely new risk sections on employee misconduct/fraud, talent retention challenges, and third-party vendor risks, plus new mentions of material adverse effects and impairment not present in prior year.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.457,
+      "alpha_3yr": 0.186
+    },
+    {
+      "case_id": "CASE-CB-2013-01-02-c32722",
+      "ticker": "CB",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.5% text change; language escalation is marginal (e.g., 'potentially could jeopardize' changed to 'may jeopardize'); Century subsidiary reserve risk and cyber risk language largely carried forward with minor wording tweaks.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.535,
+      "alpha_3yr": 0.137
+    },
+    {
+      "case_id": "CASE-V-2021-12-31-7f72b7",
+      "ticker": "V",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Text actually decreased 3.7% with COVID/pandemic references removed, suggesting improving risk posture; changes are limited to date updates and routine year-over-year adjustments.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.485,
+      "alpha_3yr": 0.254
+    },
+    {
+      "case_id": "CASE-T-2013-01-02-2ca79c",
+      "ticker": "T",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Only +4.6% text growth with minor wording changes (e.g., 'FCC' abbreviated vs spelled out); forward-looking risk factors around regulatory proceedings and network security are substantively the same.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.214,
+      "alpha_3yr": -0.184
+    },
+    {
+      "case_id": "CASE-MAT-2019-01-02-7e8edf",
+      "ticker": "MAT",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new risk language around Toys R Us bankruptcy (Chapter 11 filing by 8-11% revenue customer), sharp increase in default (+5) and bankruptcy (+5) mentions, new covenant violation risks, and explicit cash flow dedication concerns for debt servicing.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.209,
+      "alpha_3yr": 0.31
+    },
+    {
+      "case_id": "CASE-TXT-2019-01-02-b05487",
+      "ticker": "TXT",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Near-zero text change (+0.0%) with minor updates to cybersecurity and data breach language reflecting industry-wide disclosure trends; no new material risk categories or escalated threat language.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.683,
+      "alpha_3yr": -0.216
+    },
+    {
+      "case_id": "CASE-VRSN-2019-01-02-c46f3b",
+      "ticker": "VRSN",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.5% text growth with slightly expanded security breach and litigation language, but these reflect ongoing previously-disclosed issues rather than new material risks; China regulatory language is updated but not escalated.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.718,
+      "alpha_3yr": -0.181
+    },
+    {
+      "case_id": "CASE-AIZ-2013-01-02-2e708d",
+      "ticker": "AIZ",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text essentially unchanged (-0.2%); while material adverse mentions increased (+2), impairment references actually decreased sharply (-8), and new language around European sovereign debt crisis and health reform commissions reflects environmental context rather than company-specific deterioration.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.395,
+      "alpha_3yr": 0.997
+    },
+    {
+      "case_id": "CASE-GOOGL-2021-01-04-ace329",
+      "ticker": "GOOGL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Near-identical text length (+0.0%) with equal numbers of new and removed sentences (63 each); changes reflect updated competitive landscape language (device mix vs property mix) and routine GDPR/product liability updates without escalation.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.61,
+      "alpha_3yr": 0.339
+    },
+    {
+      "case_id": "CASE-TPR-2019-01-02-eff712",
+      "ticker": "TPR",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Tariff mentions increased from 3 to 5, new trade sanctions and embargo language added, and expanded cyber/system failure risks; ongoing Kate Spade integration risks persist with new language around trade policy uncertainty.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.274,
+      "alpha_3yr": -0.625
+    },
+    {
+      "case_id": "CASE-AVY-2013-01-02-5c5102",
+      "ticker": "AVY",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Material adverse mentions increased sharply from 6 to 13, new going-concern language appeared, added eurozone dissolution risk, expanded data breach/privacy risk language, and new references to economic decline effects despite slight text reduction.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.908,
+      "alpha_3yr": 0.51
+    },
+    {
+      "case_id": "CASE-PG-2015-12-31-44c009",
+      "ticker": "PG",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Despite high sentence turnover (113 new/112 removed), changes are predominantly structural (segment reorganization, financial summary updates) with new impairment mentions (+2) offset by routine forward-looking statement updates; no new risk categories.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.268,
+      "alpha_3yr": 0.04
+    },
+    {
+      "case_id": "CASE-FISV-2021-01-04-2defa3",
+      "ticker": "FISV",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "High sentence turnover reflects post-First Data merger integration rewrite rather than risk escalation; material adverse mentions actually decreased (-2), litigation decreased (-2), impairment decreased (-5), with regulatory compliance language updated but not escalated.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.177,
+      "alpha_3yr": -0.094
+    },
+    {
+      "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+      "ticker": "WDC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Language escalated from 'has affected, and may continue to affect' to 'has adversely affected, and we believe will continue to adversely affect' regarding MOFCOM compliance; new cloud computing demand risk and CE market concentration risks added.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.299,
+      "alpha_3yr": -0.527
+    },
+    {
+      "case_id": "CASE-FAST-2021-12-31-c22e24",
+      "ticker": "FAST",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Massive increase in pandemic/COVID references (0 to 13/10 respectively) with new explicit COVID-19 operational disruption risk section, added material adverse language, and expanded privacy regulation risks (CCPA, GDPR); reflects meaningful new risk categories.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.2,
+      "alpha_3yr": -0.031
+    },
+    {
+      "case_id": "CASE-ACN-2015-01-02-ff63ea",
+      "ticker": "ACN",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Text decreased 1.8% with pandemic references removed (-2), sanctions reduced (-2); expanded cyberattack language is routine industry evolution; overall risk profile improving with fewer threat categories.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.841,
+      "alpha_3yr": 0.531
+    },
+    {
+      "case_id": "CASE-STX-2019-01-02-700a3d",
+      "ticker": "STX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Near-zero text change (-0.0%) with minor wording shifts (e.g., 'negatively impact' to 'adversely affect'); slight increases in material adverse (+1) and impairment (+1) are marginal; high debt risk language is carried forward unchanged.",
+      "outcome": "winner",
+      "forward_return_3yr": 2.306,
+      "alpha_3yr": 1.407
+    },
+    {
+      "case_id": "CASE-VMC-2015-12-31-2525cd",
+      "ticker": "VMC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New cybersecurity risk section added (0 to 2 mentions), new management team risk factor introduced, goodwill impairment language escalated from 'uneven recovery' to 'significant downturn,' and international operations risk section added; +2.4% growth reflects genuinely new risk categories.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.054,
+      "alpha_3yr": -0.174
+    },
+    {
+      "case_id": "CASE-AIG-2021-12-31-12f76a",
+      "ticker": "AIG",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.2% text change with slight pandemic mention increase (+1/+1); core insurance risk factors around variable annuity products, counterparty credit, and reinsurance recoverables are substantively unchanged with only year-date updates.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.374,
+      "alpha_3yr": 0.143
+    },
+    {
+      "case_id": "CASE-APH-2021-12-31-d37b57",
+      "ticker": "APH",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Massive new COVID-19 risk language (0 to 16/15 pandemic/COVID mentions) with extensive new sections on supply chain disruption, government restrictions, nationalism/protectionism risks, plus new MTS acquisition integration risks; material adverse mentions decreased but were replaced by more specific operational threats.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.626,
+      "alpha_3yr": 0.395
+    },
+    {
+      "case_id": "CASE-EXC-2013-01-02-e7269c",
+      "ticker": "EXC",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.1% text change; new language around shale gas supply pressure and credit rating downgrade specifics for Generation and ComEd subsidiaries reflects evolving energy market context rather than company-specific deterioration; risk factor structure unchanged.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.053,
+      "alpha_3yr": -0.345
+    },
+    {
+      "case_id": "CASE-AIZ-2015-01-02-e41fc9",
+      "ticker": "AIZ",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Identical to the 2013 AIZ case with same text lengths and same changes (-0.2%), indicating this filing pair spans the same prior/current year comparison; European debt crisis and health reform language carried forward without escalation.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.563,
+      "alpha_3yr": 0.253
+    },
+    {
+      "case_id": "CASE-BWA-2021-12-31-1256b2",
+      "ticker": "BWA",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major new COVID-19 disruption language (0 to 13 mentions) with explicit warnings about extended supply chain disruption having material negative impact, new Delphi Technologies integration risks, increased restructuring mentions, and expanded operational risk language around launch failures.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.176,
+      "alpha_3yr": -0.407
+    },
+    {
+      "case_id": "CASE-KSS-2017-06-15-dce51f",
+      "ticker": "KSS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors largely unchanged (84% sentence overlap) with only minor additions around tax/trade policy; no new severe risk categories.",
+      "outcome": "trap",
+      "forward_return_3yr": null,
+      "alpha_3yr": null
+    },
+    {
+      "case_id": "CASE-WY-2013-01-02-7e6e27",
+      "ticker": "WY",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factor text virtually identical year-over-year with 100% sentence overlap and minimal word count change.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.135,
+      "alpha_3yr": -0.263
+    },
+    {
+      "case_id": "CASE-HON-2021-12-31-b6588d",
+      "ticker": "HON",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant expansion (+14% words, 54% overlap) with new pandemic-related risks, expanded cybersecurity and IP risk language, indicating materially broadened risk disclosure.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.152,
+      "alpha_3yr": -0.079
+    },
+    {
+      "case_id": "CASE-UPS-2015-12-31-77a3f9",
+      "ticker": "UPS",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Moderate expansion (+11.5% words) with new cyber risk and regulatory language, but 69% overlap and no severe new risk categories; additions reflect evolving boilerplate.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.108,
+      "alpha_3yr": -0.12
+    },
+    {
+      "case_id": "CASE-NEM-2013-01-02-60f999",
+      "ticker": "NEM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk factors expanded (+15.7%) with additional detail on energy costs and regulatory risks, but no new severe risk categories and core mining/commodity risks unchanged.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.596,
+      "alpha_3yr": -0.994
+    },
+    {
+      "case_id": "CASE-BBBY-2014-06-15-66e88b",
+      "ticker": "BBBY",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Removed references to significant/net losses while adding standard cyber risk and competitive pressure language; net risk profile appears stable despite moderate text changes.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0,
+      "alpha_3yr": -0.2592
+    },
+    {
+      "case_id": "CASE-CNX-2016-03-03-aa2fb3",
+      "ticker": "CNX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk factors expanded (+14.8%) with additional NGL/oil and export risk detail, but no new severe categories like going concern or covenant violations; core energy risks unchanged.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.2815534455217323,
+      "alpha_3yr": -0.1195
+    },
+    {
+      "case_id": "CASE-DUK-2021-12-31-f42750",
+      "ticker": "DUK",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Text sections appear to be from different parts of the 10-K (prior risk factors vs current MD&A), making direct comparison unreliable; COVID references are standard for 2021 utility filings.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.161,
+      "alpha_3yr": -0.07
+    },
+    {
+      "case_id": "CASE-SO-2021-12-31-077bef",
+      "ticker": "SO",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Substantial rewrite (42% overlap) with new ransomware/cybersecurity escalation and expanded water/environmental risk language, despite word count reduction indicating risk consolidation with heightened threat language.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.343,
+      "alpha_3yr": 0.112
+    },
+    {
+      "case_id": "CASE-PEG-2015-12-31-c3f585",
+      "ticker": "PEG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal word count change (+2.3%) with 65% overlap; additions around micro grid penetration and FERC policy reflect routine regulatory evolution, no severe new risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.466,
+      "alpha_3yr": 0.238
+    },
+    {
+      "case_id": "CASE-EW-2021-01-04-0e2c70",
+      "ticker": "EW",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New default and restructuring risk language with significant expansion (+12.5%) and only 59% overlap, indicating escalated financial and operational risk disclosures for the medical device company.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.178,
+      "alpha_3yr": -0.449
+    },
+    {
+      "case_id": "CASE-EXPD-2019-01-02-87cd3e",
+      "ticker": "EXPD",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Nearly identical word count and 76% overlap with removal of bankruptcy reference; risk profile essentially unchanged for the freight logistics company.",
+      "outcome": "mixed",
+      "forward_return_3yr": 1.068,
+      "alpha_3yr": 0.169
+    },
+    {
+      "case_id": "CASE-GIS-2021-01-04-509eca",
+      "ticker": "GIS",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Low sentence overlap (33%) appears driven by inclusion of financial statement data rather than risk factor changes; material weakness and restructuring references present in both years indicating no escalation.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.24,
+      "alpha_3yr": -0.031
+    },
+    {
+      "case_id": "CASE-MPC-2021-12-31-5b5389",
+      "ticker": "MPC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major risk factor expansion (+29.5%) with extensive new pandemic/COVID language, $1B+ impairment charges mentioned, and only 24% overlap indicating substantially escalated risk disclosure.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.369,
+      "alpha_3yr": 1.138
+    },
+    {
+      "case_id": "CASE-EIX-2021-12-31-11b5cb",
+      "ticker": "EIX",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors essentially stable in length with 66% overlap; wildfire and inverse condemnation risks present in both years with bankruptcy reference removed, indicating no escalation.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.321,
+      "alpha_3yr": 0.09
+    },
+    {
+      "case_id": "CASE-DVN-2019-01-02-a24aa5",
+      "ticker": "DVN",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New credit downgrade and operating losses risk language with significant rewrite (41% overlap) and expanded cyber attack and climate change risks despite modest word count increase.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.17,
+      "alpha_3yr": 0.271
+    },
+    {
+      "case_id": "CASE-EFX-2021-01-04-6ee82a",
+      "ticker": "EFX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant expansion (+17.2%) with new catastrophic risk language and substantial rewrite (44% overlap), expanding cybersecurity and data privacy risk disclosures in the post-breach era.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.267,
+      "alpha_3yr": -0.004
+    },
+    {
+      "case_id": "CASE-PPG-2015-12-31-5d8963",
+      "ticker": "PPG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors virtually unchanged in length (+0.1%) with 66% overlap; standard raw materials and international exposure risks with no new severe categories.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.08,
+      "alpha_3yr": -0.148
+    },
+    {
+      "case_id": "CASE-PLD-2021-12-31-3fdee8",
+      "ticker": "PLD",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Removed material weakness and restatement references while adding co-investment venture risk language; 'may not be able to continue' refers to maintaining venture influence, not going concern.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.326,
+      "alpha_3yr": -0.557
+    },
+    {
+      "case_id": "CASE-CB-2015-01-02-550416",
+      "ticker": "CB",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal expansion (+2.7%) with 66% overlap; new counterparty and cyber risk language reflects standard insurance industry evolution, no severe new categories.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.329,
+      "alpha_3yr": 0.019
+    },
+    {
+      "case_id": "CASE-EW-2013-01-02-d89c81",
+      "ticker": "EW",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New default and restructuring risk language with significant expansion (+12.5%) and only 59% overlap, indicating escalated financial and operational risk disclosures.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.714,
+      "alpha_3yr": 0.316
+    },
+    {
+      "case_id": "CASE-CCL-2021-12-31-559759",
+      "ticker": "CCL",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major rewrite (28% overlap) with +15.8% expansion, new bankruptcy counterparty risk, and extensive new regulatory/environmental/DLC structure risks reflecting severe pandemic-era operational uncertainty for the cruise line.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.243,
+      "alpha_3yr": 0.012
+    },
+    {
+      "case_id": "CASE-UNP-2021-12-31-c71cbf",
+      "ticker": "UNP",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Text sections appear to be from entirely different parts of the 10-K (0% overlap, -35.8% word change), making risk trajectory assessment unreliable; COVID references are standard for 2021.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.025,
+      "alpha_3yr": -0.256
+    },
+    {
+      "case_id": "CASE-EFX-2017-06-14-70a0d1",
+      "ticker": "EFX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant expansion (+17.2%) with new catastrophic risk language and expanded cybersecurity disclosures, showing escalating data security concerns even before the September 2017 breach disclosure.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.244,
+      "alpha_3yr": -0.014
+    },
+    {
+      "case_id": "CASE-ISRG-2021-12-31-9d2ad6",
+      "ticker": "ISRG",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Near-complete rewrite (15% overlap) with six new escalation terms including pandemic, COVID, bankruptcy, class action, and catastrophic, reflecting dramatically expanded risk landscape for surgical robotics.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.458,
+      "alpha_3yr": 0.227
+    },
+    {
+      "case_id": "CASE-NTAP-2021-12-31-411499",
+      "ticker": "NTAP",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "15% word growth reflects standard annual updates and refreshed language rather than new severe risks; no new escalation terms appeared.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.358,
+      "alpha_3yr": 0.127
+    },
+    {
+      "case_id": "CASE-ROST-2013-01-02-d90e7d",
+      "ticker": "ROST",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Virtually identical word count with no new escalation terms; risk factors were reformulated but substantively unchanged.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.038,
+      "alpha_3yr": 0.64
+    },
+    {
+      "case_id": "CASE-CHRW-2013-01-02-fc803a",
+      "ticker": "CHRW",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 7% word growth; new mention of bond defaults is standard investment risk language for a company holding bond funds, not a company-specific deterioration.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.055,
+      "alpha_3yr": -0.343
+    },
+    {
+      "case_id": "CASE-VFC-2021-12-31-54ec14",
+      "ticker": "VFC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "57% word growth with new goodwill impairment charges, supply chain disruptions, and significant COVID-19 operational impacts including store closures and reduced demand.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.668,
+      "alpha_3yr": -0.899
+    },
+    {
+      "case_id": "CASE-SLB-2013-01-02-457853",
+      "ticker": "SLB",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "92% word decrease appears to be a filing format change rather than risk reduction; the remaining risk factors cover standard operational risks without escalation.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.034,
+      "alpha_3yr": -0.364
+    },
+    {
+      "case_id": "CASE-RCL-2019-01-02-e8fa2e",
+      "ticker": "RCL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "High sentence overlap (59%) with modest 5.6% word growth and no new escalation terms; risk factors are largely carried forward.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.186,
+      "alpha_3yr": -1.085
+    },
+    {
+      "case_id": "CASE-FIS-2019-01-02-c21493",
+      "ticker": "FIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal 1.6% word growth with 68% sentence overlap and no new escalation terms; risk factors are substantively unchanged.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.113,
+      "alpha_3yr": -0.786
+    },
+    {
+      "case_id": "CASE-AES-2015-12-31-01124a",
+      "ticker": "AES",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Despite 28% word growth, escalation terms for bankruptcy, covenant violation, and goodwill impairment were removed, suggesting improving rather than worsening risk profile.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.677,
+      "alpha_3yr": 0.449
+    },
+    {
+      "case_id": "CASE-DVA-2019-01-02-e620c7",
+      "ticker": "DVA",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "19% word growth reflects expanded disclosure detail but no new escalation terms; the healthcare regulatory risk language is consistent year-over-year.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.199,
+      "alpha_3yr": 0.3
+    },
+    {
+      "case_id": "CASE-PSA-2019-01-02-5d2aae",
+      "ticker": "PSA",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 6.4% word growth with 52% sentence overlap and no new escalation terms; standard REIT risk factors carried forward.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.123,
+      "alpha_3yr": 0.224
+    },
+    {
+      "case_id": "CASE-FIS-2017-06-14-440933",
+      "ticker": "FIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Slight 2.3% word decrease with 62% sentence overlap and no new escalation terms; risk factors slightly trimmed with no material changes.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.66,
+      "alpha_3yr": 0.402
+    },
+    {
+      "case_id": "CASE-AVY-2021-01-04-3079ee",
+      "ticker": "AVY",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "The 'going concern' mention refers to eurozone stability concerns, not the company's own viability; removed goodwill impairment and class action terms suggest stable-to-improving trajectory.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.357,
+      "alpha_3yr": 0.086
+    },
+    {
+      "case_id": "CASE-INTU-2015-12-31-a73aae",
+      "ticker": "INTU",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Virtually unchanged word count with 61% sentence overlap and no new escalation terms; risk factors are substantively the same.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.08,
+      "alpha_3yr": 0.852
+    },
+    {
+      "case_id": "CASE-DXC-2021-12-31-16d7ea",
+      "ticker": "DXC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "107% word growth indicates substantially expanded risk disclosure reflecting post-merger integration complexity and increased operational risk surface area.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.386,
+      "alpha_3yr": -0.617
+    },
+    {
+      "case_id": "CASE-BKNG-2015-12-31-a23f76",
+      "ticker": "BKNG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Virtually unchanged word count with no new escalation terms; risk factors were refreshed in language but not in substance.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.35,
+      "alpha_3yr": 0.122
+    },
+    {
+      "case_id": "CASE-NKE-2013-01-02-f24231",
+      "ticker": "NKE",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Modest 8% word growth with 68% sentence overlap and no new escalation terms; standard consumer/retail risk factors carried forward.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.501,
+      "alpha_3yr": 1.103
+    },
+    {
+      "case_id": "CASE-DRI-2017-06-14-5e8c69",
+      "ticker": "DRI",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "10% word growth but removed default and impairment terms, with 58% sentence overlap suggesting stable-to-improving risk posture.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.085,
+      "alpha_3yr": -0.343
+    },
+    {
+      "case_id": "CASE-PNC-2013-01-02-b8be0b",
+      "ticker": "PNC",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "69% word growth is significant but 'liquidity risk' appears in standard banking risk management framework context; the expansion likely reflects enhanced regulatory disclosure requirements post-financial-crisis rather than new risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.717,
+      "alpha_3yr": 0.319
+    },
+    {
+      "case_id": "CASE-AN-2013-01-02-cfc440",
+      "ticker": "AN",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal 2.4% word growth; the supply chain disruption reference is backward-looking (2011 Japan earthquake/Thailand flooding) rather than indicating new ongoing risk.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.507,
+      "alpha_3yr": 0.109
+    },
+    {
+      "case_id": "CASE-BBT-2019-12-09-fa4520",
+      "ticker": "BBT",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New impairment risk language added while the 34% word reduction and significant text restructuring suggest merger-related transformation risks as BB&T prepared for the Truist merger.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.04936574720272993,
+      "alpha_3yr": -0.2145
+    },
+    {
+      "case_id": "CASE-GOOGL-2019-01-02-b9d9d6",
+      "ticker": "GOOGL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "The 'delisting' reference is about search result removal under EU right-to-be-forgotten law, not stock delisting; modest 7.8% word growth with 52% overlap and no actual escalation.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.747,
+      "alpha_3yr": 0.848
+    },
+    {
+      "case_id": "CASE-NVDA-2021-12-31-77c693",
+      "ticker": "NVDA",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "45% word growth with new COVID-19 pandemic risk section reflecting supply chain uncertainty, demand volatility, and workforce disruption risks not present in prior filing.",
+      "outcome": "winner",
+      "forward_return_3yr": 3.71,
+      "alpha_3yr": 3.479
+    },
+    {
+      "case_id": "CASE-FIS-2021-01-04-3a28b6",
+      "ticker": "FIS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal 1.6% word growth with 68% sentence overlap and no new escalation terms; risk factors are substantively unchanged from prior year.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.538,
+      "alpha_3yr": -0.809
+    },
+    {
+      "case_id": "CASE-TER-2021-12-31-3e88e7",
+      "ticker": "TER",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "13% word growth with entirely new COVID-19 pandemic risk section, new covenant default language, and low sentence overlap (17%) indicating substantially rewritten and escalated risk disclosures.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.216,
+      "alpha_3yr": -0.447
+    },
+    {
+      "case_id": "CASE-CMG-2021-12-31-e85cae",
+      "ticker": "CMG",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "23% word growth with new COVID-19 pandemic references and substantially rewritten risk factors (21% sentence overlap) reflecting new operational risks around pandemic impacts on restaurant operations.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.713,
+      "alpha_3yr": 0.482
+    },
+    {
+      "case_id": "CASE-NOV-2013-01-02-aa8c0e",
+      "ticker": "NOV",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical year-over-year with only minor wording updates and 4% text growth, no new risk categories or escalated language.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.428,
+      "alpha_3yr": -0.826
+    },
+    {
+      "case_id": "CASE-HSY-2021-12-31-ee26de",
+      "ticker": "HSY",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new COVID-19 pandemic risk section added with detailed operational disruption language, plus new climate-related risk disclosures and 20% text growth reflecting materially expanded risk landscape.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.067,
+      "alpha_3yr": -0.298
+    },
+    {
+      "case_id": "CASE-EW-2015-01-02-fad98e",
+      "ticker": "EW",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Core cardiovascular product risks remain consistent; new mentions of restructuring and default appear in boilerplate debt covenant language rather than indicating new material threats, with modest 12% text growth.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.747,
+      "alpha_3yr": 0.437
+    },
+    {
+      "case_id": "CASE-MU-2019-01-02-ecc662",
+      "ticker": "MU",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are substantively unchanged with the same semiconductor cyclicality, trade, and IP risks; 10% text growth reflects incremental elaboration rather than new risk categories.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.851,
+      "alpha_3yr": 0.952
+    },
+    {
+      "case_id": "CASE-SBUX-2019-01-02-f1ef76",
+      "ticker": "SBUX",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk text is virtually identical in length and content year-over-year with no new risk factors, escalated language, or material changes.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.922,
+      "alpha_3yr": 0.023
+    },
+    {
+      "case_id": "CASE-MSI-2013-01-02-fb91de",
+      "ticker": "MSI",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors slightly decreased in length; prior year Networks asset sale risk was removed as the transaction completed, and remaining risks are substantially unchanged.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.295,
+      "alpha_3yr": -0.103
+    },
+    {
+      "case_id": "CASE-ALL-2021-12-31-229221",
+      "ticker": "ALL",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Extracted text appears to be partial risk factor fragments rather than full sections, limiting comparison reliability; available content shows standard insurance operational risks without new severe disclosures.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.763,
+      "alpha_3yr": 0.532
+    },
+    {
+      "case_id": "CASE-MS-2015-12-31-e608d7",
+      "ticker": "MS",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Current year text appears to include financial statements and MD&A rather than pure risk factors, making direct comparison unreliable; prior year risk factors showed standard financial institution risks without going-concern severity.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.356,
+      "alpha_3yr": 0.128
+    },
+    {
+      "case_id": "CASE-HUM-2021-12-31-a788a3",
+      "ticker": "HUM",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Both periods contain cash flow and working capital discussion rather than dedicated risk factor sections; COVID mention appears in operational context rather than as a new risk heading, and text length slightly decreased.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.441,
+      "alpha_3yr": -0.672
+    },
+    {
+      "case_id": "CASE-CI-2021-12-31-d33119",
+      "ticker": "CI",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Current year text is financial highlights rather than risk factors, preventing meaningful comparison; prior year contained full risk section with standard health services industry risks.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.258,
+      "alpha_3yr": 0.027
+    },
+    {
+      "case_id": "CASE-SYK-2019-01-02-3c83ec",
+      "ticker": "SYK",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical with only minor wording simplification in the forward-looking statements preamble and 5% modest text growth, no new risk categories.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.788,
+      "alpha_3yr": -0.111
+    },
+    {
+      "case_id": "CASE-JEF-2019-01-02-26ea37",
+      "ticker": "JEF",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New cybersecurity risk and criminal liability language added to an otherwise stable risk profile, with 10% text growth indicating expanded regulatory and compliance risk disclosures.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.551,
+      "alpha_3yr": 0.652
+    },
+    {
+      "case_id": "CASE-BXP-2013-01-02-370494",
+      "ticker": "BXP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Real estate REIT risk factors remain substantively consistent with 10% text growth reflecting incremental elaboration on existing property and market risks rather than new material threats.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.367,
+      "alpha_3yr": -0.031
+    },
+    {
+      "case_id": "CASE-ITW-2019-01-02-5e1728",
+      "ticker": "ITW",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk disclosures are nearly identical year-over-year with standard industrial conglomerate risks and only 5% modest text growth.",
+      "outcome": "mixed",
+      "forward_return_3yr": 1.097,
+      "alpha_3yr": 0.198
+    },
+    {
+      "case_id": "CASE-SLM-2014-04-30-7a78db",
+      "ticker": "SLM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Funding and liquidity risks remain the primary focus with updated operational details; language shifted from crisis-era tone to normalized market conditions, and removal of insolvency reference suggests improving rather than deteriorating trajectory.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.3854175613106581,
+      "alpha_3yr": 0.1177
+    },
+    {
+      "case_id": "CASE-DE-2021-12-31-a8d074",
+      "ticker": "DE",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "COVID pandemic risk section expanded with new language about viral variants and vaccine uncertainty, plus new inflation risk factor added, with 17% text growth reflecting broadened risk landscape.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.27,
+      "alpha_3yr": 0.039
+    },
+    {
+      "case_id": "CASE-BIIB-2015-01-02-8735dd",
+      "ticker": "BIIB",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical with only date updates from 2011 to 2012 references; same three principal products dependency risk and substantially unchanged pharmaceutical industry risks.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.023,
+      "alpha_3yr": -0.333
+    },
+    {
+      "case_id": "CASE-VNO-2023-01-03-51a6e1",
+      "ticker": "VNO",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major new COVID-19 risk section added describing tenant closures, Hotel Pennsylvania closure, rent collection lawsuits, cancelled trade shows, and new impairment risk language reflecting severe pandemic impact on NYC commercial real estate.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.6988517995061566,
+      "alpha_3yr": -0.0946
+    },
+    {
+      "case_id": "CASE-KLAC-2019-01-02-b5cf44",
+      "ticker": "KLAC",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Current year text appears to contain revenue/financial discussion rather than pure risk factors, preventing reliable comparison; 20% text decrease likely reflects extraction differences rather than risk reduction.",
+      "outcome": "winner",
+      "forward_return_3yr": 3.992,
+      "alpha_3yr": 3.093
+    },
+    {
+      "case_id": "CASE-THC-2013-01-02-30f670",
+      "ticker": "THC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New class action litigation risk and supply chain disruption language added while several prior risks were removed, with 10% text growth and net addition of material legal exposure.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.093,
+      "alpha_3yr": -0.491
+    },
+    {
+      "case_id": "CASE-NSC-2021-12-31-5b5c55",
+      "ticker": "NSC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "New COVID-19 pandemic risk, supply chain disruption language, and expanded regulatory/tax risk language added with reorganized risk categories, reflecting materially broadened risk disclosures for a railroad operator.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.157,
+      "alpha_3yr": -0.388
+    },
+    {
+      "case_id": "CASE-DVN-2017-06-14-bc2279",
+      "ticker": "DVN",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Oil and gas exploration risks are substantively identical year-over-year with standard commodity price and regulatory risks; 15% text growth reflects elaboration rather than new material threats.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.581,
+      "alpha_3yr": -0.839
+    },
+    {
+      "case_id": "CASE-PRU-2013-01-02-ca3c3b",
+      "ticker": "PRU",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New insolvency risk language added specifically referencing European sovereign debt contagion fears and potential defaults by Greece, Ireland, Italy, Portugal, and Spain, escalating market risk disclosures.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.572,
+      "alpha_3yr": 0.174
+    },
+    {
+      "case_id": "CASE-OKE-2021-12-31-d8417f",
+      "ticker": "OKE",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major new COVID-19 pandemic risk factor added as lead risk describing reduced commodity demand, weakened prices, supply chain disruption, and ongoing viral mutation uncertainty for midstream energy operations.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.047,
+      "alpha_3yr": 0.816
+    },
+    {
+      "case_id": "CASE-BDX-2017-06-14-2b3eaf",
+      "ticker": "BDX",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are substantively consistent with reorganization into labeled categories; global economic risk language slightly softened from crisis-era references, and 29% text decrease reflects streamlining rather than new threats.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.264,
+      "alpha_3yr": 0.006
+    },
+    {
+      "case_id": "CASE-AVB-2019-01-02-a0e2ea",
+      "ticker": "AVB",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors virtually unchanged year-over-year with no new severe signals, escalation, or quantified worsening.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.65,
+      "alpha_3yr": -0.249
+    },
+    {
+      "case_id": "CASE-AMP-2019-01-02-e568af",
+      "ticker": "AMP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors largely unchanged with only a marginal increase in uncertainty language and no new material risks.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.999,
+      "alpha_3yr": 1.1
+    },
+    {
+      "case_id": "CASE-LULU-2015-12-31-4e3ca6",
+      "ticker": "LULU",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors stable with no new signals, no escalation, and slightly reduced text length.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.351,
+      "alpha_3yr": 1.123
+    },
+    {
+      "case_id": "CASE-PEP-2013-01-02-1f0383",
+      "ticker": "PEP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minor increase in impairment references but no new risk categories or material language escalation.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.569,
+      "alpha_3yr": 0.171
+    },
+    {
+      "case_id": "CASE-HAS-2021-12-31-274261",
+      "ticker": "HAS",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new COVID/pandemic risks, restructuring charges, goodwill impairment, and newly introduced criminal and bankruptcy language reflecting materially worsened risk profile.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.367,
+      "alpha_3yr": -0.598
+    },
+    {
+      "case_id": "CASE-PRGO-2015-12-31-cb3135",
+      "ticker": "PRGO",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk language moderately reduced with fewer adverse and criminal references despite some new impairment and restructuring mentions; net effect is neutral to slightly improved.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.713,
+      "alpha_3yr": -0.941
+    },
+    {
+      "case_id": "CASE-D-2021-12-31-3e5d64",
+      "ticker": "D",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors largely stable with minor wording changes; new litigation mention offset by reduced adverse language.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.204,
+      "alpha_3yr": -0.435
+    },
+    {
+      "case_id": "CASE-CMCSA-2021-12-31-ae67e5",
+      "ticker": "CMCSA",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New pandemic/COVID risk factors and increased adverse language indicate deterioration, partially offset by reduced litigation and criminal references.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.191,
+      "alpha_3yr": -0.422
+    },
+    {
+      "case_id": "CASE-DLTR-2013-01-02-d5c09b",
+      "ticker": "DLTR",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text expanded with some additional adverse language, but reduced volatility and uncertainty references suggest routine annual disclosure updates rather than material deterioration.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.935,
+      "alpha_3yr": 0.537
+    },
+    {
+      "case_id": "CASE-CCL-2013-01-02-e4106b",
+      "ticker": "CCL",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new criminal, regulatory action, and bankruptcy language with sharply escalated litigation and volatility references indicating materially worsened risk environment.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.568,
+      "alpha_3yr": 0.17
+    },
+    {
+      "case_id": "CASE-M-2013-01-02-c86774",
+      "ticker": "M",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minor increases in adverse and litigation language but no new risk categories or severe signals; incremental boilerplate expansion.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.024,
+      "alpha_3yr": -0.422
+    },
+    {
+      "case_id": "CASE-NOV-2021-09-20-daa34b",
+      "ticker": "NOV",
+      "trajectory": "deteriorating",
+      "confidence": "low",
+      "reasoning": "New SEC informal inquiry disclosure and additional litigation reference suggest emerging regulatory risk, though the overall risk factor text remains largely similar.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.35964221603378355,
+      "alpha_3yr": 0.0485
+    },
+    {
+      "case_id": "CASE-CTSH-2021-12-31-cb3ed4",
+      "ticker": "CTSH",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New pandemic/COVID risk factors introduced reflecting newly identified operational disruption risks not present in prior year filing.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.096,
+      "alpha_3yr": -0.327
+    },
+    {
+      "case_id": "CASE-EXC-2017-06-14-e56189",
+      "ticker": "EXC",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors essentially stable with only marginal changes in impairment and adverse language and no new risk categories.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.153,
+      "alpha_3yr": -0.105
+    },
+    {
+      "case_id": "CASE-CTAS-2021-12-31-ee7087",
+      "ticker": "CTAS",
+      "trajectory": "deteriorating",
+      "confidence": "low",
+      "reasoning": "New cybersecurity incident risk factor added but otherwise stable; the new disclosure may reflect evolving SEC guidance rather than a specific incident.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.691,
+      "alpha_3yr": 0.46
+    },
+    {
+      "case_id": "CASE-SMCI-2021-12-31-3e4fa3",
+      "ticker": "SMCI",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "New restatement reference offset by removal of material weakness language and reduced COVID/uncertainty mentions; net risk profile roughly stable.",
+      "outcome": "winner",
+      "forward_return_3yr": 5.837,
+      "alpha_3yr": 5.606
+    },
+    {
+      "case_id": "CASE-RF-2019-01-02-3c8c20",
+      "ticker": "RF",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors virtually unchanged with only marginal single-count increases in adverse language.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.79,
+      "alpha_3yr": -0.109
+    },
+    {
+      "case_id": "CASE-FCX-2013-01-02-a95aaa",
+      "ticker": "FCX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Substantially expanded risk disclosure with 19% more text, new adverse, uncertainty, volatility, and litigation language reflecting broader risk acknowledgment.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.776,
+      "alpha_3yr": -1.174
+    },
+    {
+      "case_id": "CASE-ABBV-2019-01-02-daba03",
+      "ticker": "ABBV",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors unchanged year-over-year with no new signals, escalation, or material modifications.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.773,
+      "alpha_3yr": -0.126
+    },
+    {
+      "case_id": "CASE-HP-2013-01-02-f03ff4",
+      "ticker": "HP",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Modest increases in adverse and uncertainty language but no new risk categories or severe signals; reflects routine disclosure updates.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.026,
+      "alpha_3yr": -0.372
+    },
+    {
+      "case_id": "CASE-NVR-2021-12-31-b32110",
+      "ticker": "NVR",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Dramatically expanded risk factors with new pandemic/COVID language, adverse references surging from 2 to 42, and substantially new litigation, uncertainty, and deterioration language.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.352,
+      "alpha_3yr": 0.121
+    },
+    {
+      "case_id": "CASE-XRAY-2021-12-31-af78fb",
+      "ticker": "XRAY",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new COVID/pandemic, criminal, default, and goodwill impairment risks with escalated fraud and adverse language indicating materially worsened risk environment.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.645,
+      "alpha_3yr": -0.876
+    },
+    {
+      "case_id": "CASE-BBBY-2020-06-15-7261c0",
+      "ticker": "BBBY",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Mixed signals with increased adverse and impairment language offset by reduced liquidation and fraud references; net risk profile roughly stable at this filing date.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.031379801697355436,
+      "alpha_3yr": -0.3945
+    },
+    {
+      "case_id": "CASE-IRM-2015-12-31-482182",
+      "ticker": "IRM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Substantially rewritten risk factors but reduced data breach and uncertainty language; new liquidation references are standard REIT boilerplate.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.436,
+      "alpha_3yr": 0.208
+    },
+    {
+      "case_id": "CASE-SEE-2013-01-02-7473ed",
+      "ticker": "SEE",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significantly expanded W.R. Grace bankruptcy litigation disclosure with doubled bankruptcy references and increased fraud language, reflecting growing complexity and uncertainty around the asbestos settlement.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.602,
+      "alpha_3yr": 1.204
+    },
+    {
+      "case_id": "CASE-HPQ-2015-01-02-cc564b",
+      "ticker": "HPQ",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "New risk factors added about business challenges (underinvestment in R&D, need to align costs with revenue trajectory, rebuild channel partner relationships), restructuring mentions increased 1->4, and new macroeconomic weakness language referencing decelerating China growth and Western Europe weakness.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.28,
+      "alpha_3yr": -0.03
+    },
+    {
+      "case_id": "CASE-FCX-2015-01-02-a60354",
+      "ticker": "FCX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Word count dropped 60% but the prior text included detailed operational descriptions; current text is a more standard risk factor format with forward-looking statement caveats and commodity price risks largely unchanged; new litigation mention is minor and Indonesian government COW review is an ongoing known issue.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.135,
+      "alpha_3yr": -0.445
+    },
+    {
+      "case_id": "CASE-KMI-2015-12-31-1c9a5b",
+      "ticker": "KMI",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Prior year risks focused on MLP distribution dependency; current year restructured to direct pipeline business risks with new language about sharp decline in crude oil prices, new covenant restrictions, increased pipeline integrity compliance costs, and expanded environmental liability discussion.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.165,
+      "alpha_3yr": -0.063
+    },
+    {
+      "case_id": "CASE-EXPD-2017-06-14-c2b652",
+      "ticker": "EXPD",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical year-over-year with only minor wording changes (company name substitution from 'the Company' to 'Expeditors'), same risk categories, and addition of 2016 to the list of years with margin pressure -- no new material risks.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.369,
+      "alpha_3yr": 0.111
+    },
+    {
+      "case_id": "CASE-LNC-2021-12-31-f8a07c",
+      "ticker": "LNC",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text covers liquidity and capital resources rather than pure risk factors; operating cash flows improved from negative $2.7B to positive $534M, new FHLBNY membership expanded borrowing capacity, and impairment mention is routine for an insurance company's investment portfolio discussion.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.45,
+      "alpha_3yr": -0.681
+    },
+    {
+      "case_id": "CASE-FAST-2021-01-04-d42960",
+      "ticker": "FAST",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are virtually identical with only 42 additional words (0.7% increase), same product liability and trade policy language, no new risk categories or escalated language.",
+      "outcome": "mixed",
+      "forward_return_3yr": 0.408,
+      "alpha_3yr": 0.137
+    },
+    {
+      "case_id": "CASE-PWR-2021-12-31-0d52e7",
+      "ticker": "PWR",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Word count tripled from 5K to 16K reflecting major expansion of disclosure; current text includes detailed discussion of revenue declines in underground utility pipeline projects (~$830M drop), stock-based compensation accounting corrections for prior periods, and new operational risks from LUMA Puerto Rico engagement.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.768,
+      "alpha_3yr": 1.537
+    },
+    {
+      "case_id": "CASE-BBBY-2015-12-31-bd4cf8",
+      "ticker": "BBBY",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "28% increase in risk factor length with expanded cyber-attack language, new mobile device risks, increased impairment mentions (2->3), new credit card fraud risk section, and expanded competitive pressure language including new business lines like third-party logistics.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.151,
+      "alpha_3yr": -0.077
+    },
+    {
+      "case_id": "CASE-BBT-2021-01-04-334be1",
+      "ticker": "BBT",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Word count decreased 34% suggesting streamlining of risk disclosures; core lending and real estate risks unchanged, new impairment mention is routine, restatement risk removed, and anti-takeover provisions language is standard boilerplate addition.",
+      "outcome": "winner",
+      "forward_return_3yr": 0.532,
+      "alpha_3yr": 0.261
+    },
+    {
+      "case_id": "CASE-CLF-2013-01-02-6d80d8",
+      "ticker": "CLF",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New goodwill impairment mentions in current year filing coinciding with a massive increase in goodwill ($196M to $1.15B from acquisitions) and property/plant ($3.98B to $10.5B), introducing significant impairment risk not present in prior year's risk factors.",
+      "outcome": "trap",
+      "forward_return_3yr": -0.957,
+      "alpha_3yr": -1.355
+    },
+    {
+      "case_id": "CASE-UNH-2021-12-31-3439f6",
+      "ticker": "UNH",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors follow the same structure with Medicare Advantage rate pressure narrative continuing (2.5% to 1.7% rate increase); ACA tax discussion updated for moratorium changes but is known and priced; medical cost estimation methodology unchanged.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.049,
+      "alpha_3yr": -0.182
+    },
+    {
+      "case_id": "CASE-PHM-2019-01-02-85436b",
+      "ticker": "PHM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text appears to be financial statements and accounting policies rather than risk factors; impairment mentions increased (2->8) but reflect expanded disclosure of impairment testing methodology rather than actual new risks; balance sheet shows stable debt and inventory levels.",
+      "outcome": "winner",
+      "forward_return_3yr": 1.261,
+      "alpha_3yr": 0.362
+    },
+    {
+      "case_id": "CASE-R-2013-01-02-a16e61",
+      "ticker": "R",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Word count surged 400% from 2.4K to 12.2K; current year text shifted from focused risk factors to include financial statements, but new material weakness mention, new restructuring charges, and substantial expansion of disclosure suggest elevated reporting complexity and potential control issues.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.178,
+      "alpha_3yr": -0.22
+    },
+    {
+      "case_id": "CASE-SLM-2013-01-02-2d46c3",
+      "ticker": "SLM",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New downgrade risk language, expanded government contracting compliance and termination risks, increased competitive pressure from banks with strong brand recognition, and refinancing risk language not present in prior year despite reduced litigation mentions.",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.083,
+      "alpha_3yr": -0.315
+    },
+    {
+      "case_id": "CASE-XYL-2019-01-02-0cc59a",
+      "ticker": "XYL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical in structure and language with only 8.5% word count increase; competitive and operational risk language unchanged, debt discussion updated with current figures ($2.2B), and restructuring mentions slightly decreased (8->7).",
+      "outcome": "underperform",
+      "forward_return_3yr": 0.868,
+      "alpha_3yr": -0.031
+    }
+  ]
+}

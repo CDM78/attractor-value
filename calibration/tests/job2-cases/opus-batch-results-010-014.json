@@ -1,0 +1,179 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-SPG-2013-01-02-acdc3e",
+      "ticker": "SPG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Only +2.4% text growth with minor formatting differences; core risk factors around retail REIT operations, interest rates, and REIT qualification are substantively unchanged year-over-year."
+    },
+    {
+      "case_id": "CASE-CAH-2019-01-02-c6ad28",
+      "ticker": "CAH",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal +0.7% text change with differences limited to page numbers, dates, and officer names (CEO transition from Barrett to Kaufmann); no new substantive risk categories."
+    },
+    {
+      "case_id": "CASE-ALL-2021-01-04-f97a6b",
+      "ticker": "ALL",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant +59.6% text expansion with entirely new risk sections on employee misconduct/fraud, talent retention challenges, and third-party vendor risks, plus new mentions of material adverse effects and impairment not present in prior year."
+    },
+    {
+      "case_id": "CASE-CB-2013-01-02-c32722",
+      "ticker": "CB",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.5% text change; language escalation is marginal (e.g., 'potentially could jeopardize' changed to 'may jeopardize'); Century subsidiary reserve risk and cyber risk language largely carried forward with minor wording tweaks."
+    },
+    {
+      "case_id": "CASE-V-2021-12-31-7f72b7",
+      "ticker": "V",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Text actually decreased 3.7% with COVID/pandemic references removed, suggesting improving risk posture; changes are limited to date updates and routine year-over-year adjustments."
+    },
+    {
+      "case_id": "CASE-T-2013-01-02-2ca79c",
+      "ticker": "T",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Only +4.6% text growth with minor wording changes (e.g., 'FCC' abbreviated vs spelled out); forward-looking risk factors around regulatory proceedings and network security are substantively the same."
+    },
+    {
+      "case_id": "CASE-MAT-2019-01-02-7e8edf",
+      "ticker": "MAT",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new risk language around Toys R Us bankruptcy (Chapter 11 filing by 8-11% revenue customer), sharp increase in default (+5) and bankruptcy (+5) mentions, new covenant violation risks, and explicit cash flow dedication concerns for debt servicing."
+    },
+    {
+      "case_id": "CASE-TXT-2019-01-02-b05487",
+      "ticker": "TXT",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Near-zero text change (+0.0%) with minor updates to cybersecurity and data breach language reflecting industry-wide disclosure trends; no new material risk categories or escalated threat language."
+    },
+    {
+      "case_id": "CASE-VRSN-2019-01-02-c46f3b",
+      "ticker": "VRSN",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.5% text growth with slightly expanded security breach and litigation language, but these reflect ongoing previously-disclosed issues rather than new material risks; China regulatory language is updated but not escalated."
+    },
+    {
+      "case_id": "CASE-AIZ-2013-01-02-2e708d",
+      "ticker": "AIZ",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text essentially unchanged (-0.2%); while material adverse mentions increased (+2), impairment references actually decreased sharply (-8), and new language around European sovereign debt crisis and health reform commissions reflects environmental context rather than company-specific deterioration."
+    },
+    {
+      "case_id": "CASE-GOOGL-2021-01-04-ace329",
+      "ticker": "GOOGL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Near-identical text length (+0.0%) with equal numbers of new and removed sentences (63 each); changes reflect updated competitive landscape language (device mix vs property mix) and routine GDPR/product liability updates without escalation."
+    },
+    {
+      "case_id": "CASE-TPR-2019-01-02-eff712",
+      "ticker": "TPR",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Tariff mentions increased from 3 to 5, new trade sanctions and embargo language added, and expanded cyber/system failure risks; ongoing Kate Spade integration risks persist with new language around trade policy uncertainty."
+    },
+    {
+      "case_id": "CASE-AVY-2013-01-02-5c5102",
+      "ticker": "AVY",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Material adverse mentions increased sharply from 6 to 13, new going-concern language appeared, added eurozone dissolution risk, expanded data breach/privacy risk language, and new references to economic decline effects despite slight text reduction."
+    },
+    {
+      "case_id": "CASE-PG-2015-12-31-44c009",
+      "ticker": "PG",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Despite high sentence turnover (113 new/112 removed), changes are predominantly structural (segment reorganization, financial summary updates) with new impairment mentions (+2) offset by routine forward-looking statement updates; no new risk categories."
+    },
+    {
+      "case_id": "CASE-FISV-2021-01-04-2defa3",
+      "ticker": "FISV",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "High sentence turnover reflects post-First Data merger integration rewrite rather than risk escalation; material adverse mentions actually decreased (-2), litigation decreased (-2), impairment decreased (-5), with regulatory compliance language updated but not escalated."
+    },
+    {
+      "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+      "ticker": "WDC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Language escalated from 'has affected, and may continue to affect' to 'has adversely affected, and we believe will continue to adversely affect' regarding MOFCOM compliance; new cloud computing demand risk and CE market concentration risks added."
+    },
+    {
+      "case_id": "CASE-FAST-2021-12-31-c22e24",
+      "ticker": "FAST",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Massive increase in pandemic/COVID references (0 to 13/10 respectively) with new explicit COVID-19 operational disruption risk section, added material adverse language, and expanded privacy regulation risks (CCPA, GDPR); reflects meaningful new risk categories."
+    },
+    {
+      "case_id": "CASE-ACN-2015-01-02-ff63ea",
+      "ticker": "ACN",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Text decreased 1.8% with pandemic references removed (-2), sanctions reduced (-2); expanded cyberattack language is routine industry evolution; overall risk profile improving with fewer threat categories."
+    },
+    {
+      "case_id": "CASE-STX-2019-01-02-700a3d",
+      "ticker": "STX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Near-zero text change (-0.0%) with minor wording shifts (e.g., 'negatively impact' to 'adversely affect'); slight increases in material adverse (+1) and impairment (+1) are marginal; high debt risk language is carried forward unchanged."
+    },
+    {
+      "case_id": "CASE-VMC-2015-12-31-2525cd",
+      "ticker": "VMC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New cybersecurity risk section added (0 to 2 mentions), new management team risk factor introduced, goodwill impairment language escalated from 'uneven recovery' to 'significant downturn,' and international operations risk section added; +2.4% growth reflects genuinely new risk categories."
+    },
+    {
+      "case_id": "CASE-AIG-2021-12-31-12f76a",
+      "ticker": "AIG",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.2% text change with slight pandemic mention increase (+1/+1); core insurance risk factors around variable annuity products, counterparty credit, and reinsurance recoverables are substantively unchanged with only year-date updates."
+    },
+    {
+      "case_id": "CASE-APH-2021-12-31-d37b57",
+      "ticker": "APH",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Massive new COVID-19 risk language (0 to 16/15 pandemic/COVID mentions) with extensive new sections on supply chain disruption, government restrictions, nationalism/protectionism risks, plus new MTS acquisition integration risks; material adverse mentions decreased but were replaced by more specific operational threats."
+    },
+    {
+      "case_id": "CASE-EXC-2013-01-02-e7269c",
+      "ticker": "EXC",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minimal +0.1% text change; new language around shale gas supply pressure and credit rating downgrade specifics for Generation and ComEd subsidiaries reflects evolving energy market context rather than company-specific deterioration; risk factor structure unchanged."
+    },
+    {
+      "case_id": "CASE-AIZ-2015-01-02-e41fc9",
+      "ticker": "AIZ",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Identical to the 2013 AIZ case with same text lengths and same changes (-0.2%), indicating this filing pair spans the same prior/current year comparison; European debt crisis and health reform language carried forward without escalation."
+    },
+    {
+      "case_id": "CASE-BWA-2021-12-31-1256b2",
+      "ticker": "BWA",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major new COVID-19 disruption language (0 to 13 mentions) with explicit warnings about extended supply chain disruption having material negative impact, new Delphi Technologies integration risks, increased restructuring mentions, and expanded operational risk language around launch failures."
+    }
+  ]
+}

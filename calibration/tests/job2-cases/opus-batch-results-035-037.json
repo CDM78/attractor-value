@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-HPQ-2015-01-02-cc564b",
+      "ticker": "HPQ",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "New risk factors added about business challenges (underinvestment in R&D, need to align costs with revenue trajectory, rebuild channel partner relationships), restructuring mentions increased 1->4, and new macroeconomic weakness language referencing decelerating China growth and Western Europe weakness."
+    },
+    {
+      "case_id": "CASE-FCX-2015-01-02-a60354",
+      "ticker": "FCX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Word count dropped 60% but the prior text included detailed operational descriptions; current text is a more standard risk factor format with forward-looking statement caveats and commodity price risks largely unchanged; new litigation mention is minor and Indonesian government COW review is an ongoing known issue."
+    },
+    {
+      "case_id": "CASE-KMI-2015-12-31-1c9a5b",
+      "ticker": "KMI",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Prior year risks focused on MLP distribution dependency; current year restructured to direct pipeline business risks with new language about sharp decline in crude oil prices, new covenant restrictions, increased pipeline integrity compliance costs, and expanded environmental liability discussion."
+    },
+    {
+      "case_id": "CASE-EXPD-2017-06-14-c2b652",
+      "ticker": "EXPD",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical year-over-year with only minor wording changes (company name substitution from 'the Company' to 'Expeditors'), same risk categories, and addition of 2016 to the list of years with margin pressure -- no new material risks."
+    },
+    {
+      "case_id": "CASE-LNC-2021-12-31-f8a07c",
+      "ticker": "LNC",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text covers liquidity and capital resources rather than pure risk factors; operating cash flows improved from negative $2.7B to positive $534M, new FHLBNY membership expanded borrowing capacity, and impairment mention is routine for an insurance company's investment portfolio discussion."
+    },
+    {
+      "case_id": "CASE-FAST-2021-01-04-d42960",
+      "ticker": "FAST",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are virtually identical with only 42 additional words (0.7% increase), same product liability and trade policy language, no new risk categories or escalated language."
+    },
+    {
+      "case_id": "CASE-PWR-2021-12-31-0d52e7",
+      "ticker": "PWR",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Word count tripled from 5K to 16K reflecting major expansion of disclosure; current text includes detailed discussion of revenue declines in underground utility pipeline projects (~$830M drop), stock-based compensation accounting corrections for prior periods, and new operational risks from LUMA Puerto Rico engagement."
+    },
+    {
+      "case_id": "CASE-BBBY-2015-12-31-bd4cf8",
+      "ticker": "BBBY",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "28% increase in risk factor length with expanded cyber-attack language, new mobile device risks, increased impairment mentions (2->3), new credit card fraud risk section, and expanded competitive pressure language including new business lines like third-party logistics."
+    },
+    {
+      "case_id": "CASE-BBT-2021-01-04-334be1",
+      "ticker": "BBT",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Word count decreased 34% suggesting streamlining of risk disclosures; core lending and real estate risks unchanged, new impairment mention is routine, restatement risk removed, and anti-takeover provisions language is standard boilerplate addition."
+    },
+    {
+      "case_id": "CASE-CLF-2013-01-02-6d80d8",
+      "ticker": "CLF",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New goodwill impairment mentions in current year filing coinciding with a massive increase in goodwill ($196M to $1.15B from acquisitions) and property/plant ($3.98B to $10.5B), introducing significant impairment risk not present in prior year's risk factors."
+    },
+    {
+      "case_id": "CASE-UNH-2021-12-31-3439f6",
+      "ticker": "UNH",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors follow the same structure with Medicare Advantage rate pressure narrative continuing (2.5% to 1.7% rate increase); ACA tax discussion updated for moratorium changes but is known and priced; medical cost estimation methodology unchanged."
+    },
+    {
+      "case_id": "CASE-PHM-2019-01-02-85436b",
+      "ticker": "PHM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text appears to be financial statements and accounting policies rather than risk factors; impairment mentions increased (2->8) but reflect expanded disclosure of impairment testing methodology rather than actual new risks; balance sheet shows stable debt and inventory levels."
+    },
+    {
+      "case_id": "CASE-R-2013-01-02-a16e61",
+      "ticker": "R",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Word count surged 400% from 2.4K to 12.2K; current year text shifted from focused risk factors to include financial statements, but new material weakness mention, new restructuring charges, and substantial expansion of disclosure suggest elevated reporting complexity and potential control issues."
+    },
+    {
+      "case_id": "CASE-SLM-2013-01-02-2d46c3",
+      "ticker": "SLM",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New downgrade risk language, expanded government contracting compliance and termination risks, increased competitive pressure from banks with strong brand recognition, and refinancing risk language not present in prior year despite reduced litigation mentions."
+    },
+    {
+      "case_id": "CASE-XYL-2019-01-02-0cc59a",
+      "ticker": "XYL",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical in structure and language with only 8.5% word count increase; competitive and operational risk language unchanged, debt discussion updated with current figures ($2.2B), and restructuring mentions slightly decreased (8->7)."
+    }
+  ]
+}

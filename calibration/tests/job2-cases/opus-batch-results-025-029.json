@@ -1,0 +1,179 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-NOV-2013-01-02-aa8c0e",
+      "ticker": "NOV",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical year-over-year with only minor wording updates and 4% text growth, no new risk categories or escalated language."
+    },
+    {
+      "case_id": "CASE-HSY-2021-12-31-ee26de",
+      "ticker": "HSY",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new COVID-19 pandemic risk section added with detailed operational disruption language, plus new climate-related risk disclosures and 20% text growth reflecting materially expanded risk landscape."
+    },
+    {
+      "case_id": "CASE-EW-2015-01-02-fad98e",
+      "ticker": "EW",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Core cardiovascular product risks remain consistent; new mentions of restructuring and default appear in boilerplate debt covenant language rather than indicating new material threats, with modest 12% text growth."
+    },
+    {
+      "case_id": "CASE-MU-2019-01-02-ecc662",
+      "ticker": "MU",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are substantively unchanged with the same semiconductor cyclicality, trade, and IP risks; 10% text growth reflects incremental elaboration rather than new risk categories."
+    },
+    {
+      "case_id": "CASE-SBUX-2019-01-02-f1ef76",
+      "ticker": "SBUX",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk text is virtually identical in length and content year-over-year with no new risk factors, escalated language, or material changes."
+    },
+    {
+      "case_id": "CASE-MSI-2013-01-02-fb91de",
+      "ticker": "MSI",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors slightly decreased in length; prior year Networks asset sale risk was removed as the transaction completed, and remaining risks are substantially unchanged."
+    },
+    {
+      "case_id": "CASE-ALL-2021-12-31-229221",
+      "ticker": "ALL",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Extracted text appears to be partial risk factor fragments rather than full sections, limiting comparison reliability; available content shows standard insurance operational risks without new severe disclosures."
+    },
+    {
+      "case_id": "CASE-MS-2015-12-31-e608d7",
+      "ticker": "MS",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Current year text appears to include financial statements and MD&A rather than pure risk factors, making direct comparison unreliable; prior year risk factors showed standard financial institution risks without going-concern severity."
+    },
+    {
+      "case_id": "CASE-HUM-2021-12-31-a788a3",
+      "ticker": "HUM",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Both periods contain cash flow and working capital discussion rather than dedicated risk factor sections; COVID mention appears in operational context rather than as a new risk heading, and text length slightly decreased."
+    },
+    {
+      "case_id": "CASE-CI-2021-12-31-d33119",
+      "ticker": "CI",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Current year text is financial highlights rather than risk factors, preventing meaningful comparison; prior year contained full risk section with standard health services industry risks."
+    },
+    {
+      "case_id": "CASE-SYK-2019-01-02-3c83ec",
+      "ticker": "SYK",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical with only minor wording simplification in the forward-looking statements preamble and 5% modest text growth, no new risk categories."
+    },
+    {
+      "case_id": "CASE-JEF-2019-01-02-26ea37",
+      "ticker": "JEF",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New cybersecurity risk and criminal liability language added to an otherwise stable risk profile, with 10% text growth indicating expanded regulatory and compliance risk disclosures."
+    },
+    {
+      "case_id": "CASE-BXP-2013-01-02-370494",
+      "ticker": "BXP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Real estate REIT risk factors remain substantively consistent with 10% text growth reflecting incremental elaboration on existing property and market risks rather than new material threats."
+    },
+    {
+      "case_id": "CASE-ITW-2019-01-02-5e1728",
+      "ticker": "ITW",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk disclosures are nearly identical year-over-year with standard industrial conglomerate risks and only 5% modest text growth."
+    },
+    {
+      "case_id": "CASE-SLM-2014-04-30-7a78db",
+      "ticker": "SLM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Funding and liquidity risks remain the primary focus with updated operational details; language shifted from crisis-era tone to normalized market conditions, and removal of insolvency reference suggests improving rather than deteriorating trajectory."
+    },
+    {
+      "case_id": "CASE-DE-2021-12-31-a8d074",
+      "ticker": "DE",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "COVID pandemic risk section expanded with new language about viral variants and vaccine uncertainty, plus new inflation risk factor added, with 17% text growth reflecting broadened risk landscape."
+    },
+    {
+      "case_id": "CASE-BIIB-2015-01-02-8735dd",
+      "ticker": "BIIB",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are nearly identical with only date updates from 2011 to 2012 references; same three principal products dependency risk and substantially unchanged pharmaceutical industry risks."
+    },
+    {
+      "case_id": "CASE-VNO-2023-01-03-51a6e1",
+      "ticker": "VNO",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major new COVID-19 risk section added describing tenant closures, Hotel Pennsylvania closure, rent collection lawsuits, cancelled trade shows, and new impairment risk language reflecting severe pandemic impact on NYC commercial real estate."
+    },
+    {
+      "case_id": "CASE-KLAC-2019-01-02-b5cf44",
+      "ticker": "KLAC",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Current year text appears to contain revenue/financial discussion rather than pure risk factors, preventing reliable comparison; 20% text decrease likely reflects extraction differences rather than risk reduction."
+    },
+    {
+      "case_id": "CASE-THC-2013-01-02-30f670",
+      "ticker": "THC",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New class action litigation risk and supply chain disruption language added while several prior risks were removed, with 10% text growth and net addition of material legal exposure."
+    },
+    {
+      "case_id": "CASE-NSC-2021-12-31-5b5c55",
+      "ticker": "NSC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "New COVID-19 pandemic risk, supply chain disruption language, and expanded regulatory/tax risk language added with reorganized risk categories, reflecting materially broadened risk disclosures for a railroad operator."
+    },
+    {
+      "case_id": "CASE-DVN-2017-06-14-bc2279",
+      "ticker": "DVN",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Oil and gas exploration risks are substantively identical year-over-year with standard commodity price and regulatory risks; 15% text growth reflects elaboration rather than new material threats."
+    },
+    {
+      "case_id": "CASE-PRU-2013-01-02-ca3c3b",
+      "ticker": "PRU",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New insolvency risk language added specifically referencing European sovereign debt contagion fears and potential defaults by Greece, Ireland, Italy, Portugal, and Spain, escalating market risk disclosures."
+    },
+    {
+      "case_id": "CASE-OKE-2021-12-31-d8417f",
+      "ticker": "OKE",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major new COVID-19 pandemic risk factor added as lead risk describing reduced commodity demand, weakened prices, supply chain disruption, and ongoing viral mutation uncertainty for midstream energy operations."
+    },
+    {
+      "case_id": "CASE-BDX-2017-06-14-2b3eaf",
+      "ticker": "BDX",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors are substantively consistent with reorganization into labeled categories; global economic risk language slightly softened from crisis-era references, and 29% text decrease reflects streamlining rather than new threats."
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-KSS-2017-06-15-dce51f",
+      "ticker": "KSS",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors largely unchanged (84% sentence overlap) with only minor additions around tax/trade policy; no new severe risk categories."
+    },
+    {
+      "case_id": "CASE-WY-2013-01-02-7e6e27",
+      "ticker": "WY",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factor text virtually identical year-over-year with 100% sentence overlap and minimal word count change."
+    },
+    {
+      "case_id": "CASE-HON-2021-12-31-b6588d",
+      "ticker": "HON",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant expansion (+14% words, 54% overlap) with new pandemic-related risks, expanded cybersecurity and IP risk language, indicating materially broadened risk disclosure."
+    },
+    {
+      "case_id": "CASE-UPS-2015-12-31-77a3f9",
+      "ticker": "UPS",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Moderate expansion (+11.5% words) with new cyber risk and regulatory language, but 69% overlap and no severe new risk categories; additions reflect evolving boilerplate."
+    },
+    {
+      "case_id": "CASE-NEM-2013-01-02-60f999",
+      "ticker": "NEM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk factors expanded (+15.7%) with additional detail on energy costs and regulatory risks, but no new severe risk categories and core mining/commodity risks unchanged."
+    },
+    {
+      "case_id": "CASE-BBBY-2014-06-15-66e88b",
+      "ticker": "BBBY",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Removed references to significant/net losses while adding standard cyber risk and competitive pressure language; net risk profile appears stable despite moderate text changes."
+    },
+    {
+      "case_id": "CASE-CNX-2016-03-03-aa2fb3",
+      "ticker": "CNX",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk factors expanded (+14.8%) with additional NGL/oil and export risk detail, but no new severe categories like going concern or covenant violations; core energy risks unchanged."
+    },
+    {
+      "case_id": "CASE-DUK-2021-12-31-f42750",
+      "ticker": "DUK",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Text sections appear to be from different parts of the 10-K (prior risk factors vs current MD&A), making direct comparison unreliable; COVID references are standard for 2021 utility filings."
+    },
+    {
+      "case_id": "CASE-SO-2021-12-31-077bef",
+      "ticker": "SO",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Substantial rewrite (42% overlap) with new ransomware/cybersecurity escalation and expanded water/environmental risk language, despite word count reduction indicating risk consolidation with heightened threat language."
+    },
+    {
+      "case_id": "CASE-PEG-2015-12-31-c3f585",
+      "ticker": "PEG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal word count change (+2.3%) with 65% overlap; additions around micro grid penetration and FERC policy reflect routine regulatory evolution, no severe new risks."
+    },
+    {
+      "case_id": "CASE-EW-2021-01-04-0e2c70",
+      "ticker": "EW",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New default and restructuring risk language with significant expansion (+12.5%) and only 59% overlap, indicating escalated financial and operational risk disclosures for the medical device company."
+    },
+    {
+      "case_id": "CASE-EXPD-2019-01-02-87cd3e",
+      "ticker": "EXPD",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Nearly identical word count and 76% overlap with removal of bankruptcy reference; risk profile essentially unchanged for the freight logistics company."
+    },
+    {
+      "case_id": "CASE-GIS-2021-01-04-509eca",
+      "ticker": "GIS",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Low sentence overlap (33%) appears driven by inclusion of financial statement data rather than risk factor changes; material weakness and restructuring references present in both years indicating no escalation."
+    },
+    {
+      "case_id": "CASE-MPC-2021-12-31-5b5389",
+      "ticker": "MPC",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major risk factor expansion (+29.5%) with extensive new pandemic/COVID language, $1B+ impairment charges mentioned, and only 24% overlap indicating substantially escalated risk disclosure."
+    },
+    {
+      "case_id": "CASE-EIX-2021-12-31-11b5cb",
+      "ticker": "EIX",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors essentially stable in length with 66% overlap; wildfire and inverse condemnation risks present in both years with bankruptcy reference removed, indicating no escalation."
+    },
+    {
+      "case_id": "CASE-DVN-2019-01-02-a24aa5",
+      "ticker": "DVN",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New credit downgrade and operating losses risk language with significant rewrite (41% overlap) and expanded cyber attack and climate change risks despite modest word count increase."
+    },
+    {
+      "case_id": "CASE-EFX-2021-01-04-6ee82a",
+      "ticker": "EFX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant expansion (+17.2%) with new catastrophic risk language and substantial rewrite (44% overlap), expanding cybersecurity and data privacy risk disclosures in the post-breach era."
+    },
+    {
+      "case_id": "CASE-PPG-2015-12-31-5d8963",
+      "ticker": "PPG",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors virtually unchanged in length (+0.1%) with 66% overlap; standard raw materials and international exposure risks with no new severe categories."
+    },
+    {
+      "case_id": "CASE-PLD-2021-12-31-3fdee8",
+      "ticker": "PLD",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Removed material weakness and restatement references while adding co-investment venture risk language; 'may not be able to continue' refers to maintaining venture influence, not going concern."
+    },
+    {
+      "case_id": "CASE-CB-2015-01-02-550416",
+      "ticker": "CB",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minimal expansion (+2.7%) with 66% overlap; new counterparty and cyber risk language reflects standard insurance industry evolution, no severe new categories."
+    },
+    {
+      "case_id": "CASE-EW-2013-01-02-d89c81",
+      "ticker": "EW",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New default and restructuring risk language with significant expansion (+12.5%) and only 59% overlap, indicating escalated financial and operational risk disclosures."
+    },
+    {
+      "case_id": "CASE-CCL-2021-12-31-559759",
+      "ticker": "CCL",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Major rewrite (28% overlap) with +15.8% expansion, new bankruptcy counterparty risk, and extensive new regulatory/environmental/DLC structure risks reflecting severe pandemic-era operational uncertainty for the cruise line."
+    },
+    {
+      "case_id": "CASE-UNP-2021-12-31-c71cbf",
+      "ticker": "UNP",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Text sections appear to be from entirely different parts of the 10-K (0% overlap, -35.8% word change), making risk trajectory assessment unreliable; COVID references are standard for 2021."
+    },
+    {
+      "case_id": "CASE-EFX-2017-06-14-70a0d1",
+      "ticker": "EFX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significant expansion (+17.2%) with new catastrophic risk language and expanded cybersecurity disclosures, showing escalating data security concerns even before the September 2017 breach disclosure."
+    },
+    {
+      "case_id": "CASE-ISRG-2021-12-31-9d2ad6",
+      "ticker": "ISRG",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Near-complete rewrite (15% overlap) with six new escalation terms including pandemic, COVID, bankruptcy, class action, and catastrophic, reflecting dramatically expanded risk landscape for surgical robotics."
+    }
+  ]
+}

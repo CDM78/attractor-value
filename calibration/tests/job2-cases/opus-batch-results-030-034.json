@@ -1,0 +1,179 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-AVB-2019-01-02-a0e2ea",
+      "ticker": "AVB",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors virtually unchanged year-over-year with no new severe signals, escalation, or quantified worsening."
+    },
+    {
+      "case_id": "CASE-AMP-2019-01-02-e568af",
+      "ticker": "AMP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors largely unchanged with only a marginal increase in uncertainty language and no new material risks."
+    },
+    {
+      "case_id": "CASE-LULU-2015-12-31-4e3ca6",
+      "ticker": "LULU",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors stable with no new signals, no escalation, and slightly reduced text length."
+    },
+    {
+      "case_id": "CASE-PEP-2013-01-02-1f0383",
+      "ticker": "PEP",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Minor increase in impairment references but no new risk categories or material language escalation."
+    },
+    {
+      "case_id": "CASE-HAS-2021-12-31-274261",
+      "ticker": "HAS",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new COVID/pandemic risks, restructuring charges, goodwill impairment, and newly introduced criminal and bankruptcy language reflecting materially worsened risk profile."
+    },
+    {
+      "case_id": "CASE-PRGO-2015-12-31-cb3135",
+      "ticker": "PRGO",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Risk language moderately reduced with fewer adverse and criminal references despite some new impairment and restructuring mentions; net effect is neutral to slightly improved."
+    },
+    {
+      "case_id": "CASE-D-2021-12-31-3e5d64",
+      "ticker": "D",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors largely stable with minor wording changes; new litigation mention offset by reduced adverse language."
+    },
+    {
+      "case_id": "CASE-CMCSA-2021-12-31-ae67e5",
+      "ticker": "CMCSA",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New pandemic/COVID risk factors and increased adverse language indicate deterioration, partially offset by reduced litigation and criminal references."
+    },
+    {
+      "case_id": "CASE-DLTR-2013-01-02-d5c09b",
+      "ticker": "DLTR",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Text expanded with some additional adverse language, but reduced volatility and uncertainty references suggest routine annual disclosure updates rather than material deterioration."
+    },
+    {
+      "case_id": "CASE-CCL-2013-01-02-e4106b",
+      "ticker": "CCL",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new criminal, regulatory action, and bankruptcy language with sharply escalated litigation and volatility references indicating materially worsened risk environment."
+    },
+    {
+      "case_id": "CASE-M-2013-01-02-c86774",
+      "ticker": "M",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Minor increases in adverse and litigation language but no new risk categories or severe signals; incremental boilerplate expansion."
+    },
+    {
+      "case_id": "CASE-NOV-2021-09-20-daa34b",
+      "ticker": "NOV",
+      "trajectory": "deteriorating",
+      "confidence": "low",
+      "reasoning": "New SEC informal inquiry disclosure and additional litigation reference suggest emerging regulatory risk, though the overall risk factor text remains largely similar."
+    },
+    {
+      "case_id": "CASE-CTSH-2021-12-31-cb3ed4",
+      "ticker": "CTSH",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "New pandemic/COVID risk factors introduced reflecting newly identified operational disruption risks not present in prior year filing."
+    },
+    {
+      "case_id": "CASE-EXC-2017-06-14-e56189",
+      "ticker": "EXC",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors essentially stable with only marginal changes in impairment and adverse language and no new risk categories."
+    },
+    {
+      "case_id": "CASE-CTAS-2021-12-31-ee7087",
+      "ticker": "CTAS",
+      "trajectory": "deteriorating",
+      "confidence": "low",
+      "reasoning": "New cybersecurity incident risk factor added but otherwise stable; the new disclosure may reflect evolving SEC guidance rather than a specific incident."
+    },
+    {
+      "case_id": "CASE-SMCI-2021-12-31-3e4fa3",
+      "ticker": "SMCI",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "New restatement reference offset by removal of material weakness language and reduced COVID/uncertainty mentions; net risk profile roughly stable."
+    },
+    {
+      "case_id": "CASE-RF-2019-01-02-3c8c20",
+      "ticker": "RF",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors virtually unchanged with only marginal single-count increases in adverse language."
+    },
+    {
+      "case_id": "CASE-FCX-2013-01-02-a95aaa",
+      "ticker": "FCX",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Substantially expanded risk disclosure with 19% more text, new adverse, uncertainty, volatility, and litigation language reflecting broader risk acknowledgment."
+    },
+    {
+      "case_id": "CASE-ABBV-2019-01-02-daba03",
+      "ticker": "ABBV",
+      "trajectory": "stable",
+      "confidence": "high",
+      "reasoning": "Risk factors unchanged year-over-year with no new signals, escalation, or material modifications."
+    },
+    {
+      "case_id": "CASE-HP-2013-01-02-f03ff4",
+      "ticker": "HP",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Modest increases in adverse and uncertainty language but no new risk categories or severe signals; reflects routine disclosure updates."
+    },
+    {
+      "case_id": "CASE-NVR-2021-12-31-b32110",
+      "ticker": "NVR",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Dramatically expanded risk factors with new pandemic/COVID language, adverse references surging from 2 to 42, and substantially new litigation, uncertainty, and deterioration language."
+    },
+    {
+      "case_id": "CASE-XRAY-2021-12-31-af78fb",
+      "ticker": "XRAY",
+      "trajectory": "deteriorating",
+      "confidence": "high",
+      "reasoning": "Significant new COVID/pandemic, criminal, default, and goodwill impairment risks with escalated fraud and adverse language indicating materially worsened risk environment."
+    },
+    {
+      "case_id": "CASE-BBBY-2020-06-15-7261c0",
+      "ticker": "BBBY",
+      "trajectory": "stable",
+      "confidence": "low",
+      "reasoning": "Mixed signals with increased adverse and impairment language offset by reduced liquidation and fraud references; net risk profile roughly stable at this filing date."
+    },
+    {
+      "case_id": "CASE-IRM-2015-12-31-482182",
+      "ticker": "IRM",
+      "trajectory": "stable",
+      "confidence": "medium",
+      "reasoning": "Substantially rewritten risk factors but reduced data breach and uncertainty language; new liquidation references are standard REIT boilerplate."
+    },
+    {
+      "case_id": "CASE-SEE-2013-01-02-7473ed",
+      "ticker": "SEE",
+      "trajectory": "deteriorating",
+      "confidence": "medium",
+      "reasoning": "Significantly expanded W.R. Grace bankruptcy litigation disclosure with doubled bankruptcy references and increased fraud language, reflecting growing complexity and uncertainty around the asbestos settlement."
+    }
+  ]
+}
