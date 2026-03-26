@@ -1,0 +1,96 @@
+{
+  "test_id": "si-checkpoints-full-2026-03-26",
+  "n_processed": 653,
+  "n_winners": 227,
+  "n_traps": 289,
+  "best_signal": {
+    "name": "Phase = ACCELERATING",
+    "window": 18,
+    "trapPct": 69.55017301038062,
+    "winPct": 56.82819383259912,
+    "net": 12.721979177781499,
+    "trapCatch": 201,
+    "trapTotal": 289,
+    "winFA": 129,
+    "winTotal": 227
+  },
+  "top_5_signals": [
+    {
+      "name": "Phase = ACCELERATING",
+      "window": 18,
+      "trapPct": 69.55017301038062,
+      "winPct": 56.82819383259912,
+      "net": 12.721979177781499,
+      "trapCatch": 201,
+      "trapTotal": 289,
+      "winFA": 129,
+      "winTotal": 227
+    },
+    {
+      "name": "Phase = ACCELERATING",
+      "window": 12,
+      "trapPct": 56.05536332179931,
+      "winPct": 47.136563876651984,
+      "net": 8.918799445147329,
+      "trapCatch": 162,
+      "trapTotal": 289,
+      "winFA": 107,
+      "winTotal": 227
+    },
+    {
+      "name": "Phase = ACCELERATING",
+      "window": 24,
+      "trapPct": 76.47058823529412,
+      "winPct": 67.84140969162996,
+      "net": 8.629178543664153,
+      "trapCatch": 221,
+      "trapTotal": 289,
+      "winFA": 154,
+      "winTotal": 227
+    },
+    {
+      "name": "Phase = ACCEL (2 consec)",
+      "window": 36,
+      "trapPct": 28.719723183391004,
+      "winPct": 22.46696035242291,
+      "net": 6.252762830968095,
+      "trapCatch": 83,
+      "trapTotal": 289,
+      "winFA": 51,
+      "winTotal": 227
+    },
+    {
+      "name": "SI D1 > +5% (2 consec)",
+      "window": 18,
+      "trapPct": 23.52941176470588,
+      "winPct": 18.502202643171806,
+      "net": 5.027209121534074,
+      "trapCatch": 68,
+      "trapTotal": 289,
+      "winFA": 42,
+      "winTotal": 227
+    }
+  ],
+  "phase_distribution_t12": {
+    "STABLE": {
+      "w": 134,
+      "t": 199
+    },
+    "SHORTS_COLLAPSING": {
+      "w": 36,
+      "t": 31
+    },
+    "SHORTS_BOTTOMING": {
+      "w": 10,
+      "t": 7
+    },
+    "SHORTS_ACCELERATING": {
+      "w": 37,
+      "t": 32
+    },
+    "SHORTS_PEAKING": {
+      "w": 10,
+      "t": 20
+    }
+  }
+}
