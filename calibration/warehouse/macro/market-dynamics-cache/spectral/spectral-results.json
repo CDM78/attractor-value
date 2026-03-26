@@ -1,0 +1,5940 @@
+{
+  "cases": [
+    {
+      "ticker": "ACN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9935925612104457,
+      "signalToNoise": 12.557446600212229,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ADBE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9959202799211547,
+      "signalToNoise": 21.19688980879885,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ADP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9921406359868765,
+      "signalToNoise": 21.243280954234095,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ADSK",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9974245130737919,
+      "signalToNoise": 54.30127706181981,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AES",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9636547530982231,
+      "signalToNoise": 18.630960166226213,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AIG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9978969576642268,
+      "signalToNoise": 10.368846788873585,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AIV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9998526794149543,
+      "signalToNoise": 7.874592526595824,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AIZ",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9981902919902084,
+      "signalToNoise": 16.073978143907002,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ALL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9993225672809132,
+      "signalToNoise": 91.35980350490927,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMAT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9935034876404697,
+      "signalToNoise": 15.57007363310022,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMGN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.997996073288452,
+      "signalToNoise": 19.133434366467707,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9937103420965132,
+      "signalToNoise": 21.106008622786472,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMZN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9881031973014309,
+      "signalToNoise": 43.25903140492795,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ANF",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9744876306780565,
+      "signalToNoise": 6.169059832238423,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AON",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9947864577825998,
+      "signalToNoise": 24.73760464608199,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "APD",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9881533849183667,
+      "signalToNoise": 28.202592082742488,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "APTV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 25.245615471393858,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ATI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9473873612949495,
+      "signalToNoise": 63.42046368174787,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AVY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9955308695255775,
+      "signalToNoise": 7.569816232380066,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AZO",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9940293038362481,
+      "signalToNoise": 21.484728788991436,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9978850990040711,
+      "signalToNoise": 22.074401651461656,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BBBY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9585066768430173,
+      "signalToNoise": 14.804260269749495,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BBY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9992920177006962,
+      "signalToNoise": 10.518681675155852,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BDX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9823819197251886,
+      "signalToNoise": 5.604722604246305,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BEN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9723308899684835,
+      "signalToNoise": 29.246142516342957,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BIIB",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9968929579022837,
+      "signalToNoise": 21.149680323492337,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BK",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9598198883196029,
+      "signalToNoise": 8.853287515044943,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BKNG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9273284657734925,
+      "signalToNoise": 24.69573986696897,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BMY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9985652970152818,
+      "signalToNoise": 14.574319063106781,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BSX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9982376948900101,
+      "signalToNoise": 14.365672364120343,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CAH",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9924738164087309,
+      "signalToNoise": 9.816263832053298,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CAT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9956438289494445,
+      "signalToNoise": 50.72481649884792,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CBRE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9522377845989379,
+      "signalToNoise": 7.796133409669359,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CINF",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9899069578989474,
+      "signalToNoise": 7.4157627465911755,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CLX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9835365361865485,
+      "signalToNoise": 29.075480065129206,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CME",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9972372784539484,
+      "signalToNoise": 75.58331507785473,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9955761509732355,
+      "signalToNoise": 20.149573919492326,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9965574696092145,
+      "signalToNoise": 8.888626820249769,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CNX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9924394542675784,
+      "signalToNoise": 60.40761097546161,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "COP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9969412656209367,
+      "signalToNoise": 16.17727805360679,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "COST",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9905706204288605,
+      "signalToNoise": 21.76441959633963,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CRM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.989472140001773,
+      "signalToNoise": 27.770123976643447,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CTAS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9996654619639939,
+      "signalToNoise": 23.67094427456596,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CVS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9974969010868782,
+      "signalToNoise": 23.578737035172914,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CVX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.992352160820763,
+      "signalToNoise": 12.740429123843082,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.998676612035521,
+      "signalToNoise": 85.27158433310039,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9905460144358647,
+      "signalToNoise": 41.841960166728576,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DHI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9912908314152685,
+      "signalToNoise": 26.304087338611552,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DHR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9859578567563849,
+      "signalToNoise": 20.761127842975554,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DLTR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9933563113189039,
+      "signalToNoise": 23.729777337629777,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DRI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9978709035206867,
+      "signalToNoise": 24.063178872264583,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DVN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9982709627290028,
+      "signalToNoise": 11.251801174873957,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9976207008615067,
+      "signalToNoise": 46.83804981350314,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EMR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9848485123977371,
+      "signalToNoise": 25.886280170931844,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EW",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9831594583270785,
+      "signalToNoise": 22.535522570716005,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EXPE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9713275657979743,
+      "signalToNoise": 8.023662694534094,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FAST",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9967281680198063,
+      "signalToNoise": 24.949845343800632,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FDX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9970637345471732,
+      "signalToNoise": 37.11743874039177,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FFIV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9606706610974984,
+      "signalToNoise": 23.868578193397525,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FISV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9980620739308732,
+      "signalToNoise": 17.233760304011092,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FLR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9913252678443155,
+      "signalToNoise": 72.63106091474577,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FLS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.997835847676549,
+      "signalToNoise": 17.378472681886528,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FMC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9975894816906604,
+      "signalToNoise": 21.27566830034002,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FOSL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9994291321634229,
+      "signalToNoise": 46.58373342549606,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FSLR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.937548855131325,
+      "signalToNoise": 10.297553091267895,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GD",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.998128908638148,
+      "signalToNoise": 16.02102112870509,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9862635118317279,
+      "signalToNoise": 45.13060351891234,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GHC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.99956146990978,
+      "signalToNoise": 6.7463234429770145,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GILD",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9804075047005822,
+      "signalToNoise": 7.167044665463385,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GNW",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9976851936137303,
+      "signalToNoise": 15.721186056357041,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9682917101407478,
+      "signalToNoise": 7.9227303474914805,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HAL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9991399995972516,
+      "signalToNoise": 27.365880703055367,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HAS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.8919405450113981,
+      "signalToNoise": 10.36798508717011,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HD",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 10.72650153409892,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HIG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9980692120384016,
+      "signalToNoise": 93.89833985583367,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HOG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9998877307082442,
+      "signalToNoise": 19.720685896603936,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HON",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9992565573839144,
+      "signalToNoise": 14.845441518787577,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HPQ",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9996594679834458,
+      "signalToNoise": 81.48712540367322,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HRB",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9887762636674803,
+      "signalToNoise": 3.28652875646973,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "HRL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9719495610299419,
+      "signalToNoise": 15.438209417177665,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HUM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.996525141018069,
+      "signalToNoise": 22.143464444183028,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IBM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9979380539791345,
+      "signalToNoise": 15.919436416845942,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IFF",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9829650958547231,
+      "signalToNoise": 8.366146406696684,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "INTC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9931804784019551,
+      "signalToNoise": 21.62682037448762,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "INTU",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9916643707004666,
+      "signalToNoise": 38.75174216231858,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "JEF",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9967557049651057,
+      "signalToNoise": 321.6942034410576,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KDP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9968831220399829,
+      "signalToNoise": 24.903851741828543,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KLAC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9989462936122026,
+      "signalToNoise": 20.944048841354153,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KMB",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9968579158572287,
+      "signalToNoise": 41.70132940969733,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KMI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9475257954484588,
+      "signalToNoise": 18.231580990027968,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9983939166573924,
+      "signalToNoise": 17.88540826655285,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "L",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9992330894895294,
+      "signalToNoise": 91.02334434139007,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LDOS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.999362154911172,
+      "signalToNoise": 27.7512469626216,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LEG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.98070154988579,
+      "signalToNoise": 8.326319932328163,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LLY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9971773114376782,
+      "signalToNoise": 16.08267526342236,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LMT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9547977387590838,
+      "signalToNoise": 9.993287911812368,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LNC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.996381174833223,
+      "signalToNoise": 21.284483432573698,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LOW",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9986004572055184,
+      "signalToNoise": 60.77148755496183,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LRCX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.946496497879996,
+      "signalToNoise": 49.986418645924275,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LUV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9960489541508994,
+      "signalToNoise": 22.946191572530793,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "M",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9993534010372536,
+      "signalToNoise": 10.450139841311218,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9960555086928778,
+      "signalToNoise": 23.905747626619842,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9976661615450554,
+      "signalToNoise": 14.481452870611678,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9990516208204565,
+      "signalToNoise": 81.04711328793036,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9960804883346728,
+      "signalToNoise": 12.465969814291672,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MCK",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9355549034881028,
+      "signalToNoise": 14.819544163748663,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCO",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9974550458415916,
+      "signalToNoise": 99.99931761427884,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MDLZ",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9950261469842399,
+      "signalToNoise": 11.508368416819566,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MMM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9925395340989226,
+      "signalToNoise": 62.2691796905437,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MNST",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9208616895485835,
+      "signalToNoise": 9.784076582480338,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MO",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9986734986961685,
+      "signalToNoise": 86.17026756128288,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MOS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 11.15686199942053,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MPC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9990542329579343,
+      "signalToNoise": 5.316445287633199,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.983857431076797,
+      "signalToNoise": 22.40725971295206,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MSFT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.972884411934641,
+      "signalToNoise": 6.7498717778834285,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MU",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9999859806996152,
+      "signalToNoise": 4.36099661665567,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MUR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9970878291398485,
+      "signalToNoise": 18.908467535732196,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NBR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9989452708581145,
+      "signalToNoise": 67.02977550613949,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NDAQ",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9964154084818253,
+      "signalToNoise": 7.035709324369853,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NEE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9950894466572604,
+      "signalToNoise": 4.953113045417162,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NFLX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9883186724953462,
+      "signalToNoise": 36.597433321608904,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9983990281070714,
+      "signalToNoise": 9.517699026808122,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NKE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9968673454749876,
+      "signalToNoise": 39.686715226075314,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NOC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9974793472491441,
+      "signalToNoise": 11.433303164463778,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NOV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9974283936240634,
+      "signalToNoise": 30.14760171256663,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NRG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9984820514071967,
+      "signalToNoise": 89.33544869980913,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NTAP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9998068151723197,
+      "signalToNoise": 12.360725231748166,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NUE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9982537368849402,
+      "signalToNoise": 15.34491154966056,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NVDA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.995906409939734,
+      "signalToNoise": 22.791284129061637,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NWL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9918158819626913,
+      "signalToNoise": 7.030576633469615,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "OI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9981186252668817,
+      "signalToNoise": 14.469678083525515,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "OKE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9920228866983325,
+      "signalToNoise": 62.214855403829674,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ORLY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9937343442413342,
+      "signalToNoise": 25.199584296165185,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "OXY",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9975339669489823,
+      "signalToNoise": 18.471315898927518,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PAYX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9992307358370904,
+      "signalToNoise": 38.37237377292944,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PBI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9976222018881831,
+      "signalToNoise": 13.02532325249646,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PFG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.997912100126295,
+      "signalToNoise": 15.71664130109242,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PGR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9973155376511758,
+      "signalToNoise": 21.109887938863043,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PHM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9890316427256086,
+      "signalToNoise": 6.277175293935129,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PNC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9946360628754366,
+      "signalToNoise": 19.65170851231597,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PSA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.999748652610535,
+      "signalToNoise": 83.96309278251672,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "QCOM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9765228440925411,
+      "signalToNoise": 7.2451535073999205,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9833565040115129,
+      "signalToNoise": 12.158439616328987,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ROP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.997784574513862,
+      "signalToNoise": 89.58132742148773,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ROST",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9958045912392139,
+      "signalToNoise": 25.315670674186766,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RRC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9996167261169284,
+      "signalToNoise": 31.6444941536615,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RSG",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9930037662838543,
+      "signalToNoise": 18.857979830880378,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SBUX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.994993334554951,
+      "signalToNoise": 5.672776775882884,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SCHW",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9981948651444891,
+      "signalToNoise": 17.509048656052403,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SEE",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.8994529745057096,
+      "signalToNoise": 33.89424559199475,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SHW",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9995462432079056,
+      "signalToNoise": 8.065167634583158,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SNA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9789043194926011,
+      "signalToNoise": 8.302006442450947,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SPGI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9986671613349423,
+      "signalToNoise": 8.305481339779634,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "STZ",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9850067713163457,
+      "signalToNoise": 5.488904785467854,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SYK",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.99825457661216,
+      "signalToNoise": 85.32066487302376,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TAP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.8905602219833322,
+      "signalToNoise": 13.44657910025218,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TDC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9741661194033827,
+      "signalToNoise": 20.4797628717686,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TEL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9842782900306289,
+      "signalToNoise": 27.57617883248999,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TGNA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9962955763387525,
+      "signalToNoise": 13.58982848344362,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TJX",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9979622824124201,
+      "signalToNoise": 12.908152114328713,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TMO",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.997500005680867,
+      "signalToNoise": 19.818434509476937,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TMUS",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.6671729033341747,
+      "signalToNoise": 113.36522075977143,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TPR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9907330827031724,
+      "signalToNoise": 34.24995103512769,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TRIP",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9146180463874558,
+      "signalToNoise": 30.177988148191922,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TRV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9997290842725197,
+      "signalToNoise": 79.54476675709599,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TSN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9081489590018029,
+      "signalToNoise": 12.659790060940463,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TXN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9958673313981704,
+      "signalToNoise": 15.341605354844008,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TXT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.948386506427364,
+      "signalToNoise": 15.764280010134696,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UNH",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9967930610120589,
+      "signalToNoise": 22.28375508126294,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UNM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9982456992201344,
+      "signalToNoise": 17.195128792172525,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "URBN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9840424021958808,
+      "signalToNoise": 6.567711808453877,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "V",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9725404111672565,
+      "signalToNoise": 28.765025914736317,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "VFC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9610160978834257,
+      "signalToNoise": 24.74411721994779,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VIAV",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9986524894390041,
+      "signalToNoise": 21.813914877349113,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "VMC",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9989498695280628,
+      "signalToNoise": 12.060013209244504,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VRSN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9906257566794457,
+      "signalToNoise": 16.587520298153404,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VTR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9885599977426849,
+      "signalToNoise": 109.612488459707,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WM",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9981603325601491,
+      "signalToNoise": 17.00101985385785,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WMB",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9962810684980897,
+      "signalToNoise": 23.493937752949055,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WMT",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9992665120543779,
+      "signalToNoise": 12.424823126916234,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WYNN",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.8728977419046935,
+      "signalToNoise": 26.840433776153976,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BALL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9999040108422628,
+      "signalToNoise": 26.00649303481228,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LULU",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9470716019494727,
+      "signalToNoise": 2.1619249344352145,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "NVR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9426638903319734,
+      "signalToNoise": 14.274339843580702,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RCL",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9905480222434786,
+      "signalToNoise": 26.830771853842307,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SMCI",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9959693268896992,
+      "signalToNoise": 28.998973878887632,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TSLA",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.8391411387256175,
+      "signalToNoise": 14.057821456551384,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "UDR",
+      "entry_date": "2013-01-02",
+      "secularDominance": 0.9999969726698273,
+      "signalToNoise": 22.02765342307221,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "A",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.993291297375779,
+      "signalToNoise": 6.009631015834642,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AAL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.8996983628571243,
+      "signalToNoise": 50.234635284682454,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AAPL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9716921702624908,
+      "signalToNoise": 7.7517344516071445,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ABBV",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9998222536915181,
+      "signalToNoise": 9.096216407977375,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ABT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9789422484500074,
+      "signalToNoise": 21.39860401999532,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ADBE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9898673190677307,
+      "signalToNoise": 6.47028879940295,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ADI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9823512777261967,
+      "signalToNoise": 8.76970896299515,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ADP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9872458776091189,
+      "signalToNoise": 17.431772508660252,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ADSK",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9998557723826992,
+      "signalToNoise": 25.314996827542032,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AEE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9988044317975534,
+      "signalToNoise": 5.628987329698742,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AES",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9863054353781449,
+      "signalToNoise": 10.843638730503137,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AFL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9967884492599438,
+      "signalToNoise": 6.031797860565439,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AIG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9984674033498603,
+      "signalToNoise": 4.7232249081233535,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AMAT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9815953626802837,
+      "signalToNoise": 6.141896799676298,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AMT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9505374518698169,
+      "signalToNoise": 8.471896858334212,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AMZN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9340663935366488,
+      "signalToNoise": 8.16458060038518,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9423453909785751,
+      "signalToNoise": 13.893216992780568,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AON",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9911542435721235,
+      "signalToNoise": 6.374621229921151,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "APD",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9995410489815275,
+      "signalToNoise": 25.309978126458915,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "APH",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.976279459988409,
+      "signalToNoise": 6.838109557029462,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "APTV",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.992938356736163,
+      "signalToNoise": 57.15259915197641,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AVY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9984325323265778,
+      "signalToNoise": 7.043354110880987,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9885995821875324,
+      "signalToNoise": 6.414521727279711,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BAC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9988077718964876,
+      "signalToNoise": 6.417916025782497,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BAX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9968518355214473,
+      "signalToNoise": 5.23705985350576,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BBY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9985741447020442,
+      "signalToNoise": 14.569059856554377,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BDX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.996965469948837,
+      "signalToNoise": 5.058469789495844,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BEN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.993044971845392,
+      "signalToNoise": 25.395796209873787,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BIIB",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9286897711899906,
+      "signalToNoise": 8.3167999895168,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BMY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9988400598342149,
+      "signalToNoise": 5.912621012139085,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BSX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.967535904151228,
+      "signalToNoise": 44.44259012284397,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BWA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9869756867601671,
+      "signalToNoise": 17.885836325495802,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BXP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9792192588561875,
+      "signalToNoise": 7.005342724137201,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CAG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9829725404286733,
+      "signalToNoise": 4.47322762892729,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CAH",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9971689373304338,
+      "signalToNoise": 12.050668283888966,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CAT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9945212137505217,
+      "signalToNoise": 6.892954197010117,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CCL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 9.951196449047574,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CHD",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.999419819465931,
+      "signalToNoise": 29.616885170039243,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CHRW",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9858104546459452,
+      "signalToNoise": 6.580694583224418,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9973895418423442,
+      "signalToNoise": 7.094567765096174,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CME",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9821795585361204,
+      "signalToNoise": 30.83107047077521,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9864086949550744,
+      "signalToNoise": 6.156131305083038,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CMS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9889918103194636,
+      "signalToNoise": 10.476145079718512,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CNP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9941740921110735,
+      "signalToNoise": 6.913603441088841,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CNX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9872237757472268,
+      "signalToNoise": 25.056666840285025,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "COP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.973013258181608,
+      "signalToNoise": 7.346968946413119,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CPB",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9967372295753835,
+      "signalToNoise": 5.703728495354358,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CRM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9876795187849116,
+      "signalToNoise": 5.678460472346899,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CSCO",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9816906510474137,
+      "signalToNoise": 5.427064630706252,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CSX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9352222749923419,
+      "signalToNoise": 14.825154732325123,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CTAS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.991957660334872,
+      "signalToNoise": 27.13134771919647,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CVS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9843927065746445,
+      "signalToNoise": 7.0385284777978505,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9971573229964186,
+      "signalToNoise": 24.497825032759167,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9845995987396852,
+      "signalToNoise": 43.466777104566056,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DHR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9987996149178119,
+      "signalToNoise": 27.727215269106146,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DOV",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9980210073138919,
+      "signalToNoise": 5.663811308154248,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DRI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9912455181272808,
+      "signalToNoise": 27.526501235070292,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DTE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9853037130055946,
+      "signalToNoise": 28.14078136207085,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DVN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9567909960351282,
+      "signalToNoise": 5.196670218106366,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9899670262254779,
+      "signalToNoise": 26.587626919717078,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ETN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9957840665374879,
+      "signalToNoise": 83.2343534800416,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EW",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9667972764402512,
+      "signalToNoise": 35.778972973221954,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EXC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9706850992841052,
+      "signalToNoise": 42.099281677514796,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EXPD",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9861911093232195,
+      "signalToNoise": 5.915232434840971,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EXPE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9310109838537977,
+      "signalToNoise": 12.382168971520604,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "F",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9957207728932677,
+      "signalToNoise": 20.039343982557334,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FCX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9977118246697706,
+      "signalToNoise": 5.962168740731488,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FFIV",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.971236135280516,
+      "signalToNoise": 24.09392917979432,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FISV",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9909443905536275,
+      "signalToNoise": 6.447568788175077,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FLR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9859300229433782,
+      "signalToNoise": 23.912467062360967,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FLS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9980261679390293,
+      "signalToNoise": 5.447093435019681,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FMC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9986999584828635,
+      "signalToNoise": 5.643991710444436,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FOSL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9950221251395605,
+      "signalToNoise": 16.226802831022457,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FSLR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9419522231881134,
+      "signalToNoise": 9.342347766986055,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9885716003509035,
+      "signalToNoise": 21.405290404276098,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GILD",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9895522566487639,
+      "signalToNoise": 11.10921891200545,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GIS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9992768435863881,
+      "signalToNoise": 5.00990708013308,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GLW",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9789886123460826,
+      "signalToNoise": 6.480536539333534,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GME",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9993448990436353,
+      "signalToNoise": 5.316973469574185,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GRMN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9866903071043028,
+      "signalToNoise": 20.937944205021275,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9864193725075391,
+      "signalToNoise": 7.146019128810724,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GWW",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9829486170434355,
+      "signalToNoise": 31.2558466489229,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HAL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9991399995972516,
+      "signalToNoise": 27.365880703055367,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HOG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9907252390522255,
+      "signalToNoise": 7.886831050731737,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HPQ",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9972234489711068,
+      "signalToNoise": 30.91280862595357,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HRB",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9818287851063136,
+      "signalToNoise": 2.3755268587310328,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "HSIC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9814771639368527,
+      "signalToNoise": 12.09325411470383,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HUM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9733840613112956,
+      "signalToNoise": 7.79388686890921,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IBM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9998437624304574,
+      "signalToNoise": 5.205617571667415,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ICE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.8396609398608974,
+      "signalToNoise": 19.254208040734596,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ILMN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9602985545152267,
+      "signalToNoise": 12.167639576639028,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "INTC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9868299228159282,
+      "signalToNoise": 6.077904360559271,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "INTU",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9706731101399756,
+      "signalToNoise": 40.460102273711215,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ISRG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9821829332367432,
+      "signalToNoise": 6.77903460469296,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ITW",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9986841426203671,
+      "signalToNoise": 5.596623102304945,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IVZ",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9809537412893752,
+      "signalToNoise": 6.806563865811082,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "JPM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9811518386319938,
+      "signalToNoise": 8.844658675971813,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KDP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9850786129983413,
+      "signalToNoise": 33.81733250053045,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KIM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9912233957180372,
+      "signalToNoise": 76.24782983444597,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KMB",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9926922736693429,
+      "signalToNoise": 18.575123285462922,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9949982830892025,
+      "signalToNoise": 8.029548914993711,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KSS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9987278360338813,
+      "signalToNoise": 4.790851627114919,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LEG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9499110402589227,
+      "signalToNoise": 17.649412934942614,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LEN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.8855621764834122,
+      "signalToNoise": 47.48256933668375,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LLY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9982680600888242,
+      "signalToNoise": 5.5728182539645745,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LRCX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.946496497879996,
+      "signalToNoise": 49.986418645924275,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9958894224203484,
+      "signalToNoise": 7.234189609868962,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MAC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9631282472816098,
+      "signalToNoise": 32.96931070412437,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.98695936707489,
+      "signalToNoise": 6.024802029223681,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MAT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9985585695603174,
+      "signalToNoise": 3.367951682650344,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCD",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9977854069102976,
+      "signalToNoise": 5.697419962047767,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCHP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9777610279541366,
+      "signalToNoise": 6.737308260373284,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCK",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9355549034881028,
+      "signalToNoise": 14.819544163748663,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCO",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9690409464087785,
+      "signalToNoise": 30.814992436344035,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MDLZ",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9921204375288858,
+      "signalToNoise": 5.586446799857149,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MHK",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9766670372792287,
+      "signalToNoise": 64.83337196000885,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MKC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9600203731809092,
+      "signalToNoise": 37.82310204249937,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MNST",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9426330743937387,
+      "signalToNoise": 11.550447621673127,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MO",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.988154689839636,
+      "signalToNoise": 30.25053610250353,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MRK",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 7.762765476592659,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MSFT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.972884411934641,
+      "signalToNoise": 6.7498717778834285,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MSI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9531402496711725,
+      "signalToNoise": 7.6227753067988555,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "MU",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9343223748551986,
+      "signalToNoise": 5.064708947663423,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NDAQ",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9781745712557072,
+      "signalToNoise": 8.445502896357441,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NEE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9861749155184831,
+      "signalToNoise": 8.515382995651358,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NFLX",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9282196832805951,
+      "signalToNoise": 9.469289042228127,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NOV",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9998278429810341,
+      "signalToNoise": 5.707286738999422,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NRG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9401968366942067,
+      "signalToNoise": 36.86395289513529,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NSC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.991994745946685,
+      "signalToNoise": 29.936846692364266,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NTAP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9966468367854154,
+      "signalToNoise": 14.365180854932541,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NVDA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9981788123123776,
+      "signalToNoise": 14.33071535173484,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NWL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9735355203872131,
+      "signalToNoise": 7.739709040504322,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NWS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9918781841548128,
+      "signalToNoise": 23.055892858376698,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NWSA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9918781841548128,
+      "signalToNoise": 23.055892858376698,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "OKE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9909885010093176,
+      "signalToNoise": 27.09404243810436,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PBI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9981304876402998,
+      "signalToNoise": 5.332947184236536,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PCG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9916371081326284,
+      "signalToNoise": 6.067408911017165,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PEG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9939441484633634,
+      "signalToNoise": 6.690969750718312,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PFE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9782813418805536,
+      "signalToNoise": 5.9503649883079,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PGR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9870010046812555,
+      "signalToNoise": 6.862432216830645,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PH",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9891000460830187,
+      "signalToNoise": 24.35435976213895,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PHM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9631658459565802,
+      "signalToNoise": 8.05591878028885,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9907678814514583,
+      "signalToNoise": 29.16314900794349,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PPL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9984654366998139,
+      "signalToNoise": 35.07258130505666,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PRGO",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9679001196386251,
+      "signalToNoise": 6.727863026790725,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PSA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9736763205986547,
+      "signalToNoise": 31.872121629973936,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PYPL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 21.56021466717437,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "R",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9734959090625246,
+      "signalToNoise": 9.037775350527111,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "REGN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.8520955516248142,
+      "signalToNoise": 27.388246277160363,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RIG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9902252290590393,
+      "signalToNoise": 5.358806196836616,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ROK",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9982449693755017,
+      "signalToNoise": 23.773017445863882,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ROP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9760483177594006,
+      "signalToNoise": 29.44849560160704,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ROST",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9931820892227743,
+      "signalToNoise": 31.54645175581383,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RRC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9834591145567931,
+      "signalToNoise": 14.242648887608647,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RSG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9769727934492277,
+      "signalToNoise": 36.023784658299014,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SEE",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9646732770686102,
+      "signalToNoise": 38.47178337663486,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SHW",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.979914257670496,
+      "signalToNoise": 20.247208342678157,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SIG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9785199193164877,
+      "signalToNoise": 8.447859522708065,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SJM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9940782058645424,
+      "signalToNoise": 6.645756076618443,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SLB",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9930686474837073,
+      "signalToNoise": 5.7542495408473755,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SLG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9589337708759939,
+      "signalToNoise": 10.770870119369182,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SNA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9995319120421567,
+      "signalToNoise": 70.75817168196555,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SPG",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9880890415344921,
+      "signalToNoise": 28.9748220892914,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SPGI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9918420465715588,
+      "signalToNoise": 4.997942453330022,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SWKS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.8730283160325253,
+      "signalToNoise": 21.288120315190234,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SYK",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9807819104119062,
+      "signalToNoise": 29.104213583995616,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SYY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9394697073168625,
+      "signalToNoise": 14.78040778495531,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TAP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9622020662359677,
+      "signalToNoise": 28.180596250646833,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TDC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9836937977856349,
+      "signalToNoise": 28.857148078141023,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TGNA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9970131279568961,
+      "signalToNoise": 5.068280312171541,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TMO",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.972837036308567,
+      "signalToNoise": 6.928610480536097,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TRIP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9835587325533662,
+      "signalToNoise": 29.684274092920095,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TXN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9918104954425443,
+      "signalToNoise": 5.716205170208475,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UAA",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9477818762834785,
+      "signalToNoise": 24.836235716233766,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UAL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9520184454240668,
+      "signalToNoise": 8.897590579509531,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UHS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9467309637349876,
+      "signalToNoise": 39.210017203224176,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UNH",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9778853247737382,
+      "signalToNoise": 7.521262367990697,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UNM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9965609438430433,
+      "signalToNoise": 6.230368078608903,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UNP",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9992064627340506,
+      "signalToNoise": 23.54065274016405,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "URBN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.989382497503316,
+      "signalToNoise": 7.158222501986284,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "URI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9761427077203157,
+      "signalToNoise": 77.59071363228699,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "V",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9923012271098443,
+      "signalToNoise": 24.816160979377052,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "VRSN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9800219437235032,
+      "signalToNoise": 6.57852083369727,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WDC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9718712516302851,
+      "signalToNoise": 23.209960339673785,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WEC",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9755495488950483,
+      "signalToNoise": 10.340617855215452,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WHR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9520259011503809,
+      "signalToNoise": 18.529045004480924,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9982650848732991,
+      "signalToNoise": 5.7193982228861655,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WMT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9988415577952012,
+      "signalToNoise": 5.606483543767922,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9994121604500897,
+      "signalToNoise": 4.951283303170189,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WYNN",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.8728977419046935,
+      "signalToNoise": 26.840433776153976,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "XEL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.994071603258296,
+      "signalToNoise": 6.396605297584864,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "XRAY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9938463547225186,
+      "signalToNoise": 25.159982331075973,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "XYL",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9902222728001449,
+      "signalToNoise": 48.22108925502787,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "YUM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9895086209271223,
+      "signalToNoise": 22.48216715739277,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ZTS",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9990489234893986,
+      "signalToNoise": 22.150945457031185,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HLT",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.964059924465077,
+      "signalToNoise": 43.55240829702789,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LULU",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9780745374814923,
+      "signalToNoise": 6.117521918752964,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NCLH",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9583630583351145,
+      "signalToNoise": 24.42332188651099,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NVR",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9603821605317826,
+      "signalToNoise": 15.506828044728229,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SMCI",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9942609059091988,
+      "signalToNoise": 32.21130401628217,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WSM",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9908749542322897,
+      "signalToNoise": 6.552596989266404,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WDAY",
+      "entry_date": "2015-12-31",
+      "secularDominance": 0.9746309081766079,
+      "signalToNoise": 40.04567884701374,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "A",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9853439320095262,
+      "signalToNoise": 6.89989223926317,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AAL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 28.7656109330613,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AAPL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 40.01795264347189,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ABT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.81970474154795,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ACN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9816816007647269,
+      "signalToNoise": 6.715611287317815,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ADBE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9694332625604253,
+      "signalToNoise": 32.07879119368305,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ADI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 5.148963277821295,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "ADSK",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9847600233327879,
+      "signalToNoise": 23.00558865728987,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AJG",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 27.648448015330835,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ALB",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.53160057116835,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ALGN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9967010926240654,
+      "signalToNoise": 59.150109185622036,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ALK",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9339851586260425,
+      "signalToNoise": 114.96697485764867,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMAT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8731591472282556,
+      "signalToNoise": 92.31373606166476,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AMD",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 26.035799256082818,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AME",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9781146229952696,
+      "signalToNoise": 16.76556110992639,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMP",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9842160436128625,
+      "signalToNoise": 15.713158489007034,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMZN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 17.98625835914322,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ANET",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.480986766403035,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AON",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9793285373505491,
+      "signalToNoise": 5.5324667965138,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "APH",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.457089513570633,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "APTV",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 27.179189770057608,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ARE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.758790769820152,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AVGO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 5.410658185937073,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AVY",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 7.012558667405647,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "AWK",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.999004869043786,
+      "signalToNoise": 6.177925047089833,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AZO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8611381819870714,
+      "signalToNoise": 23.46683988016229,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "BA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9863091820065525,
+      "signalToNoise": 15.217327521961439,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BIIB",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9769879783280122,
+      "signalToNoise": 24.43190549919753,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CBRE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 19.90471135556432,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CCI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.617000626567286,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CCL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9929740080456103,
+      "signalToNoise": 44.167337169985025,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CDNS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9952024929475887,
+      "signalToNoise": 11.72254090267262,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CHTR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9835651237771732,
+      "signalToNoise": 66.65463665625005,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMG",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 28.21222407913474,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "COST",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9042970824786943,
+      "signalToNoise": 7.299963765918782,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "CPRT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9989210683930689,
+      "signalToNoise": 6.016164894076093,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CTAS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9984728401266248,
+      "signalToNoise": 43.34177653044144,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DAL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9944069683963962,
+      "signalToNoise": 22.82349771704448,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9835766263489886,
+      "signalToNoise": 44.99833161454978,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DG",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9960943822148814,
+      "signalToNoise": 16.529702453103614,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DGX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9801872555076434,
+      "signalToNoise": 5.526903389034172,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DHI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9612511446358464,
+      "signalToNoise": 24.463574112552955,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DHR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 489.90413290236353,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DOV",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 4.715856459396217,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DVA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.599740618060167,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DVN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9890918817914389,
+      "signalToNoise": 8.735685071830618,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DXC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8105056897976469,
+      "signalToNoise": 8.466650372932754,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "EBAY",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 25.802872533060043,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EFX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.89492446775121,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9926821276227492,
+      "signalToNoise": 20.003019109944248,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EQIX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.98279315536115,
+      "signalToNoise": 42.562410473525894,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ETN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9885301339617407,
+      "signalToNoise": 23.394332163119167,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.662454487058515,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "EXR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 6.95598600343318,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "F",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.91947055332805,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FAST",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.27006995640815,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FCX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.993248775082904,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FLR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.99053461303481,
+      "signalToNoise": 44.8592812979304,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FLS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.486653804317186,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FTI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8695112384582476,
+      "signalToNoise": 83.87322852639811,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FTNT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9928201461233925,
+      "signalToNoise": 117.90279089126375,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GOOG",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 20.384072856087908,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GOOGL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 20.384072856087908,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GRMN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.979115287584666,
+      "signalToNoise": 17.39389108153764,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HAL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9991399995972516,
+      "signalToNoise": 27.365880703055367,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HCA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.370259700227557,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HD",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 10.72650153409892,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HLT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 27.21514982541638,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HP",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9958986546972671,
+      "signalToNoise": 24.274292449668895,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IDXX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.417551495948302,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "INTU",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8432111205381846,
+      "signalToNoise": 7.42023819755608,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "IQV",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.097026576233343,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 21.49411980178956,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ISRG",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 20.687691735159454,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 19.468831092047903,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "JBHT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9911030500856424,
+      "signalToNoise": 6.760733796074818,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "JCI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9980970451474639,
+      "signalToNoise": 11.688758336190853,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "JEF",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9794772666960047,
+      "signalToNoise": 7.304532085564621,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KEYS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9037698202569748,
+      "signalToNoise": 37.54622961490767,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KHC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9567742882703745,
+      "signalToNoise": 20.801246782334342,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KLAC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9920397038391594,
+      "signalToNoise": 20.772566150998625,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KSS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9985469465317152,
+      "signalToNoise": 5.83498702264322,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LEN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9825762545610688,
+      "signalToNoise": 159.80813901269133,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LH",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9841175288640811,
+      "signalToNoise": 19.66110862212999,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LIN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 6.022618727655101,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "LKQ",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9915741088575543,
+      "signalToNoise": 26.313353284378394,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LLY",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9845546565302927,
+      "signalToNoise": 13.423832650077353,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LOW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9761490289027963,
+      "signalToNoise": 20.741948790746925,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LRCX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.946496497879996,
+      "signalToNoise": 49.986418645924275,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LUV",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9774243348715725,
+      "signalToNoise": 5.554348166924197,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9493926018484816,
+      "signalToNoise": 14.340012062586558,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "M",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9989129105314918,
+      "signalToNoise": 5.794257213140839,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MAA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9439542893343351,
+      "signalToNoise": 61.33560207240288,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9857528198173049,
+      "signalToNoise": 53.11367619845928,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.177075467119618,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MAT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9377348016849872,
+      "signalToNoise": 9.929492761908556,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MCHP",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9891048175679049,
+      "signalToNoise": 23.424987127506483,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MCK",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9355549034881028,
+      "signalToNoise": 14.819544163748663,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 27.118481985953125,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MLM",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9722746631865933,
+      "signalToNoise": 5.388341916829418,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9840750917694128,
+      "signalToNoise": 10.378374426480368,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MSCI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 7.156545470167201,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "MSFT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9992949656327731,
+      "signalToNoise": 12.261646904556185,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MSI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 17.960942105237375,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MTD",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9586974308487827,
+      "signalToNoise": 8.829776458972868,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MU",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 428.4573275030838,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NCLH",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.925051512100114,
+      "signalToNoise": 14.407125965193709,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NDAQ",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9905085131134692,
+      "signalToNoise": 6.105086036030668,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NEE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9861749155184831,
+      "signalToNoise": 8.515382995651358,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NFLX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.958262651785308,
+      "signalToNoise": 59.71291258713791,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NKE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9970502024413086,
+      "signalToNoise": 34.92598920827078,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NKTR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 3.541709530864702,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "NOV",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 21.134492266900065,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NSC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.123923454971564,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NUE",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9970592537927019,
+      "signalToNoise": 8.10693348152122,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NVDA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9665860332225231,
+      "signalToNoise": 70.9003376006178,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "OXY",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9451503515268581,
+      "signalToNoise": 11.27089627910655,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PAYX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9943416301532119,
+      "signalToNoise": 37.84508700288557,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PCG",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9917192637473414,
+      "signalToNoise": 12.565353862067788,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PH",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8554066202941245,
+      "signalToNoise": 18.139705140563965,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "PHM",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9917297123789219,
+      "signalToNoise": 7.479653562458586,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PLD",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.518915171744265,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PNW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 26.06362623651983,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PSA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9818417575498906,
+      "signalToNoise": 79.89566033487537,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PSX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9881053395043711,
+      "signalToNoise": 22.240314568667834,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PWR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.70354446972193,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PYPL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9113099189797781,
+      "signalToNoise": 27.9139353473808,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "QCOM",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9829356587841516,
+      "signalToNoise": 5.394647033503044,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "QRVO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9004214207094081,
+      "signalToNoise": 61.15353424196166,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RCL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 25.430737267489075,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RJF",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9551501383934543,
+      "signalToNoise": 30.234549048208503,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RMD",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9945682027186961,
+      "signalToNoise": 10.805782078245318,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ROK",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 3032.738325725291,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SBAC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9871742840528278,
+      "signalToNoise": 25.585959377744935,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SCHW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9756901081607827,
+      "signalToNoise": 26.524485522642383,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SHW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9744919822126131,
+      "signalToNoise": 82.8566938647792,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SLB",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9837894185365671,
+      "signalToNoise": 5.156949674821329,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SNPS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9866464742857014,
+      "signalToNoise": 28.51518167686633,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SPGI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.12688164618447,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "STX",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9887843956297101,
+      "signalToNoise": 41.47695079609195,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SWKS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9354454233974847,
+      "signalToNoise": 7.753270978844279,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TAP",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.86185402895555,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TEL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9817551480410679,
+      "signalToNoise": 21.65094760433856,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TGT",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9604926471841492,
+      "signalToNoise": 34.40202897343213,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TMO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 21.61026537454206,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TRIP",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9785437661713753,
+      "signalToNoise": 7.237043477345817,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TROW",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 24.245790877279802,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TSCO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9949749876815172,
+      "signalToNoise": 15.23092323367037,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TXN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 25.122198520491644,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UAL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 27.051663498248438,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UNH",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9793931382431766,
+      "signalToNoise": 26.359325079421467,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UNM",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9895238084582022,
+      "signalToNoise": 13.748800930687263,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UPS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 2.5748762317252214,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "URI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.8519899167542102,
+      "signalToNoise": 27.668764165535702,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "VMC",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9488560068913051,
+      "signalToNoise": 43.73416760287391,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VNO",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 47078.14100878357,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VRSK",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 23.40008717668655,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WHR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.226381869372776,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WY",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9798569945416354,
+      "signalToNoise": 14.6430314223248,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WYNN",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9887033657489026,
+      "signalToNoise": 49.03120494870792,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ZTS",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 22.446904819067647,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BALL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9947066693230149,
+      "signalToNoise": 23.390958151299046,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DELL",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9998224678399085,
+      "signalToNoise": 21.28538712724172,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LULU",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9827725841742024,
+      "signalToNoise": 5.551534065837793,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NVR",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9969672589226656,
+      "signalToNoise": 31.185329612806942,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SMCI",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0,
+      "signalToNoise": 168.90360506230553,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TSLA",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9894985500365676,
+      "signalToNoise": 275.42837134167144,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WSM",
+      "entry_date": "2019-01-02",
+      "secularDominance": 0.9935630917587563,
+      "signalToNoise": 5.125726926191606,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "A",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9990535488568711,
+      "signalToNoise": 92.8420118608271,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AAL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9850907982886803,
+      "signalToNoise": 49.88155273764245,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AAP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9969628268234992,
+      "signalToNoise": 76.94771258083921,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ABBV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.8190396605019896,
+      "signalToNoise": 121.51090943149872,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ABT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.990239464837048,
+      "signalToNoise": 79.65842647050862,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ACN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9780510986820381,
+      "signalToNoise": 6.0860463868282055,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ADBE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9615634891325976,
+      "signalToNoise": 19.733815216520732,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ADM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9300121496436111,
+      "signalToNoise": 18.648536862630632,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AES",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9952582762714787,
+      "signalToNoise": 8.000528268597332,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AFL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9873594140220611,
+      "signalToNoise": 7.625256406606521,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AIZ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9834284329825443,
+      "signalToNoise": 8.184461408567438,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AJG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9919650949856359,
+      "signalToNoise": 83.21326123665263,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AKAM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9627657481982869,
+      "signalToNoise": 21.32441938848887,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ALB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9916440298916432,
+      "signalToNoise": 60.905492794809966,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ALGN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9964928173816363,
+      "signalToNoise": 50.87094130713255,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ALL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9878453930867874,
+      "signalToNoise": 46.860387759784544,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMCR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9998071705547399,
+      "signalToNoise": 23.281668222008168,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AMD",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9870338394393263,
+      "signalToNoise": 112.84727793901159,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AMP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9799708950207372,
+      "signalToNoise": 8.756066423246128,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AMT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.6178185388816609,
+      "signalToNoise": 13.30488371840165,
+      "spectralDimensionality": 4
+    },
+    {
+      "ticker": "ANET",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9865311745177853,
+      "signalToNoise": 82.3461368605197,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AOS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9907009348780859,
+      "signalToNoise": 72.8038896823559,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "APH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9891564951684955,
+      "signalToNoise": 80.79727357220298,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "APTV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9919515735104701,
+      "signalToNoise": 73.13432364690394,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ARE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9857013604276738,
+      "signalToNoise": 85.35587564503135,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AVB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9999467701502511,
+      "signalToNoise": 11.213204480746253,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AVGO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9986920984240593,
+      "signalToNoise": 27.91892175897402,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AVY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.994934812314174,
+      "signalToNoise": 33.536938040580544,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AWK",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.999004869043786,
+      "signalToNoise": 6.177925047089833,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "AXP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9967284409983398,
+      "signalToNoise": 19.432001712413143,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "AZO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.97712258505585,
+      "signalToNoise": 19.594177358213447,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.990688028362043,
+      "signalToNoise": 6.121598107677231,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BAX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9911518113480214,
+      "signalToNoise": 66.4996501110925,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BBWI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9775636446999827,
+      "signalToNoise": 13.146749220030463,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BBY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9906496272341168,
+      "signalToNoise": 9.828980887900835,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BDX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.96253613706135,
+      "signalToNoise": 25.376900902173993,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BEN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9820386410404255,
+      "signalToNoise": 5.184381755293825,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BIIB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9835771061011327,
+      "signalToNoise": 8.116031258601817,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BIO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9976985575691679,
+      "signalToNoise": 22.69336269943728,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BK",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9979445023687308,
+      "signalToNoise": 26.861521945309164,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BKNG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.90535966727897,
+      "signalToNoise": 28.97903540864225,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BKR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9868875300871375,
+      "signalToNoise": 40.11640569036413,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BRO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9948221167717773,
+      "signalToNoise": 18.4567550286963,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BSX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9976837537440765,
+      "signalToNoise": 21.17413457619979,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "BWA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.8777698787753562,
+      "signalToNoise": 28.306113950213625,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BXP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.982764604470125,
+      "signalToNoise": 9.23435110864009,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CAG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9908566778743584,
+      "signalToNoise": 32.90640641513219,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CAH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9962192266308738,
+      "signalToNoise": 6.541827565244707,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CAT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.976925260266824,
+      "signalToNoise": 8.219806153428639,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.975534374472457,
+      "signalToNoise": 11.533060535444456,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CBOE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9185249228674014,
+      "signalToNoise": 21.799211167269704,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "CCI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9979852056630456,
+      "signalToNoise": 67.29883802859945,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CDNS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9968578514654488,
+      "signalToNoise": 73.47637052682806,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CDW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9897666558907212,
+      "signalToNoise": 72.16988653040204,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9993536258343045,
+      "signalToNoise": 101.64563665135887,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CHTR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9809162286715213,
+      "signalToNoise": 21.888834949564576,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMCSA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9740959696561425,
+      "signalToNoise": 11.426748264945743,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9880563702671078,
+      "signalToNoise": 89.79640350586725,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CMI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9923522799369572,
+      "signalToNoise": 70.84043801157307,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CNC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.988557728687664,
+      "signalToNoise": 36.33565221541149,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "COO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9984345133726705,
+      "signalToNoise": 25.356989330451047,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "COP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9867111613528157,
+      "signalToNoise": 86.10661935867812,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "COST",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9629847145322775,
+      "signalToNoise": 13.716545812741073,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CPRT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9995698429243601,
+      "signalToNoise": 9.01430963570881,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CRL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.987152962480063,
+      "signalToNoise": 83.80842179439354,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CSX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9913470163929179,
+      "signalToNoise": 65.89455897533911,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CTAS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9988281536124767,
+      "signalToNoise": 37.245616155446655,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CTRA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9774371856618224,
+      "signalToNoise": 56.87573803545327,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CTSH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9989004495111805,
+      "signalToNoise": 24.42764754676233,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "CVS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9635249367392827,
+      "signalToNoise": 90.80515616197388,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "CZR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.8317943842112243,
+      "signalToNoise": 98.12360286567517,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "D",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9836461173422543,
+      "signalToNoise": 44.53107537480071,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DAL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.98934851410674,
+      "signalToNoise": 10.033658413041277,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DD",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 24.407974387122376,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9924521305231263,
+      "signalToNoise": 58.535571059561754,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DGX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9867774846890286,
+      "signalToNoise": 23.046618976724687,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DHR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9854139344604342,
+      "signalToNoise": 21.92570047098746,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DIS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9985679259637709,
+      "signalToNoise": 25.238973682897587,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DLTR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9952395486304165,
+      "signalToNoise": 54.85165609993611,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DOW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9994471179914608,
+      "signalToNoise": 27.060041571833906,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DPZ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9977775268547746,
+      "signalToNoise": 42.38836235579461,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DVN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9982840784679129,
+      "signalToNoise": 125.78425191596047,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DXC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9203544400257979,
+      "signalToNoise": 6.707916452614976,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "DXCM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9750116530937298,
+      "signalToNoise": 81.4765361591269,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EBAY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9927052110503339,
+      "signalToNoise": 62.81912809847384,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EFX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9909263477306928,
+      "signalToNoise": 81.84931592666337,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9981247175840697,
+      "signalToNoise": 38.36204536662634,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EMN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9891255283694674,
+      "signalToNoise": 62.39283298813974,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ENPH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9806624190251413,
+      "signalToNoise": 119.20958815265169,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EOG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9634805874198381,
+      "signalToNoise": 40.512360817513716,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EPAM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.982778368213745,
+      "signalToNoise": 98.87312947635459,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EQR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9949995174064982,
+      "signalToNoise": 21.150122461261617,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ES",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9974256067173064,
+      "signalToNoise": 69.87464477086708,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ESS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9892867121979505,
+      "signalToNoise": 43.963662883539534,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ETN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9992538266709775,
+      "signalToNoise": 73.52771512747265,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ETR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9922158171981363,
+      "signalToNoise": 83.3891422398557,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9895867636739722,
+      "signalToNoise": 77.53293267818809,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EXPD",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9864411632936598,
+      "signalToNoise": 96.92290118607364,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "EXR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9975548979774018,
+      "signalToNoise": 32.22556229836036,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "F",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9913180904121216,
+      "signalToNoise": 57.221145804397544,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FANG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.8091132420088323,
+      "signalToNoise": 39.07714752794871,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FCX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9876013262751467,
+      "signalToNoise": 81.60904939274182,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FIS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9880179263169638,
+      "signalToNoise": 78.61936934638157,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FISV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.8935983689665131,
+      "signalToNoise": 24.48138879977463,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "FMC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9782153015209127,
+      "signalToNoise": 18.223468316723572,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FRT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9975333316411868,
+      "signalToNoise": 11.527722864751798,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "FTV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9879756842390629,
+      "signalToNoise": 30.50651321427557,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 297.7479608353712,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9830049587956086,
+      "signalToNoise": 43.534435366722896,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GPC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9921489740587397,
+      "signalToNoise": 66.4622915098808,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GPN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9792279404196247,
+      "signalToNoise": 81.5664464511261,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "GRMN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9642988983157273,
+      "signalToNoise": 11.487360118074903,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "GWW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9983106329541318,
+      "signalToNoise": 24.809259228652667,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HAS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.835390132670679,
+      "signalToNoise": 54.07220655224944,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HIG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9997168212777656,
+      "signalToNoise": 24.444731729858166,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HLT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9898821969857976,
+      "signalToNoise": 48.07939242647482,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HOLX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9522628630108481,
+      "signalToNoise": 5.849682210912688,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HPE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9714057067826779,
+      "signalToNoise": 5.164439092717304,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HPQ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9934236877214305,
+      "signalToNoise": 31.871613695455252,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HRL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9926282084150516,
+      "signalToNoise": 14.488507792588933,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HSIC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9990851804874272,
+      "signalToNoise": 22.629716737793743,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "HSY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9742501521845094,
+      "signalToNoise": 39.34128044627441,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "HUM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9769995418329134,
+      "signalToNoise": 12.727890477877395,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IBM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9967360383872494,
+      "signalToNoise": 5.559427172741031,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IDXX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9896527638174176,
+      "signalToNoise": 82.0092485432457,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IEX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9999586814813408,
+      "signalToNoise": 24.40506299991475,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IFF",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9429563181570962,
+      "signalToNoise": 19.90357951161707,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ILMN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9928187799633662,
+      "signalToNoise": 43.199549039161916,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "INCY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9749276260217039,
+      "signalToNoise": 78.4392685885374,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "INTC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9986417746697265,
+      "signalToNoise": 80.01178195312531,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "INTU",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9275384274760882,
+      "signalToNoise": 10.861211567408454,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "IPGP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.990736568668846,
+      "signalToNoise": 63.236168265375355,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IQV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9908830763442519,
+      "signalToNoise": 77.13841966040464,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.986249742313682,
+      "signalToNoise": 85.97195455682098,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IRM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9501842997669495,
+      "signalToNoise": 24.08709225194163,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ISRG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9878207909362992,
+      "signalToNoise": 78.9117761849921,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9897613621043905,
+      "signalToNoise": 65.47388991007362,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "IVZ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9968999926007551,
+      "signalToNoise": 21.254034001856137,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "JBHT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9911030500856424,
+      "signalToNoise": 6.760733796074818,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "JNJ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9964212585477531,
+      "signalToNoise": 60.11071381135158,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "JPM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9936824338211735,
+      "signalToNoise": 38.41540063336157,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KEY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9303356434327991,
+      "signalToNoise": 22.30268272328912,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KEYS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9784533329033777,
+      "signalToNoise": 24.51809438783518,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KHC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9567742882703745,
+      "signalToNoise": 20.801246782334342,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KLAC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9859442831764901,
+      "signalToNoise": 44.2519829971007,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KMI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9993550449187635,
+      "signalToNoise": 27.806892051870697,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "KMX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9960078742640375,
+      "signalToNoise": 83.88955803281763,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "KR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9975468950810882,
+      "signalToNoise": 67.29617197684745,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "L",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9887846170091611,
+      "signalToNoise": 46.415646814357395,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LDOS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9968423658886544,
+      "signalToNoise": 91.44911228926932,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9976941685049137,
+      "signalToNoise": 38.74698578635351,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LKQ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9933838042176901,
+      "signalToNoise": 7.954800786195649,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LLY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9785119945068556,
+      "signalToNoise": 8.696627844107766,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "LMT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9879455308249093,
+      "signalToNoise": 71.46883234208742,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LNC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.977585869147621,
+      "signalToNoise": 10.17066521556607,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LUV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9873285580301813,
+      "signalToNoise": 57.13120014639855,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LYB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9986539177294159,
+      "signalToNoise": 100.06503703340655,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9990377793295186,
+      "signalToNoise": 26.278020640034256,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MAA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9957788485488748,
+      "signalToNoise": 112.73447598590451,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MAR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9829270664723585,
+      "signalToNoise": 6.688957722237545,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCHP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9990857673631689,
+      "signalToNoise": 26.635776181817974,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MCK",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9961213561835579,
+      "signalToNoise": 58.5740448720746,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MDLZ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9836597964801148,
+      "signalToNoise": 6.609633034981844,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MDT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9995668908765585,
+      "signalToNoise": 35.51652043589177,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MET",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9814333034442275,
+      "signalToNoise": 24.640683362320388,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MGM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.986955679786711,
+      "signalToNoise": 54.328376074618824,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MHK",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9920800818451746,
+      "signalToNoise": 69.83237672298256,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MKC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9883622859048116,
+      "signalToNoise": 43.01802154105548,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MMM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9886982700255299,
+      "signalToNoise": 93.01833715130509,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MOS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9351599537827352,
+      "signalToNoise": 10.469740279345817,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MPC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9964949059258773,
+      "signalToNoise": 19.598190985168035,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MRNA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9812060838932078,
+      "signalToNoise": 120.40295051125423,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MSI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9898464473363144,
+      "signalToNoise": 57.695622413002354,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MTCH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9930080487168929,
+      "signalToNoise": 48.247065299716965,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "MTD",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.996560499541066,
+      "signalToNoise": 20.40089586209296,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "MU",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9949513366752847,
+      "signalToNoise": 28.531513936767116,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NEE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9861749155184831,
+      "signalToNoise": 8.515382995651358,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NEM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9859161751880771,
+      "signalToNoise": 73.82754588861455,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NFLX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9578002245702428,
+      "signalToNoise": 23.843730997257023,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9995858254358523,
+      "signalToNoise": 80.14682390939885,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NKE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9971864912232535,
+      "signalToNoise": 24.487265257723365,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NOW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9913750150708942,
+      "signalToNoise": 120.8170955185099,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NRG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.867009299634189,
+      "signalToNoise": 23.032833144381375,
+      "spectralDimensionality": 3
+    },
+    {
+      "ticker": "NSC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9922272341519507,
+      "signalToNoise": 64.24512314685249,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NTRS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9860703600246419,
+      "signalToNoise": 8.18245462263077,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NVDA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.8696530466239683,
+      "signalToNoise": 11.747330395211302,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "NWL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.999762266919032,
+      "signalToNoise": 19.979450739815345,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "NXPI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9682077574289124,
+      "signalToNoise": 36.10435639989316,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "O",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9308015231403525,
+      "signalToNoise": 22.51495101591068,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ODFL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9898797911538738,
+      "signalToNoise": 79.36689202368072,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "OGN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 25.725559252782148,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "OKE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9336467115535082,
+      "signalToNoise": 39.566353701254826,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ORCL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9995342730579824,
+      "signalToNoise": 31.966136735013464,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ORLY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9901711999731818,
+      "signalToNoise": 79.7272214190072,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "OXY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9899015354544287,
+      "signalToNoise": 21.13059988026113,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PCAR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9941709914756691,
+      "signalToNoise": 20.760603688360636,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PENN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9992997381203825,
+      "signalToNoise": 33.04449821146198,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PEP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9970379021091924,
+      "signalToNoise": 17.92233345747979,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PFE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.996962283279579,
+      "signalToNoise": 32.734535509485276,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PGR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9693291330738553,
+      "signalToNoise": 14.610408795679659,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9995113993737542,
+      "signalToNoise": 35.90877022212342,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PHM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9981565049190344,
+      "signalToNoise": 19.350319076994815,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PKG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9915583478424644,
+      "signalToNoise": 70.03510367287484,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PLD",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9852862263256549,
+      "signalToNoise": 80.72997369741023,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9919913366892231,
+      "signalToNoise": 63.17464022938085,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PNR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9910742832082815,
+      "signalToNoise": 90.39544303912974,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PPG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9917977755280272,
+      "signalToNoise": 75.28195894210387,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PSA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9852595917431441,
+      "signalToNoise": 48.25726628362007,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PSX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9992346749453037,
+      "signalToNoise": 78.28858759813227,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PTC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9833983982199397,
+      "signalToNoise": 5.28078324624458,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "PVH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9983132217173488,
+      "signalToNoise": 10.314217177193607,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PWR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.988040802408276,
+      "signalToNoise": 72.33860601609403,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "PYPL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9982668420206753,
+      "signalToNoise": 6.024517393659064,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "QCOM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9797812884139928,
+      "signalToNoise": 5.625796187673221,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "QRVO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9803597234536571,
+      "signalToNoise": 37.04219284812337,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RCL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9859472427398163,
+      "signalToNoise": 25.047267691709212,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RHI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9909853831738512,
+      "signalToNoise": 70.33296664006274,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RJF",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9853154531540218,
+      "signalToNoise": 26.471023723076563,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9930195546619734,
+      "signalToNoise": 50.35002728252683,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RMD",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9990477821074596,
+      "signalToNoise": 32.77668301610032,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ROK",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9999919922404722,
+      "signalToNoise": 28.449050713693786,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "RSG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9916688659138974,
+      "signalToNoise": 67.75057286781518,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "RTX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9842848702546401,
+      "signalToNoise": 26.803774536565168,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SBAC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9963454386692413,
+      "signalToNoise": 20.60060898665457,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SBUX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9944645242034604,
+      "signalToNoise": 77.68910561139329,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SCHW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9504497664861974,
+      "signalToNoise": 22.053927628308493,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SEDG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.970091938745222,
+      "signalToNoise": 32.94537761776206,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SEE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9982061877796408,
+      "signalToNoise": 22.51578609753879,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SHW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.96860292760963,
+      "signalToNoise": 9.559150105273535,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SJM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9903480700130123,
+      "signalToNoise": 14.447900995849622,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SNA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9996125505072683,
+      "signalToNoise": 25.82180868057661,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SRE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9998358136660968,
+      "signalToNoise": 26.50140402739337,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "STE",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.992133157903814,
+      "signalToNoise": 45.68806730154835,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "STX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9993399913019602,
+      "signalToNoise": 7.798884086168192,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "STZ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9967118798309385,
+      "signalToNoise": 53.713729473469755,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SWK",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9961613111154948,
+      "signalToNoise": 59.444949444494306,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "SWKS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9922506997453057,
+      "signalToNoise": 37.73734678007966,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "T",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9876015265573822,
+      "signalToNoise": 8.277193833662064,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TDG",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9823027404284218,
+      "signalToNoise": 33.52356229749195,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TECH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9954411518712131,
+      "signalToNoise": 9.706615601400145,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TEL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9999567912001452,
+      "signalToNoise": 28.606875769992257,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TER",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9805519296490115,
+      "signalToNoise": 11.19919687575507,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TFX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9905285261231479,
+      "signalToNoise": 66.09493290177025,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TGT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9949910440975073,
+      "signalToNoise": 51.41571317530714,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TJX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.992933809290264,
+      "signalToNoise": 5.73469470910143,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TMO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9889636054706665,
+      "signalToNoise": 82.38560473205054,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TMUS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9875025662913997,
+      "signalToNoise": 90.8529968303176,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TPR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9543329046495428,
+      "signalToNoise": 21.343261133111735,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "TRMB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9238089765393945,
+      "signalToNoise": 40.09520512431666,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TROW",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9902713249424966,
+      "signalToNoise": 82.72454094390149,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TRV",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9897753782848303,
+      "signalToNoise": 42.73724425061551,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TSN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9898717675582986,
+      "signalToNoise": 73.04328716752582,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "TXT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.935228643093528,
+      "signalToNoise": 5.82940467933075,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9906582904901287,
+      "signalToNoise": 68.35486753994819,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UAA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9906582904901287,
+      "signalToNoise": 68.35486753994819,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UAL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.986262506042422,
+      "signalToNoise": 43.912755183811434,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UDR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9715895117243667,
+      "signalToNoise": 6.513159668662021,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "UNP",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9475303826068305,
+      "signalToNoise": 14.624277511894709,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "UPS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9863845846506734,
+      "signalToNoise": 26.456128442446715,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "URI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9822331919538078,
+      "signalToNoise": 77.14577624752148,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "USB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9978661346289546,
+      "signalToNoise": 7.509479264712851,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "V",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9984600873782763,
+      "signalToNoise": 5.579916741401199,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "VFC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9952963401468122,
+      "signalToNoise": 14.868936640775352,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VLO",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9876076134494518,
+      "signalToNoise": 63.99804453310909,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VRSN",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9809276055079411,
+      "signalToNoise": 9.228510935125499,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VRTX",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9800904906279574,
+      "signalToNoise": 98.19922115768476,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "VZ",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9757539673145517,
+      "signalToNoise": 33.58569218019128,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WAB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.970032022314325,
+      "signalToNoise": 69.8305256473736,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WAT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9835129888696331,
+      "signalToNoise": 4.705148499040597,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WDC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9953477917759874,
+      "signalToNoise": 7.504521782305824,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WELL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9923059564585441,
+      "signalToNoise": 12.056510358890304,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WFC",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9863983222130276,
+      "signalToNoise": 15.748151206889005,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WHR",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9916197984708984,
+      "signalToNoise": 61.71071366490559,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WMB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9951312825741967,
+      "signalToNoise": 21.201804127823245,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "WMT",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.995956210968107,
+      "signalToNoise": 53.043175526700004,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WRB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9974074832153124,
+      "signalToNoise": 12.20757300550966,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9656044010077163,
+      "signalToNoise": 17.722298176002525,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "XOM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9999993038476843,
+      "signalToNoise": 39.20075061363118,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "XRAY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9978944895039485,
+      "signalToNoise": 10.077076405648935,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "ZBH",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9921797875441235,
+      "signalToNoise": 65.559021378718,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ZBRA",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9904161399288355,
+      "signalToNoise": 77.78020162307548,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ZION",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9362940143793319,
+      "signalToNoise": 70.82127946849361,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ZTS",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9902377233849804,
+      "signalToNoise": 76.12114671060579,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "ABNB",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0,
+      "signalToNoise": 23.149825222548397,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "BALL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9947066693230149,
+      "signalToNoise": 23.390958151299046,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "DELL",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9960195039686771,
+      "signalToNoise": 54.46383046337788,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "LULU",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9775032001684527,
+      "signalToNoise": 17.703343563618986,
+      "spectralDimensionality": 2
+    },
+    {
+      "ticker": "SMCI",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9993436967429998,
+      "signalToNoise": 35.861034563554576,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WSM",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9982578177243269,
+      "signalToNoise": 14.455633220719365,
+      "spectralDimensionality": 1
+    },
+    {
+      "ticker": "WDAY",
+      "entry_date": "2021-12-31",
+      "secularDominance": 0.9831750079190834,
+      "signalToNoise": 71.08844437808246,
+      "spectralDimensionality": 1
+    }
+  ]
+}

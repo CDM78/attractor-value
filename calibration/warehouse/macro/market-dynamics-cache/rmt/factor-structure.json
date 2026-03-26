@@ -1,0 +1,56 @@
+{
+  "n_significant_factors": 3,
+  "factors": [
+    {
+      "eigenvalue": 2.3996,
+      "variance_explained": 0.2181,
+      "loadings": {
+        "spread_variance_slope": 0.276,
+        "spread_theta": 0.4349,
+        "si_zipf_velocity": -0.126,
+        "spread_half_life": -0.5893,
+        "si_csd": -0.1845,
+        "si_d1": 0.0027,
+        "si_theta": -0.2923,
+        "volume_benford_kld": -0.2928,
+        "volume_benford_chi": -0.39,
+        "si_d2": 0.0236,
+        "si_beta": -0.117
+      }
+    },
+    {
+      "eigenvalue": 1.8622,
+      "variance_explained": 0.1693,
+      "loadings": {
+        "spread_variance_slope": 0.0281,
+        "spread_theta": 0.2288,
+        "si_zipf_velocity": -0.0536,
+        "spread_half_life": -0.2685,
+        "si_csd": 0.0047,
+        "si_d1": 0.2379,
+        "si_theta": -0.3774,
+        "volume_benford_kld": 0.5705,
+        "volume_benford_chi": 0.5399,
+        "si_d2": 0.221,
+        "si_beta": 0.0844
+      }
+    },
+    {
+      "eigenvalue": 1.4305,
+      "variance_explained": 0.13,
+      "loadings": {
+        "spread_variance_slope": 0.1431,
+        "spread_theta": 0.1687,
+        "si_zipf_velocity": 0.3283,
+        "spread_half_life": -0.0511,
+        "si_csd": -0.1071,
+        "si_d1": -0.4281,
+        "si_theta": -0.0728,
+        "volume_benford_kld": 0.0783,
+        "volume_benford_chi": 0.0879,
+        "si_d2": -0.4907,
+        "si_beta": 0.6213
+      }
+    }
+  ]
+}

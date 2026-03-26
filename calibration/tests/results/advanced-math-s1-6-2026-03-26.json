@@ -1,0 +1,105 @@
+{
+  "test_id": "advanced-math-s1-6-2026-03-26",
+  "test_date": "2026-03-26T13:22:17.157Z",
+  "elapsed_seconds": 324.5,
+  "session_1_rmt": {
+    "n_significant_factors": 3,
+    "rmt_composite_r": 0.12652156271736614,
+    "rmt_composite_cv": 0.13,
+    "factors": [
+      {
+        "index": 1,
+        "eigenvalue": 2.3996,
+        "variance_explained": 0.2181,
+        "cumulative_variance": 0.2181,
+        "significant": true,
+        "loadings": {
+          "spread_variance_slope": 0.276,
+          "spread_theta": 0.4349,
+          "si_zipf_velocity": -0.126,
+          "spread_half_life": -0.5893,
+          "si_csd": -0.1845,
+          "si_d1": 0.0027,
+          "si_theta": -0.2923,
+          "volume_benford_kld": -0.2928,
+          "volume_benford_chi": -0.39,
+          "si_d2": 0.0236,
+          "si_beta": -0.117
+        }
+      },
+      {
+        "index": 2,
+        "eigenvalue": 1.8622,
+        "variance_explained": 0.1693,
+        "cumulative_variance": 0.3874,
+        "significant": true,
+        "loadings": {
+          "spread_variance_slope": 0.0281,
+          "spread_theta": 0.2288,
+          "si_zipf_velocity": -0.0536,
+          "spread_half_life": -0.2685,
+          "si_csd": 0.0047,
+          "si_d1": 0.2379,
+          "si_theta": -0.3774,
+          "volume_benford_kld": 0.5705,
+          "volume_benford_chi": 0.5399,
+          "si_d2": 0.221,
+          "si_beta": 0.0844
+        }
+      },
+      {
+        "index": 3,
+        "eigenvalue": 1.4305,
+        "variance_explained": 0.13,
+        "cumulative_variance": 0.5175,
+        "significant": true,
+        "loadings": {
+          "spread_variance_slope": 0.1431,
+          "spread_theta": 0.1687,
+          "si_zipf_velocity": 0.3283,
+          "spread_half_life": -0.0511,
+          "si_csd": -0.1071,
+          "si_d1": -0.4281,
+          "si_theta": -0.0728,
+          "volume_benford_kld": 0.0783,
+          "volume_benford_chi": 0.0879,
+          "si_d2": -0.4907,
+          "si_beta": 0.6213
+        }
+      }
+    ]
+  },
+  "session_2_multiplicative": {
+    "best_interaction": "si_zipf_velocity × si_d1",
+    "best_interaction_r": 0.2227568136709106,
+    "arithmetic_r": 0.1769215163459309,
+    "geometric_r": 0.15793821006260145
+  },
+  "session_3_fisher": {
+    "r": 0.16899660685761575,
+    "cv": 0.1698,
+    "n": 848
+  },
+  "session_5_benford": {
+    "n": 892,
+    "classCount": {
+      "NATURAL_PROCESS": {
+        "w": 454,
+        "t": 343
+      },
+      "HUMAN_MANIPULATION": {
+        "w": 0,
+        "t": 0
+      },
+      "STRUCTURAL_STRESS": {
+        "w": 68,
+        "t": 27
+      }
+    }
+  },
+  "session_6_spectral": {
+    "secular_dominance_r": 0.07686307875070464,
+    "signal_to_noise_r": 0.05353177126408981,
+    "n": 848
+  }
+}
