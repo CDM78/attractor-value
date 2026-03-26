@@ -51,6 +51,28 @@
       ],
       "market_wins": 3,
       "total_comparisons": 4
+    },
+    {
+      "test_id": "market-dynamics-expanded-2026-03-26",
+      "date": "2026-03-26T11:53:01.911Z",
+      "type": "discrimination-expanded",
+      "description": "Expanded SI theta/beta validation + Zipf + Benford",
+      "n_cases": 457,
+      "key_findings": [
+        "spread_variance_slope (r=0.333, n=457)",
+        "spread_theta (r=0.329, n=457)",
+        "si_zipf_velocity (r=0.219, n=456)",
+        "spread_half_life (r=0.209, n=457)",
+        "si_csd (r=0.163, n=456)",
+        "si_d1 (r=0.161, n=457)",
+        "composite (r=0.142, n=457)",
+        "si_theta (r=0.138, n=457)",
+        "volume_benford_kld (r=0.122, n=456)",
+        "volume_benford_chi (r=0.119, n=456)",
+        "si_d2 (r=0.111, n=457)"
+      ],
+      "market_wins": 6,
+      "total_comparisons": 6
     }
   ]
 }
