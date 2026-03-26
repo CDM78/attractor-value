@@ -88,6 +88,21 @@
     }
   },
   "ABBV": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-19",
+      "latest": "2018-02-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-19",
+      "latest": "2018-02-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-19",
+      "latest": "2018-02-16"
+    },
     "sec_comment_letters": {
       "count": 18,
       "earliest": "2012-07-02",
@@ -108,19 +123,19 @@
   },
   "ABT": {
     "10k_full": {
-      "count": 2,
+      "count": 5,
       "earliest": "2011-02-18",
-      "latest": "2012-02-21"
+      "latest": "2018-02-16"
     },
     "10k_risk_factors": {
-      "count": 2,
+      "count": 5,
       "earliest": "2011-02-18",
-      "latest": "2012-02-21"
+      "latest": "2018-02-16"
     },
     "10k_mda": {
-      "count": 2,
+      "count": 5,
       "earliest": "2011-02-18",
-      "latest": "2012-02-21"
+      "latest": "2018-02-16"
     },
     "10q_mda": {
       "count": 4,
@@ -146,19 +161,19 @@
   "ACGL": {},
   "ACN": {
     "10k_full": {
-      "count": 2,
+      "count": 5,
       "earliest": "2011-10-21",
-      "latest": "2012-10-30"
+      "latest": "2015-10-30"
     },
     "10k_risk_factors": {
-      "count": 2,
+      "count": 5,
       "earliest": "2011-10-21",
-      "latest": "2012-10-30"
+      "latest": "2015-10-30"
     },
     "10k_mda": {
-      "count": 2,
+      "count": 5,
       "earliest": "2011-10-21",
-      "latest": "2012-10-30"
+      "latest": "2015-10-30"
     },
     "10q_mda": {
       "count": 4,
@@ -226,6 +241,21 @@
     }
   },
   "ADM": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-18"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-18"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-18"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -266,19 +296,19 @@
   },
   "ADSK": {
     "10k_full": {
-      "count": 3,
+      "count": 6,
       "earliest": "2013-03-18",
-      "latest": "2015-03-18"
+      "latest": "2018-03-22"
     },
     "10k_risk_factors": {
-      "count": 3,
+      "count": 6,
       "earliest": "2013-03-18",
-      "latest": "2015-03-18"
+      "latest": "2018-03-22"
     },
     "10k_mda": {
-      "count": 3,
+      "count": 6,
       "earliest": "2013-03-18",
-      "latest": "2015-03-18"
+      "latest": "2018-03-22"
     },
     "10q_mda": {
       "count": 4,
@@ -304,6 +334,21 @@
   "AEE": {},
   "AEP": {},
   "AES": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-27",
+      "latest": "2015-02-26"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-27",
+      "latest": "2015-02-26"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-27",
+      "latest": "2015-02-26"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -350,19 +395,19 @@
   },
   "AIG": {
     "10k_full": {
-      "count": 1,
+      "count": 4,
       "earliest": "2012-02-23",
-      "latest": "2012-02-23"
+      "latest": "2021-02-19"
     },
     "10k_risk_factors": {
-      "count": 1,
+      "count": 4,
       "earliest": "2012-02-23",
-      "latest": "2012-02-23"
+      "latest": "2021-02-19"
     },
     "10k_mda": {
-      "count": 1,
+      "count": 4,
       "earliest": "2012-02-23",
-      "latest": "2012-02-23"
+      "latest": "2021-02-19"
     },
     "10q_mda": {
       "count": 3,
@@ -393,6 +438,21 @@
     }
   },
   "AIZ": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2011-02-23",
+      "latest": "2012-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2011-02-23",
+      "latest": "2012-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2011-02-23",
+      "latest": "2012-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -503,6 +563,21 @@
   },
   "ALLE": {},
   "AMAT": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-12-10",
+      "latest": "2012-12-05"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-12-10",
+      "latest": "2012-12-05"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-12-10",
+      "latest": "2012-12-05"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -539,6 +614,21 @@
   },
   "AMGN": {},
   "AMP": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-23"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -589,7 +679,23 @@
       "latest": "2020-12-31"
     }
   },
-  "AN": {},
+  "AN": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-17",
+      "latest": "2012-02-13"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-17",
+      "latest": "2012-02-13"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-17",
+      "latest": "2012-02-13"
+    }
+  },
   "ANDV": {},
   "ANET": {
     "short_interest": {
@@ -620,8 +726,39 @@
       "latest": "2021-12-31"
     }
   },
-  "APD": {},
+  "APD": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-11-21",
+      "latest": "2018-11-20"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-11-21",
+      "latest": "2018-11-20"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-11-21",
+      "latest": "2018-11-20"
+    }
+  },
   "APH": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-10"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-10"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-10"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -691,6 +828,21 @@
   "ATI": {},
   "ATO": {},
   "AVB": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -712,6 +864,21 @@
     }
   },
   "AVY": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-27"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -736,6 +903,21 @@
   "AYI": {},
   "AZN": {},
   "AZO": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-10-28",
+      "latest": "2021-10-25"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-10-28",
+      "latest": "2021-10-25"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-10-28",
+      "latest": "2021-10-25"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -795,8 +977,40 @@
       "latest": "2021-12-31"
     }
   },
-  "BBBY": {},
-  "BBT": {},
+  "BBBY": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-03-12"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-03-12"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-03-12"
+    }
+  },
+  "BBT": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2017-03-01",
+      "latest": "2018-03-01"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2017-03-01",
+      "latest": "2018-03-01"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2017-03-01",
+      "latest": "2018-03-01"
+    }
+  },
   "BBWI": {
     "short_interest": {
       "count": 1,
@@ -813,18 +1027,18 @@
   },
   "BDX": {
     "10k_full": {
-      "count": 3,
-      "earliest": "2019-11-27",
+      "count": 6,
+      "earliest": "2013-11-27",
       "latest": "2021-11-24"
     },
     "10k_risk_factors": {
-      "count": 3,
-      "earliest": "2019-11-27",
+      "count": 6,
+      "earliest": "2013-11-27",
       "latest": "2021-11-24"
     },
     "10k_mda": {
-      "count": 3,
-      "earliest": "2019-11-27",
+      "count": 6,
+      "earliest": "2013-11-27",
       "latest": "2021-11-24"
     },
     "10q_mda": {
@@ -892,18 +1106,18 @@
   "BIDU": {},
   "BIIB": {
     "10k_full": {
-      "count": 3,
-      "earliest": "2013-02-05",
+      "count": 6,
+      "earliest": "2010-02-09",
       "latest": "2015-02-04"
     },
     "10k_risk_factors": {
-      "count": 3,
-      "earliest": "2013-02-05",
+      "count": 6,
+      "earliest": "2010-02-09",
       "latest": "2015-02-04"
     },
     "10k_mda": {
-      "count": 3,
-      "earliest": "2013-02-05",
+      "count": 6,
+      "earliest": "2010-02-09",
       "latest": "2015-02-04"
     },
     "10q_mda": {
@@ -938,6 +1152,21 @@
     }
   },
   "BKNG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-27",
+      "latest": "2015-02-19"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-27",
+      "latest": "2015-02-19"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-27",
+      "latest": "2015-02-19"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -999,6 +1228,21 @@
   },
   "BTI": {},
   "BWA": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-22"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-22"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-22"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -1051,6 +1295,21 @@
     }
   },
   "CAH": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-08-12",
+      "latest": "2018-08-22"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-08-12",
+      "latest": "2018-08-22"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-08-12",
+      "latest": "2018-08-22"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -1113,6 +1372,21 @@
   },
   "CATO": {},
   "CB": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -1250,6 +1524,21 @@
     }
   },
   "CI": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2020-12-31",
@@ -1258,7 +1547,23 @@
   },
   "CINF": {},
   "CL": {},
-  "CLF": {},
+  "CLF": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-18",
+      "latest": "2012-02-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-18",
+      "latest": "2012-02-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-18",
+      "latest": "2012-02-16"
+    }
+  },
   "CLX": {
     "short_interest": {
       "count": 1,
@@ -1274,6 +1579,21 @@
     }
   },
   "CMCSA": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-01-31",
+      "latest": "2021-02-04"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-01-31",
+      "latest": "2021-02-04"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-01-31",
+      "latest": "2021-02-04"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -1282,6 +1602,21 @@
   },
   "CME": {},
   "CMG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-10"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-10"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-10"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -1340,7 +1675,23 @@
       "latest": "2020-12-31"
     }
   },
-  "CNX": {},
+  "CNX": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-09",
+      "latest": "2012-02-10"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-09",
+      "latest": "2012-02-10"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-09",
+      "latest": "2012-02-10"
+    }
+  },
   "COF": {},
   "COL": {},
   "COO": {
@@ -1411,6 +1762,21 @@
     }
   },
   "CTAS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-07-26",
+      "latest": "2021-07-28"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-07-26",
+      "latest": "2021-07-28"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-07-26",
+      "latest": "2021-07-28"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -1426,6 +1792,21 @@
     }
   },
   "CTSH": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-12"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-12"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-12"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -1455,6 +1836,21 @@
     }
   },
   "D": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -1477,6 +1873,21 @@
     }
   },
   "DE": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-12-19",
+      "latest": "2021-12-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-12-19",
+      "latest": "2021-12-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-12-19",
+      "latest": "2021-12-16"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -1529,6 +1940,21 @@
   },
   "DLR": {},
   "DLTR": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2011-03-17",
+      "latest": "2012-03-15"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2011-03-17",
+      "latest": "2012-03-15"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2011-03-17",
+      "latest": "2012-03-15"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -1557,6 +1983,21 @@
     }
   },
   "DRI": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-07-23",
+      "latest": "2012-07-20"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-07-23",
+      "latest": "2012-07-20"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-07-23",
+      "latest": "2012-07-20"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2020-12-31",
@@ -1564,8 +2005,39 @@
     }
   },
   "DTE": {},
-  "DUK": {},
+  "DUK": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    }
+  },
   "DVA": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2017-02-24",
+      "latest": "2018-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2017-02-24",
+      "latest": "2018-02-23"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2017-02-24",
+      "latest": "2018-02-23"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -1573,6 +2045,21 @@
     }
   },
   "DVN": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-17",
+      "latest": "2018-02-21"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-17",
+      "latest": "2018-02-21"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-17",
+      "latest": "2018-02-21"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -1580,6 +2067,21 @@
     }
   },
   "DXC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-06-13",
+      "latest": "2021-05-28"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-06-13",
+      "latest": "2021-05-28"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-06-13",
+      "latest": "2021-05-28"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -1651,14 +2153,60 @@
   },
   "ED": {},
   "EFX": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2011-02-23",
+      "latest": "2012-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2011-02-23",
+      "latest": "2012-02-23"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2011-02-23",
+      "latest": "2012-02-23"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
       "latest": "2021-12-31"
     }
   },
-  "EIX": {},
+  "EIX": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-25"
+    }
+  },
   "EL": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-08-23",
+      "latest": "2021-08-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-08-23",
+      "latest": "2021-08-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-08-23",
+      "latest": "2021-08-27"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -1711,7 +2259,23 @@
       "latest": "2021-12-31"
     }
   },
-  "EQT": {},
+  "EQT": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-02-12"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-02-12"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-02-12"
+    }
+  },
   "ES": {
     "short_interest": {
       "count": 2,
@@ -1750,21 +2314,83 @@
   },
   "EVRG": {},
   "EW": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-27"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
       "latest": "2021-12-31"
     }
   },
-  "EXC": {},
+  "EXC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-05",
+      "latest": "2012-02-09"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-05",
+      "latest": "2012-02-09"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-05",
+      "latest": "2012-02-09"
+    }
+  },
   "EXPD": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
       "latest": "2021-12-31"
     }
   },
-  "EXPE": {},
+  "EXPE": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2020-02-14",
+      "latest": "2021-02-12"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2020-02-14",
+      "latest": "2021-02-12"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2020-02-14",
+      "latest": "2021-02-12"
+    }
+  },
   "EXR": {
     "short_interest": {
       "count": 3,
@@ -1787,6 +2413,21 @@
     }
   },
   "FAST": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-06",
+      "latest": "2021-02-08"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-06",
+      "latest": "2021-02-08"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-06",
+      "latest": "2021-02-08"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -1795,6 +2436,21 @@
   },
   "FCPT": {},
   "FCX": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-27"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -1813,6 +2469,21 @@
   },
   "FHN": {},
   "FIS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-22"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-22"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-22"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -1820,6 +2491,21 @@
     }
   },
   "FISV": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-26"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-26"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-26"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -1905,7 +2591,23 @@
       "latest": "2020-12-31"
     }
   },
-  "GIS": {},
+  "GIS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-06-30",
+      "latest": "2018-06-29"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-06-30",
+      "latest": "2018-06-29"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-06-30",
+      "latest": "2018-06-29"
+    }
+  },
   "GKOS": {
     "short_interest": {
       "count": 1,
@@ -1945,6 +2647,21 @@
     }
   },
   "GOOGL": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2017-02-03",
+      "latest": "2018-02-06"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2017-02-03",
+      "latest": "2018-02-06"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2017-02-03",
+      "latest": "2018-02-06"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -2010,6 +2727,21 @@
   },
   "HAR": {},
   "HAS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-26",
+      "latest": "2021-02-24"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-26",
+      "latest": "2021-02-24"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-26",
+      "latest": "2021-02-24"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -2047,6 +2779,21 @@
     }
   },
   "HIG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-19"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-19"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-19"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2020-12-31",
@@ -2083,8 +2830,39 @@
       "latest": "2020-06-15"
     }
   },
-  "HON": {},
+  "HON": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2019-02-08",
+      "latest": "2020-02-14"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2019-02-08",
+      "latest": "2020-02-14"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2019-02-08",
+      "latest": "2020-02-14"
+    }
+  },
   "HP": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-11-24",
+      "latest": "2012-11-21"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-11-24",
+      "latest": "2012-11-21"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-11-24",
+      "latest": "2012-11-21"
+    },
     "short_interest": {
       "count": 3,
       "earliest": "2018-12-31",
@@ -2099,6 +2877,21 @@
     }
   },
   "HPQ": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-12-15",
+      "latest": "2012-12-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-12-15",
+      "latest": "2012-12-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-12-15",
+      "latest": "2012-12-27"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2141,6 +2934,21 @@
     }
   },
   "HSY": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-17"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-17"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-17"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2148,6 +2956,21 @@
     }
   },
   "HUM": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-18"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-18"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-18"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2273,6 +3096,21 @@
     }
   },
   "INTU": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-09-13",
+      "latest": "2015-09-01"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-09-13",
+      "latest": "2015-09-01"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-09-13",
+      "latest": "2015-09-01"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -2286,7 +3124,23 @@
       "latest": "2022-09-15"
     }
   },
-  "IP": {},
+  "IP": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-19"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-19"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-19"
+    }
+  },
   "IPGP": {
     "short_interest": {
       "count": 2,
@@ -2346,6 +3200,21 @@
     }
   },
   "IRM": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-03-01",
+      "latest": "2015-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-03-01",
+      "latest": "2015-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-03-01",
+      "latest": "2015-02-27"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2353,6 +3222,21 @@
     }
   },
   "ISRG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-04",
+      "latest": "2021-02-10"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-04",
+      "latest": "2021-02-10"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-04",
+      "latest": "2021-02-10"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -2367,7 +3251,23 @@
     }
   },
   "ITT": {},
-  "ITW": {},
+  "ITW": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-12",
+      "latest": "2018-02-15"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-12",
+      "latest": "2018-02-15"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-12",
+      "latest": "2018-02-15"
+    }
+  },
   "IVZ": {
     "short_interest": {
       "count": 1,
@@ -2426,6 +3326,21 @@
     }
   },
   "JEF": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2017-02-27",
+      "latest": "2018-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2017-02-27",
+      "latest": "2018-02-27"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2017-02-27",
+      "latest": "2018-02-27"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -2450,18 +3365,18 @@
   "KDP": {},
   "KEY": {
     "10k_full": {
-      "count": 3,
-      "earliest": "2019-02-25",
+      "count": 6,
+      "earliest": "2013-02-26",
       "latest": "2021-02-22"
     },
     "10k_risk_factors": {
-      "count": 3,
-      "earliest": "2019-02-25",
+      "count": 6,
+      "earliest": "2013-02-26",
       "latest": "2021-02-22"
     },
     "10k_mda": {
-      "count": 3,
-      "earliest": "2019-02-25",
+      "count": 6,
+      "earliest": "2013-02-26",
       "latest": "2021-02-22"
     },
     "10q_mda": {
@@ -2497,19 +3412,19 @@
   "KIM": {},
   "KLAC": {
     "10k_full": {
-      "count": 3,
+      "count": 6,
       "earliest": "2013-08-08",
-      "latest": "2015-08-07"
+      "latest": "2018-08-06"
     },
     "10k_risk_factors": {
-      "count": 3,
+      "count": 6,
       "earliest": "2013-08-08",
-      "latest": "2015-08-07"
+      "latest": "2018-08-06"
     },
     "10k_mda": {
-      "count": 3,
+      "count": 6,
       "earliest": "2013-08-08",
-      "latest": "2015-08-07"
+      "latest": "2018-08-06"
     },
     "10q_mda": {
       "count": 4,
@@ -2529,6 +3444,21 @@
   },
   "KMB": {},
   "KMI": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-03-01",
+      "latest": "2015-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-03-01",
+      "latest": "2015-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-03-01",
+      "latest": "2015-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2551,6 +3481,21 @@
     }
   },
   "KSS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-03-18",
+      "latest": "2018-03-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-03-18",
+      "latest": "2018-03-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-03-18",
+      "latest": "2018-03-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -2573,6 +3518,21 @@
   },
   "LB": {},
   "LDOS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-19",
+      "latest": "2021-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2685,6 +3645,21 @@
     }
   },
   "LMT": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-01-28"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-01-28"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-01-28"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2692,6 +3667,21 @@
     }
   },
   "LNC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-18"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-18"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-18"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2721,6 +3711,21 @@
     }
   },
   "LULU": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-03-21",
+      "latest": "2015-03-26"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-03-21",
+      "latest": "2015-03-26"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-03-21",
+      "latest": "2015-03-26"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -2764,6 +3769,21 @@
   },
   "LYV": {},
   "M": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-03-31",
+      "latest": "2012-03-28"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-03-31",
+      "latest": "2012-03-28"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-03-31",
+      "latest": "2012-03-28"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -2806,6 +3826,21 @@
     }
   },
   "MAT": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-25",
+      "latest": "2018-02-27"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -2843,6 +3878,21 @@
     }
   },
   "MDLZ": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-05"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-05"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-05"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2879,6 +3929,21 @@
     }
   },
   "MKC": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2017-01-25",
+      "latest": "2018-01-25"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2017-01-25",
+      "latest": "2018-01-25"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2017-01-25",
+      "latest": "2018-01-25"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2906,7 +3971,23 @@
       "latest": "2021-12-31"
     }
   },
-  "MNST": {},
+  "MNST": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-29"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-29"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-29"
+    }
+  },
   "MO": {},
   "MOH": {
     "short_interest": {
@@ -2923,6 +4004,21 @@
     }
   },
   "MPC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-26"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-26"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-02-26"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -2945,6 +4041,21 @@
     }
   },
   "MS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-26",
+      "latest": "2015-03-02"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-26",
+      "latest": "2015-03-02"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-26",
+      "latest": "2015-03-02"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -2966,6 +4077,21 @@
     }
   },
   "MSI": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-16",
+      "latest": "2012-02-15"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-16",
+      "latest": "2012-02-15"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-16",
+      "latest": "2012-02-15"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3027,18 +4153,18 @@
   },
   "MU": {
     "10k_full": {
-      "count": 3,
-      "earliest": "2019-10-17",
+      "count": 6,
+      "earliest": "2016-10-28",
       "latest": "2021-10-08"
     },
     "10k_risk_factors": {
-      "count": 3,
-      "earliest": "2019-10-17",
+      "count": 6,
+      "earliest": "2016-10-28",
       "latest": "2021-10-08"
     },
     "10k_mda": {
-      "count": 3,
-      "earliest": "2019-10-17",
+      "count": 6,
+      "earliest": "2016-10-28",
       "latest": "2021-10-08"
     },
     "10q_mda": {
@@ -3073,7 +4199,23 @@
     }
   },
   "NAVI": {},
-  "NBR": {},
+  "NBR": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2011-03-01",
+      "latest": "2012-02-29"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2011-03-01",
+      "latest": "2012-02-29"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2011-03-01",
+      "latest": "2012-02-29"
+    }
+  },
   "NCLH": {
     "short_interest": {
       "count": 1,
@@ -3097,6 +4239,21 @@
     }
   },
   "NEM": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3104,6 +4261,21 @@
     }
   },
   "NFLX": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-01",
+      "latest": "2015-01-29"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-01",
+      "latest": "2015-01-29"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-01",
+      "latest": "2015-01-29"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3112,6 +4284,21 @@
   },
   "NFX": {},
   "NI": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2017-02-22",
+      "latest": "2018-02-20"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2017-02-22",
+      "latest": "2018-02-20"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2017-02-22",
+      "latest": "2018-02-20"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3119,6 +4306,21 @@
     }
   },
   "NKE": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-07-20",
+      "latest": "2012-07-24"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-07-20",
+      "latest": "2012-07-24"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-07-20",
+      "latest": "2012-07-24"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3141,6 +4343,21 @@
     }
   },
   "NOV": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -3162,13 +4379,44 @@
     }
   },
   "NSC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-04"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-04"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-04"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
       "latest": "2021-12-31"
     }
   },
-  "NTAP": {},
+  "NTAP": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-06-18",
+      "latest": "2021-06-21"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-06-18",
+      "latest": "2021-06-21"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-06-18",
+      "latest": "2021-06-21"
+    }
+  },
   "NTRS": {
     "short_interest": {
       "count": 1,
@@ -3191,6 +4439,21 @@
     }
   },
   "NVDA": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-26"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-26"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-21",
+      "latest": "2021-02-26"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3198,6 +4461,21 @@
     }
   },
   "NVR": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-12"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-12"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-12"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -3244,6 +4522,21 @@
   },
   "OI": {},
   "OKE": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-26",
+      "latest": "2021-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-26",
+      "latest": "2021-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-26",
+      "latest": "2021-02-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3341,7 +4634,23 @@
       "latest": "2019-01-15"
     }
   },
-  "PEG": {},
+  "PEG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-26",
+      "latest": "2015-02-26"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-26",
+      "latest": "2015-02-26"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-26",
+      "latest": "2015-02-26"
+    }
+  },
   "PENN": {
     "short_interest": {
       "count": 3,
@@ -3350,6 +4659,21 @@
     }
   },
   "PEP": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-22",
+      "latest": "2012-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-22",
+      "latest": "2012-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-22",
+      "latest": "2012-02-27"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3395,7 +4719,23 @@
       "latest": "2014-07-17"
     }
   },
-  "PG": {},
+  "PG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-08-08",
+      "latest": "2015-08-07"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-08-08",
+      "latest": "2015-08-07"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-08-08",
+      "latest": "2015-08-07"
+    }
+  },
   "PGR": {
     "short_interest": {
       "count": 1,
@@ -3419,19 +4759,19 @@
   },
   "PHM": {
     "10k_full": {
-      "count": 3,
+      "count": 6,
       "earliest": "2010-02-19",
-      "latest": "2012-02-09"
+      "latest": "2018-02-07"
     },
     "10k_risk_factors": {
-      "count": 3,
+      "count": 6,
       "earliest": "2010-02-19",
-      "latest": "2012-02-09"
+      "latest": "2018-02-07"
     },
     "10k_mda": {
-      "count": 3,
+      "count": 6,
       "earliest": "2010-02-19",
-      "latest": "2012-02-09"
+      "latest": "2018-02-07"
     },
     "10q_mda": {
       "count": 4,
@@ -3476,6 +4816,21 @@
     }
   },
   "PLD": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-11"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-11"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-13",
+      "latest": "2021-02-11"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3543,6 +4898,21 @@
     }
   },
   "PPG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-02-19"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-02-19"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-21",
+      "latest": "2015-02-19"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3551,6 +4921,21 @@
   },
   "PPL": {},
   "PRGO": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2014-08-14",
+      "latest": "2015-08-13"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2014-08-14",
+      "latest": "2015-08-13"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2014-08-14",
+      "latest": "2015-08-13"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-09-15",
@@ -3571,8 +4956,39 @@
       "latest": "2020-06-15"
     }
   },
-  "PRU": {},
+  "PRU": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-24"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-24"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-24"
+    }
+  },
   "PSA": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-29",
+      "latest": "2018-03-01"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-29",
+      "latest": "2018-03-01"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-29",
+      "latest": "2018-03-01"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3601,6 +5017,21 @@
     }
   },
   "PWR": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-03-01"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-03-01"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-28",
+      "latest": "2021-03-01"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3629,22 +5060,38 @@
       "latest": "2021-12-31"
     }
   },
-  "R": {},
-  "RCL": {
+  "R": {
     "10k_full": {
-      "count": 3,
-      "earliest": "2013-02-25",
-      "latest": "2015-02-23"
+      "count": 2,
+      "earliest": "2011-02-15",
+      "latest": "2012-02-16"
     },
     "10k_risk_factors": {
-      "count": 3,
-      "earliest": "2013-02-25",
-      "latest": "2015-02-23"
+      "count": 2,
+      "earliest": "2011-02-15",
+      "latest": "2012-02-16"
     },
     "10k_mda": {
-      "count": 3,
+      "count": 2,
+      "earliest": "2011-02-15",
+      "latest": "2012-02-16"
+    }
+  },
+  "RCL": {
+    "10k_full": {
+      "count": 6,
       "earliest": "2013-02-25",
-      "latest": "2015-02-23"
+      "latest": "2018-02-21"
+    },
+    "10k_risk_factors": {
+      "count": 6,
+      "earliest": "2013-02-25",
+      "latest": "2018-02-21"
+    },
+    "10k_mda": {
+      "count": 6,
+      "earliest": "2013-02-25",
+      "latest": "2018-02-21"
     },
     "10q_mda": {
       "count": 4,
@@ -3671,19 +5118,19 @@
   "REGN": {},
   "RF": {
     "10k_full": {
-      "count": 2,
+      "count": 4,
       "earliest": "2014-02-21",
-      "latest": "2015-02-17"
+      "latest": "2018-02-26"
     },
     "10k_risk_factors": {
-      "count": 2,
+      "count": 4,
       "earliest": "2014-02-21",
-      "latest": "2015-02-17"
+      "latest": "2018-02-26"
     },
     "10k_mda": {
-      "count": 2,
+      "count": 4,
       "earliest": "2014-02-21",
-      "latest": "2015-02-17"
+      "latest": "2018-02-26"
     },
     "10q_mda": {
       "count": 4,
@@ -3780,6 +5227,21 @@
     }
   },
   "RRC": {
+    "10k_full": {
+      "count": 1,
+      "earliest": "2012-02-22",
+      "latest": "2012-02-22"
+    },
+    "10k_risk_factors": {
+      "count": 1,
+      "earliest": "2012-02-22",
+      "latest": "2012-02-22"
+    },
+    "10k_mda": {
+      "count": 1,
+      "earliest": "2012-02-22",
+      "latest": "2012-02-22"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-06-15",
@@ -3824,6 +5286,21 @@
   "SBCF": {},
   "SBS": {},
   "SBUX": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-11-18",
+      "latest": "2018-11-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-11-18",
+      "latest": "2018-11-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-11-18",
+      "latest": "2018-11-16"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3860,6 +5337,21 @@
     }
   },
   "SEE": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-29"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-29"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-03-01",
+      "latest": "2012-02-29"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -3906,6 +5398,21 @@
     }
   },
   "SLB": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-05",
+      "latest": "2012-02-01"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-05",
+      "latest": "2012-02-01"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-05",
+      "latest": "2012-02-01"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -3919,7 +5426,23 @@
       "latest": "2021-03-15"
     }
   },
-  "SLM": {},
+  "SLM": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2011-02-28",
+      "latest": "2012-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2011-02-28",
+      "latest": "2012-02-27"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2011-02-28",
+      "latest": "2012-02-27"
+    }
+  },
   "SM": {
     "short_interest": {
       "count": 1,
@@ -3928,6 +5451,21 @@
     }
   },
   "SMCI": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-12-19",
+      "latest": "2021-08-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-12-19",
+      "latest": "2021-08-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-12-19",
+      "latest": "2021-08-27"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -3979,9 +5517,41 @@
     }
   },
   "SNY": {},
-  "SO": {},
+  "SO": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-18"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-18"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-20",
+      "latest": "2021-02-18"
+    }
+  },
   "SONY": {},
-  "SPG": {},
+  "SPG": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-28"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-28"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-28"
+    }
+  },
   "SPGI": {
     "short_interest": {
       "count": 1,
@@ -4006,6 +5576,21 @@
   "STLD": {},
   "STT": {},
   "STX": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-08-05",
+      "latest": "2018-08-03"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-08-05",
+      "latest": "2018-08-03"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-08-05",
+      "latest": "2018-08-03"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -4013,6 +5598,21 @@
     }
   },
   "STZ": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-04-25",
+      "latest": "2018-04-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-04-25",
+      "latest": "2018-04-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-04-25",
+      "latest": "2018-04-23"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4097,9 +5697,40 @@
       "latest": "2021-12-31"
     }
   },
-  "SYK": {},
+  "SYK": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-11",
+      "latest": "2018-02-08"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-11",
+      "latest": "2018-02-08"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-11",
+      "latest": "2018-02-08"
+    }
+  },
   "SYY": {},
   "T": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-24"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-06-15",
@@ -4152,6 +5783,21 @@
     }
   },
   "TER": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-03-01",
+      "latest": "2021-02-22"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-03-01",
+      "latest": "2021-02-22"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-03-01",
+      "latest": "2021-02-22"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4180,7 +5826,23 @@
       "latest": "2021-12-31"
     }
   },
-  "THC": {},
+  "THC": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2011-02-25",
+      "latest": "2012-02-28"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2011-02-25",
+      "latest": "2012-02-28"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2011-02-25",
+      "latest": "2012-02-28"
+    }
+  },
   "TJX": {
     "10k_full": {
       "count": 3,
@@ -4230,6 +5892,21 @@
     }
   },
   "TPR": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-08-19",
+      "latest": "2018-08-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-08-19",
+      "latest": "2018-08-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-08-19",
+      "latest": "2018-08-16"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4324,6 +6001,21 @@
     }
   },
   "TXT": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-24",
+      "latest": "2018-02-15"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-24",
+      "latest": "2018-02-15"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-24",
+      "latest": "2018-02-15"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4371,6 +6063,21 @@
   "UL": {},
   "ULTA": {},
   "UNH": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-12",
+      "latest": "2021-03-01"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-12",
+      "latest": "2021-03-01"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-12",
+      "latest": "2021-03-01"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -4385,6 +6092,21 @@
     }
   },
   "UNP": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-05"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-05"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-08",
+      "latest": "2021-02-05"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4392,6 +6114,21 @@
     }
   },
   "UPS": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-28",
+      "latest": "2015-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-28",
+      "latest": "2015-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-28",
+      "latest": "2015-02-27"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -4414,6 +6151,21 @@
     }
   },
   "V": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-11-14",
+      "latest": "2021-11-18"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-11-14",
+      "latest": "2021-11-18"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-11-14",
+      "latest": "2021-11-18"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4428,6 +6180,21 @@
     }
   },
   "VFC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-05-24",
+      "latest": "2021-05-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-05-24",
+      "latest": "2021-05-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-05-24",
+      "latest": "2021-05-27"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4444,6 +6211,21 @@
     }
   },
   "VMC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2013-02-28",
+      "latest": "2015-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2013-02-28",
+      "latest": "2015-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2013-02-28",
+      "latest": "2015-02-27"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -4458,6 +6240,21 @@
     }
   },
   "VNO": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-11",
+      "latest": "2021-02-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-11",
+      "latest": "2021-02-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-11",
+      "latest": "2021-02-16"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2018-12-31",
@@ -4473,6 +6270,21 @@
     }
   },
   "VRSN": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-19",
+      "latest": "2018-02-16"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-19",
+      "latest": "2018-02-16"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-19",
+      "latest": "2018-02-16"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4582,18 +6394,18 @@
   },
   "WDC": {
     "10k_full": {
-      "count": 3,
-      "earliest": "2016-08-29",
+      "count": 6,
+      "earliest": "2013-08-19",
       "latest": "2018-08-24"
     },
     "10k_risk_factors": {
-      "count": 3,
-      "earliest": "2016-08-29",
+      "count": 6,
+      "earliest": "2013-08-19",
       "latest": "2018-08-24"
     },
     "10k_mda": {
-      "count": 3,
-      "earliest": "2016-08-29",
+      "count": 6,
+      "earliest": "2013-08-19",
       "latest": "2018-08-24"
     },
     "10q_mda": {
@@ -4618,7 +6430,23 @@
     }
   },
   "WDFC": {},
-  "WEC": {},
+  "WEC": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-28"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-28"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-28"
+    }
+  },
   "WELL": {
     "short_interest": {
       "count": 1,
@@ -4648,8 +6476,39 @@
     }
   },
   "WIT": {},
-  "WM": {},
+  "WM": {
+    "10k_full": {
+      "count": 2,
+      "earliest": "2011-02-17",
+      "latest": "2012-02-16"
+    },
+    "10k_risk_factors": {
+      "count": 2,
+      "earliest": "2011-02-17",
+      "latest": "2012-02-16"
+    },
+    "10k_mda": {
+      "count": 2,
+      "earliest": "2011-02-17",
+      "latest": "2012-02-16"
+    }
+  },
   "WMB": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-22"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-22"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-22"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4657,6 +6516,21 @@
     }
   },
   "WMT": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-03-28",
+      "latest": "2021-03-19"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-03-28",
+      "latest": "2021-03-19"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-03-28",
+      "latest": "2021-03-19"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4693,6 +6567,21 @@
     }
   },
   "WY": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-22"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-22"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-26",
+      "latest": "2012-02-22"
+    },
     "short_interest": {
       "count": 2,
       "earliest": "2018-12-31",
@@ -4706,7 +6595,23 @@
       "latest": "2018-12-31"
     }
   },
-  "XEL": {},
+  "XEL": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-17"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-17"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-02-22",
+      "latest": "2021-02-17"
+    }
+  },
   "XOM": {
     "short_interest": {
       "count": 1,
@@ -4722,6 +6627,21 @@
     }
   },
   "XRAY": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2019-03-08",
+      "latest": "2021-03-01"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2019-03-08",
+      "latest": "2021-03-01"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2019-03-08",
+      "latest": "2021-03-01"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",
@@ -4735,7 +6655,23 @@
       "latest": "2021-03-15"
     }
   },
-  "XYL": {},
+  "XYL": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-23"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-23"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2016-02-26",
+      "latest": "2018-02-23"
+    }
+  },
   "YETI": {},
   "YUM": {
     "10k_full": {
@@ -4770,6 +6706,21 @@
     }
   },
   "ZBH": {
+    "10k_full": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-27"
+    },
+    "10k_risk_factors": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-27"
+    },
+    "10k_mda": {
+      "count": 3,
+      "earliest": "2010-02-25",
+      "latest": "2012-02-27"
+    },
     "short_interest": {
       "count": 1,
       "earliest": "2021-12-31",

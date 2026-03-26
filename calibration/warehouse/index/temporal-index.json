@@ -153,6 +153,33 @@
       "2018-12-31"
     ]
   },
+  "ABBV|10k_full": {
+    "company": "ABBV",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "ABBV|10k_risk_factors": {
+    "company": "ABBV",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "ABBV|10k_mda": {
+    "company": "ABBV",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
   "ABBV|sec_comment_letters": {
     "company": "ABBV",
     "data_type": "sec_comment_letters",
@@ -197,7 +224,10 @@
     "data_type": "10k_full",
     "dates": [
       "2011-02-18",
-      "2012-02-21"
+      "2012-02-21",
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
     ]
   },
   "ABT|10k_risk_factors": {
@@ -205,7 +235,10 @@
     "data_type": "10k_risk_factors",
     "dates": [
       "2011-02-18",
-      "2012-02-21"
+      "2012-02-21",
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
     ]
   },
   "ABT|10k_mda": {
@@ -213,7 +246,10 @@
     "data_type": "10k_mda",
     "dates": [
       "2011-02-18",
-      "2012-02-21"
+      "2012-02-21",
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
     ]
   },
   "ABT|10q_mda": {
@@ -293,7 +329,10 @@
     "data_type": "10k_full",
     "dates": [
       "2011-10-21",
-      "2012-10-30"
+      "2012-10-30",
+      "2013-10-29",
+      "2014-10-24",
+      "2015-10-30"
     ]
   },
   "ACN|10k_risk_factors": {
@@ -301,7 +340,10 @@
     "data_type": "10k_risk_factors",
     "dates": [
       "2011-10-21",
-      "2012-10-30"
+      "2012-10-30",
+      "2013-10-29",
+      "2014-10-24",
+      "2015-10-30"
     ]
   },
   "ACN|10k_mda": {
@@ -309,7 +351,10 @@
     "data_type": "10k_mda",
     "dates": [
       "2011-10-21",
-      "2012-10-30"
+      "2012-10-30",
+      "2013-10-29",
+      "2014-10-24",
+      "2015-10-30"
     ]
   },
   "ACN|10q_mda": {
@@ -432,6 +477,33 @@
       "2018-12-31"
     ]
   },
+  "ADM|10k_full": {
+    "company": "ADM",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-18"
+    ]
+  },
+  "ADM|10k_risk_factors": {
+    "company": "ADM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-18"
+    ]
+  },
+  "ADM|10k_mda": {
+    "company": "ADM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-18"
+    ]
+  },
   "ADM|short_interest": {
     "company": "ADM",
     "data_type": "short_interest",
@@ -502,7 +574,10 @@
     "dates": [
       "2013-03-18",
       "2014-03-10",
-      "2015-03-18"
+      "2015-03-18",
+      "2016-03-23",
+      "2017-03-21",
+      "2018-03-22"
     ]
   },
   "ADSK|10k_risk_factors": {
@@ -511,7 +586,10 @@
     "dates": [
       "2013-03-18",
       "2014-03-10",
-      "2015-03-18"
+      "2015-03-18",
+      "2016-03-23",
+      "2017-03-21",
+      "2018-03-22"
     ]
   },
   "ADSK|10k_mda": {
@@ -520,7 +598,10 @@
     "dates": [
       "2013-03-18",
       "2014-03-10",
-      "2015-03-18"
+      "2015-03-18",
+      "2016-03-23",
+      "2017-03-21",
+      "2018-03-22"
     ]
   },
   "ADSK|10q_mda": {
@@ -567,6 +648,33 @@
     "dates": [
       "2018-12-31",
       "2020-12-31"
+    ]
+  },
+  "AES|10k_full": {
+    "company": "AES",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-27",
+      "2014-02-26",
+      "2015-02-26"
+    ]
+  },
+  "AES|10k_risk_factors": {
+    "company": "AES",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-27",
+      "2014-02-26",
+      "2015-02-26"
+    ]
+  },
+  "AES|10k_mda": {
+    "company": "AES",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-27",
+      "2014-02-26",
+      "2015-02-26"
     ]
   },
   "AES|short_interest": {
@@ -650,21 +758,30 @@
     "company": "AIG",
     "data_type": "10k_full",
     "dates": [
-      "2012-02-23"
+      "2012-02-23",
+      "2019-02-15",
+      "2020-02-21",
+      "2021-02-19"
     ]
   },
   "AIG|10k_risk_factors": {
     "company": "AIG",
     "data_type": "10k_risk_factors",
     "dates": [
-      "2012-02-23"
+      "2012-02-23",
+      "2019-02-15",
+      "2020-02-21",
+      "2021-02-19"
     ]
   },
   "AIG|10k_mda": {
     "company": "AIG",
     "data_type": "10k_mda",
     "dates": [
-      "2012-02-23"
+      "2012-02-23",
+      "2019-02-15",
+      "2020-02-21",
+      "2021-02-19"
     ]
   },
   "AIG|10q_mda": {
@@ -745,6 +862,33 @@
     "dates": [
       "2020-12-15",
       "2020-12-31"
+    ]
+  },
+  "AIZ|10k_full": {
+    "company": "AIZ",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-23",
+      "2011-02-25",
+      "2012-02-23"
+    ]
+  },
+  "AIZ|10k_risk_factors": {
+    "company": "AIZ",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-23",
+      "2011-02-25",
+      "2012-02-23"
+    ]
+  },
+  "AIZ|10k_mda": {
+    "company": "AIZ",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-23",
+      "2011-02-25",
+      "2012-02-23"
     ]
   },
   "AIZ|short_interest": {
@@ -916,6 +1060,33 @@
       "2021-12-31"
     ]
   },
+  "AMAT|10k_full": {
+    "company": "AMAT",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-12-10",
+      "2011-12-06",
+      "2012-12-05"
+    ]
+  },
+  "AMAT|10k_risk_factors": {
+    "company": "AMAT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-12-10",
+      "2011-12-06",
+      "2012-12-05"
+    ]
+  },
+  "AMAT|10k_mda": {
+    "company": "AMAT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-12-10",
+      "2011-12-06",
+      "2012-12-05"
+    ]
+  },
   "AMAT|short_interest": {
     "company": "AMAT",
     "data_type": "short_interest",
@@ -952,6 +1123,33 @@
     "dates": [
       "2019-11-15",
       "2020-12-31"
+    ]
+  },
+  "AMP|10k_full": {
+    "company": "AMP",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
+  "AMP|10k_risk_factors": {
+    "company": "AMP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
+  "AMP|10k_mda": {
+    "company": "AMP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-23"
     ]
   },
   "AMP|short_interest": {
@@ -1042,6 +1240,33 @@
       "2020-12-31"
     ]
   },
+  "AN|10k_full": {
+    "company": "AN",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-17",
+      "2011-02-15",
+      "2012-02-13"
+    ]
+  },
+  "AN|10k_risk_factors": {
+    "company": "AN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-17",
+      "2011-02-15",
+      "2012-02-13"
+    ]
+  },
+  "AN|10k_mda": {
+    "company": "AN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-17",
+      "2011-02-15",
+      "2012-02-13"
+    ]
+  },
   "ANET|short_interest": {
     "company": "ANET",
     "data_type": "short_interest",
@@ -1072,6 +1297,60 @@
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "APD|10k_full": {
+    "company": "APD",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-11-21",
+      "2017-11-16",
+      "2018-11-20"
+    ]
+  },
+  "APD|10k_risk_factors": {
+    "company": "APD",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-11-21",
+      "2017-11-16",
+      "2018-11-20"
+    ]
+  },
+  "APD|10k_mda": {
+    "company": "APD",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-11-21",
+      "2017-11-16",
+      "2018-11-20"
+    ]
+  },
+  "APH|10k_full": {
+    "company": "APH",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-13",
+      "2020-02-12",
+      "2021-02-10"
+    ]
+  },
+  "APH|10k_risk_factors": {
+    "company": "APH",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-13",
+      "2020-02-12",
+      "2021-02-10"
+    ]
+  },
+  "APH|10k_mda": {
+    "company": "APH",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-13",
+      "2020-02-12",
+      "2021-02-10"
     ]
   },
   "APH|short_interest": {
@@ -1178,6 +1457,33 @@
       "2020-06-15"
     ]
   },
+  "AVB|10k_full": {
+    "company": "AVB",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-26",
+      "2017-02-24",
+      "2018-02-23"
+    ]
+  },
+  "AVB|10k_risk_factors": {
+    "company": "AVB",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-26",
+      "2017-02-24",
+      "2018-02-23"
+    ]
+  },
+  "AVB|10k_mda": {
+    "company": "AVB",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-26",
+      "2017-02-24",
+      "2018-02-23"
+    ]
+  },
   "AVB|short_interest": {
     "company": "AVB",
     "data_type": "short_interest",
@@ -1199,6 +1505,33 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "AVY|10k_full": {
+    "company": "AVY",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-03-01",
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
+  "AVY|10k_risk_factors": {
+    "company": "AVY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-03-01",
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
+  "AVY|10k_mda": {
+    "company": "AVY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-03-01",
+      "2011-02-28",
+      "2012-02-27"
     ]
   },
   "AVY|short_interest": {
@@ -1224,6 +1557,33 @@
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "AZO|10k_full": {
+    "company": "AZO",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-10-28",
+      "2020-10-26",
+      "2021-10-25"
+    ]
+  },
+  "AZO|10k_risk_factors": {
+    "company": "AZO",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-10-28",
+      "2020-10-26",
+      "2021-10-25"
+    ]
+  },
+  "AZO|10k_mda": {
+    "company": "AZO",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-10-28",
+      "2020-10-26",
+      "2021-10-25"
     ]
   },
   "AZO|short_interest": {
@@ -1317,6 +1677,57 @@
       "2021-12-31"
     ]
   },
+  "BBBY|10k_full": {
+    "company": "BBBY",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-21",
+      "2014-02-27",
+      "2015-03-12"
+    ]
+  },
+  "BBBY|10k_risk_factors": {
+    "company": "BBBY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-21",
+      "2014-02-27",
+      "2015-03-12"
+    ]
+  },
+  "BBBY|10k_mda": {
+    "company": "BBBY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-21",
+      "2014-02-27",
+      "2015-03-12"
+    ]
+  },
+  "BBT|10k_full": {
+    "company": "BBT",
+    "data_type": "10k_full",
+    "dates": [
+      "2017-03-01",
+      "2018-03-01"
+    ]
+  },
+  "BBT|10k_risk_factors": {
+    "company": "BBT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2017-03-01",
+      "2018-03-01"
+    ]
+  },
+  "BBT|10k_mda": {
+    "company": "BBT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2017-03-01",
+      "2018-03-01"
+    ]
+  },
   "BBWI|short_interest": {
     "company": "BBWI",
     "data_type": "short_interest",
@@ -1336,6 +1747,9 @@
     "company": "BDX",
     "data_type": "10k_full",
     "dates": [
+      "2013-11-27",
+      "2014-11-26",
+      "2015-11-25",
       "2019-11-27",
       "2020-11-25",
       "2021-11-24"
@@ -1345,6 +1759,9 @@
     "company": "BDX",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2013-11-27",
+      "2014-11-26",
+      "2015-11-25",
       "2019-11-27",
       "2020-11-25",
       "2021-11-24"
@@ -1354,6 +1771,9 @@
     "company": "BDX",
     "data_type": "10k_mda",
     "dates": [
+      "2013-11-27",
+      "2014-11-26",
+      "2015-11-25",
       "2019-11-27",
       "2020-11-25",
       "2021-11-24"
@@ -1470,6 +1890,9 @@
     "company": "BIIB",
     "data_type": "10k_full",
     "dates": [
+      "2010-02-09",
+      "2011-02-04",
+      "2012-02-03",
       "2013-02-05",
       "2014-02-06",
       "2015-02-04"
@@ -1479,6 +1902,9 @@
     "company": "BIIB",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2010-02-09",
+      "2011-02-04",
+      "2012-02-03",
       "2013-02-05",
       "2014-02-06",
       "2015-02-04"
@@ -1488,6 +1914,9 @@
     "company": "BIIB",
     "data_type": "10k_mda",
     "dates": [
+      "2010-02-09",
+      "2011-02-04",
+      "2012-02-03",
       "2013-02-05",
       "2014-02-06",
       "2015-02-04"
@@ -1534,6 +1963,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "BKNG|10k_full": {
+    "company": "BKNG",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-27",
+      "2014-02-20",
+      "2015-02-19"
+    ]
+  },
+  "BKNG|10k_risk_factors": {
+    "company": "BKNG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-27",
+      "2014-02-20",
+      "2015-02-19"
+    ]
+  },
+  "BKNG|10k_mda": {
+    "company": "BKNG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-27",
+      "2014-02-20",
+      "2015-02-19"
     ]
   },
   "BKNG|short_interest": {
@@ -1593,6 +2049,33 @@
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "BWA|10k_full": {
+    "company": "BWA",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-19",
+      "2020-02-13",
+      "2021-02-22"
+    ]
+  },
+  "BWA|10k_risk_factors": {
+    "company": "BWA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-19",
+      "2020-02-13",
+      "2021-02-22"
+    ]
+  },
+  "BWA|10k_mda": {
+    "company": "BWA",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-19",
+      "2020-02-13",
+      "2021-02-22"
     ]
   },
   "BWA|short_interest": {
@@ -1674,6 +2157,33 @@
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "CAH|10k_full": {
+    "company": "CAH",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-08-12",
+      "2017-08-10",
+      "2018-08-22"
+    ]
+  },
+  "CAH|10k_risk_factors": {
+    "company": "CAH",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-08-12",
+      "2017-08-10",
+      "2018-08-22"
+    ]
+  },
+  "CAH|10k_mda": {
+    "company": "CAH",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-08-12",
+      "2017-08-10",
+      "2018-08-22"
     ]
   },
   "CAH|short_interest": {
@@ -1758,6 +2268,33 @@
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "CB|10k_full": {
+    "company": "CB",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-24"
+    ]
+  },
+  "CB|10k_risk_factors": {
+    "company": "CB",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-24"
+    ]
+  },
+  "CB|10k_mda": {
+    "company": "CB",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-24"
     ]
   },
   "CB|short_interest": {
@@ -1955,11 +2492,65 @@
       "2021-12-31"
     ]
   },
+  "CI|10k_full": {
+    "company": "CI",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-27",
+      "2021-02-25"
+    ]
+  },
+  "CI|10k_risk_factors": {
+    "company": "CI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-27",
+      "2021-02-25"
+    ]
+  },
+  "CI|10k_mda": {
+    "company": "CI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-27",
+      "2021-02-25"
+    ]
+  },
   "CI|short_interest": {
     "company": "CI",
     "data_type": "short_interest",
     "dates": [
       "2020-12-31"
+    ]
+  },
+  "CLF|10k_full": {
+    "company": "CLF",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-18",
+      "2011-02-17",
+      "2012-02-16"
+    ]
+  },
+  "CLF|10k_risk_factors": {
+    "company": "CLF",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-18",
+      "2011-02-17",
+      "2012-02-16"
+    ]
+  },
+  "CLF|10k_mda": {
+    "company": "CLF",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-18",
+      "2011-02-17",
+      "2012-02-16"
     ]
   },
   "CLX|short_interest": {
@@ -1976,12 +2567,66 @@
       "2021-12-31"
     ]
   },
+  "CMCSA|10k_full": {
+    "company": "CMCSA",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-01-31",
+      "2020-01-30",
+      "2021-02-04"
+    ]
+  },
+  "CMCSA|10k_risk_factors": {
+    "company": "CMCSA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-01-31",
+      "2020-01-30",
+      "2021-02-04"
+    ]
+  },
+  "CMCSA|10k_mda": {
+    "company": "CMCSA",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-01-31",
+      "2020-01-30",
+      "2021-02-04"
+    ]
+  },
   "CMCSA|short_interest": {
     "company": "CMCSA",
     "data_type": "short_interest",
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "CMG|10k_full": {
+    "company": "CMG",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-08",
+      "2020-02-05",
+      "2021-02-10"
+    ]
+  },
+  "CMG|10k_risk_factors": {
+    "company": "CMG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-08",
+      "2020-02-05",
+      "2021-02-10"
+    ]
+  },
+  "CMG|10k_mda": {
+    "company": "CMG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-08",
+      "2020-02-05",
+      "2021-02-10"
     ]
   },
   "CMG|short_interest": {
@@ -2075,6 +2720,33 @@
       "2020-12-31"
     ]
   },
+  "CNX|10k_full": {
+    "company": "CNX",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-09",
+      "2011-02-10",
+      "2012-02-10"
+    ]
+  },
+  "CNX|10k_risk_factors": {
+    "company": "CNX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-09",
+      "2011-02-10",
+      "2012-02-10"
+    ]
+  },
+  "CNX|10k_mda": {
+    "company": "CNX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-09",
+      "2011-02-10",
+      "2012-02-10"
+    ]
+  },
   "COO|short_interest": {
     "company": "COO",
     "data_type": "short_interest",
@@ -2145,6 +2817,33 @@
       "2021-12-31"
     ]
   },
+  "CTAS|10k_full": {
+    "company": "CTAS",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-07-26",
+      "2020-07-29",
+      "2021-07-28"
+    ]
+  },
+  "CTAS|10k_risk_factors": {
+    "company": "CTAS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-07-26",
+      "2020-07-29",
+      "2021-07-28"
+    ]
+  },
+  "CTAS|10k_mda": {
+    "company": "CTAS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-07-26",
+      "2020-07-29",
+      "2021-07-28"
+    ]
+  },
   "CTAS|short_interest": {
     "company": "CTAS",
     "data_type": "short_interest",
@@ -2159,6 +2858,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "CTSH|10k_full": {
+    "company": "CTSH",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-19",
+      "2020-02-14",
+      "2021-02-12"
+    ]
+  },
+  "CTSH|10k_risk_factors": {
+    "company": "CTSH",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-19",
+      "2020-02-14",
+      "2021-02-12"
+    ]
+  },
+  "CTSH|10k_mda": {
+    "company": "CTSH",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-19",
+      "2020-02-14",
+      "2021-02-12"
     ]
   },
   "CTSH|short_interest": {
@@ -2191,6 +2917,33 @@
       "2021-12-31"
     ]
   },
+  "D|10k_full": {
+    "company": "D",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-25"
+    ]
+  },
+  "D|10k_risk_factors": {
+    "company": "D",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-25"
+    ]
+  },
+  "D|10k_mda": {
+    "company": "D",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-25"
+    ]
+  },
   "D|short_interest": {
     "company": "D",
     "data_type": "short_interest",
@@ -2212,6 +2965,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "DE|10k_full": {
+    "company": "DE",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-12-19",
+      "2020-12-17",
+      "2021-12-16"
+    ]
+  },
+  "DE|10k_risk_factors": {
+    "company": "DE",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-12-19",
+      "2020-12-17",
+      "2021-12-16"
+    ]
+  },
+  "DE|10k_mda": {
+    "company": "DE",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-12-19",
+      "2020-12-17",
+      "2021-12-16"
     ]
   },
   "DE|short_interest": {
@@ -2273,6 +3053,30 @@
       "2021-12-31"
     ]
   },
+  "DLTR|10k_full": {
+    "company": "DLTR",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-03-17",
+      "2012-03-15"
+    ]
+  },
+  "DLTR|10k_risk_factors": {
+    "company": "DLTR",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-03-17",
+      "2012-03-15"
+    ]
+  },
+  "DLTR|10k_mda": {
+    "company": "DLTR",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-03-17",
+      "2012-03-15"
+    ]
+  },
   "DLTR|short_interest": {
     "company": "DLTR",
     "data_type": "short_interest",
@@ -2302,11 +3106,89 @@
       "2021-12-31"
     ]
   },
+  "DRI|10k_full": {
+    "company": "DRI",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-07-23",
+      "2011-07-22",
+      "2012-07-20"
+    ]
+  },
+  "DRI|10k_risk_factors": {
+    "company": "DRI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-07-23",
+      "2011-07-22",
+      "2012-07-20"
+    ]
+  },
+  "DRI|10k_mda": {
+    "company": "DRI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-07-23",
+      "2011-07-22",
+      "2012-07-20"
+    ]
+  },
   "DRI|short_interest": {
     "company": "DRI",
     "data_type": "short_interest",
     "dates": [
       "2020-12-31"
+    ]
+  },
+  "DUK|10k_full": {
+    "company": "DUK",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-20",
+      "2021-02-25"
+    ]
+  },
+  "DUK|10k_risk_factors": {
+    "company": "DUK",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-20",
+      "2021-02-25"
+    ]
+  },
+  "DUK|10k_mda": {
+    "company": "DUK",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-20",
+      "2021-02-25"
+    ]
+  },
+  "DVA|10k_full": {
+    "company": "DVA",
+    "data_type": "10k_full",
+    "dates": [
+      "2017-02-24",
+      "2018-02-23"
+    ]
+  },
+  "DVA|10k_risk_factors": {
+    "company": "DVA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2017-02-24",
+      "2018-02-23"
+    ]
+  },
+  "DVA|10k_mda": {
+    "company": "DVA",
+    "data_type": "10k_mda",
+    "dates": [
+      "2017-02-24",
+      "2018-02-23"
     ]
   },
   "DVA|short_interest": {
@@ -2317,6 +3199,33 @@
       "2020-12-31"
     ]
   },
+  "DVN|10k_full": {
+    "company": "DVN",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-17",
+      "2017-02-15",
+      "2018-02-21"
+    ]
+  },
+  "DVN|10k_risk_factors": {
+    "company": "DVN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-17",
+      "2017-02-15",
+      "2018-02-21"
+    ]
+  },
+  "DVN|10k_mda": {
+    "company": "DVN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-17",
+      "2017-02-15",
+      "2018-02-21"
+    ]
+  },
   "DVN|short_interest": {
     "company": "DVN",
     "data_type": "short_interest",
@@ -2324,6 +3233,33 @@
       "2018-12-31",
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "DXC|10k_full": {
+    "company": "DXC",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-06-13",
+      "2020-06-01",
+      "2021-05-28"
+    ]
+  },
+  "DXC|10k_risk_factors": {
+    "company": "DXC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-06-13",
+      "2020-06-01",
+      "2021-05-28"
+    ]
+  },
+  "DXC|10k_mda": {
+    "company": "DXC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-06-13",
+      "2020-06-01",
+      "2021-05-28"
     ]
   },
   "DXC|short_interest": {
@@ -2425,12 +3361,90 @@
       "2020-12-31"
     ]
   },
+  "EFX|10k_full": {
+    "company": "EFX",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-23",
+      "2012-02-23"
+    ]
+  },
+  "EFX|10k_risk_factors": {
+    "company": "EFX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-23",
+      "2012-02-23"
+    ]
+  },
+  "EFX|10k_mda": {
+    "company": "EFX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-23",
+      "2012-02-23"
+    ]
+  },
   "EFX|short_interest": {
     "company": "EFX",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "EIX|10k_full": {
+    "company": "EIX",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-27",
+      "2021-02-25"
+    ]
+  },
+  "EIX|10k_risk_factors": {
+    "company": "EIX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-27",
+      "2021-02-25"
+    ]
+  },
+  "EIX|10k_mda": {
+    "company": "EIX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-27",
+      "2021-02-25"
+    ]
+  },
+  "EL|10k_full": {
+    "company": "EL",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-08-23",
+      "2020-08-28",
+      "2021-08-27"
+    ]
+  },
+  "EL|10k_risk_factors": {
+    "company": "EL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-08-23",
+      "2020-08-28",
+      "2021-08-27"
+    ]
+  },
+  "EL|10k_mda": {
+    "company": "EL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-08-23",
+      "2020-08-28",
+      "2021-08-27"
     ]
   },
   "EL|short_interest": {
@@ -2488,6 +3502,33 @@
       "2021-12-31"
     ]
   },
+  "EQT|10k_full": {
+    "company": "EQT",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-21",
+      "2014-02-20",
+      "2015-02-12"
+    ]
+  },
+  "EQT|10k_risk_factors": {
+    "company": "EQT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-21",
+      "2014-02-20",
+      "2015-02-12"
+    ]
+  },
+  "EQT|10k_mda": {
+    "company": "EQT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-21",
+      "2014-02-20",
+      "2015-02-12"
+    ]
+  },
   "ES|short_interest": {
     "company": "ES",
     "data_type": "short_interest",
@@ -2526,6 +3567,33 @@
       "2021-12-31"
     ]
   },
+  "EW|10k_full": {
+    "company": "EW",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
+  "EW|10k_risk_factors": {
+    "company": "EW",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
+  "EW|10k_mda": {
+    "company": "EW",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
   "EW|short_interest": {
     "company": "EW",
     "data_type": "short_interest",
@@ -2535,11 +3603,89 @@
       "2021-12-31"
     ]
   },
+  "EXC|10k_full": {
+    "company": "EXC",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-05",
+      "2011-02-10",
+      "2012-02-09"
+    ]
+  },
+  "EXC|10k_risk_factors": {
+    "company": "EXC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-05",
+      "2011-02-10",
+      "2012-02-09"
+    ]
+  },
+  "EXC|10k_mda": {
+    "company": "EXC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-05",
+      "2011-02-10",
+      "2012-02-09"
+    ]
+  },
+  "EXPD|10k_full": {
+    "company": "EXPD",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
+  "EXPD|10k_risk_factors": {
+    "company": "EXPD",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
+  "EXPD|10k_mda": {
+    "company": "EXPD",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
   "EXPD|short_interest": {
     "company": "EXPD",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "EXPE|10k_full": {
+    "company": "EXPE",
+    "data_type": "10k_full",
+    "dates": [
+      "2020-02-14",
+      "2021-02-12"
+    ]
+  },
+  "EXPE|10k_risk_factors": {
+    "company": "EXPE",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2020-02-14",
+      "2021-02-12"
+    ]
+  },
+  "EXPE|10k_mda": {
+    "company": "EXPE",
+    "data_type": "10k_mda",
+    "dates": [
+      "2020-02-14",
+      "2021-02-12"
     ]
   },
   "EXR|short_interest": {
@@ -2568,11 +3714,65 @@
       "2021-12-31"
     ]
   },
+  "FAST|10k_full": {
+    "company": "FAST",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-06",
+      "2020-02-06",
+      "2021-02-08"
+    ]
+  },
+  "FAST|10k_risk_factors": {
+    "company": "FAST",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-06",
+      "2020-02-06",
+      "2021-02-08"
+    ]
+  },
+  "FAST|10k_mda": {
+    "company": "FAST",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-06",
+      "2020-02-06",
+      "2021-02-08"
+    ]
+  },
   "FAST|short_interest": {
     "company": "FAST",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31"
+    ]
+  },
+  "FCX|10k_full": {
+    "company": "FCX",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "FCX|10k_risk_factors": {
+    "company": "FCX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "FCX|10k_mda": {
+    "company": "FCX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-27"
     ]
   },
   "FCX|short_interest": {
@@ -2591,12 +3791,66 @@
       "2020-12-31"
     ]
   },
+  "FIS|10k_full": {
+    "company": "FIS",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-26",
+      "2017-02-23",
+      "2018-02-22"
+    ]
+  },
+  "FIS|10k_risk_factors": {
+    "company": "FIS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-26",
+      "2017-02-23",
+      "2018-02-22"
+    ]
+  },
+  "FIS|10k_mda": {
+    "company": "FIS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-26",
+      "2017-02-23",
+      "2018-02-22"
+    ]
+  },
   "FIS|short_interest": {
     "company": "FIS",
     "data_type": "short_interest",
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "FISV|10k_full": {
+    "company": "FISV",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-21",
+      "2020-02-27",
+      "2021-02-26"
+    ]
+  },
+  "FISV|10k_risk_factors": {
+    "company": "FISV",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-21",
+      "2020-02-27",
+      "2021-02-26"
+    ]
+  },
+  "FISV|10k_mda": {
+    "company": "FISV",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-21",
+      "2020-02-27",
+      "2021-02-26"
     ]
   },
   "FISV|short_interest": {
@@ -2683,6 +3937,33 @@
       "2020-12-31"
     ]
   },
+  "GIS|10k_full": {
+    "company": "GIS",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-06-30",
+      "2017-06-29",
+      "2018-06-29"
+    ]
+  },
+  "GIS|10k_risk_factors": {
+    "company": "GIS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-06-30",
+      "2017-06-29",
+      "2018-06-29"
+    ]
+  },
+  "GIS|10k_mda": {
+    "company": "GIS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-06-30",
+      "2017-06-29",
+      "2018-06-29"
+    ]
+  },
   "GKOS|short_interest": {
     "company": "GKOS",
     "data_type": "short_interest",
@@ -2718,6 +3999,30 @@
     "dates": [
       "2018-12-31",
       "2020-12-31"
+    ]
+  },
+  "GOOGL|10k_full": {
+    "company": "GOOGL",
+    "data_type": "10k_full",
+    "dates": [
+      "2017-02-03",
+      "2018-02-06"
+    ]
+  },
+  "GOOGL|10k_risk_factors": {
+    "company": "GOOGL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2017-02-03",
+      "2018-02-06"
+    ]
+  },
+  "GOOGL|10k_mda": {
+    "company": "GOOGL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2017-02-03",
+      "2018-02-06"
     ]
   },
   "GOOGL|short_interest": {
@@ -2791,6 +4096,33 @@
       "2020-12-31"
     ]
   },
+  "HAS|10k_full": {
+    "company": "HAS",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-26",
+      "2020-02-27",
+      "2021-02-24"
+    ]
+  },
+  "HAS|10k_risk_factors": {
+    "company": "HAS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-26",
+      "2020-02-27",
+      "2021-02-24"
+    ]
+  },
+  "HAS|10k_mda": {
+    "company": "HAS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-26",
+      "2020-02-27",
+      "2021-02-24"
+    ]
+  },
   "HAS|short_interest": {
     "company": "HAS",
     "data_type": "short_interest",
@@ -2826,6 +4158,33 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "HIG|10k_full": {
+    "company": "HIG",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-22",
+      "2020-02-21",
+      "2021-02-19"
+    ]
+  },
+  "HIG|10k_risk_factors": {
+    "company": "HIG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-22",
+      "2020-02-21",
+      "2021-02-19"
+    ]
+  },
+  "HIG|10k_mda": {
+    "company": "HIG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-22",
+      "2020-02-21",
+      "2021-02-19"
     ]
   },
   "HIG|short_interest": {
@@ -2867,6 +4226,57 @@
       "2020-06-15"
     ]
   },
+  "HON|10k_full": {
+    "company": "HON",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-08",
+      "2020-02-14"
+    ]
+  },
+  "HON|10k_risk_factors": {
+    "company": "HON",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-08",
+      "2020-02-14"
+    ]
+  },
+  "HON|10k_mda": {
+    "company": "HON",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-08",
+      "2020-02-14"
+    ]
+  },
+  "HP|10k_full": {
+    "company": "HP",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-11-24",
+      "2011-11-23",
+      "2012-11-21"
+    ]
+  },
+  "HP|10k_risk_factors": {
+    "company": "HP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-11-24",
+      "2011-11-23",
+      "2012-11-21"
+    ]
+  },
+  "HP|10k_mda": {
+    "company": "HP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-11-24",
+      "2011-11-23",
+      "2012-11-21"
+    ]
+  },
   "HP|short_interest": {
     "company": "HP",
     "data_type": "short_interest",
@@ -2882,6 +4292,33 @@
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "HPQ|10k_full": {
+    "company": "HPQ",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-12-15",
+      "2011-12-14",
+      "2012-12-27"
+    ]
+  },
+  "HPQ|10k_risk_factors": {
+    "company": "HPQ",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-12-15",
+      "2011-12-14",
+      "2012-12-27"
+    ]
+  },
+  "HPQ|10k_mda": {
+    "company": "HPQ",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-12-15",
+      "2011-12-14",
+      "2012-12-27"
     ]
   },
   "HPQ|short_interest": {
@@ -2928,11 +4365,65 @@
       "2020-12-31"
     ]
   },
+  "HSY|10k_full": {
+    "company": "HSY",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-22",
+      "2020-02-20",
+      "2021-02-17"
+    ]
+  },
+  "HSY|10k_risk_factors": {
+    "company": "HSY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-22",
+      "2020-02-20",
+      "2021-02-17"
+    ]
+  },
+  "HSY|10k_mda": {
+    "company": "HSY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-22",
+      "2020-02-20",
+      "2021-02-17"
+    ]
+  },
   "HSY|short_interest": {
     "company": "HSY",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "HUM|10k_full": {
+    "company": "HUM",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-21",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "HUM|10k_risk_factors": {
+    "company": "HUM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-21",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "HUM|10k_mda": {
+    "company": "HUM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-21",
+      "2020-02-20",
+      "2021-02-18"
     ]
   },
   "HUM|short_interest": {
@@ -3103,6 +4594,33 @@
       "2021-12-31"
     ]
   },
+  "INTU|10k_full": {
+    "company": "INTU",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-09-13",
+      "2014-09-12",
+      "2015-09-01"
+    ]
+  },
+  "INTU|10k_risk_factors": {
+    "company": "INTU",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-09-13",
+      "2014-09-12",
+      "2015-09-01"
+    ]
+  },
+  "INTU|10k_mda": {
+    "company": "INTU",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-09-13",
+      "2014-09-12",
+      "2015-09-01"
+    ]
+  },
   "INTU|short_interest": {
     "company": "INTU",
     "data_type": "short_interest",
@@ -3116,6 +4634,33 @@
     "data_type": "short_interest",
     "dates": [
       "2022-09-15"
+    ]
+  },
+  "IP|10k_full": {
+    "company": "IP",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-20",
+      "2020-02-19",
+      "2021-02-19"
+    ]
+  },
+  "IP|10k_risk_factors": {
+    "company": "IP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-20",
+      "2020-02-19",
+      "2021-02-19"
+    ]
+  },
+  "IP|10k_mda": {
+    "company": "IP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-20",
+      "2020-02-19",
+      "2021-02-19"
     ]
   },
   "IPGP|short_interest": {
@@ -3206,11 +4751,65 @@
       "2021-12-31"
     ]
   },
+  "IRM|10k_full": {
+    "company": "IRM",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-03-01",
+      "2014-02-28",
+      "2015-02-27"
+    ]
+  },
+  "IRM|10k_risk_factors": {
+    "company": "IRM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-03-01",
+      "2014-02-28",
+      "2015-02-27"
+    ]
+  },
+  "IRM|10k_mda": {
+    "company": "IRM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-03-01",
+      "2014-02-28",
+      "2015-02-27"
+    ]
+  },
   "IRM|short_interest": {
     "company": "IRM",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "ISRG|10k_full": {
+    "company": "ISRG",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-04",
+      "2020-02-07",
+      "2021-02-10"
+    ]
+  },
+  "ISRG|10k_risk_factors": {
+    "company": "ISRG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-04",
+      "2020-02-07",
+      "2021-02-10"
+    ]
+  },
+  "ISRG|10k_mda": {
+    "company": "ISRG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-04",
+      "2020-02-07",
+      "2021-02-10"
     ]
   },
   "ISRG|short_interest": {
@@ -3227,6 +4826,33 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "ITW|10k_full": {
+    "company": "ITW",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-12",
+      "2017-02-10",
+      "2018-02-15"
+    ]
+  },
+  "ITW|10k_risk_factors": {
+    "company": "ITW",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-12",
+      "2017-02-10",
+      "2018-02-15"
+    ]
+  },
+  "ITW|10k_mda": {
+    "company": "ITW",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-12",
+      "2017-02-10",
+      "2018-02-15"
     ]
   },
   "IVZ|short_interest": {
@@ -3305,6 +4931,30 @@
       "2020-06-15"
     ]
   },
+  "JEF|10k_full": {
+    "company": "JEF",
+    "data_type": "10k_full",
+    "dates": [
+      "2017-02-27",
+      "2018-02-27"
+    ]
+  },
+  "JEF|10k_risk_factors": {
+    "company": "JEF",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2017-02-27",
+      "2018-02-27"
+    ]
+  },
+  "JEF|10k_mda": {
+    "company": "JEF",
+    "data_type": "10k_mda",
+    "dates": [
+      "2017-02-27",
+      "2018-02-27"
+    ]
+  },
   "JEF|short_interest": {
     "company": "JEF",
     "data_type": "short_interest",
@@ -3331,6 +4981,9 @@
     "company": "KEY",
     "data_type": "10k_full",
     "dates": [
+      "2013-02-26",
+      "2014-02-26",
+      "2015-03-02",
       "2019-02-25",
       "2020-02-26",
       "2021-02-22"
@@ -3340,6 +4993,9 @@
     "company": "KEY",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2013-02-26",
+      "2014-02-26",
+      "2015-03-02",
       "2019-02-25",
       "2020-02-26",
       "2021-02-22"
@@ -3349,6 +5005,9 @@
     "company": "KEY",
     "data_type": "10k_mda",
     "dates": [
+      "2013-02-26",
+      "2014-02-26",
+      "2015-03-02",
       "2019-02-25",
       "2020-02-26",
       "2021-02-22"
@@ -3404,7 +5063,10 @@
     "dates": [
       "2013-08-08",
       "2014-08-08",
-      "2015-08-07"
+      "2015-08-07",
+      "2016-08-05",
+      "2017-08-04",
+      "2018-08-06"
     ]
   },
   "KLAC|10k_risk_factors": {
@@ -3413,7 +5075,10 @@
     "dates": [
       "2013-08-08",
       "2014-08-08",
-      "2015-08-07"
+      "2015-08-07",
+      "2016-08-05",
+      "2017-08-04",
+      "2018-08-06"
     ]
   },
   "KLAC|10k_mda": {
@@ -3422,7 +5087,10 @@
     "dates": [
       "2013-08-08",
       "2014-08-08",
-      "2015-08-07"
+      "2015-08-07",
+      "2016-08-05",
+      "2017-08-04",
+      "2018-08-06"
     ]
   },
   "KLAC|10q_mda": {
@@ -3453,6 +5121,33 @@
       "2021-12-31"
     ]
   },
+  "KMI|10k_full": {
+    "company": "KMI",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-03-01",
+      "2014-02-24",
+      "2015-02-23"
+    ]
+  },
+  "KMI|10k_risk_factors": {
+    "company": "KMI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-03-01",
+      "2014-02-24",
+      "2015-02-23"
+    ]
+  },
+  "KMI|10k_mda": {
+    "company": "KMI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-03-01",
+      "2014-02-24",
+      "2015-02-23"
+    ]
+  },
   "KMI|short_interest": {
     "company": "KMI",
     "data_type": "short_interest",
@@ -3474,6 +5169,33 @@
       "2021-12-31"
     ]
   },
+  "KSS|10k_full": {
+    "company": "KSS",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-03-18",
+      "2017-03-17",
+      "2018-03-23"
+    ]
+  },
+  "KSS|10k_risk_factors": {
+    "company": "KSS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-03-18",
+      "2017-03-17",
+      "2018-03-23"
+    ]
+  },
+  "KSS|10k_mda": {
+    "company": "KSS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-03-18",
+      "2017-03-17",
+      "2018-03-23"
+    ]
+  },
   "KSS|short_interest": {
     "company": "KSS",
     "data_type": "short_interest",
@@ -3493,6 +5215,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "LDOS|10k_full": {
+    "company": "LDOS",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-23"
+    ]
+  },
+  "LDOS|10k_risk_factors": {
+    "company": "LDOS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-23"
+    ]
+  },
+  "LDOS|10k_mda": {
+    "company": "LDOS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-23"
     ]
   },
   "LDOS|short_interest": {
@@ -3683,11 +5432,65 @@
       "2021-12-31"
     ]
   },
+  "LMT|10k_full": {
+    "company": "LMT",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-01-28"
+    ]
+  },
+  "LMT|10k_risk_factors": {
+    "company": "LMT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-01-28"
+    ]
+  },
+  "LMT|10k_mda": {
+    "company": "LMT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-01-28"
+    ]
+  },
   "LMT|short_interest": {
     "company": "LMT",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "LNC|10k_full": {
+    "company": "LNC",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-20",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "LNC|10k_risk_factors": {
+    "company": "LNC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-20",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "LNC|10k_mda": {
+    "company": "LNC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-20",
+      "2020-02-20",
+      "2021-02-18"
     ]
   },
   "LNC|short_interest": {
@@ -3716,6 +5519,33 @@
     "data_type": "short_interest",
     "dates": [
       "2018-12-31"
+    ]
+  },
+  "LULU|10k_full": {
+    "company": "LULU",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-03-21",
+      "2014-03-27",
+      "2015-03-26"
+    ]
+  },
+  "LULU|10k_risk_factors": {
+    "company": "LULU",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-03-21",
+      "2014-03-27",
+      "2015-03-26"
+    ]
+  },
+  "LULU|10k_mda": {
+    "company": "LULU",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-03-21",
+      "2014-03-27",
+      "2015-03-26"
     ]
   },
   "LULU|short_interest": {
@@ -3763,6 +5593,33 @@
       "2021-12-31"
     ]
   },
+  "M|10k_full": {
+    "company": "M",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-03-31",
+      "2011-03-30",
+      "2012-03-28"
+    ]
+  },
+  "M|10k_risk_factors": {
+    "company": "M",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-03-31",
+      "2011-03-30",
+      "2012-03-28"
+    ]
+  },
+  "M|10k_mda": {
+    "company": "M",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-03-31",
+      "2011-03-30",
+      "2012-03-28"
+    ]
+  },
   "M|short_interest": {
     "company": "M",
     "data_type": "short_interest",
@@ -3807,6 +5664,33 @@
       "2018-12-31"
     ]
   },
+  "MAT|10k_full": {
+    "company": "MAT",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-27"
+    ]
+  },
+  "MAT|10k_risk_factors": {
+    "company": "MAT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-27"
+    ]
+  },
+  "MAT|10k_mda": {
+    "company": "MAT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-25",
+      "2017-02-23",
+      "2018-02-27"
+    ]
+  },
   "MAT|short_interest": {
     "company": "MAT",
     "data_type": "short_interest",
@@ -3845,6 +5729,33 @@
       "2018-12-31"
     ]
   },
+  "MDLZ|10k_full": {
+    "company": "MDLZ",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-02-05"
+    ]
+  },
+  "MDLZ|10k_risk_factors": {
+    "company": "MDLZ",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-02-05"
+    ]
+  },
+  "MDLZ|10k_mda": {
+    "company": "MDLZ",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-02-05"
+    ]
+  },
   "MDLZ|short_interest": {
     "company": "MDLZ",
     "data_type": "short_interest",
@@ -3880,6 +5791,30 @@
       "2021-12-31"
     ]
   },
+  "MKC|10k_full": {
+    "company": "MKC",
+    "data_type": "10k_full",
+    "dates": [
+      "2017-01-25",
+      "2018-01-25"
+    ]
+  },
+  "MKC|10k_risk_factors": {
+    "company": "MKC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2017-01-25",
+      "2018-01-25"
+    ]
+  },
+  "MKC|10k_mda": {
+    "company": "MKC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2017-01-25",
+      "2018-01-25"
+    ]
+  },
   "MKC|short_interest": {
     "company": "MKC",
     "data_type": "short_interest",
@@ -3908,6 +5843,33 @@
       "2021-12-31"
     ]
   },
+  "MNST|10k_full": {
+    "company": "MNST",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-03-01",
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "MNST|10k_risk_factors": {
+    "company": "MNST",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-03-01",
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "MNST|10k_mda": {
+    "company": "MNST",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-03-01",
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
   "MOH|short_interest": {
     "company": "MOH",
     "data_type": "short_interest",
@@ -3920,6 +5882,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "MPC|10k_full": {
+    "company": "MPC",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-26"
+    ]
+  },
+  "MPC|10k_risk_factors": {
+    "company": "MPC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-26"
+    ]
+  },
+  "MPC|10k_mda": {
+    "company": "MPC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-26"
     ]
   },
   "MPC|short_interest": {
@@ -3944,6 +5933,33 @@
       "2021-12-31"
     ]
   },
+  "MS|10k_full": {
+    "company": "MS",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-26",
+      "2014-02-25",
+      "2015-03-02"
+    ]
+  },
+  "MS|10k_risk_factors": {
+    "company": "MS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-26",
+      "2014-02-25",
+      "2015-03-02"
+    ]
+  },
+  "MS|10k_mda": {
+    "company": "MS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-26",
+      "2014-02-25",
+      "2015-03-02"
+    ]
+  },
   "MS|short_interest": {
     "company": "MS",
     "data_type": "short_interest",
@@ -3963,6 +5979,33 @@
     "data_type": "short_interest",
     "dates": [
       "2018-12-31"
+    ]
+  },
+  "MSI|10k_full": {
+    "company": "MSI",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-16",
+      "2011-02-18",
+      "2012-02-15"
+    ]
+  },
+  "MSI|10k_risk_factors": {
+    "company": "MSI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-16",
+      "2011-02-18",
+      "2012-02-15"
+    ]
+  },
+  "MSI|10k_mda": {
+    "company": "MSI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-16",
+      "2011-02-18",
+      "2012-02-15"
     ]
   },
   "MSI|short_interest": {
@@ -4058,6 +6101,9 @@
     "company": "MU",
     "data_type": "10k_full",
     "dates": [
+      "2016-10-28",
+      "2017-10-26",
+      "2018-10-15",
       "2019-10-17",
       "2020-10-19",
       "2021-10-08"
@@ -4067,6 +6113,9 @@
     "company": "MU",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2016-10-28",
+      "2017-10-26",
+      "2018-10-15",
       "2019-10-17",
       "2020-10-19",
       "2021-10-08"
@@ -4076,6 +6125,9 @@
     "company": "MU",
     "data_type": "10k_mda",
     "dates": [
+      "2016-10-28",
+      "2017-10-26",
+      "2018-10-15",
       "2019-10-17",
       "2020-10-19",
       "2021-10-08"
@@ -4123,6 +6175,30 @@
       "2020-06-15"
     ]
   },
+  "NBR|10k_full": {
+    "company": "NBR",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "NBR|10k_risk_factors": {
+    "company": "NBR",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "NBR|10k_mda": {
+    "company": "NBR",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
   "NCLH|short_interest": {
     "company": "NCLH",
     "data_type": "short_interest",
@@ -4145,11 +6221,65 @@
       "2021-12-31"
     ]
   },
+  "NEM|10k_full": {
+    "company": "NEM",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-25",
+      "2011-02-24",
+      "2012-02-24"
+    ]
+  },
+  "NEM|10k_risk_factors": {
+    "company": "NEM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-25",
+      "2011-02-24",
+      "2012-02-24"
+    ]
+  },
+  "NEM|10k_mda": {
+    "company": "NEM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-25",
+      "2011-02-24",
+      "2012-02-24"
+    ]
+  },
   "NEM|short_interest": {
     "company": "NEM",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "NFLX|10k_full": {
+    "company": "NFLX",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-01",
+      "2014-02-03",
+      "2015-01-29"
+    ]
+  },
+  "NFLX|10k_risk_factors": {
+    "company": "NFLX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-01",
+      "2014-02-03",
+      "2015-01-29"
+    ]
+  },
+  "NFLX|10k_mda": {
+    "company": "NFLX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-01",
+      "2014-02-03",
+      "2015-01-29"
     ]
   },
   "NFLX|short_interest": {
@@ -4160,11 +6290,62 @@
       "2021-12-31"
     ]
   },
+  "NI|10k_full": {
+    "company": "NI",
+    "data_type": "10k_full",
+    "dates": [
+      "2017-02-22",
+      "2018-02-20"
+    ]
+  },
+  "NI|10k_risk_factors": {
+    "company": "NI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2017-02-22",
+      "2018-02-20"
+    ]
+  },
+  "NI|10k_mda": {
+    "company": "NI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2017-02-22",
+      "2018-02-20"
+    ]
+  },
   "NI|short_interest": {
     "company": "NI",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "NKE|10k_full": {
+    "company": "NKE",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-07-20",
+      "2011-07-22",
+      "2012-07-24"
+    ]
+  },
+  "NKE|10k_risk_factors": {
+    "company": "NKE",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-07-20",
+      "2011-07-22",
+      "2012-07-24"
+    ]
+  },
+  "NKE|10k_mda": {
+    "company": "NKE",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-07-20",
+      "2011-07-22",
+      "2012-07-24"
     ]
   },
   "NKE|short_interest": {
@@ -4191,6 +6372,33 @@
       "2020-06-15"
     ]
   },
+  "NOV|10k_full": {
+    "company": "NOV",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-23",
+      "2012-02-23"
+    ]
+  },
+  "NOV|10k_risk_factors": {
+    "company": "NOV",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-23",
+      "2012-02-23"
+    ]
+  },
+  "NOV|10k_mda": {
+    "company": "NOV",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-23",
+      "2012-02-23"
+    ]
+  },
   "NOV|short_interest": {
     "company": "NOV",
     "data_type": "short_interest",
@@ -4212,12 +6420,66 @@
       "2021-12-31"
     ]
   },
+  "NSC|10k_full": {
+    "company": "NSC",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-08",
+      "2020-02-06",
+      "2021-02-04"
+    ]
+  },
+  "NSC|10k_risk_factors": {
+    "company": "NSC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-08",
+      "2020-02-06",
+      "2021-02-04"
+    ]
+  },
+  "NSC|10k_mda": {
+    "company": "NSC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-08",
+      "2020-02-06",
+      "2021-02-04"
+    ]
+  },
   "NSC|short_interest": {
     "company": "NSC",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "NTAP|10k_full": {
+    "company": "NTAP",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-06-18",
+      "2020-06-15",
+      "2021-06-21"
+    ]
+  },
+  "NTAP|10k_risk_factors": {
+    "company": "NTAP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-06-18",
+      "2020-06-15",
+      "2021-06-21"
+    ]
+  },
+  "NTAP|10k_mda": {
+    "company": "NTAP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-06-18",
+      "2020-06-15",
+      "2021-06-21"
     ]
   },
   "NTRS|short_interest": {
@@ -4241,12 +6503,66 @@
       "2020-06-15"
     ]
   },
+  "NVDA|10k_full": {
+    "company": "NVDA",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-21",
+      "2020-02-20",
+      "2021-02-26"
+    ]
+  },
+  "NVDA|10k_risk_factors": {
+    "company": "NVDA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-21",
+      "2020-02-20",
+      "2021-02-26"
+    ]
+  },
+  "NVDA|10k_mda": {
+    "company": "NVDA",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-21",
+      "2020-02-20",
+      "2021-02-26"
+    ]
+  },
   "NVDA|short_interest": {
     "company": "NVDA",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "NVR|10k_full": {
+    "company": "NVR",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-13",
+      "2020-02-19",
+      "2021-02-12"
+    ]
+  },
+  "NVR|10k_risk_factors": {
+    "company": "NVR",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-13",
+      "2020-02-19",
+      "2021-02-12"
+    ]
+  },
+  "NVR|10k_mda": {
+    "company": "NVR",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-13",
+      "2020-02-19",
+      "2021-02-12"
     ]
   },
   "NVR|short_interest": {
@@ -4290,6 +6606,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "OKE|10k_full": {
+    "company": "OKE",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-26",
+      "2020-02-25",
+      "2021-02-23"
+    ]
+  },
+  "OKE|10k_risk_factors": {
+    "company": "OKE",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-26",
+      "2020-02-25",
+      "2021-02-23"
+    ]
+  },
+  "OKE|10k_mda": {
+    "company": "OKE",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-26",
+      "2020-02-25",
+      "2021-02-23"
     ]
   },
   "OKE|short_interest": {
@@ -4413,6 +6756,33 @@
       "2019-01-15"
     ]
   },
+  "PEG|10k_full": {
+    "company": "PEG",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-26",
+      "2014-02-26",
+      "2015-02-26"
+    ]
+  },
+  "PEG|10k_risk_factors": {
+    "company": "PEG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-26",
+      "2014-02-26",
+      "2015-02-26"
+    ]
+  },
+  "PEG|10k_mda": {
+    "company": "PEG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-26",
+      "2014-02-26",
+      "2015-02-26"
+    ]
+  },
   "PENN|short_interest": {
     "company": "PENN",
     "data_type": "short_interest",
@@ -4420,6 +6790,33 @@
       "2021-03-15",
       "2021-12-31",
       "2022-09-15"
+    ]
+  },
+  "PEP|10k_full": {
+    "company": "PEP",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-22",
+      "2011-02-18",
+      "2012-02-27"
+    ]
+  },
+  "PEP|10k_risk_factors": {
+    "company": "PEP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-22",
+      "2011-02-18",
+      "2012-02-27"
+    ]
+  },
+  "PEP|10k_mda": {
+    "company": "PEP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-22",
+      "2011-02-18",
+      "2012-02-27"
     ]
   },
   "PEP|short_interest": {
@@ -4497,6 +6894,33 @@
       "2014-07-17"
     ]
   },
+  "PG|10k_full": {
+    "company": "PG",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-08-08",
+      "2014-08-08",
+      "2015-08-07"
+    ]
+  },
+  "PG|10k_risk_factors": {
+    "company": "PG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-08-08",
+      "2014-08-08",
+      "2015-08-07"
+    ]
+  },
+  "PG|10k_mda": {
+    "company": "PG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-08-08",
+      "2014-08-08",
+      "2015-08-07"
+    ]
+  },
   "PGR|short_interest": {
     "company": "PGR",
     "data_type": "short_interest",
@@ -4525,7 +6949,10 @@
     "dates": [
       "2010-02-19",
       "2011-02-10",
-      "2012-02-09"
+      "2012-02-09",
+      "2016-02-08",
+      "2017-02-01",
+      "2018-02-07"
     ]
   },
   "PHM|10k_risk_factors": {
@@ -4534,7 +6961,10 @@
     "dates": [
       "2010-02-19",
       "2011-02-10",
-      "2012-02-09"
+      "2012-02-09",
+      "2016-02-08",
+      "2017-02-01",
+      "2018-02-07"
     ]
   },
   "PHM|10k_mda": {
@@ -4543,7 +6973,10 @@
     "dates": [
       "2010-02-19",
       "2011-02-10",
-      "2012-02-09"
+      "2012-02-09",
+      "2016-02-08",
+      "2017-02-01",
+      "2018-02-07"
     ]
   },
   "PHM|10q_mda": {
@@ -4617,6 +7050,33 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "PLD|10k_full": {
+    "company": "PLD",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-13",
+      "2020-02-11",
+      "2021-02-11"
+    ]
+  },
+  "PLD|10k_risk_factors": {
+    "company": "PLD",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-13",
+      "2020-02-11",
+      "2021-02-11"
+    ]
+  },
+  "PLD|10k_mda": {
+    "company": "PLD",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-13",
+      "2020-02-11",
+      "2021-02-11"
     ]
   },
   "PLD|short_interest": {
@@ -4725,11 +7185,62 @@
       "2021-12-31"
     ]
   },
+  "PPG|10k_full": {
+    "company": "PPG",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-21",
+      "2014-02-20",
+      "2015-02-19"
+    ]
+  },
+  "PPG|10k_risk_factors": {
+    "company": "PPG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-21",
+      "2014-02-20",
+      "2015-02-19"
+    ]
+  },
+  "PPG|10k_mda": {
+    "company": "PPG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-21",
+      "2014-02-20",
+      "2015-02-19"
+    ]
+  },
   "PPG|short_interest": {
     "company": "PPG",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "PRGO|10k_full": {
+    "company": "PRGO",
+    "data_type": "10k_full",
+    "dates": [
+      "2014-08-14",
+      "2015-08-13"
+    ]
+  },
+  "PRGO|10k_risk_factors": {
+    "company": "PRGO",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2014-08-14",
+      "2015-08-13"
+    ]
+  },
+  "PRGO|10k_mda": {
+    "company": "PRGO",
+    "data_type": "10k_mda",
+    "dates": [
+      "2014-08-14",
+      "2015-08-13"
     ]
   },
   "PRGO|short_interest": {
@@ -4751,6 +7262,60 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "PRU|10k_full": {
+    "company": "PRU",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-24"
+    ]
+  },
+  "PRU|10k_risk_factors": {
+    "company": "PRU",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-24"
+    ]
+  },
+  "PRU|10k_mda": {
+    "company": "PRU",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-24"
+    ]
+  },
+  "PSA|10k_full": {
+    "company": "PSA",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-29",
+      "2017-03-01",
+      "2018-03-01"
+    ]
+  },
+  "PSA|10k_risk_factors": {
+    "company": "PSA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-29",
+      "2017-03-01",
+      "2018-03-01"
+    ]
+  },
+  "PSA|10k_mda": {
+    "company": "PSA",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-29",
+      "2017-03-01",
+      "2018-03-01"
     ]
   },
   "PSA|short_interest": {
@@ -4781,6 +7346,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "PWR|10k_full": {
+    "company": "PWR",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-03-01"
+    ]
+  },
+  "PWR|10k_risk_factors": {
+    "company": "PWR",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-03-01"
+    ]
+  },
+  "PWR|10k_mda": {
+    "company": "PWR",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-03-01"
     ]
   },
   "PWR|short_interest": {
@@ -4815,13 +7407,40 @@
       "2021-12-31"
     ]
   },
+  "R|10k_full": {
+    "company": "R",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-15",
+      "2012-02-16"
+    ]
+  },
+  "R|10k_risk_factors": {
+    "company": "R",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-15",
+      "2012-02-16"
+    ]
+  },
+  "R|10k_mda": {
+    "company": "R",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-15",
+      "2012-02-16"
+    ]
+  },
   "RCL|10k_full": {
     "company": "RCL",
     "data_type": "10k_full",
     "dates": [
       "2013-02-25",
       "2014-02-20",
-      "2015-02-23"
+      "2015-02-23",
+      "2016-02-22",
+      "2017-02-23",
+      "2018-02-21"
     ]
   },
   "RCL|10k_risk_factors": {
@@ -4830,7 +7449,10 @@
     "dates": [
       "2013-02-25",
       "2014-02-20",
-      "2015-02-23"
+      "2015-02-23",
+      "2016-02-22",
+      "2017-02-23",
+      "2018-02-21"
     ]
   },
   "RCL|10k_mda": {
@@ -4839,7 +7461,10 @@
     "dates": [
       "2013-02-25",
       "2014-02-20",
-      "2015-02-23"
+      "2015-02-23",
+      "2016-02-22",
+      "2017-02-23",
+      "2018-02-21"
     ]
   },
   "RCL|10q_mda": {
@@ -4884,7 +7509,9 @@
     "data_type": "10k_full",
     "dates": [
       "2014-02-21",
-      "2015-02-17"
+      "2015-02-17",
+      "2017-02-24",
+      "2018-02-26"
     ]
   },
   "RF|10k_risk_factors": {
@@ -4892,7 +7519,9 @@
     "data_type": "10k_risk_factors",
     "dates": [
       "2014-02-21",
-      "2015-02-17"
+      "2015-02-17",
+      "2017-02-24",
+      "2018-02-26"
     ]
   },
   "RF|10k_mda": {
@@ -4900,7 +7529,9 @@
     "data_type": "10k_mda",
     "dates": [
       "2014-02-21",
-      "2015-02-17"
+      "2015-02-17",
+      "2017-02-24",
+      "2018-02-26"
     ]
   },
   "RF|10q_mda": {
@@ -5042,6 +7673,27 @@
       "2011-07-08"
     ]
   },
+  "RRC|10k_full": {
+    "company": "RRC",
+    "data_type": "10k_full",
+    "dates": [
+      "2012-02-22"
+    ]
+  },
+  "RRC|10k_risk_factors": {
+    "company": "RRC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2012-02-22"
+    ]
+  },
+  "RRC|10k_mda": {
+    "company": "RRC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2012-02-22"
+    ]
+  },
   "RRC|short_interest": {
     "company": "RRC",
     "data_type": "short_interest",
@@ -5085,6 +7737,33 @@
       "2021-12-31"
     ]
   },
+  "SBUX|10k_full": {
+    "company": "SBUX",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-11-18",
+      "2017-11-17",
+      "2018-11-16"
+    ]
+  },
+  "SBUX|10k_risk_factors": {
+    "company": "SBUX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-11-18",
+      "2017-11-17",
+      "2018-11-16"
+    ]
+  },
+  "SBUX|10k_mda": {
+    "company": "SBUX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-11-18",
+      "2017-11-17",
+      "2018-11-16"
+    ]
+  },
   "SBUX|short_interest": {
     "company": "SBUX",
     "data_type": "short_interest",
@@ -5119,6 +7798,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "SEE|10k_full": {
+    "company": "SEE",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-03-01",
+      "2011-02-25",
+      "2012-02-29"
+    ]
+  },
+  "SEE|10k_risk_factors": {
+    "company": "SEE",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-03-01",
+      "2011-02-25",
+      "2012-02-29"
+    ]
+  },
+  "SEE|10k_mda": {
+    "company": "SEE",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-03-01",
+      "2011-02-25",
+      "2012-02-29"
     ]
   },
   "SEE|short_interest": {
@@ -5164,6 +7870,33 @@
       "2021-12-31"
     ]
   },
+  "SLB|10k_full": {
+    "company": "SLB",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-05",
+      "2011-02-04",
+      "2012-02-01"
+    ]
+  },
+  "SLB|10k_risk_factors": {
+    "company": "SLB",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-05",
+      "2011-02-04",
+      "2012-02-01"
+    ]
+  },
+  "SLB|10k_mda": {
+    "company": "SLB",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-05",
+      "2011-02-04",
+      "2012-02-01"
+    ]
+  },
   "SLB|short_interest": {
     "company": "SLB",
     "data_type": "short_interest",
@@ -5178,11 +7911,62 @@
       "2021-03-15"
     ]
   },
+  "SLM|10k_full": {
+    "company": "SLM",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
+  "SLM|10k_risk_factors": {
+    "company": "SLM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
+  "SLM|10k_mda": {
+    "company": "SLM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-28",
+      "2012-02-27"
+    ]
+  },
   "SM|short_interest": {
     "company": "SM",
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "SMCI|10k_full": {
+    "company": "SMCI",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-12-19",
+      "2020-08-31",
+      "2021-08-27"
+    ]
+  },
+  "SMCI|10k_risk_factors": {
+    "company": "SMCI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-12-19",
+      "2020-08-31",
+      "2021-08-27"
+    ]
+  },
+  "SMCI|10k_mda": {
+    "company": "SMCI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-12-19",
+      "2020-08-31",
+      "2021-08-27"
     ]
   },
   "SMCI|short_interest": {
@@ -5263,6 +8047,60 @@
       "2018-12-31"
     ]
   },
+  "SO|10k_full": {
+    "company": "SO",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-20",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "SO|10k_risk_factors": {
+    "company": "SO",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-20",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "SO|10k_mda": {
+    "company": "SO",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-20",
+      "2020-02-20",
+      "2021-02-18"
+    ]
+  },
+  "SPG|10k_full": {
+    "company": "SPG",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "SPG|10k_risk_factors": {
+    "company": "SPG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "SPG|10k_mda": {
+    "company": "SPG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
   "SPGI|short_interest": {
     "company": "SPGI",
     "data_type": "short_interest",
@@ -5284,12 +8122,66 @@
       "2021-12-31"
     ]
   },
+  "STX|10k_full": {
+    "company": "STX",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-08-05",
+      "2017-08-04",
+      "2018-08-03"
+    ]
+  },
+  "STX|10k_risk_factors": {
+    "company": "STX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-08-05",
+      "2017-08-04",
+      "2018-08-03"
+    ]
+  },
+  "STX|10k_mda": {
+    "company": "STX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-08-05",
+      "2017-08-04",
+      "2018-08-03"
+    ]
+  },
   "STX|short_interest": {
     "company": "STX",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "STZ|10k_full": {
+    "company": "STZ",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-04-25",
+      "2017-04-27",
+      "2018-04-23"
+    ]
+  },
+  "STZ|10k_risk_factors": {
+    "company": "STZ",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-04-25",
+      "2017-04-27",
+      "2018-04-23"
+    ]
+  },
+  "STZ|10k_mda": {
+    "company": "STZ",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-04-25",
+      "2017-04-27",
+      "2018-04-23"
     ]
   },
   "STZ|short_interest": {
@@ -5428,6 +8320,60 @@
       "2021-12-31"
     ]
   },
+  "SYK|10k_full": {
+    "company": "SYK",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-11",
+      "2017-02-09",
+      "2018-02-08"
+    ]
+  },
+  "SYK|10k_risk_factors": {
+    "company": "SYK",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-11",
+      "2017-02-09",
+      "2018-02-08"
+    ]
+  },
+  "SYK|10k_mda": {
+    "company": "SYK",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-11",
+      "2017-02-09",
+      "2018-02-08"
+    ]
+  },
+  "T|10k_full": {
+    "company": "T",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-25",
+      "2011-03-01",
+      "2012-02-24"
+    ]
+  },
+  "T|10k_risk_factors": {
+    "company": "T",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-25",
+      "2011-03-01",
+      "2012-02-24"
+    ]
+  },
+  "T|10k_mda": {
+    "company": "T",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-25",
+      "2011-03-01",
+      "2012-02-24"
+    ]
+  },
   "T|short_interest": {
     "company": "T",
     "data_type": "short_interest",
@@ -5481,6 +8427,33 @@
       "2021-12-31"
     ]
   },
+  "TER|10k_full": {
+    "company": "TER",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-03-01",
+      "2020-03-02",
+      "2021-02-22"
+    ]
+  },
+  "TER|10k_risk_factors": {
+    "company": "TER",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-03-01",
+      "2020-03-02",
+      "2021-02-22"
+    ]
+  },
+  "TER|10k_mda": {
+    "company": "TER",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-03-01",
+      "2020-03-02",
+      "2021-02-22"
+    ]
+  },
   "TER|short_interest": {
     "company": "TER",
     "data_type": "short_interest",
@@ -5508,6 +8481,30 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "THC|10k_full": {
+    "company": "THC",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "THC|10k_risk_factors": {
+    "company": "THC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "THC|10k_mda": {
+    "company": "THC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-25",
+      "2012-02-28"
     ]
   },
   "TJX|10k_full": {
@@ -5578,6 +8575,33 @@
     "dates": [
       "2019-07-15",
       "2021-12-31"
+    ]
+  },
+  "TPR|10k_full": {
+    "company": "TPR",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-08-19",
+      "2017-08-18",
+      "2018-08-16"
+    ]
+  },
+  "TPR|10k_risk_factors": {
+    "company": "TPR",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-08-19",
+      "2017-08-18",
+      "2018-08-16"
+    ]
+  },
+  "TPR|10k_mda": {
+    "company": "TPR",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-08-19",
+      "2017-08-18",
+      "2018-08-16"
     ]
   },
   "TPR|short_interest": {
@@ -5674,6 +8698,33 @@
       "2018-12-31"
     ]
   },
+  "TXT|10k_full": {
+    "company": "TXT",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-24",
+      "2017-02-22",
+      "2018-02-15"
+    ]
+  },
+  "TXT|10k_risk_factors": {
+    "company": "TXT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-24",
+      "2017-02-22",
+      "2018-02-15"
+    ]
+  },
+  "TXT|10k_mda": {
+    "company": "TXT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-24",
+      "2017-02-22",
+      "2018-02-15"
+    ]
+  },
   "TXT|short_interest": {
     "company": "TXT",
     "data_type": "short_interest",
@@ -5719,6 +8770,33 @@
       "2020-06-15"
     ]
   },
+  "UNH|10k_full": {
+    "company": "UNH",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-12",
+      "2020-02-14",
+      "2021-03-01"
+    ]
+  },
+  "UNH|10k_risk_factors": {
+    "company": "UNH",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-12",
+      "2020-02-14",
+      "2021-03-01"
+    ]
+  },
+  "UNH|10k_mda": {
+    "company": "UNH",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-12",
+      "2020-02-14",
+      "2021-03-01"
+    ]
+  },
   "UNH|short_interest": {
     "company": "UNH",
     "data_type": "short_interest",
@@ -5734,11 +8812,65 @@
       "2021-09-15"
     ]
   },
+  "UNP|10k_full": {
+    "company": "UNP",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-02-05"
+    ]
+  },
+  "UNP|10k_risk_factors": {
+    "company": "UNP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-02-05"
+    ]
+  },
+  "UNP|10k_mda": {
+    "company": "UNP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-08",
+      "2020-02-07",
+      "2021-02-05"
+    ]
+  },
   "UNP|short_interest": {
     "company": "UNP",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "UPS|10k_full": {
+    "company": "UPS",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-28",
+      "2014-02-28",
+      "2015-02-27"
+    ]
+  },
+  "UPS|10k_risk_factors": {
+    "company": "UPS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-28",
+      "2014-02-28",
+      "2015-02-27"
+    ]
+  },
+  "UPS|10k_mda": {
+    "company": "UPS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-28",
+      "2014-02-28",
+      "2015-02-27"
     ]
   },
   "UPS|short_interest": {
@@ -5764,6 +8896,33 @@
       "2021-12-31"
     ]
   },
+  "V|10k_full": {
+    "company": "V",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-11-14",
+      "2020-11-19",
+      "2021-11-18"
+    ]
+  },
+  "V|10k_risk_factors": {
+    "company": "V",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-11-14",
+      "2020-11-19",
+      "2021-11-18"
+    ]
+  },
+  "V|10k_mda": {
+    "company": "V",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-11-14",
+      "2020-11-19",
+      "2021-11-18"
+    ]
+  },
   "V|short_interest": {
     "company": "V",
     "data_type": "short_interest",
@@ -5776,6 +8935,33 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "VFC|10k_full": {
+    "company": "VFC",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-05-24",
+      "2020-05-27",
+      "2021-05-27"
+    ]
+  },
+  "VFC|10k_risk_factors": {
+    "company": "VFC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-05-24",
+      "2020-05-27",
+      "2021-05-27"
+    ]
+  },
+  "VFC|10k_mda": {
+    "company": "VFC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-05-24",
+      "2020-05-27",
+      "2021-05-27"
     ]
   },
   "VFC|short_interest": {
@@ -5792,6 +8978,33 @@
       "2021-12-31"
     ]
   },
+  "VMC|10k_full": {
+    "company": "VMC",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-28",
+      "2014-02-26",
+      "2015-02-27"
+    ]
+  },
+  "VMC|10k_risk_factors": {
+    "company": "VMC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-28",
+      "2014-02-26",
+      "2015-02-27"
+    ]
+  },
+  "VMC|10k_mda": {
+    "company": "VMC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-28",
+      "2014-02-26",
+      "2015-02-27"
+    ]
+  },
   "VMC|short_interest": {
     "company": "VMC",
     "data_type": "short_interest",
@@ -5806,6 +9019,33 @@
       "2019-05-31"
     ]
   },
+  "VNO|10k_full": {
+    "company": "VNO",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-11",
+      "2020-02-18",
+      "2021-02-16"
+    ]
+  },
+  "VNO|10k_risk_factors": {
+    "company": "VNO",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-11",
+      "2020-02-18",
+      "2021-02-16"
+    ]
+  },
+  "VNO|10k_mda": {
+    "company": "VNO",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-11",
+      "2020-02-18",
+      "2021-02-16"
+    ]
+  },
   "VNO|short_interest": {
     "company": "VNO",
     "data_type": "short_interest",
@@ -5818,6 +9058,33 @@
     "data_type": "short_interest",
     "dates": [
       "2018-12-31"
+    ]
+  },
+  "VRSN|10k_full": {
+    "company": "VRSN",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "VRSN|10k_risk_factors": {
+    "company": "VRSN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "VRSN|10k_mda": {
+    "company": "VRSN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-19",
+      "2017-02-17",
+      "2018-02-16"
     ]
   },
   "VRSN|short_interest": {
@@ -5979,6 +9246,9 @@
     "company": "WDC",
     "data_type": "10k_full",
     "dates": [
+      "2013-08-19",
+      "2014-08-15",
+      "2015-08-21",
       "2016-08-29",
       "2017-08-29",
       "2018-08-24"
@@ -5988,6 +9258,9 @@
     "company": "WDC",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2013-08-19",
+      "2014-08-15",
+      "2015-08-21",
       "2016-08-29",
       "2017-08-29",
       "2018-08-24"
@@ -5997,6 +9270,9 @@
     "company": "WDC",
     "data_type": "10k_mda",
     "dates": [
+      "2013-08-19",
+      "2014-08-15",
+      "2015-08-21",
       "2016-08-29",
       "2017-08-29",
       "2018-08-24"
@@ -6040,6 +9316,33 @@
       "2021-12-31"
     ]
   },
+  "WEC|10k_full": {
+    "company": "WEC",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "WEC|10k_risk_factors": {
+    "company": "WEC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "WEC|10k_mda": {
+    "company": "WEC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
   "WELL|short_interest": {
     "company": "WELL",
     "data_type": "short_interest",
@@ -6069,11 +9372,89 @@
       "2020-06-15"
     ]
   },
+  "WM|10k_full": {
+    "company": "WM",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-17",
+      "2012-02-16"
+    ]
+  },
+  "WM|10k_risk_factors": {
+    "company": "WM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-17",
+      "2012-02-16"
+    ]
+  },
+  "WM|10k_mda": {
+    "company": "WM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-17",
+      "2012-02-16"
+    ]
+  },
+  "WMB|10k_full": {
+    "company": "WMB",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-26",
+      "2017-02-22",
+      "2018-02-22"
+    ]
+  },
+  "WMB|10k_risk_factors": {
+    "company": "WMB",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-26",
+      "2017-02-22",
+      "2018-02-22"
+    ]
+  },
+  "WMB|10k_mda": {
+    "company": "WMB",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-26",
+      "2017-02-22",
+      "2018-02-22"
+    ]
+  },
   "WMB|short_interest": {
     "company": "WMB",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "WMT|10k_full": {
+    "company": "WMT",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-03-28",
+      "2020-03-20",
+      "2021-03-19"
+    ]
+  },
+  "WMT|10k_risk_factors": {
+    "company": "WMT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-03-28",
+      "2020-03-20",
+      "2021-03-19"
+    ]
+  },
+  "WMT|10k_mda": {
+    "company": "WMT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-03-28",
+      "2020-03-20",
+      "2021-03-19"
     ]
   },
   "WMT|short_interest": {
@@ -6113,6 +9494,33 @@
       "2021-12-15"
     ]
   },
+  "WY|10k_full": {
+    "company": "WY",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-22"
+    ]
+  },
+  "WY|10k_risk_factors": {
+    "company": "WY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-22"
+    ]
+  },
+  "WY|10k_mda": {
+    "company": "WY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-22"
+    ]
+  },
   "WY|short_interest": {
     "company": "WY",
     "data_type": "short_interest",
@@ -6126,6 +9534,33 @@
     "data_type": "short_interest",
     "dates": [
       "2018-12-31"
+    ]
+  },
+  "XEL|10k_full": {
+    "company": "XEL",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-22",
+      "2020-02-21",
+      "2021-02-17"
+    ]
+  },
+  "XEL|10k_risk_factors": {
+    "company": "XEL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-22",
+      "2020-02-21",
+      "2021-02-17"
+    ]
+  },
+  "XEL|10k_mda": {
+    "company": "XEL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-22",
+      "2020-02-21",
+      "2021-02-17"
     ]
   },
   "XOM|short_interest": {
@@ -6142,6 +9577,33 @@
       "2020-06-15"
     ]
   },
+  "XRAY|10k_full": {
+    "company": "XRAY",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-03-08",
+      "2020-03-02",
+      "2021-03-01"
+    ]
+  },
+  "XRAY|10k_risk_factors": {
+    "company": "XRAY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-03-08",
+      "2020-03-02",
+      "2021-03-01"
+    ]
+  },
+  "XRAY|10k_mda": {
+    "company": "XRAY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-03-08",
+      "2020-03-02",
+      "2021-03-01"
+    ]
+  },
   "XRAY|short_interest": {
     "company": "XRAY",
     "data_type": "short_interest",
@@ -6154,6 +9616,33 @@
     "data_type": "short_interest",
     "dates": [
       "2021-03-15"
+    ]
+  },
+  "XYL|10k_full": {
+    "company": "XYL",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-26",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
+  "XYL|10k_risk_factors": {
+    "company": "XYL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-26",
+      "2017-02-23",
+      "2018-02-23"
+    ]
+  },
+  "XYL|10k_mda": {
+    "company": "XYL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-26",
+      "2017-02-23",
+      "2018-02-23"
     ]
   },
   "YUM|10k_full": {
@@ -6211,6 +9700,33 @@
       "2013-04-17",
       "2013-04-30",
       "2013-06-20"
+    ]
+  },
+  "ZBH|10k_full": {
+    "company": "ZBH",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "ZBH|10k_risk_factors": {
+    "company": "ZBH",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "ZBH|10k_mda": {
+    "company": "ZBH",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-27"
     ]
   },
   "ZBH|short_interest": {

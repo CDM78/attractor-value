@@ -1,0 +1,19 @@
+{
+  "company": "ADM",
+  "data_type": "10k_risk_factors",
+  "source": "edgar_10k",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/7084/000000708420000009/adm-20191231x10k.htm",
+  "publication_date": "2020-02-18",
+  "fiscal_period": "FY2019",
+  "acquired_date": "2026-03-26",
+  "content": "RISK FACTORS (Continued) \n\nThe Company may fail to realize the benefits or experience delays in the execution of its growth strategy, encompassing organic and inorganic initiatives, outside the U.S. and in businesses where the Company does not currently have a large presence. \n\nAs the Company executes its growth strategy, through both organic and inorganic growth, it may encounter risks which could result in increased costs, decreased revenues, and delayed synergies. Recent investments outside the U.S. include Neovia, certain assets of Brazil-based Algar Agro, Protexin, Ziegler, Rodelle, Inc., and Yerbalatina. Growth in new geographies outside the U.S. can expose the Company to volatile economic, political, and regulatory risks that may negatively impact its operations and ability to achieve its growth strategy. Expanding businesses where the Company has limited presence may expose the Company to risks related to the inability to identify an appropriate partner or target and favorable terms, inability to retain/hire strategic talent, or integration risks that may require significant management resources that would have otherwise been available for ongoing growth or operational initiatives. Acquisitions may involve unanticipated delays, costs, and other problems. Due diligence performed prior to the acquisition may not identify a material liability or issue that could impact the Company's reputation or adversely affect results of operations resulting in a reduction of the anticipated acquisition benefits. Additionally, acquisitions may involve integration risks such as: internal control effectiveness, system integration risks, the risk of impairment charges related to goodwill and other intangibles, ability to retain acquired employees, and other unanticipated risks.",
+  "content_hash": "sha256:156dcbe99a0879e6c3de13b4c743f8936739a694cb9bdb24cbb3a2a0d37a4a9e",
+  "metadata": {
+    "section": "item_1a",
+    "filing_accession": "0000007084-20-000009",
+    "fiscal_year": "2019",
+    "report_date": "2019-12-31",
+    "word_count": 253,
+    "extraction_method": "structured_parsing"
+  }
+}
