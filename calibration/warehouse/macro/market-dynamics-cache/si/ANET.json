@@ -1,0 +1,446 @@
+{
+  "series": [
+    {
+      "date": "2019-12-31",
+      "short_position": 2265025,
+      "prev_short_position": 1987599,
+      "avg_daily_volume": 721498,
+      "days_to_cover": 3.14,
+      "change_pct": 13.96,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-01-15",
+      "short_position": 2314695,
+      "prev_short_position": 2265025,
+      "avg_daily_volume": 530481,
+      "days_to_cover": 4.36,
+      "change_pct": 2.19,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-01-31",
+      "short_position": 2379107,
+      "prev_short_position": 2314695,
+      "avg_daily_volume": 738637,
+      "days_to_cover": 3.22,
+      "change_pct": 2.78,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-02-14",
+      "short_position": 1871087,
+      "prev_short_position": 2379107,
+      "avg_daily_volume": 653907,
+      "days_to_cover": 2.86,
+      "change_pct": -21.35,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-02-28",
+      "short_position": 2095523,
+      "prev_short_position": 1871087,
+      "avg_daily_volume": 971132,
+      "days_to_cover": 2.16,
+      "change_pct": 11.99,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-03-13",
+      "short_position": 2041667,
+      "prev_short_position": 2095523,
+      "avg_daily_volume": 992037,
+      "days_to_cover": 2.06,
+      "change_pct": -2.57,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-03-31",
+      "short_position": 2172900,
+      "prev_short_position": 2041667,
+      "avg_daily_volume": 1141856,
+      "days_to_cover": 1.9,
+      "change_pct": 6.43,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-04-15",
+      "short_position": 2642935,
+      "prev_short_position": 2172900,
+      "avg_daily_volume": 800003,
+      "days_to_cover": 3.3,
+      "change_pct": 21.63,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-04-30",
+      "short_position": 2685665,
+      "prev_short_position": 2642935,
+      "avg_daily_volume": 616223,
+      "days_to_cover": 4.36,
+      "change_pct": 1.62,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-05-15",
+      "short_position": 3055177,
+      "prev_short_position": 2696936,
+      "avg_daily_volume": 989053,
+      "days_to_cover": 3.09,
+      "change_pct": 13.28,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-05-29",
+      "short_position": 3433796,
+      "prev_short_position": 3055177,
+      "avg_daily_volume": 477373,
+      "days_to_cover": 7.19,
+      "change_pct": 12.39,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-06-15",
+      "short_position": 3906644,
+      "prev_short_position": 3433796,
+      "avg_daily_volume": 522451,
+      "days_to_cover": 7.48,
+      "change_pct": 13.77,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-06-30",
+      "short_position": 4094742,
+      "prev_short_position": 3906644,
+      "avg_daily_volume": 733225,
+      "days_to_cover": 5.58,
+      "change_pct": 4.81,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-07-15",
+      "short_position": 3871174,
+      "prev_short_position": 4094742,
+      "avg_daily_volume": 411655,
+      "days_to_cover": 9.4,
+      "change_pct": -5.46,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-07-31",
+      "short_position": 3501001,
+      "prev_short_position": 3871174,
+      "avg_daily_volume": 504543,
+      "days_to_cover": 6.94,
+      "change_pct": -9.56,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-08-14",
+      "short_position": 3302363,
+      "prev_short_position": 3501001,
+      "avg_daily_volume": 1079909,
+      "days_to_cover": 3.06,
+      "change_pct": -5.67,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-08-31",
+      "short_position": 3321779,
+      "prev_short_position": 3302363,
+      "avg_daily_volume": 529292,
+      "days_to_cover": 6.28,
+      "change_pct": 0.59,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-09-15",
+      "short_position": 3298925,
+      "prev_short_position": 3321779,
+      "avg_daily_volume": 635573,
+      "days_to_cover": 5.19,
+      "change_pct": -0.69,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-09-30",
+      "short_position": 3939285,
+      "prev_short_position": 3298925,
+      "avg_daily_volume": 701216,
+      "days_to_cover": 5.62,
+      "change_pct": 19.41,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-10-15",
+      "short_position": 4117158,
+      "prev_short_position": 3939285,
+      "avg_daily_volume": 570038,
+      "days_to_cover": 7.22,
+      "change_pct": 4.52,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-10-30",
+      "short_position": 4253589,
+      "prev_short_position": 4117158,
+      "avg_daily_volume": 529138,
+      "days_to_cover": 8.04,
+      "change_pct": 3.31,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-11-13",
+      "short_position": 3394993,
+      "prev_short_position": 4253589,
+      "avg_daily_volume": 1120415,
+      "days_to_cover": 3.03,
+      "change_pct": -20.19,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-11-30",
+      "short_position": 2936167,
+      "prev_short_position": 3394993,
+      "avg_daily_volume": 440896,
+      "days_to_cover": 6.66,
+      "change_pct": -13.51,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-12-15",
+      "short_position": 2483535,
+      "prev_short_position": 2936167,
+      "avg_daily_volume": 496317,
+      "days_to_cover": 5,
+      "change_pct": -15.42,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2020-12-31",
+      "short_position": 2484628,
+      "prev_short_position": 2483535,
+      "avg_daily_volume": 499504,
+      "days_to_cover": 4.97,
+      "change_pct": 0.04,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-01-15",
+      "short_position": 2582614,
+      "prev_short_position": 2484628,
+      "avg_daily_volume": 655284,
+      "days_to_cover": 3.94,
+      "change_pct": 3.94,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-01-29",
+      "short_position": 1557132,
+      "prev_short_position": 2582614,
+      "avg_daily_volume": 531009,
+      "days_to_cover": 2.93,
+      "change_pct": -39.71,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-02-12",
+      "short_position": 1639386,
+      "prev_short_position": 1557132,
+      "avg_daily_volume": 391841,
+      "days_to_cover": 4.18,
+      "change_pct": 5.28,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-02-26",
+      "short_position": 1821354,
+      "prev_short_position": 1639386,
+      "avg_daily_volume": 762817,
+      "days_to_cover": 2.39,
+      "change_pct": 11.1,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-03-15",
+      "short_position": 2166221,
+      "prev_short_position": 1821354,
+      "avg_daily_volume": 527516,
+      "days_to_cover": 4.11,
+      "change_pct": 18.93,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-03-31",
+      "short_position": 2115592,
+      "prev_short_position": 2166221,
+      "avg_daily_volume": 553474,
+      "days_to_cover": 3.82,
+      "change_pct": -2.34,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-04-15",
+      "short_position": 1992627,
+      "prev_short_position": 2115592,
+      "avg_daily_volume": 295859,
+      "days_to_cover": 6.74,
+      "change_pct": -5.81,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-04-30",
+      "short_position": 1802288,
+      "prev_short_position": 1992627,
+      "avg_daily_volume": 273590,
+      "days_to_cover": 6.59,
+      "change_pct": -9.55,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-05-14",
+      "short_position": 1622897,
+      "prev_short_position": 1802288,
+      "avg_daily_volume": 446218,
+      "days_to_cover": 3.64,
+      "change_pct": -9.95,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-05-28",
+      "short_position": 1627324,
+      "prev_short_position": 1622897,
+      "avg_daily_volume": 298373,
+      "days_to_cover": 5.45,
+      "change_pct": 0.27,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-06-15",
+      "short_position": 1845532,
+      "prev_short_position": 1627297,
+      "avg_daily_volume": 448339,
+      "days_to_cover": 4.12,
+      "change_pct": 13.41,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-06-30",
+      "short_position": 1645207,
+      "prev_short_position": 1845532,
+      "avg_daily_volume": 539219,
+      "days_to_cover": 3.05,
+      "change_pct": -10.85,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-07-15",
+      "short_position": 1573931,
+      "prev_short_position": 1645207,
+      "avg_daily_volume": 402318,
+      "days_to_cover": 3.91,
+      "change_pct": -4.33,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-07-30",
+      "short_position": 1371456,
+      "prev_short_position": 1573931,
+      "avg_daily_volume": 375368,
+      "days_to_cover": 3.65,
+      "change_pct": -12.86,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-08-13",
+      "short_position": 1385842,
+      "prev_short_position": 1371456,
+      "avg_daily_volume": 411844,
+      "days_to_cover": 3.36,
+      "change_pct": 1.05,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-08-31",
+      "short_position": 1362035,
+      "prev_short_position": 1385842,
+      "avg_daily_volume": 335108,
+      "days_to_cover": 4.06,
+      "change_pct": -1.72,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-09-15",
+      "short_position": 1489643,
+      "prev_short_position": 1362035,
+      "avg_daily_volume": 495469,
+      "days_to_cover": 3.01,
+      "change_pct": 9.37,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-09-30",
+      "short_position": 1384936,
+      "prev_short_position": 1489643,
+      "avg_daily_volume": 443133,
+      "days_to_cover": 3.13,
+      "change_pct": -7.03,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-10-15",
+      "short_position": 1264508,
+      "prev_short_position": 1384936,
+      "avg_daily_volume": 403907,
+      "days_to_cover": 3.13,
+      "change_pct": -8.7,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-10-29",
+      "short_position": 1255463,
+      "prev_short_position": 1264508,
+      "avg_daily_volume": 410594,
+      "days_to_cover": 3.06,
+      "change_pct": -0.72,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-11-15",
+      "short_position": 958418,
+      "prev_short_position": 1255463,
+      "avg_daily_volume": 886914,
+      "days_to_cover": 1.08,
+      "change_pct": -23.66,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-11-30",
+      "short_position": 3859985,
+      "prev_short_position": 958418,
+      "avg_daily_volume": 2005475,
+      "days_to_cover": 1.92,
+      "change_pct": 302.75,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-12-15",
+      "short_position": 3920205,
+      "prev_short_position": 3859985,
+      "avg_daily_volume": 2196657,
+      "days_to_cover": 1.78,
+      "change_pct": 1.56,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2021-12-31",
+      "short_position": 3987629,
+      "prev_short_position": 3920205,
+      "avg_daily_volume": 2290049,
+      "days_to_cover": 1.74,
+      "change_pct": 1.72,
+      "market_class": "NYSE"
+    }
+  ],
+  "entryDate": "2021-12-31"
+}

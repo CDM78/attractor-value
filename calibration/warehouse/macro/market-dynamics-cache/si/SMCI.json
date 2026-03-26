@@ -1,0 +1,446 @@
+{
+  "series": [
+    {
+      "date": "2019-12-31",
+      "short_position": 112860,
+      "prev_short_position": 210622,
+      "avg_daily_volume": 360672,
+      "days_to_cover": 1,
+      "change_pct": -46.42,
+      "market_class": "OTC"
+    },
+    {
+      "date": "2020-01-15",
+      "short_position": 127172,
+      "prev_short_position": 112860,
+      "avg_daily_volume": 559561,
+      "days_to_cover": 1,
+      "change_pct": 12.68,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-01-31",
+      "short_position": 394763,
+      "prev_short_position": 127172,
+      "avg_daily_volume": 230369,
+      "days_to_cover": 1.71,
+      "change_pct": 210.42,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-02-14",
+      "short_position": 420170,
+      "prev_short_position": 394763,
+      "avg_daily_volume": 301930,
+      "days_to_cover": 1.39,
+      "change_pct": 6.44,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-02-28",
+      "short_position": 438381,
+      "prev_short_position": 420170,
+      "avg_daily_volume": 323864,
+      "days_to_cover": 1.35,
+      "change_pct": 4.33,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-03-13",
+      "short_position": 520393,
+      "prev_short_position": 438381,
+      "avg_daily_volume": 407520,
+      "days_to_cover": 1.28,
+      "change_pct": 18.71,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-03-31",
+      "short_position": 571819,
+      "prev_short_position": 520393,
+      "avg_daily_volume": 438785,
+      "days_to_cover": 1.3,
+      "change_pct": 9.88,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-04-15",
+      "short_position": 533781,
+      "prev_short_position": 571819,
+      "avg_daily_volume": 207293,
+      "days_to_cover": 2.58,
+      "change_pct": -6.65,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-04-30",
+      "short_position": 476983,
+      "prev_short_position": 533781,
+      "avg_daily_volume": 168952,
+      "days_to_cover": 2.82,
+      "change_pct": -10.64,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-05-15",
+      "short_position": 489483,
+      "prev_short_position": 477692,
+      "avg_daily_volume": 300335,
+      "days_to_cover": 1.63,
+      "change_pct": 2.47,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-05-29",
+      "short_position": 464479,
+      "prev_short_position": 489483,
+      "avg_daily_volume": 250184,
+      "days_to_cover": 1.86,
+      "change_pct": -5.11,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-06-15",
+      "short_position": 719615,
+      "prev_short_position": 464479,
+      "avg_daily_volume": 457594,
+      "days_to_cover": 1.57,
+      "change_pct": 54.93,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-06-30",
+      "short_position": 3631164,
+      "prev_short_position": 719615,
+      "avg_daily_volume": 1764961,
+      "days_to_cover": 2.06,
+      "change_pct": 404.6,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-07-15",
+      "short_position": 3374550,
+      "prev_short_position": 3631164,
+      "avg_daily_volume": 419997,
+      "days_to_cover": 8.03,
+      "change_pct": -7.07,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-07-31",
+      "short_position": 3490861,
+      "prev_short_position": 3374550,
+      "avg_daily_volume": 242201,
+      "days_to_cover": 14.41,
+      "change_pct": 3.45,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-08-14",
+      "short_position": 4076789,
+      "prev_short_position": 3490861,
+      "avg_daily_volume": 611309,
+      "days_to_cover": 6.67,
+      "change_pct": 16.78,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-08-31",
+      "short_position": 3376256,
+      "prev_short_position": 4076789,
+      "avg_daily_volume": 359169,
+      "days_to_cover": 9.4,
+      "change_pct": -17.18,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-09-15",
+      "short_position": 2862808,
+      "prev_short_position": 3376256,
+      "avg_daily_volume": 275503,
+      "days_to_cover": 10.39,
+      "change_pct": -15.21,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-09-30",
+      "short_position": 2652460,
+      "prev_short_position": 2862808,
+      "avg_daily_volume": 251998,
+      "days_to_cover": 10.53,
+      "change_pct": -7.35,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-10-15",
+      "short_position": 2392083,
+      "prev_short_position": 2652460,
+      "avg_daily_volume": 142979,
+      "days_to_cover": 16.73,
+      "change_pct": -9.82,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-10-30",
+      "short_position": 2204572,
+      "prev_short_position": 2392083,
+      "avg_daily_volume": 194598,
+      "days_to_cover": 11.33,
+      "change_pct": -7.84,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-11-13",
+      "short_position": 1435202,
+      "prev_short_position": 2204572,
+      "avg_daily_volume": 463841,
+      "days_to_cover": 3.09,
+      "change_pct": -34.9,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-11-30",
+      "short_position": 1234237,
+      "prev_short_position": 1435202,
+      "avg_daily_volume": 298477,
+      "days_to_cover": 4.14,
+      "change_pct": -14,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-12-15",
+      "short_position": 1228304,
+      "prev_short_position": 1234237,
+      "avg_daily_volume": 228218,
+      "days_to_cover": 5.38,
+      "change_pct": -0.48,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2020-12-31",
+      "short_position": 1413004,
+      "prev_short_position": 1228304,
+      "avg_daily_volume": 281679,
+      "days_to_cover": 5.02,
+      "change_pct": 15.04,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-01-15",
+      "short_position": 1233746,
+      "prev_short_position": 1413004,
+      "avg_daily_volume": 257722,
+      "days_to_cover": 4.79,
+      "change_pct": -12.69,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-01-29",
+      "short_position": 1407469,
+      "prev_short_position": 1233746,
+      "avg_daily_volume": 223279,
+      "days_to_cover": 6.3,
+      "change_pct": 14.08,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-02-12",
+      "short_position": 937930,
+      "prev_short_position": 1407469,
+      "avg_daily_volume": 255360,
+      "days_to_cover": 3.67,
+      "change_pct": -33.36,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-02-26",
+      "short_position": 1051380,
+      "prev_short_position": 937930,
+      "avg_daily_volume": 266034,
+      "days_to_cover": 3.95,
+      "change_pct": 12.1,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-03-15",
+      "short_position": 1025903,
+      "prev_short_position": 1051380,
+      "avg_daily_volume": 255086,
+      "days_to_cover": 4.02,
+      "change_pct": -2.42,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-03-31",
+      "short_position": 1057921,
+      "prev_short_position": 1025903,
+      "avg_daily_volume": 394321,
+      "days_to_cover": 2.68,
+      "change_pct": 3.12,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-04-15",
+      "short_position": 981343,
+      "prev_short_position": 1057921,
+      "avg_daily_volume": 289573,
+      "days_to_cover": 3.39,
+      "change_pct": -7.24,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-04-30",
+      "short_position": 956287,
+      "prev_short_position": 981343,
+      "avg_daily_volume": 162811,
+      "days_to_cover": 5.87,
+      "change_pct": -2.55,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-05-14",
+      "short_position": 828770,
+      "prev_short_position": 956287,
+      "avg_daily_volume": 187418,
+      "days_to_cover": 4.42,
+      "change_pct": -13.33,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-05-28",
+      "short_position": 892560,
+      "prev_short_position": 828770,
+      "avg_daily_volume": 157342,
+      "days_to_cover": 5.67,
+      "change_pct": 7.7,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-06-15",
+      "short_position": 876261,
+      "prev_short_position": 892293,
+      "avg_daily_volume": 164051,
+      "days_to_cover": 5.34,
+      "change_pct": -1.8,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-06-30",
+      "short_position": 739709,
+      "prev_short_position": 876261,
+      "avg_daily_volume": 232346,
+      "days_to_cover": 3.18,
+      "change_pct": -15.58,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-07-15",
+      "short_position": 750232,
+      "prev_short_position": 739709,
+      "avg_daily_volume": 198847,
+      "days_to_cover": 3.77,
+      "change_pct": 1.42,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-07-30",
+      "short_position": 778309,
+      "prev_short_position": 750232,
+      "avg_daily_volume": 164888,
+      "days_to_cover": 4.72,
+      "change_pct": 3.74,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-08-13",
+      "short_position": 725868,
+      "prev_short_position": 778309,
+      "avg_daily_volume": 241180,
+      "days_to_cover": 3.01,
+      "change_pct": -6.74,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-08-31",
+      "short_position": 704069,
+      "prev_short_position": 725868,
+      "avg_daily_volume": 218985,
+      "days_to_cover": 3.22,
+      "change_pct": -3,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-09-15",
+      "short_position": 712652,
+      "prev_short_position": 704069,
+      "avg_daily_volume": 131528,
+      "days_to_cover": 5.42,
+      "change_pct": 1.22,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-09-30",
+      "short_position": 732340,
+      "prev_short_position": 712652,
+      "avg_daily_volume": 175764,
+      "days_to_cover": 4.17,
+      "change_pct": 2.76,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-10-15",
+      "short_position": 698692,
+      "prev_short_position": 732340,
+      "avg_daily_volume": 121845,
+      "days_to_cover": 5.73,
+      "change_pct": -4.59,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-10-29",
+      "short_position": 670369,
+      "prev_short_position": 698692,
+      "avg_daily_volume": 170994,
+      "days_to_cover": 3.92,
+      "change_pct": -4.05,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-11-15",
+      "short_position": 524005,
+      "prev_short_position": 670369,
+      "avg_daily_volume": 371890,
+      "days_to_cover": 1.41,
+      "change_pct": -21.83,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-11-30",
+      "short_position": 439970,
+      "prev_short_position": 524005,
+      "avg_daily_volume": 189219,
+      "days_to_cover": 2.33,
+      "change_pct": -16.04,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-12-15",
+      "short_position": 589109,
+      "prev_short_position": 439970,
+      "avg_daily_volume": 189305,
+      "days_to_cover": 3.11,
+      "change_pct": 33.9,
+      "market_class": "NNM"
+    },
+    {
+      "date": "2021-12-31",
+      "short_position": 462845,
+      "prev_short_position": 589109,
+      "avg_daily_volume": 223472,
+      "days_to_cover": 2.07,
+      "change_pct": -21.43,
+      "market_class": "NNM"
+    }
+  ],
+  "entryDate": "2021-12-31"
+}

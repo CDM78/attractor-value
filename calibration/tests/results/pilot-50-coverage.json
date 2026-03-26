@@ -1,0 +1,757 @@
+{
+  "coverage": {
+    "CHTR": {
+      "sector": "Communication Services",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 10,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AMZN": {
+      "sector": "Consumer Discretionary",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ADM": {
+      "sector": "Consumer Staples",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "APA": {
+      "sector": "Energy",
+      "risk_factors": 0,
+      "mda": 0,
+      "transcripts_8k": 0,
+      "comment_letters": 0,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AFL": {
+      "sector": "Financials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "A": {
+      "sector": "Health Care",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 10,
+      "comment_letters": 15,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "BXP": {
+      "sector": "Inc.\"",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ADP": {
+      "sector": "Industrials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 1,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AAPL": {
+      "sector": "Information Technology",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ALB": {
+      "sector": "Materials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AMT": {
+      "sector": "Real Estate",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AAL": {
+      "sector": null,
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 5,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AEE": {
+      "sector": "Utilities",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 10,
+      "comment_letters": 16,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "CMCSA": {
+      "sector": "Communication Services",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "APTV": {
+      "sector": "Consumer Discretionary",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "CAG": {
+      "sector": "Consumer Staples",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "COP": {
+      "sector": "Energy",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AIG": {
+      "sector": "Financials",
+      "risk_factors": 4,
+      "mda": 4,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ABBV": {
+      "sector": "Health Care",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 6,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "FFIV": {
+      "sector": "Inc.\"",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ALLE": {
+      "sector": "Industrials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 9,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ACN": {
+      "sector": "Information Technology",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "APD": {
+      "sector": "Materials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 9,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ARE": {
+      "sector": "Real Estate",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AAP": {
+      "sector": null,
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 10,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AEP": {
+      "sector": "Utilities",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "DIS": {
+      "sector": "Communication Services",
+      "risk_factors": 0,
+      "mda": 0,
+      "transcripts_8k": 0,
+      "comment_letters": 3,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AZO": {
+      "sector": "Consumer Discretionary",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "CHD": {
+      "sector": "Consumer Staples",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "CVX": {
+      "sector": "Energy",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AIZ": {
+      "sector": "Financials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ABT": {
+      "sector": "Health Care",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "NDAQ": {
+      "sector": "Inc.\"",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AME": {
+      "sector": "Industrials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ADBE": {
+      "sector": "Information Technology",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AVY": {
+      "sector": "Materials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AVB": {
+      "sector": "Real Estate",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AIV": {
+      "sector": null,
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AES": {
+      "sector": "Utilities",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "EA": {
+      "sector": "Communication Services",
+      "risk_factors": 4,
+      "mda": 4,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "BBY": {
+      "sector": "Consumer Discretionary",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 10,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "CL": {
+      "sector": "Consumer Staples",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "DVN": {
+      "sector": "Energy",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AJG": {
+      "sector": "Financials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ALGN": {
+      "sector": "Health Care",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 1,
+      "comment_letters": 11,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "NKE": {
+      "sector": "Inc.\"",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 4,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "AOS": {
+      "sector": "Industrials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 7,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "ADI": {
+      "sector": "Information Technology",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "BALL": {
+      "sector": "Materials",
+      "risk_factors": 5,
+      "mda": 5,
+      "transcripts_8k": 5,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    },
+    "CBRE": {
+      "sector": "Real Estate",
+      "risk_factors": 4,
+      "mda": 4,
+      "transcripts_8k": 0,
+      "comment_letters": 20,
+      "patent_years": 0,
+      "total_patents": 0,
+      "si_series_points": 0
+    }
+  },
+  "errors": [
+    {
+      "ticker": "CHTR",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AMZN",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ADM",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "APA",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AFL",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "A",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "BXP",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ADP",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AAPL",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ALB",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AMT",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AAL",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AEE",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "CMCSA",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "APTV",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "CAG",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "COP",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AIG",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ABBV",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "FFIV",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ALLE",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ACN",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "APD",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ARE",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AAP",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AEP",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "DIS",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AZO",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "CHD",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "CVX",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AIZ",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ABT",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "NDAQ",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AME",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ADBE",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AVY",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AVB",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AIV",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AES",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "EA",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "BBY",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "CL",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "DVN",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AJG",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ALGN",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "NKE",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "AOS",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "ADI",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "BALL",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    },
+    {
+      "ticker": "CBRE",
+      "connector": "finra_si",
+      "error": "Unexpected end of JSON input"
+    }
+  ],
+  "timestamp": "2026-03-26T02:35:13.469Z"
+}

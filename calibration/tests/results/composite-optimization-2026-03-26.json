@@ -1,0 +1,668 @@
+{
+  "best_combo": {
+    "label": "D",
+    "method": "rank",
+    "signalKeys": [
+      "spread_variance_slope",
+      "si_zipf_velocity"
+    ],
+    "n": 660,
+    "r": 0.1147,
+    "p": 0.003049,
+    "cvMean": 0.1138,
+    "cvPerFold": [
+      0.025,
+      -0.0011,
+      0.2097,
+      0.1141,
+      0.2211
+    ],
+    "topDecile": 62.1,
+    "topDecileN": 66,
+    "q5WinRate": 55.3,
+    "q1WinRate": 57.6,
+    "q5q1Spread": -2.3,
+    "monotonic": true,
+    "quintiles": [
+      {
+        "q": 1,
+        "n": 132,
+        "winRate": 57.6,
+        "trapRate": 42.4
+      },
+      {
+        "q": 2,
+        "n": 132,
+        "winRate": 57.6,
+        "trapRate": 42.4
+      },
+      {
+        "q": 3,
+        "n": 132,
+        "winRate": 56.1,
+        "trapRate": 43.9
+      },
+      {
+        "q": 4,
+        "n": 132,
+        "winRate": 53.8,
+        "trapRate": 46.2
+      },
+      {
+        "q": 5,
+        "n": 132,
+        "winRate": 55.3,
+        "trapRate": 44.7
+      }
+    ]
+  },
+  "validation": {
+    "label": "D_val",
+    "method": "rank",
+    "signalKeys": [
+      "spread_variance_slope",
+      "si_zipf_velocity"
+    ],
+    "n": 509,
+    "r": 0.1203,
+    "p": 0.006381,
+    "cvMean": 0.1135,
+    "cvPerFold": [
+      0.1225,
+      0.1916,
+      0.1182,
+      0.1044,
+      0.0309
+    ],
+    "topDecile": 56,
+    "topDecileN": 50,
+    "q5WinRate": 55.9,
+    "q1WinRate": 58.4,
+    "q5q1Spread": -2.5,
+    "monotonic": false,
+    "quintiles": [
+      {
+        "q": 1,
+        "n": 101,
+        "winRate": 58.4,
+        "trapRate": 41.6
+      },
+      {
+        "q": 2,
+        "n": 102,
+        "winRate": 58.8,
+        "trapRate": 41.2
+      },
+      {
+        "q": 3,
+        "n": 102,
+        "winRate": 49,
+        "trapRate": 51
+      },
+      {
+        "q": 4,
+        "n": 102,
+        "winRate": 61.8,
+        "trapRate": 38.2
+      },
+      {
+        "q": 5,
+        "n": 102,
+        "winRate": 55.9,
+        "trapRate": 44.1
+      }
+    ]
+  },
+  "all_results": [
+    {
+      "label": "A",
+      "method": "equal",
+      "n": 651,
+      "r": 0.1229,
+      "cvMean": 0.1244,
+      "topDecile": 56.9,
+      "q5WinRate": 55,
+      "q1WinRate": 70.8,
+      "q5q1Spread": -15.8,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope"
+      ]
+    },
+    {
+      "label": "B",
+      "method": "equal",
+      "n": 551,
+      "r": 0.1241,
+      "cvMean": 0.1221,
+      "topDecile": 58.2,
+      "q5WinRate": 53.2,
+      "q1WinRate": 60,
+      "q5q1Spread": -6.8,
+      "monotonic": false,
+      "signalKeys": [
+        "si_zipf_velocity"
+      ]
+    },
+    {
+      "label": "C",
+      "method": "equal",
+      "n": 103,
+      "r": 0.3156,
+      "cvMean": 0.3461,
+      "topDecile": 60,
+      "q5WinRate": 52.4,
+      "q1WinRate": 65,
+      "q5q1Spread": -12.6,
+      "monotonic": false,
+      "signalKeys": [
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "D",
+      "method": "equal",
+      "n": 660,
+      "r": 0.0739,
+      "cvMean": 0.0712,
+      "topDecile": 56.1,
+      "q5WinRate": 56.1,
+      "q1WinRate": 63.6,
+      "q5q1Spread": -7.5,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity"
+      ]
+    },
+    {
+      "label": "D",
+      "method": "ridge",
+      "n": 542,
+      "r": 0.1429,
+      "cvMean": 0.1422,
+      "topDecile": 59.3,
+      "q5WinRate": 57.8,
+      "q1WinRate": 50.9,
+      "q5q1Spread": 6.9,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity"
+      ],
+      "ridgeWeights": {
+        "spread_variance_slope": 0.0028,
+        "si_zipf_velocity": -0.0183
+      },
+      "ridgeLambda": 10,
+      "ridgeStats": {
+        "spread_variance_slope": {
+          "mean": -0.000248948451622794,
+          "std": 0.0013580665072820551
+        },
+        "si_zipf_velocity": {
+          "mean": 0.3761642169083185,
+          "std": 1.31766105906579
+        }
+      }
+    },
+    {
+      "label": "D",
+      "method": "rank",
+      "n": 660,
+      "r": 0.1147,
+      "cvMean": 0.1138,
+      "topDecile": 62.1,
+      "q5WinRate": 55.3,
+      "q1WinRate": 57.6,
+      "q5q1Spread": -2.3,
+      "monotonic": true,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity"
+      ]
+    },
+    {
+      "label": "E",
+      "method": "equal",
+      "n": 652,
+      "r": 0.1347,
+      "cvMean": 0.1368,
+      "topDecile": 61.5,
+      "q5WinRate": 61.1,
+      "q1WinRate": 66.2,
+      "q5q1Spread": -5.1,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "E",
+      "method": "ridge",
+      "n": 102,
+      "r": 0.235,
+      "cvMean": 0.2342,
+      "topDecile": 60,
+      "q5WinRate": 61.9,
+      "q1WinRate": 50,
+      "q5q1Spread": 11.9,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "job2_trajectory"
+      ],
+      "ridgeWeights": {
+        "spread_variance_slope": -0.1363,
+        "job2_trajectory": 0.0558
+      },
+      "ridgeLambda": 0.001,
+      "ridgeStats": {
+        "spread_variance_slope": {
+          "mean": -0.000248948451622794,
+          "std": 0.0013580665072820551
+        },
+        "job2_trajectory": {
+          "mean": 0.5922330097087378,
+          "std": 0.4914194460133499
+        }
+      }
+    },
+    {
+      "label": "E",
+      "method": "rank",
+      "n": 652,
+      "r": 0.1241,
+      "cvMean": 0.1242,
+      "topDecile": 61.5,
+      "q5WinRate": 55.7,
+      "q1WinRate": 71.5,
+      "q5q1Spread": -15.8,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "F",
+      "method": "equal",
+      "n": 562,
+      "r": 0.1264,
+      "cvMean": 0.123,
+      "topDecile": 58.9,
+      "q5WinRate": 56.6,
+      "q1WinRate": 58.9,
+      "q5q1Spread": -2.3,
+      "monotonic": false,
+      "signalKeys": [
+        "si_zipf_velocity",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "F",
+      "method": "ridge",
+      "n": 92,
+      "r": -0.004,
+      "cvMean": 0.0299,
+      "topDecile": 66.7,
+      "q5WinRate": 36.8,
+      "q1WinRate": 66.7,
+      "q5q1Spread": -29.9,
+      "monotonic": false,
+      "signalKeys": [
+        "si_zipf_velocity",
+        "job2_trajectory"
+      ],
+      "ridgeWeights": {
+        "si_zipf_velocity": -0.0334,
+        "job2_trajectory": 0.0025
+      },
+      "ridgeLambda": 0.001,
+      "ridgeStats": {
+        "si_zipf_velocity": {
+          "mean": 0.3761642169083185,
+          "std": 1.31766105906579
+        },
+        "job2_trajectory": {
+          "mean": 0.5922330097087378,
+          "std": 0.4914194460133499
+        }
+      }
+    },
+    {
+      "label": "F",
+      "method": "rank",
+      "n": 562,
+      "r": 0.1227,
+      "cvMean": 0.121,
+      "topDecile": 53.6,
+      "q5WinRate": 52.2,
+      "q1WinRate": 60.7,
+      "q5q1Spread": -8.5,
+      "monotonic": false,
+      "signalKeys": [
+        "si_zipf_velocity",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "G",
+      "method": "equal",
+      "n": 661,
+      "r": 0.0929,
+      "cvMean": 0.0987,
+      "topDecile": 63.6,
+      "q5WinRate": 57.9,
+      "q1WinRate": 64.4,
+      "q5q1Spread": -6.5,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "G",
+      "method": "ridge",
+      "n": 92,
+      "r": 0.1484,
+      "cvMean": 0.1274,
+      "topDecile": 77.8,
+      "q5WinRate": 68.4,
+      "q1WinRate": 50,
+      "q5q1Spread": 18.4,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity",
+        "job2_trajectory"
+      ],
+      "ridgeWeights": {
+        "spread_variance_slope": -0.09,
+        "si_zipf_velocity": -0.0328,
+        "job2_trajectory": 0.0227
+      },
+      "ridgeLambda": 10,
+      "ridgeStats": {
+        "spread_variance_slope": {
+          "mean": -0.000248948451622794,
+          "std": 0.0013580665072820551
+        },
+        "si_zipf_velocity": {
+          "mean": 0.3761642169083185,
+          "std": 1.31766105906579
+        },
+        "job2_trajectory": {
+          "mean": 0.5922330097087378,
+          "std": 0.4914194460133499
+        }
+      }
+    },
+    {
+      "label": "G",
+      "method": "rank",
+      "n": 661,
+      "r": 0.1132,
+      "cvMean": 0.1155,
+      "topDecile": 63.6,
+      "q5WinRate": 54.9,
+      "q1WinRate": 56.8,
+      "q5q1Spread": -1.9,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "H",
+      "method": "equal",
+      "n": 661,
+      "r": 0.1848,
+      "cvMean": 0.1897,
+      "topDecile": 62.1,
+      "q5WinRate": 60.2,
+      "q1WinRate": 49.2,
+      "q5q1Spread": 11,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_x_d1",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "H",
+      "method": "ridge",
+      "n": 92,
+      "r": 0.2859,
+      "cvMean": 0.2667,
+      "topDecile": 77.8,
+      "q5WinRate": 78.9,
+      "q1WinRate": 50,
+      "q5q1Spread": 28.9,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_x_d1",
+        "job2_trajectory"
+      ],
+      "ridgeWeights": {
+        "spread_variance_slope": -0.114,
+        "si_zipf_x_d1": 0.2253,
+        "job2_trajectory": 0.0292
+      },
+      "ridgeLambda": 1,
+      "ridgeStats": {
+        "spread_variance_slope": {
+          "mean": -0.000248948451622794,
+          "std": 0.0013580665072820551
+        },
+        "si_zipf_x_d1": {
+          "mean": -0.012232265966905739,
+          "std": 0.11218488461739562
+        },
+        "job2_trajectory": {
+          "mean": 0.5922330097087378,
+          "std": 0.4914194460133499
+        }
+      }
+    },
+    {
+      "label": "H",
+      "method": "rank",
+      "n": 661,
+      "r": 0.1157,
+      "cvMean": 0.1211,
+      "topDecile": 56.1,
+      "q5WinRate": 59.4,
+      "q1WinRate": 60.6,
+      "q5q1Spread": -1.2,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_x_d1",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "I",
+      "method": "equal",
+      "n": 661,
+      "r": 0.0849,
+      "cvMean": 0.0892,
+      "topDecile": 54.5,
+      "q5WinRate": 54.9,
+      "q1WinRate": 62.1,
+      "q5q1Spread": -7.2,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity",
+        "si_csd",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "I",
+      "method": "ridge",
+      "n": 92,
+      "r": 0.2256,
+      "cvMean": 0.2522,
+      "topDecile": 77.8,
+      "q5WinRate": 73.7,
+      "q1WinRate": 38.9,
+      "q5q1Spread": 34.8,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity",
+        "si_csd",
+        "job2_trajectory"
+      ],
+      "ridgeWeights": {
+        "spread_variance_slope": -0.1249,
+        "si_zipf_velocity": -0.0362,
+        "si_csd": -0.0852,
+        "job2_trajectory": 0.0329
+      },
+      "ridgeLambda": 0.001,
+      "ridgeStats": {
+        "spread_variance_slope": {
+          "mean": -0.000248948451622794,
+          "std": 0.0013580665072820551
+        },
+        "si_zipf_velocity": {
+          "mean": 0.3761642169083185,
+          "std": 1.31766105906579
+        },
+        "si_csd": {
+          "mean": 0.4924934933008989,
+          "std": 0.15550118681278546
+        },
+        "job2_trajectory": {
+          "mean": 0.5922330097087378,
+          "std": 0.4914194460133499
+        }
+      }
+    },
+    {
+      "label": "I",
+      "method": "rank",
+      "n": 661,
+      "r": 0.0918,
+      "cvMean": 0.092,
+      "topDecile": 53,
+      "q5WinRate": 49.6,
+      "q1WinRate": 59.8,
+      "q5q1Spread": -10.2,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "si_zipf_velocity",
+        "si_csd",
+        "job2_trajectory"
+      ]
+    },
+    {
+      "label": "J",
+      "method": "equal",
+      "n": 661,
+      "r": 0.0754,
+      "cvMean": 0.0811,
+      "topDecile": 56.1,
+      "q5WinRate": 54.1,
+      "q1WinRate": 55.3,
+      "q5q1Spread": -1.2,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "spread_theta",
+        "si_zipf_velocity",
+        "si_csd",
+        "job2_trajectory",
+        "job2_confidence"
+      ]
+    },
+    {
+      "label": "J",
+      "method": "ridge",
+      "n": 92,
+      "r": 0.1264,
+      "cvMean": 0.1361,
+      "topDecile": 66.7,
+      "q5WinRate": 68.4,
+      "q1WinRate": 55.6,
+      "q5q1Spread": 12.8,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "spread_theta",
+        "si_zipf_velocity",
+        "si_csd",
+        "job2_trajectory",
+        "job2_confidence"
+      ],
+      "ridgeWeights": {
+        "spread_variance_slope": -0.1434,
+        "spread_theta": 0.1369,
+        "si_zipf_velocity": -0.0246,
+        "si_csd": -0.063,
+        "job2_trajectory": 0.0667,
+        "job2_confidence": -0.0272
+      },
+      "ridgeLambda": 10,
+      "ridgeStats": {
+        "spread_variance_slope": {
+          "mean": -0.000248948451622794,
+          "std": 0.0013580665072820551
+        },
+        "spread_theta": {
+          "mean": 0.18679249465289408,
+          "std": 0.17510617612441745
+        },
+        "si_zipf_velocity": {
+          "mean": 0.3761642169083185,
+          "std": 1.31766105906579
+        },
+        "si_csd": {
+          "mean": 0.4924934933008989,
+          "std": 0.15550118681278546
+        },
+        "job2_trajectory": {
+          "mean": 0.5922330097087378,
+          "std": 0.4914194460133499
+        },
+        "job2_confidence": {
+          "mean": 0.691747572815534,
+          "std": 0.2747547085542842
+        }
+      }
+    },
+    {
+      "label": "J",
+      "method": "rank",
+      "n": 661,
+      "r": 0.1041,
+      "cvMean": 0.1062,
+      "topDecile": 54.5,
+      "q5WinRate": 54.1,
+      "q1WinRate": 57.6,
+      "q5q1Spread": -3.5,
+      "monotonic": false,
+      "signalKeys": [
+        "spread_variance_slope",
+        "spread_theta",
+        "si_zipf_velocity",
+        "si_csd",
+        "job2_trajectory",
+        "job2_confidence"
+      ]
+    }
+  ]
+}

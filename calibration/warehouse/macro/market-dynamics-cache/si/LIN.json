@@ -1,0 +1,50 @@
+{
+  "series": [
+    {
+      "date": "2018-10-31",
+      "short_position": 19100755,
+      "prev_short_position": 0,
+      "avg_daily_volume": 1502685,
+      "days_to_cover": 12.71,
+      "change_pct": 100,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2018-11-15",
+      "short_position": 11167202,
+      "prev_short_position": 19082957,
+      "avg_daily_volume": 4520746,
+      "days_to_cover": 2.47,
+      "change_pct": -41.48,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2018-11-30",
+      "short_position": 6911587,
+      "prev_short_position": 11166075,
+      "avg_daily_volume": 2423607,
+      "days_to_cover": 2.85,
+      "change_pct": -38.1,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2018-12-14",
+      "short_position": 6775316,
+      "prev_short_position": 6911587,
+      "avg_daily_volume": 2837855,
+      "days_to_cover": 2.39,
+      "change_pct": -1.97,
+      "market_class": "NYSE"
+    },
+    {
+      "date": "2018-12-31",
+      "short_position": 7101221,
+      "prev_short_position": 6775316,
+      "avg_daily_volume": 2775062,
+      "days_to_cover": 2.56,
+      "change_pct": 4.81,
+      "market_class": "NYSE"
+    }
+  ],
+  "entryDate": "2019-01-02"
+}

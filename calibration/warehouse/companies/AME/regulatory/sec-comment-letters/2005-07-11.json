@@ -1,0 +1,19 @@
+{
+  "company": "AME",
+  "data_type": "sec_comment_letters",
+  "source": "edgar_corresp",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1037868/000000000005035162/filename1.txt",
+  "publication_date": "2005-07-11",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": "LETTER\n 1\n filename1.txt\n \n\nMail Stop 6010\n\n July 11, 2005\n\nJohn J. Molinelli\nExecutive Vice President and Chief Financial Officer\nAmetek, Inc.\n37 North Valley Road\nPaoli, Pennsylvania 19301\n\nRe: Ametek, Inc.\n Form 10-K for the year ended December 31, 2004\n Filed March 8, 2005\n File No. 001-12981\n\nDear Mr. Molinelli:\n\n We have completed our review of your Form 10-K and related\nfilings and do not, at this time, have any further comments.\n\n Sincerely,\n\n Martin F. James\n Senior Assistant Chief\nAccountant",
+  "content_hash": "sha256:b3ac2bf9043716811fc93c5bf32f4aae093f50c4934c3f90876bcc22275cdb7d",
+  "metadata": {
+    "form": "UPLOAD",
+    "letter_type": "sec_question",
+    "topics": [
+      "off_balance_sheet"
+    ],
+    "word_count": 80
+  }
+}
