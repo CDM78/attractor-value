@@ -1,7 +1,7 @@
 // EDGAR 8-K Earnings Transcript Extraction Connector
 // Extracts earnings call transcripts from 8-K exhibit filings (EX-99.x).
 
-import { fetchWithRetry, ensureCikCache, getCikPadded, stripHtml, sha256, sleep } from './shared.js';
+import { fetchWithRetry, fetchEdgarSubmissions, ensureCikCache, getCikPadded, stripHtml, sha256, sleep } from './shared.js';
 import warehouse from '../warehouse.js';
 
 // ============================================================
@@ -10,37 +10,20 @@ import warehouse from '../warehouse.js';
 
 /**
  * Find 8-K filings for a company that may contain earnings transcripts.
+ * Searches both recent and older filing pages.
  */
 export async function find8KFilings(ticker, beforeDate, maxFilings = 20) {
   await ensureCikCache();
   const cik = getCikPadded(ticker);
   if (!cik) return [];
 
-  const url = `https://data.sec.gov/submissions/CIK${cik}.json`;
-  let res;
-  try {
-    res = await fetchWithRetry(url);
-  } catch { return []; }
+  // Get more 8-K filings than needed since we'll filter by description
+  const rawFilings = await fetchEdgarSubmissions(cik, beforeDate, ['8-K', '8-K/A'], maxFilings * 3);
 
-  if (!res.ok) return [];
-  const data = await res.json();
-  const recent = data.filings?.recent;
-  if (!recent) return [];
-
-  const filings = [];
-  for (let i = 0; i < (recent.form || []).length; i++) {
-    const form = recent.form[i];
-    if (form !== '8-K' && form !== '8-K/A') continue;
-
-    const filingDate = recent.filingDate?.[i];
-    const accession = recent.accessionNumber?.[i];
-    const primaryDoc = recent.primaryDocument?.[i];
-    const description = recent.primaryDocDescription?.[i] || '';
-
-    if (!filingDate || !accession || filingDate >= beforeDate) continue;
-
-    // Filter for filings likely to contain earnings info
-    const descLower = description.toLowerCase();
+  // Filter for earnings-related filings
+  const filtered = [];
+  for (const f of rawFilings) {
+    const descLower = (f.description || '').toLowerCase();
     const isEarningsRelated =
       descLower.includes('earnings') ||
       descLower.includes('results') ||
@@ -49,23 +32,14 @@ export async function find8KFilings(ticker, beforeDate, maxFilings = 20) {
       descLower.includes('press release') ||
       descLower.includes('financial results') ||
       descLower.includes('transcript') ||
-      description === ''; // Many 8-K filings have empty descriptions
+      f.description === '';
 
     if (!isEarningsRelated) continue;
-
-    filings.push({
-      form,
-      filing_date: filingDate,
-      accession,
-      primary_doc: primaryDoc,
-      description,
-      cik: cik.replace(/^0+/, ''),
-    });
-
-    if (filings.length >= maxFilings) break;
+    filtered.push(f);
+    if (filtered.length >= maxFilings) break;
   }
 
-  return filings;
+  return filtered;
 }
 
 // ============================================================

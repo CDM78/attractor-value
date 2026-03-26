@@ -1,0 +1,21 @@
+{
+  "company": "ABT",
+  "data_type": "sec_comment_letters",
+  "source": "edgar_corresp",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1800/000110465912048931/filename1.htm",
+  "publication_date": "2012-07-13",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": "CORRESP\n1\nfilename1.htm\n\nJuly 13, 2012 \n\nMr. James Rosenberg \n\nSenior Assistant Chief Accountant \n\nUnited States Securities and Exchange Commission \n\nDivision of Corporation Finance \n\nMail Stop 4720 \n\n100 F Street NE \n\nWashington, D.C. 20549 \n\nRE: File Number 001-02189 \n\nDear Mr. Rosenberg: \n\nIn follow-up to a phone discussion between Jennifer Riegel of the SEC and Greg Linder, Vice President and Controller, Abbott Laboratories, we have expanded our response to comment #1 in your letter of May 30, 2012. Our expanded response is included in the attachment to this letter. \n\nAs per your request, Abbott acknowledges that we are responsible for the adequacy and accuracy of the disclosure in the filing; staff comments or changes to disclosure in response to staff comments do not foreclose the Commission from taking any action with respect to the filing; and Abbott may not assert staff comments as a defense in any proceeding initiated by the Commission or any person under the federal securities laws of the United States. \n\nVery truly yours, \n\n/s/ Thomas C. Freyman \n\nThomas C. Freyman \n\nExecutive Vice President, Finance \n\nand Chief Financial Officer \n\nEnclosure \n\nForm 10-K for the Fiscal Year Ended December 31, 2011 \n\nRisk Factors \n\nOther factors can have a material adverse effect on Abbott s future profitability and financial condition, page 14 \n\n1. We reviewed your response to comment 1 in our letter dated April 18, 2012. In your response, you note that you depend on well-developed information technology systems to operate your business. In future filings, beginning with your next Form 10-Q, please provide a separate discussion of the risks posed to your operations from your dependence upon your technology systems and the risks posed to your business or operations by cyber attacks. If you have experienced any cyber attacks in the past, please state that fact in order to provide the proper context. You may include language that indicates that the attacks were mitigated. \n\nResponse: \n\nIn future filings, beginning with our next Form 10-Q, we will provide a separate discussion of the risks posed to our operations from our dependence on our technology systems and from cyber attacks. Our information technology systems have been and are expected to continue to be the target of malware and other cyber attacks and we will include such a statement in the discussion of this risk. To date, no cyber attack has had a material effect on our operations due in part to the implementation of proactive security and other protective measures.",
+  "content_hash": "sha256:8b6673b2efe0a19712e045aa387b897fbbfa7523e482c471326bc0619afde098",
+  "metadata": {
+    "direction": "sec_to_company",
+    "topics": [
+      "risk_factors"
+    ],
+    "related_filing": "10-K for the Fiscal Year Ended December 31, 2011",
+    "exchange_sequence": 3,
+    "word_count": 409,
+    "form_type": "CORRESP"
+  }
+}

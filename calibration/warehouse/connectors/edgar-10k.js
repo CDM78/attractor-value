@@ -1,7 +1,7 @@
 // EDGAR 10-K Section Extraction Connector
 // Extracts Item 1A (Risk Factors) and Item 7 (MD&A) from 10-K filings.
 
-import { fetchWithRetry, ensureCikCache, getCikPadded, stripHtml, sha256, sleep } from './shared.js';
+import { fetchWithRetry, fetchEdgarSubmissions, ensureCikCache, getCikPadded, stripHtml, sha256, sleep } from './shared.js';
 import warehouse from '../warehouse.js';
 
 // ============================================================
@@ -10,6 +10,7 @@ import warehouse from '../warehouse.js';
 
 /**
  * Find 10-K filings for a company from EDGAR submissions.
+ * Searches both recent and older filing pages.
  * @param {string} ticker
  * @param {string} beforeDate - Only filings before this date
  * @param {number} maxFilings - Max number of filings to return
@@ -22,49 +23,12 @@ export async function find10KFilings(ticker, beforeDate, maxFilings = 5) {
     return [];
   }
 
-  const url = `https://data.sec.gov/submissions/CIK${cik}.json`;
-  let res;
-  try {
-    res = await fetchWithRetry(url);
-  } catch (err) {
-    console.log(`    EDGAR submissions fetch failed for ${ticker}: ${err.message}`);
-    return [];
-  }
+  const rawFilings = await fetchEdgarSubmissions(cik, beforeDate, ['10-K', '10-K/A'], maxFilings);
 
-  if (!res.ok) return [];
-  const data = await res.json();
-  const recent = data.filings?.recent;
-  if (!recent) return [];
-
-  const filings = [];
-  for (let i = 0; i < (recent.form || []).length; i++) {
-    const form = recent.form[i];
-    if (form !== '10-K' && form !== '10-K/A') continue;
-
-    const filingDate = recent.filingDate?.[i];
-    const accession = recent.accessionNumber?.[i];
-    const primaryDoc = recent.primaryDocument?.[i];
-
-    if (!filingDate || !accession || filingDate >= beforeDate) continue;
-
-    // Determine fiscal year from reportDate or filingDate
-    const reportDate = recent.reportDate?.[i] || filingDate;
-    const fiscalYear = reportDate.slice(0, 4);
-
-    filings.push({
-      form,
-      filing_date: filingDate,
-      accession,
-      primary_doc: primaryDoc,
-      report_date: reportDate,
-      fiscal_year: fiscalYear,
-      cik: cik.replace(/^0+/, ''),
-    });
-
-    if (filings.length >= maxFilings) break;
-  }
-
-  return filings;
+  return rawFilings.map(f => ({
+    ...f,
+    fiscal_year: (f.report_date || f.filing_date).slice(0, 4),
+  }));
 }
 
 // ============================================================

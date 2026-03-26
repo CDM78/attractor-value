@@ -209,6 +209,84 @@ export function getCompanyName(ticker) {
 }
 
 // ============================================================
+// EDGAR SUBMISSIONS (with older filing pages)
+// ============================================================
+
+/**
+ * Fetch all EDGAR submissions for a company, including older filing pages.
+ * The SEC splits filings: recent filings in data.filings.recent,
+ * older filings in separate JSON files listed in data.filings.files.
+ *
+ * @param {string} cikPadded - 10-digit zero-padded CIK
+ * @param {string} beforeDate - Only return filings before this date
+ * @param {string[]} formTypes - Filing types to include (e.g., ['10-K', '10-K/A'])
+ * @param {number} maxFilings - Max results
+ */
+export async function fetchEdgarSubmissions(cikPadded, beforeDate, formTypes, maxFilings = 10) {
+  const url = `https://data.sec.gov/submissions/CIK${cikPadded}.json`;
+  let res;
+  try {
+    res = await fetchWithRetry(url);
+  } catch { return []; }
+  if (!res.ok) return [];
+
+  const data = await res.json();
+  const cik = cikPadded.replace(/^0+/, '');
+
+  // Collect filings from recent
+  const filings = [];
+  const recent = data.filings?.recent;
+  if (recent) {
+    extractFilings(recent, filings, formTypes, beforeDate, cik);
+  }
+
+  // If we have enough, return early
+  if (filings.length >= maxFilings) return filings.slice(0, maxFilings);
+
+  // Fetch older filing pages if needed
+  const olderFiles = data.filings?.files || [];
+  for (const file of olderFiles) {
+    if (filings.length >= maxFilings) break;
+
+    try {
+      const olderUrl = `https://data.sec.gov/submissions/${file.name}`;
+      const olderRes = await fetchWithRetry(olderUrl);
+      if (!olderRes.ok) continue;
+      const olderData = await olderRes.json();
+      extractFilings(olderData, filings, formTypes, beforeDate, cik);
+    } catch {}
+  }
+
+  return filings.slice(0, maxFilings);
+}
+
+function extractFilings(submissionData, filings, formTypes, beforeDate, cik) {
+  const forms = submissionData.form || [];
+  for (let i = 0; i < forms.length; i++) {
+    const form = forms[i];
+    if (!formTypes.includes(form)) continue;
+
+    const filingDate = submissionData.filingDate?.[i];
+    const accession = submissionData.accessionNumber?.[i];
+    const primaryDoc = submissionData.primaryDocument?.[i];
+    const reportDate = submissionData.reportDate?.[i] || filingDate;
+    const description = submissionData.primaryDocDescription?.[i] || '';
+
+    if (!filingDate || !accession || filingDate >= beforeDate) continue;
+
+    filings.push({
+      form,
+      filing_date: filingDate,
+      accession,
+      primary_doc: primaryDoc,
+      report_date: reportDate,
+      description,
+      cik,
+    });
+  }
+}
+
+// ============================================================
 // HTML PARSING HELPERS
 // ============================================================
 
@@ -278,6 +356,7 @@ export function writeJSON(path, data) {
 export default {
   fetchWithRetry,
   fetchRateLimited,
+  fetchEdgarSubmissions,
   ensureCikCache,
   getCikForTicker,
   getCikNumeric,

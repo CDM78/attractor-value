@@ -2,7 +2,7 @@
 // Extracts CORRESP (correspondence) filings from EDGAR.
 // These are SEC staff review letters and company responses.
 
-import { fetchWithRetry, ensureCikCache, getCikPadded, stripHtml, sleep } from './shared.js';
+import { fetchWithRetry, fetchEdgarSubmissions, ensureCikCache, getCikPadded, stripHtml, sleep } from './shared.js';
 import warehouse from '../warehouse.js';
 
 // ============================================================
@@ -12,46 +12,20 @@ import warehouse from '../warehouse.js';
 /**
  * Find correspondence filings for a company.
  * Filing types: CORRESP and UPLOAD
+ * Searches both recent and older filing pages.
  */
 export async function findCorrespondenceFilings(ticker, beforeDate, afterDate = null) {
   await ensureCikCache();
   const cik = getCikPadded(ticker);
   if (!cik) return [];
 
-  const url = `https://data.sec.gov/submissions/CIK${cik}.json`;
-  let res;
-  try {
-    res = await fetchWithRetry(url);
-  } catch { return []; }
+  const rawFilings = await fetchEdgarSubmissions(cik, beforeDate, ['CORRESP', 'UPLOAD'], 50);
 
-  if (!res.ok) return [];
-  const data = await res.json();
-  const recent = data.filings?.recent;
-  if (!recent) return [];
-
-  const filings = [];
-  for (let i = 0; i < (recent.form || []).length; i++) {
-    const form = recent.form[i];
-    if (form !== 'CORRESP' && form !== 'UPLOAD') continue;
-
-    const filingDate = recent.filingDate?.[i];
-    const accession = recent.accessionNumber?.[i];
-    const primaryDoc = recent.primaryDocument?.[i];
-
-    if (!filingDate || !accession) continue;
-    if (filingDate >= beforeDate) continue;
-    if (afterDate && filingDate < afterDate) continue;
-
-    filings.push({
-      form,
-      filing_date: filingDate,
-      accession,
-      primary_doc: primaryDoc,
-      cik: cik.replace(/^0+/, ''),
-    });
+  // Filter by afterDate if specified
+  if (afterDate) {
+    return rawFilings.filter(f => f.filing_date >= afterDate);
   }
-
-  return filings;
+  return rawFilings;
 }
 
 // ============================================================

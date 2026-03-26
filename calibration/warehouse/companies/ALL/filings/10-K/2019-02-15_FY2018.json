@@ -1,0 +1,19 @@
+{
+  "company": "ALL",
+  "data_type": "10k_risk_factors",
+  "source": "edgar_10k",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/899051/000089905119000007/allcorp-12311810xk.htm",
+  "publication_date": "2019-02-15",
+  "fiscal_period": "FY2018",
+  "acquired_date": "2026-03-26",
+  "content": "and Other Disclosures 2018 Form 10-K \n\ninvolvement in the divested businesses, such as through reinsurance, guarantees or other financial arrangements, following the transaction. Nonperformance or decline in the financial strength ratings by those divested businesses could affect our future financial results through an increase in policy lapses, decreased future premiums, additional payment obligations, higher costs or asset write-downs. We reinsure life insurance and payout annuity business from Lincoln Benefit Life Company ( LBL ). Premiums and contract charges assumed from LBL totaled $690 million in 2018. A decline in LBL s financial strength ratings could adversely affect our results of operations by decreasing future premiums. \n\nReducing our concentration in spread-based business and exiting certain distribution channels may adversely affect annuity reported results \n\nWe have been reducing our concentration in spread-based business since 2008 and discontinued offering fixed annuities effective January 1, 2014. We also exited the independent master brokerage agencies and structured settlement annuity brokers distribution channels in 2013 and sold LBL on April 1, 2014. The reduction in sales of these products has and will continue to reduce investment portfolio levels. It may also affect the settlement of contract benefits, including sales of assets with unrealized capital losses and affect insurance reserves deficiency testing.",
+  "content_hash": "sha256:056860bb1321f2028961e82cb54b32247d5e446a695ade928c367658bc9ddfe3",
+  "metadata": {
+    "section": "item_1a",
+    "filing_accession": "0000899051-19-000007",
+    "fiscal_year": "2018",
+    "report_date": "2018-12-31",
+    "word_count": 205,
+    "extraction_method": "regex_fallback"
+  }
+}

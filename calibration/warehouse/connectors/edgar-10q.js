@@ -1,7 +1,7 @@
 // EDGAR 10-Q Section Extraction Connector
 // Extracts Item 2 (MD&A) from 10-Q filings.
 
-import { fetchWithRetry, ensureCikCache, getCikPadded, stripHtml, sha256, sleep } from './shared.js';
+import { fetchWithRetry, fetchEdgarSubmissions, ensureCikCache, getCikPadded, stripHtml, sha256, sleep } from './shared.js';
 import warehouse from '../warehouse.js';
 
 // ============================================================
@@ -10,56 +10,28 @@ import warehouse from '../warehouse.js';
 
 /**
  * Find 10-Q filings for a company from EDGAR submissions.
+ * Searches both recent and older filing pages.
  */
 export async function find10QFilings(ticker, beforeDate, maxFilings = 8) {
   await ensureCikCache();
   const cik = getCikPadded(ticker);
   if (!cik) return [];
 
-  const url = `https://data.sec.gov/submissions/CIK${cik}.json`;
-  let res;
-  try {
-    res = await fetchWithRetry(url);
-  } catch { return []; }
+  const rawFilings = await fetchEdgarSubmissions(cik, beforeDate, ['10-Q', '10-Q/A'], maxFilings);
 
-  if (!res.ok) return [];
-  const data = await res.json();
-  const recent = data.filings?.recent;
-  if (!recent) return [];
-
-  const filings = [];
-  for (let i = 0; i < (recent.form || []).length; i++) {
-    const form = recent.form[i];
-    if (form !== '10-Q' && form !== '10-Q/A') continue;
-
-    const filingDate = recent.filingDate?.[i];
-    const accession = recent.accessionNumber?.[i];
-    const primaryDoc = recent.primaryDocument?.[i];
-
-    if (!filingDate || !accession || filingDate >= beforeDate) continue;
-
-    const reportDate = recent.reportDate?.[i] || filingDate;
-    // Determine fiscal quarter from report date
+  return rawFilings.map(f => {
+    const reportDate = f.report_date || f.filing_date;
     const reportMonth = parseInt(reportDate.slice(5, 7), 10);
     const reportYear = reportDate.slice(0, 4);
     const quarter = Math.ceil(reportMonth / 3);
 
-    filings.push({
-      form,
-      filing_date: filingDate,
-      accession,
-      primary_doc: primaryDoc,
-      report_date: reportDate,
+    return {
+      ...f,
       fiscal_quarter: `Q${quarter}`,
       fiscal_year: reportYear,
       fiscal_period: `Q${quarter}-${reportYear}`,
-      cik: cik.replace(/^0+/, ''),
-    });
-
-    if (filings.length >= maxFilings) break;
-  }
-
-  return filings;
+    };
+  });
 }
 
 // ============================================================
