@@ -1,0 +1,102 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-PLD-2021-12-31-3fdee8",
+      "ticker": "PLD",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "T12 text is the Item 1 Business section (not Item 1A Risk Factors), so direct risk factor comparison is not possible; entry risk factors show standard REIT risks and the business description in T12 reflects strong demand fundamentals with no sign of deterioration."
+    },
+    {
+      "case_id": "CASE-VNO-2021-12-31-2438d1",
+      "ticker": "VNO",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "T12 text is predominantly the Item 1 Business section rather than Item 1A; entry flagged extensive COVID-19 impacts on NYC office and retail, and T12 business description still references ongoing COVID uncertainty with vaccine variants, but also shows active development (PENN District, Farley) and refinancing activity."
+    },
+    {
+      "case_id": "CASE-MNST-2012-06-28-852f51",
+      "ticker": "MNST",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "Entry text is MD&A financial results (not risk factors) and T12 text is Item 1 Business/product descriptions; neither contains comparable Item 1A content, so no meaningful risk factor evolution can be assessed, though financial results in the entry showed strong 31% revenue growth."
+    },
+    {
+      "case_id": "CASE-BBBY-2014-06-15-66e88b",
+      "ticker": "BBBY",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings contain comparable Item 1A risk factors for the e-commerce business (Overstock.com); T12 makes minor wording updates (adds mobile devices, broadens supplier language) but introduces no genuinely new risk categories or material escalation beyond entry."
+    },
+    {
+      "case_id": "CASE-ACN-2015-01-02-ff63ea",
+      "ticker": "ACN",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factors are nearly identical between entry and T12; minor language updates reflect evolving technology terminology (SaaS replaced by EaaS/IoT) but all core risk categories remain unchanged with no new material threats introduced."
+    },
+    {
+      "case_id": "CASE-ALL-2021-01-04-f97a6b",
+      "ticker": "ALL",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Both texts are partial excerpts from Item 1A covering vendor risk, talent retention, and fraud; T12 adds mentions of goodwill impairment risk and pending long-duration insurance accounting changes but these are standard insurance industry disclosures rather than company-specific deterioration."
+    },
+    {
+      "case_id": "CASE-D-2021-01-04-531112",
+      "ticker": "D",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Both texts are MD&A financial sections (not Item 1A); credit exposure declined significantly from $233M to $107M, total long-term debt obligations decreased modestly, and planned capital expenditures remained substantial with no signs of financial deterioration."
+    },
+    {
+      "case_id": "CASE-DVN-2017-06-14-bc2279",
+      "ticker": "DVN",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings present comparable Item 1A risk factors; T12 makes minor updates (adds activist shareholder risk mention, slightly expands climate/environmental language, broadens operational risk descriptions) but all core E&P risk categories are substantively unchanged."
+    },
+    {
+      "case_id": "CASE-EXPD-2017-06-14-c2b652",
+      "ticker": "EXPD",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factors are virtually identical between entry and T12 with only trivial wording changes; the removal of one specific bankruptcy reference (2016 ocean carrier) and addition of US tax reform language reflect routine updates, not material change."
+    },
+    {
+      "case_id": "CASE-FAST-2021-01-04-d42960",
+      "ticker": "FAST",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "T12 adds COVID-19 pandemic references and supply chain disruption language reflecting the macro environment, plus expanded data privacy regulation discussion, but core business risk structure is unchanged and the pandemic disclosures are contextual rather than indicating company-specific deterioration."
+    },
+    {
+      "case_id": "CASE-FIS-2017-06-14-440933",
+      "ticker": "FIS",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "T12 elevates cybersecurity risk to greater prominence (moved to top of risk factors) and adds explicit cybersecurity terminology, but all core risk categories including competition, regulation, and client consolidation remain substantively the same."
+    },
+    {
+      "case_id": "CASE-FISV-2021-01-04-2defa3",
+      "ticker": "FISV",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "T12 text is the financial statements section (not Item 1A Risk Factors), making direct comparison impossible; the financial data shows revenue growth from $5.8B to $14.9B reflecting the First Data acquisition, with no obvious signs of distress."
+    },
+    {
+      "case_id": "CASE-HAS-2021-01-04-2c0b25",
+      "ticker": "HAS",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "Entry contains Item 1A risk factors while T12 contains Item 7 MD&A; the MD&A reveals COVID-19 pandemic impacts on Partner Brands and supply chain, a $96.9M goodwill impairment (Backflip Studios) in 2018 and $52.8M Toys R Us bankruptcy charge, but these preceded the entry period and do not represent new deterioration."
+    },
+    {
+      "case_id": "CASE-KSS-2017-06-15-dce51f",
+      "ticker": "KSS",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings present comparable Item 1A risk factors; T12 makes minor editorial changes and slightly reduces third-party sourcing percentage (30% to 25%) but all core retail risk categories including competition, consumer spending, trade policy, and sourcing risks remain substantively identical."
+    }
+  ]
+}

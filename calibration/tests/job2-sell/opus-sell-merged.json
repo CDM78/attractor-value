@@ -1,0 +1,451 @@
+{
+  "timestamp": "2026-03-26T22:50:00.728Z",
+  "total": 44,
+  "trajectory_distribution": {
+    "stable": 36,
+    "improved": 2,
+    "deteriorated": 6
+  },
+  "results": [
+    {
+      "case_id": "CASE-AIZ-2013-01-02-2e708d",
+      "ticker": "AIZ",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 filing reorganized risk factors and added credit ratings table detail but same fundamental risk categories (distribution relationships, health reform, catastrophe exposure) with no material escalation.",
+      "outcome": "winner",
+      "alpha_3yr": 0.997,
+      "forward_return": 1.395
+    },
+    {
+      "case_id": "CASE-BIIB-2013-01-02-7553e7",
+      "ticker": "BIIB",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Core TYSABRI/PML risks and product concentration risks unchanged; minor language updates on JCV antibody testing frequency and new pipeline filings reflect normal year-over-year progress, not deterioration.",
+      "outcome": "winner",
+      "alpha_3yr": 0.644,
+      "forward_return": 1.042
+    },
+    {
+      "case_id": "CASE-BXP-2013-01-02-370494",
+      "ticker": "BXP",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Nearly identical risk factors with routine date/figure updates (debt $8.1B to $8.9B, market cap $25.5B to $26.9B); added minor language on space utilization changes due to technology but no new material risks.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.031,
+      "forward_return": 0.367
+    },
+    {
+      "case_id": "CASE-EFX-2013-01-02-8ad141",
+      "ticker": "EFX",
+      "trajectory_since_entry": "improved",
+      "confidence": "medium",
+      "key_change": "Removed the CSC option risk (potential $650-750M forced purchase obligation) which was a significant contingent liability; added standard cyber security language but no new material threats.",
+      "outcome": "winner",
+      "alpha_3yr": 0.718,
+      "forward_return": 1.116
+    },
+    {
+      "case_id": "CASE-M-2013-01-02-c86774",
+      "ticker": "M",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Same retail competition, consumer spending, and macro risk factors with minor wording updates; added pension funding and pandemic supply-chain disruption language but these are boilerplate expansions, not new material problems.",
+      "outcome": "trap",
+      "alpha_3yr": -0.422,
+      "forward_return": -0.024
+    },
+    {
+      "case_id": "CASE-MNST-2013-01-02-cf8ed9",
+      "ticker": "MNST",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry and T12 texts appear to be from different sections (entry is MD&A financials, T12 is product descriptions), making direct risk factor comparison unreliable; underlying business showed strong growth continuity.",
+      "outcome": "winner",
+      "alpha_3yr": 1.349,
+      "forward_return": 1.747
+    },
+    {
+      "case_id": "CASE-ROST-2013-01-02-d90e7d",
+      "ticker": "ROST",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Same core retail risk factors with minor additions around IT systems upgrade and data center move risks, reflecting normal operational evolution for a growing off-price retailer.",
+      "outcome": "winner",
+      "alpha_3yr": 0.64,
+      "forward_return": 1.038
+    },
+    {
+      "case_id": "CASE-SPG-2013-01-02-acdc3e",
+      "ticker": "SPG",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Debt increased from $18.4B to $23.1B and added international joint venture exposure (Japan, South Korea, Mexico, Malaysia, Klepierre stake), but these reflect growth-driven expansion rather than distress; core risk language unchanged.",
+      "outcome": "mixed",
+      "alpha_3yr": 0.019,
+      "forward_return": 0.417
+    },
+    {
+      "case_id": "CASE-T-2013-01-02-2ca79c",
+      "ticker": "T",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Nearly identical cautionary language with minor additions on congressional spending/debt ceiling uncertainty and IP infrastructure transition; standard telecom regulatory risk updates.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.184,
+      "forward_return": 0.214
+    },
+    {
+      "case_id": "CASE-WEC-2013-01-02-9fb59e",
+      "ticker": "WEC",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry and T12 texts cover different portions of the filing (entry is environmental/emissions detail, T12 is regulatory overview), but both reflect standard utility regulatory and environmental compliance risks with no material escalation.",
+      "outcome": "mixed",
+      "alpha_3yr": 0.114,
+      "forward_return": 0.512
+    },
+    {
+      "case_id": "CASE-WY-2013-01-02-7e6e27",
+      "ticker": "WY",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings contain only the risk factor table of contents with identical risk categories; page numbers shifted by one page but no content changes detectable.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.263,
+      "forward_return": 0.135
+    },
+    {
+      "case_id": "CASE-INTU-2015-12-31-a73aae",
+      "ticker": "INTU",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "Entry text is MD&A (not risk factors) while T12 is actual Item 1A risk factors, making direct comparison unreliable; T12 risk factors appear to be standard software company disclosures around competition, security, and tax regulation.",
+      "outcome": "winner",
+      "alpha_3yr": 0.852,
+      "forward_return": 1.08
+    },
+    {
+      "case_id": "CASE-KEY-2015-12-31-507c54",
+      "ticker": "KEY",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 discloses First Niagara acquisition with S&P and Fitch changing outlook to negative, adds elevated CRE valuation and oversupply concerns, and new integration risk -- representing material new risks beyond entry profile.",
+      "outcome": "underperform",
+      "alpha_3yr": 0,
+      "forward_return": 0.228
+    },
+    {
+      "case_id": "CASE-VMC-2015-12-31-2525cd",
+      "ticker": "VMC",
+      "trajectory_since_entry": "improved",
+      "confidence": "medium",
+      "key_change": "Removed management transition risk (new team now established), noted Congress passed five-year infrastructure funding bill and eleven states increased transportation funding, reducing key demand uncertainty.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.174,
+      "forward_return": 0.054
+    },
+    {
+      "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+      "ticker": "WDC",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "Added substantial SanDisk integration risks (costs, culture, internal controls), goodwill impairment warning due to market cap volatility, and Brexit macro risk; MOFCOM restrictions partially resolved but replaced by complex merger execution risk.",
+      "outcome": "trap",
+      "alpha_3yr": -0.527,
+      "forward_return": -0.299
+    },
+    {
+      "case_id": "CASE-ABT-2019-01-02-5bbd3d",
+      "ticker": "ABT",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Near-identical risk factor language with only minor wording updates and the addition of generic tariff risk, reflecting no material change in Abbott's risk profile.",
+      "outcome": "winner",
+      "alpha_3yr": 0.224,
+      "forward_return": 1.123
+    },
+    {
+      "case_id": "CASE-DVA-2019-01-02-e620c7",
+      "ticker": "DVA",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 text shifts to operational detail around calcimimetics reimbursement and Stark Law compliance rather than broad risk factors, but underlying regulatory and reimbursement risks remain substantively unchanged.",
+      "outcome": "winner",
+      "alpha_3yr": 0.3,
+      "forward_return": 1.199
+    },
+    {
+      "case_id": "CASE-JEF-2019-01-02-26ea37",
+      "ticker": "JEF",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 expands Merchant Banking portfolio disclosures (Linkem, Vitesse Energy, WeWork) and adds climate change and tariff language, but these reflect routine portfolio updates and boilerplate additions rather than new material risks.",
+      "outcome": "winner",
+      "alpha_3yr": 0.652,
+      "forward_return": 1.551
+    },
+    {
+      "case_id": "CASE-MKC-2019-01-02-3bfbf1",
+      "ticker": "MKC",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factor language is nearly identical between entry and T12 with only trivial wording changes; removal of specific cybersecurity keywords reflects reorganization of disclosure rather than reduced risk.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.409,
+      "forward_return": 0.49
+    },
+    {
+      "case_id": "CASE-MU-2019-01-02-ecc662",
+      "ticker": "MU",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 shows DRAM prices fell 30% and NAND fell 44% year-over-year (versus prior gains), adds escalating US-China trade war and tariff risks, new anticompetitive litigation (DRAM price-fixing class actions), and expanded underutilization risk language.",
+      "outcome": "winner",
+      "alpha_3yr": 0.952,
+      "forward_return": 1.851
+    },
+    {
+      "case_id": "CASE-PHM-2019-01-02-85436b",
+      "ticker": "PHM",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 adds standard language on tariffs, labor shortages, supply chain, and inflation risks for homebuilders, but these are industry-wide boilerplate additions reflecting the macro environment rather than company-specific deterioration.",
+      "outcome": "winner",
+      "alpha_3yr": 0.362,
+      "forward_return": 1.261
+    },
+    {
+      "case_id": "CASE-PSA-2019-01-02-5d2aae",
+      "ticker": "PSA",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factor language is nearly identical with minor date and dollar figure updates; no new material risks introduced and overall risk profile is unchanged.",
+      "outcome": "winner",
+      "alpha_3yr": 0.224,
+      "forward_return": 1.123
+    },
+    {
+      "case_id": "CASE-STX-2019-01-02-700a3d",
+      "ticker": "STX",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 shifts from detailed risk factors to business description and product portfolio overview; addition of AI and digital transformation references reflects industry evolution rather than new company-specific threats.",
+      "outcome": "winner",
+      "alpha_3yr": 1.407,
+      "forward_return": 2.306
+    },
+    {
+      "case_id": "CASE-XYL-2019-01-02-0cc59a",
+      "ticker": "XYL",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 text focuses more on business overview and strategy description; the apparent removal of multiple risk keywords reflects truncation or restructuring of the filing excerpt rather than genuine risk reduction.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.031,
+      "forward_return": 0.868
+    },
+    {
+      "case_id": "CASE-ADM-2021-12-31-cf4a10",
+      "ticker": "ADM",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "low",
+      "key_change": "Entry text is truncated (only 3,541 chars covering two risk factors) while T12 is a full filing with comprehensive ERM-framed risk disclosures adding cybersecurity, pandemic, climate, supply chain, and liquidity risks; the apparent escalation largely reflects incomplete entry data rather than confirmed deterioration.",
+      "outcome": "trap",
+      "alpha_3yr": -0.428,
+      "forward_return": -0.197
+    },
+    {
+      "case_id": "CASE-CTSH-2021-12-31-cb3ed4",
+      "ticker": "CTSH",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry text is mostly glossary and financial statements rather than risk factors; T12 shows executive officer bios and standard IT services risk language with no evidence of material new risks beyond routine updates.",
+      "outcome": "trap",
+      "alpha_3yr": -0.327,
+      "forward_return": -0.096
+    },
+    {
+      "case_id": "CASE-D-2021-12-31-3e5d64",
+      "ticker": "D",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry text covers financial details and liquidity while T12 describes operating segments and utility expansion plans; both reflect the post-GT&S transaction restructuring but no genuinely new material risk escalation.",
+      "outcome": "trap",
+      "alpha_3yr": -0.435,
+      "forward_return": -0.204
+    },
+    {
+      "case_id": "CASE-DUK-2021-12-31-f42750",
+      "ticker": "DUK",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 introduces substantial new risk language around achieving net-zero carbon goals, dependence on unproven technologies, nuclear relicensing uncertainty, inflation, recession risk, and competition from distributed generation, reflecting a materially expanded risk landscape for the clean energy transition.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.07,
+      "forward_return": 0.161
+    },
+    {
+      "case_id": "CASE-DXC-2021-12-31-16d7ea",
+      "ticker": "DXC",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 reflects ongoing transformation journey with continued portfolio divestitures and cost optimization but overall risk profile remains similar; addition of ESG and climate language is boilerplate rather than indicative of new material threats.",
+      "outcome": "trap",
+      "alpha_3yr": -0.617,
+      "forward_return": -0.386
+    },
+    {
+      "case_id": "CASE-HIG-2021-12-31-848feb",
+      "ticker": "HIG",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 adds extensive new risk factors around persistent COVID-19 impacts (excess mortality claims, business interruption litigation), inflation driving higher loss costs, geopolitical instability including trade wars and tariffs, labor shortages, and cybersecurity threats, representing material escalation of the insurer's risk exposure.",
+      "outcome": "winner",
+      "alpha_3yr": 0.452,
+      "forward_return": 0.683
+    },
+    {
+      "case_id": "CASE-PLD-2021-12-31-3fdee8",
+      "ticker": "PLD",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "T12 text is the Item 1 Business section (not Item 1A Risk Factors), so direct risk factor comparison is not possible; entry risk factors show standard REIT risks and the business description in T12 reflects strong demand fundamentals with no sign of deterioration.",
+      "outcome": "trap",
+      "alpha_3yr": -0.557,
+      "forward_return": -0.326
+    },
+    {
+      "case_id": "CASE-VNO-2021-12-31-2438d1",
+      "ticker": "VNO",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "T12 text is predominantly the Item 1 Business section rather than Item 1A; entry flagged extensive COVID-19 impacts on NYC office and retail, and T12 business description still references ongoing COVID uncertainty with vaccine variants, but also shows active development (PENN District, Farley) and refinancing activity.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.09,
+      "forward_return": 0.141
+    },
+    {
+      "case_id": "CASE-MNST-2012-06-28-852f51",
+      "ticker": "MNST",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "Entry text is MD&A financial results (not risk factors) and T12 text is Item 1 Business/product descriptions; neither contains comparable Item 1A content, so no meaningful risk factor evolution can be assessed, though financial results in the entry showed strong 31% revenue growth.",
+      "outcome": "winner",
+      "alpha_3yr": 0.4097,
+      "forward_return": 0.9578962777439833
+    },
+    {
+      "case_id": "CASE-BBBY-2014-06-15-66e88b",
+      "ticker": "BBBY",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings contain comparable Item 1A risk factors for the e-commerce business (Overstock.com); T12 makes minor wording updates (adds mobile devices, broadens supplier language) but introduces no genuinely new risk categories or material escalation beyond entry.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.2592,
+      "forward_return": 0
+    },
+    {
+      "case_id": "CASE-ACN-2015-01-02-ff63ea",
+      "ticker": "ACN",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factors are nearly identical between entry and T12; minor language updates reflect evolving technology terminology (SaaS replaced by EaaS/IoT) but all core risk categories remain unchanged with no new material threats introduced.",
+      "outcome": "winner",
+      "alpha_3yr": 0.531,
+      "forward_return": 0.841
+    },
+    {
+      "case_id": "CASE-ALL-2021-01-04-f97a6b",
+      "ticker": "ALL",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Both texts are partial excerpts from Item 1A covering vendor risk, talent retention, and fraud; T12 adds mentions of goodwill impairment risk and pending long-duration insurance accounting changes but these are standard insurance industry disclosures rather than company-specific deterioration.",
+      "outcome": "mixed",
+      "alpha_3yr": 0.186,
+      "forward_return": 0.457
+    },
+    {
+      "case_id": "CASE-D-2021-01-04-531112",
+      "ticker": "D",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Both texts are MD&A financial sections (not Item 1A); credit exposure declined significantly from $233M to $107M, total long-term debt obligations decreased modestly, and planned capital expenditures remained substantial with no signs of financial deterioration.",
+      "outcome": "trap",
+      "alpha_3yr": -0.529,
+      "forward_return": -0.258
+    },
+    {
+      "case_id": "CASE-DVN-2017-06-14-bc2279",
+      "ticker": "DVN",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings present comparable Item 1A risk factors; T12 makes minor updates (adds activist shareholder risk mention, slightly expands climate/environmental language, broadens operational risk descriptions) but all core E&P risk categories are substantively unchanged.",
+      "outcome": "trap",
+      "alpha_3yr": -0.839,
+      "forward_return": -0.581
+    },
+    {
+      "case_id": "CASE-EXPD-2017-06-14-c2b652",
+      "ticker": "EXPD",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factors are virtually identical between entry and T12 with only trivial wording changes; the removal of one specific bankruptcy reference (2016 ocean carrier) and addition of US tax reform language reflect routine updates, not material change.",
+      "outcome": "mixed",
+      "alpha_3yr": 0.111,
+      "forward_return": 0.369
+    },
+    {
+      "case_id": "CASE-FAST-2021-01-04-d42960",
+      "ticker": "FAST",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "T12 adds COVID-19 pandemic references and supply chain disruption language reflecting the macro environment, plus expanded data privacy regulation discussion, but core business risk structure is unchanged and the pandemic disclosures are contextual rather than indicating company-specific deterioration.",
+      "outcome": "mixed",
+      "alpha_3yr": 0.137,
+      "forward_return": 0.408
+    },
+    {
+      "case_id": "CASE-FIS-2017-06-14-440933",
+      "ticker": "FIS",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "T12 elevates cybersecurity risk to greater prominence (moved to top of risk factors) and adds explicit cybersecurity terminology, but all core risk categories including competition, regulation, and client consolidation remain substantively the same.",
+      "outcome": "winner",
+      "alpha_3yr": 0.402,
+      "forward_return": 0.66
+    },
+    {
+      "case_id": "CASE-FISV-2021-01-04-2defa3",
+      "ticker": "FISV",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "T12 text is the financial statements section (not Item 1A Risk Factors), making direct comparison impossible; the financial data shows revenue growth from $5.8B to $14.9B reflecting the First Data acquisition, with no obvious signs of distress.",
+      "outcome": "underperform",
+      "alpha_3yr": -0.094,
+      "forward_return": 0.177
+    },
+    {
+      "case_id": "CASE-HAS-2021-01-04-2c0b25",
+      "ticker": "HAS",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "Entry contains Item 1A risk factors while T12 contains Item 7 MD&A; the MD&A reveals COVID-19 pandemic impacts on Partner Brands and supply chain, a $96.9M goodwill impairment (Backflip Studios) in 2018 and $52.8M Toys R Us bankruptcy charge, but these preceded the entry period and do not represent new deterioration.",
+      "outcome": "trap",
+      "alpha_3yr": -0.685,
+      "forward_return": -0.414
+    },
+    {
+      "case_id": "CASE-KSS-2017-06-15-dce51f",
+      "ticker": "KSS",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings present comparable Item 1A risk factors; T12 makes minor editorial changes and slightly reduces third-party sourcing percentage (30% to 25%) but all core retail risk categories including competition, consumer spending, trade policy, and sourcing risks remain substantively identical.",
+      "outcome": "trap",
+      "alpha_3yr": 0,
+      "forward_return": 0
+    }
+  ]
+}

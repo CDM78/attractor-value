@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-ABT-2019-01-02-5bbd3d",
+      "ticker": "ABT",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Near-identical risk factor language with only minor wording updates and the addition of generic tariff risk, reflecting no material change in Abbott's risk profile."
+    },
+    {
+      "case_id": "CASE-DVA-2019-01-02-e620c7",
+      "ticker": "DVA",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 text shifts to operational detail around calcimimetics reimbursement and Stark Law compliance rather than broad risk factors, but underlying regulatory and reimbursement risks remain substantively unchanged."
+    },
+    {
+      "case_id": "CASE-JEF-2019-01-02-26ea37",
+      "ticker": "JEF",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 expands Merchant Banking portfolio disclosures (Linkem, Vitesse Energy, WeWork) and adds climate change and tariff language, but these reflect routine portfolio updates and boilerplate additions rather than new material risks."
+    },
+    {
+      "case_id": "CASE-MKC-2019-01-02-3bfbf1",
+      "ticker": "MKC",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factor language is nearly identical between entry and T12 with only trivial wording changes; removal of specific cybersecurity keywords reflects reorganization of disclosure rather than reduced risk."
+    },
+    {
+      "case_id": "CASE-MU-2019-01-02-ecc662",
+      "ticker": "MU",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 shows DRAM prices fell 30% and NAND fell 44% year-over-year (versus prior gains), adds escalating US-China trade war and tariff risks, new anticompetitive litigation (DRAM price-fixing class actions), and expanded underutilization risk language."
+    },
+    {
+      "case_id": "CASE-PHM-2019-01-02-85436b",
+      "ticker": "PHM",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 adds standard language on tariffs, labor shortages, supply chain, and inflation risks for homebuilders, but these are industry-wide boilerplate additions reflecting the macro environment rather than company-specific deterioration."
+    },
+    {
+      "case_id": "CASE-PSA-2019-01-02-5d2aae",
+      "ticker": "PSA",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Risk factor language is nearly identical with minor date and dollar figure updates; no new material risks introduced and overall risk profile is unchanged."
+    },
+    {
+      "case_id": "CASE-STX-2019-01-02-700a3d",
+      "ticker": "STX",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 shifts from detailed risk factors to business description and product portfolio overview; addition of AI and digital transformation references reflects industry evolution rather than new company-specific threats."
+    },
+    {
+      "case_id": "CASE-XYL-2019-01-02-0cc59a",
+      "ticker": "XYL",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 text focuses more on business overview and strategy description; the apparent removal of multiple risk keywords reflects truncation or restructuring of the filing excerpt rather than genuine risk reduction."
+    },
+    {
+      "case_id": "CASE-ADM-2021-12-31-cf4a10",
+      "ticker": "ADM",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "low",
+      "key_change": "Entry text is truncated (only 3,541 chars covering two risk factors) while T12 is a full filing with comprehensive ERM-framed risk disclosures adding cybersecurity, pandemic, climate, supply chain, and liquidity risks; the apparent escalation largely reflects incomplete entry data rather than confirmed deterioration."
+    },
+    {
+      "case_id": "CASE-CTSH-2021-12-31-cb3ed4",
+      "ticker": "CTSH",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry text is mostly glossary and financial statements rather than risk factors; T12 shows executive officer bios and standard IT services risk language with no evidence of material new risks beyond routine updates."
+    },
+    {
+      "case_id": "CASE-D-2021-12-31-3e5d64",
+      "ticker": "D",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry text covers financial details and liquidity while T12 describes operating segments and utility expansion plans; both reflect the post-GT&S transaction restructuring but no genuinely new material risk escalation."
+    },
+    {
+      "case_id": "CASE-DUK-2021-12-31-f42750",
+      "ticker": "DUK",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 introduces substantial new risk language around achieving net-zero carbon goals, dependence on unproven technologies, nuclear relicensing uncertainty, inflation, recession risk, and competition from distributed generation, reflecting a materially expanded risk landscape for the clean energy transition."
+    },
+    {
+      "case_id": "CASE-DXC-2021-12-31-16d7ea",
+      "ticker": "DXC",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 reflects ongoing transformation journey with continued portfolio divestitures and cost optimization but overall risk profile remains similar; addition of ESG and climate language is boilerplate rather than indicative of new material threats."
+    },
+    {
+      "case_id": "CASE-HIG-2021-12-31-848feb",
+      "ticker": "HIG",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 adds extensive new risk factors around persistent COVID-19 impacts (excess mortality claims, business interruption litigation), inflation driving higher loss costs, geopolitical instability including trade wars and tariffs, labor shortages, and cybersecurity threats, representing material escalation of the insurer's risk exposure."
+    }
+  ]
+}

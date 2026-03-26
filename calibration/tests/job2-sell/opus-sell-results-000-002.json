@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-AIZ-2013-01-02-2e708d",
+      "ticker": "AIZ",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "T12 filing reorganized risk factors and added credit ratings table detail but same fundamental risk categories (distribution relationships, health reform, catastrophe exposure) with no material escalation."
+    },
+    {
+      "case_id": "CASE-BIIB-2013-01-02-7553e7",
+      "ticker": "BIIB",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Core TYSABRI/PML risks and product concentration risks unchanged; minor language updates on JCV antibody testing frequency and new pipeline filings reflect normal year-over-year progress, not deterioration."
+    },
+    {
+      "case_id": "CASE-BXP-2013-01-02-370494",
+      "ticker": "BXP",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Nearly identical risk factors with routine date/figure updates (debt $8.1B to $8.9B, market cap $25.5B to $26.9B); added minor language on space utilization changes due to technology but no new material risks."
+    },
+    {
+      "case_id": "CASE-EFX-2013-01-02-8ad141",
+      "ticker": "EFX",
+      "trajectory_since_entry": "improved",
+      "confidence": "medium",
+      "key_change": "Removed the CSC option risk (potential $650-750M forced purchase obligation) which was a significant contingent liability; added standard cyber security language but no new material threats."
+    },
+    {
+      "case_id": "CASE-M-2013-01-02-c86774",
+      "ticker": "M",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Same retail competition, consumer spending, and macro risk factors with minor wording updates; added pension funding and pandemic supply-chain disruption language but these are boilerplate expansions, not new material problems."
+    },
+    {
+      "case_id": "CASE-MNST-2013-01-02-cf8ed9",
+      "ticker": "MNST",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry and T12 texts appear to be from different sections (entry is MD&A financials, T12 is product descriptions), making direct risk factor comparison unreliable; underlying business showed strong growth continuity."
+    },
+    {
+      "case_id": "CASE-ROST-2013-01-02-d90e7d",
+      "ticker": "ROST",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Same core retail risk factors with minor additions around IT systems upgrade and data center move risks, reflecting normal operational evolution for a growing off-price retailer."
+    },
+    {
+      "case_id": "CASE-SPG-2013-01-02-acdc3e",
+      "ticker": "SPG",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Debt increased from $18.4B to $23.1B and added international joint venture exposure (Japan, South Korea, Mexico, Malaysia, Klepierre stake), but these reflect growth-driven expansion rather than distress; core risk language unchanged."
+    },
+    {
+      "case_id": "CASE-T-2013-01-02-2ca79c",
+      "ticker": "T",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Nearly identical cautionary language with minor additions on congressional spending/debt ceiling uncertainty and IP infrastructure transition; standard telecom regulatory risk updates."
+    },
+    {
+      "case_id": "CASE-WEC-2013-01-02-9fb59e",
+      "ticker": "WEC",
+      "trajectory_since_entry": "stable",
+      "confidence": "medium",
+      "key_change": "Entry and T12 texts cover different portions of the filing (entry is environmental/emissions detail, T12 is regulatory overview), but both reflect standard utility regulatory and environmental compliance risks with no material escalation."
+    },
+    {
+      "case_id": "CASE-WY-2013-01-02-7e6e27",
+      "ticker": "WY",
+      "trajectory_since_entry": "stable",
+      "confidence": "high",
+      "key_change": "Both filings contain only the risk factor table of contents with identical risk categories; page numbers shifted by one page but no content changes detectable."
+    },
+    {
+      "case_id": "CASE-INTU-2015-12-31-a73aae",
+      "ticker": "INTU",
+      "trajectory_since_entry": "stable",
+      "confidence": "low",
+      "key_change": "Entry text is MD&A (not risk factors) while T12 is actual Item 1A risk factors, making direct comparison unreliable; T12 risk factors appear to be standard software company disclosures around competition, security, and tax regulation."
+    },
+    {
+      "case_id": "CASE-KEY-2015-12-31-507c54",
+      "ticker": "KEY",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "T12 discloses First Niagara acquisition with S&P and Fitch changing outlook to negative, adds elevated CRE valuation and oversupply concerns, and new integration risk -- representing material new risks beyond entry profile."
+    },
+    {
+      "case_id": "CASE-VMC-2015-12-31-2525cd",
+      "ticker": "VMC",
+      "trajectory_since_entry": "improved",
+      "confidence": "medium",
+      "key_change": "Removed management transition risk (new team now established), noted Congress passed five-year infrastructure funding bill and eleven states increased transportation funding, reducing key demand uncertainty."
+    },
+    {
+      "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+      "ticker": "WDC",
+      "trajectory_since_entry": "deteriorated",
+      "confidence": "medium",
+      "key_change": "Added substantial SanDisk integration risks (costs, culture, internal controls), goodwill impairment warning due to market cap volatility, and Brexit macro risk; MOFCOM restrictions partially resolved but replaced by complex merger execution risk."
+    }
+  ]
+}
