@@ -1,0 +1,52 @@
+{
+  "edgar": {
+    "base_url": "https://efts.sec.gov",
+    "user_agent": "AV-Framework-Research cm@example.com",
+    "rate_limit_per_second": 10,
+    "enabled": true
+  },
+  "fred": {
+    "base_url": "https://api.stlouisfed.org",
+    "api_key": null,
+    "rate_limit_per_second": 5,
+    "enabled": true,
+    "note": "Set api_key or use FRED_API_KEY env var"
+  },
+  "finra": {
+    "base_url": "https://api.finra.org",
+    "rate_limit_per_second": 5,
+    "enabled": true
+  },
+  "financial_modeling_prep": {
+    "base_url": "https://financialmodelingprep.com/api/v3",
+    "api_key": null,
+    "rate_limit_per_day": 250,
+    "enabled": false,
+    "note": "Register at financialmodelingprep.com for free API key"
+  },
+  "uspto": {
+    "base_url": "https://api.patentsview.org",
+    "rate_limit_per_second": 5,
+    "enabled": true
+  },
+  "reddit": {
+    "client_id": null,
+    "client_secret": null,
+    "rate_limit_per_minute": 60,
+    "enabled": false,
+    "note": "Register app at reddit.com/prefs/apps"
+  },
+  "newsapi": {
+    "base_url": "https://newsapi.org/v2",
+    "api_key": null,
+    "rate_limit_per_day": 100,
+    "enabled": false
+  },
+  "google_search": {
+    "api_key": null,
+    "cx": null,
+    "rate_limit_per_day": 100,
+    "enabled": false,
+    "note": "For discovery crawler web search"
+  }
+}

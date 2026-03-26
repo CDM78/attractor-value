@@ -1,0 +1,23 @@
+{
+  "company": "SLB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 27287663,
+    "prev_short_position": 26574860,
+    "avg_daily_volume": 20733466,
+    "days_to_cover": 1.32,
+    "change_pct": 2.68,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:d1f02fe2494eff99b7bae1581b27af452a1584078997090d687309771e3f190d",
+  "metadata": {
+    "days_to_cover": 1.32,
+    "change_pct": 2.68
+  }
+}

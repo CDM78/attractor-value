@@ -1,0 +1,23 @@
+{
+  "company": "TAP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6358606,
+    "prev_short_position": 6132474,
+    "avg_daily_volume": 2315760,
+    "days_to_cover": 2.75,
+    "change_pct": 3.69,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:5330ca1c53b1e9ec6940fad3d6afb1bccea85fe205b918f5a1e9c0d3a339d3ae",
+  "metadata": {
+    "days_to_cover": 2.75,
+    "change_pct": 3.69
+  }
+}

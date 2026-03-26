@@ -1,0 +1,23 @@
+{
+  "company": "NEM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 9961866,
+    "prev_short_position": 9631617,
+    "avg_daily_volume": 7535782,
+    "days_to_cover": 1.32,
+    "change_pct": 3.43,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6d9d6a778d0a826f75bac0a693741bc9718f7110adc03227ab223663ff817522",
+  "metadata": {
+    "days_to_cover": 1.32,
+    "change_pct": 3.43
+  }
+}

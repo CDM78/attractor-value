@@ -1,0 +1,23 @@
+{
+  "company": "WAB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 4647176,
+    "prev_short_position": 4488598,
+    "avg_daily_volume": 612820,
+    "days_to_cover": 7.58,
+    "change_pct": 3.53,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ec9fab18b77b128b8674d7510f8b2376f458f823e3c47f478fe7be290edf0c78",
+  "metadata": {
+    "days_to_cover": 7.58,
+    "change_pct": 3.53
+  }
+}

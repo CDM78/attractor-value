@@ -1,0 +1,23 @@
+{
+  "company": "TMUS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 13342075,
+    "prev_short_position": 13435425,
+    "avg_daily_volume": 4368565,
+    "days_to_cover": 3.05,
+    "change_pct": -0.69,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:daa08dca285f3e51660d32b2abb78637097cb7ec7da7f5f1712207c0e091e6ab",
+  "metadata": {
+    "days_to_cover": 3.05,
+    "change_pct": -0.69
+  }
+}

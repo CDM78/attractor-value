@@ -1,0 +1,23 @@
+{
+  "company": "GPN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3264318,
+    "prev_short_position": 3722206,
+    "avg_daily_volume": 2186624,
+    "days_to_cover": 1.49,
+    "change_pct": -12.3,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f005ca809630e6ce87f4ca57cdf23ab33e41c7ebfd629d56020d1ebfc0d1d6d5",
+  "metadata": {
+    "days_to_cover": 1.49,
+    "change_pct": -12.3
+  }
+}

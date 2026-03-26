@@ -1,0 +1,23 @@
+{
+  "company": "ETSY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 9070296,
+    "prev_short_position": 8839604,
+    "avg_daily_volume": 1521844,
+    "days_to_cover": 5.96,
+    "change_pct": 2.61,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:26fb7037313bc3e09320f1e7a78f7cd004fdca5c8309b353b5b0e7e71eba93fe",
+  "metadata": {
+    "days_to_cover": 5.96,
+    "change_pct": 2.61
+  }
+}

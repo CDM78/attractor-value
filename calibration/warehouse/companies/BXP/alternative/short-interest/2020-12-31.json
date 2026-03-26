@@ -1,0 +1,23 @@
+{
+  "company": "BXP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 4878410,
+    "prev_short_position": 4373471,
+    "avg_daily_volume": 1127694,
+    "days_to_cover": 4.33,
+    "change_pct": 11.55,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:55e126cad89fcdb4af4451ece9c5386e4a0cb0a7f4714fff39102e1a787de8c4",
+  "metadata": {
+    "days_to_cover": 4.33,
+    "change_pct": 11.55
+  }
+}

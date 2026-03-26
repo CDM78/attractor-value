@@ -1,0 +1,23 @@
+{
+  "company": "BIIB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2461553,
+    "prev_short_position": 2325305,
+    "avg_daily_volume": 2054452,
+    "days_to_cover": 1.2,
+    "change_pct": 5.86,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:7cc1f0c361a2c8e4c4ccb8aa9b15f1741f982c92dd94dd901527b50a2f605d4f",
+  "metadata": {
+    "days_to_cover": 1.2,
+    "change_pct": 5.86
+  }
+}

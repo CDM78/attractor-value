@@ -1,0 +1,23 @@
+{
+  "company": "ETN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2726233,
+    "prev_short_position": 2320037,
+    "avg_daily_volume": 1358777,
+    "days_to_cover": 2.01,
+    "change_pct": 17.51,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:a8493105cfc5ad5b4f6bdf3f955411e51a16ea0786eb4d8cbf183240a074a657",
+  "metadata": {
+    "days_to_cover": 2.01,
+    "change_pct": 17.51
+  }
+}

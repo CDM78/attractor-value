@@ -1,0 +1,23 @@
+{
+  "company": "LEN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 12879980,
+    "prev_short_position": 13521040,
+    "avg_daily_volume": 4326747,
+    "days_to_cover": 2.98,
+    "change_pct": -4.74,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ecf78f1e28b1785fe2173f64ee3aae08ba38308cf79cce763a288f22bec6bda6",
+  "metadata": {
+    "days_to_cover": 2.98,
+    "change_pct": -4.74
+  }
+}

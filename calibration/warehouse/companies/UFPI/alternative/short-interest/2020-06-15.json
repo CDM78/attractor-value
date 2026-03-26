@@ -1,0 +1,23 @@
+{
+  "company": "UFPI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 910187,
+    "prev_short_position": 803135,
+    "avg_daily_volume": 295349,
+    "days_to_cover": 3.08,
+    "change_pct": 13.33,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:8bb1a8147c475b5c4985c87f3f81f878d075a13579b99f4eb4200898db814267",
+  "metadata": {
+    "days_to_cover": 3.08,
+    "change_pct": 13.33
+  }
+}

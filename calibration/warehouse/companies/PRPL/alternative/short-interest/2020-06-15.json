@@ -1,0 +1,23 @@
+{
+  "company": "PRPL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 2067697,
+    "prev_short_position": 2268803,
+    "avg_daily_volume": 739619,
+    "days_to_cover": 2.8,
+    "change_pct": -8.86,
+    "market_class": "SC"
+  },
+  "content_hash": "sha256:c3a0d71ba8fd7bb51f43b3d788f8149b8e1607898c77ea1c0dee5c944ce2b22d",
+  "metadata": {
+    "days_to_cover": 2.8,
+    "change_pct": -8.86
+  }
+}

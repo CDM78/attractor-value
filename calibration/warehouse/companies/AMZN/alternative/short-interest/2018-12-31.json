@@ -1,0 +1,23 @@
+{
+  "company": "AMZN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 5704760,
+    "prev_short_position": 5626958,
+    "avg_daily_volume": 9091876,
+    "days_to_cover": 1,
+    "change_pct": 1.38,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:bc07fd4887f42056eef902cc1409385982e7e940dcdc2f43c3c7c49d4d39529f",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": 1.38
+  }
+}

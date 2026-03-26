@@ -1,0 +1,23 @@
+{
+  "company": "LULU",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2183766,
+    "prev_short_position": 2529180,
+    "avg_daily_volume": 1287048,
+    "days_to_cover": 1.7,
+    "change_pct": -13.66,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:7e9074c8bb88cbdfe7e48d531a32e8f1a0e511904f647b2acbc60e6ef072cc59",
+  "metadata": {
+    "days_to_cover": 1.7,
+    "change_pct": -13.66
+  }
+}

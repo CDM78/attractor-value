@@ -1,0 +1,23 @@
+{
+  "company": "LUV",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 20194314,
+    "prev_short_position": 19811224,
+    "avg_daily_volume": 9315519,
+    "days_to_cover": 2.17,
+    "change_pct": 1.93,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:e4796f7c7a1ed6e5dc3ec1b4e74e6878d40842ba0834b63c61e5246606a706d3",
+  "metadata": {
+    "days_to_cover": 2.17,
+    "change_pct": 1.93
+  }
+}

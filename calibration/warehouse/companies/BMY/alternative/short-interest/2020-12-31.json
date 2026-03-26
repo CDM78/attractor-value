@@ -1,0 +1,23 @@
+{
+  "company": "BMY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 15015112,
+    "prev_short_position": 15407668,
+    "avg_daily_volume": 8359615,
+    "days_to_cover": 1.8,
+    "change_pct": -2.55,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6d9a1a71ec2d947dacca5cc48fb9628ddefffcbf37cd08b600753977b70c4457",
+  "metadata": {
+    "days_to_cover": 1.8,
+    "change_pct": -2.55
+  }
+}

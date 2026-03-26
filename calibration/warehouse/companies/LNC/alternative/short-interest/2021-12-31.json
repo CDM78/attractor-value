@@ -1,0 +1,23 @@
+{
+  "company": "LNC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3478628,
+    "prev_short_position": 4771049,
+    "avg_daily_volume": 1187624,
+    "days_to_cover": 2.93,
+    "change_pct": -27.09,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:31d0f771b31e996d6c56112ae7eda6f536608d2f86cb6a0f3a07e9ad8572f00f",
+  "metadata": {
+    "days_to_cover": 2.93,
+    "change_pct": -27.09
+  }
+}

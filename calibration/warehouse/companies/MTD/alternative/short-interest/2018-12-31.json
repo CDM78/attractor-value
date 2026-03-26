@@ -1,0 +1,23 @@
+{
+  "company": "MTD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 791149,
+    "prev_short_position": 775925,
+    "avg_daily_volume": 146165,
+    "days_to_cover": 5.41,
+    "change_pct": 1.96,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:29237f9cc3fea9db3f180e13c8c3d296cf19ab662f7b8e0c6789fb519f92bf4b",
+  "metadata": {
+    "days_to_cover": 5.41,
+    "change_pct": 1.96
+  }
+}

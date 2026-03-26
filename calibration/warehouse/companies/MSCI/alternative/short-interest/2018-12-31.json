@@ -1,0 +1,23 @@
+{
+  "company": "MSCI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 1522605,
+    "prev_short_position": 1369661,
+    "avg_daily_volume": 915922,
+    "days_to_cover": 1.66,
+    "change_pct": 11.17,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f1d3441b96be2b7a2860316410419ff0a2247609c9619cfa3eeaecc6def4b54a",
+  "metadata": {
+    "days_to_cover": 1.66,
+    "change_pct": 11.17
+  }
+}

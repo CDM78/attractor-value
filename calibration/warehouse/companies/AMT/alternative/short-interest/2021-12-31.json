@@ -1,0 +1,23 @@
+{
+  "company": "AMT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 4609752,
+    "prev_short_position": 4302855,
+    "avg_daily_volume": 1479977,
+    "days_to_cover": 3.11,
+    "change_pct": 7.13,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:721bc036f6797f680e15dd791e81001ab25678e1e291cd7601a198afe707ac4c",
+  "metadata": {
+    "days_to_cover": 3.11,
+    "change_pct": 7.13
+  }
+}

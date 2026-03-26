@@ -1,0 +1,23 @@
+{
+  "company": "HUM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1491686,
+    "prev_short_position": 1416318,
+    "avg_daily_volume": 600040,
+    "days_to_cover": 2.49,
+    "change_pct": 5.32,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:1ce04cb1d92bc344c8ae917079431708991b16c8cf89612908dea7fc9b0892ed",
+  "metadata": {
+    "days_to_cover": 2.49,
+    "change_pct": 5.32
+  }
+}

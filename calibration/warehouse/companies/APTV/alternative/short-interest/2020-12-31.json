@@ -1,0 +1,23 @@
+{
+  "company": "APTV",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3817540,
+    "prev_short_position": 3806479,
+    "avg_daily_volume": 1177505,
+    "days_to_cover": 3.24,
+    "change_pct": 0.29,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:de2d829984a451684f26270213baaa97c13c5547eb56a3ccb1a34cd597c98a12",
+  "metadata": {
+    "days_to_cover": 3.24,
+    "change_pct": 0.29
+  }
+}

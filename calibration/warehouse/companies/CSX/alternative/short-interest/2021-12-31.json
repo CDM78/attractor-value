@@ -1,0 +1,23 @@
+{
+  "company": "CSX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 22635287,
+    "prev_short_position": 22997241,
+    "avg_daily_volume": 9913933,
+    "days_to_cover": 2.28,
+    "change_pct": -1.57,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:edf8102acf50b2f4a664c5c41e80a2d3939d0be92df5fad06da17143fdae8ea4",
+  "metadata": {
+    "days_to_cover": 2.28,
+    "change_pct": -1.57
+  }
+}

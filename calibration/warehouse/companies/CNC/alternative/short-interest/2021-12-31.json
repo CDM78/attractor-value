@@ -1,0 +1,23 @@
+{
+  "company": "CNC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7436839,
+    "prev_short_position": 11197353,
+    "avg_daily_volume": 3559004,
+    "days_to_cover": 2.09,
+    "change_pct": -33.58,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:983d560e8491c6d05d11459d3c6e2dee145a85080a0d18e72bb896181b83117a",
+  "metadata": {
+    "days_to_cover": 2.09,
+    "change_pct": -33.58
+  }
+}

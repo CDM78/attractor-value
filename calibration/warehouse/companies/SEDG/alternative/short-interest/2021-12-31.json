@@ -1,0 +1,23 @@
+{
+  "company": "SEDG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1299388,
+    "prev_short_position": 1496523,
+    "avg_daily_volume": 1589490,
+    "days_to_cover": 1,
+    "change_pct": -13.17,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:09d4eb2c88c707a289490a6271e1bcabbb7a30b256a5cf9284433b4594ee3f8a",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": -13.17
+  }
+}

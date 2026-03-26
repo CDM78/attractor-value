@@ -1,0 +1,23 @@
+{
+  "company": "IPGP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1890487,
+    "prev_short_position": 1797326,
+    "avg_daily_volume": 193591,
+    "days_to_cover": 9.77,
+    "change_pct": 5.18,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:10b91eacbc950a4ecb9888b404ca48ab9ea653c92988a225bcae1cc0da5e030d",
+  "metadata": {
+    "days_to_cover": 9.77,
+    "change_pct": 5.18
+  }
+}

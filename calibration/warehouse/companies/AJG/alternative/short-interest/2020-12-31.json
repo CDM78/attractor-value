@@ -1,0 +1,23 @@
+{
+  "company": "AJG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 1483089,
+    "prev_short_position": 1392508,
+    "avg_daily_volume": 646022,
+    "days_to_cover": 2.3,
+    "change_pct": 6.5,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:23782254d5b2d545555a9e3c6f63905358d1b7e678e9c934612ec6f03497e1c1",
+  "metadata": {
+    "days_to_cover": 2.3,
+    "change_pct": 6.5
+  }
+}

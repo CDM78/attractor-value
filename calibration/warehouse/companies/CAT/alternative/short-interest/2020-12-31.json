@@ -1,0 +1,23 @@
+{
+  "company": "CAT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 7174379,
+    "prev_short_position": 7564152,
+    "avg_daily_volume": 2029591,
+    "days_to_cover": 3.53,
+    "change_pct": -5.15,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6d0d93cb4f00abc0b5006c95c767a1dbc909259352bad52f919312dc6a5815af",
+  "metadata": {
+    "days_to_cover": 3.53,
+    "change_pct": -5.15
+  }
+}

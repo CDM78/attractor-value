@@ -1,0 +1,23 @@
+{
+  "company": "IBM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 24592416,
+    "prev_short_position": 22915875,
+    "avg_daily_volume": 3751097,
+    "days_to_cover": 6.56,
+    "change_pct": 7.32,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:2b81f7013d5da48a46f2cd72830504e79d4488436c7f8c6bdc7fd216fe680bed",
+  "metadata": {
+    "days_to_cover": 6.56,
+    "change_pct": 7.32
+  }
+}

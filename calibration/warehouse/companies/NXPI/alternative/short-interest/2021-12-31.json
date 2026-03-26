@@ -1,0 +1,23 @@
+{
+  "company": "NXPI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5282825,
+    "prev_short_position": 5548404,
+    "avg_daily_volume": 1666125,
+    "days_to_cover": 3.17,
+    "change_pct": -4.79,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:4cbad6bec427239a46eb0a210f86ea6a7d9b1981dd6d3b17178cebe6b5f1fc40",
+  "metadata": {
+    "days_to_cover": 3.17,
+    "change_pct": -4.79
+  }
+}

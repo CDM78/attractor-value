@@ -1,0 +1,23 @@
+{
+  "company": "GILD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 21572372,
+    "prev_short_position": 17665809,
+    "avg_daily_volume": 9462044,
+    "days_to_cover": 2.28,
+    "change_pct": 22.11,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:73c6a08595d54ffeb631eaf73b6debf006d3c36c7713c8d1b07d0eb2d9ee481f",
+  "metadata": {
+    "days_to_cover": 2.28,
+    "change_pct": 22.11
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "CAG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 9103544,
+    "prev_short_position": 8894812,
+    "avg_daily_volume": 2278484,
+    "days_to_cover": 4,
+    "change_pct": 2.35,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ea02b8830b2a1f5a8588992ec304de11bbfdaf449467a48fc2a50d27060096c3",
+  "metadata": {
+    "days_to_cover": 4,
+    "change_pct": 2.35
+  }
+}

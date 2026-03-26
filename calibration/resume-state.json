@@ -1,0 +1,48 @@
+{
+  "session": 1,
+  "status": "complete",
+  "completed": "2026-03-25",
+  "summary": {
+    "universe_cases": 2832,
+    "unique_companies": 661,
+    "partitions": {
+      "training": 1131,
+      "validation": 869,
+      "holdout": 832
+    },
+    "data_imported": {
+      "fred_snapshots": 181,
+      "finra_short_interest_records": 692,
+      "finra_tickers": 459,
+      "price_volume_dynamics": true
+    },
+    "verification": "30/30 tests passing"
+  },
+  "next_session": {
+    "session": 2,
+    "focus": "Core Connectors — EDGAR expansion, FMP transcripts, USPTO patents",
+    "prerequisites": "None — Session 1 complete",
+    "priority_tasks": [
+      "Robust 10-K section extraction (Item 1A, Item 7, MD&A)",
+      "8-K earnings transcript extraction from EDGAR exhibits",
+      "Financial Modeling Prep connector for earnings transcripts",
+      "USPTO PatentsView connector for patent data",
+      "SEC comment letter extraction",
+      "Run all connectors on 50-company pilot set",
+      "Measure coverage across data types"
+    ]
+  },
+  "files_created": [
+    "calibration/package.json",
+    "calibration/warehouse/warehouse.js",
+    "calibration/warehouse/temporal.js",
+    "calibration/cases/universe-manager.js",
+    "calibration/tests/testing-framework.js",
+    "calibration/scripts/import-cases.js",
+    "calibration/scripts/import-market-data.js",
+    "calibration/scripts/verify-temporal.js",
+    "calibration/config/connectors.json",
+    "calibration/config/temporal-rules.json",
+    "calibration/resume-state.json"
+  ]
+}

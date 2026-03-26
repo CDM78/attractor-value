@@ -1,0 +1,23 @@
+{
+  "company": "NOV",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 13730458,
+    "prev_short_position": 11249821,
+    "avg_daily_volume": 5941965,
+    "days_to_cover": 2.31,
+    "change_pct": 22.05,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:fd1c647065cb338d1a5aa0f411f565979e696e783af8e3ca0b6592a6436de9c2",
+  "metadata": {
+    "days_to_cover": 2.31,
+    "change_pct": 22.05
+  }
+}

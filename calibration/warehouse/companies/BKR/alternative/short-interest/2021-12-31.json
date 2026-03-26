@@ -1,0 +1,23 @@
+{
+  "company": "BKR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 43154131,
+    "prev_short_position": 34379873,
+    "avg_daily_volume": 6040220,
+    "days_to_cover": 7.14,
+    "change_pct": 25.52,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:00e453b4e604ab947d24367c2560a61bc2c62493b76727e7d228fd377c4028e2",
+  "metadata": {
+    "days_to_cover": 7.14,
+    "change_pct": 25.52
+  }
+}

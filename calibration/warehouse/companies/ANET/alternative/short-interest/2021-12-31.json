@@ -1,0 +1,23 @@
+{
+  "company": "ANET",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3987629,
+    "prev_short_position": 3920205,
+    "avg_daily_volume": 2290049,
+    "days_to_cover": 1.74,
+    "change_pct": 1.72,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f4e58288882554b925e698ab56346c67d9fe7ce37177c9823fbd70c60ba7c41f",
+  "metadata": {
+    "days_to_cover": 1.74,
+    "change_pct": 1.72
+  }
+}

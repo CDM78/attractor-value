@@ -1,0 +1,23 @@
+{
+  "company": "MPC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 16688968,
+    "prev_short_position": 18104483,
+    "avg_daily_volume": 5861818,
+    "days_to_cover": 2.85,
+    "change_pct": -7.82,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7c8002b8a5aa2fb5e3fcbc79bd5a1c014348fd0c75e37ec0c1fc71eb5dfcf177",
+  "metadata": {
+    "days_to_cover": 2.85,
+    "change_pct": -7.82
+  }
+}

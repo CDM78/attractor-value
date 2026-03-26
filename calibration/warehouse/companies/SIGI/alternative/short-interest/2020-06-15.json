@@ -1,0 +1,23 @@
+{
+  "company": "SIGI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 567697,
+    "prev_short_position": 699683,
+    "avg_daily_volume": 245843,
+    "days_to_cover": 2.31,
+    "change_pct": -18.86,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:62c2ea7b6c552da75cfd8c40cb3c4b1c1667b6253abd108b5741f8f343158832",
+  "metadata": {
+    "days_to_cover": 2.31,
+    "change_pct": -18.86
+  }
+}

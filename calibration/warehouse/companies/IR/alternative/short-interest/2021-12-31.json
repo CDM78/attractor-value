@@ -1,0 +1,23 @@
+{
+  "company": "IR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5398657,
+    "prev_short_position": 4609432,
+    "avg_daily_volume": 1524484,
+    "days_to_cover": 3.54,
+    "change_pct": 17.12,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:e2b3d7bde601ba4ba55c5a2f3d63c8ba4b0afbef9df3da49d0dacdef5e011831",
+  "metadata": {
+    "days_to_cover": 3.54,
+    "change_pct": 17.12
+  }
+}

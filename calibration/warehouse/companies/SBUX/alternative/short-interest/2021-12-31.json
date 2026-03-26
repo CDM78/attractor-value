@@ -1,0 +1,23 @@
+{
+  "company": "SBUX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 11829251,
+    "prev_short_position": 11861550,
+    "avg_daily_volume": 5401012,
+    "days_to_cover": 2.19,
+    "change_pct": -0.27,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:9f1ce121af39639d8137f5536d5678c1fd2438dcf1ef3ac33a31530849cf4bf7",
+  "metadata": {
+    "days_to_cover": 2.19,
+    "change_pct": -0.27
+  }
+}

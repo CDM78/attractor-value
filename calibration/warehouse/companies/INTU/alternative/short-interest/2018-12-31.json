@@ -1,0 +1,23 @@
+{
+  "company": "INTU",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 3130343,
+    "prev_short_position": 3133454,
+    "avg_daily_volume": 2014487,
+    "days_to_cover": 1.55,
+    "change_pct": -0.1,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:86c52233146349e5196c0c6964a483f220f3983332a51a00f26776265cbf7e1a",
+  "metadata": {
+    "days_to_cover": 1.55,
+    "change_pct": -0.1
+  }
+}

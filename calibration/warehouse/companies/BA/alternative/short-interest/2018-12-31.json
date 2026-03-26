@@ -1,0 +1,23 @@
+{
+  "company": "BA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 5177799,
+    "prev_short_position": 4910853,
+    "avg_daily_volume": 4863397,
+    "days_to_cover": 1.06,
+    "change_pct": 5.44,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:cc05eafe812f81734a0f0578f78f8fb243ab56b7a597cdf7704dd6b09dc0546a",
+  "metadata": {
+    "days_to_cover": 1.06,
+    "change_pct": 5.44
+  }
+}

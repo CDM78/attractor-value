@@ -1,0 +1,23 @@
+{
+  "company": "TCMD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 3703338,
+    "prev_short_position": 3375218,
+    "avg_daily_volume": 239307,
+    "days_to_cover": 15.48,
+    "change_pct": 9.72,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:535b5fce8e7c18fa4b3feaff2db418e697a67abd7218a7a4e219ffc529ca5e4c",
+  "metadata": {
+    "days_to_cover": 15.48,
+    "change_pct": 9.72
+  }
+}

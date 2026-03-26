@@ -1,0 +1,23 @@
+{
+  "company": "BABA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 36876882,
+    "prev_short_position": 36371092,
+    "avg_daily_volume": 14011018,
+    "days_to_cover": 2.63,
+    "change_pct": 1.39,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:3f2c40955e6af0c8dffc0ffe4f36e0f489b70e27c9994b68c6002d2e72bbb2ad",
+  "metadata": {
+    "days_to_cover": 2.63,
+    "change_pct": 1.39
+  }
+}

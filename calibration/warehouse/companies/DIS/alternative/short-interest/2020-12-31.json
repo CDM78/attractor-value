@@ -1,0 +1,23 @@
+{
+  "company": "DIS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 20863165,
+    "prev_short_position": 19838835,
+    "avg_daily_volume": 9413440,
+    "days_to_cover": 2.22,
+    "change_pct": 5.16,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:dafcfa6ecf5c936cce016de6812435704848a419ade62e19c7dd95ad846afb69",
+  "metadata": {
+    "days_to_cover": 2.22,
+    "change_pct": 5.16
+  }
+}

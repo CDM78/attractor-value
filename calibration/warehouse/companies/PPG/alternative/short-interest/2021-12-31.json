@@ -1,0 +1,23 @@
+{
+  "company": "PPG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2244840,
+    "prev_short_position": 2502864,
+    "avg_daily_volume": 987131,
+    "days_to_cover": 2.27,
+    "change_pct": -10.31,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:eb55e257e4e2e83da90d732ad46080ba75cdbe0050a9edfe724d8d5cf4a1702f",
+  "metadata": {
+    "days_to_cover": 2.27,
+    "change_pct": -10.31
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "PCG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2019-01-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2019-01-15",
+    "short_position": 16861518,
+    "prev_short_position": 15405468,
+    "avg_daily_volume": 46200643,
+    "days_to_cover": 1,
+    "change_pct": 9.45,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:5aad51e11513a77008df6509a203d155ca4a3b4f0666fbc703069e0a86de44f4",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": 9.45
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "EXR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 2749439,
+    "prev_short_position": 2918852,
+    "avg_daily_volume": 750976,
+    "days_to_cover": 3.66,
+    "change_pct": -5.8,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7712bd1909fbe4c4c5c3cec85208d5f17e3ea1889c3106651284db266870e994",
+  "metadata": {
+    "days_to_cover": 3.66,
+    "change_pct": -5.8
+  }
+}

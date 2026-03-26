@@ -1,0 +1,23 @@
+{
+  "company": "UA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7544594,
+    "prev_short_position": 6728274,
+    "avg_daily_volume": 2533395,
+    "days_to_cover": 2.98,
+    "change_pct": 12.13,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:c1e7177a991474e898f2991a2faca8585038cb23d3c329ce8f8f0e245fa4e659",
+  "metadata": {
+    "days_to_cover": 2.98,
+    "change_pct": 12.13
+  }
+}

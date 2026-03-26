@@ -1,0 +1,23 @@
+{
+  "company": "CBOE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1252320,
+    "prev_short_position": 1437150,
+    "avg_daily_volume": 417993,
+    "days_to_cover": 3,
+    "change_pct": -12.86,
+    "market_class": "BZX"
+  },
+  "content_hash": "sha256:be739f32f52e2cd82259031fba475b848dd13e26be8787361f3bd8804c32d7ec",
+  "metadata": {
+    "days_to_cover": 3,
+    "change_pct": -12.86
+  }
+}

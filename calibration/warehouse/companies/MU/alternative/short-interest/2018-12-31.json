@@ -1,0 +1,23 @@
+{
+  "company": "MU",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 54333105,
+    "prev_short_position": 49833674,
+    "avg_daily_volume": 45966273,
+    "days_to_cover": 1.18,
+    "change_pct": 9.03,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:af66f52650f617d6110e3b3d86c90b2be0827e715509a4c8dfa29a7287071d25",
+  "metadata": {
+    "days_to_cover": 1.18,
+    "change_pct": 9.03
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "OGN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3791311,
+    "prev_short_position": 4330823,
+    "avg_daily_volume": 1729680,
+    "days_to_cover": 2.19,
+    "change_pct": -12.46,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:4c69f8b249a98e75c4ca86b9760aa912edc3b092c7c76f32bf300895d4afbc3e",
+  "metadata": {
+    "days_to_cover": 2.19,
+    "change_pct": -12.46
+  }
+}

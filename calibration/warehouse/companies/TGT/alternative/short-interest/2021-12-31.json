@@ -1,0 +1,23 @@
+{
+  "company": "TGT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 9532950,
+    "prev_short_position": 10482657,
+    "avg_daily_volume": 4270553,
+    "days_to_cover": 2.23,
+    "change_pct": -9.06,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f0119a39d863d60962d4906365e5a2a015d362e6927352e86c6d2bc517eee12f",
+  "metadata": {
+    "days_to_cover": 2.23,
+    "change_pct": -9.06
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "AMD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 130203951,
+    "prev_short_position": 114547475,
+    "avg_daily_volume": 106613285,
+    "days_to_cover": 1.22,
+    "change_pct": 13.67,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:c106fcf9279ff0aaaefc20b21976d0e75749924fb38401c6e257fb4d0a4699b2",
+  "metadata": {
+    "days_to_cover": 1.22,
+    "change_pct": 13.67
+  }
+}

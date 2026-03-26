@@ -1,0 +1,23 @@
+{
+  "company": "GD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3870250,
+    "prev_short_position": 3528314,
+    "avg_daily_volume": 1163520,
+    "days_to_cover": 3.33,
+    "change_pct": 9.69,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:da180c66945f72968037dc3cccf443eebde5ae80ed9df25b40ff7e5891a49eb5",
+  "metadata": {
+    "days_to_cover": 3.33,
+    "change_pct": 9.69
+  }
+}

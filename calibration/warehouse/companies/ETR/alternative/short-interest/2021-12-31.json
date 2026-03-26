@@ -1,0 +1,23 @@
+{
+  "company": "ETR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3593114,
+    "prev_short_position": 3588256,
+    "avg_daily_volume": 782157,
+    "days_to_cover": 4.59,
+    "change_pct": 0.14,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:5a9f2eb61464aae37714463c2230478f730f03be94c71889497c09ec5a343e07",
+  "metadata": {
+    "days_to_cover": 4.59,
+    "change_pct": 0.14
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "CE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1150139,
+    "prev_short_position": 1399976,
+    "avg_daily_volume": 572064,
+    "days_to_cover": 2.01,
+    "change_pct": -17.85,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:b11baf7e68f678b54f9d0eb2ceeb19d99ce3900eb30797e33e9ee857d0e00c8e",
+  "metadata": {
+    "days_to_cover": 2.01,
+    "change_pct": -17.85
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "HP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-05-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-05-15",
+    "short_position": 6872995,
+    "prev_short_position": 9155485,
+    "avg_daily_volume": 2939117,
+    "days_to_cover": 2.34,
+    "change_pct": -24.93,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:4e5cdb31664f4cec67adda66f9891e00b0f3382026ccf5be182e7e73ddd68cc2",
+  "metadata": {
+    "days_to_cover": 2.34,
+    "change_pct": -24.93
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "COP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 42833997,
+    "prev_short_position": 41593279,
+    "avg_daily_volume": 8066545,
+    "days_to_cover": 5.31,
+    "change_pct": 2.98,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6f586a697ce973f568ca4296ed525ef4a8f030d6ab6caadc48a611511ca7bb56",
+  "metadata": {
+    "days_to_cover": 5.31,
+    "change_pct": 2.98
+  }
+}

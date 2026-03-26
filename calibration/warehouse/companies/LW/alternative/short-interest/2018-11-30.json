@@ -1,0 +1,23 @@
+{
+  "company": "LW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-11-30",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-11-30",
+    "short_position": 2808120,
+    "prev_short_position": 2893382,
+    "avg_daily_volume": 5459888,
+    "days_to_cover": 1,
+    "change_pct": -2.95,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:97acf4c9e6b7505a4f90584957e788a0656cb0dd05804d02c528a03fc8052a76",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": -2.95
+  }
+}

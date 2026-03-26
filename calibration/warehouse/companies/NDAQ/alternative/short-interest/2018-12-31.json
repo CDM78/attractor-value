@@ -1,0 +1,23 @@
+{
+  "company": "NDAQ",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 3417189,
+    "prev_short_position": 3609031,
+    "avg_daily_volume": 916466,
+    "days_to_cover": 3.73,
+    "change_pct": -5.32,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:3b40cc378f8623ce6a01e1c2ab318a79c9555403fb9fdbcc61574d26ae019a3e",
+  "metadata": {
+    "days_to_cover": 3.73,
+    "change_pct": -5.32
+  }
+}

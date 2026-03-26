@@ -1,0 +1,23 @@
+{
+  "company": "AAL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 171336981,
+    "prev_short_position": 160823723,
+    "avg_daily_volume": 54682584,
+    "days_to_cover": 3.13,
+    "change_pct": 6.54,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:0dae2b3d8d02e3b6746bb45f7bce39b81c501037897ab620c66d468f3245a5ce",
+  "metadata": {
+    "days_to_cover": 3.13,
+    "change_pct": 6.54
+  }
+}

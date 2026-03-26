@@ -1,0 +1,23 @@
+{
+  "company": "DLTR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 4970808,
+    "prev_short_position": 5871784,
+    "avg_daily_volume": 2232261,
+    "days_to_cover": 2.23,
+    "change_pct": -15.34,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:662f3b2ea211d38a780775637f95538f6443ff0ecbf63cd4789386fcecad9053",
+  "metadata": {
+    "days_to_cover": 2.23,
+    "change_pct": -15.34
+  }
+}

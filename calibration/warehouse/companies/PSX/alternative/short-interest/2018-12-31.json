@@ -1,0 +1,23 @@
+{
+  "company": "PSX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6841900,
+    "prev_short_position": 6065981,
+    "avg_daily_volume": 3432711,
+    "days_to_cover": 1.99,
+    "change_pct": 12.79,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:77d0742e7b81b464ed475cf617b2235af4df687c4f73c63a0c1bf1e9a4fed773",
+  "metadata": {
+    "days_to_cover": 1.99,
+    "change_pct": 12.79
+  }
+}

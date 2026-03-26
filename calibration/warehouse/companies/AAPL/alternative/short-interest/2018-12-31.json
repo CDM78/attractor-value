@@ -1,0 +1,23 @@
+{
+  "company": "AAPL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 45279694,
+    "prev_short_position": 45280056,
+    "avg_daily_volume": 51387635,
+    "days_to_cover": 1,
+    "change_pct": 0,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:6a177121209d62e29526b52278a2084a8c14130168180b8ee4f5c87dd92930fe",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": 0
+  }
+}

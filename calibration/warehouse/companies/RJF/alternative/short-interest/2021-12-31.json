@@ -1,0 +1,23 @@
+{
+  "company": "RJF",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2743440,
+    "prev_short_position": 2877014,
+    "avg_daily_volume": 1071805,
+    "days_to_cover": 2.56,
+    "change_pct": -4.64,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:0e0336f6c017c500d9db80d5c027cb3d0a7ba9e7f09d0b9075ee3ee1161a770a",
+  "metadata": {
+    "days_to_cover": 2.56,
+    "change_pct": -4.64
+  }
+}

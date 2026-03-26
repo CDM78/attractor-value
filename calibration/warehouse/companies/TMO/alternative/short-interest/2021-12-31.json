@@ -1,0 +1,23 @@
+{
+  "company": "TMO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2515545,
+    "prev_short_position": 2720422,
+    "avg_daily_volume": 1035763,
+    "days_to_cover": 2.43,
+    "change_pct": -7.53,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:3b44e510fa75e56c071489c53de589d6fc1a51ea28645820d145c7c90a1e692e",
+  "metadata": {
+    "days_to_cover": 2.43,
+    "change_pct": -7.53
+  }
+}

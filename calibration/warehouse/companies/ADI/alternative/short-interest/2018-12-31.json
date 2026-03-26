@@ -1,0 +1,23 @@
+{
+  "company": "ADI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 11219553,
+    "prev_short_position": 10702578,
+    "avg_daily_volume": 2852671,
+    "days_to_cover": 3.93,
+    "change_pct": 4.83,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:5b97ac3976e06bde1d8fae95c2ce6ac6c7473a7d99ae076254a16251ed936335",
+  "metadata": {
+    "days_to_cover": 3.93,
+    "change_pct": 4.83
+  }
+}

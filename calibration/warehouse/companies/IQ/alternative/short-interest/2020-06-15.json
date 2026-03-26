@@ -1,0 +1,23 @@
+{
+  "company": "IQ",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 36693445,
+    "prev_short_position": 35862856,
+    "avg_daily_volume": 6298147,
+    "days_to_cover": 5.83,
+    "change_pct": 2.32,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:9603f2a9cb9456fa722c3f30922da9e73292bf2ae5f679b3daba198b98580adc",
+  "metadata": {
+    "days_to_cover": 5.83,
+    "change_pct": 2.32
+  }
+}

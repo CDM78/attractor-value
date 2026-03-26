@@ -1,0 +1,23 @@
+{
+  "company": "EBAY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 23458465,
+    "prev_short_position": 27994808,
+    "avg_daily_volume": 7493059,
+    "days_to_cover": 3.13,
+    "change_pct": -16.2,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:b91fc82ded1a42afb72b72bfd41c4f4c42faa057021ecb8c598780c6a7072593",
+  "metadata": {
+    "days_to_cover": 3.13,
+    "change_pct": -16.2
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "OKE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 6931162,
+    "prev_short_position": 8359761,
+    "avg_daily_volume": 2154375,
+    "days_to_cover": 3.22,
+    "change_pct": -17.09,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:48601f79139539904991c2e2da5a3f48de0fbf562a4f044e3b3edbe697657e7c",
+  "metadata": {
+    "days_to_cover": 3.22,
+    "change_pct": -17.09
+  }
+}

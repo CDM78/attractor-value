@@ -1,0 +1,23 @@
+{
+  "company": "ISRG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 1462614,
+    "prev_short_position": 1841992,
+    "avg_daily_volume": 909227,
+    "days_to_cover": 1.61,
+    "change_pct": -20.6,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:2b415ea8d7aa2859c4dc5dde930df3bc764b6a75f7d25c5bf9c055779bd39c21",
+  "metadata": {
+    "days_to_cover": 1.61,
+    "change_pct": -20.6
+  }
+}

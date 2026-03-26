@@ -1,0 +1,23 @@
+{
+  "company": "ODFL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2019-11-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2019-11-15",
+    "short_position": 3999998,
+    "prev_short_position": 3861699,
+    "avg_daily_volume": 373257,
+    "days_to_cover": 10.72,
+    "change_pct": 3.58,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:93dfd7fc1030a12139e626ffbdfb3dbe4571941b536feb010aa192c9516ce7f0",
+  "metadata": {
+    "days_to_cover": 10.72,
+    "change_pct": 3.58
+  }
+}

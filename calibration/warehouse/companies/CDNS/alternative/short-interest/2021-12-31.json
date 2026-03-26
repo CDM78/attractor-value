@@ -1,0 +1,23 @@
+{
+  "company": "CDNS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2324876,
+    "prev_short_position": 2368388,
+    "avg_daily_volume": 1329817,
+    "days_to_cover": 1.75,
+    "change_pct": -1.84,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:05d2257d003496f6a46dc94ca47d90e6cbab3a37334a7e6923edc674eaa28c83",
+  "metadata": {
+    "days_to_cover": 1.75,
+    "change_pct": -1.84
+  }
+}

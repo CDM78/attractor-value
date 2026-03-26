@@ -1,0 +1,23 @@
+{
+  "company": "JD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 38188075,
+    "prev_short_position": 36091130,
+    "avg_daily_volume": 12447747,
+    "days_to_cover": 3.07,
+    "change_pct": 5.81,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:21b6e897a06f49cfb6df42c7ad9edde516b9321125e74f6042ad4cddf9d01b65",
+  "metadata": {
+    "days_to_cover": 3.07,
+    "change_pct": 5.81
+  }
+}

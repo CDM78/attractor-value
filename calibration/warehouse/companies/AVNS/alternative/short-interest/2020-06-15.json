@@ -1,0 +1,23 @@
+{
+  "company": "AVNS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 2272480,
+    "prev_short_position": 2372273,
+    "avg_daily_volume": 355290,
+    "days_to_cover": 6.4,
+    "change_pct": -4.21,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7a7a89bb98d3f7077fc68d915766f247ca46815ca57e0fb8f04c35a322fefba0",
+  "metadata": {
+    "days_to_cover": 6.4,
+    "change_pct": -4.21
+  }
+}

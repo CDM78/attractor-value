@@ -1,0 +1,23 @@
+{
+  "company": "TRMB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-01-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-01-15",
+    "short_position": 2328028,
+    "prev_short_position": 2252606,
+    "avg_daily_volume": 1178434,
+    "days_to_cover": 1.98,
+    "change_pct": 3.35,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:0d0a7ba88232044741fb6684a4be3f8282a2a219f3bbe47db240600af7dcc5d2",
+  "metadata": {
+    "days_to_cover": 1.98,
+    "change_pct": 3.35
+  }
+}

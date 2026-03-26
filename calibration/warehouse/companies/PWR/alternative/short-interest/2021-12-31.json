@@ -1,0 +1,23 @@
+{
+  "company": "PWR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2325254,
+    "prev_short_position": 2548399,
+    "avg_daily_volume": 886058,
+    "days_to_cover": 2.62,
+    "change_pct": -8.76,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f29be67a35aa6912528d9f6ae2fd95a4a1d5fa77758b6e9a26b6e89a6e1a1cd7",
+  "metadata": {
+    "days_to_cover": 2.62,
+    "change_pct": -8.76
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "CZR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-03-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-03-15",
+    "short_position": 11085419,
+    "prev_short_position": 9390790,
+    "avg_daily_volume": 2337526,
+    "days_to_cover": 4.74,
+    "change_pct": 18.05,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:de429c86add789b984699a641ac71a4c53c895004a9a1a83a74a23da167a3f2a",
+  "metadata": {
+    "days_to_cover": 4.74,
+    "change_pct": 18.05
+  }
+}

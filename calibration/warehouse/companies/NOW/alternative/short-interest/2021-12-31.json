@@ -1,0 +1,23 @@
+{
+  "company": "NOW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3299079,
+    "prev_short_position": 3194828,
+    "avg_daily_volume": 1033564,
+    "days_to_cover": 3.19,
+    "change_pct": 3.26,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:bc9c534eb869d861636919ce865c135216689a9c1964f7453a130b3713bbee94",
+  "metadata": {
+    "days_to_cover": 3.19,
+    "change_pct": 3.26
+  }
+}

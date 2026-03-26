@@ -1,0 +1,23 @@
+{
+  "company": "SHW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 1559051,
+    "prev_short_position": 1451130,
+    "avg_daily_volume": 787964,
+    "days_to_cover": 1.98,
+    "change_pct": 7.44,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:8f90825010189b0498859cfb8a05923f405bcb2d41df7af92dd0b65a1cac7610",
+  "metadata": {
+    "days_to_cover": 1.98,
+    "change_pct": 7.44
+  }
+}

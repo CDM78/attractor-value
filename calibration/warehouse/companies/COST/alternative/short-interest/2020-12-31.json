@@ -1,0 +1,23 @@
+{
+  "company": "COST",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3854765,
+    "prev_short_position": 3221143,
+    "avg_daily_volume": 2088782,
+    "days_to_cover": 1.85,
+    "change_pct": 19.67,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:5f80ee5af83f0dd95b9aab1821cf5c354de42e59ac0a256e02f17d4bcea16f79",
+  "metadata": {
+    "days_to_cover": 1.85,
+    "change_pct": 19.67
+  }
+}

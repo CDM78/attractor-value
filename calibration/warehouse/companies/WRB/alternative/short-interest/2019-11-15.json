@@ -1,0 +1,23 @@
+{
+  "company": "WRB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2019-11-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2019-11-15",
+    "short_position": 3056742,
+    "prev_short_position": 3172643,
+    "avg_daily_volume": 548238,
+    "days_to_cover": 5.58,
+    "change_pct": -3.65,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:d426b69953455e76d67f67dbdfc8f97586ed78ca2a9433a0b23d94d457a3e745",
+  "metadata": {
+    "days_to_cover": 5.58,
+    "change_pct": -3.65
+  }
+}

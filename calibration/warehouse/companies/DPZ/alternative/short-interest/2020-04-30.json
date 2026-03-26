@@ -1,0 +1,23 @@
+{
+  "company": "DPZ",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-04-30",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-04-30",
+    "short_position": 1217481,
+    "prev_short_position": 1295251,
+    "avg_daily_volume": 928598,
+    "days_to_cover": 1.31,
+    "change_pct": -6,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:136a2eed62e903fba595e61ec4d35cc2fe84efbff7e8a3bf94777b0fbdf1657f",
+  "metadata": {
+    "days_to_cover": 1.31,
+    "change_pct": -6
+  }
+}

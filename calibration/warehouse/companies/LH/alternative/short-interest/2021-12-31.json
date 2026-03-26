@@ -1,0 +1,23 @@
+{
+  "company": "LH",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1826453,
+    "prev_short_position": 2268394,
+    "avg_daily_volume": 857841,
+    "days_to_cover": 2.13,
+    "change_pct": -19.48,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:721288bf1abdd4be6776df757d43448da6605f9f50090b555ca8ac1cbf8f863a",
+  "metadata": {
+    "days_to_cover": 2.13,
+    "change_pct": -19.48
+  }
+}

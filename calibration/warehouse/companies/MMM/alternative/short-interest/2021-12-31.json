@@ -1,0 +1,23 @@
+{
+  "company": "MMM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 9312476,
+    "prev_short_position": 9415227,
+    "avg_daily_volume": 1883813,
+    "days_to_cover": 4.94,
+    "change_pct": -1.09,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:67a1200d7327da30d52a037664f52b48d0b080926c4b668bf1886b064f326f61",
+  "metadata": {
+    "days_to_cover": 4.94,
+    "change_pct": -1.09
+  }
+}

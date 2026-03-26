@@ -1,0 +1,23 @@
+{
+  "company": "F",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 71945525,
+    "prev_short_position": 66575424,
+    "avg_daily_volume": 65438389,
+    "days_to_cover": 1.1,
+    "change_pct": 8.07,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:67ceab8c4141fe3f7bb6aef0d852aa70e24a35c2dd5fd3d21e5fcb0d062b90cb",
+  "metadata": {
+    "days_to_cover": 1.1,
+    "change_pct": 8.07
+  }
+}

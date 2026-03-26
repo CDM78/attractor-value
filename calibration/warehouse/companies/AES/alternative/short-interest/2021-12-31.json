@@ -1,0 +1,23 @@
+{
+  "company": "AES",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7670293,
+    "prev_short_position": 8457351,
+    "avg_daily_volume": 3789362,
+    "days_to_cover": 2.02,
+    "change_pct": -9.31,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ffb35ffcd1a83fcee0fe21f08843b112c5def8ee12be45754367539914855a15",
+  "metadata": {
+    "days_to_cover": 2.02,
+    "change_pct": -9.31
+  }
+}

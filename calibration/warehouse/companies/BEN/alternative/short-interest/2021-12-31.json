@@ -1,0 +1,23 @@
+{
+  "company": "BEN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 12574096,
+    "prev_short_position": 13328082,
+    "avg_daily_volume": 1883470,
+    "days_to_cover": 6.68,
+    "change_pct": -5.66,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:235a8435b16e9e55d83839caffca244e5d689fc801f1cb237434310d3f7144d9",
+  "metadata": {
+    "days_to_cover": 6.68,
+    "change_pct": -5.66
+  }
+}

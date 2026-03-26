@@ -1,0 +1,23 @@
+{
+  "company": "T",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-06-15",
+    "short_position": 220562811,
+    "prev_short_position": 195300319,
+    "avg_daily_volume": 60888607,
+    "days_to_cover": 3.62,
+    "change_pct": 12.94,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6e1bdc50dcfbbf4084facfa553a40e2fedac60fd2fddb962d071babcb12850bf",
+  "metadata": {
+    "days_to_cover": 3.62,
+    "change_pct": 12.94
+  }
+}

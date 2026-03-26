@@ -1,0 +1,23 @@
+{
+  "company": "NEE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6075454,
+    "prev_short_position": 6396431,
+    "avg_daily_volume": 2848420,
+    "days_to_cover": 2.13,
+    "change_pct": -5.02,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:b07d94c87be1d6365977d4d32b7ae7a74515e57f5c6437d479a748318c834136",
+  "metadata": {
+    "days_to_cover": 2.13,
+    "change_pct": -5.02
+  }
+}

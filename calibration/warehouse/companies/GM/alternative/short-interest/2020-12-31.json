@@ -1,0 +1,23 @@
+{
+  "company": "GM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 15685325,
+    "prev_short_position": 16950970,
+    "avg_daily_volume": 11409999,
+    "days_to_cover": 1.37,
+    "change_pct": -7.47,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:209749ff92dd878d4e007946d5366b71b4d6b17a94cda33e1227484ae2951118",
+  "metadata": {
+    "days_to_cover": 1.37,
+    "change_pct": -7.47
+  }
+}

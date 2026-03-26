@@ -1,0 +1,23 @@
+{
+  "company": "HPE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 24545330,
+    "prev_short_position": 23905670,
+    "avg_daily_volume": 8193485,
+    "days_to_cover": 3,
+    "change_pct": 2.68,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:9d6ed64534add7dc7945aac6fc478f11c82bdd58415b687c828af67966c7fcd2",
+  "metadata": {
+    "days_to_cover": 3,
+    "change_pct": 2.68
+  }
+}

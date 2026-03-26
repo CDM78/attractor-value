@@ -1,0 +1,23 @@
+{
+  "company": "LEG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-15",
+    "short_position": 6982093,
+    "prev_short_position": 6483416,
+    "avg_daily_volume": 1355655,
+    "days_to_cover": 5.15,
+    "change_pct": 7.69,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:b290ac6f1bf16d3586fbce1c792b7f3f82db79bd19da36a7837f851f872608de",
+  "metadata": {
+    "days_to_cover": 5.15,
+    "change_pct": 7.69
+  }
+}

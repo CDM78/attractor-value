@@ -1,0 +1,23 @@
+{
+  "company": "AME",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 5001094,
+    "prev_short_position": 5292414,
+    "avg_daily_volume": 1517408,
+    "days_to_cover": 3.3,
+    "change_pct": -5.5,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:d602ae05d3229f1b5150d44a7fa1942fd5fee020c69c5a71200df8c5fa08c0d7",
+  "metadata": {
+    "days_to_cover": 3.3,
+    "change_pct": -5.5
+  }
+}

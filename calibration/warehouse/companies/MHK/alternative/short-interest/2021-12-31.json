@@ -1,0 +1,23 @@
+{
+  "company": "MHK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1144959,
+    "prev_short_position": 833008,
+    "avg_daily_volume": 571761,
+    "days_to_cover": 2,
+    "change_pct": 37.45,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:22b2e8defc08c7dae1438de3a7a25a520f7e1b3740c09114d1f50077987c62f8",
+  "metadata": {
+    "days_to_cover": 2,
+    "change_pct": 37.45
+  }
+}

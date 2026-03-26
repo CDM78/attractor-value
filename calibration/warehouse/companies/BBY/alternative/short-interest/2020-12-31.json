@@ -1,0 +1,23 @@
+{
+  "company": "BBY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 6310849,
+    "prev_short_position": 5347223,
+    "avg_daily_volume": 2494759,
+    "days_to_cover": 2.53,
+    "change_pct": 18.02,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ff64d3f4e2cfe57d998e5f4eaee30a748ab724ddbea52f961669d507c2e96b8e",
+  "metadata": {
+    "days_to_cover": 2.53,
+    "change_pct": 18.02
+  }
+}

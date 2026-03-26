@@ -1,0 +1,23 @@
+{
+  "company": "DELL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5951827,
+    "prev_short_position": 6401191,
+    "avg_daily_volume": 2872321,
+    "days_to_cover": 2.07,
+    "change_pct": -7.02,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:99d2cc11d741766db4e72759a8a72cf8adcaccaf96ec32381ba74dac95948600",
+  "metadata": {
+    "days_to_cover": 2.07,
+    "change_pct": -7.02
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "GNRC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1676025,
+    "prev_short_position": 1969552,
+    "avg_daily_volume": 665251,
+    "days_to_cover": 2.52,
+    "change_pct": -14.9,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:c39df4e746434cc6591e17c90713ce2dfda5bc467bf301a582886053427482a8",
+  "metadata": {
+    "days_to_cover": 2.52,
+    "change_pct": -14.9
+  }
+}

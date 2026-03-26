@@ -1,0 +1,23 @@
+{
+  "company": "VALE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 27548303,
+    "prev_short_position": 21419645,
+    "avg_daily_volume": 29321764,
+    "days_to_cover": 1,
+    "change_pct": 28.61,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:0113c238b71c103030c5e467c87fdc305bc46a7e6dfba8c2b0b8b3fb75053ff5",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": 28.61
+  }
+}

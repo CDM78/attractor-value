@@ -1,0 +1,30 @@
+{
+  "report": {
+    "testId": "verify-temporal-test",
+    "started": "2026-03-26T01:59:01.050Z",
+    "completed": "2026-03-26T01:59:01.052Z",
+    "casesEvaluated": 1,
+    "dataAccesses": 1,
+    "violations": 0,
+    "warnings": 0,
+    "latestDataPointUsed": null,
+    "latestGapDays": null,
+    "allDataStrictlyPreEntry": true,
+    "contaminated": false
+  },
+  "accesses": [
+    {
+      "caseId": "CASE-AAPL-2013-01-02-983a43",
+      "entryDate": "2013-01-02",
+      "dataTypesRequested": [
+        "short_interest",
+        "10k_risk_factors"
+      ],
+      "latestDataDate": null,
+      "gapDays": null,
+      "timestamp": "2026-03-26T01:59:01.052Z"
+    }
+  ],
+  "violations": [],
+  "warnings": []
+}

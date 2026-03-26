@@ -1,0 +1,23 @@
+{
+  "company": "OXY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 14319724,
+    "prev_short_position": 13575227,
+    "avg_daily_volume": 6619342,
+    "days_to_cover": 2.16,
+    "change_pct": 5.48,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:90356811168c1ed708c9d731ee31f8fa40ec67606f90aa4c7de2165690488c3b",
+  "metadata": {
+    "days_to_cover": 2.16,
+    "change_pct": 5.48
+  }
+}

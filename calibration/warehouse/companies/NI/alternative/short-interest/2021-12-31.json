@@ -1,0 +1,23 @@
+{
+  "company": "NI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 15493781,
+    "prev_short_position": 13996900,
+    "avg_daily_volume": 3418714,
+    "days_to_cover": 4.53,
+    "change_pct": 10.69,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:bbfc8917543eb27956accd25fbdbd3051121d490f5b9dbd28a1d4a9730957f70",
+  "metadata": {
+    "days_to_cover": 4.53,
+    "change_pct": 10.69
+  }
+}

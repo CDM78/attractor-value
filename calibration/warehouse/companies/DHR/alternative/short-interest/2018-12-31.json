@@ -1,0 +1,23 @@
+{
+  "company": "DHR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6811339,
+    "prev_short_position": 4474740,
+    "avg_daily_volume": 3690245,
+    "days_to_cover": 1.85,
+    "change_pct": 52.22,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:3f7b0608d2c3de00f63a37c2d39cc3c9d18b341ef87ab07fd7e186f43a925c84",
+  "metadata": {
+    "days_to_cover": 1.85,
+    "change_pct": 52.22
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "CPRT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3422914,
+    "prev_short_position": 3316767,
+    "avg_daily_volume": 983670,
+    "days_to_cover": 3.48,
+    "change_pct": 3.2,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:73e6bc8b5a9dcc578f3f0a2169d59cfcc06768a0a06fc09484a3cccc054b603b",
+  "metadata": {
+    "days_to_cover": 3.48,
+    "change_pct": 3.2
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "SANM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 1273832,
+    "prev_short_position": 1417415,
+    "avg_daily_volume": 439671,
+    "days_to_cover": 2.9,
+    "change_pct": -10.13,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:4ff4ae7e89f463679bbf7a39f26c2d8dc21d41de8418cc66aef8d3c1d692a2dc",
+  "metadata": {
+    "days_to_cover": 2.9,
+    "change_pct": -10.13
+  }
+}

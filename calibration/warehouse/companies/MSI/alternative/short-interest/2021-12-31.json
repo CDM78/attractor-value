@@ -1,0 +1,23 @@
+{
+  "company": "MSI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1324530,
+    "prev_short_position": 1205028,
+    "avg_daily_volume": 622744,
+    "days_to_cover": 2.13,
+    "change_pct": 9.92,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f3102c4f3ca2624f9e0bf0b27c320c5d663ca701448d7275caf2b906d005451b",
+  "metadata": {
+    "days_to_cover": 2.13,
+    "change_pct": 9.92
+  }
+}

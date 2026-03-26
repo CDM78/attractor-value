@@ -1,0 +1,23 @@
+{
+  "company": "ADSK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 2096345,
+    "prev_short_position": 2441575,
+    "avg_daily_volume": 956574,
+    "days_to_cover": 2.19,
+    "change_pct": -14.14,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:8588822c960a14827d4dcf59d79a79a9a7ba154ed756fb2177e981038136ecef",
+  "metadata": {
+    "days_to_cover": 2.19,
+    "change_pct": -14.14
+  }
+}

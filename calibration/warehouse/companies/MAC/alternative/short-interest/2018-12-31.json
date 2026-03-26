@@ -1,0 +1,23 @@
+{
+  "company": "MAC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 8237377,
+    "prev_short_position": 7588492,
+    "avg_daily_volume": 1524237,
+    "days_to_cover": 5.4,
+    "change_pct": 8.55,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:257492f801ca894d902ee3f5390a20c4e586600db98fbbfbec6d0f500955ba58",
+  "metadata": {
+    "days_to_cover": 5.4,
+    "change_pct": 8.55
+  }
+}

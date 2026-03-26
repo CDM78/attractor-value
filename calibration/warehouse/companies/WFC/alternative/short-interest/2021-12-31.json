@@ -1,0 +1,23 @@
+{
+  "company": "WFC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 43141371,
+    "prev_short_position": 47816919,
+    "avg_daily_volume": 23342382,
+    "days_to_cover": 1.85,
+    "change_pct": -9.78,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:631cc5ea708808246f4bcca6c4b2a38c17d0f6ea4e3533632e2fc791b6db5e7f",
+  "metadata": {
+    "days_to_cover": 1.85,
+    "change_pct": -9.78
+  }
+}

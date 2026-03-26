@@ -1,0 +1,23 @@
+{
+  "company": "HRL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 12940472,
+    "prev_short_position": 14302117,
+    "avg_daily_volume": 1788880,
+    "days_to_cover": 7.23,
+    "change_pct": -9.52,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:22fe1a5c3955e6237491b584f9f093633df10564acc02d03ad13e3af58a635b8",
+  "metadata": {
+    "days_to_cover": 7.23,
+    "change_pct": -9.52
+  }
+}

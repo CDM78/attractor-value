@@ -1,0 +1,23 @@
+{
+  "company": "DE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 7488670,
+    "prev_short_position": 6719926,
+    "avg_daily_volume": 2499911,
+    "days_to_cover": 3,
+    "change_pct": 11.44,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:bf384798c4b6fa7bebec8c462668d07d1f240b1587b7cca960c235fd5aa1d984",
+  "metadata": {
+    "days_to_cover": 3,
+    "change_pct": 11.44
+  }
+}

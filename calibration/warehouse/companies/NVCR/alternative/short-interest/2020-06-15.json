@@ -1,0 +1,23 @@
+{
+  "company": "NVCR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 4065102,
+    "prev_short_position": 3730056,
+    "avg_daily_volume": 823273,
+    "days_to_cover": 4.94,
+    "change_pct": 8.98,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:08ef2f3cb60423ffcfac224a01c2d07d0e21242aa88072441e87bed7a080fa30",
+  "metadata": {
+    "days_to_cover": 4.94,
+    "change_pct": 8.98
+  }
+}

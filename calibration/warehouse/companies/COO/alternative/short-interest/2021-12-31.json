@@ -1,0 +1,23 @@
+{
+  "company": "COO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1790115,
+    "prev_short_position": 1717429,
+    "avg_daily_volume": 302648,
+    "days_to_cover": 5.91,
+    "change_pct": 4.23,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6ff65defbcad8f020e5801dc3a5ffc20683d75b894c6cbb0135d52e88cfca469",
+  "metadata": {
+    "days_to_cover": 5.91,
+    "change_pct": 4.23
+  }
+}

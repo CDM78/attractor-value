@@ -1,0 +1,23 @@
+{
+  "company": "AVGO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 9781085,
+    "prev_short_position": 10077294,
+    "avg_daily_volume": 5033808,
+    "days_to_cover": 1.94,
+    "change_pct": -2.94,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:f2fc1731b6516ea80c6f2560e16cfe1b35ed92bac039ce8722278529c3279e84",
+  "metadata": {
+    "days_to_cover": 1.94,
+    "change_pct": -2.94
+  }
+}

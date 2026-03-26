@@ -1,0 +1,23 @@
+{
+  "company": "ARE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 1818459,
+    "prev_short_position": 2955933,
+    "avg_daily_volume": 725812,
+    "days_to_cover": 2.51,
+    "change_pct": -38.48,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ec6dc7df49fa4ee6daa6923df4a417966ad0c2273b443b0e8697cd2da31f8032",
+  "metadata": {
+    "days_to_cover": 2.51,
+    "change_pct": -38.48
+  }
+}

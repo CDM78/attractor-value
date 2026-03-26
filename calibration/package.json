@@ -1,0 +1,12 @@
+{
+  "name": "av-calibration",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AV Framework Calibration Infrastructure",
+  "scripts": {
+    "import-cases": "node scripts/import-cases.js",
+    "import-market-data": "node scripts/import-market-data.js",
+    "verify": "node scripts/verify-temporal.js",
+    "coverage": "node scripts/coverage-report.js"
+  }
+}

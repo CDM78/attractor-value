@@ -1,0 +1,23 @@
+{
+  "company": "QRVO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2028185,
+    "prev_short_position": 1953832,
+    "avg_daily_volume": 1119370,
+    "days_to_cover": 1.81,
+    "change_pct": 3.81,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:11b73c26b77d265d05f9ae09410edd18fceb983f58b1732477d2b44ac6fbb35d",
+  "metadata": {
+    "days_to_cover": 1.81,
+    "change_pct": 3.81
+  }
+}

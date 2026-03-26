@@ -1,0 +1,23 @@
+{
+  "company": "ETN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 9827858,
+    "prev_short_position": 9978476,
+    "avg_daily_volume": 3268964,
+    "days_to_cover": 3.01,
+    "change_pct": -1.51,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:0a05d1d37731d0aefc885a2c394b4e655f78ed405c5a9468be31a71c0365ac48",
+  "metadata": {
+    "days_to_cover": 3.01,
+    "change_pct": -1.51
+  }
+}

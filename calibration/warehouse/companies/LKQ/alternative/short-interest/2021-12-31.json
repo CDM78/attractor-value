@@ -1,0 +1,23 @@
+{
+  "company": "LKQ",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5633494,
+    "prev_short_position": 5696618,
+    "avg_daily_volume": 1247953,
+    "days_to_cover": 4.51,
+    "change_pct": -1.11,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:0c6fa4a4765ecd67f13b8c2714a4eb46bb8445e5e3a26b41df54e6f60ae9a173",
+  "metadata": {
+    "days_to_cover": 4.51,
+    "change_pct": -1.11
+  }
+}

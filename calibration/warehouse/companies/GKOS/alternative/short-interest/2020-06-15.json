@@ -1,0 +1,23 @@
+{
+  "company": "GKOS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 5967974,
+    "prev_short_position": 5956570,
+    "avg_daily_volume": 888141,
+    "days_to_cover": 6.72,
+    "change_pct": 0.19,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ddc34b5f73b92aebc127d0a44b3f53d8fb3c3dea0950b1fca6af8343445abc95",
+  "metadata": {
+    "days_to_cover": 6.72,
+    "change_pct": 0.19
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "NVR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 54890,
+    "prev_short_position": 62130,
+    "avg_daily_volume": 27614,
+    "days_to_cover": 1.99,
+    "change_pct": -11.65,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6a7b4e99ddfec9fb4bbf78a9179d98f1d4f46562d06eeba1fe6737fef2ef52f0",
+  "metadata": {
+    "days_to_cover": 1.99,
+    "change_pct": -11.65
+  }
+}

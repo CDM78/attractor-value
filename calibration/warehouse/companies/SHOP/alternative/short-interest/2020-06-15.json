@@ -1,0 +1,23 @@
+{
+  "company": "SHOP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 1936608,
+    "prev_short_position": 2262639,
+    "avg_daily_volume": 1904925,
+    "days_to_cover": 1.02,
+    "change_pct": -14.41,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:5fcc516bba547fca8bc182603eef9c3295eb193d06b5c4506e3cf579026c41d8",
+  "metadata": {
+    "days_to_cover": 1.02,
+    "change_pct": -14.41
+  }
+}

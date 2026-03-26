@@ -1,0 +1,23 @@
+{
+  "company": "MATX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 757532,
+    "prev_short_position": 852988,
+    "avg_daily_volume": 212399,
+    "days_to_cover": 3.57,
+    "change_pct": -11.19,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:82dcf2d1338f20deec4ace09ea891a05f0605174b8eef0b8b5a89bfb40be787b",
+  "metadata": {
+    "days_to_cover": 3.57,
+    "change_pct": -11.19
+  }
+}

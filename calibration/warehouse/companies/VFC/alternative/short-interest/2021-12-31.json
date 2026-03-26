@@ -1,0 +1,23 @@
+{
+  "company": "VFC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 14293255,
+    "prev_short_position": 12860474,
+    "avg_daily_volume": 2560165,
+    "days_to_cover": 5.58,
+    "change_pct": 11.14,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:16294ab1d863c2bc2876e7dfd71c8977b393705486fc26a3a6c53e5a21806dc8",
+  "metadata": {
+    "days_to_cover": 5.58,
+    "change_pct": 11.14
+  }
+}

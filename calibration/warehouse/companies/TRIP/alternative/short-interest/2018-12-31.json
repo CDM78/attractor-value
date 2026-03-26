@@ -1,0 +1,23 @@
+{
+  "company": "TRIP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 14756128,
+    "prev_short_position": 13254405,
+    "avg_daily_volume": 2103465,
+    "days_to_cover": 7.02,
+    "change_pct": 11.33,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:228f52c89c9f8cda04f72ff8e72ae0c2b54e12b2af95450f0dda7c27f3524565",
+  "metadata": {
+    "days_to_cover": 7.02,
+    "change_pct": 11.33
+  }
+}

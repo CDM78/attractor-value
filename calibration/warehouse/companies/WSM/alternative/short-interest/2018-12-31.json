@@ -1,0 +1,23 @@
+{
+  "company": "WSM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 14202344,
+    "prev_short_position": 15093761,
+    "avg_daily_volume": 1589820,
+    "days_to_cover": 8.93,
+    "change_pct": -5.91,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:63dc720e84a81f5c1f85cef47234fbf8cf05746cf9ee35e2e04d5b6c669fb3e0",
+  "metadata": {
+    "days_to_cover": 8.93,
+    "change_pct": -5.91
+  }
+}

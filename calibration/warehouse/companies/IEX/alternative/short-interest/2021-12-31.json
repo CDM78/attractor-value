@@ -1,0 +1,23 @@
+{
+  "company": "IEX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 808358,
+    "prev_short_position": 846297,
+    "avg_daily_volume": 381642,
+    "days_to_cover": 2.12,
+    "change_pct": -4.48,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:03380965ae8c7d4845b0d2808738f256cafd6a78724fac9dae1a1af00dae85bb",
+  "metadata": {
+    "days_to_cover": 2.12,
+    "change_pct": -4.48
+  }
+}

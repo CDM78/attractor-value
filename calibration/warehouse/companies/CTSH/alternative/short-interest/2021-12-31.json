@@ -1,0 +1,23 @@
+{
+  "company": "CTSH",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7289694,
+    "prev_short_position": 6327020,
+    "avg_daily_volume": 2600539,
+    "days_to_cover": 2.8,
+    "change_pct": 15.22,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:dbb3bc161efdd38f51939257282ff1fb7cbe50aa15026a0fe89c784ed9e5932b",
+  "metadata": {
+    "days_to_cover": 2.8,
+    "change_pct": 15.22
+  }
+}

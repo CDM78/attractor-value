@@ -1,0 +1,23 @@
+{
+  "company": "HSIC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3994045,
+    "prev_short_position": 3959550,
+    "avg_daily_volume": 592571,
+    "days_to_cover": 6.74,
+    "change_pct": 0.87,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:4a26b5eba2ae17adc1a0335e708ea7341ae3f770fd0d79d7164ef42afb444d0e",
+  "metadata": {
+    "days_to_cover": 6.74,
+    "change_pct": 0.87
+  }
+}

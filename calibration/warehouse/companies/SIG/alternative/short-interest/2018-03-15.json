@@ -1,0 +1,23 @@
+{
+  "company": "SIG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-03-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-03-15",
+    "short_position": 8693720,
+    "prev_short_position": 9251262,
+    "avg_daily_volume": 5086456,
+    "days_to_cover": 1.71,
+    "change_pct": -6.03,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ed210e12ff87649c2a56efe178200cf31e98b87eaee821254c8a4bdbb22d9e69",
+  "metadata": {
+    "days_to_cover": 1.71,
+    "change_pct": -6.03
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "STX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 10335422,
+    "prev_short_position": 9965176,
+    "avg_daily_volume": 1684524,
+    "days_to_cover": 6.14,
+    "change_pct": 3.72,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:34e295343b0fd6e5e5bf9df21fe24ae5671e64a1cefadbdaf5fe17efb86a76ee",
+  "metadata": {
+    "days_to_cover": 6.14,
+    "change_pct": 3.72
+  }
+}

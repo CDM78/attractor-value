@@ -1,0 +1,23 @@
+{
+  "company": "WU",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-15",
+    "short_position": 40573099,
+    "prev_short_position": 41153710,
+    "avg_daily_volume": 8557070,
+    "days_to_cover": 4.74,
+    "change_pct": -1.41,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:819aab9429fabd560eb451b75b0ab086319dcf75f74872662bdcb9071b90d2a1",
+  "metadata": {
+    "days_to_cover": 4.74,
+    "change_pct": -1.41
+  }
+}

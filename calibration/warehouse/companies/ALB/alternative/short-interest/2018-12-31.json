@@ -1,0 +1,23 @@
+{
+  "company": "ALB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 12271346,
+    "prev_short_position": 14249564,
+    "avg_daily_volume": 1994828,
+    "days_to_cover": 6.15,
+    "change_pct": -13.88,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ad86ea98a941300b6939a74a10a165893d8ec96578853efe4b52f30834781901",
+  "metadata": {
+    "days_to_cover": 6.15,
+    "change_pct": -13.88
+  }
+}

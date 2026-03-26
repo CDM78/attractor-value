@@ -1,0 +1,23 @@
+{
+  "company": "GS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 4379858,
+    "prev_short_position": 3986307,
+    "avg_daily_volume": 2783647,
+    "days_to_cover": 1.57,
+    "change_pct": 9.87,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7d6ee93012c75ea48ad4d526ba3ca28cdf03d69a990380fa8608b67637a7cbe2",
+  "metadata": {
+    "days_to_cover": 1.57,
+    "change_pct": 9.87
+  }
+}

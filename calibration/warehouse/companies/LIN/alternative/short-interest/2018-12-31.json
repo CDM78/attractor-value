@@ -1,0 +1,23 @@
+{
+  "company": "LIN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 7101221,
+    "prev_short_position": 6775316,
+    "avg_daily_volume": 2775062,
+    "days_to_cover": 2.56,
+    "change_pct": 4.81,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f733181d6d603f6fdab9cd460cc64468edf324fac6d9310cf22cad0dd0b3f498",
+  "metadata": {
+    "days_to_cover": 2.56,
+    "change_pct": 4.81
+  }
+}

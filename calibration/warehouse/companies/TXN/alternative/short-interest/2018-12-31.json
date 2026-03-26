@@ -1,0 +1,23 @@
+{
+  "company": "TXN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 18603817,
+    "prev_short_position": 16027148,
+    "avg_daily_volume": 7806688,
+    "days_to_cover": 2.38,
+    "change_pct": 16.08,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:218e51561841688a340fcaa193f5514d9fa560cd84530f1f556de0066f3653b0",
+  "metadata": {
+    "days_to_cover": 2.38,
+    "change_pct": 16.08
+  }
+}

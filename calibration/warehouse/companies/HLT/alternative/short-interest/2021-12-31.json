@@ -1,0 +1,23 @@
+{
+  "company": "HLT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7466010,
+    "prev_short_position": 5905617,
+    "avg_daily_volume": 1737455,
+    "days_to_cover": 4.3,
+    "change_pct": 26.42,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:9516898f5846adb408d37e25dc5b7c911d8094c82f8d3b1e7a87499c730c4e93",
+  "metadata": {
+    "days_to_cover": 4.3,
+    "change_pct": 26.42
+  }
+}

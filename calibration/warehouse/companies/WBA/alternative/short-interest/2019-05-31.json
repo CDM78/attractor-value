@@ -1,0 +1,23 @@
+{
+  "company": "WBA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2019-05-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2019-05-31",
+    "short_position": 23356362,
+    "prev_short_position": 23086908,
+    "avg_daily_volume": 4740324,
+    "days_to_cover": 4.93,
+    "change_pct": 1.17,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:7b527bd790ac0d6d38bbb0dcd6a76497d50a2cc7fa67660e617dea301579fee9",
+  "metadata": {
+    "days_to_cover": 4.93,
+    "change_pct": 1.17
+  }
+}

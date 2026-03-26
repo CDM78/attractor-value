@@ -1,0 +1,23 @@
+{
+  "company": "HESM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 957748,
+    "prev_short_position": 681319,
+    "avg_daily_volume": 206290,
+    "days_to_cover": 4.64,
+    "change_pct": 40.57,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:d6f079d41cc111103013a9a193c870a9760fb1291b50d5a30e111d3660143e3b",
+  "metadata": {
+    "days_to_cover": 4.64,
+    "change_pct": 40.57
+  }
+}

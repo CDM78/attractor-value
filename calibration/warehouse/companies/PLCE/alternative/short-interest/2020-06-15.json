@@ -1,0 +1,23 @@
+{
+  "company": "PLCE",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 5163968,
+    "prev_short_position": 5193302,
+    "avg_daily_volume": 977092,
+    "days_to_cover": 5.29,
+    "change_pct": -0.56,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:6537f587925e39948d26e89696331529d09885f1933f808f2e069da5a50ca467",
+  "metadata": {
+    "days_to_cover": 5.29,
+    "change_pct": -0.56
+  }
+}

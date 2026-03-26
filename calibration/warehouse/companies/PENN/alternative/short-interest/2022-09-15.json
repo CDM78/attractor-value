@@ -1,0 +1,23 @@
+{
+  "company": "PENN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2022-09-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2022-09-15",
+    "short_position": 9928610,
+    "prev_short_position": 8613747,
+    "avg_daily_volume": 3471487,
+    "days_to_cover": 2.86,
+    "change_pct": 15.26,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:8748f1d888428baa3a3e773930d87ed9198b9eb3cf8107ab49925b731b077e3d",
+  "metadata": {
+    "days_to_cover": 2.86,
+    "change_pct": 15.26
+  }
+}

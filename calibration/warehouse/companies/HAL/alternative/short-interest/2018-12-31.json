@@ -1,0 +1,23 @@
+{
+  "company": "HAL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 19373427,
+    "prev_short_position": 17185146,
+    "avg_daily_volume": 13919679,
+    "days_to_cover": 1.39,
+    "change_pct": 12.73,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:78f364e1a6df9d8991ae914909b33d96d6a69369076d23160243443cb6114270",
+  "metadata": {
+    "days_to_cover": 1.39,
+    "change_pct": 12.73
+  }
+}

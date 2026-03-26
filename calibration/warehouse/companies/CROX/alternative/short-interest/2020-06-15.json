@@ -1,0 +1,23 @@
+{
+  "company": "CROX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 3881329,
+    "prev_short_position": 4288724,
+    "avg_daily_volume": 1347082,
+    "days_to_cover": 2.88,
+    "change_pct": -9.5,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:d921191a941c49be46311195877c4fea9e30dee033fe3083a48b0347f084876a",
+  "metadata": {
+    "days_to_cover": 2.88,
+    "change_pct": -9.5
+  }
+}

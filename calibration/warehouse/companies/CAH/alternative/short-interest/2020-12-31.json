@@ -1,0 +1,23 @@
+{
+  "company": "CAH",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3015796,
+    "prev_short_position": 4768924,
+    "avg_daily_volume": 1307052,
+    "days_to_cover": 2.31,
+    "change_pct": -36.76,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ac7295c002e548c936c4071b99feaaa8e921dc4d801352d4a7be8d5acee915ce",
+  "metadata": {
+    "days_to_cover": 2.31,
+    "change_pct": -36.76
+  }
+}

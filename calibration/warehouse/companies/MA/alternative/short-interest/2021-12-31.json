@@ -1,0 +1,23 @@
+{
+  "company": "MA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5399431,
+    "prev_short_position": 4881439,
+    "avg_daily_volume": 3195328,
+    "days_to_cover": 1.69,
+    "change_pct": 10.61,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:50abe0ab6667e0ffb51baf904bfe4e21c320899e4ec86d47f1c02a617910c173",
+  "metadata": {
+    "days_to_cover": 1.69,
+    "change_pct": 10.61
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "DGX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 3693634,
+    "prev_short_position": 3393627,
+    "avg_daily_volume": 1330983,
+    "days_to_cover": 2.78,
+    "change_pct": 8.84,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:9f8dcb32e654449bd5482bf4515be34fea1c6caac4e06f916022c174dc991e4f",
+  "metadata": {
+    "days_to_cover": 2.78,
+    "change_pct": 8.84
+  }
+}

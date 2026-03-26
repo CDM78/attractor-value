@@ -1,0 +1,8 @@
+{
+  "enforcement": "strict",
+  "null_date_policy": "exclude",
+  "uncertain_date_policy": "exclude",
+  "audit_all_accesses": true,
+  "contamination_auto_flag": true,
+  "notes": "publication_date is the ONLY temporal key. If null or uncertain, data is excluded from all evaluations."
+}

@@ -1,0 +1,23 @@
+{
+  "company": "RTX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 9978109,
+    "prev_short_position": 11590470,
+    "avg_daily_volume": 4205824,
+    "days_to_cover": 2.37,
+    "change_pct": -13.91,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:44f34f341ca10cd3e08676806ece745b133155b282156114cdf5fdee1a375cbd",
+  "metadata": {
+    "days_to_cover": 2.37,
+    "change_pct": -13.91
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "WDC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7851087,
+    "prev_short_position": 8794684,
+    "avg_daily_volume": 3510412,
+    "days_to_cover": 2.24,
+    "change_pct": -10.73,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:534a12a1e9b56214a0d4896dc834d8d386bd6a8d2076a4407192e069335c408d",
+  "metadata": {
+    "days_to_cover": 2.24,
+    "change_pct": -10.73
+  }
+}

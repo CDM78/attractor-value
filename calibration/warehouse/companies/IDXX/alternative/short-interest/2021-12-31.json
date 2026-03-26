@@ -1,0 +1,23 @@
+{
+  "company": "IDXX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 862427,
+    "prev_short_position": 886021,
+    "avg_daily_volume": 313099,
+    "days_to_cover": 2.75,
+    "change_pct": -2.66,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:f84208e8b847c0b6798d2497ff6b6ecc7d9cb76aac00ae1bdc4a0ba8c005683a",
+  "metadata": {
+    "days_to_cover": 2.75,
+    "change_pct": -2.66
+  }
+}

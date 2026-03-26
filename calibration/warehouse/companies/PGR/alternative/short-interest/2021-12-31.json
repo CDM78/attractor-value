@@ -1,0 +1,23 @@
+{
+  "company": "PGR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 8223580,
+    "prev_short_position": 9728955,
+    "avg_daily_volume": 2464077,
+    "days_to_cover": 3.34,
+    "change_pct": -15.47,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:2435865e2f263bef9a757c069998152242907443f539af0074879d0630e23f12",
+  "metadata": {
+    "days_to_cover": 3.34,
+    "change_pct": -15.47
+  }
+}

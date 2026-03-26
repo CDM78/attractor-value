@@ -1,0 +1,23 @@
+{
+  "company": "WING",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 3043995,
+    "prev_short_position": 2876655,
+    "avg_daily_volume": 583500,
+    "days_to_cover": 5.22,
+    "change_pct": 5.82,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:03c5b952f2a84824fd4ba043d396fec217db3b2b5be83e102c9999f85fa88c21",
+  "metadata": {
+    "days_to_cover": 5.22,
+    "change_pct": 5.82
+  }
+}

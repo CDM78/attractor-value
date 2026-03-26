@@ -1,0 +1,23 @@
+{
+  "company": "DHI",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 5479875,
+    "prev_short_position": 4957699,
+    "avg_daily_volume": 2408482,
+    "days_to_cover": 2.28,
+    "change_pct": 10.53,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6aef73aa1a03098aa33fec0da063bb5b6fa87a43c17698e4c74a695c20b51d84",
+  "metadata": {
+    "days_to_cover": 2.28,
+    "change_pct": 10.53
+  }
+}

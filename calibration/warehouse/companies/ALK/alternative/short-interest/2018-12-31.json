@@ -1,0 +1,23 @@
+{
+  "company": "ALK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6187361,
+    "prev_short_position": 6645223,
+    "avg_daily_volume": 1514541,
+    "days_to_cover": 4.09,
+    "change_pct": -6.89,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:e23b66c9ca4b387e6381e042308141b1281bf809cd9323af28b0f096c3687f0a",
+  "metadata": {
+    "days_to_cover": 4.09,
+    "change_pct": -6.89
+  }
+}

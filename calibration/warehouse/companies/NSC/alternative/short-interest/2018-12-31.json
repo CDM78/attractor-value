@@ -1,0 +1,23 @@
+{
+  "company": "NSC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6230224,
+    "prev_short_position": 7220818,
+    "avg_daily_volume": 2309094,
+    "days_to_cover": 2.7,
+    "change_pct": -13.72,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7ceb5f23c437c3cbd71f453e7c1bfe1ca8b019bd4b1edfb016c8b2670f61670c",
+  "metadata": {
+    "days_to_cover": 2.7,
+    "change_pct": -13.72
+  }
+}

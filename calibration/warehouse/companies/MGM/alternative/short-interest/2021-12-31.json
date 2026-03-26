@@ -1,0 +1,23 @@
+{
+  "company": "MGM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 11349812,
+    "prev_short_position": 10868333,
+    "avg_daily_volume": 5115337,
+    "days_to_cover": 2.22,
+    "change_pct": 4.43,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:36432a7b09c60368e115760b8e972711efd9a29a7097c6746a28b01924c56795",
+  "metadata": {
+    "days_to_cover": 2.22,
+    "change_pct": 4.43
+  }
+}

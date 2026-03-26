@@ -1,0 +1,23 @@
+{
+  "company": "AWK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 5599471,
+    "prev_short_position": 5352668,
+    "avg_daily_volume": 1226225,
+    "days_to_cover": 4.57,
+    "change_pct": 4.61,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:4d30b9083b57e5a58f67898e52edec97882a8588d6b16a6e5d4ea43b20418168",
+  "metadata": {
+    "days_to_cover": 4.57,
+    "change_pct": 4.61
+  }
+}

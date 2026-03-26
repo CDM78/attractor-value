@@ -1,0 +1,23 @@
+{
+  "company": "TSM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 12353883,
+    "prev_short_position": 14819898,
+    "avg_daily_volume": 8022383,
+    "days_to_cover": 1.54,
+    "change_pct": -16.64,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:b01c6ac6cf3e23db5925d17232f53cd6e27b9d3cb079faeb0ee5d349074bee6b",
+  "metadata": {
+    "days_to_cover": 1.54,
+    "change_pct": -16.64
+  }
+}

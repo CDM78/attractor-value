@@ -1,0 +1,23 @@
+{
+  "company": "HOLX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3841336,
+    "prev_short_position": 4748286,
+    "avg_daily_volume": 1434653,
+    "days_to_cover": 2.68,
+    "change_pct": -19.1,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:4c45baf5e081bd0a265a4fcbfbb630748df5ee28292fabafd68ceca6935a0090",
+  "metadata": {
+    "days_to_cover": 2.68,
+    "change_pct": -19.1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "SYF",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 14843536,
+    "prev_short_position": 15269383,
+    "avg_daily_volume": 5697304,
+    "days_to_cover": 2.61,
+    "change_pct": -2.79,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:5faf6b51624e2cb70f3a08c08509f0a5a7d32da8b294177d82968ca44f85596a",
+  "metadata": {
+    "days_to_cover": 2.61,
+    "change_pct": -2.79
+  }
+}

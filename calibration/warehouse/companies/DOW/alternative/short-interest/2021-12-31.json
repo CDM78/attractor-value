@@ -1,0 +1,23 @@
+{
+  "company": "DOW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 14020874,
+    "prev_short_position": 15046088,
+    "avg_daily_volume": 5000112,
+    "days_to_cover": 2.8,
+    "change_pct": -6.81,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:1ec7759517628baa9fa7919b15cf5b9399f6e5290d8a4e1103d478f0a3378e32",
+  "metadata": {
+    "days_to_cover": 2.8,
+    "change_pct": -6.81
+  }
+}

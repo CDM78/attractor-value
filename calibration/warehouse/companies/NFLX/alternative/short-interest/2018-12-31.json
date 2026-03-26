@@ -1,0 +1,23 @@
+{
+  "company": "NFLX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 13853134,
+    "prev_short_position": 16593567,
+    "avg_daily_volume": 13284425,
+    "days_to_cover": 1.04,
+    "change_pct": -16.52,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:766ffa0d369d5b6d8b3d25cae39131b07ce58e95c9ab8741eb22ebf046adf7c5",
+  "metadata": {
+    "days_to_cover": 1.04,
+    "change_pct": -16.52
+  }
+}

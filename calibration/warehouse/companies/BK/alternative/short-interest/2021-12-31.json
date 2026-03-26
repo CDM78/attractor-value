@@ -1,0 +1,23 @@
+{
+  "company": "BK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7029526,
+    "prev_short_position": 8478328,
+    "avg_daily_volume": 3728186,
+    "days_to_cover": 1.89,
+    "change_pct": -17.09,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:59dd45156765ba3e98215de24833a8a90f22f5bdcb04927237e9557a42754535",
+  "metadata": {
+    "days_to_cover": 1.89,
+    "change_pct": -17.09
+  }
+}

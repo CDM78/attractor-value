@@ -1,0 +1,23 @@
+{
+  "company": "SWK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2487029,
+    "prev_short_position": 2243712,
+    "avg_daily_volume": 1292403,
+    "days_to_cover": 1.92,
+    "change_pct": 10.84,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:c1c8f64b36e0e5ef4809ac20c15244fbc175d3aed13386ffc603124042fd47bb",
+  "metadata": {
+    "days_to_cover": 1.92,
+    "change_pct": 10.84
+  }
+}

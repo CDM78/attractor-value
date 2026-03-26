@@ -1,0 +1,23 @@
+{
+  "company": "GLW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 9896026,
+    "prev_short_position": 10588687,
+    "avg_daily_volume": 3267894,
+    "days_to_cover": 3.03,
+    "change_pct": -6.54,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:01cc8799d8608dfca9d1357089d4af2afcc95e56b80869bd557cb648554711f7",
+  "metadata": {
+    "days_to_cover": 3.03,
+    "change_pct": -6.54
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "INTC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 68630757,
+    "prev_short_position": 70513571,
+    "avg_daily_volume": 25666852,
+    "days_to_cover": 2.67,
+    "change_pct": -2.67,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:989f249536192e5fcf9d79290c140e11306117ad7066371f6f560671c8ce6e77",
+  "metadata": {
+    "days_to_cover": 2.67,
+    "change_pct": -2.67
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "MS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 15864654,
+    "prev_short_position": 12233728,
+    "avg_daily_volume": 16331478,
+    "days_to_cover": 1,
+    "change_pct": 29.68,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:96bdfa6b70008f36e1469daca3308104b2df69c9155fe8a4aa35e37cd946b60d",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": 29.68
+  }
+}

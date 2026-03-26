@@ -1,0 +1,23 @@
+{
+  "company": "DXC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 6266265,
+    "prev_short_position": 6458672,
+    "avg_daily_volume": 2175411,
+    "days_to_cover": 2.88,
+    "change_pct": -2.98,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7b769b45d2f0e84ca28d387ce53b8060d534cffebca5e9dc571ec8b75676b58f",
+  "metadata": {
+    "days_to_cover": 2.88,
+    "change_pct": -2.98
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "AXP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 6294562,
+    "prev_short_position": 7817811,
+    "avg_daily_volume": 2943007,
+    "days_to_cover": 2.14,
+    "change_pct": -19.48,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:61be91d72ffc260805b1c3a87dcebe7cca95c589b041f5157e73f94e4059f942",
+  "metadata": {
+    "days_to_cover": 2.14,
+    "change_pct": -19.48
+  }
+}

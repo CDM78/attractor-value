@@ -1,0 +1,23 @@
+{
+  "company": "PSA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 7403988,
+    "prev_short_position": 7069082,
+    "avg_daily_volume": 1355330,
+    "days_to_cover": 5.46,
+    "change_pct": 4.74,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:924a8361421fad47c87f56d16d207a427d1b6f7f04f2068cb3034d0ea5a3d6c7",
+  "metadata": {
+    "days_to_cover": 5.46,
+    "change_pct": 4.74
+  }
+}

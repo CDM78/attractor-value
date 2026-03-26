@@ -1,0 +1,23 @@
+{
+  "company": "PNR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5927906,
+    "prev_short_position": 5913312,
+    "avg_daily_volume": 1216501,
+    "days_to_cover": 4.87,
+    "change_pct": 0.25,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:a425a2314076f70c3fded87eb8ae26e299e563ac4da6e86d6a85d45f173e3eca",
+  "metadata": {
+    "days_to_cover": 4.87,
+    "change_pct": 0.25
+  }
+}

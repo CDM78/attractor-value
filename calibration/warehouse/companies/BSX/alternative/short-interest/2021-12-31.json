@@ -1,0 +1,23 @@
+{
+  "company": "BSX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 15123627,
+    "prev_short_position": 13556298,
+    "avg_daily_volume": 7310221,
+    "days_to_cover": 2.07,
+    "change_pct": 11.56,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:6aac7d4b5d721b18ec3ed85aaf5a429cbfc8cb7b490e786cee46dd23355195f1",
+  "metadata": {
+    "days_to_cover": 2.07,
+    "change_pct": 11.56
+  }
+}

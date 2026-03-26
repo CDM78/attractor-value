@@ -1,0 +1,23 @@
+{
+  "company": "EW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 2782465,
+    "prev_short_position": 3821742,
+    "avg_daily_volume": 1255724,
+    "days_to_cover": 2.22,
+    "change_pct": -27.19,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:27418a7cfd9aca5474b8e2588d3752c12a94a4a1605f8354f22e2a87d312121e",
+  "metadata": {
+    "days_to_cover": 2.22,
+    "change_pct": -27.19
+  }
+}

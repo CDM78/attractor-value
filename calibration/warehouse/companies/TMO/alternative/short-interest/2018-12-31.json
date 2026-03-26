@@ -1,0 +1,23 @@
+{
+  "company": "TMO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 3676717,
+    "prev_short_position": 4004240,
+    "avg_daily_volume": 2235402,
+    "days_to_cover": 1.64,
+    "change_pct": -8.18,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:cf88dd07a15e1b770c97950570d9898034b9373f04a48eebbcf2deca02d4b39f",
+  "metadata": {
+    "days_to_cover": 1.64,
+    "change_pct": -8.18
+  }
+}

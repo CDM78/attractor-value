@@ -1,0 +1,23 @@
+{
+  "company": "LRCX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 8594548,
+    "prev_short_position": 7417090,
+    "avg_daily_volume": 2711568,
+    "days_to_cover": 3.17,
+    "change_pct": 15.87,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:66224f142473ebb87e1f8f46ed54163854c20b1ea1ddec24720b449a9e7dfdbf",
+  "metadata": {
+    "days_to_cover": 3.17,
+    "change_pct": 15.87
+  }
+}

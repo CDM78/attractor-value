@@ -1,0 +1,23 @@
+{
+  "company": "TRGP",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2022-09-30",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2022-09-30",
+    "short_position": 3889283,
+    "prev_short_position": 3951516,
+    "avg_daily_volume": 2063906,
+    "days_to_cover": 1.88,
+    "change_pct": -1.57,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:c61b15a4c0a3d1b09140372d1239d8e8165e81bf1d58915302dbafad778ded1f",
+  "metadata": {
+    "days_to_cover": 1.88,
+    "change_pct": -1.57
+  }
+}

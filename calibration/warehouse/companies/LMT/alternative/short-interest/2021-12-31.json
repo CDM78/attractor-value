@@ -1,0 +1,23 @@
+{
+  "company": "LMT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 2677911,
+    "prev_short_position": 2569322,
+    "avg_daily_volume": 1382509,
+    "days_to_cover": 1.94,
+    "change_pct": 4.23,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:4b059da4b137c2e8756d01a2e069ba8799f17e38e1684a162d29b30a46bd1649",
+  "metadata": {
+    "days_to_cover": 1.94,
+    "change_pct": 4.23
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "TSCO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 2619947,
+    "prev_short_position": 2623932,
+    "avg_daily_volume": 1348639,
+    "days_to_cover": 1.94,
+    "change_pct": -0.15,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:5033167a2b302ced6c088035ff108dce87af25b7f798d134e4442e46a7f3f89d",
+  "metadata": {
+    "days_to_cover": 1.94,
+    "change_pct": -0.15
+  }
+}

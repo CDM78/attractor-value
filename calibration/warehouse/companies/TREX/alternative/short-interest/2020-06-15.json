@@ -1,0 +1,23 @@
+{
+  "company": "TREX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 8891486,
+    "prev_short_position": 9182810,
+    "avg_daily_volume": 846170,
+    "days_to_cover": 10.51,
+    "change_pct": -3.17,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:a907caf2c6c6f93040272029d236b64e2eb17ce2d012aa4ebd83fa2685f991c6",
+  "metadata": {
+    "days_to_cover": 10.51,
+    "change_pct": -3.17
+  }
+}

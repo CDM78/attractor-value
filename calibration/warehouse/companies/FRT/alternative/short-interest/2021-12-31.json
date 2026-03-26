@@ -1,0 +1,23 @@
+{
+  "company": "FRT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3046015,
+    "prev_short_position": 3612705,
+    "avg_daily_volume": 407363,
+    "days_to_cover": 7.48,
+    "change_pct": -15.69,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:b3737146502ab6fa35237bac37af80ff5452f63506bbfccbb332c411260318c6",
+  "metadata": {
+    "days_to_cover": 7.48,
+    "change_pct": -15.69
+  }
+}

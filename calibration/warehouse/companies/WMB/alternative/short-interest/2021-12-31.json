@@ -1,0 +1,23 @@
+{
+  "company": "WMB",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 21630793,
+    "prev_short_position": 23224025,
+    "avg_daily_volume": 6577259,
+    "days_to_cover": 3.29,
+    "change_pct": -6.86,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:fb0595e4f7a8cb07fc2252af1b6045356b1743c13e424d0c8a9a8f98278e5590",
+  "metadata": {
+    "days_to_cover": 3.29,
+    "change_pct": -6.86
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "GRMN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6775852,
+    "prev_short_position": 6982449,
+    "avg_daily_volume": 978887,
+    "days_to_cover": 6.92,
+    "change_pct": -2.96,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:21809f4ad1d8d6b3de36b42b86c4664ba3a967862beff7786fbaed2a64e433f1",
+  "metadata": {
+    "days_to_cover": 6.92,
+    "change_pct": -2.96
+  }
+}

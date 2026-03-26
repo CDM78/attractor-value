@@ -1,0 +1,23 @@
+{
+  "company": "RCL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 12882540,
+    "prev_short_position": 14201684,
+    "avg_daily_volume": 4606022,
+    "days_to_cover": 2.8,
+    "change_pct": -9.29,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:ffd73c584c9048984720e8914908fb171918230fd3a957b0b49be2bcf824b1fd",
+  "metadata": {
+    "days_to_cover": 2.8,
+    "change_pct": -9.29
+  }
+}

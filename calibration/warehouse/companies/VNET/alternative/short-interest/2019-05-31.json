@@ -1,0 +1,23 @@
+{
+  "company": "VNET",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2019-05-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2019-05-31",
+    "short_position": 995371,
+    "prev_short_position": 980809,
+    "avg_daily_volume": 686433,
+    "days_to_cover": 1.45,
+    "change_pct": 1.48,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:61d259809813344666cbef6b0a7d80ca3043a0f30b75b3ef0ea027f8f670f033",
+  "metadata": {
+    "days_to_cover": 1.45,
+    "change_pct": 1.48
+  }
+}

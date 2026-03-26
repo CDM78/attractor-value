@@ -1,0 +1,23 @@
+{
+  "company": "KLAC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 5869281,
+    "prev_short_position": 5314623,
+    "avg_daily_volume": 2049243,
+    "days_to_cover": 2.86,
+    "change_pct": 10.44,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:a0e802df6e47217062fc5042863b23fc163ff7a9791f38c6a2c0fcb91dc065a5",
+  "metadata": {
+    "days_to_cover": 2.86,
+    "change_pct": 10.44
+  }
+}

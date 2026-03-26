@@ -1,0 +1,23 @@
+{
+  "company": "AZO",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 389912,
+    "prev_short_position": 435708,
+    "avg_daily_volume": 131116,
+    "days_to_cover": 2.97,
+    "change_pct": -10.51,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:a9b006d8406395bd732cecc989b97940e02251617e01c5e0fc6f9e776a1cafa3",
+  "metadata": {
+    "days_to_cover": 2.97,
+    "change_pct": -10.51
+  }
+}

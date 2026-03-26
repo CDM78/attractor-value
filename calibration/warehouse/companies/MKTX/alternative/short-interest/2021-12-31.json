@@ -1,0 +1,23 @@
+{
+  "company": "MKTX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1034927,
+    "prev_short_position": 1084334,
+    "avg_daily_volume": 206881,
+    "days_to_cover": 5,
+    "change_pct": -4.56,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:9d211427627faf51e3577e471af88ce3ba3c83ecb9d1ff6c519fc0c3d22241b4",
+  "metadata": {
+    "days_to_cover": 5,
+    "change_pct": -4.56
+  }
+}

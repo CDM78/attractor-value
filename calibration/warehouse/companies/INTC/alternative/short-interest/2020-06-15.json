@@ -1,0 +1,23 @@
+{
+  "company": "INTC",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 38856951,
+    "prev_short_position": 38636657,
+    "avg_daily_volume": 20375928,
+    "days_to_cover": 1.91,
+    "change_pct": 0.57,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:c8bd500ebbcd042c73111bb498a68e082184ec0d46774d7ccdd5210b8c02ba47",
+  "metadata": {
+    "days_to_cover": 1.91,
+    "change_pct": 0.57
+  }
+}

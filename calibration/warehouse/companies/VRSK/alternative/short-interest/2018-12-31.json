@@ -1,0 +1,23 @@
+{
+  "company": "VRSK",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 3647033,
+    "prev_short_position": 3389101,
+    "avg_daily_volume": 918034,
+    "days_to_cover": 3.97,
+    "change_pct": 7.61,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:23ea1e6a56e54f24eaab9652e3b171c274e8d988eb1e32dfa061fe1748424a04",
+  "metadata": {
+    "days_to_cover": 3.97,
+    "change_pct": 7.61
+  }
+}

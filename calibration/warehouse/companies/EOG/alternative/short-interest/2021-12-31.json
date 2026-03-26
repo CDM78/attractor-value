@@ -1,0 +1,23 @@
+{
+  "company": "EOG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5078447,
+    "prev_short_position": 4824335,
+    "avg_daily_volume": 3342500,
+    "days_to_cover": 1.52,
+    "change_pct": 5.27,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:fc55feb4d731b6c486b382cad876fb69dc4cd004d9f87502c3627d8e20366d27",
+  "metadata": {
+    "days_to_cover": 1.52,
+    "change_pct": 5.27
+  }
+}

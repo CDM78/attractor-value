@@ -1,0 +1,23 @@
+{
+  "company": "TECH",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-07-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-07-15",
+    "short_position": 390218,
+    "prev_short_position": 437235,
+    "avg_daily_volume": 190242,
+    "days_to_cover": 2.05,
+    "change_pct": -10.75,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:c231c71e4d63a36c4801ee838f89fab7d666be4f6b3c3fd6d8911122515f5987",
+  "metadata": {
+    "days_to_cover": 2.05,
+    "change_pct": -10.75
+  }
+}

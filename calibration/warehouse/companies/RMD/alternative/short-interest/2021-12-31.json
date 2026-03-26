@@ -1,0 +1,23 @@
+{
+  "company": "RMD",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 762840,
+    "prev_short_position": 738984,
+    "avg_daily_volume": 428919,
+    "days_to_cover": 1.78,
+    "change_pct": 3.23,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:d054b6a6e136d0f23a0ef1684f90d336e0b557e60dbc7759f18aa212c905f068",
+  "metadata": {
+    "days_to_cover": 1.78,
+    "change_pct": 3.23
+  }
+}

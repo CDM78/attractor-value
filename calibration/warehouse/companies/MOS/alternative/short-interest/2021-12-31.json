@@ -1,0 +1,23 @@
+{
+  "company": "MOS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7463406,
+    "prev_short_position": 5367982,
+    "avg_daily_volume": 3727877,
+    "days_to_cover": 2,
+    "change_pct": 39.04,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:f3f4d7464e30b1f32889bfa46555b30661f5cfb30bc97fd136935019883d3556",
+  "metadata": {
+    "days_to_cover": 2,
+    "change_pct": 39.04
+  }
+}

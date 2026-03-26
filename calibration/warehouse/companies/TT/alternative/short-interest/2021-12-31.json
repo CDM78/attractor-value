@@ -1,0 +1,23 @@
+{
+  "company": "TT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1488224,
+    "prev_short_position": 1730978,
+    "avg_daily_volume": 818182,
+    "days_to_cover": 1.82,
+    "change_pct": -14.02,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:fb5cf96b2fe3854fec457fcd4a93818f3c399fa08d52be9f7df92c4b93942808",
+  "metadata": {
+    "days_to_cover": 1.82,
+    "change_pct": -14.02
+  }
+}

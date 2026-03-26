@@ -1,0 +1,23 @@
+{
+  "company": "JEF",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 12662337,
+    "prev_short_position": 10806778,
+    "avg_daily_volume": 2818439,
+    "days_to_cover": 4.49,
+    "change_pct": 17.17,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:29e84c6d35e5bfe072f0b9ed1d1576f6a8ea295b96f6f73445657a137f68dc9b",
+  "metadata": {
+    "days_to_cover": 4.49,
+    "change_pct": 17.17
+  }
+}

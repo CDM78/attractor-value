@@ -1,0 +1,23 @@
+{
+  "company": "MAR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 5437166,
+    "prev_short_position": 5485152,
+    "avg_daily_volume": 1807204,
+    "days_to_cover": 3.01,
+    "change_pct": -0.87,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:3f84cebf5cf617e401095ba3d6e127ab85fa778ff2fbccba8ae2d3397ea5651f",
+  "metadata": {
+    "days_to_cover": 3.01,
+    "change_pct": -0.87
+  }
+}

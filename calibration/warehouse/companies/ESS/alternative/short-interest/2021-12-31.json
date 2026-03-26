@@ -1,0 +1,23 @@
+{
+  "company": "ESS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 745912,
+    "prev_short_position": 770359,
+    "avg_daily_volume": 322581,
+    "days_to_cover": 2.31,
+    "change_pct": -3.17,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:2a6633d44bb36431c344d532e4b7422e4cc2c760afd256dfd7dc1a28baf505e7",
+  "metadata": {
+    "days_to_cover": 2.31,
+    "change_pct": -3.17
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "FCX",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 31443325,
+    "prev_short_position": 27101855,
+    "avg_daily_volume": 13896239,
+    "days_to_cover": 2.26,
+    "change_pct": 16.02,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:56c6d3f80bd6fac37cbedb6d98ce796a605121008d4613e324fcb6b75f5ea4d3",
+  "metadata": {
+    "days_to_cover": 2.26,
+    "change_pct": 16.02
+  }
+}

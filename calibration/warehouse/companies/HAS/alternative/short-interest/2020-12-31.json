@@ -1,0 +1,23 @@
+{
+  "company": "HAS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 4736602,
+    "prev_short_position": 4588963,
+    "avg_daily_volume": 750005,
+    "days_to_cover": 6.32,
+    "change_pct": 3.22,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:f9e1568ca7b4f9ea4ff8ab0a0cfbcb9fc68ce9fb26a8c913f09e8ef73f10547c",
+  "metadata": {
+    "days_to_cover": 6.32,
+    "change_pct": 3.22
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "IVZ",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 4869977,
+    "prev_short_position": 5194599,
+    "avg_daily_volume": 3562630,
+    "days_to_cover": 1.37,
+    "change_pct": -6.25,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:10353866da0364eaeb624023f28ce0c44be99f36aa2b4ba02d3d6e3c55a2fa70",
+  "metadata": {
+    "days_to_cover": 1.37,
+    "change_pct": -6.25
+  }
+}

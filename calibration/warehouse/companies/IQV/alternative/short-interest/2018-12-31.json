@@ -1,0 +1,23 @@
+{
+  "company": "IQV",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 4211396,
+    "prev_short_position": 4240945,
+    "avg_daily_volume": 1594818,
+    "days_to_cover": 2.64,
+    "change_pct": -0.7,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:8c0c69aa4d7ee49b9d0d1632bafb3f70267805a5cd1e08d52fb46137f87f1966",
+  "metadata": {
+    "days_to_cover": 2.64,
+    "change_pct": -0.7
+  }
+}

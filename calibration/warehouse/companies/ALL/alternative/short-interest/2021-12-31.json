@@ -1,0 +1,23 @@
+{
+  "company": "ALL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3078767,
+    "prev_short_position": 3574492,
+    "avg_daily_volume": 1761544,
+    "days_to_cover": 1.75,
+    "change_pct": -13.87,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:d9cdc6f1965a58a768aead66b901ab9b4df3afbc8aaccde814a74642fd6eca9e",
+  "metadata": {
+    "days_to_cover": 1.75,
+    "change_pct": -13.87
+  }
+}

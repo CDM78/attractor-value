@@ -1,0 +1,23 @@
+{
+  "company": "CTAS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 2449263,
+    "prev_short_position": 2228880,
+    "avg_daily_volume": 1049085,
+    "days_to_cover": 2.33,
+    "change_pct": 9.89,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:c98cc2c1252dbe0c6a60bfb3b8308c5f50829d98f69dc2f9c3ebbd290fc02a81",
+  "metadata": {
+    "days_to_cover": 2.33,
+    "change_pct": 9.89
+  }
+}

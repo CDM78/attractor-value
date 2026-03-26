@@ -1,0 +1,23 @@
+{
+  "company": "UNM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-09-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-09-15",
+    "short_position": 3734826,
+    "prev_short_position": 3989382,
+    "avg_daily_volume": 2140703,
+    "days_to_cover": 1.74,
+    "change_pct": -6.38,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:047eef7a60dfe7f9a7a59e3f0b0b6e260795aac0045a671cc6a24bd276a1f04f",
+  "metadata": {
+    "days_to_cover": 1.74,
+    "change_pct": -6.38
+  }
+}

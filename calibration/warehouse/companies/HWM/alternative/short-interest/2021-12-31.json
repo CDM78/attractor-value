@@ -1,0 +1,23 @@
+{
+  "company": "HWM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 9251972,
+    "prev_short_position": 9702264,
+    "avg_daily_volume": 2117396,
+    "days_to_cover": 4.37,
+    "change_pct": -4.64,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:a9270c2e0ab6db9af0493ad3b96f0762e9087c218f2b39615e736f9f40ae7914",
+  "metadata": {
+    "days_to_cover": 4.37,
+    "change_pct": -4.64
+  }
+}

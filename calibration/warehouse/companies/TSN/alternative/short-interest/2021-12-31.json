@@ -1,0 +1,23 @@
+{
+  "company": "TSN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 4364646,
+    "prev_short_position": 4581421,
+    "avg_daily_volume": 1449100,
+    "days_to_cover": 3.01,
+    "change_pct": -4.73,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:772a7e7a8fd22803719b57f6658b739e885e0aadb19ea1f1dbc7f0c428f65bdd",
+  "metadata": {
+    "days_to_cover": 3.01,
+    "change_pct": -4.73
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "APA",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 17476573,
+    "prev_short_position": 17383769,
+    "avg_daily_volume": 6422053,
+    "days_to_cover": 2.72,
+    "change_pct": 0.53,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:01fa9d7b34ce31632e9c418d35beadb732e908a7157b17492cb8b7cc1130a658",
+  "metadata": {
+    "days_to_cover": 2.72,
+    "change_pct": 0.53
+  }
+}

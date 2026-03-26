@@ -1,0 +1,23 @@
+{
+  "company": "AOS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 3332258,
+    "prev_short_position": 3369342,
+    "avg_daily_volume": 813923,
+    "days_to_cover": 4.09,
+    "change_pct": -1.1,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:e9d72af3bcb3b6a3f8053299fc94c34a139c23408239522fc898c383b769297f",
+  "metadata": {
+    "days_to_cover": 4.09,
+    "change_pct": -1.1
+  }
+}

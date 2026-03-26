@@ -1,0 +1,23 @@
+{
+  "company": "HPQ",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 40964824,
+    "prev_short_position": 40953157,
+    "avg_daily_volume": 9019700,
+    "days_to_cover": 4.54,
+    "change_pct": 0.03,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:74390819020d754c1e4cdc977e0ebaec6318dddb2564d106da18f888b9e7cd15",
+  "metadata": {
+    "days_to_cover": 4.54,
+    "change_pct": 0.03
+  }
+}

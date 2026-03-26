@@ -1,0 +1,23 @@
+{
+  "company": "PHM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 6661166,
+    "prev_short_position": 6997090,
+    "avg_daily_volume": 2031313,
+    "days_to_cover": 3.28,
+    "change_pct": -4.8,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:dd5e69bfaaea83576f08215fa33d87b04a849282e7ff8e26576c63719aca6d23",
+  "metadata": {
+    "days_to_cover": 3.28,
+    "change_pct": -4.8
+  }
+}

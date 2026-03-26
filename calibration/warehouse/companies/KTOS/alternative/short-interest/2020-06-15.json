@@ -1,0 +1,23 @@
+{
+  "company": "KTOS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 6437861,
+    "prev_short_position": 6917544,
+    "avg_daily_volume": 843718,
+    "days_to_cover": 7.63,
+    "change_pct": -6.93,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:837ccc0aba66d5f0092f976ece2e5f57fcc13749855fc4608cebb6d4599af921",
+  "metadata": {
+    "days_to_cover": 7.63,
+    "change_pct": -6.93
+  }
+}

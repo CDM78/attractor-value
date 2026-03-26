@@ -1,0 +1,23 @@
+{
+  "company": "PRIM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-06-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-06-15",
+    "short_position": 363115,
+    "prev_short_position": 343903,
+    "avg_daily_volume": 299775,
+    "days_to_cover": 1.21,
+    "change_pct": 5.59,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:592b357528ec8577b455ce96776d0f77f375748973e2852adcbb499634662eaf",
+  "metadata": {
+    "days_to_cover": 1.21,
+    "change_pct": 5.59
+  }
+}

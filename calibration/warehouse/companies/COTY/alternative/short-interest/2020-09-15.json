@@ -1,0 +1,23 @@
+{
+  "company": "COTY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-09-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-09-15",
+    "short_position": 19418962,
+    "prev_short_position": 21572752,
+    "avg_daily_volume": 12164421,
+    "days_to_cover": 1.6,
+    "change_pct": -9.98,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:dff338a6542ed515ecd8701adfae2e19496c3ee66e6d9b2c93b608854e6dfbaf",
+  "metadata": {
+    "days_to_cover": 1.6,
+    "change_pct": -9.98
+  }
+}

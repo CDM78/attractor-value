@@ -1,0 +1,23 @@
+{
+  "company": "CCL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 54050004,
+    "prev_short_position": 57698583,
+    "avg_daily_volume": 31889432,
+    "days_to_cover": 1.69,
+    "change_pct": -6.32,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:8e94889d6a636f2776a24bce634b53959226def5b45ede0154966bc3e5191239",
+  "metadata": {
+    "days_to_cover": 1.69,
+    "change_pct": -6.32
+  }
+}

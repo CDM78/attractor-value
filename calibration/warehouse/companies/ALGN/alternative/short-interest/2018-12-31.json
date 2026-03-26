@@ -1,0 +1,23 @@
+{
+  "company": "ALGN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 2948770,
+    "prev_short_position": 2770401,
+    "avg_daily_volume": 1111213,
+    "days_to_cover": 2.65,
+    "change_pct": 6.44,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:9c80922160f12e1ffbcc6161f3e3583416a819d59b2da8410fa1e2b346d05599",
+  "metadata": {
+    "days_to_cover": 2.65,
+    "change_pct": 6.44
+  }
+}

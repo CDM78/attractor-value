@@ -1,0 +1,23 @@
+{
+  "company": "AKAM",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 12944976,
+    "prev_short_position": 11831762,
+    "avg_daily_volume": 1069730,
+    "days_to_cover": 12.1,
+    "change_pct": 9.41,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:2651d645600836402624f542a6602fb0e1d4f7c1f774238afb696cebd08abc4f",
+  "metadata": {
+    "days_to_cover": 12.1,
+    "change_pct": 9.41
+  }
+}

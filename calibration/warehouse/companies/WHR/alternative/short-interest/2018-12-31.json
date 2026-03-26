@@ -1,0 +1,23 @@
+{
+  "company": "WHR",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 3674592,
+    "prev_short_position": 3705469,
+    "avg_daily_volume": 874979,
+    "days_to_cover": 4.2,
+    "change_pct": -0.83,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:2b361281e696e35155ac26f4fd9ca5b9187b4360a5db2ee0dd376272603c16e9",
+  "metadata": {
+    "days_to_cover": 4.2,
+    "change_pct": -0.83
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "MAT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 62068415,
+    "prev_short_position": 68097384,
+    "avg_daily_volume": 6747073,
+    "days_to_cover": 9.2,
+    "change_pct": -8.85,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:35ce2a9b2eb20fb213fa73bdff36c65a5ff399306111b9ad4f4284b2d57388e6",
+  "metadata": {
+    "days_to_cover": 9.2,
+    "change_pct": -8.85
+  }
+}

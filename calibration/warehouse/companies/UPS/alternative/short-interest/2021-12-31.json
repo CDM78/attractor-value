@@ -1,0 +1,23 @@
+{
+  "company": "UPS",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 7153565,
+    "prev_short_position": 7329571,
+    "avg_daily_volume": 2293484,
+    "days_to_cover": 3.12,
+    "change_pct": -2.4,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:24bb6a08510c97709d2bbbc959965f7ce355f9557fd1dcecc1a873f76f10f078",
+  "metadata": {
+    "days_to_cover": 3.12,
+    "change_pct": -2.4
+  }
+}

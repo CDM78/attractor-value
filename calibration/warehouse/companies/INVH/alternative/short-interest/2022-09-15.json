@@ -1,0 +1,23 @@
+{
+  "company": "INVH",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2022-09-15",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2022-09-15",
+    "short_position": 16053989,
+    "prev_short_position": 12615741,
+    "avg_daily_volume": 7572859,
+    "days_to_cover": 2.12,
+    "change_pct": 27.25,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:7807b54686af0c2bdb23a108993b8f0da8ea11bbcd641d8086f1fbd985e4a999",
+  "metadata": {
+    "days_to_cover": 2.12,
+    "change_pct": 27.25
+  }
+}

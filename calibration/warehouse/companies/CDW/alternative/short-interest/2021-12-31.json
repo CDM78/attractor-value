@@ -1,0 +1,23 @@
+{
+  "company": "CDW",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 1518733,
+    "prev_short_position": 2074033,
+    "avg_daily_volume": 1276048,
+    "days_to_cover": 1.19,
+    "change_pct": -26.77,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:e64c734f57f514725e874f7fe894d86d0205afec974fb92b7515b152d564c30a",
+  "metadata": {
+    "days_to_cover": 1.19,
+    "change_pct": -26.77
+  }
+}

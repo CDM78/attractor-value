@@ -1,0 +1,23 @@
+{
+  "company": "AMG",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 2176292,
+    "prev_short_position": 2289075,
+    "avg_daily_volume": 287818,
+    "days_to_cover": 7.56,
+    "change_pct": -4.93,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:90509b02e3957c9d25f3687133947135fa4592e0c46e75e64c777874e79cae5d",
+  "metadata": {
+    "days_to_cover": 7.56,
+    "change_pct": -4.93
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "company": "NWL",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 12053186,
+    "prev_short_position": 11257131,
+    "avg_daily_volume": 2940471,
+    "days_to_cover": 4.1,
+    "change_pct": 7.07,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:f502e573ac1cfd474c1605f9dba4f1cbc5953a3bdb37ae06a7bc3efb152fc7f0",
+  "metadata": {
+    "days_to_cover": 4.1,
+    "change_pct": 7.07
+  }
+}

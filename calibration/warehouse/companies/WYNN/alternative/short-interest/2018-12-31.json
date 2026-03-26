@@ -1,0 +1,23 @@
+{
+  "company": "WYNN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 5597891,
+    "prev_short_position": 7675161,
+    "avg_daily_volume": 3167151,
+    "days_to_cover": 1.77,
+    "change_pct": -27.06,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:6315c28d7c54ad245d08359c1842b840fa904bb92f5ccd0171eff9e38573ed83",
+  "metadata": {
+    "days_to_cover": 1.77,
+    "change_pct": -27.06
+  }
+}

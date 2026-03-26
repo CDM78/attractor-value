@@ -1,0 +1,23 @@
+{
+  "company": "INCY",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2021-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2021-12-31",
+    "short_position": 3059076,
+    "prev_short_position": 4561847,
+    "avg_daily_volume": 2939628,
+    "days_to_cover": 1.04,
+    "change_pct": -32.94,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:34be4bd19092dbcf6fe7e73f1ef9475c7461e00793e5cdfe44a4ac103efe0525",
+  "metadata": {
+    "days_to_cover": 1.04,
+    "change_pct": -32.94
+  }
+}

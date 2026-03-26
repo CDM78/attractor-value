@@ -1,0 +1,23 @@
+{
+  "company": "AIV",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2020-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2020-12-31",
+    "short_position": 13235014,
+    "prev_short_position": 9524284,
+    "avg_daily_volume": 15632448,
+    "days_to_cover": 1,
+    "change_pct": 38.96,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:a645d003e9de92b90d1d683c6b198b1fc97bd0c1080791644a06834ad0321273",
+  "metadata": {
+    "days_to_cover": 1,
+    "change_pct": 38.96
+  }
+}

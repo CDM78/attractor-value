@@ -1,0 +1,23 @@
+{
+  "company": "ACN",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 6168659,
+    "prev_short_position": 6103135,
+    "avg_daily_volume": 3267496,
+    "days_to_cover": 1.89,
+    "change_pct": 1.07,
+    "market_class": "NYSE"
+  },
+  "content_hash": "sha256:73f173c3a924a13c611c7a9a4caec7745f70a1dda00462c8f8ae2b0b51a269a6",
+  "metadata": {
+    "days_to_cover": 1.89,
+    "change_pct": 1.07
+  }
+}

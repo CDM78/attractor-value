@@ -1,0 +1,23 @@
+{
+  "company": "FTNT",
+  "data_type": "short_interest",
+  "source": "finra_historical",
+  "source_url": "https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest",
+  "publication_date": "2018-12-31",
+  "fiscal_period": null,
+  "acquired_date": "2026-03-26",
+  "content": {
+    "settlement_date": "2018-12-31",
+    "short_position": 10651336,
+    "prev_short_position": 10102037,
+    "avg_daily_volume": 2383577,
+    "days_to_cover": 4.47,
+    "change_pct": 5.44,
+    "market_class": "NNM"
+  },
+  "content_hash": "sha256:c368d21d2af5815cc627791bea5215858b0ca4ebc78e624f5df549c7fc1c7d7d",
+  "metadata": {
+    "days_to_cover": 4.47,
+    "change_pct": 5.44
+  }
+}
