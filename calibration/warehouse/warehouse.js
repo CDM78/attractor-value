@@ -91,6 +91,7 @@ const DATA_TYPE_PATHS = {
   'import_export': 'alternative/import-export',
   'discovered': 'alternative/discovered',
   'short_interest': 'alternative/short-interest',
+  'institutional_ownership': 'market/institutional-ownership',
 };
 
 function getStoragePath(company, data_type, publication_date, suffix = '') {

@@ -35,6 +35,22 @@
           "sd_r": 0.0612
         }
       }
+    },
+    {
+      "test_id": "market-dynamics-discrimination-2026-03-26",
+      "date": "2026-03-26T11:39:31.490Z",
+      "type": "discrimination",
+      "description": "Market sentiment vs financial statement domain comparison",
+      "n_cases": 1639,
+      "key_findings": [
+        "spread_csd_final_ac (r=0.335)",
+        "spread_ou_theta (r=0.159)",
+        "spread_level (r=0.318)",
+        "si_theta (r=0.299)",
+        "si_beta (r=0.196)"
+      ],
+      "market_wins": 3,
+      "total_comparisons": 4
     }
   ]
 }

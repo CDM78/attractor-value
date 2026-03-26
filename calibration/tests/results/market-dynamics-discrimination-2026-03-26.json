@@ -1,0 +1,1791 @@
+{
+  "test_id": "market-dynamics-discrimination-2026-03-26",
+  "test_date": "2026-03-26T11:39:31.490Z",
+  "elapsed_seconds": 31.3,
+  "phase_1_credit_spread": {
+    "signals": {
+      "spread_csd_autocorr": {
+        "n": 1639,
+        "spearman_r": 0.13107260843592483,
+        "spearman_p": 1.7888297509927042e-9,
+        "pearson_r": -0.01644629831978106,
+        "pearson_p": 0.000260029170099374,
+        "return_correlation": {
+          "r": -0.011019286410103302,
+          "p": 0.00019683519862612187
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 327,
+            "win_rate": 0.633,
+            "trap_rate": 0.367,
+            "mean_score": -0.017
+          },
+          {
+            "quintile": 2,
+            "count": 328,
+            "win_rate": 0.573,
+            "trap_rate": 0.427,
+            "mean_score": 0.002
+          },
+          {
+            "quintile": 3,
+            "count": 328,
+            "win_rate": 0.415,
+            "trap_rate": 0.585,
+            "mean_score": 0.004
+          },
+          {
+            "quintile": 4,
+            "count": 328,
+            "win_rate": 0.527,
+            "trap_rate": 0.473,
+            "mean_score": 0.005
+          },
+          {
+            "quintile": 5,
+            "count": 328,
+            "win_rate": 0.643,
+            "trap_rate": 0.357,
+            "mean_score": 0.013
+          }
+        ],
+        "quintile_win_rates": [
+          0.633,
+          0.573,
+          0.415,
+          0.527,
+          0.643
+        ],
+        "quintile_trap_rates": [
+          0.367,
+          0.427,
+          0.585,
+          0.473,
+          0.357
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.004957571984293007,
+            "precision": 0.616,
+            "count": 552,
+            "hits": 340
+          },
+          "top_decile": {
+            "threshold": 0.015233394094329568,
+            "precision": 0.698,
+            "count": 232,
+            "hits": 162
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0871,
+            0.1957,
+            0.0839,
+            0.1443,
+            0.1608
+          ],
+          "mean_r": 0.1343,
+          "sd_r": 0.0483
+        }
+      },
+      "spread_csd_variance": {
+        "n": 1639,
+        "spearman_r": 0.12054370644360823,
+        "spearman_p": 1.4897095113042269e-8,
+        "pearson_r": -0.02910716673844348,
+        "pearson_p": 0.0002869610621323293,
+        "return_correlation": {
+          "r": 0.001840612462236324,
+          "p": 0.00003621369601258806
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 327,
+            "win_rate": 0.719,
+            "trap_rate": 0.281,
+            "mean_score": -0.002
+          },
+          {
+            "quintile": 2,
+            "count": 328,
+            "win_rate": 0.387,
+            "trap_rate": 0.613,
+            "mean_score": -0.001
+          },
+          {
+            "quintile": 3,
+            "count": 328,
+            "win_rate": 0.573,
+            "trap_rate": 0.427,
+            "mean_score": 0
+          },
+          {
+            "quintile": 4,
+            "count": 328,
+            "win_rate": 0.534,
+            "trap_rate": 0.466,
+            "mean_score": 0
+          },
+          {
+            "quintile": 5,
+            "count": 328,
+            "win_rate": 0.579,
+            "trap_rate": 0.421,
+            "mean_score": 0.002
+          }
+        ],
+        "quintile_win_rates": [
+          0.719,
+          0.387,
+          0.573,
+          0.534,
+          0.579
+        ],
+        "quintile_trap_rates": [
+          0.281,
+          0.613,
+          0.427,
+          0.466,
+          0.421
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.00023774005602240905,
+            "precision": 0.589,
+            "count": 435,
+            "hits": 256
+          },
+          "top_decile": {
+            "threshold": 0.0018421207282913168,
+            "precision": 0.602,
+            "count": 181,
+            "hits": 109
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0716,
+            0.1308,
+            0.1543,
+            0.1301,
+            0.1124
+          ],
+          "mean_r": 0.1198,
+          "sd_r": 0.0308
+        }
+      },
+      "spread_csd_final_ac": {
+        "n": 1639,
+        "spearman_r": 0.33492184072270825,
+        "spearman_p": 0,
+        "pearson_r": 0.2305007779776955,
+        "pearson_p": 0,
+        "return_correlation": {
+          "r": 0.18458325041030887,
+          "p": 1.7763568394002505e-15
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 327,
+            "win_rate": 0.474,
+            "trap_rate": 0.526,
+            "mean_score": 0.231
+          },
+          {
+            "quintile": 2,
+            "count": 328,
+            "win_rate": 0.381,
+            "trap_rate": 0.619,
+            "mean_score": 0.458
+          },
+          {
+            "quintile": 3,
+            "count": 328,
+            "win_rate": 0.588,
+            "trap_rate": 0.412,
+            "mean_score": 0.6
+          },
+          {
+            "quintile": 4,
+            "count": 328,
+            "win_rate": 0.598,
+            "trap_rate": 0.402,
+            "mean_score": 0.869
+          },
+          {
+            "quintile": 5,
+            "count": 328,
+            "win_rate": 0.75,
+            "trap_rate": 0.25,
+            "mean_score": 1.024
+          }
+        ],
+        "quintile_win_rates": [
+          0.474,
+          0.381,
+          0.588,
+          0.598,
+          0.75
+        ],
+        "quintile_trap_rates": [
+          0.526,
+          0.619,
+          0.412,
+          0.402,
+          0.25
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.9546184738955825,
+            "precision": 0.739,
+            "count": 521,
+            "hits": 385
+          },
+          "top_decile": {
+            "threshold": 1.064071419895542,
+            "precision": 0.784,
+            "count": 176,
+            "hits": 138
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.3383,
+            0.2901,
+            0.3155,
+            0.3254,
+            0.4088
+          ],
+          "mean_r": 0.3356,
+          "sd_r": 0.0446
+        }
+      },
+      "spread_ou_theta": {
+        "n": 1639,
+        "spearman_r": 0.15860320791774385,
+        "spearman_p": 2.7491342535768126e-12,
+        "pearson_r": -0.024643412936958715,
+        "pearson_p": 0.0002957152511018357,
+        "return_correlation": {
+          "r": 0.024369435469861034,
+          "p": 0.0002956613864841806
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 327,
+            "win_rate": 0.532,
+            "trap_rate": 0.468,
+            "mean_score": -0.003
+          },
+          {
+            "quintile": 2,
+            "count": 328,
+            "win_rate": 0.585,
+            "trap_rate": 0.415,
+            "mean_score": 0.05
+          },
+          {
+            "quintile": 3,
+            "count": 328,
+            "win_rate": 0.598,
+            "trap_rate": 0.402,
+            "mean_score": 0.134
+          },
+          {
+            "quintile": 4,
+            "count": 328,
+            "win_rate": 0.43,
+            "trap_rate": 0.57,
+            "mean_score": 0.325
+          },
+          {
+            "quintile": 5,
+            "count": 328,
+            "win_rate": 0.646,
+            "trap_rate": 0.354,
+            "mean_score": 0.438
+          }
+        ],
+        "quintile_win_rates": [
+          0.532,
+          0.585,
+          0.598,
+          0.43,
+          0.646
+        ],
+        "quintile_trap_rates": [
+          0.468,
+          0.415,
+          0.402,
+          0.57,
+          0.354
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.33616651214748916,
+            "precision": 0.649,
+            "count": 413,
+            "hits": 268
+          },
+          "top_decile": {
+            "threshold": 0.36709388362830686,
+            "precision": 0.598,
+            "count": 184,
+            "hits": 110
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.2322,
+            0.0592,
+            0.2587,
+            0.1286,
+            0.127
+          ],
+          "mean_r": 0.1611,
+          "sd_r": 0.0825
+        }
+      },
+      "spread_ou_half_life": {
+        "n": 1639,
+        "spearman_r": 0.11587924202713862,
+        "spearman_p": 3.577076923555467e-8,
+        "pearson_r": 0.013071462594709779,
+        "pearson_p": 0.00022423169645358065,
+        "return_correlation": {
+          "r": -0.009681743476145144,
+          "p": 0.0001769075496897976
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 327,
+            "win_rate": 0.654,
+            "trap_rate": 0.346,
+            "mean_score": 1.671
+          },
+          {
+            "quintile": 2,
+            "count": 328,
+            "win_rate": 0.427,
+            "trap_rate": 0.573,
+            "mean_score": 2.134
+          },
+          {
+            "quintile": 3,
+            "count": 328,
+            "win_rate": 0.601,
+            "trap_rate": 0.399,
+            "mean_score": 7.453
+          },
+          {
+            "quintile": 4,
+            "count": 328,
+            "win_rate": 0.595,
+            "trap_rate": 0.405,
+            "mean_score": 14.393
+          },
+          {
+            "quintile": 5,
+            "count": 328,
+            "win_rate": 0.515,
+            "trap_rate": 0.485,
+            "mean_score": 80.368
+          }
+        ],
+        "quintile_win_rates": [
+          0.654,
+          0.427,
+          0.601,
+          0.595,
+          0.515
+        ],
+        "quintile_trap_rates": [
+          0.346,
+          0.573,
+          0.399,
+          0.405,
+          0.485
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 16.194728220614465,
+            "precision": 0.501,
+            "count": 529,
+            "hits": 265
+          },
+          "top_decile": {
+            "threshold": 100,
+            "precision": 0.583,
+            "count": 242,
+            "hits": 141
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0435,
+            0.2246,
+            0.0099,
+            0.1548,
+            0.1461
+          ],
+          "mean_r": 0.1158,
+          "sd_r": 0.0876
+        }
+      },
+      "spread_level": {
+        "n": 1639,
+        "spearman_r": 0.31831306754575706,
+        "spearman_p": 0,
+        "pearson_r": 0.16685228713705175,
+        "pearson_p": 3.0264679651281767e-13,
+        "return_correlation": {
+          "r": 0.16736170061182343,
+          "p": 2.6290081223123707e-13
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 327,
+            "win_rate": 0.379,
+            "trap_rate": 0.621,
+            "mean_score": 0.637
+          },
+          {
+            "quintile": 2,
+            "count": 328,
+            "win_rate": 0.442,
+            "trap_rate": 0.558,
+            "mean_score": 0.693
+          },
+          {
+            "quintile": 3,
+            "count": 328,
+            "win_rate": 0.643,
+            "trap_rate": 0.357,
+            "mean_score": 0.909
+          },
+          {
+            "quintile": 4,
+            "count": 328,
+            "win_rate": 0.698,
+            "trap_rate": 0.302,
+            "mean_score": 1.06
+          },
+          {
+            "quintile": 5,
+            "count": 328,
+            "win_rate": 0.628,
+            "trap_rate": 0.372,
+            "mean_score": 1.432
+          }
+        ],
+        "quintile_win_rates": [
+          0.379,
+          0.442,
+          0.643,
+          0.698,
+          0.628
+        ],
+        "quintile_trap_rates": [
+          0.621,
+          0.558,
+          0.357,
+          0.302,
+          0.372
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 1.16,
+            "precision": 0.672,
+            "count": 427,
+            "hits": 287
+          },
+          "top_decile": {
+            "threshold": 1.52,
+            "precision": 0.585,
+            "count": 236,
+            "hits": 138
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.247,
+            0.3174,
+            0.3239,
+            0.3397,
+            0.367
+          ],
+          "mean_r": 0.319,
+          "sd_r": 0.0445
+        }
+      }
+    },
+    "n": 1639,
+    "outcomes_dist": {
+      "winner": 915,
+      "trap": 724
+    }
+  },
+  "phase_2_si_snapshot": {
+    "signals": {
+      "si_level": {
+        "n": 692,
+        "spearman_r": 0.12172583807894954,
+        "spearman_p": 0.000021461881132944782,
+        "pearson_r": -0.024515636869480096,
+        "pearson_p": 0.0006058324137774296,
+        "return_correlation": {
+          "r": -0.0027920272706667415,
+          "p": 0.00008467197279915517
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 138,
+            "win_rate": 0.507,
+            "trap_rate": 0.493,
+            "mean_score": 1259901.913
+          },
+          {
+            "quintile": 2,
+            "count": 138,
+            "win_rate": 0.565,
+            "trap_rate": 0.435,
+            "mean_score": 3021210.457
+          },
+          {
+            "quintile": 3,
+            "count": 139,
+            "win_rate": 0.583,
+            "trap_rate": 0.417,
+            "mean_score": 5527986.331
+          },
+          {
+            "quintile": 4,
+            "count": 138,
+            "win_rate": 0.464,
+            "trap_rate": 0.536,
+            "mean_score": 10536049.949
+          },
+          {
+            "quintile": 5,
+            "count": 139,
+            "win_rate": 0.532,
+            "trap_rate": 0.468,
+            "mean_score": 34099125.914
+          }
+        ],
+        "quintile_win_rates": [
+          0.507,
+          0.565,
+          0.583,
+          0.464,
+          0.532
+        ],
+        "quintile_trap_rates": [
+          0.493,
+          0.435,
+          0.417,
+          0.536,
+          0.468
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 12243438,
+            "precision": 0.549,
+            "count": 173,
+            "hits": 95
+          },
+          "top_decile": {
+            "threshold": 23458465,
+            "precision": 0.529,
+            "count": 70,
+            "hits": 37
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.1205,
+            0.1275,
+            0.0866,
+            0.197,
+            0.0847
+          ],
+          "mean_r": 0.1233,
+          "sd_r": 0.0456
+        }
+      },
+      "si_dtc": {
+        "n": 692,
+        "spearman_r": 0.057412142049050985,
+        "spearman_p": 0.0005588637620275172,
+        "pearson_r": -0.0794956357413096,
+        "pearson_p": 0.000271302367752968,
+        "return_correlation": {
+          "r": -0.06784763605321897,
+          "p": 0.000419959504501799
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 138,
+            "win_rate": 0.572,
+            "trap_rate": 0.428,
+            "mean_score": 1.407
+          },
+          {
+            "quintile": 2,
+            "count": 138,
+            "win_rate": 0.587,
+            "trap_rate": 0.413,
+            "mean_score": 2.016
+          },
+          {
+            "quintile": 3,
+            "count": 139,
+            "win_rate": 0.468,
+            "trap_rate": 0.532,
+            "mean_score": 2.621
+          },
+          {
+            "quintile": 4,
+            "count": 138,
+            "win_rate": 0.529,
+            "trap_rate": 0.471,
+            "mean_score": 3.506
+          },
+          {
+            "quintile": 5,
+            "count": 139,
+            "win_rate": 0.496,
+            "trap_rate": 0.504,
+            "mean_score": 6.862
+          }
+        ],
+        "quintile_win_rates": [
+          0.572,
+          0.587,
+          0.468,
+          0.529,
+          0.496
+        ],
+        "quintile_trap_rates": [
+          0.428,
+          0.413,
+          0.532,
+          0.471,
+          0.504
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 3.84,
+            "precision": 0.489,
+            "count": 174,
+            "hits": 85
+          },
+          "top_decile": {
+            "threshold": 5.94,
+            "precision": 0.429,
+            "count": 70,
+            "hits": 30
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.1788,
+            0.0682,
+            -0.029,
+            -0.0014,
+            0.074
+          ],
+          "mean_r": 0.0581,
+          "sd_r": 0.0807
+        }
+      },
+      "si_change_pct": {
+        "n": 692,
+        "spearman_r": 0.12229009011338388,
+        "spearman_p": 0.0000205463493507807,
+        "pearson_r": 0.0033582838313431155,
+        "pearson_p": 0.00010172216678649981,
+        "return_correlation": {
+          "r": -0.036259978613357724,
+          "p": 0.0007003072689066858
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 138,
+            "win_rate": 0.551,
+            "trap_rate": 0.449,
+            "mean_score": -18.82
+          },
+          {
+            "quintile": 2,
+            "count": 138,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": -6.988
+          },
+          {
+            "quintile": 3,
+            "count": 139,
+            "win_rate": 0.554,
+            "trap_rate": 0.446,
+            "mean_score": -0.611
+          },
+          {
+            "quintile": 4,
+            "count": 138,
+            "win_rate": 0.478,
+            "trap_rate": 0.522,
+            "mean_score": 5.448
+          },
+          {
+            "quintile": 5,
+            "count": 139,
+            "win_rate": 0.568,
+            "trap_rate": 0.432,
+            "mean_score": 19.816
+          }
+        ],
+        "quintile_win_rates": [
+          0.551,
+          0.5,
+          0.554,
+          0.478,
+          0.568
+        ],
+        "quintile_trap_rates": [
+          0.449,
+          0.5,
+          0.446,
+          0.522,
+          0.432
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 7.32,
+            "precision": 0.555,
+            "count": 173,
+            "hits": 96
+          },
+          "top_decile": {
+            "threshold": 15.87,
+            "precision": 0.543,
+            "count": 70,
+            "hits": 38
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0303,
+            0.2294,
+            0.1225,
+            0.1801,
+            0.0431
+          ],
+          "mean_r": 0.1211,
+          "sd_r": 0.0859
+        }
+      }
+    },
+    "n": 692
+  },
+  "phase_3_si_time_series": {
+    "signals": {
+      "composite": {
+        "n": 50,
+        "spearman_r": 0.06364945978391356,
+        "spearman_p": 0.006755296409942213,
+        "pearson_r": -0.07957114669254925,
+        "pearson_p": 0.007992661202178342,
+        "return_correlation": {
+          "r": -0.07625450180072035,
+          "p": 0.007755789393316892
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": -0.14
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.8,
+            "trap_rate": 0.2,
+            "mean_score": 0.02
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.11
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": 0.215
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.3,
+            "trap_rate": 0.7,
+            "mean_score": 0.355
+          }
+        ],
+        "quintile_win_rates": [
+          0.5,
+          0.8,
+          0.4,
+          0.5,
+          0.3
+        ],
+        "quintile_trap_rates": [
+          0.5,
+          0.2,
+          0.6,
+          0.5,
+          0.7
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.25,
+            "precision": 0.385,
+            "count": 13,
+            "hits": 5
+          },
+          "top_decile": {
+            "threshold": 0.3500000000000001,
+            "precision": 0.25,
+            "count": 8,
+            "hits": 2
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0727,
+            0.2697,
+            0.2091,
+            -0.2394,
+            -0.1424
+          ],
+          "mean_r": 0.0339,
+          "sd_r": 0.22
+        }
+      },
+      "si_change": {
+        "n": 50,
+        "spearman_r": 0.08043217286914761,
+        "spearman_p": 0.008052283466065235,
+        "pearson_r": 0.08000504538963482,
+        "pearson_p": 0.008022803950840984,
+        "return_correlation": {
+          "r": -0.08900360144057617,
+          "p": 0.008602716789008591
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": -0.736
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 0.032
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.179
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.2,
+            "trap_rate": 0.8,
+            "mean_score": 0.296
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 0.483
+          }
+        ],
+        "quintile_win_rates": [
+          0.5,
+          0.7,
+          0.4,
+          0.2,
+          0.7
+        ],
+        "quintile_trap_rates": [
+          0.5,
+          0.3,
+          0.6,
+          0.8,
+          0.3
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.33113810155487666,
+            "precision": 0.538,
+            "count": 13,
+            "hits": 7
+          },
+          "top_decile": {
+            "threshold": 0.4519064566926001,
+            "precision": 0.6,
+            "count": 5,
+            "hits": 3
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0758,
+            0.1364,
+            0.3182,
+            -0.2879,
+            0.2727
+          ],
+          "mean_r": 0.103,
+          "sd_r": 0.2397
+        }
+      },
+      "si_d1": {
+        "n": 50,
+        "spearman_r": 0.07322929171668668,
+        "spearman_p": 0.007529908920532513,
+        "pearson_r": -0.09488590330010754,
+        "pearson_p": 0.008934052930832381,
+        "return_correlation": {
+          "r": -0.06172869147659066,
+          "p": 0.006589600645990679
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": -0.14
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": -0.018
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": 0.013
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 0.042
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.3,
+            "trap_rate": 0.7,
+            "mean_score": 0.097
+          }
+        ],
+        "quintile_win_rates": [
+          0.5,
+          0.5,
+          0.5,
+          0.7,
+          0.3
+        ],
+        "quintile_trap_rates": [
+          0.5,
+          0.5,
+          0.5,
+          0.3,
+          0.7
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.05392907191458339,
+            "precision": 0.385,
+            "count": 13,
+            "hits": 5
+          },
+          "top_decile": {
+            "threshold": 0.08175257341239875,
+            "precision": 0.4,
+            "count": 5,
+            "hits": 2
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0758,
+            0.2576,
+            0.3788,
+            0.0152,
+            -0.2121
+          ],
+          "mean_r": 0.103,
+          "sd_r": 0.2279
+        }
+      },
+      "si_d2": {
+        "n": 50,
+        "spearman_r": -0.0036014405762305746,
+        "spearman_p": 0.0004212519958359806,
+        "pearson_r": -0.060602869067007334,
+        "pearson_p": 0.006490937568919941,
+        "return_correlation": {
+          "r": -0.14278511404561822,
+          "p": 0.010185682469487034
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.6,
+            "trap_rate": 0.4,
+            "mean_score": -0.05
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": -0.013
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.015
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.3,
+            "trap_rate": 0.7,
+            "mean_score": 0.039
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": 0.104
+          }
+        ],
+        "quintile_win_rates": [
+          0.6,
+          0.7,
+          0.4,
+          0.3,
+          0.5
+        ],
+        "quintile_trap_rates": [
+          0.4,
+          0.3,
+          0.6,
+          0.7,
+          0.5
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.045121884988934255,
+            "precision": 0.462,
+            "count": 13,
+            "hits": 6
+          },
+          "top_decile": {
+            "threshold": 0.09260802795488249,
+            "precision": 0.4,
+            "count": 5,
+            "hits": 2
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.197,
+            0.3182,
+            0.0758,
+            0.0152,
+            -0.2121
+          ],
+          "mean_r": 0.0788,
+          "sd_r": 0.2
+        }
+      },
+      "si_theta": {
+        "n": 50,
+        "spearman_r": 0.2989195678271308,
+        "spearman_p": 0.003692325929996798,
+        "pearson_r": 0.22933508927335725,
+        "pearson_p": 0.007328688019646368,
+        "return_correlation": {
+          "r": 0.24914765906362546,
+          "p": 0.006253174545164386
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.3,
+            "trap_rate": 0.7,
+            "mean_score": 0.287
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 0.5
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.615
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.789
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 1.725
+          }
+        ],
+        "quintile_win_rates": [
+          0.3,
+          0.7,
+          0.4,
+          0.4,
+          0.7
+        ],
+        "quintile_trap_rates": [
+          0.7,
+          0.3,
+          0.6,
+          0.6,
+          0.3
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.8144037519820919,
+            "precision": 0.692,
+            "count": 13,
+            "hits": 9
+          },
+          "top_decile": {
+            "threshold": 1.3521415847223885,
+            "precision": 0.8,
+            "count": 5,
+            "hits": 4
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            -0.1667,
+            0.3788,
+            0.4394,
+            0.5606,
+            0.0303
+          ],
+          "mean_r": 0.2485,
+          "sd_r": 0.3045
+        }
+      },
+      "si_csd": {
+        "n": 50,
+        "spearman_r": -0.027611044417767072,
+        "spearman_p": 0.003171956702097134,
+        "pearson_r": -0.11465562032004863,
+        "pearson_p": 0.00976203332900738,
+        "return_correlation": {
+          "r": -0.13500600240096028,
+          "p": 0.010154263887764303
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 0.249
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.6,
+            "trap_rate": 0.4,
+            "mean_score": 0.434
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.491
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.559
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.721
+          }
+        ],
+        "quintile_win_rates": [
+          0.7,
+          0.6,
+          0.4,
+          0.4,
+          0.4
+        ],
+        "quintile_trap_rates": [
+          0.3,
+          0.4,
+          0.6,
+          0.6,
+          0.6
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.5933264960856827,
+            "precision": 0.385,
+            "count": 13,
+            "hits": 5
+          },
+          "top_decile": {
+            "threshold": 0.6752340949238836,
+            "precision": 0.8,
+            "count": 5,
+            "hits": 4
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.3182,
+            -0.1061,
+            -0.2879,
+            0.197,
+            0.2121
+          ],
+          "mean_r": 0.0667,
+          "sd_r": 0.2534
+        }
+      },
+      "si_beta": {
+        "n": 50,
+        "spearman_r": 0.19567827130852344,
+        "spearman_p": 0.008962604816202147,
+        "pearson_r": 0.01665734186639999,
+        "pearson_p": 0.0019360278376554518,
+        "return_correlation": {
+          "r": 0.03743097238895554,
+          "p": 0.004234526516373016
+        },
+        "quintile_analysis": [
+          {
+            "quintile": 1,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": -0.008
+          },
+          {
+            "quintile": 2,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": 0.001
+          },
+          {
+            "quintile": 3,
+            "count": 10,
+            "win_rate": 0.4,
+            "trap_rate": 0.6,
+            "mean_score": 0.004
+          },
+          {
+            "quintile": 4,
+            "count": 10,
+            "win_rate": 0.5,
+            "trap_rate": 0.5,
+            "mean_score": 0.006
+          },
+          {
+            "quintile": 5,
+            "count": 10,
+            "win_rate": 0.7,
+            "trap_rate": 0.3,
+            "mean_score": 0.011
+          }
+        ],
+        "quintile_win_rates": [
+          0.4,
+          0.5,
+          0.4,
+          0.5,
+          0.7
+        ],
+        "quintile_trap_rates": [
+          0.6,
+          0.5,
+          0.6,
+          0.5,
+          0.3
+        ],
+        "precision": {
+          "top_quartile": {
+            "threshold": 0.006623132214328131,
+            "precision": 0.615,
+            "count": 13,
+            "hits": 8
+          },
+          "top_decile": {
+            "threshold": 0.010754945646171875,
+            "precision": 0.6,
+            "count": 5,
+            "hits": 3
+          }
+        },
+        "cross_validation": {
+          "folds": 5,
+          "per_fold_r": [
+            0.0758,
+            0.3182,
+            0.3788,
+            -0.1667,
+            0.3333
+          ],
+          "mean_r": 0.1879,
+          "sd_r": 0.2307
+        }
+      }
+    },
+    "n": 50,
+    "failed": 0,
+    "pilotCases": [
+      {
+        "ticker": "AAPL",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "ADI",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "AJG",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "AMAT",
+        "entry_date": "2021-01-04",
+        "outcome": "winner",
+        "si_points": 48
+      },
+      {
+        "ticker": "AME",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "AMP",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "ANET",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "AON",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "APH",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "AVGO",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "AZO",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "BLK",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "CBRE",
+        "entry_date": "2021-01-04",
+        "outcome": "winner",
+        "si_points": 48
+      },
+      {
+        "ticker": "CDNS",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "CMG",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "COST",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "CPRT",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "CTAS",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "DAL",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "DE",
+        "entry_date": "2021-01-04",
+        "outcome": "winner",
+        "si_points": 48
+      },
+      {
+        "ticker": "DHI",
+        "entry_date": "2021-01-04",
+        "outcome": "winner",
+        "si_points": 48
+      },
+      {
+        "ticker": "DOV",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "EQIX",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "ETN",
+        "entry_date": "2021-12-31",
+        "outcome": "winner",
+        "si_points": 49
+      },
+      {
+        "ticker": "FAST",
+        "entry_date": "2019-01-02",
+        "outcome": "winner",
+        "si_points": 20
+      },
+      {
+        "ticker": "A",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "AAL",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ABT",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ACN",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ADBE",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ADSK",
+        "entry_date": "2021-01-04",
+        "outcome": "trap",
+        "si_points": 48
+      },
+      {
+        "ticker": "ALB",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ALGN",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ALK",
+        "entry_date": "2021-01-04",
+        "outcome": "trap",
+        "si_points": 48
+      },
+      {
+        "ticker": "AMD",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "AMZN",
+        "entry_date": "2021-01-04",
+        "outcome": "trap",
+        "si_points": 48
+      },
+      {
+        "ticker": "APTV",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "ARE",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "AVY",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "AWK",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "BA",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "BIIB",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "CCI",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "CCL",
+        "entry_date": "2021-01-04",
+        "outcome": "trap",
+        "si_points": 48
+      },
+      {
+        "ticker": "CHTR",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "DG",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "DGX",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "DHR",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      },
+      {
+        "ticker": "DVA",
+        "entry_date": "2021-01-04",
+        "outcome": "trap",
+        "si_points": 48
+      },
+      {
+        "ticker": "DVN",
+        "entry_date": "2021-12-31",
+        "outcome": "trap",
+        "si_points": 49
+      }
+    ]
+  },
+  "comparison_table": {
+    "rows": [
+      {
+        "signal": "β scaling",
+        "financial_r": -0.009,
+        "market_r": 0.19567827130852344,
+        "market_p": 0.008962604816202147,
+        "market_cv": 0.1879,
+        "better": "MARKET"
+      },
+      {
+        "signal": "β trajectory",
+        "financial_r": 0.01,
+        "market_r": 0.08043217286914761,
+        "market_p": 0.008052283466065235,
+        "market_cv": 0.103,
+        "better": "MARKET"
+      },
+      {
+        "signal": "CSD index",
+        "financial_r": -0.037,
+        "market_r": -0.027611044417767072,
+        "market_p": 0.003171956702097134,
+        "market_cv": 0.0667,
+        "better": "neither"
+      },
+      {
+        "signal": "Zipf velocity",
+        "financial_r": 0.012,
+        "better": "?"
+      },
+      {
+        "signal": "Benford KLD",
+        "financial_r": -0.027,
+        "better": "?"
+      },
+      {
+        "signal": "D1 growth rate",
+        "financial_r": -0.069,
+        "market_r": 0.07322929171668668,
+        "market_p": 0.007529908920532513,
+        "market_cv": 0.103,
+        "better": "MARKET"
+      }
+    ],
+    "marketWins": 3,
+    "tested": 4,
+    "strongSignals": [
+      "spread_csd_final_ac (r=0.335)",
+      "spread_ou_theta (r=0.159)",
+      "spread_level (r=0.318)",
+      "si_theta (r=0.299)",
+      "si_beta (r=0.196)"
+    ]
+  },
+  "hypothesis": "Nonlinear dynamics toolkit works better on market sentiment data than financial statements"
+}
