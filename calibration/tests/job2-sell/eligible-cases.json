@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "CASE-BIIB-2013-01-02-7553e7",
+    "ticker": "BIIB",
+    "entry_date": "2013-01-02",
+    "outcome": "winner",
+    "alpha_3yr": 0.644,
+    "forward_return": 1.042,
+    "entry_filing_date": "2012-02-03",
+    "t12_filing_date": "2013-02-05"
+  },
+  {
+    "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+    "ticker": "WDC",
+    "entry_date": "2015-12-31",
+    "outcome": "trap",
+    "alpha_3yr": -0.527,
+    "forward_return": -0.299,
+    "entry_filing_date": "2015-08-21",
+    "t12_filing_date": "2016-08-29"
+  },
+  {
+    "case_id": "CASE-MU-2019-01-02-ecc662",
+    "ticker": "MU",
+    "entry_date": "2019-01-02",
+    "outcome": "winner",
+    "alpha_3yr": 0.952,
+    "forward_return": 1.851,
+    "entry_filing_date": "2018-10-15",
+    "t12_filing_date": "2019-10-17"
+  },
+  {
+    "case_id": "CASE-BBBY-2014-06-15-66e88b",
+    "ticker": "BBBY",
+    "entry_date": "2014-06-15",
+    "outcome": "underperform",
+    "alpha_3yr": -0.2592,
+    "forward_return": 0,
+    "entry_filing_date": "2014-02-27",
+    "t12_filing_date": "2015-03-12"
+  },
+  {
+    "case_id": "CASE-ACN-2015-01-02-ff63ea",
+    "ticker": "ACN",
+    "entry_date": "2015-01-02",
+    "outcome": "winner",
+    "alpha_3yr": 0.531,
+    "forward_return": 0.841,
+    "entry_filing_date": "2014-10-24",
+    "t12_filing_date": "2015-10-30"
+  },
+  {
+    "case_id": "CASE-ALL-2021-01-04-f97a6b",
+    "ticker": "ALL",
+    "entry_date": "2021-01-04",
+    "outcome": "mixed",
+    "alpha_3yr": 0.186,
+    "forward_return": 0.457,
+    "entry_filing_date": "2020-02-21",
+    "t12_filing_date": "2021-02-22"
+  },
+  {
+    "case_id": "CASE-D-2021-01-04-531112",
+    "ticker": "D",
+    "entry_date": "2021-01-04",
+    "outcome": "trap",
+    "alpha_3yr": -0.529,
+    "forward_return": -0.258,
+    "entry_filing_date": "2020-02-28",
+    "t12_filing_date": "2021-02-25"
+  },
+  {
+    "case_id": "CASE-DVN-2017-06-14-bc2279",
+    "ticker": "DVN",
+    "entry_date": "2017-06-14",
+    "outcome": "trap",
+    "alpha_3yr": -0.839,
+    "forward_return": -0.581,
+    "entry_filing_date": "2017-02-15",
+    "t12_filing_date": "2018-02-21"
+  },
+  {
+    "case_id": "CASE-EXPD-2017-06-14-c2b652",
+    "ticker": "EXPD",
+    "entry_date": "2017-06-14",
+    "outcome": "mixed",
+    "alpha_3yr": 0.111,
+    "forward_return": 0.369,
+    "entry_filing_date": "2017-02-23",
+    "t12_filing_date": "2018-02-23"
+  },
+  {
+    "case_id": "CASE-FAST-2021-01-04-d42960",
+    "ticker": "FAST",
+    "entry_date": "2021-01-04",
+    "outcome": "mixed",
+    "alpha_3yr": 0.137,
+    "forward_return": 0.408,
+    "entry_filing_date": "2020-02-06",
+    "t12_filing_date": "2021-02-08"
+  },
+  {
+    "case_id": "CASE-FIS-2017-06-14-440933",
+    "ticker": "FIS",
+    "entry_date": "2017-06-14",
+    "outcome": "winner",
+    "alpha_3yr": 0.402,
+    "forward_return": 0.66,
+    "entry_filing_date": "2017-02-23",
+    "t12_filing_date": "2018-02-22"
+  },
+  {
+    "case_id": "CASE-FISV-2021-01-04-2defa3",
+    "ticker": "FISV",
+    "entry_date": "2021-01-04",
+    "outcome": "underperform",
+    "alpha_3yr": -0.094,
+    "forward_return": 0.177,
+    "entry_filing_date": "2020-02-27",
+    "t12_filing_date": "2021-02-26"
+  },
+  {
+    "case_id": "CASE-HAS-2021-01-04-2c0b25",
+    "ticker": "HAS",
+    "entry_date": "2021-01-04",
+    "outcome": "trap",
+    "alpha_3yr": -0.685,
+    "forward_return": -0.414,
+    "entry_filing_date": "2020-02-27",
+    "t12_filing_date": "2021-02-24"
+  },
+  {
+    "case_id": "CASE-KSS-2017-06-15-dce51f",
+    "ticker": "KSS",
+    "entry_date": "2017-06-15",
+    "outcome": "trap",
+    "alpha_3yr": null,
+    "forward_return": null,
+    "entry_filing_date": "2017-03-17",
+    "t12_filing_date": "2018-03-23"
+  }
+]

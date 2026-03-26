@@ -408,7 +408,8 @@
       "2015-02-27",
       "2016-02-19",
       "2017-02-17",
-      "2018-02-16"
+      "2018-02-16",
+      "2019-02-22"
     ]
   },
   "ABT|10k_mda": {
@@ -673,7 +674,8 @@
       "2015-02-20",
       "2016-02-19",
       "2017-02-17",
-      "2018-02-16"
+      "2018-02-16",
+      "2022-02-17"
     ]
   },
   "ADM|10k_mda": {
@@ -1202,6 +1204,7 @@
     "company": "AIZ",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2013-02-20",
       "2014-02-19",
       "2015-02-19",
       "2016-02-16",
@@ -2636,6 +2639,7 @@
     "company": "BXP",
     "data_type": "10k_risk_factors",
     "dates": [
+      "2013-02-28",
       "2014-02-28",
       "2015-03-02",
       "2016-02-29",
@@ -6391,6 +6395,181 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "EFX|10k_risk_factors": {
+    "company": "EFX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-22"
+    ]
+  },
+  "M|10k_risk_factors": {
+    "company": "M",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-04-03"
+    ]
+  },
+  "MNST|10k_risk_factors": {
+    "company": "MNST",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-03-01"
+    ]
+  },
+  "ROST|10k_risk_factors": {
+    "company": "ROST",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-04-02"
+    ]
+  },
+  "SPG|10k_risk_factors": {
+    "company": "SPG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-28"
+    ]
+  },
+  "T|10k_risk_factors": {
+    "company": "T",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-22"
+    ]
+  },
+  "WEC|10k_risk_factors": {
+    "company": "WEC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-27"
+    ]
+  },
+  "WY|10k_risk_factors": {
+    "company": "WY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-19"
+    ]
+  },
+  "INTU|10k_risk_factors": {
+    "company": "INTU",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-09-01"
+    ]
+  },
+  "KEY|10k_risk_factors": {
+    "company": "KEY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-24"
+    ]
+  },
+  "VMC|10k_risk_factors": {
+    "company": "VMC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-25"
+    ]
+  },
+  "DVA|10k_risk_factors": {
+    "company": "DVA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-22"
+    ]
+  },
+  "JEF|10k_risk_factors": {
+    "company": "JEF",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2020-01-29"
+    ]
+  },
+  "MKC|10k_risk_factors": {
+    "company": "MKC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-01-25"
+    ]
+  },
+  "PHM|10k_risk_factors": {
+    "company": "PHM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-01-31"
+    ]
+  },
+  "PSA|10k_risk_factors": {
+    "company": "PSA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-27"
+    ]
+  },
+  "STX|10k_risk_factors": {
+    "company": "STX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-08-02"
+    ]
+  },
+  "XYL|10k_risk_factors": {
+    "company": "XYL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-22"
+    ]
+  },
+  "CTSH|10k_risk_factors": {
+    "company": "CTSH",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-02-16"
+    ]
+  },
+  "D|10k_risk_factors": {
+    "company": "D",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-02-24"
+    ]
+  },
+  "DUK|10k_risk_factors": {
+    "company": "DUK",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-02-24"
+    ]
+  },
+  "DXC|10k_risk_factors": {
+    "company": "DXC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-05-26"
+    ]
+  },
+  "HIG|10k_risk_factors": {
+    "company": "HIG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-02-18"
+    ]
+  },
+  "PLD|10k_risk_factors": {
+    "company": "PLD",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-02-09"
+    ]
+  },
+  "VNO|10k_risk_factors": {
+    "company": "VNO",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2022-02-14"
     ]
   }
 }

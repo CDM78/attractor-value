@@ -370,4 +370,12 @@ export default {
   ensureDir,
   readJSON,
   writeJSON,
+  progressBar,
 };
+
+export function progressBar(current, total, label = '') {
+  const pct = ((current / total) * 100).toFixed(0);
+  const bar = '█'.repeat(Math.floor(current / total * 30)) + '░'.repeat(30 - Math.floor(current / total * 30));
+  process.stdout.write(`\r  [${bar}] ${pct}% (${current}/${total}) ${label}    `);
+  if (current === total) console.log('');
+}
