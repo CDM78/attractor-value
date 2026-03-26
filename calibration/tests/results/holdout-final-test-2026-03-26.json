@@ -1,0 +1,51 @@
+{
+  "test_id": "holdout-final-2026-03-26",
+  "holdout_n": 485,
+  "holdout_with_data": 404,
+  "composite": {
+    "method": "D-rank",
+    "signals": [
+      "spread_variance_slope",
+      "si_zipf_velocity"
+    ]
+  },
+  "holdout_r": 0.1339,
+  "training_r": 0.1147,
+  "r_gap": 0.0192,
+  "top_decile": 67.5,
+  "quintiles": [
+    {
+      "q": 1,
+      "n": 80,
+      "winRate": 56.3
+    },
+    {
+      "q": 2,
+      "n": 81,
+      "winRate": 53.1
+    },
+    {
+      "q": 3,
+      "n": 81,
+      "winRate": 59.3
+    },
+    {
+      "q": 4,
+      "n": 81,
+      "winRate": 48.1
+    },
+    {
+      "q": 5,
+      "n": 81,
+      "winRate": 61.7
+    }
+  ],
+  "portfolio": {
+    "voo_annual": 10.5,
+    "no_filter_alpha": 4.7,
+    "buy_composite_alpha": 6.9
+  },
+  "verdict": "PASS — methodology works, modest edge",
+  "recommendation": "DEPLOY",
+  "generalizes": "YES"
+}
