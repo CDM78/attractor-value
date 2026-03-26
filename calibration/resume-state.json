@@ -1,8 +1,46 @@
 {
   "session": "4.5",
-  "phase": "price_checkpoints: 600/661 tickers",
-  "completed_parts": [],
-  "price_checkpoints_done": 2676,
-  "price_checkpoints_total": 2832,
-  "timestamp": "2026-03-26T20:46:34.346Z"
+  "status": "complete",
+  "parts_completed": [
+    "price_checkpoints",
+    "si_dynamics_checkpoints",
+    "filing_checkpoints",
+    "job2_replication"
+  ],
+  "results": {
+    "price_checkpoints": {
+      "complete": 2827,
+      "total": 2832,
+      "coverage": "99.8%",
+      "trajectories": {
+        "steady_winner": 1041,
+        "recovery_winner": 597,
+        "peaked_winner": 58,
+        "slow_trap": 329,
+        "sharp_trap": 223,
+        "dead_money": 579
+      }
+    },
+    "si_dynamics": {
+      "cases": 30,
+      "best_signal": "SI D1 positive 2 consec (50% trap catch, 15% false alarm)"
+    },
+    "filing_checkpoints": {
+      "processable": 1656,
+      "with_10k_t12": 1628,
+      "with_10k_t24": 1634,
+      "with_both": 1626
+    },
+    "job2_replication": {
+      "n": 190,
+      "spearman_r": 0.219,
+      "p_value": 0.0024,
+      "return_r": 0.229,
+      "cv_mean_r": 0.251,
+      "verdict": "PARTIALLY REPLICATED",
+      "method": "keyword_density_heuristic"
+    }
+  },
+  "next": "Session 5 (discovery crawler) or sell-signal optimization",
+  "timestamp": "2026-03-26T21:00:00.000Z"
 }
