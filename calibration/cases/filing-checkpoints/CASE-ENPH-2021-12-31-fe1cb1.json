@@ -1,0 +1,107 @@
+{
+  "case_id": "CASE-ENPH-2021-12-31-fe1cb1",
+  "ticker": "ENPH",
+  "entry_date": "2021-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-11",
+        "accession": "0001463101-22-000016"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2022-10-25",
+        "accession": "0001463101-22-000111",
+        "description": "8-K 2022 Q3 EARNINGS RELEASE"
+      },
+      {
+        "date": "2022-07-26",
+        "accession": "0001463101-22-000093",
+        "description": "8-K 2022 Q2 EARNINGS RELEASE"
+      },
+      {
+        "date": "2022-06-22",
+        "accession": "0001463101-22-000082",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-20",
+        "accession": "0001463101-22-000063",
+        "description": "FORM 8-K ANNUAL MEETING VOTING RESULTS"
+      },
+      {
+        "date": "2022-04-26",
+        "accession": "0001463101-22-000052",
+        "description": "8-K 2022 Q1EARNINGS RELEASE"
+      },
+      {
+        "date": "2022-04-08",
+        "accession": "0001463101-22-000037",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-09",
+        "accession": "0001463101-22-000010",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-08",
+        "accession": "0001463101-22-000007",
+        "description": "8-K 2021 Q4 EARNINGS RELEASE"
+      }
+    ],
+    "form4_count": 46
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-13",
+        "accession": "0001463101-23-000025"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2023-12-18",
+        "accession": "0001463101-23-000184",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-10-26",
+        "accession": "0001463101-23-000163",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-07-27",
+        "accession": "0001463101-23-000138",
+        "description": "8-K 2023 Q2 EARNINGS RELEASE"
+      },
+      {
+        "date": "2023-05-22",
+        "accession": "0001463101-23-000106",
+        "description": "FORM 8-K ANNUAL MEETING VOTING RESULTS"
+      },
+      {
+        "date": "2023-04-25",
+        "accession": "0001463101-23-000083",
+        "description": "8-K 2023 Q1 EARNINGS RELEASE"
+      },
+      {
+        "date": "2023-03-29",
+        "accession": "0001463101-23-000041",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-02-07",
+        "accession": "0001463101-23-000015",
+        "description": "8-K 2022 Q4 EARNINGS RELEASE"
+      }
+    ],
+    "form4_count": 39
+  }
+}

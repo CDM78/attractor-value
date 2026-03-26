@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-STX-2015-12-31-003acd",
+  "ticker": "STX",
+  "entry_date": "2015-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-08-05",
+        "accession": "0001047469-16-014732"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-08-04",
+        "accession": "0001193125-17-248796"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-11",
+        "accession": "0001137789-17-000101",
+        "description": "ITEM 2.05"
+      },
+      {
+        "date": "2017-10-23",
+        "accession": "0001193125-17-316068",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-10-18",
+        "accession": "0001137789-17-000068",
+        "description": "ITEM 5.02, 5.07, 9.01"
+      },
+      {
+        "date": "2017-09-28",
+        "accession": "0001137789-17-000060",
+        "description": "ITEM 1.01"
+      },
+      {
+        "date": "2017-07-28",
+        "accession": "0001137789-17-000046",
+        "description": "ITEM 5.02(E)"
+      },
+      {
+        "date": "2017-07-25",
+        "accession": "0001193125-17-234440",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

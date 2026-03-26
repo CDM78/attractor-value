@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-SYF-2019-01-02-769233",
+  "ticker": "SYF",
+  "entry_date": "2019-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-02-15",
+        "accession": "0001601712-19-000053"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-02-13",
+        "accession": "0001601712-20-000038"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-15",
+        "accession": "0001601712-20-000305",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-12-11",
+        "accession": "0001601712-20-000302",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-16",
+        "accession": "0001601712-20-000256",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-20",
+        "accession": "0001601712-20-000251",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-20",
+        "accession": "0001601712-20-000250",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-09-14",
+        "accession": "0001601712-20-000234",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-08-17",
+        "accession": "0001601712-20-000211",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "case_id": "CASE-QCOM-2015-12-31-b29279",
+  "ticker": "QCOM",
+  "entry_date": "2015-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-11-02",
+        "accession": "0001234452-16-000552"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-11-01",
+        "accession": "0001234452-17-000190"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-27",
+        "accession": "0001234452-17-000206",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-12-22",
+        "accession": "0001104659-17-074753",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-16",
+        "accession": "0001193125-17-345455",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-13",
+        "accession": "0001193125-17-340001",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-01",
+        "accession": "0001234452-17-000189",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-24",
+        "accession": "0001234452-17-000163",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-19",
+        "accession": "0001234452-17-000153",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-31",
+        "accession": "0001193125-17-189502",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-23",
+        "accession": "0001193125-17-178324",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

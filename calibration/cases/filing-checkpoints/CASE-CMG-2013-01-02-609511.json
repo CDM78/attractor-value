@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-CMG-2013-01-02-609511",
+  "ticker": "CMG",
+  "entry_date": "2013-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-08",
+        "accession": "0001193125-13-046377"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2013-10-18",
+        "accession": "0001193125-13-402765",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-08-29",
+        "accession": "0001193125-13-352105",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-07-19",
+        "accession": "0001193125-13-294493",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-05-23",
+        "accession": "0001193125-13-233640",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-04-19",
+        "accession": "0001193125-13-161142",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-05",
+        "accession": "0001193125-14-035451"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-20",
+        "accession": "0001193125-14-376334",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-15",
+        "accession": "0001193125-14-311748",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-07-21",
+        "accession": "0001193125-14-274234",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-16",
+        "accession": "0001193125-14-203068",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-04-17",
+        "accession": "0001193125-14-147184",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-01-31",
+        "accession": "0001193125-14-028820",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

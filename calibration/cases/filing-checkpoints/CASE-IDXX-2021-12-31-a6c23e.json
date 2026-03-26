@@ -1,0 +1,107 @@
+{
+  "case_id": "CASE-IDXX-2021-12-31-a6c23e",
+  "ticker": "IDXX",
+  "entry_date": "2021-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-16",
+        "accession": "0000874716-22-000007"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2022-11-01",
+        "accession": "0000950123-22-010618",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-10-21",
+        "accession": "0001193125-22-266779",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-08-02",
+        "accession": "0001564590-22-027326",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-07-15",
+        "accession": "0000874716-22-000028",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-06-14",
+        "accession": "0001564590-22-023240",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-13",
+        "accession": "0000874716-22-000023",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-04",
+        "accession": "0001564590-22-017653",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-02",
+        "accession": "0001564590-22-003449",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 45
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-16",
+        "accession": "0000874716-23-000006"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2023-12-07",
+        "accession": "0000874716-23-000143",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-11-01",
+        "accession": "0001157523-23-001588",
+        "description": "IDEXX LABORATORIES, INC. 8-K"
+      },
+      {
+        "date": "2023-08-01",
+        "accession": "0001157523-23-001198",
+        "description": "IDEXX LABORATORIES, INC. 8-K"
+      },
+      {
+        "date": "2023-07-12",
+        "accession": "0000874716-23-000092",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-19",
+        "accession": "0000874716-23-000074",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-02",
+        "accession": "0001157523-23-000670",
+        "description": "IDEXX LABORATORIES, INC. 8-K"
+      },
+      {
+        "date": "2023-02-06",
+        "accession": "0000950170-23-001820",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 70
+  }
+}

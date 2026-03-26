@@ -1,0 +1,97 @@
+{
+  "case_id": "CASE-CMG-2021-12-31-e85cae",
+  "ticker": "CMG",
+  "entry_date": "2021-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-11",
+        "accession": "0001058090-22-000011"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2022-12-09",
+        "accession": "0001193125-22-301835",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-10-25",
+        "accession": "0001058090-22-000041",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-07-26",
+        "accession": "0001058090-22-000033",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-20",
+        "accession": "0001193125-22-155668",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-04-26",
+        "accession": "0001058090-22-000023",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-08",
+        "accession": "0001058090-22-000005",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 56
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-09",
+        "accession": "0001058090-23-000010"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2023-10-26",
+        "accession": "0001058090-23-000039",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-09-14",
+        "accession": "0001193125-23-235262",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-07-26",
+        "accession": "0001058090-23-000026",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-06-01",
+        "accession": "0001193125-23-158496",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-26",
+        "accession": "0001193125-23-155446",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-04-25",
+        "accession": "0001058090-23-000015",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-02-07",
+        "accession": "0001058090-23-000005",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 72
+  }
+}

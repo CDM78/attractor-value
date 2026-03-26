@@ -1,0 +1,76 @@
+{
+  "case_id": "CASE-CPB-2015-12-31-4c7e51",
+  "ticker": "CPB",
+  "entry_date": "2015-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-09-22",
+        "accession": "0000016732-16-000146"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-09-27",
+        "accession": "0000016732-17-000058"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-29",
+        "accession": "0000950159-17-000282",
+        "description": "CAMPBELL SOUP COMPANY FORM 8-K"
+      },
+      {
+        "date": "2017-12-18",
+        "accession": "0000950159-17-000274",
+        "description": "CAMPBELL SOUP CO FORM 8-K"
+      },
+      {
+        "date": "2017-12-08",
+        "accession": "0000016732-17-000087",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-21",
+        "accession": "0000016732-17-000078",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-17",
+        "accession": "0000016732-17-000074",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-13",
+        "accession": "0000950159-17-000234",
+        "description": "CAMPBELL SOUP COMPANY FORM 8-K"
+      },
+      {
+        "date": "2017-09-26",
+        "accession": "0000016732-17-000056",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-31",
+        "accession": "0000016732-17-000051",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-06",
+        "accession": "0001206774-17-001965",
+        "description": "CURRENT REPORT"
+      }
+    ],
+    "form4_count": 0
+  }
+}

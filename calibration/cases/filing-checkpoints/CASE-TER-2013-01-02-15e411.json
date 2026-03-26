@@ -1,0 +1,97 @@
+{
+  "case_id": "CASE-TER-2013-01-02-15e411",
+  "ticker": "TER",
+  "entry_date": "2013-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-03-01",
+        "accession": "0001193125-13-087821"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2013-11-13",
+        "accession": "0001193125-13-440397",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-10-24",
+        "accession": "0001193125-13-408851",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-07-25",
+        "accession": "0001193125-13-301335",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-05-24",
+        "accession": "0001193125-13-234999",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-04-25",
+        "accession": "0001193125-13-171929",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-01-24",
+        "accession": "0001193125-13-021392",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-28",
+        "accession": "0001193125-14-077218"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-23",
+        "accession": "0001193125-14-379312",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-07-24",
+        "accession": "0001193125-14-277802",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-07-16",
+        "accession": "0001193125-14-270163",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-21",
+        "accession": "0001193125-14-208342",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-04-24",
+        "accession": "0001193125-14-155723",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-01-23",
+        "accession": "0001193125-14-017920",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-01-23",
+        "accession": "0001193125-14-017606",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

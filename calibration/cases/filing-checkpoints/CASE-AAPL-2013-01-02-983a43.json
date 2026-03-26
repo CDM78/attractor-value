@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-AAPL-2013-01-02-983a43",
+  "ticker": "AAPL",
+  "entry_date": "2013-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-10-30",
+        "accession": "0001193125-13-416534"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-10-27",
+        "accession": "0001193125-14-383437"
+      }
+    ],
+    "eight_k_count": 1,
+    "eight_k_filings": [
+      {
+        "date": "2014-11-10",
+        "accession": "0001193125-14-406296",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

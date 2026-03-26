@@ -1,0 +1,40 @@
+{
+  "case_id": "CASE-O-2019-01-02-d658a9",
+  "ticker": "O",
+  "entry_date": "2019-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-03-01",
+        "accession": "0000726728-19-000041"
+      },
+      {
+        "date": "2019-02-22",
+        "accession": "0000726728-19-000038"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 35
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-02-24",
+        "accession": "0000726728-20-000033"
+      }
+    ],
+    "eight_k_count": 1,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-14",
+        "accession": "0001104659-20-135297",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 30
+  }
+}

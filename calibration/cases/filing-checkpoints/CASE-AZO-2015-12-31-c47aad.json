@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE-AZO-2015-12-31-c47aad",
+  "ticker": "AZO",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-10-24",
+        "accession": "0001193125-16-745160"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-10-25",
+        "accession": "0001193125-17-319357"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-22",
+        "accession": "0001193125-17-377695",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2017-12-21",
+        "accession": "0001193125-17-376566",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-12-05",
+        "accession": "0001171843-17-007449",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-11-22",
+        "accession": "0001193125-17-350673",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-19",
+        "accession": "0001171843-17-005596",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-11",
+        "accession": "0001171843-17-005491",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-23",
+        "accession": "0001171843-17-003257",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-18",
+        "accession": "0001193125-17-127398",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-12",
+        "accession": "0001193125-17-121413",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-03-21",
+        "accession": "0001171843-17-001662",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

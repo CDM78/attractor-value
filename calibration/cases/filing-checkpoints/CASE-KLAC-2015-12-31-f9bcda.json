@@ -1,0 +1,97 @@
+{
+  "case_id": "CASE-KLAC-2015-12-31-f9bcda",
+  "ticker": "KLAC",
+  "entry_date": "2015-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-08-05",
+        "accession": "0000319201-16-000090"
+      }
+    ],
+    "eight_k_count": 3,
+    "eight_k_filings": [
+      {
+        "date": "2016-12-05",
+        "accession": "0000319201-16-000110",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-11-03",
+        "accession": "0000319201-16-000108",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-10-20",
+        "accession": "0000319201-16-000105",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-08-04",
+        "accession": "0000319201-17-000034"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-30",
+        "accession": "0000319201-17-000049",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-03",
+        "accession": "0000319201-17-000047",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-26",
+        "accession": "0000319201-17-000043",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-08-15",
+        "accession": "0000319201-17-000037",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-03",
+        "accession": "0000319201-17-000029",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-27",
+        "accession": "0000319201-17-000026",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-04",
+        "accession": "0000319201-17-000020",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-27",
+        "accession": "0000319201-17-000015",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-03",
+        "accession": "0000319201-17-000008",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-01-26",
+        "accession": "0000319201-17-000004",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

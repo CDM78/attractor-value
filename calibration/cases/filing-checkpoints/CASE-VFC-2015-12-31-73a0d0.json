@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-VFC-2015-12-31-73a0d0",
+  "ticker": "VFC",
+  "entry_date": "2015-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-03-02",
+        "accession": "0001193125-16-489832"
+      }
+    ],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2016-12-15",
+        "accession": "0001193125-16-793731",
+        "description": "FORM 8-K/A"
+      },
+      {
+        "date": "2016-12-07",
+        "accession": "0001193125-16-787024",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-03-01",
+        "accession": "0001628280-17-002027"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2017-10-23",
+        "accession": "0001157523-17-002731",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-08-14",
+        "accession": "0001157523-17-002358",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-07-24",
+        "accession": "0001157523-17-002031",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-06-21",
+        "accession": "0001157523-17-001813",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-04-28",
+        "accession": "0001157523-17-001274",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-04-26",
+        "accession": "0001193125-17-139169",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-03-30",
+        "accession": "0001157523-17-000911",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-02-17",
+        "accession": "0001157523-17-000537",
+        "description": "V.F. CORPORATION 8-K"
+      },
+      {
+        "date": "2017-02-14",
+        "accession": "0001157523-17-000479",
+        "description": "V. F. CORPORATION 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

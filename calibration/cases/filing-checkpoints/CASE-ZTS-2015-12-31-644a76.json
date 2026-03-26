@@ -1,0 +1,92 @@
+{
+  "case_id": "CASE-ZTS-2015-12-31-644a76",
+  "ticker": "ZTS",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-24",
+        "accession": "0001555280-16-000344"
+      }
+    ],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2016-12-21",
+        "accession": "0001555280-16-000505",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-12-06",
+        "accession": "0001555280-16-000494",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-16",
+        "accession": "0001555280-17-000044"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-11",
+        "accession": "0001555280-17-000211",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-02",
+        "accession": "0001555280-17-000207",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-05",
+        "accession": "0001555280-17-000185",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-12",
+        "accession": "0001193125-17-282801",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-08",
+        "accession": "0001555280-17-000172",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-03",
+        "accession": "0001555280-17-000164",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-11",
+        "accession": "0001555280-17-000130",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-04",
+        "accession": "0001555280-17-000125",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-16",
+        "accession": "0001555280-17-000022",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-14",
+        "accession": "0001555280-17-000020",
+        "description": "8-K Q2 2017 DIVIDEND"
+      }
+    ],
+    "form4_count": 0
+  }
+}

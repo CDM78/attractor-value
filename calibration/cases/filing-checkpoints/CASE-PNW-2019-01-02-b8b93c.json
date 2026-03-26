@@ -1,0 +1,101 @@
+{
+  "case_id": "CASE-PNW-2019-01-02-b8b93c",
+  "ticker": "PNW",
+  "entry_date": "2019-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-02-22",
+        "accession": "0000764622-19-000019"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-02-21",
+        "accession": "0000764622-20-000017"
+      }
+    ],
+    "eight_k_count": 14,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-18",
+        "accession": "0000764622-20-000092",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-12-10",
+        "accession": "0000764622-20-000089",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-19",
+        "accession": "0000764622-20-000086",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-09",
+        "accession": "0000764622-20-000082",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2020-11-06",
+        "accession": "0000764622-20-000080",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-30",
+        "accession": "0000764622-20-000076",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-02",
+        "accession": "0000764622-20-000066",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-09-11",
+        "accession": "0000764622-20-000064",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-09-09",
+        "accession": "0000764622-20-000062",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-08-06",
+        "accession": "0000764622-20-000059",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-06-22",
+        "accession": "0000764622-20-000052",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-06-16",
+        "accession": "0000764622-20-000049",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-06-02",
+        "accession": "0000764622-20-000045",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-05-26",
+        "accession": "0000764622-20-000042",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 38
+  }
+}

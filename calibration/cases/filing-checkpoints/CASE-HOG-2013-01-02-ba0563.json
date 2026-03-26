@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-HOG-2013-01-02-ba0563",
+  "ticker": "HOG",
+  "entry_date": "2013-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-22",
+        "accession": "0001445305-13-000288"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2013-10-22",
+        "accession": "0000793952-13-000026",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-07-25",
+        "accession": "0000793952-13-000020",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-05-02",
+        "accession": "0000793952-13-000011",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-04-25",
+        "accession": "0000793952-13-000008",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-01-29",
+        "accession": "0001193125-13-027154",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-20",
+        "accession": "0000793952-14-000006"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-21",
+        "accession": "0000793952-14-000042",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-07-22",
+        "accession": "0000793952-14-000036",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-04-30",
+        "accession": "0000793952-14-000020",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-04-22",
+        "accession": "0000793952-14-000018",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-01-30",
+        "accession": "0000897069-14-000029",
+        "description": ""
+      },
+      {
+        "date": "2014-01-30",
+        "accession": "0000793952-14-000003",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

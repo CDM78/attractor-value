@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-GRMN-2015-12-31-7d3b7e",
+  "ticker": "GRMN",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-17",
+        "accession": "0001615774-16-004243"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2016-12-14",
+        "accession": "0001615774-16-008909",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-10-26",
+        "accession": "0001615774-16-007758",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-07-27",
+        "accession": "0001615774-16-006452",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-06-13",
+        "accession": "0001615774-16-005863",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-04-27",
+        "accession": "0001615774-16-005091",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-02-17",
+        "accession": "0001615774-16-004235",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-22",
+        "accession": "0001615774-17-000765"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-01",
+        "accession": "0001615774-17-006103",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-02",
+        "accession": "0001615774-17-004006",
+        "description": "CURRENT REPORT"
+      },
+      {
+        "date": "2017-06-12",
+        "accession": "0001615774-17-003100",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-03",
+        "accession": "0001615774-17-002040",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-22",
+        "accession": "0001615774-17-000751",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

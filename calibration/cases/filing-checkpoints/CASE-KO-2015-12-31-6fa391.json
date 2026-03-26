@@ -1,0 +1,41 @@
+{
+  "case_id": "CASE-KO-2015-12-31-6fa391",
+  "ticker": "KO",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-25",
+        "accession": "0000021344-16-000050"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-24",
+        "accession": "0000021344-17-000009"
+      }
+    ],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-08",
+        "accession": "0001552781-17-000649",
+        "description": ""
+      },
+      {
+        "date": "2017-10-25",
+        "accession": "0000021344-17-000029",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

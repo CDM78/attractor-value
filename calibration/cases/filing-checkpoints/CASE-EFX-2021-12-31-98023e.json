@@ -1,0 +1,112 @@
+{
+  "case_id": "CASE-EFX-2021-12-31-98023e",
+  "ticker": "EFX",
+  "entry_date": "2021-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-24",
+        "accession": "0000033185-22-000014"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2022-12-05",
+        "accession": "0001193125-22-298519",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2022-10-19",
+        "accession": "0000033185-22-000054",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-09-12",
+        "accession": "0001193125-22-242936",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2022-08-02",
+        "accession": "0000033185-22-000045",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-07-20",
+        "accession": "0000033185-22-000038",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-11",
+        "accession": "0000033185-22-000028",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-04-20",
+        "accession": "0000033185-22-000019",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-09",
+        "accession": "0000033185-22-000006",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 50
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-23",
+        "accession": "0000033185-23-000012"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2023-10-20",
+        "accession": "0001193125-23-259941",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-10-18",
+        "accession": "0000033185-23-000040",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-07-19",
+        "accession": "0000033185-23-000029",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-16",
+        "accession": "0001193125-23-146116",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-08",
+        "accession": "0001193125-23-138451",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-04-19",
+        "accession": "0000033185-23-000019",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-02-08",
+        "accession": "0000033185-23-000004",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-02-03",
+        "accession": "0001193125-23-024180",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 56
+  }
+}

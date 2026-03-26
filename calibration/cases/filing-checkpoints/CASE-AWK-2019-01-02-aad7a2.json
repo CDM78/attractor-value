@@ -1,0 +1,56 @@
+{
+  "case_id": "CASE-AWK-2019-01-02-aad7a2",
+  "ticker": "AWK",
+  "entry_date": "2019-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-02-19",
+        "accession": "0001410636-19-000041"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-02-18",
+        "accession": "0001410636-20-000040"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-10",
+        "accession": "0001410636-20-000153",
+        "description": "FORM 8-K - AMENDED AND RESTATED BYLAWS AND COE"
+      },
+      {
+        "date": "2020-11-04",
+        "accession": "0001410636-20-000146",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-02",
+        "accession": "0001410636-20-000140",
+        "description": "FORM 8-K - 2020 PAWC RATE CASE SETTLEMENT"
+      },
+      {
+        "date": "2020-10-28",
+        "accession": "0001410636-20-000134",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-08-05",
+        "accession": "0001410636-20-000120",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 54
+  }
+}

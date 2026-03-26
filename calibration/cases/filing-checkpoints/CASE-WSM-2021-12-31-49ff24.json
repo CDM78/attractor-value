@@ -1,0 +1,92 @@
+{
+  "case_id": "CASE-WSM-2021-12-31-49ff24",
+  "ticker": "WSM",
+  "entry_date": "2021-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-03-28",
+        "accession": "0001628280-22-007494"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2022-11-17",
+        "accession": "0001628280-22-030305",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-09-14",
+        "accession": "0001628280-22-024901",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-08-24",
+        "accession": "0001628280-22-023609",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-07-26",
+        "accession": "0001628280-22-019460",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-06-03",
+        "accession": "0001628280-22-016215",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-25",
+        "accession": "0001628280-22-015356",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-03-16",
+        "accession": "0001628280-22-006378",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 55
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-03-24",
+        "accession": "0001628280-23-009175"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2023-11-16",
+        "accession": "0001628280-23-039239",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-08-23",
+        "accession": "0001628280-23-030310",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-06-05",
+        "accession": "0001628280-23-020885",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-23",
+        "accession": "0001628280-23-019381",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-03-16",
+        "accession": "0001628280-23-008202",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 49
+  }
+}

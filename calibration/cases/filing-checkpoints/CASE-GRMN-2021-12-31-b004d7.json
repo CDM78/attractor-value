@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-GRMN-2021-12-31-b004d7",
+  "ticker": "GRMN",
+  "entry_date": "2021-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-16",
+        "accession": "0000950170-22-001303"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2022-10-26",
+        "accession": "0000950170-22-020098",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-07-27",
+        "accession": "0000950170-22-013147",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-06-13",
+        "accession": "0000950170-22-011549",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-04-27",
+        "accession": "0000950170-22-006333",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2022-04-27",
+        "accession": "0000950170-22-006272",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-16",
+        "accession": "0000950170-22-001304",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 54
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-22",
+        "accession": "0000950170-23-003566"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2023-11-01",
+        "accession": "0000950170-23-057112",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-08-02",
+        "accession": "0000950170-23-036763",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-06-12",
+        "accession": "0000950170-23-027520",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-03",
+        "accession": "0000950170-23-016875",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-02-22",
+        "accession": "0000950170-23-003567",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 39
+  }
+}

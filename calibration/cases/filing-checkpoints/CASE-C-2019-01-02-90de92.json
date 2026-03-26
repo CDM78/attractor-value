@@ -1,0 +1,71 @@
+{
+  "case_id": "CASE-C-2019-01-02-90de92",
+  "ticker": "C",
+  "entry_date": "2019-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-02-22",
+        "accession": "0000831001-19-000027"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-02-21",
+        "accession": "0000831001-20-000031"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-10",
+        "accession": "0001193125-20-314876",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-23",
+        "accession": "0001104659-20-128537",
+        "description": "FORM 8-K/A"
+      },
+      {
+        "date": "2020-11-02",
+        "accession": "0001104659-20-120563",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-10-30",
+        "accession": "0001193125-20-282541",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-10-16",
+        "accession": "0001104659-20-115678",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-10-13",
+        "accession": "0001104659-20-114299",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-10-09",
+        "accession": "0001104659-20-113933",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-09-25",
+        "accession": "0001104659-20-108824",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

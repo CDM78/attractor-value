@@ -1,0 +1,71 @@
+{
+  "case_id": "CASE-JCI-2015-12-31-790c1e",
+  "ticker": "JCI",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-11-23",
+        "accession": "0000833444-16-000216"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-11-21",
+        "accession": "0000833444-17-000060"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-11",
+        "accession": "0000833444-17-000064",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-12-11",
+        "accession": "0000833444-17-000062",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-12-04",
+        "accession": "0001104659-17-071502",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-09",
+        "accession": "0000833444-17-000057",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-09",
+        "accession": "0000833444-17-000056",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-09",
+        "accession": "0000833444-17-000055",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-19",
+        "accession": "0000833444-17-000049",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-15",
+        "accession": "0001193125-17-286406",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

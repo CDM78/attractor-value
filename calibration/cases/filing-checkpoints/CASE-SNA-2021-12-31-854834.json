@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-SNA-2021-12-31-854834",
+  "ticker": "SNA",
+  "entry_date": "2021-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-11",
+        "accession": "0000091440-22-000005"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2022-10-20",
+        "accession": "0001157523-22-001346",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      },
+      {
+        "date": "2022-07-21",
+        "accession": "0001157523-22-000881",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      },
+      {
+        "date": "2022-04-29",
+        "accession": "0000091440-22-000016",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-04-21",
+        "accession": "0001157523-22-000453",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      },
+      {
+        "date": "2022-02-03",
+        "accession": "0001157523-22-000140",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      }
+    ],
+    "form4_count": 35
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-09",
+        "accession": "0000091440-23-000005"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2023-10-19",
+        "accession": "0001157523-23-001504",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      },
+      {
+        "date": "2023-09-13",
+        "accession": "0000091440-23-000029",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-07-20",
+        "accession": "0001157523-23-001112",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      },
+      {
+        "date": "2023-04-28",
+        "accession": "0000091440-23-000016",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-04-20",
+        "accession": "0001157523-23-000583",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      },
+      {
+        "date": "2023-02-02",
+        "accession": "0001157523-23-000148",
+        "description": "SNAP-ON INCORPORATED 8-K"
+      }
+    ],
+    "form4_count": 51
+  }
+}

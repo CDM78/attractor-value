@@ -1,0 +1,71 @@
+{
+  "case_id": "CASE-PEP-2015-12-31-c21a34",
+  "ticker": "PEP",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-11",
+        "accession": "0000077476-16-000066"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-15",
+        "accession": "0000077476-17-000010"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-08",
+        "accession": "0000950103-17-012290",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-12-07",
+        "accession": "0000077476-17-000052",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-14",
+        "accession": "0001104659-17-068540",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-13",
+        "accession": "0000077476-17-000050",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-10",
+        "accession": "0001104659-17-061593",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-04",
+        "accession": "0000077476-17-000044",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-29",
+        "accession": "0000077476-17-000038",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-20",
+        "accession": "0000077476-17-000036",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

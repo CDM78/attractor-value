@@ -1,0 +1,76 @@
+{
+  "case_id": "CASE-ACN-2013-01-02-64bce6",
+  "ticker": "ACN",
+  "entry_date": "2013-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-10-29",
+        "accession": "0001467373-13-000482"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-10-24",
+        "accession": "0001467373-14-000467"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-18",
+        "accession": "0001467373-14-000564",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-09-24",
+        "accession": "0001467373-14-000415",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-07-08",
+        "accession": "0001467373-14-000330",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-06-26",
+        "accession": "0001467373-14-000302",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-05-12",
+        "accession": "0001467373-14-000215",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-07",
+        "accession": "0001467373-14-000194",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-03-27",
+        "accession": "0001467373-14-000162",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-01-30",
+        "accession": "0001467373-14-000055",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-01-14",
+        "accession": "0001467373-14-000048",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

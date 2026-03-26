@@ -1,0 +1,50 @@
+{
+  "case_id": "CASE-KMX-2013-01-02-043272",
+  "ticker": "KMX",
+  "entry_date": "2013-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-04-26",
+        "accession": "0001170010-13-000010"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-04-28",
+        "accession": "0001170010-14-000020"
+      },
+      {
+        "date": "2014-04-25",
+        "accession": "0001170010-14-000017"
+      }
+    ],
+    "eight_k_count": 3,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-19",
+        "accession": "0001170010-14-000034",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-10-22",
+        "accession": "0001193125-14-378881",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-09-23",
+        "accession": "0001170010-14-000028",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

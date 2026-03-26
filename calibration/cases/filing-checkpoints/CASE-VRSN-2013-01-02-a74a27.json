@@ -1,0 +1,71 @@
+{
+  "case_id": "CASE-VRSN-2013-01-02-a74a27",
+  "ticker": "VRSN",
+  "entry_date": "2013-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-28",
+        "accession": "0001014473-13-000006"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-21",
+        "accession": "0001014473-14-000006"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-02",
+        "accession": "0001014473-14-000055",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-10-23",
+        "accession": "0001014473-14-000050",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-18",
+        "accession": "0001014473-14-000046",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-11",
+        "accession": "0001014473-14-000043",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-07-24",
+        "accession": "0001014473-14-000038",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-22",
+        "accession": "0001014473-14-000034",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-12",
+        "accession": "0001014473-14-000032",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-04-24",
+        "accession": "0001014473-14-000028",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

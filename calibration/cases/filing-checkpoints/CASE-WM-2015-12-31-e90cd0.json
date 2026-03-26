@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE-WM-2015-12-31-e90cd0",
+  "ticker": "WM",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-18",
+        "accession": "0001193125-16-467957"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-16",
+        "accession": "0001193125-17-046480"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-26",
+        "accession": "0001104659-17-075030",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-13",
+        "accession": "0001104659-17-067720",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-03",
+        "accession": "0001104659-17-065934",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-26",
+        "accession": "0001104659-17-063876",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-04",
+        "accession": "0001104659-17-049580",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-26",
+        "accession": "0001104659-17-046944",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-16",
+        "accession": "0001104659-17-033031",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-26",
+        "accession": "0001193125-17-137971",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-03-03",
+        "accession": "0001193125-17-069837",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-16",
+        "accession": "0001193125-17-045917",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

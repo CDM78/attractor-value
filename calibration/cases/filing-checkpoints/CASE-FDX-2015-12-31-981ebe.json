@@ -1,0 +1,46 @@
+{
+  "case_id": "CASE-FDX-2015-12-31-981ebe",
+  "ticker": "FDX",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-07-18",
+        "accession": "0001193125-16-650267"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-07-17",
+        "accession": "0000950123-17-006152"
+      }
+    ],
+    "eight_k_count": 3,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-19",
+        "accession": "0001193125-17-373624",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-25",
+        "accession": "0001193125-17-293108",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-19",
+        "accession": "0001193125-17-288350",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "case_id": "CASE-FOSL-2015-12-31-79104d",
+  "ticker": "FOSL",
+  "entry_date": "2015-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-29",
+        "accession": "0000883569-16-000005"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2016-11-03",
+        "accession": "0000883569-16-000027",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-08-09",
+        "accession": "0000883569-16-000019",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-05-27",
+        "accession": "0001104659-16-123878",
+        "description": "CURRENT REPORT OF MATERIAL EVENTS OR CORPORATE CHANGES"
+      },
+      {
+        "date": "2016-05-10",
+        "accession": "0000883569-16-000009",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-02-16",
+        "accession": "0001104659-16-097327",
+        "description": "CURRENT REPORT OF MATERIAL EVENTS OR CORPORATE CHANGES"
+      },
+      {
+        "date": "2016-01-08",
+        "accession": "0001104659-16-088880",
+        "description": "CURRENT REPORT OF MATERIAL EVENTS OR CORPORATE CHANGES"
+      }
+    ],
+    "form4_count": 35
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-03-01",
+        "accession": "0000883569-17-000009"
+      }
+    ],
+    "eight_k_count": 12,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-07",
+        "accession": "0000883569-17-000043",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-05",
+        "accession": "0000883569-17-000038",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-14",
+        "accession": "0000883569-17-000035",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-08",
+        "accession": "0000883569-17-000030",
+        "description": ""
+      },
+      {
+        "date": "2017-07-26",
+        "accession": "0000883569-17-000027",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-26",
+        "accession": "0001104659-17-035634",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-12",
+        "accession": "0001104659-17-032204",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-09",
+        "accession": "0000883569-17-000017",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-03",
+        "accession": "0000883569-17-000014",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-03-15",
+        "accession": "0001104659-17-016432",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2017-03-10",
+        "accession": "0001104659-17-015845",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-14",
+        "accession": "0000883569-17-000003",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 48
+  }
+}

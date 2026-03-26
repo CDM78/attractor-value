@@ -1,0 +1,77 @@
+{
+  "case_id": "CASE-FLS-2013-01-02-dcbfec",
+  "ticker": "FLS",
+  "entry_date": "2013-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-21",
+        "accession": "0000030625-13-000019"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2013-11-01",
+        "accession": "0001193125-13-422476",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-10-08",
+        "accession": "0001193125-13-393241",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-08-15",
+        "accession": "0001193125-13-335935",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-05-24",
+        "accession": "0001193125-13-234676",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-05-10",
+        "accession": "0001193125-13-214285",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-01-24",
+        "accession": "0001193125-13-022299",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-18",
+        "accession": "0000030625-14-000017"
+      }
+    ],
+    "eight_k_count": 3,
+    "eight_k_filings": [
+      {
+        "date": "2014-09-08",
+        "accession": "0001193125-14-335686",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-05-22",
+        "accession": "0001193125-14-210021",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-01-28",
+        "accession": "0001193125-14-024595",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

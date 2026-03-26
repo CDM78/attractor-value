@@ -1,0 +1,76 @@
+{
+  "case_id": "CASE-DGX-2015-12-31-fa3ee5",
+  "ticker": "DGX",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-26",
+        "accession": "0001022079-16-000195"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-22",
+        "accession": "0001022079-17-000032"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-21",
+        "accession": "0000947871-17-000962",
+        "description": "CURRENT REPORT"
+      },
+      {
+        "date": "2017-10-19",
+        "accession": "0001022079-17-000190",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-27",
+        "accession": "0001022079-17-000182",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-05",
+        "accession": "0001022079-17-000172",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-21",
+        "accession": "0001022079-17-000169",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2017-08-08",
+        "accession": "0001022079-17-000167",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-25",
+        "accession": "0001022079-17-000157",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-19",
+        "accession": "0001022079-17-000141",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-20",
+        "accession": "0001022079-17-000116",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

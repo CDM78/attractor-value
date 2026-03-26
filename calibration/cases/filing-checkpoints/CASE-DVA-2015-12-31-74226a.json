@@ -1,0 +1,90 @@
+{
+  "case_id": "CASE-DVA-2015-12-31-74226a",
+  "ticker": "DVA",
+  "entry_date": "2015-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-04-29",
+        "accession": "0001193125-16-565979"
+      },
+      {
+        "date": "2016-02-26",
+        "accession": "0001564590-16-013587"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-24",
+        "accession": "0001564590-17-002409"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-06",
+        "accession": "0001193125-17-362136",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-07",
+        "accession": "0000927066-17-000087",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-10",
+        "accession": "0000927066-17-000077",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-01",
+        "accession": "0000927066-17-000055",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-06-22",
+        "accession": "0000927066-17-000024",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-02",
+        "accession": "0001628280-17-004641",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-03",
+        "accession": "0001193125-17-108729",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-02-16",
+        "accession": "0001193125-17-046718",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-02-01",
+        "accession": "0001193125-17-026529",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-01-09",
+        "accession": "0001193125-17-005025",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-01-05",
+        "accession": "0001193125-17-003109",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

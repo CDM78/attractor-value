@@ -1,0 +1,51 @@
+{
+  "case_id": "CASE-GT-2013-01-02-9ff3cb",
+  "ticker": "GT",
+  "entry_date": "2013-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-12",
+        "accession": "0000950123-13-000902"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-13",
+        "accession": "0000950123-14-002054"
+      }
+    ],
+    "eight_k_count": 4,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-29",
+        "accession": "0001193125-14-386112",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-10-01",
+        "accession": "0001299933-14-001518",
+        "description": "LIVE FILING"
+      },
+      {
+        "date": "2014-07-30",
+        "accession": "0001193125-14-285808",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-29",
+        "accession": "0001299933-14-000855",
+        "description": "LIVE FILING"
+      }
+    ],
+    "form4_count": 0
+  }
+}

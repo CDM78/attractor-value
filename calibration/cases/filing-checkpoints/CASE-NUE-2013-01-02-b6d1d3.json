@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-NUE-2013-01-02-b6d1d3",
+  "ticker": "NUE",
+  "entry_date": "2013-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-28",
+        "accession": "0001193125-13-084517"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-28",
+        "accession": "0001193125-14-077349"
+      }
+    ],
+    "eight_k_count": 1,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-11",
+        "accession": "0001193125-14-440015",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

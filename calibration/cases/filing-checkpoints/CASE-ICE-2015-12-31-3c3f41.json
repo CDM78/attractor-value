@@ -1,0 +1,86 @@
+{
+  "case_id": "CASE-ICE-2015-12-31-3c3f41",
+  "ticker": "ICE",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-04",
+        "accession": "0001571949-16-000020"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-07",
+        "accession": "0001571949-17-000003"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-15",
+        "accession": "0001144204-17-063831",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-12-08",
+        "accession": "0001144204-17-062881",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-11-15",
+        "accession": "0001144204-17-059223",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-11-02",
+        "accession": "0001144204-17-055665",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-11-02",
+        "accession": "0001144204-17-055646",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-10-24",
+        "accession": "0001144204-17-053880",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-10-24",
+        "accession": "0001144204-17-053857",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-08",
+        "accession": "0001144204-17-047146",
+        "description": "FORM 8-K/A"
+      },
+      {
+        "date": "2017-08-21",
+        "accession": "0001193125-17-263699",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-08-17",
+        "accession": "0001193125-17-260564",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-08-03",
+        "accession": "0001144204-17-040354",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

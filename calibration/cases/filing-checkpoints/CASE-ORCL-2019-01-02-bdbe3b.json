@@ -1,0 +1,117 @@
+{
+  "case_id": "CASE-ORCL-2019-01-02-bdbe3b",
+  "ticker": "ORCL",
+  "entry_date": "2019-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-06-21",
+        "accession": "0001564590-19-023119"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2019-12-12",
+        "accession": "0001564590-19-045836",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-12-09",
+        "accession": "0001193125-19-309214",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2019-11-22",
+        "accession": "0001193125-19-298638",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2019-10-18",
+        "accession": "0001193125-19-269943",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2019-09-11",
+        "accession": "0001564590-19-034522",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-07-31",
+        "accession": "0001193125-19-208925",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-07-10",
+        "accession": "0001193125-19-191922",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-06-19",
+        "accession": "0001564590-19-022864",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-03-14",
+        "accession": "0001564590-19-007818",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-02-15",
+        "accession": "0001193125-19-042553",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-06-22",
+        "accession": "0001564590-20-030125"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-10",
+        "accession": "0001564590-20-056722",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-06",
+        "accession": "0001193125-20-288009",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-09-10",
+        "accession": "0001564590-20-043143",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-08-21",
+        "accession": "0001193125-20-227084",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-06-16",
+        "accession": "0001564590-20-029533",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-04-01",
+        "accession": "0001193125-20-094641",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2020-03-12",
+        "accession": "0001564590-20-010464",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 9
+  }
+}

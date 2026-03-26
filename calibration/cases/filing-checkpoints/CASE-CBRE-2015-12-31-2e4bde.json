@@ -1,0 +1,91 @@
+{
+  "case_id": "CASE-CBRE-2015-12-31-2e4bde",
+  "ticker": "CBRE",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-29",
+        "accession": "0001193125-16-484680"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-03-01",
+        "accession": "0001193125-17-064772"
+      }
+    ],
+    "eight_k_count": 12,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-01",
+        "accession": "0001193125-17-359112",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-12-01",
+        "accession": "0001564590-17-024419",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-16",
+        "accession": "0001193125-17-345679",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-11-03",
+        "accession": "0001564590-17-021374",
+        "description": "8-K Q3 2017 EARNINGS RELEASE"
+      },
+      {
+        "date": "2017-11-01",
+        "accession": "0001193125-17-329622",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-10-27",
+        "accession": "0001193125-17-323234",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-11",
+        "accession": "0001564590-17-018559",
+        "description": "8-K - INVESTOR DECK"
+      },
+      {
+        "date": "2017-07-27",
+        "accession": "0001564590-17-014172",
+        "description": "8-K WITH Q2 2017 EARNINGS RELEASE"
+      },
+      {
+        "date": "2017-06-12",
+        "accession": "0001564590-17-012422",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-30",
+        "accession": "0001564590-17-011833",
+        "description": "8-K - INVESTOR DECK (FIRST USE WILL BE IN A MORNING (ET) MEETING ON 5/31, THEREF"
+      },
+      {
+        "date": "2017-05-23",
+        "accession": "0001193125-17-179725",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-27",
+        "accession": "0001193125-17-140822",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

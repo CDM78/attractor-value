@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-XYL-2013-01-02-f8a70a",
+  "ticker": "XYL",
+  "entry_date": "2013-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-25",
+        "accession": "0001524472-13-000003"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-27",
+        "accession": "0001524472-14-000004"
+      }
+    ],
+    "eight_k_count": 1,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-28",
+        "accession": "0001193125-14-384101",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

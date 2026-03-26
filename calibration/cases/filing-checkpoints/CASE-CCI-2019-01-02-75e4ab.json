@@ -1,0 +1,76 @@
+{
+  "case_id": "CASE-CCI-2019-01-02-75e4ab",
+  "ticker": "CCI",
+  "entry_date": "2019-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-02-25",
+        "accession": "0001051470-19-000046"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-03-10",
+        "accession": "0001051470-20-000077"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-18",
+        "accession": "0001051470-20-000202",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-12-01",
+        "accession": "0001051470-20-000184",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2020-12-01",
+        "accession": "0001051470-20-000182",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-23",
+        "accession": "0001051470-20-000179",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-09",
+        "accession": "0001051470-20-000166",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-06",
+        "accession": "0001051470-20-000163",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-06",
+        "accession": "0001051470-20-000162",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-22",
+        "accession": "0001051470-20-000151",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-21",
+        "accession": "0001051470-20-000148",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 9
+  }
+}

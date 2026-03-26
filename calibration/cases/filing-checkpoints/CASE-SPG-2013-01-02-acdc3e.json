@@ -1,0 +1,56 @@
+{
+  "case_id": "CASE-SPG-2013-01-02-acdc3e",
+  "ticker": "SPG",
+  "entry_date": "2013-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-28",
+        "accession": "0001047469-13-001862"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-27",
+        "accession": "0001047469-14-001416"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-17",
+        "accession": "0001104659-14-087375",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-10-22",
+        "accession": "0001047469-14-008442",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-07-23",
+        "accession": "0001047469-14-006331",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-06-19",
+        "accession": "0001104659-14-047113",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-05-29",
+        "accession": "0001104659-14-042292",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

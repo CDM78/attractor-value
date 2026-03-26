@@ -1,0 +1,92 @@
+{
+  "case_id": "CASE-FTI-2015-12-31-79ae32",
+  "ticker": "FTI",
+  "entry_date": "2015-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2016-12-21",
+        "accession": "0001193125-16-800621",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-12-14",
+        "accession": "0001193125-16-793136",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-01-13",
+        "accession": "0001681459-17-000013"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2017-10-26",
+        "accession": "0001681459-17-000254",
+        "description": "FORM 8-K - THIRD QUARTER 2017 EARNINGS RELEASE"
+      },
+      {
+        "date": "2017-09-20",
+        "accession": "0001193125-17-289503",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-27",
+        "accession": "0001681459-17-000235",
+        "description": "FORM 8-K - SECOND QUARTER 2017 EARNINGS RELEASE"
+      },
+      {
+        "date": "2017-07-24",
+        "accession": "0001681459-17-000232",
+        "description": "FORM 8-K - FIRST QUARTER 2017 RESTATEMENT"
+      },
+      {
+        "date": "2017-06-20",
+        "accession": "0001193125-17-208279",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-27",
+        "accession": "0001681459-17-000204",
+        "description": "FORM 8-K - FIRST QUARTER 2017 EARNINGS RELEASE"
+      },
+      {
+        "date": "2017-03-30",
+        "accession": "0001193125-17-102258",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-24",
+        "accession": "0001681459-17-000140",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-02-24",
+        "accession": "0001681459-17-000138",
+        "description": "FORM 8-K/A"
+      },
+      {
+        "date": "2017-01-17",
+        "accession": "0001193125-17-010419",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-01-17",
+        "accession": "0001193125-17-010409",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 69
+  }
+}

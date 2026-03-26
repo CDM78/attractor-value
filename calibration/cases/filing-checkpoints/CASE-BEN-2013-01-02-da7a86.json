@@ -1,0 +1,92 @@
+{
+  "case_id": "CASE-BEN-2013-01-02-da7a86",
+  "ticker": "BEN",
+  "entry_date": "2013-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-11-12",
+        "accession": "0000038777-13-000227"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2013-12-11",
+        "accession": "0001193125-13-469528",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-10-24",
+        "accession": "0000038777-13-000223",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-07-29",
+        "accession": "0000038777-13-000194",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-06-13",
+        "accession": "0001193125-13-257950",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-06-13",
+        "accession": "0001193125-13-257941",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-04-30",
+        "accession": "0000038777-13-000173",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2013-03-14",
+        "accession": "0001193125-13-106722",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-11-12",
+        "accession": "0000038777-14-000259"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-27",
+        "accession": "0000038777-14-000241",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-07-30",
+        "accession": "0000038777-14-000202",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-04-28",
+        "accession": "0000038777-14-000167",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-03-13",
+        "accession": "0001193125-14-097824",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-01-30",
+        "accession": "0000038777-14-000006",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

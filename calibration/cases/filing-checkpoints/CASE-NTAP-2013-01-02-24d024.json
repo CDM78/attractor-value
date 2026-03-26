@@ -1,0 +1,71 @@
+{
+  "case_id": "CASE-NTAP-2013-01-02-24d024",
+  "ticker": "NTAP",
+  "entry_date": "2013-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-06-17",
+        "accession": "0001193125-13-261334"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-06-17",
+        "accession": "0001193125-14-239169"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2014-11-12",
+        "accession": "0001102624-14-001857",
+        "description": "NETAPP, INC. 8-K"
+      },
+      {
+        "date": "2014-09-09",
+        "accession": "0001193125-14-336826",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-13",
+        "accession": "0001102624-14-001312",
+        "description": "NETAPP 8-K"
+      },
+      {
+        "date": "2014-06-05",
+        "accession": "0001193125-14-227067",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-06-02",
+        "accession": "0001193125-14-220241",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-21",
+        "accession": "0001102624-14-000858",
+        "description": "NETAPP, INC. 8-K"
+      },
+      {
+        "date": "2014-04-07",
+        "accession": "0001193125-14-133588",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-03-12",
+        "accession": "0001193125-14-095620",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

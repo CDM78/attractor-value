@@ -1,0 +1,45 @@
+{
+  "case_id": "CASE-HPQ-2015-12-31-c7edea",
+  "ticker": "HPQ",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-12-15",
+        "accession": "0000047217-16-000093"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-12-15",
+        "accession": "0000047217-17-000045"
+      },
+      {
+        "date": "2017-12-14",
+        "accession": "0000047217-17-000043"
+      }
+    ],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-21",
+        "accession": "0000047217-17-000040",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-01",
+        "accession": "0000047217-17-000037",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

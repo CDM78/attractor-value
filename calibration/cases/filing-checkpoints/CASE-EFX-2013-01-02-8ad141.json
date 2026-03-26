@@ -1,0 +1,41 @@
+{
+  "case_id": "CASE-EFX-2013-01-02-8ad141",
+  "ticker": "EFX",
+  "entry_date": "2013-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-22",
+        "accession": "0001144204-13-010696"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-28",
+        "accession": "0001144204-14-012238"
+      }
+    ],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-22",
+        "accession": "0001144204-14-062352",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-09-11",
+        "accession": "0001144204-14-055512",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

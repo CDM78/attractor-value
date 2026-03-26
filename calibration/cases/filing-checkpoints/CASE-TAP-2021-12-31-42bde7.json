@@ -1,0 +1,107 @@
+{
+  "case_id": "CASE-TAP-2021-12-31-42bde7",
+  "ticker": "TAP",
+  "entry_date": "2021-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-02-23",
+        "accession": "0000024545-22-000005"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2022-11-01",
+        "accession": "0001157523-22-001453",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      },
+      {
+        "date": "2022-08-02",
+        "accession": "0001157523-22-000985",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      },
+      {
+        "date": "2022-05-23",
+        "accession": "0001104659-22-063917",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2022-05-03",
+        "accession": "0001157523-22-000537",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      },
+      {
+        "date": "2022-02-23",
+        "accession": "0001157523-22-000233",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      }
+    ],
+    "form4_count": 54
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-02-21",
+        "accession": "0000024545-23-000006"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2023-12-15",
+        "accession": "0001104659-23-126462",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-11-02",
+        "accession": "0001157523-23-001617",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      },
+      {
+        "date": "2023-10-03",
+        "accession": "0001104659-23-106357",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-08-01",
+        "accession": "0001157523-23-001200",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      },
+      {
+        "date": "2023-06-28",
+        "accession": "0001104659-23-075566",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-05-22",
+        "accession": "0001104659-23-063178",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-05-02",
+        "accession": "0001157523-23-000672",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      },
+      {
+        "date": "2023-04-06",
+        "accession": "0001104659-23-042784",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-02-28",
+        "accession": "0001104659-23-026432",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2023-02-21",
+        "accession": "0001157523-23-000313",
+        "description": "MOLSON COORS BEVERAGE COMPANY 8-K"
+      }
+    ],
+    "form4_count": 50
+  }
+}

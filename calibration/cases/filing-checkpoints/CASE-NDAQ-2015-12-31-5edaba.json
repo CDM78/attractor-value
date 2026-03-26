@@ -1,0 +1,86 @@
+{
+  "case_id": "CASE-NDAQ-2015-12-31-5edaba",
+  "ticker": "NDAQ",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-26",
+        "accession": "0001120193-16-000020"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-03-01",
+        "accession": "0001120193-17-000003"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2017-10-25",
+        "accession": "0001193125-17-318445",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-22",
+        "accession": "0001193125-17-291412",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-19",
+        "accession": "0001193125-17-288493",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-09-08",
+        "accession": "0001193125-17-280755",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-07-31",
+        "accession": "0001193125-17-242524",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-07-26",
+        "accession": "0001193125-17-235667",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-07-21",
+        "accession": "0001193125-17-232925",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-12",
+        "accession": "0001193125-17-168646",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-26",
+        "accession": "0001193125-17-137869",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-26",
+        "accession": "0001193125-17-137842",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-01-31",
+        "accession": "0001193125-17-024491",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-AAL-2019-01-02-4b2f06",
+  "ticker": "AAL",
+  "entry_date": "2019-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-02-25",
+        "accession": "0000006201-19-000009"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 3
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-02-19",
+        "accession": "0000006201-20-000023"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-04",
+        "accession": "0000006201-20-000109",
+        "description": "8-K - 12.04.20 SECURED NOTES APPRAISAL"
+      },
+      {
+        "date": "2020-12-04",
+        "accession": "0000006201-20-000107",
+        "description": "8-K - 12.04.20 FINANCIAL UPDATE"
+      },
+      {
+        "date": "2020-11-25",
+        "accession": "0001193125-20-303643",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-13",
+        "accession": "0000006201-20-000105",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-10",
+        "accession": "0001193125-20-289634",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-22",
+        "accession": "0001193125-20-274006",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-22",
+        "accession": "0000006201-20-000100",
+        "description": "8-K EARNINGS RELEASE Q3'20 10.22.20"
+      }
+    ],
+    "form4_count": 26
+  }
+}

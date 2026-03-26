@@ -1,0 +1,97 @@
+{
+  "case_id": "CASE-PSX-2015-12-31-096832",
+  "ticker": "PSX",
+  "entry_date": "2015-12-31",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-19",
+        "accession": "0001534701-16-000119"
+      }
+    ],
+    "eight_k_count": 5,
+    "eight_k_filings": [
+      {
+        "date": "2016-10-28",
+        "accession": "0001534701-16-000173",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-10-07",
+        "accession": "0001534701-16-000157",
+        "description": "8-K FOR NEW DIRECTORS"
+      },
+      {
+        "date": "2016-07-29",
+        "accession": "0001534701-16-000151",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-05-06",
+        "accession": "0001534701-16-000133",
+        "description": "8-K FOR ANNUAL MEETING VOTE"
+      },
+      {
+        "date": "2016-04-29",
+        "accession": "0001534701-16-000128",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-17",
+        "accession": "0001534701-17-000051"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-12",
+        "accession": "0001534701-17-000107",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-27",
+        "accession": "0001534701-17-000103",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-08-01",
+        "accession": "0001534701-17-000081",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-05",
+        "accession": "0001534701-17-000072",
+        "description": "2017 ANNUAL MEETING VOTE 8-K"
+      },
+      {
+        "date": "2017-04-28",
+        "accession": "0001534701-17-000067",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-21",
+        "accession": "0001193125-17-132713",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-09",
+        "accession": "0001534701-17-000025",
+        "description": "8-K FOR BYLAW AMENDMENT"
+      },
+      {
+        "date": "2017-02-03",
+        "accession": "0001534701-17-000023",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

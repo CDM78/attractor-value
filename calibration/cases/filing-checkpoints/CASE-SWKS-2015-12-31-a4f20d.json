@@ -1,0 +1,130 @@
+{
+  "case_id": "CASE-SWKS-2015-12-31-a4f20d",
+  "ticker": "SWKS",
+  "entry_date": "2015-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-11-22",
+        "accession": "0000004127-16-000068"
+      },
+      {
+        "date": "2016-02-01",
+        "accession": "0000004127-16-000042"
+      }
+    ],
+    "eight_k_count": 10,
+    "eight_k_filings": [
+      {
+        "date": "2016-11-10",
+        "accession": "0000004127-16-000066",
+        "description": "8-K - ITEM 5.02 NOVEMBER 10, 2016"
+      },
+      {
+        "date": "2016-11-03",
+        "accession": "0000004127-16-000064",
+        "description": "8-K Q416 EARNINGS RELEASE"
+      },
+      {
+        "date": "2016-08-29",
+        "accession": "0001104659-16-141924",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-08-03",
+        "accession": "0000004127-16-000060",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-07-21",
+        "accession": "0000004127-16-000058",
+        "description": "8-K - DIVIDEND AND SHARE REPURCHASE"
+      },
+      {
+        "date": "2016-07-21",
+        "accession": "0000004127-16-000057",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-05-16",
+        "accession": "0000004127-16-000052",
+        "description": "8-K ANNUAL PROXY VOTE"
+      },
+      {
+        "date": "2016-05-12",
+        "accession": "0001104659-16-120490",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-04-28",
+        "accession": "0000004127-16-000046",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-01-28",
+        "accession": "0000004127-16-000039",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-11-13",
+        "accession": "0000004127-17-000033"
+      },
+      {
+        "date": "2017-01-30",
+        "accession": "0000004127-17-000007"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-09",
+        "accession": "0000004127-17-000029",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-11-06",
+        "accession": "0001104659-17-066352",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-20",
+        "accession": "0000004127-17-000025",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-05-12",
+        "accession": "0000004127-17-000020",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-04-27",
+        "accession": "0000004127-17-000015",
+        "description": "8-K EARNINGS RELEASE"
+      },
+      {
+        "date": "2017-02-03",
+        "accession": "0000004127-17-000010",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-01-19",
+        "accession": "0000004127-17-000005",
+        "description": "8-K-SHARE REPURCHASE PROGRAM"
+      },
+      {
+        "date": "2017-01-19",
+        "accession": "0000004127-17-000003",
+        "description": "8-K EARNING"
+      }
+    ],
+    "form4_count": 0
+  }
+}

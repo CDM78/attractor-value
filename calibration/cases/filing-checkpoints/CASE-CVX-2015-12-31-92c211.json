@@ -1,0 +1,86 @@
+{
+  "case_id": "CASE-CVX-2015-12-31-92c211",
+  "ticker": "CVX",
+  "entry_date": "2015-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-25",
+        "accession": "0000093410-16-000049"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-23",
+        "accession": "0000093410-17-000013"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-13",
+        "accession": "0000093410-17-000048",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-27",
+        "accession": "0000093410-17-000043",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-26",
+        "accession": "0000093410-17-000041",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-03",
+        "accession": "0000093410-17-000037",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-09-28",
+        "accession": "0000093410-17-000035",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-07-31",
+        "accession": "0000093410-17-000030",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2017-07-28",
+        "accession": "0000093410-17-000028",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-06-05",
+        "accession": "0000093410-17-000024",
+        "description": "8-K VOTE RESULTS"
+      },
+      {
+        "date": "2017-04-28",
+        "accession": "0000093410-17-000016",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-03-03",
+        "accession": "0001193125-17-069851",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-01-30",
+        "accession": "0000093410-17-000010",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

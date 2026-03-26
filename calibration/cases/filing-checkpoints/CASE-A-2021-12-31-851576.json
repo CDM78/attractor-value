@@ -1,0 +1,122 @@
+{
+  "case_id": "CASE-A-2021-12-31-851576",
+  "ticker": "A",
+  "entry_date": "2021-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2021-12-31 to 2022-12-31",
+    "new_10k": [
+      {
+        "date": "2022-12-21",
+        "accession": "0001090872-22-000026"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2022-11-21",
+        "accession": "0001090872-22-000020",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-08-16",
+        "accession": "0001090872-22-000014",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-05-24",
+        "accession": "0001090872-22-000010",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-04-19",
+        "accession": "0001193125-22-108213",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-03-17",
+        "accession": "0001564590-22-010863",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-02-22",
+        "accession": "0001090872-22-000005",
+        "description": "8-K"
+      },
+      {
+        "date": "2022-01-05",
+        "accession": "0001090872-22-000003",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 69
+  },
+  "t24": {
+    "period": "2022-12-31 to 2023-12-31",
+    "new_10k": [
+      {
+        "date": "2023-12-20",
+        "accession": "0001090872-23-000020"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2023-12-20",
+        "accession": "0000950170-23-071756",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-11-20",
+        "accession": "0001090872-23-000018",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-11-01",
+        "accession": "0000950170-23-057148",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-09-05",
+        "accession": "0000950170-23-046178",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-08-15",
+        "accession": "0001090872-23-000013",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-06-13",
+        "accession": "0001193125-23-165893",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-23",
+        "accession": "0001090872-23-000008",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-05-22",
+        "accession": "0000950170-23-023437",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-03-17",
+        "accession": "0000950170-23-008638",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-02-28",
+        "accession": "0001090872-23-000002",
+        "description": "8-K"
+      },
+      {
+        "date": "2023-01-09",
+        "accession": "0000950170-23-000508",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 70
+  }
+}

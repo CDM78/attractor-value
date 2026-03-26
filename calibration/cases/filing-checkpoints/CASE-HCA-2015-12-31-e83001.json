@@ -1,0 +1,91 @@
+{
+  "case_id": "CASE-HCA-2015-12-31-e83001",
+  "ticker": "HCA",
+  "entry_date": "2015-12-31",
+  "outcome": "winner",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-26",
+        "accession": "0001193125-16-482165"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-02-22",
+        "accession": "0001193125-17-052253"
+      }
+    ],
+    "eight_k_count": 12,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-21",
+        "accession": "0001193125-17-376567",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-10-31",
+        "accession": "0001193125-17-326056",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-10-18",
+        "accession": "0001193125-17-312708",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-07-25",
+        "accession": "0001193125-17-234467",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-06-30",
+        "accession": "0001193125-17-220147",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-06-22",
+        "accession": "0001193125-17-210508",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-06-09",
+        "accession": "0001193125-17-200118",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-02",
+        "accession": "0001193125-17-153058",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-28",
+        "accession": "0001193125-17-148482",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-17",
+        "accession": "0001193125-17-125294",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-03",
+        "accession": "0001193125-17-108689",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-03-20",
+        "accession": "0001193125-17-089394",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

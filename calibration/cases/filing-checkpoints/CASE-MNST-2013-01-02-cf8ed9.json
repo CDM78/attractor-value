@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-MNST-2013-01-02-cf8ed9",
+  "ticker": "MNST",
+  "entry_date": "2013-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-03-01",
+        "accession": "0001104659-13-016713"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-03-03",
+        "accession": "0001104659-14-015320"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2014-11-06",
+        "accession": "0001104659-14-077709",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-08-18",
+        "accession": "0001104659-14-061722",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-08-15",
+        "accession": "0001104659-14-061175",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-08-07",
+        "accession": "0001104659-14-058286",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-06-04",
+        "accession": "0001104659-14-043983",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-06-02",
+        "accession": "0001104659-14-043275",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-05-08",
+        "accession": "0001104659-14-036500",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "case_id": "CASE-TROW-2013-01-02-6b3d28",
+  "ticker": "TROW",
+  "entry_date": "2013-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-05",
+        "accession": "0001113169-13-000010"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2013-12-11",
+        "accession": "0001113169-13-000034",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-06-20",
+        "accession": "0001113169-13-000026",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-05-29",
+        "accession": "0001113169-13-000024",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-04-24",
+        "accession": "0001113169-13-000022",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-01-29",
+        "accession": "0001113169-13-000007",
+        "description": "8-K"
+      },
+      {
+        "date": "2013-01-04",
+        "accession": "0001113169-13-000003",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-04",
+        "accession": "0001113169-14-000007"
+      }
+    ],
+    "eight_k_count": 4,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-11",
+        "accession": "0001113169-14-000032",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-09-10",
+        "accession": "0001113169-14-000021",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-04-25",
+        "accession": "0001113169-14-000016",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-01-29",
+        "accession": "0001113169-14-000004",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

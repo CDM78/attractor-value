@@ -1,0 +1,96 @@
+{
+  "case_id": "CASE-FLS-2015-12-31-54852c",
+  "ticker": "FLS",
+  "entry_date": "2015-12-31",
+  "outcome": "trap",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-02-18",
+        "accession": "0000030625-16-000121"
+      }
+    ],
+    "eight_k_count": 4,
+    "eight_k_filings": [
+      {
+        "date": "2016-09-22",
+        "accession": "0001193125-16-717134",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-08-16",
+        "accession": "0001193125-16-683116",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-05-20",
+        "accession": "0001193125-16-597320",
+        "description": "8-K"
+      },
+      {
+        "date": "2016-02-02",
+        "accession": "0001193125-16-446377",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-08-11",
+        "accession": "0000030625-17-000115"
+      },
+      {
+        "date": "2017-02-16",
+        "accession": "0000030625-17-000046"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2017-12-19",
+        "accession": "0001193125-17-373649",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2017-09-21",
+        "accession": "0001193125-17-290565",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-07-27",
+        "accession": "0001157523-17-002146",
+        "description": "FLOWSERVE CORPORATION 8-K"
+      },
+      {
+        "date": "2017-07-07",
+        "accession": "0001193125-17-224334",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-24",
+        "accession": "0001193125-17-181818",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-03-31",
+        "accession": "0001193125-17-106883",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-27",
+        "accession": "0001104659-17-011885",
+        "description": "8-K"
+      },
+      {
+        "date": "2017-02-08",
+        "accession": "0001193125-17-033857",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 28
+  }
+}

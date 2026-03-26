@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-ISRG-2013-01-02-2916db",
+  "ticker": "ISRG",
+  "entry_date": "2013-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-04",
+        "accession": "0001193125-13-036675"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-03",
+        "accession": "0001035267-14-000009"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-21",
+        "accession": "0001035267-14-000101",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-09-25",
+        "accession": "0001035267-14-000095",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-07-30",
+        "accession": "0001035267-14-000080",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-07-22",
+        "accession": "0001035267-14-000069",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-05-02",
+        "accession": "0001035267-14-000060",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-05-01",
+        "accession": "0001035267-14-000058",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

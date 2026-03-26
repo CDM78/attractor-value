@@ -1,0 +1,127 @@
+{
+  "case_id": "CASE-FTI-2019-01-02-4e96e6",
+  "ticker": "FTI",
+  "entry_date": "2019-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-03-11",
+        "accession": "0001681459-19-000011"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2019-10-23",
+        "accession": "0001681459-19-000099",
+        "description": "FORM 8-K - THIRD QUARTER EARNINGS RELEASE"
+      },
+      {
+        "date": "2019-07-24",
+        "accession": "0001681459-19-000086",
+        "description": "FORM 8-K - SECOND QUARTER EARNINGS RELEASE"
+      },
+      {
+        "date": "2019-06-25",
+        "accession": "0001193125-19-181346",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-05-31",
+        "accession": "0001681459-19-000078",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-05-03",
+        "accession": "0001681459-19-000062",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-04-25",
+        "accession": "0001681459-19-000058",
+        "description": "FORM 8-K - FIRST QUARTER EARNINGS RELEASE"
+      },
+      {
+        "date": "2019-02-20",
+        "accession": "0001681459-19-000007",
+        "description": "FORM 8-K - FOURTH QUARTER EARNINGS RELEASE"
+      },
+      {
+        "date": "2019-01-09",
+        "accession": "0001193125-19-005376",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 31
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-03-03",
+        "accession": "0001681459-20-000004"
+      }
+    ],
+    "eight_k_count": 11,
+    "eight_k_filings": [
+      {
+        "date": "2020-10-21",
+        "accession": "0001681459-20-000121",
+        "description": "FORM 8-K - THIRD QUARTER 2020 EARNINGS RELEASE"
+      },
+      {
+        "date": "2020-10-20",
+        "accession": "0001681459-20-000117",
+        "description": "8-K/A"
+      },
+      {
+        "date": "2020-10-01",
+        "accession": "0001681459-20-000110",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-09-24",
+        "accession": "0001681459-20-000108",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-07-29",
+        "accession": "0001681459-20-000101",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-06-30",
+        "accession": "0001681459-20-000098",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-06-15",
+        "accession": "0001140361-20-013799",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-05-21",
+        "accession": "0001681459-20-000085",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-04-24",
+        "accession": "0001681459-20-000079",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-04-22",
+        "accession": "0001681459-20-000076",
+        "description": "FORM 8-K - FIRST QUARTER 2020 EARNINGS RELEASE"
+      },
+      {
+        "date": "2020-02-26",
+        "accession": "0001681459-20-000002",
+        "description": "FORM 8-K - FOURTH QUARTER EARNINGS RELEASE"
+      }
+    ],
+    "form4_count": 33
+  }
+}

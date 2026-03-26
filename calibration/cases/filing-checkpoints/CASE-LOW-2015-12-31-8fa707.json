@@ -1,0 +1,107 @@
+{
+  "case_id": "CASE-LOW-2015-12-31-8fa707",
+  "ticker": "LOW",
+  "entry_date": "2015-12-31",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2015-12-31 to 2016-12-31",
+    "new_10k": [
+      {
+        "date": "2016-03-29",
+        "accession": "0000060667-16-000276"
+      }
+    ],
+    "eight_k_count": 6,
+    "eight_k_filings": [
+      {
+        "date": "2016-11-28",
+        "accession": "0001193125-16-778167",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-11-16",
+        "accession": "0000060667-16-000404",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-11-02",
+        "accession": "0000060667-16-000398",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-08-17",
+        "accession": "0000060667-16-000359",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-05-31",
+        "accession": "0000060667-16-000318",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2016-05-24",
+        "accession": "0000060667-16-000306",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2016-12-31 to 2017-12-31",
+    "new_10k": [
+      {
+        "date": "2017-04-04",
+        "accession": "0000060667-17-000076"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2017-11-21",
+        "accession": "0000060667-17-000172",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-11-21",
+        "accession": "0000060667-17-000170",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-08-23",
+        "accession": "0000060667-17-000128",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-24",
+        "accession": "0000060667-17-000082",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-05-03",
+        "accession": "0001193125-17-156435",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-24",
+        "accession": "0000060667-17-000080",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-04-19",
+        "accession": "0000060667-17-000078",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-03-01",
+        "accession": "0000060667-17-000032",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2017-01-17",
+        "accession": "0000060667-17-000012",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

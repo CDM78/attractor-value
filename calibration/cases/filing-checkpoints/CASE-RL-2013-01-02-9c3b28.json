@@ -1,0 +1,76 @@
+{
+  "case_id": "CASE-RL-2013-01-02-9c3b28",
+  "ticker": "RL",
+  "entry_date": "2013-01-02",
+  "outcome": "trap",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-05-23",
+        "accession": "0001037038-13-000009"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-05-15",
+        "accession": "0001037038-14-000006"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2014-10-29",
+        "accession": "0000950142-14-002110",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-08",
+        "accession": "0000950142-14-001700",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-06",
+        "accession": "0000950142-14-001683",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-29",
+        "accession": "0000950142-14-001176",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-09",
+        "accession": "0000950142-14-000998",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-09",
+        "accession": "0000950142-14-000996",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-02-14",
+        "accession": "0000950142-14-000430",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-02-05",
+        "accession": "0000950142-14-000272",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-02-05",
+        "accession": "0000950142-14-000264",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

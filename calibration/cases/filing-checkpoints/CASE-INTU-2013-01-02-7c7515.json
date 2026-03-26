@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-INTU-2013-01-02-7c7515",
+  "ticker": "INTU",
+  "entry_date": "2013-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-09-13",
+        "accession": "0000896878-13-000149"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-09-12",
+        "accession": "0000896878-14-000163"
+      }
+    ],
+    "eight_k_count": 7,
+    "eight_k_filings": [
+      {
+        "date": "2014-11-20",
+        "accession": "0000896878-14-000184",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-11-03",
+        "accession": "0001193125-14-394221",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-08-21",
+        "accession": "0000896878-14-000117",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-07-29",
+        "accession": "0001193125-14-284196",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-05-20",
+        "accession": "0000896878-14-000049",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-02-20",
+        "accession": "0000896878-14-000037",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-02-11",
+        "accession": "0000896878-14-000030",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

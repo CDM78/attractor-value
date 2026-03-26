@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-ADM-2013-01-02-3395a5",
+  "ticker": "ADM",
+  "entry_date": "2013-01-02",
+  "outcome": "underperform",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-26",
+        "accession": "0000007084-14-000011"
+      }
+    ],
+    "eight_k_count": 2,
+    "eight_k_filings": [
+      {
+        "date": "2014-12-16",
+        "accession": "0001193125-14-443963",
+        "description": "8-K"
+      },
+      {
+        "date": "2014-11-07",
+        "accession": "0001193125-14-403660",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}

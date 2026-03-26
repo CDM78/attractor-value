@@ -1,0 +1,117 @@
+{
+  "case_id": "CASE-CPRT-2019-01-02-6a274d",
+  "ticker": "CPRT",
+  "entry_date": "2019-01-02",
+  "outcome": "winner",
+  "t12": {
+    "period": "2019-01-02 to 2020-01-02",
+    "new_10k": [
+      {
+        "date": "2019-09-30",
+        "accession": "0000900075-19-000022"
+      }
+    ],
+    "eight_k_count": 8,
+    "eight_k_filings": [
+      {
+        "date": "2019-12-12",
+        "accession": "0001628280-19-015002",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-11-21",
+        "accession": "0000900075-19-000025",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-11-01",
+        "accession": "0001628280-19-013063",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-09-05",
+        "accession": "0000900075-19-000017",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-09-04",
+        "accession": "0001193125-19-236761",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-07-25",
+        "accession": "0001628280-19-009053",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-05-23",
+        "accession": "0000900075-19-000011",
+        "description": "8-K"
+      },
+      {
+        "date": "2019-02-21",
+        "accession": "0000900075-19-000005",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 24
+  },
+  "t24": {
+    "period": "2020-01-02 to 2021-01-02",
+    "new_10k": [
+      {
+        "date": "2020-09-28",
+        "accession": "0000900075-20-000021"
+      }
+    ],
+    "eight_k_count": 9,
+    "eight_k_filings": [
+      {
+        "date": "2020-12-10",
+        "accession": "0001628280-20-017343",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-11-18",
+        "accession": "0000900075-20-000025",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-13",
+        "accession": "0001628280-20-014453",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-10-06",
+        "accession": "0001628280-20-014306",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-09-03",
+        "accession": "0000900075-20-000017",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-07-27",
+        "accession": "0001628280-20-010649",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-05-21",
+        "accession": "0000900075-20-000010",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-03-20",
+        "accession": "0001193125-20-079668",
+        "description": "8-K"
+      },
+      {
+        "date": "2020-02-20",
+        "accession": "0000900075-20-000004",
+        "description": "8-K"
+      }
+    ],
+    "form4_count": 30
+  }
+}

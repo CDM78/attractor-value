@@ -1,0 +1,51 @@
+{
+  "case_id": "CASE-CTSH-2013-01-02-d9ecbb",
+  "ticker": "CTSH",
+  "entry_date": "2013-01-02",
+  "outcome": "mixed",
+  "t12": {
+    "period": "2013-01-02 to 2014-01-02",
+    "new_10k": [
+      {
+        "date": "2013-02-26",
+        "accession": "0001193125-13-077271"
+      }
+    ],
+    "eight_k_count": 0,
+    "eight_k_filings": [],
+    "form4_count": 0
+  },
+  "t24": {
+    "period": "2014-01-02 to 2015-01-02",
+    "new_10k": [
+      {
+        "date": "2014-02-25",
+        "accession": "0001193125-14-067531"
+      }
+    ],
+    "eight_k_count": 4,
+    "eight_k_filings": [
+      {
+        "date": "2014-11-20",
+        "accession": "0001193125-14-419486",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-11-05",
+        "accession": "0001193125-14-397233",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-09-15",
+        "accession": "0001193125-14-341043",
+        "description": "FORM 8-K"
+      },
+      {
+        "date": "2014-08-06",
+        "accession": "0001193125-14-296811",
+        "description": "FORM 8-K"
+      }
+    ],
+    "form4_count": 0
+  }
+}
