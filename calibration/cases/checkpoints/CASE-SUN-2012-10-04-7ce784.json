@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-SUN-2012-10-04-7ce784",
+  "ticker": "SUN",
+  "entry_date": "2012-10-04",
+  "entry_price": 7.82,
+  "entry_sp500": 1461.4,
+  "outcome": "winner",
+  "forward_return_3yr": 0.6594247683940778,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2013-01-04",
+      "actual_date": "2013-01-04",
+      "stock_price": 8.79,
+      "sp500_level": 1466.47,
+      "interim_return": 0.124,
+      "sp500_return": 0.0035,
+      "alpha": 0.1206
+    },
+    {
+      "months": 6,
+      "date": "2013-04-04",
+      "actual_date": "2013-04-04",
+      "stock_price": 10.36,
+      "sp500_level": 1559.98,
+      "interim_return": 0.3248,
+      "sp500_return": 0.0675,
+      "alpha": 0.2574
+    },
+    {
+      "months": 9,
+      "date": "2013-07-04",
+      "actual_date": "2013-07-03",
+      "stock_price": 9.96,
+      "sp500_level": 1615.41,
+      "interim_return": 0.2737,
+      "sp500_return": 0.1054,
+      "alpha": 0.1683
+    },
+    {
+      "months": 12,
+      "date": "2013-10-04",
+      "actual_date": "2013-10-04",
+      "stock_price": 10.8,
+      "sp500_level": 1690.5,
+      "interim_return": 0.3811,
+      "sp500_return": 0.1568,
+      "alpha": 0.2243
+    },
+    {
+      "months": 15,
+      "date": "2014-01-04",
+      "actual_date": "2014-01-03",
+      "stock_price": 11.51,
+      "sp500_level": 1831.37,
+      "interim_return": 0.4719,
+      "sp500_return": 0.2532,
+      "alpha": 0.2187
+    },
+    {
+      "months": 18,
+      "date": "2014-04-04",
+      "actual_date": "2014-04-04",
+      "stock_price": 12.85,
+      "sp500_level": 1865.09,
+      "interim_return": 0.6432,
+      "sp500_return": 0.2762,
+      "alpha": 0.367
+    },
+    {
+      "months": 21,
+      "date": "2014-07-04",
+      "actual_date": "2014-07-03",
+      "stock_price": 17.04,
+      "sp500_level": 1985.44,
+      "interim_return": 1.179,
+      "sp500_return": 0.3586,
+      "alpha": 0.8204
+    },
+    {
+      "months": 24,
+      "date": "2014-10-04",
+      "actual_date": "2014-10-03",
+      "stock_price": 19.84,
+      "sp500_level": 1967.9,
+      "interim_return": 1.5371,
+      "sp500_return": 0.3466,
+      "alpha": 1.1905
+    },
+    {
+      "months": 27,
+      "date": "2015-01-04",
+      "actual_date": "2015-01-02",
+      "stock_price": 17.94,
+      "sp500_level": 2058.2,
+      "interim_return": 1.2941,
+      "sp500_return": 0.4084,
+      "alpha": 0.8857
+    },
+    {
+      "months": 30,
+      "date": "2015-04-04",
+      "actual_date": "2015-04-02",
+      "stock_price": 18.68,
+      "sp500_level": 2066.96,
+      "interim_return": 1.3887,
+      "sp500_return": 0.4144,
+      "alpha": 0.9744
+    },
+    {
+      "months": 33,
+      "date": "2015-07-04",
+      "actual_date": "2015-07-02",
+      "stock_price": 16.63,
+      "sp500_level": 2076.78,
+      "interim_return": 1.1266,
+      "sp500_return": 0.4211,
+      "alpha": 0.7055
+    },
+    {
+      "months": 36,
+      "date": "2015-10-04",
+      "actual_date": "2015-10-02",
+      "stock_price": 12.89,
+      "sp500_level": 1951.36,
+      "interim_return": 0.6483,
+      "sp500_return": 0.3353,
+      "alpha": 0.3131
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "recovery_winner"
+}

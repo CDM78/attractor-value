@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-AAL-2015-12-31-92186b",
+  "ticker": "AAL",
+  "entry_date": "2015-12-31",
+  "entry_price": 40.47,
+  "entry_sp500": 2043.94,
+  "outcome": "trap",
+  "forward_return_3yr": -0.21,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2016-03-30",
+      "actual_date": "2016-03-30",
+      "stock_price": 39.65,
+      "sp500_level": 2063.95,
+      "interim_return": -0.0203,
+      "sp500_return": 0.0098,
+      "alpha": -0.0301
+    },
+    {
+      "months": 6,
+      "date": "2016-06-30",
+      "actual_date": "2016-06-30",
+      "stock_price": 27.21,
+      "sp500_level": 2098.86,
+      "interim_return": -0.3277,
+      "sp500_return": 0.0269,
+      "alpha": -0.3545
+    },
+    {
+      "months": 9,
+      "date": "2016-09-30",
+      "actual_date": "2016-09-30",
+      "stock_price": 35.29,
+      "sp500_level": 2168.27,
+      "interim_return": -0.128,
+      "sp500_return": 0.0608,
+      "alpha": -0.1888
+    },
+    {
+      "months": 12,
+      "date": "2016-12-31",
+      "actual_date": "2016-12-30",
+      "stock_price": 45.12,
+      "sp500_level": 2238.83,
+      "interim_return": 0.1149,
+      "sp500_return": 0.0954,
+      "alpha": 0.0195
+    },
+    {
+      "months": 15,
+      "date": "2017-03-30",
+      "actual_date": "2017-03-30",
+      "stock_price": 41.2,
+      "sp500_level": 2368.06,
+      "interim_return": 0.018,
+      "sp500_return": 0.1586,
+      "alpha": -0.1405
+    },
+    {
+      "months": 18,
+      "date": "2017-06-30",
+      "actual_date": "2017-06-30",
+      "stock_price": 48.84,
+      "sp500_level": 2423.41,
+      "interim_return": 0.2068,
+      "sp500_return": 0.1857,
+      "alpha": 0.0212
+    },
+    {
+      "months": 21,
+      "date": "2017-09-30",
+      "actual_date": "2017-09-29",
+      "stock_price": 46.19,
+      "sp500_level": 2519.36,
+      "interim_return": 0.1413,
+      "sp500_return": 0.2326,
+      "alpha": -0.0913
+    },
+    {
+      "months": 24,
+      "date": "2017-12-31",
+      "actual_date": "2017-12-29",
+      "stock_price": 50.71,
+      "sp500_level": 2673.61,
+      "interim_return": 0.253,
+      "sp500_return": 0.3081,
+      "alpha": -0.055
+    },
+    {
+      "months": 27,
+      "date": "2018-03-30",
+      "actual_date": "2018-03-29",
+      "stock_price": 50.74,
+      "sp500_level": 2640.87,
+      "interim_return": 0.2538,
+      "sp500_return": 0.292,
+      "alpha": -0.0383
+    },
+    {
+      "months": 30,
+      "date": "2018-06-30",
+      "actual_date": "2018-06-29",
+      "stock_price": 37.16,
+      "sp500_level": 2718.37,
+      "interim_return": -0.0818,
+      "sp500_return": 0.33,
+      "alpha": -0.4118
+    },
+    {
+      "months": 33,
+      "date": "2018-09-30",
+      "actual_date": "2018-09-28",
+      "stock_price": 40.56,
+      "sp500_level": 2913.98,
+      "interim_return": 0.0022,
+      "sp500_return": 0.4257,
+      "alpha": -0.4234
+    },
+    {
+      "months": 36,
+      "date": "2018-12-31",
+      "actual_date": "2018-12-31",
+      "stock_price": 31.6,
+      "sp500_level": 2506.85,
+      "interim_return": -0.2192,
+      "sp500_return": 0.2265,
+      "alpha": -0.4457
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "sharp_trap"
+}

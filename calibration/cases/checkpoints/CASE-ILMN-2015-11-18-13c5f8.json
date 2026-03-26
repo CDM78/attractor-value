@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-ILMN-2015-11-18-13c5f8",
+  "ticker": "ILMN",
+  "entry_date": "2015-11-18",
+  "entry_price": 171.62,
+  "entry_sp500": 2083.58,
+  "outcome": "winner",
+  "forward_return_3yr": 0.7094031927212102,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2016-02-18",
+      "actual_date": "2016-02-18",
+      "stock_price": 146.07,
+      "sp500_level": 1917.83,
+      "interim_return": -0.1489,
+      "sp500_return": -0.0796,
+      "alpha": -0.0693
+    },
+    {
+      "months": 6,
+      "date": "2016-05-17",
+      "actual_date": "2016-05-17",
+      "stock_price": 134.99,
+      "sp500_level": 2047.21,
+      "interim_return": -0.2134,
+      "sp500_return": -0.0175,
+      "alpha": -0.196
+    },
+    {
+      "months": 9,
+      "date": "2016-08-17",
+      "actual_date": "2016-08-17",
+      "stock_price": 164.54,
+      "sp500_level": 2182.22,
+      "interim_return": -0.0413,
+      "sp500_return": 0.0473,
+      "alpha": -0.0886
+    },
+    {
+      "months": 12,
+      "date": "2016-11-18",
+      "actual_date": "2016-11-18",
+      "stock_price": 128.28,
+      "sp500_level": 2181.9,
+      "interim_return": -0.2525,
+      "sp500_return": 0.0472,
+      "alpha": -0.2997
+    },
+    {
+      "months": 15,
+      "date": "2017-02-18",
+      "actual_date": "2017-02-17",
+      "stock_price": 158.92,
+      "sp500_level": 2351.16,
+      "interim_return": -0.074,
+      "sp500_return": 0.1284,
+      "alpha": -0.2024
+    },
+    {
+      "months": 18,
+      "date": "2017-05-17",
+      "actual_date": "2017-05-17",
+      "stock_price": 170.78,
+      "sp500_level": 2357.03,
+      "interim_return": -0.0049,
+      "sp500_return": 0.1312,
+      "alpha": -0.1361
+    },
+    {
+      "months": 21,
+      "date": "2017-08-17",
+      "actual_date": "2017-08-17",
+      "stock_price": 185.99,
+      "sp500_level": 2430.01,
+      "interim_return": 0.0837,
+      "sp500_return": 0.1663,
+      "alpha": -0.0825
+    },
+    {
+      "months": 24,
+      "date": "2017-11-18",
+      "actual_date": "2017-11-17",
+      "stock_price": 203.33,
+      "sp500_level": 2578.85,
+      "interim_return": 0.1848,
+      "sp500_return": 0.2377,
+      "alpha": -0.0529
+    },
+    {
+      "months": 27,
+      "date": "2018-02-18",
+      "actual_date": "2018-02-16",
+      "stock_price": 222.96,
+      "sp500_level": 2732.22,
+      "interim_return": 0.2991,
+      "sp500_return": 0.3113,
+      "alpha": -0.0122
+    },
+    {
+      "months": 30,
+      "date": "2018-05-17",
+      "actual_date": "2018-05-17",
+      "stock_price": 261.14,
+      "sp500_level": 2720.13,
+      "interim_return": 0.5216,
+      "sp500_return": 0.3055,
+      "alpha": 0.2161
+    },
+    {
+      "months": 33,
+      "date": "2018-08-17",
+      "actual_date": "2018-08-17",
+      "stock_price": 317,
+      "sp500_level": 2850.13,
+      "interim_return": 0.8471,
+      "sp500_return": 0.3679,
+      "alpha": 0.4792
+    },
+    {
+      "months": 36,
+      "date": "2018-11-18",
+      "actual_date": "2018-11-16",
+      "stock_price": 311.22,
+      "sp500_level": 2736.27,
+      "interim_return": 0.8134,
+      "sp500_return": 0.3133,
+      "alpha": 0.5002
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "steady_winner"
+}

@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-TYL-2020-06-22-05f86d",
+  "ticker": "TYL",
+  "entry_date": "2020-06-22",
+  "entry_price": 338.3,
+  "entry_sp500": 3117.86,
+  "outcome": "underperform",
+  "forward_return_3yr": 0.1592965314601692,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2020-09-22",
+      "actual_date": "2020-09-22",
+      "stock_price": 344.03,
+      "sp500_level": 3315.57,
+      "interim_return": 0.0169,
+      "sp500_return": 0.0634,
+      "alpha": -0.0465
+    },
+    {
+      "months": 6,
+      "date": "2020-12-22",
+      "actual_date": "2020-12-22",
+      "stock_price": 438.52,
+      "sp500_level": 3687.26,
+      "interim_return": 0.2962,
+      "sp500_return": 0.1826,
+      "alpha": 0.1136
+    },
+    {
+      "months": 9,
+      "date": "2021-03-22",
+      "actual_date": "2021-03-22",
+      "stock_price": 420.7,
+      "sp500_level": 3940.59,
+      "interim_return": 0.2436,
+      "sp500_return": 0.2639,
+      "alpha": -0.0203
+    },
+    {
+      "months": 12,
+      "date": "2021-06-22",
+      "actual_date": "2021-06-22",
+      "stock_price": 445.35,
+      "sp500_level": 4246.44,
+      "interim_return": 0.3164,
+      "sp500_return": 0.362,
+      "alpha": -0.0455
+    },
+    {
+      "months": 15,
+      "date": "2021-09-22",
+      "actual_date": "2021-09-22",
+      "stock_price": 467.91,
+      "sp500_level": 4395.64,
+      "interim_return": 0.3831,
+      "sp500_return": 0.4098,
+      "alpha": -0.0267
+    },
+    {
+      "months": 18,
+      "date": "2021-12-22",
+      "actual_date": "2021-12-22",
+      "stock_price": 525.78,
+      "sp500_level": 4696.56,
+      "interim_return": 0.5542,
+      "sp500_return": 0.5063,
+      "alpha": 0.0478
+    },
+    {
+      "months": 21,
+      "date": "2022-03-22",
+      "actual_date": "2022-03-22",
+      "stock_price": 441.33,
+      "sp500_level": 4511.61,
+      "interim_return": 0.3046,
+      "sp500_return": 0.447,
+      "alpha": -0.1425
+    },
+    {
+      "months": 24,
+      "date": "2022-06-22",
+      "actual_date": "2022-06-22",
+      "stock_price": 315.11,
+      "sp500_level": 3759.89,
+      "interim_return": -0.0685,
+      "sp500_return": 0.2059,
+      "alpha": -0.2745
+    },
+    {
+      "months": 27,
+      "date": "2022-09-22",
+      "actual_date": "2022-09-22",
+      "stock_price": 342.49,
+      "sp500_level": 3757.99,
+      "interim_return": 0.0124,
+      "sp500_return": 0.2053,
+      "alpha": -0.1929
+    },
+    {
+      "months": 30,
+      "date": "2022-12-22",
+      "actual_date": "2022-12-22",
+      "stock_price": 321.83,
+      "sp500_level": 3822.39,
+      "interim_return": -0.0487,
+      "sp500_return": 0.226,
+      "alpha": -0.2747
+    },
+    {
+      "months": 33,
+      "date": "2023-03-22",
+      "actual_date": "2023-03-22",
+      "stock_price": 320.71,
+      "sp500_level": 3936.97,
+      "interim_return": -0.052,
+      "sp500_return": 0.2627,
+      "alpha": -0.3147
+    },
+    {
+      "months": 36,
+      "date": "2023-06-22",
+      "actual_date": "2023-06-22",
+      "stock_price": 399.25,
+      "sp500_level": 4381.89,
+      "interim_return": 0.1802,
+      "sp500_return": 0.4054,
+      "alpha": -0.2253
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "dead_money"
+}

@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-HP-2010-03-01-7a8249",
+  "ticker": "HP",
+  "entry_date": "2010-03-01",
+  "entry_price": 22.22,
+  "entry_sp500": 1115.71,
+  "outcome": "winner",
+  "forward_return_3yr": 0.6603918316806404,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2010-05-28",
+      "actual_date": "2010-05-28",
+      "stock_price": 20.66,
+      "sp500_level": 1089.41,
+      "interim_return": -0.0702,
+      "sp500_return": -0.0236,
+      "alpha": -0.0466
+    },
+    {
+      "months": 6,
+      "date": "2010-08-28",
+      "actual_date": "2010-08-27",
+      "stock_price": 20.76,
+      "sp500_level": 1064.59,
+      "interim_return": -0.0657,
+      "sp500_return": -0.0458,
+      "alpha": -0.0199
+    },
+    {
+      "months": 9,
+      "date": "2010-11-29",
+      "actual_date": "2010-11-29",
+      "stock_price": 25.01,
+      "sp500_level": 1187.76,
+      "interim_return": 0.1256,
+      "sp500_return": 0.0646,
+      "alpha": 0.061
+    },
+    {
+      "months": 12,
+      "date": "2011-03-01",
+      "actual_date": "2011-03-01",
+      "stock_price": 34.82,
+      "sp500_level": 1306.33,
+      "interim_return": 0.5671,
+      "sp500_return": 0.1709,
+      "alpha": 0.3962
+    },
+    {
+      "months": 15,
+      "date": "2011-05-28",
+      "actual_date": "2011-05-27",
+      "stock_price": 34.48,
+      "sp500_level": 1331.1,
+      "interim_return": 0.5518,
+      "sp500_return": 0.1931,
+      "alpha": 0.3587
+    },
+    {
+      "months": 18,
+      "date": "2011-08-28",
+      "actual_date": "2011-08-26",
+      "stock_price": 29.69,
+      "sp500_level": 1176.8,
+      "interim_return": 0.3362,
+      "sp500_return": 0.0548,
+      "alpha": 0.2814
+    },
+    {
+      "months": 21,
+      "date": "2011-11-29",
+      "actual_date": "2011-11-29",
+      "stock_price": 29.2,
+      "sp500_level": 1195.19,
+      "interim_return": 0.3141,
+      "sp500_return": 0.0712,
+      "alpha": 0.2429
+    },
+    {
+      "months": 24,
+      "date": "2012-02-29",
+      "actual_date": "2012-02-29",
+      "stock_price": 33.91,
+      "sp500_level": 1365.68,
+      "interim_return": 0.5261,
+      "sp500_return": 0.224,
+      "alpha": 0.3021
+    },
+    {
+      "months": 27,
+      "date": "2012-05-28",
+      "actual_date": "2012-05-25",
+      "stock_price": 25.62,
+      "sp500_level": 1317.82,
+      "interim_return": 0.153,
+      "sp500_return": 0.1811,
+      "alpha": -0.0281
+    },
+    {
+      "months": 30,
+      "date": "2012-08-28",
+      "actual_date": "2012-08-28",
+      "stock_price": 25.48,
+      "sp500_level": 1409.3,
+      "interim_return": 0.1467,
+      "sp500_return": 0.2631,
+      "alpha": -0.1164
+    },
+    {
+      "months": 33,
+      "date": "2012-11-29",
+      "actual_date": "2012-11-29",
+      "stock_price": 28.55,
+      "sp500_level": 1415.95,
+      "interim_return": 0.2849,
+      "sp500_return": 0.2691,
+      "alpha": 0.0158
+    },
+    {
+      "months": 36,
+      "date": "2013-03-01",
+      "actual_date": "2013-03-01",
+      "stock_price": 36.81,
+      "sp500_level": 1518.2,
+      "interim_return": 0.6566,
+      "sp500_return": 0.3607,
+      "alpha": 0.2959
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "recovery_winner"
+}

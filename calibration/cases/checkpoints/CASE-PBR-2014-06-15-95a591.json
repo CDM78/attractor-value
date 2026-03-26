@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-PBR-2014-06-15-95a591",
+  "ticker": "PBR",
+  "entry_date": "2014-06-15",
+  "entry_price": 4.7,
+  "entry_sp500": 1936.16,
+  "outcome": "trap",
+  "forward_return_3yr": -0.477630944139863,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2014-09-15",
+      "actual_date": "2014-09-15",
+      "stock_price": 4.89,
+      "sp500_level": 1984.13,
+      "interim_return": 0.0404,
+      "sp500_return": 0.0248,
+      "alpha": 0.0156
+    },
+    {
+      "months": 6,
+      "date": "2014-12-15",
+      "actual_date": "2014-12-15",
+      "stock_price": 1.85,
+      "sp500_level": 1989.63,
+      "interim_return": -0.6064,
+      "sp500_return": 0.0276,
+      "alpha": -0.634
+    },
+    {
+      "months": 9,
+      "date": "2015-03-15",
+      "actual_date": "2015-03-13",
+      "stock_price": 1.48,
+      "sp500_level": 2053.4,
+      "interim_return": -0.6851,
+      "sp500_return": 0.0606,
+      "alpha": -0.7457
+    },
+    {
+      "months": 12,
+      "date": "2015-06-15",
+      "actual_date": "2015-06-15",
+      "stock_price": 2.69,
+      "sp500_level": 2084.43,
+      "interim_return": -0.4277,
+      "sp500_return": 0.0766,
+      "alpha": -0.5042
+    },
+    {
+      "months": 15,
+      "date": "2015-09-15",
+      "actual_date": "2015-09-15",
+      "stock_price": 1.34,
+      "sp500_level": 1978.09,
+      "interim_return": -0.7149,
+      "sp500_return": 0.0217,
+      "alpha": -0.7365
+    },
+    {
+      "months": 18,
+      "date": "2015-12-15",
+      "actual_date": "2015-12-15",
+      "stock_price": 1.37,
+      "sp500_level": 2043.41,
+      "interim_return": -0.7085,
+      "sp500_return": 0.0554,
+      "alpha": -0.7639
+    },
+    {
+      "months": 21,
+      "date": "2016-03-15",
+      "actual_date": "2016-03-15",
+      "stock_price": 1.42,
+      "sp500_level": 2015.93,
+      "interim_return": -0.6979,
+      "sp500_return": 0.0412,
+      "alpha": -0.7391
+    },
+    {
+      "months": 24,
+      "date": "2016-06-15",
+      "actual_date": "2016-06-15",
+      "stock_price": 1.83,
+      "sp500_level": 2071.5,
+      "interim_return": -0.6106,
+      "sp500_return": 0.0699,
+      "alpha": -0.6805
+    },
+    {
+      "months": 27,
+      "date": "2016-09-15",
+      "actual_date": "2016-09-15",
+      "stock_price": 2.74,
+      "sp500_level": 2147.26,
+      "interim_return": -0.417,
+      "sp500_return": 0.109,
+      "alpha": -0.5261
+    },
+    {
+      "months": 30,
+      "date": "2016-12-15",
+      "actual_date": "2016-12-15",
+      "stock_price": 3.04,
+      "sp500_level": 2262.03,
+      "interim_return": -0.3532,
+      "sp500_return": 0.1683,
+      "alpha": -0.5215
+    },
+    {
+      "months": 33,
+      "date": "2017-03-15",
+      "actual_date": "2017-03-15",
+      "stock_price": 2.77,
+      "sp500_level": 2385.26,
+      "interim_return": -0.4106,
+      "sp500_return": 0.232,
+      "alpha": -0.6426
+    },
+    {
+      "months": 36,
+      "date": "2017-06-15",
+      "actual_date": "2017-06-15",
+      "stock_price": 2.41,
+      "sp500_level": 2432.46,
+      "interim_return": -0.4872,
+      "sp500_return": 0.2563,
+      "alpha": -0.7436
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "sharp_trap"
+}

@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-XYL-2011-10-31-0f4939",
+  "ticker": "XYL",
+  "entry_date": "2011-10-31",
+  "entry_price": 22.04,
+  "entry_sp500": 1253.3,
+  "outcome": "underperform",
+  "forward_return_3yr": 0.4309690331817868,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2012-01-31",
+      "actual_date": "2012-01-31",
+      "stock_price": 21.45,
+      "sp500_level": 1312.41,
+      "interim_return": -0.0268,
+      "sp500_return": 0.0472,
+      "alpha": -0.0739
+    },
+    {
+      "months": 6,
+      "date": "2012-05-01",
+      "actual_date": "2012-05-01",
+      "stock_price": 22.99,
+      "sp500_level": 1405.82,
+      "interim_return": 0.0431,
+      "sp500_return": 0.1217,
+      "alpha": -0.0786
+    },
+    {
+      "months": 9,
+      "date": "2012-07-31",
+      "actual_date": "2012-07-31",
+      "stock_price": 20.01,
+      "sp500_level": 1379.32,
+      "interim_return": -0.0921,
+      "sp500_return": 0.1006,
+      "alpha": -0.1927
+    },
+    {
+      "months": 12,
+      "date": "2012-10-31",
+      "actual_date": "2012-10-31",
+      "stock_price": 20.41,
+      "sp500_level": 1412.16,
+      "interim_return": -0.074,
+      "sp500_return": 0.1268,
+      "alpha": -0.2007
+    },
+    {
+      "months": 15,
+      "date": "2013-01-31",
+      "actual_date": "2013-01-31",
+      "stock_price": 23.5,
+      "sp500_level": 1498.11,
+      "interim_return": 0.0662,
+      "sp500_return": 0.1953,
+      "alpha": -0.1291
+    },
+    {
+      "months": 18,
+      "date": "2013-05-01",
+      "actual_date": "2013-05-01",
+      "stock_price": 23.23,
+      "sp500_level": 1582.7,
+      "interim_return": 0.054,
+      "sp500_return": 0.2628,
+      "alpha": -0.2088
+    },
+    {
+      "months": 21,
+      "date": "2013-07-31",
+      "actual_date": "2013-07-31",
+      "stock_price": 21.14,
+      "sp500_level": 1685.73,
+      "interim_return": -0.0408,
+      "sp500_return": 0.345,
+      "alpha": -0.3859
+    },
+    {
+      "months": 24,
+      "date": "2013-10-31",
+      "actual_date": "2013-10-31",
+      "stock_price": 29.52,
+      "sp500_level": 1756.54,
+      "interim_return": 0.3394,
+      "sp500_return": 0.4015,
+      "alpha": -0.0621
+    },
+    {
+      "months": 27,
+      "date": "2014-01-31",
+      "actual_date": "2014-01-31",
+      "stock_price": 28.54,
+      "sp500_level": 1782.59,
+      "interim_return": 0.2949,
+      "sp500_return": 0.4223,
+      "alpha": -0.1274
+    },
+    {
+      "months": 30,
+      "date": "2014-05-01",
+      "actual_date": "2014-05-01",
+      "stock_price": 31.73,
+      "sp500_level": 1883.68,
+      "interim_return": 0.4397,
+      "sp500_return": 0.503,
+      "alpha": -0.0633
+    },
+    {
+      "months": 33,
+      "date": "2014-07-31",
+      "actual_date": "2014-07-31",
+      "stock_price": 30.4,
+      "sp500_level": 1930.67,
+      "interim_return": 0.3793,
+      "sp500_return": 0.5405,
+      "alpha": -0.1612
+    },
+    {
+      "months": 36,
+      "date": "2014-10-31",
+      "actual_date": "2014-10-31",
+      "stock_price": 31.55,
+      "sp500_level": 2018.05,
+      "interim_return": 0.4315,
+      "sp500_return": 0.6102,
+      "alpha": -0.1787
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "steady_winner"
+}

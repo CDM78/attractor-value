@@ -1,43 +1,8 @@
 {
-  "session": 2,
-  "status": "complete",
-  "connectors_built": [
-    "edgar_10k_sections",
-    "edgar_10q_mda",
-    "edgar_8k_transcripts",
-    "edgar_comment_letters",
-    "fmp_transcripts",
-    "uspto_patents"
-  ],
-  "shared_utilities": "shared.js (fetchWithRetry, fetchEdgarSubmissions, CIK cache, HTML stripping)",
-  "pilot_coverage": "see session2-coverage-report-2026-03-26.md",
-  "pilot_stats": {
-    "companies": 50,
-    "with_10k_item1a": 47,
-    "with_both_item1a": 44,
-    "avg_richness": 5.7,
-    "with_comment_letters": 37,
-    "with_transcripts": 1,
-    "with_patents": 0
-  },
-  "structural_stress_cv": {
-    "result": "PARTIALLY_REAL",
-    "delta": "14.7pp",
-    "cv_folds_positive": "5/5",
-    "fisher_p": 0.006,
-    "independent_of_spread": false,
-    "chi_sq_p": 0.0009,
-    "recommendation": "Conditionally useful — add value residual after controlling for spread"
-  },
-  "key_findings": [
-    "EDGAR older filing pages needed fetchEdgarSubmissions() helper — fixed during session",
-    "10-K Item 1A extraction: 94% success rate (structured_parsing)",
-    "8-K earnings transcripts: <5% coverage — most companies don't file transcripts with SEC",
-    "FMP API key needed for transcript coverage",
-    "PatentsView API returns 0 results — API may have changed or requires exact legal names",
-    "SEC comment letters: 74% coverage, rich signal potential",
-    "STRUCTURAL_STRESS: real signal (p=0.006) but correlated with credit spread regime"
-  ],
-  "next": "Session 3 (experimental connectors) or Session 4.5 (checkpoint enrichment)",
-  "timestamp": "2026-03-26T15:40:00.000Z"
+  "session": "4.5",
+  "phase": "price_checkpoints: 600/661 tickers",
+  "completed_parts": [],
+  "price_checkpoints_done": 2676,
+  "price_checkpoints_total": 2832,
+  "timestamp": "2026-03-26T20:46:34.346Z"
 }

@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-NVDA-2013-01-02-f70dd2",
+  "ticker": "NVDA",
+  "entry_date": "2013-01-02",
+  "entry_price": 0.29,
+  "entry_sp500": 1462.42,
+  "outcome": "winner",
+  "forward_return_3yr": 1.74,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2013-04-01",
+      "actual_date": "2013-04-01",
+      "stock_price": 0.29,
+      "sp500_level": 1562.17,
+      "interim_return": 0,
+      "sp500_return": 0.0682,
+      "alpha": -0.0682
+    },
+    {
+      "months": 6,
+      "date": "2013-07-01",
+      "actual_date": "2013-07-01",
+      "stock_price": 0.33,
+      "sp500_level": 1614.96,
+      "interim_return": 0.1379,
+      "sp500_return": 0.1043,
+      "alpha": 0.0336
+    },
+    {
+      "months": 9,
+      "date": "2013-10-01",
+      "actual_date": "2013-10-01",
+      "stock_price": 0.36,
+      "sp500_level": 1695,
+      "interim_return": 0.2414,
+      "sp500_return": 0.159,
+      "alpha": 0.0823
+    },
+    {
+      "months": 12,
+      "date": "2014-01-02",
+      "actual_date": "2014-01-02",
+      "stock_price": 0.37,
+      "sp500_level": 1831.98,
+      "interim_return": 0.2759,
+      "sp500_return": 0.2527,
+      "alpha": 0.0232
+    },
+    {
+      "months": 15,
+      "date": "2014-04-01",
+      "actual_date": "2014-04-01",
+      "stock_price": 0.44,
+      "sp500_level": 1885.52,
+      "interim_return": 0.5172,
+      "sp500_return": 0.2893,
+      "alpha": 0.2279
+    },
+    {
+      "months": 18,
+      "date": "2014-07-01",
+      "actual_date": "2014-07-01",
+      "stock_price": 0.45,
+      "sp500_level": 1973.32,
+      "interim_return": 0.5517,
+      "sp500_return": 0.3494,
+      "alpha": 0.2024
+    },
+    {
+      "months": 21,
+      "date": "2014-10-01",
+      "actual_date": "2014-10-01",
+      "stock_price": 0.44,
+      "sp500_level": 1946.16,
+      "interim_return": 0.5172,
+      "sp500_return": 0.3308,
+      "alpha": 0.1865
+    },
+    {
+      "months": 24,
+      "date": "2015-01-02",
+      "actual_date": "2015-01-02",
+      "stock_price": 0.48,
+      "sp500_level": 2058.2,
+      "interim_return": 0.6552,
+      "sp500_return": 0.4074,
+      "alpha": 0.2478
+    },
+    {
+      "months": 27,
+      "date": "2015-04-01",
+      "actual_date": "2015-04-01",
+      "stock_price": 0.51,
+      "sp500_level": 2059.69,
+      "interim_return": 0.7586,
+      "sp500_return": 0.4084,
+      "alpha": 0.3502
+    },
+    {
+      "months": 30,
+      "date": "2015-07-01",
+      "actual_date": "2015-07-01",
+      "stock_price": 0.49,
+      "sp500_level": 2077.42,
+      "interim_return": 0.6897,
+      "sp500_return": 0.4205,
+      "alpha": 0.2691
+    },
+    {
+      "months": 33,
+      "date": "2015-10-01",
+      "actual_date": "2015-10-01",
+      "stock_price": 0.59,
+      "sp500_level": 1923.82,
+      "interim_return": 1.0345,
+      "sp500_return": 0.3155,
+      "alpha": 0.719
+    },
+    {
+      "months": 36,
+      "date": "2016-01-02",
+      "actual_date": "2015-12-31",
+      "stock_price": 0.8,
+      "sp500_level": 2043.94,
+      "interim_return": 1.7586,
+      "sp500_return": 0.3976,
+      "alpha": 1.361
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "steady_winner"
+}

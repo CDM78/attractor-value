@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-GD-2015-12-31-6fc22b",
+  "ticker": "GD",
+  "entry_date": "2015-12-31",
+  "entry_price": 109.75,
+  "entry_sp500": 2043.94,
+  "outcome": "underperform",
+  "forward_return_3yr": 0.211,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2016-03-30",
+      "actual_date": "2016-03-30",
+      "stock_price": 105.8,
+      "sp500_level": 2063.95,
+      "interim_return": -0.036,
+      "sp500_return": 0.0098,
+      "alpha": -0.0458
+    },
+    {
+      "months": 6,
+      "date": "2016-06-30",
+      "actual_date": "2016-06-30",
+      "stock_price": 113.13,
+      "sp500_level": 2098.86,
+      "interim_return": 0.0308,
+      "sp500_return": 0.0269,
+      "alpha": 0.0039
+    },
+    {
+      "months": 9,
+      "date": "2016-09-30",
+      "actual_date": "2016-09-30",
+      "stock_price": 126.06,
+      "sp500_level": 2168.27,
+      "interim_return": 0.1486,
+      "sp500_return": 0.0608,
+      "alpha": 0.0878
+    },
+    {
+      "months": 12,
+      "date": "2016-12-31",
+      "actual_date": "2016-12-30",
+      "stock_price": 140.98,
+      "sp500_level": 2238.83,
+      "interim_return": 0.2846,
+      "sp500_return": 0.0954,
+      "alpha": 0.1892
+    },
+    {
+      "months": 15,
+      "date": "2017-03-30",
+      "actual_date": "2017-03-30",
+      "stock_price": 154.81,
+      "sp500_level": 2368.06,
+      "interim_return": 0.4106,
+      "sp500_return": 0.1586,
+      "alpha": 0.252
+    },
+    {
+      "months": 18,
+      "date": "2017-06-30",
+      "actual_date": "2017-06-30",
+      "stock_price": 163.18,
+      "sp500_level": 2423.41,
+      "interim_return": 0.4868,
+      "sp500_return": 0.1857,
+      "alpha": 0.3012
+    },
+    {
+      "months": 21,
+      "date": "2017-09-30",
+      "actual_date": "2017-09-29",
+      "stock_price": 170.06,
+      "sp500_level": 2519.36,
+      "interim_return": 0.5495,
+      "sp500_return": 0.2326,
+      "alpha": 0.3169
+    },
+    {
+      "months": 24,
+      "date": "2017-12-31",
+      "actual_date": "2017-12-29",
+      "stock_price": 168.97,
+      "sp500_level": 2673.61,
+      "interim_return": 0.5396,
+      "sp500_return": 0.3081,
+      "alpha": 0.2315
+    },
+    {
+      "months": 27,
+      "date": "2018-03-30",
+      "actual_date": "2018-03-29",
+      "stock_price": 184.21,
+      "sp500_level": 2640.87,
+      "interim_return": 0.6785,
+      "sp500_return": 0.292,
+      "alpha": 0.3864
+    },
+    {
+      "months": 30,
+      "date": "2018-06-30",
+      "actual_date": "2018-06-29",
+      "stock_price": 156.12,
+      "sp500_level": 2718.37,
+      "interim_return": 0.4225,
+      "sp500_return": 0.33,
+      "alpha": 0.0925
+    },
+    {
+      "months": 33,
+      "date": "2018-09-30",
+      "actual_date": "2018-09-28",
+      "stock_price": 172.3,
+      "sp500_level": 2913.98,
+      "interim_return": 0.5699,
+      "sp500_return": 0.4257,
+      "alpha": 0.1443
+    },
+    {
+      "months": 36,
+      "date": "2018-12-31",
+      "actual_date": "2018-12-31",
+      "stock_price": 132.91,
+      "sp500_level": 2506.85,
+      "interim_return": 0.211,
+      "sp500_return": 0.2265,
+      "alpha": -0.0155
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "recovery_winner"
+}

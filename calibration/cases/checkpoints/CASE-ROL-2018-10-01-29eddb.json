@@ -1,0 +1,133 @@
+{
+  "case_id": "CASE-ROL-2018-10-01-29eddb",
+  "ticker": "ROL",
+  "entry_date": "2018-10-01",
+  "entry_price": 23.94,
+  "entry_sp500": 2924.59,
+  "outcome": "underperform",
+  "forward_return_3yr": 0.39091263826756895,
+  "checkpoints": [
+    {
+      "months": 3,
+      "date": "2018-12-31",
+      "actual_date": "2018-12-31",
+      "stock_price": 22.03,
+      "sp500_level": 2506.85,
+      "interim_return": -0.0798,
+      "sp500_return": -0.1428,
+      "alpha": 0.0631
+    },
+    {
+      "months": 6,
+      "date": "2019-03-31",
+      "actual_date": "2019-03-29",
+      "stock_price": 25.47,
+      "sp500_level": 2834.4,
+      "interim_return": 0.0639,
+      "sp500_return": -0.0308,
+      "alpha": 0.0947
+    },
+    {
+      "months": 9,
+      "date": "2019-07-01",
+      "actual_date": "2019-07-01",
+      "stock_price": 22.24,
+      "sp500_level": 2964.33,
+      "interim_return": -0.071,
+      "sp500_return": 0.0136,
+      "alpha": -0.0846
+    },
+    {
+      "months": 12,
+      "date": "2019-10-01",
+      "actual_date": "2019-10-01",
+      "stock_price": 20.62,
+      "sp500_level": 2940.25,
+      "interim_return": -0.1387,
+      "sp500_return": 0.0054,
+      "alpha": -0.144
+    },
+    {
+      "months": 15,
+      "date": "2019-12-31",
+      "actual_date": "2019-12-31",
+      "stock_price": 20.5,
+      "sp500_level": 3230.78,
+      "interim_return": -0.1437,
+      "sp500_return": 0.1047,
+      "alpha": -0.2484
+    },
+    {
+      "months": 18,
+      "date": "2020-03-31",
+      "actual_date": "2020-03-31",
+      "stock_price": 22.41,
+      "sp500_level": 2584.59,
+      "interim_return": -0.0639,
+      "sp500_return": -0.1163,
+      "alpha": 0.0523
+    },
+    {
+      "months": 21,
+      "date": "2020-07-01",
+      "actual_date": "2020-07-01",
+      "stock_price": 26.57,
+      "sp500_level": 3115.86,
+      "interim_return": 0.1099,
+      "sp500_return": 0.0654,
+      "alpha": 0.0445
+    },
+    {
+      "months": 24,
+      "date": "2020-10-01",
+      "actual_date": "2020-10-01",
+      "stock_price": 33.48,
+      "sp500_level": 3380.8,
+      "interim_return": 0.3985,
+      "sp500_return": 0.156,
+      "alpha": 0.2425
+    },
+    {
+      "months": 27,
+      "date": "2020-12-31",
+      "actual_date": "2020-12-31",
+      "stock_price": 36.58,
+      "sp500_level": 3756.07,
+      "interim_return": 0.528,
+      "sp500_return": 0.2843,
+      "alpha": 0.2437
+    },
+    {
+      "months": 30,
+      "date": "2021-03-31",
+      "actual_date": "2021-03-31",
+      "stock_price": 32.3,
+      "sp500_level": 3972.89,
+      "interim_return": 0.3492,
+      "sp500_return": 0.3584,
+      "alpha": -0.0092
+    },
+    {
+      "months": 33,
+      "date": "2021-07-01",
+      "actual_date": "2021-07-01",
+      "stock_price": 32.55,
+      "sp500_level": 4319.94,
+      "interim_return": 0.3596,
+      "sp500_return": 0.4771,
+      "alpha": -0.1175
+    },
+    {
+      "months": 36,
+      "date": "2021-10-01",
+      "actual_date": "2021-10-01",
+      "stock_price": 33.58,
+      "sp500_level": 4357.04,
+      "interim_return": 0.4027,
+      "sp500_return": 0.4898,
+      "alpha": -0.0871
+    }
+  ],
+  "checkpoint_count": 12,
+  "trajectory": "steady_winner"
+}
