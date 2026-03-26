@@ -1,4 +1,58 @@
 {
+  "A|10k_full": {
+    "company": "A",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-12-20",
+      "2011-12-16",
+      "2012-12-20"
+    ]
+  },
+  "A|10k_risk_factors": {
+    "company": "A",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-12-20",
+      "2011-12-16",
+      "2012-12-20"
+    ]
+  },
+  "A|10k_mda": {
+    "company": "A",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-12-20",
+      "2011-12-16",
+      "2012-12-20"
+    ]
+  },
+  "A|10q_mda": {
+    "company": "A",
+    "data_type": "10q_mda",
+    "dates": [
+      "2012-03-05",
+      "2012-06-04",
+      "2012-09-05"
+    ]
+  },
+  "A|10q_financials": {
+    "company": "A",
+    "data_type": "10q_financials",
+    "dates": [
+      "2012-03-05",
+      "2012-06-04",
+      "2012-09-05"
+    ]
+  },
+  "A|sec_comment_letters": {
+    "company": "A",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2012-01-30",
+      "2012-02-07",
+      "2012-03-02"
+    ]
+  },
   "A|short_interest": {
     "company": "A",
     "data_type": "short_interest",
@@ -24,11 +78,103 @@
       "2021-12-31"
     ]
   },
+  "AAPL|10k_full": {
+    "company": "AAPL",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-10-27",
+      "2011-10-26",
+      "2012-10-31"
+    ]
+  },
+  "AAPL|10k_risk_factors": {
+    "company": "AAPL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-10-27",
+      "2011-10-26",
+      "2012-10-31"
+    ]
+  },
+  "AAPL|10k_mda": {
+    "company": "AAPL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-10-27",
+      "2011-10-26",
+      "2012-10-31"
+    ]
+  },
+  "AAPL|10q_mda": {
+    "company": "AAPL",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-07-20",
+      "2012-01-25",
+      "2012-04-25",
+      "2012-07-25"
+    ]
+  },
+  "AAPL|10q_financials": {
+    "company": "AAPL",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-07-20",
+      "2012-01-25",
+      "2012-04-25",
+      "2012-07-25"
+    ]
+  },
+  "AAPL|sec_comment_letters": {
+    "company": "AAPL",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-02-18",
+      "2010-03-04",
+      "2010-03-19",
+      "2010-04-01",
+      "2010-04-14",
+      "2011-01-28",
+      "2011-02-08",
+      "2011-03-23",
+      "2011-03-28",
+      "2011-04-25",
+      "2011-06-29",
+      "2011-07-12",
+      "2011-07-19",
+      "2011-08-01",
+      "2011-08-17"
+    ]
+  },
   "AAPL|short_interest": {
     "company": "AAPL",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31"
+    ]
+  },
+  "ABBV|sec_comment_letters": {
+    "company": "ABBV",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2012-07-02",
+      "2012-08-07",
+      "2012-08-17",
+      "2012-09-04",
+      "2012-09-19",
+      "2012-09-26",
+      "2012-10-09",
+      "2012-10-23",
+      "2012-11-06",
+      "2012-11-16",
+      "2012-11-27",
+      "2012-11-30",
+      "2012-12-07",
+      "2012-12-10",
+      "2012-12-18",
+      "2012-12-19",
+      "2012-12-26",
+      "2012-12-28"
     ]
   },
   "ABBV|short_interest": {
@@ -46,6 +192,94 @@
       "2021-12-31"
     ]
   },
+  "ABT|10k_full": {
+    "company": "ABT",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-02-18",
+      "2012-02-21"
+    ]
+  },
+  "ABT|10k_risk_factors": {
+    "company": "ABT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-02-18",
+      "2012-02-21"
+    ]
+  },
+  "ABT|10k_mda": {
+    "company": "ABT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-02-18",
+      "2012-02-21"
+    ]
+  },
+  "ABT|10q_mda": {
+    "company": "ABT",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-11-04",
+      "2012-05-08",
+      "2012-08-07",
+      "2012-11-07"
+    ]
+  },
+  "ABT|10q_financials": {
+    "company": "ABT",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-11-04",
+      "2012-05-08",
+      "2012-08-07",
+      "2012-11-07"
+    ]
+  },
+  "ABT|sec_comment_letters": {
+    "company": "ABT",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-04-23",
+      "2010-05-06",
+      "2010-06-22",
+      "2010-06-30",
+      "2010-07-28",
+      "2010-08-10",
+      "2010-08-11",
+      "2010-08-18",
+      "2010-09-01",
+      "2010-09-30",
+      "2010-11-19",
+      "2010-12-07",
+      "2010-12-10",
+      "2011-01-06",
+      "2011-01-20",
+      "2011-01-24",
+      "2011-03-31",
+      "2011-04-08",
+      "2011-04-28",
+      "2011-05-06",
+      "2011-06-03",
+      "2011-06-09",
+      "2011-07-01",
+      "2011-07-06",
+      "2011-07-18",
+      "2011-07-25",
+      "2011-08-05",
+      "2011-08-22",
+      "2011-09-02",
+      "2011-09-19",
+      "2011-09-20",
+      "2012-04-18",
+      "2012-05-02",
+      "2012-05-30",
+      "2012-06-07",
+      "2012-07-13",
+      "2012-08-06",
+      "2012-12-28"
+    ]
+  },
   "ABT|short_interest": {
     "company": "ABT",
     "data_type": "short_interest",
@@ -54,12 +288,133 @@
       "2021-12-31"
     ]
   },
+  "ACN|10k_full": {
+    "company": "ACN",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-10-21",
+      "2012-10-30"
+    ]
+  },
+  "ACN|10k_risk_factors": {
+    "company": "ACN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-10-21",
+      "2012-10-30"
+    ]
+  },
+  "ACN|10k_mda": {
+    "company": "ACN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-10-21",
+      "2012-10-30"
+    ]
+  },
+  "ACN|10q_mda": {
+    "company": "ACN",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-12-20",
+      "2012-03-23",
+      "2012-06-29",
+      "2012-12-20"
+    ]
+  },
+  "ACN|10q_financials": {
+    "company": "ACN",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-12-20",
+      "2012-03-23",
+      "2012-06-29",
+      "2012-12-20"
+    ]
+  },
+  "ACN|sec_comment_letters": {
+    "company": "ACN",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-01-05",
+      "2010-01-21",
+      "2010-02-02",
+      "2010-02-09",
+      "2010-02-25"
+    ]
+  },
   "ACN|short_interest": {
     "company": "ACN",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "ADBE|10k_full": {
+    "company": "ADBE",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-01-22",
+      "2011-01-27",
+      "2012-01-26"
+    ]
+  },
+  "ADBE|10k_risk_factors": {
+    "company": "ADBE",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-01-22",
+      "2011-01-27",
+      "2012-01-26"
+    ]
+  },
+  "ADBE|10k_mda": {
+    "company": "ADBE",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-01-22",
+      "2011-01-27",
+      "2012-01-26"
+    ]
+  },
+  "ADBE|10q_mda": {
+    "company": "ADBE",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-10-07",
+      "2012-03-30",
+      "2012-06-27",
+      "2012-09-27"
+    ]
+  },
+  "ADBE|10q_financials": {
+    "company": "ADBE",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-10-07",
+      "2012-03-30",
+      "2012-06-27",
+      "2012-09-27"
+    ]
+  },
+  "ADBE|sec_comment_letters": {
+    "company": "ADBE",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-02-28",
+      "2011-03-11",
+      "2011-03-18",
+      "2011-03-30",
+      "2011-04-21",
+      "2011-05-09",
+      "2011-05-10",
+      "2012-03-01",
+      "2012-03-09",
+      "2012-03-27",
+      "2012-04-16",
+      "2012-04-23",
+      "2012-05-17"
     ]
   },
   "ADBE|short_interest": {
@@ -85,6 +440,127 @@
       "2021-12-31"
     ]
   },
+  "ADP|10k_full": {
+    "company": "ADP",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-08-25",
+      "2011-08-24",
+      "2012-08-20"
+    ]
+  },
+  "ADP|10k_risk_factors": {
+    "company": "ADP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-08-25",
+      "2011-08-24",
+      "2012-08-20"
+    ]
+  },
+  "ADP|10k_mda": {
+    "company": "ADP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-08-25",
+      "2011-08-24",
+      "2012-08-20"
+    ]
+  },
+  "ADP|10q_mda": {
+    "company": "ADP",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-11-04",
+      "2012-02-07",
+      "2012-05-04",
+      "2012-11-02"
+    ]
+  },
+  "ADP|10q_financials": {
+    "company": "ADP",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-11-04",
+      "2012-02-07",
+      "2012-05-04",
+      "2012-11-02"
+    ]
+  },
+  "ADP|sec_comment_letters": {
+    "company": "ADP",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-01-14",
+      "2011-01-21",
+      "2011-02-08"
+    ]
+  },
+  "ADSK|10k_full": {
+    "company": "ADSK",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-03-18",
+      "2014-03-10",
+      "2015-03-18"
+    ]
+  },
+  "ADSK|10k_risk_factors": {
+    "company": "ADSK",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-03-18",
+      "2014-03-10",
+      "2015-03-18"
+    ]
+  },
+  "ADSK|10k_mda": {
+    "company": "ADSK",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-03-18",
+      "2014-03-10",
+      "2015-03-18"
+    ]
+  },
+  "ADSK|10q_mda": {
+    "company": "ADSK",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-12-05",
+      "2015-05-28",
+      "2015-08-31",
+      "2015-12-09"
+    ]
+  },
+  "ADSK|10q_financials": {
+    "company": "ADSK",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-12-05",
+      "2015-05-28",
+      "2015-08-31",
+      "2015-12-09"
+    ]
+  },
+  "ADSK|sec_comment_letters": {
+    "company": "ADSK",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-07-02",
+      "2013-07-03",
+      "2013-07-22",
+      "2013-08-27",
+      "2013-09-30",
+      "2013-10-11",
+      "2013-11-05",
+      "2013-11-18",
+      "2013-12-05",
+      "2014-07-08",
+      "2014-07-21",
+      "2014-07-31"
+    ]
+  },
   "ADSK|short_interest": {
     "company": "ADSK",
     "data_type": "short_interest",
@@ -101,12 +577,159 @@
       "2021-12-31"
     ]
   },
+  "AFL|10k_full": {
+    "company": "AFL",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "AFL|10k_risk_factors": {
+    "company": "AFL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "AFL|10k_mda": {
+    "company": "AFL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-25",
+      "2012-02-27"
+    ]
+  },
+  "AFL|10q_mda": {
+    "company": "AFL",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-11-04",
+      "2012-05-07",
+      "2012-08-03",
+      "2012-11-02"
+    ]
+  },
+  "AFL|10q_financials": {
+    "company": "AFL",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-11-04",
+      "2012-05-07",
+      "2012-08-03",
+      "2012-11-02"
+    ]
+  },
+  "AFL|sec_comment_letters": {
+    "company": "AFL",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-06-24",
+      "2010-07-08",
+      "2010-07-26",
+      "2011-04-19",
+      "2011-04-20",
+      "2011-05-27",
+      "2011-06-13",
+      "2011-06-15"
+    ]
+  },
   "AFL|short_interest": {
     "company": "AFL",
     "data_type": "short_interest",
     "dates": [
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "AIG|10k_full": {
+    "company": "AIG",
+    "data_type": "10k_full",
+    "dates": [
+      "2012-02-23"
+    ]
+  },
+  "AIG|10k_risk_factors": {
+    "company": "AIG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2012-02-23"
+    ]
+  },
+  "AIG|10k_mda": {
+    "company": "AIG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2012-02-23"
+    ]
+  },
+  "AIG|10q_mda": {
+    "company": "AIG",
+    "data_type": "10q_mda",
+    "dates": [
+      "2012-05-03",
+      "2012-08-02",
+      "2012-11-01"
+    ]
+  },
+  "AIG|10q_financials": {
+    "company": "AIG",
+    "data_type": "10q_financials",
+    "dates": [
+      "2012-05-03",
+      "2012-08-02",
+      "2012-11-01"
+    ]
+  },
+  "AIG|sec_comment_letters": {
+    "company": "AIG",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-11-02",
+      "2010-11-04",
+      "2010-11-10",
+      "2010-11-12",
+      "2010-11-15",
+      "2010-11-19",
+      "2010-11-22",
+      "2010-11-23",
+      "2010-11-29",
+      "2010-11-30",
+      "2010-12-02",
+      "2010-12-03",
+      "2010-12-10",
+      "2011-02-22",
+      "2011-02-24",
+      "2011-03-25",
+      "2011-04-07",
+      "2011-04-21",
+      "2011-05-23",
+      "2011-06-03",
+      "2011-06-17",
+      "2011-09-01",
+      "2011-09-15",
+      "2011-09-22",
+      "2011-09-28",
+      "2011-09-30",
+      "2011-10-04",
+      "2011-12-02",
+      "2011-12-09",
+      "2011-12-22",
+      "2012-01-11",
+      "2012-04-06",
+      "2012-04-18",
+      "2012-05-09",
+      "2012-05-21",
+      "2012-06-08",
+      "2012-08-10",
+      "2012-08-23",
+      "2012-09-13",
+      "2012-09-25",
+      "2012-09-27"
     ]
   },
   "AIG|short_interest": {
@@ -140,6 +763,63 @@
       "2021-12-31"
     ]
   },
+  "AKAM|10k_full": {
+    "company": "AKAM",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-26"
+    ]
+  },
+  "AKAM|10k_risk_factors": {
+    "company": "AKAM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-26"
+    ]
+  },
+  "AKAM|10k_mda": {
+    "company": "AKAM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-28",
+      "2020-02-28",
+      "2021-02-26"
+    ]
+  },
+  "AKAM|10q_mda": {
+    "company": "AKAM",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-11-06",
+      "2021-05-07",
+      "2021-08-06",
+      "2021-11-08"
+    ]
+  },
+  "AKAM|10q_financials": {
+    "company": "AKAM",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-11-06",
+      "2021-05-07",
+      "2021-08-06",
+      "2021-11-08"
+    ]
+  },
+  "AKAM|sec_comment_letters": {
+    "company": "AKAM",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2020-07-30",
+      "2020-07-31",
+      "2020-08-26",
+      "2020-09-02"
+    ]
+  },
   "AKAM|short_interest": {
     "company": "AKAM",
     "data_type": "short_interest",
@@ -171,6 +851,62 @@
     "dates": [
       "2018-12-31",
       "2020-12-31"
+    ]
+  },
+  "ALL|10k_full": {
+    "company": "ALL",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-15",
+      "2020-02-21",
+      "2021-02-22"
+    ]
+  },
+  "ALL|10k_risk_factors": {
+    "company": "ALL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-15",
+      "2020-02-21",
+      "2021-02-22"
+    ]
+  },
+  "ALL|10k_mda": {
+    "company": "ALL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-15",
+      "2020-02-21",
+      "2021-02-22"
+    ]
+  },
+  "ALL|10q_mda": {
+    "company": "ALL",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-11-04",
+      "2021-05-05",
+      "2021-08-04",
+      "2021-11-03"
+    ]
+  },
+  "ALL|10q_financials": {
+    "company": "ALL",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-11-04",
+      "2021-05-05",
+      "2021-08-04",
+      "2021-11-03"
+    ]
+  },
+  "ALL|sec_comment_letters": {
+    "company": "ALL",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2021-03-26",
+      "2021-04-02",
+      "2021-04-20"
     ]
   },
   "ALL|short_interest": {
@@ -234,6 +970,70 @@
       "2021-12-31"
     ]
   },
+  "AMZN|10k_full": {
+    "company": "AMZN",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-01-28",
+      "2012-02-01"
+    ]
+  },
+  "AMZN|10k_risk_factors": {
+    "company": "AMZN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-01-28",
+      "2012-02-01"
+    ]
+  },
+  "AMZN|10k_mda": {
+    "company": "AMZN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-01-28",
+      "2012-02-01"
+    ]
+  },
+  "AMZN|10q_mda": {
+    "company": "AMZN",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-10-26",
+      "2012-04-27",
+      "2012-07-27",
+      "2012-10-26"
+    ]
+  },
+  "AMZN|10q_financials": {
+    "company": "AMZN",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-10-26",
+      "2012-04-27",
+      "2012-07-27",
+      "2012-10-26"
+    ]
+  },
+  "AMZN|sec_comment_letters": {
+    "company": "AMZN",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-04-27",
+      "2010-05-04",
+      "2010-05-12",
+      "2010-05-20",
+      "2011-05-31",
+      "2011-06-22",
+      "2011-07-12",
+      "2011-08-10",
+      "2011-08-17",
+      "2012-03-12",
+      "2012-04-09",
+      "2012-04-18",
+      "2012-05-03",
+      "2012-05-09"
+    ]
+  },
   "AMZN|short_interest": {
     "company": "AMZN",
     "data_type": "short_interest",
@@ -281,6 +1081,69 @@
       "2018-12-31",
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "APTV|10k_full": {
+    "company": "APTV",
+    "data_type": "10k_full",
+    "dates": [
+      "2012-02-17"
+    ]
+  },
+  "APTV|10k_risk_factors": {
+    "company": "APTV",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2012-02-17"
+    ]
+  },
+  "APTV|10k_mda": {
+    "company": "APTV",
+    "data_type": "10k_mda",
+    "dates": [
+      "2012-02-17"
+    ]
+  },
+  "APTV|10q_mda": {
+    "company": "APTV",
+    "data_type": "10q_mda",
+    "dates": [
+      "2012-04-26",
+      "2012-07-31",
+      "2012-11-01"
+    ]
+  },
+  "APTV|10q_financials": {
+    "company": "APTV",
+    "data_type": "10q_financials",
+    "dates": [
+      "2012-04-26",
+      "2012-07-31",
+      "2012-11-01"
+    ]
+  },
+  "APTV|sec_comment_letters": {
+    "company": "APTV",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-06-21",
+      "2011-06-30",
+      "2011-07-08",
+      "2011-07-12",
+      "2011-07-20",
+      "2011-08-01",
+      "2011-08-09",
+      "2011-08-19",
+      "2011-08-29",
+      "2011-10-31",
+      "2011-11-04",
+      "2011-11-07",
+      "2011-11-08",
+      "2011-11-09",
+      "2011-11-14",
+      "2012-03-27",
+      "2012-03-29",
+      "2012-04-06"
     ]
   },
   "APTV|short_interest": {
@@ -372,6 +1235,65 @@
       "2021-12-31"
     ]
   },
+  "BA|10k_full": {
+    "company": "BA",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-11",
+      "2014-02-14",
+      "2015-02-12"
+    ]
+  },
+  "BA|10k_risk_factors": {
+    "company": "BA",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-11",
+      "2014-02-14",
+      "2015-02-12"
+    ]
+  },
+  "BA|10k_mda": {
+    "company": "BA",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-11",
+      "2014-02-14",
+      "2015-02-12"
+    ]
+  },
+  "BA|10q_mda": {
+    "company": "BA",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-22",
+      "2015-04-22",
+      "2015-07-22",
+      "2015-10-21"
+    ]
+  },
+  "BA|10q_financials": {
+    "company": "BA",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-22",
+      "2015-04-22",
+      "2015-07-22",
+      "2015-10-21"
+    ]
+  },
+  "BA|sec_comment_letters": {
+    "company": "BA",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2014-03-18",
+      "2014-03-31",
+      "2014-04-11",
+      "2015-06-12",
+      "2015-06-26",
+      "2015-07-07"
+    ]
+  },
   "BA|short_interest": {
     "company": "BA",
     "data_type": "short_interest",
@@ -410,11 +1332,124 @@
       "2021-12-31"
     ]
   },
+  "BDX|10k_full": {
+    "company": "BDX",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-11-27",
+      "2020-11-25",
+      "2021-11-24"
+    ]
+  },
+  "BDX|10k_risk_factors": {
+    "company": "BDX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-11-27",
+      "2020-11-25",
+      "2021-11-24"
+    ]
+  },
+  "BDX|10k_mda": {
+    "company": "BDX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-11-27",
+      "2020-11-25",
+      "2021-11-24"
+    ]
+  },
+  "BDX|10q_mda": {
+    "company": "BDX",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-08-06",
+      "2021-02-04",
+      "2021-05-06",
+      "2021-08-05"
+    ]
+  },
+  "BDX|10q_financials": {
+    "company": "BDX",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-08-06",
+      "2021-02-04",
+      "2021-05-06",
+      "2021-08-05"
+    ]
+  },
   "BDX|short_interest": {
     "company": "BDX",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "BEN|10k_full": {
+    "company": "BEN",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-11-16",
+      "2011-11-15",
+      "2012-11-15"
+    ]
+  },
+  "BEN|10k_risk_factors": {
+    "company": "BEN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-11-16",
+      "2011-11-15",
+      "2012-11-15"
+    ]
+  },
+  "BEN|10k_mda": {
+    "company": "BEN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-11-16",
+      "2011-11-15",
+      "2012-11-15"
+    ]
+  },
+  "BEN|10q_mda": {
+    "company": "BEN",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-08-02",
+      "2012-02-01",
+      "2012-05-02",
+      "2012-07-30"
+    ]
+  },
+  "BEN|10q_financials": {
+    "company": "BEN",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-08-02",
+      "2012-02-01",
+      "2012-05-02",
+      "2012-07-30"
+    ]
+  },
+  "BEN|sec_comment_letters": {
+    "company": "BEN",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-02-17",
+      "2011-03-11",
+      "2011-03-29",
+      "2011-04-12",
+      "2011-05-06",
+      "2011-06-06",
+      "2011-06-29",
+      "2011-07-06",
+      "2012-01-31",
+      "2012-02-21",
+      "2012-03-22",
+      "2012-04-02",
+      "2012-04-12"
     ]
   },
   "BEN|short_interest": {
@@ -429,6 +1464,53 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "BIIB|10k_full": {
+    "company": "BIIB",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-05",
+      "2014-02-06",
+      "2015-02-04"
+    ]
+  },
+  "BIIB|10k_risk_factors": {
+    "company": "BIIB",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-05",
+      "2014-02-06",
+      "2015-02-04"
+    ]
+  },
+  "BIIB|10k_mda": {
+    "company": "BIIB",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-05",
+      "2014-02-06",
+      "2015-02-04"
+    ]
+  },
+  "BIIB|10q_mda": {
+    "company": "BIIB",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-22",
+      "2015-04-24",
+      "2015-07-24",
+      "2015-10-21"
+    ]
+  },
+  "BIIB|10q_financials": {
+    "company": "BIIB",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-22",
+      "2015-04-24",
+      "2015-07-24",
+      "2015-10-21"
     ]
   },
   "BIIB|short_interest": {
@@ -520,6 +1602,64 @@
       "2021-12-31"
     ]
   },
+  "BXP|10k_full": {
+    "company": "BXP",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "BXP|10k_risk_factors": {
+    "company": "BXP",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "BXP|10k_mda": {
+    "company": "BXP",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-25",
+      "2011-02-25",
+      "2012-02-28"
+    ]
+  },
+  "BXP|10q_mda": {
+    "company": "BXP",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-11-08",
+      "2012-05-08",
+      "2012-08-08",
+      "2012-11-08"
+    ]
+  },
+  "BXP|10q_financials": {
+    "company": "BXP",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-11-08",
+      "2012-05-08",
+      "2012-08-08",
+      "2012-11-08"
+    ]
+  },
+  "BXP|sec_comment_letters": {
+    "company": "BXP",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-03-14",
+      "2011-04-08",
+      "2011-04-25",
+      "2011-05-05",
+      "2011-05-09"
+    ]
+  },
   "BXP|short_interest": {
     "company": "BXP",
     "data_type": "short_interest",
@@ -565,6 +1705,53 @@
       "2020-06-15"
     ]
   },
+  "CAT|10k_full": {
+    "company": "CAT",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-14",
+      "2020-02-19",
+      "2021-02-17"
+    ]
+  },
+  "CAT|10k_risk_factors": {
+    "company": "CAT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-14",
+      "2020-02-19",
+      "2021-02-17"
+    ]
+  },
+  "CAT|10k_mda": {
+    "company": "CAT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-14",
+      "2020-02-19",
+      "2021-02-17"
+    ]
+  },
+  "CAT|10q_mda": {
+    "company": "CAT",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-11-04",
+      "2021-05-05",
+      "2021-08-04",
+      "2021-11-03"
+    ]
+  },
+  "CAT|10q_financials": {
+    "company": "CAT",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-11-04",
+      "2021-05-05",
+      "2021-08-04",
+      "2021-11-03"
+    ]
+  },
   "CAT|short_interest": {
     "company": "CAT",
     "data_type": "short_interest",
@@ -604,6 +1791,67 @@
       "2018-12-31",
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "CCL|10k_full": {
+    "company": "CCL",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-01-29",
+      "2011-01-31",
+      "2012-01-30"
+    ]
+  },
+  "CCL|10k_risk_factors": {
+    "company": "CCL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-01-29",
+      "2011-01-31",
+      "2012-01-30"
+    ]
+  },
+  "CCL|10k_mda": {
+    "company": "CCL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-01-29",
+      "2011-01-31",
+      "2012-01-30"
+    ]
+  },
+  "CCL|10q_mda": {
+    "company": "CCL",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-09-30",
+      "2012-03-30",
+      "2012-07-02",
+      "2012-10-05"
+    ]
+  },
+  "CCL|10q_financials": {
+    "company": "CCL",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-09-30",
+      "2012-03-30",
+      "2012-07-02",
+      "2012-10-05"
+    ]
+  },
+  "CCL|sec_comment_letters": {
+    "company": "CCL",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-09-08",
+      "2010-09-17",
+      "2010-09-20",
+      "2011-02-28",
+      "2011-03-03",
+      "2011-03-21",
+      "2011-04-11",
+      "2011-04-14"
     ]
   },
   "CCL|short_interest": {
@@ -651,6 +1899,53 @@
       "2020-12-31"
     ]
   },
+  "CHRW|10k_full": {
+    "company": "CHRW",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-03-01",
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "CHRW|10k_risk_factors": {
+    "company": "CHRW",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-03-01",
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "CHRW|10k_mda": {
+    "company": "CHRW",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-03-01",
+      "2011-03-01",
+      "2012-02-29"
+    ]
+  },
+  "CHRW|10q_mda": {
+    "company": "CHRW",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-11-09",
+      "2012-05-10",
+      "2012-08-09",
+      "2012-11-08"
+    ]
+  },
+  "CHRW|10q_financials": {
+    "company": "CHRW",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-11-09",
+      "2012-05-10",
+      "2012-08-09",
+      "2012-11-08"
+    ]
+  },
   "CHTR|short_interest": {
     "company": "CHTR",
     "data_type": "short_interest",
@@ -696,6 +1991,67 @@
       "2018-12-31",
       "2020-12-31",
       "2021-12-31"
+    ]
+  },
+  "CMI|10k_full": {
+    "company": "CMI",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-26",
+      "2011-02-24",
+      "2012-02-21"
+    ]
+  },
+  "CMI|10k_risk_factors": {
+    "company": "CMI",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-26",
+      "2011-02-24",
+      "2012-02-21"
+    ]
+  },
+  "CMI|10k_mda": {
+    "company": "CMI",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-26",
+      "2011-02-24",
+      "2012-02-21"
+    ]
+  },
+  "CMI|10q_mda": {
+    "company": "CMI",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-10-27",
+      "2012-05-02",
+      "2012-08-01",
+      "2012-10-31"
+    ]
+  },
+  "CMI|10q_financials": {
+    "company": "CMI",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-10-27",
+      "2012-05-02",
+      "2012-08-01",
+      "2012-10-31"
+    ]
+  },
+  "CMI|sec_comment_letters": {
+    "company": "CMI",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-04-13",
+      "2011-04-27",
+      "2011-05-12",
+      "2011-05-31",
+      "2011-06-08",
+      "2012-05-16",
+      "2012-06-13",
+      "2012-06-21"
     ]
   },
   "CMI|short_interest": {
@@ -991,6 +2347,66 @@
     "data_type": "short_interest",
     "dates": [
       "2020-12-31"
+    ]
+  },
+  "EBAY|10k_full": {
+    "company": "EBAY",
+    "data_type": "10k_full",
+    "dates": [
+      "2020-01-31",
+      "2021-02-04"
+    ]
+  },
+  "EBAY|10k_risk_factors": {
+    "company": "EBAY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2020-01-31",
+      "2021-02-04"
+    ]
+  },
+  "EBAY|10k_mda": {
+    "company": "EBAY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2020-01-31",
+      "2021-02-04"
+    ]
+  },
+  "EBAY|10q_mda": {
+    "company": "EBAY",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-10-29",
+      "2021-04-29",
+      "2021-08-12",
+      "2021-10-28"
+    ]
+  },
+  "EBAY|10q_financials": {
+    "company": "EBAY",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-10-29",
+      "2021-04-29",
+      "2021-08-12",
+      "2021-10-28"
+    ]
+  },
+  "EBAY|earnings_transcript": {
+    "company": "EBAY",
+    "data_type": "earnings_transcript",
+    "dates": [
+      "2020-07-21"
+    ]
+  },
+  "EBAY|sec_comment_letters": {
+    "company": "EBAY",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2021-05-06",
+      "2021-05-20",
+      "2021-06-01"
     ]
   },
   "EBAY|short_interest": {
@@ -1533,6 +2949,40 @@
       "2021-12-31"
     ]
   },
+  "IBM|10q_mda": {
+    "company": "IBM",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-10-25",
+      "2012-04-24",
+      "2012-07-31",
+      "2012-10-30"
+    ]
+  },
+  "IBM|10q_financials": {
+    "company": "IBM",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-10-25",
+      "2012-04-24",
+      "2012-07-31",
+      "2012-10-30"
+    ]
+  },
+  "IBM|sec_comment_letters": {
+    "company": "IBM",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2011-06-07",
+      "2011-06-28",
+      "2011-08-16",
+      "2011-09-07",
+      "2011-09-16",
+      "2012-08-24",
+      "2012-09-10",
+      "2012-09-25"
+    ]
+  },
   "IBM|short_interest": {
     "company": "IBM",
     "data_type": "short_interest",
@@ -1546,6 +2996,53 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "IDXX|10k_full": {
+    "company": "IDXX",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-17",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "IDXX|10k_risk_factors": {
+    "company": "IDXX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-17",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "IDXX|10k_mda": {
+    "company": "IDXX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-17",
+      "2017-02-17",
+      "2018-02-16"
+    ]
+  },
+  "IDXX|10q_mda": {
+    "company": "IDXX",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-10-31",
+      "2018-05-04",
+      "2018-08-01",
+      "2018-11-01"
+    ]
+  },
+  "IDXX|10q_financials": {
+    "company": "IDXX",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-10-31",
+      "2018-05-04",
+      "2018-08-01",
+      "2018-11-01"
     ]
   },
   "IDXX|short_interest": {
@@ -1636,6 +3133,63 @@
       "2020-06-15"
     ]
   },
+  "IQV|10k_full": {
+    "company": "IQV",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-12"
+    ]
+  },
+  "IQV|10k_risk_factors": {
+    "company": "IQV",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-12"
+    ]
+  },
+  "IQV|10k_mda": {
+    "company": "IQV",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-19",
+      "2020-02-18",
+      "2021-02-12"
+    ]
+  },
+  "IQV|10q_mda": {
+    "company": "IQV",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-10-22",
+      "2021-04-23",
+      "2021-07-28",
+      "2021-10-22"
+    ]
+  },
+  "IQV|10q_financials": {
+    "company": "IQV",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-10-22",
+      "2021-04-23",
+      "2021-07-28",
+      "2021-10-22"
+    ]
+  },
+  "IQV|sec_comment_letters": {
+    "company": "IQV",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2019-06-11",
+      "2019-07-11",
+      "2019-08-13",
+      "2019-08-20"
+    ]
+  },
   "IQV|short_interest": {
     "company": "IQV",
     "data_type": "short_interest",
@@ -1682,6 +3236,53 @@
       "2021-12-31"
     ]
   },
+  "JBHT|10k_full": {
+    "company": "JBHT",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-22",
+      "2020-03-02",
+      "2021-02-23"
+    ]
+  },
+  "JBHT|10k_risk_factors": {
+    "company": "JBHT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-22",
+      "2020-03-02",
+      "2021-02-23"
+    ]
+  },
+  "JBHT|10k_mda": {
+    "company": "JBHT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-22",
+      "2020-03-02",
+      "2021-02-23"
+    ]
+  },
+  "JBHT|10q_mda": {
+    "company": "JBHT",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-10-29",
+      "2021-05-03",
+      "2021-08-03",
+      "2021-10-28"
+    ]
+  },
+  "JBHT|10q_financials": {
+    "company": "JBHT",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-10-29",
+      "2021-05-03",
+      "2021-08-03",
+      "2021-10-28"
+    ]
+  },
   "JBHT|short_interest": {
     "company": "JBHT",
     "data_type": "short_interest",
@@ -1726,6 +3327,53 @@
       "2021-12-31"
     ]
   },
+  "KEY|10k_full": {
+    "company": "KEY",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-02-25",
+      "2020-02-26",
+      "2021-02-22"
+    ]
+  },
+  "KEY|10k_risk_factors": {
+    "company": "KEY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-02-25",
+      "2020-02-26",
+      "2021-02-22"
+    ]
+  },
+  "KEY|10k_mda": {
+    "company": "KEY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-02-25",
+      "2020-02-26",
+      "2021-02-22"
+    ]
+  },
+  "KEY|10q_mda": {
+    "company": "KEY",
+    "data_type": "10q_mda",
+    "dates": [
+      "2021-05-04",
+      "2021-05-17",
+      "2021-08-02",
+      "2021-11-02"
+    ]
+  },
+  "KEY|10q_financials": {
+    "company": "KEY",
+    "data_type": "10q_financials",
+    "dates": [
+      "2021-05-04",
+      "2021-05-17",
+      "2021-08-02",
+      "2021-11-02"
+    ]
+  },
   "KEY|short_interest": {
     "company": "KEY",
     "data_type": "short_interest",
@@ -1748,6 +3396,53 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "KLAC|10k_full": {
+    "company": "KLAC",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-08-08",
+      "2014-08-08",
+      "2015-08-07"
+    ]
+  },
+  "KLAC|10k_risk_factors": {
+    "company": "KLAC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-08-08",
+      "2014-08-08",
+      "2015-08-07"
+    ]
+  },
+  "KLAC|10k_mda": {
+    "company": "KLAC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-08-08",
+      "2014-08-08",
+      "2015-08-07"
+    ]
+  },
+  "KLAC|10q_mda": {
+    "company": "KLAC",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-24",
+      "2015-01-23",
+      "2015-04-24",
+      "2015-10-22"
+    ]
+  },
+  "KLAC|10q_financials": {
+    "company": "KLAC",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-24",
+      "2015-01-23",
+      "2015-04-24",
+      "2015-10-22"
     ]
   },
   "KLAC|short_interest": {
@@ -1814,6 +3509,79 @@
       "2021-12-15"
     ]
   },
+  "LEN|10k_full": {
+    "company": "LEN",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-01-22",
+      "2017-01-20",
+      "2018-01-25"
+    ]
+  },
+  "LEN|10k_risk_factors": {
+    "company": "LEN",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-01-22",
+      "2017-01-20",
+      "2018-01-25"
+    ]
+  },
+  "LEN|10k_mda": {
+    "company": "LEN",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-01-22",
+      "2017-01-20",
+      "2018-01-25"
+    ]
+  },
+  "LEN|10q_mda": {
+    "company": "LEN",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-10-10",
+      "2018-04-09",
+      "2018-07-06",
+      "2018-10-09"
+    ]
+  },
+  "LEN|10q_financials": {
+    "company": "LEN",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-10-10",
+      "2018-04-09",
+      "2018-07-06",
+      "2018-10-09"
+    ]
+  },
+  "LEN|sec_comment_letters": {
+    "company": "LEN",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2016-03-11",
+      "2016-03-25",
+      "2016-03-30",
+      "2016-04-13",
+      "2016-08-26",
+      "2016-09-20",
+      "2016-09-29",
+      "2016-10-06",
+      "2016-12-07",
+      "2016-12-13",
+      "2016-12-28",
+      "2017-01-05",
+      "2017-01-10",
+      "2017-03-16",
+      "2017-03-31",
+      "2017-04-25",
+      "2017-12-19",
+      "2018-01-03",
+      "2018-01-04",
+      "2018-05-08"
+    ]
+  },
   "LEN|short_interest": {
     "company": "LEN",
     "data_type": "short_interest",
@@ -1843,6 +3611,68 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "LLY|10k_full": {
+    "company": "LLY",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-21",
+      "2014-02-19",
+      "2015-02-19"
+    ]
+  },
+  "LLY|10k_risk_factors": {
+    "company": "LLY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-21",
+      "2014-02-19",
+      "2015-02-19"
+    ]
+  },
+  "LLY|10k_mda": {
+    "company": "LLY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-21",
+      "2014-02-19",
+      "2015-02-19"
+    ]
+  },
+  "LLY|10q_mda": {
+    "company": "LLY",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-29",
+      "2015-04-30",
+      "2015-07-30",
+      "2015-10-30"
+    ]
+  },
+  "LLY|10q_financials": {
+    "company": "LLY",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-29",
+      "2015-04-30",
+      "2015-07-30",
+      "2015-10-30"
+    ]
+  },
+  "LLY|sec_comment_letters": {
+    "company": "LLY",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-06-26",
+      "2013-07-09",
+      "2013-07-17",
+      "2014-04-10",
+      "2014-04-15",
+      "2014-05-07",
+      "2014-06-04",
+      "2014-06-12",
+      "2014-06-26"
     ]
   },
   "LLY|short_interest": {
@@ -2143,6 +3973,64 @@
       "2021-12-31"
     ]
   },
+  "MTB|10k_full": {
+    "company": "MTB",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-19",
+      "2017-02-22",
+      "2018-02-22"
+    ]
+  },
+  "MTB|10k_risk_factors": {
+    "company": "MTB",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-19",
+      "2017-02-22",
+      "2018-02-22"
+    ]
+  },
+  "MTB|10k_mda": {
+    "company": "MTB",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-19",
+      "2017-02-22",
+      "2018-02-22"
+    ]
+  },
+  "MTB|10q_mda": {
+    "company": "MTB",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-11-03",
+      "2018-05-04",
+      "2018-08-02",
+      "2018-11-05"
+    ]
+  },
+  "MTB|10q_financials": {
+    "company": "MTB",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-11-03",
+      "2018-05-04",
+      "2018-08-02",
+      "2018-11-05"
+    ]
+  },
+  "MTB|sec_comment_letters": {
+    "company": "MTB",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2016-10-27",
+      "2016-11-10",
+      "2016-12-08",
+      "2016-12-16",
+      "2016-12-19"
+    ]
+  },
   "MTCH|short_interest": {
     "company": "MTCH",
     "data_type": "short_interest",
@@ -2164,6 +4052,53 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "MU|10k_full": {
+    "company": "MU",
+    "data_type": "10k_full",
+    "dates": [
+      "2019-10-17",
+      "2020-10-19",
+      "2021-10-08"
+    ]
+  },
+  "MU|10k_risk_factors": {
+    "company": "MU",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2019-10-17",
+      "2020-10-19",
+      "2021-10-08"
+    ]
+  },
+  "MU|10k_mda": {
+    "company": "MU",
+    "data_type": "10k_mda",
+    "dates": [
+      "2019-10-17",
+      "2020-10-19",
+      "2021-10-08"
+    ]
+  },
+  "MU|10q_mda": {
+    "company": "MU",
+    "data_type": "10q_mda",
+    "dates": [
+      "2020-06-29",
+      "2021-01-08",
+      "2021-04-01",
+      "2021-07-01"
+    ]
+  },
+  "MU|10q_financials": {
+    "company": "MU",
+    "data_type": "10q_financials",
+    "dates": [
+      "2020-06-29",
+      "2021-01-08",
+      "2021-04-01",
+      "2021-07-01"
     ]
   },
   "MU|short_interest": {
@@ -2407,6 +4342,62 @@
       "2020-06-15"
     ]
   },
+  "PCAR|10k_full": {
+    "company": "PCAR",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-27",
+      "2014-02-27",
+      "2015-02-26"
+    ]
+  },
+  "PCAR|10k_risk_factors": {
+    "company": "PCAR",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-27",
+      "2014-02-27",
+      "2015-02-26"
+    ]
+  },
+  "PCAR|10k_mda": {
+    "company": "PCAR",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-27",
+      "2014-02-27",
+      "2015-02-26"
+    ]
+  },
+  "PCAR|10q_mda": {
+    "company": "PCAR",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-11-06",
+      "2015-05-06",
+      "2015-08-06",
+      "2015-11-05"
+    ]
+  },
+  "PCAR|10q_financials": {
+    "company": "PCAR",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-11-06",
+      "2015-05-06",
+      "2015-08-06",
+      "2015-11-05"
+    ]
+  },
+  "PCAR|sec_comment_letters": {
+    "company": "PCAR",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-05-03",
+      "2013-05-23",
+      "2013-06-10"
+    ]
+  },
   "PCAR|short_interest": {
     "company": "PCAR",
     "data_type": "short_interest",
@@ -2445,6 +4436,67 @@
       "2021-12-31"
     ]
   },
+  "PFG|10k_full": {
+    "company": "PFG",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-13",
+      "2014-02-12",
+      "2015-02-11"
+    ]
+  },
+  "PFG|10k_risk_factors": {
+    "company": "PFG",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-13",
+      "2014-02-12",
+      "2015-02-11"
+    ]
+  },
+  "PFG|10k_mda": {
+    "company": "PFG",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-13",
+      "2014-02-12",
+      "2015-02-11"
+    ]
+  },
+  "PFG|10q_mda": {
+    "company": "PFG",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-29",
+      "2015-04-29",
+      "2015-07-29",
+      "2015-10-28"
+    ]
+  },
+  "PFG|10q_financials": {
+    "company": "PFG",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-29",
+      "2015-04-29",
+      "2015-07-29",
+      "2015-10-28"
+    ]
+  },
+  "PFG|sec_comment_letters": {
+    "company": "PFG",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-04-05",
+      "2013-04-10",
+      "2013-05-02",
+      "2013-05-30",
+      "2013-06-12",
+      "2014-06-12",
+      "2014-06-20",
+      "2014-07-17"
+    ]
+  },
   "PGR|short_interest": {
     "company": "PGR",
     "data_type": "short_interest",
@@ -2465,6 +4517,77 @@
     "data_type": "short_interest",
     "dates": [
       "2020-06-15"
+    ]
+  },
+  "PHM|10k_full": {
+    "company": "PHM",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-02-19",
+      "2011-02-10",
+      "2012-02-09"
+    ]
+  },
+  "PHM|10k_risk_factors": {
+    "company": "PHM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-02-19",
+      "2011-02-10",
+      "2012-02-09"
+    ]
+  },
+  "PHM|10k_mda": {
+    "company": "PHM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-02-19",
+      "2011-02-10",
+      "2012-02-09"
+    ]
+  },
+  "PHM|10q_mda": {
+    "company": "PHM",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-10-28",
+      "2012-04-26",
+      "2012-07-26",
+      "2012-10-25"
+    ]
+  },
+  "PHM|10q_financials": {
+    "company": "PHM",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-10-28",
+      "2012-04-26",
+      "2012-07-26",
+      "2012-10-25"
+    ]
+  },
+  "PHM|sec_comment_letters": {
+    "company": "PHM",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-05-26",
+      "2010-06-23",
+      "2010-07-02",
+      "2010-07-08",
+      "2010-07-15",
+      "2011-04-29",
+      "2011-05-10",
+      "2011-05-19",
+      "2011-06-13",
+      "2011-06-24",
+      "2011-07-08",
+      "2011-08-01",
+      "2011-08-12",
+      "2011-08-18",
+      "2011-09-20",
+      "2011-10-04",
+      "2011-11-15",
+      "2011-12-08"
     ]
   },
   "PHM|short_interest": {
@@ -2509,6 +4632,76 @@
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "PNC|10k_full": {
+    "company": "PNC",
+    "data_type": "10k_full",
+    "dates": [
+      "2011-03-01",
+      "2012-02-29",
+      "2012-03-14"
+    ]
+  },
+  "PNC|10k_risk_factors": {
+    "company": "PNC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2011-03-01",
+      "2012-02-29",
+      "2012-03-14"
+    ]
+  },
+  "PNC|10k_mda": {
+    "company": "PNC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2011-03-01",
+      "2012-02-29",
+      "2012-03-14"
+    ]
+  },
+  "PNC|10q_mda": {
+    "company": "PNC",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-11-08",
+      "2012-05-09",
+      "2012-08-08",
+      "2012-11-08"
+    ]
+  },
+  "PNC|10q_financials": {
+    "company": "PNC",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-11-08",
+      "2012-05-09",
+      "2012-08-08",
+      "2012-11-08"
+    ]
+  },
+  "PNC|sec_comment_letters": {
+    "company": "PNC",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-06-25",
+      "2010-07-09",
+      "2010-11-04",
+      "2010-11-18",
+      "2011-01-26",
+      "2011-07-07",
+      "2011-07-21",
+      "2011-12-23",
+      "2012-01-10",
+      "2012-01-27",
+      "2012-02-10",
+      "2012-05-25",
+      "2012-06-11",
+      "2012-06-15",
+      "2012-07-27",
+      "2012-09-06",
+      "2012-10-26"
     ]
   },
   "PNR|short_interest": {
@@ -2622,12 +4815,121 @@
       "2021-12-31"
     ]
   },
+  "RCL|10k_full": {
+    "company": "RCL",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-25",
+      "2014-02-20",
+      "2015-02-23"
+    ]
+  },
+  "RCL|10k_risk_factors": {
+    "company": "RCL",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-25",
+      "2014-02-20",
+      "2015-02-23"
+    ]
+  },
+  "RCL|10k_mda": {
+    "company": "RCL",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-25",
+      "2014-02-20",
+      "2015-02-23"
+    ]
+  },
+  "RCL|10q_mda": {
+    "company": "RCL",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-23",
+      "2015-04-23",
+      "2015-07-31",
+      "2015-10-23"
+    ]
+  },
+  "RCL|10q_financials": {
+    "company": "RCL",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-23",
+      "2015-04-23",
+      "2015-07-31",
+      "2015-10-23"
+    ]
+  },
+  "RCL|sec_comment_letters": {
+    "company": "RCL",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-03-27",
+      "2013-04-10",
+      "2013-06-19"
+    ]
+  },
   "RCL|short_interest": {
     "company": "RCL",
     "data_type": "short_interest",
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "RF|10k_full": {
+    "company": "RF",
+    "data_type": "10k_full",
+    "dates": [
+      "2014-02-21",
+      "2015-02-17"
+    ]
+  },
+  "RF|10k_risk_factors": {
+    "company": "RF",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2014-02-21",
+      "2015-02-17"
+    ]
+  },
+  "RF|10k_mda": {
+    "company": "RF",
+    "data_type": "10k_mda",
+    "dates": [
+      "2014-02-21",
+      "2015-02-17"
+    ]
+  },
+  "RF|10q_mda": {
+    "company": "RF",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-11-05",
+      "2015-05-06",
+      "2015-08-05",
+      "2015-11-05"
+    ]
+  },
+  "RF|10q_financials": {
+    "company": "RF",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-11-05",
+      "2015-05-06",
+      "2015-08-05",
+      "2015-11-05"
+    ]
+  },
+  "RF|sec_comment_letters": {
+    "company": "RF",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-07-16",
+      "2013-07-30",
+      "2013-09-04"
     ]
   },
   "RHI|short_interest": {
@@ -2673,6 +4975,71 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "ROST|10k_full": {
+    "company": "ROST",
+    "data_type": "10k_full",
+    "dates": [
+      "2010-03-30",
+      "2011-03-29",
+      "2012-03-27"
+    ]
+  },
+  "ROST|10k_risk_factors": {
+    "company": "ROST",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2010-03-30",
+      "2011-03-29",
+      "2012-03-27"
+    ]
+  },
+  "ROST|10k_mda": {
+    "company": "ROST",
+    "data_type": "10k_mda",
+    "dates": [
+      "2010-03-30",
+      "2011-03-29",
+      "2012-03-27"
+    ]
+  },
+  "ROST|10q_mda": {
+    "company": "ROST",
+    "data_type": "10q_mda",
+    "dates": [
+      "2011-12-07",
+      "2012-06-06",
+      "2012-09-05",
+      "2012-12-05"
+    ]
+  },
+  "ROST|10q_financials": {
+    "company": "ROST",
+    "data_type": "10q_financials",
+    "dates": [
+      "2011-12-07",
+      "2012-06-06",
+      "2012-09-05",
+      "2012-12-05"
+    ]
+  },
+  "ROST|sec_comment_letters": {
+    "company": "ROST",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2010-04-15",
+      "2010-04-28",
+      "2010-05-11",
+      "2010-05-25",
+      "2010-06-09",
+      "2010-06-30",
+      "2010-07-14",
+      "2011-05-10",
+      "2011-05-18",
+      "2011-06-15",
+      "2011-06-23",
+      "2011-07-08"
     ]
   },
   "RRC|short_interest": {
@@ -2833,6 +5200,62 @@
       "2021-12-31"
     ]
   },
+  "SNPS|10k_full": {
+    "company": "SNPS",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-12-12",
+      "2017-12-14",
+      "2018-12-17"
+    ]
+  },
+  "SNPS|10k_risk_factors": {
+    "company": "SNPS",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-12-12",
+      "2017-12-14",
+      "2018-12-17"
+    ]
+  },
+  "SNPS|10k_mda": {
+    "company": "SNPS",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-12-12",
+      "2017-12-14",
+      "2018-12-17"
+    ]
+  },
+  "SNPS|10q_mda": {
+    "company": "SNPS",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-08-18",
+      "2018-02-23",
+      "2018-05-25",
+      "2018-08-24"
+    ]
+  },
+  "SNPS|10q_financials": {
+    "company": "SNPS",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-08-18",
+      "2018-02-23",
+      "2018-05-25",
+      "2018-08-24"
+    ]
+  },
+  "SNPS|sec_comment_letters": {
+    "company": "SNPS",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2016-03-09",
+      "2016-03-23",
+      "2016-04-06"
+    ]
+  },
   "SNPS|short_interest": {
     "company": "SNPS",
     "data_type": "short_interest",
@@ -2876,6 +5299,53 @@
       "2021-12-31"
     ]
   },
+  "SWK|10k_full": {
+    "company": "SWK",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-02-19",
+      "2017-02-15",
+      "2018-02-27"
+    ]
+  },
+  "SWK|10k_risk_factors": {
+    "company": "SWK",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-02-19",
+      "2017-02-15",
+      "2018-02-27"
+    ]
+  },
+  "SWK|10k_mda": {
+    "company": "SWK",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-02-19",
+      "2017-02-15",
+      "2018-02-27"
+    ]
+  },
+  "SWK|10q_mda": {
+    "company": "SWK",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-10-25",
+      "2018-04-23",
+      "2018-07-20",
+      "2018-10-26"
+    ]
+  },
+  "SWK|10q_financials": {
+    "company": "SWK",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-10-25",
+      "2018-04-23",
+      "2018-07-20",
+      "2018-10-26"
+    ]
+  },
   "SWK|short_interest": {
     "company": "SWK",
     "data_type": "short_interest",
@@ -2889,6 +5359,66 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "SYF|10k_full": {
+    "company": "SYF",
+    "data_type": "10k_full",
+    "dates": [
+      "2015-02-23"
+    ]
+  },
+  "SYF|10k_risk_factors": {
+    "company": "SYF",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2015-02-23"
+    ]
+  },
+  "SYF|10k_mda": {
+    "company": "SYF",
+    "data_type": "10k_mda",
+    "dates": [
+      "2015-02-23"
+    ]
+  },
+  "SYF|10q_mda": {
+    "company": "SYF",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-31",
+      "2015-05-01",
+      "2015-07-31",
+      "2015-10-30"
+    ]
+  },
+  "SYF|10q_financials": {
+    "company": "SYF",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-31",
+      "2015-05-01",
+      "2015-07-31",
+      "2015-10-30"
+    ]
+  },
+  "SYF|sec_comment_letters": {
+    "company": "SYF",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2014-04-09",
+      "2014-04-25",
+      "2014-06-18",
+      "2014-07-16",
+      "2014-07-18",
+      "2014-07-28",
+      "2014-08-01",
+      "2014-08-04",
+      "2014-08-05",
+      "2014-08-06",
+      "2015-10-29",
+      "2015-11-03",
+      "2015-11-06"
     ]
   },
   "SYF|short_interest": {
@@ -2978,6 +5508,53 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
+    ]
+  },
+  "TJX|10k_full": {
+    "company": "TJX",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-03-29",
+      "2017-03-28",
+      "2018-04-04"
+    ]
+  },
+  "TJX|10k_risk_factors": {
+    "company": "TJX",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-03-29",
+      "2017-03-28",
+      "2018-04-04"
+    ]
+  },
+  "TJX|10k_mda": {
+    "company": "TJX",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-03-29",
+      "2017-03-28",
+      "2018-04-04"
+    ]
+  },
+  "TJX|10q_mda": {
+    "company": "TJX",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-11-28",
+      "2018-06-01",
+      "2018-08-31",
+      "2018-12-04"
+    ]
+  },
+  "TJX|10q_financials": {
+    "company": "TJX",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-11-28",
+      "2018-06-01",
+      "2018-08-31",
+      "2018-12-04"
     ]
   },
   "TJX|short_interest": {
@@ -3271,6 +5848,53 @@
       "2021-12-31"
     ]
   },
+  "WAT|10k_full": {
+    "company": "WAT",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-26",
+      "2014-02-27",
+      "2015-02-27"
+    ]
+  },
+  "WAT|10k_risk_factors": {
+    "company": "WAT",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-26",
+      "2014-02-27",
+      "2015-02-27"
+    ]
+  },
+  "WAT|10k_mda": {
+    "company": "WAT",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-26",
+      "2014-02-27",
+      "2015-02-27"
+    ]
+  },
+  "WAT|10q_mda": {
+    "company": "WAT",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-31",
+      "2015-05-08",
+      "2015-08-07",
+      "2015-11-06"
+    ]
+  },
+  "WAT|10q_financials": {
+    "company": "WAT",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-31",
+      "2015-05-08",
+      "2015-08-07",
+      "2015-11-06"
+    ]
+  },
   "WAT|short_interest": {
     "company": "WAT",
     "data_type": "short_interest",
@@ -3285,11 +5909,128 @@
       "2019-05-31"
     ]
   },
+  "WDAY|10k_full": {
+    "company": "WDAY",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-03-22",
+      "2014-03-31",
+      "2015-03-25"
+    ]
+  },
+  "WDAY|10k_risk_factors": {
+    "company": "WDAY",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-03-22",
+      "2014-03-31",
+      "2015-03-25"
+    ]
+  },
+  "WDAY|10k_mda": {
+    "company": "WDAY",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-03-22",
+      "2014-03-31",
+      "2015-03-25"
+    ]
+  },
+  "WDAY|10q_mda": {
+    "company": "WDAY",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-12-05",
+      "2015-06-05",
+      "2015-09-04",
+      "2015-12-04"
+    ]
+  },
+  "WDAY|10q_financials": {
+    "company": "WDAY",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-12-05",
+      "2015-06-05",
+      "2015-09-04",
+      "2015-12-04"
+    ]
+  },
+  "WDAY|sec_comment_letters": {
+    "company": "WDAY",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2014-06-25",
+      "2014-07-07",
+      "2014-07-24",
+      "2015-05-21",
+      "2015-06-03",
+      "2015-06-23"
+    ]
+  },
   "WDAY|short_interest": {
     "company": "WDAY",
     "data_type": "short_interest",
     "dates": [
       "2021-12-31"
+    ]
+  },
+  "WDC|10k_full": {
+    "company": "WDC",
+    "data_type": "10k_full",
+    "dates": [
+      "2016-08-29",
+      "2017-08-29",
+      "2018-08-24"
+    ]
+  },
+  "WDC|10k_risk_factors": {
+    "company": "WDC",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2016-08-29",
+      "2017-08-29",
+      "2018-08-24"
+    ]
+  },
+  "WDC|10k_mda": {
+    "company": "WDC",
+    "data_type": "10k_mda",
+    "dates": [
+      "2016-08-29",
+      "2017-08-29",
+      "2018-08-24"
+    ]
+  },
+  "WDC|10q_mda": {
+    "company": "WDC",
+    "data_type": "10q_mda",
+    "dates": [
+      "2017-11-07",
+      "2018-02-06",
+      "2018-05-08",
+      "2018-11-06"
+    ]
+  },
+  "WDC|10q_financials": {
+    "company": "WDC",
+    "data_type": "10q_financials",
+    "dates": [
+      "2017-11-07",
+      "2018-02-06",
+      "2018-05-08",
+      "2018-11-06"
+    ]
+  },
+  "WDC|sec_comment_letters": {
+    "company": "WDC",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2016-01-26",
+      "2016-02-03",
+      "2016-12-22",
+      "2017-01-03",
+      "2017-01-05"
     ]
   },
   "WDC|short_interest": {
@@ -3415,6 +6156,63 @@
       "2021-03-15"
     ]
   },
+  "YUM|10k_full": {
+    "company": "YUM",
+    "data_type": "10k_full",
+    "dates": [
+      "2013-02-20",
+      "2014-02-18",
+      "2015-02-17"
+    ]
+  },
+  "YUM|10k_risk_factors": {
+    "company": "YUM",
+    "data_type": "10k_risk_factors",
+    "dates": [
+      "2013-02-20",
+      "2014-02-18",
+      "2015-02-17"
+    ]
+  },
+  "YUM|10k_mda": {
+    "company": "YUM",
+    "data_type": "10k_mda",
+    "dates": [
+      "2013-02-20",
+      "2014-02-18",
+      "2015-02-17"
+    ]
+  },
+  "YUM|10q_mda": {
+    "company": "YUM",
+    "data_type": "10q_mda",
+    "dates": [
+      "2014-10-14",
+      "2015-04-27",
+      "2015-07-21",
+      "2015-10-15"
+    ]
+  },
+  "YUM|10q_financials": {
+    "company": "YUM",
+    "data_type": "10q_financials",
+    "dates": [
+      "2014-10-14",
+      "2015-04-27",
+      "2015-07-21",
+      "2015-10-15"
+    ]
+  },
+  "YUM|sec_comment_letters": {
+    "company": "YUM",
+    "data_type": "sec_comment_letters",
+    "dates": [
+      "2013-02-19",
+      "2013-04-17",
+      "2013-04-30",
+      "2013-06-20"
+    ]
+  },
   "ZBH|short_interest": {
     "company": "ZBH",
     "data_type": "short_interest",
@@ -3443,1848 +6241,6 @@
     "dates": [
       "2018-12-31",
       "2021-12-31"
-    ]
-  },
-  "ADSK|10k_risk_factors": {
-    "company": "ADSK",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-03-18",
-      "2014-03-10",
-      "2015-03-18"
-    ]
-  },
-  "ADSK|10k_mda": {
-    "company": "ADSK",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-03-10",
-      "2015-03-18"
-    ]
-  },
-  "ADSK|10q_mda": {
-    "company": "ADSK",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-12-05",
-      "2015-05-28",
-      "2015-08-31",
-      "2015-12-09"
-    ]
-  },
-  "SNPS|10k_risk_factors": {
-    "company": "SNPS",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-12-12",
-      "2017-12-14",
-      "2018-12-17"
-    ]
-  },
-  "SNPS|10k_mda": {
-    "company": "SNPS",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-12-14",
-      "2018-12-17"
-    ]
-  },
-  "SNPS|10q_mda": {
-    "company": "SNPS",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-08-18",
-      "2018-02-23",
-      "2018-05-25",
-      "2018-08-24"
-    ]
-  },
-  "SNPS|sec_comment_letters": {
-    "company": "SNPS",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2016-03-09",
-      "2016-03-23",
-      "2016-04-06"
-    ]
-  },
-  "AKAM|10k_risk_factors": {
-    "company": "AKAM",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-02-28",
-      "2020-02-28",
-      "2021-02-26"
-    ]
-  },
-  "AKAM|10k_mda": {
-    "company": "AKAM",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-02-28",
-      "2021-02-26"
-    ]
-  },
-  "AKAM|10q_mda": {
-    "company": "AKAM",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-11-06",
-      "2021-05-07",
-      "2021-08-06",
-      "2021-11-08"
-    ]
-  },
-  "AKAM|sec_comment_letters": {
-    "company": "AKAM",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2020-07-30",
-      "2020-07-31",
-      "2020-08-26",
-      "2020-09-02"
-    ]
-  },
-  "MU|10k_risk_factors": {
-    "company": "MU",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-10-17",
-      "2020-10-19",
-      "2021-10-08"
-    ]
-  },
-  "MU|10k_mda": {
-    "company": "MU",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-10-19",
-      "2021-10-08"
-    ]
-  },
-  "MU|10q_mda": {
-    "company": "MU",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-06-29",
-      "2021-01-08",
-      "2021-04-01",
-      "2021-07-01"
-    ]
-  },
-  "WDC|10k_risk_factors": {
-    "company": "WDC",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-08-29",
-      "2017-08-29",
-      "2018-08-24"
-    ]
-  },
-  "WDC|10k_mda": {
-    "company": "WDC",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-08-29",
-      "2018-08-24"
-    ]
-  },
-  "WDC|10q_mda": {
-    "company": "WDC",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-11-07",
-      "2018-02-06",
-      "2018-05-08",
-      "2018-11-06"
-    ]
-  },
-  "IDXX|10k_risk_factors": {
-    "company": "IDXX",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-02-17",
-      "2017-02-17",
-      "2018-02-16"
-    ]
-  },
-  "IDXX|10k_mda": {
-    "company": "IDXX",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-02-17",
-      "2018-02-16"
-    ]
-  },
-  "IDXX|10q_mda": {
-    "company": "IDXX",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-10-31",
-      "2018-05-04",
-      "2018-08-01",
-      "2018-11-01"
-    ]
-  },
-  "BIIB|10k_risk_factors": {
-    "company": "BIIB",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-05",
-      "2014-02-06",
-      "2015-02-04"
-    ]
-  },
-  "BIIB|10k_mda": {
-    "company": "BIIB",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-06",
-      "2015-02-04"
-    ]
-  },
-  "BIIB|10q_mda": {
-    "company": "BIIB",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-22",
-      "2015-04-24",
-      "2015-07-24",
-      "2015-10-21"
-    ]
-  },
-  "BDX|10k_risk_factors": {
-    "company": "BDX",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-11-27",
-      "2020-11-25",
-      "2021-11-24"
-    ]
-  },
-  "BDX|10k_mda": {
-    "company": "BDX",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-11-25",
-      "2021-11-24"
-    ]
-  },
-  "BDX|10q_mda": {
-    "company": "BDX",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-08-06",
-      "2021-02-04",
-      "2021-05-06",
-      "2021-08-05"
-    ]
-  },
-  "IQV|10k_risk_factors": {
-    "company": "IQV",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-02-19",
-      "2020-02-18",
-      "2021-02-12"
-    ]
-  },
-  "IQV|10k_mda": {
-    "company": "IQV",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-02-18",
-      "2021-02-12"
-    ]
-  },
-  "IQV|10q_mda": {
-    "company": "IQV",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-10-22",
-      "2021-04-23",
-      "2021-07-28",
-      "2021-10-22"
-    ]
-  },
-  "IQV|sec_comment_letters": {
-    "company": "IQV",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2019-06-11",
-      "2019-07-11",
-      "2019-08-13",
-      "2019-08-20"
-    ]
-  },
-  "WAT|10k_risk_factors": {
-    "company": "WAT",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-26",
-      "2014-02-27",
-      "2015-02-27"
-    ]
-  },
-  "WAT|10k_mda": {
-    "company": "WAT",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-27",
-      "2015-02-27"
-    ]
-  },
-  "WAT|10q_mda": {
-    "company": "WAT",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-31",
-      "2015-05-08",
-      "2015-08-07",
-      "2015-11-06"
-    ]
-  },
-  "ALL|10k_risk_factors": {
-    "company": "ALL",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-02-15",
-      "2020-02-21",
-      "2021-02-22"
-    ]
-  },
-  "ALL|10k_mda": {
-    "company": "ALL",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-02-21",
-      "2021-02-22"
-    ]
-  },
-  "ALL|10q_mda": {
-    "company": "ALL",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-11-04",
-      "2021-05-05",
-      "2021-08-04",
-      "2021-11-03"
-    ]
-  },
-  "ALL|sec_comment_letters": {
-    "company": "ALL",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2021-03-26",
-      "2021-04-02",
-      "2021-04-20"
-    ]
-  },
-  "KEY|10k_risk_factors": {
-    "company": "KEY",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-02-25",
-      "2020-02-26",
-      "2021-02-22"
-    ]
-  },
-  "KEY|10k_mda": {
-    "company": "KEY",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-02-26",
-      "2021-02-22"
-    ]
-  },
-  "KEY|10q_mda": {
-    "company": "KEY",
-    "data_type": "10q_mda",
-    "dates": [
-      "2021-05-04",
-      "2021-05-17",
-      "2021-08-02",
-      "2021-11-02"
-    ]
-  },
-  "CAT|10k_risk_factors": {
-    "company": "CAT",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-02-14",
-      "2020-02-19",
-      "2021-02-17"
-    ]
-  },
-  "CAT|10k_mda": {
-    "company": "CAT",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-02-19",
-      "2021-02-17"
-    ]
-  },
-  "CAT|10q_mda": {
-    "company": "CAT",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-11-04",
-      "2021-05-05",
-      "2021-08-04",
-      "2021-11-03"
-    ]
-  },
-  "JBHT|10k_risk_factors": {
-    "company": "JBHT",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2019-02-22",
-      "2020-03-02",
-      "2021-02-23"
-    ]
-  },
-  "JBHT|10k_mda": {
-    "company": "JBHT",
-    "data_type": "10k_mda",
-    "dates": [
-      "2020-03-02",
-      "2021-02-23"
-    ]
-  },
-  "JBHT|10q_mda": {
-    "company": "JBHT",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-10-29",
-      "2021-05-03",
-      "2021-08-03",
-      "2021-10-28"
-    ]
-  },
-  "LEN|10k_risk_factors": {
-    "company": "LEN",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-01-22",
-      "2017-01-20",
-      "2018-01-25"
-    ]
-  },
-  "LEN|10k_mda": {
-    "company": "LEN",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-01-20",
-      "2018-01-25"
-    ]
-  },
-  "LEN|10q_mda": {
-    "company": "LEN",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-10-10",
-      "2018-04-09",
-      "2018-07-06",
-      "2018-10-09"
-    ]
-  },
-  "LEN|sec_comment_letters": {
-    "company": "LEN",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2016-03-11",
-      "2016-03-25",
-      "2016-03-30",
-      "2016-04-13",
-      "2016-08-26",
-      "2016-09-20",
-      "2016-09-29",
-      "2016-10-06",
-      "2016-12-07",
-      "2016-12-13",
-      "2016-12-28",
-      "2017-01-05",
-      "2017-01-10",
-      "2017-03-16",
-      "2017-03-31",
-      "2017-04-25",
-      "2017-12-19",
-      "2018-01-03",
-      "2018-01-04",
-      "2018-05-08"
-    ]
-  },
-  "PHM|10k_risk_factors": {
-    "company": "PHM",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-02-19",
-      "2011-02-10",
-      "2012-02-09"
-    ]
-  },
-  "PHM|10k_mda": {
-    "company": "PHM",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-02-10",
-      "2012-02-09"
-    ]
-  },
-  "PHM|10q_mda": {
-    "company": "PHM",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-10-28",
-      "2012-04-26",
-      "2012-07-26",
-      "2012-10-25"
-    ]
-  },
-  "PHM|sec_comment_letters": {
-    "company": "PHM",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-05-26",
-      "2010-06-23",
-      "2010-07-02",
-      "2010-07-08",
-      "2010-07-15",
-      "2011-04-29",
-      "2011-05-10",
-      "2011-05-19",
-      "2011-06-13",
-      "2011-06-24",
-      "2011-07-08",
-      "2011-08-01",
-      "2011-08-12",
-      "2011-08-18",
-      "2011-09-20",
-      "2011-10-04",
-      "2011-11-15",
-      "2011-12-08"
-    ]
-  },
-  "EBAY|10k_risk_factors": {
-    "company": "EBAY",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2020-01-31",
-      "2021-02-04"
-    ]
-  },
-  "EBAY|10k_mda": {
-    "company": "EBAY",
-    "data_type": "10k_mda",
-    "dates": [
-      "2021-02-04"
-    ]
-  },
-  "EBAY|10q_mda": {
-    "company": "EBAY",
-    "data_type": "10q_mda",
-    "dates": [
-      "2020-10-29",
-      "2021-04-29",
-      "2021-08-12",
-      "2021-10-28"
-    ]
-  },
-  "EBAY|earnings_transcript": {
-    "company": "EBAY",
-    "data_type": "earnings_transcript",
-    "dates": [
-      "2020-07-21"
-    ]
-  },
-  "EBAY|sec_comment_letters": {
-    "company": "EBAY",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2021-05-06",
-      "2021-05-20",
-      "2021-06-01"
-    ]
-  },
-  "CCL|10k_risk_factors": {
-    "company": "CCL",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-01-29",
-      "2011-01-31",
-      "2012-01-30"
-    ]
-  },
-  "CCL|10q_mda": {
-    "company": "CCL",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-09-30",
-      "2012-03-30",
-      "2012-07-02",
-      "2012-10-05"
-    ]
-  },
-  "CCL|sec_comment_letters": {
-    "company": "CCL",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-09-08",
-      "2010-09-17",
-      "2010-09-20",
-      "2011-02-28",
-      "2011-03-03",
-      "2011-03-21",
-      "2011-04-11",
-      "2011-04-14"
-    ]
-  },
-  "TJX|10k_risk_factors": {
-    "company": "TJX",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-03-29",
-      "2017-03-28",
-      "2018-04-04"
-    ]
-  },
-  "TJX|10k_mda": {
-    "company": "TJX",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-03-28",
-      "2018-04-04"
-    ]
-  },
-  "TJX|10q_mda": {
-    "company": "TJX",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-11-28",
-      "2018-06-01",
-      "2018-08-31",
-      "2018-12-04"
-    ]
-  },
-  "ACN|10k_risk_factors": {
-    "company": "ACN",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2011-10-21",
-      "2012-10-30"
-    ]
-  },
-  "ACN|10k_mda": {
-    "company": "ACN",
-    "data_type": "10k_mda",
-    "dates": [
-      "2012-10-30"
-    ]
-  },
-  "ACN|10q_mda": {
-    "company": "ACN",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-12-20",
-      "2012-03-23",
-      "2012-06-29",
-      "2012-12-20"
-    ]
-  },
-  "ACN|sec_comment_letters": {
-    "company": "ACN",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-01-05",
-      "2010-01-21",
-      "2010-02-02",
-      "2010-02-09",
-      "2010-02-25"
-    ]
-  },
-  "ADSK|sec_comment_letters": {
-    "company": "ADSK",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-07-02",
-      "2013-07-03",
-      "2013-07-22",
-      "2013-08-27",
-      "2013-09-30",
-      "2013-10-11",
-      "2013-11-05",
-      "2013-11-18",
-      "2013-12-05",
-      "2014-07-08",
-      "2014-07-21",
-      "2014-07-31"
-    ]
-  },
-  "IBM|10q_mda": {
-    "company": "IBM",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-10-25",
-      "2012-04-24",
-      "2012-07-31",
-      "2012-10-30"
-    ]
-  },
-  "IBM|sec_comment_letters": {
-    "company": "IBM",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-06-07",
-      "2011-06-28",
-      "2011-08-16",
-      "2011-09-07",
-      "2011-09-16",
-      "2012-08-24",
-      "2012-09-10",
-      "2012-09-25"
-    ]
-  },
-  "AAPL|10k_risk_factors": {
-    "company": "AAPL",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-10-27",
-      "2011-10-26",
-      "2012-10-31"
-    ]
-  },
-  "AAPL|10k_mda": {
-    "company": "AAPL",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-10-26",
-      "2012-10-31"
-    ]
-  },
-  "AAPL|10q_mda": {
-    "company": "AAPL",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-07-20",
-      "2012-01-25",
-      "2012-04-25",
-      "2012-07-25"
-    ]
-  },
-  "AAPL|sec_comment_letters": {
-    "company": "AAPL",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-02-18",
-      "2010-03-04",
-      "2010-03-19",
-      "2010-04-01",
-      "2010-04-14",
-      "2011-01-28",
-      "2011-02-08",
-      "2011-03-23",
-      "2011-03-28",
-      "2011-04-25",
-      "2011-06-29",
-      "2011-07-12",
-      "2011-07-19",
-      "2011-08-01",
-      "2011-08-17"
-    ]
-  },
-  "KLAC|10k_risk_factors": {
-    "company": "KLAC",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-08-08",
-      "2014-08-08",
-      "2015-08-07"
-    ]
-  },
-  "KLAC|10k_mda": {
-    "company": "KLAC",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-08-08",
-      "2015-08-07"
-    ]
-  },
-  "KLAC|10q_mda": {
-    "company": "KLAC",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-24",
-      "2015-01-23",
-      "2015-04-24",
-      "2015-10-22"
-    ]
-  },
-  "WDC|sec_comment_letters": {
-    "company": "WDC",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2016-01-26",
-      "2016-02-03",
-      "2016-12-22",
-      "2017-01-03",
-      "2017-01-05"
-    ]
-  },
-  "ADBE|10k_risk_factors": {
-    "company": "ADBE",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-01-22",
-      "2011-01-27",
-      "2012-01-26"
-    ]
-  },
-  "ADBE|10k_mda": {
-    "company": "ADBE",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-01-27",
-      "2012-01-26"
-    ]
-  },
-  "ADBE|10q_mda": {
-    "company": "ADBE",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-10-07",
-      "2012-03-30",
-      "2012-06-27",
-      "2012-09-27"
-    ]
-  },
-  "ADBE|sec_comment_letters": {
-    "company": "ADBE",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-02-28",
-      "2011-03-11",
-      "2011-03-18",
-      "2011-03-30",
-      "2011-04-21",
-      "2011-05-09",
-      "2011-05-10",
-      "2012-03-01",
-      "2012-03-09",
-      "2012-03-27",
-      "2012-04-16",
-      "2012-04-23",
-      "2012-05-17"
-    ]
-  },
-  "ABBV|sec_comment_letters": {
-    "company": "ABBV",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2012-07-02",
-      "2012-08-07",
-      "2012-08-17",
-      "2012-09-04",
-      "2012-09-19",
-      "2012-09-26",
-      "2012-10-09",
-      "2012-10-23",
-      "2012-11-06",
-      "2012-11-16",
-      "2012-11-27",
-      "2012-11-30",
-      "2012-12-07",
-      "2012-12-10",
-      "2012-12-18",
-      "2012-12-19",
-      "2012-12-26",
-      "2012-12-28"
-    ]
-  },
-  "LLY|10k_risk_factors": {
-    "company": "LLY",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-21",
-      "2014-02-19",
-      "2015-02-19"
-    ]
-  },
-  "LLY|10k_mda": {
-    "company": "LLY",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-19",
-      "2015-02-19"
-    ]
-  },
-  "LLY|10q_mda": {
-    "company": "LLY",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-29",
-      "2015-04-30",
-      "2015-07-30",
-      "2015-10-30"
-    ]
-  },
-  "LLY|sec_comment_letters": {
-    "company": "LLY",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-06-26",
-      "2013-07-09",
-      "2013-07-17",
-      "2014-04-10",
-      "2014-04-15",
-      "2014-05-07",
-      "2014-06-04",
-      "2014-06-12",
-      "2014-06-26"
-    ]
-  },
-  "A|10k_risk_factors": {
-    "company": "A",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-12-20",
-      "2011-12-16",
-      "2012-12-20"
-    ]
-  },
-  "A|10k_mda": {
-    "company": "A",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-12-16",
-      "2012-12-20"
-    ]
-  },
-  "A|10q_mda": {
-    "company": "A",
-    "data_type": "10q_mda",
-    "dates": [
-      "2012-03-05",
-      "2012-06-04",
-      "2012-09-05"
-    ]
-  },
-  "A|sec_comment_letters": {
-    "company": "A",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2012-01-30",
-      "2012-02-07",
-      "2012-03-02"
-    ]
-  },
-  "ABT|10k_risk_factors": {
-    "company": "ABT",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2011-02-18",
-      "2012-02-21"
-    ]
-  },
-  "ABT|10k_mda": {
-    "company": "ABT",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-02-18",
-      "2012-02-21"
-    ]
-  },
-  "ABT|10q_mda": {
-    "company": "ABT",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-11-04",
-      "2012-05-08",
-      "2012-08-07",
-      "2012-11-07"
-    ]
-  },
-  "ABT|sec_comment_letters": {
-    "company": "ABT",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-04-23",
-      "2010-05-06",
-      "2010-06-22",
-      "2010-06-30",
-      "2010-07-28",
-      "2010-08-10",
-      "2010-08-11",
-      "2010-08-18",
-      "2010-09-01",
-      "2010-09-30",
-      "2010-11-19",
-      "2010-12-07",
-      "2010-12-10",
-      "2011-01-06",
-      "2011-01-20",
-      "2011-01-24",
-      "2011-03-31",
-      "2011-04-08",
-      "2011-04-28",
-      "2011-05-06",
-      "2011-06-03",
-      "2011-06-09",
-      "2011-07-01",
-      "2011-07-06",
-      "2011-07-18",
-      "2011-07-25",
-      "2011-08-05",
-      "2011-08-22",
-      "2011-09-02",
-      "2011-09-19",
-      "2011-09-20",
-      "2012-04-18",
-      "2012-05-02",
-      "2012-05-30",
-      "2012-06-07",
-      "2012-07-13",
-      "2012-08-06",
-      "2012-12-28"
-    ]
-  },
-  "AIG|10k_risk_factors": {
-    "company": "AIG",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2012-02-23"
-    ]
-  },
-  "AIG|10q_mda": {
-    "company": "AIG",
-    "data_type": "10q_mda",
-    "dates": [
-      "2012-05-03",
-      "2012-08-02",
-      "2012-11-01"
-    ]
-  },
-  "AIG|sec_comment_letters": {
-    "company": "AIG",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-11-02",
-      "2010-11-04",
-      "2010-11-10",
-      "2010-11-12",
-      "2010-11-15",
-      "2010-11-19",
-      "2010-11-22",
-      "2010-11-23",
-      "2010-11-29",
-      "2010-11-30",
-      "2010-12-02",
-      "2010-12-03",
-      "2010-12-10",
-      "2011-02-22",
-      "2011-02-24",
-      "2011-03-25",
-      "2011-04-07",
-      "2011-04-21",
-      "2011-05-23",
-      "2011-06-03",
-      "2011-06-17",
-      "2011-09-01",
-      "2011-09-15",
-      "2011-09-22",
-      "2011-09-28",
-      "2011-09-30",
-      "2011-10-04",
-      "2011-12-02",
-      "2011-12-09",
-      "2011-12-22",
-      "2012-01-11",
-      "2012-04-06",
-      "2012-04-18",
-      "2012-05-09",
-      "2012-05-21",
-      "2012-06-08",
-      "2012-08-10",
-      "2012-08-23",
-      "2012-09-25",
-      "2012-09-27"
-    ]
-  },
-  "PNC|10k_risk_factors": {
-    "company": "PNC",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2011-03-01",
-      "2012-02-29",
-      "2012-03-14"
-    ]
-  },
-  "PNC|10q_mda": {
-    "company": "PNC",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-11-08",
-      "2012-05-09",
-      "2012-08-08",
-      "2012-11-08"
-    ]
-  },
-  "PNC|sec_comment_letters": {
-    "company": "PNC",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-06-25",
-      "2010-07-09",
-      "2010-11-04",
-      "2010-11-18",
-      "2011-01-26",
-      "2011-07-07",
-      "2011-07-21",
-      "2011-12-23",
-      "2012-01-10",
-      "2012-01-27",
-      "2012-02-10",
-      "2012-05-25",
-      "2012-06-11",
-      "2012-06-15",
-      "2012-07-27",
-      "2012-09-06",
-      "2012-10-26"
-    ]
-  },
-  "RF|10k_risk_factors": {
-    "company": "RF",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2014-02-21",
-      "2015-02-17"
-    ]
-  },
-  "RF|10k_mda": {
-    "company": "RF",
-    "data_type": "10k_mda",
-    "dates": [
-      "2015-02-17"
-    ]
-  },
-  "RF|10q_mda": {
-    "company": "RF",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-11-05",
-      "2015-05-06",
-      "2015-08-05",
-      "2015-11-05"
-    ]
-  },
-  "RF|sec_comment_letters": {
-    "company": "RF",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-07-16",
-      "2013-07-30",
-      "2013-09-04"
-    ]
-  },
-  "BEN|10k_risk_factors": {
-    "company": "BEN",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-11-16",
-      "2011-11-15",
-      "2012-11-15"
-    ]
-  },
-  "BEN|10k_mda": {
-    "company": "BEN",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-11-15",
-      "2012-11-15"
-    ]
-  },
-  "BEN|10q_mda": {
-    "company": "BEN",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-08-02",
-      "2012-02-01",
-      "2012-05-02",
-      "2012-07-30"
-    ]
-  },
-  "BEN|sec_comment_letters": {
-    "company": "BEN",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-02-17",
-      "2011-03-11",
-      "2011-03-29",
-      "2011-04-12",
-      "2011-05-06",
-      "2011-06-06",
-      "2011-06-29",
-      "2011-07-06",
-      "2012-01-31",
-      "2012-02-21",
-      "2012-03-22",
-      "2012-04-02",
-      "2012-04-12"
-    ]
-  },
-  "SYF|10k_risk_factors": {
-    "company": "SYF",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2015-02-23"
-    ]
-  },
-  "SYF|10k_mda": {
-    "company": "SYF",
-    "data_type": "10k_mda",
-    "dates": [
-      "2015-02-23"
-    ]
-  },
-  "SYF|10q_mda": {
-    "company": "SYF",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-31",
-      "2015-05-01",
-      "2015-07-31",
-      "2015-10-30"
-    ]
-  },
-  "SYF|sec_comment_letters": {
-    "company": "SYF",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2014-04-09",
-      "2014-04-25",
-      "2014-06-18",
-      "2014-07-16",
-      "2014-07-18",
-      "2014-07-28",
-      "2014-08-01",
-      "2014-08-04",
-      "2014-08-05",
-      "2014-08-06",
-      "2015-10-29",
-      "2015-11-03",
-      "2015-11-06"
-    ]
-  },
-  "AFL|10k_risk_factors": {
-    "company": "AFL",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-02-26",
-      "2011-02-25",
-      "2012-02-27"
-    ]
-  },
-  "AFL|10k_mda": {
-    "company": "AFL",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-02-25",
-      "2012-02-27"
-    ]
-  },
-  "AFL|10q_mda": {
-    "company": "AFL",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-11-04",
-      "2012-05-07",
-      "2012-08-03",
-      "2012-11-02"
-    ]
-  },
-  "AFL|sec_comment_letters": {
-    "company": "AFL",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-06-24",
-      "2010-07-08",
-      "2010-07-26",
-      "2011-04-19",
-      "2011-04-20",
-      "2011-05-27",
-      "2011-06-13",
-      "2011-06-15"
-    ]
-  },
-  "PFG|10k_risk_factors": {
-    "company": "PFG",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-13",
-      "2014-02-12",
-      "2015-02-11"
-    ]
-  },
-  "PFG|10k_mda": {
-    "company": "PFG",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-12",
-      "2015-02-11"
-    ]
-  },
-  "PFG|10q_mda": {
-    "company": "PFG",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-29",
-      "2015-04-29",
-      "2015-07-29",
-      "2015-10-28"
-    ]
-  },
-  "PFG|sec_comment_letters": {
-    "company": "PFG",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-04-05",
-      "2013-04-10",
-      "2013-05-02",
-      "2013-05-30",
-      "2013-06-12",
-      "2014-06-12",
-      "2014-06-20",
-      "2014-07-17"
-    ]
-  },
-  "MTB|10k_risk_factors": {
-    "company": "MTB",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-02-19",
-      "2017-02-22",
-      "2018-02-22"
-    ]
-  },
-  "MTB|10k_mda": {
-    "company": "MTB",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-02-22",
-      "2018-02-22"
-    ]
-  },
-  "MTB|10q_mda": {
-    "company": "MTB",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-11-03",
-      "2018-05-04",
-      "2018-08-02",
-      "2018-11-05"
-    ]
-  },
-  "MTB|sec_comment_letters": {
-    "company": "MTB",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2016-10-27",
-      "2016-11-10",
-      "2016-12-08",
-      "2016-12-16",
-      "2016-12-19"
-    ]
-  },
-  "ADP|10k_risk_factors": {
-    "company": "ADP",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-08-25",
-      "2011-08-24",
-      "2012-08-20"
-    ]
-  },
-  "ADP|10k_mda": {
-    "company": "ADP",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-08-24",
-      "2012-08-20"
-    ]
-  },
-  "ADP|10q_mda": {
-    "company": "ADP",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-11-04",
-      "2012-02-07",
-      "2012-05-04",
-      "2012-11-02"
-    ]
-  },
-  "ADP|sec_comment_letters": {
-    "company": "ADP",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-01-14",
-      "2011-01-21",
-      "2011-02-08"
-    ]
-  },
-  "BA|10k_risk_factors": {
-    "company": "BA",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-11",
-      "2014-02-14",
-      "2015-02-12"
-    ]
-  },
-  "BA|10k_mda": {
-    "company": "BA",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-14",
-      "2015-02-12"
-    ]
-  },
-  "BA|10q_mda": {
-    "company": "BA",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-22",
-      "2015-04-22",
-      "2015-07-22",
-      "2015-10-21"
-    ]
-  },
-  "BA|sec_comment_letters": {
-    "company": "BA",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2014-03-18",
-      "2014-03-31",
-      "2014-04-11",
-      "2015-06-12",
-      "2015-06-26",
-      "2015-07-07"
-    ]
-  },
-  "WDAY|10k_risk_factors": {
-    "company": "WDAY",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-03-22",
-      "2014-03-31",
-      "2015-03-25"
-    ]
-  },
-  "WDAY|10k_mda": {
-    "company": "WDAY",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-03-31",
-      "2015-03-25"
-    ]
-  },
-  "WDAY|10q_mda": {
-    "company": "WDAY",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-12-05",
-      "2015-06-05",
-      "2015-09-04",
-      "2015-12-04"
-    ]
-  },
-  "WDAY|sec_comment_letters": {
-    "company": "WDAY",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2014-06-25",
-      "2014-07-07",
-      "2014-07-24",
-      "2015-05-21",
-      "2015-06-03",
-      "2015-06-23"
-    ]
-  },
-  "BXP|10k_risk_factors": {
-    "company": "BXP",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-02-25",
-      "2011-02-25",
-      "2012-02-28"
-    ]
-  },
-  "BXP|10k_mda": {
-    "company": "BXP",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-02-25",
-      "2012-02-28"
-    ]
-  },
-  "BXP|10q_mda": {
-    "company": "BXP",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-11-08",
-      "2012-05-08",
-      "2012-08-08",
-      "2012-11-08"
-    ]
-  },
-  "BXP|sec_comment_letters": {
-    "company": "BXP",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-03-14",
-      "2011-04-08",
-      "2011-04-25",
-      "2011-05-05",
-      "2011-05-09"
-    ]
-  },
-  "PCAR|10k_risk_factors": {
-    "company": "PCAR",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-27",
-      "2014-02-27",
-      "2015-02-26"
-    ]
-  },
-  "PCAR|10k_mda": {
-    "company": "PCAR",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-27",
-      "2015-02-26"
-    ]
-  },
-  "PCAR|10q_mda": {
-    "company": "PCAR",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-11-06",
-      "2015-05-06",
-      "2015-08-06",
-      "2015-11-05"
-    ]
-  },
-  "PCAR|sec_comment_letters": {
-    "company": "PCAR",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-05-03",
-      "2013-05-23",
-      "2013-06-10"
-    ]
-  },
-  "SWK|10k_risk_factors": {
-    "company": "SWK",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2016-02-19",
-      "2017-02-15",
-      "2018-02-27"
-    ]
-  },
-  "SWK|10k_mda": {
-    "company": "SWK",
-    "data_type": "10k_mda",
-    "dates": [
-      "2017-02-15",
-      "2018-02-27"
-    ]
-  },
-  "SWK|10q_mda": {
-    "company": "SWK",
-    "data_type": "10q_mda",
-    "dates": [
-      "2017-10-25",
-      "2018-04-23",
-      "2018-07-20",
-      "2018-10-26"
-    ]
-  },
-  "CHRW|10k_risk_factors": {
-    "company": "CHRW",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-03-01",
-      "2011-03-01",
-      "2012-02-29"
-    ]
-  },
-  "CHRW|10k_mda": {
-    "company": "CHRW",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-03-01",
-      "2012-02-29"
-    ]
-  },
-  "CHRW|10q_mda": {
-    "company": "CHRW",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-11-09",
-      "2012-05-10",
-      "2012-08-09",
-      "2012-11-08"
-    ]
-  },
-  "CMI|10k_risk_factors": {
-    "company": "CMI",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-02-26",
-      "2011-02-24",
-      "2012-02-21"
-    ]
-  },
-  "CMI|10k_mda": {
-    "company": "CMI",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-02-24",
-      "2012-02-21"
-    ]
-  },
-  "CMI|10q_mda": {
-    "company": "CMI",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-10-27",
-      "2012-05-02",
-      "2012-08-01",
-      "2012-10-31"
-    ]
-  },
-  "CMI|sec_comment_letters": {
-    "company": "CMI",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-04-13",
-      "2011-04-27",
-      "2011-05-12",
-      "2011-05-31",
-      "2011-06-08",
-      "2012-05-16",
-      "2012-06-13",
-      "2012-06-21"
-    ]
-  },
-  "AMZN|10k_risk_factors": {
-    "company": "AMZN",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2011-01-28",
-      "2012-02-01"
-    ]
-  },
-  "AMZN|10k_mda": {
-    "company": "AMZN",
-    "data_type": "10k_mda",
-    "dates": [
-      "2012-02-01"
-    ]
-  },
-  "AMZN|10q_mda": {
-    "company": "AMZN",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-10-26",
-      "2012-04-27",
-      "2012-07-27",
-      "2012-10-26"
-    ]
-  },
-  "AMZN|sec_comment_letters": {
-    "company": "AMZN",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-04-27",
-      "2010-05-04",
-      "2010-05-12",
-      "2010-05-20",
-      "2011-05-31",
-      "2011-06-22",
-      "2011-07-12",
-      "2011-08-10",
-      "2011-08-17",
-      "2012-03-12",
-      "2012-04-09",
-      "2012-04-18",
-      "2012-05-03",
-      "2012-05-09"
-    ]
-  },
-  "ROST|10k_risk_factors": {
-    "company": "ROST",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2010-03-30",
-      "2011-03-29",
-      "2012-03-27"
-    ]
-  },
-  "ROST|10k_mda": {
-    "company": "ROST",
-    "data_type": "10k_mda",
-    "dates": [
-      "2011-03-29",
-      "2012-03-27"
-    ]
-  },
-  "ROST|10q_mda": {
-    "company": "ROST",
-    "data_type": "10q_mda",
-    "dates": [
-      "2011-12-07",
-      "2012-06-06",
-      "2012-09-05",
-      "2012-12-05"
-    ]
-  },
-  "ROST|sec_comment_letters": {
-    "company": "ROST",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2010-04-15",
-      "2010-04-28",
-      "2010-05-11",
-      "2010-05-25",
-      "2010-06-09",
-      "2010-06-30",
-      "2010-07-14",
-      "2011-05-10",
-      "2011-05-18",
-      "2011-06-15",
-      "2011-06-23",
-      "2011-07-08"
-    ]
-  },
-  "YUM|10k_risk_factors": {
-    "company": "YUM",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-20",
-      "2014-02-18",
-      "2015-02-17"
-    ]
-  },
-  "YUM|10k_mda": {
-    "company": "YUM",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-18",
-      "2015-02-17"
-    ]
-  },
-  "YUM|10q_mda": {
-    "company": "YUM",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-14",
-      "2015-04-27",
-      "2015-07-21",
-      "2015-10-15"
-    ]
-  },
-  "YUM|sec_comment_letters": {
-    "company": "YUM",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-02-19",
-      "2013-04-17",
-      "2013-04-30",
-      "2013-06-20"
-    ]
-  },
-  "RCL|10k_risk_factors": {
-    "company": "RCL",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2013-02-25",
-      "2014-02-20",
-      "2015-02-23"
-    ]
-  },
-  "RCL|10k_mda": {
-    "company": "RCL",
-    "data_type": "10k_mda",
-    "dates": [
-      "2014-02-20",
-      "2015-02-23"
-    ]
-  },
-  "RCL|10q_mda": {
-    "company": "RCL",
-    "data_type": "10q_mda",
-    "dates": [
-      "2014-10-23",
-      "2015-04-23",
-      "2015-07-31",
-      "2015-10-23"
-    ]
-  },
-  "RCL|sec_comment_letters": {
-    "company": "RCL",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2013-03-27",
-      "2013-04-10",
-      "2013-06-19"
-    ]
-  },
-  "APTV|10k_risk_factors": {
-    "company": "APTV",
-    "data_type": "10k_risk_factors",
-    "dates": [
-      "2012-02-17"
-    ]
-  },
-  "APTV|10k_mda": {
-    "company": "APTV",
-    "data_type": "10k_mda",
-    "dates": [
-      "2012-02-17"
-    ]
-  },
-  "APTV|10q_mda": {
-    "company": "APTV",
-    "data_type": "10q_mda",
-    "dates": [
-      "2012-04-26",
-      "2012-07-31",
-      "2012-11-01"
-    ]
-  },
-  "APTV|sec_comment_letters": {
-    "company": "APTV",
-    "data_type": "sec_comment_letters",
-    "dates": [
-      "2011-06-21",
-      "2011-06-30",
-      "2011-07-08",
-      "2011-07-12",
-      "2011-07-20",
-      "2011-08-01",
-      "2011-08-09",
-      "2011-08-19",
-      "2011-08-29",
-      "2011-10-31",
-      "2011-11-04",
-      "2011-11-07",
-      "2011-11-08",
-      "2011-11-09",
-      "2011-11-14",
-      "2012-03-27",
-      "2012-03-29",
-      "2012-04-06"
     ]
   }
 }

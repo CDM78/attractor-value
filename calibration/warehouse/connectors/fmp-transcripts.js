@@ -105,25 +105,57 @@ async function fetchTranscript(ticker, quarter, year) {
 
 /**
  * Fetch all available transcripts for a ticker up to a given date.
+ * Tries the current stable API, then falls back to legacy v3.
  */
 async function fetchAllTranscripts(ticker, beforeDate) {
   const apiKey = getApiKey();
   if (!apiKey) return [];
   if (!canMakeCall()) return [];
 
-  // Try the batch endpoint first
-  const url = `https://financialmodelingprep.com/api/v3/earning_call_transcript/${ticker}?apikey=${apiKey}`;
-
+  // Try the current stable endpoint first (requires paid plan)
+  const stableUrl = `https://financialmodelingprep.com/stable/earning-call-transcript?symbol=${ticker}&apikey=${apiKey}`;
   try {
-    const res = await fetch(url);
+    const stableRes = await fetch(stableUrl);
+    recordCall();
+
+    if (stableRes.ok) {
+      const data = await stableRes.json();
+      if (Array.isArray(data) && data.length > 0) {
+        return data.filter(t => {
+          const date = t.date?.split(' ')[0];
+          return date && date < beforeDate;
+        });
+      }
+    }
+
+    // 402 = paid plan required, 403 = legacy disabled
+    if (stableRes.status === 402 || stableRes.status === 403) {
+      // Log once, not for every ticker
+      if (!fetchAllTranscripts._warnedPaid) {
+        const body = await stableRes.text().catch(() => '');
+        if (body.includes('Restricted Endpoint') || body.includes('subscription')) {
+          console.warn('  FMP earnings transcripts require a paid subscription (free tier insufficient)');
+        } else if (body.includes('Legacy Endpoint')) {
+          console.warn('  FMP v3 transcript endpoint deprecated — stable endpoint requires paid plan');
+        }
+        fetchAllTranscripts._warnedPaid = true;
+      }
+      return [];
+    }
+  } catch {}
+
+  // Fallback: legacy v3 endpoint (may still work for pre-Aug-2025 accounts)
+  const legacyUrl = `https://financialmodelingprep.com/api/v3/earning_call_transcript/${ticker}?apikey=${apiKey}`;
+  try {
+    if (!canMakeCall()) return [];
+    const res = await fetch(legacyUrl);
     recordCall();
 
     if (!res.ok) return [];
     const data = await res.json();
+    if (data?.['Error Message']) return []; // Legacy endpoint disabled
 
     if (!Array.isArray(data)) return [];
-
-    // Filter to before entry date
     return data.filter(t => {
       const date = t.date?.split(' ')[0];
       return date && date < beforeDate;
