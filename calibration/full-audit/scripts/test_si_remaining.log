@@ -1,0 +1,59 @@
+Loaded 1277 cases
+
+SI Zipf x D1 interaction: r=0.018, p=0.5733, n=1034
+  SP500 reference: r=0.223
+  Ratio: 0.08x
+  Top quartile mean return: 0.592 (n=259)
+  Bottom quartile mean return: 0.525 (n=259)
+  Spread: 0.067
+  Top quartile win rate (>20%): 49.0%
+  Bottom quartile win rate (>20%): 42.5%
+    Fold 1: r=0.037, p=0.5976, n=208
+    Fold 2: r=-0.145, p=0.0363, n=207
+    Fold 3: r=0.123, p=0.0759, n=207
+    Fold 4: r=0.110, p=0.1131, n=206
+    Fold 5: r=0.032, p=0.6429, n=206
+    Mean CV r: 0.032
+    Positive folds: 4/5
+  Companies: 551 unique across 1034 cases (47% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+si_csd (confirm): r=0.074, p=0.0171, n=1040
+  SP500 reference: r=0.074
+  Ratio: 1.00x
+  Top quartile mean return: 0.701 (n=260)
+  Bottom quartile mean return: 0.473 (n=260)
+  Spread: 0.228
+  Top quartile win rate (>20%): 53.5%
+  Bottom quartile win rate (>20%): 46.2%
+    Fold 1: r=0.094, p=0.1752, n=209
+    Fold 2: r=0.027, p=0.6973, n=208
+    Fold 3: r=-0.001, p=0.9844, n=208
+    Fold 4: r=0.093, p=0.1800, n=208
+    Fold 5: r=0.189, p=0.0059, n=207
+    Mean CV r: 0.080
+    Positive folds: 4/5
+  Companies: 554 unique across 1040 cases (47% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: VALIDATED
+
+si_theta (confirm): r=0.068, p=0.0275, n=1057
+  SP500 reference: r=0.068
+  Ratio: 1.00x
+  Top quartile mean return: 0.625 (n=265)
+  Bottom quartile mean return: 0.388 (n=265)
+  Spread: 0.236
+  Top quartile win rate (>20%): 48.3%
+  Bottom quartile win rate (>20%): 44.2%
+    Fold 1: r=-0.048, p=0.4881, n=212
+    Fold 2: r=-0.050, p=0.4692, n=212
+    Fold 3: r=0.178, p=0.0087, n=211
+    Fold 4: r=0.106, p=0.1240, n=211
+    Fold 5: r=0.072, p=0.2991, n=211
+    Mean CV r: 0.052
+    Positive folds: 3/5
+  Companies: 562 unique across 1057 cases (47% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: MARGINAL
+

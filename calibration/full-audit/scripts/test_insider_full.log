@@ -1,0 +1,67 @@
+Loaded 1277 cases
+
+Cases with insider data: 109
+Unique companies: 56 (49% duplicates)
+
+log(insider net value): r=0.213, p=0.0240, n=109
+  SP500 reference: r=0.260
+  Ratio: 0.82x
+  Top quartile mean return: 0.842 (n=28)
+  Bottom quartile mean return: 0.261 (n=28)
+  Spread: 0.580
+  Top quartile win rate (>20%): 57.1%
+  Bottom quartile win rate (>20%): 39.3%
+    Fold 1: r=0.372, p=0.0666, n=23
+    Fold 2: r=-0.018, p=0.9357, n=22
+    Fold 3: r=0.772, p=0.0000, n=22
+    Fold 4: r=-0.336, p=0.1198, n=21
+    Fold 5: r=-0.085, p=0.7104, n=21
+    Mean CV r: 0.141
+    Positive folds: 2/5
+  Companies: 56 unique across 109 cases (49% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  SUSPICIOUSLY HIGH: r=0.213 > 0.15 on n=109
+  Winsorized (5/95): r=0.129, p=0.1769
+  VERDICT: FAILED
+
+Insider net value (raw): r=0.128, p=0.1802, n=109
+  SP500 reference: r=0.128
+  Ratio: 1.00x
+  Top quartile mean return: 0.842 (n=28)
+  Bottom quartile mean return: 0.261 (n=28)
+  Spread: 0.580
+  Top quartile win rate (>20%): 57.1%
+  Bottom quartile win rate (>20%): 39.3%
+    Fold 1: r=0.102, p=0.6398, n=23
+    Fold 2: r=0.153, p=0.4886, n=22
+    Fold 3: r=0.409, p=0.0451, n=22
+    Fold 4: r=0.034, p=0.8826, n=21
+    Fold 5: r=-0.734, p=0.0000, n=21
+    Mean CV r: -0.007
+    Positive folds: 4/5
+  Companies: 56 unique across 109 cases (49% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+De-duplicated: 56 cases
+log(insider net value) [DE-DUPED]: r=-0.050, p=0.7143, n=56
+  SP500 reference: r=0.260
+  Ratio: -0.19x
+  Top quartile mean return: 0.702 (n=14)
+  Bottom quartile mean return: -0.042 (n=14)
+  Spread: 0.744
+  Top quartile win rate (>20%): 42.9%
+  Bottom quartile win rate (>20%): 21.4%
+    Fold 1: r=0.375, p=0.2015, n=12
+    Fold 2: r=-0.412, p=0.1745, n=11
+    Fold 3: r=0.303, p=0.3399, n=11
+    Fold 4: r=-0.360, p=0.2467, n=11
+    Fold 5: r=0.310, p=0.3279, n=11
+    Mean CV r: 0.043
+    Positive folds: 3/5
+  Companies: 56 unique across 56 cases (0% duplicates)
+  VERDICT: FAILED
+
+NET_BUYING: n=6, win_rate(>20%)=67%, mean_return=+1.470
+MIXED: n=10, win_rate(>20%)=30%, mean_return=+0.162
+NET_SELLING: n=93, win_rate(>20%)=48%, mean_return=+0.383

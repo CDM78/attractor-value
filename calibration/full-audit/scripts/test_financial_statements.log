@@ -1,0 +1,116 @@
+Loaded 1277 cases
+
+beta level (equity): r=-0.018, p=0.7515, n=296
+  SP500 reference: r=0.299
+  Ratio: -0.06x
+  Top quartile mean return: 0.289 (n=74)
+  Bottom quartile mean return: 0.312 (n=74)
+  Spread: -0.024
+  Top quartile win rate (>20%): 45.9%
+  Bottom quartile win rate (>20%): 44.6%
+    Fold 1: r=-0.171, p=0.1875, n=60
+    Fold 2: r=0.083, p=0.5262, n=60
+    Fold 3: r=0.153, p=0.2420, n=59
+    Fold 4: r=-0.181, p=0.1639, n=59
+    Fold 5: r=-0.029, p=0.8290, n=58
+    Mean CV r: -0.029
+    Positive folds: 2/5
+  Companies: 154 unique across 296 cases (48% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+beta trajectory: r=-0.039, p=0.5616, n=226
+  SP500 reference: r=0.267
+  Ratio: -0.15x
+  Top quartile mean return: 0.263 (n=57)
+  Bottom quartile mean return: 0.384 (n=57)
+  Spread: -0.121
+  Top quartile win rate (>20%): 40.4%
+  Bottom quartile win rate (>20%): 43.9%
+    Fold 1: r=-0.083, p=0.5807, n=46
+    Fold 2: r=-0.100, p=0.5080, n=45
+    Fold 3: r=-0.037, p=0.8078, n=45
+    Fold 4: r=0.017, p=0.9109, n=45
+    Fold 5: r=-0.085, p=0.5776, n=45
+    Mean CV r: -0.058
+    Positive folds: 1/5
+  Companies: 128 unique across 226 cases (43% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+beta velocity: r=-0.039, p=0.5616, n=228
+  SP500 reference: r=0.200
+  Ratio: -0.19x
+  Top quartile mean return: 0.360 (n=57)
+  Bottom quartile mean return: 0.430 (n=57)
+  Spread: -0.070
+  Top quartile win rate (>20%): 40.4%
+  Bottom quartile win rate (>20%): 49.1%
+    Fold 1: r=-0.114, p=0.4410, n=47
+    Fold 2: r=-0.101, p=0.4990, n=46
+    Fold 3: r=-0.167, p=0.2660, n=45
+    Fold 4: r=0.061, p=0.6905, n=45
+    Fold 5: r=0.053, p=0.7255, n=45
+    Mean CV r: -0.054
+    Positive folds: 2/5
+  Companies: 129 unique across 228 cases (43% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+Financial CSD: r=0.024, p=0.6838, n=284
+  SP500 reference: r=-0.037
+  Ratio: -0.66x
+  Top quartile mean return: 0.370 (n=71)
+  Bottom quartile mean return: 0.283 (n=71)
+  Spread: 0.088
+  Top quartile win rate (>20%): 46.5%
+  Bottom quartile win rate (>20%): 50.7%
+    Fold 1: r=-0.046, p=0.7322, n=58
+    Fold 2: r=0.183, p=0.1676, n=57
+    Fold 3: r=-0.076, p=0.5702, n=57
+    Fold 4: r=0.143, p=0.2897, n=56
+    Fold 5: r=-0.050, p=0.7114, n=56
+    Mean CV r: 0.031
+    Positive folds: 2/5
+  Companies: 147 unique across 284 cases (48% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+Financial Benford KLD: r=0.076, p=0.1674, n=326
+  SP500 reference: r=-0.027
+  Ratio: -2.83x
+  Top quartile mean return: 0.317 (n=82)
+  Bottom quartile mean return: 0.411 (n=82)
+  Spread: -0.094
+  Top quartile win rate (>20%): 43.9%
+  Bottom quartile win rate (>20%): 50.0%
+    Fold 1: r=0.360, p=0.0020, n=66
+    Fold 2: r=0.022, p=0.8590, n=66
+    Fold 3: r=-0.077, p=0.5424, n=65
+    Fold 4: r=0.032, p=0.7998, n=65
+    Fold 5: r=-0.116, p=0.3583, n=64
+    Mean CV r: 0.044
+    Positive folds: 3/5
+  Companies: 167 unique across 326 cases (49% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+
+Financial D1 growth: r=-0.033, p=0.5608, n=307
+  SP500 reference: r=-0.069
+  Ratio: 0.48x
+  Top quartile mean return: 0.223 (n=77)
+  Bottom quartile mean return: 0.587 (n=77)
+  Spread: -0.364
+  Top quartile win rate (>20%): 31.2%
+  Bottom quartile win rate (>20%): 62.3%
+    Fold 1: r=-0.017, p=0.8960, n=62
+    Fold 2: r=0.093, p=0.4678, n=62
+    Fold 3: r=-0.039, p=0.7663, n=61
+    Fold 4: r=-0.358, p=0.0032, n=61
+    Fold 5: r=-0.057, p=0.6629, n=61
+    Mean CV r: -0.075
+    Positive folds: 1/5
+  Companies: 157 unique across 307 cases (49% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: FAILED
+

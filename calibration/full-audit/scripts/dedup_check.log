@@ -1,0 +1,96 @@
+De-duplicated: 663 unique companies (from 1277 entries)
+
+=== DE-DUPLICATED SIGNAL TESTS ===
+
+Hurst [DE-DUPED]: r=0.093, p=0.2741, n=138
+  SP500 reference: r=0.138
+  Ratio: 0.68x
+  Top quartile mean return: 0.172 (n=35)
+  Bottom quartile mean return: 0.041 (n=35)
+  Spread: 0.131
+  Top quartile win rate (>20%): 45.7%
+  Bottom quartile win rate (>20%): 37.1%
+    Fold 1: r=0.220, p=0.2513, n=28
+    Fold 2: r=-0.023, p=0.9085, n=28
+    Fold 3: r=-0.108, p=0.5782, n=28
+    Fold 4: r=0.226, p=0.2450, n=27
+    Fold 5: r=0.064, p=0.7466, n=27
+    Mean CV r: 0.076
+    Positive folds: 3/5
+  Companies: 138 unique across 138 cases (0% duplicates)
+  VERDICT: FAILED
+
+si_csd [DE-DUPED]: r=0.119, p=0.0048, n=554
+  SP500 reference: r=0.074
+  Ratio: 1.61x
+  Top quartile mean return: 0.587 (n=139)
+  Bottom quartile mean return: 0.236 (n=139)
+  Spread: 0.351
+  Top quartile win rate (>20%): 43.9%
+  Bottom quartile win rate (>20%): 30.9%
+    Fold 1: r=0.334, p=0.0002, n=111
+    Fold 2: r=0.059, p=0.5371, n=111
+    Fold 3: r=-0.074, p=0.4358, n=111
+    Fold 4: r=0.044, p=0.6472, n=111
+    Fold 5: r=0.176, p=0.0634, n=110
+    Mean CV r: 0.108
+    Positive folds: 4/5
+  Companies: 554 unique across 554 cases (0% duplicates)
+  VERDICT: VALIDATED
+
+spread [DE-DUPED]: r=-0.000, p=1.0000, n=663
+  SP500 reference: r=0.065
+  Ratio: -0.00x
+  Top quartile mean return: 0.319 (n=663)
+  Bottom quartile mean return: 0.319 (n=663)
+  Spread: 0.000
+  Top quartile win rate (>20%): 34.8%
+  Bottom quartile win rate (>20%): 34.8%
+    Fold 1: r=0.000, p=1.0000, n=133
+    Fold 2: r=0.000, p=1.0000, n=133
+    Fold 3: r=0.000, p=1.0000, n=133
+    Fold 4: r=0.000, p=1.0000, n=132
+    Fold 5: r=0.000, p=1.0000, n=132
+    Mean CV r: 0.000
+    Positive folds: 0/5
+  Companies: 663 unique across 663 cases (0% duplicates)
+  VERDICT: FAILED
+
+Fisher [DE-DUPED]: r=0.074, p=0.3537, n=157
+  SP500 reference: r=0.101
+  Ratio: 0.74x
+  Top quartile mean return: 0.275 (n=40)
+  Bottom quartile mean return: -0.005 (n=40)
+  Spread: 0.280
+  Top quartile win rate (>20%): 45.0%
+  Bottom quartile win rate (>20%): 30.0%
+    Fold 1: r=0.304, p=0.0804, n=32
+    Fold 2: r=-0.200, p=0.2639, n=32
+    Fold 3: r=0.044, p=0.8141, n=31
+    Fold 4: r=0.067, p=0.7196, n=31
+    Fold 5: r=0.501, p=0.0018, n=31
+    Mean CV r: 0.143
+    Positive folds: 4/5
+  Companies: 157 unique across 157 cases (0% duplicates)
+  VERDICT: FAILED
+
+Revenue D2 [DE-DUPED]: r=-0.133, p=0.0945, n=157
+  SP500 reference: r=-0.170
+  Ratio: 0.78x
+  Top quartile mean return: 0.122 (n=40)
+  Bottom quartile mean return: 0.239 (n=40)
+  Spread: -0.117
+  Top quartile win rate (>20%): 27.5%
+  Bottom quartile win rate (>20%): 45.0%
+    Fold 1: r=-0.010, p=0.9569, n=32
+    Fold 2: r=0.034, p=0.8533, n=32
+    Fold 3: r=-0.072, p=0.6992, n=31
+    Fold 4: r=-0.468, p=0.0044, n=31
+    Fold 5: r=-0.265, p=0.1390, n=31
+    Mean CV r: -0.156
+    Positive folds: 1/5
+  Companies: 157 unique across 157 cases (0% duplicates)
+  VERDICT: FAILED
+
+=== COMPOSITE: spread + si_csd [DE-DUPED] ===
+  r=0.117, p=0.0055, n=554

@@ -1,0 +1,42 @@
+Loaded 1277 cases
+
+Unique spread_variance_slope values: 2
+
+spread_variance_slope (confirm): r=0.065, p=0.0199, n=1277
+  SP500 reference: r=0.065
+  Ratio: 1.00x
+  Top quartile mean return: 0.497 (n=614)
+  Bottom quartile mean return: 0.319 (n=663)
+  Spread: 0.178
+  Top quartile win rate (>20%): 47.7%
+  Bottom quartile win rate (>20%): 34.8%
+    Fold 1: r=0.110, p=0.0769, n=256
+    Fold 2: r=0.092, p=0.1407, n=256
+    Fold 3: r=0.048, p=0.4423, n=256
+    Fold 4: r=0.077, p=0.2190, n=255
+    Fold 5: r=-0.003, p=0.9631, n=254
+    Mean CV r: 0.065
+    Positive folds: 4/5
+  Companies: 663 unique across 1277 cases (48% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: VALIDATED
+
+spread_theta (confirm): r=0.065, p=0.0199, n=1277
+  SP500 reference: r=0.065
+  Ratio: 1.00x
+  Top quartile mean return: 0.497 (n=614)
+  Bottom quartile mean return: 0.319 (n=663)
+  Spread: 0.178
+  Top quartile win rate (>20%): 47.7%
+  Bottom quartile win rate (>20%): 34.8%
+    Fold 1: r=0.110, p=0.0769, n=256
+    Fold 2: r=0.092, p=0.1407, n=256
+    Fold 3: r=0.048, p=0.4423, n=256
+    Fold 4: r=0.077, p=0.2190, n=255
+    Fold 5: r=-0.003, p=0.9631, n=254
+    Mean CV r: 0.065
+    Positive folds: 4/5
+  Companies: 663 unique across 1277 cases (48% duplicates)
+  WARNING: >20% duplicates — p-values may be inflated
+  VERDICT: VALIDATED
+
