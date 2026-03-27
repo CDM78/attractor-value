@@ -5,8 +5,6 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
 import { resolve, join } from 'path';
-import { parse } from 'csv-parse/sync';
-
 const CAL = resolve(import.meta.dirname, '..');
 const RETEST_DIR = join(CAL, 'retest');
 const UA = 'Bolin & Troy LLC charles@bolinandtroy.com';
