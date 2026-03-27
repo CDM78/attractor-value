@@ -71,6 +71,13 @@ def clean_text(raw_html):
 
 def is_toc_entry(text, pos, match_text):
     """Check if a match position is in a table of contents (short line with page number)."""
+    # Key heuristic: After "Item 1A...Risk Factors", if a bare number (page num)
+    # appears within 20 chars, followed soon by "Item 1B" or "Item 2", it's TOC
+    after = text[pos:pos+300]
+    # Pattern: "Item 1A. Risk Factors 10 Item 1B" or similar
+    if re.search(r'Risk\s+Factors\s*\.?\s*\d+\s.*?Item\s*(?:1B|2)', after, re.I | re.DOTALL):
+        return True
+
     # Get the line containing this match
     line_start = text.rfind('\n', 0, pos)
     line_end = text.find('\n', pos)
@@ -94,8 +101,8 @@ def is_toc_entry(text, pos, match_text):
     doc_fraction = pos / max(len(text), 1)
     if doc_fraction < 0.15 and len(line) < 200:
         # Could be TOC — check if there's substantive content after it
-        after = text[pos:pos+500]
-        sentence_count = len(re.findall(r'[.!?]\s+[A-Z]', after))
+        after_check = text[pos:pos+500]
+        sentence_count = len(re.findall(r'[.!?]\s+[A-Z]', after_check))
         if sentence_count < 3:
             return True
 
