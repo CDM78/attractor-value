@@ -1,0 +1,81 @@
+======================================================================
+  R-VALUE VERIFICATION FROM RAW DATA
+======================================================================
+
+Q1: Do numeric 1-5 attractor scores exist?
+   ANSWER: NO.
+   All crawler results contain ONLY categorical labels:
+   - trajectory: 'stable' | 'deteriorating' | 'improving'
+   - confidence: 'high' | 'medium' | 'low'
+   No numeric 1-5 scores were ever produced.
+
+Q2: Verifying r=0.564 (SP500 crawler) and r=0.316 (baseline)
+------------------------------------------------------------
+   Matched winner/trap cases: 103
+   Encoding: improving=1.5, stable=1, deteriorating=0
+   Outcome: winner=1, trap=-1
+   Correlation method: Spearman rank
+
+   REPORTED r=0.316 (baseline)   → COMPUTED r=0.3156 (n=103, p=0.000830)
+   REPORTED r=0.564 (enriched)   → COMPUTED r=0.5644 (n=103, p=0.000000)
+
+   Alt encoding (stable+improving=1, deteriorating=0):
+   Baseline: r=0.3156, Enriched: r=0.5653
+
+Q3: Verifying r=0.410 (mid-cap baseline v2) and r=0.455 (enriched v2)
+------------------------------------------------------------
+   Matched winner/trap cases: 80
+   REPORTED r=0.410 (baseline v2) → COMPUTED r=0.4100 (n=80, p=0.000072)
+   REPORTED r=0.455 (enriched v2)  → COMPUTED r=0.4547 (n=80, p=0.000007)
+
+Q4: Verifying r=0.485 (insider net direction)
+------------------------------------------------------------
+   Cases with insider data + winner/trap outcome: 78
+   Encoding: NET_BUYING=1, MIXED=0, NET_SELLING=-1
+   REPORTED r=0.485 → COMPUTED r=0.4853 (n=78, p=0.000001)
+   NET_BUYING:  n=5, win rate=100.0%
+   NET_SELLING: n=66, win rate=47.0%
+   MIXED:       n=7, win rate=28.6%
+
+Q5: Why 190 cases in SP500 export?
+------------------------------------------------------------
+   phase3-merged.json has 190 results (ALL outcomes)
+   winner/trap subset: 103 cases
+   Job 2 originally evaluated: 190 cases
+   The 190 includes ALL outcomes (winner, trap, mixed, underperform)
+   The r=0.564 was computed on the 103 winner/trap subset only
+
+Q6: v1 vs v2 baseline trajectory differences
+------------------------------------------------------------
+   Agree: 52/80, Differ: 28/80 (35.0%)
+   Was this known and reported? NO.
+   The v1 and v2 baselines used DIFFERENT Opus agents evaluating
+   the SAME financial summaries. The 35% disagreement rate shows
+   significant stochasticity in the AI trajectory classification.
+   This is a real methodological concern — the same input produces
+   different outputs 35% of the time.
+
+======================================================================
+  VERIFICATION SUMMARY
+======================================================================
+
+Claimed  → Computed  Status
+--------------------------------------------------
+r=0.316  → r=0.3156    MATCH (SP500 Job 2 baseline)
+r=0.564  → r=0.5644    MATCH (SP500 crawler enriched)
+r=0.410  → r=0.4100    MATCH (Mid-cap baseline v2)
+r=0.455  → r=0.4547    MATCH (Mid-cap enriched v2)
+r=0.485  → r=0.4853    MATCH (Insider net direction)
+
+METHODOLOGY NOTE:
+All r-values use Spearman rank correlation with categorical encoding:
+  Trajectory: improving=1.5, stable=1, deteriorating=0
+  Outcome: winner=1, trap=-1
+  Insider: NET_BUYING=1, MIXED=0, NET_SELLING=-1
+
+No numeric 1-5 attractor scores exist. All reported r-values are
+correlations between ordinal categorical variables, not continuous scores.
+
+CONCERN: v1 vs v2 baseline disagreement rate of 35% indicates
+significant AI evaluation stochasticity. The r-values may vary
+substantially on re-evaluation.
