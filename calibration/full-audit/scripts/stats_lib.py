@@ -144,6 +144,32 @@ def test_signal(rows, signal_col, return_col, signal_name, sp500_ref_r):
         verdict = "MARGINAL"
     else:
         verdict = "FAILED"
+
+    # Unique company check
+    test_tickers = []
+    for row in rows:
+        sv = row.get(signal_col, '')
+        rv = row.get(return_col, '')
+        if sv != '' and rv != '':
+            test_tickers.append(row.get('ticker', ''))
+    unique_tickers = len(set(test_tickers)) if test_tickers else 0
+    dupe_pct = (len(test_tickers) - unique_tickers) / max(len(test_tickers), 1)
+    print(f"  Companies: {unique_tickers} unique across {n} cases ({dupe_pct:.0%} duplicates)")
+    if dupe_pct > 0.20:
+        print(f"  WARNING: >20% duplicates — p-values may be inflated")
+
+    # Suspiciously high r check with winsorization
+    if r > 0.15 and n > 100:
+        p5 = percentile(rets, 5)
+        p95 = percentile(rets, 95)
+        winsorized = [max(p5, min(p95, v)) for v in rets]
+        r_win, p_win, _ = pearsonr(sigs, winsorized)
+        print(f"  SUSPICIOUSLY HIGH: r={r:.3f} > 0.15 on n={n}")
+        print(f"  Winsorized (5/95): r={r_win:.3f}, p={p_win:.4f}")
+        if r_win < 0.05:
+            print(f"  DOWNGRADE: winsorized r < 0.05 — signal is outlier-driven")
+            verdict = "FAILED (outlier-driven)"
+
     print(f"  VERDICT: {verdict}")
     print()
 

@@ -1,0 +1,70 @@
+Building master audit dataset...
+
+Base dataset: 1277 cases
+Mid-cap cases (2020-Q3 + 2022-Q1): 1277
+
+Signals computed:
+  beta: 296
+  d1d2: 307
+  fin_benford: 326
+  fin_csd: 284
+  hurst: 244
+
+============================================================
+  MASTER DATASET: 1277 cases, 40 columns
+============================================================
+
+Column                         | Non-null |     %
+--------------------------------------------------
+case_id                        |     1277 |  100%
+ticker                         |     1277 |  100%
+cik                            |      331 |   26%
+sector                         |     1277 |  100%
+market_cap_at_entry            |     1277 |  100%
+entry_date                     |     1277 |  100%
+entry_cross_section            |     1277 |  100%
+outcome_class                  |     1277 |  100%
+forward_return_3yr             |     1277 |  100%
+sp500_return_3yr               |     1277 |  100%
+spread_variance_slope          |     1277 |  100%
+spread_theta                   |     1277 |  100%
+si_zipf_velocity               |     1034 |   81%
+si_csd                         |     1040 |   81%
+si_d1                          |     1071 |   84%
+si_d2                          |     1071 |   84%
+si_theta                       |     1057 |   83%
+si_zipf_x_d1                   |     1034 |   81%
+composite                      |     1071 |   84%
+volume_benford_kld             |        0 |    0%
+beta_level                     |      296 |   23%
+beta_trajectory                |      226 |   18%
+beta_velocity                  |      228 |   18%
+fin_csd                        |      284 |   22%
+fin_benford_kld                |      326 |   26%
+fin_d1_growth                  |      307 |   24%
+fisher_information             |      307 |   24%
+benford_structural_stress      |      323 |   25%
+eps_round_number_excess        |      306 |   24%
+form4_net_value                |      109 |    9%
+form4_buy_sell_ratio           |      109 |    9%
+form4_net_direction            |      109 |    9%
+form4_log_net_value            |      109 |    9%
+form4_purchases_value          |      109 |    9%
+form4_sales_value              |      109 |    9%
+hurst_revenue                  |      244 |   19%
+hurst_x_growth_direction       |      244 |   19%
+scurve_phase                   |      307 |   24%
+revenue_d1                     |      307 |   24%
+revenue_d2                     |      307 |   24%
+
+Outcome distribution:
+  mixed: 176 (13.8%)
+  trap: 559 (43.8%)
+  underperform: 186 (14.6%)
+  winner: 356 (27.9%)
+
+Entry dates:
+  2020-Q3: 614
+  2022-Q1: 663
+
+Saved: /home/cm/attractor-value/calibration/full-audit/master-dataset.csv

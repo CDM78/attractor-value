@@ -147,8 +147,7 @@ def compute_fin_csd(series):
 def compute_benford_kld(values):
     """Benford first-digit KL divergence."""
     if len(values) < 30: return None
-    expected = [0, math.log10(2), math.log10(3/2), math.log10(4/3), math.log10(5/4),
-                math.log10(6/5), math.log10(7/6), math.log10(8/7), math.log10(9/8)]
+    expected = [0] + [math.log10(1 + 1/d) for d in range(1, 10)]
     counts = [0] * 10
     for v in values:
         if v > 0:
