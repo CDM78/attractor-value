@@ -1,0 +1,220 @@
+Loaded 276 months
+
+================================================================================
+  SPREAD TIMING SIGNAL TESTS
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+  Horizon: forward_return_1yr
+────────────────────────────────────────────────────────────────────────────────
+
+  spread_level (all):
+    r=0.257, p(naive)=0.0000, p(Newey-West)=0.1365, n=276
+    Top-Q: 0.091 (n=69), Bot-Q: 0.030 (n=73), Spread: 0.061
+    Winsorized: r=0.237, p=0.0001
+  spread_level (in_sample):
+    r=0.256, p(naive)=0.0004, p(Newey-West)=0.2397, n=180
+    Top-Q: 0.040 (n=45), Bot-Q: 0.004 (n=45), Spread: 0.036
+    Winsorized: r=0.227, p=0.0019
+  spread_level (out_of_sample):
+    r=0.505, p(naive)=0.0000, p(Newey-West)=0.0307, n=96
+    Top-Q: 0.216 (n=24), Bot-Q: 0.017 (n=25), Spread: 0.199
+    Winsorized: r=0.450, p=0.0000
+
+  spread_zscore (all):
+    r=-0.213, p(naive)=0.0003, p(Newey-West)=0.1848, n=276
+    Top-Q: 0.011 (n=69), Bot-Q: 0.122 (n=69), Spread: -0.111
+    Winsorized: r=-0.229, p=0.0001
+  spread_zscore (in_sample):
+    r=-0.337, p(naive)=0.0000, p(Newey-West)=0.0757, n=180
+    Top-Q: -0.034 (n=45), Bot-Q: 0.107 (n=45), Spread: -0.141
+    Winsorized: r=-0.339, p=0.0000
+  spread_zscore (out_of_sample):
+    r=-0.006, p(naive)=0.9527, p(Newey-West)=0.9811, n=96
+    Top-Q: 0.111 (n=24), Bot-Q: 0.133 (n=24), Spread: -0.022
+
+  spread_percentile (all):
+    r=-0.090, p(naive)=0.1349, p(Newey-West)=0.5946, n=276
+    Top-Q: 0.029 (n=73), Bot-Q: 0.082 (n=72), Spread: -0.053
+  spread_percentile (in_sample):
+    r=-0.276, p(naive)=0.0001, p(Newey-West)=0.1705, n=180
+    Top-Q: -0.053 (n=47), Bot-Q: 0.092 (n=47), Spread: -0.145
+    Winsorized: r=-0.300, p=0.0000
+  spread_percentile (out_of_sample):
+    r=0.408, p(naive)=0.0000, p(Newey-West)=0.1002, n=96
+    Top-Q: 0.200 (n=27), Bot-Q: 0.035 (n=25), Spread: 0.165
+    Winsorized: r=0.377, p=0.0001
+
+  spread_slope (all):
+    r=-0.101, p(naive)=0.0934, p(Newey-West)=0.5484, n=276
+    Top-Q: 0.028 (n=76), Bot-Q: 0.129 (n=69), Spread: -0.101
+  spread_slope (in_sample):
+    r=-0.150, p(naive)=0.0431, p(Newey-West)=0.4736, n=180
+    Top-Q: -0.017 (n=51), Bot-Q: 0.105 (n=45), Spread: -0.121
+  spread_slope (out_of_sample):
+    r=0.062, p(naive)=0.5444, p(Newey-West)=0.8111, n=96
+    Top-Q: 0.120 (n=24), Bot-Q: 0.176 (n=24), Spread: -0.055
+
+  spread_variance (all):
+    r=0.367, p(naive)=0.0000, p(Newey-West)=0.0235, n=276
+    Top-Q: 0.133 (n=70), Bot-Q: 0.048 (n=69), Spread: 0.085
+    Winsorized: r=0.305, p=0.0000
+  spread_variance (in_sample):
+    r=0.229, p(naive)=0.0017, p(Newey-West)=0.2909, n=180
+    Top-Q: 0.065 (n=45), Bot-Q: 0.053 (n=45), Spread: 0.012
+    Winsorized: r=0.166, p=0.0247
+  spread_variance (out_of_sample):
+    r=0.594, p(naive)=0.0000, p(Newey-West)=0.0012, n=96
+    Top-Q: 0.212 (n=24), Bot-Q: 0.028 (n=24), Spread: 0.184
+    Winsorized: r=0.571, p=0.0000
+
+
+────────────────────────────────────────────────────────────────────────────────
+  Horizon: forward_return_2yr
+────────────────────────────────────────────────────────────────────────────────
+
+  spread_level (all):
+    r=0.369, p(naive)=0.0000, p(Newey-West)=0.0917, n=276
+    Top-Q: 0.270 (n=69), Bot-Q: 0.069 (n=73), Spread: 0.202
+    Winsorized: r=0.331, p=0.0000
+  spread_level (in_sample):
+    r=0.410, p(naive)=0.0000, p(Newey-West)=0.1323, n=180
+    Top-Q: 0.235 (n=45), Bot-Q: 0.023 (n=45), Spread: 0.212
+    Winsorized: r=0.360, p=0.0000
+  spread_level (out_of_sample):
+    r=0.613, p(naive)=0.0000, p(Newey-West)=0.0007, n=96
+    Top-Q: 0.371 (n=24), Bot-Q: 0.105 (n=25), Spread: 0.266
+    Winsorized: r=0.577, p=0.0000
+
+  spread_zscore (all):
+    r=-0.030, p(naive)=0.6237, p(Newey-West)=0.8895, n=276
+    Top-Q: 0.160 (n=69), Bot-Q: 0.198 (n=69), Spread: -0.037
+  spread_zscore (in_sample):
+    r=-0.152, p(naive)=0.0398, p(Newey-West)=0.5595, n=180
+    Top-Q: 0.102 (n=45), Bot-Q: 0.174 (n=45), Spread: -0.071
+    Winsorized: r=-0.171, p=0.0204
+  spread_zscore (out_of_sample):
+    r=0.190, p(naive)=0.0603, p(Newey-West)=0.3960, n=96
+    Top-Q: 0.282 (n=24), Bot-Q: 0.244 (n=24), Spread: 0.038
+    Winsorized: r=0.162, p=0.1115
+
+  spread_percentile (all):
+    r=0.060, p(naive)=0.3219, p(Newey-West)=0.7841, n=276
+    Top-Q: 0.172 (n=73), Bot-Q: 0.158 (n=72), Spread: 0.014
+  spread_percentile (in_sample):
+    r=-0.089, p(naive)=0.2344, p(Newey-West)=0.7407, n=180
+    Top-Q: 0.064 (n=47), Bot-Q: 0.165 (n=47), Spread: -0.100
+  spread_percentile (out_of_sample):
+    r=0.595, p(naive)=0.0000, p(Newey-West)=0.0002, n=96
+    Top-Q: 0.374 (n=27), Bot-Q: 0.108 (n=25), Spread: 0.266
+    Winsorized: r=0.590, p=0.0000
+
+  spread_slope (all):
+    r=-0.028, p(naive)=0.6412, p(Newey-West)=0.8952, n=276
+    Top-Q: 0.145 (n=76), Bot-Q: 0.205 (n=69), Spread: -0.060
+  spread_slope (in_sample):
+    r=-0.099, p(naive)=0.1824, p(Newey-West)=0.7133, n=180
+    Top-Q: 0.079 (n=51), Bot-Q: 0.200 (n=45), Spread: -0.120
+  spread_slope (out_of_sample):
+    r=0.264, p(naive)=0.0079, p(Newey-West)=0.2411, n=96
+    Top-Q: 0.286 (n=24), Bot-Q: 0.229 (n=24), Spread: 0.057
+    Winsorized: r=0.206, p=0.0416
+
+  spread_variance (all):
+    r=0.273, p(naive)=0.0000, p(Newey-West)=0.1925, n=276
+    Top-Q: 0.271 (n=70), Bot-Q: 0.051 (n=69), Spread: 0.220
+    Winsorized: r=0.234, p=0.0001
+  spread_variance (in_sample):
+    r=0.385, p(naive)=0.0000, p(Newey-West)=0.1563, n=180
+    Top-Q: 0.230 (n=45), Bot-Q: 0.020 (n=45), Spread: 0.211
+    Winsorized: r=0.317, p=0.0000
+  spread_variance (out_of_sample):
+    r=0.087, p(naive)=0.3992, p(Newey-West)=0.7073, n=96
+    Top-Q: 0.278 (n=24), Bot-Q: 0.155 (n=24), Spread: 0.123
+
+
+────────────────────────────────────────────────────────────────────────────────
+  Horizon: forward_return_3yr
+────────────────────────────────────────────────────────────────────────────────
+
+  spread_level (all):
+    r=0.291, p(naive)=0.0000, p(Newey-West)=0.2854, n=264
+    Top-Q: 0.364 (n=68), Bot-Q: 0.195 (n=67), Spread: 0.169
+    Winsorized: r=0.269, p=0.0000
+  spread_level (in_sample):
+    r=0.375, p(naive)=0.0000, p(Newey-West)=0.2270, n=180
+    Top-Q: 0.341 (n=45), Bot-Q: 0.110 (n=45), Spread: 0.231
+    Winsorized: r=0.349, p=0.0000
+  spread_level (out_of_sample):
+    r=0.350, p(naive)=0.0007, p(Newey-West)=0.1388, n=84
+    Top-Q: 0.441 (n=22), Bot-Q: 0.293 (n=22), Spread: 0.148
+    Winsorized: r=0.358, p=0.0005
+
+  spread_zscore (all):
+    r=-0.018, p(naive)=0.7751, p(Newey-West)=0.9476, n=264
+    Top-Q: 0.267 (n=66), Bot-Q: 0.274 (n=66), Spread: -0.007
+  spread_zscore (in_sample):
+    r=-0.165, p(naive)=0.0260, p(Newey-West)=0.5912, n=180
+    Top-Q: 0.149 (n=45), Bot-Q: 0.257 (n=45), Spread: -0.109
+    Winsorized: r=-0.188, p=0.0107
+  spread_zscore (out_of_sample):
+    r=0.606, p(naive)=0.0000, p(Newey-West)=0.0006, n=84
+    Top-Q: 0.501 (n=21), Bot-Q: 0.310 (n=21), Spread: 0.191
+    Winsorized: r=0.615, p=0.0000
+
+  spread_percentile (all):
+    r=-0.007, p(naive)=0.9116, p(Newey-West)=0.9797, n=264
+    Top-Q: 0.245 (n=73), Bot-Q: 0.283 (n=71), Spread: -0.038
+  spread_percentile (in_sample):
+    r=-0.059, p(naive)=0.4327, p(Newey-West)=0.8535, n=180
+    Top-Q: 0.153 (n=47), Bot-Q: 0.249 (n=47), Spread: -0.096
+  spread_percentile (out_of_sample):
+    r=0.499, p(naive)=0.0000, p(Newey-West)=0.0130, n=84
+    Top-Q: 0.452 (n=21), Bot-Q: 0.296 (n=22), Spread: 0.156
+    Winsorized: r=0.501, p=0.0000
+
+  spread_slope (all):
+    r=-0.048, p(naive)=0.4340, p(Newey-West)=0.8569, n=264
+    Top-Q: 0.245 (n=69), Bot-Q: 0.320 (n=69), Spread: -0.075
+  spread_slope (in_sample):
+    r=-0.097, p(naive)=0.1938, p(Newey-West)=0.7600, n=180
+    Top-Q: 0.155 (n=51), Bot-Q: 0.314 (n=45), Spread: -0.159
+  spread_slope (out_of_sample):
+    r=0.320, p(naive)=0.0022, p(Newey-West)=0.1270, n=84
+    Top-Q: 0.460 (n=24), Bot-Q: 0.356 (n=24), Spread: 0.104
+    Winsorized: r=0.319, p=0.0023
+
+  spread_variance (all):
+    r=0.243, p(naive)=0.0001, p(Newey-West)=0.3562, n=264
+    Top-Q: 0.348 (n=66), Bot-Q: 0.072 (n=66), Spread: 0.276
+    Winsorized: r=0.232, p=0.0001
+  spread_variance (in_sample):
+    r=0.362, p(naive)=0.0000, p(Newey-West)=0.2403, n=180
+    Top-Q: 0.337 (n=45), Bot-Q: -0.005 (n=45), Spread: 0.342
+    Winsorized: r=0.332, p=0.0000
+  spread_variance (out_of_sample):
+    r=-0.011, p(naive)=0.9204, p(Newey-West)=0.9606, n=84
+    Top-Q: 0.342 (n=21), Bot-Q: 0.377 (n=21), Spread: -0.034
+
+
+================================================================================
+  IN-SAMPLE vs OUT-OF-SAMPLE COMPARISON (forward_return_3yr)
+================================================================================
+
+  Signal                        IS r   IS p(NW)    OOS r  OOS p(NW)    Verdict
+  ───────────────────────────────────────────────────────────────────────────
+  spread_level                 0.375     0.2270    0.350     0.1388      HOLDS
+  spread_zscore               -0.165     0.5912    0.606     0.0006      HOLDS
+  spread_percentile           -0.059     0.8535    0.499     0.0130      HOLDS
+  spread_slope                -0.097     0.7600    0.320     0.1270      HOLDS
+  spread_variance              0.362     0.2403   -0.011     0.9606     FAILED
+
+================================================================================
+  NON-OVERLAPPING SUBSAMPLE (every 36 months)
+================================================================================
+
+  Total non-overlapping points: 8
+  Low spread:  mean 3yr return = -3.6% (months: ['2000-01', '2018-01'])
+  Mid spread:  mean 3yr return = -2.5% (months: ['2021-01', '2006-01'])
+  High spread: mean 3yr return = 50.5% (months: ['2015-01', '2003-01', '2012-01', '2009-01'])
+  Pearson r: 0.528, p=0.1277, n=8
