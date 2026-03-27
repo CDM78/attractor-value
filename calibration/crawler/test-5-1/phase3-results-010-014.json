@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-SPG-2013-01-02-acdc3e",
+      "ticker": "SPG",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration reference is generic retail real estate sector risk language rather than specific client dependency, but the acknowledged concentration in retail real estate warrants a confidence downgrade from high to medium."
+    },
+    {
+      "case_id": "CASE-CAH-2019-01-02-c6ad28",
+      "ticker": "CAH",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "41 Form 4 filings with no clear buy/sell direction and a standard proxy with no executive changes provide no signal to alter the stable/high initial assessment."
+    },
+    {
+      "case_id": "CASE-ALL-2021-01-04-f97a6b",
+      "ticker": "ALL",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Proxy shows expanded clawback policies and modified performance metrics suggesting the board was responding to prior underperformance, consistent with the initial deteriorating trajectory."
+    },
+    {
+      "case_id": "CASE-CB-2013-01-02-c32722",
+      "ticker": "CB",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration reference describes insured property value concentration risk typical for P&C insurers rather than revenue dependency on specific clients, leaving the stable trajectory intact."
+    },
+    {
+      "case_id": "CASE-V-2021-12-31-7f72b7",
+      "ticker": "V",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "66 Form 4 filings with mixed direction and a clean proxy with no executive changes confirm management stability, supporting the initial stable/high assessment."
+    },
+    {
+      "case_id": "CASE-T-2013-01-02-2ca79c",
+      "ticker": "T",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "No enrichment data found across all three EDGAR sources, providing no basis to alter the initial stable/high classification despite the actual underperform outcome."
+    },
+    {
+      "case_id": "CASE-MAT-2019-01-02-7e8edf",
+      "ticker": "MAT",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Mattel explicitly acknowledges significant customer concentration risk where economic difficulties at a few major retailers could materially impact results, reinforcing the deteriorating trajectory but lowering confidence since the turnaround potential is harder to read."
+    },
+    {
+      "case_id": "CASE-TXT-2019-01-02-b05487",
+      "ticker": "TXT",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Textron explicitly discloses U.S. Government customer concentration as a key risk factor, creating meaningful revenue dependency that shifts the trajectory from stable to deteriorating given defense spending uncertainty."
+    },
+    {
+      "case_id": "CASE-VRSN-2019-01-02-c46f3b",
+      "ticker": "VRSN",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in the proxy statement combined with a stockholder proposal challenging the board on special meetings suggest governance instability, shifting trajectory from stable to deteriorating."
+    },
+    {
+      "case_id": "CASE-AIZ-2013-01-02-2e708d",
+      "ticker": "AIZ",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration references relate to geographic catastrophe exposure and lender-placed insurance product structure rather than revenue dependency on specific clients, leaving stable trajectory unchanged."
+    },
+    {
+      "case_id": "CASE-GOOGL-2021-01-04-ace329",
+      "ticker": "GOOGL",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "The concentration reference is about stock ownership limiting shareholder influence, not revenue concentration, so it is irrelevant to business trajectory and the stable/high assessment holds."
+    },
+    {
+      "case_id": "CASE-TPR-2019-01-02-eff712",
+      "ticker": "TPR",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in the proxy plus customer concentration risk from retail store consolidation reinforce the deteriorating trajectory for Tapestry's wholesale-dependent luxury brands."
+    },
+    {
+      "case_id": "CASE-AVY-2013-01-02-5c5102",
+      "ticker": "AVY",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Avery Dennison explicitly acknowledges increasing industry concentration reducing the number of significant customers, particularly in Office and Consumer Products, which adds downside risk to an already deteriorating trajectory and lowers confidence."
+    },
+    {
+      "case_id": "CASE-PG-2015-12-31-44c009",
+      "ticker": "PG",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "No enrichment data found across all three EDGAR sources, providing no basis to alter the initial stable/medium classification for this defensive consumer staples name."
+    },
+    {
+      "case_id": "CASE-FISV-2021-01-04-2defa3",
+      "ticker": "FISV",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "85 Form 4 filings with mixed direction and a standard proxy with no executive changes provide no signal to change the stable/medium assessment despite the high volume of insider activity."
+    },
+    {
+      "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+      "ticker": "WDC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Four customer concentration references highlighting credit risk from overlapping customers, manufacturing vulnerability from the Thailand floods, and term extension risks strongly reinforce the deteriorating trajectory and lower confidence to low given the compounding risks."
+    },
+    {
+      "case_id": "CASE-FAST-2021-12-31-c22e24",
+      "ticker": "FAST",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration language acknowledging that marketplace changes could undermine business strategy aligns with the initial deteriorating trajectory, while stable management and high filing volume confirm no internal disruption."
+    },
+    {
+      "case_id": "CASE-ACN-2015-01-02-ff63ea",
+      "ticker": "ACN",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "No enrichment data found across all three EDGAR sources, providing no basis to alter the initial stable/high classification for this professional services franchise."
+    },
+    {
+      "case_id": "CASE-STX-2019-01-02-700a3d",
+      "ticker": "STX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Seagate discloses single-customer application-specific inventory risk in edge/non-compute segments, which introduces meaningful downside tail risk and warrants lowering confidence from medium to low despite stable management signals."
+    },
+    {
+      "case_id": "CASE-VMC-2015-12-31-2525cd",
+      "ticker": "VMC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "62 Form 4 filings with mixed direction and a standard proxy with no executive changes provide no signal to alter the deteriorating/medium assessment for this cyclical materials company."
+    },
+    {
+      "case_id": "CASE-AIG-2021-12-31-12f76a",
+      "ticker": "AIG",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "137 Form 4 filings suggest active insider compensation activity but no directional signal, and the concentration references relate to terrorism exposure geography rather than client revenue dependency, leaving the stable/medium assessment unchanged."
+    },
+    {
+      "case_id": "CASE-APH-2021-12-31-d37b57",
+      "ticker": "APH",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Proxy shows stockholders overwhelmingly approved executive compensation, signaling strong governance alignment, which combined with generic customer/supply chain risk language shifts the trajectory from deteriorating to improving."
+    },
+    {
+      "case_id": "CASE-EXC-2013-01-02-e7269c",
+      "ticker": "EXC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "FERC market concentration tests that could block new facility construction plus forced capacity divestitures represent material regulatory constraints on growth, shifting trajectory from stable to deteriorating."
+    },
+    {
+      "case_id": "CASE-AIZ-2015-01-02-e41fc9",
+      "ticker": "AIZ",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Proxy highlights strong pay-for-performance alignment and investment diversification regulation is standard for insurers; 63 mixed-direction Form 4 filings add no signal, leaving stable/medium intact."
+    },
+    {
+      "case_id": "CASE-BWA-2021-12-31-1256b2",
+      "ticker": "BWA",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Ford and Volkswagen together represent approximately 24% of consolidated revenue, creating significant customer concentration risk that strongly reinforces the deteriorating trajectory with high confidence given the explicit quantification."
+    }
+  ]
+}

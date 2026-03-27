@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-MSI-2013-01-02-fb91de",
+    "ticker": "MSI",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ALL-2021-12-31-229221",
+    "ticker": "ALL",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "64 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: \"he evaluation of ELFS by the risk and return committee based on recent\nlearnings. Additionally, the executive compensation program was reviewed to determine if any changes were needed in light of the\npandemic, and it was concluded that no changes were necessary.\n\nDespite challenges posed by the Coronavirus pandemic, Allstate had excellent financial results in 2020 with Adjusted Net Income* of $4.6 billion, "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-MS-2015-12-31-e608d7",
+    "ticker": "MS",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-HUM-2021-12-31-a788a3",
+    "ticker": "HUM",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "68 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-10. No obvious executive changes in compensation section. Excerpt: \"43\n\nCompensation Discussion and Analysis \n\n46\n\nOrganization & Compensation Committee Report \n\n62\n\nExecutive Compensation \n\n63\n\nCertain Transactions with Management and Others \n\n75\n\nAudit Committee Report \n\n76\n\nProposal Two: Ratification of Appointment of Independent Registered \nPublic Accounting Firm \n\n78\n\nProposal Three: Non-Binding Advisory Vote with Respect to the\nCompensation of the Company s Named Exec"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CI-2021-12-31-d33119",
+    "ticker": "CI",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "100 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-19. No obvious executive changes in compensation section. Excerpt: \"g of shareholders.\n\nFOR the election of each director \n\nnominee \n\nProposal 2:\n\nAdvisory approval of executive compensation.\n\nFOR\n\nProposal 3:\n\nApproval of the Amended and Restated Cigna Long-Term Incentive Plan.\n\nFOR\n\nProposal 4:\n\nRatification of the appointment of PricewaterhouseCoopers LLP as the Company s independent registered\npublic accounting firm for 2021.\n\nFOR\n\nProposal 5:\n\nShareholder Proposal Shar"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

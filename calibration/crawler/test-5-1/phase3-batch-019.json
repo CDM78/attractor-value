@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-EW-2013-01-02-d89c81",
+    "ticker": "EW",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CCL-2021-12-31-559759",
+    "ticker": "CCL",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-11. Executive changes detected in compensation section. Excerpt: \"l Owners and Management \n\n35\n\nCOMPENSATION \n\n39\n\nPROPOSAL 13 Advisory (Non-Binding) Vote to Approve\nExecutive Compensation \n\n39\n\nPROPOSAL 14 Advisory (Non-Binding) Vote to Approve the Carnival plc Directors \nRemuneration Report \n\n40\n\nCompensation Discussion and Analysis and Carnival plc Directors Remuneration Report\nPart I \n\n40\n\nReport of the Compensation Committees \n\n63\n\nCompensation Committee Interlocks and"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-UNP-2021-12-31-c71cbf",
+    "ticker": "UNP",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "104 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-31. No obvious executive changes in compensation section. Excerpt: \"dit Services\nPolicy \n\n39 \n\nAudit Committee Report \n\n40 \n\nPROPOSAL NUMBER 3 Advisory Vote to Approve\nExecutive Compensation \n\n41 \n\nPROPOSAL NUMBER 4 Adoption of the Union\nPacific Corporation 2021 Stock Incentive Plan \n\n42 \n\nPROPOSAL NUMBER 5 Adoption of the Union\nPacific Corporation 2021 Employee Stock Purchase Plan \n\n48 \n\nA LETTER FROM OUR COMPENSATION AND BENEFITS\nCOMMITTEE \n\n50 \n\n2020 Business Highlights "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EFX-2017-06-14-70a0d1",
+    "ticker": "EFX",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2017-03-24. Executive changes detected in compensation section. Excerpt: \"nvestors have provided us with valuable feedback on our Board composition, corporate governance and executive\ncompensation practices over the past year. During the past year, senior management connected with approximately 60% of our shareholder\nbase, including the majority of our top 50 shareholders. Below are just a few of the areas we focused on as part of our commitment\nto our Company and our shareholders."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ISRG-2021-12-31-9d2ad6",
+    "ticker": "ISRG",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "64 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-08-19. No obvious executive changes in compensation section. Excerpt: \"f more than five percent of our common stock (ii) each of our Named Executive Officers named in the Compensation Discussion and Analysis section of our definitive proxy statement on Schedule 14A for our 2021 Annual Meeting of Stockholders filed with the SEC on March 10, 2021 (iii) each of our directors and (iv) all executive officers and directors as a group. \n\nBeneficial ownership is determined in accordan"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

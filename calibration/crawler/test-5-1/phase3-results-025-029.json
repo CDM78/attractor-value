@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-NOV-2013-01-02-aa8c0e",
+      "ticker": "NOV",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "29 Form 4 filings show zero directional signal and no customer concentration found; enrichment data is uninformative and does not alter the stable/high assessment."
+    },
+    {
+      "case_id": "CASE-HSY-2021-12-31-ee26de",
+      "ticker": "HSY",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "McLane Company accounts for 31% of net sales, confirming significant single-customer dependency that reinforces the deteriorating trajectory already identified."
+    },
+    {
+      "case_id": "CASE-EW-2015-01-02-fad98e",
+      "ticker": "EW",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three sources; initial stable/medium assessment stands unchanged."
+    },
+    {
+      "case_id": "CASE-MU-2019-01-02-ecc662",
+      "ticker": "MU",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Significant customer concentration risk disclosed across multiple references with order volatility warning, downgrading confidence from high to medium despite stable trajectory."
+    },
+    {
+      "case_id": "CASE-SBUX-2019-01-02-f1ef76",
+      "ticker": "SBUX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Insider filings show zero directional signal, proxy is routine, and no customer concentration applies to a consumer-direct business; no change warranted."
+    },
+    {
+      "case_id": "CASE-MSI-2013-01-02-fb91de",
+      "ticker": "MSI",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three EDGAR sources; initial stable/high assessment is unchanged."
+    },
+    {
+      "case_id": "CASE-ALL-2021-12-31-229221",
+      "ticker": "ALL",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Proxy reveals excellent 2020 financial results with $4.6B adjusted net income despite pandemic, upgrading trajectory from stable to improving and confidence from low to medium."
+    },
+    {
+      "case_id": "CASE-MS-2015-12-31-e608d7",
+      "ticker": "MS",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three sources; initial stable/low assessment remains unchanged."
+    },
+    {
+      "case_id": "CASE-HUM-2021-12-31-a788a3",
+      "ticker": "HUM",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "68 Form 4 filings with zero directional signal and routine proxy; no data alters the low-confidence stable assessment."
+    },
+    {
+      "case_id": "CASE-CI-2021-12-31-d33119",
+      "ticker": "CI",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "100 Form 4 filings with zero directional signal; proxy shows routine governance matters including amended LTIP but nothing trajectory-altering."
+    },
+    {
+      "case_id": "CASE-SYK-2019-01-02-3c83ec",
+      "ticker": "SYK",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "72 Form 4 filings with zero directional signal, routine proxy, no customer concentration; enrichment is uninformative."
+    },
+    {
+      "case_id": "CASE-JEF-2019-01-02-26ea37",
+      "ticker": "JEF",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Five customer concentration references highlight order volatility and loss-of-customer risk, reinforcing the existing deteriorating trajectory assessment."
+    },
+    {
+      "case_id": "CASE-BXP-2013-01-02-370494",
+      "ticker": "BXP",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration reference pertains to stock ownership limits for REIT qualification, not revenue concentration; not a trajectory-relevant signal."
+    },
+    {
+      "case_id": "CASE-ITW-2019-01-02-5e1728",
+      "ticker": "ITW",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy combined with currency concentration risk in European sales warrants a confidence downgrade from high to medium."
+    },
+    {
+      "case_id": "CASE-SLM-2014-04-30-7a78db",
+      "ticker": "SLM",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Self-identified concentration in education credit market creates both competitive advantage and sector-specific risk, downgrading confidence from medium to low."
+    },
+    {
+      "case_id": "CASE-DE-2021-12-31-a8d074",
+      "ticker": "DE",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "44 Form 4 filings with zero directional signal and routine proxy; no enrichment data alters the deteriorating/medium assessment."
+    },
+    {
+      "case_id": "CASE-BIIB-2015-01-02-8735dd",
+      "ticker": "BIIB",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "51 Form 4 filings with zero directional signal and routine proxy; no customer concentration found; stable/high assessment unchanged."
+    },
+    {
+      "case_id": "CASE-VNO-2023-01-03-51a6e1",
+      "ticker": "VNO",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy align with and reinforce the existing deteriorating/high assessment for this office REIT."
+    },
+    {
+      "case_id": "CASE-KLAC-2019-01-02-b5cf44",
+      "ticker": "KLAC",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration acknowledged as a business risk factor tied to capital equipment procurement cycles, but this is industry-standard for semiconductor equipment and does not alter trajectory."
+    },
+    {
+      "case_id": "CASE-THC-2013-01-02-30f670",
+      "ticker": "THC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Geographic concentration with 25.9% of beds in Florida and 19.5% in Texas creates significant regional regulatory and economic exposure, upgrading confidence from medium to high on the deteriorating trajectory."
+    },
+    {
+      "case_id": "CASE-NSC-2021-12-31-5b5c55",
+      "ticker": "NSC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "107 Form 4 filings with zero directional signal and routine proxy; no enrichment alters the deteriorating/high assessment."
+    },
+    {
+      "case_id": "CASE-DVN-2017-06-14-bc2279",
+      "ticker": "DVN",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "38 Form 4 filings with zero directional signal and routine proxy including new incentive plans; no customer concentration found for this E&P company."
+    },
+    {
+      "case_id": "CASE-PRU-2013-01-02-ca3c3b",
+      "ticker": "PRU",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three EDGAR sources; initial deteriorating/medium assessment is unchanged."
+    },
+    {
+      "case_id": "CASE-OKE-2021-12-31-d8417f",
+      "ticker": "OKE",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "27 Form 4 filings with zero directional signal and routine proxy; no enrichment data alters the deteriorating/high assessment."
+    },
+    {
+      "case_id": "CASE-BDX-2017-06-14-2b3eaf",
+      "ticker": "BDX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three EDGAR sources; initial stable/high assessment is unchanged."
+    }
+  ]
+}

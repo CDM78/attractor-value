@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-BIIB-2013-01-02-7553e7",
+      "ticker": "BIIB",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found for any source; confidence downgraded to low due to absence of corroborating signals."
+    },
+    {
+      "case_id": "CASE-EXPE-2021-12-31-1312f8",
+      "ticker": "EXPE",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Insider trading direction is mixed with no clear buy/sell signals; management proxy shows no executive departures; deteriorating trajectory confirmed."
+    },
+    {
+      "case_id": "CASE-ADM-2021-12-31-cf4a10",
+      "ticker": "ADM",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy but excerpt is standard compensation disclosure; mixed insider trading provides no directional signal; deteriorating view unchanged."
+    },
+    {
+      "case_id": "CASE-APD-2021-01-04-ca034a",
+      "ticker": "APD",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No executive changes detected, mixed insider trading, no customer concentration risk; stable trajectory confirmed with no new information."
+    },
+    {
+      "case_id": "CASE-WM-2013-01-02-349bad",
+      "ticker": "WM",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data available from any EDGAR source; confidence downgraded to low due to complete absence of corroborating data."
+    },
+    {
+      "case_id": "CASE-MDLZ-2021-12-31-8b9d57",
+      "ticker": "MDLZ",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration references relate to COVID-driven channel shifts in traditional trade markets, adding incremental risk to the deteriorating trajectory."
+    },
+    {
+      "case_id": "CASE-VNO-2021-12-31-2438d1",
+      "ticker": "VNO",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy filing reinforces deteriorating trajectory for this office REIT facing structural headwinds."
+    },
+    {
+      "case_id": "CASE-WMT-2021-12-31-913fa4",
+      "ticker": "WMT",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found; confidence downgraded to low as stable assessment rests entirely on initial trajectory with no EDGAR corroboration."
+    },
+    {
+      "case_id": "CASE-D-2021-01-04-531112",
+      "ticker": "D",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Credit risk concentration in energy marketing activities combined with massive capital project risk ($8B pipeline) shifts trajectory from stable to deteriorating."
+    },
+    {
+      "case_id": "CASE-CNX-2013-01-02-1a885f",
+      "ticker": "CNX",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Environmental concentration risk (selenium contamination liabilities) and long-term contract risks add weight to deteriorating coal mining trajectory."
+    },
+    {
+      "case_id": "CASE-LMT-2021-12-31-65f7ec",
+      "ticker": "LMT",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected but appear to be normal board refreshment rather than concerning departures; defense contractor with government backstop warrants upgrade from deteriorating to stable."
+    },
+    {
+      "case_id": "CASE-XEL-2021-12-31-858855",
+      "ticker": "XEL",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No executive changes, mixed insider trading with no directional signal, no customer concentration risk; regulated utility stable trajectory confirmed."
+    },
+    {
+      "case_id": "CASE-BDX-2015-12-31-80f315",
+      "ticker": "BDX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found; confidence downgraded to low due to absence of any corroborating EDGAR signals."
+    },
+    {
+      "case_id": "CASE-STZ-2019-01-02-ff060d",
+      "ticker": "STZ",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy reinforce deteriorating view; mixed insider trading provides no offsetting bullish signal."
+    },
+    {
+      "case_id": "CASE-ACN-2015-12-31-6eb38c",
+      "ticker": "ACN",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found; confidence downgraded to low due to complete absence of EDGAR corroboration."
+    },
+    {
+      "case_id": "CASE-EFX-2013-01-02-8ad141",
+      "ticker": "EFX",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found; confidence downgraded to low due to absence of any corroborating signals."
+    },
+    {
+      "case_id": "CASE-NBR-2013-01-02-99e64e",
+      "ticker": "NBR",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy with aged board members (chairman age 75) suggest governance risk; downgraded from stable to deteriorating for this oilfield services company."
+    },
+    {
+      "case_id": "CASE-ZBH-2013-01-02-652c91",
+      "ticker": "ZBH",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found; confidence downgraded to low due to absence of any EDGAR corroboration."
+    },
+    {
+      "case_id": "CASE-AZO-2021-12-31-d81d99",
+      "ticker": "AZO",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes appear to be normal board refreshment; auto parts retailer with resilient business model warrants upgrade from deteriorating to stable."
+    },
+    {
+      "case_id": "CASE-AVB-2021-01-04-ec7ac8",
+      "ticker": "AVB",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No executive changes, mixed insider trading, no customer concentration; apartment REIT stable trajectory confirmed with no new concerning signals."
+    },
+    {
+      "case_id": "CASE-HPQ-2013-01-02-d09c11",
+      "ticker": "HPQ",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found but original high confidence deteriorating assessment stands on fundamentals alone; downgraded confidence to medium without corroboration."
+    },
+    {
+      "case_id": "CASE-NFLX-2015-12-31-392a29",
+      "ticker": "NFLX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data found; confidence downgraded to low due to absence of any EDGAR corroboration."
+    },
+    {
+      "case_id": "CASE-AMAT-2013-01-02-f5dc8a",
+      "ticker": "AMAT",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Significant customer concentration risk explicitly disclosed with growing concentration driving demand seasonality; confidence upgraded from low to medium as this corroborates deteriorating view."
+    },
+    {
+      "case_id": "CASE-ADSK-2021-01-04-e4c7ed",
+      "ticker": "ADSK",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No executive changes, mixed insider trading with no directional signal, no customer concentration; stable trajectory unchanged but confidence remains low."
+    },
+    {
+      "case_id": "CASE-NI-2019-01-02-517cc3",
+      "ticker": "NI",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No executive changes detected, mixed insider trading, no customer concentration; deteriorating trajectory confirmed but enrichment data provides no additional signal."
+    }
+  ]
+}

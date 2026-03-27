@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-DE-2021-12-31-a8d074",
+    "ticker": "DE",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-01-08. No obvious executive changes in compensation section. Excerpt: \"Approval of Related Person Transactions \n\n25 \n\nDelinquent Section 16(a) Reports \n\nAdvisory Vote on Executive Compensation \n\n26 \n\nItem 2 Advisory Vote on Executive Compensation \n\n27 \n\nCompensation Discussion and Analysis \n\n29 \n\nExecutive Summary \n\n31 \n\n2020 Compensation Overview \n\n34 \n\nDirect Compensation Elements \n\n47 \n\nIndirect Compensation Elements \n\n49 \n\nCompensation Methodology and Process \n\n53 \n\nRisk A"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BIIB-2015-01-02-8735dd",
+    "ticker": "BIIB",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "51 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2014-04-30. No obvious executive changes in compensation section. Excerpt: \"lic accounting firm for the fiscal year ending December 31, 2014.\n\n3. \n\nTo hold an advisory vote on executive compensation. \n\n4. \n\nTo transact such other business as may be properly brought before the meeting and any adjournments or postponements. \n\nOur Board of Directors recommends voting FOR the election of all of the director nominees listed in Proposal 1 and FOR Proposals 2 and 3.\n\nYour vote is extremel"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-VNO-2023-01-03-51a6e1",
+    "ticker": "VNO",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-04-08. Executive changes detected in compensation section. Excerpt: \"iscal year. \n\n(3) \n\nTo consider and vote upon the approval of a non-binding, advisory resolution on executive compensation. \n\n(4) \n\nTo transact any other business as may properly come before the meeting and any postponement or adjournment of the meeting. \n\nThe Board of Trustees of the Company has fixed the close of business on March 21, 2022 as the record date for the determination of shareholders entitled to"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-KLAC-2019-01-02-b5cf44",
+    "ticker": "KLAC",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "86 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-09-28. No obvious executive changes in compensation section. Excerpt: \"out Executive Officers \n\n37 \n\nSecurity Ownership of Certain Beneficial Owners and Management \n\n39 \n\nExecutive Compensation and Other Matters \n\n42 \n\nCompensation Committee Report \n\n54 \n\nExecutive Compensation Tables \n\n55 \n\nCertain Relationships and Related Transactions \n\n73 \n\nEquity Compensation Plan Information \n\n74 \n\nReport of the Audit Committee \n\n75 \n\nInformation for KLA-Tencor Annual Meeting of Stockhol"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"$ \n\n1,287,547 \n\n$ \n\n1,163,391 \n\n$ \n\n159,822 \n\n12 \n\n% \n\n$ \n\n124,156 \n\n11 \n\n% \n\nGross margin percentage \n\n64 \n\n% \n\n63 \n\n% \n\n61 \n\n% \n\n1 \n\n% \n\n2 \n\n% \n\nProduct revenues \n\nOur business is affected by the concentration of our customer base and our customers capital equipment procurement schedules as a resu...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-THC-2013-01-02-30f670",
+    "ticker": "THC",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"d in certain market areas in Florida, Texas and California, which makes us sensitive to economic, regulatory, environmental and other conditions in those areas. \n\nAs of December 31, 2011, the largest concentrations of licensed beds in our general hospitals were in Florida (25.9%), Texas (19.5%) and ...\""
+      }
+    ]
+  }
+]

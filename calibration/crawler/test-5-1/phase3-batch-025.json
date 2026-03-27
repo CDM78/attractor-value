@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-NOV-2013-01-02-aa8c0e",
+    "ticker": "NOV",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2012-04-05. No obvious executive changes in compensation section. Excerpt: \"Stock Ownership \n\n30 \n\nCompensation Discussion and Analysis \n\n32 \n\nCompensation Committee Report on Executive Compensation \n\n45 \n\nExecutive Compensation \n\n55 \n\nCertain Relationships and Related Transactions \n\n61 \n\nDirector Compensation \n\n62 \n\nSection 16(a) Beneficial Ownership Reporting Compliance \n\n64 \n\nStockholder Proposals for the 2013 Annual Meeting \n\n64 \n\nAnnual Report and Other Matters \n\n64 \n\nTable of"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-HSY-2021-12-31-ee26de",
+    "ticker": "HSY",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "118 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-07. No obvious executive changes in compensation section. Excerpt: \"ctor Nominees \n\n2 \n\nGovernance Highlights \n\n3 \n\nCompany Strategy and 2020 Business Highlights \n\n5 \n\nExecutive Compensation Highlights \n\n6 \n\nPROXY STATEMENT \n\nQuestions and Answers about the Annual Meeting \n\n7 \n\nCorporate Governance \n\n13 \n\nThe Board of Directors \n\n19 \n\nMeetings and Committees of the Board \n\n24 \n\nProposal No. 1 Election of Directors \n\n27 \n\nNon-Employee Director Compensation \n\n34 \n\nShare Owner"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"rate, as well as challenges in maintaining profit margins. We must maintain mutually beneficial relationships with our key customers, including retailers and distributors, to compete effectively. Our largest customer, McLane Company, Inc., accounted for approximately 31% of our total net sales in 20...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EW-2015-01-02-fad98e",
+    "ticker": "EW",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-MU-2019-01-02-ecc662",
+    "ticker": "MU",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-12-06. No obvious executive changes in compensation section. Excerpt: \"pensation Committee annually engages a compensation consultant to provide a comprehensive review of executive compensation matters. Our compensation consultant provided the Compensation Committee with information for our officers on cash and non-cash compensation elements and historical and trend payment data. \n\nThe Compensation Committee has established procedures intended to keep our compensation consulta"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"h our partners. \n\nOur joint ventures and strategic relationships, if unsuccessful, could have a material adverse effect on our business, results of operations, or financial condition. \n\nA significant concentration of our net sales is to a select number of customers. \n\nIn each of the last three years...\" [2] \"f customers to whom our products could be sold. Our inability to meet our customers' requirements or to qualify our products wit"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-SBUX-2019-01-02-f1ef76",
+    "ticker": "SBUX",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "33 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-01-26. No obvious executive changes in compensation section. Excerpt: \"erve until the 2019 Annual Meeting of Shareholders; \n\n2 .\n\nTo approve an advisory resolution on our executive compensation; \n\n3 .\n\nTo ratify the selection of Deloitte & Touche LLP as our independent registered public accounting firm for the fiscal year ending September 30, 2018; \n\n4 .\n\nTo consider shareholder proposals described in the accompanying proxy statement, if properly presented at the Annual Meetin"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

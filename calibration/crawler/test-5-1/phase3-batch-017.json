@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-EW-2021-01-04-0e2c70",
+    "ticker": "EW",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "101 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-25. No obvious executive changes in compensation section. Excerpt: \"Director Equity Awards \n\n23\n\nSECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS\nAND MANAGEMENT \n\n24 \n\nEXECUTIVE COMPENSATION AND OTHER INFORMATION\n\n25 \n\nExecutive Officers \n\n25\n\nCompensation Discussion and Analysis \n\n27\n\nExecutive Summary \n\n27\n\nCompensation Philosophy and Objectives for NEOs \n\n31\n\nCompensation Process \n\n31\n\nIndependent Compensation Consultant \n\n31\n\nUse of Competitive Data \n\n32\n\nElements of Com"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EXPD-2019-01-02-87cd3e",
+    "ticker": "EXPD",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "56 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-03-29. Executive changes detected in compensation section. Excerpt: \"e than 16,500 employees. \n\nIn last year s proxy, we proposed significant enhancements to Expeditors executive compensation programs. Those enhancements were the culmination of extensive, ongoing dialogue with our largest shareholders to align with current best practices, while being particularly careful not to disrupt Expeditors distinctive compensation structure. This structure has been in place since the fo"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-GIS-2021-01-04-509eca",
+    "ticker": "GIS",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-08-10. No obvious executive changes in compensation section. Excerpt: \"reating and preserving sustaining value. \n\nThe Board is Committed to Overseeing Company Culture and Executive Compensation Practices.\n\nPeople are at the heart of our mission, and the future success of the company will in large part be determined by the talent, skills and culture\nof our workforce. I can assure you that the board is actively involved in overseeing the company s efforts to foster a diverse and"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-MPC-2021-12-31-5b5389",
+    "ticker": "MPC",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "70 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-15. Executive changes detected in compensation section. Excerpt: \"ainability reporting overseen by \n\nSustainability Committee \n\niv \n\nMarathon Petroleum Corporation \n\nExecutive Compensation Highlights \n\nRecent Compensation Program Actions \n\nSince January 1, 2020, the Compensation and Organization Development Committee has made a number of noteworthy changes to our executive compensation program. See the discussion of changes to our executive compensation program for 2020 and"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EIX-2021-12-31-11b5cb",
+    "ticker": "EIX",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "38 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-12. Executive changes detected in compensation section. Excerpt: \"business to be conducted at the Annual Meeting and the Board s role in our corporate governance and executive compensation. We encourage you to read the Proxy Statement and vote your shares promptly, even if you plan to attend the Annual Meeting. For additional meeting or voting information, see page 87 of the Proxy Statement or visit our website at www.edison.com/annualmeeting. \n\nAddressing Climate Change \n\n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

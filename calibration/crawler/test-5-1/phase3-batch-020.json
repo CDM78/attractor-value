@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-NTAP-2021-12-31-411499",
+    "ticker": "NTAP",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-07-30. No obvious executive changes in compensation section. Excerpt: \"e and Voting Roadmap \n\nProposal 2 \n\nAdvisory Vote to Approve Named Executive Officer Compensation \n\nExecutive Compensation Objectives \n\nThe Board believes that executive compensation is a meaningful tool to communicate, align and reinforce business priorities that support our stockholders interests. We also believe it is an important element in the attraction, retention and recognition of our leadership and"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"iscal 2021 compared to fiscal 2020. During fiscal 2020, Americas revenues were negatively impacted by general macroeconomic conditions in the region and go-to-market execution issues with some of our largest customer accounts in the first quarter of fiscal 2020, which was reflected in the geographic...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ROST-2013-01-02-d90e7d",
+    "ticker": "ROST",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"fective manner.\n\nA change in the availability, quality, or cost of\nnew store real estate locations.\n\nA downturn in the economy or a natural disaster in\nCalifornia or in another region where we have a concentration of stores or a\ndistribution center. Our corporate headquarters, Los Angeles buying off...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CHRW-2013-01-02-fc803a",
+    "ticker": "CHRW",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"egrating its businesses, products, services, technologies, and personnel into our operations. Acquired companies or\noperations may have unexpected liabilities, and we may face challenges in retaining significant customers of acquired companies. These difficulties could disrupt our ongoing business, ...\" [2] \"for advances or payment can occur. A significant increase in fraudulent activity could adversely affect our results. \n\nWe derive"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-VFC-2021-12-31-54ec14",
+    "ticker": "VFC",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "55 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-06-11. No obvious executive changes in compensation section. Excerpt: \"f Directors \n\n13 \n\nBoard Committees and Their Responsibilities \n\n14 \n\nDirectors Compensation \n\n18 \n\nEXECUTIVE COMPENSATION \n\n20 \n\nCompensation Discussion and Analysis \n\n20 \n\nCompensation Committee Report \n\n39 \n\nSummary Compensation Table \n\n40 \n\n2021 Grants of Plan-Based Awards \n\n42 \n\nOutstanding Equity Awards at Fiscal Year-End 2021 \n\n43 \n\n2021 Option Exercises and Stock Vested \n\n44 \n\n2021 Pension Benefits "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"ure years vary from current assumptions (including changes in discount rates), (iii) business conditions or strategies for a specific reporting unit change from current assumptions, including loss of major customers, (iv) investors require higher rates of return on equity investments in the marketpl...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-SLB-2013-01-02-457853",
+    "ticker": "SLB",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-FIS-2017-06-14-440933",
+    "ticker": "FIS",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2017-04-21. No obvious executive changes in compensation section. Excerpt: \"ndent registered public accounting firm\nfor 2017; and \n\n4 \n\nto vote whether to present the advisory executive compensation vote every one, two or three years. \n\nThe Board of Directors set April 3, 2017 as the record date for the meeting. This means that owners of\nFidelity National Information Services, Inc. common stock at the close of business on that date are entitled to: \n\nreceive notice of the meeting; "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-AVY-2021-01-04-3079ee",
+    "ticker": "AVY",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "30 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-06. Executive changes detected in compensation section. Excerpt: \"10 directors nominated by our Board to serve a one-year term; \n\nApprove, on an advisory basis, our executive compensation; \n\nRatify the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2020; and \n\nTransact any other business properly brought before the meeting or any adjournment or postponement thereof. \n\nOur Board recommends that you vote FOR each"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"s of operations and financial condition. \n\nOur customer base is diversified, but in certain portions of our business, industry concentration has increased the importance, and decreased the number, of significant customers. \n\nSales of our Office and Consumer Products business in the United States are...\" [2] \"customer \n\n7 \n\nTable of Contents \n\nexperiencing financial difficulty. If these developments occur, our inability to shift sales "
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-INTU-2015-12-31-a73aae",
+    "ticker": "INTU",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"in the third quarter of fiscal 2015 to discontinued operations based on the relative fair values of Quicken and the remaining components of our Consumer Ecosystem reporting unit. \n\nIn March 2013 the largest customer for our Intuit Health business acquired a company that offered similar solutions and...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-DXC-2021-12-31-16d7ea",
+    "ticker": "DXC",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-07-06. Executive changes detected in compensation section. Excerpt: \"oxy statement. As discussed in the CD&A, we are committed to a pay for performance culture, and our executive\ncompensation program is grounded in a philosophy aimed at achieving strong alignment between the Company s financial and strategic goals and our stockholders interests. \n\niii \n\nTable of Contents \n\nTable of\nContents\n\nTable of Contents \n\nA. PROPOSALS \n\n1\n\nProposal 1: Election of Directors \n\n1\n\nProposal "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BKNG-2015-12-31-a23f76",
+    "ticker": "BKNG",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "42 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2015-04-22. No obvious executive changes in compensation section. Excerpt: \"f Selection of Independent Registered Public Accounting Firm on page 53. \n\nAdvisory Vote to Approve Executive Compensation (Proposal 3). The Board of Directors recommends that you vote FOR the approval on an advisory basis of the Company's executive compensation. For more information, see Proposal 3 Advisory Vote to Approve Executive Compensation on page 56. \n\nStockholder Proposal (Proposal 4). The Board of"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

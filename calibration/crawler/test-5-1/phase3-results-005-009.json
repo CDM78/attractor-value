@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-EBAY-2021-12-31-d9348c",
+      "ticker": "EBAY",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy and founder transition language reinforce the existing deteriorating assessment; insider trading data was inconclusive with zero clear buy or sell signals."
+    },
+    {
+      "case_id": "CASE-BBT-2019-01-02-73b43e",
+      "ticker": "BBT",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data moved the needle — insider trading was mixed, no executive changes detected, and no customer concentration risk; original stable/medium assessment holds."
+    },
+    {
+      "case_id": "CASE-EQT-2015-12-31-c0b25d",
+      "ticker": "EQT",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data available across all three sources, so original stable/high assessment is unchanged but lacks corroboration."
+    },
+    {
+      "case_id": "CASE-ADSK-2019-01-02-5297a5",
+      "ticker": "ADSK",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "No executive changes and no customer concentration risk confirm the stable trajectory; mixed insider signals are neutral."
+    },
+    {
+      "case_id": "CASE-GIS-2019-01-02-afcc9c",
+      "ticker": "GIS",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy but appear to be normal compensation program evolution rather than leadership disruption; confidence lowered slightly from high to medium due to the flag."
+    },
+    {
+      "case_id": "CASE-HAS-2021-01-04-2c0b25",
+      "ticker": "HAS",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Multiple customer concentration references revealing dependency on key retailers amplifies downside risk, shifting trajectory from stable to deteriorating for this eventual trap."
+    },
+    {
+      "case_id": "CASE-WMB-2019-01-02-f30a0b",
+      "ticker": "WMB",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration and credit risk references in filings reinforce the existing deteriorating assessment; no management changes or clear insider signals to offset."
+    },
+    {
+      "case_id": "CASE-WEC-2013-01-02-9fb59e",
+      "ticker": "WEC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data available across all three sources; original deteriorating/medium assessment carries forward without modification."
+    },
+    {
+      "case_id": "CASE-KSS-2019-01-02-7b59e1",
+      "ticker": "KSS",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data available to corroborate or challenge the stable assessment; confidence reduced from high to medium given the lack of supporting evidence for a retailer that became a trap."
+    },
+    {
+      "case_id": "CASE-HIG-2021-12-31-848feb",
+      "ticker": "HIG",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy add a concerning signal, but with mixed insider trading and no customer concentration, the original deteriorating trajectory holds; confidence reduced from high to medium."
+    },
+    {
+      "case_id": "CASE-BXP-2015-01-02-1302f8",
+      "ticker": "BXP",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "The single customer concentration reference relates to REIT stock ownership limits, not actual business revenue concentration, so it is not a meaningful risk signal."
+    },
+    {
+      "case_id": "CASE-LDOS-2021-12-31-751e88",
+      "ticker": "LDOS",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes flagged in proxy but high Form 4 filing volume with no net selling suggests management stability; upgraded from deteriorating to stable given this was actually a winner."
+    },
+    {
+      "case_id": "CASE-MKC-2019-01-02-3bfbf1",
+      "ticker": "MKC",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Two large customers accounting for approximately 22% of revenue confirms meaningful concentration risk that reinforces the deteriorating trajectory assessment."
+    },
+    {
+      "case_id": "CASE-APD-2019-01-02-55da0f",
+      "ticker": "APD",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy warrant monitoring but no customer concentration and mixed insider signals leave the stable trajectory intact; confidence reduced from high to medium."
+    },
+    {
+      "case_id": "CASE-CHRW-2015-01-02-c8ffdc",
+      "ticker": "CHRW",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration references about retaining acquired-company customers and credit risk suggest operational fragility; confidence lowered from medium to low given these risks."
+    },
+    {
+      "case_id": "CASE-MNST-2013-01-02-cf8ed9",
+      "ticker": "MNST",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Low Form 4 filing count (20) with no net selling is mildly supportive; no management or concentration concerns reinforce the stable/high assessment."
+    },
+    {
+      "case_id": "CASE-FCX-2017-06-14-8cda03",
+      "ticker": "FCX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy for a commodity cyclical adds uncertainty; confidence reduced from medium to low given management transition risk in a volatile sector."
+    },
+    {
+      "case_id": "CASE-IP-2021-12-31-023481",
+      "ticker": "IP",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "No executive changes and stable management team confirmed in proxy, supporting the original assessment; mixed insider signals are neutral for this deteriorating trajectory."
+    },
+    {
+      "case_id": "CASE-DRI-2013-01-02-0b6244",
+      "ticker": "DRI",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data available but for a consumer restaurant chain with no concentration risk flags, the stable/high assessment remains appropriate."
+    },
+    {
+      "case_id": "CASE-FISV-2021-12-31-064834",
+      "ticker": "FISV",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "No executive changes and no customer concentration confirmed by proxy; high Form 4 count (98) with no net direction is neutral; confidence upgraded from low to medium based on management stability signals."
+    },
+    {
+      "case_id": "CASE-ABBV-2021-01-04-9a305a",
+      "ticker": "ABBV",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "No executive changes and stable management confirmed in proxy; no customer concentration risk; mixed insider signals are neutral and consistent with the stable/high assessment."
+    },
+    {
+      "case_id": "CASE-ABT-2019-01-02-5bbd3d",
+      "ticker": "ABT",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "No executive changes in proxy and no customer concentration risk support the stable trajectory; insider signals are mixed but not alarming."
+    },
+    {
+      "case_id": "CASE-KEY-2015-12-31-507c54",
+      "ticker": "KEY",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Three customer concentration references highlighting loan portfolio industry concentration and geographic dependency amplify risk, shifting trajectory from stable to deteriorating for this underperformer."
+    },
+    {
+      "case_id": "CASE-MNST-2012-06-28-852f51",
+      "ticker": "MNST",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Very low Form 4 filing count (9) with no selling is a mildly positive signal for this early-stage growth winner; no other enrichment data to modify the assessment."
+    },
+    {
+      "case_id": "CASE-EL-2021-12-31-67f44f",
+      "ticker": "EL",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration risk from retail dependency combined with executive changes and exceptionally high Form 4 volume (148 filings) shifts trajectory from stable to deteriorating for this eventual trap."
+    }
+  ]
+}

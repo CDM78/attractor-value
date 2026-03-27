@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "case_id": "CASE-KSS-2017-06-15-dce51f",
+      "ticker": "KSS",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three EDGAR sources; initial stable/high assessment unchanged."
+    },
+    {
+      "case_id": "CASE-WY-2013-01-02-7e6e27",
+      "ticker": "WY",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found; initial stable/high assessment holds with no EDGAR signals to adjust."
+    },
+    {
+      "case_id": "CASE-HON-2021-12-31-b6588d",
+      "ticker": "HON",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Credit and market risk concentration language confirms deteriorating trajectory; 108 Form 4 filings with zero directional buys or sells provide no corrective signal."
+    },
+    {
+      "case_id": "CASE-UPS-2015-12-31-77a3f9",
+      "ticker": "UPS",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "10-K explicitly warns about loss or reduction in business from significant customers, shifting trajectory from stable to deteriorating given acknowledged revenue concentration risk."
+    },
+    {
+      "case_id": "CASE-NEM-2013-01-02-60f999",
+      "ticker": "NEM",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Customer concentration hit is a false positive referring to greenhouse gas concentrations, not revenue dependency; no meaningful enrichment signal."
+    },
+    {
+      "case_id": "CASE-BBBY-2014-06-15-66e88b",
+      "ticker": "BBBY",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found; initial stable/medium holds though the eventual underperformance suggests EDGAR data gaps for this period."
+    },
+    {
+      "case_id": "CASE-CNX-2016-03-03-aa2fb3",
+      "ticker": "CNX",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Net insider selling (2 sells vs 1 buy) in a coal/gas company facing environmental liability and long-term contract risk shifts trajectory from stable to deteriorating."
+    },
+    {
+      "case_id": "CASE-DUK-2021-12-31-f42750",
+      "ticker": "DUK",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy but language describes governance commitment rather than distress-driven turnover; 78 Form 4 filings with no directional signal; confidence stays low."
+    },
+    {
+      "case_id": "CASE-SO-2021-12-31-077bef",
+      "ticker": "SO",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Wholesale gas services credit concentration in 20 counterparties confirms deteriorating trajectory risk; stable management and mixed insider signals do not offset."
+    },
+    {
+      "case_id": "CASE-PEG-2015-12-31-c3f585",
+      "ticker": "PEG",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "14 Form 4 filings with no directional signal; no proxy or concentration data; initial stable/high assessment confirmed by absence of negative enrichment."
+    },
+    {
+      "case_id": "CASE-EW-2021-01-04-0e2c70",
+      "ticker": "EW",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "101 Form 4 filings with zero directional signal and no executive changes in proxy provide no basis to revise the initial deteriorating/medium assessment."
+    },
+    {
+      "case_id": "CASE-EXPD-2019-01-02-87cd3e",
+      "ticker": "EXPD",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive compensation restructuring following extensive shareholder dialogue signals management transition uncertainty, downgrading confidence from high to medium."
+    },
+    {
+      "case_id": "CASE-GIS-2021-01-04-509eca",
+      "ticker": "GIS",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Proxy shows standard governance language with no executive changes; 107 mixed Form 4 filings add no signal; initial stable/low unchanged."
+    },
+    {
+      "case_id": "CASE-MPC-2021-12-31-5b5389",
+      "ticker": "MPC",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Multiple noteworthy executive compensation program changes since Jan 2020 signal active management restructuring, shifting trajectory from deteriorating to improving."
+    },
+    {
+      "case_id": "CASE-EIX-2021-12-31-11b5cb",
+      "ticker": "EIX",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive compensation changes noted in proxy but focused on climate strategy and governance rather than operational distress; stable trajectory holds."
+    },
+    {
+      "case_id": "CASE-DVN-2019-01-02-a24aa5",
+      "ticker": "DVN",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "37 Form 4 filings with no directional signal and standard proxy language provide no basis to revise the initial deteriorating/medium assessment."
+    },
+    {
+      "case_id": "CASE-EFX-2021-01-04-6ee82a",
+      "ticker": "EFX",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "52 Form 4 filings with no directional buys/sells and standard proxy language provide no corrective signal against initial deteriorating assessment."
+    },
+    {
+      "case_id": "CASE-PPG-2015-12-31-5d8963",
+      "ticker": "PPG",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found across all three EDGAR sources; initial stable/high assessment unchanged."
+    },
+    {
+      "case_id": "CASE-PLD-2021-12-31-3fdee8",
+      "ticker": "PLD",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Geographic property concentration (30.9% in specific markets) with explicit warning about adverse effects from conditions in concentrated areas shifts trajectory from stable to deteriorating."
+    },
+    {
+      "case_id": "CASE-CB-2015-01-02-550416",
+      "ticker": "CB",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Concentration language refers to insured property value concentrations for catastrophe risk, which is standard insurance industry disclosure rather than customer dependency."
+    },
+    {
+      "case_id": "CASE-EW-2013-01-02-d89c81",
+      "ticker": "EW",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "No enrichment data found; initial deteriorating/medium assessment unchanged with no EDGAR signals available for this period."
+    },
+    {
+      "case_id": "CASE-CCL-2021-12-31-559759",
+      "ticker": "CCL",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive changes detected in proxy during pandemic period confirm ongoing management transition consistent with deteriorating trajectory; high confidence maintained."
+    },
+    {
+      "case_id": "CASE-UNP-2021-12-31-c71cbf",
+      "ticker": "UNP",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "104 Form 4 filings with zero directional signal and standard proxy language (new stock incentive plan is routine) provide no basis to change stable/low assessment."
+    },
+    {
+      "case_id": "CASE-EFX-2017-06-14-70a0d1",
+      "ticker": "EFX",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": true,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive compensation changes and heavy shareholder engagement on governance with 60% of shareholder base contacted signals significant corporate transition, upgrading confidence from medium to high on deteriorating trajectory."
+    },
+    {
+      "case_id": "CASE-ISRG-2021-12-31-9d2ad6",
+      "ticker": "ISRG",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "64 Form 4 filings with no directional signal and no executive changes in proxy provide no basis to revise the initial deteriorating/high assessment."
+    }
+  ]
+}

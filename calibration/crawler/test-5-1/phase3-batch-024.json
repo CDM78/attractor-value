@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-GOOGL-2019-01-02-b9d9d6",
+    "ticker": "GOOGL",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"repurchase program could affect the price of our stock and increase volatility and may be suspended or terminated at any time, which may result in a decrease in the trading price of our stock. \n\nThe concentration of our stock ownership limits our stockholders ability to influence corporate matters. ...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-NVDA-2021-12-31-77c693",
+    "ticker": "NVDA",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-23. No obvious executive changes in compensation section. Excerpt: \"ess \n\nElection of thirteen directors nominated by the Board of Directors \n\nAdvisory approval of our executive compensation \n\nRatification of the selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2022 \n\nApproval of an amendment to our Amended and Restated Certificate of Incorporation to increase the number of authorized shares of common stock from 2 "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-FIS-2021-01-04-3a28b6",
+    "ticker": "FIS",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "93 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-17. No obvious executive changes in compensation section. Excerpt: \"Asked Questions\n\n5 \n\nProposal No. \n1: Election of Directors \n\n9 \n\nProposal No. \n2: Advisory Vote on Executive Compensation \n\n19 \n\nProposal No. \n3: Ratification of Independent Registered Public Accounting Firm \n\n20 \n\nSecurity Ownership of\nCertain Beneficial Owners, Directors and Executive Officers \n\n22 \n\nCertain Information About\nOur Executive Officers \n\n25 \n\nCompensation Discussion\nand Analysis and Executiv"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-TER-2021-12-31-3e88e7",
+    "ticker": "TER",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "63 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-26. No obvious executive changes in compensation section. Excerpt: \"t Committee Report \n\n35\n\nPrincipal Accountant Fees and Services \n\n35\n\nOWNERSHIP OF SECURITIES \n\n37\n\nEXECUTIVE COMPENSATION \n\n39\n\nCompensation Discussion and Analysis \n\n39\n\n2020 Executive Compensation Summary \n\n39\n\nExecutive Compensation Objectives \n\n42\n\nExecutive Compensation Program \n\n44\n\n2020 Executive Compensation \n\n48\n\nCompensation Committee Report \n\n53\n\nExecutive Compensation Tables \n\n54\n\nSummary Compe"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"titors could cause a decline in revenues or loss of market acceptance of our products. \n\nThe market for our products is concentrated, and our business depends, in part, on obtaining orders from a few significant customers. \n\nThe market for our products is concentrated with a limited number of signif...\" [2] \"al customers may contribute even a larger percentage of our consolidated revenues. In addition, our ability to increase sales wi"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CMG-2021-12-31-e85cae",
+    "ticker": "CMG",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "68 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-05. Executive changes detected in compensation section. Excerpt: \"s reason that Chipotle introduced a new environmental, social and governance (ESG) metric that ties executive compensation to ESG goals, which are categorized by Food & Animals, People, and the Environment. In an\neffort to support more sustainable small farms, Chipotle is committed to increasing pounds of organic, local, and/or regeneratively grown/raised food used in its restaurants year over year. Chipotle "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

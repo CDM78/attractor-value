@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-LMT-2021-12-31-65f7ec",
+    "ticker": "LMT",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "61 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-12. Executive changes detected in compensation section. Excerpt: \"ee Report \n\n38 \n\nSummary of Directors-Nomin ees' Core Compe tencies \n\n12 \n\nDirector-Nominees \n\n13 \n\nEXECUTIVE COMPENSATION \n\n39 \n\nBoard Effectiveness, Evaluations and Refreshment \n\n17 \n\nPROPOSAL 3 ADVISORY VOTE TO APPROVE THE COMPENSATION OF OUR NEOs (SAY-ON-PAY) \n\n39 \n\nCORPORATE GOVERNANCE \n\n19 \n\nIndependent Lead Director \n\n19 \n\nCompensation Committee Report \n\n39 \n\nMessage from Independent Lead Director \n\n20"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-XEL-2021-12-31-858855",
+    "ticker": "XEL",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "86 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-06. No obvious executive changes in compensation section. Excerpt: \"33 \n\nDirectors and Officers \n\n33 \n\nLargest Shareholders \n\n34 \n\nProposal No. 2 \n\nAdvisory Vote on \n\nExecutive Compensation \n\n35 \n\nCompensation Discussion and Analysis \n\n36 \n\nHighlights \n\n36 \n\nEstablishing Compensation \n\n38 \n\nAdditional Compensation Program Features and Policies \n\n44 \n\nReport of the Compensation Committee \n\n47 \n\nExecutive Compensation Tables \n\n48 \n\nSummary Compensation Table \n\n48 \n\nGrants of "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BDX-2015-12-31-80f315",
+    "ticker": "BDX",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-STZ-2019-01-02-ff060d",
+    "ticker": "STZ",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "54 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-06-01. Executive changes detected in compensation section. Excerpt: \"Fees Paid to KPMG LLP \n\n24\n\nPre-Approval Policies and\nProcedures \n\n25\n\nAudit Committee Report \n\n26\n\nEXECUTIVE COMPENSATION \n\n27\n\nCompensation Discussion and Analysis \n\n27\n\nCompensation Committee Report \n\n44\n\nCompensation Tables and Related Information \n\n45\n\nSummary Compensation Table \n\n45\n\nGrants of Plan-Based Awards in Fiscal 2018 \n\n47\n\nOutstanding Equity Awards at February 28, 2018 \n\n49\n\nOption Exercises an"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ACN-2015-12-31-6eb38c",
+    "ticker": "ACN",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

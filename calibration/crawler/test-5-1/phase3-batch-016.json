@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-BBBY-2014-06-15-66e88b",
+    "ticker": "BBBY",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CNX-2016-03-03-aa2fb3",
+    "ticker": "CNX",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "110 Form 4 filings in trailing 12 months. Buy signals: 1, Sell signals: 2. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2015-03-25. No obvious executive changes in compensation section. Excerpt: \"ees \n\n21 \n\nRelated Party Policy and Procedures \n\n27 \n\nDetermination of Director Independence \n\n27 \n\nEXECUTIVE COMPENSATION INFORMATION \n\n30 \n\nCOMPENSATION DISCUSSION AND ANALYSIS \n\n30 \n\nSUMMARY COMPENSATION TABLE 2014, 2013 AND 2012 \n\n49 \n\nGRANTS OF PLAN-BASED AWARDS 2014 \n\n51 \n\nUNDERSTANDING OUR SUMMARY COMPENSATION AND GRANTS OF PLAN-BASED AWARDS TABLES \n\n52 \n\nOUTSTANDING EQUITY AWARDS AT FISCAL YEAR-END "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"aims for the resulting environmental contamination and associated liability, as well as for fines and penalties. \n\nIn West Virginia there are areas where drainage from coal mining operations contains concentrations of selenium that without treatment would result in violations of state water quality ...\" [2] \"conditions, as they may change from time to time, or our cost structure) and long-term contracts may not contribute to our profi"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-DUK-2021-12-31-f42750",
+    "ticker": "DUK",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "78 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-23. Executive changes detected in compensation section. Excerpt: \"roup of directors who are deeply committed to sound corporate governance, human capital management, executive compensation, and\nrisk management policies and practices to ensure that Duke Energy operates responsibly and efficiently and achieves long-term sustainable value for our fellow shareholders. The varied perspectives of\nthis Board allow us to actively oversee the most important issues facing Duke Energy"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-SO-2021-12-31-077bef",
+    "ticker": "SO",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "138 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: \"sed included our pandemic response, how the Board oversees our strategy to reduce carbon emissions, executive compensation and human capital management. \n\nThank you for the trust you place in us. We are grateful for the opportunity to serve Southern Company on your behalf. \n\nDr. Janaki Akella \n\nJuanita Powell\nBaranco \n\nJon A. Boscia \n\nHenry A. Clark III \n\nAnthony F.\nEarley, Jr. \n\nDavid J. Grain \n\nColette D."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"ages the storage and transportation assets of the natural gas distribution utilities (except Nicor Gas) as well as certain non-affiliated customers. Southern Company Gas' wholesale gas services has a concentration of credit risk in 20 of its counterparties for services it provides. \n\nThe profits ear...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-PEG-2015-12-31-c3f585",
+    "ticker": "PEG",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "14 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

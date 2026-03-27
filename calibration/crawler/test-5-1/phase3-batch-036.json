@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-FAST-2021-01-04-d42960",
+    "ticker": "FAST",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-02-28. No obvious executive changes in compensation section. Excerpt: \"o approve the compensation of our named executive officers disclosed in this proxy statement \n\n16 \n\nExecutive compensation \n\n16 \n\nProposal #4 - Shareholder proposal relating to diversity reporting \n\n33 \n\nSecurity ownership of principal shareholders and management \n\n36 \n\nAdditional matters \n\n38 \n\nHouseholding \n\n38 \n\nDeadlines for receipt of shareholder proposals and nominations for the 2021 annual meeting \n\n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"em to change. In addition, the market potential of a particular business strategy may vary from expectations due to a change in the \n\n16 \n\nTable of Contents \n\nmarketplace (such as changes in customer concentration or needs), a change in the nature of that business strategy, or weaker than anticipate...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-PWR-2021-12-31-0d52e7",
+    "ticker": "PWR",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "52 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-16. No obvious executive changes in compensation section. Excerpt: \"nominated by Quanta s Board of Directors;\n\n2. \n\nApproval, by non-binding advisory vote, of Quanta s\nexecutive compensation; \n\n3. \n\nRatification of the appointment of PricewaterhouseCoopers LLP as Quanta s independent\nregistered public accounting firm for fiscal year 2021; and \n\n4. \n\nAction upon any other matters that are properly brought before the meeting, or any adjournments or\npostponements of the meetin"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"nancial difficulties in the future. These difficulties expose us to increased risk related to collectability of billed and unbilled receivables and contract assets for services we have performed. See Concentration of Credit Risk in Note 14 of the Notes to Consolidated Financial Statements in Item 8....\" [2] \"n Item 8. Financial Statements and Supplementary Data ) . \n\nITEM 7A. Quantitative and Qualitative Disclosures about Market Risk "
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BBBY-2015-12-31-bd4cf8",
+    "ticker": "BBBY",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BBT-2021-01-04-334be1",
+    "ticker": "BBT",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-03. No obvious executive changes in compensation section. Excerpt: \"erm or until their successors are duly elected and qualified; \n\n2. \n\nTo provide an advisory vote on executive compensation practices; \n\n3. \n\nTo ratify the appointment of the Company s independent registered public accounting firm for fiscal year 2020; and \n\n4. \n\nTo transact any other Company business that may properly come before the meeting. \n\nThe Board of Directors unanimously recommends that you vote FOR"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CLF-2013-01-02-6d80d8",
+    "ticker": "CLF",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

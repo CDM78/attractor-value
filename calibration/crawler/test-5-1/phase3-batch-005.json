@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-EBAY-2021-12-31-d9348c",
+    "ticker": "EBAY",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "90 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-26. Executive changes detected in compensation section. Excerpt: \"oss-functional management team to obtain stockholder input on corporate governance, sustainability, executive\ncompensation, DE&I, risk management and compliance.\nBoard reviews the outcomes of stockholder ESG engagement with management and considers proactive changes based on feedback.\n\n\" \n\nThe Board salutes our founder Pierre Omidyar for his vision, leadership and 25 years of service, as we remain focused on "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BBT-2019-01-02-73b43e",
+    "ticker": "BBT",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-06. No obvious executive changes in compensation section. Excerpt: \"the Berkshire Hills Bancorp, Inc. 2018 Equity Incentive Plan; \n\n5.\n\nTo provide an advisory vote on executive compensation practices; \n\n6.\n\nTo ratify the appointment of the Company s independent registered public accounting firm for fiscal year 2018; and \n\n7.\n\nTo transact any other Company business that may properly come before the meeting. \n\nThe Board of Directors unanimously recommends that you vote FOR ea"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EQT-2015-12-31-c0b25d",
+    "ticker": "EQT",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ADSK-2019-01-02-5297a5",
+    "ticker": "ADSK",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "54 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-05-01. No obvious executive changes in compensation section. Excerpt: \"d \n\n36 \n\nAttendance at Annual Stockholders Meetings by Directors \n\n37 \n\nContacting the Board \n\n37 \n\nEXECUTIVE COMPENSATION \n\n37 \n\nCompensation Discussion and Analysis \n\n37 \n\nExecutive Summary \n\n38 \n\nThe Compensation-Setting Process \n\n43 \n\nCompetitive Compensation Positioning \n\n44 \n\nThe Principal Elements of the Executive Compensation Program \n\n46 \n\nReport of the Compensation Committee \n\n59 \n\nSummary Compens"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-GIS-2019-01-02-afcc9c",
+    "ticker": "GIS",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "62 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-08-13. Executive changes detected in compensation section. Excerpt: \"ensure that it fulfills its role of providing effective and independent oversight of management. \n\nExecutive Compensation Linked to Strategy and\nPerformance \n\nOur executive compensation programs are integral to the achievement of our long-term strategy and growth priorities. The\ncompensation committee of the board is responsible for overseeing the design and implementation of a compensation program that both "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

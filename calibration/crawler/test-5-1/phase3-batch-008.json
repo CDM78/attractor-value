@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-MNST-2013-01-02-cf8ed9",
+    "ticker": "MNST",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-FCX-2017-06-14-8cda03",
+    "ticker": "FCX",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2017-04-25. Executive changes detected in compensation section. Excerpt: \"S \n\nProxy Summary \n\n1 \n\n2017 Annual Meeting of Stockholders \n\n1 \n\n2016 Performance Highlights \n\n1 \n\nExecutive Compensation Highlights \n\n2 \n\nCorporate Governance Highlights \n\n2 \n\nStockholder Engagement Highlights \n\n2 \n\nAgenda and Voting Recommendations \n\n3 \n\nDirector Nominee Highlights \n\n3 \n\nStockholder Engagement \n\n4 \n\nIndependent Board Members Lead the Process \n\n4 \n\nHistory of Responsiveness to Stockholders "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-IP-2021-12-31-023481",
+    "ticker": "IP",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-30. No obvious executive changes in compensation section. Excerpt: \"ngs in our fastest growing packaging segments\n\nwww.internationalpaper.com \n\n7 \n\nTable of Contents \n\nExecutive Compensation Philosophy and 2020\nCompensation Mix \n\nWe reward achievement of specific goals that improve our financial\nperformance and drive strategic initiatives to ensure sustainable long-term profitability.\n\nWe believe a significant portion of an executive's compensation\nshould be specifically ti"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-DRI-2013-01-02-0b6244",
+    "ticker": "DRI",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-FISV-2021-12-31-064834",
+    "ticker": "FISV",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "98 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-06. No obvious executive changes in compensation section. Excerpt: \"16\n\nHow to Communicate with Us \n\n19\n\nOur Executive Pay \n\n20\n\nProposal 2. Advisory Vote to Approve Executive Compensation \n\n20\n\nCompensation Discussion and Analysis \n\n22\n\nCompensation Committee Report \n\n32\n\nCompensation Committee Interlocks and Insider Participation \n\n32\n\nExecutive Compensation \n\n33\n\nSummary Compensation Table \n\n33\n\nGrants of Plan-Based Awards in 2020 \n\n35\n\nOutstanding Equity Awards at Decem"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

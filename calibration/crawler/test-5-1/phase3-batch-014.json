@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-AIG-2021-12-31-12f76a",
+    "ticker": "AIG",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "137 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-30. No obvious executive changes in compensation section. Excerpt: \"successors are duly elected and qualified \n\n2. To\nvote, on a non-binding advisory basis, to approve executive compensation \n\n3. To\nvote on a proposal to approve the American International Group, Inc. 2021 Omnibus Incentive Plan \n\n4. To\nact upon a proposal to ratify the selection of PricewaterhouseCoopers LLP as AIG's independent registered public accounting\nfirm for 2021 \n\n5. To\nvote on a shareholder propos"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"gaps and the nature of the General Insurance companies exposures. Examples of modeled scenarios are conventional bombs of different sizes, anthrax attacks and nuclear attacks. \n\nOur largest terrorism concentrations are in New York City, and estimated losses are largely driven by the Property and Wor...\" [2] \"other countries through various insurance products and participate in country terrorism pools when applicable. International ter"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-APH-2021-12-31-d37b57",
+    "ticker": "APH",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "34 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: \"he Company, c/o Secretary, Amphenol Corporation, 358\nHall Avenue, Wallingford, Connecticut 06492. \n\nExecutive Compensation \n\nAt the 2020 annual meeting of stockholders, the Company's stockholders cast a non-binding advisory vote to approve the compensation of the\nCompany's named executive officers as disclosed in the proxy statement for that meeting. The Company's stockholders overwhelmingly approved the pr"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"; \n\nintergovernmental conflicts or actions, including but not limited to armed conflict, trade wars, cyber attacks and acts of terrorism or war; and \n\ninterruptions to the Company s business with its largest customers, distributors and suppliers resulting from but not limited to, strikes, financial ...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EXC-2013-01-02-e7269c",
+    "ticker": "EXC",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"ly operate facilities that are competitive in those markets. Additionally, construction of new generating facilities by Generation in markets in which it currently competes would be subject to market\nconcentration tests administered by FERC. If Generation cannot pass the tests administered by FERC, ...\" [2] \"eparate or otherwise transferring control over base-load capacity), without including those actions proposed by the\nparties mutu"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-AIZ-2015-01-02-e41fc9",
+    "ticker": "AIZ",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "63 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2014-03-25. No obvious executive changes in compensation section. Excerpt: \"s \n\nCode of Ethics applicable to all employees and Directors \n\nCOMPENSATION HIGHLIGHTS \n\nAssurant s executive compensation programs are designed to align the interests of our executives with those of our stockholders by tying significant portions of compensation to the Company s financial\nperformance. Highlights of our executive compensation programs include: \n\nPay for Performance Commitment \n\nIn 2013, Assu"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 4 customer concentration references. Key excerpts: [1] \"mula and changes to the formula could occur in the future. \n\nInvestment Regulation. Insurance company investments must comply with applicable laws and regulations that prescribe the kind,\nquality and concentration of investments. These regulations require diversification of insurance company investm...\" [2] \"in circumstances, we may be liable for the costs of addressing releases or threatened releases of hazardous substances at proper"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BWA-2021-12-31-1256b2",
+    "ticker": "BWA",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "60 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-19. No obvious executive changes in compensation section. Excerpt: \"reached out to our top 35 investors to discuss corporate governance, corporate responsibility, and executive compensation matters,\nand solicit feedback\n\n&bull; Our\nBoard is provided with our stockholders' feedback for consideration\n\n&bull; The\nBoard and management discussed feedback and whether action should be taken\n\n&bull; Disclosure\nenhancements are considered\n\n&bull; In\nthe lead-up to the Annual Meeting"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"n connection with our actions. Failure to realize anticipated savings or benefits from our actions could have an adverse effect on our business. \n\nRisks related to our customers \n\nWe rely on sales to major customers. \n\nWe rely on sales to OEMs around the world of varying credit quality and manufactu...\" [2] \"s are concentrated. Our worldwide sales in 2020 to Ford and Volkswagen constituted approximately 13% and 11% of our 2020 consoli"
+      }
+    ]
+  }
+]

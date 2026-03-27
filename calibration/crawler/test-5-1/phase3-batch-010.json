@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-SPG-2013-01-02-acdc3e",
+    "ticker": "SPG",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"lations or the\ninterpretation thereof) will not result in environmental liabilities. \n\nRetail Operations Risks \n\nOverall economic conditions may adversely affect the general retail environment. \n\nOur concentration in the retail real estate market means that we are subject to the risks that affect th...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CAH-2019-01-02-c6ad28",
+    "ticker": "CAH",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-09-26. No obvious executive changes in compensation section. Excerpt: \"to Ernst & Young LLP \n\n25 \n\nPolicy on Pre-Approval of Services Provided by Ernst & Young LLP \n\n25 \n\nExecutive Compensation \n\n26 \n\nProposal 3 — Advisory Vote to Approve the Compensation of Our Named Executive Officers \n\n26 \n\nCompensation Discussion and Analysis \n\n27 \n\nHuman Resources and Compensation Committee Report \n\n34 \n\nExecutive Compensation Tables \n\n35 \n\nPay Ratio Disclosure \n\n48 \n\nShareholder Proposal"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ALL-2021-01-04-f97a6b",
+    "ticker": "ALL",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-06. No obvious executive changes in compensation section. Excerpt: \"modify the performance stock award metrics to include Relative Total Shareholder Return, and expand executive compensation clawback policies. \n\nBoard performance is evaluated at every meeting and annually for the full Board and individual members. Feedback is acted on, including modifying topics, agendas and materials. Future Board involvement is now discussed with every member every year instead of biennia"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CB-2013-01-02-c32722",
+    "ticker": "CB",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"he occurrence of\nclaims from catastrophic events could result in substantial volatility in our results of operations or financial condition for any fiscal quarter or year. Increases in the values and concentrations of insured property may also increase the severity\nof these occurrences in the future...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-V-2021-12-31-7f72b7",
+    "ticker": "V",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "66 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-12-02. No obvious executive changes in compensation section. Excerpt: \"n Risk Oversight \n\n15\n\nStockholder Engagement on Corporate Governance, Corporate Responsibility and Executive\nCompensation Matters \n\n16\n\nCommunicating with the Board of Directors \n\n17\n\nAttendance at Board, Committee and Annual Stockholder Meetings \n\n17\n\nCodes of Conduct and Ethics \n\n17\n\nPolitical Engagement and Disclosure \n\n18\n\nEnvironment, Social and Governance \n\n18\n\nCOMMITTEES OF THE BOARD\nOF DIRECTORS \n\n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

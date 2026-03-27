@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-T-2013-01-02-2ca79c",
+    "ticker": "T",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-MAT-2019-01-02-7e8edf",
+    "ticker": "MAT",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-05. No obvious executive changes in compensation section. Excerpt: \"ICATION OF SELECTION OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\n46 \n\nEXECUTIVE OFFICERS AND EXECUTIVE COMPENSATION \n\n47 \n\nEXECUTIVE OFFICERS \n\n47 \n\nCOMPENSATION DISCUSSION AND ANALYSIS \n\n49 \n\nExecutive Summary \n\n49\n\nElements of Compensation \n\n60\n\nImportant Policies and Guidelines \n\n75\n\nExecutive Compensation Process and Governance \n\n77\n\nEXECUTIVE COMPENSATION \n\n81 \n\nSummary Compensation Table \n\n81\n\n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"s strikes, disruptions in transportation, or port delays, that interfere with the manufacture or shipment of goods during the critical months leading up to the holiday purchasing season. \n\nMattel has significant customer concentration, so that economic difficulties or changes in the purchasing polic...\" [2] \"usiness with a relatively small number of customers may provide certain benefits to Mattel, such as potentially more efficient p"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-TXT-2019-01-02-b05487",
+    "ticker": "TXT",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-03-06. No obvious executive changes in compensation section. Excerpt: \"y of Proxy Materials1 General1 \n\nCompensation Discussion and Analysis 20 Overview and Objectives of Executive Compensation Program 22 Incentive Compensation 26 Risks Related to Compensation 31 Role of Independent Compensation Consultant 31 $QWL-+HGJLQJ DQG 3OHGJLQJ 3ROLF\\ 32 Compensation Arrangements Relating to Termination of Employment 32 Executive Compensation 34 *UDQWV RI 3ODQ-%DVHG $ZDUGV LQ )LVFDO 201"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"cluding those discussed below, which may affect the value of our securities. The risks discussed below are those that we believe currently are the most significant to our business. \n\nWe have customer concentration with the U.S. Government; reduction in U.S. Government defense spending may adversely ...\" [2] \"eases and other assets in its portfolio. Portfolio quality may be adversely affected by several factors, including finance recei"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-VRSN-2019-01-02-c46f3b",
+    "ticker": "VRSN",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "65 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-11. Executive changes detected in compensation section. Excerpt: \"s earlier resignation or removal. \n\n2. To approve, on a non-binding, advisory basis, the Company s executive compensation. \n\n3. To ratify the selection of KPMG LLP as the Company s independent registered public accounting firm for the year ending December 31, 2018. \n\n4. To vote on a stockholder proposal, if properly presented at the meeting, requesting that the Board take steps to amend the special meetings B"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-AIZ-2013-01-02-2e708d",
+    "ticker": "AIZ",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"e catastrophes, including terrorist attacks or\naccidents such as airplane crashes. While the frequency and severity of catastrophes are inherently unpredictable, increases in the value and geographic concentration of insured property, the geographic concentration of insured lives, and the\neffects of...\" [2] \"use\nAssurant Specialty Property s lender-placed homeowners and lender-placed manufactured housing insurance products are designe"
+      }
+    ]
+  }
+]

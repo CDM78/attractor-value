@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-HAS-2021-01-04-2c0b25",
+    "ticker": "HAS",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "53 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-01. No obvious executive changes in compensation section. Excerpt: \"2 \n\nExecutive Summary \n\n33 \n\nBusiness and Performance Overview \n\n33 \n\nShareholder Engagement \n\n37 \n\nExecutive Compensation Program Structure and Alignment with Performance \n\n38 \n\nVariable Compensation Outcomes \n\n39 \n\nExecutive Compensation Philosophy and Objectives \n\n42 \n\nStrong Compensation Governance Practices \n\n42 \n\nCompensation Process \n\n43 \n\nPeer Group and Benchmarking to the Market \n\n43 \n\nRole of the "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 4 customer concentration references. Key excerpts: [1] \"son, or by events such as strikes or port delays that interfere with the shipment of goods, particularly from the Far East, during the critical months leading up to the holiday shopping season. \n\nThe concentration of our retail customer base means that economic difficulties or changes in the purchas...\" [2] \"Any customer could reduce its overall purchase of our products and reduce the number and variety of our products that it carries"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-WMB-2019-01-02-f30a0b",
+    "ticker": "WMB",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "50 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-11. No obvious executive changes in compensation section. Excerpt: \"Annual Cash Incentives \n\n40\n\nLong-Term Incentives \n\n45\n\nBenefits \n\n47\n\nAdditional Components of Our Executive Compensation Program \n\n48\n\nMitigating Risk \n\n49\n\nCOMPENSATION AND MANAGEMENT\nDEVELOPMENT COMMITTEE REPORT ON EXECUTIVE COMPENSATION \n\n52 \n\nCOMPENSATION AND MANAGEMENT\nDEVELOPMENT COMMITTEE INTERLOCKS AND INSIDER PARTICIPATION \n\n52 \n\nThe Williams Companies, Inc. 2018 Proxy Statement i \n\nTable of Cont"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"These 2017 impairments are partially offset by the absence of 2016 impairments of our former Canadian operations and certain Mid-Continent assets (see Note 16 Fair Value Measurements, Guarantees, and Concentration of Credit Risk of Notes to Consolidated Financial Statements). \n\nThe Gain on sale of G...\" [2] \"2016 impairment charges associated with our Appalachia Midstream Investments, DBJV, Laurel Mountain, and Ranch Westex equity-met"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-WEC-2013-01-02-9fb59e",
+    "ticker": "WEC",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-KSS-2019-01-02-7b59e1",
+    "ticker": "KSS",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-HIG-2021-12-31-848feb",
+    "ticker": "HIG",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "59 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-29. Executive changes detected in compensation section. Excerpt: \"Report of the Audit Committee \n\n34 \n\nCOMPENSATION MATTERS \n\n35 \n\nItem 3 Advisory Vote to Approve Executive Compensation \n\n35 \n\nCompensation Discussion and Analysis \n\n36 \n\nExecutive Summary \n\n36 \n\nComponents of the Compensation Program \n\n42 \n\nProcess for Determining Senior Executive Compensation (Including NEOs) \n\n51 \n\nPay for Performance \n\n51 \n\nCompensation Policies and Practices \n\n53 \n\nEffect of Tax and Acco"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

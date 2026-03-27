@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-NSC-2021-12-31-5b5c55",
+    "ticker": "NSC",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-31. No obvious executive changes in compensation section. Excerpt: \"accounting firm, as our\nindependent auditors for 2021 \n\nITEM\n3 \n\nApproval\nof advisory resolution on executive compensation \n\nITEM\n4 \n\nA\nshareholder proposal regarding revisions to ownership requirements for proxy access, if properly presented at the meeting \n\nITEM\n5 \n\nA\nshareholder proposal regarding a report on lobbying activity alignment with Paris Climate Agreement, if properly presented\nat the meeting \n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-DVN-2017-06-14-bc2279",
+    "ticker": "DVN",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "38 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2017-04-26. No obvious executive changes in compensation section. Excerpt: \"Items of Business \n\nElect nine directors for a term of one year; \n\nApprove, in an advisory vote, executive compensation; \n\nAdvisory vote on the frequency of the advisory vote on executive compensation; \n\nRatify the appointment of the independent auditors for 2017; \n\nConsider and vote upon the Annual Incentive Compensation Plan; \n\nConsider and vote upon the 2017 Long-Term Incentive Plan; \n\nConsider and vote "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-PRU-2013-01-02-ca3c3b",
+    "ticker": "PRU",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-OKE-2021-12-31-d8417f",
+    "ticker": "OKE",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-07. No obvious executive changes in compensation section. Excerpt: \"nting firm of ONEOK, Inc., for the year ending December 31, 2021.\n\n(3)\n\nTo consider and vote on our executive compensation on a non-binding, advisory basis.\n\n(4)\n\nTo consider and vote on such other business as may come properly before the meeting or any adjournment or postponement of the meeting.\n\nThese matters are described more fully in the accompanying proxy statement.\n\nRecord date \n\nMarch 29, 2021. Only"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BDX-2017-06-14-2b3eaf",
+    "ticker": "BDX",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

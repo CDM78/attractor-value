@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-SYK-2019-01-02-3c83ec",
+    "ticker": "SYK",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "72 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-03-21. No obvious executive changes in compensation section. Excerpt: \"ance Matters \n\n7 \n\nCompensation Discussion and Analysis \n\n10 \n\nCompensation Committee Report \n\n21 \n\nExecutive Compensation \n\n22 \n\nCompensation of Directors \n\n29 \n\nAudit Committee Report \n\n31 \n\nProposal 1 Election of Directors \n\n32 \n\nProposal 2 Ratification of Appointment of Our Independent Registered Public Accounting Firm \n\n34 \n\nProposal 3 Advisory Vote to Approve Named Executive Officer Compensation \n\n35 "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-JEF-2019-01-02-26ea37",
+    "ticker": "JEF",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"ly place orders for products on an as-needed basis and, as a result, their order levels have varied from period to period in the past and may vary significantly in the future. The loss of one or more significant customers, a significant decline in the volume of orders from customers or a significant...\" [2] \"sk tolerance for a certain activity. The framework includes inventory position and exposure limits on a gross and net basis, sce"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-BXP-2013-01-02-370494",
+    "ticker": "BXP",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"ium for their shares of common stock over then-prevailing market prices.\n\nStock Ownership Limit\n\nTo facilitate maintenance of our\nqualification as a REIT and to otherwise address concerns relating to concentration of capital stock ownership, our certificate of incorporation generally prohibits owner...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ITW-2019-01-02-5e1728",
+    "ticker": "ITW",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "50 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-03-23. Executive changes detected in compensation section. Excerpt: \"as ITW s independent registered public accounting firm for 2018; \n\n3.\n\nTo hold an advisory vote on executive compensation; \n\n4.\n\nTo consider a non-binding stockholder proposal to change the ownership threshold to call special stockholder meetings, if properly presented; \n\n5.\n\nTo consider a non-binding stockholder proposal to set Company-wide greenhouse gas emissions targets, if properly presented; and \n\n6.\n\nT"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"'s operating income. \n\nAlthough the Company's financial results are reported in U.S. Dollars, a significant portion of its sales and operating costs are realized in other currencies, with the largest concentration of foreign sales occurring in Europe. The Company's profitability is affected by movem...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-SLM-2014-04-30-7a78db",
+    "ticker": "SLM",
+    "outcome": "mixed",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"gs may not prove to be profitable and may fail to offset the loss of business in the education\ncredit market. \n\nWe are a leading provider of saving- and paying-for-college products and programs. This concentration gives us\na competitive advantage in the marketplace. This concentration also creates r...\""
+      }
+    ]
+  }
+]

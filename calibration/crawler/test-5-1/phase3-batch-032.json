@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-M-2013-01-02-c86774",
+    "ticker": "M",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-NOV-2021-09-20-daa34b",
+    "ticker": "NOV",
+    "outcome": "mixed",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "23 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-09. No obvious executive changes in compensation section. Excerpt: \"Stock Ownership \n\n29\n\nCompensation Discussion and Analysis \n\n31\n\nCompensation Committee Report on Executive Compensation \n\n46\n\nExecutive Compensation \n\n47\n\nCertain Relationships and Related Transactions \n\n59\n\nDirector Compensation \n\n60\n\nSection 16(a) Beneficial Ownership Reporting Compliance \n\n63\n\nStockholder Proposals for the 2022 Annual Meeting \n\n63\n\nAnnual Report and Other Matters \n\n63\n\nTable of Contents"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CTSH-2021-12-31-cb3ed4",
+    "ticker": "CTSH",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "121 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-21. No obvious executive changes in compensation section. Excerpt: \"ment Development and Compensation Committee \n\n28 \n\nCEO Pay Ratio \n\n57 \n\nProposal 2 Advisory Vote on Executive Compensation (Say-on-Pay) \n\n30 \n\nClawback Policy \n\n49 \n\nCompensation Discussion and Analysis (CD&A) \n\n30 \n\nCompensation Consultant \n\n33 \n\nCompensation Program Objectives \n\n30 \n\nCompensation Mix \n\n34 \n\nCompensation Setting Process \n\n32 \n\nDeath Benefits \n\n47 \n\nPrimary Compensation Elements \n\n34 \n\nExec"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EXC-2017-06-14-e56189",
+    "ticker": "EXC",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "26 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2017-03-15. No obvious executive changes in compensation section. Excerpt: \"ers as disclosed in the proxy statement; \n\n4) \n\nAdvise on the frequency of future advisory votes on executive compensation; and \n\n5) \n\nConduct any other business that properly comes before the meeting. \n\nShareholders of record as of March 3, 2017 are entitled to vote at the annual meeting. \n\nOn or about March 15, 2017, we will mail to our shareholders a Notice Regarding the Availability of Proxy Materials, "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"ly operate facilities that are competitive in those markets. Additionally, construction of new generating facilities by Generation in markets in which it currently competes would be subject to market\nconcentration tests administered by FERC. If Generation cannot pass the tests administered by FERC, ...\" [2] \"eparate or otherwise transferring control over base-load capacity), without including those actions proposed by the\nparties mutu"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-CTAS-2021-12-31-ee7087",
+    "ticker": "CTAS",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "low",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "25 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-09-15. No obvious executive changes in compensation section. Excerpt: \"3 \n\nCORPORATE GOVERNANCE \n\n6 \n\nAUDIT COMMITTEE REPORT \n\n10 \n\nCOMPENSATION COMMITTEE REPORT \n\n12 \n\nEXECUTIVE COMPENSATION \n\n13 \n\nPRINCIPAL SHAREHOLDERS \n\n35 \n\nSECURITY OWNERSHIP OF DIRECTOR NOMINEES AND NAMED EXECUTIVE OFFICERS \n\n36 \n\nDELINQUENT SE CTION 16 ( a ) REPORTS \n\n36 \n\nRELATED PERSON TRANSACTIONS \n\n38 \n\nAPPROVAL, ON AN ADVISORY BASIS, OF NAMED EXECUTIVE OFFICER COMPENSATION \n\n39 \n\nRATIFICATION OF AP"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

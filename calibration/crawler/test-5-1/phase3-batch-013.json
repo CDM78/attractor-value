@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-WDC-2015-12-31-7c8fc1",
+    "ticker": "WDC",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 4 customer concentration references. Key excerpts: [1] \"n increase to our customer credit risk given that we service many of the same customers. Any credit losses we may suffer as a result of these increased risks, or as a result of credit losses from any significant customer, especially in situations where there are term extensions under existing contra...\" [2] \"hut down. During that period, WD's ability to manufacture hard drives was significantly constrained, adversely affecting WD's bu"
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-FAST-2021-12-31-c22e24",
+    "ticker": "FAST",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "42 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-02-26. No obvious executive changes in compensation section. Excerpt: \"o approve the compensation of our named executive officers disclosed in this proxy statement \n\n18 \n\nExecutive compensation \n\n19 \n\nSecurity ownership of principal shareholders and management \n\n36 \n\nAdditional matters \n\n38 \n\nHouseholding \n\n38 \n\nDeadlines for receipt of shareholder proposals and nominations for the 202 2 annual meetin g \n\n39 \n\n-1- \n\nTable of Contents \n\nGENERAL INFORMATION ABOUT THE MEETING AND"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"e retailing, could cause them to change. In addition, the market potential of a particular business strategy may vary from expectations due to a change in the marketplace (such as changes in customer concentration or needs), a change in the nature of that business strategy, or weaker than anticipate...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ACN-2015-01-02-ff63ea",
+    "ticker": "ACN",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-STX-2019-01-02-700a3d",
+    "ticker": "STX",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-09-07. No obvious executive changes in compensation section. Excerpt: \"posal, please read our Compensation Discussion and Analysis starting on page 27, which explains our\nexecutive compensation programs and the Compensation Committee s compensation decisions. \n\niv \n\nSEAGATE TECHNOLOGY PLC \n\n2018 Proxy Statement \n\nTable of Contents \n\n2018 NOTICE OF MEETING AND PROXY STATEMENT \n\nRatification of the Appointment of Ernst & Young LLP and Authorization to Set Such Auditors \nRemunera"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"nd unpredictable than the demand for edge compute/client compute products. In some cases, our products manufactured for edge non-compute/client \nnon-compute applications are uniquely configured for a single customer s application, which creates a risk of unwanted and unsellable inventory if the anti...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-VMC-2015-12-31-2525cd",
+    "ticker": "VMC",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "62 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2015-03-27. No obvious executive changes in compensation section. Excerpt: \"NNUAL MEETING AND VOTING \n\n1 \n\nPROPOSAL 1. ELECTION OF DIRECTORS \n\n8 \n\nPROPOSAL 2. ADVISORY VOTE ON EXECUTIVE COMPENSATION (SAY ON PAY) \n\n19 \n\nPROPOSAL 3. RATIFICATION OF APPOINTMENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\n20 \n\nCORPORATE GOVERNANCE OF OUR COMPANY AND PRACTICES OF OUR BOARD OF DIRECTORS \n\n21 \n\nDirector Independence \n\n21\n\nDirector Nomination Process \n\n23\n\nBoard Leadership Structure"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

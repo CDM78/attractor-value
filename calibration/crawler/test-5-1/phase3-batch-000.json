@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-BIIB-2013-01-02-7553e7",
+    "ticker": "BIIB",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-EXPE-2021-12-31-1312f8",
+    "ticker": "EXPE",
+    "outcome": "underperform",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-26. No obvious executive changes in compensation section. Excerpt: \"1 \n\nRole of Peer Groups, Surveys and Benchmarking \n\n41 \n\nCompensation Program Elements \n\n42 \n\nOther Executive Compensation Practices and Policies \n\n48 \n\nChange in Control \n\n49 \n\nSeverance \n\n49 \n\n2021 Compensation Events \n\n50 \n\nCOMPENSATION COMMITTEE REPORT \n\n52 \n\nEXECUTIVE COMPENSATION \n\n53 \n\n20 20 Summary Compensation Table \n\n53 \n\n20 20 Grants of Plan-Based Awards \n\n55 \n\nOutstanding Equity Awards at 20 20 "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-ADM-2021-12-31-cf4a10",
+    "ticker": "ADM",
+    "outcome": "trap",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-26. Executive changes detected in compensation section. Excerpt: \"ents \n\nTable of Contents \n\nCOMPENSATION DISCUSSION AND\nANALYSIS \n\n29 \n\nExecutive Summary \n\n30 \n\nHow Executive Compensation is\nDetermined \n\n33 \n\nComponents of Executive Compensation \n\n34 \n\n2020 Executive Compensation Decisions \n\n36 \n\nPeer Group \n\n45 \n\nBenefits \n\n46 \n\nCompensation Policies and Governance \n\n47 \n\nEmployment Agreements, Severance, and Change in Control Benefits\n\n48 \n\nCompensation/Succession Commit"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-APD-2021-01-04-ca034a",
+    "ticker": "APD",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "43 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-12-09. No obvious executive changes in compensation section. Excerpt: \"rd Structure \n\n11 \n\nBoard Practices, Processes and Policies \n\n15 \n\nCompensation of Directors \n\n16 \n\nEXECUTIVE COMPENSATION \n\n19 \n\nProposal 2. \n\nAdvisory Vote on Executive Officer Compensation \n\n19 \n\nReport of the Management Development and Compensation Committee \n\n20 \n\nCompensation Discussion and Analysis \n\n20 \n\nHighlights of Fiscal 2020 Company Performance and Compensation Actions \n\n21 \n\nFiscal 2020 Execut"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-WM-2013-01-02-349bad",
+    "ticker": "WM",
+    "outcome": "winner",
+    "initial_trajectory": "deteriorating",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings found in trailing 12 months."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  }
+]

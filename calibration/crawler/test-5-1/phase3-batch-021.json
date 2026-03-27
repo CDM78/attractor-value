@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "CASE-RCL-2019-01-02-e8fa2e",
+    "ticker": "RCL",
+    "outcome": "trap",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "65 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-23. No obvious executive changes in compensation section. Excerpt: \"eneral\n\nInformation\" for details. \n\nMeeting Agenda \n\n&middot; \n\nElect directors \n&middot; \n\nApprove executive compensation \n&middot; \n\nRatify Pricewaterhouse Coopers LLP as our independent auditor \n&middot; \n\nOther business that may properly come before the meeting \n\nVoting Matters and Vote Recommendation \n\nPage for\n\nMore\n\nInformation \n\nBoard Vote Recommendation \n\nElection of twelve directors \n\n20 \n\nFOR \n\nV"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-FIS-2019-01-02-c21493",
+    "ticker": "FIS",
+    "outcome": "underperform",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "77 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-20. No obvious executive changes in compensation section. Excerpt: \"Asked Questions\n\n5 \n\nProposal No. \n1: Election of Directors \n\n9 \n\nProposal No. \n2: Advisory Vote on Executive Compensation \n\n16 \n\nProposal No. \n3: Ratification of Independent Registered Public Accounting Firm \n\n18 \n\nProposal No. \n4: Amendment and Restatement of the 2008 Omnibus Incentive Plan \n\n20 \n\nSecurity Ownership of Certain\nBeneficial Owners, Directors and Executive Officers \n\n31 \n\nCertain Information "
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K text."
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-AES-2015-12-31-01124a",
+    "ticker": "AES",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2015-03-09. No obvious executive changes in compensation section. Excerpt: \"t auditors of the Company for the year 2015; \n\n5. \n\nTo approve, on an advisory basis, the Company s executive compensation; \n\n6. \n\nTo approve, on an advisory basis, the Company s nonbinding proposal to allow Stockholders to request special meetings of Stockholders; \n\n7. \n\nTo approve, on an advisory basis, the Company s nonbinding proposal to provide proxy access for Stockholder-nominated director candidates"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"t subsidiary is unable to obtain additional non-recourse debt, such subsidiary may become insolvent, and we may lose our investment in that subsidiary. Additionally, if any of our subsidiaries lose a significant customer, the subsidiary may need to withdraw from a project or restructure the non-reco...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-DVA-2019-01-02-e620c7",
+    "ticker": "DVA",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "medium",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "70 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-27. No obvious executive changes in compensation section. Excerpt: \"37 \n\nCompensation Discussion and Analysis Information \n\n38 \n\nCompensation Committee Report \n\n63 \n\nExecutive Compensation \n\n64 \n\n2017 Summary Compensation Table \n\n64 \n\n2017 Grants of Plan-Based Awards Table \n\n65 \n\n2017 Outstanding Equity Awards at Fiscal Year-End Table \n\n66 \n\n2017 Option Exercises and Stock Vested Table \n\n68 \n\nNo Pension Benefits \n\n68 \n\nNonqualified Deferred Compensation \n\n68 \n\n2017 Nonquali"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"er to as the Existing Geographic Regions). As a result, DMG s exposure to many of the risks described herein is not mitigated by a greater diversification of geographic focus. Furthermore, due to the concentration of DMG s operations in the Existing Geographic Regions, it may be adversely affected b...\""
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-PSA-2019-01-02-5d2aae",
+    "ticker": "PSA",
+    "outcome": "winner",
+    "initial_trajectory": "stable",
+    "initial_confidence": "high",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "33 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-03-16. Executive changes detected in compensation section. Excerpt: \"To elect nine trustees to our board of trustees; \n\n2.\n\nTo vote on an advisory resolution to approve executive compensation; \n\n3.\n\nTo vote on amending the company s Amended and Restated Declaration of Trust to allow shareholders to amend the company s bylaws; \n\n4.\n\nTo ratify the appointment of Ernst & Young LLP as the independent registered public accounting firm for 2018; and \n\n5.\n\nTo transact such other busi"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"t to subject the Company to these provisions of Maryland law, but it could choose to do so in the future without shareholder approval. \n\n&#xB7; \n\nTo protect against the loss of our REIT status due to concentration of ownership levels, our declaration of trust generally limits the ability of a person...\""
+      }
+    ]
+  }
+]
