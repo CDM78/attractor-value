@@ -1,0 +1,48 @@
+============================================================
+  STOCHASTICITY MEASUREMENT (20 cases × 3 runs)
+============================================================
+
+  MC-ARW-2022-03-31: scores=[3.0, 3.0, 3.3] range=0.3 std=0.14 trajs=['stable', 'stable', 'stable']
+  MC-CAR-2022-03-31: scores=[3.5, 3.2, 3.2] range=0.3 std=0.14 trajs=['improving', 'improving', 'stable']
+  MC-CUZ-2020-09-30: scores=[3.1, 3.2, 3.2] range=0.1 std=0.05 trajs=['stable', 'stable', 'stable']
+  MC-CUZ-2022-03-31: scores=[3.0, 3.0, 2.8] range=0.2 std=0.09 trajs=['stable', 'stable', 'deteriorating']
+  MC-ESTC-2020-09-30: scores=[2.3, 2.4, 2.4] range=0.1 std=0.05 trajs=['deteriorating', 'deteriorating', 'deteriorating']
+  MC-HIW-2022-03-31: scores=[3.2, 3.1, 3.1] range=0.1 std=0.05 trajs=['stable', 'stable', 'stable']
+  MC-KBR-2020-09-30: scores=[3.1, 3.3, 3.5] range=0.4 std=0.16 trajs=['stable', 'stable', 'improving']
+  MC-KRC-2020-09-30: scores=[3.2, 3.4, 3.2] range=0.2 std=0.09 trajs=['stable', 'stable', 'stable']
+  MC-LAZ-2020-09-30: scores=[3.0, 3.0, 3.0] range=0.0 std=0.00 trajs=['stable', 'stable', 'stable']
+  MC-MSM-2020-09-30: scores=[3.0, 3.1, 3.1] range=0.1 std=0.05 trajs=['stable', 'stable', 'stable']
+  MC-MTN-2020-09-30: scores=[2.0, 1.8, 2.3] range=0.5 std=0.21 trajs=['deteriorating', 'deteriorating', 'deteriorating']
+  MC-MTN-2022-03-31: scores=[3.4, 3.3, 2.5] range=0.9 std=0.40 trajs=['improving', 'improving', 'deteriorating']
+  MC-NVST-2022-03-31: scores=[3.3, 3.5, 3.3] range=0.2 std=0.09 trajs=['stable', 'improving', 'improving']
+  MC-PK-2020-09-30: scores=[3.0, 3.4, 2.8] range=0.6 std=0.25 trajs=['stable', 'stable', 'deteriorating']
+  MC-PSN-2022-03-31: scores=[2.8, 3.0, 2.9] range=0.2 std=0.08 trajs=['stable', 'stable', 'stable']
+  MC-REXR-2022-03-31: scores=[3.1, 3.6, 3.5] range=0.5 std=0.22 trajs=['stable', 'stable', 'improving']
+  MC-THO-2022-03-31: scores=[3.4, 3.2, 2.9] range=0.5 std=0.21 trajs=['improving', 'improving', 'stable']
+  MC-TKR-2022-03-31: scores=[2.7, 3.0, 2.8] range=0.3 std=0.12 trajs=['deteriorating', 'stable', 'deteriorating']
+  MC-VKTX-2020-09-30: scores=[3.0, 2.8, 3.0] range=0.2 std=0.09 trajs=['stable', 'stable', 'stable']
+  MC-VKTX-2022-03-31: scores=[3.0, 3.0, 3.4] range=0.4 std=0.19 trajs=['stable', 'stable', 'improving']
+
+------------------------------------------------------------
+  Total cases: 20
+  Mean score range: 0.30
+  Max score range:  0.9
+  Min score range:  0.0
+  Mean score std:   0.134
+
+  Grand mean score: 3.03
+  Coefficient of variation: 0.044
+
+  Trajectory unanimous (3/3 agree): 10/20 (50%)
+  Trajectory flipped (det+imp):     1/20 (5%)
+
+============================================================
+  GATE CHECK
+============================================================
+
+  BORDERLINE: Mean range 0.30, agreement 50%
+  → USE 3-RUN MEDIAN for all subsequent phases.
+
+  Pearson r(median_score, forward_return_3yr) = -0.0453, p=0.8473, n=20
+
+  Saved: /home/cm/attractor-value/calibration/retest/stochasticity-raw.csv (60 rows)
