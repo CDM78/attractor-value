@@ -1,0 +1,17 @@
+============================================================
+  INSIDER STANDALONE SIGNAL (Phase 5)
+============================================================
+
+  Form 4 data available for 56 tickers
+  Matched to retest cases: 15
+
+  r(net_value, forward_return_3yr) = 0.3104, p=0.2391, n=15
+  r(buy_sell_ratio, forward_return_3yr) = 0.1898, p=0.6358, n=8
+
+  NET_BUYING: n=2, win_rate=50%, mean_return=+255.8%
+  MIXED: n=2, win_rate=50%, mean_return=+24.7%
+  NET_SELLING: n=11, win_rate=36%, mean_return=+77.9%
+
+  NOTE: The insider data was fetched during the v2 crawler test on a
+  DIFFERENT set of 80 mid-cap cases. Overlap with the 24 retest cases
+  depends on which tickers appear in both selections.
