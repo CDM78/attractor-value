@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-THO-2020-09-30",
+    "cik": "0000730263",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "18 Form 4 filings (18 parsed). 7 open-market purchases ($684K) by KLEIN CHRISTOPHER J, Graves Andrew E, SUWINSKI JAN. 12 sales/dispositions ($1.6M) by . 11 grants/awards. Net direction: MIXED. Net value: $950K selling. Buy/sell ratio: 0.42.",
+        "insider_data": {
+          "filings": 18,
+          "parsed": 18,
+          "purchases": {
+            "count": 7,
+            "shares": 12212,
+            "value": 683893
+          },
+          "sales": {
+            "count": 12,
+            "shares": 30949,
+            "value": 1634187
+          },
+          "grants": 11,
+          "exercises": 0,
+          "other": 3,
+          "net_direction": "MIXED",
+          "net_value": -950294,
+          "buy_sell_ratio": 0.418
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2019-10-30. Executive changes detected in compensation section. Excerpt: \"rincipal functions of our Compensation and Development Committee include to: \n\nEstablish and review executive compensation policies and guiding principles. \n\nReview and approve the compensation of our Chief Executive Officer and evaluate his performance in light of such compensation. \n\nReview and approve the compensation of our Executive Officers. \n\nEvaluate and approve the design of compensation and benefit programs for our Executive Officers. \n\nAssist the Board in fulfilling its oversight resp...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-STAG-2022-03-31",
+    "cik": "0001479094",
+    "sector": "Real Estate",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 4 sales/dispositions ($2.5M) by Chairman and CEO - Butcher Benjamin S. 8 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $2.5M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 4,
+            "shares": 65000,
+            "value": 2544399
+          },
+          "grants": 8,
+          "exercises": 1,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -2544399,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"r derivatives, are entered into with the same lenders or counterparties, and have similar economic features that would cause their inability to meet contractual obligations. The Company mitigates the concentration of credit risk as it relates to financing arrangements by entering into loan syndicati...\" [2] \"through financial statement review, tenant management calls, and press releases. Management believes the current credit risk portfolio is reasonably well diversified and does not contain any unusual concentration of credit risk.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-23. No obvious executive changes in compensation section. Excerpt: \"ng firm for the year ending December 31, 2022; and \n\n3. \n\nthe approval, by non-binding vote, of our executive compensation. \n\nIn addition, stockholders will consider and vote on such other business as may properly come before the annual meeting, including any adjournments or postponements of the meeting. \n\nIf you owned shares of our common stock as of the close of business on March 10, 2022, you can vote those shares by proxy or at the virtual annual meeting. Pursuant to rules promulgated by the...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-MSM-2020-09-30",
+    "cik": "0001003078",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (19 parsed). 2 sales/dispositions ($61K) by SVP, Sales &amp; Customer Success - Martin Edward F Jr. 2 option exercises. Net direction: NET_SELLING. Net value: $61K selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 19,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 2,
+            "shares": 916.283,
+            "value": 60896
+          },
+          "grants": 0,
+          "exercises": 2,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -60896,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2019-12-19. No obvious executive changes in compensation section. Excerpt: \"Statement i \n\nTABLE OF CONTENTS \n\n&#xFEFF; Compensation Consultant \n\n38 \n\n&#xFEFF; Fiscal Year 2019 Executive Compensation \n\n39 \n\n&#xFEFF; Competitive Positioning \n\n46 \n\n&#xFEFF; Executive Incentive Compensation Recoupment Policy \n\n48 \n\n&#xFEFF; Executive Stock Ownership Guidelines \n\n49 \n\n&#xFEFF; Federal Income Tax Deductibility of Executive Compensation \n\n49 \n\n&#xFEFF; COMPENSATION RISK ASSESSMENT \n\n50 \n\n&#xFEFF; COMPENSATION COMMITTEE REPORT \n\n51 \n\n&#xFEFF; EXECUTIVE COMPENSATION \n\n52 \n\n&#xFE...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-MTN-2022-03-31",
+    "cik": "0000812011",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 59 sales/dispositions ($94.5M) by SCHNEIDER HILARY, Exec. Chair of the Board - KATZ ROBERT A, EVP &amp; Chief Financial Officer - Barkin Michael Z. 31 option exercises. Net direction: NET_SELLING. Net value: $94.5M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 59,
+            "shares": 279844,
+            "value": 94466380
+          },
+          "grants": 0,
+          "exercises": 31,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -94466380,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"x stock-based compensation expense \n\n24,395 \n\n21,021 \n\n19,856 \n\nLess: benefit from income taxes \n\n5,871 \n\n5,027 \n\n4,589 \n\nNet stock-based compensation expense \n\n$ \n\n18,524 \n\n$ \n\n15,994 \n\n$ \n\n15,267 \n\nConcentration of Credit Risk The Company s financial instruments that are exposed to concentrations ...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-10-25. No obvious executive changes in compensation section. Excerpt: \"lic accounting firm for the fiscal year ending July 31, 2022 \n\n(3) hold an advisory vote to approve executive compensation and \n\n(4) transact such other business as may properly come before the annual meeting or any adjournments or postponements of the annual meeting. \n\nThese items of business are more fully described in the Proxy Statement accompanying this notice. You will be able to attend the virtual annual meeting online by visiting www.virtualshareholdermeeting.com MTN2021 . You also will ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-LEA-2022-03-31",
+    "cik": "0000842162",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 15 sales/dispositions ($5.2M) by . 7 grants/awards. 9 option exercises. Net direction: NET_SELLING. Net value: $5.2M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 15,
+            "shares": 29992,
+            "value": 5202196
+          },
+          "grants": 7,
+          "exercises": 9,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -5202196,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"a labor agreement, an extension of such agreement or a new agreement on satisfactory terms could adversely affect our financial condition, operating results and cash flows. In addition, if any of our significant customers experience a material work stoppage, such as the General Motors labor strike i...\" [2] \"markets, currency values, monetary unions, international treaties and fiscal policies; \n\ncompetitive conditions impacting us and our key customers and suppliers; \n\nlabor disputes involving us or our significant customers or supp",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-05. No obvious executive changes in compensation section. Excerpt: \"LP as our independent\nregistered public accounting firm, to provide an advisory vote to approve our executive compensation, and to transact any other business properly brought before the meeting. \n\nAs always, we encourage you to vote your shares prior to the Annual Meeting. You may vote your shares through one of the methods described in the enclosed proxy\nstatement. We strongly urge you to read the accompanying proxy statement carefully and to vote FOR the nominees proposed by the Board of Dire...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

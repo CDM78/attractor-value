@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-NEU-2022-03-31",
+    "cik": "0001282637",
+    "sector": "Materials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "9 Form 4 filings (9 parsed). 2 sales/dispositions ($387K) by ROGERS JAMES E. 7 grants/awards. Net direction: NET_SELLING. Net value: $387K selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 9,
+          "parsed": 9,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 2,
+            "shares": 1143,
+            "value": 387458
+          },
+          "grants": 7,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -387458,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"petitors may be able to better withstand changes in conditions within our industry, changes in the prices for raw materials, and changes in general economic conditions. \n\nWe rely on a small number of significant customers concentrated in the lubricant and fuel industries. The loss of sales to any of...\" [2] \", and consumer confidence in future economic conditions. A sudden or protracted downturn in these industries could adversely affect the buying power of, and purchases by, our customers. The loss of a significant customer or a ma",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-11. Executive changes detected in compensation section. Excerpt: \"nt of Independent Registered Public\nAccounting Firm \n\n32 \n\nProposal 3: Advisory Vote on Approval of Executive Compensation (Say-on-Pay) \n\n33 \n\nShareholder Proposals \n\n34 \n\nCertain Matters Relating to Proxy Materials and Annual\nReports \n\n36 \n\nOther Matters \n\n36 \n\nAnnex A: NewMarket Corporation Independence Determination\nGuidelines \n\nA-1 \n\nTable of Contents \n\nPROXY STATEMENT \n\nFOR \n\nANNUAL MEETING OF\nSHAREHOLDERS \n\nOF \n\nNEWMARKET CORPORATION \n\nApproximate date of mailing March 11, 2022 \n\nDate, Tim...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-OLN-2020-09-30",
+    "cik": "0000074303",
+    "sector": "Materials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 6 open-market purchases ($601K) by Sutton Scott McDougald, EVP &amp; COO - VARILEK JAMES A, BUNCH C ROBERT. 5 grants/awards. Net direction: NET_BUYING. Net value: $601K buying. Buy/sell ratio: ∞.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 6,
+            "shares": 55000,
+            "value": 601105
+          },
+          "sales": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "grants": 5,
+          "exercises": 0,
+          "other": 4,
+          "net_direction": "NET_BUYING",
+          "net_value": 601105,
+          "buy_sell_ratio": 999
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"f operations. In addition, our operating results could be adversely affected by increased costs due to increased competition for employees or higher employee turnover, which may result in the loss of significant customer business or increased costs. \n\nPension Plans The impact of declines in global e...\" [2] \"ch as chlorine and chlorinated organics, in substantial quantities to a relatively small number of industrial users. Olin has significant relationships with a few customers including Dow, who was our largest customer by revenue ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-20. Executive changes detected in compensation section. Excerpt: \"ARE AND SUSTAINABILITY \n\n26 \n\nEXECUTIVE OFFICERS \n\n27 \n\nCOMPENSATION DISCUSSION AND ANALYSIS \n\n29 \n\nEXECUTIVE COMPENSATION \n\n43 \n\nPAY RATIO DISCLOSURE \n\n61 \n\nDIRECTOR COMPENSATION \n\n62 \n\nCOMPENSATION COMMITTEE REPORT \n\n65 \n\nITEM 2 PROPOSAL TO CONDUCT AN ADVISORY VOTE TO APPROVE THE COMPENSATION FOR NAMED EXECUTIVE OFFICERS \n\n65 \n\nVote Required for Approval \n\n65 \n\nITEM 3 PROPOSAL TO RATIFY APPOINTMENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\n66 \n\nVote Required for Ratification \n\n67 \n\ni ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-VKTX-2020-09-30",
+    "cik": "0001607678",
+    "sector": "Health Care",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "16 Form 4 filings (16 parsed). 8 sales/dispositions ($1.6M) by LIGAND PHARMACEUTICALS INC, FOEHR MATTHEW W. 3 grants/awards. Net direction: NET_SELLING. Net value: $1.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 16,
+          "parsed": 16,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 8,
+            "shares": 210258,
+            "value": 1643227
+          },
+          "grants": 3,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1643227,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"r income (expense). The cost of securities sold is based on the specific identification method. Interest and dividends on securities classified as available-for-sale are included in interest income.\n\nConcentration of Credit Risk\n\nFinancial instruments, which potentially subject the Company to concen...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-06. No obvious executive changes in compensation section. Excerpt: \"reviewing and recommending to our Board for approval the frequency with which we conduct a vote on executive compensation, taking into account the results of the most recent stockholder advisory vote on the frequency of the vote on executive compensation, and reviewing and approving the proposals regarding the frequency of the vote on executive compensation to be included in our annual meeting proxy statements; and \n\n&#x2022; \n\nreviewing and discussing with management our Compensation Discussion...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-PSN-2020-09-30",
+    "cik": "0000275880",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 1 open-market purchases ($265K) by President &amp; COO - Smith Carey A.. 3 grants/awards. Net direction: NET_BUYING. Net value: $265K buying. Buy/sell ratio: ∞.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 1,
+            "shares": 7500,
+            "value": 265367
+          },
+          "sales": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "grants": 3,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_BUYING",
+          "net_value": 265367,
+          "buy_sell_ratio": 999
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 4 customer concentration references. Key excerpts: [1] \"re not consistent with applicable laws and regulations and result in adjustments to contract costs and mandatory customer refunds. Such adjustments can be applied retroactively, which could result in significant customer refunds, and those refunds would negatively impact our revenue. Receipt of adve...\" [2] \"nt were harmed, our future revenues and cash flows would be adversely affected. \n\nThe U.S. federal government and its agencies, including the military and intelligence community, collectively are our largest customer. In particu",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-10. No obvious executive changes in compensation section. Excerpt: \"tement;\n\n4. A non-binding, advisory vote on the\nfrequency of future advisory votes to approve named executive compensation;\n\n5. The approval of the Employee Stock Purchase Plan; and\n\n6. The transaction of any other business that may properly be brought before the\nannual meeting.\n\nThe Board of Directors recommends that you vote FOR Proposals 1, 2, 3 and 5 and EVERY YEAR for Proposal 4. \n\nRecord Date: \n\nOnly holders of record of the Company s common stock on February 21, 2020 will be entitled to v...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-CXT-2020-09-30",
+    "cik": "0000025445",
+    "sector": "Information Technology",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($80K) by President and CEO - MITCHELL MAX H, Cook Donald G. 9 sales/dispositions ($1.9M) by VP, Business Development - SALOVAARA KRISTIAN ROBERT, VP, CBS, People &amp; Performance - Lavish James A.. 5 grants/awards. 8 option exercises. Net direction: NET_SELLING. Net value: $1.8M selling. Buy/sell ratio: 0.04.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 1700,
+            "value": 79609
+          },
+          "sales": {
+            "count": 9,
+            "shares": 29696,
+            "value": 1917500
+          },
+          "grants": 5,
+          "exercises": 8,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1837891,
+          "buy_sell_ratio": 0.042
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"of which is of such importance that termination would materially affect our business. From time to time, however, we do engage in litigation to protect our intellectual property. \n\nOur Customers \n\nNo customer accounted for more than 10% of our consolidated revenues in 2019, 2018 or 2017. \n\nBacklog \n...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-13. No obvious executive changes in compensation section. Excerpt: \"ces \n\nThe Management Organization and Compensation Committee is firmly committed to implementing an executive compensation program that aligns management and stockholder interests, encourages executives to\ndrive sustainable stockholder value creation, and helps retain key personnel. Key elements of our pay practices are as follows: \n\nWHAT WE DO \n\nWHAT WE DON T DO \n\nPay for performance, aligning\nexecutive pay with Company results and stockholder returns \n\nRequire significant stock\nownership by ex...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

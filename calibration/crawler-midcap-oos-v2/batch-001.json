@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-ADC-2016-03-31",
+    "cik": "0000917251",
+    "sector": "Real Estate",
+    "entry_date": "2016-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 10 open-market purchases ($1.4M) by President and CEO - Agree Joey, Rubenfaer William S., Executive Chairman - AGREE RICHARD. 4 sales/dispositions ($665K) by CFO - Dickman Brian Robert. 10 grants/awards. Net direction: NET_BUYING. Net value: $776K buying. Buy/sell ratio: 2.17.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 10,
+            "shares": 49209,
+            "value": 1440848
+          },
+          "sales": {
+            "count": 4,
+            "shares": 32880,
+            "value": 664619
+          },
+          "grants": 10,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_BUYING",
+          "net_value": 776229,
+          "buy_sell_ratio": 2.168
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"cash equivalents consist of\ncash and money market accounts. The account balances periodically exceed the Federal Deposit Insurance Corporation (\"FDIC\")\ninsurance coverage, and as a result, there is a concentration of credit risk related to amounts on deposit in excess of FDIC insurance\ncoverage. As ...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2016-03-18. No obvious executive changes in compensation section. Excerpt: \"LP as our independent registered public accounting firm for 2016;\n\nTo approve, by non-binding vote, executive compensation;\n\nTo consider and approve an amendment to our Articles of Incorporation, as amended and supplemented (our Charter ) to increase the number of authorized shares of our common stock from 28 million shares to 45 million shares, as set forth in the form of Articles of Amendment attached as Appendix A to the accompanying proxy statement; and\n\nTo consider and approve an amendment ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-VKTX-2022-03-31",
+    "cik": "0001607678",
+    "sector": "Health Care",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "13 Form 4 filings (13 parsed). 1 open-market purchases ($114K) by FOEHR MATTHEW W. 10 sales/dispositions ($646K) by . 6 grants/awards. Net direction: NET_SELLING. Net value: $533K selling. Buy/sell ratio: 0.18.",
+        "insider_data": {
+          "filings": 13,
+          "parsed": 13,
+          "purchases": {
+            "count": 1,
+            "shares": 20000,
+            "value": 113800
+          },
+          "sales": {
+            "count": 10,
+            "shares": 124169,
+            "value": 646456
+          },
+          "grants": 6,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -532656,
+          "buy_sell_ratio": 0.176
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"r income (expense). The cost of securities sold is based on the specific identification method. Interest and dividends on securities classified as available-for-sale are included in interest income.\n\nConcentration of Credit Risk\n\nFinancial instruments, which potentially subject the Company to concen...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-08. No obvious executive changes in compensation section. Excerpt: \"r record of stockholder engagement, will consider the results in making future decisions concerning executive compensation and the frequency of future advisory votes to approve the compensation of our named executive officers.\n\nWhat is the effect of abstentions and broker non-votes?\n\nAbstentions : Under Delaware law (under which Viking is incorporated), withheld votes and abstentions are counted as shares present and entitled to vote at the Annual Meeting, but they are not counted as shares cast...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-ELF-2020-09-30",
+    "cik": "0001600033",
+    "sector": "Consumer Staples",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 16 sales/dispositions ($4.0M) by Milsten Scott, See Remarks - Baruch Richard F Jr, Watson Maureen C.. 8 grants/awards. 3 option exercises. Net direction: NET_SELLING. Net value: $4.0M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 16,
+            "shares": 197647,
+            "value": 3970099
+          },
+          "grants": 8,
+          "exercises": 3,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -3970099,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-07-17. No obvious executive changes in compensation section. Excerpt: \"rs \n\n8 \n\nCompensation Committee report \n\n54 \n\nProposal 1: Election of three class I directors \n\n8 \n\nExecutive compensation tables \n\n55 \n\nNominees \n\n9 \n\nSummary compensation table \n\n55 \n\nContinuing directors \n\n12 \n\nGrants of plan-based awards \n\n56 \n\nOur board \n\n18 \n\nOutstanding awards at fiscal year-end \n\n57 \n\nMembership and key attributes \n\n18 \n\nStock option exercises and stock vested \n\n58 \n\nThe role and responsibilities of our board \n\n19 \n\nAdditional tables \n\n58 \n\nHow our board is organized \n\n2...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-KNSL-2020-09-30",
+    "cik": "0001669162",
+    "sector": "Financials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($394K) by Kronenberg Anne C.. 63 sales/dispositions ($16.7M) by CEO and President - Kehoe Michael P, EVP and COO - Haney Brian D., EVP, CFO and Treasurer - Petrucelli Bryan P.. 5 grants/awards. 8 option exercises. Net direction: NET_SELLING. Net value: $16.3M selling. Buy/sell ratio: 0.02.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 3700,
+            "value": 394239
+          },
+          "sales": {
+            "count": 63,
+            "shares": 110866,
+            "value": 16693791
+          },
+          "grants": 5,
+          "exercises": 8,
+          "other": 8,
+          "net_direction": "NET_SELLING",
+          "net_value": -16299552,
+          "buy_sell_ratio": 0.024
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"or unwilling to perform under the reinsurance contracts. In establishing our reinsurance allowance for amounts deemed uncollectible, we evaluate the financial condition of our reinsurers and monitor concentration of credit risk arising from our exposure to individual reinsurers. To determine if an a...\" [2] \"16.1 million , at December 31, 2019 and 2018 , respectively. Allowances are established for amounts deemed uncollectible. The Company evaluates the financial condition of its reinsurers and monitors concentration of credit risk ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-13. No obvious executive changes in compensation section. Excerpt: \"rve a one-year term until the 2021 Annual Meeting of Stockholders; \n\n2. To hold an advisory vote on executive compensation; \n\n3. To ratify the appointment of KPMG LLP as our independent registered public accounting firm for our fiscal year 2020; and \n\n4. To transact any other business as may properly come before the Annual Meeting and any adjournment or postponement thereof. \n\nRecord Date \n\nYou are entitled to vote at the Annual Meeting and at any adjournment or postponement thereof if you were ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-WEX-2022-03-31",
+    "cik": "0001309108",
+    "sector": "Financials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 38 sales/dispositions ($2.6M) by . 38 option exercises. Net direction: NET_SELLING. Net value: $2.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 38,
+            "shares": 15116,
+            "value": 2551099
+          },
+          "grants": 0,
+          "exercises": 38,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": -2551099,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"r revenue \n\n171,334 \n\n19,062 \n\n46,833 \n\n237,229 \n\nTotal revenues \n\n$ \n\n1,038,395 \n\n$ \n\n367,826 \n\n$ \n\n317,470 \n\n$ \n\n1,723,691 \n\nInterest income \n\n$ \n\n6,249 \n\n$ \n\n1,521 \n\n$ \n\n1,534 \n\n$ \n\n9,304 \n\nNo one customer accounted for more than 10 percent of the total consolidated revenue in 2021, 2020 or 2019....\" [2] \", the majority of the Travel and Corporate Solutions segment charge-offs is associated with the sale of the WEX Latin America business. Refer to Note 5, Sale of Subsidiary, for further information. \n\nConcentration of Credit Risk",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-21. Executive changes detected in compensation section. Excerpt: \"d Practices, Policies , and Processes \n\n31 \n\nDirector Compensation \n\n35 \n\nExecutive Officers \n\n39 \n\nExecutive Compensation \n\n41 \n\nProposal 2 Advisory (Non-Binding) Vote on the Compensation of Our Named Executive Officers \n\n41 \n\nCertain statements in this proxy statement, other than purely historical information, including estimates, projections, statements relating to our business plans, objectives and expected operating results, and the assumptions upon which those statements are based, are for...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "case_id": "MC-LSTR-2022-03-31",
+    "cik": "0000853816",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($380K) by Akbari Dr. Homaira. 11 sales/dispositions ($6.2M) by . 20 grants/awards. Net direction: NET_SELLING. Net value: $5.8M selling. Buy/sell ratio: 0.06.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 2500,
+            "value": 379501
+          },
+          "sales": {
+            "count": 11,
+            "shares": 39482,
+            "value": 6220418
+          },
+          "grants": 20,
+          "exercises": 0,
+          "other": 2,
+          "net_direction": "NET_SELLING",
+          "net_value": -5840918,
+          "buy_sell_ratio": 0.061
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"he accounting policies of the segments are the same as those described in the summary of significant accounting policies. The Company evaluates a segment s performance based on operating income. \n\nNo single customer accounted for more than 10 % of the Company s consolidated revenue in fiscal years 2...\" [2] \"third party capacity providers allows it to efficiently attract and service smaller shippers which may not be as desirable to other large transportation providers (see above under Agent Network ). No customer accounted for more ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-29. No obvious executive changes in compensation section. Excerpt: \"dependent registered public accounting firm for fiscal year\n2022; \n\n(3) To hold an advisory vote on executive compensation; \n\n(4) To consider approval of the Company s 2022 Directors Stock Compensation Plan (the 2022 DSCP ); and \n\n(5) To transact such other business as may properly come before the meeting or any adjournment thereof. \n\nOnly stockholders of record at the close of business on March 16, 2022 will be entitled to notice of, and to vote at, the meeting. A list\nof stockholders eligible ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-AVT-2020-09-30",
+    "cik": "0000008858",
+    "sector": "Information Technology",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 1 open-market purchases ($101K) by Chief Financial Officer - Liguori Thomas. 5 sales/dispositions ($428K) by SVP, Chief Admin Officer - Miller MaryAnn G.. 6 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $327K selling. Buy/sell ratio: 0.24.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 1,
+            "shares": 4000,
+            "value": 100964
+          },
+          "sales": {
+            "count": 5,
+            "shares": 14817,
+            "value": 428181
+          },
+          "grants": 6,
+          "exercises": 1,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -327217,
+          "buy_sell_ratio": 0.236
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"versely affect the Company s business, results of operations, financial condition or liquidity.\n\nSubstantial defaults by the Company s customers or suppliers on its accounts receivable or the loss of significant customers could have a significant negative impact on the Company s business, results of...\" [2] \"ither as a liability or as equity depending on the terms of the acquisition agreement.\n\n48\n\nTable of Contents \n\nAVNET, INC. AND SUBSIDIARIES \n\nNOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) \n\nConcentration of credit risk",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2019-09-30. Executive changes detected in compensation section. Excerpt: \"ing and until their successors have been elected and qualified. \n\n2. To conduct an advisory vote on executive compensation. \n\n3. To ratify the appointment of KPMG LLP as the independent registered public\naccounting firm to audit the consolidated financial statements of Avnet for the fiscal year ending June 27, 2020. \n\n4. To take action with respect to such other matters as may properly come before the\nAnnual Meeting (including postponements and adjournments). \n\nThe\nBoard of Directors has fixed t...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-ESAB-2022-03-31",
+    "cik": "0001877322",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings in trailing 12 months.",
+        "insider_data": null
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K found before entry date.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date.",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-OLLI-2022-03-31",
+    "cik": "0001639300",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 8 sales/dispositions ($224K) by . 8 option exercises. Net direction: NET_SELLING. Net value: $224K selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 8,
+            "shares": 5258,
+            "value": 223757
+          },
+          "grants": 0,
+          "exercises": 8,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -223757,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"te of acquisition to be cash and cash equivalents. Amounts receivable from credit card issuers are typically converted to cash within one to two business days of the original sales transaction.\n\n(g)\n\nConcentration of Credit Risk\n\nA financial instrument which potentially subjects the Company to a con...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-05-05. No obvious executive changes in compensation section. Excerpt: \"d Consultant \n\n19 \n\nCompensation Philosophy \n\n20 \n\nPay Mix \n\n20 \n\nPeer Group \n\n20 \n\nElements of Our Executive Compensation and Benefits Programs \n\n21 \n\nBase Salary \n\n21 \n\nAnnual Incentive Compensation \n\n21 \n\nLong-Term Equity Incentive Compensation \n\n21 \n\nFiscal Year 2020 Grants \n\n22 \n\nCompensation Committee Report \n\n23 \n\nCompensation Committee Interlocks and Insider Participation \n\n23 \n\nSUMMARY COMPENSATION TABLE \n\n24 \n\nFiscal Year 2020 Grants of Plan Based Awards \n\n25 \n\nOutstanding Equity Award...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-ADC-2020-09-30",
+    "cik": "0000917251",
+    "sector": "Real Estate",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 13 open-market purchases ($435K) by Leopold Simon, Lehmkuhl Greg, Frankel Merrie S.. 6 sales/dispositions ($1.3M) by Rossi Jerome R. 9 grants/awards. Net direction: MIXED. Net value: $888K selling. Buy/sell ratio: 0.33.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 13,
+            "shares": 7350,
+            "value": 434742
+          },
+          "sales": {
+            "count": 6,
+            "shares": 16914,
+            "value": 1322423
+          },
+          "grants": 9,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "MIXED",
+          "net_value": -887681,
+          "buy_sell_ratio": 0.329
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"onnection with the payment of the January 3, 2020 dividend. The account balances periodically exceed the Federal Deposit Insurance Corporation ( FDIC ) insurance coverage, and as a result, there is a concentration of credit risk related to amounts on deposit in excess \n\nF-12\n\nTable of Contents \n\n8\n\n...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-23. No obvious executive changes in compensation section. Excerpt: \"our independent registered public accounting firm for 2020; and \n\nTo approve, by non-binding vote, executive compensation; and \n\nTo approve the 2020 Omnibus Incentive Plan. \n\nIn addition, stockholders will consider and vote on such other business as may properly come before the meeting or any adjournment or postponement thereof. \n\nStockholders of record at the close of business on March 6, 2020 will be entitled to notice of and to vote at the annual meeting or at any adjournment or postponement ...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

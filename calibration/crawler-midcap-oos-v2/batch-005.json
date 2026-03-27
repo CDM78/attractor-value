@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-CUZ-2020-09-30",
+    "cik": "0000025232",
+    "sector": "Real Estate",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 1 open-market purchases ($64K) by Executive Vice President - Hickson Richard G IV. 15 sales/dispositions ($2.6M) by Fordham Scott W. 14 grants/awards. 2 option exercises. Net direction: NET_SELLING. Net value: $2.5M selling. Buy/sell ratio: 0.02.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 1,
+            "shares": 2500,
+            "value": 64250
+          },
+          "sales": {
+            "count": 15,
+            "shares": 61896,
+            "value": 2611499
+          },
+          "grants": 14,
+          "exercises": 2,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -2547249,
+          "buy_sell_ratio": 0.025
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-11. No obvious executive changes in compensation section. Excerpt: \"Board of Directors (the Board of Directors or the Board ); \n\n(2) To approve, on an advisory basis, executive compensation, often referred to as say on pay; \n\n(3) To ratify the appointment of Deloitte & Touche LLP ( Deloitte ) as our independent registered public accounting firm for the year ending December 31, 2020; and \n\n(4) To transact any other business as may properly come before the meeting. \n\nAll holders of record of our common stock and limited voting preferred stock at the close of busin...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-ELF-2022-03-31",
+    "cik": "0001600033",
+    "sector": "Consumer Staples",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 45 sales/dispositions ($23.1M) by SVP, Operations - Franks Joshua Allen, Chief Executive Officer - AMIN TARANG, Milsten Scott. 1 grants/awards. 2 option exercises. Net direction: NET_SELLING. Net value: $23.1M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 45,
+            "shares": 754979,
+            "value": 23053248
+          },
+          "grants": 1,
+          "exercises": 2,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -23053248,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"ers, we make investments in working capital to ensure inventory levels can support demand. Fluctuations throughout the year are also driven by the timing of product restocking or rearrangement by our major customers as well as our expansion into new customers. Because a limited number of our retail ...\" [2] \"d us to expand distribution both domestically and internationally. \n\nWalmart and Target accounted for 26% and 22%, respectively, of our net sales in the year ended March 31, 2021. No other individual customer accounted for 10% o",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-07-16. No obvious executive changes in compensation section. Excerpt: \"l 1 Election of Four Class II Directors \n\n10 \n\nCompensation Committee Report \n\n60 \n\nNominees \n\n12 \n\nExecutive Compensation Tables \n\n62 \n\nContinuing Directors \n\n16 \n\nSummary Compensation Table \n\n62 \n\nOur Board of Directors \n\n21 \n\nGrants of Plan-Based Awards \n\n63 \n\nMembership and Key Attributes \n\n21 \n\nOutstanding Awards at Fiscal Year-End \n\n63 \n\nThe Role and Responsibilities of our Board \n\n22 \n\nStock Option Exercises and Stock Vested \n\n65 \n\nHow our Board is Organized \n\n23 \n\nAdditional Tables \n\n65 ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-KNSL-2022-03-31",
+    "cik": "0001669162",
+    "sector": "Financials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 28 sales/dispositions ($4.7M) by CEO and President - Kehoe Michael P, EVP, CFO and Treasurer - Petrucelli Bryan P., EVP and COO - Haney Brian D.. 13 grants/awards. 4 option exercises. Net direction: NET_SELLING. Net value: $4.7M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 28,
+            "shares": 22752,
+            "value": 4730873
+          },
+          "grants": 13,
+          "exercises": 4,
+          "other": 2,
+          "net_direction": "NET_SELLING",
+          "net_value": -4730873,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"owance for credit risk based on historical analysis of credit losses for highly rated companies in the insurance industry. The Company evaluates the financial condition of its reinsurers and monitors concentration of credit risk arising from its exposure to individual reinsurers. As of December 31, ...\" [2] \"rers are unable or unwilling to perform under the reinsurance contracts. In establishing our reinsurance allowance for credit losses, we evaluate the financial condition of our reinsurers and monitor concentration of credit risk",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: \"erve a one-year term until the 2022 annual meeting of stockholders \n\n2. To hold an advisory vote on executive compensation \n\n3. To ratify the appointment of KPMG LLP as our independent registered public accounting firm for our fiscal year 2021 and \n\n4. To transact any other business as may properly come before the Annual Meeting and any adjournment or postponement thereof. \n\nRecord Date \n\nYou are entitled to vote at the Annual Meeting and at any adjournment or postponement thereof if you were a ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-POST-2022-03-31",
+    "cik": "0001530950",
+    "sector": "Consumer Staples",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($245K) by ERB THOMAS C. 1 sales/dispositions ($22K) by HARSHMAN ELLEN F. 6 grants/awards. Net direction: NET_BUYING. Net value: $224K buying. Buy/sell ratio: 11.37.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 2600,
+            "value": 245187
+          },
+          "sales": {
+            "count": 1,
+            "shares": 200,
+            "value": 21573
+          },
+          "grants": 6,
+          "exercises": 0,
+          "other": 3,
+          "net_direction": "NET_BUYING",
+          "net_value": 223614,
+          "buy_sell_ratio": 11.365
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"rnings before interest, income taxes, depreciation and amortization) and revenue multiples, changes in discount rates based on changes in cost of capital (interest rates, etc.) or the bankruptcy of a significant customer. We also continue to evaluate the potential impact of the COVID-19 pandemic on ...\" [2] \"ding tax matters, food safety, advertising and labeling, animal feeding and housing operations and environmental matters; \n\nthe loss of, a significant reduction of purchases by or the bankruptcy of a major customer; \n\nthe failur",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-12-06. No obvious executive changes in compensation section. Excerpt: \"counting firm for the fiscal year ending September 30, 2022 \n\n3. advisory approval of the Company s executive compensation \n\n4. the approval of the Post Holdings, Inc. 2021 Long-Term Incentive Plan and \n\n5. any other business properly introduced at the annual meeting. \n\nThe close of business on November 22, 2021 has been fixed as the record date for the determination of shareholders entitled to receive notice of and to vote at the annual meeting or any adjournment or postponement thereof. This n...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-MSM-2022-03-31",
+    "cik": "0001003078",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 sales/dispositions ($1.4M) by EVP, STRATEGY &amp; MARKETING - BARUCH STEVEN N. 21 option exercises. Net direction: NET_SELLING. Net value: $1.4M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 2,
+            "shares": 16730,
+            "value": 1404547
+          },
+          "grants": 0,
+          "exercises": 21,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1404547,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-12-16. No obvious executive changes in compensation section. Excerpt: \"in Compensation Decisions \n\n41 \n\n&#xFEFF; Compensation Consultant \n\n41 \n\n&#xFEFF; Fiscal Year 202 1 Executive Compensation \n\n42 \n\n&#xFEFF; Competitive Positioning \n\n49 \n\n&#xFEFF; Executive Incentive Compensation Recoupment Policy \n\n50 \n\n&#xFEFF; Executive Stock Ownership Guidelines \n\n51 \n\n&#xFEFF; Federal Income Tax Deductibility of Executive Compensation \n\n51 \n\n&#xFEFF; COMPENSATION RISK ASSESSMENT \n\n52 \n\n&#xFEFF; COMPENSATION COMMITTEE REPORT \n\n54 \n\n&#xFEFF; EXECUTIVE COMPENSATION \n\n55 \n\n&#xFE...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

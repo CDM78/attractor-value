@@ -1,0 +1,208 @@
+[
+  {
+    "case_id": "MC-FR-2022-03-31",
+    "cik": "0000921825",
+    "sector": "Real Estate",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 3 sales/dispositions ($1.7M) by Chief Investment Officer - YAP JOHANNSON L, EVP - East Region - Schultz Peter. 2 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $1.7M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 3,
+            "shares": 29107,
+            "value": 1655496
+          },
+          "grants": 2,
+          "exercises": 1,
+          "other": 10,
+          "net_direction": "NET_SELLING",
+          "net_value": -1655496,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-31. No obvious executive changes in compensation section. Excerpt: \"5\n\nSecurity Ownership of Management and Certain Beneficial\nOwners \n\n47\n\nProposal 2 Advisory Vote on Executive Compensation \n\n48\n\nProposal 3 Ratification of Appointment of Independent Registered Public\n\nAccounting Firm \n\n50\n\nOther Matters \n\n50\n\nSolicitation of Proxies \n\n50\n\nStockholder Proposals \n\n50\n\nIncorporation by Reference \n\n50\n\nAvailability of Proxy Materials \n\n50\n\nOther Business \n\nA-1\n\nAppendix A 2022 Annual Meeting of Stockholders Reservation\nRequest Form \n\nTable of Contents \n\nPROXY STATE...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-POST-2020-09-30",
+    "cik": "0001530950",
+    "sector": "Consumer Staples",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": false,
+        "summary": "No Form 4 filings in trailing 12 months.",
+        "insider_data": null
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K found before entry date.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date.",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-UGI-2022-03-31",
+    "cik": "0000884614",
+    "sector": "Utilities",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($2.6M) by President &amp; CEO - Perreault Roger, HERMANCE FRANK S. 3 sales/dispositions ($8.1M) by Walsh John L. 10 grants/awards. 2 option exercises. Net direction: MIXED. Net value: $5.5M selling. Buy/sell ratio: 0.32.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 68900,
+            "value": 2630148
+          },
+          "sales": {
+            "count": 3,
+            "shares": 178500.4983,
+            "value": 8146055
+          },
+          "grants": 10,
+          "exercises": 2,
+          "other": 0,
+          "net_direction": "MIXED",
+          "net_value": -5515907,
+          "buy_sell_ratio": 0.323
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"stem asset groups within the Midstream & Marketing reportable segment having a carrying value of approximately $ 100 at September 30, 2021. The impairment indicators resulted from the bankruptcy of a significant customer, as well as payment delinquencies resulting from the deterioration in the finan...\" [2] \"ers, 13 of which have transportation contracts extending beyond Fiscal 2022. The majority of these customers are served under transportation contracts having 3- to 20-year terms and all are among the largest customers for Gas Ut",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-12-16. No obvious executive changes in compensation section. Excerpt: \"annual meeting of\nshareholders; \n\n2. an advisory vote on a resolution to approve UGI\nCorporation s executive compensation; \n\n3. the ratification of the\nappointment of Ernst & Young LLP as our independent registered public accounting firm for Fiscal 2022; and \n\n4. the transaction of any other business that may properly come before the meeting.\n\nMonica M. Gaudiosi \n\nCorporate Secretary \n\nImportant Notice Regarding the Availability of Proxy Materials for the \n\nShareholder Meeting to be held on Frid...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-HR-2022-03-31",
+    "cik": "0001360604",
+    "sector": "Real Estate",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "16 Form 4 filings (16 parsed). 4 sales/dispositions ($1.1M) by . 12 grants/awards. Net direction: NET_SELLING. Net value: $1.1M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 16,
+          "parsed": 16,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 4,
+            "shares": 32325,
+            "value": 1084889
+          },
+          "grants": 12,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1084889,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"al estate assets reported in our accompanying consolidated balance sheet by approximately $ 766.9 million as of December 31, 2021, primarily due to the differences in depreciation and amortization. \n\nConcentration of Credit Risk \n\nWe maintain the majority of our cash and cash equivalents at major fi...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-30. Executive changes detected in compensation section. Excerpt: \"e. This responsibility includes listening to and considering our stockholders views and feedback on executive compensation. We review total compensation at year-end in order to ensure that the total compensation for our executives is reflective of both performance for the year and broader peer compensation practices. We have amended our compensation plan over the last several years and believe the results have more closely aligned management incentives with stockholders goals. We are also amendi...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-HALO-2016-03-31",
+    "cik": "0001159036",
+    "sector": "Health Care",
+    "entry_date": "2016-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 1 open-market purchases ($172K) by Chief Financial Officer - Stelzer Laurie. 6 sales/dispositions ($1.1M) by Kelley Kenneth J. 6 grants/awards. 9 option exercises. Net direction: NET_SELLING. Net value: $961K selling. Buy/sell ratio: 0.15.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 1,
+            "shares": 10000,
+            "value": 172384
+          },
+          "sales": {
+            "count": 6,
+            "shares": 68777,
+            "value": 1133277
+          },
+          "grants": 6,
+          "exercises": 9,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -960893,
+          "buy_sell_ratio": 0.152
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"20 \n\n% \n\nFor additional information regarding our revenues from external customers, refer to Note 2, Summary of Significant Accounting Policies Concentrations of Credit Risk, Sources of Supply and Significant Customer s, to our consolidated financial statements. \n\nPatents and Proprietary Rights \n\nPa...\" [2] \"hy for the years ended December 31, 2015 and 2014 . We have no instruments that are classified within Level 3 as of December 31, 2015 and 2014 . \n\nConcentrations of Credit Risk, Sources of Supply and Significant Customers \n\nWe a",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2016-03-23. No obvious executive changes in compensation section. Excerpt: \"CTION OF DIRECTORS \n\n4 \n\nCORPORATE GOVERNANCE \n\n9 \n\nPROPOSAL NO. 2 - ADVISORY (NON-BINDING) VOTE ON EXECUTIVE COMPENSATION \n\n(SAY-ON-PAY) \n\n12 \n\nPROPOSAL NO. 3 - RATIFICATION OF SELECTION OF INDEPENDENT \n\nREGISTERED PUBLIC ACCOUNTING FIRM \n\n13 \n\nREPORT OF THE AUDIT COMMITTEE \n\n15 \n\nPROPOSAL NO. 4 - APPROVAL OF AMENDMENT AND RESTATEMENT OF THE HALOZYME \n\nTHERAPEUTICS, INC. 2011 STOCK PLAN AND APPROVAL OF PERFORMANCE CRITERIA \n\nUNDER SUCH PLAN \n\n16 \n\nPROPOSAL NO. 5 - APPROVAL OF THE HALOZYME THERA...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

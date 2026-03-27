@@ -1,0 +1,642 @@
+[
+  {
+    "case_id": "MC-NEU-2022-03-31",
+    "ticker": "NEU",
+    "cik": "0001282637",
+    "classification": "winner",
+    "alpha_3yr": 0.4663,
+    "forward_return_3yr": 0.7463
+  },
+  {
+    "case_id": "MC-OLN-2020-09-30",
+    "ticker": "OLN",
+    "cik": "0000074303",
+    "classification": "winner",
+    "alpha_3yr": 2.7372,
+    "forward_return_3yr": 3.0372
+  },
+  {
+    "case_id": "MC-VKTX-2020-09-30",
+    "ticker": "VKTX",
+    "cik": "0001607678",
+    "classification": "winner",
+    "alpha_3yr": 0.6021,
+    "forward_return_3yr": 0.9021
+  },
+  {
+    "case_id": "MC-PSN-2020-09-30",
+    "ticker": "PSN",
+    "cik": "0000275880",
+    "classification": "winner",
+    "alpha_3yr": 0.3205,
+    "forward_return_3yr": 0.6205
+  },
+  {
+    "case_id": "MC-CXT-2020-09-30",
+    "ticker": "CXT",
+    "cik": "0000025445",
+    "classification": "winner",
+    "alpha_3yr": 1.8918,
+    "forward_return_3yr": 2.1918
+  },
+  {
+    "case_id": "MC-ADC-2016-03-31",
+    "ticker": "ADC",
+    "cik": "0000917251",
+    "classification": "winner",
+    "alpha_3yr": 0.3351,
+    "forward_return_3yr": 0.7751
+  },
+  {
+    "case_id": "MC-VKTX-2022-03-31",
+    "ticker": "VKTX",
+    "cik": "0001607678",
+    "classification": "winner",
+    "alpha_3yr": 6.77,
+    "forward_return_3yr": 7.05
+  },
+  {
+    "case_id": "MC-ELF-2020-09-30",
+    "ticker": "ELF",
+    "cik": "0001600033",
+    "classification": "winner",
+    "alpha_3yr": 4.6788,
+    "forward_return_3yr": 4.9788
+  },
+  {
+    "case_id": "MC-KNSL-2020-09-30",
+    "ticker": "KNSL",
+    "cik": "0001669162",
+    "classification": "winner",
+    "alpha_3yr": 0.8776,
+    "forward_return_3yr": 1.1776
+  },
+  {
+    "case_id": "MC-WEX-2022-03-31",
+    "ticker": "WEX",
+    "cik": "0001309108",
+    "classification": "trap",
+    "alpha_3yr": -0.4001,
+    "forward_return_3yr": -0.1201
+  },
+  {
+    "case_id": "MC-KNSL-2018-12-31",
+    "ticker": "KNSL",
+    "cik": "0001669162",
+    "classification": "winner",
+    "alpha_3yr": 2.7017,
+    "forward_return_3yr": 3.2817
+  },
+  {
+    "case_id": "MC-BFAM-2022-03-31",
+    "ticker": "BFAM",
+    "cik": "0001437578",
+    "classification": "trap",
+    "alpha_3yr": -0.3226,
+    "forward_return_3yr": -0.0426
+  },
+  {
+    "case_id": "MC-ARW-2020-09-30",
+    "ticker": "ARW",
+    "cik": "0000007536",
+    "classification": "winner",
+    "alpha_3yr": 0.2922,
+    "forward_return_3yr": 0.5922
+  },
+  {
+    "case_id": "MC-LOPE-2022-03-31",
+    "ticker": "LOPE",
+    "cik": "0001434588",
+    "classification": "winner",
+    "alpha_3yr": 0.5017,
+    "forward_return_3yr": 0.7817
+  },
+  {
+    "case_id": "MC-AVTR-2020-09-30",
+    "ticker": "AVTR",
+    "cik": "0001722482",
+    "classification": "trap",
+    "alpha_3yr": -0.3627,
+    "forward_return_3yr": -0.0627
+  },
+  {
+    "case_id": "MC-KBR-2020-09-30",
+    "ticker": "KBR",
+    "cik": "0001357615",
+    "classification": "winner",
+    "alpha_3yr": 1.336,
+    "forward_return_3yr": 1.636
+  },
+  {
+    "case_id": "MC-VVV-2020-09-30",
+    "ticker": "VVV",
+    "cik": "0001674910",
+    "classification": "winner",
+    "alpha_3yr": 0.3933,
+    "forward_return_3yr": 0.6933
+  },
+  {
+    "case_id": "MC-WFRD-2022-03-31",
+    "ticker": "WFRD",
+    "cik": "0001603923",
+    "classification": "winner",
+    "alpha_3yr": 0.3281,
+    "forward_return_3yr": 0.6081
+  },
+  {
+    "case_id": "MC-GNTX-2022-03-31",
+    "ticker": "GNTX",
+    "cik": "0000355811",
+    "classification": "trap",
+    "alpha_3yr": -0.4812,
+    "forward_return_3yr": -0.2012
+  },
+  {
+    "case_id": "MC-THO-2022-03-31",
+    "ticker": "THO",
+    "cik": "0000730263",
+    "classification": "trap",
+    "alpha_3yr": -0.3167,
+    "forward_return_3yr": -0.0367
+  },
+  {
+    "case_id": "MC-PCTY-2022-03-31",
+    "ticker": "PCTY",
+    "cik": "0001591698",
+    "classification": "trap",
+    "alpha_3yr": -0.3696,
+    "forward_return_3yr": -0.0896
+  },
+  {
+    "case_id": "MC-UGI-2020-09-30",
+    "ticker": "UGI",
+    "cik": "0000884614",
+    "classification": "trap",
+    "alpha_3yr": -0.6026,
+    "forward_return_3yr": -0.3026
+  },
+  {
+    "case_id": "MC-SIRI-2020-09-30",
+    "ticker": "SIRI",
+    "cik": "0000908937",
+    "classification": "trap",
+    "alpha_3yr": -0.4567,
+    "forward_return_3yr": -0.1567
+  },
+  {
+    "case_id": "MC-CACC-2022-03-31",
+    "ticker": "CACC",
+    "cik": "0000885550",
+    "classification": "trap",
+    "alpha_3yr": -0.3418,
+    "forward_return_3yr": -0.0618
+  },
+  {
+    "case_id": "MC-ST-2022-03-31",
+    "ticker": "ST",
+    "cik": "0001477294",
+    "classification": "trap",
+    "alpha_3yr": -0.8027,
+    "forward_return_3yr": -0.5227
+  },
+  {
+    "case_id": "MC-CUZ-2020-09-30",
+    "ticker": "CUZ",
+    "cik": "0000025232",
+    "classification": "trap",
+    "alpha_3yr": -0.5875,
+    "forward_return_3yr": -0.2875
+  },
+  {
+    "case_id": "MC-ELF-2022-03-31",
+    "ticker": "ELF",
+    "cik": "0001600033",
+    "classification": "winner",
+    "alpha_3yr": 1.1509,
+    "forward_return_3yr": 1.4309
+  },
+  {
+    "case_id": "MC-KNSL-2022-03-31",
+    "ticker": "KNSL",
+    "cik": "0001669162",
+    "classification": "winner",
+    "alpha_3yr": 0.8545,
+    "forward_return_3yr": 1.1345
+  },
+  {
+    "case_id": "MC-POST-2022-03-31",
+    "ticker": "POST",
+    "cik": "0001530950",
+    "classification": "winner",
+    "alpha_3yr": 0.4,
+    "forward_return_3yr": 0.68
+  },
+  {
+    "case_id": "MC-MSM-2022-03-31",
+    "ticker": "MSM",
+    "cik": "0001003078",
+    "classification": "trap",
+    "alpha_3yr": -0.3685,
+    "forward_return_3yr": -0.0885
+  },
+  {
+    "case_id": "MC-MDU-2022-03-31",
+    "ticker": "MDU",
+    "cik": "0000067716",
+    "classification": "winner",
+    "alpha_3yr": 0.3893,
+    "forward_return_3yr": 0.6693
+  },
+  {
+    "case_id": "MC-CAR-2022-03-31",
+    "ticker": "CAR",
+    "cik": "0000723612",
+    "classification": "trap",
+    "alpha_3yr": -0.9917,
+    "forward_return_3yr": -0.7117
+  },
+  {
+    "case_id": "MC-HXL-2022-03-31",
+    "ticker": "HXL",
+    "cik": "0000717605",
+    "classification": "trap",
+    "alpha_3yr": -0.3592,
+    "forward_return_3yr": -0.0792
+  },
+  {
+    "case_id": "MC-LPX-2022-03-31",
+    "ticker": "LPX",
+    "cik": "0000060519",
+    "classification": "winner",
+    "alpha_3yr": 0.2007,
+    "forward_return_3yr": 0.4807
+  },
+  {
+    "case_id": "MC-EXP-2022-03-31",
+    "ticker": "EXP",
+    "cik": "0000918646",
+    "classification": "winner",
+    "alpha_3yr": 0.449,
+    "forward_return_3yr": 0.729
+  },
+  {
+    "case_id": "MC-FR-2022-03-31",
+    "ticker": "FR",
+    "cik": "0000921825",
+    "classification": "trap",
+    "alpha_3yr": -0.4084,
+    "forward_return_3yr": -0.1284
+  },
+  {
+    "case_id": "MC-POST-2020-09-30",
+    "ticker": "POST",
+    "cik": "0001530950",
+    "classification": "winner",
+    "alpha_3yr": 0.2235,
+    "forward_return_3yr": 0.5235
+  },
+  {
+    "case_id": "MC-UGI-2022-03-31",
+    "ticker": "UGI",
+    "cik": "0000884614",
+    "classification": "trap",
+    "alpha_3yr": -0.367,
+    "forward_return_3yr": -0.087
+  },
+  {
+    "case_id": "MC-HR-2022-03-31",
+    "ticker": "HR",
+    "cik": "0001360604",
+    "classification": "trap",
+    "alpha_3yr": -0.665,
+    "forward_return_3yr": -0.385
+  },
+  {
+    "case_id": "MC-HALO-2016-03-31",
+    "ticker": "HALO",
+    "cik": "0001159036",
+    "classification": "winner",
+    "alpha_3yr": 0.2686,
+    "forward_return_3yr": 0.7086
+  },
+  {
+    "case_id": "MC-NNN-2022-03-31",
+    "ticker": "NNN",
+    "cik": "0000751364",
+    "classification": "trap",
+    "alpha_3yr": -0.331,
+    "forward_return_3yr": -0.051
+  },
+  {
+    "case_id": "MC-AVTR-2022-03-31",
+    "ticker": "AVTR",
+    "cik": "0001722482",
+    "classification": "trap",
+    "alpha_3yr": -0.8007,
+    "forward_return_3yr": -0.5207
+  },
+  {
+    "case_id": "MC-SIRI-2022-03-31",
+    "ticker": "SIRI",
+    "cik": "0000908937",
+    "classification": "trap",
+    "alpha_3yr": -0.9394,
+    "forward_return_3yr": -0.6594
+  },
+  {
+    "case_id": "MC-EXP-2020-09-30",
+    "ticker": "EXP",
+    "cik": "0000918646",
+    "classification": "winner",
+    "alpha_3yr": 0.6291,
+    "forward_return_3yr": 0.9291
+  },
+  {
+    "case_id": "MC-SON-2022-03-31",
+    "ticker": "SON",
+    "cik": "0000091767",
+    "classification": "trap",
+    "alpha_3yr": -0.5249,
+    "forward_return_3yr": -0.2449
+  },
+  {
+    "case_id": "MC-FBIN-2020-09-30",
+    "ticker": "FBIN",
+    "cik": "0001519751",
+    "classification": "trap",
+    "alpha_3yr": -0.4594,
+    "forward_return_3yr": -0.1594
+  },
+  {
+    "case_id": "MC-GPK-2020-09-30",
+    "ticker": "GPK",
+    "cik": "0001408075",
+    "classification": "winner",
+    "alpha_3yr": 0.2813,
+    "forward_return_3yr": 0.5813
+  },
+  {
+    "case_id": "MC-IRDM-2020-09-30",
+    "ticker": "IRDM",
+    "cik": "0001418819",
+    "classification": "winner",
+    "alpha_3yr": 0.4783,
+    "forward_return_3yr": 0.7783
+  },
+  {
+    "case_id": "MC-BFAM-2020-09-30",
+    "ticker": "BFAM",
+    "cik": "0001437578",
+    "classification": "trap",
+    "alpha_3yr": -0.7642,
+    "forward_return_3yr": -0.4642
+  },
+  {
+    "case_id": "MC-HALO-2022-03-31",
+    "ticker": "HALO",
+    "cik": "0001159036",
+    "classification": "winner",
+    "alpha_3yr": 0.3201,
+    "forward_return_3yr": 0.6001
+  },
+  {
+    "case_id": "MC-ST-2020-09-30",
+    "ticker": "ST",
+    "cik": "0001477294",
+    "classification": "trap",
+    "alpha_3yr": -0.4233,
+    "forward_return_3yr": -0.1233
+  },
+  {
+    "case_id": "MC-TNL-2022-03-31",
+    "ticker": "TNL",
+    "cik": "0001361658",
+    "classification": "trap",
+    "alpha_3yr": -0.4811,
+    "forward_return_3yr": -0.2011
+  },
+  {
+    "case_id": "MC-LAZ-2020-09-30",
+    "ticker": "LAZ",
+    "cik": "0001311370",
+    "classification": "trap",
+    "alpha_3yr": -0.3617,
+    "forward_return_3yr": -0.0617
+  },
+  {
+    "case_id": "MC-RLI-2020-09-30",
+    "ticker": "RLI",
+    "cik": "0000084246",
+    "classification": "winner",
+    "alpha_3yr": 0.3226,
+    "forward_return_3yr": 0.6226
+  },
+  {
+    "case_id": "MC-KD-2022-03-31",
+    "ticker": "KD",
+    "cik": "0001867072",
+    "classification": "winner",
+    "alpha_3yr": 1.1133,
+    "forward_return_3yr": 1.3933
+  },
+  {
+    "case_id": "MC-BC-2022-03-31",
+    "ticker": "BC",
+    "cik": "0000014930",
+    "classification": "trap",
+    "alpha_3yr": -0.6143,
+    "forward_return_3yr": -0.3343
+  },
+  {
+    "case_id": "MC-WSC-2020-09-30",
+    "ticker": "WSC",
+    "cik": "0001647088",
+    "classification": "winner",
+    "alpha_3yr": 1.1934,
+    "forward_return_3yr": 1.4934
+  },
+  {
+    "case_id": "MC-HXL-2020-09-30",
+    "ticker": "HXL",
+    "cik": "0000717605",
+    "classification": "winner",
+    "alpha_3yr": 0.6416,
+    "forward_return_3yr": 0.9416
+  },
+  {
+    "case_id": "MC-CAR-2020-09-30",
+    "ticker": "CAR",
+    "cik": "0000723612",
+    "classification": "winner",
+    "alpha_3yr": 5.5271,
+    "forward_return_3yr": 5.8271
+  },
+  {
+    "case_id": "MC-FCN-2020-09-30",
+    "ticker": "FCN",
+    "cik": "0000887936",
+    "classification": "winner",
+    "alpha_3yr": 0.3836,
+    "forward_return_3yr": 0.6836
+  },
+  {
+    "case_id": "MC-REXR-2022-03-31",
+    "ticker": "REXR",
+    "cik": "0001571283",
+    "classification": "trap",
+    "alpha_3yr": -0.7551,
+    "forward_return_3yr": -0.4751
+  },
+  {
+    "case_id": "MC-GXO-2022-03-31",
+    "ticker": "GXO",
+    "cik": "0001852244",
+    "classification": "trap",
+    "alpha_3yr": -0.7322,
+    "forward_return_3yr": -0.4522
+  },
+  {
+    "case_id": "MC-OLLI-2020-09-30",
+    "ticker": "OLLI",
+    "cik": "0001639300",
+    "classification": "trap",
+    "alpha_3yr": -0.4164,
+    "forward_return_3yr": -0.1164
+  },
+  {
+    "case_id": "MC-FBIN-2022-03-31",
+    "ticker": "FBIN",
+    "cik": "0001519751",
+    "classification": "trap",
+    "alpha_3yr": -0.3211,
+    "forward_return_3yr": -0.0411
+  },
+  {
+    "case_id": "MC-PSN-2022-03-31",
+    "ticker": "PSN",
+    "cik": "0000275880",
+    "classification": "winner",
+    "alpha_3yr": 0.25,
+    "forward_return_3yr": 0.53
+  },
+  {
+    "case_id": "MC-THO-2020-09-30",
+    "ticker": "THO",
+    "cik": "0000730263",
+    "classification": "trap",
+    "alpha_3yr": -0.3014,
+    "forward_return_3yr": -0.0014
+  },
+  {
+    "case_id": "MC-STAG-2022-03-31",
+    "ticker": "STAG",
+    "cik": "0001479094",
+    "classification": "trap",
+    "alpha_3yr": -0.4065,
+    "forward_return_3yr": -0.1265
+  },
+  {
+    "case_id": "MC-MSM-2020-09-30",
+    "ticker": "MSM",
+    "cik": "0001003078",
+    "classification": "winner",
+    "alpha_3yr": 0.251,
+    "forward_return_3yr": 0.551
+  },
+  {
+    "case_id": "MC-MTN-2022-03-31",
+    "ticker": "MTN",
+    "cik": "0000812011",
+    "classification": "trap",
+    "alpha_3yr": -0.6652,
+    "forward_return_3yr": -0.3852
+  },
+  {
+    "case_id": "MC-LEA-2022-03-31",
+    "ticker": "LEA",
+    "cik": "0000842162",
+    "classification": "trap",
+    "alpha_3yr": -0.6613,
+    "forward_return_3yr": -0.3813
+  },
+  {
+    "case_id": "MC-CHH-2022-03-31",
+    "ticker": "CHH",
+    "cik": "0001046311",
+    "classification": "trap",
+    "alpha_3yr": -0.3433,
+    "forward_return_3yr": -0.0633
+  },
+  {
+    "case_id": "MC-HR-2020-09-30",
+    "ticker": "HR",
+    "cik": "0001360604",
+    "classification": "trap",
+    "alpha_3yr": -0.793,
+    "forward_return_3yr": -0.493
+  },
+  {
+    "case_id": "MC-LPX-2020-09-30",
+    "ticker": "LPX",
+    "cik": "0000060519",
+    "classification": "winner",
+    "alpha_3yr": 0.5729,
+    "forward_return_3yr": 0.8729
+  },
+  {
+    "case_id": "MC-KBR-2022-03-31",
+    "ticker": "KBR",
+    "cik": "0001357615",
+    "classification": "trap",
+    "alpha_3yr": -0.3699,
+    "forward_return_3yr": -0.0899
+  },
+  {
+    "case_id": "MC-INGR-2022-03-31",
+    "ticker": "INGR",
+    "cik": "0001046257",
+    "classification": "winner",
+    "alpha_3yr": 0.2715,
+    "forward_return_3yr": 0.5515
+  },
+  {
+    "case_id": "MC-LSTR-2022-03-31",
+    "ticker": "LSTR",
+    "cik": "0000853816",
+    "classification": "trap",
+    "alpha_3yr": -0.2842,
+    "forward_return_3yr": -0.0042
+  },
+  {
+    "case_id": "MC-AVT-2020-09-30",
+    "ticker": "AVT",
+    "cik": "0000008858",
+    "classification": "winner",
+    "alpha_3yr": 0.5649,
+    "forward_return_3yr": 0.8649
+  },
+  {
+    "case_id": "MC-ESAB-2022-03-31",
+    "ticker": "ESAB",
+    "cik": "0001877322",
+    "classification": "winner",
+    "alpha_3yr": 1.05,
+    "forward_return_3yr": 1.33
+  },
+  {
+    "case_id": "MC-OLLI-2022-03-31",
+    "ticker": "OLLI",
+    "cik": "0001639300",
+    "classification": "winner",
+    "alpha_3yr": 1.4286,
+    "forward_return_3yr": 1.7086
+  },
+  {
+    "case_id": "MC-ADC-2020-09-30",
+    "ticker": "ADC",
+    "cik": "0000917251",
+    "classification": "trap",
+    "alpha_3yr": -0.432,
+    "forward_return_3yr": -0.132
+  }
+]

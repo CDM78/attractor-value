@@ -1,0 +1,224 @@
+{
+  "results": [
+    {
+      "case_id": "MC-PCTY-2022-03-31",
+      "cik": "0001591698",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "NET_SELLING ($127M) is large but from a high-growth HCM company where exec comp-driven sales are routine; no customer concentration risk found and management stable — enrichment does not alter baseline."
+    },
+    {
+      "case_id": "MC-UGI-2020-09-30",
+      "cik": "0000884614",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Diversified utility customer base (no single customer >10%) and MIXED insider direction (buy/sell 0.64) are both neutral; customer concentration data confirms diversification but does not offset underlying utility sector headwinds."
+    },
+    {
+      "case_id": "MC-SIRI-2020-09-30",
+      "cik": "0000908937",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Only grants detected (no actual open-market buys or sales), so NET_SELLING label is misleading — effectively no insider signal; no customer concentration data and stable management leave baseline unchanged."
+    },
+    {
+      "case_id": "MC-CACC-2022-03-31",
+      "cik": "0000885550",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Heavy NET_SELLING ($75.7M, 66 transactions, zero purchases) from senior officers at a subprime auto lender confirms deteriorating trajectory — insiders exiting a credit-risk-heavy business adds conviction to bearish baseline."
+    },
+    {
+      "case_id": "MC-ST-2022-03-31",
+      "cik": "0001477294",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "NET_SELLING ($25.6M) by CEO and EVP combined with well-diversified customer base (largest at 6%) means concentration is not a risk, but insiders are exiting ahead of sensor/industrial cyclical downturn — reinforces bearish view."
+    },
+    {
+      "case_id": "MC-CUZ-2020-09-30",
+      "cik": "0000025232",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "NET_SELLING ($2.5M) is modest for a REIT with routine comp-related sales; no customer concentration data and stable management — enrichment signals are too weak to alter baseline for this COVID-era office REIT."
+    },
+    {
+      "case_id": "MC-ELF-2022-03-31",
+      "cik": "0001600033",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Walmart (26%) and Target (22%) represent nearly half of revenue — significant concentration risk acknowledged, but NET_SELLING is routine for a fast-growing consumer brand; concentration risk is a known factor already priced into baseline."
+    },
+    {
+      "case_id": "MC-KNSL-2022-03-31",
+      "cik": "0001669162",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Modest NET_SELLING ($4.7M) from C-suite is routine for a specialty insurer with strong underwriting; customer concentration references are about reinsurance counterparty risk monitoring, not revenue concentration — strong baseline unchanged."
+    },
+    {
+      "case_id": "MC-POST-2022-03-31",
+      "cik": "0001530950",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "NET_BUYING ($224K, buy/sell ratio 11.4) is a clear bullish signal — director buying with own money at a consumer staples company with stable management adds conviction to improving trajectory."
+    },
+    {
+      "case_id": "MC-MSM-2022-03-31",
+      "cik": "0001003078",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Minimal NET_SELLING ($1.4M, only 2 sales) from one EVP is noise-level for an industrial distributor; no customer concentration language found and stable management — enrichment provides no signal."
+    },
+    {
+      "case_id": "MC-MDU-2022-03-31",
+      "cik": "0000067716",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Customer concentration confirms utility/contractor base is diversified (not dependent on single customer); modest NET_SELLING ($3.4M) and stable management — enrichment confirms but does not change baseline view."
+    },
+    {
+      "case_id": "MC-CAR-2022-03-31",
+      "cik": "0000723612",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "NET_SELLING ($15.9M) with 11 option exercises followed by immediate sales suggests insiders monetizing post-pandemic rental car boom before normalization — reinforces deteriorating trajectory from peak earnings."
+    },
+    {
+      "case_id": "MC-HXL-2022-03-31",
+      "cik": "0000717605",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Aerospace composites with ~80% of sales to a small set of defense/aero OEMs (Boeing, Lockheed, Spirit, Raytheon) creates extreme concentration risk; CEO selling ($3.3M via exercise-and-sell) while dependent on cyclical aircraft production tilts from stable to deteriorating."
+    },
+    {
+      "case_id": "MC-LPX-2022-03-31",
+      "cik": "0000060519",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Top 10 customers at 43% of sales through wholesale/retail channels shows moderate concentration; NET_SELLING ($6.3M) is routine post-lumber-boom — neither signal is strong enough to alter stable baseline for building products."
+    },
+    {
+      "case_id": "MC-EXP-2022-03-31",
+      "cik": "0000918646",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "No single customer >10% in either cement or aggregates segments confirms diversified infrastructure materials business; NET_SELLING ($18M) via exercise-and-sell is routine comp realization — improving trajectory from infrastructure spending tailwinds intact."
+    },
+    {
+      "case_id": "MC-FR-2022-03-31",
+      "cik": "0000921825",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Modest NET_SELLING ($1.7M, 3 sales) from CIO/EVP is noise for an industrial REIT; no customer concentration data and stable management — enrichment adds no signal to a weakly-assessed deteriorating trajectory driven by rising rate environment."
+    },
+    {
+      "case_id": "MC-POST-2020-09-30",
+      "cik": "0001530950",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "No enrichment data available — no Form 4 filings, no 10-K, no DEF 14A found before entry date; baseline assessment relies entirely on whatever financial data exists with no enrichment possible."
+    },
+    {
+      "case_id": "MC-UGI-2022-03-31",
+      "cik": "0000884614",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "10-K reveals impairment from bankruptcy of a significant customer in Midstream segment plus payment delinquencies — concrete evidence of credit deterioration; MIXED insider trading (CEO buying $2.6M but net selling $5.5M) does not offset this negative signal."
+    },
+    {
+      "case_id": "MC-HR-2022-03-31",
+      "cik": "0001360604",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Executive compensation plan changes detected with explicit acknowledgment of needing to realign management incentives with stockholder goals — signals internal recognition of performance issues; NET_SELLING ($1.1M) and healthcare REIT headwinds reinforce deterioration."
+    },
+    {
+      "case_id": "MC-HALO-2016-03-31",
+      "cik": "0001159036",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "NET_SELLING ($961K) is modest with CFO buying ($172K) partially offsetting — effectively neutral; customer concentration references are about credit risk disclosure rather than specific large customer dependency; biotech trajectory driven by pipeline not these signals."
+    }
+  ]
+}

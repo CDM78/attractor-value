@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-FBIN-2020-09-30",
+    "cik": "0001519751",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 15 sales/dispositions ($34.3M) by Executive Chairman - KLEIN CHRISTOPHER J, Vice President &amp; Controller - Luburic Danny, President, Doors &amp; Security - FINLEY BRETT E. 7 grants/awards. 13 option exercises. Net direction: NET_SELLING. Net value: $34.3M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 15,
+            "shares": 441566,
+            "value": 34305760
+          },
+          "grants": 7,
+          "exercises": 13,
+          "other": 5,
+          "net_direction": "NET_SELLING",
+          "net_value": -34305760,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"channels could adversely affect our results of operations, cash flows and financial condition. The consolidation of distributors or the financial instability or default of a distributor or one of its major customers could potentially cause such a disruption. In addition to our own sales force, we of...\" [2] \"afe brand. This segment sells products principally in the U.S., Canada, Europe, Central America, Japan and Australia. Approximately 13% of 2019 net sales were to international markets. This segment s principal customers are home",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-19. No obvious executive changes in compensation section. Excerpt: \"ypes and Amounts of NEO Compensation Awarded in 2019 \n\n23\n\nCompensation Committee Report \n\n29\n\n2019 EXECUTIVE COMPENSATION \n\n30\n\n2019 Summary Compensation Table \n\n30\n\n2019 Grants of Plan-Based Awards \n\n31\n\nOutstanding Equity Awards at 2019 Fiscal Year-End\n\n32\n\n2019 Option Exercises and Stock Vested \n\n33\n\nRetirement and Post-Retirement Benefits \n\n34\n\n2019 Nonqualified Deferred Compensation \n\n35\n\n2019 Potential Payments Upon Termination or Change in Control \n\n36\n\nCEO PAY RATIO \n\n38\n\nEQUITY COMPENS...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-GPK-2020-09-30",
+    "cik": "0001408075",
+    "sector": "Materials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 7 open-market purchases ($109K) by Venturelli Larry M. 12 sales/dispositions ($4.9M) by EVP and President, Americas - Yost Joseph P. 8 grants/awards. 7 option exercises. Net direction: NET_SELLING. Net value: $4.8M selling. Buy/sell ratio: 0.02.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 7,
+            "shares": 8969.388,
+            "value": 109389
+          },
+          "sales": {
+            "count": 12,
+            "shares": 314039,
+            "value": 4863865
+          },
+          "grants": 8,
+          "exercises": 7,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -4754476,
+          "buy_sell_ratio": 0.022
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"natural gas is discussed in Note 10 in the Notes to Consolidated Financial Statements included herein under Item 8., Financial Statements and Supplementary Data. \n\nBacklog \n\nOrders from the Company s principal customers are manufactured and shipped with minimal lead time. The Company did not have a ...\" [2] \"re made for Variable Consideration based on contract terms and historical experience of actual results and are applied to the performance obligations as they are satisfied. Purchases by the Company s principal customers are manu",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-03. No obvious executive changes in compensation section. Excerpt: \"of Executive Officers \n\n23\n\nPay and Performance \n\n23\n\nKey Compensation Practices \n\n24\n\nOverview of Executive Compensation Components \n\n24\n\nBase Salary \n\n24\n\nShort-Term Cash Incentive \n\n25\n\nLong-Term Incentives \n\n26\n\nHealth and Welfare Benefit Plans \n\n27\n\nPerquisites \n\n27\n\nRetirement Benefits \n\n27\n\nEmployment Agreements and Potential Payments on Termination \n\n28\n\nPolicies Applicable to Executive Officers \n\n29\n\nTiming of Compensation \n\n30\n\nTax Issues \n\n30\n\nConsideration of Most Recent Advisory Sto...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-IRDM-2020-09-30",
+    "cik": "0001418819",
+    "sector": "Communication",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 25 sales/dispositions ($17.2M) by VP Iridium Satellite LLC - Kapalka Timothy, Chief Financial Officer - FITZPATRICK THOMAS, EVP-Government Programs - Scheimreif Scott. 10 option exercises. Net direction: NET_SELLING. Net value: $17.2M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 25,
+            "shares": 609358,
+            "value": 17238853
+          },
+          "grants": 0,
+          "exercises": 10,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": -17238853,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"end-user subscriber equipment and our ability to purchase parts that are periodically subject to shortages resulting from surges in demand, natural disasters or other events; and \n\nreliance on a few significant customers, particularly agencies of the U.S. government, for a substantial portion of our...\" [2] \"nter to Aireon, which are paid monthly. Aireon receivables due to the Company under all agreements totaled $ 1.4 million and $ 1.0 million at December 31, 2019 and 2018, respectively. \n\n16. Segments, Significant Customers, Suppl",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-23. No obvious executive changes in compensation section. Excerpt: \"tion Committee; NGC = Nominating and Corporate Governance Committee; C = Chairman; M = Member \n\nOur Executive Compensation Program \n\nOur executive compensation program is designed to attract, reward and retain a talented, innovative and entrepreneurial team of executives. To do so, we believe that a majority of their target compensation should be based on performance, both of the individual and of the business. We structure our variable compensation programs to recognize both short-term and long...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-BFAM-2020-09-30",
+    "cik": "0001437578",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 19 sales/dispositions ($4.8M) by Chief Financial Officer - BOLAND ELIZABETH J, KONDRACKE MARGUERITE, TOCIO MARY ANN. 10 grants/awards. 2 option exercises. Net direction: NET_SELLING. Net value: $4.8M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 19,
+            "shares": 39374,
+            "value": 4756190
+          },
+          "grants": 10,
+          "exercises": 2,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -4756190,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-27. No obvious executive changes in compensation section. Excerpt: \"e Responsibility \n\n22 \n\nTransactions with Related Persons \n\n25 \n\nStock Ownership Information \n\n26 \n\nExecutive Compensation \n\n28 \n\nCompensation Discussion and Analysis \n\n28 \n\nCompensation Committee Report \n\n38 \n\nSummary Compensation Table \n\n39 \n\nGrants of Plan-Based Awards \n\n40 \n\nOutstanding Equity Awards at Fiscal Year-End \n\n41 \n\nOption Exercises and Stock Vested \n\n42 \n\nNonqualified Deferred Compensation \n\n42 \n\nPotential Payments Upon Termination or Change of Control \n\n43 \n\nCEO Pay Ratio \n\n44 \n\n...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-HALO-2022-03-31",
+    "cik": "0001159036",
+    "sector": "Health Care",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 32 sales/dispositions ($20.6M) by President and CEO - Torley Helen, MATSUI CONNIE, SVP, Chief Technical Officer - LaBarre Michael J.. 23 option exercises. Net direction: NET_SELLING. Net value: $20.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 32,
+            "shares": 507331,
+            "value": 20645135
+          },
+          "grants": 0,
+          "exercises": 23,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -20645135,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"fair values of Level 2 financial instruments provided by our investment manager by comparing these fair values to a third-party pricing source. \n\nConcentrations of Credit Risk, Sources of Supply and Significant Customers \n\nWe are subject to credit risk from our portfolio of cash equivalents and mark...\" [2] \"the accounts receivable balance at December 31, 2020 represents amounts due from Janssen, Roche and Baxalta. \n\nThe following table indicates the percentage of total revenues in excess of 10% with any single customer: \n\nYear Ende",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-25. No obvious executive changes in compensation section. Excerpt: \"TION OF DIRECTORS \n\n4 \n\nCORPORATE GOVERNANCE \n\n15 \n\nPROPOSAL NO. 2 - ADVISORY (NON-BINDING) VOTE ON EXECUTIVE COMPENSATION \n\n(SAY-ON-PAY) \n\n19 \n\nPROPOSAL NO. 3 - RATIFICATION OF SELECTION OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\n20 \n\nREPORT OF THE AUDIT COMMITTEE \n\n21 \n\nEXECUTIVE COMPENSATION AND R ELATED INFORMATION \n\n22 \n\nCERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS \n\n42 \n\nSECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT \n\nAND RELATED STOCKHOLDER MATTERS \n\n43 \n\nSTOCKH...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

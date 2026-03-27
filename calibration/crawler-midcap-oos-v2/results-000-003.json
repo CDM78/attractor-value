@@ -1,0 +1,224 @@
+{
+  "results": [
+    {
+      "case_id": "MC-NEU-2022-03-31",
+      "cik": "0001282637",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "High customer concentration in lubricant/fuel industries is a notable risk amplifier, but small routine insider selling ($387K by one executive) provides no directional signal."
+    },
+    {
+      "case_id": "MC-OLN-2020-09-30",
+      "cik": "0000074303",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Strong NET_BUYING ($601K) by COO and multiple C-suite during COVID trough confirms improving trajectory with high conviction — insiders buying with own money at depressed prices."
+    },
+    {
+      "case_id": "MC-VKTX-2020-09-30",
+      "cik": "0001607678",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "NET_SELLING ($1.6M) driven by Ligand Pharmaceuticals reducing its stake is a large-shareholder portfolio action, not a management signal for this pre-revenue biotech."
+    },
+    {
+      "case_id": "MC-PSN-2020-09-30",
+      "cik": "0000275880",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "President and COO open-market purchase ($265K) during COVID combined with stable US government contract base signals management confidence in recovery trajectory."
+    },
+    {
+      "case_id": "MC-CXT-2020-09-30",
+      "cik": "0000025445",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "No customer exceeds 10% of revenue providing strong diversification; CEO purchased shares but amount is small ($80K) while VP-level selling dominates — net neutral enrichment."
+    },
+    {
+      "case_id": "MC-ADC-2016-03-31",
+      "cik": "0000917251",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": true,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "CEO, Executive Chairman, and board member collectively purchased $1.4M in open-market buys with a 2.17 buy/sell ratio — strong bullish conviction from the top for this net-lease REIT."
+    },
+    {
+      "case_id": "MC-VKTX-2022-03-31",
+      "cik": "0001607678",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Mixed insider activity (one $114K purchase vs $646K in sales) at small dollar amounts is uninformative for a clinical-stage biotech where pipeline outcomes dominate trajectory."
+    },
+    {
+      "case_id": "MC-ELF-2020-09-30",
+      "cik": "0001600033",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "NET_SELLING ($4M) across multiple executives with zero purchases looks concerning in isolation, but for a high-growth consumer staples company this reflects routine equity-compensation monetization."
+    },
+    {
+      "case_id": "MC-KNSL-2020-09-30",
+      "cik": "0001669162",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Massive coordinated C-suite selling ($16.3M by CEO, COO, CFO across 63 transactions) tempers confidence in improving trajectory — likely profit-taking in a fast-growing specialty insurer but scale warrants monitoring."
+    },
+    {
+      "case_id": "MC-WEX-2022-03-31",
+      "cik": "0001309108",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "All selling is option-exercise-related (38 exercises matching 38 sales) which is the most routine form of insider selling; no customer exceeds 10% providing good diversification."
+    },
+    {
+      "case_id": "MC-KNSL-2018-12-31",
+      "cik": "0001669162",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "NET_SELLING ($3.8M) by CEO and others is more moderate than the 2020 snapshot and consistent with early-growth-stage monetization — does not undermine improving trajectory at this phase."
+    },
+    {
+      "case_id": "MC-BFAM-2022-03-31",
+      "cik": "0001437578",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Heavy coordinated selling ($13.5M) by CEO, CFO, and COO with zero insider purchases, combined with detected executive changes, suggests management may lack confidence in post-COVID recovery trajectory."
+    },
+    {
+      "case_id": "MC-ARW-2020-09-30",
+      "cik": "0000007536",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "No customer exceeds 2% of revenue providing exceptional diversification for this IT distributor; C-suite selling ($8.6M) is typical for well-compensated executives at a $25B+ revenue company."
+    },
+    {
+      "case_id": "MC-LOPE-2022-03-31",
+      "cik": "0001434588",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Only the CIO sold shares ($1.6M) with no CEO/CFO activity — a single non-C-suite executive selling provides minimal signal for this education services company."
+    },
+    {
+      "case_id": "MC-AVTR-2020-09-30",
+      "cik": "0001722482",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "The $2.1B in selling (118M shares) is clearly PE-sponsor exit activity post-IPO, not executive sentiment — this structural selling pattern should be excluded from directional analysis."
+    },
+    {
+      "case_id": "MC-KBR-2020-09-30",
+      "cik": "0001357615",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "CFO open-market buying ($201K) is a mildly bullish signal offset by broader selling; significant government customer concentration is a known structural feature that cuts both ways for this defense/engineering firm."
+    },
+    {
+      "case_id": "MC-VVV-2020-09-30",
+      "cik": "0001674910",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "All insider selling is option-exercise-related providing no directional signal; top-5 retail customer dependency is a moderate risk amplifier but no single customer exceeds 10%."
+    },
+    {
+      "case_id": "MC-WFRD-2022-03-31",
+      "cik": "0001603923",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Post-bankruptcy option exercise selling ($6.1M) is expected as restructured equity unlocks; executive changes are consistent with post-restructuring normalization rather than distress."
+    },
+    {
+      "case_id": "MC-GNTX-2022-03-31",
+      "cik": "0000355811",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Heavy CEO and C-suite selling ($7M, zero purchases) combined with extreme customer concentration in three cyclical automakers (VW, Toyota, GM) creates compounding downside risk."
+    },
+    {
+      "case_id": "MC-THO-2022-03-31",
+      "cik": "0000730263",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "MIXED insider signal (board members buying $2.3M vs $6.5M in sales) creates ambiguity rather than conviction for this cyclical RV manufacturer entering a potential demand downturn."
+    }
+  ]
+}

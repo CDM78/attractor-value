@@ -1,0 +1,224 @@
+{
+  "results": [
+    {
+      "case_id": "MC-NNN-2022-03-31",
+      "cik": "0000751364",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue declined 64.7% over period ($539M to $190M quarterly). EPS fell from $1.14 to $0.46, though all 8 quarters remained profitable. Insider data now shows 5 sales/dispositions (154K shares) by EVP/CFO and CEO with zero purchases (buy/sell ratio 0.00), confirming insiders are not signaling confidence. Sale values recorded as $0 suggests these may be grant-related dispositions rather than open-market sales, limiting signal strength. No customer concentration risk found. Management stable. Enrichment confirms the deteriorating baseline."
+    },
+    {
+      "case_id": "MC-AVTR-2022-03-31",
+      "cik": "0001722482",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue declined 64.4% ($5479M to $1950M quarterly). EPS dropped from $0.73 to $0.28. Insider data reveals 23 sales totaling $5.0M by EVP Biopharma Production with zero purchases -- meaningful insider selling during a deteriorating revenue trajectory raises confidence that the decline is structural rather than transient. No customer concentration language found. Stable management. Confidence upgraded from medium to high based on insider selling alignment with financial deterioration."
+    },
+    {
+      "case_id": "MC-SIRI-2022-03-31",
+      "cik": "0000908937",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue grew modestly at 2.0% with quarterly figures in a tight $1348M-$1404M range. All 8 quarters profitable with steady $0.08 EPS. Insider data shows 5 sales ($4.8M) by one director with zero purchases, but for a mature subscription business with this revenue stability, routine insider selling is not a trajectory signal. No customer concentration risk (subscription model). Stable management. A classic stable business with no enrichment signal to alter assessment."
+    },
+    {
+      "case_id": "MC-EXP-2020-09-30",
+      "cik": "0000918646",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": true,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue grew 15.3% ($165M to $253M peak, but pulled back to $190M). All 8 quarters profitable. CEO transition detected in proxy introduces leadership uncertainty. Customer concentration data now available from 10-K: 'No single customer accounted for more than 10%' across cement and aggregates segments -- diversified customer base is a stabilizing factor but does not offset the management transition risk. Insider selling of $1.3M (11 sales, 0 purchases) by multiple executives during a CEO transition is a mild negative. Reclassified from improving to stable: management transition plus the revenue pullback from peak suggest the growth trajectory is uncertain."
+    },
+    {
+      "case_id": "MC-SON-2022-03-31",
+      "cik": "0000091767",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue essentially flat (+3.6%) but profitability collapsed: only 2/8 quarters profitable, latest net income -$85M. EPS swung from -$3.34 to brief profitability and back to -$0.86. Insider data uninformative (0 buys, 0 sells in parsed filings). Customer concentration data from 10-K references 'significant customer wins and losses' and dependence on 'rapidly changing needs of its major customers' -- suggesting customer churn risk that compounds the earnings instability. Stable management. Structural earnings problem persists."
+    },
+    {
+      "case_id": "MC-FBIN-2020-09-30",
+      "cik": "0001519751",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue grew 20.1% ($1376M to $1652M quarterly). All 8 quarters profitable with EPS improving from $0.83 to $1.17. However, insider data now reveals heavy selling: 15 sales totaling $34.3M by Executive Chairman Klein and other officers, with 13 option exercises and zero purchases. Buy/sell ratio 0.00. The scale of insider liquidation ($34.3M) during an improving trajectory warrants caution -- insiders may view current prices as full. Customer concentration references are generic (distributor risk, home segment customers). Confidence downgraded from high to medium due to significant insider selling diverging from the improving financial trend."
+    },
+    {
+      "case_id": "MC-GPK-2020-09-30",
+      "cik": "0001408075",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue grew modestly at 5.4% ($1611M to $1698M). All 8 quarters profitable. EPS relatively flat ($0.19 to $0.23). Insider data now shows a mixed picture: 7 open-market purchases ($109K) by Venturelli alongside 12 sales ($4.9M) by EVP Yost, yielding a buy/sell ratio of 0.02. The presence of at least one buyer is notable but the dollar-weighted ratio heavily favors selling. Customer concentration references are benign ('minimal lead time' orders, 'principal customers'). Stable management. The mixed insider signal is consistent with a stable trajectory -- not enough conviction either way."
+    },
+    {
+      "case_id": "MC-IRDM-2020-09-30",
+      "cik": "0001418819",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue dropped 73.0% ($560M to $151M quarterly). Zero profitable quarters out of 8. Insider data confirms the negative picture: 25 sales totaling $17.2M by VP, CFO, and EVP with zero purchases. Customer concentration data from 10-K is particularly informative: 'reliance on a few significant customers, particularly agencies of the U.S. government, for a substantial portion of our revenue' -- high government concentration creates lumpy, contract-dependent revenue that amplifies the deteriorating trajectory. Persistent losses with concentrated customer risk and heavy insider selling."
+    },
+    {
+      "case_id": "MC-BFAM-2020-09-30",
+      "cik": "0001437578",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue grew 8.5% but profitability deteriorated: only 5/8 quarters profitable, EPS declined from $3.05 to -$0.11. Revenue highly volatile ($472M-$1903M range). Insider data reinforces the negative trajectory: 19 sales totaling $4.8M by CFO and other officers with zero purchases, during a period of declining earnings. No customer concentration risk found (employer-sponsored childcare model). Stable management. Confidence upgraded from medium to high: insider selling aligns with and confirms the earnings deterioration trend."
+    },
+    {
+      "case_id": "MC-HALO-2022-03-31",
+      "cik": "0001159036",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue surged 163.3% ($46M to $122M quarterly). All 8 quarters profitable with $60M latest net income. However, enrichment reveals two risk factors. Customer concentration from 10-K: 'the accounts receivable balance represents amounts due from Janssen, Roche and Baxalta' with individual customers exceeding 10% of revenue -- high pharma customer concentration creates dependency risk. Insider selling is heavy: 32 sales totaling $20.6M by CEO Torley and others, with 23 option exercises and zero purchases. Growth trajectory is clear but confidence downgraded from high to medium given concentrated customer base and significant insider liquidation during the growth phase."
+    },
+    {
+      "case_id": "MC-ST-2020-09-30",
+      "cik": "0001477294",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue grew 36.7% ($577M to $788M quarterly). Turnaround from unprofitable (-$0.27 EPS) to consistent profits ($0.49 EPS). Customer concentration from 10-K is reassuring: 'largest customer accounted for approximately 7% of net revenue' with 'relationships with top ten customers for an average of 30 years' -- well-diversified and deeply embedded customer base supports durability of the turnaround. Insider selling ($1.3M, 15 sales) is modest relative to company size and typical for grant-vesting programs. Stable management. Enrichment confirms the improving baseline."
+    },
+    {
+      "case_id": "MC-TNL-2022-03-31",
+      "cik": "0001361658",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Revenue declined 64.3% ($2264M to $809M quarterly). EPS fell from $2.30 to $0.59 though all 8 quarters remained profitable. Executive changes detected in proxy add uncertainty. Customer concentration from 10-K is benign: 'No single customer, developer, or group accounts for more than 10% of our revenues' -- diversified base in timeshare/hospitality. Insider selling ($1.9M, 10 sales by one director) is moderate. The revenue decline combined with management transition maintains the deteriorating classification."
+    },
+    {
+      "case_id": "MC-LAZ-2020-09-30",
+      "cik": "0001311370",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue declined 48.0% on headline but EPS remained steady ($1.22 to $0.66, cyclical pattern). All 8 quarters profitable. Revenue pattern is lumpy rather than structurally declining -- typical for advisory/financial services. Insider selling ($6.6M, 5 sales by President and General Counsel) is notable but expected for a financial services firm where compensation is equity-heavy. No customer concentration language found (diversified advisory client base). Stable management. The cyclical revenue pattern and steady earnings power support stable classification."
+    },
+    {
+      "case_id": "MC-RLI-2020-09-30",
+      "cik": "0000084246",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue declined 36.9% on headline but EPS actually improved ($0.68 to $0.93). All 8 quarters profitable. Revenue volatility is typical for insurance (investment income variability). Insider data is uniquely clean: 0 purchases, 0 sales, only 3 'other' transactions -- insiders are neither buying nor selling, consistent with a steady-state business where management sees no reason to transact. No customer concentration language (insurance portfolio naturally diversified). Stable management. Confidence upgraded from medium to high: the absence of any insider selling during revenue volatility confirms underlying stability."
+    },
+    {
+      "case_id": "MC-KD-2022-03-31",
+      "cik": "0001867072",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue declined 3.2% with persistent large losses: 0/4 profitable quarters, latest -$692M net loss. EPS deeply negative throughout (-$3.08 to -$10.35). Recent IT spinoff with no proxy available. Insider data is mixed: CFO Wyshner made 2 open-market purchases ($248K) while 4 sales ($1.1M) occurred, yielding a 0.22 buy/sell ratio. The CFO buying is a mild positive but is dwarfed by the scale of losses. Customer concentration from 10-K warns of 'loss of business from any of our major customers' risk and 'significant portion of revenue coming from global customers' -- concentrated enterprise client base adds fragility to an already loss-making business. No proxy found (new entity). Persistent massive losses dominate."
+    },
+    {
+      "case_id": "MC-BC-2022-03-31",
+      "cik": "0000014930",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue surged 276% over the period. EPS improved dramatically from $2.29 to $7.57. All 8 quarters profitable with $593M latest net income. Insider selling ($9.7M, 21 sales by VP/Controller, CFO, and General Counsel) is notable in absolute terms but proportionate for a company generating $593M quarterly net income -- represents routine compensation-related liquidation rather than a bearish signal. No customer concentration language found. Stable management. Very strong growth and earnings expansion trajectory is not contradicted by enrichment."
+    },
+    {
+      "case_id": "MC-WSC-2020-09-30",
+      "cik": "0001647088",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue grew 62.5% ($257M to $417M quarterly). Profitability uneven (6/8 quarters profitable) with latest quarter showing -$0.03 EPS loss. Customer concentration from 10-K is highly favorable: 'No single customer accounted for more than 1.5% of receivables' and 'no one customer accounted for more than 10% of revenue' for three consecutive years -- extremely diversified customer base in modular space leasing supports revenue durability. Insider selling ($5.1M, 4 sales) is modest for a growth-phase company. Stable management. Growth momentum is clear and supported by diversified customer base, though quarterly unevenness keeps confidence at medium."
+    },
+    {
+      "case_id": "MC-HXL-2020-09-30",
+      "cik": "0000717605",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue declined 24.2% ($379M to $287M quarterly). EPS deteriorated from $0.94 to $0.12 with one unprofitable quarter. Customer concentration from 10-K is a critical risk factor: 'about 80% of net sales' from composite materials are 'highly dependent upon the number of large commercial aircraft produced,' with significant customers including Boeing, Airbus, and defense primes. Extreme aerospace concentration explains the revenue decline (COVID-era production cuts) and creates ongoing dependency risk. Insider data shows a mixed signal: CEO Stanage made a $903K open-market purchase while Merlot sold $966K (buy/sell ratio 0.93) -- near parity, but CEO buying during a downturn is notable. Despite the CEO buy signal, the structural aerospace concentration and revenue/earnings decline maintain the deteriorating classification."
+    },
+    {
+      "case_id": "MC-CAR-2020-09-30",
+      "cik": "0000723612",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue declined 39.0% ($2513M to $1534M). Only 2/8 quarters profitable with severe losses (EPS -$8.96 to -$6.91 in loss quarters). Executive changes detected in proxy compound the negative picture. Insider data reveals a striking divergence: SRS Investment Management made 20 open-market purchases totaling $45.4M, creating a massive buy/sell ratio of 151.4. However, this is a single activist/institutional holder, not broad-based insider buying -- and Executive Chairman Hees sold $300K. The activist accumulation during heavy losses and management turnover is noted but does not override the severe financial deterioration (6 loss quarters out of 8). No customer concentration found (car rental). Deteriorating classification maintained."
+    },
+    {
+      "case_id": "MC-FCN-2020-09-30",
+      "cik": "0000887936",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue grew a modest 2.7% with quarterly figures in a tight $593M-$622M range. All 8 quarters profitable with steady EPS ($1.27 to $1.35). Customer concentration from 10-K confirms stability: 'We do not have a single customer that represents 10% or more of our consolidated revenues' -- well-diversified professional services client base. Insider selling ($4.1M, 13 sales) is routine for a consulting firm with equity compensation. Stable management. Textbook stable trajectory fully confirmed by enrichment data showing diversified revenues and no red flags."
+    }
+  ]
+}

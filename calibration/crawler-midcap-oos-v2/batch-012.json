@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-REXR-2022-03-31",
+    "cik": "0001571283",
+    "sector": "Real Estate",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 4 sales/dispositions ($9.7M) by General Counsel &amp; Secretary - Lanzer David E., Co-CEO, Co-President - Frankel Michael S.. 5 grants/awards. 3 option exercises. Net direction: NET_SELLING. Net value: $9.7M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 4,
+            "shares": 141217,
+            "value": 9733413
+          },
+          "grants": 5,
+          "exercises": 3,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": -9733413,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-30. No obvious executive changes in compensation section. Excerpt: \"3 INCENTIVE AWARD PLAN \n\n32 \n\nEXECUTIVE OFFICERS \n\n46 \n\nCOMPENSATION DISCUSSION AND ANALYSIS \n\n48 \n\nEXECUTIVE COMPENSATION \n\n48 \n\nCOMPENSATION COMMITTEE REPORT \n\n69 \n\nSUMMARY COMPENSATION TABLE \n\n70 \n\nGRANTS OF PLAN-BASED AWARDS FOR 2020 \n\n72 \n\nOUTSTANDING EQUITY AWARDS AT DECEMBER 31, 2020 \n\n77 \n\nOPTION EXERCISES AND STOCK VESTED DURING 2020 \n\n79 \n\nPOTENTIAL PAYMENTS UPON TERMINATION OR CHANGE IN CONTROL \n\n79 \n\nCEO PAY RATIO \n\n85 \n\nEQUITY COMPENSATION PLAN INFORMATION \n\n86 \n\nSTOCK OWNERSHIP \n\n8...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-GXO-2022-03-31",
+    "cik": "0001852244",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 13 sales/dispositions ($558.0M) by Ashe Gena L, BRADLEY S JACOBS, Jacobs Private Equity, LLC. 14 option exercises. Net direction: NET_SELLING. Net value: $558.0M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 13,
+            "shares": 6462135,
+            "value": 557968888
+          },
+          "grants": 0,
+          "exercises": 14,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -557968888,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"ogistics services. \n\nWe strive to provide all of our customers with consistently high levels of service and cutting-edge automation managed by our proprietary technology. We also collaborate with our largest customers on planning and forecasting and provide assistance with network optimization, work...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date.",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-OLLI-2020-09-30",
+    "cik": "0001639300",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 17 sales/dispositions ($10.5M) by HENDRICKSON THOMAS, SVP, Merchandising - McLain Kevin, VP, CIO - Kraus Larry. 16 option exercises. Net direction: NET_SELLING. Net value: $10.5M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 17,
+            "shares": 121436,
+            "value": 10507584
+          },
+          "grants": 0,
+          "exercises": 16,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -10507584,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"te of acquisition to be cash and cash equivalents. Amounts receivable from credit card issuers are typically converted to cash within one to two business days of the original sales transaction.\n\n(g)\n\nConcentration of Credit Risk\n\nA financial instrument which potentially subjects the Company to a con...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-05-08. No obvious executive changes in compensation section. Excerpt: \"d Consultant \n\n17 \n\nCompensation Philosophy \n\n18 \n\nPay Mix \n\n18 \n\nPeer Group \n\n19 \n\nElements of Our Executive Compensation and Benefits Programs \n\n19 \n\nBase Salary \n\n19 \n\nAnnual Incentive Compensation \n\n19 \n\nLong-Term Equity Incentive Compensation \n\n20 \n\nFiscal Year 2019 Grants \n\n20 \n\nCompensation Committee Report \n\n22 \n\nCompensation Committee Interlocks and Insider Participation \n\n22 \n\nSUMMARY COMPENSATION TABLE \n\n23 \n\nPotential Payments Upon Termination of Employment or Change in Control \n\n30 ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-FBIN-2022-03-31",
+    "cik": "0001519751",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 19 sales/dispositions ($9.1M) by SVP Ops &amp;Supply Chain Strategy - Thomas Martin. 19 grants/awards. Net direction: NET_SELLING. Net value: $9.1M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 19,
+            "shares": 101828,
+            "value": 9068207
+          },
+          "grants": 19,
+          "exercises": 0,
+          "other": 6,
+          "net_direction": "NET_SELLING",
+          "net_value": -9068207,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"rsely affect our results of operations, cash flows and financial condition. \n\n9 \n\nThe consolidation of distributors or retailers or the financial instability or default of a distributor or one of its major customers could potentially cause such a disruption. In addition to our own sales force, we of...\" [2] \"20. This segment sells products principally in the U.S., Canada, Europe, Central America, Japan and Australia. Approximately 10% of 2021 net sales were to international markets. This segment&#x2019;s principal customers are home",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-21. No obvious executive changes in compensation section. Excerpt: \"ypes and Amounts of NEO Compensation Awarded in 2021 \n\n26\n\nCompensation Committee Report \n\n32\n\n2021 EXECUTIVE COMPENSATION \n\n33\n\n2021 Summary Compensation Table \n\n33\n\n2021 Grants of Plan-Based Awards \n\n34\n\nOutstanding Equity Awards at 2021 Fiscal Year-End\n\n35\n\n2021 Option Exercises and Stock Vested \n\n37\n\nRetirement and Post-Retirement Benefits \n\n37\n\n2021 Nonqualified Deferred Compensation \n\n38\n\n2021 Potential Payments Upon Termination or Change in Control \n\n39\n\nCEO PAY RATIO \n\n41\n\nAUDIT COMMITTE...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-PSN-2022-03-31",
+    "cik": "0000275880",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($1.6M) by Chief Financial Officer - Ball George L., President &amp; CEO - Smith Carey A.. 16 sales/dispositions ($3.9M) by . 9 grants/awards. 8 option exercises. Net direction: MIXED. Net value: $2.2M selling. Buy/sell ratio: 0.42.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 50000,
+            "value": 1645297
+          },
+          "sales": {
+            "count": 16,
+            "shares": 112240,
+            "value": 3874348
+          },
+          "grants": 9,
+          "exercises": 8,
+          "other": 0,
+          "net_direction": "MIXED",
+          "net_value": -2229051,
+          "buy_sell_ratio": 0.425
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"re not consistent with applicable laws and regulations and result in adjustments to contract costs and mandatory customer refunds. Such adjustments can be applied retroactively, which could result in significant customer refunds, and those refunds would negatively impact our revenue. Receipt of adve...\" [2] \"nt were harmed, our future revenues and cash flows would be adversely affected. \n\nThe U.S. federal government and its agencies, including the military and intelligence community, collectively are our largest customer. In particu",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-02. Executive changes detected in compensation section. Excerpt: \"nd environments that improve the quality of life for the communities we serve.\n\nWe also updated our executive compensation policies to tie a portion of our CEO and named executive officers annual bonuses to diversity, one of our critical core values. In addition, we established targets for enhancing gender diversity, improving ethnic/racial diversity, and reducing absolute greenhouse gas emissions by 20 percent by 2025. These goals link our ESG initiatives to quantifiable targets.\n\nWe are proud ...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

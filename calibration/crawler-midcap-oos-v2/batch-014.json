@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-CHH-2022-03-31",
+    "cik": "0001046311",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 12 sales/dispositions ($1.6M) by Senior Vice President - Oaksmith Scott E. 2 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $1.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 12,
+            "shares": 11226,
+            "value": 1608117
+          },
+          "grants": 2,
+          "exercises": 1,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1608117,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: \"lders or until their successors are elected and qualified \n\n2 \n\nTo hold an advisory vote to approve executive compensation of our named executive officers \n\n3 \n\nTo ratify the appointment of Ernst Young LLP as the Company s independent registered public accounting firm for the fiscal year ending December 31, 2021 and \n\n4 \n\nTo transact other business properly coming before the Annual Meeting. \n\nShareholders of record who owned shares of the Company's common stock ( Common Stock ) as of the close o...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-HR-2020-09-30",
+    "cik": "0001360604",
+    "sector": "Real Estate",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "17 Form 4 filings (17 parsed). 5 open-market purchases ($166K) by Chief Financial Officer - Milligan Robert A, FIX WARREN D, BLAIR W BRADLEY II. 8 sales/dispositions ($9.6M) by Chief Executive Officer - PETERS SCOTT D. 12 grants/awards. Net direction: NET_SELLING. Net value: $9.4M selling. Buy/sell ratio: 0.02.",
+        "insider_data": {
+          "filings": 17,
+          "parsed": 17,
+          "purchases": {
+            "count": 5,
+            "shares": 6750,
+            "value": 166088
+          },
+          "sales": {
+            "count": 8,
+            "shares": 323307,
+            "value": 9562787
+          },
+          "grants": 12,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -9396700,
+          "buy_sell_ratio": 0.017
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"l estate assets reported in our accompanying consolidated balance sheet by approximately $ 606.6 million as of December 31, 2019 , primarily due to the differences in depreciation and amortization. \n\nConcentration of Credit Risk \n\nWe maintain the majority of our cash and cash equivalents at major fi...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-29. No obvious executive changes in compensation section. Excerpt: \"e. This responsibility includes listening to and considering our stockholders views and feedback on executive compensation. We review total compensation at year-end in order to ensure that the total compensation for executives is reflective of both performance for the year and broader peer compensation practices. We have amended our compensation plan over the last several years and believe the results have closely aligned management with stockholders. \n\n2020 Annual Meeting of Stockholders \n\nOn b...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-LPX-2020-09-30",
+    "cik": "0000060519",
+    "sector": "Materials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 5 sales/dispositions ($2.1M) by LANDGRAF KURT M, COOK GARY. 8 option exercises. Net direction: NET_SELLING. Net value: $2.1M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 5,
+            "shares": 71296,
+            "value": 2092111
+          },
+          "grants": 0,
+          "exercises": 8,
+          "other": 2,
+          "net_direction": "NET_SELLING",
+          "net_value": -2092111,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"in a broad customer base and a balanced approach to national distribution through both wholesale and retail channels. In 2019 , our top ten customers accounted for approximately 42% of our sales. Our principal customers include the following: \n\nWholesale distribution companies, which supply building...\" [2] \"d outdoor structures markets. In addition to our U.S. operations, the Company also maintains manufacturing facilities in Canada, Chile, and Brazil through foreign subsidiaries and joint ventures. The principal customers for our ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-09. No obvious executive changes in compensation section. Excerpt: \"non-binding, advisory\nvote on the compensation of our named executive officers. We believe that our executive compensation programs must attract, retain\nand motivate our management team to lead our company to sustainable financial performance that furthers the long-term interests\nof LP and its stockholders. Stockholders approved the 2018 named executive officer compensation at the 2019 Annual Stockholders\nmeeting by a favorable vote of 91 percent of the votes cast. Additional information regardi...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-KBR-2022-03-31",
+    "cik": "0001357615",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 20 sales/dispositions ($2.5M) by Chief Digital &amp; Development - Conlon Gregory Sean. Net direction: NET_SELLING. Net value: $2.5M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 20,
+            "shares": 49898,
+            "value": 2478795
+          },
+          "grants": 0,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -2478795,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"l performance. \n\nOur results of operations and cash flows depend on the award of new contracts and the timing of the performance of these contracts. \n\nA loss, cancellation or delay in projects by our significant customers in the future could negatively affect our financial performance. \n\nIf we are u...\" [2] \"imize their return on investment. \n\nOther. Our non-core Other segment includes corporate expenses and selling, general and administrative expenses not allocated to the core business segments above. \n\nSignificant Customers \n\nWe p",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-05. No obvious executive changes in compensation section. Excerpt: \"5 \n\nSecurity Ownership of Certain Beneficial Owners and Management \n\n37 \n\nExecutive Officers \n\n38 \n\nExecutive Compensation \n\n41 \n\nProposal No. 2 — Advisory Vote to Approve Named Executive Officer Compensation \n\n42 \n\nExecutive Compensation \n\n42 \n\nCompensation Discussion and Analysis \n\n43 \n\nExecutive Summary \n\n43 \n\nOverview of Executive Compensation Philosophy, Policies and Practices \n\n46 \n\nSummary of 2020 Target Compensation of Named Executive Officers \n\n50 \n\nElements of Compensation \n\n50 \n\nOther...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-INGR-2022-03-31",
+    "cik": "0001046257",
+    "sector": "Consumer Staples",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 11 sales/dispositions ($103K) by SVP and President, EMEA - Perez y Landazuri Pierre, Sr. VP and Pres, APAC - Bastos-Licht Valdirene, SVP, Chief Comm &amp; Sust Officer - Fernandes Larry. 8 grants/awards. Net direction: NET_SELLING. Net value: $103K selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 11,
+            "shares": 1236.1275,
+            "value": 103291
+          },
+          "grants": 8,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -103291,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"urable events in any one country would not have a material adverse effect on Ingredion s operations as a whole. Additionally, Ingredion believes there is no significant concentration of risk with any single customer or supplier whose failure or non-performance would materially affect Ingredion s res...\" [2] \"3 \n\nFood and Beverage Ingredients \n\n71 \n\n74 \n\n67 \n\n66 \n\n68 \n\nAnimal Nutrition\n\n11 \n\n11 \n\n17 \n\n5 \n\n7 \n\nOther\n\n18 \n\n15 \n\n16 \n\n29 \n\n25 \n\nTotal Net sales\n\n100 \n\n%\n\n100 \n\n%\n\n100 \n\n%\n\n100 \n\n%\n\n100 \n\n%\n\nNo customer accounted for 10 per",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-07. No obvious executive changes in compensation section. Excerpt: \"4\n\nDirector Compensation \n\n20\n\nSECURITY\nOWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT \n\n23\n\nEXECUTIVE\nCOMPENSATION \n\n25\n\nCompensation Discussion and Analysis \n\n25\n\nFiscal 2020 Summary Compensation Table \n\n40\n\nGrants of Plan-Based Awards in Fiscal 2020 \n\n42\n\nOutstanding Equity Awards at 2020 Fiscal Year-End \n\n43\n\nOption Exercises and Stock Vested in Fiscal 2020 \n\n45\n\nPension Benefits in Fiscal 2020 \n\n45\n\nNonqualified Deferred Compensation in Fiscal 2020 \n\n46\n\nPotential Payments upon Termi...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

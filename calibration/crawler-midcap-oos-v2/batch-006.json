@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-MDU-2022-03-31",
+    "cik": "0000067716",
+    "sector": "Utilities",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 9 sales/dispositions ($3.4M) by . 29 grants/awards. Net direction: NET_SELLING. Net value: $3.4M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 9,
+            "shares": 124290,
+            "value": 3446562
+          },
+          "grants": 29,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -3446562,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"ment of its workforce enable it to effectively operate in this competitive environment. \n\n22 MDU Resources Group, Inc. Form 10-K \n\nIndex \n\nPart I \n\nUtilities and independent contractors represent the largest customer base for this segment. Accordingly, utility and subcontract work accounts for a sig...\" [2] \"governmental agencies, commercial and residential developers, and private parties. The mix of sales by customer class varies each year depending on available work. Knife River is not dependent on any single customer or group of ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-25. No obvious executive changes in compensation section. Excerpt: \"nc. Proxy Statement \n\nProxy Statement \n\nTABLE OF CONTENTS \n\nPage \n\nPage \n\nPROXY STATEMENT SUMMARY \n\nEXECUTIVE COMPENSATION (continued) \n\nAnnual Meeting Information \n\n1 \n\nCompensation Committee Report \n\n61 \n\nCompany Overview \n\n2 \n\nExecutive Compensation Tables \n\n62 \n\nBusiness Performance Highlights \n\n3 \n\nSummary Compensation Table \n\n62 \n\nFinancial Performance Highlights \n\n4 \n\nGrants of Plan-Based Awards \n\n64 \n\nCorporate Governance Practices \n\n5 \n\nOutstanding Equity Awards at Fiscal Year-End \n\n66 ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-CAR-2022-03-31",
+    "cik": "0000723612",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 12 sales/dispositions ($15.9M) by KROMINGA LYNN. 3 grants/awards. 11 option exercises. Net direction: NET_SELLING. Net value: $15.9M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 12,
+            "shares": 74713,
+            "value": 15906615
+          },
+          "grants": 3,
+          "exercises": 11,
+          "other": 18,
+          "net_direction": "NET_SELLING",
+          "net_value": -15906615,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-03-30. No obvious executive changes in compensation section. Excerpt: \"Certain Beneficial Owners \n\n18 \n\nDelinquent Section 16(a) Reports \n\n20 \n\nExecutive Officers \n\n20 \n\nExecutive Compensation \n\n22 \n\nCompensation Discussion and Analysis \n\n22 \n\nSummary Compensation Table \n\n34 \n\nAll Other Compensation Table \n\n35 \n\nPerquisites Table \n\n36 \n\nCEO Pay Ratio \n\n36 \n\n2020 Grants of Plan-Based Awards Table \n\n37 \n\nOutstanding Equity Awards at Fiscal Year-End Table \n\n38 \n\n2020 Option Exercises and Stock Vested Table \n\n39 \n\nPension Benefits Table \n\n39 \n\nNon-qualified Deferred Co...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-HXL-2022-03-31",
+    "cik": "0000717605",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 19 sales/dispositions ($3.3M) by Chairman, CEO and President - Stanage Nick L. 21 option exercises. Net direction: NET_SELLING. Net value: $3.3M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 19,
+            "shares": 54667,
+            "value": 3265801
+          },
+          "grants": 0,
+          "exercises": 21,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -3265801,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"epresented about 80% of our net sales each year. Net sales for composite materials are highly dependent upon the number of commercial aircraft produced as further discussed under the captions &#x201c;Significant Customers.&#x201d; &#x201c;Markets&#x201d; and &#x201c;Management&#x2019;s Discussion an...\" [2] \"Washington \n\nGKN \n\nPottsville, Pennsylvania \n\nLockheed Martin \n\nSouth Windsor, Connecticut \n\nSikorsky, a Lockheed Martin Company \n\nWelkenraedt, Belgium \n\nSpirit Aerosystems \n\nRaytheon Technologies \n\nSignificant Customers \n\nAppro",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-23. No obvious executive changes in compensation section. Excerpt: \"ied; \n\n2. \n\nTo vote on a proposal to approve, on an\nadvisory, non-binding basis, the company's 2021 executive compensation; \n\n3. \n\nTo vote on a proposal to ratify the appointment\nof Ernst & Young LLP as the company's independent registered public accounting firm for 2022; and \n\n4. \n\nTo transact such other business as may\nproperly come before the meeting or any adjournments or postponements thereof. \n\nDue to the ongoing effects of the COVID-19 pandemic,\nthis year's meeting will again be a \"virtua...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-LPX-2022-03-31",
+    "cik": "0000060519",
+    "sector": "Materials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 17 sales/dispositions ($6.3M) by . 8 grants/awards. 9 option exercises. Net direction: NET_SELLING. Net value: $6.3M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 17,
+            "shares": 92138,
+            "value": 6256742
+          },
+          "grants": 8,
+          "exercises": 9,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -6256742,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"ain a broad customer base and a balanced approach to national distribution through both wholesale and retail channels. In 2021, our top ten customers accounted for approximately 43% of our sales. Our principal customers include the following: \n\nWholesale distribution companies, which supply building...\" [2] \"n for innovation, quality, and reliability. The Company operates 25 plants across the U.S., Canada, Chile, and Brazil, through foreign subsidiaries, and operate facilities through joint ventures. The principal customers for our ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-18. No obvious executive changes in compensation section. Excerpt: \"Discussion and Analysis&#x201d; section, the &#x201c;Summary Compensation Table&#x201d;, the other\nexecutive compensation tables and accompanying footnotes and narrative discussion. The Dodd-Frank Wall Street Reform and Consumer Protection\nAct requires that we provide our stockholders an opportunity to cast a non-binding, advisory vote on the compensation of our named executive\nofficers. We believe that our executive compensation programs must attract, retain and motivate our management team to ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-EXP-2022-03-31",
+    "cik": "0000918646",
+    "sector": "Materials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 21 sales/dispositions ($18.0M) by ELLEN MARTIN M, President and CEO - Haack Michael, SVP, Controller - Devlin William R. 3 grants/awards. 23 option exercises. Net direction: NET_SELLING. Net value: $18.0M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 21,
+            "shares": 114995,
+            "value": 17971516
+          },
+          "grants": 3,
+          "exercises": 23,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -17971516,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"stomer pickups, and also by common carriers from our plants or distribution terminals. We transport cement, slag, and fly ash by truck, barge, and rail to our storage and distribution terminals. \n\nNo single customer accounted for more than 10% of our Cement segment sales during fiscal 2021. We do no...\" [2] \"e sell aggregates to building contractors and other customers engaged in a wide variety of construction activities. Aggregates are delivered from our plants by common carriers and customer pickup. No single customer accounted fo",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-06-24. No obvious executive changes in compensation section. Excerpt: \"Our Year in Review \n\n18\n\nNamed Executive Officers \n\n18\n\nCompensation Philosophy \n\n18\n\nDetermining Executive Compensation \n\n20\n\nPrimary Elements of Executive Compensation \n\n22\n\nOther Elements of Executive Compensation \n\n26\n\nOther Compensation Policies and Practices \n\n29\n\nPage\n\nExecutive Compensation \n\n30\n\nSummary Compensation Table \n\n30\n\nGrants of Plan-Based Awards \n\n32\n\nOutstanding Equity Awards at Fiscal Year-End \n\n33\n\nOption Exercises and Stock Vested \n\n35\n\nNonqualified Deferred Compensation i...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

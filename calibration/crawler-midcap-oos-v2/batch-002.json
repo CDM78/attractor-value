@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-KNSL-2018-12-31",
+    "cik": "0001669162",
+    "sector": "Financials",
+    "entry_date": "2018-12-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 13 sales/dispositions ($3.8M) by Russell Frederick L. Jr., CEO and President - Kehoe Michael P, SVP/Chief Information Officer - Kenney William J. Jr.. 5 grants/awards. 4 option exercises. Net direction: NET_SELLING. Net value: $3.8M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 13,
+            "shares": 65500,
+            "value": 3817733
+          },
+          "grants": 5,
+          "exercises": 4,
+          "other": 3,
+          "net_direction": "NET_SELLING",
+          "net_value": -3817733,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"or unwilling to perform under the reinsurance contracts. In establishing our reinsurance allowance for amounts deemed uncollectible, we evaluate the financial condition of our reinsurers and monitor concentration of credit risk arising from our exposure to individual reinsurers. To determine if an a...\" [2] \"$13.5 million , at December 31, 2017 and 2016 , respectively. Allowances are established for amounts deemed uncollectible. The Company evaluates the financial condition of its reinsurers and monitors concentration of credit risk",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2018-04-09. No obvious executive changes in compensation section. Excerpt: \"e-year term if Proposal 1 to declassify our board is not approved; \n\n4. To hold an advisory vote on executive compensation; \n\n5. To hold an advisory vote on the frequency of holding an advisory vote on executive compensation; \n\n6. To ratify the appointment of KPMG LLP as our independent registered public accounting firm for our fiscal year 2018; and \n\n7. To transact any other business as may properly come before the Annual Meeting and any adjournment or postponement thereof. \n\nRecord Date \n\nYou ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-BFAM-2022-03-31",
+    "cik": "0001437578",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 17 sales/dispositions ($13.5M) by Chief Financial Officer - BOLAND ELIZABETH J, COO North America Center Ops - Burke Mary Lou, CEO &amp; President - Kramer Stephen Howard. 5 grants/awards. 9 option exercises. Net direction: NET_SELLING. Net value: $13.5M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 17,
+            "shares": 91807,
+            "value": 13529107
+          },
+          "grants": 5,
+          "exercises": 9,
+          "other": 8,
+          "net_direction": "NET_SELLING",
+          "net_value": -13529107,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-29. Executive changes detected in compensation section. Excerpt: \"h Related Persons \n\n28 \n\nStock Ownership Information \n\n29 \n\nDelinquent Section 16(a) Reports \n\n31 \n\nExecutive Compensation \n\n32 \n\nCompensation Discussion and Analysis \n\n32 \n\nCompensation Committee Report \n\n43 \n\nSummary Compensation Table \n\n44 \n\nGrants of Plan-Based Awards \n\n45 \n\nOutstanding Equity Awards at Fiscal Year-End \n\n46 \n\nOption Exercises and Stock Vested \n\n47 \n\nNonqualified Deferred Compensation \n\n47 \n\nPotential Payments Upon Termination or Change of Control \n\n48 \n\nCEO Pay Ratio \n\n49 \n\n...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-ARW-2020-09-30",
+    "cik": "0000007536",
+    "sector": "Information Technology",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 10 sales/dispositions ($8.6M) by Chairman, President &amp; CEO - LONG MICHAEL J, SVP &amp; Chief Legal Officer - Hughes Lily Yan, President, Global ECS - Kerins Sean J. 3 option exercises. Net direction: NET_SELLING. Net value: $8.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 10,
+            "shares": 114966,
+            "value": 8584306
+          },
+          "grants": 0,
+          "exercises": 3,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": -8584306,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"over 175,000 industrial and commercial customers. Industrial customers range from major OEMs and CMs to small engineering firms, while commercial customers primarily include VARs, MSPs, and OEMs. No single customer accounted for more than 2% of the company's 2019 consolidated sales. \n\nThe company's ...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-01. No obvious executive changes in compensation section. Excerpt: \"posal 2 &#xF03A; Ratification of Appointment of Auditors \n\n30\n\nProposal 3 &#xF03A; Advisory Vote on Executive Compensation \n\n31\n\nReport of the Compensation Committee \n\n32\n\nCompensation Discussion and Analysis \n\n33\n\nExecutive Compensation \n\n33\n\nExecutive Summary \n\n33\n\n2019 Business Strategy and Highlights \n\n33\n\n2019 Say-on-Pay \n\n34\n\nBest Compensation Practices and Policies \n\n35\n\n2019 Compensation Actions \n\n35\n\nWhat Guides the Company&#x2019;s Program \n\n36\n\nThe Principal Elements of Pay &#xF03A; T...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-LOPE-2022-03-31",
+    "cik": "0001434588",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 8 sales/dispositions ($1.6M) by Chief Information Officer - Claypatch Kathy J.. 13 grants/awards. Net direction: NET_SELLING. Net value: $1.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 8,
+            "shares": 17576,
+            "value": 1553203
+          },
+          "grants": 13,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1553203,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"quency and severity of claims. There may be differences between actual settlement amounts and recorded reserves and any resulting adjustments are included in expense once a probable amount is known.\n\nConcentration of Credit Risk\n\nThe Company believes the credit risk related to cash equivalents and i...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-29. No obvious executive changes in compensation section. Excerpt: \"NO. 2 ADVISORY VOTE TO APPROVE NAMED EXECUTIVE OFFICER COMPENSATION \n\n29\n\nEXECUTIVE OFFICERS \n\n31\n\nEXECUTIVE COMPENSATION \n\n33\n\nCompensation Discussion and Analysis \n\n33\n\nClawback Policy \n\n43\n\nCompensation of Named Executive Officers \n\n45\n\nExecutive Employment Agreements \n\n48\n\nPotential Payments upon Termination or Change in Control \n\n51\n\nCompensation Committee Report \n\n51\n\nPROPOSAL NO. 3 RATIFICATION OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\n52\n\nFees \n\n52\n\nApproval of Independent Regis...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-AVTR-2020-09-30",
+    "cik": "0001722482",
+    "sector": "Health Care",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 20 sales/dispositions ($2091.8M) by EVP, IMEA - Ohri Devashish, EVP &amp; General Counsel - Miller Justin, Natauri Jo. 5 option exercises. Net direction: NET_SELLING. Net value: $2091.8M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 20,
+            "shares": 118708294,
+            "value": 2091821150
+          },
+          "grants": 0,
+          "exercises": 5,
+          "other": 4,
+          "net_direction": "NET_SELLING",
+          "net_value": -2091821150,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"synergies, which we believe will favorably impact our results in 2020 and beyond. \n\nOur AMEA region is experiencing significant growth \n\nIn 2019 , net sales grew by nearly 15% in the AMEA region. Our largest customers in this region are in the biopharma and advanced technologies & applied materials ...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-08. No obvious executive changes in compensation section. Excerpt: \"s named executive officers and the frequency with which we\nwill conduct the advisory votes on named executive compensation. \n\nYour vote is very important. Whether or not you plan to attend in person, we encourage you to sign\nand return your proxy card, or use telephone or Internet voting prior to the meeting, so that your shares of common stock will be represented and voted at the meeting. If you attend the meeting, you may revoke your proxy and vote in person. \n\nOn behalf of our Board of Direct...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

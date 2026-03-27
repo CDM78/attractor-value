@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-PCTY-2022-03-31",
+    "cik": "0001591698",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 138 sales/dispositions ($127.0M) by Sarowitz Steven I, Chief Financial Officer - Williams Toby J., VP &amp; Chief Accounting Officer - Rost Nicholas. 4 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $127.0M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 138,
+            "shares": 519127,
+            "value": 126956592
+          },
+          "grants": 4,
+          "exercises": 1,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -126956592,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-10-21. Executive changes detected in compensation section. Excerpt: \"d programs as summarized in this discussion. \n\nThis section discusses the philosophy underlying our executive compensation policies and decisions and the most important factors relevant to an analysis of these policies and decisions. It provides qualitative information regarding the manner and context in which compensation is awarded to and earned in fiscal 2021 by the following named executive officers and places in perspective the data presented in the tables and narrative that follow: \n\nSteve...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-UGI-2020-09-30",
+    "cik": "0000884614",
+    "sector": "Utilities",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 8 open-market purchases ($1.1M) by VP, CAO &amp; Corporate Controller - Bergman Laurie, Stallings James B JR, MARRAZZO WILLIAM J. 2 sales/dispositions ($1.7M) by SCHLANGER MARVIN O. 8 grants/awards. 2 option exercises. Net direction: MIXED. Net value: $626K selling. Buy/sell ratio: 0.64.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 8,
+            "shares": 33861,
+            "value": 1117563
+          },
+          "sales": {
+            "count": 2,
+            "shares": 49893,
+            "value": 1743373
+          },
+          "grants": 8,
+          "exercises": 2,
+          "other": 3,
+          "net_direction": "MIXED",
+          "net_value": -625810,
+          "buy_sell_ratio": 0.641
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 4 customer concentration references. Key excerpts: [1] \"ers, 21 of which have transportation contracts extending beyond Fiscal 2020. The majority of these customers are served under transportation contracts having 3- to 20-year terms and all are among the largest customers for Gas Utility in terms of annual volumes. No single customer represents, or is a...\" [2] \"r fuel customers 18%; and agricultural customers 4%. Transport gallons, which are large-scale deliveries to retail customers other than residential, accounted for 4% of Fiscal 2019 retail gallons. No single customer represents, ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2019-12-13. No obvious executive changes in compensation section. Excerpt: \"annual meeting of\nshareholders; \n\n2. an advisory vote on a resolution to approve UGI\nCorporation s executive compensation; \n\n3. the ratification of the\nappointment of Ernst & Young LLP as our independent registered public accounting firm for Fiscal 2020; and \n\n4. the transaction of any other business that may properly come before the\nmeeting. \n\nMonica M. Gaudiosi \n\nCorporate Secretary \n\nImportant Notice Regarding the Availability of Proxy Materials for the\nShareholder Meeting to be held on Wedne...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-SIRI-2020-09-30",
+    "cik": "0000908937",
+    "sector": "Communication",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 20 grants/awards. Net direction: NET_SELLING. Net value: $0K buying. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "grants": 20,
+          "exercises": 0,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": 0,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-21. No obvious executive changes in compensation section. Excerpt: \"Corporation? \n\n26 \n\nDoes\nSiriusXM have corporate governance guidelines and a code of ethics? \n\n27 \n\nEXECUTIVE\nCOMPENSATION \n\n28 \n\nCompensation\nCommittee Report \n\n46 \n\nSummary\nCompensation Table \n\n47 \n\nGrants\nof Plan-Based Awards in 2019 \n\n48 \n\nOutstanding\nEquity Awards at Fiscal Year-End 2019 \n\n49 \n\nOption\nExercises and Stock Vested in 2019 \n\n51 \n\nNon-Qualified\nDeferred Compensation \n\n51 \n\nPotential\nPayments or Benefits Upon Termination or Change in Control \n\n52 \n\n2019\nCEO Pay Ratio \n\n56 \n\nITEM\n...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-CACC-2022-03-31",
+    "cik": "0000885550",
+    "sector": "Financials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 66 sales/dispositions ($75.7M) by TRYFOROS THOMAS N, SMITH THOMAS W, Chief Analytics Officer - SMITH ARTHUR L. 1 grants/awards. Net direction: NET_SELLING. Net value: $75.7M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 66,
+            "shares": 113432,
+            "value": 75697509
+          },
+          "grants": 1,
+          "exercises": 0,
+          "other": 11,
+          "net_direction": "NET_SELLING",
+          "net_value": -75697509,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"ograms that enable Dealers to sell vehicles to consumers, regardless of their credit history. We also provide Dealers the ability to offer or purchase ancillary products on vehicles financed by us. \n\nMajor Customer Information \n\nWe did not have any Dealers that provided 10% or more of our revenue du...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-06-10. No obvious executive changes in compensation section. Excerpt: \"n March 2004. She is also a director of Vital Farms, Inc. Ms. Flanagan is a member of the Company s Executive Compensation Committee, Audit Committee and Nominating Committee. \n\nVinayak R. Hegde age 51 Chief Marketplace Officer, Wheels Up Partners Holdings LLC \n\nMr. Hegde has served as Chief Marketplace Officer of Wheels Up Partners Holdings LLC, a provider of on-demand private aviation, since May 2021. He served as President and Chief Operating Officer at Blink Health LLC, a digital health comp...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-ST-2022-03-31",
+    "cik": "0001477294",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 20 sales/dispositions ($25.6M) by EVP, Sensing Solutions - Nargolwala Vineet A, CEO and President - COTE JEFFREY J, VP, Chief Accounting Officer - Freve Maria G. 7 grants/awards. 17 option exercises. Net direction: NET_SELLING. Net value: $25.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 20,
+            "shares": 416793,
+            "value": 25579978
+          },
+          "grants": 7,
+          "exercises": 17,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -25579978,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"where we lack established relationships with customers, we rely on third-party distributors to sell our products. We have had relationships with our top ten customers for an average of 30 years. Our largest customer accounted for approximately 6% of our net revenue for the year ended December 31, 20...\" [2] \"mated expected credit losses over the lifetime of our receivables. Our contract terms generally require the customer to make payment shortly after (that is, less than one year) the shipment date. Our largest customer accounted f",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-15. No obvious executive changes in compensation section. Excerpt: \"Corporate Governance \n\n15 \n\nBoard Committees and Meetings \n\n18 \n\nPROPOSAL 2 ADVISORY RESOLUTION ON EXECUTIVE COMPENSATION \n\n23 \n\nExecutive Officers \n\n23 \n\nCompensation Discussion and Analysis \n\n27 \n\nReport of the Compensation Committee of the Board of Directors \n\n45 \n\nSummary Compensation Tables and Narrative Disclosures \n\n46 \n\nPotential Payments Upon Termination or Change in Control \n\n55 \n\nCEO Pay Ratio Discussion \n\n57 \n\nPROPOSAL 3 RESOLUTION TO APPROVE THE COMPANY'S 2021 EQUITY INCENTIVE PLAN ...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

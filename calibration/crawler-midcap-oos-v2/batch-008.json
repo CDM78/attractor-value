@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-NNN-2022-03-31",
+    "cik": "0000751364",
+    "sector": "Real Estate",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 5 sales/dispositions ($0K) by EVP &amp; CFO - HABICHT KEVIN B, President and CEO - WHITEHURST JULIAN E, Executive Officer - Tessitore Christopher Paul. 27 grants/awards. Net direction: NET_SELLING. Net value: $0K buying. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 5,
+            "shares": 154702,
+            "value": 0
+          },
+          "grants": 27,
+          "exercises": 0,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": 0,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-22. No obvious executive changes in compensation section. Excerpt: \"or consideration at the meeting are: \n\n1. The election of eight directors; \n\n2. An advisory vote on executive compensation; and \n\n3. The ratification of the selection of our independent registered public accounting firm for 2022. \n\nWhether you own a few or many shares of stock of the Company, it is important that your shares be represented. If you cannot personally attend the meeting, we encourage you to make certain you are represented at the meeting by signing and dating the accompanying proxy...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-AVTR-2022-03-31",
+    "cik": "0001722482",
+    "sector": "Health Care",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 23 sales/dispositions ($5.0M) by EVP, Biopharma Production - Brophy Gerard. 9 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $5.0M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 23,
+            "shares": 130322,
+            "value": 5040806
+          },
+          "grants": 9,
+          "exercises": 1,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -5040806,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-13. No obvious executive changes in compensation section. Excerpt: \"for Auditor\nServices \n\n30\n\nItem 4 Advisory Approval of Named Executive Officer\nCompensation \n\n31 \n\nExecutive Compensation \n\n32 \n\nCompensation Discussion and Analysis \n\n32 \n\nExecutive Summary \n\n32\n\nCompensation Philosophy \n& Objectives How We Make Compensation Decisions \n\n37\n\nElements of Compensation What We Pay and Why \n\n38\n\nCompensation and Human Resources Committee Report \n\n44 \n\nExecutive Compensation Tables \n\n45 \n\nEquity Compensation Plans \n\n53 \n\nPay Ratio Disclosure \n\n54 \n\nHouseholding of Pr...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-SIRI-2022-03-31",
+    "cik": "0000908937",
+    "sector": "Communication",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 5 sales/dispositions ($4.8M) by HOLDEN JAMES P. 17 grants/awards. 2 option exercises. Net direction: NET_SELLING. Net value: $4.8M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 5,
+            "shares": 784730,
+            "value": 4845309
+          },
+          "grants": 17,
+          "exercises": 2,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -4845309,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-20. No obvious executive changes in compensation section. Excerpt: \"Corporation? \n\n29 \n\nDoes SiriusXM have corporate governance guidelines and a code of ethics? \n\n30 \n\nEXECUTIVE COMPENSATION \n\n31 \n\nCompensation Committee Report \n\n52 \n\nSummary Compensation Table \n\n53 \n\nGrants of Plan-Based Awards in 2020 \n\n54 \n\nOutstanding Equity Awards at Fiscal Year-End 2020 \n\n55 \n\nOption Exercises and Stock Vested in 2020 \n\n57 \n\nNon-Qualified Deferred Compensation \n\n57 \n\nPotential\nPayments or Benefits Upon Termination or Change in Control \n\n58 \n\n2020 CEO Pay Ratio \n\n63 \n\nITEM ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-EXP-2020-09-30",
+    "cik": "0000918646",
+    "sector": "Materials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 11 sales/dispositions ($1.3M) by Powers David B, EVP &amp; General Counsel - Graass James H. 15 grants/awards. 1 option exercises. Net direction: NET_SELLING. Net value: $1.3M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 11,
+            "shares": 17062,
+            "value": 1320656
+          },
+          "grants": 15,
+          "exercises": 1,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": -1320656,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"stomer pickups, and also by common carriers from our plants or distribution terminals. We transport cement, slag, and fly ash by truck, barge, and rail to our storage and distribution terminals. \n\nNo single customer accounted for more than 10% of our Cement segment sales during fiscal 2020. We do no...\" [2] \"egates to building contractors and other customers engaged in a wide variety of construction activities. Aggregates are delivered from our aggregate plants by common carriers and customer pick-up. No customer accounted for more ",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-06-26. Executive changes detected in compensation section. Excerpt: \"Transitions Involving Our Named Executive Officers \n\n22\n\nCompensation Philosophy \n\n22\n\nDetermining Executive Compensation \n\n25\n\nChief Executive Officer Transition \n\n28\n\nPrimary Elements of Executive Compensation \n\n28\n\nOther Elements of Executive Compensation \n\n35\n\nOther Compensation Policies and Practices \n\n39\n\nPage \n\nExecutive Compensation \n\n41\n\nSummary Compensation Table \n\n41\n\nGrants of Plan-Based Awards \n\n44\n\nOutstanding Equity Awards at Fiscal Year-End \n\n46\n\nOption Exercises and Stock Vested...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-SON-2022-03-31",
+    "cik": "0000091767",
+    "sector": "Materials",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). Net direction: NET_SELLING. Net value: $0K buying. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "grants": 0,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": 0,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"tors such as the macroeconomic environment, Company stock price and market capitalization movement, current year operating performance as compared to prior projections, business strategy changes, and significant customer wins and losses. The quantitative tests, described further below, relied on the...\" [2] \"vertical integration are competitive advantages. Expansion of \n\n5 FORM 10-K SONOCO 2021 ANNUAL REPORT \n\nthe Company s product lines and global presence is driven by the rapidly changing needs of its major customers, who demand h",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-18. No obvious executive changes in compensation section. Excerpt: \"y Ownership of Certain Beneficial Owners \n\n24 \n\nElectronic Access to Annual Meeting Materials \n\n4 \n\nExecutive Compensation \n\n25 \n\nCompany Overview \n\n5 \n\nCompensation Discussion and Analysis \n\n25 \n\nPerformance Highlights \n\n5 \n\nCompensation Committee Report \n\n35 \n\nShareholder Engagement \n\n5 \n\nCompensation Risk Review \n\n35 \n\nEnvironment and Sustainability \n\n6 \n\nSummary Compensation Table \n\n36 \n\nHuman Capital Management \n\n6 \n\n2021 Grants of Plan-based Awards \n\n38 \n\nBoard of Directors and Board Matte...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

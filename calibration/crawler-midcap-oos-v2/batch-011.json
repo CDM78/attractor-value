@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-BC-2022-03-31",
+    "cik": "0000014930",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 21 sales/dispositions ($9.7M) by Vice President and Controller - ALTMAN RANDALL S, E.V.P. &amp; CFO - Gwillim Ryan M, E.V.P. GEN COUNSEL &amp; SECRETARY - Dekker Christopher F. 21 grants/awards. Net direction: NET_SELLING. Net value: $9.7M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 21,
+            "shares": 101198,
+            "value": 9671556
+          },
+          "grants": 21,
+          "exercises": 0,
+          "other": 3,
+          "net_direction": "NET_SELLING",
+          "net_value": -9671556,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-18. No obvious executive changes in compensation section. Excerpt: \"CK HELD BY DIRECTORS, EXECUTIVE OFFICERS, AND PRINCIPAL SHAREHOLDERS \n\n&#xa0;\n\n&#xa0;\n\n&#xa0;\n\n30 \n\nEXECUTIVE COMPENSATION \n\n&#xa0;\n\n&#xa0;\n\n&#xa0;\n\n53 \n\nPROPOSAL 2 \n\n&#xa0;\n\n&#xa0;\n\nAdvisory vote to approve the compensation of our\nNamed Executive Officers \n\n&#xa0;\n\n&#xa0;\n\n&#xa0;\n\n54 \n\nEQUITY COMPENSATION PLAN \n\n&#xa0;\n\n&#xa0;\n\n&#xa0;\n\n55 \n\nAUDIT-RELATED MATTERS \n\n&#xa0;\n\n&#xa0;\n\n&#xa0;\n\n57 \n\nPROPOSAL 3 \n\n&#xa0;\n\n&#xa0;\n\nRatification of the appointment of independent\nregistered public accountin...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-WSC-2020-09-30",
+    "cik": "0001647088",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 4 sales/dispositions ($5.1M) by Sr. VP, Gen Counsel, Secretary - Miner Christopher J, SAGANSKY JEFFREY. 12 grants/awards. 2 option exercises. Net direction: NET_SELLING. Net value: $5.1M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 4,
+            "shares": 288848,
+            "value": 5141885
+          },
+          "grants": 12,
+          "exercises": 2,
+          "other": 3,
+          "net_direction": "NET_SELLING",
+          "net_value": -5141885,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 4 customer concentration references. Key excerpts: [1] \"payment of receivables relating to the Company s leasing operations. The Company s large number of customers in diverse geographic areas and end markets mitigates the concentration of credit risk. No single customer accounted for more than 1.5 % and 1.2 % of the Company s receivables at December 31,...\" [2] \"ite built space because modular space products are a quick, flexible, and cost-effective solution for temporary or permanent expansion. \n\nFor th e years ended December 31, 2019, 2018 and 2017, no one customer accounted for mor e",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-20. No obvious executive changes in compensation section. Excerpt: \"DEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM \n\n23 \n\nPROPOSAL 3 ADVISORY (NON-BINDING) VOTE REGARDING EXECUTIVE COMPENSATION (SAY-ON-PAY) \n\n46 \n\nPROPOSAL 4 ADVISORY (NON-BINDING) VOTE REGARDING FREQUENCY OF FUTURE SAY-ON-PAY PROPOSALS FOR (SAY-ON-PAY) \n\n47 \n\nCERTAIN RELATIONSHIPS AND RELATED PARTY TRANSACTIONS \n\n48 \n\nSECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT \n\n49 \n\nMATTERS RAISED AT THE ANNUAL MEETING NOT INCLUDED IN THIS STATEMENT \n\n51 \n\nSTOCKHOLDER PROPOSALS AND DIRECTOR NOM...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-HXL-2020-09-30",
+    "cik": "0000717605",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 1 open-market purchases ($903K) by Chairman, CEO and President - Stanage Nick L. 6 sales/dispositions ($966K) by See Remarks - Merlot Thierry. 8 option exercises. Net direction: MIXED. Net value: $63K selling. Buy/sell ratio: 0.93.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 1,
+            "shares": 20000,
+            "value": 902958
+          },
+          "sales": {
+            "count": 6,
+            "shares": 21859,
+            "value": 966376
+          },
+          "grants": 0,
+          "exercises": 8,
+          "other": 0,
+          "net_direction": "MIXED",
+          "net_value": -63418,
+          "buy_sell_ratio": 0.934
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 5 customer concentration references. Key excerpts: [1] \"represented about 80% of our net sales each year. Net sales for composite materials are highly dependent upon the number of large commercial aircraft produced as further discussed under the captions Significant Customers , Markets and Management s Discussion and Analysis of Financial Condition and R...\" [2] \"occo\n\nGKN\n\nKent, Washington\n\nLockheed Martin\n\nPottsville, Pennsylvania\n\nSikorsky, a Lockheed Martin Company\n\nSouth Windsor, Connecticut\n\nSpirit Aerosystems\n\nWelkenraedt, Belgium\n\nUnited Technologies\n\nSignificant Customers \n\nAppr",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-21. No obvious executive changes in compensation section. Excerpt: \"ified;\n\n2.\n\nTo vote on a proposal to approve, on an advisory, non-binding basis, the company's 2019 executive compensation;\n\n3.\n\nTo vote on a proposal to ratify the appointment of Ernst & Young LLP as the company's independent registered\npublic accounting firm for 2020; and\n\n4.\n\nTo transact such other business as may properly come before the meeting or any adjournments or postponements thereof.\n\nAs part of our precautions regarding the recent pandemic of\nthe novel strain of coronavirus (COVID-19...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-CAR-2020-09-30",
+    "cik": "0000723612",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 20 open-market purchases ($45.4M) by SRS Investment Management, LLC. 8 sales/dispositions ($300K) by Executive Chairman - Hees Bernardo. 3 grants/awards. 7 option exercises. Net direction: NET_BUYING. Net value: $45.1M buying. Buy/sell ratio: 151.41.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 20,
+            "shares": 1359688,
+            "value": 45442354
+          },
+          "sales": {
+            "count": 8,
+            "shares": 12235,
+            "value": 300133
+          },
+          "grants": 3,
+          "exercises": 7,
+          "other": 0,
+          "net_direction": "NET_BUYING",
+          "net_value": 45142221,
+          "buy_sell_ratio": 151.407
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-27. Executive changes detected in compensation section. Excerpt: \"summary highlights information contained elsewhere in this Proxy Statement, including under &#x201c;Executive Compensation,&#x201d; which includes a definition and reconciliation of Adjusted EBITDA. This summary does not contain all of the information that you should consider and you should read the entire Proxy Statement carefully before voting. \n\nAnnual Meeting of Shareholders \n\n&#x2022; \n\n&#x00a0;\n\nDate and Time\n\n&#x00a0;\n\nMay 7, 2020 at 9:00 a.m. Eastern Time \n\n&#x2022; \n\n&#x00a0;\n\nPlace\n\n&#...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-FCN-2020-09-30",
+    "cik": "0000887936",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 13 sales/dispositions ($4.1M) by Bacon Brenda J, FANANDAKIS NICHOLAS C, Ellis Vernon James. 11 grants/awards. Net direction: NET_SELLING. Net value: $4.1M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 13,
+            "shares": 33644,
+            "value": 4096129
+          },
+          "grants": 11,
+          "exercises": 0,
+          "other": 1,
+          "net_direction": "NET_SELLING",
+          "net_value": -4096129,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"ed contingent consideration. Management bases its estimates on historical trends, current experience and other assumptions that it believes are reasonable. \n\nConcentrations of Risk \n\nWe do not have a single customer that represents 10% or more of our consolidated revenues. We derive the majority of ...\" [2] \",262,682 \n\nUnited Kingdom \n\n389,338 \n\n302,576 \n\n251,843 \n\nAll other foreign countries \n\n408,246 \n\n353,185 \n\n293,207 \n\nTotal revenues \n\n$ \n\n2,352,717 \n\n$ \n\n2,027,877 \n\n$ \n\n1,807,732 \n\nWe do not have a single customer that represe",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-16. No obvious executive changes in compensation section. Excerpt: \"to its most directly comparable GAAP measure. \n\niii \n\n\\ Key Elements of 2019 Compensation Program \n\nExecutive compensation is strongly linked to the financial and operational performance of the Company. The charts below demonstrate that the Company s executive compensation program balances fixed and at-risk pay, with 84.6% of the CEO s target annual total compensation at-risk and 66.7% of our other named executive officers ( NEOs ) target annual compensation at-risk: \n\n2019 Shareholder Engagemen...\"",
+        "insider_data": null
+      }
+    ]
+  }
+]

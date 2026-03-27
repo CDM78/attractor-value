@@ -1,0 +1,227 @@
+[
+  {
+    "case_id": "MC-ST-2020-09-30",
+    "cik": "0001477294",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 15 sales/dispositions ($1.3M) by WROE THOMAS JR, Chief Financial Officer - Vasington Paul S, EVP, Sensing Solutions - Nargolwala Vineet A. 17 grants/awards. Net direction: NET_SELLING. Net value: $1.3M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 15,
+            "shares": 60078,
+            "value": 1339710
+          },
+          "grants": 17,
+          "exercises": 0,
+          "other": 2,
+          "net_direction": "NET_SELLING",
+          "net_value": -1339710,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 2 customer concentration references. Key excerpts: [1] \"third-party distributors to sell our products. Only a small portion of our revenues are sold through distributors. We have had relationships with our top ten customers for an average of 30 years. Our largest customer accounted for approximately 7% of our net revenue for the year ended December 31, 2...\" [2] \"redit risk associated with these receivables will deviate from historical experience, repayment is dependent upon the financial stability of these \n\n71 \n\nTable of Contents \n\nindividual customers. Our largest customer accounted f",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-22. No obvious executive changes in compensation section. Excerpt: \"6 \n\nCorporate Governance \n\n12 \n\nBoard Committees and Meetings \n\n14 \n\nPROPOSAL 2: ADVISORY VOTE ON EXECUTIVE COMPENSATION \n\n18 \n\nExecutive Officers \n\n19 \n\nCompensation Discussion and Analysis \n\n21 \n\nReport of the Compensation Committee of the Board of Directors \n\n39 \n\nSummary Compensation Tables and Narrative Disclosures \n\n40 \n\nPotential Payments Upon Termination or Change in Control \n\n48 \n\nCEO Pay Ratio Discussion \n\n50 \n\nPROPOSAL 3: ADVISORY VOTE TO APPROVE FREQUENCY OF FUTURE \"SAY-ON-PAY\" VOTES...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-TNL-2022-03-31",
+    "cik": "0001361658",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 10 sales/dispositions ($1.9M) by HERRERA GEORGE. 19 grants/awards. Net direction: NET_SELLING. Net value: $1.9M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 10,
+            "shares": 35002,
+            "value": 1855005
+          },
+          "grants": 19,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -1855005,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 1 customer concentration references. Key excerpts: [1] \"members with the ability to protect trading power or points, extend the life of deposits, and combine two or more deposits for the opportunity to exchange into intervals with higher trading power. No single customer, developer, or group accounts for more than 10% of our revenues. \n\nPerformance in ou...\"",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-01. Executive changes detected in compensation section. Excerpt: \"expiring at the 2022 annual meeting \n\nto vote on a non-binding, advisory resolution to approve our executive compensation program \n\nto vote on a proposal to ratify the appointment of Deloitte Touche LLP to serve as our independent registered public accounting firm for 2021 and \n\nto transact any other business that may be properly brought before the meeting or any adjournment or postponement of the meeting. \n\nThe matters specified for voting above are more fully described in the attached proxy st...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-LAZ-2020-09-30",
+    "cik": "0001311370",
+    "sector": "Financials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 5 sales/dispositions ($6.6M) by President - Stern Alexander F., CAO and General Counsel - Hoffman Scott D. 1 grants/awards. 5 option exercises. Net direction: NET_SELLING. Net value: $6.6M selling. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 5,
+            "shares": 207379,
+            "value": 6621738
+          },
+          "grants": 1,
+          "exercises": 5,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -6621738,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-12. No obvious executive changes in compensation section. Excerpt: \"any s annual general meeting in 2023; \n\n2. \n\nConsideration of a non-binding advisory vote regarding executive compensation; \n\n3. \n\nRatification of the appointment of Deloitte & Touche LLP as our independent registered public accounting firm for 2020 and authorization of the Company s Board of Directors, acting by its Audit Committee, to set their remuneration; and\n\n4. \n\nConsideration of any other matters that may properly be brought before the meeting or any adjournment or postponement thereof. ...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-RLI-2020-09-30",
+    "cik": "0000084246",
+    "sector": "Financials",
+    "entry_date": "2020-09-30",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). Net direction: NET_SELLING. Net value: $0K buying. Buy/sell ratio: 0.00.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "sales": {
+            "count": 0,
+            "shares": 0,
+            "value": 0
+          },
+          "grants": 0,
+          "exercises": 0,
+          "other": 3,
+          "net_direction": "NET_SELLING",
+          "net_value": 0,
+          "buy_sell_ratio": 0
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No customer concentration language found in 10-K.",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-26. No obvious executive changes in compensation section. Excerpt: \"amendment to increase the authorized shares of Common Stock of the Company, an advisory vote on our executive compensation, and ratification of Deloitte & Touche LLP as our independent registered public accounting firm for the current year. In addition, we will review significant events of 2019 and their impact on you and the Company. \n\nAgain, this year we are furnishing our proxy materials via the Internet. Shareholders will receive a mailed notice card with instructions on how to view our prox...\"",
+        "insider_data": null
+      }
+    ]
+  },
+  {
+    "case_id": "MC-KD-2022-03-31",
+    "cik": "0001867072",
+    "sector": "Information Technology",
+    "entry_date": "2022-03-31",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "20 Form 4 filings (20 parsed). 2 open-market purchases ($248K) by CFO &amp; Treasurer - Wyshner David B. 4 sales/dispositions ($1.1M) by . 15 grants/awards. Net direction: NET_SELLING. Net value: $895K selling. Buy/sell ratio: 0.22.",
+        "insider_data": {
+          "filings": 20,
+          "parsed": 20,
+          "purchases": {
+            "count": 2,
+            "shares": 14850,
+            "value": 248371
+          },
+          "sales": {
+            "count": 4,
+            "shares": 67928,
+            "value": 1142889
+          },
+          "grants": 15,
+          "exercises": 0,
+          "other": 0,
+          "net_direction": "NET_SELLING",
+          "net_value": -894517,
+          "buy_sell_ratio": 0.217
+        }
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": true,
+        "summary": "Found 3 customer concentration references. Key excerpts: [1] \"l contract periods expire and any termination fees associated with an early termination may not be sufficient to recover our costs associated with such contracts. The loss of business from any of our major customers, whether by the cancellation of existing contracts, the failure to obtain new busine...\" [2] \"rgest organizations and governments, with a significant portion of our revenue coming from global customers across many sectors. If we become aware of information related to the creditworthiness of a major customer, or if future",
+        "insider_data": null
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date.",
+        "insider_data": null
+      }
+    ]
+  }
+]

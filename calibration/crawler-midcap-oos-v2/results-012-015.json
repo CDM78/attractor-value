@@ -1,0 +1,244 @@
+{
+  "results": [
+    {
+      "case_id": "MC-REXR-2022-03-31",
+      "cik": "0001571283",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium-high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue declining ~56% with EPS compressing from $0.57 to $0.27. Insider data now shows clear NET_SELLING: 4 sales ($9.7M) with zero purchases (ratio 0.00). General Counsel and Co-CEO selling. No customer concentration in 10-K (REIT). Selling pattern consistent with deteriorating fundamentals -- raises confidence but does not change classification."
+    },
+    {
+      "case_id": "MC-GXO-2022-03-31",
+      "cik": "0001852244",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue trend -63.3% with EPS falling from $0.84 to $0.32. Insider data now shows heavy NET_SELLING: 13 sales ($558M) by Bradley Jacobs and entities with zero purchases. $558M in dispositions is exceptionally large -- consistent with founder/major holder monetizing a declining trajectory. Customer concentration excerpt mentions collaboration with largest customers but no specific thresholds. Massive insider selling significantly strengthens deteriorating conviction."
+    },
+    {
+      "case_id": "MC-OLLI-2020-09-30",
+      "cik": "0001639300",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Strong 51.5% revenue growth with EPS rising from $0.51 to $1.50. All 8 quarters profitable. Insider data shows NET_SELLING: 17 sales ($10.5M) vs zero purchases, but this is routine option-exercise-and-sell (16 exercises, 17 sales) by mid-level officers -- typical compensation monetization during a rising stock, not a bearish signal. Customer concentration excerpt is boilerplate credit risk language, not actual revenue concentration. Does not alter strongly improving baseline."
+    },
+    {
+      "case_id": "MC-FBIN-2022-03-31",
+      "cik": "0001519751",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue volatile with noisy quarterly/annual mixing, -10.2% net trend. EPS erratic but profitable. Insider data shows NET_SELLING: 19 sales ($9.1M) vs zero purchases, but all paired with 19 grants -- pure vest-and-sell compensation activity from one SVP. Customer concentration 10-K excerpts reveal exposure to distributor/retailer consolidation risk and note home center channel dependence. Informative but does not resolve the ambiguous trajectory."
+    },
+    {
+      "case_id": "MC-PSN-2022-03-31",
+      "cik": "0000275880",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue trend -65% with EPS flat. Insider data now shows MIXED: 2 open-market purchases ($1.6M) by CFO and CEO vs 16 sales ($3.9M), ratio 0.42. The CEO/CFO buying is a mildly positive signal against deterioration, but dollar values favor selling. Customer concentration 10-K confirms U.S. federal government (military/intelligence) as largest customer -- significant single-customer risk. Government concentration with ESG-linked comp changes in proxy. Enrichment provides texture but does not overcome clear financial deterioration."
+    },
+    {
+      "case_id": "MC-THO-2020-09-30",
+      "cik": "0000730263",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Massive 308% revenue growth with EPS surging $0.52 to $4.02. Insider data now shows MIXED: 7 open-market purchases ($684K) by CEO Klein and directors vs 12 sales ($1.6M), ratio 0.42. Multiple insiders buying with their own money is a bullish signal consistent with improving trajectory. No customer concentration language in 10-K. Management proxy flags comp changes but boilerplate. Insider buying corroborates already-strong improving baseline."
+    },
+    {
+      "case_id": "MC-STAG-2022-03-31",
+      "cik": "0001479094",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue trend -61.6% with negative EPS (-$0.26) despite positive net income -- likely dilution. REIT shrinking top line. Insider data shows NET_SELLING: 4 sales ($2.5M) by CEO Butcher, zero purchases. Modest scale relative to REIT. Customer concentration 10-K excerpts describe credit risk mitigation through loan syndication and state portfolio is 'reasonably well diversified' with no unusual concentration -- actually a mild positive for a REIT. Does not alter deteriorating assessment."
+    },
+    {
+      "case_id": "MC-MSM-2020-09-30",
+      "cik": "0001003078",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -49.1% with EPS declining from $3.57 to $0.94. Insider data now shows NET_SELLING but minimal: only 2 sales ($61K) paired with 2 option exercises -- negligible scale from one SVP. Effectively uninformative at this dollar level. No customer concentration in 10-K. Stable management. Enrichment adds no signal despite now having real buy/sell parsing."
+    },
+    {
+      "case_id": "MC-MTN-2022-03-31",
+      "cik": "0000812011",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "EPS recovered from losses (-$3.49) to $5.47. Seasonal ski/resort business. Insider data shows heavy NET_SELLING: 59 sales ($94.5M) by Exec Chair Katz, board member Schneider, and CFO Barkin -- zero purchases. $94.5M is very large and involves C-suite. This is a cautionary signal against the improving trajectory, but 31 option exercises paired with sales suggests primarily compensation monetization. Customer concentration excerpt is boilerplate credit risk language. Insider selling scale warrants attention but does not override clear EPS recovery."
+    },
+    {
+      "case_id": "MC-LEA-2022-03-31",
+      "cik": "0000842162",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue up 305% with EPS recovering from -$0.44 to $6.19. Strong cyclical auto-sector recovery. Insider data shows NET_SELLING: 15 sales ($5.2M) vs zero purchases, but paired with 9 exercises and 7 grants -- routine compensation activity. Customer concentration 10-K excerpts are significant: explicitly mention 'significant customers' including reference to GM labor strike impact and key customer/supplier dependence. Auto-parts supplier with concentrated OEM customer base is a real structural risk factor, but does not change the cyclical recovery trajectory."
+    },
+    {
+      "case_id": "MC-CHH-2022-03-31",
+      "cik": "0001046311",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue trend -67.2% with EPS declining from $4.01 to $1.20. Insider data shows NET_SELLING: 12 sales ($1.6M) by one SVP (Oaksmith), zero purchases. Modest scale from a single non-C-suite insider -- mildly consistent with deterioration but not strongly directional. No customer concentration in 10-K (hotel franchise model has dispersed franchisee base). Stable management. Enrichment mildly corroborative but not impactful enough to shift confidence."
+    },
+    {
+      "case_id": "MC-HR-2020-09-30",
+      "cik": "0001360604",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Revenue trend -48.6% with EPS declining to -$0.03 (latest quarter unprofitable). Insider data shows NET_SELLING: 8 sales ($9.6M) by CEO Peters vs 5 small purchases ($166K) by CFO and directors -- ratio 0.02, overwhelmingly sell-dominated. CEO selling nearly $10M while company moves toward losses is a strong bearish signal consistent with deteriorating trajectory. Customer concentration excerpt is REIT boilerplate credit risk. Proxy shows comp plan amendments but no turnover. CEO selling reinforces already-high confidence deterioration."
+    },
+    {
+      "case_id": "MC-LPX-2020-09-30",
+      "cik": "0000060519",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "EPS surged from $0.58 to $1.57 (nearly 3x). All 8 quarters profitable. Insider data shows NET_SELLING: 5 sales ($2.1M) with 8 exercises, zero purchases -- routine option monetization, modest scale. Customer concentration 10-K is genuinely informative: top 10 customers = ~42% of sales, with wholesale distributors and retail home improvement channels as principal customers. Moderate concentration but diversified across both wholesale and retail. Does not change strongly improving baseline but adds useful structural context."
+    },
+    {
+      "case_id": "MC-KBR-2022-03-31",
+      "cik": "0001357615",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "Revenue trend -74% with latest EPS -$0.51. Only 5/8 quarters profitable. Insider data shows NET_SELLING: 20 sales ($2.5M) by one executive (Chief Digital Officer Conlon) with zero purchases, zero grants, zero exercises -- all 20 filings are pure dispositions. Unusual pattern but from a single non-C-suite officer. Customer concentration 10-K excerpts explicitly mention 'Significant Customers' section and flag risk of 'loss, cancellation or delay in projects by significant customers.' Government/defense contractor with project-based revenue and concentrated customer dependency. Reinforces deteriorating assessment."
+    },
+    {
+      "case_id": "MC-INGR-2022-03-31",
+      "cik": "0001046257",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium-high",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "EPS shows stability ($1.73 to $1.92). All 8 quarters profitable. Consumer staples defensive. Insider data shows NET_SELLING but trivial: 11 sales ($103K total) -- negligible dollar value, likely fractional share tax withholding. Effectively no signal. Customer concentration 10-K is genuinely informative and positive: explicitly states 'no significant concentration of risk with any single customer' and 'No customer accounted for 10%' of sales. Well-diversified revenue base corroborates stable trajectory and raises confidence slightly."
+    },
+    {
+      "case_id": "MC-LSTR-2022-03-31",
+      "cik": "0000853816",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "CUSTOMER_CONCENTRATION",
+      "key_insight": "EPS rose from $2.58 to $3.34 in comparable quarters. All 8 quarters profitable. Insider data shows NET_SELLING: 11 sales ($6.2M) vs 2 purchases ($380K) by director Akbari, ratio 0.06. One director buying is mildly positive but overwhelmed by selling volume. 20 grants paired with sales suggests vest-and-sell. Customer concentration 10-K confirms 'No single customer accounted for more than 10%' -- well-diversified freight brokerage model. Positive structural signal but does not change improving trajectory or confidence level."
+    },
+    {
+      "case_id": "MC-AVT-2020-09-30",
+      "cik": "0000008858",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "Only 1/8 quarters profitable with persistent losses (EPS -$0.31 to -$1.29). Despite revenue growth, cannot convert to earnings. Insider data shows NET_SELLING: 5 sales ($428K) vs 1 CFO purchase ($101K), ratio 0.24. New CFO Liguori buying is a mildly positive signal (new executive conviction), but small dollar amount against persistent losses. Customer concentration 10-K mentions risk from 'loss of significant customers' and defaults -- standard distribution business risk. Proxy flags executive changes consistent with underperformance. Enrichment adds color but does not change clear deterioration."
+    },
+    {
+      "case_id": "MC-ESAB-2022-03-31",
+      "cik": "0001877322",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue up 24.5% with EPS rising from $0.96 to $3.92. All 7 reporting quarters profitable. No insider trading data (no Form 4 filings -- newly spun off entity). No 10-K or proxy available pre-entry. Complete enrichment blackout for this recently public company. Confidence drops from high to medium on enriched assessment due to inability to corroborate with any alternative data source."
+    },
+    {
+      "case_id": "MC-OLLI-2022-03-31",
+      "cik": "0001639300",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -60% is data artifact. EPS mixed: quarterly $0.36 to $0.71 (improving) but annual $1.72 to $2.43. Insider data shows NET_SELLING: 8 sales ($224K) paired with 8 exercises -- pure option exercise-and-sell, trivial dollar value. Customer concentration excerpt is boilerplate credit risk language (credit card receivables), not revenue concentration. Stable management. Enrichment data now has real parsing but signals remain uninformative for this case."
+    },
+    {
+      "case_id": "MC-ADC-2020-09-30",
+      "cik": "0000917251",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium-high",
+      "classification_changed": false,
+      "most_impactful_source": "INSIDER_TRADING",
+      "key_insight": "EPS slightly declining ($0.93 to $0.39 quarterly). All 8 quarters profitable. Net-lease REIT. Insider data shows MIXED: 13 open-market purchases ($435K) by 3 different insiders (Leopold, Lehmkuhl, Frankel) vs 6 sales ($1.3M) by one insider (Rossi), ratio 0.33. Multiple insiders buying with personal capital is a mildly bullish signal -- suggests board/management confidence despite flat financials. Customer concentration excerpt is standard FDIC insurance boilerplate for cash deposits, not tenant concentration. Insider buying pattern modestly supports stability and raises confidence slightly."
+    }
+  ],
+  "metadata": {
+    "batches_processed": ["batch-012", "batch-013", "batch-014", "batch-015"],
+    "total_cases": 20,
+    "assessment_date": "2026-03-26",
+    "methodology_notes": "V2 re-assessment with real insider trading data (buy/sell counts, dollar values, net direction) and customer concentration 10-K text excerpts. Revenue trend percentages remain distorted by annual/quarterly mixing; EPS trajectory used as primary baseline signal. Insider trading now assessed on: (1) net direction, (2) dollar magnitude, (3) who is buying/selling (C-suite vs mid-level), (4) whether sales are paired with exercises/grants (compensation monetization vs discretionary selling).",
+    "enrichment_impact_summary": {
+      "classifications_changed": 0,
+      "confidence_changed": 5,
+      "confidence_changes": [
+        {"case_id": "MC-REXR-2022-03-31", "direction": "up", "from": "medium", "to": "medium-high", "reason": "Insider selling consistent with deterioration"},
+        {"case_id": "MC-GXO-2022-03-31", "direction": "up", "from": "medium", "to": "high", "reason": "$558M insider selling strongly corroborates deterioration"},
+        {"case_id": "MC-INGR-2022-03-31", "direction": "up", "from": "medium", "to": "medium-high", "reason": "10-K confirms no customer >10% -- diversified base supports stability"},
+        {"case_id": "MC-ESAB-2022-03-31", "direction": "down", "from": "high", "to": "medium", "reason": "No enrichment data available for recently public entity"},
+        {"case_id": "MC-ADC-2020-09-30", "direction": "up", "from": "medium", "to": "medium-high", "reason": "Multiple insiders buying with personal capital supports stability"}
+      ],
+      "cases_with_informative_enrichment": 14,
+      "cases_with_uninformative_enrichment": 6,
+      "primary_finding": "Real insider buy/sell parsing dramatically improves enrichment signal quality. 14/20 cases now have actionable insider or customer concentration data vs 0/20 in v1. However, no trajectory classifications changed -- enrichment primarily affects confidence levels. Key patterns: (1) exercise-and-sell is noise, not signal; (2) open-market purchases by C-suite are the strongest bullish indicator; (3) large-dollar discretionary selling by founders/C-suite is the strongest bearish indicator; (4) customer concentration 10-K excerpts vary widely from genuinely informative (LPX top-10 = 42%, INGR no customer >10%, PSN government dependency) to boilerplate credit-risk language (OLLI, MTN, HR)."
+    }
+  }
+}
