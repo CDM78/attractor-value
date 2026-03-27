@@ -1,0 +1,410 @@
+{
+  "run_date": "2026-03-27T00:37:26.624Z",
+  "cases_tested": 5,
+  "cases_complete": 5,
+  "cases_skipped": 0,
+  "results": [
+    {
+      "case_id": "CASE-BIIB-2013-01-02-7553e7",
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "outcome": "winner",
+      "entry_date": "2013-01-02",
+      "status": "COMPLETE",
+      "phase1": {
+        "trajectory": "stable",
+        "confidence": "high",
+        "information_requests": [
+          {
+            "type": "SEC_FILING",
+            "query": "material event",
+            "reason": "Recent 8-K filings would reveal material events not yet in the 10-K",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "INSIDER_TRADING",
+            "query": "insider transactions",
+            "reason": "Net insider buying/selling signals management confidence in the business",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "MANAGEMENT",
+            "query": "executive compensation and changes",
+            "reason": "Executive turnover or compensation changes may indicate instability",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "CUSTOMER_CONCENTRATION",
+            "query": "customer concentration risk",
+            "reason": "High customer concentration amplifies revenue risk",
+            "expected_impact": "MEDIUM"
+          }
+        ],
+        "analysis_metadata": {
+          "current_length": 46106,
+          "prior_length": 46749,
+          "length_change_pct": "-1.4",
+          "current_keywords": 149,
+          "prior_keywords": 136,
+          "keyword_change_pct": "9.6",
+          "new_paragraphs": -3
+        }
+      },
+      "phase2": [
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 10000 8-K filings. Recent events: 2012-10-05: GLOWPOINT, INC.  (OBLG)  (CIK 0000746210); 2012-12-31: UNIVERSAL POWER GROUP INC.  (CIK 0001372000); 2012-10-03: Digital Cinema Destinations Corp.  (CIK 0001510326); 2012-11-02: Otter Tail Corp  (OTTR)  (CIK 0001466593); 2012-03-26: COMVERGE, INC.  (CIK 0001372664); 2012-11-28: Tower Group, Inc.  (CIK 0001289592); 2012-04-10: CONOLOG CORP  (CIK 0000023503); 2012-09-17: ARES CAPITAL CORP  (ARCC)  (CIK 0001287750); 2012-11-02: Otter Tail Corp  (O"
+        },
+        {
+          "request_type": "INSIDER_TRADING",
+          "data_found": false,
+          "summary": "No Form 4 filings found in trailing 12 months."
+        },
+        {
+          "request_type": "MANAGEMENT",
+          "data_found": false,
+          "summary": "No DEF 14A proxy statement found before entry date."
+        },
+        {
+          "request_type": "CUSTOMER_CONCENTRATION",
+          "data_found": false,
+          "summary": "No customer concentration language found in 10-K text."
+        }
+      ],
+      "phase3": {
+        "trajectory": "stable",
+        "confidence": "high",
+        "most_impactful_source": "SEC_FILING",
+        "classification_changed": false,
+        "key_insight": "Limited supplementary data available; maintaining stable assessment at high confidence."
+      }
+    },
+    {
+      "case_id": "CASE-EXPE-2021-12-31-1312f8",
+      "ticker": "EXPE",
+      "sector": "Consumer Discretionary",
+      "outcome": "underperform",
+      "entry_date": "2021-12-31",
+      "status": "COMPLETE",
+      "phase1": {
+        "trajectory": "stable",
+        "confidence": "medium",
+        "information_requests": [
+          {
+            "type": "SEC_FILING",
+            "query": "material event",
+            "reason": "Recent 8-K filings would reveal material events not yet in the 10-K",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "INSIDER_TRADING",
+            "query": "insider transactions",
+            "reason": "Net insider buying/selling signals management confidence in the business",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "MANAGEMENT",
+            "query": "executive compensation and changes",
+            "reason": "Executive turnover or compensation changes may indicate instability",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "CUSTOMER_CONCENTRATION",
+            "query": "customer concentration risk",
+            "reason": "High customer concentration amplifies revenue risk",
+            "expected_impact": "MEDIUM"
+          }
+        ],
+        "analysis_metadata": {
+          "current_length": 80732,
+          "prior_length": 98485,
+          "length_change_pct": "-18.0",
+          "current_keywords": 196,
+          "prior_keywords": 216,
+          "keyword_change_pct": "-9.3",
+          "new_paragraphs": -66
+        }
+      },
+      "phase2": [
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 10000 8-K filings. Recent events: 2021-10-19: Oyster Point Pharma, Inc.  (CIK 0001720725); 2021-06-25: AMREP CORP.  (AXR)  (CIK 0000006207); 2021-05-21: XPEL, Inc.  (XPEL)  (CIK 0001767258); 2021-07-21: AUDACY, INC.  (AUDAQ)  (CIK 0001067837); 2021-10-04: Otter Tail Corp  (OTTR)  (CIK 0001466593); 2021-09-02: HARROW HEALTH, INC.  (HROW, HROWL, HROWM)  (CIK 0001360214); 2021-12-07: LM FUNDING AMERICA, INC.  (LMFA)  (CIK 0001640384); 2021-02-03: AMREP CORP.  (AXR)  (CIK 0000006207); 2021-09-"
+        },
+        {
+          "request_type": "INSIDER_TRADING",
+          "data_found": true,
+          "summary": "75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+        },
+        {
+          "request_type": "MANAGEMENT",
+          "data_found": true,
+          "summary": "DEF 14A filed 2021-04-26. No obvious executive changes in compensation section. Excerpt: \"1 \n\nRole of Peer Groups, Surveys and Benchmarking \n\n41 \n\nCompensation Program Elements \n\n42 \n\nOther Executive Compensation Practices and Policies \n\n48 \n\nChange in Control \n\n49 \n\nSeverance \n\n49 \n\n2021 Compensation Events \n\n50 \n\nCOMPENSATION COMMITTEE REPORT \n\n52 \n\nEXECUTIVE COMPENSATION \n\n53 \n\n20 20 Summary Compensation Table \n\n53 \n\n20 20 Grants of Plan-Based Awards \n\n55 \n\nOutstanding Equity Awards at 20 20 "
+        },
+        {
+          "request_type": "CUSTOMER_CONCENTRATION",
+          "data_found": false,
+          "summary": "No customer concentration language found in 10-K text."
+        }
+      ],
+      "phase3": {
+        "trajectory": "stable",
+        "confidence": "medium",
+        "most_impactful_source": "SEC_FILING",
+        "classification_changed": false,
+        "key_insight": "Additional data confirms stable trajectory with increased confidence from sec filing analysis."
+      }
+    },
+    {
+      "case_id": "CASE-ADM-2021-12-31-cf4a10",
+      "ticker": "ADM",
+      "sector": "Consumer Staples",
+      "outcome": "trap",
+      "entry_date": "2021-12-31",
+      "status": "COMPLETE",
+      "phase1": {
+        "trajectory": "deteriorating",
+        "confidence": "high",
+        "information_requests": [
+          {
+            "type": "SEC_FILING",
+            "query": "material event",
+            "reason": "Recent 8-K filings would reveal material events not yet in the 10-K",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "INSIDER_TRADING",
+            "query": "insider transactions",
+            "reason": "Net insider buying/selling signals management confidence in the business",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "MANAGEMENT",
+            "query": "executive compensation and changes",
+            "reason": "Executive turnover or compensation changes may indicate instability",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "CUSTOMER_CONCENTRATION",
+            "query": "customer concentration risk",
+            "reason": "High customer concentration amplifies revenue risk",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "SEC_FILING",
+            "query": "restructuring impairment",
+            "reason": "Deteriorating trajectory may have triggered restructuring events",
+            "expected_impact": "HIGH"
+          }
+        ],
+        "analysis_metadata": {
+          "current_length": 3541,
+          "prior_length": 1796,
+          "length_change_pct": "97.2",
+          "current_keywords": 9,
+          "prior_keywords": 6,
+          "keyword_change_pct": "50.0",
+          "new_paragraphs": 3
+        }
+      },
+      "phase2": [
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 10000 8-K filings. Recent events: 2021-10-19: Oyster Point Pharma, Inc.  (CIK 0001720725); 2021-06-25: AMREP CORP.  (AXR)  (CIK 0000006207); 2021-05-21: XPEL, Inc.  (XPEL)  (CIK 0001767258); 2021-07-21: AUDACY, INC.  (AUDAQ)  (CIK 0001067837); 2021-10-04: Otter Tail Corp  (OTTR)  (CIK 0001466593); 2021-09-02: HARROW HEALTH, INC.  (HROW, HROWL, HROWM)  (CIK 0001360214); 2021-12-07: LM FUNDING AMERICA, INC.  (LMFA)  (CIK 0001640384); 2021-02-03: AMREP CORP.  (AXR)  (CIK 0000006207); 2021-09-"
+        },
+        {
+          "request_type": "INSIDER_TRADING",
+          "data_found": true,
+          "summary": "107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+        },
+        {
+          "request_type": "MANAGEMENT",
+          "data_found": true,
+          "summary": "DEF 14A filed 2021-03-26. Executive changes detected in compensation section. Excerpt: \"ents \n\nTable of Contents \n\nCOMPENSATION DISCUSSION AND\nANALYSIS \n\n29 \n\nExecutive Summary \n\n30 \n\nHow Executive Compensation is\nDetermined \n\n33 \n\nComponents of Executive Compensation \n\n34 \n\n2020 Executive Compensation Decisions \n\n36 \n\nPeer Group \n\n45 \n\nBenefits \n\n46 \n\nCompensation Policies and Governance \n\n47 \n\nEmployment Agreements, Severance, and Change in Control Benefits\n\n48 \n\nCompensation/Succession Commit"
+        },
+        {
+          "request_type": "CUSTOMER_CONCENTRATION",
+          "data_found": false,
+          "summary": "No customer concentration language found in 10-K text."
+        },
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 7097 8-K filings. Recent events: 2021-02-18: KELLY SERVICES INC  (KELYA, KELYB)  (CIK 0000055135); 2021-08-05: Adient plc  (ADNT)  (CIK 0001670541); 2021-07-29: TELEFLEX INC  (TFX)  (CIK 0000096943); 2021-03-10: Aegion Corp  (CIK 0000353020); 2021-07-29: TELEFLEX INC  (TFX)  (CIK 0000096943); 2021-02-25: TELEFLEX INC  (TFX)  (CIK 0000096943); 2021-10-28: TELEFLEX INC  (TFX)  (CIK 0000096943); 2021-02-17: OIL STATES INTERNATIONAL, INC  (OIS)  (CIK 0001121484); 2021-02-05: Adient plc  (ADNT)"
+        }
+      ],
+      "phase3": {
+        "trajectory": "deteriorating",
+        "confidence": "high",
+        "most_impactful_source": "MANAGEMENT",
+        "classification_changed": false,
+        "key_insight": "Additional data confirms deteriorating trajectory with increased confidence from management analysis."
+      }
+    },
+    {
+      "case_id": "CASE-APD-2021-01-04-ca034a",
+      "ticker": "APD",
+      "sector": "Materials",
+      "outcome": "underperform",
+      "entry_date": "2021-01-04",
+      "status": "COMPLETE",
+      "phase1": {
+        "trajectory": "stable",
+        "confidence": "high",
+        "information_requests": [
+          {
+            "type": "SEC_FILING",
+            "query": "material event",
+            "reason": "Recent 8-K filings would reveal material events not yet in the 10-K",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "INSIDER_TRADING",
+            "query": "insider transactions",
+            "reason": "Net insider buying/selling signals management confidence in the business",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "MANAGEMENT",
+            "query": "executive compensation and changes",
+            "reason": "Executive turnover or compensation changes may indicate instability",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "CUSTOMER_CONCENTRATION",
+            "query": "customer concentration risk",
+            "reason": "High customer concentration amplifies revenue risk",
+            "expected_impact": "MEDIUM"
+          }
+        ],
+        "analysis_metadata": {
+          "current_length": 30415,
+          "prior_length": 29697,
+          "length_change_pct": "2.4",
+          "current_keywords": 92,
+          "prior_keywords": 84,
+          "keyword_change_pct": "9.5",
+          "new_paragraphs": 1
+        }
+      },
+      "phase2": [
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 10000 8-K filings. Recent events: 2020-12-17: Sabre Corp  (SABR)  (CIK 0001597033); 2020-07-06: LAMAR ADVERTISING CO/NEW  (LAMR)  (CIK 0001090425), LAMAR MEDIA CORP/DE  (CIK 0000899045); 2020-07-21: Caesars Entertainment, Inc.  (CZR)  (CIK 0001590895); 2020-07-21: VICI PROPERTIES INC.  (VICI)  (CIK 0001705696); 2020-06-30: DELMAR BANCORP  (CIK 0000832090); 2020-02-11: CCF Holdings LLC  (CIK 0001766682); 2020-03-11: Soliton, Inc.  (CIK 0001548187); 2020-03-04: CHRISTOPHER & BANKS CORP  (CIK"
+        },
+        {
+          "request_type": "INSIDER_TRADING",
+          "data_found": true,
+          "summary": "43 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+        },
+        {
+          "request_type": "MANAGEMENT",
+          "data_found": true,
+          "summary": "DEF 14A filed 2020-12-09. No obvious executive changes in compensation section. Excerpt: \"rd Structure \n\n11 \n\nBoard Practices, Processes and Policies \n\n15 \n\nCompensation of Directors \n\n16 \n\nEXECUTIVE COMPENSATION \n\n19 \n\nProposal 2. \n\nAdvisory Vote on Executive Officer Compensation \n\n19 \n\nReport of the Management Development and Compensation Committee \n\n20 \n\nCompensation Discussion and Analysis \n\n20 \n\nHighlights of Fiscal 2020 Company Performance and Compensation Actions \n\n21 \n\nFiscal 2020 Execut"
+        },
+        {
+          "request_type": "CUSTOMER_CONCENTRATION",
+          "data_found": false,
+          "summary": "No customer concentration language found in 10-K text."
+        }
+      ],
+      "phase3": {
+        "trajectory": "stable",
+        "confidence": "high",
+        "most_impactful_source": "SEC_FILING",
+        "classification_changed": false,
+        "key_insight": "Additional data confirms stable trajectory with increased confidence from sec filing analysis."
+      }
+    },
+    {
+      "case_id": "CASE-WM-2013-01-02-349bad",
+      "ticker": "WM",
+      "sector": "Industrials",
+      "outcome": "winner",
+      "entry_date": "2013-01-02",
+      "status": "COMPLETE",
+      "phase1": {
+        "trajectory": "deteriorating",
+        "confidence": "medium",
+        "information_requests": [
+          {
+            "type": "SEC_FILING",
+            "query": "material event",
+            "reason": "Recent 8-K filings would reveal material events not yet in the 10-K",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "INSIDER_TRADING",
+            "query": "insider transactions",
+            "reason": "Net insider buying/selling signals management confidence in the business",
+            "expected_impact": "HIGH"
+          },
+          {
+            "type": "MANAGEMENT",
+            "query": "executive compensation and changes",
+            "reason": "Executive turnover or compensation changes may indicate instability",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "CUSTOMER_CONCENTRATION",
+            "query": "customer concentration risk",
+            "reason": "High customer concentration amplifies revenue risk",
+            "expected_impact": "MEDIUM"
+          },
+          {
+            "type": "SEC_FILING",
+            "query": "restructuring impairment",
+            "reason": "Deteriorating trajectory may have triggered restructuring events",
+            "expected_impact": "HIGH"
+          }
+        ],
+        "analysis_metadata": {
+          "current_length": 47751,
+          "prior_length": 38543,
+          "length_change_pct": "23.9",
+          "current_keywords": 126,
+          "prior_keywords": 106,
+          "keyword_change_pct": "18.9",
+          "new_paragraphs": 20
+        }
+      },
+      "phase2": [
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 10000 8-K filings. Recent events: 2012-10-05: GLOWPOINT, INC.  (OBLG)  (CIK 0000746210); 2012-12-31: UNIVERSAL POWER GROUP INC.  (CIK 0001372000); 2012-10-03: Digital Cinema Destinations Corp.  (CIK 0001510326); 2012-11-02: Otter Tail Corp  (OTTR)  (CIK 0001466593); 2012-03-26: COMVERGE, INC.  (CIK 0001372664); 2012-11-28: Tower Group, Inc.  (CIK 0001289592); 2012-04-10: CONOLOG CORP  (CIK 0000023503); 2012-09-17: ARES CAPITAL CORP  (ARCC)  (CIK 0001287750); 2012-11-02: Otter Tail Corp  (O"
+        },
+        {
+          "request_type": "INSIDER_TRADING",
+          "data_found": false,
+          "summary": "No Form 4 filings found in trailing 12 months."
+        },
+        {
+          "request_type": "MANAGEMENT",
+          "data_found": false,
+          "summary": "No DEF 14A proxy statement found before entry date."
+        },
+        {
+          "request_type": "CUSTOMER_CONCENTRATION",
+          "data_found": false,
+          "summary": "No customer concentration language found in 10-K text."
+        },
+        {
+          "request_type": "SEC_FILING",
+          "data_found": true,
+          "summary": "Found 4975 8-K filings. Recent events: 2012-11-06: MODINE MANUFACTURING CO  (MOD)  (CIK 0000067347); 2012-01-26: BRUNSWICK CORP  (BC, BC-PA, BC-PB, BC-PC)  (CIK 0000014930); 2012-11-15: APPLIED MATERIALS INC /DE  (AMAT)  (CIK 0000006951); 2012-07-25: PEPSICO INC  (PEP)  (CIK 0000077476); 2012-10-24: INTERFACE INC  (TILE)  (CIK 0000715787); 2012-02-16: BRADY CORP  (BRC)  (CIK 0000746598); 2012-10-25: BRUNSWICK CORP  (BC, BC-PA, BC-PB, BC-PC)  (CIK 0000014930); 2012-03-29: BEST BUY CO INC  (BBY)  "
+        }
+      ],
+      "phase3": {
+        "trajectory": "deteriorating",
+        "confidence": "medium",
+        "most_impactful_source": "SEC_FILING",
+        "classification_changed": false,
+        "key_insight": "Limited supplementary data available; maintaining deteriorating assessment at medium confidence."
+      }
+    }
+  ]
+}
