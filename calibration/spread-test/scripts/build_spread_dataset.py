@@ -9,7 +9,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from collections import defaultdict
 
-CAL = Path(__file__).parent.parent
+CAL = Path('/home/cm/attractor-value/calibration/spread-test')
 
 def fetch_csv(url):
     """Fetch CSV from URL via curl."""
@@ -52,12 +52,12 @@ print("Phase 1: Building credit spread timing dataset\n")
 
 # Step 1: Fetch FRED data
 print("Fetching BAA yield from FRED...")
-baa_text = fetch_csv('https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAA&cosd=1996-01-01&coed=2026-01-01')
+baa_text = fetch_csv('https://fred.stlouisfed.org/graph/fredgraph.csv?id=DBAA&cosd=1996-01-01&coed=2026-01-01')
 baa = parse_fred_csv(baa_text)
 print(f"  BAA: {len(baa)} daily observations")
 
 print("Fetching AAA yield from FRED...")
-aaa_text = fetch_csv('https://fred.stlouisfed.org/graph/fredgraph.csv?id=AAA&cosd=1996-01-01&coed=2026-01-01')
+aaa_text = fetch_csv('https://fred.stlouisfed.org/graph/fredgraph.csv?id=DAAA&cosd=1996-01-01&coed=2026-01-01')
 aaa = parse_fred_csv(aaa_text)
 print(f"  AAA: {len(aaa)} daily observations")
 
@@ -247,7 +247,7 @@ for idx, (ym, (date, spread_val)) in enumerate(sorted(month_end_spread.items()))
     })
 
 # Write CSV
-out_path = CAL / 'spread-test/spread-monthly-dataset.csv'
+out_path = CAL / 'spread-monthly-dataset.csv'
 fieldnames = list(rows[0].keys())
 with open(out_path, 'w', newline='') as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)

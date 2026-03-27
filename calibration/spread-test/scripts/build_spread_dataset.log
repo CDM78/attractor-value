@@ -1,0 +1,34 @@
+/home/cm/attractor-value/calibration/spread-test/scripts/build_spread_dataset.py:100: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  d = datetime.utcfromtimestamp(t).strftime('%Y-%m-%d')
+/home/cm/attractor-value/calibration/spread-test/scripts/build_spread_dataset.py:122: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  d = datetime.utcfromtimestamp(t).strftime('%Y-%m-%d')
+Phase 1: Building credit spread timing dataset
+
+Fetching BAA yield from FRED...
+  BAA: 7508 daily observations
+Fetching AAA yield from FRED...
+  AAA: 7508 daily observations
+  Daily spread: 7508 observations
+  2008-10 spread: 3.120000000000001% (should be > 3.0)
+  2020-03 spread: 1.9% (should be > 2.5)
+  2006-01 spread: 0.9199999999999999% (should be < 1.0)
+
+Fetching S&P 500 from Yahoo (^GSPC)...
+  Yahoo download API failed, trying chart API via curl...
+  S&P 500 monthly: 300 observations
+Fetching VBR from Yahoo...
+  VBR monthly: 252 observations
+
+============================================================
+  SPREAD MONTHLY DATASET
+============================================================
+  Total months: 276
+  In-sample (2000-2014): 180
+  Out-of-sample (2015-2022): 96
+  With 3yr forward return: 264
+  Mean spread level: 1.033%
+  Min spread: 0.540% (2014-05-30)
+  Max spread: 3.430% (2008-11-28)
+  Mean forward 3yr return: 23.9%
+
+  Saved: /home/cm/attractor-value/calibration/spread-test/spread-monthly-dataset.csv
