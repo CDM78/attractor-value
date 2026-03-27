@@ -32,10 +32,10 @@ def parse_agent_output(text):
     patterns = {
         'observations_a': r'OBSERVATIONS_A:\s*(.*?)(?=\nOBSERVATIONS_B:)',
         'observations_b': r'OBSERVATIONS_B:\s*(.*?)(?=\nOBSERVATIONS_C:)',
-        'observations_c': r'OBSERVATIONS_C:\s*(.*?)(?=\nOBSERVATIONS_D_COUNT:)',
-        'observations_d_count': r'OBSERVATIONS_D_COUNT:\s*(\d+)',
-        'statistics': r'STATISTICS:\s*(.*?)(?=\nUNCERTAINTY:)',
-        'uncertainty_rating': r'UNCERTAINTY:\s*(CAN_ASSESS|MARGINAL|CANNOT_ASSESS)',
+        'observations_c': r'OBSERVATIONS_C:\s*(.*?)(?=\nOBSERVATIONS_D(?:_COUNT)?:)',
+        'observations_d_count': r'OBSERVATIONS_D(?:_COUNT)?:\s*(?:.*?)(\d+)',
+        'statistics': r'STATISTICS:\s*(.*?)(?=\nUNCERTAINTY)',
+        'uncertainty_rating': r'UNCERTAINTY(?:_ASSESSMENT)?:\s*(CAN_ASSESS|MARGINAL|CANNOT_ASSESS)',
         'score': r'SCORE:\s*([\d.]+|N/A)',
         'justification': r'JUSTIFICATION:\s*(.*)',
     }

@@ -1,0 +1,30 @@
+Verification: loaded 150 rows from full-results.csv
+
+=== RECOMPUTED STATISTICS ===
+Score vs return: r=-0.146, p=0.1007, n=126
+risks_added: r=0.083, p=0.3095, n=150
+risks_removed: r=-0.085, p=0.3003, n=150
+severity_changed: r=-0.003, p=0.9690, n=150
+word_count_change: r=0.055, p=0.5034, n=150
+
+=== CROSS-VALIDATION WITH ORIGINAL LOGS ===
+
+Original log r-values: 11 found
+  150
+Word count pct change: r=0.055 (from log)
+  Fold 0: r=-0.173 (from log)
+  Fold 1: r=-0.037 (from log)
+  Fold 2: r=-0.297 (from log)
+  Fold 3: r=-0.126 (from log)
+  Fold 4: r=-0.094 (from log)
+  Risks ADDED vs returns: r=0.083 (from log)
+  Risks REMOVED vs returns: r=-0.085 (from log)
+  change vs returns: r=0.055 (from log)
+  Approx current risk count vs returns: r=-0.003 (from log)
+  Severity CHANGES vs returns: r=-0.003 (from log)
+
+Primary score correlation verified: r=-0.146
+
+=== VERIFICATION COMPLETE ===
+All statistics recomputed from raw CSV.
+Discrepancies > 0.01: 0

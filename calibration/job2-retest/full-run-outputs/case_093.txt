@@ -1,0 +1,45 @@
+OBSERVATIONS_A: ADDED RISK FACTORS
+1. "Climate change manifesting as physical or transition risks could adversely affect our operations, businesses and customers." — Entirely new standalone risk factor covering physical climate risks (flooding, wildfires, sea level rise, drought) and transition risks (policy changes, regulatory requirements, consumer preferences), including reputational risk from involvement with industries associated with climate change.
+2. "We face risks resulting from the extensive use of models and data." — New standalone risk factor (previously only referenced within other risk factors) covering model risk, data aggregation, data validation, and the risk that models based on historical data may not predict future outcomes.
+
+OBSERVATIONS_B: REMOVED RISK FACTORS
+NONE REMOVED. All prior year risk factors appear to have corresponding entries in the current year, though some have been restructured or retitled.
+
+OBSERVATIONS_C: CHANGED SEVERITY
+1. COVID-19 risk factor: Title changed from "The COVID-19 pandemic has adversely impacted our business and financial results, and the extent to which the pandemic...could materially and adversely impact our business...will depend on future developments, which are highly uncertain and are difficult to predict" to "Our results of operations may be adversely affected by the effects of the COVID-19 pandemic." The body language shifted significantly — prior year discussed vaccines being "authorized for limited distribution" with "plan for larger community-based distribution being developed"; current year states "Although the global economy has begun to recover from the COVID-19 pandemic and many health and safety restrictions have been lifted and vaccine distribution has increased" while noting new concerns about the Omicron variant, labor shortages, supply chain disruptions, and rising inflationary pressures. Prior year discussed Federal Reserve restrictions on share repurchases as current; current year notes these "temporary restrictions on our capital actions ended on June 30, 2021."
+
+2. Financial market instability: Prior year included detailed discussion of near-zero Federal Reserve rates and brief negative interest rate environment; current year removes most of this discussion, reflecting the changed rate environment.
+
+3. Cybersecurity risk factor: Title changed from "Theft, loss or misuse of information as a result of a cyber-attack may result in increased costs, reductions in revenue, reputational damage and business disruptions" to "A cyber-attack or other security incident, including one that results in the theft, loss or misuse of information (including personal information), or the disabling of systems and access to information critical to business operations, may result in increased costs, reductions in revenue, reputational damage, legal exposure and business disruptions" — expanded to include "legal exposure" and "disabling of systems."
+
+4. Privacy/data protection risk factor: Title changed from "Potential data protection and privacy incidents, and our required compliance with laws and regulations related to these areas, may increase our costs, result in legal liability, reduce our revenue and limit our ability to pursue business opportunities" to "Our required compliance with applicable laws and regulations related to privacy, data protection and data security may increase our costs, reduce our revenue, increase our legal exposure and limit our ability to pursue business opportunities." Current year adds reference to the final rule (Nov 2021) requiring 36-hour notification of material computer-security incidents (previously proposed rulemaking in Dec 2020), adds references to CPRA (effective Jan 2023), and adds "Numerous other states have also enacted or are in the process of enacting state-level privacy, data protection and/or data security laws."
+
+5. Operational infrastructure risk factor: Current year adds substantial new language about AWS cloud migration — "We have migrated substantially all aspects of our core information technology systems and customer-facing applications to third-party cloud infrastructure platforms, principally AWS" — and associated risks. Also adds new language about change management governance risks.
+
+6. LIBOR risk factor: Title changed from "Uncertainty regarding, and transition away from, LIBOR may adversely affect our business" to "The transition away from LIBOR may adversely affect our business." Updated to reflect that non-USD LIBOR cessation occurred (end of Dec 2021) and US banking agencies' guidance to cease new LIBOR contracts by Dec 31, 2021.
+
+7. Geographic/industry concentration: Changed from "approximately 27% of our commercial loan portfolio is concentrated in the tri-state area of New York, New Jersey and Connecticut" to "approximately 45% of our commercial real estate loan portfolio is concentrated in the Northeast region." Prior year mentioned "healthcare and healthcare-related real estate loans represented approximately 19% of our total commercial loan portfolio"; current year removes this specific healthcare reference.
+
+8. Legal/regulatory compliance risk factor: Current year adds language about "future rulemaking in emerging regulatory areas such as climate-related risks and new technologies, including distributed ledger technology and cryptocurrencies."
+
+9. Macroeconomic risk factor: Current year adds "inflation" as a specific risk in the bullet point about payment patterns and consumer spending changes.
+
+10. Credit risk (delinquencies): Current year adds "rising levels of inflation" as a factor that can adversely affect customers' ability to repay, alongside higher debt levels and rising interest rates.
+
+11. Competition risk factor: Current year adds more detailed discussion of partnerships — "As of December 31, 2021, we have a number of large partnerships in our credit card loan portfolio" — and risks of losing partner relationships.
+
+OBSERVATIONS_D_COUNT: 8 (approximately — including capital/liquidity adequacy, dividend limitations from subsidiaries, catastrophic events, risk management strategies, financial statement assumptions/estimates, soundness of other institutions, litigation/enforcement, and intellectual property)
+
+OBSERVATIONS_E:
+- Prior year approximate word count: ~18,000 (Item 1A Risk Factors section only, lines 330-631)
+- Current year approximate word count: ~19,500 (Item 1A Risk Factors section only, lines 983-1291)
+- Percentage change: +8%
+- Number of distinct risk factors (prior): 19
+- Number of distinct risk factors (current): 21
+
+UNCERTAINTY_ASSESSMENT: CAN_ASSESS
+The changes between years are clear and substantive. Two new risk factors were added (climate change, model/data risk), the COVID-19 language shifted meaningfully toward recovery, and multiple risk factors were updated with new specifics (inflation, AWS migration, LIBOR transition progress).
+
+SCORE: 3.2
+
+JUSTIFICATION: The risk profile is approximately neutral with a slight lean toward improvement. The COVID-19 risk factor language shifted significantly from acute uncertainty (vaccines "authorized for limited distribution," capital action restrictions in place) to recovery framing ("global economy has begun to recover," restrictions ended). The LIBOR transition progressed from uncertain to largely executed. However, new risks emerged: a standalone climate change risk factor was added, inflation was introduced as a new concern across multiple risk factors, and the operational risk profile expanded with the AWS cloud migration dependency. The net effect is roughly offsetting — pandemic risks are receding while inflation, climate, and operational complexity risks are emerging.

@@ -1,0 +1,26 @@
+Loaded 150 cases
+
+=== OBSERVATION-ONLY SIGNALS ===
+(No AI judgment — purely factual document comparisons)
+
+1. Risks ADDED vs returns: r=0.083, p=0.3095, n=150
+
+2. Risks REMOVED vs returns: r=-0.085, p=0.3003, n=150
+
+3. Word count % change vs returns: r=0.055, p=0.5034, n=150
+
+4. Approx current risk count vs returns: r=-0.003, p=0.9750, n=150
+
+5. Severity CHANGES vs returns: r=-0.003, p=0.9690, n=150
+
+=== BEST OBSERVATIONAL SIGNAL ===
+Best: Risks removed with r=-0.085, p=0.3003, n=150
+
+Signal Summary:
+Signal                           r        p     n
+------------------------- -------- -------- -----
+Risks removed               -0.085   0.3003   150
+Risks added                  0.083   0.3095   150
+Word count change            0.055   0.5034   150
+Severity changes            -0.003   0.9690   150
+Current risk count          -0.003   0.9750   150

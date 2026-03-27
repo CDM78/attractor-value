@@ -1,0 +1,38 @@
+Loaded 150 cases from full-results.csv
+
+=== CANNOT_ASSESS RATE ===
+Total cases: 150
+CAN_ASSESS: 86 (57.3%)
+MARGINAL: 40 (26.7%)
+CANNOT_ASSESS: 24 (16.0%)
+
+=== SCORE vs FORWARD RETURN (scored cases only) ===
+r=-0.146, p=0.1007, n=126
+
+=== CANNOT_ASSESS AS SIGNAL ===
+CANNOT_ASSESS: n=24, mean_return=0.247, median=0.273, std=0.372
+CAN_ASSESS: n=86, mean_return=0.190, median=0.061, std=0.636
+MARGINAL: n=40, mean_return=0.394, median=0.087, std=1.115
+t-test CAN vs CANNOT: t=-0.561, p=0.5749
+
+=== OBSERVATION COUNTS AS SIGNALS ===
+Risks added (obs_a_count_run1): r=0.083, p=0.3095, n=150
+Risks removed (obs_b_count_run1): r=-0.085, p=0.3003, n=150
+Severity changed (obs_c_count_run1): r=-0.003, p=0.9690, n=150
+Word count pct change: r=0.055, p=0.5034, n=150
+
+=== DE-DUPLICATION CHECK ===
+Unique companies: 131, total entries: 150
+Duplicate rate: 12.7%
+
+=== 5-FOLD CROSS-VALIDATION ===
+  Fold 0: r=-0.173, p=0.3970, n=26
+  Fold 1: r=-0.037, p=0.8613, n=25
+  Fold 2: r=-0.297, p=0.1490, n=25
+  Fold 3: r=-0.126, p=0.5470, n=25
+  Fold 4: r=-0.094, p=0.6565, n=25
+Positive folds: 0/5
+Mean fold r: -0.145
+
+=== VERDICT ===
+VERDICT: FAILED (r=-0.146, p=0.1007)
