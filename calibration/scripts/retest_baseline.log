@@ -1,0 +1,64 @@
+============================================================
+  BASELINE JOB 2 METRICS (24 mid-cap cases, 3-run median)
+============================================================
+
+  MC-ARW-2022-03-31: median=3.0 runs=[3.0, 3.0, 3.3] fwd=-12.48% outcome=trap
+  MC-BILL-2022-03-31: median=3.0 runs=[3.2, 2.8, 3.0] fwd=-79.77% outcome=trap
+  MC-CAR-2020-09-30: median=2.3 runs=[2.3, 2.5, 2.0] fwd=+582.71% outcome=winner
+  MC-CAR-2022-03-31: median=3.2 runs=[3.5, 3.2, 3.2] fwd=-71.17% outcome=trap
+  MC-CUZ-2020-09-30: median=3.2 runs=[3.1, 3.2, 3.2] fwd=-28.75% outcome=trap
+  MC-CUZ-2022-03-31: median=3.0 runs=[3.0, 3.0, 2.8] fwd=-26.78% outcome=trap
+  MC-ESTC-2020-09-30: median=2.4 runs=[2.3, 2.4, 2.4] fwd=-24.70% outcome=trap
+  MC-ESTC-2022-03-31: median=3.3 runs=[3.3, 3.0, 3.5] fwd=+0.17% outcome=underperform
+  MC-HIW-2022-03-31: median=3.1 runs=[3.2, 3.1, 3.1] fwd=-35.20% outcome=trap
+  MC-KBR-2020-09-30: median=3.3 runs=[3.1, 3.3, 3.5] fwd=+163.60% outcome=winner
+  MC-KRC-2020-09-30: median=3.2 runs=[3.2, 3.4, 3.2] fwd=-39.16% outcome=trap
+  MC-LAZ-2020-09-30: median=3.0 runs=[3.0, 3.0, 3.0] fwd=-6.17% outcome=trap
+  MC-MSM-2020-09-30: median=3.1 runs=[3.0, 3.1, 3.1] fwd=+55.10% outcome=winner
+  MC-MTN-2020-09-30: median=2.0 runs=[2.0, 1.8, 2.3] fwd=+3.70% outcome=underperform
+  MC-MTN-2022-03-31: median=3.3 runs=[3.4, 3.3, 2.5] fwd=-38.52% outcome=trap
+  MC-NVST-2022-03-31: median=3.3 runs=[3.3, 3.5, 3.3] fwd=-64.57% outcome=trap
+  MC-PK-2020-09-30: median=3.0 runs=[3.0, 3.4, 2.8] fwd=+23.32% outcome=mixed
+  MC-PSN-2022-03-31: median=2.9 runs=[2.8, 3.0, 2.9] fwd=+53.00% outcome=winner
+  MC-REXR-2022-03-31: median=3.5 runs=[3.1, 3.6, 3.5] fwd=-47.51% outcome=trap
+  MC-THO-2022-03-31: median=3.2 runs=[3.4, 3.2, 2.9] fwd=-3.67% outcome=trap
+  MC-TKR-2020-09-30: median=3.3 runs=[3.3, 3.0, 3.5] fwd=+35.54% outcome=mixed
+  MC-TKR-2022-03-31: median=2.8 runs=[2.7, 3.0, 2.8] fwd=+18.40% outcome=mixed
+  MC-VKTX-2020-09-30: median=3.0 runs=[3.0, 2.8, 3.0] fwd=+90.21% outcome=winner
+  MC-VKTX-2022-03-31: median=3.0 runs=[3.0, 3.0, 3.4] fwd=+705.00% outcome=winner
+
+------------------------------------------------------------
+  PRIMARY: r(score_median, forward_return_3yr) = -0.2938, p=0.1494, n=24
+
+  Score distribution:
+    Mean: 3.02
+    Std:  0.34
+    Min:  2.0
+    Max:  3.5
+
+  Outcome distribution:
+    mixed: 3
+    trap: 13
+    underperform: 2
+    winner: 6
+
+  Trajectory distribution (majority vote):
+    Mixed signal profile that leans slightly positive. The most significant quantitative change is the dramatic reduction in trailing 5-year impairment and restructuring charges from ~$159M to ~$52M, suggesting the company has completed significant operational rationalization and is in a healthier position. However, this is offset by the addition of several new risk categories: customer inventory de-stocking risk, data privacy and regulatory compliance risks, credit rating maintenance risk, and enhanced warranty/brand reputation language. The expansion of IT security risks to cover third-party managed systems reflects growing attack surface awareness. Brexit moved from potential to realized. Net assessment is slightly positive due to the substantial improvement in restructuring charges outweighing the new but largely standard risk disclosures.: 1
+    Risk profile deteriorating modestly. The addition of coronavirus as a named travel disruption risk, the increase in risk vehicle fleet percentage from 62% to 66% (greater residual value exposure), new competitive threat from package delivery services in truck rental, and explicit addition of manufacturer insolvency/bankruptcy language all signal a worsening risk environment. The shift from forward-looking Brexit uncertainty to realized-but-unclear Brexit implications adds another layer. The core competitive and fleet cost risks remain largely unchanged in structure but the overlay of emerging pandemic risk and expanded competitive threats pushes this toward meaningful deterioration.: 1
+    Roughly stable with growth-related complexity expansion. Revenue grew strongly from $157.6M to $238.3M and TPV from $96.5B to $140.3B, demonstrating continued business momentum. However, the risk profile expanded considerably through acquisitions: the Divvy acquisition introduced new risk categories around corporate card fraud, partner bank dependencies, and credit losses from spending businesses. The pending Invoice2go acquisition adds integration and execution risk. The addition of a risk factor summary section suggests growing complexity requiring better investor communication. The company still carries operating losses and accumulated deficit, though these are typical for a high-growth fintech at this stage. The risk evolution is characteristic of a scaling company taking on integration risk to fuel growth.: 1
+    Slightly improving risk profile with notable offsets. Key positives: customer count grew from 11,300+ to 15,000+, net loss narrowed from $167.2M to $129.4M showing improving unit economics, and the company shifted from moderating hiring pace to actively growing headcount (confidence signal). The addition of a risk factor summary section reflects maturation of disclosure practices. Key negatives: the licensing change risk (no longer offering Elasticsearch/Kibana under open source license) is a significant new strategic risk that could harm adoption and community goodwill. Accumulated deficit grew to $613.3M. The competitive landscape evolved with Azure Sentinel appearing and Amazon AWS language shifting to reflect licensing dispute. COVID-19 language was carried forward with minor changes. Net assessment leans slightly positive on operational metrics improvement.: 1
+    deteriorating: 3
+    improving: 4
+    stable: 13
+
+  Q1 (lowest): n=6, mean_return=92.22%, win_rate=33%
+  Q2: n=6, mean_return=128.85%, win_rate=33%
+  Q3: n=6, mean_return=-20.47%, win_rate=17%
+  Q4 (highest): n=6, mean_return=8.12%, win_rate=17%
+
+  Win rate by trajectory:
+    deteriorating: n=3, win_rate=0%, mean_return=-0.87%
+    stable: n=13, win_rate=38%, mean_return=68.78%
+    improving: n=4, win_rate=0%, mean_return=-44.48%
+
+  Saved: /home/cm/attractor-value/calibration/retest/baseline-scores.csv (24 rows)
