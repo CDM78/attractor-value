@@ -1,0 +1,157 @@
+Loaded 1277 cases
+
+SI data coverage: 1034/1277 (81.0%)
+si_zipf_velocity: r=-0.009, p=0.7774, n=1034
+  SP500 reference: r=0.219
+  Ratio: -0.04x
+  Top quartile mean return: 0.555 (n=259)
+  Bottom quartile mean return: 0.515 (n=260)
+  Spread: 0.040
+  Top quartile win rate (>20%): 42.9%
+  Bottom quartile win rate (>20%): 46.9%
+    Fold 1: r=-0.027, p=0.7002, n=208
+    Fold 2: r=0.151, p=0.0287, n=207
+    Fold 3: r=0.085, p=0.2212, n=207
+    Fold 4: r=-0.126, p=0.0692, n=206
+    Fold 5: r=-0.088, p=0.2074, n=206
+    Mean CV r: -0.001
+    Positive folds: 2/5
+  VERDICT: FAILED
+
+si_zipf_velocity_fixed: r=-0.041, p=0.4770, n=306
+  SP500 reference: r=0.219
+  Ratio: -0.19x
+  Top quartile mean return: 0.419 (n=77)
+  Bottom quartile mean return: 0.262 (n=80)
+  Spread: 0.157
+  Top quartile win rate (>20%): 53.2%
+  Bottom quartile win rate (>20%): 46.2%
+    Fold 1: r=0.026, p=0.8402, n=62
+    Fold 2: r=0.002, p=0.9857, n=62
+    Fold 3: r=-0.149, p=0.2483, n=61
+    Fold 4: r=-0.107, p=0.4095, n=61
+    Fold 5: r=0.105, p=0.4213, n=60
+    Mean CV r: -0.024
+    Positive folds: 3/5
+  VERDICT: FAILED
+
+si_csd: r=0.074, p=0.0171, n=1040
+  SP500 reference: r=0.163
+  Ratio: 0.45x
+  Top quartile mean return: 0.701 (n=260)
+  Bottom quartile mean return: 0.473 (n=260)
+  Spread: 0.228
+  Top quartile win rate (>20%): 53.5%
+  Bottom quartile win rate (>20%): 46.2%
+    Fold 1: r=0.094, p=0.1752, n=209
+    Fold 2: r=0.027, p=0.6973, n=208
+    Fold 3: r=-0.001, p=0.9844, n=208
+    Fold 4: r=0.093, p=0.1800, n=208
+    Fold 5: r=0.189, p=0.0059, n=207
+    Mean CV r: 0.080
+    Positive folds: 4/5
+  VERDICT: VALIDATED
+
+si_d1: r=-0.009, p=0.7679, n=1071
+  SP500 reference: r=0.161
+  Ratio: -0.06x
+  Top quartile mean return: 0.476 (n=268)
+  Bottom quartile mean return: 0.494 (n=268)
+  Spread: -0.018
+  Top quartile win rate (>20%): 49.3%
+  Bottom quartile win rate (>20%): 42.5%
+    Fold 1: r=0.056, p=0.4131, n=215
+    Fold 2: r=0.043, p=0.5340, n=215
+    Fold 3: r=0.074, p=0.2777, n=214
+    Fold 4: r=0.042, p=0.5384, n=214
+    Fold 5: r=-0.135, p=0.0482, n=213
+    Mean CV r: 0.016
+    Positive folds: 4/5
+  VERDICT: FAILED
+
+si_theta: r=0.068, p=0.0275, n=1057
+  SP500 reference: r=0.138
+  Ratio: 0.49x
+  Top quartile mean return: 0.625 (n=265)
+  Bottom quartile mean return: 0.388 (n=265)
+  Spread: 0.236
+  Top quartile win rate (>20%): 48.3%
+  Bottom quartile win rate (>20%): 44.2%
+    Fold 1: r=-0.048, p=0.4881, n=212
+    Fold 2: r=-0.050, p=0.4692, n=212
+    Fold 3: r=0.178, p=0.0087, n=211
+    Fold 4: r=0.106, p=0.1240, n=211
+    Fold 5: r=0.072, p=0.2991, n=211
+    Mean CV r: 0.052
+    Positive folds: 3/5
+  VERDICT: MARGINAL
+
+si_d2: r=-0.007, p=0.8282, n=1071
+  SP500 reference: r=0.111
+  Ratio: -0.06x
+  Top quartile mean return: 0.506 (n=268)
+  Bottom quartile mean return: 0.464 (n=268)
+  Spread: 0.042
+  Top quartile win rate (>20%): 48.1%
+  Bottom quartile win rate (>20%): 42.2%
+    Fold 1: r=-0.046, p=0.4997, n=215
+    Fold 2: r=-0.044, p=0.5193, n=215
+    Fold 3: r=-0.057, p=0.4060, n=214
+    Fold 4: r=-0.014, p=0.8432, n=214
+    Fold 5: r=0.045, p=0.5116, n=213
+    Mean CV r: -0.023
+    Positive folds: 1/5
+  VERDICT: FAILED
+
+composite: r=0.014, p=0.6518, n=1071
+  SP500 reference: r=0.142
+  Ratio: 0.10x
+  Top quartile mean return: 0.460 (n=344)
+  Bottom quartile mean return: 0.431 (n=337)
+  Spread: 0.029
+  Top quartile win rate (>20%): 50.6%
+  Bottom quartile win rate (>20%): 39.8%
+    Fold 1: r=-0.046, p=0.5034, n=215
+    Fold 2: r=0.144, p=0.0333, n=215
+    Fold 3: r=-0.021, p=0.7546, n=214
+    Fold 4: r=-0.046, p=0.5067, n=214
+    Fold 5: r=0.096, p=0.1593, n=213
+    Mean CV r: 0.026
+    Positive folds: 2/5
+  VERDICT: FAILED
+
+
+=== SECONDARY: Best SI signals against alpha_3yr ===
+
+si_csd (vs alpha): r=0.074, p=0.0167, n=1040
+  SP500 reference: r=0.000
+  Top quartile mean return: 0.406 (n=260)
+  Bottom quartile mean return: 0.177 (n=260)
+  Spread: 0.229
+  Top quartile win rate (>20%): 36.5%
+  Bottom quartile win rate (>20%): 30.0%
+    Fold 1: r=0.095, p=0.1698, n=209
+    Fold 2: r=0.027, p=0.7024, n=208
+    Fold 3: r=-0.001, p=0.9922, n=208
+    Fold 4: r=0.093, p=0.1782, n=208
+    Fold 5: r=0.189, p=0.0057, n=207
+    Mean CV r: 0.081
+    Positive folds: 4/5
+  VERDICT: VALIDATED
+
+si_d1 (vs alpha): r=-0.009, p=0.7600, n=1071
+  SP500 reference: r=0.000
+  Top quartile mean return: 0.183 (n=268)
+  Bottom quartile mean return: 0.207 (n=268)
+  Spread: -0.024
+  Top quartile win rate (>20%): 34.3%
+  Bottom quartile win rate (>20%): 30.6%
+    Fold 1: r=0.055, p=0.4217, n=215
+    Fold 2: r=0.042, p=0.5411, n=215
+    Fold 3: r=0.075, p=0.2735, n=214
+    Fold 4: r=0.042, p=0.5375, n=214
+    Fold 5: r=-0.136, p=0.0466, n=213
+    Mean CV r: 0.016
+    Positive folds: 4/5
+  VERDICT: FAILED
+

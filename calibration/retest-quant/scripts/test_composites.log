@@ -1,0 +1,82 @@
+Loaded 1277 cases
+
+=== Composite 1: spread_variance_slope + si_csd (validated signals) ===
+  Pearson r(rank_composite, forward_return_3yr): r=0.112, p=0.0003, n=1040
+  Pearson r(rank_composite, alpha_3yr): r=0.108, p=0.0005
+  Top-half mean 3yr return: 0.651 (annualized: 18.2%)
+  Bottom-half mean 3yr return: 0.296 (annualized: 9.0%)
+  SP500 annualized: 8.8%
+  Top-half annualized alpha: 9.3%
+    Fold 1: r=0.087
+    Fold 2: r=0.050
+    Fold 3: r=0.098
+    Fold 4: r=0.154
+    Fold 5: r=0.230
+    Mean CV r: 0.124, positive: 5/5
+
+=== Composite 2: spread_variance_slope + si_theta (validated+marginal) ===
+  Pearson r(rank_composite, forward_return_3yr): r=0.092, p=0.0027, n=1057
+  Pearson r(rank_composite, alpha_3yr): r=0.087, p=0.0047
+  Top-half mean 3yr return: 0.607 (annualized: 17.1%)
+  Bottom-half mean 3yr return: 0.327 (annualized: 9.9%)
+  SP500 annualized: 8.8%
+  Top-half annualized alpha: 8.3%
+    Fold 1: r=-0.043
+    Fold 2: r=0.015
+    Fold 3: r=0.190
+    Fold 4: r=0.109
+    Fold 5: r=0.126
+    Mean CV r: 0.079, positive: 4/5
+
+=== Composite 3: spread_variance_slope + si_csd + fisher_information ===
+  Pearson r(rank_composite, forward_return_3yr): r=0.247, p=0.0000, n=295
+  Pearson r(rank_composite, alpha_3yr): r=0.242, p=0.0000
+  Top-half mean 3yr return: 0.523 (annualized: 15.1%)
+  Bottom-half mean 3yr return: 0.155 (annualized: 4.9%)
+  SP500 annualized: 8.9%
+  Top-half annualized alpha: 6.2%
+    Fold 1: r=0.317
+    Fold 2: r=0.140
+    Fold 3: r=0.192
+    Fold 4: r=0.271
+    Fold 5: r=0.292
+    Mean CV r: 0.242, positive: 5/5
+
+=== Composite 4: spread_variance_slope + fisher_information ===
+  Pearson r(rank_composite, forward_return_3yr): r=0.291, p=0.0000, n=307
+  Pearson r(rank_composite, alpha_3yr): r=0.284, p=0.0000
+  Top-half mean 3yr return: 0.555 (annualized: 15.9%)
+  Bottom-half mean 3yr return: 0.134 (annualized: 4.3%)
+  SP500 annualized: 8.9%
+  Top-half annualized alpha: 7.0%
+    Fold 1: r=0.387
+    Fold 2: r=0.267
+    Fold 3: r=0.060
+    Fold 4: r=0.337
+    Fold 5: r=0.399
+    Mean CV r: 0.290, positive: 5/5
+
+=== Composite 5: si_csd + fisher_information (no macro) ===
+  Pearson r(rank_composite, forward_return_3yr): r=0.146, p=0.0115, n=295
+  Pearson r(rank_composite, alpha_3yr): r=0.146, p=0.0113
+  Top-half mean 3yr return: 0.407 (annualized: 12.1%)
+  Bottom-half mean 3yr return: 0.271 (annualized: 8.3%)
+  SP500 annualized: 8.9%
+  Top-half annualized alpha: 3.2%
+    Fold 1: r=0.135
+    Fold 2: r=-0.027
+    Fold 3: r=0.226
+    Fold 4: r=0.178
+    Fold 5: r=0.180
+    Mean CV r: 0.138, positive: 4/5
+
+=== Composite 6: spread_variance_slope alone (macro timing) ===
+  Pearson r(rank_composite, forward_return_3yr): r=0.065, p=0.0199, n=1277
+  Pearson r(rank_composite, alpha_3yr): r=0.058, p=0.0388
+Traceback (most recent call last):
+  File "/home/cm/attractor-value/calibration/retest-quant/scripts/test_composites.py", line 94, in <module>
+    rank_composite(rows, ['spread_variance_slope'])
+  File "/home/cm/attractor-value/calibration/retest-quant/scripts/test_composites.py", line 52, in rank_composite
+    bot_mean = sum(bot_rets) / len(bot_rets)
+               ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+ZeroDivisionError: division by zero

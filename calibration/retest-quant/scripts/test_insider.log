@@ -1,0 +1,18 @@
+Loaded 1277 cases
+
+Cases with insider data: 109
+Excluded (>20% mcap): 0 — []
+Valid for testing: 109
+Unique companies: 56 across 109 case-entries
+WARNING: 53 duplicate entries — not fully independent
+
+r(net_value, forward_return_3yr) = 0.128, p=0.1802, n=109
+r(buy_sell_ratio, forward_return_3yr) = 0.299, p=0.1040, n=29
+r(log_net_value, forward_return_3yr) = 0.260, p=0.0068, n=103
+
+NET_BUYING: n=6, win_rate(>20%)=67%, mean_return=+1.470
+MIXED: n=10, win_rate(>20%)=30%, mean_return=+0.162
+NET_SELLING: n=93, win_rate(>20%)=48%, mean_return=+0.383
+
+r(direction_encoding, forward_return_3yr) = 0.157, p=0.0991, n=109
+  (NET_BUYING=1, MIXED=0, NET_SELLING=-1)

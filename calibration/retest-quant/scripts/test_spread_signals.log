@@ -1,0 +1,74 @@
+Loaded 1277 cases
+
+Unique spread_variance_slope values: 2 across 1277 cases
+(If few unique values, spread is testing macro timing, not company selection)
+
+spread_variance_slope: r=0.065, p=0.0199, n=1277
+  SP500 reference: r=0.333
+  Ratio: 0.20x
+  Top quartile mean return: 0.497 (n=614)
+  Bottom quartile mean return: 0.319 (n=663)
+  Spread: 0.178
+  Top quartile win rate (>20%): 47.7%
+  Bottom quartile win rate (>20%): 34.8%
+    Fold 1: r=0.110, p=0.0769, n=256
+    Fold 2: r=0.092, p=0.1407, n=256
+    Fold 3: r=0.048, p=0.4423, n=256
+    Fold 4: r=0.077, p=0.2190, n=255
+    Fold 5: r=-0.003, p=0.9631, n=254
+    Mean CV r: 0.065
+    Positive folds: 4/5
+  VERDICT: VALIDATED
+
+spread_theta: r=0.065, p=0.0199, n=1277
+  SP500 reference: r=0.329
+  Ratio: 0.20x
+  Top quartile mean return: 0.497 (n=614)
+  Bottom quartile mean return: 0.319 (n=663)
+  Spread: 0.178
+  Top quartile win rate (>20%): 47.7%
+  Bottom quartile win rate (>20%): 34.8%
+    Fold 1: r=0.110, p=0.0769, n=256
+    Fold 2: r=0.092, p=0.1407, n=256
+    Fold 3: r=0.048, p=0.4423, n=256
+    Fold 4: r=0.077, p=0.2190, n=255
+    Fold 5: r=-0.003, p=0.9631, n=254
+    Mean CV r: 0.065
+    Positive folds: 4/5
+  VERDICT: VALIDATED
+
+
+=== SECONDARY: Against alpha_3yr ===
+
+spread_variance_slope (vs alpha): r=0.058, p=0.0388, n=1277
+  SP500 reference: r=0.000
+  Top quartile mean return: 0.197 (n=614)
+  Bottom quartile mean return: 0.039 (n=663)
+  Spread: 0.158
+  Top quartile win rate (>20%): 30.9%
+  Bottom quartile win rate (>20%): 25.0%
+    Fold 1: r=0.100, p=0.1110, n=256
+    Fold 2: r=0.087, p=0.1616, n=256
+    Fold 3: r=0.039, p=0.5325, n=256
+    Fold 4: r=0.069, p=0.2727, n=255
+    Fold 5: r=-0.013, p=0.8389, n=254
+    Mean CV r: 0.056
+    Positive folds: 4/5
+  VERDICT: VALIDATED
+
+spread_theta (vs alpha): r=0.058, p=0.0388, n=1277
+  SP500 reference: r=0.000
+  Top quartile mean return: 0.197 (n=614)
+  Bottom quartile mean return: 0.039 (n=663)
+  Spread: 0.158
+  Top quartile win rate (>20%): 30.9%
+  Bottom quartile win rate (>20%): 25.0%
+    Fold 1: r=0.100, p=0.1110, n=256
+    Fold 2: r=0.087, p=0.1616, n=256
+    Fold 3: r=0.039, p=0.5325, n=256
+    Fold 4: r=0.069, p=0.2727, n=255
+    Fold 5: r=-0.013, p=0.8389, n=254
+    Mean CV r: 0.056
+    Positive folds: 4/5
+  VERDICT: VALIDATED
+

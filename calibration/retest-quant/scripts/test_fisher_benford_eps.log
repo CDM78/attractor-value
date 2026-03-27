@@ -1,0 +1,82 @@
+Loaded 1277 cases
+
+fisher_information: r=0.101, p=0.0751, n=307
+  SP500 reference: r=0.169
+  Ratio: 0.60x
+  Top quartile mean return: 0.589 (n=77)
+  Bottom quartile mean return: 0.113 (n=77)
+  Spread: 0.475
+  Top quartile win rate (>20%): 53.2%
+  Bottom quartile win rate (>20%): 39.0%
+    Fold 1: r=0.253, p=0.0431, n=62
+    Fold 2: r=0.092, p=0.4732, n=62
+    Fold 3: r=-0.091, p=0.4835, n=61
+    Fold 4: r=0.186, p=0.1449, n=61
+    Fold 5: r=0.112, p=0.3856, n=61
+    Mean CV r: 0.111
+    Positive folds: 4/5
+  VERDICT: MARGINAL
+
+eps_round_number: r=0.075, p=0.1877, n=306
+  SP500 reference: r=0.132
+  Ratio: 0.57x
+  Top quartile mean return: 0.465 (n=77)
+  Bottom quartile mean return: 0.431 (n=77)
+  Spread: 0.034
+  Top quartile win rate (>20%): 51.9%
+  Bottom quartile win rate (>20%): 51.9%
+    Fold 1: r=0.132, p=0.3038, n=62
+    Fold 2: r=-0.090, p=0.4854, n=62
+    Fold 3: r=-0.009, p=0.9443, n=61
+    Fold 4: r=0.318, p=0.0101, n=61
+    Fold 5: r=-0.126, p=0.3326, n=60
+    Mean CV r: 0.045
+    Positive folds: 2/5
+  VERDICT: FAILED
+
+base10_excess: r=-0.049, p=0.3825, n=323
+  SP500 reference: r=0.075
+  Ratio: -0.65x
+  Top quartile mean return: 0.340 (n=81)
+  Bottom quartile mean return: 0.535 (n=81)
+  Spread: -0.195
+  Top quartile win rate (>20%): 43.2%
+  Bottom quartile win rate (>20%): 55.6%
+    Fold 1: r=0.020, p=0.8706, n=66
+    Fold 2: r=-0.193, p=0.1187, n=65
+    Fold 3: r=0.171, p=0.1720, n=64
+    Fold 4: r=-0.132, p=0.2931, n=64
+    Fold 5: r=-0.101, p=0.4222, n=64
+    Mean CV r: -0.047
+    Positive folds: 2/5
+  VERDICT: FAILED
+
+=== BENFORD STRUCTURAL_STRESS (categorical) ===
+
+STRUCTURAL_STRESS cases: n=312
+NATURAL_PROCESS cases: n=11
+STRUCTURAL_STRESS mean return: 0.360
+NATURAL_PROCESS mean return: 0.308
+Difference: 0.052
+t-test: t=0.240, p=0.8104
+STRUCTURAL_STRESS win rate (>20%): 48.7%
+NATURAL_PROCESS win rate (>20%): 36.4%
+
+=== SECONDARY: Fisher vs alpha ===
+
+fisher (vs alpha): r=0.102, p=0.0745, n=307
+  SP500 reference: r=0.000
+  Top quartile mean return: 0.299 (n=77)
+  Bottom quartile mean return: -0.176 (n=77)
+  Spread: 0.475
+  Top quartile win rate (>20%): 35.1%
+  Bottom quartile win rate (>20%): 19.5%
+    Fold 1: r=0.253, p=0.0432, n=62
+    Fold 2: r=0.095, p=0.4609, n=62
+    Fold 3: r=-0.095, p=0.4649, n=61
+    Fold 4: r=0.187, p=0.1430, n=61
+    Fold 5: r=0.114, p=0.3777, n=61
+    Mean CV r: 0.111
+    Positive folds: 4/5
+  VERDICT: MARGINAL
+
