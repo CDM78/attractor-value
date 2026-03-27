@@ -105,86 +105,177 @@ function summarize8KResults(data) {
 // 2. INSIDER_TRADING — Get Form 4 filings from EDGAR
 // ============================================================
 
+/**
+ * Parse Form 4 XML to extract transaction details.
+ * Transaction codes: P=purchase(BUY), S=sale(SELL), A=grant, D=disposition,
+ * F=tax withholding, M=exercise, C=conversion, G=gift, J=other
+ */
+function parseForm4Xml(xml) {
+  const transactions = [];
+
+  // Extract reporting owner
+  const ownerMatch = xml.match(/<rptOwnerName>([^<]*)<\/rptOwnerName>/);
+  const titleMatch = xml.match(/<officerTitle>([^<]*)<\/officerTitle>/);
+  const ownerName = ownerMatch?.[1] || 'Unknown';
+  const ownerTitle = titleMatch?.[1] || '';
+
+  // Extract all nonDerivativeTransactions
+  const txPattern = /<nonDerivativeTransaction>([\s\S]*?)<\/nonDerivativeTransaction>/g;
+  let match;
+  while ((match = txPattern.exec(xml)) !== null) {
+    const block = match[1];
+    const code = block.match(/<transactionCode>([^<]*)<\/transactionCode>/)?.[1] || '';
+    const shares = parseFloat(block.match(/<transactionShares>[\s\S]*?<value>([^<]*)<\/value>/)?.[1] || '0');
+    const price = parseFloat(block.match(/<transactionPricePerShare>[\s\S]*?<value>([^<]*)<\/value>/)?.[1] || '0');
+    const acqDisp = block.match(/<transactionAcquiredDisposedCode>[\s\S]*?<value>([^<]*)<\/value>/)?.[1] || '';
+    const date = block.match(/<transactionDate>[\s\S]*?<value>([^<]*)<\/value>/)?.[1] || '';
+
+    if (code) {
+      transactions.push({ code, shares, price, acqDisp, date, ownerName, ownerTitle });
+    }
+  }
+
+  return transactions;
+}
+
 async function fetchInsiderTrading(query, ticker, cik, entryDate) {
   const paddedCik = cik ? String(cik).padStart(10, '0') : getCikPadded(ticker);
   if (!paddedCik) {
-    return {
-      request_type: 'INSIDER_TRADING',
-      data_found: false,
-      summary: `Could not find CIK for ${ticker}`,
-      raw_data_size: '0',
-    };
+    return { request_type: 'INSIDER_TRADING', data_found: false, summary: `Could not find CIK for ${ticker}`, raw_data_size: '0' };
   }
 
+  const cikNumeric = String(parseInt(paddedCik, 10));
   const url = `https://data.sec.gov/submissions/CIK${paddedCik}.json`;
 
   try {
     const res = await edgarFetch(url);
     if (!res.ok) {
-      return {
-        request_type: 'INSIDER_TRADING',
-        data_found: false,
-        summary: `EDGAR submissions endpoint returned ${res.status}`,
-        raw_data_size: '0',
-      };
+      return { request_type: 'INSIDER_TRADING', data_found: false, summary: `EDGAR returned ${res.status}`, raw_data_size: '0' };
     }
 
     const data = await res.json();
     const recent = data.filings?.recent;
     if (!recent) {
-      return {
-        request_type: 'INSIDER_TRADING',
-        data_found: false,
-        summary: 'No recent filings data available',
-        raw_data_size: '0',
-      };
+      return { request_type: 'INSIDER_TRADING', data_found: false, summary: 'No recent filings data', raw_data_size: '0' };
     }
 
-    // Filter Form 4 filings in trailing 12 months before entry date
+    // Find Form 4 filings in trailing 12 months
     const cutoff = new Date(entryDate);
     cutoff.setFullYear(cutoff.getFullYear() - 1);
     const cutoffStr = cutoff.toISOString().split('T')[0];
 
-    let buyCount = 0;
-    let sellCount = 0;
-    let form4Count = 0;
-
+    const form4Filings = [];
     for (let i = 0; i < (recent.form || []).length; i++) {
       if (recent.form[i] !== '4') continue;
       const filingDate = recent.filingDate?.[i];
       if (!filingDate || filingDate > entryDate || filingDate < cutoffStr) continue;
 
-      form4Count++;
-      // Use primary doc description to guess direction
-      const desc = (recent.primaryDocDescription?.[i] || '').toLowerCase();
-      if (desc.includes('purchase') || desc.includes('acquisition')) {
-        buyCount++;
-      } else if (desc.includes('sale') || desc.includes('disposition')) {
-        sellCount++;
-      }
+      form4Filings.push({
+        accession: recent.accessionNumber[i],
+        date: filingDate,
+        primaryDoc: recent.primaryDocument[i],
+      });
+
+      if (form4Filings.length >= 20) break; // Limit to 20 most recent
     }
 
-    // Determine net direction heuristic
-    let netDirection = 'neutral';
-    if (buyCount > sellCount * 2) netDirection = 'net buying';
-    else if (sellCount > buyCount * 2) netDirection = 'net selling';
-    else if (form4Count > 0) netDirection = 'mixed';
+    if (form4Filings.length === 0) {
+      return { request_type: 'INSIDER_TRADING', data_found: false, summary: 'No Form 4 filings in trailing 12 months.', raw_data_size: '0' };
+    }
+
+    // Fetch and parse each Form 4 XML
+    let purchases = { count: 0, shares: 0, value: 0, insiders: new Set() };
+    let sales = { count: 0, shares: 0, value: 0, insiders: new Set() };
+    let grants = 0, exercises = 0, other = 0;
+    let parsed = 0;
+
+    for (const filing of form4Filings) {
+      const accClean = filing.accession.replace(/-/g, '');
+      // Get the raw XML — strip xsl prefix if present
+      let xmlDoc = filing.primaryDoc;
+      if (xmlDoc.includes('/')) xmlDoc = xmlDoc.split('/').pop();
+
+      const xmlUrl = `https://www.sec.gov/Archives/edgar/data/${cikNumeric}/${accClean}/${xmlDoc}`;
+
+      try {
+        const xmlRes = await edgarFetch(xmlUrl);
+        if (!xmlRes.ok) continue;
+        const xmlText = await xmlRes.text();
+
+        // Skip if it's HTML (XSLT-transformed) not XML
+        if (xmlText.trim().startsWith('<!DOCTYPE') || xmlText.trim().startsWith('<html')) continue;
+
+        const txns = parseForm4Xml(xmlText);
+        for (const tx of txns) {
+          const txValue = tx.shares * tx.price;
+          const insider = tx.ownerTitle ? `${tx.ownerTitle} - ${tx.ownerName}` : tx.ownerName;
+
+          switch (tx.code) {
+            case 'P': // Open market purchase = BUY
+              purchases.count++;
+              purchases.shares += tx.shares;
+              purchases.value += txValue;
+              purchases.insiders.add(insider);
+              break;
+            case 'S': // Open market sale = SELL
+            case 'D': // Disposition to issuer = SELL
+              sales.count++;
+              sales.shares += tx.shares;
+              sales.value += txValue;
+              sales.insiders.add(insider);
+              break;
+            case 'F': // Tax withholding = involuntary sell (note but don't weight heavily)
+              sales.count++;
+              sales.shares += tx.shares;
+              sales.value += txValue;
+              break;
+            case 'A': grants++; break;
+            case 'M': case 'C': exercises++; break;
+            default: other++; break;
+          }
+        }
+        parsed++;
+      } catch { /* skip failed XML fetches */ }
+    }
+
+    // Determine net direction
+    const netValue = purchases.value - sales.value;
+    const buySellRatio = sales.value > 0 ? purchases.value / sales.value : (purchases.value > 0 ? Infinity : 0);
+
+    let netDirection;
+    if (purchases.count > 0 && sales.count === 0) netDirection = 'NET_BUYING';
+    else if (sales.count > 0 && purchases.count === 0) netDirection = 'NET_SELLING';
+    else if (buySellRatio > 1.5) netDirection = 'NET_BUYING';
+    else if (buySellRatio < 0.3) netDirection = 'NET_SELLING';
+    else netDirection = 'MIXED';
+
+    const fmtVal = v => v >= 1e6 ? `$${(v / 1e6).toFixed(1)}M` : `$${(v / 1e3).toFixed(0)}K`;
+
+    const summaryParts = [`${form4Filings.length} Form 4 filings (${parsed} parsed).`];
+    if (purchases.count > 0) summaryParts.push(`${purchases.count} open-market purchases (${fmtVal(purchases.value)}) by ${[...purchases.insiders].slice(0, 3).join(', ')}.`);
+    if (sales.count > 0) summaryParts.push(`${sales.count} sales/dispositions (${fmtVal(sales.value)}) by ${[...sales.insiders].slice(0, 3).join(', ')}.`);
+    if (grants > 0) summaryParts.push(`${grants} grants/awards.`);
+    if (exercises > 0) summaryParts.push(`${exercises} option exercises.`);
+    summaryParts.push(`Net direction: ${netDirection}. Net value: ${fmtVal(Math.abs(netValue))} ${netValue >= 0 ? 'buying' : 'selling'}. Buy/sell ratio: ${buySellRatio === Infinity ? '∞' : buySellRatio.toFixed(2)}.`);
 
     return {
       request_type: 'INSIDER_TRADING',
-      data_found: form4Count > 0,
-      summary: form4Count > 0
-        ? `${form4Count} Form 4 filings in trailing 12 months. Buy signals: ${buyCount}, Sell signals: ${sellCount}. Net direction: ${netDirection}.`
-        : 'No Form 4 filings found in trailing 12 months.',
-      raw_data_size: JSON.stringify(data).length.toString(),
+      data_found: true,
+      summary: summaryParts.join(' '),
+      raw_data_size: String(parsed),
+      insider_data: {
+        filings: form4Filings.length,
+        parsed,
+        purchases: { count: purchases.count, shares: purchases.shares, value: Math.round(purchases.value) },
+        sales: { count: sales.count, shares: sales.shares, value: Math.round(sales.value) },
+        grants, exercises, other,
+        net_direction: netDirection,
+        net_value: Math.round(netValue),
+        buy_sell_ratio: buySellRatio === Infinity ? 999 : +buySellRatio.toFixed(3),
+      },
     };
   } catch (err) {
-    return {
-      request_type: 'INSIDER_TRADING',
-      data_found: false,
-      summary: `Insider trading fetch error: ${err.message}`,
-      raw_data_size: '0',
-    };
+    return { request_type: 'INSIDER_TRADING', data_found: false, summary: `Insider trading fetch error: ${err.message}`, raw_data_size: '0' };
   }
 }
 
@@ -325,63 +416,95 @@ async function fetchManagement(query, ticker, cik, entryDate) {
 // ============================================================
 
 async function fetchCustomerConcentration(query, ticker, cik, entryDate, tenKText) {
-  if (!tenKText) {
-    return {
-      request_type: 'CUSTOMER_CONCENTRATION',
-      data_found: false,
-      summary: 'No 10-K text available for analysis.',
-      raw_data_size: '0',
-    };
+  // If we already have 10-K text, search it locally
+  if (tenKText && tenKText.length > 500) {
+    return searchTextForConcentration(tenKText);
   }
 
+  // Otherwise, fetch 10-K from EDGAR directly
+  const paddedCik = cik ? String(cik).padStart(10, '0') : getCikPadded(ticker);
+  if (!paddedCik) {
+    return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: 'No CIK available.', raw_data_size: '0' };
+  }
+
+  const cikNumeric = String(parseInt(paddedCik, 10));
+
+  try {
+    // Get filing list to find most recent 10-K
+    const subUrl = `https://data.sec.gov/submissions/CIK${paddedCik}.json`;
+    const subRes = await edgarFetch(subUrl);
+    if (!subRes.ok) return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: `EDGAR returned ${subRes.status}`, raw_data_size: '0' };
+
+    const subData = await subRes.json();
+    const recent = subData.filings?.recent;
+    if (!recent) return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: 'No filings data.', raw_data_size: '0' };
+
+    // Find most recent 10-K or 10-K/A before entry date
+    let tenKAccession = null, tenKDoc = null;
+    for (let i = 0; i < (recent.form || []).length; i++) {
+      if (recent.form[i] !== '10-K' && recent.form[i] !== '10-K/A') continue;
+      const date = recent.filingDate?.[i];
+      if (!date || date > entryDate) continue;
+      tenKAccession = recent.accessionNumber[i];
+      tenKDoc = recent.primaryDocument[i];
+      break; // Most recent first
+    }
+
+    if (!tenKAccession) {
+      return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: 'No 10-K found before entry date.', raw_data_size: '0' };
+    }
+
+    // Fetch the 10-K HTML
+    const accClean = tenKAccession.replace(/-/g, '');
+    const docUrl = `https://www.sec.gov/Archives/edgar/data/${cikNumeric}/${accClean}/${tenKDoc}`;
+
+    const docRes = await edgarFetch(docUrl);
+    if (!docRes.ok) return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: `10-K fetch failed: ${docRes.status}`, raw_data_size: '0' };
+
+    const html = await docRes.text();
+    const text = stripHtml(html);
+
+    if (text.length < 1000) {
+      return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: 'Fetched 10-K too short for analysis.', raw_data_size: String(text.length) };
+    }
+
+    return searchTextForConcentration(text);
+  } catch (err) {
+    return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: `Fetch error: ${err.message}`, raw_data_size: '0' };
+  }
+}
+
+function searchTextForConcentration(text) {
   const patterns = [
-    /significant\s+customer/gi,
-    /concentration/gi,
-    /major\s+customer/gi,
-    /largest\s+customer/gi,
-    /principal\s+customer/gi,
-    /single\s+customer/gi,
-    /customer\s+accounted?\s+for/gi,
-    /revenue\s+concentration/gi,
+    /significant\s+customer/gi, /major\s+customer/gi, /largest\s+customer/gi,
+    /principal\s+customer/gi, /single\s+customer/gi, /customer\s+accounted?\s+for/gi,
+    /revenue\s+concentration/gi, /10%\s+of\s+(?:net\s+)?revenue/gi,
+    /concentration\s+of\s+credit\s+risk/gi,
   ];
 
   const excerpts = [];
-  const textLower = tenKText.toLowerCase();
-
   for (const pattern of patterns) {
     let match;
-    while ((match = pattern.exec(tenKText)) !== null) {
+    while ((match = pattern.exec(text)) !== null) {
       const start = Math.max(0, match.index - 200);
-      const end = Math.min(tenKText.length, match.index + 500);
-      const excerpt = tenKText.substring(start, end).trim();
-
-      // Avoid duplicate excerpts from overlapping matches
-      const isDuplicate = excerpts.some(e =>
-        e.includes(excerpt.substring(0, 100)) || excerpt.includes(e.substring(0, 100))
-      );
-      if (!isDuplicate) {
-        excerpts.push(excerpt);
-      }
-
+      const end = Math.min(text.length, match.index + 500);
+      const excerpt = text.substring(start, end).trim();
+      const isDuplicate = excerpts.some(e => e.includes(excerpt.substring(0, 100)) || excerpt.includes(e.substring(0, 100)));
+      if (!isDuplicate) excerpts.push(excerpt);
       if (excerpts.length >= 5) break;
     }
     if (excerpts.length >= 5) break;
   }
 
   if (excerpts.length === 0) {
-    return {
-      request_type: 'CUSTOMER_CONCENTRATION',
-      data_found: false,
-      summary: 'No customer concentration language found in 10-K text.',
-      raw_data_size: tenKText.length.toString(),
-    };
+    return { request_type: 'CUSTOMER_CONCENTRATION', data_found: false, summary: 'No customer concentration language found in 10-K.', raw_data_size: String(text.length) };
   }
 
   return {
     request_type: 'CUSTOMER_CONCENTRATION',
     data_found: true,
     summary: `Found ${excerpts.length} customer concentration references. Key excerpts: ${excerpts.map((e, i) => `[${i + 1}] "${e.substring(0, 300)}..."`).join(' ')}`,
-    raw_data_size: tenKText.length.toString(),
+    raw_data_size: String(text.length),
   };
 }
 
