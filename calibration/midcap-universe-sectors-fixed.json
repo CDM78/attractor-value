@@ -1,0 +1,2338 @@
+{
+  "generated": "2026-03-26",
+  "source": "IWB minus SP500",
+  "count": 333,
+  "companies": [
+    {
+      "ticker": "AAON",
+      "name": "AAON INC",
+      "sector": "Industrials",
+      "market_cap": 6396185851,
+      "cik": "0000824142"
+    },
+    {
+      "ticker": "ACHC",
+      "name": "ACADIA HEALTHCARE COMPANY INC",
+      "sector": "Health Care",
+      "market_cap": 2350256348,
+      "cik": "0001520697"
+    },
+    {
+      "ticker": "ACI",
+      "name": "ALBERTSONS COMPANY INC CLASS A",
+      "sector": "Consumer Staples",
+      "market_cap": 6250227775,
+      "cik": "0001646972"
+    },
+    {
+      "ticker": "ACM",
+      "name": "AECOM",
+      "sector": "Industrials",
+      "market_cap": 12500843687,
+      "cik": "0000868857"
+    },
+    {
+      "ticker": "ADC",
+      "name": "AGREE REALTY REIT CORP",
+      "sector": "Real Estate",
+      "market_cap": 8549426035,
+      "cik": "0000917251"
+    },
+    {
+      "ticker": "ADT",
+      "name": "ADT INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 3595493605,
+      "cik": "0001703056"
+    },
+    {
+      "ticker": "AFG",
+      "name": "AMERICAN FINANCIAL GROUP INC",
+      "sector": "Financials",
+      "market_cap": 8914799560,
+      "cik": "0001042046"
+    },
+    {
+      "ticker": "AFRM",
+      "name": "AFFIRM HOLDINGS INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 13100039498,
+      "cik": "0001820953"
+    },
+    {
+      "ticker": "AGCO",
+      "name": "AGCO CORP",
+      "sector": "Industrials",
+      "market_cap": 7980938843,
+      "cik": "0000880266"
+    },
+    {
+      "ticker": "AGNC",
+      "name": "AGNC INVESTMENT REIT CORP",
+      "sector": "Financials",
+      "market_cap": 11984621777,
+      "cik": "0001423689"
+    },
+    {
+      "ticker": "AGO",
+      "name": "ASSURED GUARANTY LTD",
+      "sector": "Financials",
+      "market_cap": 4033230474,
+      "cik": "0001273813"
+    },
+    {
+      "ticker": "AIT",
+      "name": "APPLIED INDUSTRIAL TECHNOLOGIES IN",
+      "sector": "Industrials",
+      "market_cap": 10781160047,
+      "cik": "0000109563"
+    },
+    {
+      "ticker": "AL",
+      "name": "AIR LEASE CORP CLASS A",
+      "sector": "Industrials",
+      "market_cap": 7113597690,
+      "cik": "0001487712"
+    },
+    {
+      "ticker": "ALGM",
+      "name": "ALLEGRO MICROSYSTEMS INC",
+      "sector": "Information Technology",
+      "market_cap": 4290143754,
+      "cik": "0000866291"
+    },
+    {
+      "ticker": "ALLY",
+      "name": "ALLY FINANCIAL INC",
+      "sector": "Financials",
+      "market_cap": 11675904783,
+      "cik": "0000040729"
+    },
+    {
+      "ticker": "ALSN",
+      "name": "ALLISON TRANSMISSION HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 10586638097,
+      "cik": "0001411207"
+    },
+    {
+      "ticker": "AM",
+      "name": "ANTERO MIDSTREAM CORP",
+      "sector": "Energy",
+      "market_cap": 8511910166,
+      "cik": "0001623925"
+    },
+    {
+      "ticker": "AMH",
+      "name": "AMERICAN HOMES RENT REIT CLASS A",
+      "sector": "Real Estate",
+      "market_cap": 9949633649,
+      "cik": "0001562401"
+    },
+    {
+      "ticker": "AMKR",
+      "name": "AMKOR TECHNOLOGY INC",
+      "sector": "Information Technology",
+      "market_cap": 6630753434,
+      "cik": "0001047127"
+    },
+    {
+      "ticker": "AMTM",
+      "name": "AMENTUM HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 4404848559,
+      "cik": "0002011286"
+    },
+    {
+      "ticker": "APPF",
+      "name": "APPFOLIO INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 3695324130,
+      "cik": "0001433195"
+    },
+    {
+      "ticker": "AR",
+      "name": "ANTERO RESOURCES CORP",
+      "sector": "Energy",
+      "market_cap": 13729815654,
+      "cik": "0001433270"
+    },
+    {
+      "ticker": "ARMK",
+      "name": "ARAMARK",
+      "sector": "Consumer Discretionary",
+      "market_cap": 11585194100,
+      "cik": "0001584509"
+    },
+    {
+      "ticker": "ARW",
+      "name": "ARROW ELECTRONICS INC",
+      "sector": "Information Technology",
+      "market_cap": 8324558200,
+      "cik": "0000007536"
+    },
+    {
+      "ticker": "AS",
+      "name": "AMER SPORTS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5333407307,
+      "cik": "0001988894"
+    },
+    {
+      "ticker": "ASH",
+      "name": "ASHLAND INC",
+      "sector": "Materials",
+      "market_cap": 2544724667,
+      "cik": "0001674862"
+    },
+    {
+      "ticker": "ATR",
+      "name": "APTARGROUP INC",
+      "sector": "Materials",
+      "market_cap": 8909910833,
+      "cik": "0000896622"
+    },
+    {
+      "ticker": "AUR",
+      "name": "AURORA INNOVATION INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 5380091092,
+      "cik": "0001828108"
+    },
+    {
+      "ticker": "AVT",
+      "name": "AVNET INC",
+      "sector": "Information Technology",
+      "market_cap": 5366647722,
+      "cik": "0000008858"
+    },
+    {
+      "ticker": "AVTR",
+      "name": "AVANTOR INC",
+      "sector": "Health Care",
+      "market_cap": 5397539217,
+      "cik": "0001722482"
+    },
+    {
+      "ticker": "AWI",
+      "name": "ARMSTRONG WORLD INDUSTRIES INC",
+      "sector": "Industrials",
+      "market_cap": 7644049555,
+      "cik": "0000007431"
+    },
+    {
+      "ticker": "AXS",
+      "name": "AXIS CAPITAL HOLDINGS LTD",
+      "sector": "Financials",
+      "market_cap": 8405293640,
+      "cik": "0001214816"
+    },
+    {
+      "ticker": "AXTA",
+      "name": "AXALTA COATING SYSTEMS LTD",
+      "sector": "Materials",
+      "market_cap": 6411967337,
+      "cik": "0001616862"
+    },
+    {
+      "ticker": "BAH",
+      "name": "BOOZ ALLEN HAMILTON HOLDING CORP C",
+      "sector": "Industrials",
+      "market_cap": 10325855312,
+      "cik": "0001443646"
+    },
+    {
+      "ticker": "BC",
+      "name": "BRUNSWICK CORP",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5001592819,
+      "cik": "0000014930"
+    },
+    {
+      "ticker": "BEPC",
+      "name": "BROOKFIELD RENEWABLE SUBORDINATE V",
+      "sector": "Utilities",
+      "market_cap": 5649325725,
+      "cik": "0001791863"
+    },
+    {
+      "ticker": "BFAM",
+      "name": "BRIGHT HORIZONS FAMILY SOLUTIONS I",
+      "sector": "Consumer Discretionary",
+      "market_cap": 4839950269,
+      "cik": "0001437578"
+    },
+    {
+      "ticker": "BFB",
+      "name": "BROWN FORMAN CORP CLASS B",
+      "sector": "Consumer Staples",
+      "market_cap": 3688530224,
+      "cik": "0000014693"
+    },
+    {
+      "ticker": "BILL",
+      "name": "BILL HOLDINGS INC",
+      "sector": "Information Technology",
+      "market_cap": 3277832964,
+      "cik": "0001786352"
+    },
+    {
+      "ticker": "BIRK",
+      "name": "BIRKENSTOCK HOLDING PLC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 2058567005,
+      "cik": "0001977102"
+    },
+    {
+      "ticker": "BJ",
+      "name": "BJS WHOLESALE CLUB HOLDINGS INC",
+      "sector": "Consumer Staples",
+      "market_cap": 13838894595,
+      "cik": "0001531152"
+    },
+    {
+      "ticker": "BLD",
+      "name": "TOPBUILD CORP",
+      "sector": "Consumer Discretionary",
+      "market_cap": 11009558324,
+      "cik": "0001633931"
+    },
+    {
+      "ticker": "BLDR",
+      "name": "BUILDERS FIRSTSOURCE INC",
+      "sector": "Industrials",
+      "market_cap": 9852445156,
+      "cik": "0001316835"
+    },
+    {
+      "ticker": "BMRN",
+      "name": "BIOMARIN PHARMACEUTICAL INC",
+      "sector": "Health Care",
+      "market_cap": 11120960303,
+      "cik": "0001048477"
+    },
+    {
+      "ticker": "BOKF",
+      "name": "BOK FINANCIAL CORP",
+      "sector": "Financials",
+      "market_cap": 3033836526,
+      "cik": "0000875357"
+    },
+    {
+      "ticker": "BPOP",
+      "name": "POPULAR INC",
+      "sector": "Financials",
+      "market_cap": 9194192191,
+      "cik": "0000763901"
+    },
+    {
+      "ticker": "BRBR",
+      "name": "BELLRING BRANDS INC",
+      "sector": "Consumer Staples",
+      "market_cap": 2151573290,
+      "cik": "0001772016"
+    },
+    {
+      "ticker": "BRKR",
+      "name": "BRUKER CORP",
+      "sector": "Health Care",
+      "market_cap": 3897895999,
+      "cik": "0001109354"
+    },
+    {
+      "ticker": "BROS",
+      "name": "DUTCH BROS INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6324159134,
+      "cik": "0001866581"
+    },
+    {
+      "ticker": "BRX",
+      "name": "BRIXMOR PROPERTY GROUP REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 9454181024,
+      "cik": "0001581068"
+    },
+    {
+      "ticker": "BSY",
+      "name": "BENTLEY SYSTEMS INC CLASS B",
+      "sector": "Information Technology",
+      "market_cap": 5872306911,
+      "cik": "0001031308"
+    },
+    {
+      "ticker": "BYD",
+      "name": "BOYD GAMING CORP",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5243778504,
+      "cik": "0000906553"
+    },
+    {
+      "ticker": "CACC",
+      "name": "CREDIT ACCEPTANCE CORP",
+      "sector": "Financials",
+      "market_cap": 2120721784,
+      "cik": "0000885550"
+    },
+    {
+      "ticker": "CACI",
+      "name": "CACI INTERNATIONAL INC CLASS A",
+      "sector": "Industrials",
+      "market_cap": 13547883304,
+      "cik": "0000016058"
+    },
+    {
+      "ticker": "CAR",
+      "name": "AVIS BUDGET GROUP INC",
+      "sector": "Industrials",
+      "market_cap": 2346395615,
+      "cik": "0000723612"
+    },
+    {
+      "ticker": "CART",
+      "name": "MAPLEBEAR INC",
+      "sector": "Consumer Staples",
+      "market_cap": 6675981114,
+      "cik": "0001579091"
+    },
+    {
+      "ticker": "CAVA",
+      "name": "CAVA GROUP INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 8516635473,
+      "cik": "0001639438"
+    },
+    {
+      "ticker": "CBSH",
+      "name": "COMMERCE BANCSHARES INC",
+      "sector": "Financials",
+      "market_cap": 6818770885,
+      "cik": "0000022356"
+    },
+    {
+      "ticker": "CCC",
+      "name": "CCC INTELLIGENT SOLUTIONS HOLDINGS",
+      "sector": "Information Technology",
+      "market_cap": 3822022521,
+      "cik": "0001818201"
+    },
+    {
+      "ticker": "CCK",
+      "name": "CROWN HOLDINGS INC",
+      "sector": "Materials",
+      "market_cap": 12854579753,
+      "cik": "0001219601"
+    },
+    {
+      "ticker": "CFR",
+      "name": "CULLEN FROST BANKERS INC",
+      "sector": "Financials",
+      "market_cap": 8456749623,
+      "cik": "0000039263"
+    },
+    {
+      "ticker": "CG",
+      "name": "CARLYLE GROUP INC",
+      "sector": "Financials",
+      "market_cap": 13074349612,
+      "cik": "0001527166"
+    },
+    {
+      "ticker": "CGNX",
+      "name": "COGNEX CORP",
+      "sector": "Information Technology",
+      "market_cap": 9476557266,
+      "cik": "0000851205"
+    },
+    {
+      "ticker": "CHDN",
+      "name": "CHURCHILL DOWNS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6030406437,
+      "cik": "0000020212"
+    },
+    {
+      "ticker": "CHE",
+      "name": "CHEMED CORP",
+      "sector": "Health Care",
+      "market_cap": 5665099739,
+      "cik": "0000019584"
+    },
+    {
+      "ticker": "CHH",
+      "name": "CHOICE HOTELS INTERNATIONAL INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 2755090446,
+      "cik": "0001046311"
+    },
+    {
+      "ticker": "CHRD",
+      "name": "CHORD ENERGY CORP",
+      "sector": "Energy",
+      "market_cap": 8628068310,
+      "cik": "0001486159"
+    },
+    {
+      "ticker": "CHWY",
+      "name": "CHEWY INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6572572583,
+      "cik": "0001766502"
+    },
+    {
+      "ticker": "CNH",
+      "name": "CNH INDUSTRIAL N.V. NV",
+      "sector": "Industrials",
+      "market_cap": 10382885111,
+      "cik": "0001567094"
+    },
+    {
+      "ticker": "CNM",
+      "name": "CORE & MAIN INC CLASS A",
+      "sector": "Industrials",
+      "market_cap": 10385035659,
+      "cik": "0001856525"
+    },
+    {
+      "ticker": "COKE",
+      "name": "COCA COLA CONSOLIDATED INC",
+      "sector": "Consumer Staples",
+      "market_cap": 11265102934,
+      "cik": "0000317540"
+    },
+    {
+      "ticker": "COLB",
+      "name": "COLUMBIA BANKING SYSTEM INC",
+      "sector": "Financials",
+      "market_cap": 8703857283,
+      "cik": "0000887343"
+    },
+    {
+      "ticker": "COLD",
+      "name": "AMERICOLD REALTY INC TRUST",
+      "sector": "Real Estate",
+      "market_cap": 3442806059,
+      "cik": "0001455863"
+    },
+    {
+      "ticker": "CORT",
+      "name": "CORCEPT THERAPEUTICS INC",
+      "sector": "Health Care",
+      "market_cap": 4043874517,
+      "cik": "0001088856"
+    },
+    {
+      "ticker": "CPT",
+      "name": "CAMDEN PROPERTY TRUST REIT",
+      "sector": "Real Estate",
+      "market_cap": 11173207279,
+      "cik": "0000906345"
+    },
+    {
+      "ticker": "CR",
+      "name": "CRANE",
+      "sector": "Industrials",
+      "market_cap": 9008965638,
+      "cik": "0001944013"
+    },
+    {
+      "ticker": "CRCL",
+      "name": "CIRCLE INTERNET GROUP INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 12592541672,
+      "cik": "0001876042"
+    },
+    {
+      "ticker": "CRUS",
+      "name": "CIRRUS LOGIC INC",
+      "sector": "Information Technology",
+      "market_cap": 7805420973,
+      "cik": "0000772406"
+    },
+    {
+      "ticker": "CUBE",
+      "name": "CUBESMART REIT",
+      "sector": "Real Estate",
+      "market_cap": 8601327507,
+      "cik": "0001298675"
+    },
+    {
+      "ticker": "CUZ",
+      "name": "COUSINS PROPERTIES REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 3898098331,
+      "cik": "0000025232"
+    },
+    {
+      "ticker": "CWEN",
+      "name": "CLEARWAY ENERGY INC CLASS C",
+      "sector": "Utilities",
+      "market_cap": 3460755023,
+      "cik": "0001567683"
+    },
+    {
+      "ticker": "CXT",
+      "name": "CRANE NXT",
+      "sector": "Information Technology",
+      "market_cap": 2225665528,
+      "cik": "0000025445"
+    },
+    {
+      "ticker": "DAR",
+      "name": "DARLING INGREDIENTS INC",
+      "sector": "Consumer Staples",
+      "market_cap": 9910876651,
+      "cik": "0000916540"
+    },
+    {
+      "ticker": "DBX",
+      "name": "DROPBOX INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 4489309301,
+      "cik": "0001467623"
+    },
+    {
+      "ticker": "DCI",
+      "name": "DONALDSON INC",
+      "sector": "Industrials",
+      "market_cap": 10780825796,
+      "cik": "0000029644"
+    },
+    {
+      "ticker": "DINO",
+      "name": "HF SINCLAIR CORP",
+      "sector": "Energy",
+      "market_cap": 10360966627,
+      "cik": "0001915657"
+    },
+    {
+      "ticker": "DKNG",
+      "name": "DRAFTKINGS INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 10946785939,
+      "cik": "0001883685"
+    },
+    {
+      "ticker": "DKS",
+      "name": "DICKS SPORTING INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 13085010422,
+      "cik": "0001089063"
+    },
+    {
+      "ticker": "DLB",
+      "name": "DOLBY LABORATORIES INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 3873483091,
+      "cik": "0001308547"
+    },
+    {
+      "ticker": "DOC",
+      "name": "HEALTHPEAK PROPERTIES INC",
+      "sector": "Real Estate",
+      "market_cap": 12403839460,
+      "cik": "0000765880"
+    },
+    {
+      "ticker": "DOCS",
+      "name": "DOXIMITY INC CLASS A",
+      "sector": "Health Care",
+      "market_cap": 3359670158,
+      "cik": "0001516513"
+    },
+    {
+      "ticker": "DOCU",
+      "name": "DOCUSIGN INC",
+      "sector": "Information Technology",
+      "market_cap": 9901826518,
+      "cik": "0001261333"
+    },
+    {
+      "ticker": "DOX",
+      "name": "AMDOCS LTD",
+      "sector": "Information Technology",
+      "market_cap": 7793425474,
+      "cik": "0001062579"
+    },
+    {
+      "ticker": "DRS",
+      "name": "LEONARDO DRS INC",
+      "sector": "Industrials",
+      "market_cap": 3725690637,
+      "cik": "0001833756"
+    },
+    {
+      "ticker": "DT",
+      "name": "DYNATRACE INC",
+      "sector": "Information Technology",
+      "market_cap": 11505334889,
+      "cik": "0001773383"
+    },
+    {
+      "ticker": "DTM",
+      "name": "DT MIDSTREAM INC",
+      "sector": "Energy",
+      "market_cap": 14651860460,
+      "cik": "0001842022"
+    },
+    {
+      "ticker": "DUOL",
+      "name": "DUOLINGO INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 3985999705,
+      "cik": "0001562088"
+    },
+    {
+      "ticker": "ECG",
+      "name": "EVERUS CONSTRUCTION GROUP INC",
+      "sector": "Industrials",
+      "market_cap": 6803643243,
+      "cik": "0002015845"
+    },
+    {
+      "ticker": "EEFT",
+      "name": "EURONET WORLDWIDE INC",
+      "sector": "Financials",
+      "market_cap": 2789510812,
+      "cik": "0001029199"
+    },
+    {
+      "ticker": "EG",
+      "name": "EVEREST GROUP LTD",
+      "sector": "Financials",
+      "market_cap": 14562397572,
+      "cik": "0001095073"
+    },
+    {
+      "ticker": "EGP",
+      "name": "EASTGROUP PROPERTIES REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 10196268444,
+      "cik": "0000049600"
+    },
+    {
+      "ticker": "EHC",
+      "name": "ENCOMPASS HEALTH CORP",
+      "sector": "Health Care",
+      "market_cap": 10331110119,
+      "cik": "0000785161"
+    },
+    {
+      "ticker": "ELAN",
+      "name": "ELANCO ANIMAL HEALTH INC",
+      "sector": "Health Care",
+      "market_cap": 13268065177,
+      "cik": "0001739104"
+    },
+    {
+      "ticker": "ELF",
+      "name": "ELF BEAUTY INC",
+      "sector": "Consumer Staples",
+      "market_cap": 3923503488,
+      "cik": "0001600033"
+    },
+    {
+      "ticker": "ELS",
+      "name": "EQUITY LIFESTYLE PROPERTIES REIT I",
+      "sector": "Real Estate",
+      "market_cap": 12757033145,
+      "cik": "0000895417"
+    },
+    {
+      "ticker": "EPR",
+      "name": "EPR PROPERTIES REIT",
+      "sector": "Real Estate",
+      "market_cap": 3866932866,
+      "cik": "0001045450"
+    },
+    {
+      "ticker": "EQH",
+      "name": "EQUITABLE HOLDINGS INC",
+      "sector": "Financials",
+      "market_cap": 12370092004,
+      "cik": "0001333986"
+    },
+    {
+      "ticker": "ESAB",
+      "name": "ESAB CORP",
+      "sector": "Industrials",
+      "market_cap": 5901737445,
+      "cik": "0001877322"
+    },
+    {
+      "ticker": "ESI",
+      "name": "ELEMENT SOLUTIONS INC",
+      "sector": "Materials",
+      "market_cap": 8510186907,
+      "cik": "0001590714"
+    },
+    {
+      "ticker": "ESTC",
+      "name": "ELASTIC NV",
+      "sector": "Information Technology",
+      "market_cap": 4647904765,
+      "cik": "0001707753"
+    },
+    {
+      "ticker": "EVR",
+      "name": "EVERCORE INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 11053035339,
+      "cik": "0001360901"
+    },
+    {
+      "ticker": "EXEL",
+      "name": "EXELIXIS INC",
+      "sector": "Health Care",
+      "market_cap": 12272294976,
+      "cik": "0000939767"
+    },
+    {
+      "ticker": "EXLS",
+      "name": "EXLSERVICE HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 5094457755,
+      "cik": "0001297989"
+    },
+    {
+      "ticker": "EXP",
+      "name": "EAGLE MATERIALS INC",
+      "sector": "Materials",
+      "market_cap": 6554267356,
+      "cik": "0000918646"
+    },
+    {
+      "ticker": "FAF",
+      "name": "FIRST AMERICAN FINANCIAL CORP",
+      "sector": "Financials",
+      "market_cap": 6026492252,
+      "cik": "0001472787"
+    },
+    {
+      "ticker": "FBIN",
+      "name": "FORTUNE BRANDS INNOVATIONS INC",
+      "sector": "Industrials",
+      "market_cap": 5180797496,
+      "cik": "0001519751"
+    },
+    {
+      "ticker": "FCN",
+      "name": "FTI CONSULTING INC",
+      "sector": "Industrials",
+      "market_cap": 5593085171,
+      "cik": "0000887936"
+    },
+    {
+      "ticker": "FHB",
+      "name": "FIRST HAWAIIAN INC",
+      "sector": "Financials",
+      "market_cap": 3311285140,
+      "cik": "0000036377"
+    },
+    {
+      "ticker": "FIVE",
+      "name": "FIVE BELOW INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 13575646287,
+      "cik": "0001177609"
+    },
+    {
+      "ticker": "FNB",
+      "name": "FNB CORP",
+      "sector": "Financials",
+      "market_cap": 6391457795,
+      "cik": "0000037808"
+    },
+    {
+      "ticker": "FND",
+      "name": "FLOOR DECOR HOLDINGS INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5934208699,
+      "cik": "0001507079"
+    },
+    {
+      "ticker": "FNF",
+      "name": "FIDELITY NATIONAL FINANCIAL INC",
+      "sector": "Financials",
+      "market_cap": 12915872334,
+      "cik": "0001331875"
+    },
+    {
+      "ticker": "FOUR",
+      "name": "SHIFT4 PAYMENTS INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 3450443602,
+      "cik": "0001794669"
+    },
+    {
+      "ticker": "FR",
+      "name": "FIRST INDUSTRIAL REALTY TRUST INC",
+      "sector": "Real Estate",
+      "market_cap": 7847411311,
+      "cik": "0000921825"
+    },
+    {
+      "ticker": "FRHC",
+      "name": "FREEDOM HOLDING CORP",
+      "sector": "Financials",
+      "market_cap": 2738108894,
+      "cik": "0000924805"
+    },
+    {
+      "ticker": "FRPT",
+      "name": "FRESHPET INC",
+      "sector": "Consumer Staples",
+      "market_cap": 2984178564,
+      "cik": "0001611647"
+    },
+    {
+      "ticker": "FWONA",
+      "name": "LIBERTY MEDIA FORMULA ONE SERIES A",
+      "sector": "Communication",
+      "market_cap": 2019448484,
+      "cik": "0001560385"
+    },
+    {
+      "ticker": "G",
+      "name": "GENPACT LTD",
+      "sector": "Industrials",
+      "market_cap": 6444156372,
+      "cik": "0001398659"
+    },
+    {
+      "ticker": "GAP",
+      "name": "GAP INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6111716163,
+      "cik": "0000039911"
+    },
+    {
+      "ticker": "GDDY",
+      "name": "GODADDY INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 11922171539,
+      "cik": "0001609711"
+    },
+    {
+      "ticker": "GFS",
+      "name": "GLOBALFOUNDRIES INC",
+      "sector": "Information Technology",
+      "market_cap": 6128822117,
+      "cik": "0001709048"
+    },
+    {
+      "ticker": "GLPI",
+      "name": "GAMING AND LEISURE PROPERTIES REIT",
+      "sector": "Real Estate",
+      "market_cap": 13196010546,
+      "cik": "0001575965"
+    },
+    {
+      "ticker": "GMED",
+      "name": "GLOBUS MEDICAL INC CLASS A",
+      "sector": "Health Care",
+      "market_cap": 10425530517,
+      "cik": "0001237831"
+    },
+    {
+      "ticker": "GNTX",
+      "name": "GENTEX CORP",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5444381057,
+      "cik": "0000355811"
+    },
+    {
+      "ticker": "GPK",
+      "name": "GRAPHIC PACKAGING HOLDING",
+      "sector": "Materials",
+      "market_cap": 2971828565,
+      "cik": "0001408075"
+    },
+    {
+      "ticker": "GTES",
+      "name": "GATES INDUSTRIAL PLC",
+      "sector": "Industrials",
+      "market_cap": 6386857504,
+      "cik": "0001718512"
+    },
+    {
+      "ticker": "GTLB",
+      "name": "GITLAB INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 2908269237,
+      "cik": "0001653482"
+    },
+    {
+      "ticker": "GWRE",
+      "name": "GUIDEWIRE SOFTWARE INC",
+      "sector": "Information Technology",
+      "market_cap": 13445197699,
+      "cik": "0001528396"
+    },
+    {
+      "ticker": "GXO",
+      "name": "GXO LOGISTICS INC",
+      "sector": "Industrials",
+      "market_cap": 6470614388,
+      "cik": "0001852244"
+    },
+    {
+      "ticker": "H",
+      "name": "HYATT HOTELS CORP CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6467354360,
+      "cik": "0001468174"
+    },
+    {
+      "ticker": "HALO",
+      "name": "HALOZYME THERAPEUTICS INC",
+      "sector": "Health Care",
+      "market_cap": 7833783571,
+      "cik": "0001159036"
+    },
+    {
+      "ticker": "HAYW",
+      "name": "HAYWARD HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 2939094100,
+      "cik": "0001834622"
+    },
+    {
+      "ticker": "HEI",
+      "name": "HEICO CORP",
+      "sector": "Industrials",
+      "market_cap": 12588303368,
+      "cik": "0000046619"
+    },
+    {
+      "ticker": "HHH",
+      "name": "HOWARD HUGHES HOLDINGS INC",
+      "sector": "Real Estate",
+      "market_cap": 2241568966,
+      "cik": "0001981792"
+    },
+    {
+      "ticker": "HIW",
+      "name": "HIGHWOODS PROPERTIES REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 2442193082,
+      "cik": "0000921082"
+    },
+    {
+      "ticker": "HLI",
+      "name": "HOULIHAN LOKEY INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 8201389921,
+      "cik": "0001302215"
+    },
+    {
+      "ticker": "HLNE",
+      "name": "HAMILTON LANE INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 4332840804,
+      "cik": "0001433642"
+    },
+    {
+      "ticker": "HR",
+      "name": "HEALTHCARE REALTY TRUST INC CLASS",
+      "sector": "Real Estate",
+      "market_cap": 6011964882,
+      "cik": "0001360604"
+    },
+    {
+      "ticker": "HUBS",
+      "name": "HUBSPOT INC",
+      "sector": "Information Technology",
+      "market_cap": 12872988508,
+      "cik": "0001404655"
+    },
+    {
+      "ticker": "HUN",
+      "name": "HUNTSMAN CORP",
+      "sector": "Materials",
+      "market_cap": 2221286951,
+      "cik": "0001307954"
+    },
+    {
+      "ticker": "HXL",
+      "name": "HEXCEL CORP",
+      "sector": "Industrials",
+      "market_cap": 6937834780,
+      "cik": "0000717605"
+    },
+    {
+      "ticker": "IAC",
+      "name": "IAC INC",
+      "sector": "Communication",
+      "market_cap": 3026767290,
+      "cik": "0001800227"
+    },
+    {
+      "ticker": "IDA",
+      "name": "IDACORP INC",
+      "sector": "Utilities",
+      "market_cap": 7875512879,
+      "cik": "0001057877"
+    },
+    {
+      "ticker": "INGR",
+      "name": "INGREDION INC",
+      "sector": "Consumer Staples",
+      "market_cap": 7522564189,
+      "cik": "0001046257"
+    },
+    {
+      "ticker": "IONS",
+      "name": "IONIS PHARMACEUTICALS INC",
+      "sector": "Health Care",
+      "market_cap": 11979695931,
+      "cik": "0000874015"
+    },
+    {
+      "ticker": "IOT",
+      "name": "SAMSARA INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 10609879421,
+      "cik": "0001642896"
+    },
+    {
+      "ticker": "IRDM",
+      "name": "IRIDIUM COMMUNICATIONS INC",
+      "sector": "Communication",
+      "market_cap": 2994225952,
+      "cik": "0001418819"
+    },
+    {
+      "ticker": "JAZZ",
+      "name": "JAZZ PHARMACEUTICALS PLC",
+      "sector": "Health Care",
+      "market_cap": 11903168132,
+      "cik": "0001232524"
+    },
+    {
+      "ticker": "JHG",
+      "name": "JANUS HENDERSON GROUP PLC",
+      "sector": "Financials",
+      "market_cap": 7041238709,
+      "cik": "0001274173"
+    },
+    {
+      "ticker": "JHX",
+      "name": "JAMES HARDIE INDUSTRIES PLC",
+      "sector": "Materials",
+      "market_cap": 3132098499,
+      "cik": "0001159152"
+    },
+    {
+      "ticker": "JLL",
+      "name": "JONES LANG LASALLE INC",
+      "sector": "Real Estate",
+      "market_cap": 14996562472,
+      "cik": "0001037976"
+    },
+    {
+      "ticker": "KBR",
+      "name": "KBR INC",
+      "sector": "Industrials",
+      "market_cap": 5252945717,
+      "cik": "0001357615"
+    },
+    {
+      "ticker": "KD",
+      "name": "KYNDRYL HOLDINGS INC",
+      "sector": "Information Technology",
+      "market_cap": 3083839678,
+      "cik": "0001867072"
+    },
+    {
+      "ticker": "KEX",
+      "name": "KIRBY CORP",
+      "sector": "Industrials",
+      "market_cap": 8041161604,
+      "cik": "0000056047"
+    },
+    {
+      "ticker": "KMPR",
+      "name": "KEMPER CORP",
+      "sector": "Financials",
+      "market_cap": 2027701811,
+      "cik": "0000860748"
+    },
+    {
+      "ticker": "KNSL",
+      "name": "KINSALE CAPITAL GROUP INC",
+      "sector": "Financials",
+      "market_cap": 7610883916,
+      "cik": "0001669162"
+    },
+    {
+      "ticker": "KNX",
+      "name": "KNIGHT-SWIFT TRANSPORTATION HOLDIN",
+      "sector": "Industrials",
+      "market_cap": 9296817724,
+      "cik": "0001492691"
+    },
+    {
+      "ticker": "KRC",
+      "name": "KILROY REALTY REIT CORP",
+      "sector": "Real Estate",
+      "market_cap": 3488093094,
+      "cik": "0001025996"
+    },
+    {
+      "ticker": "KRMN",
+      "name": "KARMAN HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 5404054983,
+      "cik": "0002040127"
+    },
+    {
+      "ticker": "LAD",
+      "name": "LITHIA MOTORS INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6467848146,
+      "cik": "0001023128"
+    },
+    {
+      "ticker": "LAMR",
+      "name": "LAMAR ADVERTISING COMPANY CLAS",
+      "sector": "Real Estate",
+      "market_cap": 11910196901,
+      "cik": "0001090425"
+    },
+    {
+      "ticker": "LAZ",
+      "name": "LAZARD INC",
+      "sector": "Financials",
+      "market_cap": 4007510088,
+      "cik": "0001311370"
+    },
+    {
+      "ticker": "LBRDK",
+      "name": "LIBERTY BROADBAND CORP SERIES C",
+      "sector": "Communication",
+      "market_cap": 6003290797,
+      "cik": "0001611983"
+    },
+    {
+      "ticker": "LBTYA",
+      "name": "LIBERTY GLOBAL LTD CLASS A",
+      "sector": "Communication",
+      "market_cap": 2162112372,
+      "cik": "0001570585"
+    },
+    {
+      "ticker": "LEA",
+      "name": "LEAR CORP",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6827158791,
+      "cik": "0000842162"
+    },
+    {
+      "ticker": "LECO",
+      "name": "LINCOLN ELECTRIC HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 14793292333,
+      "cik": "0000059527"
+    },
+    {
+      "ticker": "LFUS",
+      "name": "LITTELFUSE INC",
+      "sector": "Information Technology",
+      "market_cap": 9016145977,
+      "cik": "0000889331"
+    },
+    {
+      "ticker": "LINE",
+      "name": "LINEAGE INC",
+      "sector": "Real Estate",
+      "market_cap": 2626929182,
+      "cik": "0001868159"
+    },
+    {
+      "ticker": "LLYVK",
+      "name": "LIBERTY LIVE HOLDINGS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 4671736020,
+      "cik": "0002078416"
+    },
+    {
+      "ticker": "LOAR",
+      "name": "LOAR HOLDINGS INC",
+      "sector": "Industrials",
+      "market_cap": 2697348928,
+      "cik": "0002000178"
+    },
+    {
+      "ticker": "LOPE",
+      "name": "GRAND CANYON EDUCATION INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5042135629,
+      "cik": "0001434588"
+    },
+    {
+      "ticker": "LPX",
+      "name": "LOUISIANA PACIFIC CORP",
+      "sector": "Materials",
+      "market_cap": 5071846186,
+      "cik": "0000060519"
+    },
+    {
+      "ticker": "LSCC",
+      "name": "LATTICE SEMICONDUCTOR CORP",
+      "sector": "Information Technology",
+      "market_cap": 14684088587,
+      "cik": "0000855658"
+    },
+    {
+      "ticker": "LSTR",
+      "name": "LANDSTAR SYSTEM INC",
+      "sector": "Industrials",
+      "market_cap": 5971129407,
+      "cik": "0000853816"
+    },
+    {
+      "ticker": "LYFT",
+      "name": "LYFT INC CLASS A",
+      "sector": "Industrials",
+      "market_cap": 5630474021,
+      "cik": "0001759509"
+    },
+    {
+      "ticker": "MANH",
+      "name": "MANHATTAN ASSOCIATES INC",
+      "sector": "Information Technology",
+      "market_cap": 8298798245,
+      "cik": "0001056696"
+    },
+    {
+      "ticker": "MASI",
+      "name": "MASIMO CORP",
+      "sector": "Health Care",
+      "market_cap": 8649328468,
+      "cik": "0000937556"
+    },
+    {
+      "ticker": "MDLN",
+      "name": "MEDLINE INC CLASS A",
+      "sector": "Health Care",
+      "market_cap": 14760434242,
+      "cik": "0002046386"
+    },
+    {
+      "ticker": "MDU",
+      "name": "MDU RESOURCES GROUP INC",
+      "sector": "Utilities",
+      "market_cap": 4536406432,
+      "cik": "0000067716"
+    },
+    {
+      "ticker": "MEDP",
+      "name": "MEDPACE HOLDINGS INC",
+      "sector": "Health Care",
+      "market_cap": 11015053568,
+      "cik": "0001668397"
+    },
+    {
+      "ticker": "MIDD",
+      "name": "MIDDLEBY CORP",
+      "sector": "Industrials",
+      "market_cap": 6965602052,
+      "cik": "0000769520"
+    },
+    {
+      "ticker": "MLI",
+      "name": "MUELLER INDUSTRIES INC",
+      "sector": "Industrials",
+      "market_cap": 12914705756,
+      "cik": "0000089439"
+    },
+    {
+      "ticker": "MORN",
+      "name": "MORNINGSTAR INC",
+      "sector": "Financials",
+      "market_cap": 3973556236,
+      "cik": "0001289419"
+    },
+    {
+      "ticker": "MP",
+      "name": "MP MATERIALS CORP CLASS A",
+      "sector": "Materials",
+      "market_cap": 8171136789,
+      "cik": "0001801368"
+    },
+    {
+      "ticker": "MPT",
+      "name": "MEDICAL PROPERTIES TRUST REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 2466485128,
+      "cik": "0001287865"
+    },
+    {
+      "ticker": "MRP",
+      "name": "MILLROSE PROPERTIES INC CLASS A",
+      "sector": "Real Estate",
+      "market_cap": 4807186679,
+      "cik": "0002017206"
+    },
+    {
+      "ticker": "MSA",
+      "name": "MSA SAFETY INC",
+      "sector": "Industrials",
+      "market_cap": 7119884435,
+      "cik": "0000066570"
+    },
+    {
+      "ticker": "MSGS",
+      "name": "MADISON SQUARE GARDEN SPORTS CORP",
+      "sector": "Communication",
+      "market_cap": 5405835625,
+      "cik": "0001636519"
+    },
+    {
+      "ticker": "MSM",
+      "name": "MSC INDUSTRIAL INC CLASS A",
+      "sector": "Industrials",
+      "market_cap": 4257055656,
+      "cik": "0001003078"
+    },
+    {
+      "ticker": "MTG",
+      "name": "MGIC INVESTMENT CORP",
+      "sector": "Financials",
+      "market_cap": 6103828215,
+      "cik": "0000876437"
+    },
+    {
+      "ticker": "MTN",
+      "name": "VAIL RESORTS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5031801988,
+      "cik": "0000812011"
+    },
+    {
+      "ticker": "MUSA",
+      "name": "MURPHY USA INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 8673412787,
+      "cik": "0001573516"
+    },
+    {
+      "ticker": "NBIX",
+      "name": "NEUROCRINE BIOSCIENCES INC",
+      "sector": "Health Care",
+      "market_cap": 13500066206,
+      "cik": "0000914475"
+    },
+    {
+      "ticker": "NEU",
+      "name": "NEWMARKET CORP",
+      "sector": "Materials",
+      "market_cap": 3900395114,
+      "cik": "0001282637"
+    },
+    {
+      "ticker": "NFG",
+      "name": "NATIONAL FUEL GAS",
+      "sector": "Utilities",
+      "market_cap": 8978340358,
+      "cik": "0000070145"
+    },
+    {
+      "ticker": "NNN",
+      "name": "NNN REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 8304986334,
+      "cik": "0000751364"
+    },
+    {
+      "ticker": "NSA",
+      "name": "NATIONAL STORAGE AFFILIATES TRUST",
+      "sector": "Real Estate",
+      "market_cap": 2730912506,
+      "cik": "0001618563"
+    },
+    {
+      "ticker": "NTNX",
+      "name": "NUTANIX INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 10642479472,
+      "cik": "0001618732"
+    },
+    {
+      "ticker": "NVST",
+      "name": "ENVISTA HOLDINGS CORP",
+      "sector": "Health Care",
+      "market_cap": 4617802171,
+      "cik": "0001757073"
+    },
+    {
+      "ticker": "NXST",
+      "name": "NEXSTAR MEDIA GROUP INC",
+      "sector": "Communication",
+      "market_cap": 6542379284,
+      "cik": "0001142417"
+    },
+    {
+      "ticker": "OC",
+      "name": "OWENS CORNING",
+      "sector": "Industrials",
+      "market_cap": 9663296409,
+      "cik": "0001370946"
+    },
+    {
+      "ticker": "OGE",
+      "name": "OGE ENERGY CORP",
+      "sector": "Utilities",
+      "market_cap": 10311464688,
+      "cik": "0001021635"
+    },
+    {
+      "ticker": "OHI",
+      "name": "OMEGA HEALTHCARE INVESTORS REIT IN",
+      "sector": "Real Estate",
+      "market_cap": 13658355736,
+      "cik": "0000888491"
+    },
+    {
+      "ticker": "OKTA",
+      "name": "OKTA INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 13608610729,
+      "cik": "0001660134"
+    },
+    {
+      "ticker": "OLED",
+      "name": "UNIVERSAL DISPLAY CORP",
+      "sector": "Information Technology",
+      "market_cap": 4522758070,
+      "cik": "0001005284"
+    },
+    {
+      "ticker": "OLLI",
+      "name": "OLLIES BARGAIN OUTLET HOLDINGS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 5814358981,
+      "cik": "0001639300"
+    },
+    {
+      "ticker": "OLN",
+      "name": "OLIN CORP",
+      "sector": "Materials",
+      "market_cap": 3433282194,
+      "cik": "0000074303"
+    },
+    {
+      "ticker": "OMF",
+      "name": "ONEMAIN HOLDINGS INC",
+      "sector": "Financials",
+      "market_cap": 6572766159,
+      "cik": "0001584207"
+    },
+    {
+      "ticker": "ONON",
+      "name": "ON HOLDING LTD CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 8236053744,
+      "cik": "0001858985"
+    },
+    {
+      "ticker": "ONTO",
+      "name": "ONTO INNOVATION INC",
+      "sector": "Information Technology",
+      "market_cap": 11517454283,
+      "cik": "0000704532"
+    },
+    {
+      "ticker": "ORI",
+      "name": "OLD REPUBLIC INTERNATIONAL CORP",
+      "sector": "Financials",
+      "market_cap": 9565431254,
+      "cik": "0000074260"
+    },
+    {
+      "ticker": "OSK",
+      "name": "OSHKOSH CORP",
+      "sector": "Industrials",
+      "market_cap": 10213784561,
+      "cik": "0000775158"
+    },
+    {
+      "ticker": "OWL",
+      "name": "BLUE OWL CAPITAL INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 5857262054,
+      "cik": "0001823945"
+    },
+    {
+      "ticker": "OZK",
+      "name": "BANK OZK",
+      "sector": "Financials",
+      "market_cap": 5268549079,
+      "cik": "0001569650"
+    },
+    {
+      "ticker": "PAG",
+      "name": "PENSKE AUTOMOTIVE GROUP VOTING INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 2806843919,
+      "cik": "0001019849"
+    },
+    {
+      "ticker": "PATH",
+      "name": "UIPATH INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 4650204656,
+      "cik": "0001734722"
+    },
+    {
+      "ticker": "PB",
+      "name": "PROSPERITY BANCSHARES INC",
+      "sector": "Financials",
+      "market_cap": 6438208137,
+      "cik": "0001068851"
+    },
+    {
+      "ticker": "PCOR",
+      "name": "PROCORE TECHNOLOGIES INC",
+      "sector": "Information Technology",
+      "market_cap": 7490578831,
+      "cik": "0001611052"
+    },
+    {
+      "ticker": "PCTY",
+      "name": "PAYLOCITY HOLDING CORP",
+      "sector": "Industrials",
+      "market_cap": 5130522900,
+      "cik": "0001591698"
+    },
+    {
+      "ticker": "PEGA",
+      "name": "PEGASYSTEMS INC",
+      "sector": "Information Technology",
+      "market_cap": 3785515503,
+      "cik": "0001013857"
+    },
+    {
+      "ticker": "PEN",
+      "name": "PENUMBRA INC",
+      "sector": "Health Care",
+      "market_cap": 13466441389,
+      "cik": "0001321732"
+    },
+    {
+      "ticker": "PFGC",
+      "name": "PERFORMANCE FOOD GROUP",
+      "sector": "Consumer Staples",
+      "market_cap": 14102478170,
+      "cik": "0001618673"
+    },
+    {
+      "ticker": "PINS",
+      "name": "PINTEREST INC CLASS A",
+      "sector": "Communication",
+      "market_cap": 11779872805,
+      "cik": "0001506293"
+    },
+    {
+      "ticker": "PK",
+      "name": "PARK HOTELS RESORTS INC",
+      "sector": "Real Estate",
+      "market_cap": 2339867670,
+      "cik": "0001617406"
+    },
+    {
+      "ticker": "PLNT",
+      "name": "PLANET FITNESS INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6688283444,
+      "cik": "0001637207"
+    },
+    {
+      "ticker": "PNFP",
+      "name": "PINNACLE FINANCIAL PARTNERS INC",
+      "sector": "Financials",
+      "market_cap": 13193180482,
+      "cik": "0002082866"
+    },
+    {
+      "ticker": "POST",
+      "name": "POST HOLDINGS INC",
+      "sector": "Consumer Staples",
+      "market_cap": 5048639590,
+      "cik": "0001530950"
+    },
+    {
+      "ticker": "PRI",
+      "name": "PRIMERICA INC",
+      "sector": "Financials",
+      "market_cap": 8868512415,
+      "cik": "0001475922"
+    },
+    {
+      "ticker": "PRMB",
+      "name": "PRIMO BRANDS CLASS A CORP",
+      "sector": "Consumer Staples",
+      "market_cap": 5028749971,
+      "cik": "0002042694"
+    },
+    {
+      "ticker": "PSN",
+      "name": "PARSONS CORP",
+      "sector": "Industrials",
+      "market_cap": 3022359618,
+      "cik": "0000275880"
+    },
+    {
+      "ticker": "QGEN",
+      "name": "QIAGEN NV",
+      "sector": "Health Care",
+      "market_cap": 8867120732,
+      "cik": "0001015820"
+    },
+    {
+      "ticker": "QS",
+      "name": "QUANTUMSCAPE CORP CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 3017231560,
+      "cik": "0001811414"
+    },
+    {
+      "ticker": "QXO",
+      "name": "QXO INC",
+      "sector": "Industrials",
+      "market_cap": 14072064786,
+      "cik": "0001236275"
+    },
+    {
+      "ticker": "RAL",
+      "name": "RALLIANT CORP",
+      "sector": "Information Technology",
+      "market_cap": 5197104298,
+      "cik": "0002041385"
+    },
+    {
+      "ticker": "RBRK",
+      "name": "RUBRIK INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 6731289746,
+      "cik": "0001943896"
+    },
+    {
+      "ticker": "REXR",
+      "name": "REXFORD INDUSTRIAL REALTY REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 8429670011,
+      "cik": "0001571283"
+    },
+    {
+      "ticker": "RGA",
+      "name": "REINSURANCE GROUP OF AMERICA INC",
+      "sector": "Financials",
+      "market_cap": 14311272528,
+      "cik": "0000898174"
+    },
+    {
+      "ticker": "RGEN",
+      "name": "REPLIGEN CORP",
+      "sector": "Health Care",
+      "market_cap": 6400378788,
+      "cik": "0000730272"
+    },
+    {
+      "ticker": "RH",
+      "name": "RH",
+      "sector": "Consumer Discretionary",
+      "market_cap": 2127982413,
+      "cik": "0001528849"
+    },
+    {
+      "ticker": "RITM",
+      "name": "RITHM CAPITAL CORP",
+      "sector": "Financials",
+      "market_cap": 5058385557,
+      "cik": "0001556593"
+    },
+    {
+      "ticker": "RIVN",
+      "name": "RIVIAN AUTOMOTIVE INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 12873046592,
+      "cik": "0001874178"
+    },
+    {
+      "ticker": "RKT",
+      "name": "ROCKET COMPANIES INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 14332946690,
+      "cik": "0001805284"
+    },
+    {
+      "ticker": "RLI",
+      "name": "RLI CORP",
+      "sector": "Financials",
+      "market_cap": 5125025817,
+      "cik": "0000084246"
+    },
+    {
+      "ticker": "RNG",
+      "name": "RINGCENTRAL INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 3264061216,
+      "cik": "0001384905"
+    },
+    {
+      "ticker": "RNR",
+      "name": "RENAISSANCERE HOLDING LTD",
+      "sector": "Financials",
+      "market_cap": 14098110247,
+      "cik": "0000913144"
+    },
+    {
+      "ticker": "ROIV",
+      "name": "ROIVANT SCIENCES LTD",
+      "sector": "Health Care",
+      "market_cap": 12416437518,
+      "cik": "0001635088"
+    },
+    {
+      "ticker": "ROKU",
+      "name": "ROKU INC CLASS A",
+      "sector": "Communication",
+      "market_cap": 12922368973,
+      "cik": "0001428439"
+    },
+    {
+      "ticker": "RPM",
+      "name": "RPM INTERNATIONAL INC",
+      "sector": "Materials",
+      "market_cap": 13317763740,
+      "cik": "0000110621"
+    },
+    {
+      "ticker": "RRX",
+      "name": "REGAL REXNORD CORP",
+      "sector": "Industrials",
+      "market_cap": 13787172233,
+      "cik": "0000082811"
+    },
+    {
+      "ticker": "RVTY",
+      "name": "REVVITY INC",
+      "sector": "Health Care",
+      "market_cap": 10975064257,
+      "cik": "0000031791"
+    },
+    {
+      "ticker": "RYAN",
+      "name": "RYAN SPECIALTY HOLDINGS INC CLASS",
+      "sector": "Financials",
+      "market_cap": 3673854139,
+      "cik": "0001849253"
+    },
+    {
+      "ticker": "RYN",
+      "name": "RAYONIER REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 6410496962,
+      "cik": "0000052827"
+    },
+    {
+      "ticker": "S",
+      "name": "SENTINELONE INC CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 4249805861,
+      "cik": "0001583708"
+    },
+    {
+      "ticker": "SAIA",
+      "name": "SAIA INC",
+      "sector": "Industrials",
+      "market_cap": 9632039939,
+      "cik": "0001177702"
+    },
+    {
+      "ticker": "SAIC",
+      "name": "SCIENCE APPLICATIONS INTERNATIONAL",
+      "sector": "Industrials",
+      "market_cap": 4996426894,
+      "cik": "0001571123"
+    },
+    {
+      "ticker": "SARO",
+      "name": "STANDARDAERO",
+      "sector": "Industrials",
+      "market_cap": 6507125619,
+      "cik": "0002025410"
+    },
+    {
+      "ticker": "SCCO",
+      "name": "SOUTHERN COPPER CORP",
+      "sector": "Materials",
+      "market_cap": 14773490147,
+      "cik": "0001001838"
+    },
+    {
+      "ticker": "SCI",
+      "name": "SERVICE",
+      "sector": "Consumer Discretionary",
+      "market_cap": 11748855204,
+      "cik": "0000089089"
+    },
+    {
+      "ticker": "SEIC",
+      "name": "SEI INVESTMENTS",
+      "sector": "Financials",
+      "market_cap": 8389021955,
+      "cik": "0000350894"
+    },
+    {
+      "ticker": "SF",
+      "name": "STIFEL FINANCIAL CORP",
+      "sector": "Financials",
+      "market_cap": 11515330274,
+      "cik": "0000720672"
+    },
+    {
+      "ticker": "SHC",
+      "name": "SOTERA HEALTH COMPANY",
+      "sector": "Health Care",
+      "market_cap": 3600156837,
+      "cik": "0001822479"
+    },
+    {
+      "ticker": "SIRI",
+      "name": "SIRIUSXM HOLDINGS INC",
+      "sector": "Communication",
+      "market_cap": 4640415459,
+      "cik": "0000908937"
+    },
+    {
+      "ticker": "SLGN",
+      "name": "SILGAN HOLDINGS INC",
+      "sector": "Materials",
+      "market_cap": 3612967388,
+      "cik": "0000849869"
+    },
+    {
+      "ticker": "SMG",
+      "name": "SCOTTS MIRACLE GRO",
+      "sector": "Materials",
+      "market_cap": 3174498522,
+      "cik": "0000825542"
+    },
+    {
+      "ticker": "SMMT",
+      "name": "SUMMIT THERAPEUTICS INC",
+      "sector": "Health Care",
+      "market_cap": 2227766121,
+      "cik": "0001599298"
+    },
+    {
+      "ticker": "SN",
+      "name": "SHARKNINJA INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 9479789275,
+      "cik": "0001957132"
+    },
+    {
+      "ticker": "SNX",
+      "name": "TD SYNNEX CORP",
+      "sector": "Information Technology",
+      "market_cap": 13312371559,
+      "cik": "0001177394"
+    },
+    {
+      "ticker": "SOLS",
+      "name": "SOLSTICE ADVANCED MATERIALS INC",
+      "sector": "Materials",
+      "market_cap": 12951152807,
+      "cik": "0002064953"
+    },
+    {
+      "ticker": "SOLV",
+      "name": "SOLVENTUM CORP",
+      "sector": "Health Care",
+      "market_cap": 10158825110,
+      "cik": "0001964738"
+    },
+    {
+      "ticker": "SON",
+      "name": "SONOCO PRODUCTS",
+      "sector": "Materials",
+      "market_cap": 5720884523,
+      "cik": "0000091767"
+    },
+    {
+      "ticker": "SRPT",
+      "name": "SAREPTA THERAPEUTICS INC",
+      "sector": "Health Care",
+      "market_cap": 2309949178,
+      "cik": "0000873303"
+    },
+    {
+      "ticker": "SSB",
+      "name": "SOUTHSTATE BANK CORP",
+      "sector": "Financials",
+      "market_cap": 9778289484,
+      "cik": "0000764038"
+    },
+    {
+      "ticker": "SSD",
+      "name": "SIMPSON MANUFACTURING INC",
+      "sector": "Industrials",
+      "market_cap": 7882540109,
+      "cik": "0000920371"
+    },
+    {
+      "ticker": "ST",
+      "name": "SENSATA TECHNOLOGIES HOLDING PLC",
+      "sector": "Industrials",
+      "market_cap": 5484883819,
+      "cik": "0001477294"
+    },
+    {
+      "ticker": "STAG",
+      "name": "STAG INDUSTRIAL REIT INC",
+      "sector": "Real Estate",
+      "market_cap": 7125331996,
+      "cik": "0001479094"
+    },
+    {
+      "ticker": "STWD",
+      "name": "STARWOOD PROPERTY TRUST REIT INC",
+      "sector": "Financials",
+      "market_cap": 6370252165,
+      "cik": "0001465128"
+    },
+    {
+      "ticker": "TEAM",
+      "name": "ATLASSIAN CORP CLASS A",
+      "sector": "Information Technology",
+      "market_cap": 11766018346,
+      "cik": "0001650372"
+    },
+    {
+      "ticker": "TEM",
+      "name": "TEMPUS AI INC CLASS A",
+      "sector": "Health Care",
+      "market_cap": 4791804792,
+      "cik": "0001717115"
+    },
+    {
+      "ticker": "THG",
+      "name": "HANOVER INSURANCE GROUP INC",
+      "sector": "Financials",
+      "market_cap": 6530853676,
+      "cik": "0000944695"
+    },
+    {
+      "ticker": "THO",
+      "name": "THOR INDUSTRIES INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 4519735088,
+      "cik": "0000730263"
+    },
+    {
+      "ticker": "TIGO",
+      "name": "MILLICOM INTERNATIONAL CELLULAR SA",
+      "sector": "Communication",
+      "market_cap": 8407850870,
+      "cik": "0000912958"
+    },
+    {
+      "ticker": "TKO",
+      "name": "TKO GROUP HOLDINGS INC CLASS A",
+      "sector": "Communication",
+      "market_cap": 14180118617,
+      "cik": "0001973266"
+    },
+    {
+      "ticker": "TKR",
+      "name": "TIMKEN",
+      "sector": "Industrials",
+      "market_cap": 6721899265,
+      "cik": "0000098362"
+    },
+    {
+      "ticker": "TNL",
+      "name": "TRAVEL LEISURE",
+      "sector": "Consumer Discretionary",
+      "market_cap": 4772223109,
+      "cik": "0001361658"
+    },
+    {
+      "ticker": "TOL",
+      "name": "TOLL BROTHERS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 14011450750,
+      "cik": "0000794170"
+    },
+    {
+      "ticker": "TOST",
+      "name": "TOAST INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 13095457244,
+      "cik": "0001650164"
+    },
+    {
+      "ticker": "TPG",
+      "name": "TPG INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 5602178474,
+      "cik": "0001880661"
+    },
+    {
+      "ticker": "TRU",
+      "name": "TRANSUNION",
+      "sector": "Industrials",
+      "market_cap": 13978599757,
+      "cik": "0001552033"
+    },
+    {
+      "ticker": "TTC",
+      "name": "TORO",
+      "sector": "Industrials",
+      "market_cap": 10067219355,
+      "cik": "0000737758"
+    },
+    {
+      "ticker": "TTD",
+      "name": "TRADE DESK INC CLASS A",
+      "sector": "Communication",
+      "market_cap": 10486752401,
+      "cik": "0001671933"
+    },
+    {
+      "ticker": "TTEK",
+      "name": "TETRA TECH INC",
+      "sector": "Industrials",
+      "market_cap": 8882442786,
+      "cik": "0000831641"
+    },
+    {
+      "ticker": "TW",
+      "name": "TRADEWEB MARKETS INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 14966038358,
+      "cik": "0001758730"
+    },
+    {
+      "ticker": "TXRH",
+      "name": "TEXAS ROADHOUSE INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 11982705031,
+      "cik": "0001289460"
+    },
+    {
+      "ticker": "U",
+      "name": "UNITY SOFTWARE INC",
+      "sector": "Information Technology",
+      "market_cap": 6024445560,
+      "cik": "0001810806"
+    },
+    {
+      "ticker": "UGI",
+      "name": "UGI CORP",
+      "sector": "Utilities",
+      "market_cap": 8529676106,
+      "cik": "0000884614"
+    },
+    {
+      "ticker": "UHALB",
+      "name": "U HAUL NON VOTING SERIES N",
+      "sector": "Industrials",
+      "market_cap": 4581340761,
+      "cik": "0000004457"
+    },
+    {
+      "ticker": "UI",
+      "name": "UBIQUITI INC",
+      "sector": "Information Technology",
+      "market_cap": 3757687995,
+      "cik": "0001511737"
+    },
+    {
+      "ticker": "VIK",
+      "name": "VIKING HOLDINGS",
+      "sector": "Consumer Discretionary",
+      "market_cap": 13825871924,
+      "cik": "0001745201"
+    },
+    {
+      "ticker": "VIRT",
+      "name": "VIRTU FINANCIAL INC CLASS A",
+      "sector": "Financials",
+      "market_cap": 3933938878,
+      "cik": "0001592386"
+    },
+    {
+      "ticker": "VKTX",
+      "name": "VIKING THERAPEUTICS INC",
+      "sector": "Health Care",
+      "market_cap": 3722217937,
+      "cik": "0001607678"
+    },
+    {
+      "ticker": "VMI",
+      "name": "VALMONT INDS INC",
+      "sector": "Industrials",
+      "market_cap": 8487348543,
+      "cik": "0000102729"
+    },
+    {
+      "ticker": "VNOM",
+      "name": "VIPER ENERGY INC CLASS A",
+      "sector": "Energy",
+      "market_cap": 9447152240,
+      "cik": "0002074176"
+    },
+    {
+      "ticker": "VOYA",
+      "name": "VOYA FINANCIAL INC",
+      "sector": "Financials",
+      "market_cap": 7000731777,
+      "cik": "0001535929"
+    },
+    {
+      "ticker": "VSNT",
+      "name": "VERSANT MEDIA GROUP INC",
+      "sector": "Communication",
+      "market_cap": 5618365028,
+      "cik": "0002067876"
+    },
+    {
+      "ticker": "VVV",
+      "name": "VALVOLINE INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 4895306001,
+      "cik": "0001674910"
+    },
+    {
+      "ticker": "W",
+      "name": "WAYFAIR INC CLASS A",
+      "sector": "Consumer Discretionary",
+      "market_cap": 8151890224,
+      "cik": "0001616707"
+    },
+    {
+      "ticker": "WAL",
+      "name": "WESTERN ALLIANCE",
+      "sector": "Financials",
+      "market_cap": 8059451171,
+      "cik": "0001212545"
+    },
+    {
+      "ticker": "WBS",
+      "name": "WEBSTER FINANCIAL CORP",
+      "sector": "Financials",
+      "market_cap": 12258834288,
+      "cik": "0000801337"
+    },
+    {
+      "ticker": "WCC",
+      "name": "WESCO INTERNATIONAL INC",
+      "sector": "Industrials",
+      "market_cap": 14601930336,
+      "cik": "0000929008"
+    },
+    {
+      "ticker": "WEX",
+      "name": "WEX INC",
+      "sector": "Financials",
+      "market_cap": 5814270263,
+      "cik": "0001309108"
+    },
+    {
+      "ticker": "WFRD",
+      "name": "WEATHERFORD INTERNATIONAL PLC",
+      "sector": "Energy",
+      "market_cap": 7468677621,
+      "cik": "0001603923"
+    },
+    {
+      "ticker": "WH",
+      "name": "WYNDHAM HOTELS RESORTS INC",
+      "sector": "Consumer Discretionary",
+      "market_cap": 6401616555,
+      "cik": "0001722684"
+    },
+    {
+      "ticker": "WLK",
+      "name": "WESTLAKE CORP",
+      "sector": "Materials",
+      "market_cap": 3968190983,
+      "cik": "0001262823"
+    },
+    {
+      "ticker": "WMS",
+      "name": "ADVANCED DRAINAGE SYSTEMS INC",
+      "sector": "Industrials",
+      "market_cap": 10428614229,
+      "cik": "0001604028"
+    },
+    {
+      "ticker": "WSC",
+      "name": "WILLSCOT HOLDINGS CORP CLASS A",
+      "sector": "Industrials",
+      "market_cap": 3478163504,
+      "cik": "0001647088"
+    },
+    {
+      "ticker": "WSO",
+      "name": "WATSCO INC",
+      "sector": "Industrials",
+      "market_cap": 13574519563,
+      "cik": "0000105016"
+    },
+    {
+      "ticker": "WTFC",
+      "name": "WINTRUST FINANCIAL CORP",
+      "sector": "Financials",
+      "market_cap": 9651441944,
+      "cik": "0001015328"
+    },
+    {
+      "ticker": "WTM",
+      "name": "WHITE MOUNTAINS INSURANCE GROUP LT",
+      "sector": "Financials",
+      "market_cap": 5642335734,
+      "cik": "0000776867"
+    },
+    {
+      "ticker": "WTRG",
+      "name": "ESSENTIAL UTILITIES INC",
+      "sector": "Utilities",
+      "market_cap": 12011660817,
+      "cik": "0000078128"
+    },
+    {
+      "ticker": "XP",
+      "name": "XP CLASS A INC",
+      "sector": "Financials",
+      "market_cap": 8561601078,
+      "cik": "0001787425"
+    },
+    {
+      "ticker": "Z",
+      "name": "ZILLOW GROUP INC CLASS C",
+      "sector": "Real Estate",
+      "market_cap": 7544295285,
+      "cik": "0001617640"
+    },
+    {
+      "ticker": "ZG",
+      "name": "ZILLOW GROUP INC CLASS A",
+      "sector": "Real Estate",
+      "market_cap": 2174679796,
+      "cik": "0001617640"
+    },
+    {
+      "ticker": "ZS",
+      "name": "ZSCALER INC",
+      "sector": "Information Technology",
+      "market_cap": 14875476586,
+      "cik": "0001713683"
+    }
+  ]
+}

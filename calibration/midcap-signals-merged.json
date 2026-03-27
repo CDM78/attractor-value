@@ -400,7 +400,9 @@
         "base10_excess": 0.037525938520466984,
         "round_number_excess": -0.01415929203539823,
         "si_zipf_velocity": -1.4,
-        "si_zipf_effort": 0.14278090448047864
+        "si_zipf_effort": 0.14278090448047864,
+        "si_zipf_velocity_fixed": -1.4,
+        "si_zipf_effort_fixed": 0.14278090448047864
       }
     },
     {
@@ -427,7 +429,9 @@
         "base10_excess": 0.032679753399796466,
         "round_number_excess": 0.032,
         "si_zipf_velocity": 0.46703296703296704,
-        "si_zipf_effort": -0.21975577085260847
+        "si_zipf_effort": -0.21975577085260847,
+        "si_zipf_velocity_fixed": 0.46703296703296704,
+        "si_zipf_effort_fixed": -0.21975577085260847
       }
     },
     {
@@ -815,7 +819,9 @@
         "base10_excess": -0.03287219772111474,
         "round_number_excess": 0.021238938053097345,
         "si_zipf_velocity": 0.7,
-        "si_zipf_effort": -0.09823419250453141
+        "si_zipf_effort": -0.09823419250453141,
+        "si_zipf_velocity_fixed": 0.7,
+        "si_zipf_effort_fixed": -0.09823419250453141
       }
     },
     {
@@ -842,7 +848,9 @@
         "base10_excess": -0.02664380257259627,
         "round_number_excess": 0.032,
         "si_zipf_velocity": 0.10989010989010989,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.10989010989010989,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -961,7 +969,9 @@
         "base10_excess": -0.07131720431459403,
         "round_number_excess": 0.14693877551020407,
         "si_zipf_velocity": 2.2,
-        "si_zipf_effort": -0.6006565673320599
+        "si_zipf_effort": -0.6006565673320599,
+        "si_zipf_velocity_fixed": 2.2,
+        "si_zipf_effort_fixed": -0.6006565673320599
       }
     },
     {
@@ -988,7 +998,9 @@
         "base10_excess": -0.05629499821533363,
         "round_number_excess": 0.11147540983606558,
         "si_zipf_velocity": 0.027472527472527472,
-        "si_zipf_effort": 0.0668177846746701
+        "si_zipf_effort": 0.0668177846746701,
+        "si_zipf_velocity_fixed": 0.027472527472527472,
+        "si_zipf_effort_fixed": 0.0668177846746701
       }
     },
     {
@@ -1125,7 +1137,9 @@
         "base10_excess": -0.01110378449864001,
         "round_number_excess": -0.05840707964601771,
         "si_zipf_velocity": -0.5,
-        "si_zipf_effort": 0.13507466227800058
+        "si_zipf_effort": 0.13507466227800058,
+        "si_zipf_velocity_fixed": -0.5,
+        "si_zipf_effort_fixed": 0.13507466227800058
       }
     },
     {
@@ -1152,7 +1166,9 @@
         "base10_excess": 0.015684613493200245,
         "round_number_excess": -0.05600000000000002,
         "si_zipf_velocity": 0.5604395604395604,
-        "si_zipf_effort": -0.2963163294775867
+        "si_zipf_effort": -0.2963163294775867,
+        "si_zipf_velocity_fixed": 0.5604395604395604,
+        "si_zipf_effort_fixed": -0.2963163294775867
       }
     },
     {
@@ -1325,7 +1341,9 @@
         "base10_excess": -0.06012430132527097,
         "round_number_excess": 0.06666666666666665,
         "si_zipf_velocity": -0.4,
-        "si_zipf_effort": 0.11679852373267803
+        "si_zipf_effort": 0.11679852373267803,
+        "si_zipf_velocity_fixed": -0.9,
+        "si_zipf_effort_fixed": 0.2299960833988514
       }
     },
     {
@@ -1714,7 +1732,9 @@
         "base10_excess": -0.10188360873996472,
         "round_number_excess": -0.03582089552238807,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0.5
+        "si_zipf_effort": 0.5,
+        "si_zipf_velocity_fixed": -0.3,
+        "si_zipf_effort_fixed": 0.5627838985385886
       }
     },
     {
@@ -1741,7 +1761,9 @@
         "base10_excess": -0.09828609291455816,
         "round_number_excess": 0.06582278481012654,
         "si_zipf_velocity": 0.016483516483516484,
-        "si_zipf_effort": 0.23688242292736322
+        "si_zipf_effort": 0.23688242292736322,
+        "si_zipf_velocity_fixed": 0.14835164835164835,
+        "si_zipf_effort_fixed": -0.3885937412445934
       }
     },
     {
@@ -1960,7 +1982,9 @@
         "base10_excess": -0.029644859090666324,
         "round_number_excess": 0.0020202020202020055,
         "si_zipf_velocity": -0.5,
-        "si_zipf_effort": 0.03134199618842928
+        "si_zipf_effort": 0.03134199618842928,
+        "si_zipf_velocity_fixed": -0.5,
+        "si_zipf_effort_fixed": 0.03134199618842928
       }
     },
     {
@@ -1987,7 +2011,9 @@
         "base10_excess": -0.0351461169883368,
         "round_number_excess": -0.01981981981981984,
         "si_zipf_velocity": 0.02197802197802198,
-        "si_zipf_effort": -0.0005596750667054886
+        "si_zipf_effort": -0.0005596750667054886,
+        "si_zipf_velocity_fixed": 0.02197802197802198,
+        "si_zipf_effort_fixed": -0.0005596750667054886
       }
     },
     {
@@ -2050,7 +2076,9 @@
         "base10_excess": -0.04104699648259767,
         "round_number_excess": -0.049557522123893805,
         "si_zipf_velocity": -0.1,
-        "si_zipf_effort": 0.02948389702643803
+        "si_zipf_effort": 0.02948389702643803,
+        "si_zipf_velocity_fixed": -0.1,
+        "si_zipf_effort_fixed": 0.02948389702643803
       }
     },
     {
@@ -2077,7 +2105,9 @@
         "base10_excess": -0.04913359349890301,
         "round_number_excess": -0.064,
         "si_zipf_velocity": 0.3791208791208791,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.3791208791208791,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -2212,7 +2242,9 @@
         "base10_excess": -0.08556567256917087,
         "round_number_excess": 0.05688073394495413,
         "si_zipf_velocity": -1.5,
-        "si_zipf_effort": 0.03668345905631891
+        "si_zipf_effort": 0.03668345905631891,
+        "si_zipf_velocity_fixed": -1.5,
+        "si_zipf_effort_fixed": 0.03668345905631891
       }
     },
     {
@@ -2239,7 +2271,9 @@
         "base10_excess": -0.06672915536633628,
         "round_number_excess": 0.031404958677685946,
         "si_zipf_velocity": -0.16483516483516483,
-        "si_zipf_effort": -0.011875264518558746
+        "si_zipf_effort": -0.011875264518558746,
+        "si_zipf_velocity_fixed": -0.16483516483516483,
+        "si_zipf_effort_fixed": -0.011875264518558746
       }
     },
     {
@@ -2302,7 +2336,9 @@
         "base10_excess": -0.07391765394160815,
         "round_number_excess": -0.15384615384615385,
         "si_zipf_velocity": 0,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -2329,7 +2365,9 @@
         "base10_excess": -0.06603499832269014,
         "round_number_excess": -0.13506493506493508,
         "si_zipf_velocity": -0.6538461538461539,
-        "si_zipf_effort": 0.014520328220948118
+        "si_zipf_effort": 0.014520328220948118,
+        "si_zipf_velocity_fixed": -0.6538461538461539,
+        "si_zipf_effort_fixed": 0.014520328220948118
       }
     },
     {
@@ -2392,7 +2430,9 @@
         "base10_excess": -0.06351007504157022,
         "round_number_excess": -0.02456140350877195,
         "si_zipf_velocity": 0.4,
-        "si_zipf_effort": -0.041118402253121744
+        "si_zipf_effort": -0.041118402253121744,
+        "si_zipf_velocity_fixed": 0.4,
+        "si_zipf_effort_fixed": -0.035951696534017835
       }
     },
     {
@@ -2419,7 +2459,9 @@
         "base10_excess": -0.05016099428759939,
         "round_number_excess": -0.03098591549295776,
         "si_zipf_velocity": -0.2857142857142857,
-        "si_zipf_effort": 0.07430450790040212
+        "si_zipf_effort": 0.07430450790040212,
+        "si_zipf_velocity_fixed": -0.5714285714285714,
+        "si_zipf_effort_fixed": 0.33957671063362566
       }
     },
     {
@@ -2538,7 +2580,9 @@
         "base10_excess": -0.07171601311822964,
         "round_number_excess": 0.21379310344827585,
         "si_zipf_velocity": -0.7,
-        "si_zipf_effort": 0.2529868189557515
+        "si_zipf_effort": 0.2529868189557515,
+        "si_zipf_velocity_fixed": -1,
+        "si_zipf_effort_fixed": 0.1896093260734235
       }
     },
     {
@@ -2565,7 +2609,9 @@
         "base10_excess": -0.09273818918746171,
         "round_number_excess": 0.12558139534883722,
         "si_zipf_velocity": 0.06593406593406594,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.07142857142857142,
+        "si_zipf_effort_fixed": -0.22025203441046012
       }
     },
     {
@@ -2670,7 +2716,9 @@
         "base10_excess": 0.017680569266211296,
         "round_number_excess": -0.06666666666666668,
         "si_zipf_velocity": -0.2,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.2,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -2697,7 +2745,9 @@
         "base10_excess": 0.016616671169701586,
         "round_number_excess": -0.09473684210526317,
         "si_zipf_velocity": 0.2692307692307692,
-        "si_zipf_effort": -0.08599870920285954
+        "si_zipf_effort": -0.08599870920285954,
+        "si_zipf_velocity_fixed": 0.2692307692307692,
+        "si_zipf_effort_fixed": -0.08599870920285954
       }
     },
     {
@@ -2788,7 +2838,9 @@
         "base10_excess": -0.10417324663594646,
         "round_number_excess": 0.04675324675324674,
         "si_zipf_velocity": -0.1,
-        "si_zipf_effort": 0.26175129161141153
+        "si_zipf_effort": 0.26175129161141153,
+        "si_zipf_velocity_fixed": -0.1,
+        "si_zipf_effort_fixed": 0.26175129161141153
       }
     },
     {
@@ -2815,7 +2867,9 @@
         "base10_excess": -0.09883973000629115,
         "round_number_excess": 0.038636363636363635,
         "si_zipf_velocity": 0.8296703296703297,
-        "si_zipf_effort": -0.10252305299647585
+        "si_zipf_effort": -0.10252305299647585,
+        "si_zipf_velocity_fixed": 0.8296703296703297,
+        "si_zipf_effort_fixed": -0.10252305299647585
       }
     },
     {
@@ -2878,7 +2932,9 @@
         "base10_excess": -0.09640485727056808,
         "round_number_excess": -0.07850467289719627,
         "si_zipf_velocity": 0.8,
-        "si_zipf_effort": -0.011846909630448665
+        "si_zipf_effort": -0.011846909630448665,
+        "si_zipf_velocity_fixed": 0.8,
+        "si_zipf_effort_fixed": -0.011846909630448665
       }
     },
     {
@@ -2905,7 +2961,9 @@
         "base10_excess": -0.07718309986039833,
         "round_number_excess": -0.08000000000000002,
         "si_zipf_velocity": -0.26373626373626374,
-        "si_zipf_effort": -0.014117807529007329
+        "si_zipf_effort": -0.014117807529007329,
+        "si_zipf_velocity_fixed": -0.26373626373626374,
+        "si_zipf_effort_fixed": -0.014117807529007329
       }
     },
     {
@@ -2968,7 +3026,9 @@
         "base10_excess": -0.07381699712865283,
         "round_number_excess": 0.03893805309734513,
         "si_zipf_velocity": 2.3,
-        "si_zipf_effort": -0.12067184229630286
+        "si_zipf_effort": -0.12067184229630286,
+        "si_zipf_velocity_fixed": 2.3,
+        "si_zipf_effort_fixed": -0.12067184229630286
       }
     },
     {
@@ -2995,7 +3055,9 @@
         "base10_excess": -0.06442474425093833,
         "round_number_excess": 0.015999999999999986,
         "si_zipf_velocity": 0.7307692307692307,
-        "si_zipf_effort": -0.25423248046193714
+        "si_zipf_effort": -0.25423248046193714,
+        "si_zipf_velocity_fixed": 0.7307692307692307,
+        "si_zipf_effort_fixed": -0.25423248046193714
       }
     },
     {
@@ -3058,7 +3120,9 @@
         "base10_excess": -0.03145592058212994,
         "round_number_excess": 0.1389830508474576,
         "si_zipf_velocity": 0.2,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.2,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -3085,7 +3149,9 @@
         "base10_excess": -0.04076900920799274,
         "round_number_excess": 0.16619718309859155,
         "si_zipf_velocity": -0.06043956043956044,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.06043956043956044,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -3265,7 +3331,9 @@
         "structural_stress": 1,
         "base10_excess": -0.14805910110406464,
         "si_zipf_velocity": 1.5,
-        "si_zipf_effort": -0.11950212544952941
+        "si_zipf_effort": -0.11950212544952941,
+        "si_zipf_velocity_fixed": 1.5,
+        "si_zipf_effort_fixed": -0.11950212544952941
       }
     },
     {
@@ -3291,7 +3359,9 @@
         "structural_stress": 1,
         "base10_excess": -0.08944206468173332,
         "si_zipf_velocity": 0.3791208791208791,
-        "si_zipf_effort": -0.012022829853961291
+        "si_zipf_effort": -0.012022829853961291,
+        "si_zipf_velocity_fixed": 0.3791208791208791,
+        "si_zipf_effort_fixed": -0.012022829853961291
       }
     },
     {
@@ -3424,7 +3494,9 @@
         "base10_excess": -0.05917807977387987,
         "round_number_excess": -0.041121495327102825,
         "si_zipf_velocity": -0.7,
-        "si_zipf_effort": 0.10721933081057358
+        "si_zipf_effort": 0.10721933081057358,
+        "si_zipf_velocity_fixed": -0.7,
+        "si_zipf_effort_fixed": 0.10721933081057358
       }
     },
     {
@@ -3451,7 +3523,9 @@
         "base10_excess": -0.05220404570234684,
         "round_number_excess": -0.032,
         "si_zipf_velocity": -0.21428571428571427,
-        "si_zipf_effort": 0.06694597681120042
+        "si_zipf_effort": 0.06694597681120042,
+        "si_zipf_velocity_fixed": -0.21428571428571427,
+        "si_zipf_effort_fixed": 0.06694597681120042
       }
     },
     {
@@ -3514,7 +3588,9 @@
         "base10_excess": 0.044021333110733904,
         "round_number_excess": 0.02580645161290321,
         "si_zipf_velocity": -0.9,
-        "si_zipf_effort": 0.18868390570218307
+        "si_zipf_effort": 0.18868390570218307,
+        "si_zipf_velocity_fixed": -0.9,
+        "si_zipf_effort_fixed": 0.18868390570218307
       }
     },
     {
@@ -3541,7 +3617,9 @@
         "base10_excess": 0.039131095000363894,
         "round_number_excess": 0.029357798165137616,
         "si_zipf_velocity": -0.17582417582417584,
-        "si_zipf_effort": 0.028422308669094246
+        "si_zipf_effort": 0.028422308669094246,
+        "si_zipf_velocity_fixed": -0.17582417582417584,
+        "si_zipf_effort_fixed": 0.028422308669094246
       }
     },
     {
@@ -3604,7 +3682,9 @@
         "base10_excess": -0.06115326355477053,
         "round_number_excess": -0.02812500000000001,
         "si_zipf_velocity": -3.7,
-        "si_zipf_effort": 0.21413402087755182
+        "si_zipf_effort": 0.21413402087755182,
+        "si_zipf_velocity_fixed": -3.7,
+        "si_zipf_effort_fixed": 0.21413402087755182
       }
     },
     {
@@ -3631,7 +3711,9 @@
         "base10_excess": -0.06042077102183703,
         "round_number_excess": -0.015789473684210548,
         "si_zipf_velocity": -0.07142857142857142,
-        "si_zipf_effort": 0.14420675535011282
+        "si_zipf_effort": 0.14420675535011282,
+        "si_zipf_velocity_fixed": -0.07142857142857142,
+        "si_zipf_effort_fixed": 0.14420675535011282
       }
     },
     {
@@ -3749,7 +3831,9 @@
         "base10_excess": -0.041401140888335776,
         "round_number_excess": -0.040707964601769925,
         "si_zipf_velocity": -3.1,
-        "si_zipf_effort": 0.16826933996744187
+        "si_zipf_effort": 0.16826933996744187,
+        "si_zipf_velocity_fixed": -3.1,
+        "si_zipf_effort_fixed": 0.16826933996744187
       }
     },
     {
@@ -3776,7 +3860,9 @@
         "base10_excess": -0.04848171683045399,
         "round_number_excess": -0.05600000000000002,
         "si_zipf_velocity": -0.2857142857142857,
-        "si_zipf_effort": 0.0753129963801946
+        "si_zipf_effort": 0.0753129963801946,
+        "si_zipf_velocity_fixed": -0.2857142857142857,
+        "si_zipf_effort_fixed": 0.0753129963801946
       }
     },
     {
@@ -3839,7 +3925,9 @@
         "base10_excess": -0.016335903711953134,
         "round_number_excess": 0.03595505617977526,
         "si_zipf_velocity": -2.6,
-        "si_zipf_effort": 0.18144632575001432
+        "si_zipf_effort": 0.18144632575001432,
+        "si_zipf_velocity_fixed": -2.6,
+        "si_zipf_effort_fixed": 0.18144632575001432
       }
     },
     {
@@ -3866,7 +3954,9 @@
         "base10_excess": -0.018027614474211334,
         "round_number_excess": 0.02330097087378641,
         "si_zipf_velocity": 0.7802197802197802,
-        "si_zipf_effort": -0.03440366902647726
+        "si_zipf_effort": -0.03440366902647726,
+        "si_zipf_velocity_fixed": 0.7802197802197802,
+        "si_zipf_effort_fixed": -0.03440366902647726
       }
     },
     {
@@ -4031,7 +4121,9 @@
         "base10_excess": -0.03852123644110726,
         "round_number_excess": 0.08000000000000002,
         "si_zipf_velocity": -1.2,
-        "si_zipf_effort": 0.036727776184213794
+        "si_zipf_effort": 0.036727776184213794,
+        "si_zipf_velocity_fixed": -1.2,
+        "si_zipf_effort_fixed": 0.036727776184213794
       }
     },
     {
@@ -4058,7 +4150,9 @@
         "base10_excess": -0.02161575525343,
         "round_number_excess": 0.041379310344827586,
         "si_zipf_velocity": 0.06043956043956044,
-        "si_zipf_effort": 0.010557912156529101
+        "si_zipf_effort": 0.010557912156529101,
+        "si_zipf_velocity_fixed": 0.06043956043956044,
+        "si_zipf_effort_fixed": 0.010557912156529101
       }
     },
     {
@@ -4445,7 +4539,9 @@
         "base10_excess": -0.04467233861582154,
         "round_number_excess": 0.16893203883495145,
         "si_zipf_velocity": -1.6,
-        "si_zipf_effort": 0.1581413675498546
+        "si_zipf_effort": 0.1581413675498546,
+        "si_zipf_velocity_fixed": -1.6,
+        "si_zipf_effort_fixed": 0.1581413675498546
       }
     },
     {
@@ -4472,7 +4568,9 @@
         "base10_excess": -0.04981239121112076,
         "round_number_excess": 0.13043478260869562,
         "si_zipf_velocity": -0.2802197802197802,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.2802197802197802,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -4668,7 +4766,9 @@
         "base10_excess": -0.0721945897631659,
         "round_number_excess": 0.08571428571428569,
         "si_zipf_velocity": 1.2,
-        "si_zipf_effort": -0.4805240433815536
+        "si_zipf_effort": -0.4805240433815536,
+        "si_zipf_velocity_fixed": 1.2,
+        "si_zipf_effort_fixed": -0.4805240433815536
       }
     },
     {
@@ -4695,7 +4795,9 @@
         "base10_excess": -0.07643881847248693,
         "round_number_excess": 0.14920634920634918,
         "si_zipf_velocity": -0.04945054945054945,
-        "si_zipf_effort": -0.09031876667592487
+        "si_zipf_effort": -0.09031876667592487,
+        "si_zipf_velocity_fixed": -0.04945054945054945,
+        "si_zipf_effort_fixed": -0.09031876667592487
       }
     },
     {
@@ -4832,7 +4934,9 @@
         "base10_excess": -0.025048299524512513,
         "round_number_excess": -0.040707964601769925,
         "si_zipf_velocity": 1.7,
-        "si_zipf_effort": -0.12620850180846988
+        "si_zipf_effort": -0.12620850180846988,
+        "si_zipf_velocity_fixed": 1.7,
+        "si_zipf_effort_fixed": -0.12620850180846988
       }
     },
     {
@@ -4859,7 +4963,9 @@
         "base10_excess": -0.010696167100091719,
         "round_number_excess": -0.04000000000000001,
         "si_zipf_velocity": 0.06593406593406594,
-        "si_zipf_effort": -0.03737640245719263
+        "si_zipf_effort": -0.03737640245719263,
+        "si_zipf_velocity_fixed": 0.06593406593406594,
+        "si_zipf_effort_fixed": -0.03737640245719263
       }
     },
     {
@@ -4922,7 +5028,9 @@
         "base10_excess": -0.06915050152122953,
         "round_number_excess": 0.053521126760563364,
         "si_zipf_velocity": 0.9,
-        "si_zipf_effort": -0.8181150504003596
+        "si_zipf_effort": -0.8181150504003596,
+        "si_zipf_velocity_fixed": 0.9,
+        "si_zipf_effort_fixed": -0.8181150504003596
       }
     },
     {
@@ -4949,7 +5057,9 @@
         "base10_excess": -0.0827449386918904,
         "round_number_excess": 0.040963855421686735,
         "si_zipf_velocity": 0.1043956043956044,
-        "si_zipf_effort": 0.2334654658453758
+        "si_zipf_effort": 0.2334654658453758,
+        "si_zipf_velocity_fixed": 0.1043956043956044,
+        "si_zipf_effort_fixed": 0.2334654658453758
       }
     },
     {
@@ -5012,7 +5122,9 @@
         "base10_excess": -0.005692995445706769,
         "round_number_excess": -0.023008849557522137,
         "si_zipf_velocity": -2.2,
-        "si_zipf_effort": 0.07431863131403295
+        "si_zipf_effort": 0.07431863131403295,
+        "si_zipf_velocity_fixed": -2.2,
+        "si_zipf_effort_fixed": 0.07431863131403295
       }
     },
     {
@@ -5039,7 +5151,9 @@
         "base10_excess": -0.011407835417859946,
         "round_number_excess": -0.02400000000000002,
         "si_zipf_velocity": -0.23076923076923078,
-        "si_zipf_effort": 0.05472737601516644
+        "si_zipf_effort": 0.05472737601516644,
+        "si_zipf_velocity_fixed": -0.23076923076923078,
+        "si_zipf_effort_fixed": 0.05472737601516644
       }
     },
     {
@@ -5172,7 +5286,9 @@
         "structural_stress": 1,
         "base10_excess": -0.09803269771367859,
         "si_zipf_velocity": -2.5,
-        "si_zipf_effort": 0.11989904265542384
+        "si_zipf_effort": 0.11989904265542384,
+        "si_zipf_velocity_fixed": -2.5,
+        "si_zipf_effort_fixed": 0.11989904265542384
       }
     },
     {
@@ -5198,7 +5314,9 @@
         "structural_stress": 1,
         "base10_excess": -0.07331805860845221,
         "si_zipf_velocity": -0.1043956043956044,
-        "si_zipf_effort": 0.003941616148394323
+        "si_zipf_effort": 0.003941616148394323,
+        "si_zipf_velocity_fixed": -0.1043956043956044,
+        "si_zipf_effort_fixed": 0.003941616148394323
       }
     },
     {
@@ -5259,7 +5377,9 @@
         "base10_excess": -0.09787435200249457,
         "round_number_excess": 0.03999999999999998,
         "si_zipf_velocity": -2,
-        "si_zipf_effort": 0.03955878321483207
+        "si_zipf_effort": 0.03955878321483207,
+        "si_zipf_velocity_fixed": -2,
+        "si_zipf_effort_fixed": 0.03955878321483207
       }
     },
     {
@@ -5286,7 +5406,9 @@
         "base10_excess": -0.09606922149670195,
         "round_number_excess": 0.006896551724137917,
         "si_zipf_velocity": -0.17582417582417584,
-        "si_zipf_effort": 0.04050383239642752
+        "si_zipf_effort": 0.04050383239642752,
+        "si_zipf_velocity_fixed": -0.17582417582417584,
+        "si_zipf_effort_fixed": 0.04050383239642752
       }
     },
     {
@@ -5404,7 +5526,9 @@
         "base10_excess": -0.08311609812725614,
         "round_number_excess": -0.12307692307692308,
         "si_zipf_velocity": 0.3,
-        "si_zipf_effort": -1
+        "si_zipf_effort": -1,
+        "si_zipf_velocity_fixed": 0.6,
+        "si_zipf_effort_fixed": -2
       }
     },
     {
@@ -5431,7 +5555,9 @@
         "base10_excess": -0.0800930546824081,
         "round_number_excess": -0.16,
         "si_zipf_velocity": 0.08241758241758242,
-        "si_zipf_effort": -2
+        "si_zipf_effort": -2,
+        "si_zipf_velocity_fixed": 0.17582417582417584,
+        "si_zipf_effort_fixed": -4
       }
     },
     {
@@ -5530,7 +5656,9 @@
         "base10_excess": -0.11261636997750402,
         "round_number_excess": -0.046153846153846156,
         "si_zipf_velocity": -2.1,
-        "si_zipf_effort": 0.15672463806682602
+        "si_zipf_effort": 0.15672463806682602,
+        "si_zipf_velocity_fixed": -2.1,
+        "si_zipf_effort_fixed": 0.15672463806682602
       }
     },
     {
@@ -5557,7 +5685,9 @@
         "base10_excess": -0.10813522105058271,
         "round_number_excess": 0.0222222222222222,
         "si_zipf_velocity": 0.554945054945055,
-        "si_zipf_effort": -0.012646705441279075
+        "si_zipf_effort": -0.012646705441279075,
+        "si_zipf_velocity_fixed": 0.554945054945055,
+        "si_zipf_effort_fixed": -0.012646705441279075
       }
     },
     {
@@ -5620,7 +5750,9 @@
         "base10_excess": -0.06437796416774952,
         "round_number_excess": 0.0035398230088495575,
         "si_zipf_velocity": 1.9,
-        "si_zipf_effort": -0.08903033847143314
+        "si_zipf_effort": -0.08903033847143314,
+        "si_zipf_velocity_fixed": 1.9,
+        "si_zipf_effort_fixed": -0.08903033847143314
       }
     },
     {
@@ -5647,7 +5779,9 @@
         "base10_excess": -0.055736714170061555,
         "round_number_excess": 0,
         "si_zipf_velocity": -0.6978021978021978,
-        "si_zipf_effort": 0.017685187871932104
+        "si_zipf_effort": 0.017685187871932104,
+        "si_zipf_velocity_fixed": -0.6978021978021978,
+        "si_zipf_effort_fixed": 0.017685187871932104
       }
     },
     {
@@ -6021,7 +6155,9 @@
         "base10_excess": -0.051774748552109146,
         "round_number_excess": -0.049557522123893805,
         "si_zipf_velocity": 0.3,
-        "si_zipf_effort": -0.15333494198410438
+        "si_zipf_effort": -0.15333494198410438,
+        "si_zipf_velocity_fixed": 0.3,
+        "si_zipf_effort_fixed": -0.15333494198410438
       }
     },
     {
@@ -6048,7 +6184,9 @@
         "base10_excess": -0.05763906418253577,
         "round_number_excess": -0.032,
         "si_zipf_velocity": -0.06043956043956044,
-        "si_zipf_effort": -0.06761398930412602
+        "si_zipf_effort": -0.06761398930412602,
+        "si_zipf_velocity_fixed": -0.06043956043956044,
+        "si_zipf_effort_fixed": -0.06761398930412602
       }
     },
     {
@@ -6198,7 +6336,9 @@
         "base10_excess": -0.09415650547772503,
         "round_number_excess": 0.026666666666666644,
         "si_zipf_velocity": -3.3,
-        "si_zipf_effort": 0.1291477930565933
+        "si_zipf_effort": 0.1291477930565933,
+        "si_zipf_velocity_fixed": -3.3,
+        "si_zipf_effort_fixed": 0.1291477930565933
       }
     },
     {
@@ -6225,7 +6365,9 @@
         "base10_excess": -0.0925613311354048,
         "round_number_excess": 0.041379310344827586,
         "si_zipf_velocity": -0.489010989010989,
-        "si_zipf_effort": 0.07855897558093887
+        "si_zipf_effort": 0.07855897558093887,
+        "si_zipf_velocity_fixed": -0.489010989010989,
+        "si_zipf_effort_fixed": 0.07855897558093887
       }
     },
     {
@@ -6450,7 +6592,9 @@
         "structural_stress": 1,
         "base10_excess": -0.17426006338952993,
         "si_zipf_velocity": 1.1,
-        "si_zipf_effort": -0.10238952667482906
+        "si_zipf_effort": -0.10238952667482906,
+        "si_zipf_velocity_fixed": 1.1,
+        "si_zipf_effort_fixed": -0.10238952667482906
       }
     },
     {
@@ -6476,7 +6620,9 @@
         "structural_stress": 1,
         "base10_excess": -0.16084096172966067,
         "si_zipf_velocity": -0.25274725274725274,
-        "si_zipf_effort": 0.0022751504748428114
+        "si_zipf_effort": 0.0022751504748428114,
+        "si_zipf_velocity_fixed": -0.25274725274725274,
+        "si_zipf_effort_fixed": 0.0022751504748428114
       }
     },
     {
@@ -6796,7 +6942,9 @@
         "base10_excess": -0.03566879752769389,
         "round_number_excess": 0.06548672566371683,
         "si_zipf_velocity": -0.5,
-        "si_zipf_effort": 0.04030927043657121
+        "si_zipf_effort": 0.04030927043657121,
+        "si_zipf_velocity_fixed": -0.5,
+        "si_zipf_effort_fixed": 0.04030927043657121
       }
     },
     {
@@ -6823,7 +6971,9 @@
         "base10_excess": -0.02610836105680428,
         "round_number_excess": 0.07200000000000001,
         "si_zipf_velocity": 0.3021978021978022,
-        "si_zipf_effort": -0.01789296663147645
+        "si_zipf_effort": -0.01789296663147645,
+        "si_zipf_velocity_fixed": 0.3021978021978022,
+        "si_zipf_effort_fixed": -0.01789296663147645
       }
     },
     {
@@ -6885,7 +7035,9 @@
         "base10_excess": -0.059807224085796196,
         "round_number_excess": -0.05915492957746479,
         "si_zipf_velocity": -1.3,
-        "si_zipf_effort": -0.038150767001633376
+        "si_zipf_effort": -0.038150767001633376,
+        "si_zipf_velocity_fixed": -1.3,
+        "si_zipf_effort_fixed": -0.038150767001633376
       }
     },
     {
@@ -6912,7 +7064,9 @@
         "base10_excess": -0.05095614508971886,
         "round_number_excess": -0.0823529411764706,
         "si_zipf_velocity": 0.1813186813186813,
-        "si_zipf_effort": -0.06395137762475833
+        "si_zipf_effort": -0.06395137762475833,
+        "si_zipf_velocity_fixed": 0.1813186813186813,
+        "si_zipf_effort_fixed": -0.06395137762475833
       }
     },
     {
@@ -7252,7 +7406,9 @@
         "base10_excess": -0.05709724309907399,
         "round_number_excess": -0.03838383838383838,
         "si_zipf_velocity": -4.3,
-        "si_zipf_effort": 0.0575909203854939
+        "si_zipf_effort": 0.0575909203854939,
+        "si_zipf_velocity_fixed": -4.3,
+        "si_zipf_effort_fixed": 0.0575909203854939
       }
     },
     {
@@ -7279,7 +7435,9 @@
         "base10_excess": -0.0440964058569759,
         "round_number_excess": -0.040707964601769925,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": -0.0025633389100494317
+        "si_zipf_effort": -0.0025633389100494317,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": -0.0025633389100494317
       }
     },
     {
@@ -7341,7 +7499,9 @@
         "base10_excess": -0.09118319314455661,
         "round_number_excess": 0.0761904761904762,
         "si_zipf_velocity": 7.8,
-        "si_zipf_effort": -1.7701716293211998
+        "si_zipf_effort": -1.7701716293211998,
+        "si_zipf_velocity_fixed": 7.8,
+        "si_zipf_effort_fixed": -1.7701716293211998
       }
     },
     {
@@ -7368,7 +7528,9 @@
         "base10_excess": -0.07050935114674825,
         "round_number_excess": 0.0396694214876033,
         "si_zipf_velocity": 1.5384615384615385,
-        "si_zipf_effort": -1.2475929945591462
+        "si_zipf_effort": -1.2475929945591462,
+        "si_zipf_velocity_fixed": 1.5384615384615385,
+        "si_zipf_effort_fixed": -1.2475929945591462
       }
     },
     {
@@ -7395,7 +7557,9 @@
         "base10_excess": -0.017265472831006268,
         "round_number_excess": -0.06666666666666668,
         "si_zipf_velocity": 1.3,
-        "si_zipf_effort": -4
+        "si_zipf_effort": -4,
+        "si_zipf_velocity_fixed": 1.3,
+        "si_zipf_effort_fixed": -4
       }
     },
     {
@@ -7422,7 +7586,9 @@
         "base10_excess": -0.03621164718141055,
         "round_number_excess": -0.07931034482758621,
         "si_zipf_velocity": 0.8186813186813187,
-        "si_zipf_effort": -4
+        "si_zipf_effort": -4,
+        "si_zipf_velocity_fixed": 0.8186813186813187,
+        "si_zipf_effort_fixed": -4
       }
     },
     {
@@ -7629,7 +7795,9 @@
         "base10_excess": -0.07519886992141256,
         "round_number_excess": -0.05046728971962619,
         "si_zipf_velocity": 3,
-        "si_zipf_effort": -0.13367817747411379
+        "si_zipf_effort": -0.13367817747411379,
+        "si_zipf_velocity_fixed": 3,
+        "si_zipf_effort_fixed": -0.13367817747411379
       }
     },
     {
@@ -7656,7 +7824,9 @@
         "base10_excess": -0.07223488513354959,
         "round_number_excess": -0.04000000000000001,
         "si_zipf_velocity": 0.07142857142857142,
-        "si_zipf_effort": -0.06917808156522552
+        "si_zipf_effort": -0.06917808156522552,
+        "si_zipf_velocity_fixed": 0.07142857142857142,
+        "si_zipf_effort_fixed": -0.06917808156522552
       }
     },
     {
@@ -7718,7 +7888,9 @@
         "base10_excess": -0.034925728112999085,
         "round_number_excess": 0.06315789473684208,
         "si_zipf_velocity": 2.1,
-        "si_zipf_effort": -0.1044481679392407
+        "si_zipf_effort": -0.1044481679392407,
+        "si_zipf_velocity_fixed": 2.1,
+        "si_zipf_effort_fixed": -0.1044481679392407
       }
     },
     {
@@ -7745,7 +7917,9 @@
         "base10_excess": -0.02467184216064605,
         "round_number_excess": 0.0523364485981308,
         "si_zipf_velocity": -0.47802197802197804,
-        "si_zipf_effort": 0.058558754244860206
+        "si_zipf_effort": 0.058558754244860206,
+        "si_zipf_velocity_fixed": -0.47802197802197804,
+        "si_zipf_effort_fixed": 0.058558754244860206
       }
     },
     {
@@ -7808,7 +7982,9 @@
         "base10_excess": -0.024017306134045832,
         "round_number_excess": 0.012389380530973437,
         "si_zipf_velocity": -0.1,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.1,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -7835,7 +8011,9 @@
         "base10_excess": -0.038310444673776076,
         "round_number_excess": 0.00799999999999998,
         "si_zipf_velocity": 0.5054945054945055,
-        "si_zipf_effort": -1
+        "si_zipf_effort": -1,
+        "si_zipf_velocity_fixed": 0.5054945054945055,
+        "si_zipf_effort_fixed": -1
       }
     },
     {
@@ -7972,7 +8150,9 @@
         "base10_excess": -0.048303587980494354,
         "round_number_excess": -0.12405063291139241,
         "si_zipf_velocity": 0.6,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.6,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -7999,7 +8179,9 @@
         "base10_excess": -0.03757947875330574,
         "round_number_excess": -0.1340659340659341,
         "si_zipf_velocity": -0.5384615384615384,
-        "si_zipf_effort": 0.0609621832916837
+        "si_zipf_effort": 0.0609621832916837,
+        "si_zipf_velocity_fixed": -0.5384615384615384,
+        "si_zipf_effort_fixed": 0.0609621832916837
       }
     },
     {
@@ -8044,7 +8226,9 @@
         "base10_excess": -0.07608944178279961,
         "round_number_excess": 0.03999999999999998,
         "si_zipf_velocity": -0.37272727272727274,
-        "si_zipf_effort": 0.18195724634467642
+        "si_zipf_effort": 0.18195724634467642,
+        "si_zipf_velocity_fixed": -0.5545454545454546,
+        "si_zipf_effort_fixed": 0.4519886254501513
       }
     },
     {
@@ -8107,7 +8291,9 @@
         "base10_excess": -0.1856842424692889,
         "round_number_excess": -0.0811881188118812,
         "si_zipf_velocity": 2,
-        "si_zipf_effort": -0.20024475439302727
+        "si_zipf_effort": -0.20024475439302727,
+        "si_zipf_velocity_fixed": 2,
+        "si_zipf_effort_fixed": -0.20024475439302727
       }
     },
     {
@@ -8134,7 +8320,9 @@
         "base10_excess": -0.15876379658632872,
         "round_number_excess": -0.040707964601769925,
         "si_zipf_velocity": -0.027472527472527472,
-        "si_zipf_effort": -0.14638174797343098
+        "si_zipf_effort": -0.14638174797343098,
+        "si_zipf_velocity_fixed": -0.027472527472527472,
+        "si_zipf_effort_fixed": -0.14638174797343098
       }
     },
     {
@@ -8196,7 +8384,9 @@
         "base10_excess": 0.010561793770350505,
         "round_number_excess": -0.02022471910112361,
         "si_zipf_velocity": 0.1,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.1,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -8223,7 +8413,9 @@
         "base10_excess": 0.0011454684036909177,
         "round_number_excess": 0.01782178217821781,
         "si_zipf_velocity": 0.21428571428571427,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.21428571428571427,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -8582,7 +8774,9 @@
         "base10_excess": -0.06886311846571433,
         "round_number_excess": -0.03185840707964602,
         "si_zipf_velocity": 1.6,
-        "si_zipf_effort": -0.17941455139589374
+        "si_zipf_effort": -0.17941455139589374,
+        "si_zipf_velocity_fixed": 1.6,
+        "si_zipf_effort_fixed": -0.17941455139589374
       }
     },
     {
@@ -8609,7 +8803,9 @@
         "base10_excess": -0.0575186245313234,
         "round_number_excess": -0.048000000000000015,
         "si_zipf_velocity": -0.489010989010989,
-        "si_zipf_effort": -0.07959420912686262
+        "si_zipf_effort": -0.07959420912686262,
+        "si_zipf_velocity_fixed": -0.489010989010989,
+        "si_zipf_effort_fixed": -0.07959420912686262
       }
     },
     {
@@ -8894,7 +9090,9 @@
         "base10_excess": -0.04735278823427197,
         "round_number_excess": 0.0920353982300885,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0.2799328007282821
+        "si_zipf_effort": 0.2799328007282821,
+        "si_zipf_velocity_fixed": -0.1,
+        "si_zipf_effort_fixed": 0.06426844090602966
       }
     },
     {
@@ -8921,7 +9119,9 @@
         "base10_excess": -0.05498754867000698,
         "round_number_excess": 0.064,
         "si_zipf_velocity": 0.04945054945054945,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.03296703296703297,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -8984,7 +9184,9 @@
         "base10_excess": -0.08485031535613036,
         "round_number_excess": 0.02018348623853211,
         "si_zipf_velocity": 2.2,
-        "si_zipf_effort": -0.2169726979816491
+        "si_zipf_effort": -0.2169726979816491,
+        "si_zipf_velocity_fixed": 2.2,
+        "si_zipf_effort_fixed": -0.2169726979816491
       }
     },
     {
@@ -9011,7 +9213,9 @@
         "base10_excess": -0.07606660099167509,
         "round_number_excess": -0.0016528925619834767,
         "si_zipf_velocity": 0.07142857142857142,
-        "si_zipf_effort": -0.02568307914835737
+        "si_zipf_effort": -0.02568307914835737,
+        "si_zipf_velocity_fixed": 0.07142857142857142,
+        "si_zipf_effort_fixed": -0.02568307914835737
       }
     },
     {
@@ -9074,7 +9278,9 @@
         "base10_excess": -0.02489551876615962,
         "round_number_excess": 0.021238938053097345,
         "si_zipf_velocity": -0.6,
-        "si_zipf_effort": 0.11731158289889149
+        "si_zipf_effort": 0.11731158289889149,
+        "si_zipf_velocity_fixed": -0.6,
+        "si_zipf_effort_fixed": 0.11731158289889149
       }
     },
     {
@@ -9101,7 +9307,9 @@
         "base10_excess": -0.03223857520675027,
         "round_number_excess": 0.052032520325203224,
         "si_zipf_velocity": -0.038461538461538464,
-        "si_zipf_effort": -0.01840900272218383
+        "si_zipf_effort": -0.01840900272218383,
+        "si_zipf_velocity_fixed": -0.038461538461538464,
+        "si_zipf_effort_fixed": -0.01840900272218383
       }
     },
     {
@@ -9144,7 +9352,9 @@
         "structural_stress": 1,
         "base10_excess": -0.18149616331566237,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0.013311904068639847
+        "si_zipf_effort": 0.013311904068639847,
+        "si_zipf_velocity_fixed": -0.3,
+        "si_zipf_effort_fixed": 0.013311904068639847
       }
     },
     {
@@ -9171,7 +9381,9 @@
         "base10_excess": -0.1791719727663346,
         "round_number_excess": 0,
         "si_zipf_velocity": -0.14285714285714285,
-        "si_zipf_effort": -0.0012513777691036828
+        "si_zipf_effort": -0.0012513777691036828,
+        "si_zipf_velocity_fixed": -0.14285714285714285,
+        "si_zipf_effort_fixed": -0.0012513777691036828
       }
     },
     {
@@ -9234,7 +9446,9 @@
         "base10_excess": -0.042327538604088034,
         "round_number_excess": -0.025688073394495414,
         "si_zipf_velocity": 6.5,
-        "si_zipf_effort": -0.655123167947434
+        "si_zipf_effort": -0.655123167947434,
+        "si_zipf_velocity_fixed": 6.5,
+        "si_zipf_effort_fixed": -0.655123167947434
       }
     },
     {
@@ -9261,7 +9475,9 @@
         "base10_excess": -0.04826892870763063,
         "round_number_excess": -0.042975206611570255,
         "si_zipf_velocity": 0.25274725274725274,
-        "si_zipf_effort": -0.4167757974967147
+        "si_zipf_effort": -0.4167757974967147,
+        "si_zipf_velocity_fixed": 0.25274725274725274,
+        "si_zipf_effort_fixed": -0.4167757974967147
       }
     },
     {
@@ -9619,7 +9835,9 @@
         "base10_excess": -0.02927329957361341,
         "round_number_excess": -0.08311688311688313,
         "si_zipf_velocity": -5.2,
-        "si_zipf_effort": 0.09431731585985915
+        "si_zipf_effort": 0.09431731585985915,
+        "si_zipf_velocity_fixed": -5.2,
+        "si_zipf_effort_fixed": 0.09431731585985915
       }
     },
     {
@@ -9646,7 +9864,9 @@
         "base10_excess": -0.028757874928962163,
         "round_number_excess": -0.09887640449438204,
         "si_zipf_velocity": 0.038461538461538464,
-        "si_zipf_effort": 0.015418590967063217
+        "si_zipf_effort": 0.015418590967063217,
+        "si_zipf_velocity_fixed": 0.038461538461538464,
+        "si_zipf_effort_fixed": 0.015418590967063217
       }
     },
     {
@@ -9743,7 +9963,9 @@
         "si_csd": 0.00018868705473482064,
         "si_beta": -0.0752402986341854,
         "si_zipf_velocity": -4.1,
-        "si_zipf_effort": 0.03536496131913257
+        "si_zipf_effort": 0.03536496131913257,
+        "si_zipf_velocity_fixed": -4.1,
+        "si_zipf_effort_fixed": 0.03536496131913257
       }
     },
     {
@@ -9806,7 +10028,9 @@
         "base10_excess": -0.03716449838611045,
         "round_number_excess": -0.08636363636363638,
         "si_zipf_velocity": 1.1,
-        "si_zipf_effort": -0.2302412414403168
+        "si_zipf_effort": -0.2302412414403168,
+        "si_zipf_velocity_fixed": 1.1,
+        "si_zipf_effort_fixed": -0.2302412414403168
       }
     },
     {
@@ -9833,7 +10057,9 @@
         "base10_excess": -0.03377358344808538,
         "round_number_excess": -0.08636363636363638,
         "si_zipf_velocity": 1.164835164835165,
-        "si_zipf_effort": -0.21573589041376295
+        "si_zipf_effort": -0.21573589041376295,
+        "si_zipf_velocity_fixed": 1.164835164835165,
+        "si_zipf_effort_fixed": -0.21573589041376295
       }
     },
     {
@@ -10286,7 +10512,9 @@
         "base10_excess": -0.11528489321744116,
         "round_number_excess": 0.16363636363636364,
         "si_zipf_velocity": 0.1,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.1,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -10312,7 +10540,9 @@
         "base10_excess": -0.10752144924610786,
         "round_number_excess": 0.1111111111111111,
         "si_zipf_velocity": -0.4230769230769231,
-        "si_zipf_effort": 0.21826041970807053
+        "si_zipf_effort": 0.21826041970807053,
+        "si_zipf_velocity_fixed": -0.4230769230769231,
+        "si_zipf_effort_fixed": 0.21826041970807053
       }
     },
     {
@@ -10437,7 +10667,9 @@
         "si_csd": 0.988500524760777,
         "si_beta": -0.006001439341003667,
         "si_zipf_velocity": -1,
-        "si_zipf_effort": 0.2645983549564183
+        "si_zipf_effort": 0.2645983549564183,
+        "si_zipf_velocity_fixed": -1,
+        "si_zipf_effort_fixed": 0.2645983549564183
       }
     },
     {
@@ -10460,7 +10692,9 @@
         "si_csd": 0.5572207894066034,
         "si_beta": -0.002291707350065623,
         "si_zipf_velocity": -0.27472527472527475,
-        "si_zipf_effort": 0.04658778738758079
+        "si_zipf_effort": 0.04658778738758079,
+        "si_zipf_velocity_fixed": -0.27472527472527475,
+        "si_zipf_effort_fixed": 0.04658778738758079
       }
     },
     {
@@ -10558,7 +10792,9 @@
         "base10_excess": -0.07712667301225015,
         "round_number_excess": 0.07848101265822782,
         "si_zipf_velocity": -0.5,
-        "si_zipf_effort": 0.07552720652585265
+        "si_zipf_effort": 0.07552720652585265,
+        "si_zipf_velocity_fixed": -0.5,
+        "si_zipf_effort_fixed": 0.07552720652585265
       }
     },
     {
@@ -10585,7 +10821,9 @@
         "base10_excess": -0.07468260807385246,
         "round_number_excess": 0.08571428571428569,
         "si_zipf_velocity": 0.21428571428571427,
-        "si_zipf_effort": -0.37120234598401136
+        "si_zipf_effort": -0.37120234598401136,
+        "si_zipf_velocity_fixed": 0.21428571428571427,
+        "si_zipf_effort_fixed": -0.37120234598401136
       }
     },
     {
@@ -10648,7 +10886,9 @@
         "base10_excess": -0.020852676499202888,
         "round_number_excess": -0.03185840707964602,
         "si_zipf_velocity": 0.4,
-        "si_zipf_effort": -0.39158005820534886
+        "si_zipf_effort": -0.39158005820534886,
+        "si_zipf_velocity_fixed": 0.4,
+        "si_zipf_effort_fixed": -0.39158005820534886
       }
     },
     {
@@ -10675,7 +10915,9 @@
         "base10_excess": -0.039140534380137385,
         "round_number_excess": 0,
         "si_zipf_velocity": 0.08241758241758242,
-        "si_zipf_effort": -0.7354671402809293
+        "si_zipf_effort": -0.7354671402809293,
+        "si_zipf_velocity_fixed": 0.08241758241758242,
+        "si_zipf_effort_fixed": -0.7354671402809293
       }
     },
     {
@@ -10794,7 +11036,9 @@
         "base10_excess": -0.1250955890262598,
         "round_number_excess": 0.03076923076923077,
         "si_zipf_velocity": 2.5,
-        "si_zipf_effort": -0.7797014930464574
+        "si_zipf_effort": -0.7797014930464574,
+        "si_zipf_velocity_fixed": 2.5,
+        "si_zipf_effort_fixed": -0.7797014930464574
       }
     },
     {
@@ -10821,7 +11065,9 @@
         "base10_excess": -0.07477509018836134,
         "round_number_excess": -0.025000000000000022,
         "si_zipf_velocity": 0.6318681318681318,
-        "si_zipf_effort": -0.5518905575913642
+        "si_zipf_effort": -0.5518905575913642,
+        "si_zipf_velocity_fixed": 0.6318681318681318,
+        "si_zipf_effort_fixed": -0.5518905575913642
       }
     },
     {
@@ -10957,7 +11203,9 @@
         "base10_excess": -0.0038130121789491933,
         "round_number_excess": 0.0035398230088495575,
         "si_zipf_velocity": 1.9,
-        "si_zipf_effort": -0.054754405744598014
+        "si_zipf_effort": -0.054754405744598014,
+        "si_zipf_velocity_fixed": 1.9,
+        "si_zipf_effort_fixed": -0.054754405744598014
       }
     },
     {
@@ -10984,7 +11232,9 @@
         "base10_excess": 0.00007913290027512787,
         "round_number_excess": 0,
         "si_zipf_velocity": 0.5604395604395604,
-        "si_zipf_effort": -0.09025403824819037
+        "si_zipf_effort": -0.09025403824819037,
+        "si_zipf_velocity_fixed": 0.5604395604395604,
+        "si_zipf_effort_fixed": -0.09025403824819037
       }
     },
     {
@@ -11192,7 +11442,9 @@
         "base10_excess": -0.0050331364130512535,
         "round_number_excess": -0.01651376146788991,
         "si_zipf_velocity": 0,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -11219,7 +11471,9 @@
         "base10_excess": -0.015529986317149719,
         "round_number_excess": -0.02400000000000002,
         "si_zipf_velocity": 0.01098901098901099,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.038461538461538464,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -11649,7 +11903,9 @@
         "base10_excess": -0.06550606762157427,
         "round_number_excess": -0.015533980582524282,
         "si_zipf_velocity": 0.6,
-        "si_zipf_effort": -0.10754194150809583
+        "si_zipf_effort": -0.10754194150809583,
+        "si_zipf_velocity_fixed": 0.6,
+        "si_zipf_effort_fixed": -0.10754194150809583
       }
     },
     {
@@ -11676,7 +11932,9 @@
         "base10_excess": -0.06820748819123063,
         "round_number_excess": -0.017391304347826098,
         "si_zipf_velocity": 0.9285714285714286,
-        "si_zipf_effort": -0.43239277994932485
+        "si_zipf_effort": -0.43239277994932485,
+        "si_zipf_velocity_fixed": 0.9285714285714286,
+        "si_zipf_effort_fixed": -0.43239277994932485
       }
     },
     {
@@ -11850,7 +12108,9 @@
         "base10_excess": -0.022685368035488318,
         "round_number_excess": -0.040707964601769925,
         "si_zipf_velocity": 1.2,
-        "si_zipf_effort": -0.7983386932024257
+        "si_zipf_effort": -0.7983386932024257,
+        "si_zipf_velocity_fixed": 1.2,
+        "si_zipf_effort_fixed": -0.7983386932024257
       }
     },
     {
@@ -11877,7 +12137,9 @@
         "base10_excess": -0.02770820183812043,
         "round_number_excess": -0.053658536585365874,
         "si_zipf_velocity": 1.2307692307692308,
-        "si_zipf_effort": -0.9320136570612597
+        "si_zipf_effort": -0.9320136570612597,
+        "si_zipf_velocity_fixed": 1.2307692307692308,
+        "si_zipf_effort_fixed": -0.9320136570612597
       }
     },
     {
@@ -12042,7 +12304,9 @@
         "base10_excess": 0.04885840164886546,
         "round_number_excess": -0.0761061946902655,
         "si_zipf_velocity": 2.3,
-        "si_zipf_effort": -0.28173267752195086
+        "si_zipf_effort": -0.28173267752195086,
+        "si_zipf_velocity_fixed": 2.3,
+        "si_zipf_effort_fixed": -0.28173267752195086
       }
     },
     {
@@ -12069,7 +12333,9 @@
         "base10_excess": 0.04213146965707869,
         "round_number_excess": -0.04000000000000001,
         "si_zipf_velocity": -0.4340659340659341,
-        "si_zipf_effort": 0.13432573196149444
+        "si_zipf_effort": 0.13432573196149444,
+        "si_zipf_velocity_fixed": -0.4340659340659341,
+        "si_zipf_effort_fixed": 0.13432573196149444
       }
     },
     {
@@ -12206,7 +12472,9 @@
         "base10_excess": 0.021365732166293283,
         "round_number_excess": -0.01428571428571429,
         "si_zipf_velocity": 0.6,
-        "si_zipf_effort": -0.17785540284152146
+        "si_zipf_effort": -0.17785540284152146,
+        "si_zipf_velocity_fixed": 0.6,
+        "si_zipf_effort_fixed": -0.17785540284152146
       }
     },
     {
@@ -12233,7 +12501,9 @@
         "base10_excess": 0.017748752847379923,
         "round_number_excess": 0.007317073170731686,
         "si_zipf_velocity": 0.04395604395604396,
-        "si_zipf_effort": -0.46829086087034166
+        "si_zipf_effort": -0.46829086087034166,
+        "si_zipf_velocity_fixed": 0.04395604395604396,
+        "si_zipf_effort_fixed": -0.46829086087034166
       }
     },
     {
@@ -12577,7 +12847,9 @@
         "base10_excess": -0.00968470753768122,
         "round_number_excess": -0.05321100917431193,
         "si_zipf_velocity": -1.6,
-        "si_zipf_effort": 0.016693832585052408
+        "si_zipf_effort": 0.016693832585052408,
+        "si_zipf_velocity_fixed": -1.6,
+        "si_zipf_effort_fixed": 0.016693832585052408
       }
     },
     {
@@ -12604,7 +12876,9 @@
         "base10_excess": -0.01941313603917537,
         "round_number_excess": -0.0347107438016529,
         "si_zipf_velocity": -1.3681318681318682,
-        "si_zipf_effort": 0.06919048184513497
+        "si_zipf_effort": 0.06919048184513497,
+        "si_zipf_velocity_fixed": -1.3681318681318682,
+        "si_zipf_effort_fixed": 0.06919048184513497
       }
     },
     {
@@ -12706,7 +12980,9 @@
         "base10_excess": -0.07453369559261419,
         "round_number_excess": 0.08440366972477065,
         "si_zipf_velocity": -0.7,
-        "si_zipf_effort": 0.30410505652421255
+        "si_zipf_effort": 0.30410505652421255,
+        "si_zipf_velocity_fixed": -0.7,
+        "si_zipf_effort_fixed": 0.30410505652421255
       }
     },
     {
@@ -12732,7 +13008,9 @@
         "base10_excess": -0.08072351559936529,
         "round_number_excess": 0.10578512396694212,
         "si_zipf_velocity": 0.24175824175824176,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.24175824175824176,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -12795,7 +13073,9 @@
         "base10_excess": -0.04507160196950061,
         "round_number_excess": 0.09126213592233007,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0.36176739184966045
+        "si_zipf_effort": 0.36176739184966045,
+        "si_zipf_velocity_fixed": -0.3,
+        "si_zipf_effort_fixed": 0.36176739184966045
       }
     },
     {
@@ -12822,7 +13102,9 @@
         "base10_excess": -0.03587632832685693,
         "round_number_excess": 0.09565217391304348,
         "si_zipf_velocity": 1.4230769230769231,
-        "si_zipf_effort": -2.72163380692469
+        "si_zipf_effort": -2.72163380692469,
+        "si_zipf_velocity_fixed": 1.4230769230769231,
+        "si_zipf_effort_fixed": -2.72163380692469
       }
     },
     {
@@ -12959,7 +13241,9 @@
         "base10_excess": -0.06490455378207707,
         "round_number_excess": -0.044660194174757306,
         "si_zipf_velocity": 0,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -12986,7 +13270,9 @@
         "base10_excess": -0.050741437416387994,
         "round_number_excess": -0.060869565217391314,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": -14
+        "si_zipf_effort": -14,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": -14
       }
     },
     {
@@ -13100,7 +13386,9 @@
         "base10_excess": 0.009869547715839436,
         "round_number_excess": 0.059615384615384626,
         "si_zipf_velocity": 2.1,
-        "si_zipf_effort": -0.13936250163612296
+        "si_zipf_effort": -0.13936250163612296,
+        "si_zipf_velocity_fixed": 2.1,
+        "si_zipf_effort_fixed": -0.13936250163612296
       }
     },
     {
@@ -13127,7 +13415,9 @@
         "base10_excess": 0.008462173066375506,
         "round_number_excess": 0.04576271186440678,
         "si_zipf_velocity": 0.3956043956043956,
-        "si_zipf_effort": -0.004549031984654949
+        "si_zipf_effort": -0.004549031984654949,
+        "si_zipf_velocity_fixed": 0.3956043956043956,
+        "si_zipf_effort_fixed": -0.004549031984654949
       }
     },
     {
@@ -13236,7 +13526,9 @@
         "base10_excess": -0.07796421746782116,
         "round_number_excess": 0.02580645161290321,
         "si_zipf_velocity": 0.1,
-        "si_zipf_effort": -0.04988540221196701
+        "si_zipf_effort": -0.04988540221196701,
+        "si_zipf_velocity_fixed": 0.1,
+        "si_zipf_effort_fixed": -0.04988540221196701
       }
     },
     {
@@ -13263,7 +13555,9 @@
         "base10_excess": -0.07881415951435118,
         "round_number_excess": 0.03809523809523807,
         "si_zipf_velocity": 0.054945054945054944,
-        "si_zipf_effort": 0.07833773811542442
+        "si_zipf_effort": 0.07833773811542442,
+        "si_zipf_velocity_fixed": 0.054945054945054944,
+        "si_zipf_effort_fixed": 0.07833773811542442
       }
     },
     {
@@ -13326,7 +13620,9 @@
         "base10_excess": -0.02964978228943077,
         "round_number_excess": 0.047706422018348627,
         "si_zipf_velocity": -0.1,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 1,
+        "si_zipf_effort_fixed": -0.7605366316978209
       }
     },
     {
@@ -13353,7 +13649,9 @@
         "base10_excess": -0.02911169233416091,
         "round_number_excess": 0.015999999999999986,
         "si_zipf_velocity": 0.02197802197802198,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.08791208791208792,
+        "si_zipf_effort_fixed": -0.3957471450192006
       }
     },
     {
@@ -13426,7 +13724,9 @@
         "base10_excess": -0.015196088190414167,
         "round_number_excess": 0.10232558139534881,
         "si_zipf_velocity": 1,
-        "si_zipf_effort": -1.373179497456682
+        "si_zipf_effort": -1.373179497456682,
+        "si_zipf_velocity_fixed": 1,
+        "si_zipf_effort_fixed": -1.373179497456682
       }
     },
     {
@@ -13453,7 +13753,9 @@
         "base10_excess": -0.016500695542602167,
         "round_number_excess": 0.0727272727272727,
         "si_zipf_velocity": 0.13736263736263737,
-        "si_zipf_effort": -0.7838877837273366
+        "si_zipf_effort": -0.7838877837273366,
+        "si_zipf_velocity_fixed": 0.13736263736263737,
+        "si_zipf_effort_fixed": -0.7838877837273366
       }
     },
     {
@@ -13516,7 +13818,9 @@
         "base10_excess": -0.08142476120788728,
         "round_number_excess": 0.09268292682926826,
         "si_zipf_velocity": -1.1,
-        "si_zipf_effort": 0.5821638884267906
+        "si_zipf_effort": 0.5821638884267906,
+        "si_zipf_velocity_fixed": -1.1,
+        "si_zipf_effort_fixed": 0.5821638884267906
       }
     },
     {
@@ -13543,7 +13847,9 @@
         "base10_excess": -0.07587563523614302,
         "round_number_excess": 0.026415094339622636,
         "si_zipf_velocity": 0.15934065934065933,
-        "si_zipf_effort": 0.06651631497744494
+        "si_zipf_effort": 0.06651631497744494,
+        "si_zipf_velocity_fixed": 0.15934065934065933,
+        "si_zipf_effort_fixed": 0.06651631497744494
       }
     },
     {
@@ -13764,7 +14070,9 @@
         "base10_excess": -0.03915591081545308,
         "round_number_excess": -0.012500000000000011,
         "si_zipf_velocity": 1.4,
-        "si_zipf_effort": -0.06678755720862818
+        "si_zipf_effort": -0.06678755720862818,
+        "si_zipf_velocity_fixed": 1.4,
+        "si_zipf_effort_fixed": -0.06678755720862818
       }
     },
     {
@@ -13791,7 +14099,9 @@
         "base10_excess": -0.020905338965526293,
         "round_number_excess": -0.026086956521739146,
         "si_zipf_velocity": 0.3076923076923077,
-        "si_zipf_effort": -0.013591363301346058
+        "si_zipf_effort": -0.013591363301346058,
+        "si_zipf_velocity_fixed": 0.3076923076923077,
+        "si_zipf_effort_fixed": -0.013591363301346058
       }
     },
     {
@@ -14132,7 +14442,9 @@
         "base10_excess": -0.03486969488265031,
         "round_number_excess": -0.0035714285714285865,
         "si_zipf_velocity": -2.4,
-        "si_zipf_effort": 0.27803187045718214
+        "si_zipf_effort": 0.27803187045718214,
+        "si_zipf_velocity_fixed": -2.4,
+        "si_zipf_effort_fixed": 0.27803187045718214
       }
     },
     {
@@ -14159,7 +14471,9 @@
         "base10_excess": -0.03517709266590389,
         "round_number_excess": -0.00882352941176473,
         "si_zipf_velocity": -0.3626373626373626,
-        "si_zipf_effort": -0.009096096084558195
+        "si_zipf_effort": -0.009096096084558195,
+        "si_zipf_velocity_fixed": -0.3626373626373626,
+        "si_zipf_effort_fixed": -0.009096096084558195
       }
     },
     {
@@ -14222,7 +14536,9 @@
         "base10_excess": -0.08866638471119141,
         "round_number_excess": 0.04778761061946901,
         "si_zipf_velocity": 0.7,
-        "si_zipf_effort": -0.7291728524169365
+        "si_zipf_effort": -0.7291728524169365,
+        "si_zipf_velocity_fixed": 1.5,
+        "si_zipf_effort_fixed": -0.4266031276710491
       }
     },
     {
@@ -14249,7 +14565,9 @@
         "base10_excess": -0.08930922517063658,
         "round_number_excess": 0.03999999999999998,
         "si_zipf_velocity": -0.04945054945054945,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.14285714285714285,
+        "si_zipf_effort_fixed": -0.03675068563395107
       }
     },
     {
@@ -14386,7 +14704,9 @@
         "base10_excess": -0.043981278744876146,
         "round_number_excess": 0.021238938053097345,
         "si_zipf_velocity": -0.9,
-        "si_zipf_effort": 0.028821314829578126
+        "si_zipf_effort": 0.028821314829578126,
+        "si_zipf_velocity_fixed": -0.9,
+        "si_zipf_effort_fixed": 0.028821314829578126
       }
     },
     {
@@ -14413,7 +14733,9 @@
         "base10_excess": -0.045117133286130005,
         "round_number_excess": 0.01951219512195121,
         "si_zipf_velocity": -0.4065934065934066,
-        "si_zipf_effort": 0.002887212369303925
+        "si_zipf_effort": 0.002887212369303925,
+        "si_zipf_velocity_fixed": -0.4065934065934066,
+        "si_zipf_effort_fixed": 0.002887212369303925
       }
     },
     {
@@ -14897,7 +15219,9 @@
         "base10_excess": -0.05979626960557358,
         "round_number_excess": 0.0038834951456310496,
         "si_zipf_velocity": -5.3,
-        "si_zipf_effort": 0.16886072120575518
+        "si_zipf_effort": 0.16886072120575518,
+        "si_zipf_velocity_fixed": -5.3,
+        "si_zipf_effort_fixed": 0.16886072120575518
       }
     },
     {
@@ -14924,7 +15248,9 @@
         "base10_excess": -0.06595751911519371,
         "round_number_excess": 0.03478260869565217,
         "si_zipf_velocity": 0.510989010989011,
-        "si_zipf_effort": -0.023164944610734418
+        "si_zipf_effort": -0.023164944610734418,
+        "si_zipf_velocity_fixed": 0.510989010989011,
+        "si_zipf_effort_fixed": -0.023164944610734418
       }
     },
     {
@@ -15061,7 +15387,9 @@
         "base10_excess": -0.03468647155967407,
         "round_number_excess": 0.030088495575221225,
         "si_zipf_velocity": 0.8,
-        "si_zipf_effort": -2
+        "si_zipf_effort": -2,
+        "si_zipf_velocity_fixed": 1.1,
+        "si_zipf_effort_fixed": -1.0507549625864785
       }
     },
     {
@@ -15088,7 +15416,9 @@
         "base10_excess": -0.03401346468538215,
         "round_number_excess": 0.023999999999999994,
         "si_zipf_velocity": 0.35714285714285715,
-        "si_zipf_effort": -4
+        "si_zipf_effort": -4,
+        "si_zipf_velocity_fixed": 0.521978021978022,
+        "si_zipf_effort_fixed": -1.9248577358245007
       }
     },
     {
@@ -15379,7 +15709,9 @@
         "base10_excess": -0.018867840441645523,
         "round_number_excess": -0.06666666666666668,
         "si_zipf_velocity": -0.13333333333333333,
-        "si_zipf_effort": 0.0018212136612273402
+        "si_zipf_effort": 0.0018212136612273402,
+        "si_zipf_velocity_fixed": -0.13333333333333333,
+        "si_zipf_effort_fixed": 0.0018212136612273402
       }
     },
     {
@@ -15480,7 +15812,9 @@
         "base10_excess": -0.04310357408002699,
         "round_number_excess": 0.00512820512820511,
         "si_zipf_velocity": 0.2,
-        "si_zipf_effort": -0.3333333333333333
+        "si_zipf_effort": -0.3333333333333333,
+        "si_zipf_velocity_fixed": 0.3,
+        "si_zipf_effort_fixed": -0.08843022309731653
       }
     },
     {
@@ -15542,7 +15876,9 @@
         "base10_excess": -0.011096216633971853,
         "round_number_excess": -0.12035398230088497,
         "si_zipf_velocity": 0.4,
-        "si_zipf_effort": -0.009997607966115565
+        "si_zipf_effort": -0.009997607966115565,
+        "si_zipf_velocity_fixed": 0.4,
+        "si_zipf_effort_fixed": -0.009997607966115565
       }
     },
     {
@@ -15569,7 +15905,9 @@
         "base10_excess": -0.018631325915228057,
         "round_number_excess": -0.128,
         "si_zipf_velocity": -0.14285714285714285,
-        "si_zipf_effort": 0.03140127598325182
+        "si_zipf_effort": 0.03140127598325182,
+        "si_zipf_velocity_fixed": -0.14285714285714285,
+        "si_zipf_effort_fixed": 0.03140127598325182
       }
     },
     {
@@ -16071,7 +16409,9 @@
         "structural_stress": 1,
         "base10_excess": -0.02408278306168818,
         "si_zipf_velocity": 4.5,
-        "si_zipf_effort": -2.4620309533085516
+        "si_zipf_effort": -2.4620309533085516,
+        "si_zipf_velocity_fixed": 4.5,
+        "si_zipf_effort_fixed": -2.4620309533085516
       }
     },
     {
@@ -16097,7 +16437,9 @@
         "structural_stress": 1,
         "base10_excess": -0.02691104183082573,
         "si_zipf_velocity": 0.6593406593406593,
-        "si_zipf_effort": -0.7511596749710127
+        "si_zipf_effort": -0.7511596749710127,
+        "si_zipf_velocity_fixed": 0.6593406593406593,
+        "si_zipf_effort_fixed": -0.7511596749710127
       }
     },
     {
@@ -16706,7 +17048,9 @@
         "base10_excess": -0.04769375163373802,
         "round_number_excess": -0.040707964601769925,
         "si_zipf_velocity": 0,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -16733,7 +17077,9 @@
         "base10_excess": -0.023372632730598697,
         "round_number_excess": -0.032,
         "si_zipf_velocity": 0.016483516483516484,
-        "si_zipf_effort": -1
+        "si_zipf_effort": -1,
+        "si_zipf_velocity_fixed": 0.016483516483516484,
+        "si_zipf_effort_fixed": -1
       }
     },
     {
@@ -16796,7 +17142,9 @@
         "base10_excess": -0.02449050967907243,
         "round_number_excess": -0.0979591836734694,
         "si_zipf_velocity": -0.8,
-        "si_zipf_effort": 0.4517681083388013
+        "si_zipf_effort": 0.4517681083388013,
+        "si_zipf_velocity_fixed": -0.8,
+        "si_zipf_effort_fixed": 0.4517681083388013
       }
     },
     {
@@ -16823,7 +17171,9 @@
         "base10_excess": -0.012503010733290715,
         "round_number_excess": -0.08524590163934427,
         "si_zipf_velocity": -0.03296703296703297,
-        "si_zipf_effort": 0.5599828741253596
+        "si_zipf_effort": 0.5599828741253596,
+        "si_zipf_velocity_fixed": -0.03296703296703297,
+        "si_zipf_effort_fixed": 0.5599828741253596
       }
     },
     {
@@ -16959,7 +17309,9 @@
         "base10_excess": -0.04631403223266429,
         "round_number_excess": -0.001980198019801982,
         "si_zipf_velocity": 2.9,
-        "si_zipf_effort": -0.2071697659584517
+        "si_zipf_effort": -0.2071697659584517,
+        "si_zipf_velocity_fixed": 2.9,
+        "si_zipf_effort_fixed": -0.2071697659584517
       }
     },
     {
@@ -16986,7 +17338,9 @@
         "base10_excess": -0.04259563855778526,
         "round_number_excess": -0.008695652173913049,
         "si_zipf_velocity": 0.1978021978021978,
-        "si_zipf_effort": -0.0406376556881358
+        "si_zipf_effort": -0.0406376556881358,
+        "si_zipf_velocity_fixed": 0.1978021978021978,
+        "si_zipf_effort_fixed": -0.0406376556881358
       }
     },
     {
@@ -17048,7 +17402,9 @@
         "base10_excess": -0.007127175741001371,
         "round_number_excess": 0.016666666666666663,
         "si_zipf_velocity": -6.1,
-        "si_zipf_effort": 0.12678827732227707
+        "si_zipf_effort": 0.12678827732227707,
+        "si_zipf_velocity_fixed": -6.1,
+        "si_zipf_effort_fixed": 0.12678827732227707
       }
     },
     {
@@ -17075,7 +17431,9 @@
         "base10_excess": -0.012246999012748644,
         "round_number_excess": 0.016666666666666663,
         "si_zipf_velocity": -1.3846153846153846,
-        "si_zipf_effort": 0.09918870938176448
+        "si_zipf_effort": 0.09918870938176448,
+        "si_zipf_velocity_fixed": -1.3846153846153846,
+        "si_zipf_effort_fixed": 0.09918870938176448
       }
     },
     {
@@ -17165,7 +17523,9 @@
         "base10_excess": -0.0658441953828383,
         "round_number_excess": 0.0038834951456310496,
         "si_zipf_velocity": 0.2,
-        "si_zipf_effort": -0.12096087073382401
+        "si_zipf_effort": -0.12096087073382401,
+        "si_zipf_velocity_fixed": 0.2,
+        "si_zipf_effort_fixed": -0.12096087073382401
       }
     },
     {
@@ -17192,7 +17552,9 @@
         "base10_excess": -0.048725706320529,
         "round_number_excess": -0.012500000000000011,
         "si_zipf_velocity": 0.7692307692307693,
-        "si_zipf_effort": -0.6338028347805001
+        "si_zipf_effort": -0.6338028347805001,
+        "si_zipf_velocity_fixed": 0.7692307692307693,
+        "si_zipf_effort_fixed": -0.6338028347805001
       }
     },
     {
@@ -17456,7 +17818,9 @@
         "base10_excess": -0.0687729041480856,
         "round_number_excess": 0.08749999999999997,
         "si_zipf_velocity": -1.4,
-        "si_zipf_effort": 0.293635189337632
+        "si_zipf_effort": 0.293635189337632,
+        "si_zipf_velocity_fixed": -1.4,
+        "si_zipf_effort_fixed": 0.293635189337632
       }
     },
     {
@@ -17482,7 +17846,9 @@
         "base10_excess": -0.08899473518375293,
         "round_number_excess": 0.07173913043478258,
         "si_zipf_velocity": 0.08791208791208792,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.08791208791208792,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -17731,7 +18097,9 @@
         "base10_excess": -0.024804021923122754,
         "round_number_excess": -0.1090909090909091,
         "si_zipf_velocity": -0.1,
-        "si_zipf_effort": -0.013340514133993207
+        "si_zipf_effort": -0.013340514133993207,
+        "si_zipf_velocity_fixed": -0.1,
+        "si_zipf_effort_fixed": -0.013340514133993207
       }
     },
     {
@@ -17758,7 +18126,9 @@
         "base10_excess": 0.004839523329645434,
         "round_number_excess": -0.13333333333333336,
         "si_zipf_velocity": -0.29120879120879123,
-        "si_zipf_effort": -0.008832062337097931
+        "si_zipf_effort": -0.008832062337097931,
+        "si_zipf_velocity_fixed": -0.29120879120879123,
+        "si_zipf_effort_fixed": -0.008832062337097931
       }
     },
     {
@@ -17969,7 +18339,9 @@
         "base10_excess": -0.02469956678268835,
         "round_number_excess": 0,
         "si_zipf_velocity": -1.1,
-        "si_zipf_effort": 0.07651717819856788
+        "si_zipf_effort": 0.07651717819856788,
+        "si_zipf_velocity_fixed": -1.1,
+        "si_zipf_effort_fixed": 0.07651717819856788
       }
     },
     {
@@ -17996,7 +18368,9 @@
         "base10_excess": -0.020499726829072265,
         "round_number_excess": 0.028915662650602386,
         "si_zipf_velocity": 0.7857142857142857,
-        "si_zipf_effort": 0.017610883152860062
+        "si_zipf_effort": 0.017610883152860062,
+        "si_zipf_velocity_fixed": 0.7857142857142857,
+        "si_zipf_effort_fixed": 0.017610883152860062
       }
     },
     {
@@ -18073,7 +18447,9 @@
         "base10_excess": -0.07532280162061816,
         "round_number_excess": -0.020512820512820523,
         "si_zipf_velocity": 1.3,
-        "si_zipf_effort": -0.1252705060524484
+        "si_zipf_effort": -0.1252705060524484,
+        "si_zipf_velocity_fixed": 1.3,
+        "si_zipf_effort_fixed": -0.1252705060524484
       }
     },
     {
@@ -18100,7 +18476,9 @@
         "base10_excess": -0.06851977409215965,
         "round_number_excess": -0.021705426356589147,
         "si_zipf_velocity": -0.9010989010989011,
-        "si_zipf_effort": 0.24664603494560194
+        "si_zipf_effort": 0.24664603494560194,
+        "si_zipf_velocity_fixed": -0.9010989010989011,
+        "si_zipf_effort_fixed": 0.24664603494560194
       }
     },
     {
@@ -18127,7 +18505,9 @@
         "base10_excess": -0.24371460112982113,
         "round_number_excess": -0.06666666666666668,
         "si_zipf_velocity": -5.1,
-        "si_zipf_effort": 0.06458749096824455
+        "si_zipf_effort": 0.06458749096824455,
+        "si_zipf_velocity_fixed": -5.1,
+        "si_zipf_effort_fixed": 0.06458749096824455
       }
     },
     {
@@ -18361,7 +18741,9 @@
         "base10_excess": -0.03024076373663566,
         "round_number_excess": -0.05840707964601771,
         "si_zipf_velocity": 0.7,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.7,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -18388,7 +18770,9 @@
         "base10_excess": -0.03393827918581485,
         "round_number_excess": -0.07200000000000001,
         "si_zipf_velocity": -0.5879120879120879,
-        "si_zipf_effort": 0.11919534456318026
+        "si_zipf_effort": 0.11919534456318026,
+        "si_zipf_velocity_fixed": -0.5879120879120879,
+        "si_zipf_effort_fixed": 0.11919534456318026
       }
     },
     {
@@ -18511,7 +18895,9 @@
         "base10_excess": -0.035275094808306054,
         "round_number_excess": 0.03423423423423422,
         "si_zipf_velocity": -0.1,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.1,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -18538,7 +18924,9 @@
         "base10_excess": -0.028808055199323404,
         "round_number_excess": 0.03999999999999998,
         "si_zipf_velocity": 0.8186813186813187,
-        "si_zipf_effort": -10
+        "si_zipf_effort": -10,
+        "si_zipf_velocity_fixed": 0.8186813186813187,
+        "si_zipf_effort_fixed": -10
       }
     },
     {
@@ -18601,7 +18989,9 @@
         "base10_excess": -0.08181672472675391,
         "round_number_excess": 0.02018348623853211,
         "si_zipf_velocity": 0.4,
-        "si_zipf_effort": 0.025014128981735884
+        "si_zipf_effort": 0.025014128981735884,
+        "si_zipf_velocity_fixed": 0.4,
+        "si_zipf_effort_fixed": 0.025014128981735884
       }
     },
     {
@@ -18628,7 +19018,9 @@
         "base10_excess": -0.08699164972178891,
         "round_number_excess": 0.031404958677685946,
         "si_zipf_velocity": -0.6373626373626373,
-        "si_zipf_effort": 0.19530349910889916
+        "si_zipf_effort": 0.19530349910889916,
+        "si_zipf_velocity_fixed": -0.6373626373626373,
+        "si_zipf_effort_fixed": 0.19530349910889916
       }
     },
     {
@@ -19099,7 +19491,9 @@
         "base10_excess": -0.02325998982380538,
         "round_number_excess": -0.02105263157894738,
         "si_zipf_velocity": 1.8,
-        "si_zipf_effort": -0.30238006038412635
+        "si_zipf_effort": -0.30238006038412635,
+        "si_zipf_velocity_fixed": 1.8,
+        "si_zipf_effort_fixed": -0.30238006038412635
       }
     },
     {
@@ -19126,7 +19520,9 @@
         "base10_excess": -0.02579301588890373,
         "round_number_excess": -0.013084112149532728,
         "si_zipf_velocity": -0.21978021978021978,
-        "si_zipf_effort": 0.1260567244673001
+        "si_zipf_effort": 0.1260567244673001,
+        "si_zipf_velocity_fixed": -0.21978021978021978,
+        "si_zipf_effort_fixed": 0.1260567244673001
       }
     },
     {
@@ -19189,7 +19585,9 @@
         "base10_excess": -0.046351219587225406,
         "round_number_excess": -0.11150442477876107,
         "si_zipf_velocity": -1.7,
-        "si_zipf_effort": 0.2067862346585437
+        "si_zipf_effort": 0.2067862346585437,
+        "si_zipf_velocity_fixed": -1.7,
+        "si_zipf_effort_fixed": 0.2067862346585437
       }
     },
     {
@@ -19216,7 +19614,9 @@
         "base10_excess": -0.056000970004480406,
         "round_number_excess": -0.12000000000000001,
         "si_zipf_velocity": 0.4175824175824176,
-        "si_zipf_effort": -0.14632124470779742
+        "si_zipf_effort": -0.14632124470779742,
+        "si_zipf_velocity_fixed": 0.4175824175824176,
+        "si_zipf_effort_fixed": -0.14632124470779742
       }
     },
     {
@@ -19367,7 +19767,9 @@
         "base10_excess": -0.020392574466718272,
         "round_number_excess": -0.2,
         "si_zipf_velocity": -1.6,
-        "si_zipf_effort": 0.12653017727967955
+        "si_zipf_effort": 0.12653017727967955,
+        "si_zipf_velocity_fixed": -1.6,
+        "si_zipf_effort_fixed": 0.12653017727967955
       }
     },
     {
@@ -19394,7 +19796,9 @@
         "base10_excess": -0.019328125267650875,
         "round_number_excess": -0.1090909090909091,
         "si_zipf_velocity": 0.3241758241758242,
-        "si_zipf_effort": -0.013706020648417853
+        "si_zipf_effort": -0.013706020648417853,
+        "si_zipf_velocity_fixed": 0.3241758241758242,
+        "si_zipf_effort_fixed": -0.013706020648417853
       }
     },
     {
@@ -19494,7 +19898,9 @@
         "base10_excess": -0.13237359862547404,
         "round_number_excess": 0,
         "si_zipf_velocity": -1.5,
-        "si_zipf_effort": 0.07098693481729641
+        "si_zipf_effort": 0.07098693481729641,
+        "si_zipf_velocity_fixed": -1.5,
+        "si_zipf_effort_fixed": 0.07098693481729641
       }
     },
     {
@@ -19521,7 +19927,9 @@
         "base10_excess": -0.14031244284332134,
         "round_number_excess": 0.04675324675324674,
         "si_zipf_velocity": 0.3626373626373626,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.3626373626373626,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -19693,7 +20101,9 @@
         "base10_excess": -0.07414002210428446,
         "round_number_excess": 0.07433628318584068,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": -0.059566070921473625
+        "si_zipf_effort": -0.059566070921473625,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": -0.059566070921473625
       }
     },
     {
@@ -19719,7 +20129,9 @@
         "base10_excess": -0.07007348659964993,
         "round_number_excess": 0.064,
         "si_zipf_velocity": 0.14285714285714285,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.14285714285714285,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -20046,7 +20458,9 @@
         "base10_excess": -0.027350184442207465,
         "round_number_excess": 0.028571428571428553,
         "si_zipf_velocity": 8.2,
-        "si_zipf_effort": -4.5159208748687325
+        "si_zipf_effort": -4.5159208748687325,
+        "si_zipf_velocity_fixed": 8.2,
+        "si_zipf_effort_fixed": -4.5159208748687325
       }
     },
     {
@@ -20073,7 +20487,9 @@
         "base10_excess": -0.029698863694157057,
         "round_number_excess": 0.0222222222222222,
         "si_zipf_velocity": 1.434065934065934,
-        "si_zipf_effort": -4.22107328441169
+        "si_zipf_effort": -4.22107328441169,
+        "si_zipf_velocity_fixed": 1.434065934065934,
+        "si_zipf_effort_fixed": -4.22107328441169
       }
     },
     {
@@ -20289,7 +20705,9 @@
         "base10_excess": -0.014151554079728762,
         "round_number_excess": 0.10476190476190478,
         "si_zipf_velocity": 0.8,
-        "si_zipf_effort": -0.3645640551069766
+        "si_zipf_effort": -0.3645640551069766,
+        "si_zipf_velocity_fixed": 0.8,
+        "si_zipf_effort_fixed": -0.3645640551069766
       }
     },
     {
@@ -20315,7 +20733,9 @@
         "base10_excess": 0.008792484244847049,
         "round_number_excess": 0.09914529914529913,
         "si_zipf_velocity": 0.016483516483516484,
-        "si_zipf_effort": 0.22408576994639987
+        "si_zipf_effort": 0.22408576994639987,
+        "si_zipf_velocity_fixed": 0.016483516483516484,
+        "si_zipf_effort_fixed": 0.22408576994639987
       }
     },
     {
@@ -20342,7 +20762,9 @@
         "base10_excess": -0.2294174715780527,
         "round_number_excess": -0.09473684210526317,
         "si_zipf_velocity": -0.7833333333333333,
-        "si_zipf_effort": 0.007420543614176341
+        "si_zipf_effort": 0.007420543614176341,
+        "si_zipf_velocity_fixed": -0.7833333333333333,
+        "si_zipf_effort_fixed": 0.007420543614176341
       }
     },
     {
@@ -20443,7 +20865,9 @@
         "base10_excess": -0.08557116158172806,
         "round_number_excess": -0.06666666666666668,
         "si_zipf_velocity": -0.2,
-        "si_zipf_effort": -0.03358262529483545
+        "si_zipf_effort": -0.03358262529483545,
+        "si_zipf_velocity_fixed": -0.2,
+        "si_zipf_effort_fixed": -0.03358262529483545
       }
     },
     {
@@ -20470,7 +20894,9 @@
         "base10_excess": -0.07343783946177657,
         "round_number_excess": -0.05185185185185187,
         "si_zipf_velocity": -0.45604395604395603,
-        "si_zipf_effort": 0.06668847831150064
+        "si_zipf_effort": 0.06668847831150064,
+        "si_zipf_velocity_fixed": -0.45604395604395603,
+        "si_zipf_effort_fixed": 0.06668847831150064
       }
     },
     {
@@ -21222,7 +21648,9 @@
         "base10_excess": -0.020483473211166198,
         "round_number_excess": -0.013559322033898313,
         "si_zipf_velocity": 0.3,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.3,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -21249,7 +21677,9 @@
         "base10_excess": -0.015904248527549805,
         "round_number_excess": -0.049315068493150704,
         "si_zipf_velocity": -0.22527472527472528,
-        "si_zipf_effort": -1.061489799840457
+        "si_zipf_effort": -1.061489799840457,
+        "si_zipf_velocity_fixed": -0.22527472527472528,
+        "si_zipf_effort_fixed": -1.061489799840457
       }
     },
     {
@@ -21386,7 +21816,9 @@
         "base10_excess": -0.034647334647540766,
         "round_number_excess": -0.049557522123893805,
         "si_zipf_velocity": 2.6,
-        "si_zipf_effort": -1.9883892266897538
+        "si_zipf_effort": -1.9883892266897538,
+        "si_zipf_velocity_fixed": 2.6,
+        "si_zipf_effort_fixed": -1.9883892266897538
       }
     },
     {
@@ -21413,7 +21845,9 @@
         "base10_excess": -0.02557061290554344,
         "round_number_excess": -0.032,
         "si_zipf_velocity": 0.7692307692307693,
-        "si_zipf_effort": -0.592867301792994
+        "si_zipf_effort": -0.592867301792994,
+        "si_zipf_velocity_fixed": 0.7692307692307693,
+        "si_zipf_effort_fixed": -0.592867301792994
       }
     },
     {
@@ -21803,7 +22237,9 @@
         "base10_excess": -0.032061907650586724,
         "round_number_excess": -0.033333333333333354,
         "si_zipf_velocity": 0.7,
-        "si_zipf_effort": -0.13130987075156142
+        "si_zipf_effort": -0.13130987075156142,
+        "si_zipf_velocity_fixed": 0.7,
+        "si_zipf_effort_fixed": -0.13130987075156142
       }
     },
     {
@@ -21830,7 +22266,9 @@
         "base10_excess": -0.024564991750630524,
         "round_number_excess": -0.033333333333333354,
         "si_zipf_velocity": -0.054945054945054944,
-        "si_zipf_effort": -0.011089859083010398
+        "si_zipf_effort": -0.011089859083010398,
+        "si_zipf_velocity_fixed": -0.054945054945054944,
+        "si_zipf_effort_fixed": -0.011089859083010398
       }
     },
     {
@@ -22040,7 +22478,9 @@
         "base10_excess": -0.04497547192198127,
         "round_number_excess": 0.004301075268817206,
         "si_zipf_velocity": -0.2,
-        "si_zipf_effort": 0.11322244936580031
+        "si_zipf_effort": 0.11322244936580031,
+        "si_zipf_velocity_fixed": -0.5,
+        "si_zipf_effort_fixed": 0.17503043415534295
       }
     },
     {
@@ -22067,7 +22507,9 @@
         "base10_excess": -0.052536144017864286,
         "round_number_excess": 0.047706422018348627,
         "si_zipf_velocity": 0.07692307692307693,
-        "si_zipf_effort": -0.0658230613262855
+        "si_zipf_effort": -0.0658230613262855,
+        "si_zipf_velocity_fixed": 0.08791208791208792,
+        "si_zipf_effort_fixed": -0.1089921185584201
       }
     },
     {
@@ -22422,7 +22864,9 @@
         "base10_excess": -0.025369159243249874,
         "round_number_excess": 0.0038834951456310496,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.3,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -22449,7 +22893,9 @@
         "base10_excess": -0.02092233163920278,
         "round_number_excess": -0.017391304347826098,
         "si_zipf_velocity": 0.06043956043956044,
-        "si_zipf_effort": -1
+        "si_zipf_effort": -1,
+        "si_zipf_velocity_fixed": 0.06043956043956044,
+        "si_zipf_effort_fixed": -1
       }
     },
     {
@@ -22491,7 +22937,9 @@
         "structural_stress": 1,
         "base10_excess": -0.06340749394873205,
         "si_zipf_velocity": 0.1,
-        "si_zipf_effort": -0.17277301431739026
+        "si_zipf_effort": -0.17277301431739026,
+        "si_zipf_velocity_fixed": 0.1,
+        "si_zipf_effort_fixed": -0.17277301431739026
       }
     },
     {
@@ -22517,7 +22965,9 @@
         "structural_stress": 1,
         "base10_excess": -0.10039218803906408,
         "si_zipf_velocity": 0.005494505494505495,
-        "si_zipf_effort": -0.04088014968176473
+        "si_zipf_effort": -0.04088014968176473,
+        "si_zipf_velocity_fixed": 0.005494505494505495,
+        "si_zipf_effort_fixed": -0.04088014968176473
       }
     },
     {
@@ -22654,7 +23104,9 @@
         "base10_excess": -0.06568300280159753,
         "round_number_excess": -0.05436893203883497,
         "si_zipf_velocity": 1.5,
-        "si_zipf_effort": -0.03792928704799938
+        "si_zipf_effort": -0.03792928704799938,
+        "si_zipf_velocity_fixed": 1.5,
+        "si_zipf_effort_fixed": -0.03792928704799938
       }
     },
     {
@@ -22681,7 +23133,9 @@
         "base10_excess": -0.05761227851418112,
         "round_number_excess": -0.052173913043478265,
         "si_zipf_velocity": -1.3736263736263736,
-        "si_zipf_effort": 0.03412321262850179
+        "si_zipf_effort": 0.03412321262850179,
+        "si_zipf_velocity_fixed": -1.3736263736263736,
+        "si_zipf_effort_fixed": 0.03412321262850179
       }
     },
     {
@@ -22795,7 +23249,9 @@
         "base10_excess": 0.002381593273120236,
         "round_number_excess": 0.030088495575221225,
         "si_zipf_velocity": -1.6,
-        "si_zipf_effort": 0.07531683135330527
+        "si_zipf_effort": 0.07531683135330527,
+        "si_zipf_velocity_fixed": -1.6,
+        "si_zipf_effort_fixed": 0.07531683135330527
       }
     },
     {
@@ -22822,7 +23278,9 @@
         "base10_excess": 0.016136830850047634,
         "round_number_excess": 0.06356589147286823,
         "si_zipf_velocity": -0.6208791208791209,
-        "si_zipf_effort": 0.0070120534883311245
+        "si_zipf_effort": 0.0070120534883311245,
+        "si_zipf_velocity_fixed": -0.6208791208791209,
+        "si_zipf_effort_fixed": 0.0070120534883311245
       }
     },
     {
@@ -23033,7 +23491,9 @@
         "base10_excess": -0.008579791610427961,
         "round_number_excess": -0.023008849557522137,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": -0.33639148696806637
+        "si_zipf_effort": -0.33639148696806637,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": -0.33639148696806637
       }
     },
     {
@@ -23060,7 +23520,9 @@
         "base10_excess": 0.004527835125459775,
         "round_number_excess": -0.02113821138211383,
         "si_zipf_velocity": 0.2967032967032967,
-        "si_zipf_effort": -1.808668681976537
+        "si_zipf_effort": -1.808668681976537,
+        "si_zipf_velocity_fixed": 0.2967032967032967,
+        "si_zipf_effort_fixed": -1.808668681976537
       }
     },
     {
@@ -23123,7 +23585,9 @@
         "base10_excess": -0.05284822608644922,
         "round_number_excess": -0.005825242718446616,
         "si_zipf_velocity": 0.8,
-        "si_zipf_effort": -0.44248167092284674
+        "si_zipf_effort": -0.44248167092284674,
+        "si_zipf_velocity_fixed": 0.8,
+        "si_zipf_effort_fixed": -0.44248167092284674
       }
     },
     {
@@ -23150,7 +23614,9 @@
         "base10_excess": -0.055086995341457196,
         "round_number_excess": 0.008695652173913021,
         "si_zipf_velocity": 0.16483516483516483,
-        "si_zipf_effort": -1.2863907126655147
+        "si_zipf_effort": -1.2863907126655147,
+        "si_zipf_velocity_fixed": 0.16483516483516483,
+        "si_zipf_effort_fixed": -1.2863907126655147
       }
     },
     {
@@ -23348,7 +23814,9 @@
         "base10_excess": -0.15599083458768112,
         "round_number_excess": 0.04999999999999999,
         "si_zipf_velocity": 0.2,
-        "si_zipf_effort": -0.14873605237590729
+        "si_zipf_effort": -0.14873605237590729,
+        "si_zipf_velocity_fixed": 0.2,
+        "si_zipf_effort_fixed": -0.14873605237590729
       }
     },
     {
@@ -23375,7 +23843,9 @@
         "base10_excess": -0.07083725600565849,
         "round_number_excess": 0.014285714285714263,
         "si_zipf_velocity": -0.12637362637362637,
-        "si_zipf_effort": -0.013626530935599585
+        "si_zipf_effort": -0.013626530935599585,
+        "si_zipf_velocity_fixed": -0.12637362637362637,
+        "si_zipf_effort_fixed": -0.013626530935599585
       }
     },
     {
@@ -23850,7 +24320,9 @@
         "base10_excess": -0.08900619493498943,
         "round_number_excess": 0.02580645161290321,
         "si_zipf_velocity": 1.6,
-        "si_zipf_effort": -0.2283948149182985
+        "si_zipf_effort": -0.2283948149182985,
+        "si_zipf_velocity_fixed": 1.6,
+        "si_zipf_effort_fixed": -0.2283948149182985
       }
     },
     {
@@ -23877,7 +24349,9 @@
         "base10_excess": -0.06736017295319181,
         "round_number_excess": 0.0761904761904762,
         "si_zipf_velocity": -0.6098901098901099,
-        "si_zipf_effort": 0.05174926555875271
+        "si_zipf_effort": 0.05174926555875271,
+        "si_zipf_velocity_fixed": -0.6098901098901099,
+        "si_zipf_effort_fixed": 0.05174926555875271
       }
     },
     {
@@ -24013,7 +24487,9 @@
         "base10_excess": -0.07746768020744985,
         "round_number_excess": -0.01415929203539823,
         "si_zipf_velocity": 1.7,
-        "si_zipf_effort": -0.08030662522755892
+        "si_zipf_effort": -0.08030662522755892,
+        "si_zipf_velocity_fixed": 1.7,
+        "si_zipf_effort_fixed": -0.08030662522755892
       }
     },
     {
@@ -24040,7 +24516,9 @@
         "base10_excess": -0.07268061435696933,
         "round_number_excess": -0.016000000000000014,
         "si_zipf_velocity": -0.12637362637362637,
-        "si_zipf_effort": 0.03689633670289317
+        "si_zipf_effort": 0.03689633670289317,
+        "si_zipf_velocity_fixed": -0.12637362637362637,
+        "si_zipf_effort_fixed": 0.03689633670289317
       }
     },
     {
@@ -24117,7 +24595,9 @@
         "base10_excess": -0.0672665522957274,
         "round_number_excess": 0.12380952380952381,
         "si_zipf_velocity": -2,
-        "si_zipf_effort": 0.07261633026515715
+        "si_zipf_effort": 0.07261633026515715,
+        "si_zipf_velocity_fixed": -2,
+        "si_zipf_effort_fixed": 0.07261633026515715
       }
     },
     {
@@ -24144,7 +24624,9 @@
         "base10_excess": -0.06792955741373213,
         "round_number_excess": 0.09752066115702479,
         "si_zipf_velocity": 0.46153846153846156,
-        "si_zipf_effort": -0.0220834444742059
+        "si_zipf_effort": -0.0220834444742059,
+        "si_zipf_velocity_fixed": 0.46153846153846156,
+        "si_zipf_effort_fixed": -0.0220834444742059
       }
     },
     {
@@ -24281,7 +24763,9 @@
         "base10_excess": -0.06355710753944155,
         "round_number_excess": 0.020338983050847442,
         "si_zipf_velocity": -2.5,
-        "si_zipf_effort": 0.04735569677017908
+        "si_zipf_effort": 0.04735569677017908,
+        "si_zipf_velocity_fixed": -2.5,
+        "si_zipf_effort_fixed": 0.04735569677017908
       }
     },
     {
@@ -24308,7 +24792,9 @@
         "base10_excess": -0.05610366419345311,
         "round_number_excess": 0.015384615384615385,
         "si_zipf_velocity": -0.9725274725274725,
-        "si_zipf_effort": 0.044939064454567475
+        "si_zipf_effort": 0.044939064454567475,
+        "si_zipf_velocity_fixed": -0.9725274725274725,
+        "si_zipf_effort_fixed": 0.044939064454567475
       }
     },
     {
@@ -24487,7 +24973,9 @@
         "base10_excess": -0.08611244593846062,
         "round_number_excess": 0.04242424242424242,
         "si_zipf_velocity": -5.6,
-        "si_zipf_effort": 0.1173050936628975
+        "si_zipf_effort": 0.1173050936628975,
+        "si_zipf_velocity_fixed": -5.6,
+        "si_zipf_effort_fixed": 0.1173050936628975
       }
     },
     {
@@ -24514,7 +25002,9 @@
         "base10_excess": -0.08084278062708673,
         "round_number_excess": 0.03423423423423422,
         "si_zipf_velocity": -1.043956043956044,
-        "si_zipf_effort": 0.0527145684406916
+        "si_zipf_effort": 0.0527145684406916,
+        "si_zipf_velocity_fixed": -1.043956043956044,
+        "si_zipf_effort_fixed": 0.0527145684406916
       }
     },
     {
@@ -24651,7 +25141,9 @@
         "base10_excess": -0.03848568902079621,
         "round_number_excess": -0.009523809523809545,
         "si_zipf_velocity": -0.7,
-        "si_zipf_effort": 0.03586590356727112
+        "si_zipf_effort": 0.03586590356727112,
+        "si_zipf_velocity_fixed": -0.7,
+        "si_zipf_effort_fixed": 0.03586590356727112
       }
     },
     {
@@ -24678,7 +25170,9 @@
         "base10_excess": -0.04558105899044904,
         "round_number_excess": -0.018181818181818188,
         "si_zipf_velocity": 0.7142857142857143,
-        "si_zipf_effort": -0.025613838379266514
+        "si_zipf_effort": -0.025613838379266514,
+        "si_zipf_velocity_fixed": 0.7142857142857143,
+        "si_zipf_effort_fixed": -0.025613838379266514
       }
     },
     {
@@ -24741,7 +25235,9 @@
         "base10_excess": -0.004133652986577183,
         "round_number_excess": 0.009523809523809518,
         "si_zipf_velocity": 1.5,
-        "si_zipf_effort": -0.19563970251320748
+        "si_zipf_effort": -0.19563970251320748,
+        "si_zipf_velocity_fixed": 1.5,
+        "si_zipf_effort_fixed": -0.19563970251320748
       }
     },
     {
@@ -24768,7 +25264,9 @@
         "base10_excess": -0.014837305378577817,
         "round_number_excess": -0.011965811965811979,
         "si_zipf_velocity": 0.8461538461538461,
-        "si_zipf_effort": -0.453750348277557
+        "si_zipf_effort": -0.453750348277557,
+        "si_zipf_velocity_fixed": 0.8461538461538461,
+        "si_zipf_effort_fixed": -0.453750348277557
       }
     },
     {
@@ -24905,7 +25403,9 @@
         "base10_excess": -0.06923609183921545,
         "round_number_excess": -0.04810126582278482,
         "si_zipf_velocity": -0.2,
-        "si_zipf_effort": 0.009172383612912375
+        "si_zipf_effort": 0.009172383612912375,
+        "si_zipf_velocity_fixed": -0.2,
+        "si_zipf_effort_fixed": 0.009172383612912375
       }
     },
     {
@@ -24932,7 +25432,9 @@
         "base10_excess": -0.06829296310843097,
         "round_number_excess": -0.07096774193548389,
         "si_zipf_velocity": -0.23626373626373626,
-        "si_zipf_effort": 0.005711975161575256
+        "si_zipf_effort": 0.005711975161575256,
+        "si_zipf_velocity_fixed": -0.23626373626373626,
+        "si_zipf_effort_fixed": 0.005711975161575256
       }
     },
     {
@@ -25212,7 +25714,9 @@
         "base10_excess": -0.021306493088583817,
         "round_number_excess": 0.12380952380952381,
         "si_zipf_velocity": 2,
-        "si_zipf_effort": -0.3093716965725995
+        "si_zipf_effort": -0.3093716965725995,
+        "si_zipf_velocity_fixed": 2,
+        "si_zipf_effort_fixed": -0.3093716965725995
       }
     },
     {
@@ -25239,7 +25743,9 @@
         "base10_excess": -0.02205594588050623,
         "round_number_excess": 0.11304347826086958,
         "si_zipf_velocity": 0.07142857142857142,
-        "si_zipf_effort": -0.16891059026833236
+        "si_zipf_effort": -0.16891059026833236,
+        "si_zipf_velocity_fixed": 0.07142857142857142,
+        "si_zipf_effort_fixed": -0.16891059026833236
       }
     },
     {
@@ -25450,7 +25956,9 @@
         "base10_excess": -0.014587432483294013,
         "round_number_excess": -0.026446280991735543,
         "si_zipf_velocity": 0.4,
-        "si_zipf_effort": -0.08609614681864675
+        "si_zipf_effort": -0.08609614681864675,
+        "si_zipf_velocity_fixed": 0.4,
+        "si_zipf_effort_fixed": -0.08609614681864675
       }
     },
     {
@@ -25477,7 +25985,9 @@
         "base10_excess": -0.010909693601809892,
         "round_number_excess": -0.012030075187969946,
         "si_zipf_velocity": 0.0989010989010989,
-        "si_zipf_effort": 0.09188924215885466
+        "si_zipf_effort": 0.09188924215885466,
+        "si_zipf_velocity_fixed": 0.0989010989010989,
+        "si_zipf_effort_fixed": 0.09188924215885466
       }
     },
     {
@@ -25630,7 +26140,9 @@
         "base10_excess": 0.015032097417249958,
         "round_number_excess": -0.016000000000000014,
         "si_zipf_velocity": -1.25,
-        "si_zipf_effort": 0.040724913653525784
+        "si_zipf_effort": 0.040724913653525784,
+        "si_zipf_velocity_fixed": -1.25,
+        "si_zipf_effort_fixed": 0.040724913653525784
       }
     },
     {
@@ -25869,7 +26381,9 @@
         "base10_excess": -0.027381390536898087,
         "round_number_excess": -0.01428571428571429,
         "si_zipf_velocity": -1.4,
-        "si_zipf_effort": 0.05630423074253463
+        "si_zipf_effort": 0.05630423074253463,
+        "si_zipf_velocity_fixed": -1.4,
+        "si_zipf_effort_fixed": 0.05630423074253463
       }
     },
     {
@@ -25896,7 +26410,9 @@
         "base10_excess": -0.03651550843036348,
         "round_number_excess": -0.03116883116883118,
         "si_zipf_velocity": -0.6428571428571429,
-        "si_zipf_effort": 0.042831431677461965
+        "si_zipf_effort": 0.042831431677461965,
+        "si_zipf_velocity_fixed": -0.6428571428571429,
+        "si_zipf_effort_fixed": 0.042831431677461965
       }
     },
     {
@@ -26023,7 +26539,9 @@
         "base10_excess": -0.028929422638100513,
         "round_number_excess": -0.00530973451327435,
         "si_zipf_velocity": 0.9,
-        "si_zipf_effort": -0.15084975457883087
+        "si_zipf_effort": -0.15084975457883087,
+        "si_zipf_velocity_fixed": 0.9,
+        "si_zipf_effort_fixed": -0.15084975457883087
       }
     },
     {
@@ -26050,7 +26568,9 @@
         "base10_excess": -0.02618431348912184,
         "round_number_excess": 0.00799999999999998,
         "si_zipf_velocity": 0.17032967032967034,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.17032967032967034,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -26530,7 +27050,9 @@
         "base10_excess": -0.15906901260231504,
         "round_number_excess": 0.2444444444444444,
         "si_zipf_velocity": -3.1,
-        "si_zipf_effort": 0.4332567801420483
+        "si_zipf_effort": 0.4332567801420483,
+        "si_zipf_velocity_fixed": -3.1,
+        "si_zipf_effort_fixed": 0.4332567801420483
       }
     },
     {
@@ -26557,7 +27079,9 @@
         "base10_excess": -0.09380876393938853,
         "round_number_excess": -0.026086956521739146,
         "si_zipf_velocity": -0.5934065934065934,
-        "si_zipf_effort": 0.05311880940255589
+        "si_zipf_effort": 0.05311880940255589,
+        "si_zipf_velocity_fixed": -0.5934065934065934,
+        "si_zipf_effort_fixed": 0.05311880940255589
       }
     },
     {
@@ -26819,7 +27343,9 @@
         "base10_excess": 0.01953303584127898,
         "round_number_excess": -0.03495145631067961,
         "si_zipf_velocity": -1.8,
-        "si_zipf_effort": 0.1250072855432126
+        "si_zipf_effort": 0.1250072855432126,
+        "si_zipf_velocity_fixed": -1.8,
+        "si_zipf_effort_fixed": 0.1250072855432126
       }
     },
     {
@@ -26846,7 +27372,9 @@
         "base10_excess": 0.021877815472059164,
         "round_number_excess": 0,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": -0.0018699293681686136
+        "si_zipf_effort": -0.0018699293681686136,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": -0.0018699293681686136
       }
     },
     {
@@ -27017,7 +27545,9 @@
         "base10_excess": -0.1523805836448729,
         "round_number_excess": 0,
         "si_zipf_velocity": -0.6,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.6,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -27044,7 +27574,9 @@
         "base10_excess": -0.12813269414052308,
         "round_number_excess": -0.01967213114754099,
         "si_zipf_velocity": -0.23076923076923078,
-        "si_zipf_effort": 0.019837334981520884
+        "si_zipf_effort": 0.019837334981520884,
+        "si_zipf_velocity_fixed": -0.23076923076923078,
+        "si_zipf_effort_fixed": 0.019837334981520884
       }
     },
     {
@@ -27711,7 +28243,9 @@
         "base10_excess": -0.009039474324071844,
         "round_number_excess": -0.08571428571428573,
         "si_zipf_velocity": 1.8,
-        "si_zipf_effort": -0.9375259363278381
+        "si_zipf_effort": -0.9375259363278381,
+        "si_zipf_velocity_fixed": 1.8,
+        "si_zipf_effort_fixed": -0.9375259363278381
       }
     },
     {
@@ -27738,7 +28272,9 @@
         "base10_excess": -0.020259206051490106,
         "round_number_excess": -0.08429752066115703,
         "si_zipf_velocity": -0.07142857142857142,
-        "si_zipf_effort": -0.12213302159871535
+        "si_zipf_effort": -0.12213302159871535,
+        "si_zipf_velocity_fixed": -0.07142857142857142,
+        "si_zipf_effort_fixed": -0.12213302159871535
       }
     },
     {
@@ -28478,7 +29014,9 @@
         "base10_excess": -0.11374062588432013,
         "round_number_excess": -0.03146067415730339,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0.22806010985931383
+        "si_zipf_effort": 0.22806010985931383,
+        "si_zipf_velocity_fixed": -0.2,
+        "si_zipf_effort_fixed": 0.05634291416354261
       }
     },
     {
@@ -28505,7 +29043,9 @@
         "base10_excess": -0.11808058560822052,
         "round_number_excess": -0.031683168316831684,
         "si_zipf_velocity": -0.03296703296703297,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.13736263736263737,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -28730,7 +29270,9 @@
         "base10_excess": -0.038062956554678506,
         "round_number_excess": 0.021238938053097345,
         "si_zipf_velocity": -0.8,
-        "si_zipf_effort": 0.23905033635873174
+        "si_zipf_effort": 0.23905033635873174,
+        "si_zipf_velocity_fixed": -0.8,
+        "si_zipf_effort_fixed": 0.23905033635873174
       }
     },
     {
@@ -28757,7 +29299,9 @@
         "base10_excess": -0.03318955726951328,
         "round_number_excess": 0.015999999999999986,
         "si_zipf_velocity": -0.14285714285714285,
-        "si_zipf_effort": -0.12954883399824418
+        "si_zipf_effort": -0.12954883399824418,
+        "si_zipf_velocity_fixed": -0.14285714285714285,
+        "si_zipf_effort_fixed": -0.12954883399824418
       }
     },
     {
@@ -29686,7 +30230,9 @@
         "structural_stress": 1,
         "base10_excess": -0.24782048502343032,
         "si_zipf_velocity": 2.9,
-        "si_zipf_effort": -0.7942354938443964
+        "si_zipf_effort": -0.7942354938443964,
+        "si_zipf_velocity_fixed": 2.9,
+        "si_zipf_effort_fixed": -0.7942354938443964
       }
     },
     {
@@ -29712,7 +30258,9 @@
         "structural_stress": 1,
         "base10_excess": -0.13574388681261312,
         "si_zipf_velocity": -0.5879120879120879,
-        "si_zipf_effort": -0.008777162206136465
+        "si_zipf_effort": -0.008777162206136465,
+        "si_zipf_velocity_fixed": -0.5879120879120879,
+        "si_zipf_effort_fixed": -0.008777162206136465
       }
     },
     {
@@ -29977,7 +30525,9 @@
         "structural_stress": 1,
         "base10_excess": -0.1260487007778222,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": -2
+        "si_zipf_effort": -2,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": -2
       }
     },
     {
@@ -30003,7 +30553,9 @@
         "base10_excess": 0.05176273457531694,
         "round_number_excess": 0.2444444444444444,
         "si_zipf_velocity": 0.4230769230769231,
-        "si_zipf_effort": -11
+        "si_zipf_effort": -11,
+        "si_zipf_velocity_fixed": 0.4230769230769231,
+        "si_zipf_effort_fixed": -11
       }
     },
     {
@@ -30418,7 +30970,9 @@
         "base10_excess": -0.08296845932838007,
         "round_number_excess": -0.09361702127659575,
         "si_zipf_velocity": 0.3,
-        "si_zipf_effort": -0.06400233056535017
+        "si_zipf_effort": -0.06400233056535017,
+        "si_zipf_velocity_fixed": 0,
+        "si_zipf_effort_fixed": -0.06641098010810917
       }
     },
     {
@@ -30445,7 +30999,9 @@
         "base10_excess": -0.08308689325045628,
         "round_number_excess": -0.08524590163934427,
         "si_zipf_velocity": 0.01098901098901099,
-        "si_zipf_effort": 0.03228190404896265
+        "si_zipf_effort": 0.03228190404896265,
+        "si_zipf_velocity_fixed": -0.027472527472527472,
+        "si_zipf_effort_fixed": 0.08479076645321165
       }
     },
     {
@@ -31420,7 +31976,9 @@
         "base10_excess": -0.029973910351038857,
         "round_number_excess": 0.044444444444444425,
         "si_zipf_velocity": 1.4,
-        "si_zipf_effort": -2.208728879932926
+        "si_zipf_effort": -2.208728879932926,
+        "si_zipf_velocity_fixed": 1.4,
+        "si_zipf_effort_fixed": -2.208728879932926
       }
     },
     {
@@ -31447,7 +32005,9 @@
         "base10_excess": -0.02654437249556818,
         "round_number_excess": 0.06315789473684208,
         "si_zipf_velocity": 0.07142857142857142,
-        "si_zipf_effort": -0.269548557579563
+        "si_zipf_effort": -0.269548557579563,
+        "si_zipf_velocity_fixed": 0.07142857142857142,
+        "si_zipf_effort_fixed": -0.269548557579563
       }
     },
     {
@@ -31654,7 +32214,9 @@
         "base10_excess": -0.03891164531339766,
         "round_number_excess": -0.09320388349514565,
         "si_zipf_velocity": -1.1,
-        "si_zipf_effort": 0.18938616415908052
+        "si_zipf_effort": 0.18938616415908052,
+        "si_zipf_velocity_fixed": -1.1,
+        "si_zipf_effort_fixed": 0.18938616415908052
       }
     },
     {
@@ -31681,7 +32243,9 @@
         "base10_excess": -0.0483210430508135,
         "round_number_excess": -0.08695652173913045,
         "si_zipf_velocity": -0.17582417582417584,
-        "si_zipf_effort": -0.012310156192250307
+        "si_zipf_effort": -0.012310156192250307,
+        "si_zipf_velocity_fixed": -0.17582417582417584,
+        "si_zipf_effort_fixed": -0.012310156192250307
       }
     },
     {
@@ -31874,7 +32438,9 @@
         "base10_excess": 0.03114372949864773,
         "round_number_excess": 0.05688073394495413,
         "si_zipf_velocity": -2.2,
-        "si_zipf_effort": 0.10062990441170333
+        "si_zipf_effort": 0.10062990441170333,
+        "si_zipf_velocity_fixed": -2.2,
+        "si_zipf_effort_fixed": 0.10062990441170333
       }
     },
     {
@@ -31901,7 +32467,9 @@
         "base10_excess": 0.018603887771071442,
         "round_number_excess": 0.04793388429752066,
         "si_zipf_velocity": -0.5054945054945055,
-        "si_zipf_effort": 0.07034288196997192
+        "si_zipf_effort": 0.07034288196997192,
+        "si_zipf_velocity_fixed": -0.5054945054945055,
+        "si_zipf_effort_fixed": 0.07034288196997192
       }
     },
     {
@@ -33301,7 +33869,9 @@
         "base10_excess": -0.04782325689618944,
         "round_number_excess": -0.06725663716814159,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": -0.3,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -33328,7 +33898,9 @@
         "base10_excess": -0.03541460556328184,
         "round_number_excess": -0.032,
         "si_zipf_velocity": -0.7032967032967034,
-        "si_zipf_effort": 0.04289312308011487
+        "si_zipf_effort": 0.04289312308011487,
+        "si_zipf_velocity_fixed": -0.7032967032967034,
+        "si_zipf_effort_fixed": 0.04289312308011487
       }
     },
     {
@@ -33461,7 +34033,9 @@
         "base10_excess": -0.0870047822156931,
         "round_number_excess": 0.3806451612903226,
         "si_zipf_velocity": 0.5,
-        "si_zipf_effort": 0.10982476991155214
+        "si_zipf_effort": 0.10982476991155214,
+        "si_zipf_velocity_fixed": 0.5,
+        "si_zipf_effort_fixed": 0.10982476991155214
       }
     },
     {
@@ -33488,7 +34062,9 @@
         "base10_excess": -0.024999825907156686,
         "round_number_excess": 0.2186046511627907,
         "si_zipf_velocity": 0.21978021978021978,
-        "si_zipf_effort": -0.1757458187676525
+        "si_zipf_effort": -0.1757458187676525,
+        "si_zipf_velocity_fixed": 0.21978021978021978,
+        "si_zipf_effort_fixed": -0.1757458187676525
       }
     },
     {
@@ -34214,7 +34790,9 @@
         "base10_excess": -0.056812571037105734,
         "round_number_excess": -0.049557522123893805,
         "si_zipf_velocity": 1.4,
-        "si_zipf_effort": -0.6789553950275204
+        "si_zipf_effort": -0.6789553950275204,
+        "si_zipf_velocity_fixed": 1.4,
+        "si_zipf_effort_fixed": -0.6789553950275204
       }
     },
     {
@@ -34241,7 +34819,9 @@
         "base10_excess": -0.05499231689074733,
         "round_number_excess": -0.064,
         "si_zipf_velocity": 0.6043956043956044,
-        "si_zipf_effort": -0.5340869226388152
+        "si_zipf_effort": -0.5340869226388152,
+        "si_zipf_velocity_fixed": 0.6043956043956044,
+        "si_zipf_effort_fixed": -0.5340869226388152
       }
     },
     {
@@ -35174,7 +35754,9 @@
         "base10_excess": -0.02612478243102874,
         "round_number_excess": -0.036206896551724155,
         "si_zipf_velocity": 0.3,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0.3,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -35201,7 +35783,9 @@
         "base10_excess": -0.010714548238999977,
         "round_number_excess": -0.03593750000000001,
         "si_zipf_velocity": 0.24725274725274726,
-        "si_zipf_effort": -0.5085949742525608
+        "si_zipf_effort": -0.5085949742525608,
+        "si_zipf_velocity_fixed": 0.24725274725274726,
+        "si_zipf_effort_fixed": -0.5085949742525608
       }
     },
     {
@@ -35467,7 +36051,9 @@
         "base10_excess": -0.15394556965554612,
         "round_number_excess": 0.0641509433962264,
         "si_zipf_velocity": -1.5,
-        "si_zipf_effort": 0.3331651790790108
+        "si_zipf_effort": 0.3331651790790108,
+        "si_zipf_velocity_fixed": -1.5,
+        "si_zipf_effort_fixed": 0.3331651790790108
       }
     },
     {
@@ -35494,7 +36080,9 @@
         "base10_excess": -0.10851754018275511,
         "round_number_excess": 0.07692307692307693,
         "si_zipf_velocity": -1.0054945054945055,
-        "si_zipf_effort": 0.4202081149738527
+        "si_zipf_effort": 0.4202081149738527,
+        "si_zipf_velocity_fixed": -1.0054945054945055,
+        "si_zipf_effort_fixed": 0.4202081149738527
       }
     },
     {
@@ -37595,7 +38183,9 @@
         "base10_excess": -0.07848052401326003,
         "round_number_excess": 0.052427184466019405,
         "si_zipf_velocity": -0.3,
-        "si_zipf_effort": 0.031590824773034584
+        "si_zipf_effort": 0.031590824773034584,
+        "si_zipf_velocity_fixed": -0.3,
+        "si_zipf_effort_fixed": 0.031590824773034584
       }
     },
     {
@@ -37622,7 +38212,9 @@
         "base10_excess": -0.07738531756869325,
         "round_number_excess": 0.043478260869565216,
         "si_zipf_velocity": -0.2802197802197802,
-        "si_zipf_effort": 0.04627633230139614
+        "si_zipf_effort": 0.04627633230139614,
+        "si_zipf_velocity_fixed": -0.2802197802197802,
+        "si_zipf_effort_fixed": 0.04627633230139614
       }
     },
     {
@@ -39479,7 +40071,9 @@
         "base10_excess": -0.13786777296483355,
         "round_number_excess": 0,
         "si_zipf_velocity": 0.8,
-        "si_zipf_effort": -0.11965808685432773
+        "si_zipf_effort": -0.11965808685432773,
+        "si_zipf_velocity_fixed": 0.8,
+        "si_zipf_effort_fixed": -0.11965808685432773
       }
     },
     {
@@ -39506,7 +40100,9 @@
         "base10_excess": -0.08127209995044765,
         "round_number_excess": -0.01967213114754099,
         "si_zipf_velocity": -0.4340659340659341,
-        "si_zipf_effort": 0.1209975734445741
+        "si_zipf_effort": 0.1209975734445741,
+        "si_zipf_velocity_fixed": -0.4340659340659341,
+        "si_zipf_effort_fixed": 0.1209975734445741
       }
     },
     {
@@ -40282,7 +40878,9 @@
         "base10_excess": -0.05412493188847088,
         "round_number_excess": -0.0918918918918919,
         "si_zipf_velocity": -2.8,
-        "si_zipf_effort": 0.2109491715089735
+        "si_zipf_effort": 0.2109491715089735,
+        "si_zipf_velocity_fixed": -2.8,
+        "si_zipf_effort_fixed": 0.2109491715089735
       }
     },
     {
@@ -40309,7 +40907,9 @@
         "base10_excess": -0.043901283934139335,
         "round_number_excess": -0.1090909090909091,
         "si_zipf_velocity": 0.11538461538461539,
-        "si_zipf_effort": -0.11933179971865816
+        "si_zipf_effort": -0.11933179971865816,
+        "si_zipf_velocity_fixed": 0.11538461538461539,
+        "si_zipf_effort_fixed": -0.11933179971865816
       }
     },
     {
@@ -41707,7 +42307,9 @@
         "base10_excess": -0.06577501708117461,
         "round_number_excess": -0.03486238532110092,
         "si_zipf_velocity": 2.6,
-        "si_zipf_effort": -0.37884977594058844
+        "si_zipf_effort": -0.37884977594058844,
+        "si_zipf_velocity_fixed": 2.6,
+        "si_zipf_effort_fixed": -0.37884977594058844
       }
     },
     {
@@ -41734,7 +42336,9 @@
         "base10_excess": -0.06475293530014567,
         "round_number_excess": -0.05123966942148761,
         "si_zipf_velocity": -0.26373626373626374,
-        "si_zipf_effort": -0.015673357147293263
+        "si_zipf_effort": -0.015673357147293263,
+        "si_zipf_velocity_fixed": -0.26373626373626374,
+        "si_zipf_effort_fixed": -0.015673357147293263
       }
     },
     {
@@ -42478,7 +43082,9 @@
         "base10_excess": -0.05206829449254699,
         "round_number_excess": -0.03185840707964602,
         "si_zipf_velocity": 0,
-        "si_zipf_effort": 0
+        "si_zipf_effort": 0,
+        "si_zipf_velocity_fixed": 0,
+        "si_zipf_effort_fixed": 0
       }
     },
     {
@@ -42505,7 +43111,9 @@
         "base10_excess": -0.04304792608054468,
         "round_number_excess": -0.032,
         "si_zipf_velocity": 0.17032967032967034,
-        "si_zipf_effort": -0.027789344366602558
+        "si_zipf_effort": -0.027789344366602558,
+        "si_zipf_velocity_fixed": 0.17032967032967034,
+        "si_zipf_effort_fixed": -0.027789344366602558
       }
     },
     {
@@ -42610,7 +43218,9 @@
         "base10_excess": -0.12029522446382952,
         "round_number_excess": -0.04444444444444445,
         "si_zipf_velocity": -4.8,
-        "si_zipf_effort": 0.23243790035447107
+        "si_zipf_effort": 0.23243790035447107,
+        "si_zipf_velocity_fixed": -4.8,
+        "si_zipf_effort_fixed": 0.23243790035447107
       }
     },
     {
@@ -42637,7 +43247,9 @@
         "base10_excess": -0.11108749535069676,
         "round_number_excess": -0.04210526315789476,
         "si_zipf_velocity": -0.532967032967033,
-        "si_zipf_effort": 0.04224730811482233
+        "si_zipf_effort": 0.04224730811482233,
+        "si_zipf_velocity_fixed": -0.532967032967033,
+        "si_zipf_effort_fixed": 0.04224730811482233
       }
     },
     {
