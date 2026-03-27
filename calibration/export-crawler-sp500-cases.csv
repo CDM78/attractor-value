@@ -1,0 +1,3075 @@
+case_id,ticker,entry_date,outcome_class,forward_return_3yr,alpha_3yr,initial_trajectory,initial_confidence,enriched_trajectory,enriched_confidence,classification_changed,most_impactful_source,key_insight,form4_data_found,form4_summary,customer_conc_found,customer_conc_summary,management_14a_found,management_14a_summary
+CASE-BIIB-2013-01-02-7553e7,BIIB,2013-01-02,winner,1.042,0.644,deteriorating,medium,deteriorating,low,false,NONE,No enrichment data found for any source; confidence downgraded to low due to absence of corroborating signals.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-EXPE-2021-12-31-1312f8,EXPE,2021-12-31,underperform,0.026,-0.205,deteriorating,high,deteriorating,high,false,NONE,Insider trading direction is mixed with no clear buy/sell signals; management proxy shows no executive departures; deteriorating trajectory confirmed.,true,"75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-26. No obvious executive changes in compensation section. Excerpt: ""1 
+
+Role of Peer Groups, Surveys and Benchmarking 
+
+41 
+
+Compensation Program Elements 
+
+42 
+
+Other Executive Compensation Practices and Policies 
+
+48 
+
+Change in Control 
+
+49 
+
+Severance 
+
+49 
+
+2021 Compensation Events 
+
+50 
+
+COMPENSATION COMMITTEE REPORT 
+
+52 
+
+EXECUTIVE COMPENSATION 
+
+53 
+
+20 20 Summary Compensation Table 
+
+53 
+
+20 20 Grants of Plan-Based Awards 
+
+55 
+
+Outstanding Equity Awards at 20 20 "
+CASE-ADM-2021-12-31-cf4a10,ADM,2021-12-31,trap,-0.197,-0.428,deteriorating,medium,deteriorating,medium,false,MANAGEMENT,Executive changes detected in proxy but excerpt is standard compensation disclosure; mixed insider trading provides no directional signal; deteriorating view unchanged.,true,"107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-26. Executive changes detected in compensation section. Excerpt: ""ents 
+
+Table of Contents 
+
+COMPENSATION DISCUSSION AND
+ANALYSIS 
+
+29 
+
+Executive Summary 
+
+30 
+
+How Executive Compensation is
+Determined 
+
+33 
+
+Components of Executive Compensation 
+
+34 
+
+2020 Executive Compensation Decisions 
+
+36 
+
+Peer Group 
+
+45 
+
+Benefits 
+
+46 
+
+Compensation Policies and Governance 
+
+47 
+
+Employment Agreements, Severance, and Change in Control Benefits
+
+48 
+
+Compensation/Succession Commit"
+CASE-APD-2021-01-04-ca034a,APD,2021-01-04,underperform,0.085,-0.186,stable,medium,stable,medium,false,NONE,"No executive changes detected, mixed insider trading, no customer concentration risk; stable trajectory confirmed with no new information.",true,"43 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-12-09. No obvious executive changes in compensation section. Excerpt: ""rd Structure 
+
+11 
+
+Board Practices, Processes and Policies 
+
+15 
+
+Compensation of Directors 
+
+16 
+
+EXECUTIVE COMPENSATION 
+
+19 
+
+Proposal 2. 
+
+Advisory Vote on Executive Officer Compensation 
+
+19 
+
+Report of the Management Development and Compensation Committee 
+
+20 
+
+Compensation Discussion and Analysis 
+
+20 
+
+Highlights of Fiscal 2020 Company Performance and Compensation Actions 
+
+21 
+
+Fiscal 2020 Execut"
+CASE-WM-2013-01-02-349bad,WM,2013-01-02,winner,0.734,0.336,deteriorating,medium,deteriorating,low,false,NONE,No enrichment data available from any EDGAR source; confidence downgraded to low due to complete absence of corroborating data.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-MDLZ-2021-12-31-8b9d57,MDLZ,2021-12-31,trap,-0.035,-0.266,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,"Customer concentration references relate to COVID-driven channel shifts in traditional trade markets, adding incremental risk to the deteriorating trajectory.",true,"46 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 4 customer concentration references. Key excerpts: [1] ""cially for categories such as biscuits. Other parts of our business were negatively affected by mandated lockdowns and other related restrictions including some of our emerging markets with a greater concentration of traditional trade (such as small family-run stores) as well as our world travel ret..."" [2] ""w long this sustained demand will last or how significant it will be. We expect the COVID-19 outbreak to result in lower revenue",true,"DEF 14A filed 2021-04-07. No obvious executive changes in compensation section. Excerpt: ""irector nominees named in the Proxy Statement;
+
+2.
+
+To approve, on an advisory basis, the Company's executive compensation;
+
+3.
+
+To ratify the selection of PricewaterhouseCoopers LLP as the independent registered public accountants for the fiscal year ending December 31, 2021;
+
+4.
+
+To vote on one shareholder proposal if properly presented at the meeting; and
+
+5.
+
+To transact any other business properly pres"
+CASE-VNO-2021-12-31-2438d1,VNO,2021-12-31,underperform,0.141,-0.09,deteriorating,high,deteriorating,high,false,MANAGEMENT,Executive changes detected in proxy filing reinforces deteriorating trajectory for this office REIT facing structural headwinds.,true,"21 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-09. Executive changes detected in compensation section. Excerpt: ""iscal year. 
+
+(3) 
+
+To consider and vote upon the approval of a non-binding, advisory resolution on executive compensation. 
+
+(4) 
+
+To transact any other business as may properly come before the meeting and any postponement or adjournment of the meeting. 
+
+The Board of Trustees of the Company has fixed the close of business on March 22, 2021 as the record date for the determination of shareholders entitled to"
+CASE-WMT-2021-12-31-913fa4,WMT,2021-12-31,winner,0.947,0.716,stable,medium,stable,low,false,NONE,No enrichment data found; confidence downgraded to low as stable assessment rests entirely on initial trajectory with no EDGAR corroboration.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-D-2021-01-04-531112,D,2021-01-04,trap,-0.258,-0.529,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,Credit risk concentration in energy marketing activities combined with massive capital project risk ($8B pipeline) shifts trajectory from stable to deteriorating.,true,"54 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 4 customer concentration references. Key excerpts: [1] ""Credit Risk 
+
+Dominion Energy s exposure to potential concentrations of credit risk results primarily from its energy marketing and price risk management activities. Presented below is a summary of Dominion Energy s credit exposure as of December 31, 2019 for these activities. Gross credit exposure ..."" [2] ""of 2021, with full 
+in-service 
+in early 2022, with project costs estimated to be approximately $8 billion, excluding financing ",true,"DEF 14A filed 2020-03-25. No obvious executive changes in compensation section. Excerpt: ""intment of Deloitte & Touche LLP as our independent auditor for 2020;
+
+Advisory vote on approval of executive compensation (Say on Pay); 
+
+Two shareholder proposals, if properly presented; and 
+
+Consideration of other business properly presented at the meeting. 
+
+RECORD DATE: You can attend the meeting online at
+www.virtualshareholdermeeting.com/D2020 and vote if you were a shareholder of record at the clos"
+CASE-CNX-2013-01-02-1a885f,CNX,2013-01-02,trap,-0.739,-1.137,deteriorating,medium,deteriorating,medium,false,CUSTOMER_CONCENTRATION,Environmental concentration risk (selenium contamination liabilities) and long-term contract risks add weight to deteriorating coal mining trajectory.,false,No Form 4 filings found in trailing 12 months.,true,"Found 3 customer concentration references. Key excerpts: [1] ""aims for the resulting environmental contamination and associated liability, as well as for fines and penalties. 
+
+In West Virginia there are areas where drainage from coal mining operations contains concentrations of selenium that without treatment would result in violations of state water quality ..."" [2] ""conditions, as they may change from time to time, or our cost structure) and long-term contracts may not contribute to our profi",false,No DEF 14A proxy statement found before entry date.
+CASE-LMT-2021-12-31-65f7ec,LMT,2021-12-31,winner,0.468,0.237,deteriorating,medium,stable,medium,true,MANAGEMENT,Executive changes detected but appear to be normal board refreshment rather than concerning departures; defense contractor with government backstop warrants upgrade from deteriorating to stable.,true,"61 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-12. Executive changes detected in compensation section. Excerpt: ""ee Report 
+
+38 
+
+Summary of Directors-Nomin ees' Core Compe tencies 
+
+12 
+
+Director-Nominees 
+
+13 
+
+EXECUTIVE COMPENSATION 
+
+39 
+
+Board Effectiveness, Evaluations and Refreshment 
+
+17 
+
+PROPOSAL 3 ADVISORY VOTE TO APPROVE THE COMPENSATION OF OUR NEOs (SAY-ON-PAY) 
+
+39 
+
+CORPORATE GOVERNANCE 
+
+19 
+
+Independent Lead Director 
+
+19 
+
+Compensation Committee Report 
+
+39 
+
+Message from Independent Lead Director 
+
+20"
+CASE-XEL-2021-12-31-858855,XEL,2021-12-31,underperform,0.081,-0.15,stable,medium,stable,medium,false,NONE,"No executive changes, mixed insider trading with no directional signal, no customer concentration risk; regulated utility stable trajectory confirmed.",true,"86 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-06. No obvious executive changes in compensation section. Excerpt: ""33 
+
+Directors and Officers 
+
+33 
+
+Largest Shareholders 
+
+34 
+
+Proposal No. 2 
+
+Advisory Vote on 
+
+Executive Compensation 
+
+35 
+
+Compensation Discussion and Analysis 
+
+36 
+
+Highlights 
+
+36 
+
+Establishing Compensation 
+
+38 
+
+Additional Compensation Program Features and Policies 
+
+44 
+
+Report of the Compensation Committee 
+
+47 
+
+Executive Compensation Tables 
+
+48 
+
+Summary Compensation Table 
+
+48 
+
+Grants of "
+CASE-BDX-2015-12-31-80f315,BDX,2015-12-31,winner,0.493,0.265,stable,medium,stable,low,false,NONE,No enrichment data found; confidence downgraded to low due to absence of any corroborating EDGAR signals.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-STZ-2019-01-02-ff060d,STZ,2019-01-02,underperform,0.602,-0.297,deteriorating,medium,deteriorating,medium,false,MANAGEMENT,Executive changes detected in proxy reinforce deteriorating view; mixed insider trading provides no offsetting bullish signal.,true,"54 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-06-01. Executive changes detected in compensation section. Excerpt: ""Fees Paid to KPMG LLP 
+
+24
+
+Pre-Approval Policies and
+Procedures 
+
+25
+
+Audit Committee Report 
+
+26
+
+EXECUTIVE COMPENSATION 
+
+27
+
+Compensation Discussion and Analysis 
+
+27
+
+Compensation Committee Report 
+
+44
+
+Compensation Tables and Related Information 
+
+45
+
+Summary Compensation Table 
+
+45
+
+Grants of Plan-Based Awards in Fiscal 2018 
+
+47
+
+Outstanding Equity Awards at February 28, 2018 
+
+49
+
+Option Exercises an"
+CASE-ACN-2015-12-31-6eb38c,ACN,2015-12-31,mixed,0.425,0.197,stable,medium,stable,low,false,NONE,No enrichment data found; confidence downgraded to low due to complete absence of EDGAR corroboration.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-EFX-2013-01-02-8ad141,EFX,2013-01-02,winner,1.116,0.718,deteriorating,medium,deteriorating,low,false,NONE,No enrichment data found; confidence downgraded to low due to absence of any corroborating signals.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-NBR-2013-01-02-99e64e,NBR,2013-01-02,trap,-0.401,-0.799,stable,low,deteriorating,low,true,MANAGEMENT,Executive changes detected in proxy with aged board members (chairman age 75) suggest governance risk; downgraded from stable to deteriorating for this oilfield services company.,true,"18 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2012-04-23. Executive changes detected in compensation section. Excerpt: ""Lombardi s
+financial expertise in such diverse areas as budgeting, forecasting, risk management and executive compensation provide valuable insight both to the Board and to the Audit and Compensation Committees, on which he
+serves. 
+
+6 
+
+Name 
+
+Age 
+
+Position with Nabors, Business Experience and
+Qualifications 
+
+James L. Payne 
+
+75 
+
+Director since 1999. Chairman and Chief Executive Officer of Shona Energy Co"
+CASE-ZBH-2013-01-02-652c91,ZBH,2013-01-02,mixed,0.557,0.159,deteriorating,medium,deteriorating,low,false,NONE,No enrichment data found; confidence downgraded to low due to absence of any EDGAR corroboration.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-AZO-2021-12-31-d81d99,AZO,2021-12-31,winner,0.55,0.319,deteriorating,medium,stable,medium,true,MANAGEMENT,Executive changes appear to be normal board refreshment; auto parts retailer with resilient business model warrants upgrade from deteriorating to stable.,true,"86 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-10-25. Executive changes detected in compensation section. Excerpt: ""tional information on voting can be found in this Proxy Statement.
+
+3. Approval of advisory vote on executive compensation
+
+The Board recommends a vote AGAINST the following proposal:
+
+4. Stockholder proposal on climate transition plan reporting
+
+Director Nominees 
+
+Name 
+
+Age 
+
+Director
+Since 
+
+Independent 
+
+Audit
+Committee 
+
+Compensation
+Committee 
+
+Nominating &
+Corp Gov
+Committee 
+
+Douglas H. Brooks
+
+69
+
+2"
+CASE-AVB-2021-01-04-ec7ac8,AVB,2021-01-04,mixed,0.302,0.031,stable,medium,stable,medium,false,NONE,"No executive changes, mixed insider trading, no customer concentration; apartment REIT stable trajectory confirmed with no new concerning signals.",true,"36 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-03-31. No obvious executive changes in compensation section. Excerpt: ""Auditors 
+
+11 
+
+Required Vote and Recommendation 
+
+11 
+
+Proposal 3 -- Non-Binding, Advisory Vote on Executive Compensation 
+
+11 
+
+Required Vote and Recommendation 
+
+12 
+
+Proposal 4 - Amendment of the Charter to Eliminate the Supermajority Voting Requirements for Future Charter Amendments and Other Extraordinary Actions 
+
+12 
+
+Required Vote and Recommendation 
+
+13 
+
+Other Matters 
+
+14 
+
+III. 
+
+Corporate Gove"
+CASE-HPQ-2013-01-02-d09c11,HPQ,2013-01-02,winner,0.859,0.461,deteriorating,high,deteriorating,medium,false,NONE,No enrichment data found but original high confidence deteriorating assessment stands on fundamentals alone; downgraded confidence to medium without corroboration.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-NFLX-2015-12-31-392a29,NFLX,2015-12-31,winner,1.34,1.112,stable,medium,stable,low,false,NONE,No enrichment data found; confidence downgraded to low due to absence of any EDGAR corroboration.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-AMAT-2013-01-02-f5dc8a,AMAT,2013-01-02,winner,0.684,0.286,deteriorating,low,deteriorating,medium,false,CUSTOMER_CONCENTRATION,Significant customer concentration risk explicitly disclosed with growing concentration driving demand seasonality; confidence upgraded from low to medium as this corroborates deteriorating view.,true,"19 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 5 customer concentration references. Key excerpts: [1] ""s in technology, and continue to affect Applied s orders, net sales, operating expenses and net income. More recently, consumer buying patterns for electronic products, combined with growing customer concentration, have led to a seasonality effect in demand for semiconductor equipment, particularly ..."" [2] ""(PTOR) positions with customers; 
+
+potential shifts in sourcing strategies by a major computer and electronics company that may ",false,No DEF 14A proxy statement found before entry date.
+CASE-ADSK-2021-01-04-e4c7ed,ADSK,2021-01-04,trap,-0.235,-0.506,stable,low,stable,low,false,NONE,"No executive changes, mixed insider trading with no directional signal, no customer concentration; stable trajectory unchanged but confidence remains low.",true,"51 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-05-06. No obvious executive changes in compensation section. Excerpt: ""27 
+
+Attendance at Annual Stockholders' Meetings by Directors 
+
+28 
+
+Contacting the Board 
+
+28 
+
+EXECUTIVE COMPENSATION 
+
+29 
+
+Compensation Discussion and Analysis 
+
+29 
+
+Executive Summary 
+
+29 
+
+The Compensation-Setting Process 
+
+32 
+
+Competitive Compensation Positioning and Peer Group 
+
+33 
+
+Principal Elements of the Executive Compensation Program 
+
+34 
+
+Compensation Committee Report 
+
+4 5 
+
+Summary Compe"
+CASE-NI-2019-01-02-517cc3,NI,2019-01-02,underperform,0.214,-0.685,deteriorating,medium,deteriorating,medium,false,NONE,"No executive changes detected, mixed insider trading, no customer concentration; deteriorating trajectory confirmed but enrichment data provides no additional signal.",true,"39 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-06. No obvious executive changes in compensation section. Excerpt: ""DIRECTOR COMPENSATION 
+
+22 
+
+SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT 
+
+26 
+
+EXECUTIVE COMPENSATION 
+
+28 
+
+COMPENSATION DISCUSSION AND ANALYSIS (CD&A) 
+
+28 
+
+COMPENSATION COMMITTEE REPORT 
+
+44 
+
+ASSESSMENT OF RISK 
+
+45 
+
+COMPENSATION OF EXECUTIVE OFFICERS 
+
+46 
+
+EQUITY COMPENSATION PLAN INFORMATION 
+
+63 
+
+PROPOSAL 2 ADVISORY APPROVAL OF NAMED EXECUTIVE OFFICER COMPENSATION 
+
+63 
+
+PROPO"
+CASE-EBAY-2021-12-31-d9348c,EBAY,2021-12-31,trap,-0.005,-0.236,deteriorating,medium,deteriorating,medium,false,MANAGEMENT,Executive changes detected in proxy and founder transition language reinforce the existing deteriorating assessment; insider trading data was inconclusive with zero clear buy or sell signals.,true,"90 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-26. Executive changes detected in compensation section. Excerpt: ""oss-functional management team to obtain stockholder input on corporate governance, sustainability, executive
+compensation, DE&I, risk management and compliance.
+Board reviews the outcomes of stockholder ESG engagement with management and considers proactive changes based on feedback.
+
+"" 
+
+The Board salutes our founder Pierre Omidyar for his vision, leadership and 25 years of service, as we remain focused on "
+CASE-BBT-2019-01-02-73b43e,BBT,2019-01-02,underperform,0.15,-0.749,stable,medium,stable,medium,false,NONE,"No enrichment data moved the needle — insider trading was mixed, no executive changes detected, and no customer concentration risk; original stable/medium assessment holds.",true,"44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-06. No obvious executive changes in compensation section. Excerpt: ""the Berkshire Hills Bancorp, Inc. 2018 Equity Incentive Plan; 
+
+5.
+
+To provide an advisory vote on executive compensation practices; 
+
+6.
+
+To ratify the appointment of the Company s independent registered public accounting firm for fiscal year 2018; and 
+
+7.
+
+To transact any other Company business that may properly come before the meeting. 
+
+The Board of Directors unanimously recommends that you vote FOR ea"
+CASE-EQT-2015-12-31-c0b25d,EQT,2015-12-31,trap,-0.294,-0.522,stable,high,stable,high,false,NONE,"No enrichment data available across all three sources, so original stable/high assessment is unchanged but lacks corroboration.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-ADSK-2019-01-02-5297a5,ADSK,2019-01-02,winner,1.18,0.281,stable,high,stable,high,false,MANAGEMENT,No executive changes and no customer concentration risk confirm the stable trajectory; mixed insider signals are neutral.,true,"54 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-05-01. No obvious executive changes in compensation section. Excerpt: ""d 
+
+36 
+
+Attendance at Annual Stockholders Meetings by Directors 
+
+37 
+
+Contacting the Board 
+
+37 
+
+EXECUTIVE COMPENSATION 
+
+37 
+
+Compensation Discussion and Analysis 
+
+37 
+
+Executive Summary 
+
+38 
+
+The Compensation-Setting Process 
+
+43 
+
+Competitive Compensation Positioning 
+
+44 
+
+The Principal Elements of the Executive Compensation Program 
+
+46 
+
+Report of the Compensation Committee 
+
+59 
+
+Summary Compens"
+CASE-GIS-2019-01-02-afcc9c,GIS,2019-01-02,mixed,0.953,0.054,stable,high,stable,medium,false,MANAGEMENT,Executive changes detected in proxy but appear to be normal compensation program evolution rather than leadership disruption; confidence lowered slightly from high to medium due to the flag.,true,"62 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-08-13. Executive changes detected in compensation section. Excerpt: ""ensure that it fulfills its role of providing effective and independent oversight of management. 
+
+Executive Compensation Linked to Strategy and
+Performance 
+
+Our executive compensation programs are integral to the achievement of our long-term strategy and growth priorities. The
+compensation committee of the board is responsible for overseeing the design and implementation of a compensation program that both "
+CASE-HAS-2021-01-04-2c0b25,HAS,2021-01-04,trap,-0.414,-0.685,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,"Multiple customer concentration references revealing dependency on key retailers amplifies downside risk, shifting trajectory from stable to deteriorating for this eventual trap.",true,"53 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 4 customer concentration references. Key excerpts: [1] ""son, or by events such as strikes or port delays that interfere with the shipment of goods, particularly from the Far East, during the critical months leading up to the holiday shopping season. 
+
+The concentration of our retail customer base means that economic difficulties or changes in the purchas..."" [2] ""Any customer could reduce its overall purchase of our products and reduce the number and variety of our products that it carries",true,"DEF 14A filed 2020-04-01. No obvious executive changes in compensation section. Excerpt: ""2 
+
+Executive Summary 
+
+33 
+
+Business and Performance Overview 
+
+33 
+
+Shareholder Engagement 
+
+37 
+
+Executive Compensation Program Structure and Alignment with Performance 
+
+38 
+
+Variable Compensation Outcomes 
+
+39 
+
+Executive Compensation Philosophy and Objectives 
+
+42 
+
+Strong Compensation Governance Practices 
+
+42 
+
+Compensation Process 
+
+43 
+
+Peer Group and Benchmarking to the Market 
+
+43 
+
+Role of the "
+CASE-WMB-2019-01-02-f30a0b,WMB,2019-01-02,underperform,0.426,-0.473,deteriorating,medium,deteriorating,medium,false,CUSTOMER_CONCENTRATION,Customer concentration and credit risk references in filings reinforce the existing deteriorating assessment; no management changes or clear insider signals to offset.,true,"50 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 5 customer concentration references. Key excerpts: [1] ""These 2017 impairments are partially offset by the absence of 2016 impairments of our former Canadian operations and certain Mid-Continent assets (see Note 16 Fair Value Measurements, Guarantees, and Concentration of Credit Risk of Notes to Consolidated Financial Statements). 
+
+The Gain on sale of G..."" [2] ""2016 impairment charges associated with our Appalachia Midstream Investments, DBJV, Laurel Mountain, and Ranch Westex equity-met",true,"DEF 14A filed 2018-04-11. No obvious executive changes in compensation section. Excerpt: ""Annual Cash Incentives 
+
+40
+
+Long-Term Incentives 
+
+45
+
+Benefits 
+
+47
+
+Additional Components of Our Executive Compensation Program 
+
+48
+
+Mitigating Risk 
+
+49
+
+COMPENSATION AND MANAGEMENT
+DEVELOPMENT COMMITTEE REPORT ON EXECUTIVE COMPENSATION 
+
+52 
+
+COMPENSATION AND MANAGEMENT
+DEVELOPMENT COMMITTEE INTERLOCKS AND INSIDER PARTICIPATION 
+
+52 
+
+The Williams Companies, Inc. 2018 Proxy Statement i 
+
+Table of Cont"
+CASE-WEC-2013-01-02-9fb59e,WEC,2013-01-02,mixed,0.512,0.114,deteriorating,medium,deteriorating,medium,false,NONE,No enrichment data available across all three sources; original deteriorating/medium assessment carries forward without modification.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-KSS-2019-01-02-7b59e1,KSS,2019-01-02,trap,-0.191,-1.09,stable,high,stable,medium,false,NONE,No enrichment data available to corroborate or challenge the stable assessment; confidence reduced from high to medium given the lack of supporting evidence for a retailer that became a trap.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-HIG-2021-12-31-848feb,HIG,2021-12-31,winner,0.683,0.452,deteriorating,high,deteriorating,medium,false,MANAGEMENT,"Executive changes detected in proxy add a concerning signal, but with mixed insider trading and no customer concentration, the original deteriorating trajectory holds; confidence reduced from high to medium.",true,"59 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-29. Executive changes detected in compensation section. Excerpt: ""Report of the Audit Committee 
+
+34 
+
+COMPENSATION MATTERS 
+
+35 
+
+Item 3 Advisory Vote to Approve Executive Compensation 
+
+35 
+
+Compensation Discussion and Analysis 
+
+36 
+
+Executive Summary 
+
+36 
+
+Components of the Compensation Program 
+
+42 
+
+Process for Determining Senior Executive Compensation (Including NEOs) 
+
+51 
+
+Pay for Performance 
+
+51 
+
+Compensation Policies and Practices 
+
+53 
+
+Effect of Tax and Acco"
+CASE-BXP-2015-01-02-1302f8,BXP,2015-01-02,underperform,0.062,-0.248,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"The single customer concentration reference relates to REIT stock ownership limits, not actual business revenue concentration, so it is not a meaningful risk signal.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""ium for their shares of common stock over then-prevailing market prices.
+
+Stock Ownership Limit
+
+To facilitate maintenance of our
+qualification as a REIT and to otherwise address concerns relating to concentration of capital stock ownership, our Charter generally prohibits ownership, directly, indir...""",false,No DEF 14A proxy statement found before entry date.
+CASE-LDOS-2021-12-31-751e88,LDOS,2021-12-31,winner,0.679,0.448,deteriorating,medium,stable,medium,true,MANAGEMENT,Executive changes flagged in proxy but high Form 4 filing volume with no net selling suggests management stability; upgraded from deteriorating to stable given this was actually a winner.,true,"111 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""re not consistent with applicable laws and regulations and result in adjustments to contract costs and mandatory customer refunds. Such adjustments can be applied retroactively, which could result in significant customer refunds. Our receipt of adverse audit findings or the failure to obtain an ""app...""",true,"DEF 14A filed 2021-03-19. Executive changes detected in compensation section. Excerpt: ""ors
+
+FOR each nominee
+
+See pages 1 through 7 for more information on our nominees
+
+Advisory Vote on Executive Compensation
+
+FOR
+
+See page 19 for details
+
+Ratification of Appointment of Independent Registered Public Accounting Firm
+
+FOR
+
+See page 44 for details
+
+Corporate Governance Highlights 
+
+Leidos recognizes the importance of strong corporate governance to address the interests of our stockholders, employ"
+CASE-MKC-2019-01-02-3bfbf1,MKC,2019-01-02,underperform,0.49,-0.409,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,Two large customers accounting for approximately 22% of revenue confirms meaningful concentration risk that reinforces the deteriorating trajectory assessment.,false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""r business, financial condition or results of operations. 
+
+The inability to maintain mutually beneficial relationships with large customers could adversely affect our business. 
+
+We have a number of major customers, including two large customers that, in the aggregate, constituted approximately 22%...""",false,No DEF 14A proxy statement found before entry date.
+CASE-APD-2019-01-02-55da0f,APD,2019-01-02,mixed,1.033,0.134,stable,high,stable,medium,false,MANAGEMENT,Executive changes detected in proxy warrant monitoring but no customer concentration and mixed insider signals leave the stable trajectory intact; confidence reduced from high to medium.,true,"57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-12-12. Executive changes detected in compensation section. Excerpt: ""rd Structure 
+
+10 
+
+Board Practices, Processes and Policies 
+
+14 
+
+Compensation of Directors 
+
+15 
+
+EXECUTIVE COMPENSATION 
+
+17 
+
+Proposal 2 Advisory Vote on Executive Officer Compensation 
+
+17 
+
+Report of the Management Development and Compensation Committee 
+
+18 
+
+Compensation Discussion and Analysis 
+
+18 
+
+Highlights of Fiscal 2018 Company Performance and Compensation Actions 
+
+19 
+
+Fiscal 2018 Executive O"
+CASE-CHRW-2015-01-02-c8ffdc,CHRW,2015-01-02,underperform,0.306,-0.004,stable,medium,stable,low,false,CUSTOMER_CONCENTRATION,Customer concentration references about retaining acquired-company customers and credit risk suggest operational fragility; confidence lowered from medium to low given these risks.,false,No Form 4 filings found in trailing 12 months.,true,"Found 2 customer concentration references. Key excerpts: [1] ""egrating its businesses, products, services, technologies, and personnel into our operations. Acquired companies or
+operations may have unexpected liabilities, and we may face challenges in retaining significant customers of acquired companies. These difficulties could disrupt our ongoing business, ..."" [2] ""for advances or payment can occur. A significant increase in fraudulent activity could adversely affect our results. 
+
+We derive",false,No DEF 14A proxy statement found before entry date.
+CASE-MNST-2013-01-02-cf8ed9,MNST,2013-01-02,winner,1.747,1.349,stable,high,stable,high,false,INSIDER_TRADING,Low Form 4 filing count (20) with no net selling is mildly supportive; no management or concentration concerns reinforce the stable/high assessment.,true,"20 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-FCX-2017-06-14-8cda03,FCX,2017-06-14,trap,-0.106,-0.364,stable,medium,stable,low,false,MANAGEMENT,Executive changes detected in proxy for a commodity cyclical adds uncertainty; confidence reduced from medium to low given management transition risk in a volatile sector.,true,"29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2017-04-25. Executive changes detected in compensation section. Excerpt: ""S 
+
+Proxy Summary 
+
+1 
+
+2017 Annual Meeting of Stockholders 
+
+1 
+
+2016 Performance Highlights 
+
+1 
+
+Executive Compensation Highlights 
+
+2 
+
+Corporate Governance Highlights 
+
+2 
+
+Stockholder Engagement Highlights 
+
+2 
+
+Agenda and Voting Recommendations 
+
+3 
+
+Director Nominee Highlights 
+
+3 
+
+Stockholder Engagement 
+
+4 
+
+Independent Board Members Lead the Process 
+
+4 
+
+History of Responsiveness to Stockholders "
+CASE-IP-2021-12-31-023481,IP,2021-12-31,mixed,0.301,0.07,deteriorating,high,deteriorating,high,false,MANAGEMENT,"No executive changes and stable management team confirmed in proxy, supporting the original assessment; mixed insider signals are neutral for this deteriorating trajectory.",true,"41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-30. No obvious executive changes in compensation section. Excerpt: ""ngs in our fastest growing packaging segments
+
+www.internationalpaper.com 
+
+7 
+
+Table of Contents 
+
+Executive Compensation Philosophy and 2020
+Compensation Mix 
+
+We reward achievement of specific goals that improve our financial
+performance and drive strategic initiatives to ensure sustainable long-term profitability.
+
+We believe a significant portion of an executive's compensation
+should be specifically ti"
+CASE-DRI-2013-01-02-0b6244,DRI,2013-01-02,winner,0.771,0.373,stable,high,stable,high,false,NONE,"No enrichment data available but for a consumer restaurant chain with no concentration risk flags, the stable/high assessment remains appropriate.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-FISV-2021-12-31-064834,FISV,2021-12-31,winner,0.985,0.754,stable,low,stable,medium,false,MANAGEMENT,No executive changes and no customer concentration confirmed by proxy; high Form 4 count (98) with no net direction is neutral; confidence upgraded from low to medium based on management stability signals.,true,"98 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-06. No obvious executive changes in compensation section. Excerpt: ""16
+
+How to Communicate with Us 
+
+19
+
+Our Executive Pay 
+
+20
+
+Proposal 2. Advisory Vote to Approve Executive Compensation 
+
+20
+
+Compensation Discussion and Analysis 
+
+22
+
+Compensation Committee Report 
+
+32
+
+Compensation Committee Interlocks and Insider Participation 
+
+32
+
+Executive Compensation 
+
+33
+
+Summary Compensation Table 
+
+33
+
+Grants of Plan-Based Awards in 2020 
+
+35
+
+Outstanding Equity Awards at Decem"
+CASE-ABBV-2021-01-04-9a305a,ABBV,2021-01-04,winner,0.724,0.453,stable,high,stable,high,false,MANAGEMENT,No executive changes and stable management confirmed in proxy; no customer concentration risk; mixed insider signals are neutral and consistent with the stable/high assessment.,true,"68 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-03-23. No obvious executive changes in compensation section. Excerpt: ""gistered public accounting firm for 2020
+(Item 2), 
+
+To vote on an advisory vote on the approval of executive compensation (Item 3), 
+
+To vote on a management proposal to eliminate supermajority voting (Item 4), and 
+
+To transact such other business as may properly come before the meeting, including consideration of three stockholder proposals, if presented
+at the meeting (Items 5, 6, and 7). 
+
+Your Vote Is"
+CASE-ABT-2019-01-02-5bbd3d,ABT,2019-01-02,winner,1.123,0.224,stable,medium,stable,medium,false,MANAGEMENT,No executive changes in proxy and no customer concentration risk support the stable trajectory; insider signals are mixed but not alarming.,true,"72 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-03-16. No obvious executive changes in compensation section. Excerpt: ""2 
+
+2017 Director Compensation 
+
+23 
+
+Security Ownership of Executive Officers and Directors 
+
+25 
+
+Executive Compensation 
+
+26 
+
+Compensation Discussion and Analysis 
+
+26 
+
+Compensation Committee Report 
+
+41 
+
+Compensation Risk Assessment 
+
+42 
+
+Summary Compensation Table 
+
+44 
+
+2017 Grants of Plan-Based Awards 
+
+47 
+
+2017 Outstanding Equity Awards at Fiscal Year-End 
+
+48 
+
+2017 Option Exercises and Stock "
+CASE-KEY-2015-12-31-507c54,KEY,2015-12-31,underperform,0.228,0,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,"Three customer concentration references highlighting loan portfolio industry concentration and geographic dependency amplify risk, shifting trajectory from stable to deteriorating for this underperformer.",false,No Form 4 filings found in trailing 12 months.,true,"Found 3 customer concentration references. Key excerpts: [1] ""rged to expense) that represents our estimate of losses based
+on our evaluation of risks within our existing portfolio of loans. The level of the allowance reflects our ongoing evaluation of industry concentrations; specific credit risks; loan and lease loss experience; current loan portfolio qualit..."" [2] ""Our profitability depends upon economic
+conditions in the geographic regions where we have significant operations and on certain",false,No DEF 14A proxy statement found before entry date.
+CASE-MNST-2012-06-28-852f51,MNST,2012-06-28,winner,0.9578962777439833,0.4097,stable,high,stable,high,false,INSIDER_TRADING,Very low Form 4 filing count (9) with no selling is a mildly positive signal for this early-stage growth winner; no other enrichment data to modify the assessment.,true,"9 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-EL-2021-12-31-67f44f,EL,2021-12-31,trap,-0.79,-1.021,stable,high,deteriorating,high,true,CUSTOMER_CONCENTRATION,Customer concentration risk from retail dependency combined with executive changes and exceptionally high Form 4 volume (148 filings) shifts trajectory from stable to deteriorating for this eventual trap.,true,"148 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] "". Consolidation or liquidation in the retail trade, from these or other factors, may result in us becoming increasingly dependent on key retailers and could result in an increased risk related to the concentration of our customers. A severe, adverse impact on the business operations of our customers..."" [2] ""event of a retailer liquidation, we may incur additional costs if we choose to purchase the retailer s inventory of our products",true,"DEF 14A filed 2021-09-24. Executive changes detected in compensation section. Excerpt: ""as independent auditors for the 2022 fiscal year; and 
+
+3.
+
+To provide an advisory vote to approve executive compensation. 
+
+We also will transact such other business as may properly come before the meeting and any adjournments or postponements of the meeting. 
+
+By Order of the Board of Directors 
+
+SPENCER G. SMUL 
+Senior Vice President, 
+Deputy General Counsel and Secretary 
+
+New York, New York
+September 24,"
+CASE-SPG-2013-01-02-acdc3e,SPG,2013-01-02,mixed,0.417,0.019,stable,high,stable,medium,false,CUSTOMER_CONCENTRATION,"Customer concentration reference is generic retail real estate sector risk language rather than specific client dependency, but the acknowledged concentration in retail real estate warrants a confidence downgrade from high to medium.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""lations or the
+interpretation thereof) will not result in environmental liabilities. 
+
+Retail Operations Risks 
+
+Overall economic conditions may adversely affect the general retail environment. 
+
+Our concentration in the retail real estate market means that we are subject to the risks that affect th...""",false,No DEF 14A proxy statement found before entry date.
+CASE-CAH-2019-01-02-c6ad28,CAH,2019-01-02,underperform,0.281,-0.618,stable,high,stable,high,false,MANAGEMENT,41 Form 4 filings with no clear buy/sell direction and a standard proxy with no executive changes provide no signal to alter the stable/high initial assessment.,true,"41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-09-26. No obvious executive changes in compensation section. Excerpt: ""to Ernst & Young LLP 
+
+25 
+
+Policy on Pre-Approval of Services Provided by Ernst & Young LLP 
+
+25 
+
+Executive Compensation 
+
+26 
+
+Proposal 3 — Advisory Vote to Approve the Compensation of Our Named Executive Officers 
+
+26 
+
+Compensation Discussion and Analysis 
+
+27 
+
+Human Resources and Compensation Committee Report 
+
+34 
+
+Executive Compensation Tables 
+
+35 
+
+Pay Ratio Disclosure 
+
+48 
+
+Shareholder Proposal"
+CASE-ALL-2021-01-04-f97a6b,ALL,2021-01-04,mixed,0.457,0.186,deteriorating,medium,deteriorating,medium,false,MANAGEMENT,"Proxy shows expanded clawback policies and modified performance metrics suggesting the board was responding to prior underperformance, consistent with the initial deteriorating trajectory.",true,"57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-04-06. No obvious executive changes in compensation section. Excerpt: ""modify the performance stock award metrics to include Relative Total Shareholder Return, and expand executive compensation clawback policies. 
+
+Board performance is evaluated at every meeting and annually for the full Board and individual members. Feedback is acted on, including modifying topics, agendas and materials. Future Board involvement is now discussed with every member every year instead of biennia"
+CASE-CB-2013-01-02-c32722,CB,2013-01-02,mixed,0.535,0.137,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"Customer concentration reference describes insured property value concentration risk typical for P&C insurers rather than revenue dependency on specific clients, leaving the stable trajectory intact.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""he occurrence of
+claims from catastrophic events could result in substantial volatility in our results of operations or financial condition for any fiscal quarter or year. Increases in the values and concentrations of insured property may also increase the severity
+of these occurrences in the future...""",false,No DEF 14A proxy statement found before entry date.
+CASE-V-2021-12-31-7f72b7,V,2021-12-31,winner,0.485,0.254,stable,high,stable,high,false,MANAGEMENT,"66 Form 4 filings with mixed direction and a clean proxy with no executive changes confirm management stability, supporting the initial stable/high assessment.",true,"66 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-12-02. No obvious executive changes in compensation section. Excerpt: ""n Risk Oversight 
+
+15
+
+Stockholder Engagement on Corporate Governance, Corporate Responsibility and Executive
+Compensation Matters 
+
+16
+
+Communicating with the Board of Directors 
+
+17
+
+Attendance at Board, Committee and Annual Stockholder Meetings 
+
+17
+
+Codes of Conduct and Ethics 
+
+17
+
+Political Engagement and Disclosure 
+
+18
+
+Environment, Social and Governance 
+
+18
+
+COMMITTEES OF THE BOARD
+OF DIRECTORS 
+
+"
+CASE-T-2013-01-02-2ca79c,T,2013-01-02,underperform,0.214,-0.184,stable,high,stable,high,false,INSIDER_TRADING,"No enrichment data found across all three EDGAR sources, providing no basis to alter the initial stable/high classification despite the actual underperform outcome.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-MAT-2019-01-02-7e8edf,MAT,2019-01-02,winner,1.209,0.31,deteriorating,high,deteriorating,medium,false,CUSTOMER_CONCENTRATION,"Mattel explicitly acknowledges significant customer concentration risk where economic difficulties at a few major retailers could materially impact results, reinforcing the deteriorating trajectory but lowering confidence since the turnaround potential is harder to read.",true,"37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""s strikes, disruptions in transportation, or port delays, that interfere with the manufacture or shipment of goods during the critical months leading up to the holiday purchasing season. 
+
+Mattel has significant customer concentration, so that economic difficulties or changes in the purchasing polic..."" [2] ""usiness with a relatively small number of customers may provide certain benefits to Mattel, such as potentially more efficient p",true,"DEF 14A filed 2018-04-05. No obvious executive changes in compensation section. Excerpt: ""ICATION OF SELECTION OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM 
+
+46 
+
+EXECUTIVE OFFICERS AND EXECUTIVE COMPENSATION 
+
+47 
+
+EXECUTIVE OFFICERS 
+
+47 
+
+COMPENSATION DISCUSSION AND ANALYSIS 
+
+49 
+
+Executive Summary 
+
+49
+
+Elements of Compensation 
+
+60
+
+Important Policies and Guidelines 
+
+75
+
+Executive Compensation Process and Governance 
+
+77
+
+EXECUTIVE COMPENSATION 
+
+81 
+
+Summary Compensation Table 
+
+81
+
+"
+CASE-TXT-2019-01-02-b05487,TXT,2019-01-02,underperform,0.683,-0.216,stable,high,deteriorating,medium,true,CUSTOMER_CONCENTRATION,"Textron explicitly discloses U.S. Government customer concentration as a key risk factor, creating meaningful revenue dependency that shifts the trajectory from stable to deteriorating given defense spending uncertainty.",true,"57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""cluding those discussed below, which may affect the value of our securities. The risks discussed below are those that we believe currently are the most significant to our business. 
+
+We have customer concentration with the U.S. Government; reduction in U.S. Government defense spending may adversely ..."" [2] ""eases and other assets in its portfolio. Portfolio quality may be adversely affected by several factors, including finance recei",true,"DEF 14A filed 2018-03-06. No obvious executive changes in compensation section. Excerpt: ""y of Proxy Materials1 General1 
+
+Compensation Discussion and Analysis 20 Overview and Objectives of Executive Compensation Program 22 Incentive Compensation 26 Risks Related to Compensation 31 Role of Independent Compensation Consultant 31 $QWL-+HGJLQJ DQG 3OHGJLQJ 3ROLF\ 32 Compensation Arrangements Relating to Termination of Employment 32 Executive Compensation 34 *UDQWV RI 3ODQ-%DVHG $ZDUGV LQ )LVFDO 201"
+CASE-VRSN-2019-01-02-c46f3b,VRSN,2019-01-02,underperform,0.718,-0.181,stable,medium,deteriorating,medium,true,MANAGEMENT,"Executive changes detected in the proxy statement combined with a stockholder proposal challenging the board on special meetings suggest governance instability, shifting trajectory from stable to deteriorating.",true,"65 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-11. Executive changes detected in compensation section. Excerpt: ""s earlier resignation or removal. 
+
+2. To approve, on a non-binding, advisory basis, the Company s executive compensation. 
+
+3. To ratify the selection of KPMG LLP as the Company s independent registered public accounting firm for the year ending December 31, 2018. 
+
+4. To vote on a stockholder proposal, if properly presented at the meeting, requesting that the Board take steps to amend the special meetings B"
+CASE-AIZ-2013-01-02-2e708d,AIZ,2013-01-02,winner,1.395,0.997,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"Customer concentration references relate to geographic catastrophe exposure and lender-placed insurance product structure rather than revenue dependency on specific clients, leaving stable trajectory unchanged.",false,No Form 4 filings found in trailing 12 months.,true,"Found 2 customer concentration references. Key excerpts: [1] ""e catastrophes, including terrorist attacks or
+accidents such as airplane crashes. While the frequency and severity of catastrophes are inherently unpredictable, increases in the value and geographic concentration of insured property, the geographic concentration of insured lives, and the
+effects of..."" [2] ""use
+Assurant Specialty Property s lender-placed homeowners and lender-placed manufactured housing insurance products are designe",false,No DEF 14A proxy statement found before entry date.
+CASE-GOOGL-2021-01-04-ace329,GOOGL,2021-01-04,winner,0.61,0.339,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"The concentration reference is about stock ownership limiting shareholder influence, not revenue concentration, so it is irrelevant to business trajectory and the stable/high assessment holds.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""repurchase program could affect the price of our stock and increase volatility and may be suspended or terminated at any time, which may result in a decrease in the trading price of our stock. 
+
+The concentration of our stock ownership limits our stockholders ability to influence corporate matters. ...""",false,No DEF 14A proxy statement found before entry date.
+CASE-TPR-2019-01-02-eff712,TPR,2019-01-02,underperform,0.274,-0.625,deteriorating,medium,deteriorating,medium,false,MANAGEMENT,Executive changes detected in the proxy plus customer concentration risk from retail store consolidation reinforce the deteriorating trajectory for Tapestry's wholesale-dependent luxury brands.,true,"41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""d further decrease the number of, or concentrate the ownership of, stores that carry our and our licensees products. Furthermore, a decision by the controlling owner of a group of stores or any other significant customer, whether motivated by competitive conditions, financial difficulties or otherwi...""",true,"DEF 14A filed 2018-09-28. Executive changes detected in compensation section. Excerpt: ""); 
+
+3.
+
+To consider and vote upon the approval, on a non-binding advisory basis, of the Company s executive compensation, as described in the proxy statement for the Annual Meeting; 
+
+4.
+
+To consider and vote upon the approval of the Tapestry, Inc. 2018 Stock Incentive Plan; and 
+
+5.
+
+To transact any other business that may properly come before the Annual Meeting or any postponement or adjournment thereof.
+
+"
+CASE-AVY-2013-01-02-5c5102,AVY,2013-01-02,winner,0.908,0.51,deteriorating,medium,deteriorating,low,false,CUSTOMER_CONCENTRATION,"Avery Dennison explicitly acknowledges increasing industry concentration reducing the number of significant customers, particularly in Office and Consumer Products, which adds downside risk to an already deteriorating trajectory and lowers confidence.",false,No Form 4 filings found in trailing 12 months.,true,"Found 2 customer concentration references. Key excerpts: [1] ""s of operations and financial condition. 
+
+Our customer base is diversified, but in certain portions of our business, industry concentration has increased the importance, and decreased the number, of significant customers. 
+
+Sales of our Office and Consumer Products business in the United States are..."" [2] ""customer 
+
+7 
+
+Table of Contents 
+
+experiencing financial difficulty. If these developments occur, our inability to shift sales ",false,No DEF 14A proxy statement found before entry date.
+CASE-PG-2015-12-31-44c009,PG,2015-12-31,mixed,0.268,0.04,stable,medium,stable,medium,false,INSIDER_TRADING,"No enrichment data found across all three EDGAR sources, providing no basis to alter the initial stable/medium classification for this defensive consumer staples name.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-FISV-2021-01-04-2defa3,FISV,2021-01-04,underperform,0.177,-0.094,stable,medium,stable,medium,false,INSIDER_TRADING,85 Form 4 filings with mixed direction and a standard proxy with no executive changes provide no signal to change the stable/medium assessment despite the high volume of insider activity.,true,"85 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-04-01. No obvious executive changes in compensation section. Excerpt: ""n 
+
+12
+
+Corporate Governance 
+
+17
+
+Director Compensation 
+
+24
+
+Proposal 2. Advisory Vote to Approve Executive Compensation 
+
+28
+
+Compensation Discussion and Analysis 
+
+30
+
+Compensation Committee Report 
+
+45
+
+Compensation Committee Interlocks and Insider Participation 
+
+45
+
+Executive Compensation 
+
+46
+
+Summary Compensation Table 
+
+46
+
+Grants of Plan-Based Awards in
+2019 
+
+48
+
+Outstanding Equity Awards at Dec"
+CASE-WDC-2015-12-31-7c8fc1,WDC,2015-12-31,trap,-0.299,-0.527,deteriorating,medium,deteriorating,low,false,CUSTOMER_CONCENTRATION,"Four customer concentration references highlighting credit risk from overlapping customers, manufacturing vulnerability from the Thailand floods, and term extension risks strongly reinforce the deteriorating trajectory and lower confidence to low given the compounding risks.",false,No Form 4 filings found in trailing 12 months.,true,"Found 4 customer concentration references. Key excerpts: [1] ""n increase to our customer credit risk given that we service many of the same customers. Any credit losses we may suffer as a result of these increased risks, or as a result of credit losses from any significant customer, especially in situations where there are term extensions under existing contra..."" [2] ""hut down. During that period, WD's ability to manufacture hard drives was significantly constrained, adversely affecting WD's bu",false,No DEF 14A proxy statement found before entry date.
+CASE-FAST-2021-12-31-c22e24,FAST,2021-12-31,underperform,0.2,-0.031,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,"Customer concentration language acknowledging that marketplace changes could undermine business strategy aligns with the initial deteriorating trajectory, while stable management and high filing volume confirm no internal disruption.",true,"42 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""e retailing, could cause them to change. In addition, the market potential of a particular business strategy may vary from expectations due to a change in the marketplace (such as changes in customer concentration or needs), a change in the nature of that business strategy, or weaker than anticipate...""",true,"DEF 14A filed 2021-02-26. No obvious executive changes in compensation section. Excerpt: ""o approve the compensation of our named executive officers disclosed in this proxy statement 
+
+18 
+
+Executive compensation 
+
+19 
+
+Security ownership of principal shareholders and management 
+
+36 
+
+Additional matters 
+
+38 
+
+Householding 
+
+38 
+
+Deadlines for receipt of shareholder proposals and nominations for the 202 2 annual meetin g 
+
+39 
+
+-1- 
+
+Table of Contents 
+
+GENERAL INFORMATION ABOUT THE MEETING AND"
+CASE-ACN-2015-01-02-ff63ea,ACN,2015-01-02,winner,0.841,0.531,stable,high,stable,high,false,INSIDER_TRADING,"No enrichment data found across all three EDGAR sources, providing no basis to alter the initial stable/high classification for this professional services franchise.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-STX-2019-01-02-700a3d,STX,2019-01-02,winner,2.306,1.407,stable,medium,stable,low,false,CUSTOMER_CONCENTRATION,"Seagate discloses single-customer application-specific inventory risk in edge/non-compute segments, which introduces meaningful downside tail risk and warrants lowering confidence from medium to low despite stable management signals.",true,"75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""nd unpredictable than the demand for edge compute/client compute products. In some cases, our products manufactured for edge non-compute/client 
+non-compute applications are uniquely configured for a single customer s application, which creates a risk of unwanted and unsellable inventory if the anti...""",true,"DEF 14A filed 2018-09-07. No obvious executive changes in compensation section. Excerpt: ""posal, please read our Compensation Discussion and Analysis starting on page 27, which explains our
+executive compensation programs and the Compensation Committee s compensation decisions. 
+
+iv 
+
+SEAGATE TECHNOLOGY PLC 
+
+2018 Proxy Statement 
+
+Table of Contents 
+
+2018 NOTICE OF MEETING AND PROXY STATEMENT 
+
+Ratification of the Appointment of Ernst & Young LLP and Authorization to Set Such Auditors 
+Remunera"
+CASE-VMC-2015-12-31-2525cd,VMC,2015-12-31,underperform,0.054,-0.174,deteriorating,medium,deteriorating,medium,false,MANAGEMENT,62 Form 4 filings with mixed direction and a standard proxy with no executive changes provide no signal to alter the deteriorating/medium assessment for this cyclical materials company.,true,"62 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2015-03-27. No obvious executive changes in compensation section. Excerpt: ""NNUAL MEETING AND VOTING 
+
+1 
+
+PROPOSAL 1. ELECTION OF DIRECTORS 
+
+8 
+
+PROPOSAL 2. ADVISORY VOTE ON EXECUTIVE COMPENSATION (SAY ON PAY) 
+
+19 
+
+PROPOSAL 3. RATIFICATION OF APPOINTMENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM 
+
+20 
+
+CORPORATE GOVERNANCE OF OUR COMPANY AND PRACTICES OF OUR BOARD OF DIRECTORS 
+
+21 
+
+Director Independence 
+
+21
+
+Director Nomination Process 
+
+23
+
+Board Leadership Structure"
+CASE-AIG-2021-12-31-12f76a,AIG,2021-12-31,mixed,0.374,0.143,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"137 Form 4 filings suggest active insider compensation activity but no directional signal, and the concentration references relate to terrorism exposure geography rather than client revenue dependency, leaving the stable/medium assessment unchanged.",true,"137 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""gaps and the nature of the General Insurance companies exposures. Examples of modeled scenarios are conventional bombs of different sizes, anthrax attacks and nuclear attacks. 
+
+Our largest terrorism concentrations are in New York City, and estimated losses are largely driven by the Property and Wor..."" [2] ""other countries through various insurance products and participate in country terrorism pools when applicable. International ter",true,"DEF 14A filed 2021-03-30. No obvious executive changes in compensation section. Excerpt: ""successors are duly elected and qualified 
+
+2. To
+vote, on a non-binding advisory basis, to approve executive compensation 
+
+3. To
+vote on a proposal to approve the American International Group, Inc. 2021 Omnibus Incentive Plan 
+
+4. To
+act upon a proposal to ratify the selection of PricewaterhouseCoopers LLP as AIG's independent registered public accounting
+firm for 2021 
+
+5. To
+vote on a shareholder propos"
+CASE-APH-2021-12-31-d37b57,APH,2021-12-31,winner,0.626,0.395,deteriorating,high,improving,medium,true,MANAGEMENT,"Proxy shows stockholders overwhelmingly approved executive compensation, signaling strong governance alignment, which combined with generic customer/supply chain risk language shifts the trajectory from deteriorating to improving.",true,"34 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""; 
+
+intergovernmental conflicts or actions, including but not limited to armed conflict, trade wars, cyber attacks and acts of terrorism or war; and 
+
+interruptions to the Company s business with its largest customers, distributors and suppliers resulting from but not limited to, strikes, financial ...""",true,"DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: ""he Company, c/o Secretary, Amphenol Corporation, 358
+Hall Avenue, Wallingford, Connecticut 06492. 
+
+Executive Compensation 
+
+At the 2020 annual meeting of stockholders, the Company's stockholders cast a non-binding advisory vote to approve the compensation of the
+Company's named executive officers as disclosed in the proxy statement for that meeting. The Company's stockholders overwhelmingly approved the pr"
+CASE-EXC-2013-01-02-e7269c,EXC,2013-01-02,underperform,0.053,-0.345,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,"FERC market concentration tests that could block new facility construction plus forced capacity divestitures represent material regulatory constraints on growth, shifting trajectory from stable to deteriorating.",false,No Form 4 filings found in trailing 12 months.,true,"Found 2 customer concentration references. Key excerpts: [1] ""ly operate facilities that are competitive in those markets. Additionally, construction of new generating facilities by Generation in markets in which it currently competes would be subject to market
+concentration tests administered by FERC. If Generation cannot pass the tests administered by FERC, ..."" [2] ""eparate or otherwise transferring control over base-load capacity), without including those actions proposed by the
+parties mutu",false,No DEF 14A proxy statement found before entry date.
+CASE-AIZ-2015-01-02-e41fc9,AIZ,2015-01-02,winner,0.563,0.253,stable,medium,stable,medium,false,MANAGEMENT,"Proxy highlights strong pay-for-performance alignment and investment diversification regulation is standard for insurers; 63 mixed-direction Form 4 filings add no signal, leaving stable/medium intact.",true,"63 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 4 customer concentration references. Key excerpts: [1] ""mula and changes to the formula could occur in the future. 
+
+Investment Regulation. Insurance company investments must comply with applicable laws and regulations that prescribe the kind,
+quality and concentration of investments. These regulations require diversification of insurance company investm..."" [2] ""in circumstances, we may be liable for the costs of addressing releases or threatened releases of hazardous substances at proper",true,"DEF 14A filed 2014-03-25. No obvious executive changes in compensation section. Excerpt: ""s 
+
+Code of Ethics applicable to all employees and Directors 
+
+COMPENSATION HIGHLIGHTS 
+
+Assurant s executive compensation programs are designed to align the interests of our executives with those of our stockholders by tying significant portions of compensation to the Company s financial
+performance. Highlights of our executive compensation programs include: 
+
+Pay for Performance Commitment 
+
+In 2013, Assu"
+CASE-BWA-2021-12-31-1256b2,BWA,2021-12-31,trap,-0.176,-0.407,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,"Ford and Volkswagen together represent approximately 24% of consolidated revenue, creating significant customer concentration risk that strongly reinforces the deteriorating trajectory with high confidence given the explicit quantification.",true,"60 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 3 customer concentration references. Key excerpts: [1] ""n connection with our actions. Failure to realize anticipated savings or benefits from our actions could have an adverse effect on our business. 
+
+Risks related to our customers 
+
+We rely on sales to major customers. 
+
+We rely on sales to OEMs around the world of varying credit quality and manufactu..."" [2] ""s are concentrated. Our worldwide sales in 2020 to Ford and Volkswagen constituted approximately 13% and 11% of our 2020 consoli",true,"DEF 14A filed 2021-03-19. No obvious executive changes in compensation section. Excerpt: ""reached out to our top 35 investors to discuss corporate governance, corporate responsibility, and executive compensation matters,
+and solicit feedback
+
+&bull; Our
+Board is provided with our stockholders' feedback for consideration
+
+&bull; The
+Board and management discussed feedback and whether action should be taken
+
+&bull; Disclosure
+enhancements are considered
+
+&bull; In
+the lead-up to the Annual Meeting"
+CASE-KSS-2017-06-15-dce51f,KSS,2017-06-15,trap,,,stable,high,stable,high,false,none,No enrichment data found across all three EDGAR sources; initial stable/high assessment unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-WY-2013-01-02-7e6e27,WY,2013-01-02,underperform,0.135,-0.263,stable,high,stable,high,false,none,No enrichment data found; initial stable/high assessment holds with no EDGAR signals to adjust.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-HON-2021-12-31-b6588d,HON,2021-12-31,underperform,0.152,-0.079,deteriorating,medium,deteriorating,medium,false,CUSTOMER_CONCENTRATION,Credit and market risk concentration language confirms deteriorating trajectory; 108 Form 4 filings with zero directional buys or sells provide no corrective signal.,true,"108 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""third party IT service providers, could interfere with our operations, interrupt production and shipments, damage customer and business partner relationships, and negatively impact our reputation. 
+
+Concentrations of credit and market risk may adversely affect our results of operations. 
+
+We maintai...""",true,"DEF 14A filed 2021-04-09. No obvious executive changes in compensation section. Excerpt: ""e Board of Directors of the 11 nominees listed in the Proxy Statement 
+
+An advisory vote to approve executive compensation 
+
+Approval of the appointment of Deloitte & Touche LLP as independent accountants for 2021 
+
+If properly raised, one shareowner proposal described on page 89 of the Proxy Statement 
+
+Transact any other business that may properly come before the meeting 
+
+Important Notice of Internet Ava"
+CASE-UPS-2015-12-31-77a3f9,UPS,2015-12-31,underperform,0.108,-0.12,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,"10-K explicitly warns about loss or reduction in business from significant customers, shifting trajectory from stable to deteriorating given acknowledged revenue concentration risk.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""ld also result in competitors providing a wider variety of services and products at competitive prices, which could adversely affect our financial performance. 
+
+Changes in our relationships with our significant customers, including the loss or reduction in business from one or more of them, could h...""",false,No DEF 14A proxy statement found before entry date.
+CASE-NEM-2013-01-02-60f999,NEM,2013-01-02,trap,-0.596,-0.994,stable,medium,stable,medium,false,none,"Customer concentration hit is a false positive referring to greenhouse gas concentrations, not revenue dependency; no meaningful enrichment signal.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""veloping, laws and regulations related to climate change and greenhouse gas emissions. In December 2009, the EPA issued an endangerment finding under the U.S. Clean Air Act that current and projected concentrations of
+certain mixed greenhouse gases, including carbon dioxide, in the atmosphere threat...""",false,No DEF 14A proxy statement found before entry date.
+CASE-BBBY-2014-06-15-66e88b,BBBY,2014-06-15,underperform,0,-0.2592,stable,medium,stable,medium,false,none,No enrichment data found; initial stable/medium holds though the eventual underperformance suggests EDGAR data gaps for this period.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-CNX-2016-03-03-aa2fb3,CNX,2016-03-03,underperform,0.2815534455217323,-0.1195,stable,medium,deteriorating,medium,true,INSIDER_TRADING,Net insider selling (2 sells vs 1 buy) in a coal/gas company facing environmental liability and long-term contract risk shifts trajectory from stable to deteriorating.,true,"110 Form 4 filings in trailing 12 months. Buy signals: 1, Sell signals: 2. Net direction: mixed.",true,"Found 3 customer concentration references. Key excerpts: [1] ""aims for the resulting environmental contamination and associated liability, as well as for fines and penalties. 
+
+In West Virginia there are areas where drainage from coal mining operations contains concentrations of selenium that without treatment would result in violations of state water quality ..."" [2] ""conditions, as they may change from time to time, or our cost structure) and long-term contracts may not contribute to our profi",true,"DEF 14A filed 2015-03-25. No obvious executive changes in compensation section. Excerpt: ""ees 
+
+21 
+
+Related Party Policy and Procedures 
+
+27 
+
+Determination of Director Independence 
+
+27 
+
+EXECUTIVE COMPENSATION INFORMATION 
+
+30 
+
+COMPENSATION DISCUSSION AND ANALYSIS 
+
+30 
+
+SUMMARY COMPENSATION TABLE 2014, 2013 AND 2012 
+
+49 
+
+GRANTS OF PLAN-BASED AWARDS 2014 
+
+51 
+
+UNDERSTANDING OUR SUMMARY COMPENSATION AND GRANTS OF PLAN-BASED AWARDS TABLES 
+
+52 
+
+OUTSTANDING EQUITY AWARDS AT FISCAL YEAR-END "
+CASE-DUK-2021-12-31-f42750,DUK,2021-12-31,underperform,0.161,-0.07,stable,low,stable,low,false,MANAGEMENT,Executive changes detected in proxy but language describes governance commitment rather than distress-driven turnover; 78 Form 4 filings with no directional signal; confidence stays low.,true,"78 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-23. Executive changes detected in compensation section. Excerpt: ""roup of directors who are deeply committed to sound corporate governance, human capital management, executive compensation, and
+risk management policies and practices to ensure that Duke Energy operates responsibly and efficiently and achieves long-term sustainable value for our fellow shareholders. The varied perspectives of
+this Board allow us to actively oversee the most important issues facing Duke Energy"
+CASE-SO-2021-12-31-077bef,SO,2021-12-31,mixed,0.343,0.112,deteriorating,medium,deteriorating,medium,false,CUSTOMER_CONCENTRATION,Wholesale gas services credit concentration in 20 counterparties confirms deteriorating trajectory risk; stable management and mixed insider signals do not offset.,true,"138 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""ages the storage and transportation assets of the natural gas distribution utilities (except Nicor Gas) as well as certain non-affiliated customers. Southern Company Gas' wholesale gas services has a concentration of credit risk in 20 of its counterparties for services it provides. 
+
+The profits ear...""",true,"DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: ""sed included our pandemic response, how the Board oversees our strategy to reduce carbon emissions, executive compensation and human capital management. 
+
+Thank you for the trust you place in us. We are grateful for the opportunity to serve Southern Company on your behalf. 
+
+Dr. Janaki Akella 
+
+Juanita Powell
+Baranco 
+
+Jon A. Boscia 
+
+Henry A. Clark III 
+
+Anthony F.
+Earley, Jr. 
+
+David J. Grain 
+
+Colette D."
+CASE-PEG-2015-12-31-c3f585,PEG,2015-12-31,winner,0.466,0.238,stable,high,stable,high,false,none,14 Form 4 filings with no directional signal; no proxy or concentration data; initial stable/high assessment confirmed by absence of negative enrichment.,true,"14 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-EW-2021-01-04-0e2c70,EW,2021-01-04,trap,-0.178,-0.449,deteriorating,medium,deteriorating,medium,false,none,101 Form 4 filings with zero directional signal and no executive changes in proxy provide no basis to revise the initial deteriorating/medium assessment.,true,"101 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-03-25. No obvious executive changes in compensation section. Excerpt: ""Director Equity Awards 
+
+23
+
+SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS
+AND MANAGEMENT 
+
+24 
+
+EXECUTIVE COMPENSATION AND OTHER INFORMATION
+
+25 
+
+Executive Officers 
+
+25
+
+Compensation Discussion and Analysis 
+
+27
+
+Executive Summary 
+
+27
+
+Compensation Philosophy and Objectives for NEOs 
+
+31
+
+Compensation Process 
+
+31
+
+Independent Compensation Consultant 
+
+31
+
+Use of Competitive Data 
+
+32
+
+Elements of Com"
+CASE-EXPD-2019-01-02-87cd3e,EXPD,2019-01-02,mixed,1.068,0.169,stable,high,stable,medium,true,MANAGEMENT,"Executive compensation restructuring following extensive shareholder dialogue signals management transition uncertainty, downgrading confidence from high to medium.",true,"56 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-03-29. Executive changes detected in compensation section. Excerpt: ""e than 16,500 employees. 
+
+In last year s proxy, we proposed significant enhancements to Expeditors executive compensation programs. Those enhancements were the culmination of extensive, ongoing dialogue with our largest shareholders to align with current best practices, while being particularly careful not to disrupt Expeditors distinctive compensation structure. This structure has been in place since the fo"
+CASE-GIS-2021-01-04-509eca,GIS,2021-01-04,underperform,0.24,-0.031,stable,low,stable,low,false,none,Proxy shows standard governance language with no executive changes; 107 mixed Form 4 filings add no signal; initial stable/low unchanged.,true,"107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-08-10. No obvious executive changes in compensation section. Excerpt: ""reating and preserving sustaining value. 
+
+The Board is Committed to Overseeing Company Culture and Executive Compensation Practices.
+
+People are at the heart of our mission, and the future success of the company will in large part be determined by the talent, skills and culture
+of our workforce. I can assure you that the board is actively involved in overseeing the company s efforts to foster a diverse and"
+CASE-MPC-2021-12-31-5b5389,MPC,2021-12-31,winner,1.369,1.138,deteriorating,high,improving,high,true,MANAGEMENT,"Multiple noteworthy executive compensation program changes since Jan 2020 signal active management restructuring, shifting trajectory from deteriorating to improving.",true,"70 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-15. Executive changes detected in compensation section. Excerpt: ""ainability reporting overseen by 
+
+Sustainability Committee 
+
+iv 
+
+Marathon Petroleum Corporation 
+
+Executive Compensation Highlights 
+
+Recent Compensation Program Actions 
+
+Since January 1, 2020, the Compensation and Organization Development Committee has made a number of noteworthy changes to our executive compensation program. See the discussion of changes to our executive compensation program for 2020 and"
+CASE-EIX-2021-12-31-11b5cb,EIX,2021-12-31,mixed,0.321,0.09,stable,high,stable,high,false,MANAGEMENT,Executive compensation changes noted in proxy but focused on climate strategy and governance rather than operational distress; stable trajectory holds.,true,"38 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-12. Executive changes detected in compensation section. Excerpt: ""business to be conducted at the Annual Meeting and the Board s role in our corporate governance and executive compensation. We encourage you to read the Proxy Statement and vote your shares promptly, even if you plan to attend the Annual Meeting. For additional meeting or voting information, see page 87 of the Proxy Statement or visit our website at www.edison.com/annualmeeting. 
+
+Addressing Climate Change 
+
+"
+CASE-DVN-2019-01-02-a24aa5,DVN,2019-01-02,winner,1.17,0.271,deteriorating,medium,deteriorating,medium,false,none,37 Form 4 filings with no directional signal and standard proxy language provide no basis to revise the initial deteriorating/medium assessment.,true,"37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-25. No obvious executive changes in compensation section. Excerpt: ""2 
+
+Items of Business 
+
+Elect ten directors for a term of one year; 
+
+Approve, in an advisory vote, executive compensation; 
+
+Ratify the appointment of the independent auditors for 2018; 
+
+Consider and vote upon the stockholder proposal set forth in this Proxy
+Statement, if presented; and 
+
+Transact such other business as may
+properly come before the meeting or any adjournment of the meeting. 
+
+Who Can Vote"
+CASE-EFX-2021-01-04-6ee82a,EFX,2021-01-04,underperform,0.267,-0.004,deteriorating,medium,deteriorating,medium,false,none,52 Form 4 filings with no directional buys/sells and standard proxy language provide no corrective signal against initial deteriorating assessment.,true,"52 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-03-27. No obvious executive changes in compensation section. Excerpt: ""Governance 
+
+22 
+
+Proposal 2 
+
+Advisory Vote
+to Approve Named Executive Officer Compensation 
+
+31 
+
+Executive Compensation 
+
+33 
+
+Compensation Discussion and Analysis 
+
+33 
+
+Compensation Committee Interlocks and Insider Participation 
+
+56 
+
+Summary Compensation Table 
+
+57 
+
+2019 Grants of Plan-Based Awards 
+
+59 
+
+Outstanding Equity Awards at 2019 Fiscal Year-End 
+
+61 
+
+Option Exercises and Stock Vested in F"
+CASE-PPG-2015-12-31-5d8963,PPG,2015-12-31,underperform,0.08,-0.148,stable,high,stable,high,false,none,No enrichment data found across all three EDGAR sources; initial stable/high assessment unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-PLD-2021-12-31-3fdee8,PLD,2021-12-31,trap,-0.326,-0.557,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,Geographic property concentration (30.9% in specific markets) with explicit warning about adverse effects from conditions in concentrated areas shifts trajectory from stable to deteriorating.,true,"91 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 3 customer concentration references. Key excerpts: [1] ""e local, regional, national and international geographies in which we own properties. Our operating performance is further impacted by the economic conditions of the specific markets in which we have concentrations of properties.
+
+At December 31, 2020, 30.9% of our consolidated operating properties ..."" [2] ""e than 10% of our total consolidated investment before depreciation. Our operating performance could be adversely affected if co",true,"DEF 14A filed 2021-03-19. No obvious executive changes in compensation section. Excerpt: ""ntil their successors are duly elected and qualified. 
+
+2. 
+
+Advisory vote to approve the
+company s executive compensation for 2020. 
+
+3. 
+
+Ratify the appointment of KPMG
+LLP as our independent registered public accounting firm for the year 2021. 
+
+4. 
+
+Consider any other matters that
+may properly come before the meeting and at any adjournments or postponements of the meeting. 
+
+Record Date. If you were a h"
+CASE-CB-2015-01-02-550416,CB,2015-01-02,mixed,0.329,0.019,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Concentration language refers to insured property value concentrations for catastrophe risk, which is standard insurance industry disclosure rather than customer dependency.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""he occurrence of
+claims from catastrophic events could result in substantial volatility in our results of operations or financial condition for any fiscal quarter or year. Increases in the values and concentrations of insured property may also increase the severity
+of these occurrences in the future...""",false,No DEF 14A proxy statement found before entry date.
+CASE-EW-2013-01-02-d89c81,EW,2013-01-02,winner,0.714,0.316,deteriorating,medium,deteriorating,medium,false,none,No enrichment data found; initial deteriorating/medium assessment unchanged with no EDGAR signals available for this period.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-CCL-2021-12-31-559759,CCL,2021-12-31,mixed,0.243,0.012,deteriorating,high,deteriorating,high,false,MANAGEMENT,Executive changes detected in proxy during pandemic period confirm ongoing management transition consistent with deteriorating trajectory; high confidence maintained.,true,"29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-11. Executive changes detected in compensation section. Excerpt: ""l Owners and Management 
+
+35
+
+COMPENSATION 
+
+39
+
+PROPOSAL 13 Advisory (Non-Binding) Vote to Approve
+Executive Compensation 
+
+39
+
+PROPOSAL 14 Advisory (Non-Binding) Vote to Approve the Carnival plc Directors 
+Remuneration Report 
+
+40
+
+Compensation Discussion and Analysis and Carnival plc Directors Remuneration Report
+Part I 
+
+40
+
+Report of the Compensation Committees 
+
+63
+
+Compensation Committee Interlocks and"
+CASE-UNP-2021-12-31-c71cbf,UNP,2021-12-31,trap,-0.025,-0.256,stable,low,stable,low,false,none,104 Form 4 filings with zero directional signal and standard proxy language (new stock incentive plan is routine) provide no basis to change stable/low assessment.,true,"104 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-31. No obvious executive changes in compensation section. Excerpt: ""dit Services
+Policy 
+
+39 
+
+Audit Committee Report 
+
+40 
+
+PROPOSAL NUMBER 3 Advisory Vote to Approve
+Executive Compensation 
+
+41 
+
+PROPOSAL NUMBER 4 Adoption of the Union
+Pacific Corporation 2021 Stock Incentive Plan 
+
+42 
+
+PROPOSAL NUMBER 5 Adoption of the Union
+Pacific Corporation 2021 Employee Stock Purchase Plan 
+
+48 
+
+A LETTER FROM OUR COMPENSATION AND BENEFITS
+COMMITTEE 
+
+50 
+
+2020 Business Highlights "
+CASE-EFX-2017-06-14-70a0d1,EFX,2017-06-14,underperform,0.244,-0.014,deteriorating,medium,deteriorating,high,true,MANAGEMENT,"Executive compensation changes and heavy shareholder engagement on governance with 60% of shareholder base contacted signals significant corporate transition, upgrading confidence from medium to high on deteriorating trajectory.",true,"75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2017-03-24. Executive changes detected in compensation section. Excerpt: ""nvestors have provided us with valuable feedback on our Board composition, corporate governance and executive
+compensation practices over the past year. During the past year, senior management connected with approximately 60% of our shareholder
+base, including the majority of our top 50 shareholders. Below are just a few of the areas we focused on as part of our commitment
+to our Company and our shareholders."
+CASE-ISRG-2021-12-31-9d2ad6,ISRG,2021-12-31,winner,0.458,0.227,deteriorating,high,deteriorating,high,false,none,64 Form 4 filings with no directional signal and no executive changes in proxy provide no basis to revise the initial deteriorating/high assessment.,true,"64 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-08-19. No obvious executive changes in compensation section. Excerpt: ""f more than five percent of our common stock (ii) each of our Named Executive Officers named in the Compensation Discussion and Analysis section of our definitive proxy statement on Schedule 14A for our 2021 Annual Meeting of Stockholders filed with the SEC on March 10, 2021 (iii) each of our directors and (iv) all executive officers and directors as a group. 
+
+Beneficial ownership is determined in accordan"
+CASE-NTAP-2021-12-31-411499,NTAP,2021-12-31,mixed,0.358,0.127,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"Customer concentration reference relates to past go-to-market issues already resolved; 41 Form 4 filings show no directional insider signal, leaving stable/medium unchanged.",true,"41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""iscal 2021 compared to fiscal 2020. During fiscal 2020, Americas revenues were negatively impacted by general macroeconomic conditions in the region and go-to-market execution issues with some of our largest customer accounts in the first quarter of fiscal 2020, which was reflected in the geographic...""",true,"DEF 14A filed 2021-07-30. No obvious executive changes in compensation section. Excerpt: ""e and Voting Roadmap 
+
+Proposal 2 
+
+Advisory Vote to Approve Named Executive Officer Compensation 
+
+Executive Compensation Objectives 
+
+The Board believes that executive compensation is a meaningful tool to communicate, align and reinforce business priorities that support our stockholders interests. We also believe it is an important element in the attraction, retention and recognition of our leadership and"
+CASE-ROST-2013-01-02-d90e7d,ROST,2013-01-02,winner,1.038,0.64,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Customer concentration reference is geographic (California store density), not revenue dependency; no insider or management data available to alter high-confidence stable trajectory.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""fective manner.
+
+A change in the availability, quality, or cost of
+new store real estate locations.
+
+A downturn in the economy or a natural disaster in
+California or in another region where we have a concentration of stores or a
+distribution center. Our corporate headquarters, Los Angeles buying off...""",false,No DEF 14A proxy statement found before entry date.
+CASE-CHRW-2013-01-02-fc803a,CHRW,2013-01-02,underperform,0.055,-0.343,stable,high,stable,medium,true,CUSTOMER_CONCENTRATION,"Customer concentration references flag risks of losing significant acquired-company customers and fraud exposure, warranting a confidence downgrade from high to medium for this asset-light intermediary.",false,No Form 4 filings found in trailing 12 months.,true,"Found 2 customer concentration references. Key excerpts: [1] ""egrating its businesses, products, services, technologies, and personnel into our operations. Acquired companies or
+operations may have unexpected liabilities, and we may face challenges in retaining significant customers of acquired companies. These difficulties could disrupt our ongoing business, ..."" [2] ""for advances or payment can occur. A significant increase in fraudulent activity could adversely affect our results. 
+
+We derive",false,No DEF 14A proxy statement found before entry date.
+CASE-VFC-2021-12-31-54ec14,VFC,2021-12-31,trap,-0.668,-0.899,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,Enrichment confirms deteriorating trajectory; customer concentration risk around major customers aligns with goodwill impairment concerns already embedded in the high-confidence deteriorating call.,true,"55 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""ure years vary from current assumptions (including changes in discount rates), (iii) business conditions or strategies for a specific reporting unit change from current assumptions, including loss of major customers, (iv) investors require higher rates of return on equity investments in the marketpl...""",true,"DEF 14A filed 2021-06-11. No obvious executive changes in compensation section. Excerpt: ""f Directors 
+
+13 
+
+Board Committees and Their Responsibilities 
+
+14 
+
+Directors Compensation 
+
+18 
+
+EXECUTIVE COMPENSATION 
+
+20 
+
+Compensation Discussion and Analysis 
+
+20 
+
+Compensation Committee Report 
+
+39 
+
+Summary Compensation Table 
+
+40 
+
+2021 Grants of Plan-Based Awards 
+
+42 
+
+Outstanding Equity Awards at Fiscal Year-End 2021 
+
+43 
+
+2021 Option Exercises and Stock Vested 
+
+44 
+
+2021 Pension Benefits "
+CASE-SLB-2013-01-02-457853,SLB,2013-01-02,underperform,0.034,-0.364,stable,low,stable,low,false,none,"No enrichment data found across all three EDGAR sources, providing no basis to change the low-confidence stable assessment.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-RCL-2019-01-02-e8fa2e,RCL,2019-01-02,trap,-0.186,-1.085,stable,high,stable,high,false,INSIDER_TRADING,65 Form 4 filings with no directional buy/sell signal and routine proxy filings provide no evidence to alter the stable/high assessment despite the eventual trap outcome.,true,"65 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-23. No obvious executive changes in compensation section. Excerpt: ""eneral
+
+Information"" for details. 
+
+Meeting Agenda 
+
+&middot; 
+
+Elect directors 
+&middot; 
+
+Approve executive compensation 
+&middot; 
+
+Ratify Pricewaterhouse Coopers LLP as our independent auditor 
+&middot; 
+
+Other business that may properly come before the meeting 
+
+Voting Matters and Vote Recommendation 
+
+Page for
+
+More
+
+Information 
+
+Board Vote Recommendation 
+
+Election of twelve directors 
+
+20 
+
+FOR 
+
+V"
+CASE-FIS-2019-01-02-c21493,FIS,2019-01-02,underperform,0.113,-0.786,stable,high,stable,high,false,INSIDER_TRADING,77 Form 4 filings show no directional signal; proxy and no customer concentration data leave the stable/high trajectory unchanged.,true,"77 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-20. No obvious executive changes in compensation section. Excerpt: ""Asked Questions
+
+5 
+
+Proposal No. 
+1: Election of Directors 
+
+9 
+
+Proposal No. 
+2: Advisory Vote on Executive Compensation 
+
+16 
+
+Proposal No. 
+3: Ratification of Independent Registered Public Accounting Firm 
+
+18 
+
+Proposal No. 
+4: Amendment and Restatement of the 2008 Omnibus Incentive Plan 
+
+20 
+
+Security Ownership of Certain
+Beneficial Owners, Directors and Executive Officers 
+
+31 
+
+Certain Information "
+CASE-AES-2015-12-31-01124a,AES,2015-12-31,winner,0.677,0.449,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,Customer concentration risk is at the subsidiary level with non-recourse debt structures limiting parent exposure; enrichment data confirms but does not alter stable/medium assessment.,true,"27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""t subsidiary is unable to obtain additional non-recourse debt, such subsidiary may become insolvent, and we may lose our investment in that subsidiary. Additionally, if any of our subsidiaries lose a significant customer, the subsidiary may need to withdraw from a project or restructure the non-reco...""",true,"DEF 14A filed 2015-03-09. No obvious executive changes in compensation section. Excerpt: ""t auditors of the Company for the year 2015; 
+
+5. 
+
+To approve, on an advisory basis, the Company s executive compensation; 
+
+6. 
+
+To approve, on an advisory basis, the Company s nonbinding proposal to allow Stockholders to request special meetings of Stockholders; 
+
+7. 
+
+To approve, on an advisory basis, the Company s nonbinding proposal to provide proxy access for Stockholder-nominated director candidates"
+CASE-DVA-2019-01-02-e620c7,DVA,2019-01-02,winner,1.199,0.3,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"Geographic concentration in existing regions is a known structural feature of the dialysis business model, not a new risk signal; insider and proxy data are uninformative.",true,"70 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""er to as the Existing Geographic Regions). As a result, DMG s exposure to many of the risks described herein is not mitigated by a greater diversification of geographic focus. Furthermore, due to the concentration of DMG s operations in the Existing Geographic Regions, it may be adversely affected b...""",true,"DEF 14A filed 2018-04-27. No obvious executive changes in compensation section. Excerpt: ""37 
+
+Compensation Discussion and Analysis Information 
+
+38 
+
+Compensation Committee Report 
+
+63 
+
+Executive Compensation 
+
+64 
+
+2017 Summary Compensation Table 
+
+64 
+
+2017 Grants of Plan-Based Awards Table 
+
+65 
+
+2017 Outstanding Equity Awards at Fiscal Year-End Table 
+
+66 
+
+2017 Option Exercises and Stock Vested Table 
+
+68 
+
+No Pension Benefits 
+
+68 
+
+Nonqualified Deferred Compensation 
+
+68 
+
+2017 Nonquali"
+CASE-PSA-2019-01-02-5d2aae,PSA,2019-01-02,winner,1.123,0.224,stable,high,stable,high,false,MANAGEMENT,"Executive changes detected in proxy relate to trustee governance amendments, not operational leadership turnover; REIT ownership concentration reference is regulatory boilerplate.",true,"33 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""t to subject the Company to these provisions of Maryland law, but it could choose to do so in the future without shareholder approval. 
+
+&#xB7; 
+
+To protect against the loss of our REIT status due to concentration of ownership levels, our declaration of trust generally limits the ability of a person...""",true,"DEF 14A filed 2018-03-16. Executive changes detected in compensation section. Excerpt: ""To elect nine trustees to our board of trustees; 
+
+2.
+
+To vote on an advisory resolution to approve executive compensation; 
+
+3.
+
+To vote on amending the company s Amended and Restated Declaration of Trust to allow shareholders to amend the company s bylaws; 
+
+4.
+
+To ratify the appointment of Ernst & Young LLP as the independent registered public accounting firm for 2018; and 
+
+5.
+
+To transact such other busi"
+CASE-FIS-2017-06-14-440933,FIS,2017-06-14,winner,0.66,0.402,stable,high,stable,high,false,INSIDER_TRADING,29 Form 4 filings with no directional signal and routine proxy provide no basis to alter the stable/high trajectory for this earlier FIS entry point.,true,"29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2017-04-21. No obvious executive changes in compensation section. Excerpt: ""ndent registered public accounting firm
+for 2017; and 
+
+4 
+
+to vote whether to present the advisory executive compensation vote every one, two or three years. 
+
+The Board of Directors set April 3, 2017 as the record date for the meeting. This means that owners of
+Fidelity National Information Services, Inc. common stock at the close of business on that date are entitled to: 
+
+receive notice of the meeting; "
+CASE-AVY-2021-01-04-3079ee,AVY,2021-01-04,mixed,0.357,0.086,stable,high,stable,medium,true,CUSTOMER_CONCENTRATION,"Explicit disclosure of increasing industry concentration reducing number of significant customers in Office and Consumer Products business, combined with executive compensation changes, warrants downgrade from high to medium confidence.",true,"30 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""s of operations and financial condition. 
+
+Our customer base is diversified, but in certain portions of our business, industry concentration has increased the importance, and decreased the number, of significant customers. 
+
+Sales of our Office and Consumer Products business in the United States are..."" [2] ""customer 
+
+7 
+
+Table of Contents 
+
+experiencing financial difficulty. If these developments occur, our inability to shift sales ",true,"DEF 14A filed 2020-03-06. Executive changes detected in compensation section. Excerpt: ""10 directors nominated by our Board to serve a one-year term; 
+
+Approve, on an advisory basis, our executive compensation; 
+
+Ratify the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2020; and 
+
+Transact any other business properly brought before the meeting or any adjournment or postponement thereof. 
+
+Our Board recommends that you vote FOR each"
+CASE-INTU-2015-12-31-a73aae,INTU,2015-12-31,winner,1.08,0.852,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Customer concentration reference relates to a discontinued Intuit Health subsidiary from 2013, not core TurboTax/QuickBooks operations; no material signal for the 2015 entry.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""in the third quarter of fiscal 2015 to discontinued operations based on the relative fair values of Quicken and the remaining components of our Consumer Ecosystem reporting unit. 
+
+In March 2013 the largest customer for our Intuit Health business acquired a company that offered similar solutions and...""",false,No DEF 14A proxy statement found before entry date.
+CASE-DXC-2021-12-31-16d7ea,DXC,2021-12-31,trap,-0.386,-0.617,deteriorating,medium,deteriorating,high,true,MANAGEMENT,Executive compensation changes detected in proxy combined with high Form 4 filing activity at a company already on a deteriorating trajectory raises confidence from medium to high that the deterioration is structural.,true,"44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-07-06. Executive changes detected in compensation section. Excerpt: ""oxy statement. As discussed in the CD&A, we are committed to a pay for performance culture, and our executive
+compensation program is grounded in a philosophy aimed at achieving strong alignment between the Company s financial and strategic goals and our stockholders interests. 
+
+iii 
+
+Table of Contents 
+
+Table of
+Contents
+
+Table of Contents 
+
+A. PROPOSALS 
+
+1
+
+Proposal 1: Election of Directors 
+
+1
+
+Proposal "
+CASE-BKNG-2015-12-31-a23f76,BKNG,2015-12-31,mixed,0.35,0.122,stable,high,stable,high,false,INSIDER_TRADING,42 Form 4 filings show no directional signal; routine proxy and absence of customer concentration risk confirm the stable/high assessment for this dominant travel platform.,true,"42 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2015-04-22. No obvious executive changes in compensation section. Excerpt: ""f Selection of Independent Registered Public Accounting Firm on page 53. 
+
+Advisory Vote to Approve Executive Compensation (Proposal 3). The Board of Directors recommends that you vote FOR the approval on an advisory basis of the Company's executive compensation. For more information, see Proposal 3 Advisory Vote to Approve Executive Compensation on page 56. 
+
+Stockholder Proposal (Proposal 4). The Board of"
+CASE-NKE-2013-01-02-f24231,NKE,2013-01-02,winner,1.501,1.103,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Three customer concentration references are standard risk factor boilerplate about retailer dependency and distributor reliance, not evidence of actual concentration problems at Nike's scale.",false,No Form 4 filings found in trailing 12 months.,true,"Found 3 customer concentration references. Key excerpts: [1] ""ent and introduction; the ability to secure
+and protect trademarks, patents, and other intellectual property; performance and reliability of products; customer service; adverse publicity; the loss of significant customers or suppliers; dependence on distributors and licensees; business
+disruptions; ..."" [2] ""ts by
+retailers. Retailers who experience financial difficulties may fail to make such investments or delay them, resulting in l",false,No DEF 14A proxy statement found before entry date.
+CASE-DRI-2017-06-14-5e8c69,DRI,2017-06-14,trap,-0.085,-0.343,stable,high,stable,high,false,none,No enrichment data found across all three EDGAR sources; stable/high assessment carries forward unchanged with no additional signal.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-PNC-2013-01-02-b8be0b,PNC,2013-01-02,winner,0.717,0.319,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"Regional geographic concentration in primary retail banking footprint is a known structural feature of regional banks, not a new risk signal warranting trajectory change.",false,No Form 4 filings found in trailing 12 months.,true,"Found 2 customer concentration references. Key excerpts: [1] ""during the height of the economic downturn, it would have an adverse effect on PNC s net income and could result in lower levels of net income than PNC has reported in recent periods. 
+
+Our regional concentrations make us particularly at risk to adverse economic conditions in our primary retail bank..."" [2] ""new standards governing oversight by a covered company s board of directors and board-level risk committee;
+and new limits on th",false,No DEF 14A proxy statement found before entry date.
+CASE-AN-2013-01-02-cfc440,AN,2013-01-02,mixed,0.507,0.109,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,"Customer concentration reference relates to property value concentration at store locations (insurance risk), not revenue dependency on specific customers.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""results of operations, financial condition, and cash flows. In addition to business interruption, the automotive retail business is subject to substantial risk of property loss due to the significant concentration of property values at store locations. Although we have, subject to certain deductible...""",false,No DEF 14A proxy statement found before entry date.
+CASE-BBT-2019-12-09-fa4520,BBT,2019-12-09,underperform,0.04936574720272993,-0.2145,deteriorating,medium,deteriorating,medium,false,INSIDER_TRADING,49 Form 4 filings with no directional signal during a merger-transition period (BB&T to Truist) confirms the medium-confidence deteriorating trajectory without adding new signal.,true,"49 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2019-04-05. No obvious executive changes in compensation section. Excerpt: ""term or until their successors are duly elected and qualified; 
+
+2.
+
+To provide an advisory vote on executive compensation practices; 
+
+3.
+
+To ratify the appointment of the Company s independent registered public accounting firm for fiscal year 2019; and 
+
+4.
+
+To transact any other Company business that may properly come before the meeting. 
+
+The Board of Directors unanimously recommends that you vote FOR e"
+CASE-GOOGL-2019-01-02-b9d9d6,GOOGL,2019-01-02,winner,1.747,0.848,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Stock ownership concentration reference is about voting control structure, not revenue dependency; no material enrichment signal for this dominant platform company.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""repurchase program could affect the price of our stock and increase volatility and may be suspended or terminated at any time, which may result in a decrease in the trading price of our stock. 
+
+The concentration of our stock ownership limits our stockholders ability to influence corporate matters. ...""",false,No DEF 14A proxy statement found before entry date.
+CASE-NVDA-2021-12-31-77c693,NVDA,2021-12-31,winner,3.71,3.479,deteriorating,medium,improving,medium,true,MANAGEMENT,"Initial deteriorating trajectory is overridden: stable management team (no executive changes), routine proxy, and no customer concentration red flags suggest the deterioration was cyclical, warranting upgrade to improving.",true,"75 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-23. No obvious executive changes in compensation section. Excerpt: ""ess 
+
+Election of thirteen directors nominated by the Board of Directors 
+
+Advisory approval of our executive compensation 
+
+Ratification of the selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2022 
+
+Approval of an amendment to our Amended and Restated Certificate of Incorporation to increase the number of authorized shares of common stock from 2 "
+CASE-FIS-2021-01-04-3a28b6,FIS,2021-01-04,trap,-0.538,-0.809,stable,high,stable,medium,true,INSIDER_TRADING,"93 Form 4 filings -- the highest insider filing count in this batch -- signals elevated executive activity without clear direction, warranting a confidence downgrade from high to medium on the stable call.",true,"93 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-04-17. No obvious executive changes in compensation section. Excerpt: ""Asked Questions
+
+5 
+
+Proposal No. 
+1: Election of Directors 
+
+9 
+
+Proposal No. 
+2: Advisory Vote on Executive Compensation 
+
+19 
+
+Proposal No. 
+3: Ratification of Independent Registered Public Accounting Firm 
+
+20 
+
+Security Ownership of
+Certain Beneficial Owners, Directors and Executive Officers 
+
+22 
+
+Certain Information About
+Our Executive Officers 
+
+25 
+
+Compensation Discussion
+and Analysis and Executiv"
+CASE-TER-2021-12-31-3e88e7,TER,2021-12-31,trap,-0.216,-0.447,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,Explicit disclosure that the market is concentrated with few significant customers who may contribute an even larger revenue share directly reinforces the high-confidence deteriorating trajectory.,true,"63 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""titors could cause a decline in revenues or loss of market acceptance of our products. 
+
+The market for our products is concentrated, and our business depends, in part, on obtaining orders from a few significant customers. 
+
+The market for our products is concentrated with a limited number of signif..."" [2] ""al customers may contribute even a larger percentage of our consolidated revenues. In addition, our ability to increase sales wi",true,"DEF 14A filed 2021-03-26. No obvious executive changes in compensation section. Excerpt: ""t Committee Report 
+
+35
+
+Principal Accountant Fees and Services 
+
+35
+
+OWNERSHIP OF SECURITIES 
+
+37
+
+EXECUTIVE COMPENSATION 
+
+39
+
+Compensation Discussion and Analysis 
+
+39
+
+2020 Executive Compensation Summary 
+
+39
+
+Executive Compensation Objectives 
+
+42
+
+Executive Compensation Program 
+
+44
+
+2020 Executive Compensation 
+
+48
+
+Compensation Committee Report 
+
+53
+
+Executive Compensation Tables 
+
+54
+
+Summary Compe"
+CASE-CMG-2021-12-31-e85cae,CMG,2021-12-31,winner,0.713,0.482,deteriorating,medium,improving,medium,true,MANAGEMENT,"Executive compensation restructured to include ESG metrics and sustainability goals signals forward-looking strategic pivot; combined with no customer concentration risk, supports upgrade from deteriorating to improving.",true,"68 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-05. Executive changes detected in compensation section. Excerpt: ""s reason that Chipotle introduced a new environmental, social and governance (ESG) metric that ties executive compensation to ESG goals, which are categorized by Food & Animals, People, and the Environment. In an
+effort to support more sustainable small farms, Chipotle is committed to increasing pounds of organic, local, and/or regeneratively grown/raised food used in its restaurants year over year. Chipotle "
+CASE-NOV-2013-01-02-aa8c0e,NOV,2013-01-02,trap,-0.428,-0.826,stable,high,stable,high,false,none,29 Form 4 filings show zero directional signal and no customer concentration found; enrichment data is uninformative and does not alter the stable/high assessment.,true,"29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2012-04-05. No obvious executive changes in compensation section. Excerpt: ""Stock Ownership 
+
+30 
+
+Compensation Discussion and Analysis 
+
+32 
+
+Compensation Committee Report on Executive Compensation 
+
+45 
+
+Executive Compensation 
+
+55 
+
+Certain Relationships and Related Transactions 
+
+61 
+
+Director Compensation 
+
+62 
+
+Section 16(a) Beneficial Ownership Reporting Compliance 
+
+64 
+
+Stockholder Proposals for the 2013 Annual Meeting 
+
+64 
+
+Annual Report and Other Matters 
+
+64 
+
+Table of"
+CASE-HSY-2021-12-31-ee26de,HSY,2021-12-31,trap,-0.067,-0.298,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,"McLane Company accounts for 31% of net sales, confirming significant single-customer dependency that reinforces the deteriorating trajectory already identified.",true,"118 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""rate, as well as challenges in maintaining profit margins. We must maintain mutually beneficial relationships with our key customers, including retailers and distributors, to compete effectively. Our largest customer, McLane Company, Inc., accounted for approximately 31% of our total net sales in 20...""",true,"DEF 14A filed 2021-04-07. No obvious executive changes in compensation section. Excerpt: ""ctor Nominees 
+
+2 
+
+Governance Highlights 
+
+3 
+
+Company Strategy and 2020 Business Highlights 
+
+5 
+
+Executive Compensation Highlights 
+
+6 
+
+PROXY STATEMENT 
+
+Questions and Answers about the Annual Meeting 
+
+7 
+
+Corporate Governance 
+
+13 
+
+The Board of Directors 
+
+19 
+
+Meetings and Committees of the Board 
+
+24 
+
+Proposal No. 1 Election of Directors 
+
+27 
+
+Non-Employee Director Compensation 
+
+34 
+
+Share Owner"
+CASE-EW-2015-01-02-fad98e,EW,2015-01-02,winner,0.747,0.437,stable,medium,stable,medium,false,none,No enrichment data found across all three sources; initial stable/medium assessment stands unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-MU-2019-01-02-ecc662,MU,2019-01-02,winner,1.851,0.952,stable,high,stable,medium,true,CUSTOMER_CONCENTRATION,"Significant customer concentration risk disclosed across multiple references with order volatility warning, downgrading confidence from high to medium despite stable trajectory.",true,"57 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""h our partners. 
+
+Our joint ventures and strategic relationships, if unsuccessful, could have a material adverse effect on our business, results of operations, or financial condition. 
+
+A significant concentration of our net sales is to a select number of customers. 
+
+In each of the last three years..."" [2] ""f customers to whom our products could be sold. Our inability to meet our customers' requirements or to qualify our products wit",true,"DEF 14A filed 2018-12-06. No obvious executive changes in compensation section. Excerpt: ""pensation Committee annually engages a compensation consultant to provide a comprehensive review of executive compensation matters. Our compensation consultant provided the Compensation Committee with information for our officers on cash and non-cash compensation elements and historical and trend payment data. 
+
+The Compensation Committee has established procedures intended to keep our compensation consulta"
+CASE-SBUX-2019-01-02-f1ef76,SBUX,2019-01-02,mixed,0.922,0.023,stable,high,stable,high,false,none,"Insider filings show zero directional signal, proxy is routine, and no customer concentration applies to a consumer-direct business; no change warranted.",true,"33 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-01-26. No obvious executive changes in compensation section. Excerpt: ""erve until the 2019 Annual Meeting of Shareholders; 
+
+2 .
+
+To approve an advisory resolution on our executive compensation; 
+
+3 .
+
+To ratify the selection of Deloitte & Touche LLP as our independent registered public accounting firm for the fiscal year ending September 30, 2018; 
+
+4 .
+
+To consider shareholder proposals described in the accompanying proxy statement, if properly presented at the Annual Meetin"
+CASE-MSI-2013-01-02-fb91de,MSI,2013-01-02,underperform,0.295,-0.103,stable,high,stable,high,false,none,No enrichment data found across all three EDGAR sources; initial stable/high assessment is unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-ALL-2021-12-31-229221,ALL,2021-12-31,winner,0.763,0.532,stable,low,improving,medium,true,MANAGEMENT,"Proxy reveals excellent 2020 financial results with $4.6B adjusted net income despite pandemic, upgrading trajectory from stable to improving and confidence from low to medium.",true,"64 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-12. No obvious executive changes in compensation section. Excerpt: ""he evaluation of ELFS by the risk and return committee based on recent
+learnings. Additionally, the executive compensation program was reviewed to determine if any changes were needed in light of the
+pandemic, and it was concluded that no changes were necessary.
+
+Despite challenges posed by the Coronavirus pandemic, Allstate had excellent financial results in 2020 with Adjusted Net Income* of $4.6 billion, "
+CASE-MS-2015-12-31-e608d7,MS,2015-12-31,mixed,0.356,0.128,stable,low,stable,low,false,none,No enrichment data found across all three sources; initial stable/low assessment remains unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-HUM-2021-12-31-a788a3,HUM,2021-12-31,trap,-0.441,-0.672,stable,low,stable,low,false,none,68 Form 4 filings with zero directional signal and routine proxy; no data alters the low-confidence stable assessment.,true,"68 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-10. No obvious executive changes in compensation section. Excerpt: ""43
+
+Compensation Discussion and Analysis 
+
+46
+
+Organization & Compensation Committee Report 
+
+62
+
+Executive Compensation 
+
+63
+
+Certain Transactions with Management and Others 
+
+75
+
+Audit Committee Report 
+
+76
+
+Proposal Two: Ratification of Appointment of Independent Registered 
+Public Accounting Firm 
+
+78
+
+Proposal Three: Non-Binding Advisory Vote with Respect to the
+Compensation of the Company s Named Exec"
+CASE-CI-2021-12-31-d33119,CI,2021-12-31,mixed,0.258,0.027,stable,low,stable,low,false,none,100 Form 4 filings with zero directional signal; proxy shows routine governance matters including amended LTIP but nothing trajectory-altering.,true,"100 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-19. No obvious executive changes in compensation section. Excerpt: ""g of shareholders.
+
+FOR the election of each director 
+
+nominee 
+
+Proposal 2:
+
+Advisory approval of executive compensation.
+
+FOR
+
+Proposal 3:
+
+Approval of the Amended and Restated Cigna Long-Term Incentive Plan.
+
+FOR
+
+Proposal 4:
+
+Ratification of the appointment of PricewaterhouseCoopers LLP as the Company s independent registered
+public accounting firm for 2021.
+
+FOR
+
+Proposal 5:
+
+Shareholder Proposal Shar"
+CASE-SYK-2019-01-02-3c83ec,SYK,2019-01-02,underperform,0.788,-0.111,stable,high,stable,high,false,none,"72 Form 4 filings with zero directional signal, routine proxy, no customer concentration; enrichment is uninformative.",true,"72 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-03-21. No obvious executive changes in compensation section. Excerpt: ""ance Matters 
+
+7 
+
+Compensation Discussion and Analysis 
+
+10 
+
+Compensation Committee Report 
+
+21 
+
+Executive Compensation 
+
+22 
+
+Compensation of Directors 
+
+29 
+
+Audit Committee Report 
+
+31 
+
+Proposal 1 Election of Directors 
+
+32 
+
+Proposal 2 Ratification of Appointment of Our Independent Registered Public Accounting Firm 
+
+34 
+
+Proposal 3 Advisory Vote to Approve Named Executive Officer Compensation 
+
+35 "
+CASE-JEF-2019-01-02-26ea37,JEF,2019-01-02,winner,1.551,0.652,deteriorating,medium,deteriorating,medium,false,CUSTOMER_CONCENTRATION,"Five customer concentration references highlight order volatility and loss-of-customer risk, reinforcing the existing deteriorating trajectory assessment.",false,No Form 4 filings found in trailing 12 months.,true,"Found 5 customer concentration references. Key excerpts: [1] ""ly place orders for products on an as-needed basis and, as a result, their order levels have varied from period to period in the past and may vary significantly in the future. The loss of one or more significant customers, a significant decline in the volume of orders from customers or a significant..."" [2] ""sk tolerance for a certain activity. The framework includes inventory position and exposure limits on a gross and net basis, sce",false,No DEF 14A proxy statement found before entry date.
+CASE-BXP-2013-01-02-370494,BXP,2013-01-02,underperform,0.367,-0.031,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Customer concentration reference pertains to stock ownership limits for REIT qualification, not revenue concentration; not a trajectory-relevant signal.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""ium for their shares of common stock over then-prevailing market prices.
+
+Stock Ownership Limit
+
+To facilitate maintenance of our
+qualification as a REIT and to otherwise address concerns relating to concentration of capital stock ownership, our certificate of incorporation generally prohibits owner...""",false,No DEF 14A proxy statement found before entry date.
+CASE-ITW-2019-01-02-5e1728,ITW,2019-01-02,mixed,1.097,0.198,stable,high,stable,medium,true,MANAGEMENT,Executive changes detected in proxy combined with currency concentration risk in European sales warrants a confidence downgrade from high to medium.,true,"50 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""'s operating income. 
+
+Although the Company's financial results are reported in U.S. Dollars, a significant portion of its sales and operating costs are realized in other currencies, with the largest concentration of foreign sales occurring in Europe. The Company's profitability is affected by movem...""",true,"DEF 14A filed 2018-03-23. Executive changes detected in compensation section. Excerpt: ""as ITW s independent registered public accounting firm for 2018; 
+
+3.
+
+To hold an advisory vote on executive compensation; 
+
+4.
+
+To consider a non-binding stockholder proposal to change the ownership threshold to call special stockholder meetings, if properly presented; 
+
+5.
+
+To consider a non-binding stockholder proposal to set Company-wide greenhouse gas emissions targets, if properly presented; and 
+
+6.
+
+T"
+CASE-SLM-2014-04-30-7a78db,SLM,2014-04-30,mixed,0.3854175613106581,0.1177,stable,medium,stable,low,true,CUSTOMER_CONCENTRATION,"Self-identified concentration in education credit market creates both competitive advantage and sector-specific risk, downgrading confidence from medium to low.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""gs may not prove to be profitable and may fail to offset the loss of business in the education
+credit market. 
+
+We are a leading provider of saving- and paying-for-college products and programs. This concentration gives us
+a competitive advantage in the marketplace. This concentration also creates r...""",false,No DEF 14A proxy statement found before entry date.
+CASE-DE-2021-12-31-a8d074,DE,2021-12-31,mixed,0.27,0.039,deteriorating,medium,deteriorating,medium,false,none,44 Form 4 filings with zero directional signal and routine proxy; no enrichment data alters the deteriorating/medium assessment.,true,"44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-01-08. No obvious executive changes in compensation section. Excerpt: ""Approval of Related Person Transactions 
+
+25 
+
+Delinquent Section 16(a) Reports 
+
+Advisory Vote on Executive Compensation 
+
+26 
+
+Item 2 Advisory Vote on Executive Compensation 
+
+27 
+
+Compensation Discussion and Analysis 
+
+29 
+
+Executive Summary 
+
+31 
+
+2020 Compensation Overview 
+
+34 
+
+Direct Compensation Elements 
+
+47 
+
+Indirect Compensation Elements 
+
+49 
+
+Compensation Methodology and Process 
+
+53 
+
+Risk A"
+CASE-BIIB-2015-01-02-8735dd,BIIB,2015-01-02,trap,-0.023,-0.333,stable,high,stable,high,false,none,51 Form 4 filings with zero directional signal and routine proxy; no customer concentration found; stable/high assessment unchanged.,true,"51 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2014-04-30. No obvious executive changes in compensation section. Excerpt: ""lic accounting firm for the fiscal year ending December 31, 2014.
+
+3. 
+
+To hold an advisory vote on executive compensation. 
+
+4. 
+
+To transact such other business as may be properly brought before the meeting and any adjournments or postponements. 
+
+Our Board of Directors recommends voting FOR the election of all of the director nominees listed in Proposal 1 and FOR Proposals 2 and 3.
+
+Your vote is extremel"
+CASE-VNO-2023-01-03-51a6e1,VNO,2023-01-03,underperform,0.6988517995061566,-0.0946,deteriorating,high,deteriorating,high,false,MANAGEMENT,Executive changes detected in proxy align with and reinforce the existing deteriorating/high assessment for this office REIT.,true,"20 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2022-04-08. Executive changes detected in compensation section. Excerpt: ""iscal year. 
+
+(3) 
+
+To consider and vote upon the approval of a non-binding, advisory resolution on executive compensation. 
+
+(4) 
+
+To transact any other business as may properly come before the meeting and any postponement or adjournment of the meeting. 
+
+The Board of Trustees of the Company has fixed the close of business on March 21, 2022 as the record date for the determination of shareholders entitled to"
+CASE-KLAC-2019-01-02-b5cf44,KLAC,2019-01-02,winner,3.992,3.093,stable,low,stable,low,false,CUSTOMER_CONCENTRATION,"Customer concentration acknowledged as a business risk factor tied to capital equipment procurement cycles, but this is industry-standard for semiconductor equipment and does not alter trajectory.",true,"86 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""$ 
+
+1,287,547 
+
+$ 
+
+1,163,391 
+
+$ 
+
+159,822 
+
+12 
+
+% 
+
+$ 
+
+124,156 
+
+11 
+
+% 
+
+Gross margin percentage 
+
+64 
+
+% 
+
+63 
+
+% 
+
+61 
+
+% 
+
+1 
+
+% 
+
+2 
+
+% 
+
+Product revenues 
+
+Our business is affected by the concentration of our customer base and our customers capital equipment procurement schedules as a resu...""",true,"DEF 14A filed 2018-09-28. No obvious executive changes in compensation section. Excerpt: ""out Executive Officers 
+
+37 
+
+Security Ownership of Certain Beneficial Owners and Management 
+
+39 
+
+Executive Compensation and Other Matters 
+
+42 
+
+Compensation Committee Report 
+
+54 
+
+Executive Compensation Tables 
+
+55 
+
+Certain Relationships and Related Transactions 
+
+73 
+
+Equity Compensation Plan Information 
+
+74 
+
+Report of the Audit Committee 
+
+75 
+
+Information for KLA-Tencor Annual Meeting of Stockhol"
+CASE-THC-2013-01-02-30f670,THC,2013-01-02,trap,-0.093,-0.491,deteriorating,medium,deteriorating,high,true,CUSTOMER_CONCENTRATION,"Geographic concentration with 25.9% of beds in Florida and 19.5% in Texas creates significant regional regulatory and economic exposure, upgrading confidence from medium to high on the deteriorating trajectory.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""d in certain market areas in Florida, Texas and California, which makes us sensitive to economic, regulatory, environmental and other conditions in those areas. 
+
+As of December 31, 2011, the largest concentrations of licensed beds in our general hospitals were in Florida (25.9%), Texas (19.5%) and ...""",false,No DEF 14A proxy statement found before entry date.
+CASE-NSC-2021-12-31-5b5c55,NSC,2021-12-31,trap,-0.157,-0.388,deteriorating,high,deteriorating,high,false,none,107 Form 4 filings with zero directional signal and routine proxy; no enrichment alters the deteriorating/high assessment.,true,"107 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-03-31. No obvious executive changes in compensation section. Excerpt: ""accounting firm, as our
+independent auditors for 2021 
+
+ITEM
+3 
+
+Approval
+of advisory resolution on executive compensation 
+
+ITEM
+4 
+
+A
+shareholder proposal regarding revisions to ownership requirements for proxy access, if properly presented at the meeting 
+
+ITEM
+5 
+
+A
+shareholder proposal regarding a report on lobbying activity alignment with Paris Climate Agreement, if properly presented
+at the meeting 
+"
+CASE-DVN-2017-06-14-bc2279,DVN,2017-06-14,trap,-0.581,-0.839,stable,high,stable,high,false,none,38 Form 4 filings with zero directional signal and routine proxy including new incentive plans; no customer concentration found for this E&P company.,true,"38 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2017-04-26. No obvious executive changes in compensation section. Excerpt: ""Items of Business 
+
+Elect nine directors for a term of one year; 
+
+Approve, in an advisory vote, executive compensation; 
+
+Advisory vote on the frequency of the advisory vote on executive compensation; 
+
+Ratify the appointment of the independent auditors for 2017; 
+
+Consider and vote upon the Annual Incentive Compensation Plan; 
+
+Consider and vote upon the 2017 Long-Term Incentive Plan; 
+
+Consider and vote "
+CASE-PRU-2013-01-02-ca3c3b,PRU,2013-01-02,mixed,0.572,0.174,deteriorating,medium,deteriorating,medium,false,none,No enrichment data found across all three EDGAR sources; initial deteriorating/medium assessment is unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-OKE-2021-12-31-d8417f,OKE,2021-12-31,winner,1.047,0.816,deteriorating,high,deteriorating,high,false,none,27 Form 4 filings with zero directional signal and routine proxy; no enrichment data alters the deteriorating/high assessment.,true,"27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-07. No obvious executive changes in compensation section. Excerpt: ""nting firm of ONEOK, Inc., for the year ending December 31, 2021.
+
+(3)
+
+To consider and vote on our executive compensation on a non-binding, advisory basis.
+
+(4)
+
+To consider and vote on such other business as may come properly before the meeting or any adjournment or postponement of the meeting.
+
+These matters are described more fully in the accompanying proxy statement.
+
+Record date 
+
+March 29, 2021. Only"
+CASE-BDX-2017-06-14-2b3eaf,BDX,2017-06-14,mixed,0.264,0.006,stable,high,stable,high,false,none,No enrichment data found across all three EDGAR sources; initial stable/high assessment is unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-AVB-2019-01-02-a0e2ea,AVB,2019-01-02,underperform,0.65,-0.249,stable,high,stable,high,false,INSIDER_TRADING,50 Form 4 filings with no clear buy/sell direction and no customer concentration issues confirm the stable trajectory for this REIT.,true,"50 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-04-06. No obvious executive changes in compensation section. Excerpt: ""ent Auditors 
+
+14 
+
+Required Vote and Recommendation 
+
+14 
+
+Proposal 3 -- Binding, Advisory Vote on Executive Compensation 
+
+15 
+
+Required Vote and Recommendation 
+
+15 
+
+Other Matters 
+
+15 
+
+III. 
+
+Corporate Governance And Related Matters 
+
+16 
+
+Code of Ethics and Corporate Governance Guidelines 
+
+16 
+
+Board of Directors and its Committees 
+
+16 
+
+Stockholder Engagement and Responsiveness 
+
+21 
+
+Contacting t"
+CASE-AMP-2019-01-02-e568af,AMP,2019-01-02,winner,1.999,1.1,stable,high,stable,medium,false,none,"No enrichment data was available from any EDGAR source, so confidence drops from high to medium due to lack of corroboration.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-LULU-2015-12-31-4e3ca6,LULU,2015-12-31,winner,1.351,1.123,stable,high,stable,high,false,MANAGEMENT,No executive turnover in the proxy and no customer concentration risk reinforce the stable trajectory for this consumer discretionary grower.,true,"30 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2015-04-21. No obvious executive changes in compensation section. Excerpt: ""OUNTING FIRM 
+
+16 
+
+PROPOSAL NO. 3 STOCKHOLDER PROPOSAL 
+
+17 
+
+REPORT OF THE AUDIT COMMITTEE 
+
+19 
+
+EXECUTIVE COMPENSATION 
+
+20 
+
+EXECUTIVE COMPENSATION TABLES 
+
+29 
+
+SUMMARY COMPENSATION TABLE 
+
+29 
+
+2014 GRANTS OF PLAN-BASED AWARDS 
+
+31 
+
+2014 OUTSTANDING EQUITY AWARDS AT FISCAL YEAR END 
+
+33 
+
+2014 OPTION EXERCISES AND STOCK VESTED 
+
+35 
+
+AGREEMENTS WITH NAMED EXECUTIVE OFFICERS & POTENTIAL PAYMENTS 
+
+36"
+CASE-PEP-2013-01-02-1f0383,PEP,2013-01-02,mixed,0.569,0.171,stable,high,stable,medium,false,none,No EDGAR enrichment data available; confidence lowered from high to medium due to absence of corroborating signals.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-HAS-2021-12-31-274261,HAS,2021-12-31,trap,-0.367,-0.598,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,64% of revenue concentrated in H2 creates significant seasonal cash flow risk that reinforces the deteriorating trajectory for this toy/entertainment company.,true,"80 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""significant to its overall business for the full year. In 2020, approximately 64% of the Company s full year net revenues were recognized in the second half of the year. The Company expects that this concentration will continue. The concentration of sales in the second half of the year increases the...""",true,"DEF 14A filed 2021-04-01. No obvious executive changes in compensation section. Excerpt: ""0 
+
+Executive Summary 
+
+30 
+
+Business and Performance Overview 
+
+30 
+
+Shareholder Engagement 
+
+36 
+
+Executive Compensation Program Structure and Alignment with Performance 
+
+36 
+
+Variable Compensation Outcomes 
+
+37 
+
+Executive Compensation Philosophy and Objectives 
+
+40 
+
+Strong Compensation Governance Practices 
+
+40 
+
+Compensation Process 
+
+41 
+
+Peer Group and Benchmarking to the Market 
+
+41 
+
+Role of the "
+CASE-PRGO-2015-12-31-cb3135,PRGO,2015-12-31,trap,-0.713,-0.941,stable,medium,stable,low,false,MANAGEMENT,No proxy statement found and insider filings show no directional signal; confidence drops from medium to low due to missing management visibility.,true,"27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-D-2021-12-31-3e5d64,D,2021-12-31,trap,-0.204,-0.435,stable,high,stable,medium,false,CUSTOMER_CONCENTRATION,"Credit risk concentration from energy marketing activities is standard for a regulated utility and does not alter the stable trajectory, though it warrants monitoring.",true,"44 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""Credit Risk
+
+Dominion Energy s exposure to potential concentrations of credit risk results primarily from its energy marketing and price risk management activities. Presented below is a summary of Dominion Energy s credit exposure as of December 31, 2020 for these activities. Gross credit exposure f...""",true,"DEF 14A filed 2021-03-24. No obvious executive changes in compensation section. Excerpt: ""Election of the 12 director nominees named in this Proxy Statement; 
+
+Advisory vote on approval of executive compensation (Say on Pay); 
+
+Ratification of the appointment of Deloitte & Touche LLP as our independent auditor for 2021; and 
+
+Three shareholder proposals, if properly presented. 
+
+Shareholders will
+also consider any other business properly presented at the meeting. 
+
+Voting 
+
+Each share of Dominio"
+CASE-CMCSA-2021-12-31-ae67e5,CMCSA,2021-12-31,trap,-0.191,-0.422,deteriorating,medium,deteriorating,medium,false,INSIDER_TRADING,80 Form 4 filings with no insider buying despite deteriorating trajectory suggests management lacks conviction in a turnaround.,true,"80 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-23. No obvious executive changes in compensation section. Excerpt: ""n April 5, 2021
+
+Voting Items 
+
+PROPOSAL 1 
+
+Elect directors
+
+PROPOSAL 2 
+
+Advisory vote to approve executive compensation
+
+PROPOSAL 3 
+
+Ratify appointment of independent auditors
+
+PROPOSAL 4 
+
+Vote on one shareholder proposal
+
+Board Voting 
+
+Recommendation 
+
+FOR each
+director nominee 
+
+FOR 
+
+FOR 
+
+AGAINST 
+
+Only shareholders of record on April 5, 2021 may vote
+and participate during the meeting. If the mee"
+CASE-DLTR-2013-01-02-d5c09b,DLTR,2013-01-02,winner,0.935,0.537,stable,medium,stable,low,false,none,No EDGAR enrichment data available from any source; confidence drops from medium to low due to complete absence of corroborating signals.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-CCL-2013-01-02-e4106b,CCL,2013-01-02,mixed,0.568,0.17,deteriorating,high,deteriorating,high,false,MANAGEMENT,Executive changes detected in proxy combined with 41 mixed insider filings confirm management instability consistent with the deteriorating trajectory.,true,"41 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2012-03-01. Executive changes detected in compensation section. Excerpt: ""ECEIPT OF ACCOUNTS AND REPORTS OF CARNIVAL PLC 
+
+29 
+
+PROPOSAL 18 AN ADVISORY (NON-BINDING) VOTE ON EXECUTIVE COMPENSATION 
+
+29 
+
+PROPOSAL 19 APPROVAL OF DIRECTORS REMUNERATION REPORT 
+
+30 
+
+PROPOSALS 20 
+& 21 APPROVAL OF THE GRANT OF AUTHORITY TO ALLOT NEW CARNIVAL PLC SHARES AND THE DISAPPLICATION OF PRE-EMPTION RIGHTS APPLICABLE TO THE ALLOTMENT OF NEW CARNIVAL PLC SHARES 
+
+31 
+
+PROPOSAL 22 GENERAL AUTHORI"
+CASE-M-2013-01-02-c86774,M,2013-01-02,trap,-0.024,-0.422,stable,medium,stable,low,false,none,"No EDGAR enrichment data available; confidence drops from medium to low, leaving the stable call unvalidated for this ultimately trapped retailer.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-NOV-2021-09-20-daa34b,NOV,2021-09-20,mixed,0.35964221603378355,0.0485,deteriorating,low,deteriorating,low,false,MANAGEMENT,Stable management and mixed insider signals provide no counter-evidence to the deteriorating trajectory in this cyclical oil services name.,true,"23 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-09. No obvious executive changes in compensation section. Excerpt: ""Stock Ownership 
+
+29
+
+Compensation Discussion and Analysis 
+
+31
+
+Compensation Committee Report on Executive Compensation 
+
+46
+
+Executive Compensation 
+
+47
+
+Certain Relationships and Related Transactions 
+
+59
+
+Director Compensation 
+
+60
+
+Section 16(a) Beneficial Ownership Reporting Compliance 
+
+63
+
+Stockholder Proposals for the 2022 Annual Meeting 
+
+63
+
+Annual Report and Other Matters 
+
+63
+
+Table of Contents"
+CASE-CTSH-2021-12-31-cb3ed4,CTSH,2021-12-31,trap,-0.096,-0.327,deteriorating,medium,deteriorating,medium,false,INSIDER_TRADING,"121 Form 4 filings with zero buy signals despite deteriorating trajectory indicates insiders are not stepping in to buy, confirming downward momentum.",true,"121 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-21. No obvious executive changes in compensation section. Excerpt: ""ment Development and Compensation Committee 
+
+28 
+
+CEO Pay Ratio 
+
+57 
+
+Proposal 2 Advisory Vote on Executive Compensation (Say-on-Pay) 
+
+30 
+
+Clawback Policy 
+
+49 
+
+Compensation Discussion and Analysis (CD&A) 
+
+30 
+
+Compensation Consultant 
+
+33 
+
+Compensation Program Objectives 
+
+30 
+
+Compensation Mix 
+
+34 
+
+Compensation Setting Process 
+
+32 
+
+Death Benefits 
+
+47 
+
+Primary Compensation Elements 
+
+34 
+
+Exec"
+CASE-EXC-2017-06-14-e56189,EXC,2017-06-14,underperform,0.153,-0.105,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,FERC market concentration tests limit competitive expansion but are a regulatory constraint rather than a fundamental deterioration signal for this utility.,true,"26 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""ly operate facilities that are competitive in those markets. Additionally, construction of new generating facilities by Generation in markets in which it currently competes would be subject to market
+concentration tests administered by FERC. If Generation cannot pass the tests administered by FERC, ..."" [2] ""eparate or otherwise transferring control over base-load capacity), without including those actions proposed by the
+parties mutu",true,"DEF 14A filed 2017-03-15. No obvious executive changes in compensation section. Excerpt: ""ers as disclosed in the proxy statement; 
+
+4) 
+
+Advise on the frequency of future advisory votes on executive compensation; and 
+
+5) 
+
+Conduct any other business that properly comes before the meeting. 
+
+Shareholders of record as of March 3, 2017 are entitled to vote at the annual meeting. 
+
+On or about March 15, 2017, we will mail to our shareholders a Notice Regarding the Availability of Proxy Materials, "
+CASE-CTAS-2021-12-31-ee7087,CTAS,2021-12-31,winner,0.691,0.46,deteriorating,low,improving,medium,true,MANAGEMENT,Stable management with no executive turnover and no customer concentration risk in a franchise-quality business suggests the initial deteriorating call may understate fundamental resilience.,true,"25 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-09-15. No obvious executive changes in compensation section. Excerpt: ""3 
+
+CORPORATE GOVERNANCE 
+
+6 
+
+AUDIT COMMITTEE REPORT 
+
+10 
+
+COMPENSATION COMMITTEE REPORT 
+
+12 
+
+EXECUTIVE COMPENSATION 
+
+13 
+
+PRINCIPAL SHAREHOLDERS 
+
+35 
+
+SECURITY OWNERSHIP OF DIRECTOR NOMINEES AND NAMED EXECUTIVE OFFICERS 
+
+36 
+
+DELINQUENT SE CTION 16 ( a ) REPORTS 
+
+36 
+
+RELATED PERSON TRANSACTIONS 
+
+38 
+
+APPROVAL, ON AN ADVISORY BASIS, OF NAMED EXECUTIVE OFFICER COMPENSATION 
+
+39 
+
+RATIFICATION OF AP"
+CASE-SMCI-2021-12-31-3e4fa3,SMCI,2021-12-31,winner,5.837,5.606,stable,medium,stable,medium,false,CUSTOMER_CONCENTRATION,High insider ownership concentration and 67 Form 4 filings indicate alignment but also governance risk; customer concentration references relate to stock ownership rather than revenue dependency.,true,"67 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 5 customer concentration references. Key excerpts: [1] ""ks Related to Owning our Common Stock 
+
+The trading price of our common stock is likely to be volatile. 
+
+Future sales of shares by existing stockholders could cause our stock price to decline. 
+
+The concentration of our capital stock ownership with insiders will likely limit your ability to influen..."" [2] ""uring capacity in Taiwan and in the Netherlands, and as a result of the COVID-19 pandemic have sought to accelerate manufacturin",true,"DEF 14A filed 2021-04-23. No obvious executive changes in compensation section. Excerpt: ""AND COMMITTEES OF THE BOARD 
+
+12 
+
+PRINCIPAL STOCKHOLDERS AND STOCK OWNERSHIP BY MANAGEMENT 
+
+17 
+
+EXECUTIVE COMPENSATION 
+
+20 
+
+DIRECTOR COMPENSATION 
+
+42 
+
+EQUITY COMPENSATION PLAN INFORMATION 
+
+45 
+
+CERTAIN RELATIONSHIPS AND RELATED PERSON TRANSACTIONS AND DIRECTOR INDEPENDENCE 
+
+46 
+
+PROPOSAL 2 NON-BINDING ADVISORY VOTE TO APPROVE THE COMPENSATION OF OUR NAMED EXECUTIVE OFFICERS 
+
+49 
+
+PROPOSAL 3 RATIFI"
+CASE-RF-2019-01-02-3c8c20,RF,2019-01-02,underperform,0.79,-0.109,stable,high,deteriorating,medium,true,MANAGEMENT,Executive changes detected in the proxy statement combined with 94 insider filings showing no buy conviction suggest management transition risk that shifts trajectory from stable to deteriorating.,true,"94 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-03-09. Executive changes detected in compensation section. Excerpt: ""their perspectives on various corporate governance topics such as board composition and diversity, executive compensation, and environmental and social practices and disclosures. 
+
+A corporate governance engagement update is a regular agenda item discussed at every Nominating and Corporate Governance Committee meeting. Also included as a regular agenda item for 
+
+discussion are articles on leading and emergin"
+CASE-FCX-2013-01-02-a95aaa,FCX,2013-01-02,trap,-0.776,-1.174,deteriorating,medium,deteriorating,low,false,none,"No EDGAR enrichment data available; confidence drops from medium to low, leaving the deteriorating call for this commodity miner unvalidated.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-ABBV-2019-01-02-daba03,ABBV,2019-01-02,underperform,0.773,-0.126,stable,high,stable,high,false,MANAGEMENT,No executive changes in proxy and stable governance disclosures confirm the stable trajectory for this pharma franchise.,true,"58 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-03-19. No obvious executive changes in compensation section. Excerpt: ""gistered public accounting firm for 2018
+(Item 2), 
+
+To vote on an advisory vote on the approval of executive compensation (Item 3), 
+
+To determine, in an advisory vote, whether the stockholder advisory vote to approve executive compensation should occur every one, two or three
+years (Item 4), 
+
+To vote on a management proposal regarding the annual election of directors (Item 5), 
+
+To vote on a management p"
+CASE-HP-2013-01-02-f03ff4,HP,2013-01-02,underperform,0.026,-0.372,stable,medium,deteriorating,medium,true,CUSTOMER_CONCENTRATION,59% of revenue from top 10 customers and 32% from top 3 creates severe concentration risk that shifts trajectory from stable to deteriorating for this contract driller.,false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""ved approximately 59 percent of our consolidated operating revenues from our ten largest contract
+drilling customers and approximately 32 percent of our consolidated operating revenues from our three largest customers (including their affiliates). We believe that our relationship with all
+of these c...""",false,No DEF 14A proxy statement found before entry date.
+CASE-NVR-2021-12-31-b32110,NVR,2021-12-31,mixed,0.352,0.121,deteriorating,high,deteriorating,high,false,CUSTOMER_CONCENTRATION,Mortgage origination credit concentration risk adds financial exposure on top of the housing cycle deterioration already identified in the initial trajectory.,true,"27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""ll of the loans that we originate are underwritten to the standards and specifications of the ultimate investor. Insofar as we underwrite our originated loans to those standards, we bear no increased concentration of credit risk from the issuance of loans, except in certain limited instances where 
+...""",true,"DEF 14A filed 2021-03-17. No obvious executive changes in compensation section. Excerpt: ""- Ratification of Appointment of Independent Auditor 
+
+50 
+
+VI. 
+
+Proposal No. 3 - Advisory Vote on Executive Compensation 
+
+51 
+
+VII. 
+
+Shareholder Proposals and Other Matters 
+
+52 
+
+NVR, INC. 
+
+11700 Plaza America Drive 
+
+Suite 500 
+
+Reston, VA 20190 
+
+Proxy Statement 
+
+This Proxy Statement, proxy card and the Annual Report for the year ended December 31, 2020 are being mailed to our shareholders on or ab"
+CASE-XRAY-2021-12-31-af78fb,XRAY,2021-12-31,trap,-0.645,-0.876,deteriorating,high,deteriorating,high,false,INSIDER_TRADING,164 Form 4 filings with zero buy signals is the highest filing volume in this batch and strongly confirms insiders see no near-term recovery in this dental equipment maker.,true,"164 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-16. No obvious executive changes in compensation section. Excerpt: ""endent registered public accountants
+for 2021; 
+
+3.
+
+to approve, by non-binding vote, the Company s executive compensation; and
+
+4.
+
+to transact such other business as may properly come before the meeting. 
+
+Voting 
+
+Only stockholders of
+record at the close of business on March 29, 2021 (the Record Date ) are entitled to notice of, and to vote at, the meeting. At least ten days prior to the meeting, a compl"
+CASE-BBBY-2020-06-15-7261c0,BBBY,2020-06-15,underperform,0.031379801697355436,-0.3945,stable,low,deteriorating,low,true,INSIDER_TRADING,73 Form 4 filings with no insider buying during a period of fundamental stress shifts the trajectory from stable to deteriorating for this ultimately failed retailer.,true,"73 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-03-31. No obvious executive changes in compensation section. Excerpt: ""ominees and Other Directors 
+
+27
+
+Compensation Committee Interlocks and Insider Participation 
+
+30
+
+Executive Compensation 
+
+31
+
+Compensation Discussion and Analysis 
+
+31
+
+Introduction 
+
+31
+
+2017 Say on Pay Vote and 2017 Say on When Vote 
+
+32
+
+Compensation Objectives 
+
+32
+
+Employment Agreements 
+
+32
+
+Retirement Benefits 
+
+33
+
+Role of Compensation Consultants 
+
+33
+
+Elements of Compensation 
+
+33
+
+Nonqualified"
+CASE-IRM-2015-12-31-482182,IRM,2015-12-31,winner,0.436,0.208,stable,medium,stable,low,false,none,"No EDGAR enrichment data available; confidence drops from medium to low, leaving the stable call unvalidated for this storage REIT.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-SEE-2013-01-02-7473ed,SEE,2013-01-02,winner,1.602,1.204,deteriorating,medium,improving,medium,true,MANAGEMENT,"Executive changes detected in proxy suggest active management refresh which, combined with no customer concentration risk, shifts trajectory from deteriorating to improving for this packaging company.",true,"62 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2012-04-04. Executive changes detected in compensation section. Excerpt: ""istered public accounting firm for 2012. In addition, you will be asked for an advisory vote on our executive compensation as disclosed in the proxy statement. These matters are important, and we urge you to
+vote in favor of the nominees, our executive compensation and the ratification of the appointment of our independent auditor. 
+
+For your convenience, we
+are also offering a webcast of the meeting. If you "
+CASE-HPQ-2015-01-02-cc564b,HPQ,2015-01-02,underperform,0.28,-0.03,deteriorating,high,deteriorating,high,false,none,No enrichment data found across all three EDGAR sources; initial high-confidence deteriorating assessment stands unchanged.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-FCX-2015-01-02-a60354,FCX,2015-01-02,trap,-0.135,-0.445,stable,medium,deteriorating,medium,true,MANAGEMENT,"Proxy highlights significant governance and compensation overhaul amid volatile commodity markets, and 55 Form 4 filings with no insider buying suggest insiders lack conviction despite management spin about growth delivery, tilting stable toward deteriorating.",true,"55 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2014-04-29. Executive changes detected in compensation section. Excerpt: ""ights the significant changes we made during the past year in the areas of corporate governance and executive compensation. We encourage you to read the entire proxy statement and our annual report, and to vote your shares at our annual
+meeting. 
+
+Delivering on Expectations of Growth. Faced with volatile commodity market conditions, our company delivered strong operational
+performance globally and increased c"
+CASE-KMI-2015-12-31-1c9a5b,KMI,2015-12-31,underperform,0.165,-0.063,deteriorating,high,deteriorating,high,false,INSIDER_TRADING,30 Form 4 filings with zero insider buying during a period of significant price decline confirms deteriorating trajectory; stable management and no concentration risk leave the high-confidence call intact.,true,"30 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2015-03-27. No obvious executive changes in compensation section. Excerpt: ""9 
+
+Security Ownership of Certain Beneficial Owners and Management 
+
+25 
+
+Executive Officers 
+
+29 
+
+Executive Compensation 
+
+31 
+
+Director Compensation 
+
+44 
+
+Performance Graph 
+
+46 
+
+Item 1 Election of Directors 
+
+47 
+
+Item 2 Approval of the 2015 Stock Incentive Plan 
+
+53 
+
+Item 3 Approval of the 2015 Annual Incentive Plan 
+
+61 
+
+Item 4 Advisory Vote on Executive Compensation 
+
+66 
+
+Item 5 Ratification of "
+CASE-EXPD-2017-06-14-c2b652,EXPD,2017-06-14,mixed,0.369,0.111,stable,high,stable,medium,false,MANAGEMENT,"Proxy discloses significant compensation program changes driven by shareholder pressure, suggesting governance friction that warrants a confidence downgrade from high to medium, but the trajectory remains stable.",true,"30 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2017-03-23. Executive changes detected in compensation section. Excerpt: ""16, the Board of Directors continued to make significant enhancements to Expeditors' governance and executive compensation programs. The feedback we gathered through extensive dialog with our shareholders told us that more change was needed to bring our compensation programs even more in line with current best practices. This proxy discusses those changes, as well as our 2017 Omnibus Incentive Plan, which we "
+CASE-LNC-2021-12-31-f8a07c,LNC,2021-12-31,trap,-0.45,-0.681,stable,medium,deteriorating,medium,true,INSIDER_TRADING,"91 Form 4 filings with zero insider buying is a notable absence of conviction from management at a financial company later revealed as a trap, shifting trajectory from stable to deteriorating.",true,"91 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2021-04-16. No obvious executive changes in compensation section. Excerpt: ""olicy 
+
+30
+
+Other
+Information 
+
+30
+
+Audit
+Committee Report 
+
+30
+
+Agenda Item 3 Advisory Proposal on Executive Compensation 
+
+31 
+
+Compensation Discussion & Analysis 
+
+33 
+
+Executive
+Summary 
+
+34
+
+Compensation
+Committee Report 
+
+64
+
+Executive Compensation Tables 
+
+65 
+
+Summary
+Compensation Table 
+
+65
+
+Grants
+of Plan-Based Awards 
+
+68
+
+Outstanding
+Equity Awards at Fiscal Year-End 
+
+70
+
+Option
+Exercises and St"
+CASE-FAST-2021-01-04-d42960,FAST,2021-01-04,mixed,0.408,0.137,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Customer concentration mentioned only as a generic risk factor rather than a specific dependency, stable management with no executive turnover, and routine insider activity all confirm the initial stable/high assessment.",true,"37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""em to change. In addition, the market potential of a particular business strategy may vary from expectations due to a change in the 
+
+16 
+
+Table of Contents 
+
+marketplace (such as changes in customer concentration or needs), a change in the nature of that business strategy, or weaker than anticipate...""",true,"DEF 14A filed 2020-02-28. No obvious executive changes in compensation section. Excerpt: ""o approve the compensation of our named executive officers disclosed in this proxy statement 
+
+16 
+
+Executive compensation 
+
+16 
+
+Proposal #4 - Shareholder proposal relating to diversity reporting 
+
+33 
+
+Security ownership of principal shareholders and management 
+
+36 
+
+Additional matters 
+
+38 
+
+Householding 
+
+38 
+
+Deadlines for receipt of shareholder proposals and nominations for the 2021 annual meeting 
+
+"
+CASE-PWR-2021-12-31-0d52e7,PWR,2021-12-31,winner,1.768,1.537,deteriorating,medium,stable,medium,true,CUSTOMER_CONCENTRATION,"Five customer concentration references highlighting credit risk exposure and collectability concerns are notable, but stable management and high insider filing volume with no net selling suggest the initial deteriorating call was too pessimistic, warranting an upgrade to stable.",true,"52 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 5 customer concentration references. Key excerpts: [1] ""nancial difficulties in the future. These difficulties expose us to increased risk related to collectability of billed and unbilled receivables and contract assets for services we have performed. See Concentration of Credit Risk in Note 14 of the Notes to Consolidated Financial Statements in Item 8...."" [2] ""n Item 8. Financial Statements and Supplementary Data ) . 
+
+ITEM 7A. Quantitative and Qualitative Disclosures about Market Risk ",true,"DEF 14A filed 2021-04-16. No obvious executive changes in compensation section. Excerpt: ""nominated by Quanta s Board of Directors;
+
+2. 
+
+Approval, by non-binding advisory vote, of Quanta s
+executive compensation; 
+
+3. 
+
+Ratification of the appointment of PricewaterhouseCoopers LLP as Quanta s independent
+registered public accounting firm for fiscal year 2021; and 
+
+4. 
+
+Action upon any other matters that are properly brought before the meeting, or any adjournments or
+postponements of the meetin"
+CASE-BBBY-2015-12-31-bd4cf8,BBBY,2015-12-31,underperform,0.151,-0.077,deteriorating,medium,deteriorating,medium,false,none,"Complete absence of EDGAR enrichment data for a major retailer may itself signal poor disclosure practices, but provides no basis to change the initial deteriorating/medium assessment.",false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-BBT-2021-01-04-334be1,BBT,2021-01-04,winner,0.532,0.261,stable,medium,stable,medium,false,MANAGEMENT,Routine proxy with no executive changes and mixed insider activity provide no signal to shift the initial stable/medium classification for this regional bank.,true,"37 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2020-04-03. No obvious executive changes in compensation section. Excerpt: ""erm or until their successors are duly elected and qualified; 
+
+2. 
+
+To provide an advisory vote on executive compensation practices; 
+
+3. 
+
+To ratify the appointment of the Company s independent registered public accounting firm for fiscal year 2020; and 
+
+4. 
+
+To transact any other Company business that may properly come before the meeting. 
+
+The Board of Directors unanimously recommends that you vote FOR"
+CASE-CLF-2013-01-02-6d80d8,CLF,2013-01-02,trap,-0.957,-1.355,deteriorating,medium,deteriorating,medium,false,none,No enrichment data available for this commodity cyclical; initial deteriorating/medium assessment for what turned out to be a trap remains unchanged due to lack of additional signal.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-UNH-2021-12-31-3439f6,UNH,2021-12-31,underperform,0.049,-0.182,stable,high,stable,high,false,CUSTOMER_CONCENTRATION,"Customer concentration disclosures explicitly note credit risk is limited due to a large number of employer groups, reinforcing the diversified business model and supporting the initial stable/high call.",true,"142 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 2 customer concentration references. Key excerpts: [1] ""rrying values. 
+
+LEGAL MATTERS 
+
+A description of our legal proceedings is presented in Note 12 of Notes to the Consolidated Financial Statements included in Part II, Item 8, Financial Statements . 
+
+CONCENTRATIONS OF CREDIT RISK 
+
+Investments in financial instruments such as marketable securities a..."" [2] ""it risk with respect to accounts receivable are limited due to the large number of employer groups and other customers constitut",true,"DEF 14A filed 2021-04-26. No obvious executive changes in compensation section. Excerpt: ""ght 
+
+28 
+
+Alignment of Environment, Social and Governance (ESG) with Our Long-Term Strategy 
+
+29 
+
+Executive Compensation 
+
+Executive Summary 
+
+32 
+
+Compensation Discussion and Analysis 
+
+35 
+
+Compensation and Human Resources Committee Report 
+
+51 
+
+Compensation and Human Resources Committee Interlocks and Insider Participation 
+
+51 
+
+2020 Summary Compensation Table 
+
+52 
+
+2020 Grants of Plan-Based Awards "
+CASE-PHM-2019-01-02-85436b,PHM,2019-01-02,winner,1.261,0.362,stable,medium,improving,medium,true,MANAGEMENT,"Executive compensation changes detected in the proxy combined with 28 Form 4 filings and no insider selling suggest management alignment with shareholders, tilting trajectory from stable toward improving for this eventual winner.",true,"28 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",false,No customer concentration language found in 10-K text.,true,"DEF 14A filed 2018-03-28. Executive changes detected in compensation section. Excerpt: ""pendent registered public accounting firm for 2018
+
+Proposal 3 Say-on-pay: Advisory vote to approve executive compensation
+
+In addition, any other business as may properly come before the meeting
+
+Who Can 
+
+Vote: 
+
+Shareholders of record at the close of business on Friday, March 16 , 2018
+
+Who Can 
+
+Attend: 
+
+Shareholders who wish to attend the meeting in person should review pages 59-61 
+
+Date of 
+
+Mailing: "
+CASE-R-2013-01-02-a16e61,R,2013-01-02,underperform,0.178,-0.22,deteriorating,medium,deteriorating,medium,false,none,No enrichment data found for Ryder in 2013; initial deteriorating/medium assessment stands with no additional evidence to shift the call.,false,No Form 4 filings found in trailing 12 months.,false,No customer concentration language found in 10-K text.,false,No DEF 14A proxy statement found before entry date.
+CASE-SLM-2013-01-02-2d46c3,SLM,2013-01-02,underperform,0.083,-0.315,deteriorating,medium,deteriorating,high,false,CUSTOMER_CONCENTRATION,"SLM's own 10-K acknowledges its education credit concentration as both a competitive advantage and a material risk, reinforcing the deteriorating trajectory and warranting a confidence upgrade from medium to high.",false,No Form 4 filings found in trailing 12 months.,true,"Found 1 customer concentration references. Key excerpts: [1] ""gs may not prove to be profitable and may fail to offset the loss of business in the education
+credit market. 
+
+We are a leading provider of saving- and paying-for-college products and programs. This concentration gives us
+a competitive advantage in the marketplace. This concentration also creates r...""",false,No DEF 14A proxy statement found before entry date.
+CASE-XYL-2019-01-02-0cc59a,XYL,2019-01-02,underperform,0.868,-0.031,stable,high,stable,medium,false,MANAGEMENT,"Executive compensation changes and a shareholder proposal to lower the special meeting threshold signal governance pressure, warranting a confidence downgrade from high to medium, but operational concentration references are site-based rather than customer-based so trajectory holds.",true,"40 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed.",true,"Found 1 customer concentration references. Key excerpts: [1] ""or damage to our reputation, any of which could have a material adverse effect on our competitive position, results of operations, cash flows or financial condition. We also have or operate through a concentration of operations on certain sites, such as production and shared services centers, where ...""",true,"DEF 14A filed 2018-03-28. Executive changes detected in compensation section. Excerpt: ""as our independent registered public accounting firm for 2018. 
+
+3. 
+Advisory vote to approve named executive compensation. 
+
+4. 
+Advisory vote on the frequency of future advisory votes to approve named executive compensation. 
+
+5. 
+Shareholder proposal to lower the threshold for shareholders to call special meetings from 25% to 10% of Company stock, if properly presented at the meeting. 
+
+6. 
+Transact such o"
