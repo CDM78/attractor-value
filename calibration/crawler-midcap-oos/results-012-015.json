@@ -1,0 +1,235 @@
+{
+  "results": [
+    {
+      "case_id": "MC-REXR-2022-03-31",
+      "cik": "0001571283",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue declining ~56% over period with EPS compression from $0.57 to $0.27. Consistently profitable but shrinking top line. Insider data uninformative (0 buys/0 sells); management proxy shows no changes. Enrichment adds nothing."
+    },
+    {
+      "case_id": "MC-GXO-2022-03-31",
+      "cik": "0001852244",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -63.3% with EPS falling from $0.84 to $0.32. Still profitable but clear contraction. No proxy available and insider data uninformative. Recently spun off company with limited enrichment history."
+    },
+    {
+      "case_id": "MC-OLLI-2020-09-30",
+      "cik": "0001639300",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Strong 51.5% revenue growth with EPS rising from $0.51 to $1.50. All 8 quarters profitable with clear upward trajectory. Enrichment data uninformative -- stable management, no directional insider signals."
+    },
+    {
+      "case_id": "MC-FBIN-2022-03-31",
+      "cik": "0001519751",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue volatile with large quarterly swings (mix of annual/quarterly figures) but only -10.2% net trend. EPS erratic ($4.26 to $1.34 latest) but consistently profitable. Hard to read trajectory from noisy data. Enrichment uninformative."
+    },
+    {
+      "case_id": "MC-PSN-2022-03-31",
+      "cik": "0000275880",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Revenue trend -65% with EPS flat at $0.19 vs $0.33 start. Proxy shows executive comp policy changes tying bonuses to diversity/ESG metrics -- signals strategic pivot but does not change financial deterioration assessment. Insider data uninformative."
+    },
+    {
+      "case_id": "MC-THO-2020-09-30",
+      "cik": "0000730263",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Massive 308% revenue growth with EPS surging from $0.52 to $4.02. Strong cyclical recovery. Proxy flags executive changes in compensation but details are boilerplate committee language. Does not alter strongly improving baseline."
+    },
+    {
+      "case_id": "MC-STAG-2022-03-31",
+      "cik": "0001479094",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -61.6% with negative EPS (-$0.26) despite reported net income of $53M -- likely dilution or one-time charges. REIT with shrinking top line. Enrichment uninformative; stable management, no insider directional signals."
+    },
+    {
+      "case_id": "MC-MSM-2020-09-30",
+      "cik": "0001003078",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -49.1% with EPS declining from $3.57 to $0.94. Consistently profitable but clear top-line and bottom-line contraction. 119 Form 4 filings but all classified as mixed/no signal. Stable management per proxy."
+    },
+    {
+      "case_id": "MC-MTN-2022-03-31",
+      "cik": "0000812011",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Despite -52.5% revenue trend (seasonal/reporting artifacts), EPS recovered strongly from losses (-$3.49) to $5.47 in latest quarter. 5/8 quarters profitable shows pandemic recovery. Seasonal business (ski/resort). Enrichment uninformative."
+    },
+    {
+      "case_id": "MC-LEA-2022-03-31",
+      "cik": "0000842162",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue up 305% with EPS recovering from -$0.44 loss quarters to $6.19. Strong cyclical auto-sector recovery. 6/8 quarters profitable with clear upward trajectory. Enrichment adds nothing -- stable management, uninformative insider data."
+    },
+    {
+      "case_id": "MC-CHH-2022-03-31",
+      "cik": "0001046311",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -67.2% with EPS declining from $4.01 to $1.20. All 8 quarters profitable but clear contraction in both revenue and earnings. 98 Form 4 filings all classified as mixed. Stable management per proxy."
+    },
+    {
+      "case_id": "MC-HR-2020-09-30",
+      "cik": "0001360604",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -48.6% with EPS declining from $0.14 to -$0.03 (latest quarter unprofitable). Only 6/8 quarters profitable -- trajectory moving toward losses. Real estate sector under pressure. Enrichment uninformative; proxy mentions compensation plan amendments but no executive turnover."
+    },
+    {
+      "case_id": "MC-LPX-2020-09-30",
+      "cik": "0000060519",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Despite -29.8% revenue trend (reporting artifact), EPS surged from $0.58 to $1.57 -- nearly 3x improvement. All 8 quarters profitable with strong earnings momentum in materials sector (lumber/building products). Enrichment uninformative."
+    },
+    {
+      "case_id": "MC-KBR-2022-03-31",
+      "cik": "0001357615",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -74% with EPS swinging from -$0.30 to -$0.51 latest. Only 5/8 quarters profitable with losses bookending the period. Net income most recently -$71M. Clear financial deterioration. Enrichment uninformative."
+    },
+    {
+      "case_id": "MC-INGR-2022-03-31",
+      "cik": "0001046257",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -72.6% is misleading (annual vs quarterly mixing). EPS shows stability: $1.73 early, $1.92 latest -- slight improvement. All 8 quarters profitable. Consumer staples defensive positioning. 121 Form 4 filings all classified mixed. Stable management."
+    },
+    {
+      "case_id": "MC-LSTR-2022-03-31",
+      "cik": "0000853816",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -57.1% is misleading (quarterly vs annual mixing). EPS tells the real story: rose from $2.58 to $3.34 in comparable quarters, with peak of $9.98 annually. All 8 quarters profitable. Freight/logistics improving. Enrichment uninformative."
+    },
+    {
+      "case_id": "MC-AVT-2020-09-30",
+      "cik": "0000008858",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Only 1/8 quarters profitable with persistent losses (EPS ranging -$0.31 to -$1.29). Despite 289% revenue growth, company cannot convert to earnings. Proxy detects executive changes which is consistent with underperformance but does not change already-clear deteriorating trajectory."
+    },
+    {
+      "case_id": "MC-ESAB-2022-03-31",
+      "cik": "0001877322",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue up 24.5% with EPS rising from $0.96 to $3.92. All 7 reporting quarters profitable with clear upward trajectory. However, no insider or management data available (newly public/spun-off entity) -- confidence slightly lower on enriched assessment due to lack of corroborating data."
+    },
+    {
+      "case_id": "MC-OLLI-2022-03-31",
+      "cik": "0001639300",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -60% is data artifact. Comparing comparable quarters, EPS went from $0.36 to $0.71 (improving) but annual EPS declined from $1.72 to $2.43. Mixed signals suggest stable rather than clearly improving or deteriorating. Enrichment uninformative."
+    },
+    {
+      "case_id": "MC-ADC-2020-09-30",
+      "cik": "0000917251",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "none",
+      "key_insight": "Revenue trend -43.7% is quarterly vs annual artifact. EPS slightly declining ($0.93 to $0.39 in comparable quarters, $1.32 annually vs prior). All 8 quarters profitable. Net-lease REIT with steady but slightly compressed earnings. Enrichment uninformative."
+    }
+  ],
+  "metadata": {
+    "batches_processed": ["batch-012", "batch-013", "batch-014", "batch-015"],
+    "total_cases": 20,
+    "assessment_date": "2026-03-26",
+    "methodology_notes": "Revenue trend percentages appear distorted by mixing of annual and quarterly figures in the data. EPS trajectory used as primary signal where revenue was ambiguous. Enrichment data was uniformly weak across all 20 cases: insider trading showed 0 buys / 0 sells for every case with data, and management proxies were mostly boilerplate with no actionable signals.",
+    "enrichment_impact_summary": {
+      "classifications_changed": 0,
+      "cases_with_informative_enrichment": 0,
+      "primary_limitation": "Insider trading parser classifies all activity as mixed (0 buys, 0 sells) despite significant Form 4 filing volume, suggesting the buy/sell signal extraction is not functioning correctly."
+    }
+  }
+}

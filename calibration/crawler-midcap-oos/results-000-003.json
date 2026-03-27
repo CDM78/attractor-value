@@ -1,0 +1,230 @@
+{
+  "results": [
+    {
+      "case_id": "MC-NEU-2022-03-31",
+      "cik": "0001282637",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue declined 63% over period with volatile quarterly patterns; remains profitable but EPS trending down; insider data non-informative (0 buys, 0 sells), executive changes detected but proxy excerpt is boilerplate."
+    },
+    {
+      "case_id": "MC-OLN-2020-09-30",
+      "cik": "0000074303",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Zero profitable quarters out of eight with deeply negative EPS despite modest 16% revenue growth; persistent losses with no turnaround signal from any enrichment source."
+    },
+    {
+      "case_id": "MC-VKTX-2020-09-30",
+      "cik": "0001607678",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Pre-revenue biotech with zero revenue across all quarters and widening losses; stable management team but no financial catalysts visible in enrichment data."
+    },
+    {
+      "case_id": "MC-PSN-2020-09-30",
+      "cik": "0000275880",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Modest 2.5% revenue growth, 8/8 profitable quarters, consistent EPS; no management turnover detected, insider data non-informative -- classic stable industrial."
+    },
+    {
+      "case_id": "MC-CXT-2020-09-30",
+      "cik": "0000025445",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Slight 1.3% revenue growth, consistently profitable across all 8 quarters with stable EPS; no management changes, alignment-focused compensation philosophy confirmed in proxy."
+    },
+    {
+      "case_id": "MC-ADC-2016-03-31",
+      "cik": "0000917251",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue collapsed 71% ($70M to $20M) and EPS fell from $2.16 to $0.36; still profitable but trajectory is sharply negative; proxy shows share authorization increase which may signal dilution risk."
+    },
+    {
+      "case_id": "MC-VKTX-2022-03-31",
+      "cik": "0001607678",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Same pre-revenue biotech at a later date with worsening losses (latest -$16M vs -$9M previously); EPS losses deepening with no revenue inflection; management stable but burn rate increasing."
+    },
+    {
+      "case_id": "MC-ELF-2020-09-30",
+      "cik": "0001600033",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue growing 12% with consistent profitability (8/8 quarters) but very thin margins (latest net income $0M, EPS $0.01); no management changes, insider data non-informative."
+    },
+    {
+      "case_id": "MC-KNSL-2020-09-30",
+      "cik": "0001669162",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "4.1% revenue growth, consistently profitable across all 8 quarters with healthy EPS; stable management, no red flags in any enrichment source."
+    },
+    {
+      "case_id": "MC-WEX-2022-03-31",
+      "cik": "0001309108",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Revenue declined 62% with erratic quarterly patterns; remains profitable but EPS is volatile (including $0.00 quarters); executive changes detected in proxy add modest concern but insider data is non-informative."
+    },
+    {
+      "case_id": "MC-KNSL-2018-12-31",
+      "cik": "0001669162",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Slight 5.4% revenue decline but consistently profitable (8/8 quarters); EPS dipped in latest quarter but overall pattern stable; no management changes, early-stage financials company."
+    },
+    {
+      "case_id": "MC-BFAM-2022-03-31",
+      "cik": "0001437578",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "8.5% revenue growth with consistently profitable quarters; highly volatile quarterly revenue pattern ($472M-$1903M) suggests seasonal business; executive changes detected but proxy is standard corporate governance language."
+    },
+    {
+      "case_id": "MC-ARW-2020-09-30",
+      "cik": "0000007536",
+      "baseline_trajectory": "stable",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "stable",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Strong 9.5% revenue growth, 8/8 profitable quarters with solid and growing EPS; no management changes, clean proxy -- textbook stable large IT distributor."
+    },
+    {
+      "case_id": "MC-LOPE-2022-03-31",
+      "cik": "0001434588",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue dropped 68% from $511M to ~$150M range; still profitable with decent EPS but the revenue collapse is severe; no management departures and no informative insider signals soften the picture but don't change trajectory."
+    },
+    {
+      "case_id": "MC-AVTR-2020-09-30",
+      "cik": "0001722482",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue growing 8.5% but profitability deteriorating -- latest quarters show losses (-$42M, negative EPS) after earlier profits; transition from profitable to unprofitable is a clear negative signal despite top-line growth."
+    },
+    {
+      "case_id": "MC-KBR-2020-09-30",
+      "cik": "0001357615",
+      "baseline_trajectory": "improving",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "improving",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Was unprofitable (5 of 8 quarters with losses) but latest 3 quarters show positive EPS ($0.36); revenue slightly declining (-3.2%) but profitability turnaround is the dominant signal; no management changes supports stability of improvement."
+    },
+    {
+      "case_id": "MC-VVV-2020-09-30",
+      "cik": "0001674910",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue declined 47% with erratic quarterly swings; remains profitable across all 8 quarters but the top-line contraction is substantial; no management changes or informative insider activity."
+    },
+    {
+      "case_id": "MC-WFRD-2022-03-31",
+      "cik": "0001603923",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "high",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "high",
+      "classification_changed": false,
+      "most_impactful_source": "MANAGEMENT",
+      "key_insight": "Revenue down 46% with zero profitable quarters and deeply negative EPS throughout; executive changes detected in proxy during persistent losses -- combination of management turnover and financial distress reinforces deteriorating classification."
+    },
+    {
+      "case_id": "MC-GNTX-2022-03-31",
+      "cik": "0000355811",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "medium",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "medium",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue collapsed 73% ($1731M to $468M) and EPS fell from $1.50 to $0.37; still profitable but massive top-line decline dominates; likely reflects quarterly vs annual reporting artifact but trend is clearly negative."
+    },
+    {
+      "case_id": "MC-THO-2022-03-31",
+      "cik": "0000730263",
+      "baseline_trajectory": "deteriorating",
+      "baseline_confidence": "low",
+      "enriched_trajectory": "deteriorating",
+      "enriched_confidence": "low",
+      "classification_changed": false,
+      "most_impactful_source": "NONE",
+      "key_insight": "Revenue shows 69% decline but quarterly pattern ($12B, $4B, $8B, $4B) suggests heavy seasonality or annual-vs-quarterly mixing rather than true decline; consistently profitable with strong EPS; low confidence because the revenue data may be misleading."
+    }
+  ],
+  "metadata": {
+    "batch_files": ["batch-000.json", "batch-001.json", "batch-002.json", "batch-003.json"],
+    "total_cases": 20,
+    "assessment_date": "2026-03-26",
+    "notes": "Insider trading data was non-informative across all 20 cases (0 buys, 0 sells, mixed direction in every case). Customer concentration data was unavailable for all cases. Management/proxy data provided marginal signal in 2 cases (WFRD and WEX) where executive changes coincided with deteriorating financials. Several cases show apparent revenue declines that may reflect annual-vs-quarterly reporting artifacts rather than true deterioration (NEU, WEX, LOPE, GNTX, THO, VVV). No classification changes occurred between baseline and enriched assessments due to uniformly thin enrichment data."
+  }
+}

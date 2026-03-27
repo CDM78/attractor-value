@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "MC-REXR-2022-03-31",
+    "cik": "0001571283",
+    "sector": "Real Estate",
+    "entry_date": "2022-03-31",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001571283)\nSECTOR: Real Estate\nENTRY DATE: 2022-03-31\n\nQUARTERLY REVENUE (last 8 quarters): $320M, $115M, $115M, $452M, $452M, $452M, $141M, $141M\nTrend: -55.9% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $46M\n\nEPS (diluted): $0.57, $0.23, $0.23, $0.80, $0.80, $0.80, $0.27, $0.27\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "28 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-30. No obvious executive changes in compensation section. Excerpt: \"3 INCENTIVE AWARD PLAN \n\n32 \n\nEXECUTIVE OFFICERS \n\n46 \n\nCOMPENSATION DISCUSSION AND ANALYSIS \n\n48 \n\nEXECUTIVE COMPENSATION \n\n48 \n\nCOMPENSATION COMMITTEE REPORT \n\n69 \n\nSUMMARY COMPENSATION TABLE \n\n70 \n\nGRANTS OF PLAN-BASED AWARDS FOR 2020 \n\n72 \n\nOUTSTANDING EQUITY AWARDS AT DECEMBER 31, 2020 \n\n77 \n\nOPTION EXERCISES AND STOCK VESTED DURING 2020 \n\n79 \n\nPOTENTIAL PAYMENTS UPON TERMINATION OR CHANGE IN CONTROL \n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-GXO-2022-03-31",
+    "cik": "0001852244",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001852244)\nSECTOR: Industrials\nENTRY DATE: 2022-03-31\n\nQUARTERLY REVENUE (last 8 quarters): $5678M, $1974M, $1974M, $7940M, $7940M, $7940M, $2083M, $2083M\nTrend: -63.3% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $37M\n\nEPS (diluted): $0.84, $0.62, $0.62, $1.32, $1.32, $1.32, $0.32, $0.32\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "27 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-OLLI-2020-09-30",
+    "cik": "0001639300",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2020-09-30",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001639300)\nSECTOR: Consumer Discretionary\nENTRY DATE: 2020-09-30\n\nQUARTERLY REVENUE (last 8 quarters): $349M, $349M, $879M, $879M, $529M, $529M, $529M, $529M\nTrend: 51.5% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $99M\n\nEPS (diluted): $0.51, $0.51, $2.02, $2.02, $1.50, $1.50, $1.50, $1.50\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "35 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-05-08. No obvious executive changes in compensation section. Excerpt: \"d Consultant \n\n17 \n\nCompensation Philosophy \n\n18 \n\nPay Mix \n\n18 \n\nPeer Group \n\n19 \n\nElements of Our Executive Compensation and Benefits Programs \n\n19 \n\nBase Salary \n\n19 \n\nAnnual Incentive Compensation \n\n19 \n\nLong-Term Equity Incentive Compensation \n\n20 \n\nFiscal Year 2019 Grants \n\n20 \n\nCompensation Committee Report \n\n22 \n\nCompensation Committee Interlocks and Insider Participation \n\n22 \n\nSUMMARY COMPENSATION"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-FBIN-2022-03-31",
+    "cik": "0001519751",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001519751)\nSECTOR: Industrials\nENTRY DATE: 2022-03-31\n\nQUARTERLY REVENUE (last 8 quarters): $1270M, $7656M, $4801M, $4801M, $1218M, $1917M, $1140M, $1140M\nTrend: -10.2% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $772M\n\nEPS (diluted): $4.26, $1.45, $1.45, $5.54, $5.54, $5.54, $1.34, $1.34\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "40 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-21. No obvious executive changes in compensation section. Excerpt: \"ypes and Amounts of NEO Compensation Awarded in 2021 \n\n26\n\nCompensation Committee Report \n\n32\n\n2021 EXECUTIVE COMPENSATION \n\n33\n\n2021 Summary Compensation Table \n\n33\n\n2021 Grants of Plan-Based Awards \n\n34\n\nOutstanding Equity Awards at 2021 Fiscal Year-End\n\n35\n\n2021 Option Exercises and Stock Vested \n\n37\n\nRetirement and Post-Retirement Benefits \n\n37\n\n2021 Nonqualified Deferred Compensation \n\n38\n\n2021 Potenti"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-PSN-2022-03-31",
+    "cik": "0000275880",
+    "sector": "Industrials",
+    "entry_date": "2022-03-31",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0000275880)\nSECTOR: Industrials\nENTRY DATE: 2022-03-31\n\nQUARTERLY REVENUE (last 8 quarters): $2710M, $956M, $956M, $3661M, $3661M, $3661M, $949M, $949M\nTrend: -65.0% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $21M\n\nEPS (diluted): $0.33, $0.18, $0.18, $0.59, $0.59, $0.59, $0.19, $0.19\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "46 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2022-03-02. Executive changes detected in compensation section. Excerpt: \"nd environments that improve the quality of life for the communities we serve.\n\nWe also updated our executive compensation policies to tie a portion of our CEO and named executive officers annual bonuses to diversity, one of our critical core values. In addition, we established targets for enhancing gender diversity, improving ethnic/racial diversity, and reducing absolute greenhouse gas emissions by 20 perce"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  }
+]

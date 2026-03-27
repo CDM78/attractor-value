@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "MC-ST-2020-09-30",
+    "cik": "0001477294",
+    "sector": "Industrials",
+    "entry_date": "2020-09-30",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001477294)\nSECTOR: Industrials\nENTRY DATE: 2020-09-30\n\nQUARTERLY REVENUE (last 8 quarters): $577M, $577M, $577M, $2139M, $2139M, $788M, $788M, $788M\nTrend: 36.7% growth over period\n\nNET INCOME: 5/8 quarters profitable. Latest: $77M\n\nEPS (diluted): $-0.27, $-0.27, $-0.27, $0.27, $0.27, $0.49, $0.49, $0.49\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "30 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-04-22. No obvious executive changes in compensation section. Excerpt: \"6 \n\nCorporate Governance \n\n12 \n\nBoard Committees and Meetings \n\n14 \n\nPROPOSAL 2: ADVISORY VOTE ON EXECUTIVE COMPENSATION \n\n18 \n\nExecutive Officers \n\n19 \n\nCompensation Discussion and Analysis \n\n21 \n\nReport of the Compensation Committee of the Board of Directors \n\n39 \n\nSummary Compensation Tables and Narrative Disclosures \n\n40 \n\nPotential Payments Upon Termination or Change in Control \n\n48 \n\nCEO Pay Ratio Dis"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-TNL-2022-03-31",
+    "cik": "0001361658",
+    "sector": "Consumer Discretionary",
+    "entry_date": "2022-03-31",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001361658)\nSECTOR: Consumer Discretionary\nENTRY DATE: 2022-03-31\n\nQUARTERLY REVENUE (last 8 quarters): $2264M, $839M, $839M, $3134M, $3134M, $3134M, $809M, $809M\nTrend: -64.3% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $51M\n\nEPS (diluted): $2.30, $1.15, $1.15, $3.52, $3.52, $3.52, $0.59, $0.59\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "103 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2021-04-01. Executive changes detected in compensation section. Excerpt: \"expiring at the 2022 annual meeting \n\nto vote on a non-binding, advisory resolution to approve our executive compensation program \n\nto vote on a proposal to ratify the appointment of Deloitte Touche LLP to serve as our independent registered public accounting firm for 2021 and \n\nto transact any other business that may be properly brought before the meeting or any adjournment or postponement of the meeting. \n\n"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-LAZ-2020-09-30",
+    "cik": "0001311370",
+    "sector": "Financials",
+    "entry_date": "2020-09-30",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001311370)\nSECTOR: Financials\nENTRY DATE: 2020-09-30\n\nQUARTERLY REVENUE (last 8 quarters): $1150M, $1150M, $592M, $592M, $1748M, $1748M, $598M, $598M\nTrend: -48.0% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $75M\n\nEPS (diluted): $1.22, $1.22, $0.66, $0.66, $1.88, $1.88, $0.66, $0.66\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "69 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-12. No obvious executive changes in compensation section. Excerpt: \"any s annual general meeting in 2023; \n\n2. \n\nConsideration of a non-binding advisory vote regarding executive compensation; \n\n3. \n\nRatification of the appointment of Deloitte & Touche LLP as our independent registered public accounting firm for 2020 and authorization of the Company s Board of Directors, acting by its Audit Committee, to set their remuneration; and\n\n4. \n\nConsideration of any other matters th"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-RLI-2020-09-30",
+    "cik": "0000084246",
+    "sector": "Financials",
+    "entry_date": "2020-09-30",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0000084246)\nSECTOR: Financials\nENTRY DATE: 2020-09-30\n\nQUARTERLY REVENUE (last 8 quarters): $416M, $416M, $298M, $298M, $679M, $679M, $263M, $263M\nTrend: -36.9% growth over period\n\nNET INCOME: 8/8 quarters profitable. Latest: $42M\n\nEPS (diluted): $0.68, $0.68, $2.04, $2.04, $1.62, $1.62, $0.93, $0.93\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "64 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": true,
+        "summary": "DEF 14A filed 2020-03-26. No obvious executive changes in compensation section. Excerpt: \"amendment to increase the authorized shares of Common Stock of the Company, an advisory vote on our executive compensation, and ratification of Deloitte & Touche LLP as our independent registered public accounting firm for the current year. In addition, we will review significant events of 2019 and their impact on you and the Company. \n\nAgain, this year we are furnishing our proxy materials via the Internet"
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  },
+  {
+    "case_id": "MC-KD-2022-03-31",
+    "cik": "0001867072",
+    "sector": "Information Technology",
+    "entry_date": "2022-03-31",
+    "financial_summary": "ANONYMOUS COMPANY (CIK: 0001867072)\nSECTOR: Information Technology\nENTRY DATE: 2022-03-31\n\nQUARTERLY REVENUE (last 8 quarters): $4579M, $18657M, $18657M, $18657M, $13886M, $4556M, $4431M, $4431M\nTrend: -3.2% growth over period\n\nNET INCOME: 0/4 quarters profitable. Latest: $-692M\n\nEPS (diluted): $-3.08, $-10.35, $-10.28, $-10.28, $-8.07, $-3.26, $-1.02, $-1.02\n\n",
+    "enrichment_data": [
+      {
+        "type": "INSIDER_TRADING",
+        "data_found": true,
+        "summary": "29 Form 4 filings in trailing 12 months. Buy signals: 0, Sell signals: 0. Net direction: mixed."
+      },
+      {
+        "type": "MANAGEMENT",
+        "data_found": false,
+        "summary": "No DEF 14A proxy statement found before entry date."
+      },
+      {
+        "type": "CUSTOMER_CONCENTRATION",
+        "data_found": false,
+        "summary": "No 10-K text available for analysis."
+      }
+    ]
+  }
+]
