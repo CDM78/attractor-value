@@ -1,0 +1,32 @@
+Loaded 50 rows from stochasticity-raw.csv
+Cases: 20, runs per case: [1, 3, 3, 3, 3, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2]
+
+=== STOCHASTICITY RESULTS ===
+Cases tested: 20
+Total rows: 50
+
+Score range (max-min across 3 runs):
+  Mean: 0.12
+  Median: 0.10
+  Max: 0.40
+  Min: 0.00
+  Cases with score: 19/20
+
+Uncertainty rating agreement:
+  Unanimous (3/3 agree): 19/20 (95%)
+  At least 1 CANNOT_ASSESS: 1/20 (5%)
+  All 3 CANNOT_ASSESS: 1/20 (5%)
+
+Observation count mean absolute deviation:
+  Observations A (risks added): 0.82
+  Observations B (risks removed): 0.48
+  Observations C (severity changed): 2.18
+
+=== GATES ===
+GATE 1 PASS: Mean score range 0.12 <= 1.0 — single run OK
+GATE 2 PASS: Uncertainty agreement 95% >= 70%
+GATE 3 PASS: CANNOT_ASSESS rate 5% <= 80%
+
+OVERALL: ALL GATES PASS
+
+RECOMMENDATION: Single run (low noise)

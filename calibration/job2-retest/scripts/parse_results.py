@@ -27,20 +27,21 @@ def parse_agent_output(text):
     if not text:
         return result
 
-    # Extract structured fields
+    # Extract structured fields using re.DOTALL only (not MULTILINE)
+    # so that $ matches end-of-string, not end-of-line
     patterns = {
-        'observations_a': r'OBSERVATIONS_A:\s*(.*?)(?=\nOBSERVATIONS_B:|$)',
-        'observations_b': r'OBSERVATIONS_B:\s*(.*?)(?=\nOBSERVATIONS_C:|$)',
-        'observations_c': r'OBSERVATIONS_C:\s*(.*?)(?=\nOBSERVATIONS_D_COUNT:|$)',
+        'observations_a': r'OBSERVATIONS_A:\s*(.*?)(?=\nOBSERVATIONS_B:)',
+        'observations_b': r'OBSERVATIONS_B:\s*(.*?)(?=\nOBSERVATIONS_C:)',
+        'observations_c': r'OBSERVATIONS_C:\s*(.*?)(?=\nOBSERVATIONS_D_COUNT:)',
         'observations_d_count': r'OBSERVATIONS_D_COUNT:\s*(\d+)',
-        'statistics': r'STATISTICS:\s*(.*?)(?=\nUNCERTAINTY:|$)',
+        'statistics': r'STATISTICS:\s*(.*?)(?=\nUNCERTAINTY:)',
         'uncertainty_rating': r'UNCERTAINTY:\s*(CAN_ASSESS|MARGINAL|CANNOT_ASSESS)',
         'score': r'SCORE:\s*([\d.]+|N/A)',
-        'justification': r'JUSTIFICATION:\s*(.*?)$',
+        'justification': r'JUSTIFICATION:\s*(.*)',
     }
 
     for field, pattern in patterns.items():
-        m = re.search(pattern, text, re.DOTALL | re.MULTILINE)
+        m = re.search(pattern, text, re.DOTALL)
         if m:
             result[field] = m.group(1).strip()
 

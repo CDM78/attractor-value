@@ -9,9 +9,8 @@ import csv, json, os, sys, statistics, math
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 JOB2_DIR = os.path.dirname(SCRIPT_DIR)
 
-# Import pearsonr from analyze_scores
 sys.path.insert(0, SCRIPT_DIR)
-from analyze_scores import pearsonr, winsorize
+from stats_utils import pearsonr, winsorize, safe_float
 
 LOG = open(os.path.join(SCRIPT_DIR, 'analyze_observations.log'), 'w')
 def log(msg):
@@ -32,11 +31,7 @@ log(f"Loaded {len(rows)} cases")
 for r in rows:
     r['fwd_return'] = float(r['forward_return_3yr']) if r.get('forward_return_3yr') else None
 
-def safe_float(v):
-    try:
-        return float(v) if v and v.strip() not in ('', 'N/A', 'na') else None
-    except ValueError:
-        return None
+# safe_float imported from stats_utils
 
 # === 1. Number of new risk factors vs returns ===
 log(f"\n=== OBSERVATION-ONLY SIGNALS ===")

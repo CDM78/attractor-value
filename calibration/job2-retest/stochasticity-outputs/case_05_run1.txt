@@ -1,0 +1,41 @@
+OBSERVATIONS_A:
+1. A new "Summary of Risk Factors" section was added at the beginning of the current year filing, providing a bulleted overview of key risks (likely driven by SEC disclosure rule changes effective for fiscal years ending after December 15, 2020).
+2. The current year reorganizes risk factors into five new category headings: "Risks Related to Our Financial Performance or Results," "Risks Related to Our Dependence on Third Parties," "Risks Related to Our Legal and Regulatory Environment," "Risks Related to Our Intellectual Property," and "General Risk Factors" (the prior year had only two category headings).
+3. A new bullet point "be able to secure sufficient manufacturing capacity" was added under the growth management risk factor, reflecting supply chain tightening.
+4. New language about semiconductor industry capacity shortages was added to the cyclical nature risk factor: "The semiconductor industry is currently experiencing significant shortages of capacity, which has resulted in a lengthening of the manufacturing lead time for our products."
+5. Assembly vendor substrate shortages due to COVID-19 were added as a new risk element within the supply contract risk factor.
+6. Dajiang Baiwang affiliates being added to the Entity List in December 2020 was added to the China customer restrictions risk factor.
+7. Over 150 Huawei-related entities being added to the Entity List was added to the geopolitical/trade risk factor.
+8. BIS restrictions on exports/reexports to Hong Kong (removing preferential treatment) and the U.S. Secretary of State's May 2020 certification that Hong Kong no longer maintains sufficient autonomy from China were added to the Hong Kong warehouse risk factor.
+9. New language acknowledging that China customers may proactively "reduce dependence on the supply of components subject to U.S. trade regulations" even absent new restrictions was added.
+10. The SolarWinds 2020 data security breach was added as a specific example in the cybersecurity risk factor, along with expanded language about COVID-19 increasing cybersecurity risk due to remote work.
+11. Climate change references ("high heat events or water shortages, severe storms, other negative impacts from climate change") were added to the third-party contractor disruption risk factor.
+12. The California Consumer Privacy Act (CCPA) was added as a new regulatory example in the privacy/data protection risk factor.
+13. "Impairment of investment or other asset values" was added as a new bullet item in the operating results fluctuation factor.
+14. New language was added to the revenue prediction risk factor: "Continued or persistent losses may require us to obtain additional capital that may not be available at reasonable terms."
+
+OBSERVATIONS_B:
+1. The prior year's separate revenue growth history narrative (referencing growth from "$21.5 million in fiscal year 2008 to $316.4 million in fiscal year 2016" and subsequent declines) was removed and replaced with a more concise forward-looking statement in the current year.
+2. Several competitor names were removed from the competition risk factor: Fullhan Microelectronics, Geo Semiconductor, Intel (standalone), Realtek Semiconductor Corp., Sunplus Technology, and Sony (as a security camera OEM competitor were dropped or reorganized).
+3. The specific reference to "10 or 7 nanometer" process technologies was updated to "10 or 5 nanometer" in both the supply contract and wafer transition risk factors, with TSMC removed as a named dependency in the wafer transition risk factor (Samsung is now emphasized as the sole principal foundry).
+4. GUC (Global UniChip Corporation) and PTI (Powertech Technology) were removed from the named manufacturing suppliers in the outsourcing risk factor.
+
+OBSERVATIONS_C:
+1. Cyclical nature of semiconductor industry: Prior year described risk in general/historical terms. Current year added urgent language: "The semiconductor industry is currently experiencing significant shortages of capacity, which has resulted in a lengthening of the manufacturing lead time for our products. If this capacity shortage continues for an extensive period of time, it could negatively impact our ability to meet our customer's demand for our products and have an adverse impact on our revenue, results of operations and customer relationships." This shifts from hypothetical to active/ongoing risk.
+2. Supply contracts: Prior year stated "availability of foundry capacity at our primary foundry vendor has tightened recently." Current year escalates to: "our assembly vendors have recently experienced shortages of certain substrates necessary for the production of our solutions due in part to COVID-19, which has negatively impacted the production time of our devices. If these conditions continue for a substantial period or worsen, our ability to meet our anticipated demand for our solutions could be impacted." This adds a new dimension (substrate shortages) and more urgent conditional language.
+3. China customer restrictions: Prior year mentioned only Hikvision and Dahua on Entity List. Current year adds Dajiang Baiwang affiliates and explicitly states China customers may independently "reduce dependence on the supply of components subject to U.S. trade regulations, including our SoC solutions, which could have a material adverse effect on our operating results." This escalates the risk from government-imposed to customer-initiated supply chain de-risking.
+4. Hong Kong warehouse: Prior year described Hong Kong political unrest. Current year adds BIS export control changes removing Hong Kong's preferential treatment and the U.S. Secretary of State's certification, escalating from political instability to regulatory/trade risk: "the U.S. government may take future measures to impose stricter export controls or duties on shipments made to Hong Kong, add additional parties to the Entity List, or reduce preferential treatment currently accorded to Hong Kong."
+5. COVID-19: Prior year discussed the pandemic as an emerging risk with uncertain impact. Current year shifts to established ongoing risk: "Our business has been, and is expected to continue to be, adversely impacted by the effects of the COVID-19 pandemic." This changes from prospective ("could") to confirmed ("has been").
+6. Revenue/financial performance: Prior year reported FY2020 revenue increased 0.4% with net loss of $44.8M. Current year reports FY2021 revenue decreased 2.5% with net loss of $59.8M, representing worsening financial results.
+7. Competition risk factor: Prior year described the market as "the video and image processing markets." Current year updates to "the computer vision, video and image processing markets," reflecting the company's strategic pivot. Also, new competitors were added (Horizon Robotics, iCatch Technology, NVIDIA, Fuzhou Rockchip, Google LLC/Alphabet) while some were removed, suggesting a broadening and intensifying competitive landscape.
+8. Wafer fabrication transition: Prior year referenced "7nm process node" transition risk with dual dependency on "Samsung and TSMC." Current year shifts to "5nm process node" with increased dependency on Samsung alone: "We currently depend on Samsung, as the principal foundry for our products," removing TSMC as a co-dependency, which concentrates foundry risk.
+
+OBSERVATIONS_D_COUNT: 30
+
+STATISTICS: 16800 / 17900 / +7% / 66 / 66
+
+UNCERTAINTY: CAN_ASSESS
+
+SCORE: 2.3
+
+JUSTIFICATION: The risk profile shows a pattern of deterioration across multiple dimensions. Supply chain risks escalated from hypothetical tightness to active capacity shortages and substrate constraints. U.S.-China trade restrictions expanded with additional Entity List additions (Dajiang Baiwang) and the explicit acknowledgment that Chinese customers may independently de-risk away from U.S.-regulated components. Financial performance worsened (revenue declined 2.5%, net loss widened from $44.8M to $59.8M). Foundry dependency concentrated onto Samsung alone (TSMC dropped from the wafer transition risk). These are partially offset by incremental positives (the company's strategic positioning in computer vision/automotive appears to be progressing, and no fundamental business model risks were added), but the weight of the changes points toward a modestly deteriorating risk environment.

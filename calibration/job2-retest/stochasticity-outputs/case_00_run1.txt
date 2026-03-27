@@ -1,0 +1,19 @@
+OBSERVATIONS_A: CANNOT DETERMINE — The current year's Item 1A Risk Factors section is not present in the provided file. The "CURRENT YEAR RISK FACTORS (filed 2020-02-20)" section beginning at the designated marker contains the Management's Discussion and Analysis, financial statements, and other non-risk-factor portions of the FYE 2019 10-K filing, not the Item 1A risk factors. Without the current year's risk factors text, no additions can be identified.
+
+OBSERVATIONS_B: CANNOT DETERMINE — Same reason as above. Without the current year's Item 1A text, no removals can be identified.
+
+OBSERVATIONS_C: CANNOT DETERMINE — Same reason as above. Without the current year's Item 1A text, no severity changes can be identified.
+
+OBSERVATIONS_D_COUNT: CANNOT DETERMINE
+
+STATISTICS: ~6,800 / UNAVAILABLE / UNAVAILABLE / 37 / UNAVAILABLE
+- Prior year approximate word count: ~6,800 (Item 1A section covering 37 distinct risk factors across business/operations, real estate, debt, corporate structure, and federal income tax categories)
+- Current year approximate word count: UNAVAILABLE (Item 1A section not included in the file; the "CURRENT YEAR" section contains MD&A and financial statements instead)
+- The prior year filing (FYE 2018, filed 2019-02-21) contains a complete Item 1A with 37 distinct risk factors organized under: Risks Related to Our Business and Operations (12), General Real Estate Risk (5), Risks Related to Our Debt Financings (5), Risks Related to Our Corporate Structure (5), and Federal Income Tax Risks (10).
+- The current year filing (FYE 2019, filed 2020-02-20) as provided begins with a fragment referencing "Item 1A - Risk Factors above" (a cross-reference from the MD&A) and then contains only non-risk-factor content (Overview, Results of Operations, Liquidity, financial statements, etc.).
+
+UNCERTAINTY: CANNOT_ASSESS
+
+SCORE: N/A — insufficient signal
+
+JUSTIFICATION: The current year's Item 1A Risk Factors section was not included in the provided file. The section labeled "CURRENT YEAR RISK FACTORS" contains the MD&A, financial statements, and other portions of the FYE 2019 10-K rather than the actual risk factors. Without both years' risk factor texts available for comparison, no meaningful assessment of risk trajectory can be made. This appears to be a data extraction issue rather than a substantive finding about the company.

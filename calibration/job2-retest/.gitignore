@@ -1,0 +1,9 @@
+# Rebuildable from EDGAR (run rebuild_cache.py)
+item1a-cache/
+
+# Generated from item1a-cache (run run_stochasticity.py)
+stochasticity-inputs/
+stochasticity-cases.json
+
+# Python cache
+__pycache__/

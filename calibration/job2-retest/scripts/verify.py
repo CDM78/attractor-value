@@ -10,7 +10,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 JOB2_DIR = os.path.dirname(SCRIPT_DIR)
 
 sys.path.insert(0, SCRIPT_DIR)
-from analyze_scores import pearsonr, winsorize
+from stats_utils import pearsonr, winsorize, safe_float
 
 LOG = open(os.path.join(SCRIPT_DIR, 'verify.log'), 'w')
 def log(msg):
@@ -27,11 +27,7 @@ with open(csv_path) as f:
 
 log(f"Verification: loaded {len(rows)} rows from full-results.csv")
 
-def safe_float(v):
-    try:
-        return float(v) if v and v.strip() not in ('', 'N/A', 'na') else None
-    except ValueError:
-        return None
+# safe_float imported from stats_utils
 
 # Parse
 for r in rows:
