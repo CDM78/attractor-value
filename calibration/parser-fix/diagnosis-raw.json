@@ -1,0 +1,1575 @@
+[
+  {
+    "ticker": "FCN",
+    "cik": "0000887936",
+    "tenk_count": 14,
+    "latest_filing": {
+      "date": "2026-02-26",
+      "accession": "0000887936-26-000013",
+      "doc": "fcn-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0000887936-26-000013-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0000887936-26-000013-index.html",
+        "size": ""
+      },
+      {
+        "name": "fcn-20251231.htm",
+        "size": "2119226"
+      },
+      {
+        "name": "fti-123125x10kex211.htm",
+        "size": "71154"
+      },
+      {
+        "name": "fti-123125x10kex231.htm",
+        "size": "2042"
+      },
+      {
+        "name": "fti-123125x10kex311.htm",
+        "size": "10846"
+      },
+      {
+        "name": "fti-123125x10kex312.htm",
+        "size": "10623"
+      },
+      {
+        "name": "fti-123125x10kex321.htm",
+        "size": "5824"
+      },
+      {
+        "name": "fti-123125x10kex322.htm",
+        "size": "6278"
+      },
+      {
+        "name": "R1.htm",
+        "size": "64901"
+      }
+    ],
+    "total_docs": 111,
+    "html_length": 2119226,
+    "has_ixbrl": true,
+    "text_length": 359272,
+    "text_words": 50169,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 1,
+        "positions": [
+          160912
+        ],
+        "context": [
+          "ee the related risk factor in Item 1A. Risk Factors. \n \n ITEM 2.&#160;&#160;&#160;&#160;PROPERTIES \n "
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 1,
+        "positions": [
+          160912
+        ],
+        "context": [
+          "ee the related risk factor in Item 1A. Risk Factors. \n \n ITEM 2.&#160;&#160;&#160;&#160;PROPERTIES \n "
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 4,
+        "positions": [
+          24350,
+          72380,
+          160912,
+          213699
+        ],
+        "context": [
+          "isk Factors&#8221; in Part I, Item 1A of this Annual Report, as well as in other inform",
+          "lting.com. \n 14 \n \n \n\n \n \n \n\n ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n All of the",
+          "ee the related risk factor in Item 1A. Risk Factors. \n \n ITEM 2.&#160;&#160;&#160;&#160"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 4,
+        "positions": [
+          24350,
+          72380,
+          160912,
+          213699
+        ],
+        "context": [
+          "isk Factors&#8221; in Part I, Item 1A of this Annual Report, as well as in other inform",
+          "lting.com. \n 14 \n \n \n\n \n \n \n\n ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n All of the",
+          "ee the related risk factor in Item 1A. Risk Factors. \n \n ITEM 2.&#160;&#160;&#160;&#160"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 6,
+        "positions": [
+          19962,
+          24319,
+          72412,
+          91162,
+          160921
+        ],
+        "context": [
+          "\n &#160; &#160; Item&#160;1A. Risk Factors 15 \n &#160; &#160; Item&#160;1B. Unresolved Staff",
+          "orth under the heading &#8220;Risk Factors&#8221; in Part I, Item 1A of this Annual Report, ",
+          "EM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n All of the following risks, uncertainties and f"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 6,
+        "positions": [
+          19962,
+          24319,
+          72412,
+          91162,
+          160921
+        ],
+        "context": [
+          "\n &#160; &#160; Item&#160;1A. Risk Factors 15 \n &#160; &#160; Item&#160;1B. Unresolved Staff",
+          "orth under the heading &#8220;Risk Factors&#8221; in Part I, Item 1A of this Annual Report, ",
+          "EM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n All of the following risks, uncertainties and f"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "fcn-20251231 false 2025 FY 0000887936 P2Y http://fasb.org/us-gaap/2025#RestructuringAndRelatedCostIncurredCost P2Y http://fasb.org/us-gaap/2025#AccountsPayableAndAccruedLiabilitiesCurrent http://fasb.",
+    "item_headers_found": [
+      "ITEM 15.&#160;&#160;&#160;&#160;EXHIBITS AND FINANCIAL STA",
+      "ITEM 13.&#160;&#160;&#160;&#160;CERTAIN RELATIONSHIPS AND ",
+      "Item 8, &#8220;F",
+      "ITEM 16.&#160;&#160;&#160;&#160;FORM 10-K SUMMARY \n N",
+      "ITEM 1B.&#160;&#160;&#160;&#160;UNRESOLVED STAFF COMMENTS ",
+      "ITEM 2.&#160;&#160;&#160;&#160;PROPERTIES \n O",
+      "ITEM 4.&#160;&#160;&#160;&#160;MINE SAFETY DISCLOSURES \n ",
+      "ITEM 1C.&#160;&#160;&#160;&#160;CYBERSECURITY \n R",
+      "Item 7, &#8220;M",
+      "ITEM 14.&#160;&#160;&#160;&#160;PRINCIPAL ACCOUNTANT FEES ",
+      "Item 1A ",
+      "Item 408(",
+      "ITEM 8.&#160;&#160;&#160;&#160;FINANCIAL STATEMENTS AND S",
+      "ITEM 7A.&#160;&#160;&#160;&#160;QUANTITATIVE AND QUALITATI",
+      "ITEM 10.&#160;&#160;&#160;&#160;DIRECTORS, EXECUTIVE OFFIC",
+      "ITEM 12.&#160;&#160;&#160;&#160;SECURITY OWNERSHIP OF CERT",
+      "ITEM 1.&#160;&#160;&#160;&#160;BUSINESS \n U",
+      "ITEM 9B.&#160;&#160;&#160;&#160;OTHER INFORMATION \n (",
+      "ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n A",
+      "Item 1A. R"
+    ]
+  },
+  {
+    "ticker": "MSA",
+    "cik": "0000066570",
+    "tenk_count": 11,
+    "latest_filing": {
+      "date": "2026-02-12",
+      "accession": "0000066570-26-000005",
+      "doc": "msa-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0000066570-26-000005-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0000066570-26-000005-index.html",
+        "size": ""
+      },
+      {
+        "name": "ex10tamendno2to3rdamende.htm",
+        "size": "25011"
+      },
+      {
+        "name": "ex10uamendno3to3rdamende.htm",
+        "size": "20982"
+      },
+      {
+        "name": "ex10xamendno2to2ndamende.htm",
+        "size": "21146"
+      },
+      {
+        "name": "ex10yamendno3to2ndamende.htm",
+        "size": "19701"
+      },
+      {
+        "name": "ex21-2025subsidiarylisting.htm",
+        "size": "24592"
+      },
+      {
+        "name": "ex23-10xk2025.htm",
+        "size": "5559"
+      },
+      {
+        "name": "ex311-10xk2025.htm",
+        "size": "8712"
+      },
+      {
+        "name": "ex312-10xk2025.htm",
+        "size": "8723"
+      }
+    ],
+    "total_docs": 193,
+    "html_length": 2406743,
+    "has_ixbrl": true,
+    "text_length": 348258,
+    "text_words": 46474,
+    "pattern_matches": {
+      "Bare: Item 1A": {
+        "count": 2,
+        "positions": [
+          72266,
+          122152
+        ],
+        "context": [
+          " our financial condition. See Item 1A&#8212;Risk Factors, for further information regar",
+          " and financial condition. See Item 1A, &#8220;Risks related to Cybersecurity or Misappr"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 2,
+        "positions": [
+          72266,
+          122152
+        ],
+        "context": [
+          " our financial condition. See Item 1A&#8212;Risk Factors, for further information regar",
+          " and financial condition. See Item 1A, &#8220;Risks related to Cybersecurity or Misappr"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 6,
+        "positions": [
+          43578,
+          45690,
+          72280,
+          74274,
+          111818
+        ],
+        "context": [
+          "&#160;I 1. Business \n 4 \n 1A. Risk Factors \n 9 \n 1B. Unresolved Staff Comments \n 18 \n 1C. Cy",
+          "d in this report under &#8220;Risk Factors,&#8221; &#8220;Management&#8217;s Discussion and ",
+          " condition. See Item 1A&#8212;Risk Factors, for further information regarding our environmen"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 6,
+        "positions": [
+          43578,
+          45690,
+          72280,
+          74274,
+          111818
+        ],
+        "context": [
+          "&#160;I 1. Business \n 4 \n 1A. Risk Factors \n 9 \n 1B. Unresolved Staff Comments \n 18 \n 1C. Cy",
+          "d in this report under &#8220;Risk Factors,&#8221; &#8220;Management&#8217;s Discussion and ",
+          " condition. See Item 1A&#8212;Risk Factors, for further information regarding our environmen"
+        ]
+      }
+    },
+    "original_regex_matches": false,
+    "doc_starts_with": "msa-20251231 0000066570 2025 FY FALSE http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent iso4217:USD xbrli:shares iso4217:USD xbrli:shares xbrli:pure msa:Segment iso4217:GBP msa:lawsuit msa:claim 00",
+    "item_headers_found": [
+      "Item 1A&#8212;R",
+      "Item 16. F",
+      "Item 1A, &#8220;R",
+      "Item 7, \"M",
+      "Item 408(",
+      "Item 8 ",
+      "Item 15("
+    ]
+  },
+  {
+    "ticker": "SAIC",
+    "cik": "0001571123",
+    "tenk_count": 11,
+    "latest_filing": {
+      "date": "2026-03-16",
+      "accession": "0001571123-26-000029",
+      "doc": "saic-20260130.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0001571123-26-000029-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0001571123-26-000029-index.html",
+        "size": ""
+      },
+      {
+        "name": "R1.htm",
+        "size": "64763"
+      },
+      {
+        "name": "R10.htm",
+        "size": "74199"
+      },
+      {
+        "name": "R11.htm",
+        "size": "14860"
+      },
+      {
+        "name": "R12.htm",
+        "size": "143212"
+      },
+      {
+        "name": "R13.htm",
+        "size": "23374"
+      },
+      {
+        "name": "R14.htm",
+        "size": "43966"
+      },
+      {
+        "name": "R15.htm",
+        "size": "26174"
+      },
+      {
+        "name": "R16.htm",
+        "size": "45312"
+      }
+    ],
+    "total_docs": 120,
+    "html_length": 2196026,
+    "has_ixbrl": true,
+    "text_length": 385096,
+    "text_words": 53321,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 1,
+        "positions": [
+          29232
+        ],
+        "context": [
+          "Part I Item 1. Business \n 1 \n Item 1A. Risk Factors \n 9 \n Item 1B. Unresolved Staff Comments \n 20 \n I"
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 1,
+        "positions": [
+          29232
+        ],
+        "context": [
+          "Part I Item 1. Business \n 1 \n Item 1A. Risk Factors \n 9 \n Item 1B. Unresolved Staff Comments \n 20 \n I"
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 7,
+        "positions": [
+          29232,
+          47780,
+          66065,
+          129792,
+          136754
+        ],
+        "context": [
+          "Part I Item 1. Business \n 1 \n Item 1A. Risk Factors \n 9 \n Item 1B. Unresolved Staff Com",
+          "isk Factors&#8221; in Part I, Item 1A of this report. \n \n Contracts \n We must comply wi",
+          "isk Factors&#8221; in Part I, Item 1A of this report. \n \n Executive Officers \n For info"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 7,
+        "positions": [
+          29232,
+          47780,
+          66065,
+          129792,
+          136754
+        ],
+        "context": [
+          "Part I Item 1. Business \n 1 \n Item 1A. Risk Factors \n 9 \n Item 1B. Unresolved Staff Com",
+          "isk Factors&#8221; in Part I, Item 1A of this report. \n \n Contracts \n We must comply wi",
+          "isk Factors&#8221; in Part I, Item 1A of this report. \n \n Executive Officers \n For info"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 8,
+        "positions": [
+          29241,
+          47749,
+          66034,
+          67209,
+          122635
+        ],
+        "context": [
+          "em 1. Business \n 1 \n Item 1A. Risk Factors \n 9 \n Item 1B. Unresolved Staff Comments \n 20 \n I",
+          "d in more detail under &#8220;Risk Factors&#8221; in Part I, Item 1A of this report. \n \n Con",
+          "d in more detail under &#8220;Risk Factors&#8221; in Part I, Item 1A of this report. \n \n Exe"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 8,
+        "positions": [
+          29241,
+          47749,
+          66034,
+          67209,
+          122635
+        ],
+        "context": [
+          "em 1. Business \n 1 \n Item 1A. Risk Factors \n 9 \n Item 1B. Unresolved Staff Comments \n 20 \n I",
+          "d in more detail under &#8220;Risk Factors&#8221; in Part I, Item 1A of this report. \n \n Con",
+          "d in more detail under &#8220;Risk Factors&#8221; in Part I, Item 1A of this report. \n \n Exe"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "saic-20260130 false 2026 FY 0001571123 1 2 http://fasb.org/us-gaap/2025#OtherAccruedLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherAccruedLiabilitiesCurrent iso4217:USD xbrli:shares iso4217:USD ",
+    "item_headers_found": [
+      "Item 9. C",
+      "Item 3. L",
+      "Item 9B. O",
+      "Item 10 ",
+      "Item 7A. Q",
+      "Item 1 ",
+      "Item 408 ",
+      "Item 1B. U",
+      "Item 15. E",
+      "Item 11. E",
+      "Item 1A ",
+      "Item 13. C",
+      "Item 8. F",
+      "Item 14. P",
+      "Item 4. M",
+      "Item 2. P",
+      "Item 601(",
+      "Item 7 ",
+      "Item 9A. C",
+      "Item 7 \"M"
+    ]
+  },
+  {
+    "ticker": "RYN",
+    "cik": "0000052827",
+    "tenk_count": 16,
+    "latest_filing": {
+      "date": "2026-02-23",
+      "accession": "0000052827-26-000036",
+      "doc": "ryn-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0000052827-26-000036-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0000052827-26-000036-index.html",
+        "size": ""
+      },
+      {
+        "name": "a4q202510k2025ex1015.htm",
+        "size": "24671"
+      },
+      {
+        "name": "a4q202510k2025ex1017.htm",
+        "size": "146584"
+      },
+      {
+        "name": "a4q202510k2025ex1032.htm",
+        "size": "58113"
+      },
+      {
+        "name": "a4q202510k2025ex1036.htm",
+        "size": "12330"
+      },
+      {
+        "name": "a4q202510k2025ex211.htm",
+        "size": "8384"
+      },
+      {
+        "name": "a4q202510k2025ex212.htm",
+        "size": "7156"
+      },
+      {
+        "name": "a4q202510k2025ex221.htm",
+        "size": "10640"
+      },
+      {
+        "name": "a4q202510k2025ex231.htm",
+        "size": "6681"
+      }
+    ],
+    "total_docs": 182,
+    "html_length": 4767859,
+    "has_ixbrl": true,
+    "text_length": 538555,
+    "text_words": 70571,
+    "pattern_matches": {
+      "Bare: Item 1A": {
+        "count": 7,
+        "positions": [
+          75300,
+          98207,
+          102097,
+          112002,
+          118820
+        ],
+        "context": [
+          "The risk factors contained in Item 1A &#8212; Risk Factors in this Annual Report on For",
+          "ory and Sustainable Yield and Item 1A &#8212; Risk Factors . \n We estimate that the gro",
+          "ory and Sustainable Yield and Item 1A &#8212; Risk Factors . \n We estimate that the gro"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 7,
+        "positions": [
+          75300,
+          98207,
+          102097,
+          112002,
+          118820
+        ],
+        "context": [
+          "The risk factors contained in Item 1A &#8212; Risk Factors in this Annual Report on For",
+          "ory and Sustainable Yield and Item 1A &#8212; Risk Factors . \n We estimate that the gro",
+          "ory and Sustainable Yield and Item 1A &#8212; Risk Factors . \n We estimate that the gro"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 15,
+        "positions": [
+          71458,
+          75274,
+          75316,
+          98223,
+          102113
+        ],
+        "context": [
+          "60; Business \n 1 \n 1A. &#160; Risk Factors \n 18 \n 1B. &#160; Unresolved Staff Comments \n 26 ",
+          "aced on these statements. The risk factors contained in Item 1A &#8212; Risk Factors in this",
+          " contained in Item 1A &#8212; Risk Factors in this Annual Report on Form 10-K and similar di"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 15,
+        "positions": [
+          71458,
+          75274,
+          75316,
+          98223,
+          102113
+        ],
+        "context": [
+          "60; Business \n 1 \n 1A. &#160; Risk Factors \n 18 \n 1B. &#160; Unresolved Staff Comments \n 26 ",
+          "aced on these statements. The risk factors contained in Item 1A &#8212; Risk Factors in this",
+          " contained in Item 1A &#8212; Risk Factors in this Annual Report on Form 10-K and similar di"
+        ]
+      }
+    },
+    "original_regex_matches": false,
+    "doc_starts_with": "ryn-20251231 0000052827 0001806931 2025 2025 FY FY FALSE FALSE 1 http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2025#OtherAssetsNoncurrent http://fasb.org/us-gaap/2025#Ot",
+    "item_headers_found": [
+      "Item 9A. C",
+      "Item 1 &#8212; B",
+      "Item 5. M",
+      "Item 7 &#8212; M",
+      "Item 1 ",
+      "Item 1A &#8212; R",
+      "Item 7, M",
+      "Item 601(",
+      "Item 7 &#8212; P",
+      "Item 15("
+    ]
+  },
+  {
+    "ticker": "GTES",
+    "cik": "0001718512",
+    "tenk_count": 9,
+    "latest_filing": {
+      "date": "2026-02-12",
+      "accession": "0001628280-26-007719",
+      "doc": "gtes-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0001628280-26-007719-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0001628280-26-007719-index.html",
+        "size": ""
+      },
+      {
+        "name": "gtes-20251231.htm",
+        "size": "3260186"
+      },
+      {
+        "name": "gtes-ex191gatesindustrialc.htm",
+        "size": "123854"
+      },
+      {
+        "name": "gtes-exhibit211xq42025.htm",
+        "size": "52914"
+      },
+      {
+        "name": "gtes-exhibit231xq42025.htm",
+        "size": "2477"
+      },
+      {
+        "name": "gtes-exhibit311xq42025.htm",
+        "size": "8984"
+      },
+      {
+        "name": "gtes-exhibit312xq42025.htm",
+        "size": "9008"
+      },
+      {
+        "name": "gtes-exhibit321xq42025.htm",
+        "size": "7257"
+      },
+      {
+        "name": "montgomeryseparationagreem.htm",
+        "size": "100617"
+      }
+    ],
+    "total_docs": 164,
+    "html_length": 3260186,
+    "has_ixbrl": true,
+    "text_length": 464647,
+    "text_words": 63188,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 6,
+        "positions": [
+          60702,
+          63798,
+          98469,
+          105941,
+          187997
+        ],
+        "context": [
+          " \n 5 \n Item 1. Business \n 5 \n Item 1A. Risk Factors \n 14 \n Item 1B. Unresolved Staff Comments \n 28 \n ",
+          "scribed under &#8220;Part I - Item 1A. Risk Factors&#8221; of this annual report. These factors shoul",
+          " more information, see &#8220;Item 1A. Risk Factors - Risks Related to Legal and Regulatory Matters&#"
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 6,
+        "positions": [
+          60702,
+          63798,
+          98469,
+          105941,
+          187997
+        ],
+        "context": [
+          " \n 5 \n Item 1. Business \n 5 \n Item 1A. Risk Factors \n 14 \n Item 1B. Unresolved Staff Comments \n 28 \n ",
+          "scribed under &#8220;Part I - Item 1A. Risk Factors&#8221; of this annual report. These factors shoul",
+          " more information, see &#8220;Item 1A. Risk Factors - Risks Related to Legal and Regulatory Matters&#"
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 7,
+        "positions": [
+          60702,
+          63798,
+          98469,
+          105941,
+          187997
+        ],
+        "context": [
+          " \n 5 \n Item 1. Business \n 5 \n Item 1A. Risk Factors \n 14 \n Item 1B. Unresolved Staff Co",
+          "scribed under &#8220;Part I - Item 1A. Risk Factors&#8221; of this annual report. These",
+          " more information, see &#8220;Item 1A. Risk Factors - Risks Related to Legal and Regula"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 7,
+        "positions": [
+          60702,
+          63798,
+          98469,
+          105941,
+          187997
+        ],
+        "context": [
+          " \n 5 \n Item 1. Business \n 5 \n Item 1A. Risk Factors \n 14 \n Item 1B. Unresolved Staff Co",
+          "scribed under &#8220;Part I - Item 1A. Risk Factors&#8221; of this annual report. These",
+          " more information, see &#8220;Item 1A. Risk Factors - Risks Related to Legal and Regula"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 10,
+        "positions": [
+          60711,
+          63807,
+          98478,
+          105950,
+          105969
+        ],
+        "context": [
+          "em 1. Business \n 5 \n Item 1A. Risk Factors \n 14 \n Item 1B. Unresolved Staff Comments \n 28 \n ",
+          "nder &#8220;Part I - Item 1A. Risk Factors&#8221; of this annual report. These factors shoul",
+          "ormation, see &#8220;Item 1A. Risk Factors - Risks Related to Legal and Regulatory Matters&#"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 10,
+        "positions": [
+          60711,
+          63807,
+          98478,
+          105950,
+          105969
+        ],
+        "context": [
+          "em 1. Business \n 5 \n Item 1A. Risk Factors \n 14 \n Item 1B. Unresolved Staff Comments \n 28 \n ",
+          "nder &#8220;Part I - Item 1A. Risk Factors&#8221; of this annual report. These factors shoul",
+          "ormation, see &#8220;Item 1A. Risk Factors - Risks Related to Legal and Regulatory Matters&#"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "gtes-20251231 0001718512 12/31 FY false 2025 http://fasb.org/us-gaap/2025#CostOfRevenue http://fasb.org/us-gaap/2025#CostOfRevenue http://fasb.org/us-gaap/2025#CostOfRevenue http://fasb.org/us-gaap/20",
+    "item_headers_found": [
+      "Item 12 ",
+      "Item 9. C",
+      "Item 15. &#8220;E",
+      "Item 3. L",
+      "Item 9B. O",
+      "Item 7A. Q",
+      "Item 1C. C",
+      "Item 1B. U",
+      "Item 15. E",
+      "Item 11. E",
+      "Item 13. C",
+      "Item 8. F",
+      "Item 14. P",
+      "Item 4. M",
+      "Item 2. P",
+      "Item 1A. &#8220;R",
+      "Item 408(",
+      "Item 7: M",
+      "Item 7 ",
+      "Item 9A. C"
+    ]
+  },
+  {
+    "ticker": "FBIN",
+    "cik": "0001519751",
+    "tenk_count": 12,
+    "latest_filing": {
+      "date": "2026-02-23",
+      "accession": "0001193125-26-063960",
+      "doc": "fbin-20251227.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0001193125-26-063960-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0001193125-26-063960-index.html",
+        "size": ""
+      },
+      {
+        "name": "fbin-20251227.htm",
+        "size": "5700488"
+      },
+      {
+        "name": "fbin-ex10_30.htm",
+        "size": "48154"
+      },
+      {
+        "name": "fbin-ex21.htm",
+        "size": "20208"
+      },
+      {
+        "name": "fbin-ex23.htm",
+        "size": "3781"
+      },
+      {
+        "name": "fbin-ex24.htm",
+        "size": "69164"
+      },
+      {
+        "name": "fbin-ex31_1.htm",
+        "size": "14669"
+      },
+      {
+        "name": "fbin-ex31_2.htm",
+        "size": "14739"
+      },
+      {
+        "name": "fbin-ex32.htm",
+        "size": "8655"
+      }
+    ],
+    "total_docs": 143,
+    "html_length": 5700488,
+    "has_ixbrl": true,
+    "text_length": 477362,
+    "text_words": 58478,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 3,
+        "positions": [
+          44522,
+          72103,
+          171051
+        ],
+        "context": [
+          ". \n\n \n &#160; \n\n \n 1 \n\n \n \n \n Item 1A. \n\n \n Risk Factors. \n\n \n &#160; \n\n \n 7 \n\n \n \n \n Item 1B. \n\n \n Unreso",
+          "that impact our business, see Item 1A. Risk Factors. In the normal course of business, we are also in",
+          "n the section entitled &#8220;Item 1A. Risk Factors.&#8221; In addition, we cannot predict whether or"
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 3,
+        "positions": [
+          44522,
+          72103,
+          171051
+        ],
+        "context": [
+          ". \n\n \n &#160; \n\n \n 1 \n\n \n \n \n Item 1A. \n\n \n Risk Factors. \n\n \n &#160; \n\n \n 7 \n\n \n \n \n Item 1B. \n\n \n Unreso",
+          "that impact our business, see Item 1A. Risk Factors. In the normal course of business, we are also in",
+          "n the section entitled &#8220;Item 1A. Risk Factors.&#8221; In addition, we cannot predict whether or"
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 4,
+        "positions": [
+          44522,
+          72103,
+          127909,
+          171051
+        ],
+        "context": [
+          ". \n\n \n &#160; \n\n \n 1 \n\n \n \n \n Item 1A. \n\n \n Risk Factors. \n\n \n &#160; \n\n \n 7 \n\n \n \n \n I",
+          "that impact our business, see Item 1A. Risk Factors. In the normal course of business, ",
+          "risk factor disclosures under Item 1A of this Annual Report on Form 10-K, which disclos"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 4,
+        "positions": [
+          44522,
+          72103,
+          127909,
+          171051
+        ],
+        "context": [
+          ". \n\n \n &#160; \n\n \n 1 \n\n \n \n \n Item 1A. \n\n \n Risk Factors. \n\n \n &#160; \n\n \n 7 \n\n \n \n \n I",
+          "that impact our business, see Item 1A. Risk Factors. In the normal course of business, ",
+          "risk factor disclosures under Item 1A of this Annual Report on Form 10-K, which disclos"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 5,
+        "positions": [
+          44536,
+          52526,
+          72112,
+          73293,
+          171060
+        ],
+        "context": [
+          "\n\n \n 1 \n\n \n \n \n Item 1A. \n\n \n Risk Factors. \n\n \n &#160; \n\n \n 7 \n\n \n \n \n Item 1B. \n\n \n Unreso",
+          "section below entitled &#8220;Risk Factors.&#8221; We undertake no obligation to, and expres",
+          "ct our business, see Item 1A. Risk Factors. In the normal course of business, we are also in"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 5,
+        "positions": [
+          44536,
+          52526,
+          72112,
+          73293,
+          171060
+        ],
+        "context": [
+          "\n\n \n 1 \n\n \n \n \n Item 1A. \n\n \n Risk Factors. \n\n \n &#160; \n\n \n 7 \n\n \n \n \n Item 1B. \n\n \n Unreso",
+          "section below entitled &#8220;Risk Factors.&#8221; We undertake no obligation to, and expres",
+          "ct our business, see Item 1A. Risk Factors. In the normal course of business, we are also in"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "10-K \n \n \n \n http://fasb.org/us-gaap/2025#RestructuringCharges http://fasb.org/us-gaap/2025#RestructuringCharges http://fasb.org/us-gaap/2025#RestructuringCharges 0001519751 FY false P1Y http://fasb.o",
+    "item_headers_found": [
+      "Item 7A. \n\n \n Q",
+      "Item 13. \n\n \n C",
+      "Item 2. P ",
+      "Item 7A. &#8220;Q",
+      "Item 9. C",
+      "Item 3. \n\n \n L",
+      "Item 3. L",
+      "Item 9B. O",
+      "Item 7A. Q",
+      "Item 7. \n\n \n M",
+      "Item 1C. \n\n I",
+      "Item 1B. \n\n \n U",
+      "Item 1C. C",
+      "Item 1B. U",
+      "Item 4. \n\n \n M",
+      "Item 15. E",
+      "Item 11. E",
+      "Item 1. \n\n \n B",
+      "Item 9B. \n\n \n O",
+      "Item 9C. \n\n \n D"
+    ]
+  },
+  {
+    "ticker": "WFRD",
+    "cik": "0001603923",
+    "tenk_count": 13,
+    "latest_filing": {
+      "date": "2026-02-04",
+      "accession": "0001603923-26-000014",
+      "doc": "wfrd-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0001603923-26-000014-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0001603923-26-000014-index.html",
+        "size": ""
+      },
+      {
+        "name": "a2025-q4ex311ceo302cert.htm",
+        "size": "10617"
+      },
+      {
+        "name": "a2025-q4ex312cfo302cert.htm",
+        "size": "10739"
+      },
+      {
+        "name": "a2025-q4ex321ceo906cert.htm",
+        "size": "7191"
+      },
+      {
+        "name": "a2025-q4ex322cfo906cert.htm",
+        "size": "7190"
+      },
+      {
+        "name": "ex211-sigsubswft123125.htm",
+        "size": "19225"
+      },
+      {
+        "name": "ex231kpmgconsentwfrd123125.htm",
+        "size": "2382"
+      },
+      {
+        "name": "insidertradingpolicydec202.htm",
+        "size": "115954"
+      },
+      {
+        "name": "R1.htm",
+        "size": "60085"
+      }
+    ],
+    "total_docs": 119,
+    "html_length": 2020377,
+    "has_ixbrl": true,
+    "text_length": 325653,
+    "text_words": 45971,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 5,
+        "positions": [
+          22308,
+          52922,
+          122256,
+          127905,
+          184177
+        ],
+        "context": [
+          "0; PAGE Item 1 Business \n 2 \n Item 1A Risk Factors \n 8 \n Item 1B Unresolved Staff Comments \n 20 \n It",
+          "to March 2021 \n \n \n \n \n \n \n \n Item 1A. Risk Factors. \n \n \n An investment in our securities involves v",
+          "r additional information, see Item 1A. Risk Factors- Legal, Tax and Regulatory Risks. \n &#8226; See a"
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 5,
+        "positions": [
+          22308,
+          52922,
+          122256,
+          127905,
+          184177
+        ],
+        "context": [
+          "0; PAGE Item 1 Business \n 2 \n Item 1A Risk Factors \n 8 \n Item 1B Unresolved Staff Comments \n 20 \n It",
+          "to March 2021 \n \n \n \n \n \n \n \n Item 1A. Risk Factors. \n \n \n An investment in our securities involves v",
+          "r additional information, see Item 1A. Risk Factors- Legal, Tax and Regulatory Risks. \n &#8226; See a"
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 6,
+        "positions": [
+          22308,
+          52922,
+          119774,
+          122256,
+          127905
+        ],
+        "context": [
+          "0; PAGE Item 1 Business \n 2 \n Item 1A Risk Factors \n 8 \n Item 1B Unresolved Staff Comme",
+          "to March 2021 \n \n \n \n \n \n \n \n Item 1A. Risk Factors. \n \n \n An investment in our securit",
+          "rial impact on us. See &#8220;Item 1A &#8211;Risk Factors &#8211; Our business could be"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 6,
+        "positions": [
+          22308,
+          52922,
+          119774,
+          122256,
+          127905
+        ],
+        "context": [
+          "0; PAGE Item 1 Business \n 2 \n Item 1A Risk Factors \n 8 \n Item 1B Unresolved Staff Comme",
+          "to March 2021 \n \n \n \n \n \n \n \n Item 1A. Risk Factors. \n \n \n An investment in our securit",
+          "rial impact on us. See &#8220;Item 1A &#8211;Risk Factors &#8211; Our business could be"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 7,
+        "positions": [
+          22316,
+          52931,
+          53045,
+          119789,
+          122265
+        ],
+        "context": [
+          "Item 1 Business \n 2 \n Item 1A Risk Factors \n 8 \n Item 1B Unresolved Staff Comments \n 20 \n It",
+          "2021 \n \n \n \n \n \n \n \n Item 1A. Risk Factors. \n \n \n An investment in our securities involves v",
+          "ld consider carefully all the risk factors described below, the matters discussed herein und"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 7,
+        "positions": [
+          22316,
+          52931,
+          53045,
+          119789,
+          122265
+        ],
+        "context": [
+          "Item 1 Business \n 2 \n Item 1A Risk Factors \n 8 \n Item 1B Unresolved Staff Comments \n 20 \n It",
+          "2021 \n \n \n \n \n \n \n \n Item 1A. Risk Factors. \n \n \n An investment in our securities involves v",
+          "ld consider carefully all the risk factors described below, the matters discussed herein und"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "wfrd-20251231 0001603923 2025 FY false http://fasb.org/us-gaap/2025#LongTermDebtAndCapitalLeaseObligationsCurrent http://fasb.org/us-gaap/2025#LongTermDebtAndCapitalLeaseObligationsCurrent http://fasb",
+    "item_headers_found": [
+      "Item 15 E",
+      "Item 8 | F",
+      "Item 8 | N",
+      "Item 9. C",
+      "Item 7 | MD&A&#160;&#160;&#160;&#160; \n\n A",
+      "Item 3. L",
+      "Item 9B. O",
+      "Item 7 | MD&A&#160;&#160;&#160;&#160; \n\n PRI R",
+      "Item 7A. Q",
+      "Item 2 P",
+      "Item 7 M",
+      "Item 1C. C",
+      "Item 15 | E",
+      "Item 1 B",
+      "Item 15(",
+      "Item 9 | C",
+      "Item 10 | D",
+      "Item 1B. U",
+      "Item 7 | MD&A&#160;&#160;&#160;&#160; \n\n DRE R",
+      "Item 1B U"
+    ]
+  },
+  {
+    "ticker": "OGS",
+    "cik": "0001587732",
+    "tenk_count": 14,
+    "latest_filing": {
+      "date": "2026-02-19",
+      "accession": "0001587732-26-000009",
+      "doc": "ogs-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0001587732-26-000009-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0001587732-26-000009-index.html",
+        "size": ""
+      },
+      {
+        "name": "a2023-ogsesppplaneffecti.htm",
+        "size": "27869"
+      },
+      {
+        "name": "a2024onegasaoipfinalappr.htm",
+        "size": "41561"
+      },
+      {
+        "name": "ogs-20251231.htm",
+        "size": "2357716"
+      },
+      {
+        "name": "ogs10-k2025exhibit211.htm",
+        "size": "2362"
+      },
+      {
+        "name": "ogs10-k2025exhibit231.htm",
+        "size": "2382"
+      },
+      {
+        "name": "ogs10-kx12312025exhibit311.htm",
+        "size": "8482"
+      },
+      {
+        "name": "ogs10-kx12312025exhibit312.htm",
+        "size": "8511"
+      },
+      {
+        "name": "ogs10-kx12312025exhibit321.htm",
+        "size": "4585"
+      }
+    ],
+    "total_docs": 143,
+    "html_length": 2357716,
+    "has_ixbrl": true,
+    "text_length": 341931,
+    "text_words": 47158,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 1,
+        "positions": [
+          35068
+        ],
+        "context": [
+          "I. \n Item 1. \n Business \n 7 \n Item 1A. \n Risk Factors \n 13 \n Item 1B. \n Unresolved Staff Comments \n 17 "
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 1,
+        "positions": [
+          35068
+        ],
+        "context": [
+          "I. \n Item 1. \n Business \n 7 \n Item 1A. \n Risk Factors \n 13 \n Item 1B. \n Unresolved Staff Comments \n 17 "
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 4,
+        "positions": [
+          35068,
+          37845,
+          67911,
+          172228
+        ],
+        "context": [
+          "I. \n Item 1. \n Business \n 7 \n Item 1A. \n Risk Factors \n 13 \n Item 1B. \n Unresolved Staf",
+          "s are described under Part I, Item 1A, Risk Factors, and Part II, Item 7, Management&#8",
+          " 12 \n\n \n Table of Contents \n\n ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Our in"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 4,
+        "positions": [
+          35068,
+          37845,
+          67911,
+          172228
+        ],
+        "context": [
+          "I. \n Item 1. \n Business \n 7 \n Item 1A. \n Risk Factors \n 13 \n Item 1B. \n Unresolved Staf",
+          "s are described under Part I, Item 1A, Risk Factors, and Part II, Item 7, Management&#8",
+          " 12 \n\n \n Table of Contents \n\n ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Our in"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 4,
+        "positions": [
+          35079,
+          37854,
+          67943,
+          172237
+        ],
+        "context": [
+          ". \n Business \n 7 \n Item 1A. \n Risk Factors \n 13 \n Item 1B. \n Unresolved Staff Comments \n 17 ",
+          "cribed under Part I, Item 1A, Risk Factors, and Part II, Item 7, Management&#8217;s Discussi",
+          "EM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Our investors should consider the following"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 4,
+        "positions": [
+          35079,
+          37854,
+          67943,
+          172237
+        ],
+        "context": [
+          ". \n Business \n 7 \n Item 1A. \n Risk Factors \n 13 \n Item 1B. \n Unresolved Staff Comments \n 17 ",
+          "cribed under Part I, Item 1A, Risk Factors, and Part II, Item 7, Management&#8217;s Discussi",
+          "EM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Our investors should consider the following"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "ogs-20251231 0001587732 --12-31 2025 FY false iso4217:USD xbrli:shares iso4217:USD xbrli:shares ogs:customers xbrli:pure utr:Bcf 0001587732 2025-01-01 2025-12-31 0001587732 2025-06-30 0001587732 2026-",
+    "item_headers_found": [
+      "Item 9. \n C",
+      "ITEM 2.&#160;&#160;&#160;&#160;PROPERTIES \n \n \n T",
+      "Item 14. \n P",
+      "Item 3. \n L",
+      "ITEM 5.&#160;&#160;&#160;&#160;MARKET FOR REGISTRANT&#821",
+      "ITEM 13.&#160;&#160;&#160;&#160;CERTAIN RELATIONSHIPS AND ",
+      "ITEM 1B.&#160;&#160;&#160;&#160;UNRESOLVED STAFF COMMENTS ",
+      "ITEM 11.&#160;&#160;&#160;&#160;EXECUTIVE COMPENSATION \n \n",
+      "ITEM 4.&#160;&#160;&#160;&#160;MINE SAFETY DISCLOSURES \n ",
+      "Item 11. \n E",
+      "Item 1. \n B",
+      "ITEM 14.&#160;&#160;&#160;&#160;PRINCIPAL ACCOUNTANT FEES ",
+      "ITEM 3.&#160;&#160;&#160;&#160;LEGAL PROCEEDINGS \n \n \n S",
+      "Item 1B. \n U",
+      "Item 7. \n M",
+      "Item 7A. \n Q",
+      "Item 9B. \n O",
+      "Item 1A, R",
+      "Item 9A. \n C",
+      "ITEM 6.&#160;&#160;&#160;&#160;[RESERVED] \n \n \n \n ITEM 7."
+    ]
+  },
+  {
+    "ticker": "CACC",
+    "cik": "0000885550",
+    "tenk_count": 13,
+    "latest_filing": {
+      "date": "2026-02-13",
+      "accession": "0000885550-26-000047",
+      "doc": "cacc-20251231.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0000885550-26-000047-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0000885550-26-000047-index.html",
+        "size": ""
+      },
+      {
+        "name": "cacc-20251231.htm",
+        "size": "3745510"
+      },
+      {
+        "name": "cacc-20251231xex1025.htm",
+        "size": "50890"
+      },
+      {
+        "name": "cacc-20251231xex1026.htm",
+        "size": "98231"
+      },
+      {
+        "name": "cacc-20251231xex1027.htm",
+        "size": "71513"
+      },
+      {
+        "name": "cacc-20251231xex1028.htm",
+        "size": "75164"
+      },
+      {
+        "name": "cacc-20251231xex19.htm",
+        "size": "21561"
+      },
+      {
+        "name": "cacc-20251231xex21.htm",
+        "size": "24468"
+      },
+      {
+        "name": "cacc-20251231xex23.htm",
+        "size": "2712"
+      }
+    ],
+    "total_docs": 120,
+    "html_length": 3745510,
+    "has_ixbrl": true,
+    "text_length": 487975,
+    "text_words": 67408,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 1,
+        "positions": [
+          162077
+        ],
+        "context": [
+          "urity Risks&#8221; in Part I, Item 1A. Risk Factors. \n \n \n Our board of directors oversees the Compan"
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 1,
+        "positions": [
+          162077
+        ],
+        "context": [
+          "urity Risks&#8221; in Part I, Item 1A. Risk Factors. \n \n \n Our board of directors oversees the Compan"
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 3,
+        "positions": [
+          108762,
+          162077,
+          243453
+        ],
+        "context": [
+          "e &#8220;SEC&#8221;). \n \n \n \n ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Indust",
+          "urity Risks&#8221; in Part I, Item 1A. Risk Factors. \n \n \n Our board of directors overs",
+          " to, the factors set forth in Item 1A of this Form 10-K, which is incorporated herein b"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 3,
+        "positions": [
+          108762,
+          162077,
+          243453
+        ],
+        "context": [
+          "e &#8220;SEC&#8221;). \n \n \n \n ITEM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Indust",
+          "urity Risks&#8221; in Part I, Item 1A. Risk Factors. \n \n \n Our board of directors overs",
+          " to, the factors set forth in Item 1A of this Form 10-K, which is incorporated herein b"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 7,
+        "positions": [
+          58780,
+          108794,
+          119846,
+          125700,
+          159347
+        ],
+        "context": [
+          "60; 1. \n Business \n 3 \n 1A. \n Risk Factors \n 14 \n 1B. \n Unresolved Staff Comments \n 24 \n 1 C",
+          "EM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Industry, Operational, and Macroeconomic Ri",
+          " risks described in the other risk factors disclosed in this Form 10-K. \n \n \n The concentrat"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 7,
+        "positions": [
+          58780,
+          108794,
+          119846,
+          125700,
+          159347
+        ],
+        "context": [
+          "60; 1. \n Business \n 3 \n 1A. \n Risk Factors \n 14 \n 1B. \n Unresolved Staff Comments \n 24 \n 1 C",
+          "EM 1A.&#160;&#160;&#160;&#160;RISK FACTORS \n \n \n Industry, Operational, and Macroeconomic Ri",
+          " risks described in the other risk factors disclosed in this Form 10-K. \n \n \n The concentrat"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "cacc-20251231 0000885550 2025 FY FALSE P3Y P4Y P6Y iso4217:USD xbrli:shares iso4217:USD xbrli:shares xbrli:pure cacc:portfolio_segment cacc:loan cacc:facility 0000885550 2025-01-01 2025-12-31 00008855",
+    "item_headers_found": [
+      "ITEM 15.&#160;&#160;&#160;&#160;EXHIBITS AND FINANCIAL STA",
+      "ITEM 5.&#160;&#160;&#160;&#160;MARKET FOR REGISTRANT&#821",
+      "ITEM 13.&#160;&#160;&#160;&#160;CERTAIN RELATIONSHIPS AND ",
+      "Item 9A. \n 97 \n\n \n \n\n REPORT OF INDEPENDENT REGISTERED PUB",
+      "ITEM 1B.&#160;&#160;&#160;&#160;UNRESOLVED STAFF COMMENTS ",
+      "ITEM 8.&#160;&#160;&#160;&#160;&#160;FINANCIAL STATEMENTS",
+      "ITEM 11.&#160;&#160;&#160;&#160;EXECUTIVE COMPENSATION \n \n",
+      "ITEM 4.&#160;&#160;&#160;&#160;MINE SAFETY DISCLOSURES \n ",
+      "ITEM 16.&#160;&#160;&#160;&#160;FORM 10-K SUMMARY \n \n \n N",
+      "ITEM 7A.&#160;&#160;QUANTITATIVE AND QUALITATIVE DISCLOSUR",
+      "Item 8 &#8212; F",
+      "Item 601 ",
+      "Item 1A ",
+      "ITEM 14.&#160;&#160;&#160;&#160;PRINCIPAL ACCOUNTING FEES ",
+      "ITEM 9B.&#160;&#160;&#160;&#160;OTHER INFORMATION \n \n \n D",
+      "Item 408(",
+      "ITEM 6.&#160;&#160;&#160;&#160;[RESERVED] \n \n \n 28 \n\n \n \n",
+      "Item 7 ",
+      "ITEM 10.&#160;&#160;&#160;&#160;DIRECTORS, EXECUTIVE OFFIC",
+      "ITEM 12.&#160;&#160;&#160;&#160;SECURITY OWNERSHIP OF CERT"
+    ]
+  },
+  {
+    "ticker": "ARW",
+    "cik": "0000007536",
+    "tenk_count": 9,
+    "latest_filing": {
+      "date": "2026-02-11",
+      "accession": "0001104659-26-012765",
+      "doc": "arw-20251231x10k.htm",
+      "form": "10-K"
+    },
+    "filing_documents": [
+      {
+        "name": "0001104659-26-012765-index-headers.html",
+        "size": ""
+      },
+      {
+        "name": "0001104659-26-012765-index.html",
+        "size": ""
+      },
+      {
+        "name": "arw-20251231x10k.htm",
+        "size": "3974170"
+      },
+      {
+        "name": "arw-20251231xex10dgix.htm",
+        "size": "16550"
+      },
+      {
+        "name": "arw-20251231xex10doi.htm",
+        "size": "37975"
+      },
+      {
+        "name": "arw-20251231xex21.htm",
+        "size": "172574"
+      },
+      {
+        "name": "arw-20251231xex23.htm",
+        "size": "4607"
+      },
+      {
+        "name": "arw-20251231xex31dia.htm",
+        "size": "12973"
+      },
+      {
+        "name": "arw-20251231xex31dib.htm",
+        "size": "13200"
+      },
+      {
+        "name": "arw-20251231xex32di.htm",
+        "size": "7110"
+      }
+    ],
+    "total_docs": 112,
+    "html_length": 3974170,
+    "has_ixbrl": true,
+    "text_length": 440336,
+    "text_words": 54350,
+    "pattern_matches": {
+      "Standard: Item 1A Risk Factors": {
+        "count": 2,
+        "positions": [
+          30958,
+          150701
+        ],
+        "context": [
+          "\n\n Item 1. \n\n Business \n\n 4\n\n Item 1A. \n\n Risk Factors \n\n 10\n\n Item 1B. \n\n Unresolved Staff Comments \n\n ",
+          "act future quarters. Refer to Item 1A - Risk Factors in this Annual Report on Form 10-K for further di"
+        ]
+      },
+      "Uppercase: ITEM 1A RISK FACTORS": {
+        "count": 2,
+        "positions": [
+          30958,
+          150701
+        ],
+        "context": [
+          "\n\n Item 1. \n\n Business \n\n 4\n\n Item 1A. \n\n Risk Factors \n\n 10\n\n Item 1B. \n\n Unresolved Staff Comments \n\n ",
+          "act future quarters. Refer to Item 1A - Risk Factors in this Annual Report on Form 10-K for further di"
+        ]
+      },
+      "Bare: Item 1A": {
+        "count": 3,
+        "positions": [
+          30958,
+          124071,
+          150701
+        ],
+        "context": [
+          "\n\n Item 1. \n\n Business \n\n 4\n\n Item 1A. \n\n Risk Factors \n\n 10\n\n Item 1B. \n\n Unresolved S",
+          ";s risk factor disclosures in Item 1A of this Annual Report on Form 10-K. \n\n &#8203; \n\n",
+          "act future quarters. Refer to Item 1A - Risk Factors in this Annual Report on Form 10-K"
+        ]
+      },
+      "Bare: ITEM 1A": {
+        "count": 3,
+        "positions": [
+          30958,
+          124071,
+          150701
+        ],
+        "context": [
+          "\n\n Item 1. \n\n Business \n\n 4\n\n Item 1A. \n\n Risk Factors \n\n 10\n\n Item 1B. \n\n Unresolved S",
+          ";s risk factor disclosures in Item 1A of this Annual Report on Form 10-K. \n\n &#8203; \n\n",
+          "act future quarters. Refer to Item 1A - Risk Factors in this Annual Report on Form 10-K"
+        ]
+      },
+      "Just: Risk Factors": {
+        "count": 5,
+        "positions": [
+          30970,
+          48781,
+          57969,
+          138145,
+          150711
+        ],
+        "context": [
+          "\n Business \n\n 4\n\n Item 1A. \n\n Risk Factors \n\n 10\n\n Item 1B. \n\n Unresolved Staff Comments \n\n ",
+          "tory matters, refer to &#8220;Risk Factors&#8221; in Part&#160;I, Item&#160;1A.\n\n Additional",
+          " of Contents \n\n Item&#160;1A. Risk Factors. \n\n Described below and in &#8220;Management&#821"
+        ]
+      },
+      "Just: RISK FACTORS": {
+        "count": 5,
+        "positions": [
+          30970,
+          48781,
+          57969,
+          138145,
+          150711
+        ],
+        "context": [
+          "\n Business \n\n 4\n\n Item 1A. \n\n Risk Factors \n\n 10\n\n Item 1B. \n\n Unresolved Staff Comments \n\n ",
+          "tory matters, refer to &#8220;Risk Factors&#8221; in Part&#160;I, Item&#160;1A.\n\n Additional",
+          " of Contents \n\n Item&#160;1A. Risk Factors. \n\n Described below and in &#8220;Management&#821"
+        ]
+      }
+    },
+    "original_regex_matches": true,
+    "doc_starts_with": "ARROW ELECTRONICS, INC._December 31, 2025 \n http://fasb.org/us-gaap/2025#InterestIncomeExpenseNet http://fasb.org/us-gaap/2025#InterestIncomeExpenseNet http://fasb.org/us-gaap/2025#InterestIncomeExpen",
+    "item_headers_found": [
+      "Item 1. \n\n B",
+      "Item 3. \n\n L",
+      "Item 8) ",
+      "Item 7.A Q",
+      "Item 14. \n\n P",
+      "Item 1C. \n\n C",
+      "Item 8.\n\n &#8203; \n\n I",
+      "Item 2. \n\n P",
+      "Item 1C. C",
+      "Item 1A - R",
+      "Item 408. \n\n D",
+      "Item 15(",
+      "Item 5.02. D",
+      "Item 8).\n\n 38\n\n \n T",
+      "Item 10. \n\n D",
+      "Item 13. \n\n C",
+      "Item 1A ",
+      "Item 15. \n\n E",
+      "Item 8. \n\n &#8203; \n\n T",
+      "Item 8. T"
+    ]
+  }
+]
