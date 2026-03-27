@@ -1,0 +1,264 @@
+{
+  "ticker": "MDLN",
+  "cik": "0002046386",
+  "name": "MEDLINE INC CLASS A",
+  "entity_name": "Medline Inc.",
+  "concepts": {
+    "Revenues_USD": [
+      {
+        "end": "2023-12-31",
+        "val": 23231000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2023",
+        "start": "2023-01-01"
+      },
+      {
+        "end": "2024-12-31",
+        "val": 25507000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2024",
+        "start": "2024-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": 28432000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      }
+    ],
+    "NetIncomeLoss_USD": [
+      {
+        "end": "2025-12-31",
+        "val": 1159000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": -7000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": "2025-12-17"
+      }
+    ],
+    "EarningsPerShareDiluted_USD/shares": [
+      {
+        "end": "2025-12-31",
+        "val": -0.01,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": -0.01,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": "2025-12-17"
+      }
+    ],
+    "EarningsPerShareBasic_USD/shares": [
+      {
+        "end": "2025-12-31",
+        "val": -0.01,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": -0.01,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": "2025-12-17"
+      }
+    ],
+    "Assets_USD": [
+      {
+        "end": "2024-12-31",
+        "val": 35978000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "start": ""
+      },
+      {
+        "end": "2025-12-31",
+        "val": 38484000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": ""
+      }
+    ],
+    "StockholdersEquity_USD": [
+      {
+        "end": "2025-12-31",
+        "val": 10737000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": ""
+      }
+    ],
+    "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest_USD": [
+      {
+        "end": "2025-12-31",
+        "val": 19286000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": ""
+      }
+    ],
+    "WeightedAverageNumberOfDilutedSharesOutstanding_shares": [
+      {
+        "end": "2025-12-31",
+        "val": 810000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": 809688877,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": "2025-12-17"
+      }
+    ],
+    "OperatingIncomeLoss_USD": [
+      {
+        "end": "2023-12-31",
+        "val": 1250000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2023",
+        "start": "2023-01-01"
+      },
+      {
+        "end": "2024-12-31",
+        "val": 2146000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2024",
+        "start": "2024-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": 2212000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      }
+    ],
+    "CashAndCashEquivalentsAtCarryingValue_USD": [
+      {
+        "end": "2024-12-31",
+        "val": 199000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "start": ""
+      },
+      {
+        "end": "2025-12-31",
+        "val": 1939000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": ""
+      }
+    ],
+    "LongTermDebtNoncurrent_USD": [
+      {
+        "end": "2024-12-31",
+        "val": 16416000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "start": ""
+      },
+      {
+        "end": "2025-12-31",
+        "val": 12484000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "start": ""
+      }
+    ],
+    "NetCashProvidedByUsedInOperatingActivities_USD": [
+      {
+        "end": "2023-12-31",
+        "val": 1685000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2023",
+        "start": "2023-01-01"
+      },
+      {
+        "end": "2024-12-31",
+        "val": 1769000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2024",
+        "start": "2024-01-01"
+      },
+      {
+        "end": "2025-12-31",
+        "val": 1744000000,
+        "form": "10-K",
+        "filed": "2026-02-25",
+        "fp": "FY",
+        "frame": "CY2025",
+        "start": "2025-01-01"
+      }
+    ]
+  },
+  "revenue_entries_count": 3,
+  "cross_section_eligible": {
+    "2016-03-31": false,
+    "2018-12-31": false,
+    "2020-09-30": false,
+    "2022-03-31": false
+  }
+}
