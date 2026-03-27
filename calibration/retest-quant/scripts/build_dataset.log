@@ -1,0 +1,20 @@
+Total cases: 1277
+Cases with spread signals: 1277 / 1277
+Cases with SI Zipf: 1034 / 1277
+Cases with SI Zipf (fixed): 306 / 1277
+Cases with Fisher: 307 / 1277
+Cases with EPS data: 306 / 1277
+Cases with insider data: 109 / 1277
+Cases with Benford class: 323 / 1277
+
+Outcome distribution:
+  mixed: 176 (13.8%)
+  trap: 559 (43.8%)
+  underperform: 186 (14.6%)
+  winner: 356 (27.9%)
+
+Entry date distribution:
+  2020-Q3: 614
+  2022-Q1: 663
+
+Saved: /home/cm/attractor-value/calibration/retest-quant/analysis-dataset.csv (1277 rows, 33 columns)
